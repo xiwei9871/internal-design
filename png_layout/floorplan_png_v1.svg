@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1663" height="1485" viewBox="0 0 1663 1485">
+<rect width="1663" height="1485" fill="#faf9f6"/>
+<style>.outer{fill:#eee8dc;stroke:#22252a;stroke-width:12}.wall{fill:#30343a}.room{stroke:#555a62;stroke-width:3}.lbl{font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;font-size:25px;fill:#24262b;text-anchor:middle}.dim{font:14px Arial;fill:#555;text-anchor:middle}</style>
+<!-- one continuous usable interior envelope traced from the PNG -->
+<path class="outer" d="M403 145H790V310H1184V674H1160V760H1485V1337H403V1128H200V534H403Z"/>
+<!-- room zones; these are overlays on the same continuous floor, not voids -->
+<rect class="room" x="415" y="157" width="364" height="153" fill="#f4dfbe"/>
+<rect class="room" x="428" y="334" width="164" height="309" fill="#dceff1"/>
+<rect class="room" x="592" y="334" width="164" height="222" fill="#e7e7e7"/>
+<rect class="room" x="790" y="334" width="370" height="320" fill="#e8e1f5"/>
+<rect class="room" x="224" y="558" width="179" height="545" fill="#dceff1"/>
+<rect class="room" x="428" y="667" width="338" height="464" fill="#e8e1f5"/>
+<rect class="room" x="766" y="674" width="362" height="663" fill="#f1eee7"/>
+<rect class="room" x="1152" y="785" width="306" height="343" fill="#e8e1f5"/>
+<rect class="room" x="1140" y="1151" width="318" height="163" fill="#e8e1f5"/>
+<!-- principal traced partitions -->
+<path class="wall" d="M403 310H592V334H428V355H403ZM767 310H904V334H790V558H767ZM403 643H665V667H403ZM652 667H675V781H652ZM766 770H790V1128H766ZM428 1128H489V1151H428ZM403 1314H428V1337H403ZM1128 760H1485V785H1152V797H1128ZM1128 878H1152V1064H1088V1088H1128V1128H1235V1151H1128ZM403 418H428V643H403ZM224 843H313V856H224ZM389 843H403V856H389ZM403 534H428V558H403ZM224 534H383V558H224ZM224 1103H389V1128H224ZM428 1314H750V1337H428ZM808 1314H1113V1337H808ZM1160 1314H1458V1337H1160Z"/>
+<!-- openings/windows are intentionally shown separately -->
+<g fill="none" stroke="#3ca8b5" stroke-width="5"><path d="M515 151H779M784 157V310M904 322H1047M322 546H383M224 1115H389M428 1325H750M808 1325H1113M1160 1325H1458M1134 1151V1314M1235 1140H1378"/></g>
+<!-- furniture reference footprints -->
+<g fill="none" stroke="#6d7279" stroke-width="2" stroke-dasharray="6 5"><rect x="551" y="906" width="214" height="187"/><rect x="945" y="390" width="215" height="185"/><rect x="1244" y="917" width="214" height="158"/><rect x="922" y="789" width="92" height="46"/><rect x="1018" y="950" width="110" height="40"/></g>
+<text class="lbl" x="595" y="235">厨房</text><text class="lbl" x="510" y="500">次卫</text><text class="lbl" x="674" y="445">洗衣/烘干</text><text class="lbl" x="980" y="500">次卧一</text><text class="lbl" x="310" y="830">主卫</text><text class="lbl" x="600" y="870">主卧</text><text class="lbl" x="950" y="930">客餐厅</text><text class="lbl" x="1305" y="960">次卧二</text><text class="lbl" x="505" y="1200">衣帽/书桌</text>
+<text class="dim" x="595" y="45">1750 + 120 + 3560 + 120 + 3620</text><text class="dim" x="830" y="1465">1750 + 240 + 3320 + 240 + 3320 + 240 + 3000</text>
+</svg>

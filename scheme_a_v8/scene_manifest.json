@@ -1,0 +1,33 @@
+{
+  "style": "简约风·原木色·白色平吊顶·中央空调",
+  "catalog_pdf": "木甲木乙-白蜡木系列.pdf",
+  "catalog_items": [
+    "1030-2 双位沙发 2100x900x900",
+    "3046-1.4 餐台 1400x800x750",
+    "3125 书椅/餐椅 450x520x855",
+    "5015-TS 电视柜 1580x400x470",
+    "2019系列床",
+    "2106系列床头柜/妆台系列"
+  ],
+  "cameras": [
+    "overview",
+    "living",
+    "kitchen",
+    "master",
+    "child",
+    "elder",
+    "main_bath",
+    "secondary_bath"
+  ],
+  "renders": [
+    "renders/main_bath.png",
+    "renders/elder.png",
+    "renders/master.png",
+    "renders/overview.png",
+    "renders/secondary_bath.png",
+    "renders/living.png",
+    "renders/kitchen.png",
+    "renders/child.png"
+  ],
+  "note": "尺寸按A7包络建模，墙线来自PNG geometry; appliances/fixtures are visual placeholders until model numbers are chosen"
+}

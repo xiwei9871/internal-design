@@ -1,0 +1,771 @@
+{
+  "schema": "scheme-a11-cad-base-v1",
+  "source": "/Users/xiwei/interior_design/scheme_a_v7/scheme_a_geometry.json",
+  "source_basis": "User-selected PNG layout; CAD is original structure reference",
+  "source_scale_mm_per_pixel": 9.82,
+  "model_origin_source_px": [
+    200.0,
+    1337.0
+  ],
+  "wall_height_mm": 2700.0,
+  "nominal_wall_thickness_mm": 120.0,
+  "freecad_document": "/Users/xiwei/interior_design/scheme_a_v11/cad/方案A11_CAD底模.FCStd",
+  "obj_export": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_cad_base.obj",
+  "obj_group_exports": {
+    "walls": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_walls.obj",
+    "floors": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_floors.obj",
+    "openings": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_openings.obj",
+    "doors": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_doors.obj",
+    "furniture": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_furniture.obj",
+    "fixtures": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_fixtures.obj"
+  },
+  "object_count": 149,
+  "objects": [
+    {
+      "name": "Walls",
+      "label": "墙体（A7 PNG 锁定）",
+      "group": null
+    },
+    {
+      "name": "Floors",
+      "label": "地面与分区",
+      "group": null
+    },
+    {
+      "name": "Openings",
+      "label": "门窗洞口",
+      "group": null
+    },
+    {
+      "name": "Doors",
+      "label": "门扇（不透明木作）",
+      "group": null
+    },
+    {
+      "name": "Furniture",
+      "label": "家具与定制柜",
+      "group": null
+    },
+    {
+      "name": "Fixtures",
+      "label": "厨房家电与卫浴",
+      "group": null
+    },
+    {
+      "name": "Wall_001",
+      "label": "厨房西北墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_002",
+      "label": "厨房南墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_003",
+      "label": "次卧一西北墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_004",
+      "label": "次卧一东北墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_005",
+      "label": "次卧一南墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_006",
+      "label": "次卧一门边",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_007",
+      "label": "次卫西墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_008",
+      "label": "西翼外墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_009",
+      "label": "主卧北墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_010",
+      "label": "主卧衣帽区东墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_011",
+      "label": "主卧北墙转角",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_012",
+      "label": "主卧东墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_013",
+      "label": "主卧西南转角",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_014",
+      "label": "主卧西南端柱",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_015",
+      "label": "主卧客厅南端柱",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_016",
+      "label": "客厅次卧二南端柱",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_017",
+      "label": "次卧二东北外墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_018",
+      "label": "次卧二西墙转角",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_019",
+      "label": "次卧二东南门边",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_020",
+      "label": "主卫衣帽区隔墙西",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_021",
+      "label": "主卫衣帽区隔墙东",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_022",
+      "label": "次卫家政隔墙",
+      "group": "Walls"
+    },
+    {
+      "name": "Wall_023",
+      "label": "西翼南窗门边",
+      "group": "Walls"
+    },
+    {
+      "name": "WholeHomeFloor",
+      "label": "全屋地面·A7 外轮廓",
+      "group": "Floors"
+    },
+    {
+      "name": "ZoneFloor_01",
+      "label": "厨房·地面",
+      "group": "Floors"
+    },
+    {
+      "name": "ZoneFloor_02",
+      "label": "次卫·地面",
+      "group": "Floors"
+    },
+    {
+      "name": "ZoneFloor_03",
+      "label": "主卫·地面",
+      "group": "Floors"
+    },
+    {
+      "name": "ZoneFloor_04",
+      "label": "衣帽区·地面",
+      "group": "Floors"
+    },
+    {
+      "name": "ZoneFloor_05",
+      "label": "主卧·地面",
+      "group": "Floors"
+    },
+    {
+      "name": "ZoneFloor_06",
+      "label": "次卧一·地面",
+      "group": "Floors"
+    },
+    {
+      "name": "ZoneFloor_07",
+      "label": "次卧二·地面",
+      "group": "Floors"
+    },
+    {
+      "name": "ZoneFloor_08",
+      "label": "次卧二窗边区·地面",
+      "group": "Floors"
+    },
+    {
+      "name": "Window_01",
+      "label": "厨房北窗",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_02",
+      "label": "厨房东窗",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_03",
+      "label": "次卧一北窗",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_04",
+      "label": "次卫西窗",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_05",
+      "label": "主卫北窗",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_06",
+      "label": "衣帽区南窗",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_07",
+      "label": "主卧南窗",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_08",
+      "label": "客厅南窗",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_09",
+      "label": "次卧二窗边南窗",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_10",
+      "label": "次卧二窗边移门",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_11",
+      "label": "客厅窗边移门",
+      "group": "Openings"
+    },
+    {
+      "name": "Window_12",
+      "label": "厨房移门",
+      "group": "Openings"
+    },
+    {
+      "name": "Door_01",
+      "label": "入户门",
+      "group": "Doors"
+    },
+    {
+      "name": "Door_02",
+      "label": "次卧一门",
+      "group": "Doors"
+    },
+    {
+      "name": "Door_03",
+      "label": "次卧二门",
+      "group": "Doors"
+    },
+    {
+      "name": "Door_04",
+      "label": "主卧门",
+      "group": "Doors"
+    },
+    {
+      "name": "Door_05",
+      "label": "衣帽区门",
+      "group": "Doors"
+    },
+    {
+      "name": "Door_06",
+      "label": "主卫门",
+      "group": "Doors"
+    },
+    {
+      "name": "Door_07",
+      "label": "次卫门",
+      "group": "Doors"
+    },
+    {
+      "name": "MasterBed_frame",
+      "label": "夫妻主卧床·床架",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterBed_mattress",
+      "label": "夫妻主卧床·床垫",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterBed_headboard",
+      "label": "夫妻主卧床·薄型床头板",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterBed_duvet",
+      "label": "夫妻主卧床·被褥",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterBed_pillow_0",
+      "label": "夫妻主卧床·枕头1",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterBed_pillow_1",
+      "label": "夫妻主卧床·枕头2",
+      "group": "Furniture"
+    },
+    {
+      "name": "ElderBed_frame",
+      "label": "老人床·床架",
+      "group": "Furniture"
+    },
+    {
+      "name": "ElderBed_mattress",
+      "label": "老人床·床垫",
+      "group": "Furniture"
+    },
+    {
+      "name": "ElderBed_headboard",
+      "label": "老人床·薄型床头板",
+      "group": "Furniture"
+    },
+    {
+      "name": "ElderBed_duvet",
+      "label": "老人床·被褥",
+      "group": "Furniture"
+    },
+    {
+      "name": "ElderBed_pillow_0",
+      "label": "老人床·枕头1",
+      "group": "Furniture"
+    },
+    {
+      "name": "ElderBed_pillow_1",
+      "label": "老人床·枕头2",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildBed_frame",
+      "label": "儿童床·床架",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildBed_mattress",
+      "label": "儿童床·床垫",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildBed_headboard",
+      "label": "儿童床·薄型床头板",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildBed_duvet",
+      "label": "儿童床·被褥",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildBed_pillow_0",
+      "label": "儿童床·枕头1",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildBed_pillow_1",
+      "label": "儿童床·枕头2",
+      "group": "Furniture"
+    },
+    {
+      "name": "DressingWardrobe",
+      "label": "衣帽区长柜",
+      "group": "Furniture"
+    },
+    {
+      "name": "DressingWardrobe_panel_1",
+      "label": "衣帽区长柜·分缝1",
+      "group": "Furniture"
+    },
+    {
+      "name": "DressingWardrobe_panel_2",
+      "label": "衣帽区长柜·分缝2",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterNorthWardrobe",
+      "label": "主卧北衣柜",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterNorthWardrobe_panel_1",
+      "label": "主卧北衣柜·分缝1",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterNorthWardrobe_panel_2",
+      "label": "主卧北衣柜·分缝2",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterWestWardrobe",
+      "label": "主卧西衣柜",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterWestWardrobe_panel_1",
+      "label": "主卧西衣柜·分缝1",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterWestWardrobe_panel_2",
+      "label": "主卧西衣柜·分缝2",
+      "group": "Furniture"
+    },
+    {
+      "name": "ElderWardrobe",
+      "label": "老人房衣柜",
+      "group": "Furniture"
+    },
+    {
+      "name": "ElderWardrobe_panel_1",
+      "label": "老人房衣柜·分缝1",
+      "group": "Furniture"
+    },
+    {
+      "name": "ElderWardrobe_panel_2",
+      "label": "老人房衣柜·分缝2",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildWardrobe",
+      "label": "儿童房衣柜",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildWardrobe_panel_1",
+      "label": "儿童房衣柜·分缝1",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildWardrobe_panel_2",
+      "label": "儿童房衣柜·分缝2",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildWindowBookcase",
+      "label": "儿童窗边低书柜",
+      "group": "Furniture"
+    },
+    {
+      "name": "MasterWindowDesk",
+      "label": "主卧窗边梳妆/阅读台",
+      "group": "Furniture"
+    },
+    {
+      "name": "ChildWindowDesk",
+      "label": "儿童窗边学习桌",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningTable",
+      "label": "餐桌",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningChair1_seat",
+      "label": "餐椅·座面",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningChair1_back",
+      "label": "餐椅·靠背",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningChair2_seat",
+      "label": "餐椅·座面001",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningChair2_back",
+      "label": "餐椅·靠背001",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningChair3_seat",
+      "label": "餐椅·座面002",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningChair3_back",
+      "label": "餐椅·靠背002",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningChair4_seat",
+      "label": "餐椅·座面003",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningChair4_back",
+      "label": "餐椅·靠背003",
+      "group": "Furniture"
+    },
+    {
+      "name": "LivingSofa_base",
+      "label": "客厅沙发·底座",
+      "group": "Furniture"
+    },
+    {
+      "name": "LivingSofa_seat",
+      "label": "客厅沙发·坐垫",
+      "group": "Furniture"
+    },
+    {
+      "name": "LivingSofa_back",
+      "label": "客厅沙发·靠背",
+      "group": "Furniture"
+    },
+    {
+      "name": "LivingSofa_arm_0",
+      "label": "客厅沙发·扶手",
+      "group": "Furniture"
+    },
+    {
+      "name": "LivingSofa_arm_1",
+      "label": "客厅沙发·扶手001",
+      "group": "Furniture"
+    },
+    {
+      "name": "LivingTvCabinet",
+      "label": "电视影音矮柜",
+      "group": "Furniture"
+    },
+    {
+      "name": "LivingTvScreen",
+      "label": "客厅·55–65寸电视",
+      "group": "Furniture"
+    },
+    {
+      "name": "LivingCoffeeTable",
+      "label": "客厅茶几",
+      "group": "Furniture"
+    },
+    {
+      "name": "LivingSideTable",
+      "label": "客厅沙发边几",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningTallCabinet",
+      "label": "餐边食品/书籍高柜",
+      "group": "Furniture"
+    },
+    {
+      "name": "DiningSideboard",
+      "label": "餐边柜/充电收纳",
+      "group": "Furniture"
+    },
+    {
+      "name": "Kitchen_BaseCabinet",
+      "label": "厨房·连续地柜",
+      "group": "Fixtures"
+    },
+    {
+      "name": "Kitchen_Countertop",
+      "label": "厨房·石材台面",
+      "group": "Fixtures"
+    },
+    {
+      "name": "Kitchen_ReturnCabinet",
+      "label": "厨房·连续备餐台",
+      "group": "Fixtures"
+    },
+    {
+      "name": "Kitchen_Hob",
+      "label": "厨房·灶台",
+      "group": "Fixtures"
+    },
+    {
+      "name": "Kitchen_Sink",
+      "label": "厨房·水槽",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_Fridge",
+      "label": "走廊·薄型冰箱·靠厨房独立列",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_FridgeTop",
+      "label": "走廊·冰箱上方高柜",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_OvenTower",
+      "label": "走廊·蒸箱/烤箱独立列",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_SteamOvenFront",
+      "label": "走廊·蒸箱面板",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_OvenFront",
+      "label": "走廊·烤箱面板",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_OvenTop",
+      "label": "走廊·蒸烤列上方高柜",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_WasherDryer",
+      "label": "走廊·洗衣机/烘干机叠放列",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_WasherFront",
+      "label": "走廊·洗衣机面板",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_DryerFront",
+      "label": "走廊·烘干机面板",
+      "group": "Fixtures"
+    },
+    {
+      "name": "ServiceWall_LaundryTop",
+      "label": "走廊·洗烘列上方高柜",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_Tub",
+      "label": "主卫·1500×700 浴缸",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_TubInner",
+      "label": "主卫·浴缸内盆",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_WC_tank",
+      "label": "主卫·坐便器·一体水箱",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_WC_bowl",
+      "label": "主卫·坐便器·盆体",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_WC_front",
+      "label": "主卫·坐便器·盆体前弧",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_WC_lid",
+      "label": "主卫·坐便器·缓降盖板",
+      "group": "Fixtures"
+    },
+    {
+      "name": "SecondaryBath_WC_tank",
+      "label": "次卫·坐便器·一体水箱",
+      "group": "Fixtures"
+    },
+    {
+      "name": "SecondaryBath_WC_bowl",
+      "label": "次卫·坐便器·盆体",
+      "group": "Fixtures"
+    },
+    {
+      "name": "SecondaryBath_WC_front",
+      "label": "次卫·坐便器·盆体前弧",
+      "group": "Fixtures"
+    },
+    {
+      "name": "SecondaryBath_WC_lid",
+      "label": "次卫·坐便器·缓降盖板",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_Sink_cabinet",
+      "label": "主卫·台盆·柜体",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_Sink_basin",
+      "label": "主卫·台盆·盆体",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_Sink_tap",
+      "label": "主卫·台盆·龙头",
+      "group": "Fixtures"
+    },
+    {
+      "name": "SecondaryBath_Sink_cabinet",
+      "label": "次卫·台盆·柜体",
+      "group": "Fixtures"
+    },
+    {
+      "name": "SecondaryBath_Sink_basin",
+      "label": "次卫·台盆·盆体",
+      "group": "Fixtures"
+    },
+    {
+      "name": "SecondaryBath_Sink_tap",
+      "label": "次卫·台盆·龙头",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_Shower_tray",
+      "label": "主卫·淋浴·底盘",
+      "group": "Fixtures"
+    },
+    {
+      "name": "MainBath_Shower_screen",
+      "label": "主卫·淋浴·透明玻璃屏",
+      "group": "Openings"
+    },
+    {
+      "name": "SecondaryBath_Shower_tray",
+      "label": "次卫·淋浴·底盘",
+      "group": "Fixtures"
+    },
+    {
+      "name": "SecondaryBath_Shower_screen",
+      "label": "次卫·淋浴·透明玻璃屏",
+      "group": "Openings"
+    },
+    {
+      "name": "FlatCeiling",
+      "label": "白色平吊顶（可隐藏）",
+      "group": "Walls"
+    }
+  ],
+  "status": "施工级几何底模；家具和设备为设计外廓，现场复尺/SKU 待确认"
+}

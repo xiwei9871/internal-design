@@ -1,0 +1,6 @@
+__pycache__/
+.DS_Store
+*.blend1
+*.FCBak
+.*.response.json
+.*.edit-response.json

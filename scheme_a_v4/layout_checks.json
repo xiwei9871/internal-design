@@ -1,0 +1,26 @@
+{
+  "bath_width_m": 1.49,
+  "bath_width_change_m": 0.0,
+  "hall_clearance_m": 1.1,
+  "bath_door_width_m": 0.75,
+  "washer_dryer_footprint_m": [
+    0.62,
+    0.72
+  ],
+  "kitchen_width_m": 3.57,
+  "kitchen_depth_m": 1.5,
+  "kitchen_opening_m": 1.72,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "preserved_exterior": true,
+  "preserved_walls": true,
+  "preserved_bathroom_door": true,
+  "service_wall_modules": [
+    "fridge",
+    "microwave_food_cabinet",
+    "washer_dryer_combo"
+  ],
+  "service_wall_finish_before_door_swing": true,
+  "position_3_clear": true,
+  "status": "Route-preserved concept; original wall and door geometry checked"
+}

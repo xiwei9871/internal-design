@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1700" viewBox="760 300 730 1030"><rect x="760" y="300" width="730" height="1030" fill="#fcfcf8"/><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c88738"/></marker><pattern id="dry" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 12L12 0" stroke="#bfcec5" stroke-width=".6"/></pattern></defs>
+<polygon points="403,145 790,145 790,310 1184,310 1184,674 1160,674 1160,760 1485,760 1485,1337 403,1337 403,1128 200,1128 200,534 403,534" fill="#f6f3ea" stroke="#88958e" stroke-width="2"/>
+<polygon points="415,157 779,157 779,310 415,310" fill="#eeede4"/>
+<polygon points="428,334 580,334 580,643 428,643" fill="#dcece9"/>
+<polygon points="224,558 403,558 403,843 224,843" fill="#dcece9"/>
+<polygon points="224,856 403,856 403,1103 224,1103" fill="#eddfc4"/>
+<polygon points="428,667 766,667 766,1314 428,1314" fill="#eddfc4"/>
+<polygon points="790,334 1160,334 1160,654 790,654" fill="#eddfc4"/>
+<polygon points="1152,785 1458,785 1458,1128 1152,1128" fill="#eddfc4"/>
+<polygon points="1140,1151 1458,1151 1458,1314 1140,1314" fill="#eddfc4"/>
+<rect x="430" y="554" width="150" height="87" rx="2" fill="url(#dry)" stroke="none" stroke-width="1.5"/>
+<rect x="551" y="906" width="214" height="187" rx="5" fill="#fbf8f0" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="716,909 716,1090" fill="none" stroke="#c1b59f" stroke-width="1"/>
+<rect x="725" y="918" width="30" height="71.5" rx="6" fill="#fffef9" stroke="#d3c8b5" stroke-width="1"/>
+<rect x="725" y="1003.5" width="30" height="71.5" rx="6" fill="#fffef9" stroke="#d3c8b5" stroke-width="1"/>
+<rect x="945" y="390" width="215" height="185" rx="5" fill="#fbf8f0" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="1111,393 1111,572" fill="none" stroke="#c1b59f" stroke-width="1"/>
+<rect x="1120" y="402" width="30" height="70.5" rx="6" fill="#fffef9" stroke="#d3c8b5" stroke-width="1"/>
+<rect x="1120" y="486.5" width="30" height="70.5" rx="6" fill="#fffef9" stroke="#d3c8b5" stroke-width="1"/>
+<rect x="1244" y="917" width="214" height="158" rx="5" fill="#fbf8f0" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="1409,920 1409,1072" fill="none" stroke="#c1b59f" stroke-width="1"/>
+<rect x="1418" y="929" width="30" height="57.0" rx="6" fill="#fffef9" stroke="#d3c8b5" stroke-width="1"/>
+<rect x="1418" y="1000.0" width="30" height="57.0" rx="6" fill="#fffef9" stroke="#d3c8b5" stroke-width="1"/>
+<rect x="224" y="856" width="60" height="235" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="224,906 284,906" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="224,956 284,956" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="224,1006 284,1006" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="224,1056 284,1056" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="790" y="770" width="41" height="294" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="790,820 831,820" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="790,870 831,870" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="790,920 831,920" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="790,970 831,970" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="790,1020 831,1020" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="415" y="157" width="364" height="61" rx="2" fill="#cdb795" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="465,157 465,218" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="515,157 515,218" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="565,157 565,218" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="615,157 615,218" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="665,157 665,218" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="715,157 715,218" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="765,157 765,218" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="1006" y="627" width="134" height="27" rx="2" fill="#cdb795" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="1056,627 1056,654" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1106,627 1106,654" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="428" y="549" width="48" height="55" rx="2" fill="#f9fcfa" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="449" y="462" width="51" height="37" rx="5" fill="#f9fcfa" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="428" y="334" width="152" height="103" rx="2" fill="#dfedeb" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="415" y="219" width="71" height="91" rx="2" fill="#cdb795" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="415,269 486,269" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="592" y="322" width="63" height="91" rx="2" fill="#d0d7d2" stroke="#a3a9a0" stroke-width="1.5"/>
+<text x="623.5" y="373.5" font-size="13" fill="#314844" text-anchor="middle" font-weight="600" font-family="PingFang SC,Arial,sans-serif">冰箱</text>
+<rect x="592" y="413" width="63" height="70" rx="2" fill="#d0d7d2" stroke="#a3a9a0" stroke-width="1.5"/>
+<text x="623.5" y="446.0" font-size="12" fill="#314844" text-anchor="middle" font-weight="600" font-family="PingFang SC,Arial,sans-serif">微波</text>
+<text x="623.5" y="464.0" font-size="12" fill="#314844" text-anchor="middle" font-weight="600" font-family="PingFang SC,Arial,sans-serif">食品</text>
+<rect x="592" y="483" width="63" height="73" rx="2" fill="#d0d7d2" stroke="#a3a9a0" stroke-width="1.5"/>
+<circle cx="623.5" cy="519.5" r="18" fill="#edf3ef" stroke="#93aaa0" stroke-width="1.5"/>
+<text x="623.5" y="509" font-size="13" fill="#314844" text-anchor="middle" font-weight="600" font-family="PingFang SC,Arial,sans-serif">洗烘</text>
+<text x="623.5" y="526" font-size="13" fill="#314844" text-anchor="middle" font-weight="600" font-family="PingFang SC,Arial,sans-serif">一体</text>
+<rect x="870" y="824" width="145" height="82" rx="2" fill="#bb9c70" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="888" y="782" width="38" height="38" rx="5" fill="#b4bcb0" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="953" y="782" width="38" height="38" rx="5" fill="#b4bcb0" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="888" y="915" width="38" height="38" rx="5" fill="#b4bcb0" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="953" y="915" width="38" height="38" rx="5" fill="#b4bcb0" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="1030" y="1090" width="85" height="210" rx="5" fill="#98aaa2" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="1043" y="1103" width="61" height="184" rx="7" fill="#acbbb1" stroke="#889d92" stroke-width="1"/>
+<polyline points="1044,1160.0 1103,1160.0" fill="none" stroke="#889d92" stroke-width="1"/>
+<polyline points="1044,1230.0 1103,1230.0" fill="none" stroke="#889d92" stroke-width="1"/>
+<rect x="792" y="1120" width="28" height="140" rx="2" fill="#cdb795" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="792,1170 820,1170" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="792,1220 820,1220" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="1047" y="1038" width="42" height="42" rx="2" fill="#bb9c70" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="224" y="558" width="179" height="104" rx="2" fill="#dfedeb" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="246" y="677" width="64" height="47" rx="5" fill="#f9fcfa" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="224" y="773" width="54" height="52" rx="2" fill="#f9fcfa" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="224" y="758" width="54" height="14" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="274,758 274,772" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="428" y="667" width="224" height="60" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="478,667 478,727" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="528,667 528,727" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="578,667 578,727" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="628,667 628,727" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="428" y="727" width="60" height="145" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="428,777 488,777" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="428,827 488,827" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="799" y="334" width="52" height="205" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="799,384 851,384" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="799,434 851,434" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="799,484 851,484" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="799,534 851,534" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="1255" y="785" width="203" height="63" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="1305,785 1305,848" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1355,785 1355,848" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1405,785 1405,848" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1455,785 1455,848" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="428" y="1151" width="61" height="163" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="428,1201 489,1201" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="428,1251 489,1251" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="428,1301 489,1301" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="707" y="1151" width="58" height="163" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="707,1201 765,1201" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="707,1251 765,1251" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="707,1301 765,1301" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="1403" y="1151" width="55" height="163" rx="2" fill="#bda47c" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="1403,1201 1458,1201" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1403,1251 1458,1251" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1403,1301 1458,1301" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="489" y="1273" width="218" height="41" rx="2" fill="#cdb795" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="539,1273 539,1314" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="589,1273 589,1314" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="639,1273 639,1314" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="689,1273 689,1314" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="571" y="1218" width="45" height="49" rx="5" fill="#b4bcb0" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="1140" y="1273" width="263" height="41" rx="2" fill="#cdb795" stroke="#a3a9a0" stroke-width="1.5"/>
+<polyline points="1190,1273 1190,1314" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1240,1273 1240,1314" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1290,1273 1290,1314" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1340,1273 1340,1314" fill="none" stroke="#b09a76" stroke-width="1"/>
+<polyline points="1390,1273 1390,1314" fill="none" stroke="#b09a76" stroke-width="1"/>
+<rect x="1255" y="1210" width="45" height="49" rx="5" fill="#b4bcb0" stroke="#a3a9a0" stroke-width="1.5"/>
+<rect x="690" y="165" width="72" height="43" rx="7" fill="#e4ece8" stroke="#889c93" stroke-width="1"/>
+<rect x="530" y="168" width="85" height="38" rx="3" fill="#737c74" stroke="#66756d" stroke-width="1"/>
+<circle cx="550" cy="187" r="12" fill="none" stroke="#dce4dd" stroke-width="2"/>
+<circle cx="594" cy="187" r="12" fill="none" stroke="#dce4dd" stroke-width="2"/>
+<polygon points="403,145 515,145 515,157 415,157 415,310 403,310" fill="#414d4a"/>
+<polygon points="403,310 592,310 592,334 428,334 428,355 403,355" fill="#414d4a"/>
+<polygon points="767,310 904,310 904,334 790,334 790,558 767,558" fill="#414d4a"/>
+<polygon points="1047,310 1184,310 1184,674 1160,674 1160,334 1047,334" fill="#414d4a"/>
+<polygon points="879,642 1160,642 1160,666 879,666" fill="#414d4a"/>
+<polygon points="767,637 790,637 790,666 767,666" fill="#414d4a"/>
+<polygon points="403,418 428,418 428,643 403,643 403,558 383,558 383,534 403,534" fill="#414d4a"/>
+<polygon points="200,534 322,534 322,558 224,558 224,1103 240,1103 240,1128 200,1128" fill="#414d4a"/>
+<polygon points="403,643 665,643 665,667 403,667" fill="#414d4a"/>
+<polygon points="403,667 428,667 428,1003 403,1003" fill="#414d4a"/>
+<polygon points="652,667 665,667 665,768 675,768 675,781 652,781" fill="#414d4a"/>
+<polygon points="766,770 790,770 790,1314 765,1314 765,1151 705,1151 705,1128 766,1128" fill="#414d4a"/>
+<polygon points="403,1091 428,1091 428,1128 489,1128 489,1151 428,1151 428,1314 403,1314" fill="#414d4a"/>
+<polygon points="403,1314 428,1314 428,1337 403,1337" fill="#414d4a"/>
+<polygon points="750,1314 808,1314 808,1337 750,1337" fill="#414d4a"/>
+<polygon points="1113,1314 1160,1314 1160,1337 1113,1337" fill="#414d4a"/>
+<polygon points="1128,760 1485,760 1485,1337 1458,1337 1458,785 1152,785 1152,797 1128,797" fill="#414d4a"/>
+<polygon points="1128,878 1152,878 1152,1128 1235,1128 1235,1151 1128,1151 1128,1088 1088,1088 1088,1064 1128,1064" fill="#414d4a"/>
+<polygon points="1378,1128 1458,1128 1458,1151 1378,1151" fill="#414d4a"/>
+<polygon points="224,843 313,843 313,856 224,856" fill="#414d4a"/>
+<polygon points="389,843 403,843 403,856 389,856" fill="#414d4a"/>
+<polygon points="580,425 592,425 592,562 580,562" fill="#414d4a"/>
+<polygon points="389,1103 403,1103 403,1091 428,1091 428,1128 389,1128" fill="#414d4a"/>
+<polyline points="515,151 790,151" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="784,157 784,310" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="904,322 1047,322" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="415,355 415,418" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="322,546 383,546" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="224,1115 389,1115" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="428,1325 750,1325" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="808,1325 1113,1325" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="1160,1325 1458,1325" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="1235,1140 1378,1140" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="1134,1151 1134,1314" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<polyline points="592,316 767,316" fill="none" stroke="#8db6b7" stroke-width="5"/>
+<path d="M1160 674L1079 674 A81.0 81.0 0 0 0 1160 755" fill="none" stroke="#929d92" stroke-width="1.7"/>
+<path d="M799 642L799 561 A81.0 81.0 0 0 1 880 642" fill="none" stroke="#929d92" stroke-width="1.7"/>
+<path d="M1152 797L1235 797 A83.0 83.0 0 0 1 1152 878" fill="none" stroke="#929d92" stroke-width="1.7"/>
+<path d="M751 781L751 864 A83.0 83.0 0 0 1 675 781" fill="none" stroke="#929d92" stroke-width="1.7"/>
+<path d="M428 1091L428 1003 A88.0 88.0 0 0 0 341 1091" fill="none" stroke="#929d92" stroke-width="1.7"/>
+<path d="M389 843L389 769 A74.0 74.0 0 0 0 314 843" fill="none" stroke="#929d92" stroke-width="1.7"/>
+<polyline points="440,446 572,446" fill="none" stroke="#63a99e" stroke-width="3"/>
+<text x="510" y="387" font-size="17" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">独立淋浴</text>
+<text x="510" y="411" font-size="13" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">玻璃分隔</text>
+<text x="454" y="292" font-size="12" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">新增备餐台</text>
+<text x="710" y="578" font-size="12" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">入口留空</text>
+<polyline points="504,637 580,637" fill="none" stroke="#148a82" stroke-width="4"/>
+<polyline points="428,637 504,637" fill="none" stroke="#148a82" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="548" y="629" font-size="11" fill="#148a82" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">内嵌推拉门</text>
+<text x="313" y="620" font-size="12" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">淋浴区</text>
+<text x="278" y="714" font-size="12" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">马桶区</text>
+<text x="258" y="816" font-size="12" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">洗手区</text>
+<text x="540" y="696" font-size="11" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">长衣 / 叠衣 / 被褥</text>
+<text x="455" y="811" font-size="10" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">长衣 / 叠衣</text>
+<text x="825" y="475" font-size="10" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">衣柜：短衣 / 抽屉</text>
+<text x="1355" y="819" font-size="11" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">儿童衣柜</text>
+<text x="600" y="1260" font-size="11" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">梳妆 / 阅读</text>
+<text x="1270" y="1260" font-size="11" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">儿童学习</text>
+<polyline points="1154,717 1068,717 1068,972 975,1027 944,1140" fill="none" stroke="#c88738" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#arrow)"/>
+<polyline points="1027,717 700,717 700,368 670,280" fill="none" stroke="#c88738" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#arrow)"/>
+<polyline points="794,603 700,603 700,510 638,510" fill="none" stroke="#c88738" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#arrow)"/>
+<text x="600" y="269" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">厨房</text>
+<text x="510" y="527" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">次卫</text>
+<text x="358" y="711" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">主卫</text>
+<text x="348" y="949" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">衣帽区</text>
+<text x="573" y="836" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">夫妻主卧</text>
+<text x="943" y="604" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">老人房</text>
+<text x="1265" y="897" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">儿童房</text>
+<text x="950" y="988" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">餐区</text>
+<text x="930" y="1085" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">客厅</text>
+<text x="582" y="1178" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">主卧窗边区</text>
+<text x="1267" y="1182" font-size="22" fill="#314844" text-anchor="middle" font-weight="500" font-family="PingFang SC,Arial,sans-serif">儿童窗边区</text>
+<text x="665" y="686" font-size="13" fill="#9a6b31" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">去厨房 / 次卫</text>
+<circle cx="450" cy="257" r="17" fill="#148a82" stroke="white" stroke-width="2"/>
+<text x="450" y="263" font-size="18" fill="white" text-anchor="middle" font-weight="600" font-family="PingFang SC,Arial,sans-serif">1</text>
+<circle cx="650" cy="440" r="17" fill="#148a82" stroke="white" stroke-width="2"/>
+<text x="650" y="446" font-size="18" fill="white" text-anchor="middle" font-weight="600" font-family="PingFang SC,Arial,sans-serif">2</text>
+<circle cx="698" cy="611" r="17" fill="#148a82" stroke="white" stroke-width="2"/>
+<text x="698" y="617" font-size="18" fill="white" text-anchor="middle" font-weight="600" font-family="PingFang SC,Arial,sans-serif">3</text><rect x="770" y="1280" width="700" height="26" rx="2" fill="#fcfcf8" stroke="none" stroke-width="1.5"/><text x="1120" y="1298" font-size="12" fill="#314844" text-anchor="middle" font-weight="400" font-family="PingFang SC,Arial,sans-serif">老人房：整墙衣柜｜主卧：长衣/叠衣/被褥｜儿童房：衣柜+窗边学习桌</text>

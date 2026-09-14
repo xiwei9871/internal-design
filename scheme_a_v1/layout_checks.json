@@ -1,0 +1,17 @@
+{
+  "bath_width_m": 1.85,
+  "bath_width_change_m": 0.35,
+  "hall_clearance_m": 1.32,
+  "bath_door_width_m": 0.82,
+  "washer_dryer_footprint_m": [
+    0.64,
+    0.7
+  ],
+  "kitchen_width_m": 3.57,
+  "kitchen_depth_m": 1.5,
+  "kitchen_opening_m": 1.72,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "preserved_exterior": true,
+  "status": "Concept dimensions only; eight route/wall points checked"
+}

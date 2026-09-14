@@ -1,0 +1,21 @@
+{
+  "schema": "residential-floorplan-draft/v1",
+  "units": "mm",
+  "status": "scheme_only_source_png_authoritative",
+  "source": "codex-clipboard-f50c6378-b9ea-4338-a68e-27a4104601db.png",
+  "overall": {"width_mm": 11310, "depth_mm": 11600, "confidence": "derived_from_dimension_chains"},
+  "rooms": [
+    {"id": "kitchen", "name": "厨房", "polygon_mm": [[1750,0],[5310,0],[5310,1500],[1750,1500]], "confidence": "high"},
+    {"id": "bath_2", "name": "次卫", "polygon_mm": [[1750,1740],[3250,1740],[3250,3700],[1750,3700]], "confidence": "medium"},
+    {"id": "laundry", "name": "洗衣/烘干", "polygon_mm": [[3250,1740],[4350,1740],[4350,2700],[3250,2700]], "confidence": "medium"},
+    {"id": "bedroom_1", "name": "次卧一", "polygon_mm": [[6500,1740],[9820,1740],[9820,5000],[6500,5000]], "confidence": "medium"},
+    {"id": "bath_1", "name": "主卫", "polygon_mm": [[0,3700],[1750,3700],[1750,6500],[0,6500]], "confidence": "medium"},
+    {"id": "master", "name": "主卧", "polygon_mm": [[1750,5000],[5070,5000],[5070,9000],[1750,9000]], "confidence": "medium"},
+    {"id": "living_dining", "name": "客餐厅", "polygon_mm": [[4350,5000],[8200,5000],[8200,11600],[4350,11600]], "confidence": "low"},
+    {"id": "bedroom_2", "name": "次卧二", "polygon_mm": [[8200,6500],[11310,6500],[11310,10000],[8200,10000]], "confidence": "medium"}
+  ],
+  "openings": [],
+  "unknowns": ["外墙厚度与结构墙位置", "梁、柱、烟道、燃气立管及排水立管", "窗洞口实际宽度、标高和开启方式", "入户门方向及建筑朝向", "图像中非矩形墙体的真实坐标"],
+  "source_conflict": "Provided DWG currently resolves to a different labeled layout (茶室/小孩房/老人房/书房), so it is not used as geometry for this PNG-based model.",
+  "next_actions": ["确认是否还有与 PNG 标签一致的 DWG 图纸或图框页", "用现场卷尺复核外轮廓和各房间净尺寸", "确认不可拆墙体、管井和窗门位置", "在本草模上比较收纳、餐桌和客厅动线方案"]
+}

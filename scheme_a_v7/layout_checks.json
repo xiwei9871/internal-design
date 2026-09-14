@@ -1,0 +1,63 @@
+{
+  "bath_width_m": 1.49,
+  "bath_width_change_m": 0.0,
+  "hall_clearance_m": 1.1,
+  "bath_door_width_m": 0.75,
+  "washer_dryer_footprint_m": [
+    0.62,
+    0.72
+  ],
+  "kitchen_width_m": 3.57,
+  "kitchen_depth_m": 1.5,
+  "kitchen_opening_m": 1.72,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "preserved_exterior": true,
+  "preserved_walls": true,
+  "original_bathroom_door_opening_preserved": true,
+  "bathroom_door_type": "pocket_sliding",
+  "service_wall_modules": [
+    "thin_fridge_<=840w_<=600d",
+    "microwave_food_cabinet",
+    "washer_dryer_combo"
+  ],
+  "fridge_basis_mm": {
+    "body_width_max": 840,
+    "body_depth_max": 600,
+    "body_height_max": 1950,
+    "wall_module_width": 900,
+    "wall_module_depth": 650
+  },
+  "fridge_door_swing_checked": true,
+  "main_bath_functions": [
+    "shower_zone_1750x1000",
+    "wc_body_700x400",
+    "sink_600x500",
+    "mirror_cabinet",
+    "bathtub_optional_1500x700"
+  ],
+  "secondary_bath_functions": [
+    "shower_zone_1500x1000",
+    "wc_body_700x400",
+    "sink_600x500",
+    "no_bathtub"
+  ],
+  "living_functions": [
+    "sofa_2200x900",
+    "tv_cabinet_1800x350",
+    "coffee_table_900x550",
+    "dining_sideboard_900x400"
+  ],
+  "bedroom_storage_functions": [
+    "master_long_clothes_folded_bedding",
+    "elderly_full_height_wardrobe",
+    "child_wardrobe"
+  ],
+  "window_functions": [
+    "master_dressing_reading_flexible",
+    "child_desk_bookcase_study_storage"
+  ],
+  "service_wall_finish_before_door_swing": true,
+  "position_3_clear": true,
+  "status": "A7 function and dimension review; original wall geometry preserved; effect images deferred"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "scheme-a12-image2-v1",
+  "source": "A11 Blender camera views + confirmed A7 layout",
+  "results": [
+    {
+      "key": "child",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/child_image2.png",
+      "bytes": 2289829,
+      "size": "1536x1024",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "elder",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/elder_image2.png",
+      "bytes": 2459488,
+      "size": "1536x1024",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "kitchen",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/kitchen_image2.png",
+      "bytes": 2155573,
+      "size": "1536x1024",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "living",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/living_image2.png",
+      "bytes": 2455461,
+      "size": "1536x1024",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "main_bath",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/main_bath_image2.png",
+      "bytes": 2283087,
+      "size": "1536x1024",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "master",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/master_image2.png",
+      "bytes": 2530856,
+      "size": "1536x1024",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "secondary_bath",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/secondary_bath_image2.png",
+      "bytes": 2344306,
+      "size": "1536x1024",
+      "model": "gpt-image-2"
+    }
+  ]
+}

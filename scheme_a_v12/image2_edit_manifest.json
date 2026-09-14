@@ -1,0 +1,62 @@
+{
+  "schema": "scheme-a12-image2-edit-v1",
+  "source": "A11 Blender renders from FreeCAD geometry",
+  "results": [
+    {
+      "key": "child",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/child_image2_edit.png",
+      "bytes": 2163890,
+      "source": "/Users/xiwei/interior_design/scheme_a_v11/renders/child.png",
+      "mode": "image-edit",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "elder",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/elder_image2_edit.png",
+      "bytes": 2114649,
+      "source": "/Users/xiwei/interior_design/scheme_a_v11/renders/elder.png",
+      "mode": "image-edit",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "kitchen",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/kitchen_image2_edit.png",
+      "bytes": 1738156,
+      "source": "/Users/xiwei/interior_design/scheme_a_v11/renders/kitchen.png",
+      "mode": "image-edit",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "living",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/living_image2_edit.png",
+      "bytes": 2015884,
+      "source": "/Users/xiwei/interior_design/scheme_a_v11/renders/living.png",
+      "mode": "image-edit",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "main_bath",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/main_bath_image2_edit.png",
+      "bytes": 1819460,
+      "source": "/Users/xiwei/interior_design/scheme_a_v11/renders/main_bath.png",
+      "mode": "image-edit",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "master",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/master_image2_edit.png",
+      "bytes": 1711607,
+      "source": "/Users/xiwei/interior_design/scheme_a_v11/renders/master.png",
+      "mode": "image-edit",
+      "model": "gpt-image-2"
+    },
+    {
+      "key": "secondary_bath",
+      "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/secondary_bath_image2_edit.png",
+      "bytes": 1966439,
+      "source": "/Users/xiwei/interior_design/scheme_a_v11/renders/secondary_bath.png",
+      "mode": "image-edit",
+      "model": "gpt-image-2"
+    }
+  ]
+}

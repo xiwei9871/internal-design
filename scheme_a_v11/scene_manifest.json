@@ -1,0 +1,121 @@
+{
+  "schema": "scheme-a11-cad-render-v1",
+  "source_freecad": "/Users/xiwei/interior_design/scheme_a_v11/cad/方案A11_CAD底模.FCStd",
+  "source_obj_groups": {
+    "walls": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_walls.obj",
+    "floors": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_floors.obj",
+    "openings": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_openings.obj",
+    "doors": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_doors.obj",
+    "furniture": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_furniture.obj",
+    "fixtures": "/Users/xiwei/interior_design/scheme_a_v11/cad/scheme_a11_fixtures.obj"
+  },
+  "source_scale_mm_per_pixel": 9.82,
+  "origin_source_px": [
+    200.0,
+    1337.0
+  ],
+  "blender_file": "/Users/xiwei/interior_design/scheme_a_v11/方案A11_CAD同模渲染.blend",
+  "camera_anchors": {
+    "living": {
+      "camera_px": [
+        1080,
+        760
+      ],
+      "target_px": [
+        930,
+        1130
+      ],
+      "height_mm": 1550,
+      "lens_mm": 22,
+      "label": "餐客厅·L"
+    },
+    "kitchen": {
+      "camera_px": [
+        735,
+        650
+      ],
+      "target_px": [
+        620,
+        250
+      ],
+      "height_mm": 1480,
+      "lens_mm": 25,
+      "label": "厨房服务墙·K"
+    },
+    "master": {
+      "camera_px": [
+        730,
+        1240
+      ],
+      "target_px": [
+        570,
+        980
+      ],
+      "height_mm": 1550,
+      "lens_mm": 20,
+      "label": "主卧·M"
+    },
+    "child": {
+      "camera_px": [
+        1168,
+        1080
+      ],
+      "target_px": [
+        1320,
+        1000
+      ],
+      "height_mm": 1480,
+      "lens_mm": 20,
+      "label": "儿童房·C"
+    },
+    "elder": {
+      "camera_px": [
+        810,
+        620
+      ],
+      "target_px": [
+        980,
+        480
+      ],
+      "height_mm": 1500,
+      "lens_mm": 22,
+      "label": "老人房·E"
+    },
+    "main_bath": {
+      "camera_px": [
+        395,
+        835
+      ],
+      "target_px": [
+        310,
+        690
+      ],
+      "height_mm": 1420,
+      "lens_mm": 20,
+      "label": "主卫·B"
+    },
+    "secondary_bath": {
+      "camera_px": [
+        570,
+        625
+      ],
+      "target_px": [
+        500,
+        470
+      ],
+      "height_mm": 1420,
+      "lens_mm": 20,
+      "label": "次卫·S"
+    }
+  },
+  "renders": [
+    "/Users/xiwei/interior_design/scheme_a_v11/renders/child.png",
+    "/Users/xiwei/interior_design/scheme_a_v11/renders/elder.png",
+    "/Users/xiwei/interior_design/scheme_a_v11/renders/kitchen.png",
+    "/Users/xiwei/interior_design/scheme_a_v11/renders/living.png",
+    "/Users/xiwei/interior_design/scheme_a_v11/renders/main_bath.png",
+    "/Users/xiwei/interior_design/scheme_a_v11/renders/master.png",
+    "/Users/xiwei/interior_design/scheme_a_v11/renders/secondary_bath.png"
+  ],
+  "status": "same CAD/OBJ geometry rendered in Blender; field measurement and product SKU verification pending"
+}

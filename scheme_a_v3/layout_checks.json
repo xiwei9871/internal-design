@@ -1,0 +1,19 @@
+{
+  "bath_width_m": 1.49,
+  "bath_width_change_m": 0.0,
+  "hall_clearance_m": 1.1,
+  "bath_door_width_m": 0.75,
+  "washer_dryer_footprint_m": [
+    0.59,
+    0.7
+  ],
+  "kitchen_width_m": 3.57,
+  "kitchen_depth_m": 1.5,
+  "kitchen_opening_m": 1.72,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "preserved_exterior": true,
+  "preserved_walls": true,
+  "preserved_bathroom_door": true,
+  "status": "Route-preserved concept; original wall and door geometry checked"
+}

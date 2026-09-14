@@ -1,0 +1,50 @@
+{
+  "bath_width_m": 1.49,
+  "bath_width_change_m": 0.0,
+  "hall_clearance_m": 1.1,
+  "bath_door_width_m": 0.75,
+  "washer_dryer_footprint_m": [
+    0.62,
+    0.72
+  ],
+  "kitchen_width_m": 3.57,
+  "kitchen_depth_m": 1.5,
+  "kitchen_opening_m": 1.72,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "preserved_exterior": true,
+  "preserved_walls": true,
+  "original_bathroom_door_opening_preserved": true,
+  "bathroom_door_type": "pocket_sliding",
+  "service_wall_modules": [
+    "thin_fridge_<=840w_<=600d",
+    "microwave_food_cabinet",
+    "washer_dryer_combo"
+  ],
+  "fridge_basis_mm": {
+    "body_width_max": 840,
+    "body_depth_max": 600,
+    "body_height_max": 1950,
+    "wall_module_width": 900,
+    "wall_module_depth": 650
+  },
+  "fridge_door_swing_checked": true,
+  "main_bath_functions": [
+    "shower",
+    "wc",
+    "sink",
+    "mirror_cabinet"
+  ],
+  "bedroom_storage_functions": [
+    "master_long_clothes_folded_bedding",
+    "elderly_full_height_wardrobe",
+    "child_wardrobe"
+  ],
+  "window_functions": [
+    "master_dressing_reading",
+    "child_study"
+  ],
+  "service_wall_finish_before_door_swing": true,
+  "position_3_clear": true,
+  "status": "A6 thin refrigerator concept; original wall geometry preserved; pocket door shown schematically"
+}

@@ -1,0 +1,37 @@
+{
+  "usable_points_verified": {
+    "kitchen corridor": [
+      709,
+      456
+    ],
+    "bath approach": [
+      685,
+      596
+    ],
+    "central circulation": [
+      954,
+      712
+    ],
+    "west wardrobe aisle": [
+      341,
+      952
+    ],
+    "master bay": [
+      600,
+      1220
+    ],
+    "living bay": [
+      927,
+      1190
+    ],
+    "bedroom2 bay": [
+      1300,
+      1240
+    ]
+  },
+  "wall_polygons": 23,
+  "windows_or_sliders": 12,
+  "furniture_objects": 37,
+  "pixel_scale_m": 0.00982,
+  "dwg_used_for_layout": false
+}
