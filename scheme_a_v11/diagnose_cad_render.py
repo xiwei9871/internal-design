@@ -2,7 +2,7 @@ import bpy
 from mathutils import Vector
 
 scene = bpy.context.scene
-scene.render.filepath = "/Users/xiwei/stock_research/artifacts/interior_design/scheme_a_v11/diagnostic_top.png"
+scene.render.filepath = "/Users/xiwei/interior_design/scheme_a_v11/diagnostic_top.png"
 scene.render.resolution_x = 1000
 scene.render.resolution_y = 1000
 scene.render.resolution_percentage = 100
