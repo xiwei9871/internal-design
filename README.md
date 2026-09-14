@@ -56,6 +56,10 @@ cd scheme_a_v12 && python3 make_preview.py
 | `architectural-dxf-drawing` | ezdxf 图层/线型/图纸序列——施工图阶段用 |
 | `interior-construction-docs` | 施工图清单与尺寸纪律——效果图确认后启用 |
 
+## 当前状态
+
+**效果图阶段已收口（2026-09-14）**：A12 七张效果图业主确认通过，见 `scheme_a_v12/viewpoint_layout_audit_v2_edit.md` 收口节。
+
 ## 下一步
 
-**施工图阶段**：等 A12 效果图全部确认后，从 FCStd 底模经 ezdxf 出 DXF。图纸清单与门禁见 `interior-construction-docs` skill；底模残留问题已清零（圆凳柱体已删、浴缸确认保留、衣帽区定哑光木门）。
+**施工图阶段**：从 FCStd 底模经 ezdxf 出 DXF。图纸清单与门禁见 `interior-construction-docs` skill，图层/图框约定见 `architectural-dxf-drawing` skill。开工前需与业主确认：拆改范围、电气点位、天花/风口、柜体展开深度等新增信息（底模不含机电点位）。
