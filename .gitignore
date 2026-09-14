@@ -4,3 +4,4 @@ __pycache__/
 *.FCBak
 .*.response.json
 .*.edit-response.json
+.venv/
