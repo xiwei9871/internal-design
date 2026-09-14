@@ -45,7 +45,7 @@
     {
       "key": "master",
       "output": "/Users/xiwei/interior_design/scheme_a_v12/renders/master_image2_edit.png",
-      "bytes": 1711607,
+      "bytes": 2202846,
       "source": "/Users/xiwei/interior_design/scheme_a_v11/renders/master.png",
       "mode": "image-edit",
       "model": "gpt-image-2"

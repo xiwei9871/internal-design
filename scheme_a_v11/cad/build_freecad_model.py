@@ -112,10 +112,12 @@ def add_window(doc, group, name, label, segment):
 
 def add_door(doc, group, name, label, door):
     # A lightweight open leaf preserves the documented hinge and opening direction.
+    # Leaf thickness is ~50mm (5px), not the old 35px/344mm min-clamp which
+    # rendered as a freestanding column in the room.
     hx, hy = door["hinge"]
     lx, ly = door["leaf"]
     x, y = min(hx, lx), min(hy, ly)
-    w, h = max(abs(hx - lx), 35), max(abs(hy - ly), 35)
+    w, h = max(abs(hx - lx), 5), max(abs(hy - ly), 5)
     rect = [x, y, w, h]
     return add_box(doc, group, name, label, rect, 2100, (0.66, 0.49, 0.29), "A7 door hinge/leaf", props={"Hinge": f"{hx:g},{hy:g} px", "Leaf": f"{lx:g},{ly:g} px"})
 

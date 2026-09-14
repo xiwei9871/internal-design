@@ -215,7 +215,10 @@ def main():
         # complete fridge/microwave/washer stack on the left side of the view,
         # with the kitchen worktop beyond it.
         "kitchen": ((735, 650), (620, 250), 1480, 25, "厨房服务墙·K"),
-        "master": ((730, 1240), (570, 980), 1550, 20, "主卧·M"),
+        # M stands in the clear floor strip between the window-side chair and
+        # the east window-side cabinet; the previous anchor sat inside the
+        # cabinet footprint so it filled half the frame.
+        "master": ((650, 1170), (570, 980), 1550, 20, "主卧·M"),
         "child": ((1168, 1080), (1320, 1000), 1480, 20, "儿童房·C"),
         "elder": ((810, 620), (980, 480), 1500, 22, "老人房·E"),
         "main_bath": ((395, 835), (310, 690), 1420, 20, "主卫·B"),
