@@ -45,6 +45,17 @@ cd scheme_a_v12 && python3 make_preview.py
 - 主卫：1500×700 浴缸（正式配置）+ 横向玻璃干湿分离；次卫：内嵌推拉门、无浴缸
 - 坐便器：一体式，水箱贴左墙、盆体垂直墙体向 +X
 
+## 配套 Skills（`~/.agents/skills/`，Codex 与 Devin 共用）
+
+| Skill | 阶段 |
+|---|---|
+| `floorplan-reconstruction` | PNG/DWG → 标定几何 JSON（已完成，见 scheme_a_v7） |
+| `space-planning` | 功能建议→尺寸查证→多方案（v1–v7 已走完） |
+| `residential-interior-design` | 风格/材质/柜体/设备判断（v8–v9） |
+| `architectural-render-qc` | 锁定相机 + 底图核对 + image-edit 验收（v10–v12 踩坑全集） |
+| `architectural-dxf-drawing` | ezdxf 图层/线型/图纸序列——施工图阶段用 |
+| `interior-construction-docs` | 施工图清单与尺寸纪律——效果图确认后启用 |
+
 ## 下一步
 
-施工图阶段（拆除/新建/平面/天花/点位/立面），从 FCStd 底模经 ezdxf 出 DXF——图纸体系待建。
+**施工图阶段**：等 A12 效果图全部确认后，从 FCStd 底模经 ezdxf 出 DXF。图纸清单与门禁见 `interior-construction-docs` skill；底模残留问题已清零（圆凳柱体已删、浴缸确认保留、衣帽区定哑光木门）。
