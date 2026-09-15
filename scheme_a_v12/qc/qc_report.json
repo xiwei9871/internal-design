@@ -1,0 +1,51 @@
+[
+  {
+    "key": "living",
+    "recall": 0.456,
+    "chamfer_px": 27.19,
+    "base_edges": 45972,
+    "edit_edges": 91194
+  },
+  {
+    "key": "kitchen",
+    "recall": 0.574,
+    "chamfer_px": 24.43,
+    "base_edges": 68443,
+    "edit_edges": 100814
+  },
+  {
+    "key": "master",
+    "recall": 0.34,
+    "chamfer_px": 35.4,
+    "base_edges": 54298,
+    "edit_edges": 81116
+  },
+  {
+    "key": "child",
+    "recall": 0.213,
+    "chamfer_px": 41.58,
+    "base_edges": 42942,
+    "edit_edges": 54228
+  },
+  {
+    "key": "elder",
+    "recall": 0.237,
+    "chamfer_px": 42.96,
+    "base_edges": 44248,
+    "edit_edges": 47255
+  },
+  {
+    "key": "main_bath",
+    "recall": 0.411,
+    "chamfer_px": 37.3,
+    "base_edges": 50342,
+    "edit_edges": 80130
+  },
+  {
+    "key": "secondary_bath",
+    "recall": 0.399,
+    "chamfer_px": 20.43,
+    "base_edges": 69773,
+    "edit_edges": 95868
+  }
+]
