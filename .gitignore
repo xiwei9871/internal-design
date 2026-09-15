@@ -5,3 +5,4 @@ __pycache__/
 .*.response.json
 .*.edit-response.json
 .venv/
+walkthrough_frames/
