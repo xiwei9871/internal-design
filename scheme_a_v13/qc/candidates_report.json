@@ -1,0 +1,230 @@
+{
+  "living": {
+    "best": {
+      "key": "living_1",
+      "recall": 0.705,
+      "chamfer_px": 11.29,
+      "base_edges": 45963,
+      "edit_edges": 84240,
+      "file": "living_1.png"
+    },
+    "all": [
+      {
+        "key": "living_0",
+        "recall": 0.581,
+        "chamfer_px": 13.95,
+        "base_edges": 45963,
+        "edit_edges": 84377,
+        "file": "living_0.png"
+      },
+      {
+        "key": "living_1",
+        "recall": 0.705,
+        "chamfer_px": 11.29,
+        "base_edges": 45963,
+        "edit_edges": 84240,
+        "file": "living_1.png"
+      }
+    ]
+  },
+  "kitchen": {
+    "best": {
+      "key": "kitchen_1",
+      "recall": 0.609,
+      "chamfer_px": 9.56,
+      "base_edges": 72466,
+      "edit_edges": 97306,
+      "file": "kitchen_1.png"
+    },
+    "all": [
+      {
+        "key": "kitchen_0",
+        "recall": 0.629,
+        "chamfer_px": 10.17,
+        "base_edges": 72320,
+        "edit_edges": 96222,
+        "file": "kitchen_0.png"
+      },
+      {
+        "key": "kitchen_1",
+        "recall": 0.609,
+        "chamfer_px": 9.56,
+        "base_edges": 72466,
+        "edit_edges": 97306,
+        "file": "kitchen_1.png"
+      }
+    ]
+  },
+  "secondary_bath": {
+    "best": {
+      "key": "secondary_bath_0",
+      "recall": 0.618,
+      "chamfer_px": 10.91,
+      "base_edges": 24825,
+      "edit_edges": 86777,
+      "file": "secondary_bath_0.png"
+    },
+    "all": [
+      {
+        "key": "secondary_bath_0",
+        "recall": 0.618,
+        "chamfer_px": 10.91,
+        "base_edges": 24825,
+        "edit_edges": 86777,
+        "file": "secondary_bath_0.png"
+      },
+      {
+        "key": "secondary_bath_1",
+        "recall": 0.509,
+        "chamfer_px": 14.98,
+        "base_edges": 24280,
+        "edit_edges": 90226,
+        "file": "secondary_bath_1.png"
+      }
+    ]
+  },
+  "master": {
+    "best": {
+      "key": "master_2",
+      "recall": 0.356,
+      "chamfer_px": 31.72,
+      "base_edges": 41699,
+      "edit_edges": 52369,
+      "file": "master_2.png"
+    },
+    "all": [
+      {
+        "key": "master_0",
+        "recall": 0.32,
+        "chamfer_px": 23.99,
+        "base_edges": 41699,
+        "edit_edges": 65980,
+        "file": "master_0.png"
+      },
+      {
+        "key": "master_1",
+        "recall": 0.327,
+        "chamfer_px": 19.54,
+        "base_edges": 41699,
+        "edit_edges": 75925,
+        "file": "master_1.png"
+      },
+      {
+        "key": "master_2",
+        "recall": 0.356,
+        "chamfer_px": 31.72,
+        "base_edges": 41699,
+        "edit_edges": 52369,
+        "file": "master_2.png"
+      }
+    ]
+  },
+  "child": {
+    "best": {
+      "key": "child_0",
+      "recall": 0.564,
+      "chamfer_px": 11.81,
+      "base_edges": 15801,
+      "edit_edges": 63603,
+      "file": "child_0.png"
+    },
+    "all": [
+      {
+        "key": "child_0",
+        "recall": 0.564,
+        "chamfer_px": 11.81,
+        "base_edges": 15801,
+        "edit_edges": 63603,
+        "file": "child_0.png"
+      },
+      {
+        "key": "child_1",
+        "recall": 0.312,
+        "chamfer_px": 25.42,
+        "base_edges": 15801,
+        "edit_edges": 87022,
+        "file": "child_1.png"
+      },
+      {
+        "key": "child_2",
+        "recall": 0.463,
+        "chamfer_px": 19.05,
+        "base_edges": 15801,
+        "edit_edges": 65154,
+        "file": "child_2.png"
+      }
+    ]
+  },
+  "elder": {
+    "best": {
+      "key": "elder_0",
+      "recall": 0.539,
+      "chamfer_px": 23.84,
+      "base_edges": 32528,
+      "edit_edges": 55355,
+      "file": "elder_0.png"
+    },
+    "all": [
+      {
+        "key": "elder_0",
+        "recall": 0.539,
+        "chamfer_px": 23.84,
+        "base_edges": 32528,
+        "edit_edges": 55355,
+        "file": "elder_0.png"
+      },
+      {
+        "key": "elder_1",
+        "recall": 0.348,
+        "chamfer_px": 43.71,
+        "base_edges": 32528,
+        "edit_edges": 81152,
+        "file": "elder_1.png"
+      },
+      {
+        "key": "elder_2",
+        "recall": 0.492,
+        "chamfer_px": 42.75,
+        "base_edges": 32528,
+        "edit_edges": 77660,
+        "file": "elder_2.png"
+      }
+    ]
+  },
+  "main_bath": {
+    "best": {
+      "key": "main_bath_1",
+      "recall": 0.658,
+      "chamfer_px": 9.0,
+      "base_edges": 19885,
+      "edit_edges": 82413,
+      "file": "main_bath_1.png"
+    },
+    "all": [
+      {
+        "key": "main_bath_0",
+        "recall": 0.511,
+        "chamfer_px": 9.0,
+        "base_edges": 19885,
+        "edit_edges": 83607,
+        "file": "main_bath_0.png"
+      },
+      {
+        "key": "main_bath_1",
+        "recall": 0.658,
+        "chamfer_px": 9.0,
+        "base_edges": 19885,
+        "edit_edges": 82413,
+        "file": "main_bath_1.png"
+      },
+      {
+        "key": "main_bath_2",
+        "recall": 0.402,
+        "chamfer_px": 15.73,
+        "base_edges": 19885,
+        "edit_edges": 84827,
+        "file": "main_bath_2.png"
+      }
+    ]
+  }
+}

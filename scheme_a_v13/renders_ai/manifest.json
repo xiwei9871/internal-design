@@ -1,0 +1,44 @@
+[
+  {
+    "key": "child",
+    "output": "/Users/xiwei/interior_design/scheme_a_v13/renders_ai/child_ai.png",
+    "bytes": 2077641,
+    "source": "/Users/xiwei/interior_design/scheme_a_v13/realfurn_child.png"
+  },
+  {
+    "key": "elder",
+    "output": "/Users/xiwei/interior_design/scheme_a_v13/renders_ai/elder_ai.png",
+    "bytes": 2349798,
+    "source": "/Users/xiwei/interior_design/scheme_a_v13/realfurn_elder.png"
+  },
+  {
+    "key": "kitchen",
+    "output": "/Users/xiwei/interior_design/scheme_a_v13/renders_ai/kitchen_ai.png",
+    "bytes": 1746886,
+    "source": "/Users/xiwei/interior_design/scheme_a_v13/realfurn_kitchen.png"
+  },
+  {
+    "key": "living",
+    "output": "/Users/xiwei/interior_design/scheme_a_v13/renders_ai/living_ai.png",
+    "bytes": 1836711,
+    "source": "/Users/xiwei/interior_design/scheme_a_v13/realfurn_living.png"
+  },
+  {
+    "key": "main_bath",
+    "output": "/Users/xiwei/interior_design/scheme_a_v13/renders_ai/main_bath_ai.png",
+    "bytes": 1901502,
+    "source": "/Users/xiwei/interior_design/scheme_a_v13/realfurn_main_bath.png"
+  },
+  {
+    "key": "master",
+    "output": "/Users/xiwei/interior_design/scheme_a_v13/renders_ai/master_ai.png",
+    "bytes": 2072011,
+    "source": "/Users/xiwei/interior_design/scheme_a_v13/realfurn_master.png"
+  },
+  {
+    "key": "secondary_bath",
+    "output": "/Users/xiwei/interior_design/scheme_a_v13/renders_ai/secondary_bath_ai.png",
+    "bytes": 1948987,
+    "source": "/Users/xiwei/interior_design/scheme_a_v13/realfurn_secondary_bath.png"
+  }
+]
