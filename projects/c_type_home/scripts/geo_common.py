@@ -11,9 +11,12 @@ DATA = PROJECT_ROOT / "data" / "geometry.json"
 DIMENSIONS = PROJECT_ROOT / "data" / "dimensions.json"
 SOURCE_IMG = PROJECT_ROOT / "source" / "source_plan_original.jpg"
 
-MM_PER_PX_X = 37.045
-MM_PER_PX_Y = 36.49
-ORIGIN_PX = (86.5, 684.5)
+# Calibration on the high-res owner source (1279x1986):
+#   X: bottom outer chain datum px168.5 -> 0, px1020.5 -> 16300
+#   Y: right chain py1328 -> 0, py643 -> 12900
+MM_PER_PX_X = 16300 / (1020.5 - 168.5)   # 19.131
+MM_PER_PX_Y = 12900 / (1328.0 - 643.0)   # 18.832
+ORIGIN_PX = (168.5, 1328.0)
 
 
 def load_geometry():

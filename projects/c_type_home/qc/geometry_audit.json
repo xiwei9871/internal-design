@@ -1,14 +1,552 @@
 {
+  "library": "shapely",
   "object_counts": {
-    "walls": 37,
+    "walls": 38,
     "columns": 3,
-    "doors": 12,
+    "doors": 13,
     "windows": 11,
     "spaces": 13,
     "ac_bays": 6
   },
+  "polygons_checked": 60,
   "duplicate_ids": [],
   "orphan_openings": [],
+  "wall_overlaps": [
+    {
+      "pair": [
+        "W-EXT-W",
+        "W-EXT-N-LV"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-EXT-W",
+        "W-BALC-N"
+      ],
+      "overlap_area_mm2": 32000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-EXT-S",
+        "W-INT-X7900-L"
+      ],
+      "overlap_area_mm2": 30000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-EXT-S",
+        "W-INT-X11500"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-EXT-S-W2",
+        "W-INT-X5800"
+      ],
+      "overlap_area_mm2": 30000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-EXT-E1",
+        "W-INT-Y4500-bc"
+      ],
+      "overlap_area_mm2": 10000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-EXT-E2",
+        "W-EXT-NE2"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-EXT-E2",
+        "W-INT-Y4500-bc"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-EXT-N-LV",
+        "W-INT-X7900-U"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-EXT-N-BAL",
+        "W-INT-X13000"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-BALC-W",
+        "W-BALC-S"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-BALC-S",
+        "W-INT-X5800"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-BALC-N",
+        "W-INT-X5800"
+      ],
+      "overlap_area_mm2": 16000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X5800",
+        "W-INT-Y4500-a"
+      ],
+      "overlap_area_mm2": 50000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X7900-L",
+        "W-INT-Y4500-a"
+      ],
+      "overlap_area_mm2": 44000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X7900-U",
+        "W-INT-Y4500-a"
+      ],
+      "overlap_area_mm2": 3000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X9800",
+        "W-INT-WC-S"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X9800",
+        "W-INT-STD-S"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X9800",
+        "W-INT-Y10800"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X11500",
+        "W-INT-COR-N-STUB"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X11500",
+        "W-INT-Y4500-bc"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X13000",
+        "W-INT-STD-S"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X13000",
+        "W-INT-Y10800"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X13000",
+        "W-INT-Y10800-EXT"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-X13000",
+        "W-INT-Y4500-bc"
+      ],
+      "overlap_area_mm2": 4000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-Y4500-a",
+        "W-INT-DRY-STUB"
+      ],
+      "overlap_area_mm2": 22000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-CLK-E",
+        "W-INT-Y4500-b"
+      ],
+      "overlap_area_mm2": 15000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "pair": [
+        "W-INT-CLK-W",
+        "W-INT-Y4500-b"
+      ],
+      "overlap_area_mm2": 15000.0,
+      "same_axis": false,
+      "suspect": false
+    }
+  ],
+  "junction_overlaps_ok": [
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-W",
+        "W-EXT-N-LV"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-W",
+        "W-BALC-N"
+      ],
+      "overlap_area_mm2": 32000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-S",
+        "W-INT-X7900-L"
+      ],
+      "overlap_area_mm2": 30000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-S",
+        "W-INT-X11500"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-S-W2",
+        "W-INT-X5800"
+      ],
+      "overlap_area_mm2": 30000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-E1",
+        "W-INT-Y4500-bc"
+      ],
+      "overlap_area_mm2": 10000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-E2",
+        "W-EXT-NE2"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-E2",
+        "W-INT-Y4500-bc"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-N-LV",
+        "W-INT-X7900-U"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-EXT-N-BAL",
+        "W-INT-X13000"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-BALC-W",
+        "W-BALC-S"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-BALC-S",
+        "W-INT-X5800"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-BALC-N",
+        "W-INT-X5800"
+      ],
+      "overlap_area_mm2": 16000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X5800",
+        "W-INT-Y4500-a"
+      ],
+      "overlap_area_mm2": 50000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X7900-L",
+        "W-INT-Y4500-a"
+      ],
+      "overlap_area_mm2": 44000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X7900-U",
+        "W-INT-Y4500-a"
+      ],
+      "overlap_area_mm2": 3000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X9800",
+        "W-INT-WC-S"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X9800",
+        "W-INT-STD-S"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X9800",
+        "W-INT-Y10800"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X11500",
+        "W-INT-COR-N-STUB"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X11500",
+        "W-INT-Y4500-bc"
+      ],
+      "overlap_area_mm2": 40000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X13000",
+        "W-INT-STD-S"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X13000",
+        "W-INT-Y10800"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X13000",
+        "W-INT-Y10800-EXT"
+      ],
+      "overlap_area_mm2": 20000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-X13000",
+        "W-INT-Y4500-bc"
+      ],
+      "overlap_area_mm2": 4000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-Y4500-a",
+        "W-INT-DRY-STUB"
+      ],
+      "overlap_area_mm2": 22000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-CLK-E",
+        "W-INT-Y4500-b"
+      ],
+      "overlap_area_mm2": 15000.0,
+      "same_axis": false,
+      "suspect": false
+    },
+    {
+      "kind": "wall_overlap",
+      "pair": [
+        "W-INT-CLK-W",
+        "W-INT-Y4500-b"
+      ],
+      "overlap_area_mm2": 15000.0,
+      "same_axis": false,
+      "suspect": false
+    }
+  ],
   "low_confidence_objects": [
     "W-EXT-S-W1",
     "W-EXT-S-W2",
@@ -36,7 +574,6 @@
     "WIN-N2",
     "WIN-N3",
     "WIN-E3",
-    "WIN-S3",
     "WIN-W1",
     "WIN-BALC-S",
     "R-DINING",
@@ -51,6 +588,6 @@
     "AC-6"
   ],
   "structural_claims": [],
-  "issues": [],
+  "problems": [],
   "pass": true
 }

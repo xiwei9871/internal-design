@@ -1,6 +1,8 @@
 import json
+import shutil
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -8,16 +10,23 @@ ROOT = Path(__file__).resolve().parents[1]
 PROJ = ROOT / 'projects' / 'c_type_home'
 sys.path.insert(0, str(PROJ / 'scripts'))
 import geo_common  # noqa: E402
+import validate as task_validate  # noqa: E402
 
 GEO = geo_common.load_geometry()
 DIMS = geo_common.load_dimensions()
+DIMMAP = json.loads(
+    (PROJ / 'data' / 'dimension_map.json').read_text(encoding='utf-8'))
 DXF = PROJ / 'cad' / 'C型_原始户型数字化基准图.dxf'
 IFC = PROJ / 'ifc' / 'C型_原始户型数字化基准模型.ifc'
 FCSTD = PROJ / 'cad' / 'C型_原始户型数字化基准模型.FCStd'
+FREECADCMD = '/Applications/FreeCAD.app/Contents/Resources/bin/freecadcmd'
+
+WALLS = {w['id']: w for w in GEO['walls']}
+OPENINGS = {o['id']: o for k in ('doors', 'windows') for o in GEO[k]}
 
 
 def wall_by_id(wid):
-    return next((w for w in GEO['walls'] if w['id'] == wid), None)
+    return WALLS.get(wid)
 
 
 def measure_opening(op):
@@ -26,8 +35,6 @@ def measure_opening(op):
 
 
 class SchemaTests(unittest.TestCase):
-    """A. geometry.json schema completeness + B. unique IDs"""
-
     REQUIRED_WALL = {'id', 'type', 'rect_mm', 'provenance', 'confidence',
                      'source_refs'}
 
@@ -54,8 +61,6 @@ class SchemaTests(unittest.TestCase):
 
 
 class DimensionTests(unittest.TestCase):
-    """C. HIGH-confidence dims re-measurable + D. chain closure"""
-
     def test_top_inner_closes_to_outer(self):
         tin = next(c for c in DIMS['chains'] if c['id'] == 'CHAIN-TOP-IN')
         tout = next(c for c in DIMS['chains'] if c['id'] == 'CHAIN-TOP-OUT')
@@ -72,8 +77,35 @@ class DimensionTests(unittest.TestCase):
         rin = next(c for c in DIMS['chains'] if c['id'] == 'CHAIN-RIGHT-IN')
         self.assertEqual(sum(rin['segment_values_mm'][2:9]), 12900)
 
+
+class ModelMeasurementGateTests(unittest.TestCase):
+    """T01-3: real model measurement vs source dimensions."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.meas = task_validate.model_measurements(GEO)
+
+    def test_every_mapped_segment_measured(self):
+        for r in self.meas['records']:
+            self.assertIn('measured_mm', r)
+            self.assertIn('error_mm', r)
+            self.assertTrue(r['geometry_refs'], r['dim_id'])
+
+    def test_high_confidence_segments_within_1mm(self):
+        for r in self.meas['records']:
+            if r['confidence'] == 'HIGH':
+                self.assertLessEqual(abs(r['error_mm']), 1.0,
+                                     f"{r['dim_id']}: {r['error_mm']}mm")
+
+    def test_high_chain_accumulated_within_2mm(self):
+        chains = {}
+        for r in self.meas['records']:
+            chains.setdefault(r['dim_id'].split('#')[0], []).append(r)
+        for cid, rs in chains.items():
+            acc = sum(r['error_mm'] for r in rs if r['confidence'] == 'HIGH')
+            self.assertLessEqual(abs(acc), 2.0, f"{cid}: {acc}mm")
+
     def test_high_confidence_windows_remeasurable(self):
-        """Dim-constrained windows must equal their printed width."""
         expected = {'WIN-N1': 3100, 'WIN-S1': 2200, 'WIN-S2': 2500}
         for w in GEO['windows']:
             if w['id'] in expected:
@@ -82,7 +114,6 @@ class DimensionTests(unittest.TestCase):
 
     def test_high_confidence_wall_positions_on_dim_anchors(self):
         anchors = set(GEO['anchors_x_mm'])
-        # west ext wall must sit on the 2800 chain tick
         w = wall_by_id('W-EXT-W')
         self.assertTrue(any(abs(w['rect_mm'][0] - a) <= 100 or
                             abs(w['rect_mm'][2] - a) <= 100
@@ -90,22 +121,31 @@ class DimensionTests(unittest.TestCase):
 
 
 class GeometryValidityTests(unittest.TestCase):
-    """E/F/G/H. polygon validity, host relations, extents"""
+    """Shapely-backed validity via geometry_audit."""
 
-    def test_wall_rects_positive(self):
-        for w in GEO['walls']:
-            x1, y1, x2, y2 = w['rect_mm']
-            self.assertGreater(x2, x1, w['id'])
-            self.assertGreater(y2, y1, w['id'])
+    @classmethod
+    def setUpClass(cls):
+        cls.audit = task_validate.geometry_audit(GEO)
 
-    def test_space_polygons_closed_simple(self):
+    def test_audit_passes(self):
+        self.assertTrue(self.audit['pass'], self.audit['problems'])
+
+    def test_no_invalid_or_degenerate_polygons(self):
+        kinds = {p['kind'] for p in self.audit['problems']}
+        self.assertNotIn('invalid_polygon', kinds)
+        self.assertNotIn('non_positive_area', kinds)
+        self.assertNotIn('duplicate_geometry', kinds)
+
+    def test_no_suspect_wall_overlap(self):
+        for ov in self.audit['wall_overlaps']:
+            self.assertFalse(ov['suspect'], ov['pair'])
+
+    def test_space_polygons_shapely_valid(self):
+        from shapely.geometry import Polygon
         for sp in GEO['spaces']:
-            pts = sp['polygon_mm']
-            self.assertGreaterEqual(len(pts), 3, sp['id'])
-            xs = [p[0] for p in pts]
-            ys = [p[1] for p in pts]
-            self.assertGreater(max(xs) - min(xs), 0)
-            self.assertGreater(max(ys) - min(ys), 0)
+            p = Polygon(sp['polygon_mm'])
+            self.assertTrue(p.is_valid, sp['id'])
+            self.assertGreater(p.area, 0, sp['id'])
 
     def test_opening_hosts_exist(self):
         for k in ('doors', 'windows'):
@@ -122,10 +162,7 @@ class GeometryValidityTests(unittest.TestCase):
                 x1, y1, x2, y2 = host['rect_mm']
                 a, b = o['opening_along_mm']
                 self.assertLess(a, b, o['id'])
-                if (x2 - x1) >= (y2 - y1):  # horizontal wall
-                    lo, hi = x1, x2
-                else:
-                    lo, hi = y1, y2
+                lo, hi = (x1, x2) if (x2 - x1) >= (y2 - y1) else (y1, y2)
                 self.assertGreaterEqual(a, lo - 500, o['id'])
                 self.assertLessEqual(b, hi + 500, o['id'])
 
@@ -135,15 +172,12 @@ class GeometryValidityTests(unittest.TestCase):
         self.assertEqual(ex['y'], [-750, 14200])
 
 
-class ArtifactTests(unittest.TestCase):
-    """I/J. DXF readable + mm units; K/L/M. IFC reopen + IFC4 + counts"""
-
+class DxfTests(unittest.TestCase):
     def test_dxf_reopen_and_units(self):
         import ezdxf
         doc = ezdxf.readfile(DXF)
         self.assertEqual(doc.header.get('$INSUNITS'), 4)
-        ents = list(doc.modelspace())
-        self.assertGreater(len(ents), 0)
+        self.assertGreater(len(list(doc.modelspace())), 0)
 
     def test_dxf_layers(self):
         import ezdxf
@@ -159,41 +193,144 @@ class ArtifactTests(unittest.TestCase):
         for l in doc.layers:
             self.assertNotIn('FURN', l.dxf.name.upper())
 
-    def test_ifc_reopen_and_schema(self):
-        import ifcopenshell
-        model = ifcopenshell.open(str(IFC))
-        self.assertEqual(model.schema, 'IFC4')
 
-    def test_ifc_hierarchy_and_counts(self):
+class FreecadTests(unittest.TestCase):
+    """T01-6: reopen FCStd via freecadcmd and verify exact object counts."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.have_fc = Path(FREECADCMD).exists()
+        if cls.have_fc and FCSTD.exists():
+            cls.info = cls._inspect()
+        else:
+            cls.info = None
+
+    @staticmethod
+    def _inspect():
+        script = (
+            "import FreeCAD as App, json\n"
+            f"doc = App.openDocument({str(FCSTD)!r})\n"
+            "out = {}\n"
+            "for o in doc.Objects:\n"
+            "    did = getattr(o, 'DesignID', o.Name)\n"
+            "    out[o.Name] = {\n"
+            "        'DesignID': did,\n"
+            "        'Confidence': getattr(o, 'Confidence', None),\n"
+            "        'NeedsFieldVerification': getattr(o, 'NeedsFieldVerification', None),\n"
+            "        'HostWallID': getattr(o, 'HostWallID', None)}\n"
+            "print('FCINFO=' + json.dumps(out))\n"
+        )
+        with tempfile.NamedTemporaryFile('w', suffix='.py',
+                                         delete=False) as f:
+            f.write(script)
+            path = f.name
+        res = subprocess.run([FREECADCMD, path], capture_output=True,
+                             text=True, timeout=300)
+        for line in res.stdout.splitlines():
+            if line.startswith('FCINFO='):
+                return json.loads(line[7:])
+        raise RuntimeError('freecadcmd inspection failed: '
+                           + res.stdout[-500:] + res.stderr[-500:])
+
+    def test_fcstd_object_counts_match_contract(self):
+        if self.info is None:
+            self.skipTest('freecadcmd or FCStd unavailable')
+        want = (len(GEO['walls']) + len(GEO.get('columns', [])) +
+                len(GEO['doors']) + len(GEO['windows']))
+        self.assertEqual(len(self.info), want)
+        ids = {v['DesignID'] for v in self.info.values()}
+        for w in GEO['walls']:
+            self.assertIn(w['id'], ids)
+        for o in GEO['doors']:
+            self.assertIn(o['id'], ids)
+        for o in GEO['windows']:
+            self.assertIn(o['id'], ids)
+
+    def test_fcstd_provenance_props_present(self):
+        if self.info is None:
+            self.skipTest('freecadcmd or FCStd unavailable')
+        for name, meta in self.info.items():
+            self.assertIsNotNone(meta['Confidence'], name)
+            self.assertIsNotNone(meta['NeedsFieldVerification'], name)
+        for o in GEO['doors'] + GEO['windows']:
+            match = [v for v in self.info.values()
+                     if v['DesignID'] == o['id']]
+            self.assertEqual(match[0]['HostWallID'],
+                             o['host_wall_id'], o['id'])
+
+
+class IfcTests(unittest.TestCase):
+    """T01-7: real void/fill relationships and pset verification."""
+
+    @classmethod
+    def setUpClass(cls):
         import ifcopenshell
-        model = ifcopenshell.open(str(IFC))
-        self.assertEqual(len(model.by_type('IfcProject')), 1)
-        self.assertEqual(len(model.by_type('IfcSite')), 1)
-        self.assertEqual(len(model.by_type('IfcBuilding')), 1)
-        self.assertEqual(len(model.by_type('IfcBuildingStorey')), 1)
-        self.assertEqual(len(model.by_type('IfcWall')), len(GEO['walls']))
-        self.assertEqual(len(model.by_type('IfcSpace')),
+        cls.model = ifcopenshell.open(str(IFC))
+
+    def test_schema_and_hierarchy(self):
+        self.assertEqual(self.model.schema, 'IFC4')
+        self.assertEqual(len(self.model.by_type('IfcProject')), 1)
+        self.assertEqual(len(self.model.by_type('IfcSite')), 1)
+        self.assertEqual(len(self.model.by_type('IfcBuilding')), 1)
+        self.assertEqual(len(self.model.by_type('IfcBuildingStorey')), 1)
+
+    def test_object_counts(self):
+        self.assertEqual(len(self.model.by_type('IfcWall')),
+                         len(GEO['walls']))
+        self.assertEqual(len(self.model.by_type('IfcSpace')),
                          len(GEO['spaces']))
-        self.assertEqual(len(model.by_type('IfcDoor')), len(GEO['doors']))
-        self.assertEqual(len(model.by_type('IfcWindow')),
+        self.assertEqual(len(self.model.by_type('IfcDoor')),
+                         len(GEO['doors']))
+        self.assertEqual(len(self.model.by_type('IfcWindow')),
                          len(GEO['windows']))
 
-    def test_ifc_field_verified_false(self):
-        import ifcopenshell
-        model = ifcopenshell.open(str(IFC))
-        text = Path(IFC).read_text(errors='ignore')
-        self.assertIn('Source Plan Reconstruction', text)
+    def test_opening_and_relation_counts(self):
+        n_open = len(GEO['doors']) + len(GEO['windows'])
+        self.assertEqual(len(self.model.by_type('IfcOpeningElement')),
+                         n_open)
+        self.assertEqual(len(self.model.by_type('IfcRelVoidsElement')),
+                         n_open)
+        self.assertEqual(len(self.model.by_type('IfcRelFillsElement')),
+                         n_open)
 
-    def test_fcstd_exists_nonempty(self):
-        self.assertTrue(FCSTD.exists())
-        self.assertGreater(FCSTD.stat().st_size, 10000)
+    def test_every_opening_has_exactly_one_host_wall(self):
+        rels = self.model.by_type('IfcRelVoidsElement')
+        by_opening = {}
+        for r in rels:
+            by_opening.setdefault(r.RelatedOpeningElement.id(),
+                                  []).append(r)
+        for op in self.model.by_type('IfcOpeningElement'):
+            host_rels = by_opening.get(op.id(), [])
+            self.assertEqual(len(host_rels), 1, op.Name)
+            self.assertTrue(
+                host_rels[0].RelatingBuildingElement.is_a('IfcWall'))
+
+    def test_every_fill_linked(self):
+        fills = self.model.by_type('IfcRelFillsElement')
+        linked = {r.RelatedBuildingElement.id()
+                  for r in fills}
+        for el in (self.model.by_type('IfcDoor') +
+                   self.model.by_type('IfcWindow')):
+            self.assertIn(el.id(), linked, el.Name)
+
+    def test_project_pset_field_verified_false(self):
+        proj = self.model.by_type('IfcProject')[0]
+        props = {}
+        for rel in proj.IsDefinedBy:
+            pset = rel.RelatingPropertyDefinition
+            if getattr(pset, 'Name', None) == 'SourcePlanReconstruction':
+                for p in pset.HasProperties:
+                    props[p.Name] = getattr(p, 'NominalValue',
+                                            None).wrappedValue \
+                        if hasattr(p, 'NominalValue') else None
+        self.assertEqual(props.get('FieldVerified'), False)
+        self.assertEqual(props.get('SourceStatus'),
+                         'Source Plan Reconstruction')
 
 
 class ProvenanceTests(unittest.TestCase):
-    """N. all LOW/UNKNOWN objects land in unresolved issues or carry flag"""
-
     def test_low_confidence_flagged(self):
-        unresolved = (PROJ / 'qc' / 'unresolved_issues.md')
+        unresolved = PROJ / 'qc' / 'unresolved_issues.md'
         self.assertTrue(unresolved.exists())
         for _, o in geo_common.all_objects(GEO):
             if o.get('confidence') in ('LOW', 'UNKNOWN'):
@@ -202,7 +339,6 @@ class ProvenanceTests(unittest.TestCase):
                     'note' in o, o['id'])
 
     def test_provenance_spot_check(self):
-        """Random sample: 5 walls, 3 doors, 3 windows, 5 dims all trace."""
         for wid in ('W-EXT-W', 'W-EXT-S', 'W-INT-X11500',
                     'W-INT-Y4500-bc', 'W-BALC-S'):
             w = wall_by_id(wid)

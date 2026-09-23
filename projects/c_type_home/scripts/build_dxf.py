@@ -7,7 +7,7 @@ import ezdxf
 from ezdxf import colors
 from geo_common import (
     PROJECT_ROOT, load_geometry, load_dimensions, wall_polygon_mm,
-    opening_world_rect,
+    opening_world_rect, ORIGIN_PX, MM_PER_PX_X,
 )
 
 OUT = PROJECT_ROOT / "cad" / "C型_原始户型数字化基准图.dxf"
@@ -91,7 +91,7 @@ def build():
         ticks = [(86.5 + 0, None)]
         xs = []
         for t in ch["tick_px_x"]:
-            xs.append(86.5 + (t - 86.5) * 37.045)
+            xs.append((t - ORIGIN_PX[0]) * MM_PER_PX_X)
         for i, x in enumerate(xs):
             msp.add_line((x, y_line - 300), (x, y_line + 300),
                          dxfattribs={"layer": "A-DIMS"})

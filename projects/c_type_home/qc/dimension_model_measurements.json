@@ -1,0 +1,767 @@
+{
+  "gate_T01_3": {
+    "per_segment": true,
+    "chain_accumulated_ok": true,
+    "n_high_segments": 24,
+    "n_failed_high": 0
+  },
+  "chain_accumulated_error_mm": {
+    "CHAIN-BOTTOM-OUT": 0.0,
+    "CHAIN-TOP-OUT": 0.0,
+    "CHAIN-TOP-IN": 0.0,
+    "CHAIN-RIGHT-IN": 0.0,
+    "CHAIN-RIGHT-OUT": 0,
+    "CHAIN-BOTTOM-IN": 0.0
+  },
+  "records": [
+    {
+      "dim_id": "CHAIN-BOTTOM-OUT#1",
+      "source_value_mm": 1400,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "origin"
+        },
+        {
+          "kind": "face",
+          "object": "W-BALC-W",
+          "face": "x_center"
+        }
+      ],
+      "measured_mm": 1400.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-BOTTOM-OUT#2",
+      "source_value_mm": 1400,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-BALC-W",
+          "face": "x_center"
+        },
+        {
+          "kind": "face",
+          "object": "W-EXT-W",
+          "face": "x_center"
+        }
+      ],
+      "measured_mm": 1400.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-BOTTOM-OUT#3",
+      "source_value_mm": 3000,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-EXT-W",
+          "face": "x_center"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-X5800",
+          "face": "x_center"
+        }
+      ],
+      "measured_mm": 3000.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-BOTTOM-OUT#4",
+      "source_value_mm": 2100,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-INT-X5800",
+          "face": "x_center"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-X7900-L",
+          "face": "x_center"
+        }
+      ],
+      "measured_mm": 2100.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-BOTTOM-OUT#5",
+      "source_value_mm": 3600,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-INT-X7900-L",
+          "face": "x_center"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-X11500",
+          "face": "x_center"
+        }
+      ],
+      "measured_mm": 3600.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-BOTTOM-OUT#6",
+      "source_value_mm": 3900,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-INT-X11500",
+          "face": "x_center"
+        },
+        {
+          "kind": "face",
+          "object": "W-EXT-E1",
+          "face": "x_min"
+        }
+      ],
+      "measured_mm": 3900.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-BOTTOM-OUT#7",
+      "source_value_mm": 900,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-EXT-E1",
+          "face": "x_min"
+        },
+        {
+          "kind": "face",
+          "object": "W-EXT-E2",
+          "face": "x_min"
+        }
+      ],
+      "measured_mm": 900,
+      "error_mm": 0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-OUT#1",
+      "source_value_mm": 5100,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-EXT-W",
+          "face": "x_center"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-X7900-U",
+          "face": "x_max"
+        }
+      ],
+      "measured_mm": 5100.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-OUT#2",
+      "source_value_mm": 1900,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-INT-X7900-U",
+          "face": "x_max"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-X9800",
+          "face": "x_center"
+        }
+      ],
+      "measured_mm": 1900.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-OUT#3",
+      "source_value_mm": 3200,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-INT-X9800",
+          "face": "x_center"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-X13000",
+          "face": "x_center"
+        }
+      ],
+      "measured_mm": 3200.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-OUT#4",
+      "source_value_mm": 3300,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-INT-X13000",
+          "face": "x_center"
+        },
+        {
+          "kind": "face",
+          "object": "W-EXT-E2",
+          "face": "x_min"
+        }
+      ],
+      "measured_mm": 3300.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#1",
+      "source_value_mm": 1000,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-EXT-W",
+          "face": "x_center"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N1",
+          "edge": "a"
+        }
+      ],
+      "measured_mm": 1000.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#2",
+      "source_value_mm": 3100,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N1",
+          "edge": "a"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N1",
+          "edge": "b"
+        }
+      ],
+      "measured_mm": 3100.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#3",
+      "source_value_mm": 1000,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N1",
+          "edge": "b"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-X7900-U",
+          "face": "x_max"
+        }
+      ],
+      "measured_mm": 1000.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#4",
+      "source_value_mm": 1000,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-INT-X7900-U",
+          "face": "x_max"
+        },
+        {
+          "kind": "anchor",
+          "value": 8900
+        }
+      ],
+      "measured_mm": 1000.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#5",
+      "source_value_mm": 900,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "anchor",
+          "value": 8900
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-X9800",
+          "face": "x_center"
+        }
+      ],
+      "measured_mm": 900.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#6",
+      "source_value_mm": 700,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-INT-X9800",
+          "face": "x_center"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N3",
+          "edge": "a"
+        }
+      ],
+      "measured_mm": 700.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#7",
+      "source_value_mm": 1800,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N3",
+          "edge": "a"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N3",
+          "edge": "b"
+        }
+      ],
+      "measured_mm": 1800.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#8",
+      "source_value_mm": 700,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N3",
+          "edge": "b"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-X13000",
+          "face": "x_center"
+        }
+      ],
+      "measured_mm": 700.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#9",
+      "source_value_mm": 700,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-INT-X13000",
+          "face": "x_center"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N2",
+          "edge": "a"
+        }
+      ],
+      "measured_mm": 700.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#10",
+      "source_value_mm": 1900,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N2",
+          "edge": "a"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N2",
+          "edge": "b"
+        }
+      ],
+      "measured_mm": 1900.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#11",
+      "source_value_mm": 700,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-N2",
+          "edge": "b"
+        },
+        {
+          "kind": "face",
+          "object": "W-EXT-E2",
+          "face": "x_min"
+        }
+      ],
+      "measured_mm": 700.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-TOP-IN#12",
+      "source_value_mm": 100,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-EXT-E2",
+          "face": "x_min"
+        },
+        {
+          "kind": "anchor",
+          "value": 16400
+        }
+      ],
+      "measured_mm": 100.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#1",
+      "source_value_mm": 1000,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "anchor",
+          "value": 14600
+        },
+        {
+          "kind": "face",
+          "object": "W-EXT-N-BAL",
+          "face": "y_max"
+        }
+      ],
+      "measured_mm": 1000.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#2",
+      "source_value_mm": 700,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-EXT-N-BAL",
+          "face": "y_max"
+        },
+        {
+          "kind": "face",
+          "object": "AC-3",
+          "face": "y_max"
+        }
+      ],
+      "measured_mm": 700,
+      "error_mm": 0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#3",
+      "source_value_mm": 2100,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "AC-3",
+          "face": "y_max"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-Y10800",
+          "face": "y_center"
+        }
+      ],
+      "measured_mm": 2100.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#4",
+      "source_value_mm": 3000,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-E2",
+          "edge": "b"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-E2",
+          "edge": "a"
+        }
+      ],
+      "measured_mm": 3000.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#5",
+      "source_value_mm": 1400,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-E2",
+          "edge": "a"
+        },
+        {
+          "kind": "face",
+          "object": "W-INT-BEDN-S",
+          "face": "y_center"
+        }
+      ],
+      "measured_mm": 1400.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#6",
+      "source_value_mm": 1900,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-E3",
+          "edge": "b"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-E3",
+          "edge": "a"
+        }
+      ],
+      "measured_mm": 1900.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#7",
+      "source_value_mm": 2200,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-EXT-E1",
+          "face": "y_max"
+        },
+        {
+          "kind": "anchor",
+          "value": 2300
+        }
+      ],
+      "measured_mm": 2200.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": "south datum lands on the balcony parapet line py~1206 (Y~2275), not the interior wall face at Y2400 — parapet not modelled as wall"
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#8",
+      "source_value_mm": 1800,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-E1",
+          "edge": "b"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-E1",
+          "edge": "a"
+        }
+      ],
+      "measured_mm": 1800.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#9",
+      "source_value_mm": 500,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-E1",
+          "edge": "a"
+        },
+        {
+          "kind": "face",
+          "object": "W-EXT-S",
+          "face": "y_max"
+        }
+      ],
+      "measured_mm": 500.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-IN#10",
+      "source_value_mm": 700,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-EXT-S",
+          "face": "y_max"
+        },
+        {
+          "kind": "face",
+          "object": "AC-5",
+          "face": "y_min"
+        }
+      ],
+      "measured_mm": 700,
+      "error_mm": 0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-RIGHT-OUT#1",
+      "source_value_mm": 12900,
+      "confidence": "HIGH",
+      "geometry_refs": [
+        {
+          "kind": "face",
+          "object": "W-EXT-S",
+          "face": "y_max"
+        },
+        {
+          "kind": "face",
+          "object": "AC-3",
+          "face": "y_max"
+        }
+      ],
+      "measured_mm": 12900,
+      "error_mm": 0,
+      "result": "PASS",
+      "note": "north datum is the NE AC-bay top edge per ISSUE-006, not a wall face"
+    },
+    {
+      "dim_id": "CHAIN-BOTTOM-IN#8",
+      "source_value_mm": 2200,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-S1",
+          "edge": "a"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-S1",
+          "edge": "b"
+        }
+      ],
+      "measured_mm": 2200.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    },
+    {
+      "dim_id": "CHAIN-BOTTOM-IN#12",
+      "source_value_mm": 2500,
+      "confidence": "MEDIUM",
+      "geometry_refs": [
+        {
+          "kind": "opening_edge",
+          "object": "WIN-S2",
+          "edge": "a"
+        },
+        {
+          "kind": "opening_edge",
+          "object": "WIN-S2",
+          "edge": "b"
+        }
+      ],
+      "measured_mm": 2500.0,
+      "error_mm": 0.0,
+      "result": "PASS",
+      "note": ""
+    }
+  ]
+}

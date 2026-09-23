@@ -13,46 +13,23 @@
         3200,
         3300
       ],
-      "closes": true,
-      "note": "trailing inner segment 100mm beyond outer end = wall edge sliver"
+      "closes": true
     },
     "BOTTOM": {
-      "outer": [
-        1400,
-        1400,
-        3000,
-        2100,
-        3600,
-        3900,
-        900
-      ],
       "outer_total": 16300,
       "matches_top_total": true,
-      "inner_tail_status": "UNKNOWN — last two segments unreadable (ISSUE-002)"
+      "inner_tail_status": "UNKNOWN — tail digits illegible on the owner-accepted source (ISSUE-002)"
     },
     "RIGHT": {
-      "inner_segments": [
-        1000,
-        700,
-        2100,
-        3000,
-        1400,
-        1900,
-        2200,
-        1800,
-        500,
-        700
-      ],
       "mid_section_sum": 12900,
       "outer_total": 12900,
-      "closes": true,
-      "note": "leading 1000+700 and trailing 700 are jog offsets outside the 12900 envelope"
+      "closes": true
     }
   },
   "source_conflicts": [
     {
       "id": "CONF-1",
-      "desc": "bottom outer chain ends at px526.5 (X16300) while drawn east outer face is px528.5 (X16470); dim wins, difference treated as wall-thickness overshoot"
+      "desc": "bottom outer chain ends at px526.5 (X16300) while drawn east outer face is px528.5 (X16470); dim wins"
     },
     {
       "id": "CONF-2",

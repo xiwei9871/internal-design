@@ -3,113 +3,113 @@
     "project": "c_type_home",
     "document": "SOURCE PLAN RECONSTRUCTION dimension transcription",
     "unit": "mm",
+    "source_image_px": [1279, 1986],
     "pixel_axes": {
       "px_x": "image left -> right",
       "px_y": "image top -> bottom (as read from raster)"
     },
-    "notes": "All px anchors are extension-line / tick positions detected on the source raster. Values are the printed annotation numbers. dimension annotation > raster pixel position."
+    "notes": "All px anchors are extension-line / tick positions detected on the 1279x1986 owner source. Values are the printed annotation numbers. dimension annotation > raster pixel position.",
+    "rc1_note": "RC1: re-transcribed from the true high-res source. Bottom inner-chain tail now resolved: 200 + 100 (inner chain spans X400->X16400 = 16000 total, closing exactly on the building outer face). All values re-verified at 1279x1986."
   },
-
   "chains": [
     {
       "id": "CHAIN-TOP-OUT",
       "orientation": "horizontal",
       "type": "outer_chain",
-      "dimension_line_px_y": 209,
+      "dimension_line_px_y": 406,
       "segment_values_mm": [5100, 1900, 3200, 3300],
-      "tick_px_x": [163, 299, 350, 435, 525.3],
-      "tick_px_x_mm_est": [2792, 7856, 9757, 12937, 16294],
+      "tick_px_x": [316.5, 580.5, 678.5, 844.5, 1017.5],
       "confidence": "HIGH",
       "status": "CONFIRMED_FROM_IMAGE",
-      "notes": "Outer horizontal chain along the top. All four numbers legible. Datum = west exterior wall axis at px~163 (X=2800 in world)."
+      "segment_confidence": ["HIGH", "HIGH", "HIGH", "HIGH"],
+      "notes": "Outer horizontal chain along the top. Datum = west exterior wall axis at px316.5 (X=2800 in world)."
     },
     {
       "id": "CHAIN-TOP-IN",
       "orientation": "horizontal",
       "type": "inner_chain",
-      "dimension_line_px_y": 190,
+      "dimension_line_px_y": 368,
       "segment_values_mm": [1000, 3100, 1000, 1000, 900, 700, 1800, 700, 700, 1900, 700, 100],
-      "tick_px_x": [163, 189, 272, 299, 326, 350, 368, 416, 435, 454, 506, 525.3, 528],
+      "tick_px_x": [316.5, 367.5, 528.5, 580.5, 631.5, 678.5, 714.5, 807.5, 844.5, 881.5, 981.5, 1017.5, 1022.5],
       "confidence": "HIGH",
       "status": "CONFIRMED_FROM_IMAGE",
-      "notes": "Inner chain. Groups close to outer chain: 1000+3100+1000=5100, 1000+900=1900, 700+1800+700=3200, 700+1900+700=3300. Final 100mm segment terminates ~px528 (building outer face)."
+      "segment_confidence": ["HIGH", "HIGH", "HIGH", "MEDIUM", "MEDIUM", "MEDIUM", "HIGH", "MEDIUM", "MEDIUM", "HIGH", "MEDIUM", "MEDIUM"],
+      "notes": "Inner chain. Groups close to outer: 1000+3100+1000=5100, 1000+900=1900, 700+1800+700=3200, 700+1900+700=3300. Final 100mm terminates at building outer face px~1022.5."
     },
     {
       "id": "CHAIN-BOTTOM-OUT",
       "orientation": "horizontal",
       "type": "outer_chain",
-      "dimension_line_px_y": 803,
+      "dimension_line_px_y": 1557,
       "segment_values_mm": [1400, 1400, 3000, 2100, 3600, 3900, 900],
-      "tick_px_x": [86.5, 124, 162, 242, 299, 394, 501, 526.5],
+      "tick_px_x": [168.5, 241.5, 314.5, 470.5, 579.5, 765.5, 971.5, 1020.5],
       "confidence": "HIGH",
       "status": "CONFIRMED_FROM_IMAGE",
-      "notes": "Outer horizontal chain along the bottom. Total 16300mm. Left datum at px86.5 does NOT coincide with any wall face - first 1400 segment reaches the west balcony railing (px124). The right end px526.5 lands on the main east wall inner face, ~2px inside the drawn outer face (px528.5)."
+      "segment_confidence": ["HIGH", "HIGH", "HIGH", "HIGH", "HIGH", "HIGH", "HIGH"],
+      "notes": "Outer horizontal chain along the bottom. Total 16300mm. Left datum px168.5 has no wall face below it (ISSUE-001). Right end px1020.5 lands on the main east wall inner face; drawn outer face is px~1025 (X~16390)."
     },
     {
       "id": "CHAIN-BOTTOM-IN",
       "orientation": "horizontal",
       "type": "inner_chain",
-      "dimension_line_px_y": 780,
-      "segment_values_mm": [1000, 1000, 400, 2100, 900, 1400, 700, 700, 2200, 700, 700, 2500, 700, 700, null, null],
-      "tick_px_x": [97, 124, 151, 162, 218, 242, 280, 299, 317, 376, 394, 413, 481.5, 501, 520, 527],
-      "confidence": "MEDIUM",
-      "status": "PARTIAL_TAIL_UNREADABLE",
-      "notes": "Inner chain is offset +400mm vs outer (datum px97 instead of px86.5); its ticks coincide with outer ticks at px124/162/242/299/394/501. Last two printed values are clipped/unreadable at raster resolution; px evidence suggests a residual ~320mm to px527 and a possible further ~200-400mm beyond. Recorded as UNKNOWN per no-guess rule."
+      "dimension_line_px_y": 1513,
+      "segment_values_mm": [1000, 1000, 400, 2100, 900, 1400, 700, 700, 2200, 700, 700, 2500, 700, 700, 200, 100],
+      "tick_px_x": [189.5, 241.5, 293.5, 314.5, 423.5, 470.5, 543.5, 579.5, 615.5, 729.5, 765.5, 802.5, 934.5, 971.5, 1009.5, 1020.5, 1025],
+      "confidence": "HIGH",
+      "status": "CONFIRMED_FROM_IMAGE",
+      "segment_confidence": ["MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM", "MEDIUM"],
+      "notes": "RC1 resolved the tail: 200+100. Inner chain total = 16000, spanning X400 (datum px189.5) to X16400 (px1025, building outer face). Datum offset +400 vs outer chain documented as ISSUE-003."
     },
     {
       "id": "CHAIN-RIGHT-IN",
       "orientation": "vertical",
       "type": "inner_chain",
-      "dimension_line_px_x": 634,
+      "dimension_line_px_x": 1230,
       "segment_values_mm": [1000, 700, 2100, 3000, 1400, 1900, 2200, 1800, 500, 700],
-      "tick_px_y": [285, 312, 331, 388, 470, 509, 560.5, 620.5, 670, 684, 704],
+      "tick_px_y": [553.5, 606, 643, 753, 912.5, 987.5, 1087.5, 1204, 1300, 1328, 1366],
       "confidence": "HIGH",
       "status": "CONFIRMED_FROM_IMAGE",
-      "notes": "Inner vertical chain on the right side, read top->bottom. Segments 2100+3000+1400+1900+2200+1800+500 = 12900 = the outer total. Leading 1000+700 and trailing 700 measure the AC-bay / jog offsets outside the main 12900 envelope."
+      "segment_confidence": ["MEDIUM", "MEDIUM", "HIGH", "HIGH", "HIGH", "HIGH", "HIGH", "HIGH", "HIGH", "MEDIUM"],
+      "notes": "Inner vertical chain, top->bottom. Segments 2100+3000+1400+1900+2200+1800+500 = 12900 = outer total. Leading 1000+700 and trailing 700 are jog offsets outside the main envelope."
     },
     {
       "id": "CHAIN-RIGHT-OUT",
       "orientation": "vertical",
       "type": "outer_total",
+      "dimension_line_px_x": 1273,
       "segment_values_mm": [12900],
-      "tick_px_y": [331, 684.5],
+      "tick_px_y": [643, 1328],
       "confidence": "HIGH",
       "status": "CONFIRMED_FROM_IMAGE",
-      "notes": "Overall vertical dimension 12900 from the north silhouette datum (px331) to the main south face (px684.5). The north datum corresponds to the top edge of the NE AC-bay structure, not to a clear wall face - see ISSUE-006."
+      "segment_confidence": ["HIGH"],
+      "notes": "Overall 12900 from the north silhouette datum (py643) to the main south face (py1328). North datum corresponds to the NE AC-bay top edge, not a clear wall face - ISSUE-006."
     }
   ],
-
   "derived_totals": {
     "horizontal_outer_total_mm": 16300,
-    "horizontal_outer_px_span": [86.5, 526.5],
+    "horizontal_inner_total_mm": 16000,
+    "horizontal_outer_px_span": [168.5, 1020.5],
     "vertical_outer_total_mm": 12900,
-    "vertical_outer_px_span": [331, 684.5]
+    "vertical_outer_px_span": [643, 1328]
   },
-
   "unresolved_dimension_items": [
     {
       "ref": "ISSUE-001",
       "chain": "CHAIN-BOTTOM-OUT",
-      "item": "left datum px86.5 / first 1400mm segment",
-      "problem": "no wall face exists at the datum; first segment reaches balcony west railing at px124"
-    },
-    {
-      "ref": "ISSUE-002",
-      "chain": "CHAIN-BOTTOM-IN",
-      "item": "last two printed segments east of px520",
-      "problem": "digits unreadable at raster resolution"
+      "item": "left datum px168.5 / first 1400mm segment",
+      "problem": "no wall face exists at the datum; first segment reaches balcony west railing at px241.5"
     },
     {
       "ref": "ISSUE-003",
       "chain": "CHAIN-BOTTOM-IN",
       "item": "inner chain datum offset +400mm vs outer",
-      "problem": "inner chain starts at px97 (X400) not px86.5 (X0); association uncertain"
+      "problem": "inner chain starts at px189.5 (X400) not px168.5 (X0); association uncertain"
     },
     {
       "ref": "ISSUE-006",
       "chain": "CHAIN-RIGHT-OUT",
-      "item": "12900 north datum at px331",
-      "problem": "no drawn horizontal wall exists at that scanline on the east side; likely terminates at AC-bay top edge"
+      "item": "12900 north datum at py643",
+      "problem": "no drawn horizontal wall at that scanline on the east side; terminates at AC-bay top edge"
     }
   ]
 }

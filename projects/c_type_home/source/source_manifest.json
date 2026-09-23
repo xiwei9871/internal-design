@@ -1,11 +1,12 @@
 {
   "file": "source_plan_original.jpg",
-  "sha256": "2b17093edcb3be8d45888d3e27e068611ad28281bae4abe04da53278f708d376",
-  "width_px": 659,
-  "height_px": 1024,
+  "sha256": "0125ad6c169550e5d1230bb3a3e5023bceaa81e10ed8ee69ff665b30d0a8d3c1",
+  "width_px": 1279,
+  "height_px": 1986,
   "source_type": "developer_floorplan_image",
-  "source_description": "C型户型原始平面图（业主提供图片，含顶部/底部水平尺寸链与右侧竖向尺寸链）",
+  "source_description": "C型户型原始平面图（业主提供高分辨率图，含顶部/底部水平尺寸链与右侧竖向尺寸链）",
   "document_status": "SOURCE PLAN RECONSTRUCTION — NOT as-built, NOT field verified",
   "unmodified": true,
-  "recorded_by": "Task 01 pipeline"
+  "recorded_by": "Task 01 pipeline",
+  "rc1_note": "RC1: replaced the 659x1024 downscaled copy (sha 2b17093e...) with the true 1279x1986 owner source. All pixel anchors in dimensions.json / geometry.json were re-detected on THIS file; no low-res pixel coordinates are inherited."
 }
