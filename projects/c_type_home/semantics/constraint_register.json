@@ -1,0 +1,509 @@
+{
+ "meta": {
+  "task": "task02",
+  "severity_meaning": "assumption-risk for future design agents, NOT demolish-permission"
+ },
+ "constraints": [
+  {
+   "constraint_id": "CONSTRAINT-T01-001",
+   "category": "GEOMETRY",
+   "subject_refs": [],
+   "description": "底部外链左端基准 X0 无对应墙体，西缘定位基准悬空",
+   "evidence": "qc/unresolved_issues.md#ISSUE-001",
+   "source_refs": [
+    "ISSUE-001"
+   ],
+   "source_issue_ref": "ISSUE-001",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "BLOCKING",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-002",
+   "category": "GEOMETRY",
+   "subject_refs": [],
+   "description": "底部内链尾部数字已解为 200+100（历史记录）",
+   "evidence": "qc/unresolved_issues.md#ISSUE-002",
+   "source_refs": [
+    "ISSUE-002"
+   ],
+   "source_issue_ref": "ISSUE-002",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "INFORMATIONAL",
+   "verification_required": false,
+   "verification_method": "原始图纸/现场复核",
+   "status": "RESOLVED_HISTORICAL"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-003",
+   "category": "GEOMETRY",
+   "subject_refs": [],
+   "description": "底部内链 +400mm 基准偏移构件不明",
+   "evidence": "qc/unresolved_issues.md#ISSUE-003",
+   "source_refs": [
+    "ISSUE-003"
+   ],
+   "source_issue_ref": "ISSUE-003",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "MEDIUM",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-004",
+   "category": "STRUCTURE",
+   "subject_refs": [
+    "W-EXT-W",
+    "W-EXT-S",
+    "W-EXT-S-W1",
+    "W-EXT-S-W2",
+    "W-EXT-E1",
+    "W-EXT-E2",
+    "W-EXT-NE",
+    "W-EXT-NE2",
+    "W-EXT-N-LV",
+    "W-BAY-F",
+    "W-BAY-JW",
+    "W-BAY-JE",
+    "W-EXT-N-BAL",
+    "W-BALC-W",
+    "W-BALC-S",
+    "W-BALC-N",
+    "W-INT-X5800",
+    "W-INT-X5800-STUB",
+    "W-INT-X7900-L",
+    "W-INT-X7900-U",
+    "W-INT-X9800",
+    "W-INT-X11500",
+    "W-INT-X13000",
+    "W-INT-Y4500-a",
+    "W-INT-CLK-N",
+    "W-INT-CLK-E",
+    "W-INT-CLK-W",
+    "W-INT-COR-N-STUB",
+    "W-INT-BEDN-S",
+    "W-INT-WC-S",
+    "W-INT-STD-S",
+    "W-INT-Y10800",
+    "W-INT-Y10800-EXT",
+    "W-SHAFT-K",
+    "W-INT-DRY-STUB",
+    "W-INT-NICHE",
+    "W-INT-Y4500-bc",
+    "W-INT-Y4500-b"
+   ],
+   "description": "全部墙体 structural_role=UNKNOWN；黑粗墙不能判定承重",
+   "evidence": "qc/unresolved_issues.md#ISSUE-004",
+   "source_refs": [
+    "ISSUE-004"
+   ],
+   "source_issue_ref": "ISSUE-004",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "BLOCKING",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-005",
+   "category": "SOURCE_CONFLICT",
+   "subject_refs": [
+    "WIN-E1",
+    "W-EXT-E1"
+   ],
+   "description": "WIN-E1 尺寸标注与像素窗位冲突 ~500-800mm（按尺寸建模）",
+   "evidence": "qc/unresolved_issues.md#ISSUE-005",
+   "source_refs": [
+    "ISSUE-005"
+   ],
+   "source_issue_ref": "ISSUE-005",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "HIGH",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-006",
+   "category": "GEOMETRY",
+   "subject_refs": [],
+   "description": "右链 12900 北端基准落在机位凹槽带，无墙线对应",
+   "evidence": "qc/unresolved_issues.md#ISSUE-006",
+   "source_refs": [
+    "ISSUE-006"
+   ],
+   "source_issue_ref": "ISSUE-006",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "MEDIUM",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-007",
+   "category": "OPENING",
+   "subject_refs": [],
+   "description": "厨房/阳台门位已解（历史记录）",
+   "evidence": "qc/unresolved_issues.md#ISSUE-007",
+   "source_refs": [
+    "ISSUE-007"
+   ],
+   "source_issue_ref": "ISSUE-007",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "INFORMATIONAL",
+   "verification_required": false,
+   "verification_method": "原始图纸/现场复核",
+   "status": "RESOLVED_HISTORICAL"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-008",
+   "category": "OPENING",
+   "subject_refs": [],
+   "description": "厨房南 1400 段已解为 WIN-S3（历史记录）",
+   "evidence": "qc/unresolved_issues.md#ISSUE-008",
+   "source_refs": [
+    "ISSUE-008"
+   ],
+   "source_issue_ref": "ISSUE-008",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "INFORMATIONAL",
+   "verification_required": false,
+   "verification_method": "原始图纸/现场复核",
+   "status": "RESOLVED_HISTORICAL"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-009",
+   "category": "OPENING",
+   "subject_refs": [
+    "D-10"
+   ],
+   "description": "D-10 休闲厅↔走廊 1780mm 开口无门扇，垭口/漏绘未定",
+   "evidence": "qc/unresolved_issues.md#ISSUE-009",
+   "source_refs": [
+    "ISSUE-009"
+   ],
+   "source_issue_ref": "ISSUE-009",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "MEDIUM",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-010",
+   "category": "GEOMETRY",
+   "subject_refs": [
+    "W-EXT-NE",
+    "W-EXT-NE2"
+   ],
+   "description": "东北角机位/凹槽区几何不完整",
+   "evidence": "qc/unresolved_issues.md#ISSUE-010",
+   "source_refs": [
+    "ISSUE-010"
+   ],
+   "source_issue_ref": "ISSUE-010",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "HIGH",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-011",
+   "category": "ENVELOPE",
+   "subject_refs": [
+    "W-EXT-W"
+   ],
+   "description": "客厅西墙外皮线 Y6650-10940 段缺失（贴公共走廊侧）",
+   "evidence": "qc/unresolved_issues.md#ISSUE-011",
+   "source_refs": [
+    "ISSUE-011"
+   ],
+   "source_issue_ref": "ISSUE-011",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "MEDIUM",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-012",
+   "category": "ENVELOPE",
+   "subject_refs": [
+    "WIN-W1",
+    "W-EXT-W"
+   ],
+   "description": "WIN-W1 薄线区性质不明（窗带/未填充墙）",
+   "evidence": "qc/unresolved_issues.md#ISSUE-012",
+   "source_refs": [
+    "ISSUE-012"
+   ],
+   "source_issue_ref": "ISSUE-012",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "HIGH",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-T01-013",
+   "category": "OPENING",
+   "subject_refs": [
+    "D-13",
+    "W-BALC-N"
+   ],
+   "description": "D-13 推拉门类型为推断，无轨道/门扇细节",
+   "evidence": "qc/unresolved_issues.md#ISSUE-013",
+   "source_refs": [
+    "ISSUE-013"
+   ],
+   "source_issue_ref": "ISSUE-013",
+   "confidence": "MEDIUM",
+   "severity_for_future_design": "MEDIUM",
+   "verification_required": true,
+   "verification_method": "原始图纸/现场复核",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-STRUCT-ALL",
+   "category": "STRUCTURE",
+   "subject_refs": [
+    "W-EXT-W",
+    "W-EXT-S",
+    "W-EXT-S-W1",
+    "W-EXT-S-W2",
+    "W-EXT-E1",
+    "W-EXT-E2",
+    "W-EXT-NE",
+    "W-EXT-NE2",
+    "W-EXT-N-LV",
+    "W-BAY-F",
+    "W-BAY-JW",
+    "W-BAY-JE",
+    "W-EXT-N-BAL",
+    "W-BALC-W",
+    "W-BALC-S",
+    "W-BALC-N",
+    "W-INT-X5800",
+    "W-INT-X5800-STUB",
+    "W-INT-X7900-L",
+    "W-INT-X7900-U",
+    "W-INT-X9800",
+    "W-INT-X11500",
+    "W-INT-X13000",
+    "W-INT-Y4500-a",
+    "W-INT-CLK-N",
+    "W-INT-CLK-E",
+    "W-INT-CLK-W",
+    "W-INT-COR-N-STUB",
+    "W-INT-BEDN-S",
+    "W-INT-WC-S",
+    "W-INT-STD-S",
+    "W-INT-Y10800",
+    "W-INT-Y10800-EXT",
+    "W-SHAFT-K",
+    "W-INT-DRY-STUB",
+    "W-INT-NICHE",
+    "W-INT-Y4500-bc",
+    "W-INT-Y4500-b",
+    "COL-B1",
+    "COL-B2",
+    "COL-WS"
+   ],
+   "description": "无任何结构资料：拆改任何墙体/柱前必须获得结构图或现场鉴定；外墙≠不可动、内墙≠可拆",
+   "evidence": "geometry.json structural_policy: 全部 structural_role=UNKNOWN",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "BLOCKING",
+   "verification_required": true,
+   "verification_method": "结构图/现场勘测",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-HEIGHT-001",
+   "category": "GEOMETRY",
+   "subject_refs": [
+    "*"
+   ],
+   "description": "层高/吊顶净空/梁位全部未知；IFC 中 2800mm 为可视化占位非源数据",
+   "evidence": "源图为平面户型图，无剖面/标高信息",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "HIGH",
+   "verification_required": true,
+   "verification_method": "现场量测层高、梁底、门槛/窗台/窗顶高度",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-SVC-KITCHEN",
+   "category": "SERVICE",
+   "subject_refs": [
+    "R-KITCHEN",
+    "W-SHAFT-K"
+   ],
+   "description": "厨房邻近竖向服务井 W-SHAFT-K(LOW)；管线走向/管径/坡度未知",
+   "evidence": "W-SHAFT-K x7150-7250 y750-3650 位于厨房范围内",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "HIGH",
+   "verification_required": true,
+   "verification_method": "现场确认管道井性质/排水立管/燃气表位",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-SVC-R-BATH-M",
+   "category": "SERVICE",
+   "subject_refs": [
+    "R-BATH-M"
+   ],
+   "description": "主卫 湿区：排水立管/地漏/沉箱位置未知",
+   "evidence": "source label 为卫生间",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "HIGH",
+   "verification_required": true,
+   "verification_method": "现场/物业资料",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-SVC-R-BATH-P",
+   "category": "SERVICE",
+   "subject_refs": [
+    "R-BATH-P"
+   ],
+   "description": "公卫 湿区：排水立管/地漏/沉箱位置未知",
+   "evidence": "source label 为卫生间",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "HIGH",
+   "verification_required": true,
+   "verification_method": "现场/物业资料",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-ENVELOPE-PERM",
+   "category": "ENVELOPE",
+   "subject_refs": [
+    "W-BALC-S",
+    "W-BALC-W",
+    "W-BAY-F",
+    "W-BAY-JE",
+    "W-BAY-JW",
+    "W-EXT-E1",
+    "W-EXT-E2",
+    "W-EXT-N-BAL",
+    "W-EXT-N-LV",
+    "W-EXT-NE",
+    "W-EXT-NE2",
+    "W-EXT-S",
+    "W-EXT-S-W1",
+    "W-EXT-S-W2",
+    "W-EXT-W"
+   ],
+   "description": "外围护构件（含阳台栏板）的改造权限未知：物业/规划/外立面管制",
+   "evidence": "外墙事实 ≠ 可改许可",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "HIGH",
+   "verification_required": true,
+   "verification_method": "物业/管理规约/法规确认",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-ORIENT-001",
+   "category": "GEOMETRY",
+   "subject_refs": [
+    "*"
+   ],
+   "description": "源图无指北针：所有方向为 PLAN_* 图像相对方向，非地理方位",
+   "evidence": "source plan 无 North arrow",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "LOW",
+   "verification_required": false,
+   "verification_method": "如需要由业主确认朝向",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-MEP-001",
+   "category": "SERVICE",
+   "subject_refs": [
+    "*"
+   ],
+   "description": "源图无给排水/电气/燃气/暖通信息；燃气管是否存在都未确认",
+   "evidence": "sales plan 不含 MEP",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "HIGH",
+   "verification_required": true,
+   "verification_method": "现场/物业资料",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-REG-001",
+   "category": "REGULATORY_UNKNOWN",
+   "subject_refs": [
+    "*"
+   ],
+   "description": "适用规范/管辖地要求未建模",
+   "evidence": "无规范输入",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "INFORMATIONAL",
+   "verification_required": true,
+   "verification_method": "确认项目所在地规范体系",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-CIRC-KITCHEN",
+   "category": "ACCESS",
+   "subject_refs": [
+    "R-KITCHEN",
+    "D-11",
+    "D-13"
+   ],
+   "description": "按当前模型，厨房唯一通行路径为 餐厅→D-13→生活阳台→D-11→厨房",
+   "evidence": "adjacency/circulation graph",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "MEDIUM",
+   "verification_required": true,
+   "verification_method": "现场确认是否另有厨房入口（图面未见）",
+   "status": "ACTIVE"
+  },
+  {
+   "constraint_id": "CONSTRAINT-AC-001",
+   "category": "SERVICE",
+   "subject_refs": [
+    "AC-1",
+    "AC-2",
+    "AC-3",
+    "AC-4",
+    "AC-5",
+    "AC-6"
+   ],
+   "description": "空调机位 LOW confidence；NE 机位区几何不完整（ISSUE-010）",
+   "evidence": "ac_bays pixel_scaled",
+   "source_refs": [],
+   "source_issue_ref": null,
+   "confidence": "HIGH",
+   "severity_for_future_design": "MEDIUM",
+   "verification_required": true,
+   "verification_method": "现场确认机位/冷凝水",
+   "status": "ACTIVE"
+  }
+ ]
+}

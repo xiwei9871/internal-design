@@ -1,0 +1,8 @@
+{
+ "task01_final_commit": "7e2aa0f",
+ "frozen_files": {
+  "data/geometry.json": "9d58ee8a75053e6e1a8c3984b154b068f94b8bbbac25ecd806c336d79caca1f3",
+  "data/dimensions.json": "35f2572913f95c883c0769596f3b705df42fe69a68dde681407a561a1f33bb1a"
+ },
+ "note": "Task02 must not modify these files; hashes recorded at branch creation from 7e2aa0f"
+}

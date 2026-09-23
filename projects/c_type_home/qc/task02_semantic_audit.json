@@ -1,0 +1,115 @@
+{
+ "hashes": {
+  "geometry.json": "9d58ee8a75053e6e1a8c3984b154b068f94b8bbbac25ecd806c336d79caca1f3",
+  "dimensions.json": "35f2572913f95c883c0769596f3b705df42fe69a68dde681407a561a1f33bb1a"
+ },
+ "space_coverage": {
+  "geometry_spaces": 13,
+  "semantic_spaces": 13,
+  "missing": [],
+  "extra": []
+ },
+ "door_bindings": {
+  "D-01": [
+   "EXTERNAL_COMMON_AREA",
+   "R-DINING"
+  ],
+  "D-02": [
+   "R-LIVING",
+   "R-BALC-N"
+  ],
+  "D-03": [
+   "R-LEISURE",
+   "R-BATH-P"
+  ],
+  "D-04": [
+   "R-LEISURE",
+   "R-STUDY"
+  ],
+  "D-05": [
+   "R-LEISURE",
+   "R-BED-N"
+  ],
+  "D-06": [
+   "UNMODELED_INTERIOR_ZONE",
+   "R-BATH-M"
+  ],
+  "D-07": [
+   "R-CLOAK",
+   "R-LEISURE"
+  ],
+  "D-08": [
+   "R-BED-S",
+   "R-LEISURE"
+  ],
+  "D-09": [
+   "R-MASTER",
+   "UNMODELED_INTERIOR_ZONE"
+  ],
+  "D-10": [
+   "UNMODELED_INTERIOR_ZONE",
+   "R-LEISURE"
+  ],
+  "D-11": [
+   "R-BALC-LIFE",
+   "R-KITCHEN"
+  ],
+  "D-12": [
+   "R-BALC-N",
+   "R-BED-N"
+  ],
+  "D-13": [
+   "R-BALC-LIFE",
+   "R-DINING"
+  ]
+ },
+ "unresolved_doors": [],
+ "unresolved_windows": [],
+ "constraints": {
+  "total": 24,
+  "active": 21,
+  "by_severity": {
+   "BLOCKING": 3,
+   "HIGH": 9,
+   "MEDIUM": 7,
+   "LOW": 1,
+   "INFORMATIONAL": 1
+  },
+  "task01_issues_mapped": [
+   "ISSUE-001",
+   "ISSUE-002",
+   "ISSUE-003",
+   "ISSUE-004",
+   "ISSUE-005",
+   "ISSUE-006",
+   "ISSUE-007",
+   "ISSUE-008",
+   "ISSUE-009",
+   "ISSUE-010",
+   "ISSUE-011",
+   "ISSUE-012",
+   "ISSUE-013"
+  ],
+  "incomplete": []
+ },
+ "graph": {
+  "nodes": 15,
+  "adjacency_edges": 25,
+  "circulation_edges": 17,
+  "invalid_edge_refs": 0,
+  "component_count": 1
+ },
+ "ifc": {
+  "pset_counts": {
+   "IfcSpace": 13,
+   "IfcWall": 38
+  },
+  "geometry_delta_mm": {
+   "max": 0.0,
+   "worst": null,
+   "tolerance": 0.1,
+   "pass": true
+  },
+  "no_furniture": true
+ }
+}

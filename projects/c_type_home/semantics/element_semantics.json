@@ -1,0 +1,925 @@
+{
+ "meta": {
+  "task": "task02",
+  "structural_policy": "all structural_role UNKNOWN"
+ },
+ "walls": [
+  {
+   "element_id": "W-EXT-W",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_WEST",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-EXT-S",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_SOUTH",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "HIGH"
+  },
+  {
+   "element_id": "W-EXT-S-W1",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_SOUTH",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-EXT-S-W2",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_SOUTH",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-EXT-E1",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_EAST",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-EXT-E2",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_EAST",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-EXT-NE",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_NORTH",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-EXT-NE2",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_NORTH",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-EXT-N-LV",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_NORTH",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-BAY-F",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_NORTH",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-BAY-JW",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_WEST",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-BAY-JE",
+   "element_type": "wall",
+   "existing_location_class": "EXTERIOR_ENVELOPE",
+   "plan_orientation": "PLAN_WEST",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-EXT-N-BAL",
+   "element_type": "wall",
+   "existing_location_class": "BALCONY_BOUNDARY",
+   "plan_orientation": "PLAN_NORTH",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-BALC-W",
+   "element_type": "wall",
+   "existing_location_class": "BALCONY_BOUNDARY",
+   "plan_orientation": "PLAN_WEST",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-BALC-S",
+   "element_type": "wall",
+   "existing_location_class": "BALCONY_BOUNDARY",
+   "plan_orientation": "PLAN_SOUTH",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-BALC-N",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-X5800",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-X5800-STUB",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-INT-X7900-L",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-X7900-U",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-X9800",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-X11500",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "HIGH"
+  },
+  {
+   "element_id": "W-INT-X13000",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-Y4500-a",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-CLK-N",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-INT-CLK-E",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-INT-CLK-W",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-INT-COR-N-STUB",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-INT-BEDN-S",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-WC-S",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-STD-S",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-INT-Y10800",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "dimension_constrained+pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-Y10800-EXT",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-SHAFT-K",
+   "element_type": "wall",
+   "existing_location_class": "SERVICE_BOUNDARY",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-INT-DRY-STUB",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-INT-NICHE",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "W-INT-Y4500-bc",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "MEDIUM"
+  },
+  {
+   "element_id": "W-INT-Y4500-b",
+   "element_type": "wall",
+   "existing_location_class": "INTERIOR_PARTITION",
+   "plan_orientation": null,
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "MEDIUM"
+  }
+ ],
+ "doors": [
+  {
+   "element_id": "D-01",
+   "element_type": "door",
+   "host_wall_id": "W-EXT-W",
+   "side_a_space": "EXTERNAL_COMMON_AREA",
+   "side_b_space": "R-DINING",
+   "side_a_all": [
+    "EXTERNAL_COMMON_AREA"
+   ],
+   "side_b_all": [
+    "R-DINING"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": []
+  },
+  {
+   "element_id": "D-02",
+   "element_type": "door",
+   "host_wall_id": "W-INT-X7900-U",
+   "side_a_space": "R-LIVING",
+   "side_b_space": "R-BALC-N",
+   "side_a_all": [
+    "R-LIVING"
+   ],
+   "side_b_all": [
+    "R-BALC-N"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": []
+  },
+  {
+   "element_id": "D-03",
+   "element_type": "door",
+   "host_wall_id": "W-INT-WC-S",
+   "side_a_space": "R-LEISURE",
+   "side_b_space": "R-BATH-P",
+   "side_a_all": [
+    "R-LEISURE"
+   ],
+   "side_b_all": [
+    "R-BATH-P"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": []
+  },
+  {
+   "element_id": "D-04",
+   "element_type": "door",
+   "host_wall_id": "W-INT-STD-S",
+   "side_a_space": "R-LEISURE",
+   "side_b_space": "R-STUDY",
+   "side_a_all": [
+    "R-LEISURE"
+   ],
+   "side_b_all": [
+    "R-STUDY"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "LOW",
+   "semantic_confidence": "LOW",
+   "notes": []
+  },
+  {
+   "element_id": "D-05",
+   "element_type": "door",
+   "host_wall_id": "W-INT-X13000",
+   "side_a_space": "R-LEISURE",
+   "side_b_space": "R-BED-N",
+   "side_a_all": [
+    "R-LEISURE"
+   ],
+   "side_b_all": [
+    "R-BED-N"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": []
+  },
+  {
+   "element_id": "D-06",
+   "element_type": "door",
+   "host_wall_id": "W-INT-X13000",
+   "side_a_space": "UNMODELED_INTERIOR_ZONE",
+   "side_b_space": "R-BATH-M",
+   "side_a_all": [
+    "UNMODELED_INTERIOR_ZONE"
+   ],
+   "side_b_all": [
+    "R-BATH-M"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": [
+    "one side is an interior zone with no source label and no modeled polygon"
+   ]
+  },
+  {
+   "element_id": "D-07",
+   "element_type": "door",
+   "host_wall_id": "W-INT-CLK-N",
+   "side_a_space": "R-CLOAK",
+   "side_b_space": "R-LEISURE",
+   "side_a_all": [
+    "R-CLOAK"
+   ],
+   "side_b_all": [
+    "R-LEISURE"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "LOW",
+   "semantic_confidence": "LOW",
+   "notes": []
+  },
+  {
+   "element_id": "D-08",
+   "element_type": "door",
+   "host_wall_id": "W-INT-Y4500-b",
+   "side_a_space": "R-BED-S",
+   "side_b_space": "R-LEISURE",
+   "side_a_all": [
+    "R-BED-S"
+   ],
+   "side_b_all": [
+    "R-LEISURE"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": []
+  },
+  {
+   "element_id": "D-09",
+   "element_type": "door",
+   "host_wall_id": "W-INT-Y4500-bc",
+   "side_a_space": "R-MASTER",
+   "side_b_space": "UNMODELED_INTERIOR_ZONE",
+   "side_a_all": [
+    "R-MASTER"
+   ],
+   "side_b_all": [
+    "UNMODELED_INTERIOR_ZONE"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": [
+    "one side is an interior zone with no source label and no modeled polygon"
+   ]
+  },
+  {
+   "element_id": "D-10",
+   "element_type": "door",
+   "host_wall_id": "W-INT-X7900-U",
+   "side_a_space": "UNMODELED_INTERIOR_ZONE",
+   "side_b_space": "R-LEISURE",
+   "side_a_all": [
+    "UNMODELED_INTERIOR_ZONE"
+   ],
+   "side_b_all": [
+    "R-LEISURE"
+   ],
+   "connects_spaces": true,
+   "door_type": "cased_opening_candidate",
+   "source_confidence": "LOW",
+   "semantic_confidence": "LOW",
+   "notes": [
+    "one side is an interior zone with no source label and no modeled polygon",
+    "ISSUE-009 cased opening; west side lands in the unmodeled sliver between W-INT-NICHE (LOW conf) and the host wall — likely part of 休闲厅 if the niche is a recess, not a full wall"
+   ]
+  },
+  {
+   "element_id": "D-11",
+   "element_type": "door",
+   "host_wall_id": "W-INT-X5800",
+   "side_a_space": "R-BALC-LIFE",
+   "side_b_space": "R-KITCHEN",
+   "side_a_all": [
+    "R-BALC-LIFE"
+   ],
+   "side_b_all": [
+    "R-KITCHEN"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": []
+  },
+  {
+   "element_id": "D-12",
+   "element_type": "door",
+   "host_wall_id": "W-INT-X13000",
+   "side_a_space": "R-BALC-N",
+   "side_b_space": "R-BED-N",
+   "side_a_all": [
+    "R-BALC-N"
+   ],
+   "side_b_all": [
+    "R-BED-N"
+   ],
+   "connects_spaces": true,
+   "door_type": "swing_door",
+   "source_confidence": "LOW",
+   "semantic_confidence": "LOW",
+   "notes": []
+  },
+  {
+   "element_id": "D-13",
+   "element_type": "door",
+   "host_wall_id": "W-BALC-N",
+   "side_a_space": "R-BALC-LIFE",
+   "side_b_space": "R-DINING",
+   "side_a_all": [
+    "R-BALC-LIFE"
+   ],
+   "side_b_all": [
+    "R-DINING"
+   ],
+   "connects_spaces": true,
+   "door_type": "sliding_door_candidate",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": [
+    "type=sliding_door_candidate (ISSUE-013); do not upgrade without evidence"
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "element_id": "WIN-N1",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-N-LV",
+   "interior_space_ids": [
+    "R-LIVING"
+   ],
+   "interior_space_id": "R-LIVING",
+   "plan_orientation": "PLAN_NORTH",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "HIGH",
+   "semantic_confidence": "HIGH",
+   "notes": []
+  },
+  {
+   "element_id": "WIN-N2",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-NE",
+   "interior_space_ids": [
+    "R-BED-N"
+   ],
+   "interior_space_id": "R-BED-N",
+   "plan_orientation": "PLAN_NORTH",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "LOW",
+   "semantic_confidence": "LOW",
+   "notes": []
+  },
+  {
+   "element_id": "WIN-N3",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-N-BAL",
+   "interior_space_ids": [
+    "R-BALC-N"
+   ],
+   "interior_space_id": "R-BALC-N",
+   "plan_orientation": "PLAN_NORTH",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "LOW",
+   "semantic_confidence": "LOW",
+   "notes": []
+  },
+  {
+   "element_id": "WIN-E1",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-E1",
+   "interior_space_ids": [
+    "R-MASTER"
+   ],
+   "interior_space_id": "R-MASTER",
+   "plan_orientation": "PLAN_EAST",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": []
+  },
+  {
+   "element_id": "WIN-E2",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-E2",
+   "interior_space_ids": [
+    "R-BED-N"
+   ],
+   "interior_space_id": "R-BED-N",
+   "plan_orientation": "PLAN_EAST",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "MEDIUM",
+   "semantic_confidence": "MEDIUM",
+   "notes": []
+  },
+  {
+   "element_id": "WIN-E3",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-E2",
+   "interior_space_ids": [
+    "R-BATH-M"
+   ],
+   "interior_space_id": "R-BATH-M",
+   "plan_orientation": "PLAN_EAST",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "LOW",
+   "semantic_confidence": "LOW",
+   "notes": []
+  },
+  {
+   "element_id": "WIN-S1",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-S",
+   "interior_space_ids": [
+    "R-BED-S"
+   ],
+   "interior_space_id": "R-BED-S",
+   "plan_orientation": "PLAN_SOUTH",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "HIGH",
+   "semantic_confidence": "HIGH",
+   "notes": []
+  },
+  {
+   "element_id": "WIN-S2",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-S",
+   "interior_space_ids": [
+    "R-MASTER"
+   ],
+   "interior_space_id": "R-MASTER",
+   "plan_orientation": "PLAN_SOUTH",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "HIGH",
+   "semantic_confidence": "HIGH",
+   "notes": []
+  },
+  {
+   "element_id": "WIN-S3",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-S",
+   "interior_space_ids": [
+    "R-KITCHEN"
+   ],
+   "interior_space_id": "R-KITCHEN",
+   "plan_orientation": "PLAN_SOUTH",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "HIGH",
+   "semantic_confidence": "HIGH",
+   "notes": []
+  },
+  {
+   "element_id": "WIN-W1",
+   "element_type": "window",
+   "host_wall_id": "W-EXT-W",
+   "interior_space_ids": [
+    "R-DINING",
+    "R-LIVING"
+   ],
+   "interior_space_id": "R-DINING",
+   "plan_orientation": "PLAN_WEST",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "LOW",
+   "semantic_confidence": "LOW",
+   "notes": [
+    "opening spans multiple modeled spaces: R-DINING,R-LIVING",
+    "nature of thin-line zone uncertain (ISSUE-012)"
+   ]
+  },
+  {
+   "element_id": "WIN-BALC-S",
+   "element_type": "window",
+   "host_wall_id": "W-BALC-S",
+   "interior_space_ids": [
+    "R-BALC-LIFE"
+   ],
+   "interior_space_id": "R-BALC-LIFE",
+   "plan_orientation": "PLAN_SOUTH",
+   "outside_condition": "EXTERIOR",
+   "source_confidence": "LOW",
+   "semantic_confidence": "LOW",
+   "notes": []
+  }
+ ],
+ "columns": [
+  {
+   "element_id": "COL-B1",
+   "element_type": "column",
+   "existing_location_class": "UNKNOWN",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "COL-B2",
+   "element_type": "column",
+   "existing_location_class": "UNKNOWN",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "COL-WS",
+   "element_type": "column",
+   "existing_location_class": "UNKNOWN",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  }
+ ],
+ "ac_bays": [
+  {
+   "element_id": "AC-1",
+   "element_type": "ac_bay",
+   "existing_location_class": "SERVICE_BOUNDARY",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "AC-2",
+   "element_type": "ac_bay",
+   "existing_location_class": "SERVICE_BOUNDARY",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "AC-3",
+   "element_type": "ac_bay",
+   "existing_location_class": "SERVICE_BOUNDARY",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "AC-4",
+   "element_type": "ac_bay",
+   "existing_location_class": "SERVICE_BOUNDARY",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "AC-5",
+   "element_type": "ac_bay",
+   "existing_location_class": "SERVICE_BOUNDARY",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  },
+  {
+   "element_id": "AC-6",
+   "element_type": "ac_bay",
+   "existing_location_class": "SERVICE_BOUNDARY",
+   "structural_role": "UNKNOWN",
+   "design_change_status": "UNKNOWN",
+   "verification_before_modification": true,
+   "source_basis": "pixel_scaled",
+   "source_confidence": "LOW"
+  }
+ ]
+}

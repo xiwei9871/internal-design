@@ -1,0 +1,14 @@
+space_id,source_name,canonical_role,area_m2,perimeter_m,external_wall_length_m,number_of_doors,number_of_windows,total_window_width_mm,adjacent_spaces,directly_connected_spaces,wet_service_class,source_confidence,field_verification_required
+R-LIVING,客厅,living_room,23.52,19.4,13.31,1,2,7390,"['R-BALC-N', 'R-BATH-P', 'R-DINING', 'R-LEISURE']","['R-BALC-N', 'R-DINING', 'R-LEISURE']",DRY,MEDIUM,True
+R-DINING,餐厅,dining_room,14.95,16.28,6.24,2,1,4290,"['R-BALC-LIFE', 'R-KITCHEN', 'R-LEISURE', 'R-LIVING']","['EXTERNAL_COMMON_AREA', 'R-BALC-LIFE', 'R-LEISURE', 'R-LIVING']",DRY,LOW,True
+R-BALC-LIFE,生活阳台,service_balcony,7.35,11.9,8.85,2,1,1400,"['R-DINING', 'R-KITCHEN']","['R-DINING', 'R-KITCHEN']",SEMI_WET,MEDIUM,True
+R-KITCHEN,厨房,kitchen,8.23,12.6,4.85,1,1,1400,"['R-BALC-LIFE', 'R-BED-S', 'R-DINING', 'R-LEISURE']",['R-BALC-LIFE'],SERVICE,MEDIUM,True
+R-LEISURE,休闲厅,family_hall,14.76,20.3,0.0,6,0,0,"['R-BATH-M', 'R-BATH-P', 'R-BED-N', 'R-BED-S', 'R-CLOAK', 'R-DINING', 'R-KITCHEN', 'R-LIVING', 'R-STUDY']","['R-BATH-P', 'R-BED-N', 'R-BED-S', 'R-CLOAK', 'R-DINING', 'R-LIVING', 'R-STUDY', 'UNMODELED_INTERIOR_ZONE']",DRY,LOW,True
+R-BED-S,卧室,bedroom,15.0,15.64,4.27,1,1,2200,"['R-CLOAK', 'R-KITCHEN', 'R-LEISURE', 'R-MASTER']",['R-LEISURE'],DRY,MEDIUM,True
+R-MASTER,主卧,master_bedroom,16.46,16.3,9.75,1,2,4300,"['R-BATH-M', 'R-BED-S']",['UNMODELED_INTERIOR_ZONE'],DRY,MEDIUM,True
+R-CLOAK,衣帽间,walk_in_closet,3.71,7.8,0.0,1,0,0,"['R-BED-S', 'R-LEISURE']",['R-LEISURE'],DRY,LOW,True
+R-BATH-M,主卫,bathroom,5.28,9.7,3.6,1,1,1900,"['R-BED-N', 'R-LEISURE', 'R-MASTER']",['UNMODELED_INTERIOR_ZONE'],WET,MEDIUM,True
+R-BED-N,卧室,bedroom,15.52,16.1,10.2,2,2,4900,"['R-BALC-N', 'R-BATH-M', 'R-LEISURE', 'R-STUDY']","['R-BALC-N', 'R-LEISURE']",DRY,LOW,True
+R-STUDY,书房,study,8.23,11.5,0.0,1,0,0,"['R-BALC-N', 'R-BATH-P', 'R-BED-N', 'R-LEISURE']",['R-LEISURE'],DRY,MEDIUM,True
+R-BATH-P,公卫,bathroom,4.72,8.9,0.0,1,0,0,"['R-BALC-N', 'R-LEISURE', 'R-LIVING', 'R-STUDY']",['R-LEISURE'],WET,MEDIUM,True
+R-BALC-N,阳台,balcony,12.75,15.2,7.1,2,1,1800,"['R-BATH-P', 'R-BED-N', 'R-LIVING', 'R-STUDY']","['R-BED-N', 'R-LIVING']",SEMI_WET,MEDIUM,True

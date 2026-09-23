@@ -1,0 +1,398 @@
+{
+ "meta": {
+  "task": "task02",
+  "unit": "mm/m2",
+  "source": "geometry.json (frozen Task 01)"
+ },
+ "summary": {
+  "note": "modeled_plan_area is NOT official sale/gross area",
+  "space_count": 13,
+  "modeled_plan_area_m2": 150.48,
+  "wet_service_area_m2": 38.33,
+  "dry_area_m2": 112.15
+ },
+ "spaces": [
+  {
+   "space_id": "R-LIVING",
+   "geometry_ref": "R-LIVING",
+   "source_label_zh": "客厅",
+   "canonical_role": "living_room",
+   "area_m2": 23.52,
+   "perimeter_m": 19.4,
+   "source_confidence": "MEDIUM",
+   "touches_exterior_envelope": true,
+   "envelope_walls": [
+    "W-EXT-W",
+    "W-EXT-N-LV",
+    "W-BAY-JW",
+    "W-BAY-JE"
+   ],
+   "external_wall_length_m": 13.31,
+   "exterior_openings": [
+    "WIN-N1",
+    "WIN-W1"
+   ],
+   "connected_openings": [
+    "D-02"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [
+    "AC-1"
+   ],
+   "wet_service_class": "DRY",
+   "wet_class_reason": "no wet/service indication in source label",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-DINING",
+   "geometry_ref": "R-DINING",
+   "source_label_zh": "餐厅",
+   "canonical_role": "dining_room",
+   "area_m2": 14.95,
+   "perimeter_m": 16.28,
+   "source_confidence": "LOW",
+   "touches_exterior_envelope": true,
+   "envelope_walls": [
+    "W-EXT-W"
+   ],
+   "external_wall_length_m": 6.24,
+   "exterior_openings": [
+    "D-01",
+    "WIN-W1"
+   ],
+   "connected_openings": [
+    "D-01",
+    "D-13"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [],
+   "wet_service_class": "DRY",
+   "wet_class_reason": "no wet/service indication in source label",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-BALC-LIFE",
+   "geometry_ref": "R-BALC-LIFE",
+   "source_label_zh": "生活阳台",
+   "canonical_role": "service_balcony",
+   "area_m2": 7.35,
+   "perimeter_m": 11.9,
+   "source_confidence": "MEDIUM",
+   "touches_exterior_envelope": true,
+   "envelope_walls": [
+    "W-EXT-W",
+    "W-BALC-W",
+    "W-BALC-S"
+   ],
+   "external_wall_length_m": 8.85,
+   "exterior_openings": [
+    "WIN-BALC-S"
+   ],
+   "connected_openings": [
+    "D-11",
+    "D-13"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [
+    "AC-6"
+   ],
+   "wet_service_class": "SEMI_WET",
+   "wet_class_reason": "source label 生活阳台 — open balcony; laundry/service use typical but unconfirmed",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-KITCHEN",
+   "geometry_ref": "R-KITCHEN",
+   "source_label_zh": "厨房",
+   "canonical_role": "kitchen",
+   "area_m2": 8.23,
+   "perimeter_m": 12.6,
+   "source_confidence": "MEDIUM",
+   "touches_exterior_envelope": true,
+   "envelope_walls": [
+    "W-EXT-S",
+    "W-EXT-S-W2",
+    "W-BALC-S"
+   ],
+   "external_wall_length_m": 4.85,
+   "exterior_openings": [
+    "WIN-S3"
+   ],
+   "connected_openings": [
+    "D-11"
+   ],
+   "touches_service_shaft": true,
+   "near_ac_bays": [
+    "AC-4",
+    "AC-6"
+   ],
+   "wet_service_class": "SERVICE",
+   "wet_class_reason": "source label 厨房 — cooking/wet service zone",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-LEISURE",
+   "geometry_ref": "R-LEISURE",
+   "source_label_zh": "休闲厅",
+   "canonical_role": "family_hall",
+   "area_m2": 14.76,
+   "perimeter_m": 20.3,
+   "source_confidence": "LOW",
+   "touches_exterior_envelope": false,
+   "envelope_walls": [],
+   "external_wall_length_m": 0.0,
+   "exterior_openings": [],
+   "connected_openings": [
+    "D-03",
+    "D-04",
+    "D-05",
+    "D-07",
+    "D-08",
+    "D-10"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [],
+   "wet_service_class": "DRY",
+   "wet_class_reason": "no wet/service indication in source label",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-BED-S",
+   "geometry_ref": "R-BED-S",
+   "source_label_zh": "卧室",
+   "canonical_role": "bedroom",
+   "area_m2": 15.0,
+   "perimeter_m": 15.64,
+   "source_confidence": "MEDIUM",
+   "touches_exterior_envelope": true,
+   "envelope_walls": [
+    "W-EXT-S"
+   ],
+   "external_wall_length_m": 4.27,
+   "exterior_openings": [
+    "WIN-S1"
+   ],
+   "connected_openings": [
+    "D-08"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [
+    "AC-4",
+    "AC-5",
+    "AC-6"
+   ],
+   "wet_service_class": "DRY",
+   "wet_class_reason": "no wet/service indication in source label",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-MASTER",
+   "geometry_ref": "R-MASTER",
+   "source_label_zh": "主卧",
+   "canonical_role": "master_bedroom",
+   "area_m2": 16.46,
+   "perimeter_m": 16.3,
+   "source_confidence": "MEDIUM",
+   "touches_exterior_envelope": true,
+   "envelope_walls": [
+    "W-EXT-S",
+    "W-EXT-E1"
+   ],
+   "external_wall_length_m": 9.75,
+   "exterior_openings": [
+    "WIN-E1",
+    "WIN-S2"
+   ],
+   "connected_openings": [
+    "D-09"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [
+    "AC-4",
+    "AC-5"
+   ],
+   "wet_service_class": "DRY",
+   "wet_class_reason": "no wet/service indication in source label",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-CLOAK",
+   "geometry_ref": "R-CLOAK",
+   "source_label_zh": "衣帽间",
+   "canonical_role": "walk_in_closet",
+   "area_m2": 3.71,
+   "perimeter_m": 7.8,
+   "source_confidence": "LOW",
+   "touches_exterior_envelope": false,
+   "envelope_walls": [],
+   "external_wall_length_m": 0.0,
+   "exterior_openings": [],
+   "connected_openings": [
+    "D-07"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [],
+   "wet_service_class": "DRY",
+   "wet_class_reason": "no wet/service indication in source label",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-BATH-M",
+   "geometry_ref": "R-BATH-M",
+   "source_label_zh": "主卫",
+   "canonical_role": "bathroom",
+   "area_m2": 5.28,
+   "perimeter_m": 9.7,
+   "source_confidence": "MEDIUM",
+   "touches_exterior_envelope": true,
+   "envelope_walls": [
+    "W-EXT-E1",
+    "W-EXT-E2"
+   ],
+   "external_wall_length_m": 3.6,
+   "exterior_openings": [
+    "WIN-E3"
+   ],
+   "connected_openings": [
+    "D-06"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [],
+   "wet_service_class": "WET",
+   "wet_class_reason": "source label 主卫 — bathroom",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-BED-N",
+   "geometry_ref": "R-BED-N",
+   "source_label_zh": "卧室",
+   "canonical_role": "bedroom",
+   "area_m2": 15.52,
+   "perimeter_m": 16.1,
+   "source_confidence": "LOW",
+   "touches_exterior_envelope": true,
+   "envelope_walls": [
+    "W-EXT-E2",
+    "W-EXT-NE",
+    "W-EXT-NE2"
+   ],
+   "external_wall_length_m": 10.2,
+   "exterior_openings": [
+    "WIN-E2",
+    "WIN-N2"
+   ],
+   "connected_openings": [
+    "D-05",
+    "D-12"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [
+    "AC-2",
+    "AC-3"
+   ],
+   "wet_service_class": "DRY",
+   "wet_class_reason": "no wet/service indication in source label",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-STUDY",
+   "geometry_ref": "R-STUDY",
+   "source_label_zh": "书房",
+   "canonical_role": "study",
+   "area_m2": 8.23,
+   "perimeter_m": 11.5,
+   "source_confidence": "MEDIUM",
+   "touches_exterior_envelope": false,
+   "envelope_walls": [],
+   "external_wall_length_m": 0.0,
+   "exterior_openings": [],
+   "connected_openings": [
+    "D-04"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [
+    "AC-2"
+   ],
+   "wet_service_class": "DRY",
+   "wet_class_reason": "no wet/service indication in source label",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-BATH-P",
+   "geometry_ref": "R-BATH-P",
+   "source_label_zh": "公卫",
+   "canonical_role": "bathroom",
+   "area_m2": 4.72,
+   "perimeter_m": 8.9,
+   "source_confidence": "MEDIUM",
+   "touches_exterior_envelope": false,
+   "envelope_walls": [],
+   "external_wall_length_m": 0.0,
+   "exterior_openings": [],
+   "connected_openings": [
+    "D-03"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [],
+   "wet_service_class": "WET",
+   "wet_class_reason": "source label 公卫 — bathroom",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  },
+  {
+   "space_id": "R-BALC-N",
+   "geometry_ref": "R-BALC-N",
+   "source_label_zh": "阳台",
+   "canonical_role": "balcony",
+   "area_m2": 12.75,
+   "perimeter_m": 15.2,
+   "source_confidence": "MEDIUM",
+   "touches_exterior_envelope": true,
+   "envelope_walls": [
+    "W-EXT-N-LV",
+    "W-EXT-N-BAL"
+   ],
+   "external_wall_length_m": 7.1,
+   "exterior_openings": [
+    "WIN-N3"
+   ],
+   "connected_openings": [
+    "D-02",
+    "D-12"
+   ],
+   "touches_service_shaft": false,
+   "near_ac_bays": [
+    "AC-2",
+    "AC-3"
+   ],
+   "wet_service_class": "SEMI_WET",
+   "wet_class_reason": "source label 阳台 — open balcony",
+   "design_change_status": "UNKNOWN",
+   "field_verification_required": true,
+   "notes": []
+  }
+ ]
+}
