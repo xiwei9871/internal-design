@@ -2,14 +2,18 @@
  "meta": {
   "task": "task02",
   "unit": "mm/m2",
-  "source": "geometry.json (frozen Task 01)"
+  "source": "geometry.json (frozen Task 01)",
+  "space_polygon_nature": "Task01 spaces[] are source-derived approximate label regions, NOT exact wall-bounded free-space cells (e.g. R-LEISURE polygon crosses W-INT-X7900-U). Door side resolution therefore uses wall-aware probes and derived zone cells, not polygon containment alone."
  },
  "summary": {
-  "note": "modeled_plan_area is NOT official sale/gross area",
+  "note": "modeled_plan_area is NOT official sale/gross/title area; Task01 space polygons are approximate label regions, not exact wall-bounded cells",
   "space_count": 13,
-  "modeled_plan_area_m2": 150.48,
-  "wet_service_area_m2": 38.33,
-  "dry_area_m2": 112.15
+  "exact_sum_area_m2": 150.5035,
+  "union_area_m2": 150.5035,
+  "overlap_area_m2": 0.0,
+  "modeled_plan_area_m2": 150.5,
+  "wet_service_area_m2": 38.34,
+  "dry_area_m2": 112.16
  },
  "spaces": [
   {

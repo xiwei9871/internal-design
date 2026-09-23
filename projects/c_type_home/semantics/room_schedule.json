@@ -3,11 +3,14 @@
   "task": "task02"
  },
  "summary": {
-  "note": "modeled_plan_area is NOT official sale/gross area",
+  "note": "modeled_plan_area is NOT official sale/gross/title area; Task01 space polygons are approximate label regions, not exact wall-bounded cells",
   "space_count": 13,
-  "modeled_plan_area_m2": 150.48,
-  "wet_service_area_m2": 38.33,
-  "dry_area_m2": 112.15
+  "exact_sum_area_m2": 150.5035,
+  "union_area_m2": 150.5035,
+  "overlap_area_m2": 0.0,
+  "modeled_plan_area_m2": 150.5,
+  "wet_service_area_m2": 38.34,
+  "dry_area_m2": 112.16
  },
  "rooms": [
   {
@@ -113,11 +116,10 @@
    "area_m2": 14.76,
    "perimeter_m": 20.3,
    "external_wall_length_m": 0.0,
-   "number_of_doors": 6,
+   "number_of_doors": 5,
    "number_of_windows": 0,
    "total_window_width_mm": 0,
    "adjacent_spaces": [
-    "R-BATH-M",
     "R-BATH-P",
     "R-BED-N",
     "R-BED-S",
@@ -125,17 +127,17 @@
     "R-DINING",
     "R-KITCHEN",
     "R-LIVING",
-    "R-STUDY"
+    "R-STUDY",
+    "ZONE-MASTER-CORRIDOR"
    ],
    "directly_connected_spaces": [
     "R-BATH-P",
-    "R-BED-N",
     "R-BED-S",
     "R-CLOAK",
     "R-DINING",
     "R-LIVING",
     "R-STUDY",
-    "UNMODELED_INTERIOR_ZONE"
+    "ZONE-MASTER-CORRIDOR"
    ],
    "wet_service_class": "DRY",
    "source_confidence": "LOW",
@@ -176,10 +178,11 @@
    "total_window_width_mm": 4300,
    "adjacent_spaces": [
     "R-BATH-M",
-    "R-BED-S"
+    "R-BED-S",
+    "ZONE-MASTER-CORRIDOR"
    ],
    "directly_connected_spaces": [
-    "UNMODELED_INTERIOR_ZONE"
+    "ZONE-MASTER-CORRIDOR"
    ],
    "wet_service_class": "DRY",
    "source_confidence": "MEDIUM",
@@ -197,7 +200,8 @@
    "total_window_width_mm": 0,
    "adjacent_spaces": [
     "R-BED-S",
-    "R-LEISURE"
+    "R-LEISURE",
+    "ZONE-MASTER-CORRIDOR"
    ],
    "directly_connected_spaces": [
     "R-LEISURE"
@@ -218,11 +222,11 @@
    "total_window_width_mm": 1900,
    "adjacent_spaces": [
     "R-BED-N",
-    "R-LEISURE",
-    "R-MASTER"
+    "R-MASTER",
+    "ZONE-MASTER-CORRIDOR"
    ],
    "directly_connected_spaces": [
-    "UNMODELED_INTERIOR_ZONE"
+    "ZONE-MASTER-CORRIDOR"
    ],
    "wet_service_class": "WET",
    "source_confidence": "MEDIUM",
@@ -246,7 +250,7 @@
    ],
    "directly_connected_spaces": [
     "R-BALC-N",
-    "R-LEISURE"
+    "ZONE-MASTER-CORRIDOR"
    ],
    "wet_service_class": "DRY",
    "source_confidence": "LOW",

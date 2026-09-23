@@ -500,9 +500,10 @@
    "element_id": "D-05",
    "element_type": "door",
    "host_wall_id": "W-INT-X13000",
-   "side_a_space": "R-LEISURE",
+   "side_a_space": "ZONE-MASTER-CORRIDOR",
    "side_b_space": "R-BED-N",
    "side_a_all": [
+    "ZONE-MASTER-CORRIDOR",
     "R-LEISURE"
    ],
    "side_b_all": [
@@ -512,16 +513,18 @@
    "door_type": "swing_door",
    "source_confidence": "MEDIUM",
    "semantic_confidence": "MEDIUM",
-   "notes": []
+   "notes": [
+    "multiple space hits per side: a=['ZONE-MASTER-CORRIDOR', 'R-LEISURE'] b=['R-BED-N']"
+   ]
   },
   {
    "element_id": "D-06",
    "element_type": "door",
    "host_wall_id": "W-INT-X13000",
-   "side_a_space": "UNMODELED_INTERIOR_ZONE",
+   "side_a_space": "ZONE-MASTER-CORRIDOR",
    "side_b_space": "R-BATH-M",
    "side_a_all": [
-    "UNMODELED_INTERIOR_ZONE"
+    "ZONE-MASTER-CORRIDOR"
    ],
    "side_b_all": [
     "R-BATH-M"
@@ -530,9 +533,7 @@
    "door_type": "swing_door",
    "source_confidence": "MEDIUM",
    "semantic_confidence": "MEDIUM",
-   "notes": [
-    "one side is an interior zone with no source label and no modeled polygon"
-   ]
+   "notes": []
   },
   {
    "element_id": "D-07",
@@ -575,40 +576,37 @@
    "element_type": "door",
    "host_wall_id": "W-INT-Y4500-bc",
    "side_a_space": "R-MASTER",
-   "side_b_space": "UNMODELED_INTERIOR_ZONE",
+   "side_b_space": "ZONE-MASTER-CORRIDOR",
    "side_a_all": [
     "R-MASTER"
    ],
    "side_b_all": [
-    "UNMODELED_INTERIOR_ZONE"
+    "ZONE-MASTER-CORRIDOR"
    ],
    "connects_spaces": true,
    "door_type": "swing_door",
    "source_confidence": "MEDIUM",
    "semantic_confidence": "MEDIUM",
-   "notes": [
-    "one side is an interior zone with no source label and no modeled polygon"
-   ]
+   "notes": []
   },
   {
    "element_id": "D-10",
    "element_type": "door",
    "host_wall_id": "W-INT-X7900-U",
-   "side_a_space": "UNMODELED_INTERIOR_ZONE",
+   "side_a_space": "UNRESOLVED",
    "side_b_space": "R-LEISURE",
    "side_a_all": [
-    "UNMODELED_INTERIOR_ZONE"
+    "UNRESOLVED"
    ],
    "side_b_all": [
     "R-LEISURE"
    ],
-   "connects_spaces": true,
+   "connects_spaces": null,
    "door_type": "cased_opening_candidate",
    "source_confidence": "LOW",
-   "semantic_confidence": "LOW",
+   "semantic_confidence": "UNRESOLVED",
    "notes": [
-    "one side is an interior zone with no source label and no modeled polygon",
-    "ISSUE-009 cased opening; west side lands in the unmodeled sliver between W-INT-NICHE (LOW conf) and the host wall — likely part of 休闲厅 if the niche is a recess, not a full wall"
+    "ISSUE-009 cased opening; west probes land inside W-INT-NICHE (LOW conf) / the ~400mm sliver between it and the host wall — insufficient evidence, marked UNRESOLVED rather than aliased to any zone"
    ]
   },
   {

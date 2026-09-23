@@ -27,6 +27,10 @@ BASELINE = json.loads(
 
 GSPACE_IDS = {s['id'] for s in GEO['spaces']}
 NODE_IDS = {n['id'] for n in GRAPH['nodes']}
+CELLS = json.loads((SEM / 'space_cells.json').read_text('utf-8'))
+ZONE_IDS = {z['zone_id'] for z in CELLS['zones']}
+ADJ_PAIRS = {(e['space_a'], e['space_b']) for e in GRAPH['adjacency_edges']}
+ADJ_PAIRS |= {(b, a) for a, b in ADJ_PAIRS}
 
 
 def sha256(p):
@@ -171,6 +175,89 @@ class T02K_RoomSchedule(unittest.TestCase):
         for room in SCHED['rooms']:
             want = round(gpolys[room['space_id']].area / 1e6, 2)
             self.assertEqual(room['area_m2'], want, room['space_id'])
+
+
+class T02RC1_SpatialTopology(unittest.TestCase):
+    """RC1 — spatial topology corrections."""
+
+    def test_space_union_overlap_accounting(self):
+        from shapely.geometry import Polygon
+        from shapely.ops import unary_union
+        polys = [Polygon(s['polygon_mm']) for s in GEO['spaces']]
+        exact = sum(p.area for p in polys) / 1e6
+        union = unary_union(polys).area / 1e6
+        summ = SPACE_SEM['summary']
+        self.assertAlmostEqual(summ['exact_sum_area_m2'], exact, places=4)
+        self.assertAlmostEqual(summ['union_area_m2'], union, places=4)
+        self.assertAlmostEqual(
+            summ['overlap_area_m2'], exact - union, places=4)
+        self.assertAlmostEqual(summ['overlap_area_m2'], 0.0, places=4)
+        self.assertEqual(summ['modeled_plan_area_m2'], round(exact, 2))
+
+    def test_corner_proximity_is_not_adjacency(self):
+        # no adjacency edge may rest on corner-only contact: every edge
+        # must carry real projected facing overlap
+        for e in GRAPH['adjacency_edges']:
+            self.assertGreaterEqual(e['shared_boundary_mm'], 400,
+                                    e)
+
+    def test_leisure_master_bath_not_adjacent(self):
+        self.assertNotIn(('R-LEISURE', 'R-BATH-M'), ADJ_PAIRS)
+
+    def test_unmodeled_zones_are_spatially_distinct(self):
+        from shapely.geometry import Polygon
+        zp = {z['zone_id']: Polygon(z['polygon_mm'])
+              for z in CELLS['zones']}
+        for zid, p in zp.items():
+            self.assertTrue(p.is_valid and not p.is_empty, zid)
+            self.assertGreater(p.area, 0, zid)
+        ids = list(zp)
+        for i in range(len(ids)):
+            for j in range(i + 1, len(ids)):
+                self.assertFalse(
+                    zp[ids[i]].intersects(zp[ids[j]]),
+                    f'{ids[i]} overlaps {ids[j]}')
+
+    def test_no_unmodeled_node_represents_disconnected_regions(self):
+        from shapely.geometry import Polygon
+        for z in CELLS['zones']:
+            p = Polygon(z['polygon_mm'])
+            # a single Polygon object is one connected region by
+            # construction; also verify required provenance fields
+            self.assertEqual(p.geom_type, 'Polygon')
+            for f in ('zone_id', 'bounds_mm', 'source_evidence',
+                      'confidence', 'not_a_task01_room_because',
+                      'derived_from_task01_geometry'):
+                self.assertIn(f, z, z['zone_id'])
+            self.assertTrue(z['derived_from_task01_geometry'])
+
+    def test_d10_does_not_alias_master_corridor(self):
+        d10 = next(d for d in ELEM_SEM['doors']
+                   if d['element_id'] == 'D-10')
+        self.assertNotIn('ZONE-MASTER-CORRIDOR',
+                         (d10['side_a_space'], d10['side_b_space']))
+        self.assertIn('UNRESOLVED',
+                      (d10['side_a_space'], d10['side_b_space']))
+
+    def test_shared_boundary_length_is_projected_facing_length(self):
+        # living/dining share the y7900 line over x2900-5700 -> 2800mm
+        e = next(x for x in GRAPH['adjacency_edges']
+                 if {x['space_a'], x['space_b']} ==
+                 {'R-LIVING', 'R-DINING'})
+        self.assertAlmostEqual(e['shared_boundary_mm'], 2800, delta=1)
+
+    def test_circulation_component_not_created_by_zone_aliasing(self):
+        # zone nodes must connect through real edges only; no zone<->zone
+        # shortcut edge may exist
+        for e in GRAPH['circulation_edges']:
+            pair = {e['space_a'], e['space_b']}
+            self.assertFalse(pair <= ZONE_IDS,
+                             f"zone-to-zone edge {e}")
+        # every zone circulation edge must carry geometric evidence
+        for e in GRAPH['circulation_edges']:
+            if ZONE_IDS & {e['space_a'], e['space_b']}:
+                self.assertTrue(e.get('opening_id') or
+                                e.get('open_run_mm'), e)
 
 
 class T02LMN_IFC(unittest.TestCase):

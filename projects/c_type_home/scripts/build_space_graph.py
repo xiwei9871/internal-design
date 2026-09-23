@@ -1,16 +1,19 @@
 """Task 02 — adjacency & circulation graph.
 
 adjacency_graph.json distinguishes:
-  A. geometric adjacency — two space polygons share a boundary strip
-     (regardless of whether a wall blocks it)
-  B. circulation connectivity — an actual door/opening or an un-walled
-     open passage lets people move between the two nodes
+  A. geometric adjacency — two space polygons have FACING boundary runs
+     (parallel edges, gap <= wall-band tolerance, projected overlap
+     >= MIN_OVERLAP along the boundary direction). Corner-only proximity
+     never counts. shared_boundary_mm = projected facing overlap.
+  B. circulation connectivity — a door/opening or an un-walled open
+     passage lets people move between nodes.
 
-Nodes: all geometry spaces + EXTERNAL_COMMON_AREA (outside the entry door)
-+ UNMODELED_INTERIOR_ZONE (interior area bounded by walls but with no
-source label / modeled polygon — verified unlabeled on the source image).
+Nodes: all geometry spaces + EXTERNAL_COMMON_AREA + derived zones
+(ZONE-MASTER-CORRIDOR: bounded interior area with no source label —
+see semantics/space_cells.json).
 """
 import json
+import math
 import sys
 from pathlib import Path
 
@@ -20,14 +23,15 @@ from shapely.geometry import Point
 SCRIPT_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPT_DIR))
 from geo_common import (  # noqa: E402
-    PROJECT_ROOT, load_geometry, opening_world_rect, wall_axis)
+    PROJECT_ROOT, load_geometry)
 from sem_common import (  # noqa: E402
-    EXTERNAL_NODE, SEMANTICS_DIR, UNMODELED_ZONE, save, space_polys,
-    wall_box)
+    EXTERNAL_NODE, SEMANTICS_DIR, UNRESOLVED,
+    save, space_polys, wall_box, zone_polys)
 
-T_ADJ = 350.0     # buffer bridging polygon-edge gaps across wall bands
-STEP = 50.0       # sampling step along shared boundaries
-MIN_OPEN = 400.0  # min un-walled run that counts as an open passage
+GAP_MAX = 600.0      # max wall-band gap between facing boundary edges
+MIN_OVERLAP = 400.0  # min projected facing overlap for real adjacency
+STEP = 50.0          # sampling step along boundaries
+MIN_OPEN = 400.0     # min un-walled run that counts as an open passage
 
 
 def load_elements():
@@ -39,102 +43,133 @@ def wall_boxes(geo):
     return [(w["id"], wall_box(w)) for w in geo["walls"]]
 
 
-def covered_by_wall(pt, wboxes, tol=60.0):
+def covered_by_wall(pt, wboxes, tol=30.0):
     return any(b.distance(pt) <= tol for _, b in wboxes)
 
 
-def open_runs_on_segment(p0, p1, wboxes):
-    """Sample a straight segment; return list of un-walled (a,b) runs
-    in segment parameter t, plus total open length in mm."""
-    import math
+def edges_of(poly):
+    """Axis-aligned boundary edges -> (axis, fixed, lo, hi)."""
+    out = []
+    c = list(poly.exterior.coords)
+    for i in range(len(c) - 1):
+        (x1, y1), (x2, y2) = c[i], c[i + 1]
+        if abs(y1 - y2) < 1e-6:
+            out.append(("H", y1, min(x1, x2), max(x1, x2)))
+        elif abs(x1 - x2) < 1e-6:
+            out.append(("V", x1, min(y1, y2), max(y1, y2)))
+    return out
+
+
+def facing_segments(pa, pb):
+    """Facing boundary runs between two polygons.
+    Returns list of (axis, midline p0, p1, gap_mm, overlap_mm)."""
+    segs = []
+    for ax_a, pos_a, lo_a, hi_a in edges_of(pa):
+        for ax_b, pos_b, lo_b, hi_b in edges_of(pb):
+            if ax_a != ax_b:
+                continue
+            gap = abs(pos_a - pos_b)
+            if gap > GAP_MAX:
+                continue
+            lo, hi = max(lo_a, lo_b), min(hi_a, hi_b)
+            ov = hi - lo
+            if ov < MIN_OVERLAP:
+                continue
+            mid = pos_a + (pos_b - pos_a) / 2
+            if ax_a == "H":
+                p0, p1 = (lo, mid), (hi, mid)
+            else:
+                p0, p1 = (mid, lo), (mid, hi)
+            segs.append((ax_a, p0, p1, gap, ov))
+    return segs
+
+
+def segment_open_runs(p0, p1, wboxes, pa=None, pb=None):
+    """Sample a segment; return (open runs [(t0,t1,len_mm)],
+    frac_inside_wall, frac_inside_either_poly)."""
     L = math.hypot(p1[0] - p0[0], p1[1] - p0[1])
     n = max(int(L / STEP), 1)
-    open_ts, cur = [], []
+    open_ts, cur, in_wall, in_poly = [], [], 0, 0
     for i in range(n + 1):
         t = i / n
         pt = Point(p0[0] + (p1[0] - p0[0]) * t,
                    p0[1] + (p1[1] - p0[1]) * t)
+        inside_p = ((pa is not None and pa.contains(pt)) or
+                    (pb is not None and pb.contains(pt)))
+        in_poly += inside_p
         if covered_by_wall(pt, wboxes):
+            in_wall += 1
             if cur:
                 open_ts.append(cur)
                 cur = []
-        else:
+        elif not inside_p:
             cur.append(t)
+        else:
+            if cur:
+                open_ts.append(cur)
+                cur = []
     if cur:
         open_ts.append(cur)
     runs = [(r[0], r[-1], (r[-1] - r[0]) * L) for r in open_ts]
-    return runs, L
+    return runs, in_wall / (n + 1), in_poly / (n + 1)
 
 
-def adjacency_and_passages(geo, polys, wboxes):
+def adjacency_and_passages(polys, zones, wboxes):
+    """Wall-aware adjacency: facing parallel boundary runs with
+    wall-band gap and projected overlap. Midline must not run through
+    either polygon's interior. Zones participate so their real
+    open boundaries (e.g. corridor -> leisure band) are detected."""
+    all_p = {**polys, **zones}
     adj, passages = [], []
-    ids = list(polys)
+    ids = sorted(all_p)
     for i in range(len(ids)):
         for j in range(i + 1, len(ids)):
-            a, b = polys[ids[i]], polys[ids[j]]
-            inter = a.buffer(T_ADJ).intersection(b.buffer(T_ADJ))
-            if inter.is_empty:
-                continue
-            shared = a.boundary.intersection(b.buffer(T_ADJ)).length
-            if shared < 100:
-                continue
-            adj.append({"space_a": ids[i], "space_b": ids[j],
-                        "shared_boundary_mm": round(shared, 0),
-                        "confidence": "HIGH" if shared > 1000 else "MEDIUM"})
-
-            # --- open passage detection ---
-            runs_total = []
-            if a.intersects(b):
-                # nested/overlapping polygons (cloak inside leisure):
-                # sample the smaller polygon's boundary
-                smaller = a if a.area < b.area else b
-                line = smaller.boundary
-                n = max(int(line.length / STEP), 1)
-                blocked = [covered_by_wall(
-                    line.interpolate(k / n, normalized=True), wboxes)
-                    for k in range(n + 1)]
-                # longest open run along the boundary
-                best = 0.0
-                run = 0.0
-                for bl in blocked:
-                    run = run + STEP if not bl else 0.0
-                    best = max(best, run)
-                if best >= MIN_OPEN:
-                    passages.append({
-                        "space_a": ids[i], "space_b": ids[j],
-                        "kind": "OPEN_PASSAGE",
-                        "open_run_mm": round(best, 0),
-                        "confidence": "MEDIUM"})
-            else:
-                strip = inter.envelope.bounds
-                sx1, sy1, sx2, sy2 = strip
-                if (sx2 - sx1) >= (sy2 - sy1):
-                    p0, p1 = (sx1, (sy1 + sy2) / 2), (sx2, (sy1 + sy2) / 2)
-                else:
-                    p0, p1 = ((sx1 + sx2) / 2, sy1), ((sx1 + sx2) / 2, sy2)
-                runs, L = open_runs_on_segment(p0, p1, wboxes)
+            sa, sb = ids[i], ids[j]
+            pa, pb = all_p[sa], all_p[sb]
+            shared = 0.0
+            open_runs = []
+            for ax, p0, p1, gap, ov in facing_segments(pa, pb):
+                runs, f_wall, f_poly = segment_open_runs(
+                    p0, p1, wboxes, pa, pb)
+                # the facing strip must not lie inside either polygon
+                if f_poly > 0.3:
+                    continue
+                shared += ov
                 for t0, t1, seg_mm in runs:
                     if seg_mm >= MIN_OPEN:
-                        passages.append({
-                            "space_a": ids[i], "space_b": ids[j],
-                            "kind": "OPEN_PASSAGE",
-                            "open_run_mm": round(seg_mm, 0),
-                            "confidence": "MEDIUM"})
+                        open_runs.append(round(seg_mm, 0))
+            if shared > 0:
+                adj.append({
+                    "space_a": sa, "space_b": sb,
+                    "shared_boundary_mm": round(shared, 0),
+                    "shared_boundary_basis":
+                        "projected facing-edge overlap",
+                    "involves_zone": sa in zones or sb in zones,
+                    "confidence": "HIGH" if shared > 1000 else "MEDIUM"})
+                for seg_mm in open_runs:
+                    passages.append({
+                        "space_a": sa, "space_b": sb,
+                        "kind": "OPEN_PASSAGE",
+                        "open_run_mm": seg_mm,
+                        "confidence": "MEDIUM"})
     return adj, passages
 
 
 def main():
     geo = load_geometry()
     polys = space_polys(geo)
+    zones = zone_polys(geo)
     wboxes = wall_boxes(geo)
     elements = load_elements()
 
-    adj, passages = adjacency_and_passages(geo, polys, wboxes)
+    adj, passages = adjacency_and_passages(polys, zones, wboxes)
 
     circ = []
+    unresolved = []
     for d in elements["doors"]:
         sa, sb = d["side_a_space"], d["side_b_space"]
-        if sa == "UNRESOLVED" or sb == "UNRESOLVED":
+        if UNRESOLVED in (sa, sb):
+            unresolved.append(d["element_id"])
             continue
         circ.append({
             "space_a": sa, "space_b": sb,
@@ -149,30 +184,18 @@ def main():
                      "open_run_mm": p["open_run_mm"],
                      "confidence": p["confidence"]})
 
-    # zone <-> leisure NE band: verify the gap x12100-12900 @ y~6450 is
-    # really un-walled before asserting the edge
-    runs, _ = open_runs_on_segment((11300, 6450), (12900, 6450), wboxes)
-    zone_leisure_open = sum(r[2] for r in runs)
-    if zone_leisure_open >= MIN_OPEN:
-        circ.append({"space_a": UNMODELED_ZONE, "space_b": "R-LEISURE",
-                     "opening_id": None,
-                     "opening_type": "OPEN_PASSAGE",
-                     "open_run_mm": round(zone_leisure_open, 0),
-                     "confidence": "MEDIUM",
-                     "note": "gap x12100-12900 below y6500 — no wall "
-                             "object between corridor zone and leisure "
-                             "NE band"})
+    # zone adjacency/passages are detected generically above; no manual
+    # zone edges — connectivity must come from geometric evidence only
 
-    # build graph & connected components on real connections only
     g = nx.Graph()
-    nodes = list(polys) + [EXTERNAL_NODE, UNMODELED_ZONE]
+    nodes = list(polys) + list(zones) + [EXTERNAL_NODE]
     g.add_nodes_from(nodes)
     for e in circ:
         if not e.get("intra_space"):
             g.add_edge(e["space_a"], e["space_b"])
     comps = [sorted(c) for c in nx.connected_components(g)]
 
-    # backfill room_schedule adjacency/connectivity now that the graph exists
+    # backfill room_schedule adjacency/connectivity
     sched_p = SEMANTICS_DIR / "room_schedule.json"
     if sched_p.exists():
         sched = json.loads(sched_p.read_text(encoding="utf-8"))
@@ -199,28 +222,30 @@ def main():
             w = csv.DictWriter(f, fieldnames=list(sched["rooms"][0].keys()))
             w.writeheader()
             w.writerows(sched["rooms"])
-        print("room_schedule backfilled with graph edges")
+        print("room_schedule backfilled")
 
     out = {
         "meta": {
             "task": "task02",
-            "adjacency": "geometric boundary sharing (polygon buffers)",
+            "adjacency": "facing-edge projected overlap with wall-band "
+                         "gap; corner proximity excluded",
             "circulation": "movement through doors / un-walled passages",
-            "note": "adjacency != circulation; intra-space openings kept "
-                    "but excluded from component analysis"},
+            "note": "adjacency != circulation; zones are distinct located "
+                    "derived nodes (see space_cells.json)"},
         "nodes": [{"id": n,
                    "kind": ("space" if n in polys else
                             "external" if n == EXTERNAL_NODE else
-                            "unmodeled_interior_zone")}
+                            "derived_zone")}
                   for n in nodes],
         "adjacency_edges": adj,
         "circulation_edges": circ,
+        "unresolved_edges": unresolved,
         "connected_components": comps,
         "component_count": len(comps),
     }
     save("adjacency_graph.json", out)
-    print(f"adjacency edges={len(adj)} circulation edges={len(circ)} "
-          f"components={len(comps)}")
+    print(f"adjacency={len(adj)} circulation={len(circ)} "
+          f"unresolved={unresolved} components={len(comps)}")
     for c in comps:
         print("  comp:", c)
 

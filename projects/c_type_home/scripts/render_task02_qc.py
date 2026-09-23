@@ -64,12 +64,13 @@ def render_spaces(geo, sem):
     return Image.alpha_composite(img, layer).convert("RGB")
 
 
-def render_connectivity(geo, graph):
+def render_connectivity(geo, graph, cells):
     img, layer = base_layer()
     d = ImageDraw.Draw(layer)
     polys = {s["id"]: Polygon(s["polygon_mm"]) for s in geo["spaces"]}
+    for z in cells.get("zones", []):
+        polys[z["zone_id"]] = Polygon(z["polygon_mm"])
     cent = {sid: centroid_px(p) for sid, p in polys.items()}
-    cent["UNMODELED_INTERIOR_ZONE"] = mm_to_px(12100, 5500)
     cent["EXTERNAL_COMMON_AREA"] = mm_to_px(1500, 6000)
     wall_by_id = {w["id"]: w for w in geo["walls"]}
 
@@ -92,10 +93,21 @@ def render_connectivity(geo, graph):
                           fill=(255, 120, 0))
                 d.text((mx + 10, my - 10), e["opening_id"],
                        fill=(200, 60, 0), font=font_xs)
+    # unresolved openings get a hollow gray marker — visible but not
+    # presented as a resolved connection
+    for oid in graph.get("unresolved_edges", []):
+        op = next((o for o in geo["doors"] if o["id"] == oid), None)
+        if op:
+            r = opening_world_rect(op, wall_by_id[op["host_wall_id"]])
+            mx, my = mm_to_px((r[0] + r[2]) / 2, (r[1] + r[3]) / 2)
+            d.ellipse([mx - 9, my - 9, mx + 9, my + 9],
+                      outline=(120, 120, 120), width=3)
+            d.text((mx + 12, my - 10), f"{oid} (UNRESOLVED)",
+                   fill=(90, 90, 90), font=font_xs)
     for sid, (cx, cy) in cent.items():
-        r = 16 if sid not in polys else 22
+        r = 16 if sid == "EXTERNAL_COMMON_AREA" else 22
         col = (255, 60, 60) if sid == "EXTERNAL_COMMON_AREA" else \
-            (160, 60, 200) if sid == "UNMODELED_INTERIOR_ZONE" else \
+            (160, 60, 200) if sid.startswith("ZONE-") else \
             (0, 90, 200)
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=col + (220,))
         d.text((cx, cy - r - 12), sid.replace("R-", ""),
@@ -158,9 +170,12 @@ def main():
                      .read_text(encoding="utf-8"))
     graph = json.loads((SEMANTICS_DIR / "adjacency_graph.json")
                        .read_text(encoding="utf-8"))
+    cells = json.loads((SEMANTICS_DIR / "space_cells.json")
+                       .read_text(encoding="utf-8"))
     QC.mkdir(exist_ok=True)
     render_spaces(geo, sem).save(QC / "task02_space_semantics.png")
-    render_connectivity(geo, graph).save(QC / "task02_connectivity.png")
+    render_connectivity(geo, graph, cells).save(
+        QC / "task02_connectivity.png")
     render_constraints(geo).save(QC / "task02_constraint_map.png")
     print("QC renders written to", QC)
 

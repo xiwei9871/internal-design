@@ -1,0 +1,50 @@
+{
+ "meta": {
+  "task": "task02",
+  "derived_from_task01_geometry": true,
+  "not_geometry_truth": true,
+  "note": "Derived semantic cells for bounded interior areas that have no source label and no Task01 polygon. Zone bounds are computed from surrounding wall faces at build time. Task01 room polygons themselves remain approximate label regions."
+ },
+ "zones": [
+  {
+   "zone_id": "ZONE-MASTER-CORRIDOR",
+   "kind": "derived_zone",
+   "bounds_mm": [
+    11400,
+    4650,
+    12900,
+    6500
+   ],
+   "polygon_mm": [
+    [
+     11400,
+     4650
+    ],
+    [
+     12900,
+     4650
+    ],
+    [
+     12900,
+     6500
+    ],
+    [
+     12100,
+     6500
+    ],
+    [
+     12100,
+     6300
+    ],
+    [
+     11400,
+     6300
+    ]
+   ],
+   "derived_from_task01_geometry": true,
+   "source_evidence": "bounded by W-INT-CLK-E / W-INT-X13000 / W-INT-Y4500-bc / W-INT-CLK-N / W-INT-COR-N-STUB; source image verified: no room label inside; doors D-05(partial)/D-06/D-09 land here",
+   "confidence": "MEDIUM",
+   "not_a_task01_room_because": "no source label and no modeled polygon; physically it is the corridor serving master suite doors"
+  }
+ ]
+}

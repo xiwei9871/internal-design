@@ -15,9 +15,10 @@ from geo_common import (  # noqa: E402
 
 SEMANTICS_DIR = PROJECT_ROOT / "semantics"
 EXTERNAL_NODE = "EXTERNAL_COMMON_AREA"
-# Interior zone bounded by walls but with no source label / no modeled
-# polygon (corridor strip east of cloakroom). A graph node, NOT a space.
-UNMODELED_ZONE = "UNMODELED_INTERIOR_ZONE"
+# Bounded interior areas with no source label / no Task01 polygon.
+# Each derived zone is a DISTINCT located node — never merged.
+ZONE_MASTER_CORRIDOR = "ZONE-MASTER-CORRIDOR"
+UNRESOLVED = "UNRESOLVED"
 
 # gap tolerance: space polygons stop ~50-300mm short of wall faces
 TOL = 400.0
@@ -48,6 +49,43 @@ WALL_LOCATION_CLASS = {
 
 def space_polys(geo):
     return {s["id"]: Polygon(s["polygon_mm"]) for s in geo["spaces"]}
+
+
+def zone_definitions(geo):
+    """Derived semantic zones — bounded interior areas with no source
+    label and no Task01 polygon. Bounds are computed from surrounding
+    wall faces (derived_from_task01_geometry=true)."""
+    w = {x["id"]: x["rect_mm"] for x in geo["walls"]}
+    x_w = w["W-INT-CLK-E"][2]    # cloak east wall, east face 11400
+    x_e = w["W-INT-X13000"][0]   # X13000 wall, west face 12900
+    y_s = w["W-INT-Y4500-bc"][3]  # Y4500 wall band, north face 4650
+    y_n = w["W-INT-CLK-N"][3]    # corridor-side wall band, north face 6500
+    stub_x2 = w["W-INT-COR-N-STUB"][2]  # stub east face 12100
+    clk_n_y1 = w["W-INT-CLK-N"][1]      # 6300
+    poly = [[x_w, y_s], [x_e, y_s], [x_e, y_n], [stub_x2, y_n],
+            [stub_x2, clk_n_y1], [x_w, clk_n_y1]]
+    return {
+        ZONE_MASTER_CORRIDOR: {
+            "zone_id": ZONE_MASTER_CORRIDOR,
+            "kind": "derived_zone",
+            "bounds_mm": [x_w, y_s, x_e, y_n],
+            "polygon_mm": poly,
+            "derived_from_task01_geometry": True,
+            "source_evidence": "bounded by W-INT-CLK-E / W-INT-X13000 / "
+                "W-INT-Y4500-bc / W-INT-CLK-N / W-INT-COR-N-STUB; source "
+                "image verified: no room label inside; doors D-05(partial)/"
+                "D-06/D-09 land here",
+            "confidence": "MEDIUM",
+            "not_a_task01_room_because": "no source label and no modeled "
+                "polygon; physically it is the corridor serving master "
+                "suite doors",
+        }
+    }
+
+
+def zone_polys(geo):
+    return {zid: Polygon(z["polygon_mm"])
+            for zid, z in zone_definitions(geo).items()}
 
 
 def wall_box(wall):

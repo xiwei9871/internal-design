@@ -27,11 +27,11 @@
    "R-STUDY"
   ],
   "D-05": [
-   "R-LEISURE",
+   "ZONE-MASTER-CORRIDOR",
    "R-BED-N"
   ],
   "D-06": [
-   "UNMODELED_INTERIOR_ZONE",
+   "ZONE-MASTER-CORRIDOR",
    "R-BATH-M"
   ],
   "D-07": [
@@ -44,10 +44,10 @@
   ],
   "D-09": [
    "R-MASTER",
-   "UNMODELED_INTERIOR_ZONE"
+   "ZONE-MASTER-CORRIDOR"
   ],
   "D-10": [
-   "UNMODELED_INTERIOR_ZONE",
+   "UNRESOLVED",
    "R-LEISURE"
   ],
   "D-11": [
@@ -63,7 +63,9 @@
    "R-DINING"
   ]
  },
- "unresolved_doors": [],
+ "unresolved_doors": [
+  "D-10"
+ ],
  "unresolved_windows": [],
  "constraints": {
   "total": 24,
@@ -94,8 +96,8 @@
  },
  "graph": {
   "nodes": 15,
-  "adjacency_edges": 25,
-  "circulation_edges": 17,
+  "adjacency_edges": 28,
+  "circulation_edges": 16,
   "invalid_edge_refs": 0,
   "component_count": 1
  },

@@ -18,10 +18,10 @@ sys.path.insert(0, str(SCRIPT_DIR))
 from geo_common import (  # noqa: E402
     PROJECT_ROOT, load_geometry, opening_world_rect, wall_axis)
 from sem_common import (  # noqa: E402
-    CANONICAL_ROLE, EXTERNAL_NODE, SEMANTICS_DIR, UNMODELED_ZONE,
-    WALL_LOCATION_CLASS,
-    WET_CLASS_BY_LABEL, envelope_wall_ids, opening_side_spaces,
-    plan_orientation_of_wall, save, space_polys, wall_box)
+    CANONICAL_ROLE, EXTERNAL_NODE, SEMANTICS_DIR, UNRESOLVED,
+    WALL_LOCATION_CLASS, WET_CLASS_BY_LABEL, envelope_wall_ids,
+    opening_side_spaces, plan_orientation_of_wall, save, space_polys,
+    wall_box, zone_definitions, zone_polys)
 
 ISSUES_MD = PROJECT_ROOT / "qc" / "unresolved_issues.md"
 TOL_BOUNDARY = 450.0  # mm — space poly edge to wall band for "touching"
@@ -52,7 +52,9 @@ def build_space_semantics(geo):
     shaft_ids = {w["id"] for w in geo["walls"] if w["type"] == "shaft"}
     ac_boxes = [(b["id"], wall_box(b)) for b in geo.get("ac_bays", [])]
 
-    # opening -> interior spaces lookup
+    # opening -> interior spaces lookup (zones included so probes landing
+    # in a derived corridor zone report the zone, not a wrong room)
+    res_polys = {**polys, **zone_polys(geo)}
     opening_spaces = {}
     for kind in ("doors", "windows"):
         for op in geo[kind]:
@@ -60,7 +62,7 @@ def build_space_semantics(geo):
             if host is None:
                 opening_spaces[op["id"]] = []
                 continue
-            a, b = opening_side_spaces(op, host, polys, wboxes)
+            a, b = opening_side_spaces(op, host, res_polys, wboxes)
             opening_spaces[op["id"]] = a + b
 
     spaces = []
@@ -134,37 +136,40 @@ def build_element_semantics(geo, polys):
         })
 
     doors = []
+    res_polys = {**polys, **zone_polys(geo)}
     for d in geo["doors"]:
         host = wall_by_id.get(d["host_wall_id"])
-        a, b = opening_side_spaces(d, host, polys, wboxes)
-        # A probe side that hits no modeled space is either outside the
-        # apartment (exterior host) or a bounded interior zone that the
-        # source never labeled (e.g. the corridor strip x11300-12900
-        # y4650-6500 in front of cloak/master-bath/bed-n doors).
+        a, b = opening_side_spaces(d, host, res_polys, wboxes)
+        # A probe side that hits nothing is either outside the apartment
+        # (exterior host) or genuinely unknown (interior host -> UNRESOLVED;
+        # never alias a disconnected unknown sliver onto a named zone).
         def fill(hits):
             if hits:
                 return hits
             return ([EXTERNAL_NODE]
                     if host["type"] in ("exterior", "railing_parapet")
-                    else [UNMODELED_ZONE])
+                    else [UNRESOLVED])
         a, b = fill(a), fill(b)
         notes = []
         side_a, side_b = a[0], b[0]
-        connects = (side_a != side_b)
+        connects = (side_a != side_b) and UNRESOLVED not in (side_a, side_b)
+        if UNRESOLVED in (side_a, side_b):
+            connects = None
         if len(a) > 1 or len(b) > 1:
             notes.append(f"multiple space hits per side: a={a} b={b}")
-        if UNMODELED_ZONE in (side_a, side_b):
-            notes.append("one side is an interior zone with no source "
-                         "label and no modeled polygon")
+        if side_a == side_b:
+            connects = False
         if d["id"] == "D-10":
-            notes.append("ISSUE-009 cased opening; west side lands in the "
-                         "unmodeled sliver between W-INT-NICHE (LOW conf) "
-                         "and the host wall — likely part of 休闲厅 if the "
-                         "niche is a recess, not a full wall")
+            notes.append("ISSUE-009 cased opening; west probes land inside "
+                         "W-INT-NICHE (LOW conf) / the ~400mm sliver between "
+                         "it and the host wall — insufficient evidence, "
+                         "marked UNRESOLVED rather than aliased to any zone")
         if d["id"] == "D-13":
             notes.append("type=sliding_door_candidate (ISSUE-013); "
                          "do not upgrade without evidence")
         sem_conf = d.get("confidence", "UNKNOWN")
+        if UNRESOLVED in (side_a, side_b):
+            sem_conf = "UNRESOLVED"
         doors.append({
             "element_id": d["id"],
             "element_type": "door",
@@ -185,7 +190,7 @@ def build_element_semantics(geo, polys):
     windows = []
     for w in geo["windows"]:
         host = wall_by_id.get(w["host_wall_id"])
-        a, b = opening_side_spaces(w, host, polys, wboxes)
+        a, b = opening_side_spaces(w, host, res_polys, wboxes)
         sides = a + [x for x in b if x not in a]
         if host["type"] in ("exterior", "railing_parapet"):
             interior = sides
@@ -402,22 +407,51 @@ def main():
     constraints = build_constraints(geo, issues)
     schedule = build_room_schedule(spaces, elements)
 
-    modeled = round(sum(s["area_m2"] for s in spaces), 2)
-    wet = round(sum(s["area_m2"] for s in spaces
-                    if s["wet_service_class"] in ("WET", "SEMI_WET",
-                                                  "SERVICE")), 2)
+    # exact area accounting on unrounded polygons (Task01 polygons are
+    # approximate label regions — report union/overlap explicitly)
+    from shapely.ops import unary_union
+    poly_list = list(polys.values())
+    exact_sum = sum(p.area for p in poly_list)
+    union_area = unary_union(poly_list).area
     summary = {
-        "note": "modeled_plan_area is NOT official sale/gross area",
+        "note": "modeled_plan_area is NOT official sale/gross/title area; "
+                "Task01 space polygons are approximate label regions, not "
+                "exact wall-bounded cells",
         "space_count": len(spaces),
-        "modeled_plan_area_m2": modeled,
-        "wet_service_area_m2": wet,
-        "dry_area_m2": round(modeled - wet, 2),
+        "exact_sum_area_m2": round(exact_sum / 1e6, 4),
+        "union_area_m2": round(union_area / 1e6, 4),
+        "overlap_area_m2": round((exact_sum - union_area) / 1e6, 4),
+        "modeled_plan_area_m2": round(exact_sum / 1e6, 2),
+        "wet_service_area_m2": round(sum(
+            polys[s["space_id"]].area for s in spaces
+            if s["wet_service_class"] in ("WET", "SEMI_WET", "SERVICE"))
+            / 1e6, 2),
+        "dry_area_m2": None,  # filled below
     }
+    summary["dry_area_m2"] = round(
+        summary["modeled_plan_area_m2"] - summary["wet_service_area_m2"], 2)
 
     save("space_semantics.json",
          {"meta": {"task": "task02", "unit": "mm/m2",
-                   "source": "geometry.json (frozen Task 01)"},
+                   "source": "geometry.json (frozen Task 01)",
+                   "space_polygon_nature": "Task01 spaces[] are "
+                       "source-derived approximate label regions, NOT "
+                       "exact wall-bounded free-space cells (e.g. "
+                       "R-LEISURE polygon crosses W-INT-X7900-U). Door "
+                       "side resolution therefore uses wall-aware probes "
+                       "and derived zone cells, not polygon containment "
+                       "alone."},
           "summary": summary, "spaces": spaces})
+    save("space_cells.json",
+         {"meta": {"task": "task02",
+                   "derived_from_task01_geometry": True,
+                   "not_geometry_truth": True,
+                   "note": "Derived semantic cells for bounded interior "
+                       "areas that have no source label and no Task01 "
+                       "polygon. Zone bounds are computed from surrounding "
+                       "wall faces at build time. Task01 room polygons "
+                       "themselves remain approximate label regions."},
+          "zones": list(zone_definitions(geo).values())})
     save("element_semantics.json",
          {"meta": {"task": "task02",
                    "structural_policy": "all structural_role UNKNOWN"},

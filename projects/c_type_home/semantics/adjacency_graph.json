@@ -1,9 +1,9 @@
 {
  "meta": {
   "task": "task02",
-  "adjacency": "geometric boundary sharing (polygon buffers)",
+  "adjacency": "facing-edge projected overlap with wall-band gap; corner proximity excluded",
   "circulation": "movement through doors / un-walled passages",
-  "note": "adjacency != circulation; intra-space openings kept but excluded from component analysis"
+  "note": "adjacency != circulation; zones are distinct located derived nodes (see space_cells.json)"
  },
  "nodes": [
   {
@@ -59,163 +59,237 @@
    "kind": "space"
   },
   {
-   "id": "EXTERNAL_COMMON_AREA",
-   "kind": "external"
+   "id": "ZONE-MASTER-CORRIDOR",
+   "kind": "derived_zone"
   },
   {
-   "id": "UNMODELED_INTERIOR_ZONE",
-   "kind": "unmodeled_interior_zone"
+   "id": "EXTERNAL_COMMON_AREA",
+   "kind": "external"
   }
  ],
  "adjacency_edges": [
   {
-   "space_a": "R-LIVING",
+   "space_a": "R-BALC-LIFE",
    "space_b": "R-DINING",
-   "shared_boundary_mm": 3500.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-LIVING",
-   "space_b": "R-LEISURE",
-   "shared_boundary_mm": 2435.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-LIVING",
-   "space_b": "R-BATH-P",
-   "shared_boundary_mm": 3301.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-LIVING",
-   "space_b": "R-BALC-N",
-   "shared_boundary_mm": 2366.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-DINING",
-   "space_b": "R-BALC-LIFE",
-   "shared_boundary_mm": 3180.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-DINING",
-   "space_b": "R-KITCHEN",
-   "shared_boundary_mm": 2327.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-DINING",
-   "space_b": "R-LEISURE",
-   "shared_boundary_mm": 3672.0,
+   "shared_boundary_mm": 2800.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
    "space_a": "R-BALC-LIFE",
    "space_b": "R-KITCHEN",
-   "shared_boundary_mm": 2050.0,
+   "shared_boundary_mm": 1750.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
-   "space_a": "R-KITCHEN",
-   "space_b": "R-LEISURE",
-   "shared_boundary_mm": 2150.0,
+   "space_a": "R-BALC-N",
+   "space_b": "R-BATH-P",
+   "shared_boundary_mm": 1750.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
-   "space_a": "R-KITCHEN",
-   "space_b": "R-BED-S",
-   "shared_boundary_mm": 4590.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-LEISURE",
-   "space_b": "R-BED-S",
-   "shared_boundary_mm": 1357.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-LEISURE",
-   "space_b": "R-CLOAK",
-   "shared_boundary_mm": 4737.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-LEISURE",
-   "space_b": "R-BATH-M",
-   "shared_boundary_mm": 174.0,
+   "space_a": "R-BALC-N",
+   "space_b": "R-BED-N",
+   "shared_boundary_mm": 450.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "MEDIUM"
   },
   {
-   "space_a": "R-LEISURE",
-   "space_b": "R-BED-N",
-   "shared_boundary_mm": 1600.0,
+   "space_a": "R-BALC-N",
+   "space_b": "R-LIVING",
+   "shared_boundary_mm": 1850.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
-   "space_a": "R-LEISURE",
+   "space_a": "R-BALC-N",
    "space_b": "R-STUDY",
-   "shared_boundary_mm": 3487.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-LEISURE",
-   "space_b": "R-BATH-P",
-   "shared_boundary_mm": 2324.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-BED-S",
-   "space_b": "R-MASTER",
-   "shared_boundary_mm": 4750.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-BED-S",
-   "space_b": "R-CLOAK",
-   "shared_boundary_mm": 2772.0,
-   "confidence": "HIGH"
-  },
-  {
-   "space_a": "R-MASTER",
-   "space_b": "R-BATH-M",
-   "shared_boundary_mm": 2637.0,
+   "shared_boundary_mm": 3050.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
    "space_a": "R-BATH-M",
    "space_b": "R-BED-N",
-   "shared_boundary_mm": 3500.0,
+   "shared_boundary_mm": 3200.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-BATH-M",
+   "space_b": "R-MASTER",
+   "shared_boundary_mm": 2200.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-BATH-M",
+   "space_b": "ZONE-MASTER-CORRIDOR",
+   "shared_boundary_mm": 1650.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": true,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-BATH-P",
+   "space_b": "R-LEISURE",
+   "shared_boundary_mm": 1750.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-BATH-P",
+   "space_b": "R-LIVING",
+   "shared_boundary_mm": 2700.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-BATH-P",
+   "space_b": "R-STUDY",
+   "shared_boundary_mm": 2700.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-BED-N",
+   "space_b": "R-LEISURE",
+   "shared_boundary_mm": 1300.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
    "space_a": "R-BED-N",
    "space_b": "R-STUDY",
-   "shared_boundary_mm": 3274.0,
+   "shared_boundary_mm": 2700.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
-   "space_a": "R-BED-N",
-   "space_b": "R-BALC-N",
-   "shared_boundary_mm": 1035.0,
+   "space_a": "R-BED-S",
+   "space_b": "R-CLOAK",
+   "shared_boundary_mm": 2250.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
-   "space_a": "R-STUDY",
-   "space_b": "R-BATH-P",
-   "shared_boundary_mm": 3000.0,
+   "space_a": "R-BED-S",
+   "space_b": "R-KITCHEN",
+   "shared_boundary_mm": 4450.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
-   "space_a": "R-STUDY",
-   "space_b": "R-BALC-N",
-   "shared_boundary_mm": 3350.0,
+   "space_a": "R-BED-S",
+   "space_b": "R-LEISURE",
+   "shared_boundary_mm": 920.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "MEDIUM"
+  },
+  {
+   "space_a": "R-BED-S",
+   "space_b": "R-MASTER",
+   "shared_boundary_mm": 4450.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
    "confidence": "HIGH"
   },
   {
-   "space_a": "R-BATH-P",
-   "space_b": "R-BALC-N",
-   "shared_boundary_mm": 2050.0,
+   "space_a": "R-CLOAK",
+   "space_b": "R-LEISURE",
+   "shared_boundary_mm": 3900.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-CLOAK",
+   "space_b": "ZONE-MASTER-CORRIDOR",
+   "shared_boundary_mm": 1650.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": true,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-DINING",
+   "space_b": "R-KITCHEN",
+   "shared_boundary_mm": 1890.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-DINING",
+   "space_b": "R-LEISURE",
+   "shared_boundary_mm": 3150.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-DINING",
+   "space_b": "R-LIVING",
+   "shared_boundary_mm": 2800.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-KITCHEN",
+   "space_b": "R-LEISURE",
+   "shared_boundary_mm": 1850.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-LEISURE",
+   "space_b": "R-LIVING",
+   "shared_boundary_mm": 1850.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-LEISURE",
+   "space_b": "R-STUDY",
+   "shared_boundary_mm": 3050.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": false,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-LEISURE",
+   "space_b": "ZONE-MASTER-CORRIDOR",
+   "shared_boundary_mm": 1500.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": true,
+   "confidence": "HIGH"
+  },
+  {
+   "space_a": "R-MASTER",
+   "space_b": "ZONE-MASTER-CORRIDOR",
+   "shared_boundary_mm": 1300.0,
+   "shared_boundary_basis": "projected facing-edge overlap",
+   "involves_zone": true,
    "confidence": "HIGH"
   }
  ],
@@ -253,7 +327,7 @@
    "confidence": "LOW"
   },
   {
-   "space_a": "R-LEISURE",
+   "space_a": "ZONE-MASTER-CORRIDOR",
    "space_b": "R-BED-N",
    "opening_id": "D-05",
    "opening_type": "swing_door",
@@ -261,7 +335,7 @@
    "confidence": "MEDIUM"
   },
   {
-   "space_a": "UNMODELED_INTERIOR_ZONE",
+   "space_a": "ZONE-MASTER-CORRIDOR",
    "space_b": "R-BATH-M",
    "opening_id": "D-06",
    "opening_type": "swing_door",
@@ -286,19 +360,11 @@
   },
   {
    "space_a": "R-MASTER",
-   "space_b": "UNMODELED_INTERIOR_ZONE",
+   "space_b": "ZONE-MASTER-CORRIDOR",
    "opening_id": "D-09",
    "opening_type": "swing_door",
    "intra_space": false,
    "confidence": "MEDIUM"
-  },
-  {
-   "space_a": "UNMODELED_INTERIOR_ZONE",
-   "space_b": "R-LEISURE",
-   "opening_id": "D-10",
-   "opening_type": "cased_opening_candidate",
-   "intra_space": false,
-   "confidence": "LOW"
   },
   {
    "space_a": "R-BALC-LIFE",
@@ -325,38 +391,40 @@
    "confidence": "MEDIUM"
   },
   {
-   "space_a": "R-LIVING",
-   "space_b": "R-DINING",
-   "opening_id": null,
-   "opening_type": "OPEN_PASSAGE",
-   "open_run_mm": 4650.0,
-   "confidence": "MEDIUM"
-  },
-  {
-   "space_a": "R-LIVING",
-   "space_b": "R-LEISURE",
-   "opening_id": null,
-   "opening_type": "OPEN_PASSAGE",
-   "open_run_mm": 1550.0,
-   "confidence": "MEDIUM"
-  },
-  {
    "space_a": "R-DINING",
    "space_b": "R-LEISURE",
    "opening_id": null,
    "opening_type": "OPEN_PASSAGE",
-   "open_run_mm": 2150.0,
+   "open_run_mm": 3050.0,
    "confidence": "MEDIUM"
   },
   {
-   "space_a": "UNMODELED_INTERIOR_ZONE",
-   "space_b": "R-LEISURE",
+   "space_a": "R-DINING",
+   "space_b": "R-LIVING",
    "opening_id": null,
    "opening_type": "OPEN_PASSAGE",
-   "open_run_mm": 600.0,
-   "confidence": "MEDIUM",
-   "note": "gap x12100-12900 below y6500 — no wall object between corridor zone and leisure NE band"
+   "open_run_mm": 2750.0,
+   "confidence": "MEDIUM"
+  },
+  {
+   "space_a": "R-LEISURE",
+   "space_b": "R-LIVING",
+   "opening_id": null,
+   "opening_type": "OPEN_PASSAGE",
+   "open_run_mm": 1850.0,
+   "confidence": "MEDIUM"
+  },
+  {
+   "space_a": "R-LEISURE",
+   "space_b": "ZONE-MASTER-CORRIDOR",
+   "opening_id": null,
+   "opening_type": "OPEN_PASSAGE",
+   "open_run_mm": 700.0,
+   "confidence": "MEDIUM"
   }
+ ],
+ "unresolved_edges": [
+  "D-10"
  ],
  "connected_components": [
   [
@@ -374,7 +442,7 @@
    "R-LIVING",
    "R-MASTER",
    "R-STUDY",
-   "UNMODELED_INTERIOR_ZONE"
+   "ZONE-MASTER-CORRIDOR"
   ]
  ],
  "component_count": 1
