@@ -59,10 +59,6 @@ def draw_point(msp, px, py, label, kind):
     else:
         msp.add_lwpolyline([(x - 80, y - 55), (x + 80, y - 55), (x + 80, y + 55), (x - 80, y + 55)],
                            close=True, dxfattribs={"layer": "A-PLUM", "lineweight": 35})
-    if px > 1100:
-        add_text(msp, label, 85, (x - 115, y - 40), TextEntityAlignment.RIGHT, layer="A-PLUM")
-    else:
-        add_text(msp, label, 85, (x + 115, y - 40), TextEntityAlignment.LEFT, layer="A-PLUM")
 
 
 def main() -> None:
@@ -74,8 +70,13 @@ def main() -> None:
     draw_doors(msp)
     draw_furniture(msp, labels=False)
     draw_room_labels(msp, height=170)
-    for px, py, label, kind in POINTS:
-        draw_point(msp, px, py, label, kind)
+    doc._point_schedule = []
+    for i, (px, py, label, kind) in enumerate(POINTS, 1):
+        code = f'P{i:02d}'
+        draw_point(msp, px, py, code, kind)
+        doc._point_schedule.append((code,label,*m(px,py)))
+    from cad_common import draw_point_labels
+    draw_point_labels(msp,[(f'P{i:02d}',px,py) for i,(px,py,*_) in enumerate(POINTS,1)],'A-PLUM')
     draw_overall_dims(msp)
     draw_frame_and_title(msp, "给排水点位图", "A303",
                          notes=["· ▲给水（冷热同位标注） ●排水/排污 ⊠地漏 ▭设备",

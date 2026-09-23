@@ -1,0 +1,756 @@
+{
+  "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+  "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+  "camera_anchors": {
+    "living": {
+      "camera_px": [
+        1080,
+        760
+      ],
+      "target_px": [
+        930,
+        1130
+      ],
+      "height_mm": 1550,
+      "lens_mm": 22,
+      "label": "餐客厅·L",
+      "target_height_mm": 1100,
+      "sensor_width_mm": 36,
+      "shift_x": 0,
+      "shift_y": 0
+    },
+    "kitchen": {
+      "camera_px": [
+        735,
+        650
+      ],
+      "target_px": [
+        620,
+        250
+      ],
+      "height_mm": 1480,
+      "lens_mm": 25,
+      "label": "厨房服务墙·K",
+      "target_height_mm": 1100,
+      "sensor_width_mm": 36,
+      "shift_x": 0,
+      "shift_y": 0
+    },
+    "master": {
+      "camera_px": [
+        650,
+        1170
+      ],
+      "target_px": [
+        570,
+        980
+      ],
+      "height_mm": 1550,
+      "lens_mm": 20,
+      "label": "主卧·M",
+      "target_height_mm": 1100,
+      "sensor_width_mm": 36,
+      "shift_x": 0,
+      "shift_y": 0
+    },
+    "child": {
+      "camera_px": [
+        1168,
+        1080
+      ],
+      "target_px": [
+        1320,
+        1000
+      ],
+      "height_mm": 1480,
+      "lens_mm": 20,
+      "label": "儿童房·C",
+      "target_height_mm": 1100,
+      "sensor_width_mm": 36,
+      "shift_x": 0,
+      "shift_y": 0
+    },
+    "elder": {
+      "camera_px": [
+        810,
+        620
+      ],
+      "target_px": [
+        980,
+        480
+      ],
+      "height_mm": 1500,
+      "lens_mm": 22,
+      "label": "老人房·E",
+      "target_height_mm": 1100,
+      "sensor_width_mm": 36,
+      "shift_x": 0,
+      "shift_y": 0
+    },
+    "main_bath": {
+      "camera_px": [
+        360,
+        825
+      ],
+      "target_px": [
+        310,
+        690
+      ],
+      "height_mm": 1420,
+      "lens_mm": 20,
+      "label": "主卫·B",
+      "previous_camera_px": [
+        395,
+        835
+      ],
+      "override_reason": "A11 camera sightline intersects open DOOR-006 within 30mm; moved inside bathroom without changing geometry",
+      "target_height_mm": 1100,
+      "sensor_width_mm": 36,
+      "shift_x": 0,
+      "shift_y": 0
+    },
+    "secondary_bath": {
+      "camera_px": [
+        570,
+        625
+      ],
+      "target_px": [
+        500,
+        470
+      ],
+      "height_mm": 1420,
+      "lens_mm": 20,
+      "label": "次卫·S",
+      "target_height_mm": 1100,
+      "sensor_width_mm": 36,
+      "shift_x": 0,
+      "shift_y": 0
+    }
+  },
+  "camera_visibility": {
+    "living": {
+      "rays": [
+        {
+          "frame_uv": [
+            0,
+            0
+          ],
+          "hit_object": "WIN-008_frame",
+          "distance_m": 5.993627218593914,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            -0.5
+          ],
+          "hit_object": "WALL-018",
+          "distance_m": 1.6244687945259109,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0
+          ],
+          "hit_object": "WALL-018",
+          "distance_m": 1.581939470313309,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0.5
+          ],
+          "hit_object": "WALL-018",
+          "distance_m": 1.8424816254316805,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            -0.5
+          ],
+          "hit_object": "Floor",
+          "distance_m": 2.64267984830255,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            0.5
+          ],
+          "hit_object": "Dry ceiling",
+          "distance_m": 2.695830629829887,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            -0.5
+          ],
+          "hit_object": "FURN-014_top",
+          "distance_m": 1.6494312274191036,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0
+          ],
+          "hit_object": "FURN-022_front.001",
+          "distance_m": 2.7933055894645555,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0.5
+          ],
+          "hit_object": "Dry ceiling",
+          "distance_m": 3.3098351717876784,
+          "near_obstruction": false
+        }
+      ],
+      "minimum_hit_distance_m": 1.581939470313309,
+      "minimum_required_clearance_m": 0.15,
+      "status": "pass"
+    },
+    "kitchen": {
+      "rays": [
+        {
+          "frame_uv": [
+            0,
+            0
+          ],
+          "hit_object": "Appliance_fridge_steel",
+          "distance_m": 3.0008642881365675,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            -0.5
+          ],
+          "hit_object": "laundry_side",
+          "distance_m": 1.7184857598836578,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0
+          ],
+          "hit_object": "laundry_side",
+          "distance_m": 1.5005929182978341,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0.5
+          ],
+          "hit_object": "laundry_side",
+          "distance_m": 1.5289365994458146,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            -0.5
+          ],
+          "hit_object": "Floor",
+          "distance_m": 2.819983302001012,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            0.5
+          ],
+          "hit_object": "Dry ceiling",
+          "distance_m": 3.1071416511517644,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            -0.5
+          ],
+          "hit_object": "WALL-003",
+          "distance_m": 1.0799215282579544,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0
+          ],
+          "hit_object": "WALL-003",
+          "distance_m": 0.9631155360227686,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0.5
+          ],
+          "hit_object": "WALL-003",
+          "distance_m": 1.0332346300250594,
+          "near_obstruction": false
+        }
+      ],
+      "minimum_hit_distance_m": 0.9631155360227686,
+      "minimum_required_clearance_m": 0.15,
+      "status": "pass"
+    },
+    "master": {
+      "rays": [
+        {
+          "frame_uv": [
+            0,
+            0
+          ],
+          "hit_object": "FURN-030_front.001",
+          "distance_m": 4.202195451186666,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            -0.5
+          ],
+          "hit_object": "DOOR-005",
+          "distance_m": 2.7373110566624805,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0
+          ],
+          "hit_object": "DOOR-005",
+          "distance_m": 2.3772592653023175,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0.5
+          ],
+          "hit_object": "Dry ceiling",
+          "distance_m": 3.992073147026189,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            -0.5
+          ],
+          "hit_object": "FURN-001_duvet",
+          "distance_m": 1.3650097696335475,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            0.5
+          ],
+          "hit_object": "Dry ceiling",
+          "distance_m": 3.1716578366959687,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            -0.5
+          ],
+          "hit_object": "FURN-001_pillow",
+          "distance_m": 1.6191504447096257,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0
+          ],
+          "hit_object": "WALL-012",
+          "distance_m": 3.4006301295966184,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0.5
+          ],
+          "hit_object": "Dry ceiling",
+          "distance_m": 3.9920730126494397,
+          "near_obstruction": false
+        }
+      ],
+      "minimum_hit_distance_m": 1.3650097696335475,
+      "minimum_required_clearance_m": 0.15,
+      "status": "pass"
+    },
+    "child": {
+      "rays": [
+        {
+          "frame_uv": [
+            0,
+            0
+          ],
+          "hit_object": "FURN-003_headboard",
+          "distance_m": 3.217718616533792,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            -0.5
+          ],
+          "hit_object": "ZONE-007",
+          "distance_m": 2.6548638990777125,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0
+          ],
+          "hit_object": "FURN-032_carcass",
+          "distance_m": 2.588084496487703,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0.5
+          ],
+          "hit_object": "FURN-032_front",
+          "distance_m": 2.569879182274521,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            -0.5
+          ],
+          "hit_object": "FURN-003_duvet",
+          "distance_m": 1.27589265251711,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            0.5
+          ],
+          "hit_object": "WALL-017",
+          "distance_m": 3.407061611391023,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            -0.5
+          ],
+          "hit_object": "WIN-010_glass",
+          "distance_m": 2.106712257190215,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0
+          ],
+          "hit_object": "WALL-019",
+          "distance_m": 2.163356977579018,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0.5
+          ],
+          "hit_object": "WALL-019",
+          "distance_m": 2.5088497049108396,
+          "near_obstruction": false
+        }
+      ],
+      "minimum_hit_distance_m": 1.27589265251711,
+      "minimum_required_clearance_m": 0.15,
+      "status": "pass"
+    },
+    "elder": {
+      "rays": [
+        {
+          "frame_uv": [
+            0,
+            0
+          ],
+          "hit_object": "WALL-004",
+          "distance_m": 4.492878577107373,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            -0.5
+          ],
+          "hit_object": "FURN-031_carcass",
+          "distance_m": 0.941559380427389,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0
+          ],
+          "hit_object": "FURN-031_carcass",
+          "distance_m": 0.8178120702825123,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0.5
+          ],
+          "hit_object": "FURN-031_carcass",
+          "distance_m": 0.8484939795254077,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            -0.5
+          ],
+          "hit_object": "ZONE-006",
+          "distance_m": 2.3360460185995287,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            0.5
+          ],
+          "hit_object": "Dry ceiling",
+          "distance_m": 3.3801809387194135,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            -0.5
+          ],
+          "hit_object": "FURN-006_carcass",
+          "distance_m": 2.2622091057428455,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0
+          ],
+          "hit_object": "WALL-004",
+          "distance_m": 3.4716102442422194,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0.5
+          ],
+          "hit_object": "WALL-004",
+          "distance_m": 3.56783649009629,
+          "near_obstruction": false
+        }
+      ],
+      "minimum_hit_distance_m": 0.8178120702825123,
+      "minimum_required_clearance_m": 0.15,
+      "status": "pass"
+    },
+    "main_bath": {
+      "rays": [
+        {
+          "frame_uv": [
+            0,
+            0
+          ],
+          "hit_object": "WALL-008",
+          "distance_m": 2.8667284158822426,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            -0.5
+          ],
+          "hit_object": "FURN-027_counter",
+          "distance_m": 1.0908772958268211,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0
+          ],
+          "hit_object": "WALL-008",
+          "distance_m": 1.5191765569830358,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0.5
+          ],
+          "hit_object": "WALL-008",
+          "distance_m": 1.6086634989026634,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            -0.5
+          ],
+          "hit_object": "ZONE-003",
+          "distance_m": 2.0216587267889055,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            0.5
+          ],
+          "hit_object": "WALL-008",
+          "distance_m": 2.959077326255732,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            -0.5
+          ],
+          "hit_object": "WALL-010",
+          "distance_m": 1.131865045997668,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0
+          ],
+          "hit_object": "WALL-010",
+          "distance_m": 1.124426428955626,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0.5
+          ],
+          "hit_object": "WALL-010",
+          "distance_m": 1.3676656486356515,
+          "near_obstruction": false
+        }
+      ],
+      "minimum_hit_distance_m": 1.0908772958268211,
+      "minimum_required_clearance_m": 0.15,
+      "status": "pass"
+    },
+    "secondary_bath": {
+      "rays": [
+        {
+          "frame_uv": [
+            0,
+            0
+          ],
+          "hit_object": "WALL-002",
+          "distance_m": 3.192554108699603,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            -0.5
+          ],
+          "hit_object": "FURN-007_counter",
+          "distance_m": 1.126907618775722,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0
+          ],
+          "hit_object": "WALL-007",
+          "distance_m": 1.5321169607958847,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            -0.5,
+            0.5
+          ],
+          "hit_object": "WALL-007",
+          "distance_m": 1.6238968708681785,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            -0.5
+          ],
+          "hit_object": "ZONE-002",
+          "distance_m": 2.0934408301215783,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0,
+            0.5
+          ],
+          "hit_object": "ZONE-002_ceiling",
+          "distance_m": 2.732319467955517,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            -0.5
+          ],
+          "hit_object": "DOOR-007",
+          "distance_m": 0.31355498274801974,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0
+          ],
+          "hit_object": "DOOR-007",
+          "distance_m": 0.31758381934063806,
+          "near_obstruction": false
+        },
+        {
+          "frame_uv": [
+            0.5,
+            0.5
+          ],
+          "hit_object": "DOOR-007",
+          "distance_m": 0.39562988045847514,
+          "near_obstruction": false
+        }
+      ],
+      "minimum_hit_distance_m": 0.31355498274801974,
+      "minimum_required_clearance_m": 0.15,
+      "status": "pass"
+    }
+  },
+  "renderer": "Cycles; render_views selects Metal when available",
+  "samples": 96,
+  "resolution": [
+    1500,
+    1036
+  ],
+  "status": "design preview / not client-approved; no AI geometry",
+  "scene_file": "方案A14_同模精细渲染.blend"
+}

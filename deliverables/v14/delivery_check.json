@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "views": 7,
+  "image_size": [
+    2500,
+    1727
+  ],
+  "exr_parts_each": 10,
+  "cad_pages": 10,
+  "paper_mm": [
+    594,
+    420
+  ],
+  "html_local_links": 24,
+  "missing_links": [],
+  "regression_tests_passed": 37,
+  "visual_review": "all seven final views inspected; main-bath door occlusion resolved",
+  "client_approval": "pending_review"
+}

@@ -33,22 +33,24 @@ def table(msp, ox, oy, col_ws, rows, row_h=330, text_h=105):
     return oy - h
 
 
+def door_rows():
+    rows = [["编号", "位置", "参考宽mm", "形式", "备注"]]
+    for i,d in enumerate(DATA['doors'],1):
+        sliding = d['type']=='pocket_sliding'
+        rows.append([f'D{i}',d['name'],f"{d['opening_reference_mm']:.0f}",
+            '暗藏推拉门' if sliding else '平开门',
+            '洞口/暗藏侧待复核' if sliding else '结构洞口/门套待现场复尺'])
+    return rows
+
+
 def main() -> None:
     doc = new_doc()
     msp = doc.modelspace()
-
-    # ---- 门表：洞宽 = 铰链→门扇端点 × 9.82 ----
-    door_rows = [["编号", "位置", "洞宽mm", "形式", "备注"]]
-    for i, d in enumerate(DATA["doors"], 1):
-        w = math.dist(d["hinge"], d["leaf"]) * MM
-        form = "平开木门" if "卫" not in d["name"] else "平开门(防潮)"
-        note = "哑光木饰面" if "衣帽区" in d["name"] else "洞宽按平面图，现场复尺"
-        door_rows.append([f"D{i}", d["name"], f"{w:.0f}", form, note])
-    add_text(msp, "门表（门扇高 H2100 常规，待确认）", 180, (0, 600))
-    y = table(msp, 0, 0, [700, 1600, 1100, 2200, 3400], door_rows)
+    add_text(msp, "门表（参考跨距非结构洞口；H2100假设待确认）", 180, (0, 600))
+    y = table(msp, 0, 0, [700, 1600, 1100, 2200, 3400], door_rows())
 
     # ---- 窗表 ----
-    win_rows = [["编号", "位置", "洞宽mm", "备注"]]
+    win_rows = [["编号", "位置", "参考宽mm", "备注"]]
     for i, w in enumerate(DATA["windows"], 1):
         s = w["segment"]
         width = math.dist(s[:2], s[2:]) * MM
@@ -74,20 +76,8 @@ def main() -> None:
     add_text(msp, "主要材料表", 180, (10500, 600))
     table(msp, 10500, 0, [1900, 4600, 3100], mat_rows)
 
-    # ---- 图框图签 ----
-    x0, y0, x1, y1 = -1500, y - 1500, 21000, 1500
-    msp.add_lwpolyline([(x0, y0), (x1, y0), (x1, y1), (x0, y1)], close=True,
-                       dxfattribs={"layer": "A-FRAME", "lineweight": 70,
-                                   "true_color": colors.rgb2int(BLACK)})
-    tx, ty = x1 - 6200, y0
-    msp.add_lwpolyline([(tx, ty), (x1, ty), (x1, ty + 2400), (tx, ty + 2400)], close=True,
-                       dxfattribs={"layer": "A-FRAME", "true_color": colors.rgb2int(BLACK)})
-    for s, hgt, py_ in [
-        ("学道街44号室内设计", 300, ty + 2050), ("门窗表·主要材料表", 240, ty + 1650),
-        ("图号 A501   版本 v1", 180, ty + 1250),
-        ("洞口宽按A7平面图换算，现场复尺", 150, ty + 900),
-        ("全部选型待确认", 150, ty + 550)]:
-        add_text(msp, s, hgt, (tx + 250, py_))
+    from cad_common import draw_frame_and_title
+    draw_frame_and_title(msp, '门窗及材料表', 'A501', ['参考宽度来自A7线段，不代表结构洞口尺寸。', '门套/暗藏门口袋方向、窗高与全部产品选型待确认。'])
 
     dxf_path = OUT / "A501_门窗材料表.dxf"
     doc.saveas(dxf_path)

@@ -1,6 +1,20 @@
 # 学道街 44 号 · 室内设计项目
 
-从原始 PNG 平面图出发的 AI 辅助装修设计：平面功能优化 → CAD 底模 → Blender 同模渲染 → gpt-image-2 效果图，确认后输出施工图。
+从原始 PNG 平面图出发的室内设计项目。A14 将平面、CAD、FreeCAD 和 Blender 统一到同一份设计数据，输出可追溯的物理渲染与设计协调图纸。
+
+**本轮成果（2026-09-18）：** [七空间前后对比](deliverables/v14/index.html)、[10 页 A2 图册](deliverables/v14/cad/学道街44号_v14_设计协调图册_A2.pdf)、[更新与待核实事项](deliverables/v14/更新说明.md)。A14 为待业主复核的新版本，保留 A12 已确认记录和 A13 原成果。
+
+## 最终方法与工作流（A14）
+
+1. **单一设计契约**：原始 PNG 标定（1px = 9.82mm）→ `design/approved_v14.json`，集中存放对象、尺寸、朝向与 provenance；已确认值与待核实值显式分列。`design_model.py` 是 FreeCAD / Blender / ezdxf 共用的读取与坐标转换层，任何一方不私改几何。
+2. **三条生产线同源消费**：
+   - `scheme_a_v14/build_cad.py` → FreeCAD 包络底模（`cad/方案A14_统一设计底模.FCStd` + `approved_envelopes.obj`）
+   - `construction/build_all.py` + `paper_export.py` → 10 张 DXF（A101–A501）→ 毫米制纸空间、固定比例视口、黑白 PDF 图册；点位另附 CSV
+   - `scheme_a_v14/build_scene.py` → Blender 同模场景（材质、家具、服务墙全部参数化，不依赖 AI 生成结构）
+3. **渲染**：`render_views.py` 以 7 个锁定相机 Cycles 输出 2500×1727 主图 + 多通道 EXR（深度/法线/对象/材质遮罩）。EXR 为可再生成中间产物，不入库；哈希记入 release_manifest 供追溯。
+4. **验证**：`validate.py` 查相机遮挡/对象落地，`qc.py` 查画幅与结构双向误差，`tests/` 37 项 unittest 回归几何、出图、相机与发布门禁。
+5. **发布**：`publish.py` 先核对 design/scene/PNG/CAD 哈希一致才组装 `deliverables/v14`（对比浏览页 + A2 图册 + manifest + 更新说明）；混用旧版输出时拒绝发布。
+6. **AI 管线结论**：A13 验证了"真实家具底图 → image-edit 候选 → QC 打分选优"管线，但因跨图纸一致性差、选优不代表验收，A14 未采用 AI 候选（`ai_generation_used: false`），探索产物已清理。
 
 ## 权威依据（SOURCE_PRIORITY.md）
 
@@ -16,9 +30,29 @@
 - `scheme_a_v8`–`v9`：原木简约 Blender 场景
 - `scheme_a_v10`：首轮 gpt-image-2 效果图（纯示意，已废弃）
 - `scheme_a_v11`：**CAD-first 底模**——`cad/方案A11_CAD底模.FCStd` + 分组 OBJ + `方案A11_CAD同模渲染.blend`，7 个锁定相机
-- `scheme_a_v12`：当前最新效果图——以 A11 素模为底的 image-edit，`viewpoint_layout_audit_v2_edit.md` 是验收记录
+- `scheme_a_v12`：已确认的历史效果图，`viewpoint_layout_audit_v2_edit.md` 是验收记录
+- `scheme_a_v13`：真实家具底图与在版效果图；AI 候选探索产物已于 2026-09-23 清理
+- `design/approved_v14.json` / `design_model.py`：A14 共享对象、尺寸、朝向及参数依据；名称中的 approved 指继承确认的布局，文件内仍明确列出设计假设及待核实值
+- `scheme_a_v14`：FreeCAD 包络模型、Blender 参数化场景、七视角 PNG、结构通道图、检查和发布脚本（多层 EXR 为中间产物，不入库，重渲可再生成）
+- `deliverables/v14`：本轮可浏览、打印的复核成果；CAD 单页含 DXF/PDF/PNG，点位另附 CSV
+- `tests`：几何、出图、相机、版本和候选发布回归
 
-## 重建管线
+## A14 重建
+
+在项目根目录执行。实际验证环境：FreeCAD 本机安装、Blender 5.2.1、Python 3.14；Python 依赖见 `scheme_a_v14/requirements.txt`。CAD 字体使用本机 `/Library/Fonts/Arial Unicode.ttf`。
+
+```bash
+rtk proxy /Applications/FreeCAD.app/Contents/Resources/bin/freecadcmd -c 'p="/Users/xiwei/interior_design/scheme_a_v14/build_cad.py"; exec(compile(open(p).read(),p,"exec"),{"__file__":p,"__name__":"__main__"})'
+rtk proxy .venv/bin/python construction/build_all.py
+rtk proxy /Applications/Blender.app/Contents/MacOS/Blender --background --python-exit-code 1 --python scheme_a_v14/build_scene.py
+rtk proxy /Applications/Blender.app/Contents/MacOS/Blender --background scheme_a_v14/方案A14_同模精细渲染.blend --python-exit-code 1 --python scheme_a_v14/render_views.py -- living kitchen master child elder main_bath secondary_bath
+rtk proxy .venv/bin/python -m unittest discover -s tests -v
+rtk proxy .venv/bin/python scheme_a_v14/publish.py
+```
+
+发布脚本检查共享数据与场景生成器哈希、七张主图哈希、CAD 实际纸张/单位/比例；混用旧版输出时拒绝发布。主卫机位为本轮有记录的修正，其余六视角沿用 A11；主卫使用并列展示，避免误导为对齐比较。自动检查不替代现场复尺、产品确认与人工视觉验收。
+
+## 历史 A11/A12 重建管线
 
 ```bash
 # 1. FreeCAD 底模 + OBJ（freecadcmd 下 __name__ 不是 __main__，需显式 exec）
@@ -58,8 +92,8 @@ cd scheme_a_v12 && python3 make_preview.py
 
 ## 当前状态
 
-**效果图阶段已收口（2026-09-14）**：A12 七张效果图业主确认通过，见 `scheme_a_v12/viewpoint_layout_audit_v2_edit.md` 收口节。
+**A12 历史收口（2026-09-14）**：七张效果图业主确认通过，见 `scheme_a_v12/viewpoint_layout_audit_v2_edit.md`。**A14 改进版（2026-09-18）**：统一数据与出图管线，生成七张 2500×1727 物理渲染及十张 A2 设计协调图；新表现版本待业主复核。局部材质增强试验接口返回 HTTP 400，未采用 AI 候选。
 
 ## 下一步
 
-**施工图阶段**：从 FCStd 底模经 ezdxf 出 DXF。图纸清单与门禁见 `interior-construction-docs` skill，图层/图框约定见 `architectural-dxf-drawing` skill。开工前需与业主确认：拆改范围、电气点位、天花/风口、柜体展开深度等新增信息（底模不含机电点位）。
+**施工深化所需输入**：厨房窗台与台面关系、门洞/门袋现场条件、设备 SKU、机电回路/管径/坡度、材料节点和柜体生产尺寸仍需核实；详见 A14 更新说明。当前图册为设计协调版，不能直接据此下单加工。

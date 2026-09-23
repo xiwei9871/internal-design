@@ -1,0 +1,15 @@
+{
+  "key": "main_bath",
+  "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+  "build_script_sha256": "aff29c065df123f9340e2312828b68d745b9cca9f750ce079887a6b8ca9cf4a6",
+  "camera": "Camera_main_bath",
+  "device": "GPU",
+  "resolution": [
+    1000,
+    691
+  ],
+  "samples": 32,
+  "seconds": 5.12,
+  "sha256": "478d54dfabe435038d26c0bb0283ea5edc8a2c4250aa8891fdc36f87c5fb384a",
+  "status": "physical render, manual review pending"
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "key": "living",
+    "recall": 0.777,
+    "chamfer_px": 6.6,
+    "base_edges": 45963,
+    "edit_edges": 90063,
+    "base_size": [
+      1100,
+      760
+    ],
+    "edit_size": [
+      1509,
+      1042
+    ],
+    "candidate_matches": [
+      "living_r2_1.png"
+    ]
+  },
+  {
+    "key": "kitchen",
+    "recall": 0.628,
+    "chamfer_px": 9.43,
+    "base_edges": 73027,
+    "edit_edges": 93289,
+    "base_size": [
+      1100,
+      760
+    ],
+    "edit_size": [
+      1509,
+      1042
+    ],
+    "candidate_matches": [
+      "kitchen_r6_1.png"
+    ]
+  },
+  {
+    "key": "master",
+    "recall": 0.356,
+    "chamfer_px": 31.72,
+    "base_edges": 41699,
+    "edit_edges": 52369,
+    "base_size": [
+      1100,
+      760
+    ],
+    "edit_size": [
+      1509,
+      1042
+    ],
+    "candidate_matches": [
+      "master_2.png"
+    ]
+  },
+  {
+    "key": "child",
+    "recall": 0.564,
+    "chamfer_px": 11.81,
+    "base_edges": 15801,
+    "edit_edges": 63603,
+    "base_size": [
+      1100,
+      760
+    ],
+    "edit_size": [
+      1509,
+      1042
+    ],
+    "candidate_matches": [
+      "child_0.png"
+    ]
+  },
+  {
+    "key": "elder",
+    "recall": 0.539,
+    "chamfer_px": 23.84,
+    "base_edges": 32528,
+    "edit_edges": 55355,
+    "base_size": [
+      1100,
+      760
+    ],
+    "edit_size": [
+      1509,
+      1042
+    ],
+    "candidate_matches": [
+      "elder_0.png"
+    ]
+  },
+  {
+    "key": "main_bath",
+    "recall": 0.45,
+    "chamfer_px": 15.19,
+    "base_edges": 21996,
+    "edit_edges": 93531,
+    "base_size": [
+      1100,
+      760
+    ],
+    "edit_size": [
+      1509,
+      1042
+    ],
+    "candidate_matches": [
+      "main_bath_r2_0.png"
+    ]
+  },
+  {
+    "key": "secondary_bath",
+    "recall": 0.618,
+    "chamfer_px": 10.91,
+    "base_edges": 24825,
+    "edit_edges": 86777,
+    "base_size": [
+      1100,
+      760
+    ],
+    "edit_size": [
+      1509,
+      1042
+    ],
+    "candidate_matches": [
+      "secondary_bath_0.png"
+    ]
+  }
+]

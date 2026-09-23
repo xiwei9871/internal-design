@@ -1,0 +1,15 @@
+{
+  "key": "secondary_bath",
+  "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+  "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+  "camera": "Camera_secondary_bath",
+  "device": "GPU",
+  "resolution": [
+    2500,
+    1727
+  ],
+  "samples": 128,
+  "seconds": 88.4,
+  "sha256": "8584c600e6b968156469a8a9eaa61e5c7c8de776813f9fbdcc76a6f1e4adfdbe",
+  "status": "physical render, manual review pending"
+}

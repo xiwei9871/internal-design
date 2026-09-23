@@ -1,0 +1,156 @@
+{
+  "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+  "sheets": [
+    {
+      "sheet": "A101",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 50,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A101_平面布置图.dxf",
+      "undefined_linetypes": []
+    },
+    {
+      "sheet": "A102",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 50,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A102_原始结构暨拆改说明图.dxf",
+      "undefined_linetypes": []
+    },
+    {
+      "sheet": "A201",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 50,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A201_地面铺装图.dxf",
+      "undefined_linetypes": []
+    },
+    {
+      "sheet": "A301",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 50,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A301_天花布置图.dxf",
+      "undefined_linetypes": []
+    },
+    {
+      "sheet": "A302",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 50,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A302_电气点位图.dxf",
+      "undefined_linetypes": []
+    },
+    {
+      "sheet": "A303",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 50,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A303_给排水点位图.dxf",
+      "undefined_linetypes": []
+    },
+    {
+      "sheet": "A401",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 50,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A401_立面展开图.dxf",
+      "undefined_linetypes": []
+    },
+    {
+      "sheet": "A402",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 25,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A402_节点详图.dxf",
+      "undefined_linetypes": []
+    },
+    {
+      "sheet": "A403",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 20,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A403_服务墙专项详图.dxf",
+      "undefined_linetypes": []
+    },
+    {
+      "sheet": "A501",
+      "paper_mm": [
+        594.0,
+        420.0
+      ],
+      "viewport_scale": 50,
+      "model_unit": "mm",
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "review_status": "Design coordination; site/SKU/MEP verification pending",
+      "file": "A501_门窗材料表.dxf",
+      "undefined_linetypes": []
+    }
+  ],
+  "combined_pdf_pages": 10
+}

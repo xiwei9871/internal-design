@@ -1,0 +1,13 @@
+{
+  "sheet": "A401",
+  "paper_mm": [
+    594,
+    420
+  ],
+  "viewport_scale": 50,
+  "model_unit": "mm",
+  "audit_errors": 0,
+  "audit_fixes": 0,
+  "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+  "review_status": "Design coordination; site/SKU/MEP verification pending"
+}

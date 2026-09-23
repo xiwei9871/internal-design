@@ -17,7 +17,7 @@ def band(msp, ox, oy, x, y, w, h, label, layer="A-FURN", dashed=False):
     if dashed:
         attribs["linetype"] = "DASHED"
     msp.add_lwpolyline([(ox + x, oy + y), (ox + x + w, oy + y),
-                        (ox + x + w, oy + h), (ox + x, oy + h)],
+                        (ox + x + w, oy + y + h), (ox + x, oy + y + h)],
                        close=True, dxfattribs=attribs)
     if label:
         add_text(msp, label, 85, (ox + x + w / 2, oy + y + h / 2),
@@ -31,86 +31,69 @@ def title(msp, ox, oy, w, s):
 def main() -> None:
     doc = new_doc()
     msp = doc.modelspace()
-    G = 3200  # 节点间距
+    from cad_common import draw_frame_and_title
 
-    # ---- D1 卫浴门槛防水节点（剖面）----
-    ox, oy = 0, 0
-    band(msp, ox, oy, 0, 0, 900, 100, "卫浴地砖")
-    band(msp, ox, oy, 900, 0, 300, 130, "门槛石")
-    band(msp, ox, oy, 1200, 0, 600, 80, "木地板")
-    band(msp, ox, oy, 0, -60, 1800, 60, "结构楼板")
-    band(msp, ox, oy, 0, 100, 900, 40, "防水层", layer="A-PLUM")
-    band(msp, ox, oy, 0, 140, 60, 300, "防水翻边≥300", layer="A-PLUM", dashed=True)
-    band(msp, ox, oy, 1170, 80, 60, 50, "扣条", layer="A-FIXT")
-    add_text(msp, "卫浴侧防水层上翻≥300（湿区墙面1800，待确认）", 90,
-             (ox + 900, oy + 520), TextEntityAlignment.MIDDLE_CENTER)
-    title(msp, ox, oy, 1800, "D1 卫浴门槛防水节点")
+    def detail_heading(x,y,title):
+        add_text(msp,title,140,(x,y+2000))
+    def legend(x,y,rows):
+        for i,row in enumerate(rows):
+            add_text(msp,row,90,(x+1950,y+1200-i*200))
+    def numbered(x,y,items):
+        for i,(rx,ry,w,h,note,layer) in enumerate(items,1):
+            band(msp,x,y,rx,ry,w,h,'',layer=layer)
+            cy=y+ry+h/2
+            # Leaders are separated at a fixed landing, never printed in thin layers.
+            landing=y+1200-(i-1)*200
+            msp.add_lwpolyline([(x+rx+w/2,cy),(x+1800,landing),(x+1890,landing)],
+                dxfattribs={'layer':'A-DIMS','lineweight':13})
+        legend(x,y,[item[4] for item in items])
 
-    # ---- D2 淋浴玻璃隔断固定节点 ----
-    ox += G
-    band(msp, ox, oy, 0, 0, 1600, 100, "地砖+防水层(湿区)")
-    band(msp, ox, oy, 750, 100, 100, 60, "U型槽/夹件")
-    band(msp, ox, oy, 790, 160, 20, 900, "玻璃10mm(钢化)")
-    band(msp, ox, oy, 700, 100, 40, 60, "密封胶")
-    band(msp, ox, oy, 860, 100, 40, 60, "密封胶")
-    add_text(msp, "玻璃固定方式（预埋槽/夹件/胶）待确认；建议贴防爆膜", 90,
-             (ox + 800, oy + 1150), TextEntityAlignment.MIDDLE_CENTER)
-    title(msp, ox, oy, 1600, "D2 淋浴玻璃隔断固定")
+    x,y=0,0
+    detail_heading(x,y,'D1 卫浴门槛 / 防水连续性示意')
+    numbered(x,y,[(0,0,900,100,'01 湿区地砖与粘结层 / 厚度待核','A-FLOR'),
+        (900,0,300,130,'02 门槛石 / 压边及高差待核','A-FURN'),
+        (1200,0,600,80,'03 木地板与基层 / 完成面待核','A-FLOR'),
+        (0,-60,1800,60,'04 结构与找平层 / 原地面复核','A-WALL'),
+        (0,100,900,5,'05 防水连续上翻 / 高度待确认','A-PLUM')])
+    band(msp,x,y,0,100,5,300,'',layer='A-PLUM')
 
-    # ---- D3 台面挡水节点 ----
-    ox += G
-    band(msp, ox, oy, 0, 0, 300, 800, "墙体/墙砖")
-    band(msp, ox, oy, 300, 0, 1100, 40, "台面")
-    band(msp, ox, oy, 300, 40, 40, 120, "后挡水条(一体/胶粘 待确认)")
-    band(msp, ox, oy, 300, -500, 40, 500, "柜门")
-    add_text(msp, "防霉胶收口；挡水高度/一体成型待确认", 90,
-             (ox + 700, oy + 400), TextEntityAlignment.MIDDLE_CENTER)
-    title(msp, ox, oy, 1400, "D3 台面挡水节点")
+    x,y=4500,0
+    detail_heading(x,y,'D2 淋浴玻璃 / 固定节点示意')
+    numbered(x,y,[(0,0,1600,100,'01 瓷砖基层与连续防水','A-FLOR'),
+        (750,100,100,60,'02 槽或夹件 / 选型与锚固待核','A-FIXT'),
+        (795,160,10,900,'03 玻璃10厚示意 / 安全构造待核','A-FIXT'),
+        (700,100,40,60,'04 密封胶 / 不代替结构固定','A-FURN')])
 
-    # ---- D4 木地板-瓷砖收边节点 ----
-    ox = 0
-    oy = -2200
-    band(msp, ox, oy, 0, 0, 900, 80, "橡木地板")
-    band(msp, ox, oy, 900, 0, 200, 90, "收边条")
-    band(msp, ox, oy, 1100, 0, 700, 100, "瓷砖")
-    band(msp, ox, oy, 0, -60, 1800, 60, "找平层/楼板")
-    add_text(msp, "T型扣条/极窄收口 待确认；两饰面完成面齐平", 90,
-             (ox + 900, oy + 350), TextEntityAlignment.MIDDLE_CENTER)
-    title(msp, ox, oy, 1800, "D4 木地板-瓷砖收边")
+    x,y=9000,0
+    detail_heading(x,y,'D3 厨房台面 / 后挡水示意')
+    numbered(x,y,[(0,0,200,1500,'01 原墙及墙砖基层','A-WALL'),
+        (200,870,1100,30,'02 台面完成面900 / 厚30暂定','A-FURN'),
+        (200,900,30,120,'03 后挡水 / 材质高度待确认','A-FURN'),
+        (1230,100,20,770,'04 柜门与柜体 / 厂家深化','A-FURN')])
 
-    # ---- D5 通顶衣柜收口节点 ----
-    ox += G
-    band(msp, ox, oy, 0, 0, 900, 1400, "吊顶(2600)")
-    band(msp, ox, oy, 300, 0, 40, 1400, "", layer="A-WALL")
-    band(msp, ox, oy, 340, -800, 400, 800, "衣柜顶封板")
-    band(msp, ox, oy, 340, -1400, 400, 600, "衣柜柜体")
-    add_text(msp, "顶封板与吊顶留缝/打胶 待确认；侧封板同", 90,
-             (ox + 700, oy + 1600), TextEntityAlignment.MIDDLE_CENTER)
-    title(msp, ox, oy, 1400, "D5 通顶衣柜顶部收口")
+    x,y=0,-4100
+    detail_heading(x,y,'D4 地板与地砖 / 齐平收口示意')
+    numbered(x,y,[(0,0,900,80,'01 木地板及基层 / 总厚待确认','A-FLOR'),
+        (900,0,20,80,'02 极窄收口 / 型材待确认','A-FIXT'),
+        (920,0,880,80,'03 地砖及基层 / 总厚待确认','A-FLOR'),
+        (0,-60,1800,60,'04 结构层 / 两侧完成面齐平','A-WALL')])
 
-    # ---- 图框图签 ----
-    x0, y0, x1, y1 = -1500, oy - 2500, 3 * G + 2200, 2200
-    msp.add_lwpolyline([(x0, y0), (x1, y0), (x1, y1), (x0, y1)], close=True,
-                       dxfattribs={"layer": "A-FRAME", "lineweight": 70,
-                                   "true_color": colors.rgb2int(BLACK)})
-    tx, ty = x1 - 6200, y0
-    msp.add_lwpolyline([(tx, ty), (x1, ty), (x1, ty + 2400), (tx, ty + 2400)], close=True,
-                       dxfattribs={"layer": "A-FRAME", "true_color": colors.rgb2int(BLACK)})
-    for s, hgt, py_ in [
-        ("学道街44号室内设计", 300, ty + 2050), ("节点详图（示意）", 240, ty + 1650),
-        ("图号 A402   版本 v1", 180, ty + 1250),
-        ("常规做法示意，最终以深化设计/现场为准", 150, ty + 900)]:
-        add_text(msp, s, hgt, (tx + 250, py_))
-    for i, n in enumerate(["· 防水高度、玻璃固定、挡水做法、收边形式、封板留缝全部待确认",
-                            "· 详图比例为示意，不以图示量取尺寸"]):
-        add_text(msp, n, 150, (x0 + 250, y0 + 200 + i * 400))
+    x,y=4500,-4100
+    detail_heading(x,y,'D5 衣柜上部 / 留空与收边示意')
+    # Full-size section; lower cabinet is omitted with an explicit break.
+    numbered(x,y,[(0,0,100,1600,'01 原墙 / 墙高2700暂定','A-WALL'),
+        (100,1500,1400,100,'02 吊顶完成面2600暂定','A-CEIL'),
+        (100,200,600,1000,'03 柜顶标高2300 / 顶部留空300','A-FURN')])
+    add_text(msp,'下部省略；本局部原点=FFL+1100',90,(x,y-180))
+    msp.add_lwpolyline([(x+100,y+100),(x+250,y+160),(x+400,y+100),(x+550,y+160),(x+700,y+100)],dxfattribs={'layer':'A-FURN'})
 
-    dxf_path = OUT / "A402_节点详图.dxf"
-    doc.saveas(dxf_path)
-    render_preview(doc, msp, OUT / "A402_节点详图_preview.png", figsize=(16, 10), dpi=150)
-    print(dxf_path)
-    print(OUT / "A402_节点详图_preview.png")
+    draw_frame_and_title(msp,'节点详图（做法示意）','A402',[
+        '结构层厚度与节点材料均为示意假设；无现场节点确认，不用于施工放样。',
+        '玻璃固定、防水高度、门槛与收边型材待现场和厂家深化。'])
+    path=OUT/'A402_节点详图.dxf'
+    doc.saveas(path)
+    render_preview(doc,msp,OUT/'A402_节点详图_preview.png')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

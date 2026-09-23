@@ -1,0 +1,1359 @@
+{
+  "revision": "A14-20260918",
+  "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+  "scene": {
+    "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+    "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+    "camera_anchors": {
+      "living": {
+        "camera_px": [
+          1080,
+          760
+        ],
+        "target_px": [
+          930,
+          1130
+        ],
+        "height_mm": 1550,
+        "lens_mm": 22,
+        "label": "餐客厅·L",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      },
+      "kitchen": {
+        "camera_px": [
+          735,
+          650
+        ],
+        "target_px": [
+          620,
+          250
+        ],
+        "height_mm": 1480,
+        "lens_mm": 25,
+        "label": "厨房服务墙·K",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      },
+      "master": {
+        "camera_px": [
+          650,
+          1170
+        ],
+        "target_px": [
+          570,
+          980
+        ],
+        "height_mm": 1550,
+        "lens_mm": 20,
+        "label": "主卧·M",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      },
+      "child": {
+        "camera_px": [
+          1168,
+          1080
+        ],
+        "target_px": [
+          1320,
+          1000
+        ],
+        "height_mm": 1480,
+        "lens_mm": 20,
+        "label": "儿童房·C",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      },
+      "elder": {
+        "camera_px": [
+          810,
+          620
+        ],
+        "target_px": [
+          980,
+          480
+        ],
+        "height_mm": 1500,
+        "lens_mm": 22,
+        "label": "老人房·E",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      },
+      "main_bath": {
+        "camera_px": [
+          360,
+          825
+        ],
+        "target_px": [
+          310,
+          690
+        ],
+        "height_mm": 1420,
+        "lens_mm": 20,
+        "label": "主卫·B",
+        "previous_camera_px": [
+          395,
+          835
+        ],
+        "override_reason": "A11 camera sightline intersects open DOOR-006 within 30mm; moved inside bathroom without changing geometry",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      },
+      "secondary_bath": {
+        "camera_px": [
+          570,
+          625
+        ],
+        "target_px": [
+          500,
+          470
+        ],
+        "height_mm": 1420,
+        "lens_mm": 20,
+        "label": "次卫·S",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      }
+    },
+    "camera_visibility": {
+      "living": {
+        "rays": [
+          {
+            "frame_uv": [
+              0,
+              0
+            ],
+            "hit_object": "WIN-008_frame",
+            "distance_m": 5.993627218593914,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              -0.5
+            ],
+            "hit_object": "WALL-018",
+            "distance_m": 1.6244687945259109,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0
+            ],
+            "hit_object": "WALL-018",
+            "distance_m": 1.581939470313309,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0.5
+            ],
+            "hit_object": "WALL-018",
+            "distance_m": 1.8424816254316805,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              -0.5
+            ],
+            "hit_object": "Floor",
+            "distance_m": 2.64267984830255,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              0.5
+            ],
+            "hit_object": "Dry ceiling",
+            "distance_m": 2.695830629829887,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              -0.5
+            ],
+            "hit_object": "FURN-014_top",
+            "distance_m": 1.6494312274191036,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0
+            ],
+            "hit_object": "FURN-022_front.001",
+            "distance_m": 2.7933055894645555,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0.5
+            ],
+            "hit_object": "Dry ceiling",
+            "distance_m": 3.3098351717876784,
+            "near_obstruction": false
+          }
+        ],
+        "minimum_hit_distance_m": 1.581939470313309,
+        "minimum_required_clearance_m": 0.15,
+        "status": "pass"
+      },
+      "kitchen": {
+        "rays": [
+          {
+            "frame_uv": [
+              0,
+              0
+            ],
+            "hit_object": "Appliance_fridge_steel",
+            "distance_m": 3.0008642881365675,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              -0.5
+            ],
+            "hit_object": "laundry_side",
+            "distance_m": 1.7184857598836578,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0
+            ],
+            "hit_object": "laundry_side",
+            "distance_m": 1.5005929182978341,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0.5
+            ],
+            "hit_object": "laundry_side",
+            "distance_m": 1.5289365994458146,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              -0.5
+            ],
+            "hit_object": "Floor",
+            "distance_m": 2.819983302001012,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              0.5
+            ],
+            "hit_object": "Dry ceiling",
+            "distance_m": 3.1071416511517644,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              -0.5
+            ],
+            "hit_object": "WALL-003",
+            "distance_m": 1.0799215282579544,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0
+            ],
+            "hit_object": "WALL-003",
+            "distance_m": 0.9631155360227686,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0.5
+            ],
+            "hit_object": "WALL-003",
+            "distance_m": 1.0332346300250594,
+            "near_obstruction": false
+          }
+        ],
+        "minimum_hit_distance_m": 0.9631155360227686,
+        "minimum_required_clearance_m": 0.15,
+        "status": "pass"
+      },
+      "master": {
+        "rays": [
+          {
+            "frame_uv": [
+              0,
+              0
+            ],
+            "hit_object": "FURN-030_front.001",
+            "distance_m": 4.202195451186666,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              -0.5
+            ],
+            "hit_object": "DOOR-005",
+            "distance_m": 2.7373110566624805,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0
+            ],
+            "hit_object": "DOOR-005",
+            "distance_m": 2.3772592653023175,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0.5
+            ],
+            "hit_object": "Dry ceiling",
+            "distance_m": 3.992073147026189,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              -0.5
+            ],
+            "hit_object": "FURN-001_duvet",
+            "distance_m": 1.3650097696335475,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              0.5
+            ],
+            "hit_object": "Dry ceiling",
+            "distance_m": 3.1716578366959687,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              -0.5
+            ],
+            "hit_object": "FURN-001_pillow",
+            "distance_m": 1.6191504447096257,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0
+            ],
+            "hit_object": "WALL-012",
+            "distance_m": 3.4006301295966184,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0.5
+            ],
+            "hit_object": "Dry ceiling",
+            "distance_m": 3.9920730126494397,
+            "near_obstruction": false
+          }
+        ],
+        "minimum_hit_distance_m": 1.3650097696335475,
+        "minimum_required_clearance_m": 0.15,
+        "status": "pass"
+      },
+      "child": {
+        "rays": [
+          {
+            "frame_uv": [
+              0,
+              0
+            ],
+            "hit_object": "FURN-003_headboard",
+            "distance_m": 3.217718616533792,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              -0.5
+            ],
+            "hit_object": "ZONE-007",
+            "distance_m": 2.6548638990777125,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0
+            ],
+            "hit_object": "FURN-032_carcass",
+            "distance_m": 2.588084496487703,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0.5
+            ],
+            "hit_object": "FURN-032_front",
+            "distance_m": 2.569879182274521,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              -0.5
+            ],
+            "hit_object": "FURN-003_duvet",
+            "distance_m": 1.27589265251711,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              0.5
+            ],
+            "hit_object": "WALL-017",
+            "distance_m": 3.407061611391023,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              -0.5
+            ],
+            "hit_object": "WIN-010_glass",
+            "distance_m": 2.106712257190215,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0
+            ],
+            "hit_object": "WALL-019",
+            "distance_m": 2.163356977579018,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0.5
+            ],
+            "hit_object": "WALL-019",
+            "distance_m": 2.5088497049108396,
+            "near_obstruction": false
+          }
+        ],
+        "minimum_hit_distance_m": 1.27589265251711,
+        "minimum_required_clearance_m": 0.15,
+        "status": "pass"
+      },
+      "elder": {
+        "rays": [
+          {
+            "frame_uv": [
+              0,
+              0
+            ],
+            "hit_object": "WALL-004",
+            "distance_m": 4.492878577107373,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              -0.5
+            ],
+            "hit_object": "FURN-031_carcass",
+            "distance_m": 0.941559380427389,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0
+            ],
+            "hit_object": "FURN-031_carcass",
+            "distance_m": 0.8178120702825123,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0.5
+            ],
+            "hit_object": "FURN-031_carcass",
+            "distance_m": 0.8484939795254077,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              -0.5
+            ],
+            "hit_object": "ZONE-006",
+            "distance_m": 2.3360460185995287,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              0.5
+            ],
+            "hit_object": "Dry ceiling",
+            "distance_m": 3.3801809387194135,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              -0.5
+            ],
+            "hit_object": "FURN-006_carcass",
+            "distance_m": 2.2622091057428455,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0
+            ],
+            "hit_object": "WALL-004",
+            "distance_m": 3.4716102442422194,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0.5
+            ],
+            "hit_object": "WALL-004",
+            "distance_m": 3.56783649009629,
+            "near_obstruction": false
+          }
+        ],
+        "minimum_hit_distance_m": 0.8178120702825123,
+        "minimum_required_clearance_m": 0.15,
+        "status": "pass"
+      },
+      "main_bath": {
+        "rays": [
+          {
+            "frame_uv": [
+              0,
+              0
+            ],
+            "hit_object": "WALL-008",
+            "distance_m": 2.8667284158822426,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              -0.5
+            ],
+            "hit_object": "FURN-027_counter",
+            "distance_m": 1.0908772958268211,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0
+            ],
+            "hit_object": "WALL-008",
+            "distance_m": 1.5191765569830358,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0.5
+            ],
+            "hit_object": "WALL-008",
+            "distance_m": 1.6086634989026634,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              -0.5
+            ],
+            "hit_object": "ZONE-003",
+            "distance_m": 2.0216587267889055,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              0.5
+            ],
+            "hit_object": "WALL-008",
+            "distance_m": 2.959077326255732,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              -0.5
+            ],
+            "hit_object": "WALL-010",
+            "distance_m": 1.131865045997668,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0
+            ],
+            "hit_object": "WALL-010",
+            "distance_m": 1.124426428955626,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0.5
+            ],
+            "hit_object": "WALL-010",
+            "distance_m": 1.3676656486356515,
+            "near_obstruction": false
+          }
+        ],
+        "minimum_hit_distance_m": 1.0908772958268211,
+        "minimum_required_clearance_m": 0.15,
+        "status": "pass"
+      },
+      "secondary_bath": {
+        "rays": [
+          {
+            "frame_uv": [
+              0,
+              0
+            ],
+            "hit_object": "WALL-002",
+            "distance_m": 3.192554108699603,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              -0.5
+            ],
+            "hit_object": "FURN-007_counter",
+            "distance_m": 1.126907618775722,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0
+            ],
+            "hit_object": "WALL-007",
+            "distance_m": 1.5321169607958847,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              -0.5,
+              0.5
+            ],
+            "hit_object": "WALL-007",
+            "distance_m": 1.6238968708681785,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              -0.5
+            ],
+            "hit_object": "ZONE-002",
+            "distance_m": 2.0934408301215783,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0,
+              0.5
+            ],
+            "hit_object": "ZONE-002_ceiling",
+            "distance_m": 2.732319467955517,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              -0.5
+            ],
+            "hit_object": "DOOR-007",
+            "distance_m": 0.31355498274801974,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0
+            ],
+            "hit_object": "DOOR-007",
+            "distance_m": 0.31758381934063806,
+            "near_obstruction": false
+          },
+          {
+            "frame_uv": [
+              0.5,
+              0.5
+            ],
+            "hit_object": "DOOR-007",
+            "distance_m": 0.39562988045847514,
+            "near_obstruction": false
+          }
+        ],
+        "minimum_hit_distance_m": 0.31355498274801974,
+        "minimum_required_clearance_m": 0.15,
+        "status": "pass"
+      }
+    },
+    "renderer": "Cycles; render_views selects Metal when available",
+    "samples": 96,
+    "resolution": [
+      1500,
+      1036
+    ],
+    "status": "design preview / not client-approved; no AI geometry",
+    "scene_file": "方案A14_同模精细渲染.blend"
+  },
+  "views": [
+    {
+      "key": "living",
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+      "camera": "Camera_living",
+      "device": "GPU",
+      "resolution": [
+        2500,
+        1727
+      ],
+      "samples": 128,
+      "seconds": 74.41,
+      "sha256": "9cddb447a769153922c896239c7b34714457bd965e1d3a2d8ec8711d41e8939b",
+      "status": "physical render, manual review pending",
+      "label": "客餐厅",
+      "passes": {
+        "parts": [
+          "ViewLayer.Combined",
+          "ViewLayer.Depth",
+          "ViewLayer.Normal",
+          "ViewLayer.CryptoObject00",
+          "ViewLayer.CryptoObject01",
+          "ViewLayer.CryptoObject02",
+          "ViewLayer.CryptoMaterial00",
+          "ViewLayer.CryptoMaterial01",
+          "ViewLayer.CryptoMaterial02",
+          "ViewLayer.Noisy Image"
+        ],
+        "depth_range_m": [
+          1.1527996063232422,
+          6.201454162597656
+        ],
+        "geometry_pass_note": "First visible surface; glass transmission and mirrors need manual semantic review. Workbench is schematic only."
+      },
+      "exr_sha256": "5efd4481d22bd085e607b0662d1ffa196138cee9f718031e2a57dc4d1a2efed1",
+      "before_sha256": "aabc9d25f3adc931ea029f670bbe5f1071ce755e4495d7bee897c6c0b677f396",
+      "camera_parameters": {
+        "camera_px": [
+          1080,
+          760
+        ],
+        "target_px": [
+          930,
+          1130
+        ],
+        "height_mm": 1550,
+        "lens_mm": 22,
+        "label": "餐客厅·L",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      }
+    },
+    {
+      "key": "kitchen",
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+      "camera": "Camera_kitchen",
+      "device": "GPU",
+      "resolution": [
+        2500,
+        1727
+      ],
+      "samples": 128,
+      "seconds": 74.5,
+      "sha256": "5898057b0b287827d55267cf9713ad0528d0ad72db6219c07dc21814917f2719",
+      "status": "physical render, manual review pending",
+      "label": "厨房与服务墙",
+      "passes": {
+        "parts": [
+          "ViewLayer.Combined",
+          "ViewLayer.Depth",
+          "ViewLayer.Normal",
+          "ViewLayer.CryptoObject00",
+          "ViewLayer.CryptoObject01",
+          "ViewLayer.CryptoObject02",
+          "ViewLayer.CryptoMaterial00",
+          "ViewLayer.CryptoMaterial01",
+          "ViewLayer.CryptoMaterial02",
+          "ViewLayer.Noisy Image"
+        ],
+        "depth_range_m": [
+          0.7664656639099121,
+          3.4781508445739746
+        ],
+        "geometry_pass_note": "First visible surface; glass transmission and mirrors need manual semantic review. Workbench is schematic only."
+      },
+      "exr_sha256": "9a7b29a85aa250321284ae0c494919e360c262ec35e9eac90a97992c9732dce0",
+      "before_sha256": "5f2e63e763c9c3fecfae8ba7b70d4ef641f2d8068d49fd66e5c0741675e518ea",
+      "camera_parameters": {
+        "camera_px": [
+          735,
+          650
+        ],
+        "target_px": [
+          620,
+          250
+        ],
+        "height_mm": 1480,
+        "lens_mm": 25,
+        "label": "厨房服务墙·K",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      }
+    },
+    {
+      "key": "master",
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+      "camera": "Camera_master",
+      "device": "GPU",
+      "resolution": [
+        2500,
+        1727
+      ],
+      "samples": 128,
+      "seconds": 75.61,
+      "sha256": "a6009d179464a734440fe8f41211770d2f3d28c88e0c0866d7fd422c0deedbe7",
+      "status": "physical render, manual review pending",
+      "label": "主卧",
+      "passes": {
+        "parts": [
+          "ViewLayer.Combined",
+          "ViewLayer.Depth",
+          "ViewLayer.Normal",
+          "ViewLayer.CryptoObject00",
+          "ViewLayer.CryptoObject01",
+          "ViewLayer.CryptoObject02",
+          "ViewLayer.CryptoMaterial00",
+          "ViewLayer.CryptoMaterial01",
+          "ViewLayer.CryptoMaterial02",
+          "ViewLayer.Noisy Image"
+        ],
+        "depth_range_m": [
+          1.0928397178649902,
+          7.65782356262207
+        ],
+        "geometry_pass_note": "First visible surface; glass transmission and mirrors need manual semantic review. Workbench is schematic only."
+      },
+      "exr_sha256": "e03572dfd8c05dadbc6ee94c8b9e4b4d9b0c1bd5c2df81ab3d614a0fedb02d14",
+      "before_sha256": "9da61ca29d69e202584970a6131de9a3f46b19c0cbd07e059873cddccd30f26c",
+      "camera_parameters": {
+        "camera_px": [
+          650,
+          1170
+        ],
+        "target_px": [
+          570,
+          980
+        ],
+        "height_mm": 1550,
+        "lens_mm": 20,
+        "label": "主卧·M",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      }
+    },
+    {
+      "key": "child",
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+      "camera": "Camera_child",
+      "device": "GPU",
+      "resolution": [
+        2500,
+        1727
+      ],
+      "samples": 128,
+      "seconds": 78.51,
+      "sha256": "4735ccf999ffb8c31c81a8ecfbde0149185ea921bf1f8d4276c89bffb416bc2a",
+      "status": "physical render, manual review pending",
+      "label": "儿童房",
+      "passes": {
+        "parts": [
+          "ViewLayer.Combined",
+          "ViewLayer.Depth",
+          "ViewLayer.Normal",
+          "ViewLayer.CryptoObject00",
+          "ViewLayer.CryptoObject01",
+          "ViewLayer.CryptoObject02",
+          "ViewLayer.CryptoMaterial00",
+          "ViewLayer.CryptoMaterial01",
+          "ViewLayer.CryptoMaterial02",
+          "ViewLayer.Noisy Image"
+        ],
+        "depth_range_m": [
+          1.0714998245239258,
+          3.779759407043457
+        ],
+        "geometry_pass_note": "First visible surface; glass transmission and mirrors need manual semantic review. Workbench is schematic only."
+      },
+      "exr_sha256": "6c364d75917cca26ace48d4096f08289615316a9d1c023afb2ba5281251eaae8",
+      "before_sha256": "0547df30c6e0f0f7a0819006083299b0e87e6550a537fde17b64c0f3081367f2",
+      "camera_parameters": {
+        "camera_px": [
+          1168,
+          1080
+        ],
+        "target_px": [
+          1320,
+          1000
+        ],
+        "height_mm": 1480,
+        "lens_mm": 20,
+        "label": "儿童房·C",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      }
+    },
+    {
+      "key": "elder",
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+      "camera": "Camera_elder",
+      "device": "GPU",
+      "resolution": [
+        2500,
+        1727
+      ],
+      "samples": 128,
+      "seconds": 72.43,
+      "sha256": "79e1c74fcb043450766e255aa9fbc07d1b5dc75f51715734c4ebbf8648d0b955",
+      "status": "physical render, manual review pending",
+      "label": "老人房",
+      "passes": {
+        "parts": [
+          "ViewLayer.Combined",
+          "ViewLayer.Depth",
+          "ViewLayer.Normal",
+          "ViewLayer.CryptoObject00",
+          "ViewLayer.CryptoObject01",
+          "ViewLayer.CryptoObject02",
+          "ViewLayer.CryptoMaterial00",
+          "ViewLayer.CryptoMaterial01",
+          "ViewLayer.CryptoMaterial02",
+          "ViewLayer.Noisy Image"
+        ],
+        "depth_range_m": [
+          0.6017971038818359,
+          4.5724382400512695
+        ],
+        "geometry_pass_note": "First visible surface; glass transmission and mirrors need manual semantic review. Workbench is schematic only."
+      },
+      "exr_sha256": "02e2374816c7e261c67bebaf9722226ce04932cf6379c84d4c27f42c2a7585cc",
+      "before_sha256": "c0fdcb1dadc0ac56e95108de50a87ad1b70ad87cf844acc846a0a6d0642c9b79",
+      "camera_parameters": {
+        "camera_px": [
+          810,
+          620
+        ],
+        "target_px": [
+          980,
+          480
+        ],
+        "height_mm": 1500,
+        "lens_mm": 22,
+        "label": "老人房·E",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      }
+    },
+    {
+      "key": "main_bath",
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+      "camera": "Camera_main_bath",
+      "device": "GPU",
+      "resolution": [
+        2500,
+        1727
+      ],
+      "samples": 128,
+      "seconds": 91.95,
+      "sha256": "bba980609adc28987319d09b3c040b641965320abc47855e748efca321515115",
+      "status": "physical render, manual review pending",
+      "label": "主卫",
+      "passes": {
+        "parts": [
+          "ViewLayer.Combined",
+          "ViewLayer.Depth",
+          "ViewLayer.Normal",
+          "ViewLayer.CryptoObject00",
+          "ViewLayer.CryptoObject01",
+          "ViewLayer.CryptoObject02",
+          "ViewLayer.CryptoMaterial00",
+          "ViewLayer.CryptoMaterial01",
+          "ViewLayer.CryptoMaterial02",
+          "ViewLayer.Noisy Image"
+        ],
+        "depth_range_m": [
+          0.7362098693847656,
+          3.0334153175354004
+        ],
+        "geometry_pass_note": "First visible surface; glass transmission and mirrors need manual semantic review. Workbench is schematic only."
+      },
+      "exr_sha256": "edfb612ba4e14ab260bc14d3354a6d037d9e946a91da20b52b832dfefa03cd49",
+      "before_sha256": "314b7b1184138ce774011784e1523d452f2c82fc9d67d88534c941c78ef65cde",
+      "camera_parameters": {
+        "camera_px": [
+          360,
+          825
+        ],
+        "target_px": [
+          310,
+          690
+        ],
+        "height_mm": 1420,
+        "lens_mm": 20,
+        "label": "主卫·B",
+        "previous_camera_px": [
+          395,
+          835
+        ],
+        "override_reason": "A11 camera sightline intersects open DOOR-006 within 30mm; moved inside bathroom without changing geometry",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      }
+    },
+    {
+      "key": "secondary_bath",
+      "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+      "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+      "camera": "Camera_secondary_bath",
+      "device": "GPU",
+      "resolution": [
+        2500,
+        1727
+      ],
+      "samples": 128,
+      "seconds": 88.4,
+      "sha256": "8584c600e6b968156469a8a9eaa61e5c7c8de776813f9fbdcc76a6f1e4adfdbe",
+      "status": "physical render, manual review pending",
+      "label": "次卫",
+      "passes": {
+        "parts": [
+          "ViewLayer.Combined",
+          "ViewLayer.Depth",
+          "ViewLayer.Normal",
+          "ViewLayer.CryptoObject00",
+          "ViewLayer.CryptoObject01",
+          "ViewLayer.CryptoObject02",
+          "ViewLayer.CryptoMaterial00",
+          "ViewLayer.CryptoMaterial01",
+          "ViewLayer.CryptoMaterial02",
+          "ViewLayer.Noisy Image"
+        ],
+        "depth_range_m": [
+          0.2117304801940918,
+          3.385140895843506
+        ],
+        "geometry_pass_note": "First visible surface; glass transmission and mirrors need manual semantic review. Workbench is schematic only."
+      },
+      "exr_sha256": "0b19dd19fcddbcc684b5666b5d091169b87900c7f08764e402b3192d323915f1",
+      "before_sha256": "a08fe9cb826c3968c20bc95e1b408d625c67759a6f496f29d048b76447699e49",
+      "camera_parameters": {
+        "camera_px": [
+          570,
+          625
+        ],
+        "target_px": [
+          500,
+          470
+        ],
+        "height_mm": 1420,
+        "lens_mm": 20,
+        "label": "次卫·S",
+        "target_height_mm": 1100,
+        "sensor_width_mm": 36,
+        "shift_x": 0,
+        "shift_y": 0
+      }
+    }
+  ],
+  "validation": {
+    "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+    "furniture_assemblies": 40,
+    "camera_count": 7,
+    "issues": [],
+    "status": "pass",
+    "scope": "envelopes, mounting datum, camera clearance, shared hash; not full collision/site validation"
+  },
+  "cad_manifest": {
+    "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+    "sheets": [
+      {
+        "sheet": "A101",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 50,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A101_平面布置图.dxf",
+        "undefined_linetypes": []
+      },
+      {
+        "sheet": "A102",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 50,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A102_原始结构暨拆改说明图.dxf",
+        "undefined_linetypes": []
+      },
+      {
+        "sheet": "A201",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 50,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A201_地面铺装图.dxf",
+        "undefined_linetypes": []
+      },
+      {
+        "sheet": "A301",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 50,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A301_天花布置图.dxf",
+        "undefined_linetypes": []
+      },
+      {
+        "sheet": "A302",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 50,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A302_电气点位图.dxf",
+        "undefined_linetypes": []
+      },
+      {
+        "sheet": "A303",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 50,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A303_给排水点位图.dxf",
+        "undefined_linetypes": []
+      },
+      {
+        "sheet": "A401",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 50,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A401_立面展开图.dxf",
+        "undefined_linetypes": []
+      },
+      {
+        "sheet": "A402",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 25,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A402_节点详图.dxf",
+        "undefined_linetypes": []
+      },
+      {
+        "sheet": "A403",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 20,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A403_服务墙专项详图.dxf",
+        "undefined_linetypes": []
+      },
+      {
+        "sheet": "A501",
+        "paper_mm": [
+          594.0,
+          420.0
+        ],
+        "viewport_scale": 50,
+        "model_unit": "mm",
+        "audit_errors": 0,
+        "audit_fixes": 0,
+        "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+        "review_status": "Design coordination; site/SKU/MEP verification pending",
+        "file": "A501_门窗材料表.dxf",
+        "undefined_linetypes": []
+      }
+    ],
+    "combined_pdf_pages": 10
+  },
+  "client_approval": "pending_review",
+  "ai_generation_used": false,
+  "notes": [
+    "Current images are direct physical renders from approved layout; appearance update requires client review.",
+    "Site measurements, product SKUs and MEP coordination remain pending."
+  ],
+  "cad_file_sha256": {
+    "A101_平面布置图.dxf": "9bc38b720b6a26be0c9a8fe6e98636116d0ae6eebd39f6f2f7501ef4ecdff70e",
+    "A101_平面布置图.pdf": "32d154c10fa491eaad26fb3a92d71fd1e036ae914771a8fdb82dc50a32ca5ca1",
+    "A102_原始结构暨拆改说明图.dxf": "6339d272f14df0b8f0bbe5bed8bfb13dd260e4308ac417e54aa0e30ca256a035",
+    "A102_原始结构暨拆改说明图.pdf": "0b86e6f6343fa36e52bfeee40140de2cf3616513ea98ab32fffca10498b7632d",
+    "A201_地面铺装图.dxf": "69c2a6794c49663b10e55c234bdb79a2f9584d5e29f8596b09ae9bd5e007c3b3",
+    "A201_地面铺装图.pdf": "08cd58d278ef8c1897af9212c2d93b1dee6267e540ae644ecfd4b9774f2ccc41",
+    "A301_天花布置图.dxf": "3a425832a0021acd5da5ed9b738e38974fd87d162bad851ca9a511b40284d0e6",
+    "A301_天花布置图.pdf": "c8df514091cd69370394081bd208ed7092b0f2db74634cde9e1e8f7c6c7dd9df",
+    "A302_电气点位图.dxf": "f4fba206f532e15bc1b12545a7a206f62bb28dbe0f6255679851f60e705eda32",
+    "A302_电气点位图.pdf": "d8ff30325cc9a7216dcea696af29d843979b0d845c931249cac26f31c98da305",
+    "A303_给排水点位图.dxf": "e01e05c868db74f8690613e2709c24c1be75598d35c5efc44c77aa227b9f8e36",
+    "A303_给排水点位图.pdf": "f9db511d057dc2ef3bd9bc92f784899c043f623151ad9296786f16d108a35ab7",
+    "A401_立面展开图.dxf": "5ef0fba6c942dcfe4471a53dbbe00cada2bf1babf31d176ba8db6bb200510edf",
+    "A401_立面展开图.pdf": "306e33d160c83f441559d6806972fae351efde64d935aa910edca2857a7de11d",
+    "A402_节点详图.dxf": "e2cdf50ba82bbdcd2f753d55db2bcae428d0f2bc0a692c8c4b872eab287fd402",
+    "A402_节点详图.pdf": "8f0b7752a1ed490012d9949326dff84aaea37ea331af8634df40335fd160831b",
+    "A403_服务墙专项详图.dxf": "74c4db25cc827ddb5777e5707f0b3334158917cc166506a00805219fbd805f93",
+    "A403_服务墙专项详图.pdf": "e1d64b654d32cb5c9b0ef1c96ad8956cf460d750dab7503da02307e76d34a775",
+    "A501_门窗材料表.dxf": "74ea7b7246a22fa5c8cae0b10497081cb783d45708b0ca8277ab07584cc5dd58",
+    "A501_门窗材料表.pdf": "fe47f73990a2b960cffb20b273e8691830481ef4771f5e4a6a0a1da37ed4996d",
+    "学道街44号_v14_设计协调图册_A2.pdf": "119b410b29f7bccea8047b6e84d6b8ba78854dae5d59fff6b28bb34e8dcdff05"
+  },
+  "optional_surface_experiments": {
+    "master_status": {
+      "status": "generation_failed",
+      "returncode": 2
+    },
+    "kitchen_status": {
+      "status": "generation_failed",
+      "returncode": 2,
+      "reason": "API request failed with HTTP 400"
+    }
+  },
+  "dependencies": {
+    "ezdxf": "1.4.4",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "Pillow": "12.3.0",
+    "shapely": "2.1.2",
+    "matplotlib": "3.11.2",
+    "PyMuPDF": "1.28.2",
+    "OpenEXR": "3.4.15"
+  }
+}

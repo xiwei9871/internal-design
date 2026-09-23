@@ -1,0 +1,14 @@
+{
+  "key": "kitchen",
+  "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+  "camera": "Camera_kitchen",
+  "device": "GPU",
+  "resolution": [
+    1000,
+    691
+  ],
+  "samples": 32,
+  "seconds": 10.43,
+  "sha256": "90f3faa9cc64df2ca136a34be338dff7441e70288c34b6ddbc46d449bd77b2fd",
+  "status": "physical render, manual review pending"
+}

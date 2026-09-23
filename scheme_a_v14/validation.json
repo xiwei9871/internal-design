@@ -1,0 +1,8 @@
+{
+  "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+  "furniture_assemblies": 40,
+  "camera_count": 7,
+  "issues": [],
+  "status": "pass",
+  "scope": "envelopes, mounting datum, camera clearance, shared hash; not full collision/site validation"
+}

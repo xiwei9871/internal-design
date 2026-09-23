@@ -1,0 +1,15 @@
+{
+  "key": "child",
+  "design_sha256": "3f0c9b853d0d7c5b615752d2c3fcbcde67dfe2171ea3c56bb2f21f17e401513f",
+  "build_script_sha256": "279636b8dd3267355fc98e07536ff67daa6e3aa674760d66b8544f8f7946cde2",
+  "camera": "Camera_child",
+  "device": "GPU",
+  "resolution": [
+    2500,
+    1727
+  ],
+  "samples": 128,
+  "seconds": 78.51,
+  "sha256": "4735ccf999ffb8c31c81a8ecfbde0149185ea921bf1f8d4276c89bffb416bc2a",
+  "status": "physical render, manual review pending"
+}

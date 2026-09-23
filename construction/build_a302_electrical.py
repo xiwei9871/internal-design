@@ -88,10 +88,6 @@ def draw_point(msp, px, py, label, kind):
         msp.add_lwpolyline([(x - s, y - s), (x + s, y - s), (x + s, y + s), (x - s, y + s)],
                            close=True, dxfattribs={"layer": "A-ELEC", "lineweight": 35})
         msp.add_line((x - s, y), (x + s, y), dxfattribs={"layer": "A-ELEC"})
-    if px > 1100:  # 东墙点附近标注放左侧，避免溢出外墙
-        add_text(msp, label, 85, (x - 110, y - 40), TextEntityAlignment.RIGHT, layer="A-ELEC")
-    else:
-        add_text(msp, label, 85, (x + 110, y - 40), TextEntityAlignment.LEFT, layer="A-ELEC")
 
 
 def main() -> None:
@@ -103,8 +99,13 @@ def main() -> None:
     draw_doors(msp)
     draw_furniture(msp, labels=False)  # 家具轮廓作定位参照，不写名字避免拥挤
     draw_room_labels(msp, height=170)
-    for px, py, label, kind in POINTS:
-        draw_point(msp, px, py, label, kind)
+    doc._point_schedule = []
+    for i, (px, py, label, kind) in enumerate(POINTS, 1):
+        code = f'E{i:02d}'
+        draw_point(msp, px, py, code, kind)
+        doc._point_schedule.append((code,label,*m(px,py)))
+    from cad_common import draw_point_labels
+    draw_point_labels(msp,[(f'E{i:02d}',px,py) for i,(px,py,*_) in enumerate(POINTS,1)],'A-ELEC')
     draw_overall_dims(msp)
     draw_frame_and_title(msp, "电气点位图（插座/开关/配电箱）", "A302",
                          notes=["· 常规布置第一版，全部点位待业主逐点确认",

@@ -1,0 +1,9 @@
+# Exact Python package versions used for the A14 rebuild; Blender/FreeCAD are separate apps.
+ezdxf==1.4.4
+numpy==2.5.3
+scipy==1.18.1
+Pillow==12.3.0
+shapely==2.1.2
+matplotlib==3.11.2
+PyMuPDF==1.28.2
+OpenEXR==3.4.15

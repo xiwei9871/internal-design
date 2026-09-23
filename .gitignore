@@ -2,6 +2,7 @@ __pycache__/
 .DS_Store
 *.blend1
 *.FCBak
+*.exr
 .*.response.json
 .*.edit-response.json
 .venv/

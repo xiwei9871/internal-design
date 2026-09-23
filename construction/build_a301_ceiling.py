@@ -1,6 +1,6 @@
 """A301 天花布置图：平吊顶高度分区、多联机内机/风口/检修口、无主灯点位。
 
-- 全屋平吊 2600（藏内机处局部 2400）；过道/玄关满吊 2400 藏主管；
+- 干区平吊采用共享设计2600；藏内机及主管处局部降板标高待空调深化；
   厨房卫浴铝扣板 2400。层高基准以底模墙高 2700 为准，现场复核。
 - 多联机（中央空调）一拖多：客餐厅 1 台 + 三卧各 1 台，均靠门侧便于
   走管/冷凝排水/检修；外机 1 台（机位待现场确认）。品牌型号待确认。
@@ -30,9 +30,11 @@ UNITS = [
 ]
 
 WET = {"次卫", "主卫"}
-HEIGHTS = {"厨房": "H=2400 铝扣板", "次卫": "H=2400 铝扣板", "主卫": "H=2400 铝扣板",
-           "衣帽区": "H=2600", "主卧": "H=2600", "次卧一": "H=2600", "次卧二": "H=2600",
-           "次卧二窗边区": "H=2600"}
+def ceiling_height(name):
+    return DATA['design']['ceiling_mm']['wet' if name in ('厨房','主卫','次卫') else 'dry']
+
+
+HEIGHTS = {z['name']: f"H={ceiling_height(z['name'])}" + (' 铝扣板' if z['name'] in ('厨房','主卫','次卫') else '') for z in DATA['zones']}
 
 
 def px_rect(r):
@@ -82,8 +84,8 @@ def main() -> None:
     # 过道满吊线（老人房南墙—儿童房西墙之间）
     msp.add_line(m(790, 780), m(1152, 780), dxfattribs={
         "layer": "A-CEIL", "linetype": "DASHED", "lineweight": 35})
-    add_text(msp, "过道/玄关 满吊 H=2400（藏主管）", 130, m(965, 720), TextEntityAlignment.MIDDLE_CENTER)
-    add_text(msp, "客餐厅 平吊 H=2600", 140, m(950, 1050), TextEntityAlignment.MIDDLE_CENTER)
+    add_text(msp, f"过道 H={ceiling_height('过道')} / 降板待深化", 130, m(965, 720), TextEntityAlignment.MIDDLE_CENTER)
+    add_text(msp, f"客餐厅 平吊 H={ceiling_height('客餐厅')}", 140, m(950, 1050), TextEntityAlignment.MIDDLE_CENTER)
 
     # --- 内机/风口/检修口 ---
     unit_boxes = []

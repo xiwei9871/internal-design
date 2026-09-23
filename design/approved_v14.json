@@ -1,0 +1,2243 @@
+{
+  "units": "Source XY coordinates: pixel. Explicit *_mm fields: mm. height_m/metres_per_pixel: metres. World model: FFL Z=0.",
+  "reference_size": [
+    1663,
+    1485
+  ],
+  "metres_per_pixel": 0.00982,
+  "calibration": "3320 mm / 338 px; approximate image calibration, not site survey",
+  "source": "User-selected PNG layout; CAD is original structure reference",
+  "height_note": "2.7 m assumed full walls; review render cuts walls to 1.05 m",
+  "outer": [
+    [
+      403,
+      145
+    ],
+    [
+      790,
+      145
+    ],
+    [
+      790,
+      310
+    ],
+    [
+      1184,
+      310
+    ],
+    [
+      1184,
+      674
+    ],
+    [
+      1160,
+      674
+    ],
+    [
+      1160,
+      760
+    ],
+    [
+      1485,
+      760
+    ],
+    [
+      1485,
+      1337
+    ],
+    [
+      403,
+      1337
+    ],
+    [
+      403,
+      1128
+    ],
+    [
+      200,
+      1128
+    ],
+    [
+      200,
+      534
+    ],
+    [
+      403,
+      534
+    ]
+  ],
+  "walls": [
+    {
+      "name": "厨房西北墙",
+      "polygon": [
+        [
+          403,
+          145
+        ],
+        [
+          515,
+          145
+        ],
+        [
+          515,
+          157
+        ],
+        [
+          415,
+          157
+        ],
+        [
+          415,
+          310
+        ],
+        [
+          403,
+          310
+        ]
+      ],
+      "id": "WALL-001",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "厨房南墙",
+      "polygon": [
+        [
+          403,
+          310
+        ],
+        [
+          592,
+          310
+        ],
+        [
+          592,
+          334
+        ],
+        [
+          428,
+          334
+        ],
+        [
+          428,
+          355
+        ],
+        [
+          403,
+          355
+        ]
+      ],
+      "id": "WALL-002",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧一西北墙",
+      "polygon": [
+        [
+          767,
+          310
+        ],
+        [
+          904,
+          310
+        ],
+        [
+          904,
+          334
+        ],
+        [
+          790,
+          334
+        ],
+        [
+          790,
+          558
+        ],
+        [
+          767,
+          558
+        ]
+      ],
+      "id": "WALL-003",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧一东北墙",
+      "polygon": [
+        [
+          1047,
+          310
+        ],
+        [
+          1184,
+          310
+        ],
+        [
+          1184,
+          674
+        ],
+        [
+          1160,
+          674
+        ],
+        [
+          1160,
+          334
+        ],
+        [
+          1047,
+          334
+        ]
+      ],
+      "id": "WALL-004",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧一南墙",
+      "polygon": [
+        [
+          879,
+          642
+        ],
+        [
+          1160,
+          642
+        ],
+        [
+          1160,
+          666
+        ],
+        [
+          879,
+          666
+        ]
+      ],
+      "id": "WALL-005",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧一门边",
+      "polygon": [
+        [
+          767,
+          637
+        ],
+        [
+          790,
+          637
+        ],
+        [
+          790,
+          666
+        ],
+        [
+          767,
+          666
+        ]
+      ],
+      "id": "WALL-006",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卫西墙",
+      "polygon": [
+        [
+          403,
+          418
+        ],
+        [
+          428,
+          418
+        ],
+        [
+          428,
+          643
+        ],
+        [
+          403,
+          643
+        ],
+        [
+          403,
+          558
+        ],
+        [
+          383,
+          558
+        ],
+        [
+          383,
+          534
+        ],
+        [
+          403,
+          534
+        ]
+      ],
+      "id": "WALL-007",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "西翼外墙",
+      "polygon": [
+        [
+          200,
+          534
+        ],
+        [
+          322,
+          534
+        ],
+        [
+          322,
+          558
+        ],
+        [
+          224,
+          558
+        ],
+        [
+          224,
+          1103
+        ],
+        [
+          240,
+          1103
+        ],
+        [
+          240,
+          1128
+        ],
+        [
+          200,
+          1128
+        ]
+      ],
+      "id": "WALL-008",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卧北墙",
+      "polygon": [
+        [
+          403,
+          643
+        ],
+        [
+          665,
+          643
+        ],
+        [
+          665,
+          667
+        ],
+        [
+          403,
+          667
+        ]
+      ],
+      "id": "WALL-009",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卧衣帽区东墙",
+      "polygon": [
+        [
+          403,
+          667
+        ],
+        [
+          428,
+          667
+        ],
+        [
+          428,
+          1003
+        ],
+        [
+          403,
+          1003
+        ]
+      ],
+      "id": "WALL-010",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卧北墙转角",
+      "polygon": [
+        [
+          652,
+          667
+        ],
+        [
+          665,
+          667
+        ],
+        [
+          665,
+          768
+        ],
+        [
+          675,
+          768
+        ],
+        [
+          675,
+          781
+        ],
+        [
+          652,
+          781
+        ]
+      ],
+      "id": "WALL-011",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卧东墙",
+      "polygon": [
+        [
+          766,
+          770
+        ],
+        [
+          790,
+          770
+        ],
+        [
+          790,
+          1314
+        ],
+        [
+          765,
+          1314
+        ],
+        [
+          765,
+          1151
+        ],
+        [
+          705,
+          1151
+        ],
+        [
+          705,
+          1128
+        ],
+        [
+          766,
+          1128
+        ]
+      ],
+      "id": "WALL-012",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卧西南转角",
+      "polygon": [
+        [
+          403,
+          1091
+        ],
+        [
+          428,
+          1091
+        ],
+        [
+          428,
+          1128
+        ],
+        [
+          489,
+          1128
+        ],
+        [
+          489,
+          1151
+        ],
+        [
+          428,
+          1151
+        ],
+        [
+          428,
+          1314
+        ],
+        [
+          403,
+          1314
+        ]
+      ],
+      "id": "WALL-013",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卧西南端柱",
+      "polygon": [
+        [
+          403,
+          1314
+        ],
+        [
+          428,
+          1314
+        ],
+        [
+          428,
+          1337
+        ],
+        [
+          403,
+          1337
+        ]
+      ],
+      "id": "WALL-014",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卧客厅南端柱",
+      "polygon": [
+        [
+          750,
+          1314
+        ],
+        [
+          808,
+          1314
+        ],
+        [
+          808,
+          1337
+        ],
+        [
+          750,
+          1337
+        ]
+      ],
+      "id": "WALL-015",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "客厅次卧二南端柱",
+      "polygon": [
+        [
+          1113,
+          1314
+        ],
+        [
+          1160,
+          1314
+        ],
+        [
+          1160,
+          1337
+        ],
+        [
+          1113,
+          1337
+        ]
+      ],
+      "id": "WALL-016",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧二东北外墙",
+      "polygon": [
+        [
+          1128,
+          760
+        ],
+        [
+          1485,
+          760
+        ],
+        [
+          1485,
+          1337
+        ],
+        [
+          1458,
+          1337
+        ],
+        [
+          1458,
+          785
+        ],
+        [
+          1152,
+          785
+        ],
+        [
+          1152,
+          797
+        ],
+        [
+          1128,
+          797
+        ]
+      ],
+      "id": "WALL-017",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧二西墙转角",
+      "polygon": [
+        [
+          1128,
+          878
+        ],
+        [
+          1152,
+          878
+        ],
+        [
+          1152,
+          1128
+        ],
+        [
+          1235,
+          1128
+        ],
+        [
+          1235,
+          1151
+        ],
+        [
+          1128,
+          1151
+        ],
+        [
+          1128,
+          1088
+        ],
+        [
+          1088,
+          1088
+        ],
+        [
+          1088,
+          1064
+        ],
+        [
+          1128,
+          1064
+        ]
+      ],
+      "id": "WALL-018",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧二东南门边",
+      "polygon": [
+        [
+          1378,
+          1128
+        ],
+        [
+          1458,
+          1128
+        ],
+        [
+          1458,
+          1151
+        ],
+        [
+          1378,
+          1151
+        ]
+      ],
+      "id": "WALL-019",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卫衣帽区隔墙西",
+      "polygon": [
+        [
+          224,
+          843
+        ],
+        [
+          313,
+          843
+        ],
+        [
+          313,
+          856
+        ],
+        [
+          224,
+          856
+        ]
+      ],
+      "id": "WALL-020",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卫衣帽区隔墙东",
+      "polygon": [
+        [
+          389,
+          843
+        ],
+        [
+          403,
+          843
+        ],
+        [
+          403,
+          856
+        ],
+        [
+          389,
+          856
+        ]
+      ],
+      "id": "WALL-021",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卫家政隔墙",
+      "polygon": [
+        [
+          580,
+          425
+        ],
+        [
+          592,
+          425
+        ],
+        [
+          592,
+          562
+        ],
+        [
+          580,
+          562
+        ]
+      ],
+      "id": "WALL-022",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "西翼南窗门边",
+      "polygon": [
+        [
+          389,
+          1103
+        ],
+        [
+          403,
+          1103
+        ],
+        [
+          403,
+          1091
+        ],
+        [
+          428,
+          1091
+        ],
+        [
+          428,
+          1128
+        ],
+        [
+          389,
+          1128
+        ]
+      ],
+      "id": "WALL-023",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    }
+  ],
+  "zones": [
+    {
+      "name": "厨房",
+      "polygon": [
+        [
+          415,
+          157
+        ],
+        [
+          779,
+          157
+        ],
+        [
+          779,
+          310
+        ],
+        [
+          415,
+          310
+        ]
+      ],
+      "material": "tile",
+      "id": "ZONE-001",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卫",
+      "polygon": [
+        [
+          428,
+          334
+        ],
+        [
+          580,
+          334
+        ],
+        [
+          580,
+          643
+        ],
+        [
+          428,
+          643
+        ]
+      ],
+      "material": "wet",
+      "id": "ZONE-002",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卫",
+      "polygon": [
+        [
+          224,
+          558
+        ],
+        [
+          403,
+          558
+        ],
+        [
+          403,
+          843
+        ],
+        [
+          224,
+          843
+        ]
+      ],
+      "material": "wet",
+      "id": "ZONE-003",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "衣帽区",
+      "polygon": [
+        [
+          224,
+          856
+        ],
+        [
+          403,
+          856
+        ],
+        [
+          403,
+          1103
+        ],
+        [
+          224,
+          1103
+        ]
+      ],
+      "material": "oak",
+      "id": "ZONE-004",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "主卧",
+      "polygon": [
+        [
+          428,
+          667
+        ],
+        [
+          766,
+          667
+        ],
+        [
+          766,
+          1314
+        ],
+        [
+          428,
+          1314
+        ]
+      ],
+      "material": "oak",
+      "id": "ZONE-005",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧一",
+      "polygon": [
+        [
+          790,
+          334
+        ],
+        [
+          1160,
+          334
+        ],
+        [
+          1160,
+          654
+        ],
+        [
+          790,
+          654
+        ]
+      ],
+      "material": "oak",
+      "id": "ZONE-006",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧二",
+      "polygon": [
+        [
+          1152,
+          785
+        ],
+        [
+          1458,
+          785
+        ],
+        [
+          1458,
+          1128
+        ],
+        [
+          1152,
+          1128
+        ]
+      ],
+      "material": "oak",
+      "id": "ZONE-007",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    },
+    {
+      "name": "次卧二窗边区",
+      "polygon": [
+        [
+          1140,
+          1151
+        ],
+        [
+          1458,
+          1151
+        ],
+        [
+          1458,
+          1314
+        ],
+        [
+          1140,
+          1314
+        ]
+      ],
+      "material": "oak",
+      "id": "ZONE-008",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification"
+    }
+  ],
+  "windows": [
+    {
+      "name": "厨房北窗",
+      "segment": [
+        515,
+        151,
+        790,
+        151
+      ],
+      "id": "WIN-001",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 850,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "window"
+    },
+    {
+      "name": "厨房东窗",
+      "segment": [
+        784,
+        157,
+        784,
+        310
+      ],
+      "id": "WIN-002",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 850,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "window"
+    },
+    {
+      "name": "次卧一北窗",
+      "segment": [
+        904,
+        322,
+        1047,
+        322
+      ],
+      "id": "WIN-003",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 850,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "window"
+    },
+    {
+      "name": "次卫西窗",
+      "segment": [
+        415,
+        355,
+        415,
+        418
+      ],
+      "id": "WIN-004",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 850,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "window"
+    },
+    {
+      "name": "主卫北窗",
+      "segment": [
+        322,
+        546,
+        383,
+        546
+      ],
+      "id": "WIN-005",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 850,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "window"
+    },
+    {
+      "name": "衣帽区南窗",
+      "segment": [
+        224,
+        1115,
+        389,
+        1115
+      ],
+      "id": "WIN-006",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 850,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "window"
+    },
+    {
+      "name": "主卧南窗",
+      "segment": [
+        428,
+        1325,
+        750,
+        1325
+      ],
+      "id": "WIN-007",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 850,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "window"
+    },
+    {
+      "name": "客厅南窗",
+      "segment": [
+        808,
+        1325,
+        1113,
+        1325
+      ],
+      "id": "WIN-008",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 850,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "window"
+    },
+    {
+      "name": "次卧二窗边南窗",
+      "segment": [
+        1160,
+        1325,
+        1458,
+        1325
+      ],
+      "id": "WIN-009",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 850,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "window"
+    },
+    {
+      "name": "次卧二窗边移门",
+      "segment": [
+        1235,
+        1140,
+        1378,
+        1140
+      ],
+      "id": "WIN-010",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 0,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "sliding_glass"
+    },
+    {
+      "name": "客厅窗边移门",
+      "segment": [
+        1134,
+        1151,
+        1134,
+        1314
+      ],
+      "id": "WIN-011",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 0,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "sliding_glass"
+    },
+    {
+      "name": "厨房移门",
+      "segment": [
+        592,
+        316,
+        767,
+        316
+      ],
+      "id": "WIN-012",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "sill_mm": 0,
+      "head_mm": 2100,
+      "vertical_status": "design_assumption_pending_site",
+      "type": "sliding_glass"
+    }
+  ],
+  "furniture": [
+    {
+      "name": "主卧床",
+      "kind": "bed",
+      "rect": [
+        551,
+        906,
+        214,
+        187
+      ],
+      "height_m": 0.52,
+      "id": "FURN-001",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "head_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 0.92,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "次卧一床",
+      "kind": "bed",
+      "rect": [
+        945,
+        390,
+        215,
+        185
+      ],
+      "height_m": 0.52,
+      "id": "FURN-002",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "head_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 0.92,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "次卧二床",
+      "kind": "bed",
+      "rect": [
+        1244,
+        917,
+        214,
+        158
+      ],
+      "height_m": 0.52,
+      "id": "FURN-003",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "head_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 0.92,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "衣帽区长柜",
+      "kind": "cabinet",
+      "rect": [
+        224,
+        856,
+        60,
+        235
+      ],
+      "height_m": 2.3,
+      "id": "FURN-004",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 2.3,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "厨房橱柜",
+      "kind": "lowcab",
+      "rect": [
+        415,
+        157,
+        364,
+        61
+      ],
+      "height_m": 0.9,
+      "id": "FURN-005",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.9,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "次卧一矮柜",
+      "kind": "lowcab",
+      "rect": [
+        1006,
+        627,
+        134,
+        27
+      ],
+      "height_m": 0.85,
+      "id": "FURN-006",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.85,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "次卫台盆",
+      "kind": "sink",
+      "rect": [
+        428,
+        551,
+        50.92,
+        61.1
+      ],
+      "height_m": 0.82,
+      "id": "FURN-007",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 1.17,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "次卫马桶",
+      "kind": "wc",
+      "rect": [
+        428,
+        467,
+        71.28,
+        40.73
+      ],
+      "height_m": 0.42,
+      "id": "FURN-008",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 0.82,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "次卫淋浴",
+      "kind": "shower",
+      "rect": [
+        428,
+        334,
+        152,
+        103
+      ],
+      "height_m": 0.03,
+      "id": "FURN-009",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 2.113,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "厨房连续备餐台",
+      "kind": "lowcab",
+      "rect": [
+        415,
+        219,
+        71,
+        91
+      ],
+      "height_m": 0.9,
+      "id": "FURN-010",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 0.9,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "过道薄型冰箱（≤840宽×600深）",
+      "kind": "appliance",
+      "rect": [
+        592,
+        322,
+        63,
+        91
+      ],
+      "height_m": 2.4,
+      "id": "FURN-011",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "role": "service_column_envelope",
+      "assembly_height_m": 2.4,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "过道蒸箱烤箱独立列",
+      "kind": "appliance",
+      "rect": [
+        592,
+        413,
+        63,
+        70
+      ],
+      "height_m": 2.4,
+      "id": "FURN-012",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "role": "service_column_envelope",
+      "assembly_height_m": 2.4,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "过道洗衣机烘干机叠放列",
+      "kind": "appliance",
+      "rect": [
+        592,
+        483,
+        63,
+        73
+      ],
+      "height_m": 2.4,
+      "id": "FURN-013",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "role": "service_column_envelope",
+      "assembly_height_m": 2.4,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "4人餐桌（加端椅可6人）",
+      "kind": "table",
+      "rect": [
+        870,
+        824,
+        145,
+        82
+      ],
+      "height_m": 0.76,
+      "id": "FURN-014",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.76,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "餐椅",
+      "kind": "chair",
+      "rect": [
+        888,
+        782,
+        38,
+        38
+      ],
+      "height_m": 0.8,
+      "id": "FURN-015",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.8,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "餐椅",
+      "kind": "chair",
+      "rect": [
+        953,
+        782,
+        38,
+        38
+      ],
+      "height_m": 0.8,
+      "id": "FURN-016",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.8,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "餐椅",
+      "kind": "chair",
+      "rect": [
+        888,
+        915,
+        38,
+        38
+      ],
+      "height_m": 0.8,
+      "id": "FURN-017",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.8,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "餐椅",
+      "kind": "chair",
+      "rect": [
+        953,
+        915,
+        38,
+        38
+      ],
+      "height_m": 0.8,
+      "id": "FURN-018",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.8,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "双人/小三人沙发（约2200×900）",
+      "kind": "sofa",
+      "rect": [
+        1020,
+        1090,
+        92,
+        224
+      ],
+      "height_m": 0.83,
+      "id": "FURN-019",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-X",
+      "z_mm": 0,
+      "assembly_height_m": 0.83,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "电视影音矮柜（约1800×350）",
+      "kind": "lowcab",
+      "rect": [
+        792,
+        1110,
+        35,
+        184
+      ],
+      "height_m": 0.5,
+      "id": "FURN-020",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 0.5,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "客厅茶几（约900×550）",
+      "kind": "table",
+      "rect": [
+        920,
+        1195,
+        56,
+        91
+      ],
+      "height_m": 0.45,
+      "id": "FURN-021",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 0.45,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "餐边食品/书籍高柜（约900×400）",
+      "kind": "cabinet",
+      "rect": [
+        790,
+        770,
+        41,
+        202
+      ],
+      "height_m": 2.3,
+      "id": "FURN-022",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 2.3,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "餐边柜/充电收纳（约900×400）",
+      "kind": "lowcab",
+      "rect": [
+        790,
+        972,
+        41,
+        92
+      ],
+      "height_m": 0.85,
+      "id": "FURN-023",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 0.85,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "沙发边几",
+      "kind": "table",
+      "rect": [
+        1047,
+        1038,
+        42,
+        42
+      ],
+      "height_m": 0.5,
+      "id": "FURN-024",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.5,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卫淋浴",
+      "kind": "shower",
+      "rect": [
+        224,
+        558,
+        179,
+        104
+      ],
+      "height_m": 0.03,
+      "id": "FURN-025",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 2.113,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卫马桶",
+      "kind": "wc",
+      "rect": [
+        224,
+        697,
+        71.28,
+        40.73
+      ],
+      "height_m": 0.42,
+      "id": "FURN-026",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 0.82,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卫台盆",
+      "kind": "sink",
+      "rect": [
+        224,
+        766,
+        50.92,
+        61.1
+      ],
+      "height_m": 0.82,
+      "id": "FURN-027",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "z_mm": 0,
+      "assembly_height_m": 1.17,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卫镜柜",
+      "kind": "cabinet",
+      "rect": [
+        224,
+        766,
+        15.27,
+        61.1
+      ],
+      "height_m": 1.0,
+      "id": "FURN-028",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 1000,
+      "height_status": "design_assumption_pending_product",
+      "assembly_height_m": 1.0,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卧北衣柜",
+      "kind": "cabinet",
+      "rect": [
+        428,
+        667,
+        224,
+        60
+      ],
+      "height_m": 2.3,
+      "id": "FURN-029",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 2.3,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卧西衣柜",
+      "kind": "cabinet",
+      "rect": [
+        428,
+        727,
+        60,
+        145
+      ],
+      "height_m": 2.3,
+      "id": "FURN-030",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 2.3,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "老人房衣柜",
+      "kind": "cabinet",
+      "rect": [
+        799,
+        334,
+        52,
+        205
+      ],
+      "height_m": 2.3,
+      "id": "FURN-031",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 2.3,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "儿童房衣柜",
+      "kind": "cabinet",
+      "rect": [
+        1255,
+        785,
+        203,
+        63
+      ],
+      "height_m": 2.3,
+      "id": "FURN-032",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 2.3,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卧窗边收纳柜",
+      "kind": "cabinet",
+      "rect": [
+        428,
+        1151,
+        61,
+        163
+      ],
+      "height_m": 2.3,
+      "id": "FURN-033",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+X",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 2.3,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卧窗边东柜",
+      "kind": "cabinet",
+      "rect": [
+        707,
+        1151,
+        58,
+        163
+      ],
+      "height_m": 2.3,
+      "id": "FURN-034",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-X",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 2.3,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "儿童窗边书柜（约300深）",
+      "kind": "cabinet",
+      "rect": [
+        1427,
+        1151,
+        31,
+        163
+      ],
+      "height_m": 1.1,
+      "id": "FURN-035",
+      "basis": "Approved low bookcase; A11 design height 1100 mm, site pending",
+      "front_axis": "-X",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 1.1,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卧窗边梳妆阅读台（1200×450）",
+      "kind": "lowcab",
+      "rect": [
+        489,
+        1268,
+        122,
+        46
+      ],
+      "height_m": 0.75,
+      "id": "FURN-036",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.75,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卧窗边活动椅",
+      "kind": "chair",
+      "rect": [
+        530,
+        1208,
+        46,
+        49
+      ],
+      "height_m": 0.8,
+      "id": "FURN-037",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.8,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "主卧窗边镜面预留",
+      "kind": "cabinet",
+      "rect": [
+        707,
+        1162,
+        9,
+        62
+      ],
+      "height_m": 1.8,
+      "id": "FURN-038",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-X",
+      "status": "reserved_not_installed",
+      "door_material": "opaque_matte_wood",
+      "z_mm": 0,
+      "assembly_height_m": 1.8,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "儿童窗边学习桌（1800×600）",
+      "kind": "lowcab",
+      "rect": [
+        1200,
+        1252,
+        183,
+        61
+      ],
+      "height_m": 0.75,
+      "id": "FURN-039",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "+Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.75,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "name": "儿童学习椅",
+      "kind": "chair",
+      "rect": [
+        1255,
+        1200,
+        45,
+        49
+      ],
+      "height_m": 0.8,
+      "id": "FURN-040",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "front_axis": "-Y",
+      "z_mm": 0,
+      "assembly_height_m": 0.8,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    },
+    {
+      "id": "FURN-041",
+      "name": "主卫浴缸1500×700",
+      "kind": "bathtub",
+      "rect": [
+        224,
+        558,
+        153,
+        71
+      ],
+      "height_m": 0.6,
+      "front_axis": "-Y",
+      "basis": "A12 approved bathtub; calibrated envelope 1502.46 x 697.22 mm, SKU pending",
+      "z_mm": 0,
+      "assembly_height_m": 0.6,
+      "height_semantics": "height_m is functional surface/carcass height; assembly_height_m bounds all visible components"
+    }
+  ],
+  "labels": [
+    [
+      "厨房",
+      600,
+      269
+    ],
+    [
+      "次卫",
+      510,
+      527
+    ],
+    [
+      "主卫",
+      358,
+      711
+    ],
+    [
+      "衣帽区",
+      348,
+      949
+    ],
+    [
+      "夫妻主卧",
+      573,
+      836
+    ],
+    [
+      "老人房",
+      943,
+      604
+    ],
+    [
+      "儿童房",
+      1265,
+      897
+    ],
+    [
+      "餐区",
+      950,
+      988
+    ],
+    [
+      "客厅",
+      930,
+      1085
+    ],
+    [
+      "主卧窗边区",
+      582,
+      1178
+    ],
+    [
+      "儿童窗边区",
+      1267,
+      1182
+    ]
+  ],
+  "doors": [
+    {
+      "name": "入户门",
+      "hinge": [
+        1160,
+        674
+      ],
+      "leaf": [
+        1079,
+        674
+      ],
+      "closed": [
+        1160,
+        755
+      ],
+      "id": "DOOR-001",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "type": "hinged",
+      "leaf_thickness_mm": 45,
+      "height_mm": 2100,
+      "structural_opening_mm": null,
+      "opening_reference_mm": 795.42,
+      "height_status": "design_assumption",
+      "material_id": "wood_ash"
+    },
+    {
+      "name": "次卧一门",
+      "hinge": [
+        799,
+        642
+      ],
+      "leaf": [
+        799,
+        561
+      ],
+      "closed": [
+        880,
+        642
+      ],
+      "id": "DOOR-002",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "type": "hinged",
+      "leaf_thickness_mm": 45,
+      "height_mm": 2100,
+      "structural_opening_mm": null,
+      "opening_reference_mm": 795.42,
+      "height_status": "design_assumption",
+      "material_id": "wood_ash"
+    },
+    {
+      "name": "次卧二门",
+      "hinge": [
+        1152,
+        797
+      ],
+      "leaf": [
+        1235,
+        797
+      ],
+      "closed": [
+        1152,
+        878
+      ],
+      "id": "DOOR-003",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "type": "hinged",
+      "leaf_thickness_mm": 45,
+      "height_mm": 2100,
+      "structural_opening_mm": null,
+      "opening_reference_mm": 795.42,
+      "height_status": "design_assumption",
+      "material_id": "wood_ash"
+    },
+    {
+      "name": "主卧门",
+      "hinge": [
+        751,
+        781
+      ],
+      "leaf": [
+        751,
+        864
+      ],
+      "closed": [
+        675,
+        781
+      ],
+      "id": "DOOR-004",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "type": "hinged",
+      "leaf_thickness_mm": 45,
+      "height_mm": 2100,
+      "structural_opening_mm": null,
+      "opening_reference_mm": 746.32,
+      "height_status": "design_assumption",
+      "material_id": "wood_ash"
+    },
+    {
+      "name": "衣帽区门",
+      "hinge": [
+        428,
+        1091
+      ],
+      "leaf": [
+        428,
+        1003
+      ],
+      "closed": [
+        341,
+        1091
+      ],
+      "id": "DOOR-005",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "type": "hinged",
+      "leaf_thickness_mm": 45,
+      "height_mm": 2100,
+      "structural_opening_mm": null,
+      "opening_reference_mm": 854.34,
+      "height_status": "design_assumption",
+      "material_id": "wood_ash"
+    },
+    {
+      "name": "主卫门",
+      "hinge": [
+        389,
+        843
+      ],
+      "leaf": [
+        389,
+        769
+      ],
+      "closed": [
+        314,
+        843
+      ],
+      "id": "DOOR-006",
+      "basis": "A7 PNG calibrated layout; dimensions require site/product verification",
+      "type": "hinged",
+      "leaf_thickness_mm": 45,
+      "height_mm": 2100,
+      "structural_opening_mm": null,
+      "opening_reference_mm": 736.5,
+      "height_status": "design_assumption",
+      "material_id": "wood_ash"
+    },
+    {
+      "name": "次卫门",
+      "hinge": [
+        580,
+        637
+      ],
+      "leaf": [
+        504,
+        637
+      ],
+      "closed": [
+        580,
+        561
+      ],
+      "id": "DOOR-007",
+      "basis": "Pocket sliding type approved; pocket side/structure/site detail unverified",
+      "type": "pocket_sliding",
+      "leaf_thickness_mm": 45,
+      "height_mm": 2100,
+      "structural_opening_mm": null,
+      "opening_reference_mm": 746.32,
+      "height_status": "design_assumption",
+      "material_id": "wood_ash",
+      "pocket_status": "pending_site_verification",
+      "pocket_direction": null
+    }
+  ],
+  "scheme": "A7 function and dimension review: living room, window zones, and bathroom fixture envelopes",
+  "schema": "interior-design-v14",
+  "origin_source_px": [
+    200,
+    1337
+  ],
+  "provenance": {
+    "source": "scheme_a_v7/scheme_a_geometry.json",
+    "sha256": "8b4a299b6278a9f72412e1d0c64d8bc5a513dc0738283c157b33599c4ec97ab9",
+    "basis": "PNG calibrated, not field measured",
+    "revision": "A14-20260918",
+    "confirmation": "A12 approved 2026-09-14; improvement authorized 2026-09-18"
+  },
+  "design": {
+    "wall_height_mm": 2700,
+    "finished_floor_mm": 0,
+    "ceiling_mm": {
+      "dry": 2600,
+      "wet": 2400
+    },
+    "height_basis": "Existing design assumptions; not site measurements",
+    "service_wall": {
+      "rect_px": [
+        592,
+        322,
+        63,
+        234
+      ],
+      "height_mm": 2400,
+      "status": "Three bay arrangement approved; carcass heights and SKU installation clearances pending",
+      "bays": [
+        {
+          "id": "fridge",
+          "rect_px": [
+            592,
+            322,
+            63,
+            91
+          ],
+          "width_mm": 893.62,
+          "furniture_id": "FURN-011"
+        },
+        {
+          "id": "oven",
+          "rect_px": [
+            592,
+            413,
+            63,
+            70
+          ],
+          "width_mm": 687.4,
+          "furniture_id": "FURN-012"
+        },
+        {
+          "id": "laundry",
+          "rect_px": [
+            592,
+            483,
+            63,
+            73
+          ],
+          "width_mm": 716.86,
+          "furniture_id": "FURN-013"
+        }
+      ],
+      "appliances": [
+        {
+          "id": "fridge",
+          "bay": "fridge",
+          "width_mm": 840,
+          "height_mm": 1950,
+          "z_mm": 0
+        },
+        {
+          "id": "oven",
+          "bay": "oven",
+          "width_mm": 595,
+          "height_mm": 595,
+          "z_mm": 550
+        },
+        {
+          "id": "steam",
+          "bay": "oven",
+          "width_mm": 595,
+          "height_mm": 595,
+          "z_mm": 1250
+        },
+        {
+          "id": "washer",
+          "bay": "laundry",
+          "width_mm": 598,
+          "height_mm": 845,
+          "z_mm": 0
+        },
+        {
+          "id": "dryer",
+          "bay": "laundry",
+          "width_mm": 598,
+          "height_mm": 845,
+          "z_mm": 875
+        }
+      ]
+    },
+    "materials": {
+      "wood_ash": {
+        "name": "浅白蜡木",
+        "color": [
+          0.58,
+          0.43,
+          0.28
+        ]
+      },
+      "wall": {
+        "name": "暖白乳胶漆",
+        "color": [
+          0.78,
+          0.76,
+          0.71
+        ]
+      },
+      "tile": {
+        "name": "暖灰石材砖",
+        "color": [
+          0.47,
+          0.45,
+          0.41
+        ]
+      },
+      "fabric": {
+        "name": "暖灰布艺",
+        "color": [
+          0.53,
+          0.51,
+          0.47
+        ]
+      }
+    },
+    "floor_slab_thickness_mm": 60,
+    "elevation_datum": "All design heights relative to finished floor Z=0; structural height remains assumed",
+    "kitchen": {
+      "counter_height_mm": 900,
+      "counter_thickness_mm": 30,
+      "sink_rect_px": [
+        425,
+        238,
+        51,
+        54
+      ],
+      "hob_rect_px": [
+        530,
+        168,
+        85,
+        38
+      ],
+      "status": "Sink aligned to west return plumbing layout; appliance dimensions pending SKU"
+    }
+  },
+  "legacy_source_notes": {
+    "status": "A7 function and dimension review; original PNG walls preserved; effect images intentionally deferred.",
+    "change_notes": [
+      "客厅补齐沙发、电视影音柜、茶几、餐边/充电收纳柜，主通行线绕开茶几和沙发。",
+      "主卧窗边采用弹性梳妆/阅读/临时办公台＋活动椅＋镜面预留；不固定榻榻米。",
+      "儿童房只放床、衣柜、床头柜；儿童窗边独立设置书桌、书柜和学习收纳。",
+      "主卫、次卫分别标注洗手台、马桶、淋浴尺寸；主卫保留浴缸备选包络，次卫维持淋浴。",
+      "本版仅做功能与尺寸讨论，未进入效果图或施工图。"
+    ]
+  },
+  "status": "A14 implementation of approved A12 layout; site/SKU/MEP pending"
+}
