@@ -98,7 +98,7 @@ WET: 主卫、公卫；SERVICE: 厨房（邻服务井 W-SHAFT-K, LOW）; SEMI_WE
 | T02-5 约束登记 | **PASS** | 13/13 issue 映射；每条含 evidence/confidence/verification |
 | T02-6 湿区/服务语义 | **PASS** | 分类均有标注证据；无虚构 MEP |
 | T02-7 IFC 语义 | **PASS** | pset 可查；几何 delta 0.0mm |
-| T02-8 可视 QC | **MANUAL_PENDING** | 三张图已生成，按 RC1 要求留待业主目视验收 |
+| T02-8 可视 QC | **PASS** | 业主目视验收通过：语义叠图与源图一致、走廊区定位正确、D-10 保持 UNRESOLVED、无断区混并、通行边对应真实洞口、无角点假邻接、约束图未遮挡源几何 |
 | T02-9 设计就绪 | **PASS** | known/unknown/owner-input/field-verification 四层分离 |
 | T02-10 回归 | **PASS** | 100/100（72 旧 + 28 新） |
 
@@ -109,4 +109,7 @@ WET: 主卫、公卫；SERVICE: 厨房（邻服务井 W-SHAFT-K, LOW）; SEMI_WE
 - **待业主输入**: `owner_inputs_required.md` 17 组问题。
 - **阻塞项**: 3 条 BLOCKING 均针对拆改决策，不阻塞概念布局。
 
-**Task 02 result: PARTIAL** —— 自动化门禁全过，但 T02-8 目视验收按规则必须由业主完成（不得自批）。业主确认三张 QC 图后转 PASS_READY_FOR_BRIEF。
+**Task 02 result: FINAL PASS — PASS_READY_FOR_BRIEF**
+（业主已验收 T02-8；语义模型足以支撑业主需求访谈与概念布局，不代表可出拆改图）
+
+补充说明（文档级，未改数据）:**D-05** 的 `side_a_all = [ZONE-MASTER-CORRIDOR, R-LEISURE]` —— 洞口落在走廊区与休闲厅东北带的连续边界上，按源图洞口位置取 ZONE-MASTER-CORRIDOR 为规范侧，歧义记录保留于 `element_semantics.json`。
