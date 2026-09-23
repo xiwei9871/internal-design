@@ -327,6 +327,75 @@ class IfcTests(unittest.TestCase):
         self.assertEqual(props.get('SourceStatus'),
                          'Source Plan Reconstruction')
 
+    # --- RC2: actual generated-geometry bounding boxes vs contract ---
+
+    def _world_bounds_mm(self, el):
+        """AABB of the element's generated geometry in mm (world coords)."""
+        import ifcopenshell.geom
+        st = ifcopenshell.geom.settings()
+        st.set("use-world-coords", True)
+        sh = ifcopenshell.geom.create_shape(st, el)
+        v = sh.geometry.verts
+        xs, ys, zs = v[0::3], v[1::3], v[2::3]
+        # ifcopenshell.geom returns file length units converted to meters
+        return (min(xs) * 1000, min(ys) * 1000, min(zs) * 1000,
+                max(xs) * 1000, max(ys) * 1000, max(zs) * 1000)
+
+    def test_ifc_wall_geometry_bounds_match_contract(self):
+        for el in self.model.by_type('IfcWall'):
+            w = wall_by_id(el.Name)
+            self.assertIsNotNone(w, el.Name)
+            x1, y1, x2, y2 = w['rect_mm']
+            bx1, by1, _, bx2, by2, _ = self._world_bounds_mm(el)
+            for got, want, tag in ((bx1, x1, 'x1'), (by1, y1, 'y1'),
+                                   (bx2, x2, 'x2'), (by2, y2, 'y2')):
+                self.assertLessEqual(
+                    abs(got - want), 1.0,
+                    f"{el.Name} {tag}: got {got:.1f} want {want}")
+
+    def test_ifc_opening_geometry_bounds_match_contract(self):
+        for op_el in self.model.by_type('IfcOpeningElement'):
+            oid = op_el.Name.removesuffix('-OPENING')
+            op = OPENINGS[oid]
+            host = wall_by_id(op['host_wall_id'])
+            x1, y1, x2, y2 = geo_common.opening_world_rect(op, host)
+            bx1, by1, _, bx2, by2, _ = self._world_bounds_mm(op_el)
+            for got, want, tag in ((bx1, x1, 'x1'), (by1, y1, 'y1'),
+                                   (bx2, x2, 'x2'), (by2, y2, 'y2')):
+                self.assertLessEqual(
+                    abs(got - want), 1.0,
+                    f"{op_el.Name} {tag}: got {got:.1f} want {want}")
+
+    def test_ifc_door_window_panels_and_pset(self):
+        """RC2: fills carry visualization-only panel geometry + flags."""
+        def pset_props(el):
+            props = {}
+            for rel in el.IsDefinedBy:
+                ps = rel.RelatingPropertyDefinition
+                if getattr(ps, 'Name', None) == 'SourcePlanReconstruction':
+                    for p in ps.HasProperties:
+                        props[p.Name] = getattr(
+                            p, 'NominalValue', None).wrappedValue \
+                            if hasattr(p, 'NominalValue') else None
+            return props
+        for el in (self.model.by_type('IfcDoor') +
+                   self.model.by_type('IfcWindow')):
+            self.assertIsNotNone(el.Representation, el.Name)
+            props = pset_props(el)
+            self.assertEqual(props.get('VisualizationOnly'), True, el.Name)
+            self.assertEqual(props.get('HeightIsSourceData'), False,
+                             el.Name)
+            # panel must sit inside its opening XY span (opening is the
+            # full wall thickness; panel is ~40mm centered)
+            op_el = next(o for o in self.model.by_type('IfcOpeningElement')
+                         if o.Name == el.Name + '-OPENING')
+            ob = self._world_bounds_mm(op_el)
+            fb = self._world_bounds_mm(el)
+            self.assertGreaterEqual(fb[0], ob[0] - 1, el.Name)
+            self.assertGreaterEqual(fb[1], ob[1] - 1, el.Name)
+            self.assertLessEqual(fb[3], ob[3] + 1, el.Name)
+            self.assertLessEqual(fb[4], ob[4] + 1, el.Name)
+
 
 class ProvenanceTests(unittest.TestCase):
     def test_low_confidence_flagged(self):

@@ -67,7 +67,7 @@ ISSUE-001 底部外链左基准悬空、003 内链 +400 偏移、004 结构属�
 
 - `build_dxf.py` → `cad/C型_原始户型数字化基准图.dxf`（mm, INSUNITS=4, R2018, 1:1）
 - `build_freecad.py` → `cad/C型_原始户型数字化基准模型.FCStd`（65 对象：38 墙 + 3 柱 + 13 门 + 11 窗；含 DesignID/SourceBasis/Confidence/NeedsFieldVerification/HostWallID 属性）
-- `build_ifc.py` → `ifc/C型_原始户型数字化基准模型.ifc`（IFC4；**24× IfcOpeningElement + 24× IfcRelVoidsElement + 24× IfcRelFillsElement**；IfcDoor/IfcWindow 各与唯一宿主洞口关联；FieldVerified=false / SourceStatus="Source Plan Reconstruction" 写入项目 pset）
+- `build_ifc.py` → `ifc/C型_原始户型数字化基准模型.ifc`（IFC4；**24× IfcOpeningElement + 24× IfcRelVoidsElement + 24× IfcRelFillsElement**；IfcDoor/IfcWindow 各与唯一宿主洞口关联并带 40mm 可视化门板；FieldVerified=false / SourceStatus="Source Plan Reconstruction" 写入项目 pset；**RC2 修复 IfcRectangleProfileDef 剖面原点 —— 世界包围盒与契约逐面对齐 ≤1mm**）
 - `build_overlay.py` → overlay_*.png + `overlay_metrics.json`（matched-source 残差）
 - `validate.py` → calibration.json + dimension_chain_audit.json + `dimension_model_measurements.json` + geometry_audit.json（Shapely）
 
@@ -95,13 +95,13 @@ ISSUE-001 底部外链左基准悬空、003 内链 +400 偏移、004 结构属�
 | T01-4 Geometry Validity | **PASS** | Shapely 校验：valid/正面积/无自交/无重复/无非预期重叠；geometry_audit problems=[] |
 | T01-5 DXF | **PASS** | ezdxf 可重读；mm；1:1；图层齐；无家具层 |
 | T01-6 FreeCAD | **PASS** | FCStd 重开校验：墙 38/门 13/窗 11 = geometry.json 精确一致；溯源属性齐全 |
-| T01-7 IFC | **PASS** / Bonsai visual = MANUAL_PENDING | IFC4；IfcOpeningElement=24、IfcRelVoidsElement=24、IfcRelFillsElement=24（=门13+窗11）；每门窗恰好一个宿主洞口关系；pset 实测 FieldVerified=False、SourceStatus="Source Plan Reconstruction" |
+| T01-7 IFC | **PASS** | IFC4；IfcOpeningElement=24、IfcRelVoidsElement=24、IfcRelFillsElement=24；**几何包围盒实测**：38 墙 + 24 洞口经 `ifcopenshell.geom.create_shape` 与契约逐面对齐 ≤1mm；**Bonsai 目视 PASS**：Blender 5.2 + Bonsai 导入后 38 墙网格包围盒与契约 ≤1mm（`qc/bonsai_scene_audit.json`），开洞位置正确、无半宽平移；`qc/bonsai_ifc_overview.png` / `qc/bonsai_ifc_openings.png` |
 | T01-8 Overlay | **MANUAL_PENDING** | matched-source 指标已出（见 §7）；硬性人工目视验收待业主 |
 | T01-9 Provenance | **PASS** | 抽样 5 墙/3 门/3 窗/5 尺寸全部可追溯 |
-| T01-10 Regression | **PASS** | 69/69（旧 A14 回归 + Task01/RC1 新增测试） |
+| T01-10 Regression | **PASS** | 72/72（旧 A14 回归 + Task01/RC1/RC2 新增测试） |
 
 ## 9. 结论
 
-**PARTIAL → 待业主验收**：自动化可验证的门禁全部 PASS；T01-7 Bonsai 目视与 T01-8 overlay 人工验收按任务定义必须人工确认，不伪造 PASS。
+**PARTIAL → 待业主验收**：自动化可验证的门禁全部 PASS，T01-7 已于 RC2 完整通过（语义关系 + 几何包围盒 + Bonsai 目视三重验证）；仅剩 T01-8 overlay 人工验收按任务定义必须人工确认，不伪造 PASS。
 
 模型可用于后续空间规划/建模的基准输入；所有 LOW/UNKNOWN 项已隔离并可追溯。

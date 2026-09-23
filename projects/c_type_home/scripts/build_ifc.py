@@ -45,9 +45,17 @@ def direction(model, x, y, z):
 
 
 def extrusion(model, ctx, w, d, h):
+    # IfcRectangleProfileDef is center-based; ObjectPlacement convention here
+    # is rectangle MIN corner -> shift profile center to (w/2, d/2) so the
+    # resulting world AABB equals geometry.json rect_mm exactly.
+    p2d = model.create_entity(
+        "IfcAxis2Placement2D",
+        Location=model.create_entity(
+            "IfcCartesianPoint", Coordinates=[w / 2.0, d / 2.0]))
     profile = model.create_entity(
         "IfcRectangleProfileDef", ProfileType="AREA",
-        ProfileName=f"{w:.0f}x{d:.0f}", XDim=w, YDim=d)
+        ProfileName=f"{w:.0f}x{d:.0f}", XDim=w, YDim=d,
+        Position=p2d)
     solid = model.create_entity(
         "IfcExtrudedAreaSolid", SweptArea=profile,
         Position=model.create_entity(
@@ -179,12 +187,28 @@ def build():
 
             fill = ifcopenshell.api.run(
                 "root.create_entity", model, ifc_class=cls, name=op["id"])
+            # visualization-only panel: opening span x ~40mm, centered in the
+            # host wall thickness. Panel heights (door 2100 / window sill 900 +
+            # height 1500) are NOT SOURCE DATA.
+            PANEL_T = 40.0
+            wx2, wy2 = host["rect_mm"][2], host["rect_mm"][3]
+            if (wx2 - wx1) >= (wy2 - wy1):      # horizontal wall
+                pw, pd = ox2 - ox1, PANEL_T
+                lx, ly = ox1 - wx1, (oy1 - wy1) + ((oy2 - oy1) - PANEL_T) / 2
+            else:                                # vertical wall
+                pw, pd = PANEL_T, oy2 - oy1
+                lx, ly = (ox1 - wx1) + ((ox2 - ox1) - PANEL_T) / 2, oy1 - wy1
             fill.ObjectPlacement = placement(
-                ox1 - wx1, oy1 - wy1, op_z, rel_to=wall_el.ObjectPlacement)
+                lx, ly, op_z, rel_to=wall_el.ObjectPlacement)
+            fill.Representation = model.create_entity(
+                "IfcProductDefinitionShape",
+                Representations=[extrusion(model, body, pw, pd, op_h)])
             pset(fill, {**src_props(op),
                         "HostWallID": op["host_wall_id"],
                         "OpeningWidthMm": float(
-                            op.get("opening_width_mm") or 0)})
+                            op.get("opening_width_mm") or 0),
+                        "VisualizationOnly": True,
+                        "HeightIsSourceData": False})
             counts[kind[:-1]] += 1
 
             model.create_entity(

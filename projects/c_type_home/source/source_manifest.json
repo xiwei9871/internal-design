@@ -8,5 +8,7 @@
   "document_status": "SOURCE PLAN RECONSTRUCTION — NOT as-built, NOT field verified",
   "unmodified": true,
   "recorded_by": "Task 01 pipeline",
-  "rc1_note": "RC1: replaced the 659x1024 downscaled copy (sha 2b17093e...) with the true 1279x1986 owner source. All pixel anchors in dimensions.json / geometry.json were re-detected on THIS file; no low-res pixel coordinates are inherited."
+  "rc1_note": "RC1: replaced the 659x1024 downscaled copy (sha 2b17093e...) with the true 1279x1986 owner source. All pixel anchors in dimensions.json / geometry.json were re-detected on THIS file; no low-res pixel coordinates are inherited.",
+  "pixel_equivalent_to_owner_source": true,
+  "pixel_equivalence_note": "Working file SHA256 (0125ad6c...) differs from the owner-source binary seen in review (same 1279x1986 dimensions, same 131399 bytes, different container encoding). Decoded pixel arrays were verified IDENTICAL (max diff 0, mean 0.0) against the second supplied file 'Weixin Image_20260923150724_6431_9.jpg'. Byte identity is therefore not claimed; pixel equivalence is."
 }
