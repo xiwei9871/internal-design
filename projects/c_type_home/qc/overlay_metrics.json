@@ -1,0 +1,134 @@
+{
+  "note": "auxiliary metric only — visual inspection is the gate",
+  "n_walls_measured": 21,
+  "mean_edge_residual_px": 0.98,
+  "mean_edge_residual_mm": 36.2,
+  "per_wall": [
+    {
+      "wall": "W-EXT-W",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.88,
+      "edge_residual_px_max": 2.41
+    },
+    {
+      "wall": "W-EXT-S",
+      "conf": "HIGH",
+      "edge_residual_px_mean": 0.29,
+      "edge_residual_px_max": 0.5
+    },
+    {
+      "wall": "W-EXT-E1",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 1.32,
+      "edge_residual_px_max": 3.61
+    },
+    {
+      "wall": "W-EXT-E2",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 1.55,
+      "edge_residual_px_max": 2.91
+    },
+    {
+      "wall": "W-EXT-N-LV",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 1.63,
+      "edge_residual_px_max": 4.41
+    },
+    {
+      "wall": "W-BAY-F",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.62,
+      "edge_residual_px_max": 1.28
+    },
+    {
+      "wall": "W-EXT-N-BAL",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 1.1,
+      "edge_residual_px_max": 1.56
+    },
+    {
+      "wall": "W-BALC-W",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.54,
+      "edge_residual_px_max": 0.76
+    },
+    {
+      "wall": "W-BALC-S",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.54,
+      "edge_residual_px_max": 0.76
+    },
+    {
+      "wall": "W-BALC-N",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.77,
+      "edge_residual_px_max": 1.06
+    },
+    {
+      "wall": "W-INT-X5800",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.78,
+      "edge_residual_px_max": 1.61
+    },
+    {
+      "wall": "W-INT-X7900-L",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 1.3,
+      "edge_residual_px_max": 2.3
+    },
+    {
+      "wall": "W-INT-X7900-U",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.85,
+      "edge_residual_px_max": 1.26
+    },
+    {
+      "wall": "W-INT-X9800",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.46,
+      "edge_residual_px_max": 0.57
+    },
+    {
+      "wall": "W-INT-X11500",
+      "conf": "HIGH",
+      "edge_residual_px_mean": 1.05,
+      "edge_residual_px_max": 1.64
+    },
+    {
+      "wall": "W-INT-X13000",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 1.5,
+      "edge_residual_px_max": 2.14
+    },
+    {
+      "wall": "W-INT-Y4500-a",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.9,
+      "edge_residual_px_max": 2.2
+    },
+    {
+      "wall": "W-INT-BEDN-S",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 1.06,
+      "edge_residual_px_max": 1.89
+    },
+    {
+      "wall": "W-INT-WC-S",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 1.35,
+      "edge_residual_px_max": 2.41
+    },
+    {
+      "wall": "W-INT-Y10800",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 0.53,
+      "edge_residual_px_max": 0.63
+    },
+    {
+      "wall": "W-INT-Y4500-bc",
+      "conf": "MEDIUM",
+      "edge_residual_px_mean": 1.52,
+      "edge_residual_px_max": 2.91
+    }
+  ]
+}

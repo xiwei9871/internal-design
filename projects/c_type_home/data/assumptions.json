@@ -1,0 +1,56 @@
+{
+  "document": "Task 01 assumptions — SOURCE PLAN RECONSTRUCTION",
+  "principle": "dimension annotation > raster pixel position; nothing guessed silently",
+
+  "assumptions": [
+    {
+      "id": "ASM-001",
+      "item": "coordinate transform",
+      "assumption": "single uniform affine transform for the whole raster: X_mm=(px-86.5)*37.045, Y_mm=(684.5-py)*36.49",
+      "basis": "least-squares fit over 16 bottom-chain + 12 top-chain + 10 right-chain tick anchors",
+      "impact": "pixel-inferred geometry carries ~±150mm uncertainty"
+    },
+    {
+      "id": "ASM-002",
+      "item": "bottom outer chain total",
+      "assumption": "bottom outer chain reads 1400+1400+3000+2100+3600+3900+900 = 16300mm, ending at px526.5",
+      "basis": "top chain independently gives 2800+13500=16300 with matching tick spacing; the apparent trailing digits on the bottom chain are chain-tail notation, not 16900",
+      "impact": "east exterior datum X16300; drawn outer face px528.5 (X16470) treated as wall thickness overshoot"
+    },
+    {
+      "id": "ASM-003",
+      "item": "wall thickness",
+      "assumption": "interior walls modelled with raster-measured thickness (~100-280mm); exterior walls ~200mm where measurable",
+      "basis": "source is a marketing/developer plan — wall thicknesses are symbolic, not engineering-accurate",
+      "impact": "all thicknesses flagged needs_field_verification where <MEDIUM"
+    },
+    {
+      "id": "ASM-004",
+      "item": "wall continuity across openings",
+      "assumption": "where a wall face line is drawn but the door swing arc crosses it, the opening is real and the face line is drafting convention",
+      "basis": "developer-plan drawing convention",
+      "impact": "openings modelled as recorded even when one wall face reads continuous in raster"
+    },
+    {
+      "id": "ASM-005",
+      "item": "structural role",
+      "assumption": "no wall is marked load-bearing; all structural_role = UNKNOWN",
+      "basis": "source provides no structural information; black fill ≠ bearing wall",
+      "impact": "none — explicitly required by task rules"
+    },
+    {
+      "id": "ASM-006",
+      "item": "ceiling/storey height",
+      "assumption": "no storey height is in the source; IFC uses visualization_only_height_mm=2800 marked NOT SOURCE DATA",
+      "basis": "task spec §10",
+      "impact": "FCStd/IFC volumes are placeholders for spatial review only"
+    },
+    {
+      "id": "ASM-007",
+      "item": "origin",
+      "assumption": "origin X0 at bottom-chain datum px86.5 even though no wall face exists there (ISSUE-001); Y0 at main south face px684.5",
+      "basis": "keeps every bottom-chain tick at its printed cumulative dimension",
+      "impact": "west balcony railing sits at X1400, west exterior wall at X2800"
+    }
+  ]
+}

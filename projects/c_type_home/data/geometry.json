@@ -1,0 +1,1699 @@
+{
+  "meta": {
+    "project": "c_type_home",
+    "document": "SOURCE PLAN RECONSTRUCTION — geometry contract",
+    "revision": "task01-r1",
+    "unit": "mm",
+    "coordinate_system": {
+      "X": "image left -> right",
+      "Y": "image bottom -> top",
+      "Z": "floor datum upward",
+      "origin_mm": [
+        0,
+        0
+      ],
+      "origin_note": "X=0 at bottom outer-chain datum (px86.5, no wall face — ISSUE-001); Y=0 at main south exterior face (px684.5)"
+    },
+    "image_to_world_transform": {
+      "type": "affine",
+      "X_mm": "(px_x - 86.5) * 37.045",
+      "Y_mm": "(684.5 - px_y) * 36.49",
+      "mm_per_px_x": 37.045,
+      "mm_per_px_y": 36.49,
+      "origin_px": [
+        86.5,
+        684.5
+      ],
+      "anisotropy_pct": 1.5,
+      "note": "sx/sy differ ~1.5%; within reading tolerance for a compressed JPEG, flagged in calibration.json"
+    },
+    "structural_policy": "structural_role = UNKNOWN for every element; load_bearing never asserted (no source evidence)",
+    "provenance_levels": {
+      "dimension_constrained": "position fixed by printed dimension chain",
+      "pixel_scaled": "position measured on raster via calibrated transform",
+      "inferred": "interpolated from adjacent evidence",
+      "unknown": "not reliably determinable"
+    }
+  },
+  "anchors_x_mm": [
+    0,
+    1400,
+    2400,
+    2800,
+    3800,
+    4900,
+    5800,
+    6900,
+    7200,
+    7900,
+    8600,
+    8900,
+    9800,
+    10500,
+    10800,
+    11500,
+    12200,
+    12300,
+    13000,
+    13700,
+    14700,
+    15400,
+    15600,
+    16100,
+    16300,
+    16400
+  ],
+  "anchors_y_mm": [
+    -700,
+    0,
+    500,
+    2300,
+    4500,
+    6400,
+    7800,
+    10800,
+    11400,
+    12900,
+    13600,
+    14600
+  ],
+  "walls": [
+    {
+      "id": "W-EXT-W",
+      "type": "exterior",
+      "rect_mm": [
+        2700,
+        2300,
+        2900,
+        13600
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-BOTTOM-OUT@X2800",
+        "px x159-165"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "outer face line not drawn for px y440-403 i.e. Y4560-10260 (drawing anomaly, west wall abuts corridor side); modelled continuous"
+    },
+    {
+      "id": "W-EXT-S",
+      "type": "exterior",
+      "rect_mm": [
+        6050,
+        -200,
+        15400,
+        0
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "HIGH",
+      "source_refs": [
+        "CHAIN-BOTTOM-OUT",
+        "CHAIN-BOTTOM-IN",
+        "px y684-690"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "main south elevation; hosts WIN-S1/WIN-S2"
+    },
+    {
+      "id": "W-EXT-S-W1",
+      "type": "exterior",
+      "rect_mm": [
+        4600,
+        -200,
+        5000,
+        0
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px y684 x210-220"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "isolated stub on south line — probable AC-bay edge, not confirmed wall"
+    },
+    {
+      "id": "W-EXT-S-W2",
+      "type": "exterior",
+      "rect_mm": [
+        5380,
+        -200,
+        6050,
+        0
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px y684 x231-249"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "AC-bay edge under kitchen/balcony corner"
+    },
+    {
+      "id": "W-EXT-E1",
+      "type": "exterior",
+      "rect_mm": [
+        15300,
+        0,
+        15600,
+        4500
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-BOTTOM-OUT@X15400",
+        "px x497-505"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "master-bedroom east wall; hosts WIN-E1"
+    },
+    {
+      "id": "W-EXT-E2",
+      "type": "exterior",
+      "rect_mm": [
+        16300,
+        4400,
+        16500,
+        10900
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-RIGHT-IN",
+        "px x523-529"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "east wall of master-bath + north bedroom; upper end at px385 (Y10900) where NE corner steps back into AC-bay recess"
+    },
+    {
+      "id": "W-EXT-NE",
+      "type": "exterior",
+      "rect_mm": [
+        13600,
+        11350,
+        15800,
+        11550
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px y369-373 x452-510"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "north bedroom north wall — pixel evidence only; right chain 12900 datum lands ~1400mm north of this face (ISSUE-006)"
+    },
+    {
+      "id": "W-EXT-NE2",
+      "type": "exterior",
+      "rect_mm": [
+        15600,
+        10700,
+        16500,
+        10900
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px y385-391 x506-529"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "short segment at NE recess / AC-bay south edge"
+    },
+    {
+      "id": "W-EXT-N-LV",
+      "type": "exterior",
+      "rect_mm": [
+        2700,
+        12750,
+        7900,
+        12950
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-TOP-IN",
+        "px y329-334"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "living-room north wall; hosts bay window WIN-N1 X3800-6900"
+    },
+    {
+      "id": "W-BAY-F",
+      "type": "exterior",
+      "rect_mm": [
+        3800,
+        13400,
+        6900,
+        13600
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px y313-318 x188-273"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "living-room bay-window front face at north silhouette"
+    },
+    {
+      "id": "W-BAY-JW",
+      "type": "exterior",
+      "rect_mm": [
+        3700,
+        12950,
+        3800,
+        13400
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x187-189"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true
+    },
+    {
+      "id": "W-BAY-JE",
+      "type": "exterior",
+      "rect_mm": [
+        6900,
+        12950,
+        7000,
+        13400
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x272-274"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true
+    },
+    {
+      "id": "W-EXT-N-BAL",
+      "type": "railing_parapet",
+      "rect_mm": [
+        7900,
+        13400,
+        13000,
+        13600
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px y313-318 x296-438"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "balcony north parapet/glazing line; inner chain ticks at X10500/12300/13000 suggest glazing segments 700|1800|700"
+    },
+    {
+      "id": "W-BALC-W",
+      "type": "railing_parapet",
+      "rect_mm": [
+        1300,
+        450,
+        1500,
+        2400
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px x120-128",
+        "CHAIN-BOTTOM-OUT@X1400"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true
+    },
+    {
+      "id": "W-BALC-S",
+      "type": "railing_parapet",
+      "rect_mm": [
+        1300,
+        450,
+        5800,
+        650
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px y666-672",
+        "CHAIN-BOTTOM-OUT"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "south face of 生活阳台; possible opening/glazing X1400-2800 per inner-chain ticks"
+    },
+    {
+      "id": "W-BALC-N",
+      "type": "interior",
+      "rect_mm": [
+        1300,
+        2300,
+        5800,
+        2500
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px y615-622"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "balcony north wall; west part X1300-2900 is exterior corner return"
+    },
+    {
+      "id": "W-INT-X5800",
+      "type": "interior",
+      "rect_mm": [
+        5700,
+        -150,
+        5900,
+        4700
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-BOTTOM-OUT@X5800",
+        "px x238-246"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "kitchen/balcony west wall; hosts D-11"
+    },
+    {
+      "id": "W-INT-X5800-STUB",
+      "type": "interior",
+      "rect_mm": [
+        5650,
+        4700,
+        5750,
+        5950
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x238-240 y522-621"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "partial-height screen/stub between 餐厅 and 休闲厅"
+    },
+    {
+      "id": "W-INT-X7900-L",
+      "type": "interior",
+      "rect_mm": [
+        7750,
+        -150,
+        8030,
+        4670
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-BOTTOM-OUT@X7900",
+        "px x294-302"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "thick wall kitchen|bedroom-S; south end continues past Y0 into AC zone"
+    },
+    {
+      "id": "W-INT-X7900-U",
+      "type": "interior",
+      "rect_mm": [
+        7800,
+        4670,
+        7900,
+        13550
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px x295-297"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "thin wall between 休闲厅/客厅 and corridor/书房/公卫 + balcony west edge; hosts D-02 (Y11700-12550) and D-10 cased opening (Y4670-6450)"
+    },
+    {
+      "id": "W-INT-X9800",
+      "type": "interior",
+      "rect_mm": [
+        9650,
+        7700,
+        9850,
+        10900
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-TOP-IN@X9800",
+        "px x345-353"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "公卫|书房 partition"
+    },
+    {
+      "id": "W-INT-X11500",
+      "type": "interior",
+      "rect_mm": [
+        11400,
+        -200,
+        11600,
+        6500
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "HIGH",
+      "source_refs": [
+        "CHAIN-BOTTOM-IN@X11500",
+        "px x391-399"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "bedroom-S|master-bed partition; continuous, no openings"
+    },
+    {
+      "id": "W-INT-X13000",
+      "type": "interior",
+      "rect_mm": [
+        12900,
+        4630,
+        13100,
+        13600
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-TOP-IN@X13000",
+        "px x431-439"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "corridor|master-bath|bedroom-N wall + balcony east edge; hosts D-05 (Y6300-7450), D-06 (Y4750-5500), D-12 (Y11000-11800 LOW)"
+    },
+    {
+      "id": "W-INT-Y4500-a",
+      "type": "interior",
+      "rect_mm": [
+        5700,
+        4450,
+        9200,
+        4650
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-RIGHT-IN@Y4500",
+        "px y556-562"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "kitchen north + bedroom-S north wall; hosts D-08 opening X8250-9200"
+    },
+    {
+      "id": "W-INT-CLK-N",
+      "type": "interior",
+      "rect_mm": [
+        9100,
+        6300,
+        11400,
+        6500
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px y502-509 x331-410"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "cloakroom north wall; door gap X10500-11400"
+    },
+    {
+      "id": "W-INT-CLK-E",
+      "type": "interior",
+      "rect_mm": [
+        11300,
+        4500,
+        11400,
+        6300
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x390-393"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true
+    },
+    {
+      "id": "W-INT-CLK-W",
+      "type": "interior",
+      "rect_mm": [
+        9050,
+        4500,
+        9150,
+        6300
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x330"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true
+    },
+    {
+      "id": "W-INT-COR-N-STUB",
+      "type": "interior",
+      "rect_mm": [
+        11400,
+        6300,
+        12100,
+        6500
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px y505-509 x392-410"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "corridor north edge continues east of cloakroom"
+    },
+    {
+      "id": "W-INT-BEDN-S",
+      "type": "interior",
+      "rect_mm": [
+        13100,
+        6300,
+        16300,
+        6500
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px y505-506 x438-523"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "bedroom-N south wall (master-bath north)"
+    },
+    {
+      "id": "W-INT-WC-S",
+      "type": "interior",
+      "rect_mm": [
+        7900,
+        7800,
+        9800,
+        8000
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-RIGHT-IN@Y7800",
+        "px y467-473"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "public-bath south wall; hosts D-03"
+    },
+    {
+      "id": "W-INT-STD-S",
+      "type": "interior",
+      "rect_mm": [
+        9800,
+        7800,
+        13000,
+        8000
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px y467-473 x416-438 partial"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "study south wall; raster shows only east segment X12300-13000 solid, west part faint — door D-04"
+    },
+    {
+      "id": "W-INT-Y10800",
+      "type": "interior",
+      "rect_mm": [
+        7900,
+        10700,
+        13000,
+        10900
+      ],
+      "provenance": "dimension_constrained+pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-RIGHT-IN@Y10800",
+        "px y385-391"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "balcony south wall = 公卫/书房 north wall"
+    },
+    {
+      "id": "W-INT-Y10800-EXT",
+      "type": "interior",
+      "rect_mm": [
+        13000,
+        10700,
+        13700,
+        10900
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px y385-391 x420-455"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "extends into AC nook at balcony SE corner"
+    },
+    {
+      "id": "W-SHAFT-K",
+      "type": "shaft",
+      "rect_mm": [
+        7150,
+        750,
+        7250,
+        3650
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x280-283 y584-663"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "thin vertical element inside kitchen — likely flue/pipe shaft （烟道）"
+    },
+    {
+      "id": "W-INT-DRY-STUB",
+      "type": "interior",
+      "rect_mm": [
+        7150,
+        3870,
+        7250,
+        4670
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x280-282 y556-578"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true
+    },
+    {
+      "id": "W-INT-NICHE",
+      "type": "interior",
+      "rect_mm": [
+        7150,
+        4700,
+        7400,
+        7800
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x280-285 y470-508"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "narrow element in 休闲厅 SW area — niche edge or column, unclear"
+    },
+    {
+      "id": "W-INT-Y4500-bc",
+      "type": "interior",
+      "rect_mm": [
+        9200,
+        4450,
+        16500,
+        4650
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px y556-562 x333-538"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": false,
+      "note": "bedroom-S/master-bed north + master-bath south wall (continuous through X13000 junction); hosts D-09 opening X11600-12900; exterior-facing for X>15400 (building step)"
+    }
+  ],
+  "columns": [
+    {
+      "id": "COL-B1",
+      "rect_mm": [
+        1500,
+        1650,
+        2050,
+        2200
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x128-141 y622-640"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "square element in 生活阳台 west strip — column or pipe enclosure"
+    },
+    {
+      "id": "COL-B2",
+      "rect_mm": [
+        1500,
+        750,
+        2050,
+        1300
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x128-141 y648-663"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true
+    },
+    {
+      "id": "COL-WS",
+      "rect_mm": [
+        2700,
+        750,
+        2900,
+        1100
+      ],
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x159-165 y654-664"
+      ],
+      "structural_role": "UNKNOWN",
+      "needs_field_verification": true,
+      "note": "stub below balcony north wall on west line"
+    }
+  ],
+  "doors": [
+    {
+      "id": "D-01",
+      "host_wall_id": "W-EXT-W",
+      "opening_along_mm": [
+        5400,
+        6530
+      ],
+      "opening_width_mm": 1130,
+      "swing": "east into 餐厅",
+      "label": "FM21221 entrance door",
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px x159-165 gap y505-536",
+        "label FM21221 px x90-140 y500-540"
+      ],
+      "needs_field_verification": true
+    },
+    {
+      "id": "D-02",
+      "host_wall_id": "W-INT-X7900-U",
+      "opening_along_mm": [
+        11700,
+        12550
+      ],
+      "opening_width_mm": 850,
+      "swing": "east into 阳台",
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px x295-297 gap y340-400",
+        "arc px x300-330"
+      ],
+      "needs_field_verification": true
+    },
+    {
+      "id": "D-03",
+      "host_wall_id": "W-INT-WC-S",
+      "opening_along_mm": [
+        8800,
+        9700
+      ],
+      "opening_width_mm": 900,
+      "swing": "north into 公卫",
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px y467-473 gap x323-347",
+        "arc px x320-350 y440-470"
+      ],
+      "needs_field_verification": true
+    },
+    {
+      "id": "D-04",
+      "host_wall_id": "W-INT-STD-S",
+      "opening_along_mm": [
+        9950,
+        10900
+      ],
+      "opening_width_mm": 950,
+      "swing": "north into 书房",
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "arc px x353-380 y440-470"
+      ],
+      "needs_field_verification": true
+    },
+    {
+      "id": "D-05",
+      "host_wall_id": "W-INT-X13000",
+      "opening_along_mm": [
+        6300,
+        7450
+      ],
+      "opening_width_mm": 1150,
+      "swing": "east into 卧室",
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px x437-439 gap y480-512",
+        "arc px x428-460 y480-502"
+      ],
+      "needs_field_verification": true
+    },
+    {
+      "id": "D-06",
+      "host_wall_id": "W-INT-X13000",
+      "opening_along_mm": [
+        4750,
+        5500
+      ],
+      "opening_width_mm": 750,
+      "swing": "west into corridor",
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px x433 inner-face gap y530-554",
+        "arc px x400-420 y530-554"
+      ],
+      "needs_field_verification": true
+    },
+    {
+      "id": "D-07",
+      "host_wall_id": "W-INT-CLK-N",
+      "opening_along_mm": [
+        10500,
+        11400
+      ],
+      "opening_width_mm": 900,
+      "swing": "south into 衣帽间",
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px y505-509 gap x370-392",
+        "arc px x372-394 y502-516"
+      ],
+      "needs_field_verification": true
+    },
+    {
+      "id": "D-08",
+      "host_wall_id": "W-INT-Y4500-a",
+      "opening_along_mm": [
+        8250,
+        9200
+      ],
+      "opening_width_mm": 950,
+      "swing": "south into 卧室",
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px y557-561 gap x308-334",
+        "arc px x300-320 y552-568"
+      ],
+      "needs_field_verification": true
+    },
+    {
+      "id": "D-09",
+      "host_wall_id": "W-INT-Y4500-bc",
+      "opening_along_mm": [
+        11600,
+        12900
+      ],
+      "opening_width_mm": 1300,
+      "swing": "south into 主卧",
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px y557-561 gap x399-433",
+        "arc px x392-410 y556-570"
+      ],
+      "needs_field_verification": true,
+      "note": "wide opening 1300mm — may be door + sidelite; leaf detail uncertain"
+    },
+    {
+      "id": "D-10",
+      "host_wall_id": "W-INT-X7900-U",
+      "opening_along_mm": [
+        4670,
+        6450
+      ],
+      "opening_width_mm": 1780,
+      "swing": "none visible — cased opening",
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x294-302 gap y507-556"
+      ],
+      "needs_field_verification": true,
+      "note": "wide opening 休闲厅<->corridor; no leaf drawn"
+    },
+    {
+      "id": "D-11",
+      "host_wall_id": "W-INT-X5800",
+      "opening_along_mm": [
+        1400,
+        2300
+      ],
+      "opening_width_mm": 900,
+      "swing": "west into 生活阳台",
+      "provenance": "pixel_scaled",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "px x241 gap y620-646",
+        "arc px x218-238 y618-648"
+      ],
+      "needs_field_verification": true,
+      "note": "kitchen<->balcony door; alternative interpretation — door in balcony north wall (ISSUE-007)"
+    },
+    {
+      "id": "D-12",
+      "host_wall_id": "W-INT-X13000",
+      "opening_along_mm": [
+        11000,
+        11800
+      ],
+      "opening_width_mm": 800,
+      "swing": "uncertain",
+      "provenance": "inferred",
+      "confidence": "LOW",
+      "source_refs": [
+        "arc px x436-454 y378-398"
+      ],
+      "needs_field_verification": true,
+      "note": "possible door bedroom-N <-> AC nook/阳台 SE; wall face appears continuous — may be bay edge marking"
+    }
+  ],
+  "windows": [
+    {
+      "id": "WIN-N1",
+      "host_wall_id": "W-EXT-N-LV",
+      "opening_along_mm": [
+        3800,
+        6900
+      ],
+      "opening_width_mm": 3100,
+      "provenance": "dimension_constrained",
+      "confidence": "HIGH",
+      "source_refs": [
+        "CHAIN-TOP-IN 3100 seg",
+        "px y334 gap x189-271"
+      ],
+      "needs_field_verification": false,
+      "note": "living-room bay window; protrudes to W-BAY-F"
+    },
+    {
+      "id": "WIN-N2",
+      "host_wall_id": "W-EXT-NE",
+      "opening_along_mm": [
+        13700,
+        15600
+      ],
+      "opening_width_mm": 1900,
+      "provenance": "dimension_constrained",
+      "confidence": "LOW",
+      "source_refs": [
+        "CHAIN-TOP-IN 1900 seg"
+      ],
+      "needs_field_verification": true,
+      "note": "1900 dim exists on top chain; host wall W-EXT-NE itself LOW confidence"
+    },
+    {
+      "id": "WIN-N3",
+      "host_wall_id": "W-EXT-N-BAL",
+      "opening_along_mm": [
+        10500,
+        12300
+      ],
+      "opening_width_mm": 1800,
+      "provenance": "dimension_constrained",
+      "confidence": "LOW",
+      "source_refs": [
+        "CHAIN-TOP-IN 1800 seg"
+      ],
+      "needs_field_verification": true,
+      "note": "balcony parapet glazing segments 700|1800|700"
+    },
+    {
+      "id": "WIN-E1",
+      "host_wall_id": "W-EXT-E1",
+      "opening_along_mm": [
+        500,
+        2300
+      ],
+      "opening_width_mm": 1800,
+      "provenance": "dimension_constrained",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-RIGHT-IN 1800 seg",
+        "px x504-505 slit y605-633"
+      ],
+      "needs_field_verification": true,
+      "note": "dim-constrained; drawn slit reads Y1870-2890 (~500mm higher) — raster/dim conflict recorded (ISSUE-005)"
+    },
+    {
+      "id": "WIN-E2",
+      "host_wall_id": "W-EXT-E2",
+      "opening_along_mm": [
+        7800,
+        10800
+      ],
+      "opening_width_mm": 3000,
+      "provenance": "dimension_constrained",
+      "confidence": "MEDIUM",
+      "source_refs": [
+        "CHAIN-RIGHT-IN 3000 seg",
+        "px x523-529 face tone change y388-470"
+      ],
+      "needs_field_verification": true,
+      "note": "bedroom-N east window"
+    },
+    {
+      "id": "WIN-E3",
+      "host_wall_id": "W-EXT-E2",
+      "opening_along_mm": [
+        4500,
+        6400
+      ],
+      "opening_width_mm": 1900,
+      "provenance": "dimension_constrained",
+      "confidence": "LOW",
+      "source_refs": [
+        "CHAIN-RIGHT-IN 1900 seg"
+      ],
+      "needs_field_verification": true,
+      "note": "master-bath east face — dim exists but unclear whether window or tub-bay frontage"
+    },
+    {
+      "id": "WIN-S1",
+      "host_wall_id": "W-EXT-S",
+      "opening_along_mm": [
+        8600,
+        10800
+      ],
+      "opening_width_mm": 2200,
+      "provenance": "dimension_constrained",
+      "confidence": "HIGH",
+      "source_refs": [
+        "CHAIN-BOTTOM-IN 2200 seg",
+        "px y684 gap x317-376"
+      ],
+      "needs_field_verification": false
+    },
+    {
+      "id": "WIN-S2",
+      "host_wall_id": "W-EXT-S",
+      "opening_along_mm": [
+        12200,
+        14700
+      ],
+      "opening_width_mm": 2500,
+      "provenance": "dimension_constrained",
+      "confidence": "HIGH",
+      "source_refs": [
+        "CHAIN-BOTTOM-IN 2500 seg",
+        "px y684 gap x413-481.5"
+      ],
+      "needs_field_verification": false
+    },
+    {
+      "id": "WIN-S3",
+      "host_wall_id": "W-EXT-S",
+      "opening_along_mm": [
+        5800,
+        7200
+      ],
+      "opening_width_mm": 1400,
+      "provenance": "dimension_constrained",
+      "confidence": "LOW",
+      "source_refs": [
+        "CHAIN-BOTTOM-IN 1400 seg"
+      ],
+      "needs_field_verification": true,
+      "note": "kitchen south — dim exists; may be AC-bay frontage rather than window (ISSUE-008)"
+    },
+    {
+      "id": "WIN-W1",
+      "host_wall_id": "W-EXT-W",
+      "opening_along_mm": [
+        9750,
+        10850
+      ],
+      "opening_width_mm": 1100,
+      "provenance": "pixel_scaled",
+      "confidence": "LOW",
+      "source_refs": [
+        "px x159-161 outer-face gap y388-417"
+      ],
+      "needs_field_verification": true,
+      "note": "possible living-room west window; outer face not drawn in this range"
+    },
+    {
+      "id": "WIN-BALC-S",
+      "host_wall_id": "W-BALC-S",
+      "opening_along_mm": [
+        1400,
+        2800
+      ],
+      "opening_width_mm": 1400,
+      "provenance": "dimension_constrained",
+      "confidence": "LOW",
+      "source_refs": [
+        "CHAIN-BOTTOM-IN 1000+400 segs"
+      ],
+      "needs_field_verification": true,
+      "note": "balcony south glazing/opening — interpretation of inner-chain ticks"
+    }
+  ],
+  "spaces": [
+    {
+      "id": "R-LIVING",
+      "name_zh": "客厅",
+      "polygon_mm": [
+        [
+          2900,
+          7900
+        ],
+        [
+          7750,
+          7900
+        ],
+        [
+          7750,
+          12750
+        ],
+        [
+          2900,
+          12750
+        ]
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        215,
+        420
+      ]
+    },
+    {
+      "id": "R-DINING",
+      "name_zh": "餐厅",
+      "polygon_mm": [
+        [
+          2900,
+          2500
+        ],
+        [
+          5700,
+          2500
+        ],
+        [
+          5700,
+          7900
+        ],
+        [
+          2900,
+          7900
+        ]
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        189,
+        551
+      ],
+      "note": "south boundary nominal at balcony north wall"
+    },
+    {
+      "id": "R-BALC-LIFE",
+      "name_zh": "生活阳台",
+      "polygon_mm": [
+        [
+          1500,
+          650
+        ],
+        [
+          5700,
+          650
+        ],
+        [
+          5700,
+          2300
+        ],
+        [
+          1500,
+          2300
+        ]
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        160,
+        620
+      ]
+    },
+    {
+      "id": "R-KITCHEN",
+      "name_zh": "厨房",
+      "polygon_mm": [
+        [
+          5900,
+          0
+        ],
+        [
+          7750,
+          0
+        ],
+        [
+          7750,
+          4450
+        ],
+        [
+          5900,
+          4450
+        ]
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        262,
+        600
+      ]
+    },
+    {
+      "id": "R-LEISURE",
+      "name_zh": "休闲厅",
+      "polygon_mm": [
+        [
+          5900,
+          4650
+        ],
+        [
+          9050,
+          4650
+        ],
+        [
+          9050,
+          6300
+        ],
+        [
+          9150,
+          6300
+        ],
+        [
+          9150,
+          6500
+        ],
+        [
+          12900,
+          6500
+        ],
+        [
+          12900,
+          7800
+        ],
+        [
+          5900,
+          7800
+        ]
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        340,
+        520
+      ],
+      "note": "L-shaped central hall including corridor leg; south leg wraps cloakroom"
+    },
+    {
+      "id": "R-BED-S",
+      "name_zh": "卧室",
+      "polygon_mm": [
+        [
+          8030,
+          0
+        ],
+        [
+          11400,
+          0
+        ],
+        [
+          11400,
+          4450
+        ],
+        [
+          8030,
+          4450
+        ]
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        340,
+        640
+      ]
+    },
+    {
+      "id": "R-MASTER",
+      "name_zh": "主卧",
+      "polygon_mm": [
+        [
+          11600,
+          0
+        ],
+        [
+          15300,
+          0
+        ],
+        [
+          15300,
+          4450
+        ],
+        [
+          11600,
+          4450
+        ]
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        450,
+        640
+      ]
+    },
+    {
+      "id": "R-CLOAK",
+      "name_zh": "衣帽间",
+      "polygon_mm": [
+        [
+          9150,
+          4650
+        ],
+        [
+          11300,
+          4650
+        ],
+        [
+          11300,
+          6300
+        ],
+        [
+          9150,
+          6300
+        ]
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        352,
+        540
+      ]
+    },
+    {
+      "id": "R-BATH-M",
+      "name_zh": "主卫",
+      "polygon_mm": [
+        [
+          13100,
+          4650
+        ],
+        [
+          16300,
+          4650
+        ],
+        [
+          16300,
+          6300
+        ],
+        [
+          13100,
+          6300
+        ]
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        480,
+        540
+      ]
+    },
+    {
+      "id": "R-BED-N",
+      "name_zh": "卧室",
+      "polygon_mm": [
+        [
+          13100,
+          6500
+        ],
+        [
+          16300,
+          6500
+        ],
+        [
+          16300,
+          11350
+        ],
+        [
+          13100,
+          11350
+        ]
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        490,
+        430
+      ],
+      "note": "north boundary uncertain — AC-bay recess (ISSUE-006)"
+    },
+    {
+      "id": "R-STUDY",
+      "name_zh": "书房",
+      "polygon_mm": [
+        [
+          9850,
+          8000
+        ],
+        [
+          12900,
+          8000
+        ],
+        [
+          12900,
+          10700
+        ],
+        [
+          9850,
+          10700
+        ]
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        385,
+        430
+      ]
+    },
+    {
+      "id": "R-BATH-P",
+      "name_zh": "公卫",
+      "polygon_mm": [
+        [
+          7900,
+          8000
+        ],
+        [
+          9650,
+          8000
+        ],
+        [
+          9650,
+          10700
+        ],
+        [
+          7900,
+          10700
+        ]
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        310,
+        440
+      ]
+    },
+    {
+      "id": "R-BALC-N",
+      "name_zh": "阳台",
+      "polygon_mm": [
+        [
+          7900,
+          10900
+        ],
+        [
+          13000,
+          10900
+        ],
+        [
+          13000,
+          13400
+        ],
+        [
+          7900,
+          13400
+        ]
+      ],
+      "confidence": "MEDIUM",
+      "provenance": "pixel_scaled",
+      "label_px": [
+        360,
+        330
+      ]
+    }
+  ],
+  "ac_bays": [
+    {
+      "id": "AC-1",
+      "rect_mm": [
+        3100,
+        13600,
+        3700,
+        14200
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "source_refs": [
+        "px x170-185 y298-315"
+      ],
+      "note": "AC platform NW of living room"
+    },
+    {
+      "id": "AC-2",
+      "rect_mm": [
+        13100,
+        11400,
+        13700,
+        12700
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "source_refs": [
+        "px x437-455 y337-370"
+      ],
+      "note": "AC nook at balcony SE / bedroom NW"
+    },
+    {
+      "id": "AC-3",
+      "rect_mm": [
+        13600,
+        11550,
+        15800,
+        12900
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "source_refs": [
+        "px x452-510 y331-373"
+      ],
+      "note": "NE recess region; 12900 chain datum lands here (ISSUE-006)"
+    },
+    {
+      "id": "AC-4",
+      "rect_mm": [
+        8500,
+        -750,
+        10800,
+        0
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "source_refs": [
+        "px x314-377 y702-704"
+      ],
+      "note": "platform below south bedroom"
+    },
+    {
+      "id": "AC-5",
+      "rect_mm": [
+        12050,
+        -750,
+        14800,
+        0
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "source_refs": [
+        "px x410-485 y702-704"
+      ],
+      "note": "platform below master bedroom"
+    },
+    {
+      "id": "AC-6",
+      "rect_mm": [
+        5900,
+        -750,
+        7200,
+        350
+      ],
+      "confidence": "LOW",
+      "provenance": "pixel_scaled",
+      "source_refs": [
+        "px x245-280 y675-705"
+      ],
+      "note": "platform at kitchen south / balcony SW"
+    }
+  ],
+  "model_extents_mm": {
+    "x": [
+      1300,
+      16500
+    ],
+    "y": [
+      -750,
+      14200
+    ],
+    "note": "includes balconies/AC bays; main wall envelope 2700-16500 x -200-13600"
+  },
+  "unresolved_issue_ids": [
+    "ISSUE-001",
+    "ISSUE-002",
+    "ISSUE-003",
+    "ISSUE-004",
+    "ISSUE-005",
+    "ISSUE-006",
+    "ISSUE-007",
+    "ISSUE-008",
+    "ISSUE-009",
+    "ISSUE-010"
+  ]
+}

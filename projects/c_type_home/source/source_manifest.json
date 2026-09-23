@@ -1,0 +1,11 @@
+{
+  "file": "source_plan_original.jpg",
+  "sha256": "2b17093edcb3be8d45888d3e27e068611ad28281bae4abe04da53278f708d376",
+  "width_px": 659,
+  "height_px": 1024,
+  "source_type": "developer_floorplan_image",
+  "source_description": "C型户型原始平面图（业主提供图片，含顶部/底部水平尺寸链与右侧竖向尺寸链）",
+  "document_status": "SOURCE PLAN RECONSTRUCTION — NOT as-built, NOT field verified",
+  "unmodified": true,
+  "recorded_by": "Task 01 pipeline"
+}
