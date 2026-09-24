@@ -41,8 +41,50 @@
     6700
    ],
    "topology": "climbs +x along south edge of returned strip (kitchen side); top lands on former-niche open passage x7150-7800 y4650-6600 -> upper landing"
+  },
+  "area_comparison": {
+   "returned_platform_m2": 4.09,
+   "ramp_footprint_m2": 3.3,
+   "net_unobstructed_public_gain_m2": 0.79,
+   "living_largest_clear_rect": "4850x4850 (23.5m2) + returned annex — PROVISIONAL",
+   "primary_circulation_mm": ">=1100 (ramp doubles as future step-free route)",
+   "verdict": "net floor gain modest (+0.79m2); value = rectangular living room + future assisted-wheelchair provision — PROVISIONAL until level delta measured"
   }
  },
+ "new_walls": [
+  [
+   8950,
+   3800,
+   9100,
+   3900
+  ],
+  [
+   9750,
+   3800,
+   10800,
+   3900
+  ],
+  [
+   8950,
+   3900,
+   9050,
+   4500
+  ],
+  [
+   10700,
+   3900,
+   10800,
+   4450
+  ]
+ ],
+ "new_doors": [
+  [
+   9100,
+   3800,
+   9750,
+   3900
+  ]
+ ],
  "smb": {
   "zone_mm": [
    9050,
@@ -50,28 +92,35 @@
    11300,
    6300
   ],
-  "area_m2": 3.71,
-  "site_truth": "RC1.5 owner correction: cloakroom N/W/E walls RETAINED (white-class); south side OPEN to bedroom (Y4500-b-CLKSEG absent, only 600mm stub x10800-11400 drawn — TO_VERIFY). Bath = existing shell + NEW south partition (wall or frosted glass) + interior wet/dry glass. No demolition.",
+  "annex_mm": [
+   9050,
+   3900,
+   10700,
+   4450
+  ],
+  "area_m2": 5.0,
+  "area_breakdown": "main 2250x1650=3.71 + connector 1750x200=0.35 + annex 1700x550=0.94 = ~5.0 m2",
+  "site_truth": "cloakroom N/W/E walls EXISTING (owner image markup + DWG drawn — consistent); south side OPEN to bedroom (Y4500-b-CLKSEG absent, only 600mm stub x10800-11400 — TO_VERIFY). Bath = shell + L-annex into bedroom + NEW south partition (wall or frosted glass). No demolition.",
   "entry_S": {
    "door_rect": [
-    9500,
-    4550,
-    10300,
-    4650
+    9100,
+    3800,
+    9750,
+    3900
    ],
-   "swing": "into bath; door leaf in NEW south partition",
-   "pros": "zero existing-wall cutting; uses the open south edge; direct en-suite from bedroom",
-   "cons": "door axis faces bed zone (owner prefers not) — mitigate: place door at west end x9050-9550 or use frosted-glass partition; residual stub x10800-11400 TO_VERIFY",
-   "verdict": "FEASIBLE — recommended (least intervention)"
+   "swing": "hinge east @x9750, leaf ~650, swings INTO bath annex; swing zone x9100-9750 y3900-4550 kept fixture-free",
+   "pros": "zero existing-wall cutting; door at west end of new partition; meets ~5m2 owner target",
+   "cons": "annex bites 1700x550 of bedroom; door axis still roughly toward bed — mitigate with frosted glass partition; residual stub x10800-11400 TO_VERIFY",
+   "verdict": "FEASIBLE — recommended (least intervention, owner target ~5m2 met)"
   },
   "entry_W": {
    "door_rect": [
+    8950,
+    4700,
     9050,
-    5200,
-    9050,
-    5950
+    5400
    ],
-   "swing": "into foyer",
+   "swing": "SLIDING door leaf (owner suggestion — saves swing space)",
    "foyer_mm": [
     7800,
     4650,
@@ -79,8 +128,8 @@
     6300
    ],
    "pros": "private suite vestibule; door does NOT face bed",
-   "cons": "requires NEW OPENING in existing CLK-W — white-class wall under owner-declared no-opening rule; needs explicit owner exception + structural check",
-   "verdict": "CONSTRAINED — feasible only with owner rule exception"
+   "cons": "requires NEW OPENING in retained CLK-W — white-class under owner-declared no-opening rule; needs explicit owner exception + structural check",
+   "verdict": "CONSTRAINED — feasible only with owner rule exception (sliding leaf)"
   },
   "entry_N": {
    "door_rect": "existing cloakroom door on CLK-N (D-CLK, leaf TO_VERIFY)",
@@ -88,29 +137,107 @@
    "cons": "opens to shared corridor, not en-suite",
    "verdict": "FALLBACK"
   },
-  "comparison": "S recommended (all-new partition, no existing wall touched). W only if owner grants exception to open CLK-W. N = zero-cost fallback.",
+  "comparison": "S recommended (new partition only). W = sliding door, but requires owner exception to open retained white-class CLK-W. N = zero-cost fallback.",
   "fixtures": {
    "shower": [
     10300,
-    4650,
+    4900,
     11300,
-    5850
-   ],
-   "vanity": [
-    9050,
-    4650,
-    9850,
-    5250
+    6300
    ],
    "wc": [
-    9850,
-    4650,
+    9050,
+    5450,
+    9750,
+    6300
+   ],
+   "vanity": [
+    9950,
+    3900,
+    10700,
+    4450
+   ]
+  },
+  "clearances": {
+   "door_swing": [
+    9100,
+    3900,
+    9750,
+    4550
+   ],
+   "wc_front": [
+    9050,
+    4750,
+    9750,
+    5450
+   ],
+   "vanity_front": [
+    9950,
+    4450,
+    10700,
+    4900
+   ],
+   "shower_entry": [
+    9750,
+    4900,
     10300,
-    5250
+    6300
    ]
   },
   "drain_note": "east wall shared with MASTER_BATH wet zone — primary drain/vent candidate, TO_VERIFY"
  },
+ "door_swings": [
+  {
+   "door": "D-SMB2-S",
+   "rect": [
+    9100,
+    3900,
+    9750,
+    4550
+   ],
+   "note": "new S partition door, swings into bath"
+  },
+  {
+   "door": "D-GBED",
+   "rect": [
+    10900,
+    8000,
+    11700,
+    8800
+   ],
+   "note": "guest bed door swings into room"
+  },
+  {
+   "door": "D-STUDY",
+   "rect": [
+    13100,
+    6564,
+    13900,
+    7364
+   ],
+   "note": "study door swings east into room"
+  },
+  {
+   "door": "D-MB",
+   "rect": [
+    13100,
+    4564,
+    13900,
+    5364
+   ],
+   "note": "master bath door swings east into bath"
+  },
+  {
+   "door": "D-SM",
+   "rect": [
+    8000,
+    3564,
+    8700,
+    4364
+   ],
+   "note": "secondary master door swings into bedroom"
+  }
+ ],
  "furniture": [
   {
    "id": "SOFA-3",
@@ -236,24 +363,24 @@
   {
    "id": "ST-DESK",
    "rect": [
-    13800,
+    14000,
     6500,
-    15500,
+    15700,
     7300
    ],
    "layer": "A-FURN-PROP",
-   "note": "1700x800 desk on south wall; east window side-lit"
+   "note": "1700x800 desk on south wall, east of door swing; east window side-lit"
   },
   {
    "id": "ST-DAYBED",
    "rect": [
-    15000,
-    9500,
-    16000,
-    11300
+    13100,
+    8300,
+    13900,
+    10300
    ],
    "layer": "A-FURN-PROP",
-   "note": "daybed backup sleep"
+   "note": "800x2000 daybed on west wall, north of door swing"
   },
   {
    "id": "ST-BOOK",
@@ -270,23 +397,23 @@
    "id": "ST-NAS",
    "rect": [
     13100,
-    6500,
+    7450,
     13800,
-    7100
+    8050
    ],
    "layer": "A-FURN-PROP",
-   "note": "NAS/printer shelf, ventilated"
+   "note": "NAS/printer shelf, ventilated, north of door swing"
   },
   {
    "id": "GB-BUNK",
    "rect": [
-    9850,
-    8300,
-    11350,
+    10800,
+    8900,
+    12900,
     10400
    ],
    "layer": "A-FURN-PROP",
-   "note": "lower 1500 + optional upper 900-1000 bunk"
+   "note": "2100x1500 landscape, head east wall; ladder west end; alt: re-hang door outward/sliding frees west wall for portrait 1500x2100"
   },
   {
    "id": "GB-DESK",
@@ -297,7 +424,7 @@
     8450
    ],
    "layer": "A-FURN-PROP",
-   "note": "narrow desk 800x450 (entry side)"
+   "note": "narrow desk 800x450 SE corner, clear of door swing"
   },
   {
    "id": "GB-GLASSDOOR-ZONE",
@@ -423,79 +550,79 @@
   {
    "id": "MBATH-SHOWER",
    "rect": [
-    13100,
-    5500,
-    15300,
-    6300
-   ],
-   "layer": "A-FIXT-PLUMB",
-   "note": "walk-in shower 2200x800+, zero-threshold target, fold seat+grab bars"
-  },
-  {
-   "id": "MBATH-WC",
-   "rect": [
-    15200,
-    4650,
-    16000,
-    5300
-   ],
-   "layer": "A-FIXT-PLUMB",
-   "note": "smart toilet SE"
-  },
-  {
-   "id": "MBATH-VANITY",
-   "rect": [
-    15400,
-    5500,
+    14700,
+    5400,
     16300,
     6300
    ],
    "layer": "A-FIXT-PLUMB",
-   "note": "single vanity+storage NE"
+   "note": "corner shower 1600x900 NE; zero-threshold target, fold seat+grab bars+handheld"
+  },
+  {
+   "id": "MBATH-WC",
+   "rect": [
+    15500,
+    4650,
+    16300,
+    5350
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "smart toilet SE, front clearance faces west"
+  },
+  {
+   "id": "MBATH-VANITY",
+   "rect": [
+    13100,
+    5500,
+    13700,
+    6300
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "single vanity NW, north of door swing"
   },
   {
    "id": "MBATH-RAD",
    "rect": [
-    13600,
+    13900,
     4650,
-    14200,
+    14500,
     4900
    ],
    "layer": "A-FIXT-PLUMB",
-   "note": "radiator keep"
+   "note": "radiator keep on south wall, clear of door swing"
   },
   {
    "id": "SMB2-SHOWER",
    "rect": [
     10300,
-    4650,
+    4900,
     11300,
-    5850
+    6300
    ],
    "layer": "A-FIXT-PLUMB",
-   "note": "~1000x1200 shower, wet side vs master bath wall"
+   "note": "1000x1400 on east wall (shared master-bath wet wall)"
   },
   {
    "id": "SMB2-WC",
    "rect": [
-    9550,
-    4650,
-    10300,
-    5250
+    9050,
+    5450,
+    9750,
+    6300
    ],
    "layer": "A-FIXT-PLUMB",
-   "note": ""
+   "note": "smart toilet NW, 700mm front clearance"
   },
   {
    "id": "SMB2-VANITY",
    "rect": [
-    9050,
-    4650,
-    9550,
-    5250
+    9950,
+    3900,
+    10700,
+    4450
    ],
    "layer": "A-FIXT-PLUMB",
-   "note": "single vanity"
+   "note": "750x550 vanity in annex east, clear of door swing"
   },
   {
    "id": "RAMP",

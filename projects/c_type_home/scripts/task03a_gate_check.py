@@ -50,11 +50,11 @@ sw = sb['rect'][2] - sb['rect'][0]; sh = sb['rect'][3] - sb['rect'][1]
 gate('G5 1800x2100 beds fit', {mw, mh} == {1800, 2100} and {sw, sh} == {1800, 2100},
      f"MB {mw}x{mh}; SMB {sw}x{sh}")
 
-# G6 secondary master bath 3-piece fits
+# G6 secondary master bath 3-piece fits in ~5m2 shell+annex
 z = CD['smb']['zone_mm']; area = CD['smb']['area_m2']
 fix = [f for f in F if f['id'].startswith('SMB2-')]
-gate('G6 secondary bath 3-piece fits', len(fix) == 3 and area >= 3.0,
-     f"zone {z[2]-z[0]}x{z[3]-z[1]} = {area}m2, fixtures={len(fix)}; drain via shared MBATH wet wall TO_VERIFY")
+gate('G6 secondary bath 3-piece fits ~5m2', len(fix) == 3 and 4.5 <= area <= 5.5,
+     f"shell {z[2]-z[0]}x{z[3]-z[1]} + annex -> {area}m2, fixtures={len(fix)}; drain via shared MBATH wet wall TO_VERIFY")
 
 # G7 guest bedroom balcony access stays clear
 zone = next(f['rect'] for f in F if f['id'] == 'GB-GLASSDOOR-ZONE')
@@ -106,6 +106,56 @@ prog = {'master': 'MB-BED', 'secondary_master': 'SMB-BED', 'guest': 'GB-BUNK', '
 baths = {'master': 'MBATH-SHOWER', 'secondary': 'SMB2-SHOWER', 'guest': 'GBATH-SHOWER'}
 gate('G14 4 rooms + 3 baths functional', all(v in ids for v in list(prog.values()) + list(baths.values())),
      'program satisfied')
+
+# ================================================================ RC2 gates
+SOLID = {'A-FURN-PROP', 'A-FURN-EXST-KEEP', 'A-FIXT-PLUMB'}
+solid = [f for f in F if f['layer'] in SOLID]
+
+# G15 no furniture/fixture overlap anywhere
+ov = []
+for i in range(len(solid)):
+    for j in range(i + 1, len(solid)):
+        if inter(solid[i]['rect'], solid[j]['rect']):
+            ov.append(f"{solid[i]['id']}x{solid[j]['id']}")
+gate('G15 no furniture overlap', not ov, f"overlaps={ov}")
+
+# G16 door-swing envelopes clear of PROPOSED furniture/fixtures
+# (KEEP items are existing and already resolved against existing doors on site)
+bad = []
+for s in CD['door_swings']:
+    for f in solid:
+        if f['layer'] != 'A-FURN-EXST-KEEP' and inter(f['rect'], s['rect']):
+            bad.append(f"{s['door']}x{f['id']}")
+gate('G16 door swings clear of new furniture/fixtures', not bad, f"collisions={bad}")
+
+# G17 secondary bath service clearances (door swing, WC front, vanity front, shower entry)
+bad = []
+for name, r in CD['smb']['clearances'].items():
+    for f in solid:
+        if inter(f['rect'], r):
+            bad.append(f"{name}x{f['id']}")
+gate('G17 SMB bath service clearances', not bad,
+     f"zones={list(CD['smb']['clearances'])}; intruders={bad}")
+
+# G18 guest room: entry swing + west aisle to balcony + bunk ladder zone
+aisle = [9900, 8000, 10800, 10400]
+bad = [f['id'] for f in solid if f['layer'] == 'A-FURN-PROP' and inter(f['rect'], aisle)]
+gate('G18 guest-room entry/aisle/balcony clear', not bad,
+     f"west aisle {aisle[2]-aisle[0]}mm wide to glass door; blockers={bad}")
+
+# G19 study real circulation: main aisle between daybed row and book wall
+st_aisle = [14000, 7300, 15500, 11300]
+bad = [f['id'] for f in solid if f['layer'] == 'A-FURN-PROP' and inter(f['rect'], st_aisle)]
+gate('G19 study circulation aisle clear', not bad,
+     f"aisle {st_aisle[2]-st_aisle[0]}x{st_aisle[3]-st_aisle[1]}; blockers={bad}")
+
+# G20 split-level net-area comparison emitted honestly
+acv = CD['level'].get('area_comparison', {})
+gate('G20 split-level net-area account present',
+     {'returned_platform_m2', 'ramp_footprint_m2', 'net_unobstructed_public_gain_m2',
+      'living_largest_clear_rect'} <= set(acv) and acv.get('net_unobstructed_public_gain_m2') is not None,
+     f"returned {acv.get('returned_platform_m2')} vs ramp {acv.get('ramp_footprint_m2')} "
+     f"-> net +{acv.get('net_unobstructed_public_gain_m2')}m2 (PROVISIONAL)")
 
 overall = all(r['result'] == 'PASS' for r in results)
 print(f"\n=== TASK03A GATES: {sum(r['result']=='PASS' for r in results)}/{len(results)} {'ALL PASS' if overall else 'HAS FAIL'} ===")

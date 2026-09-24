@@ -8,7 +8,7 @@
     {
       "gate": "G2 cloakroom shell kept; S on new partition; W constrained honestly",
       "result": "PASS",
-      "detail": "CLK-N/W/E existing=True | S: FEASIBLE \u2014 recommended (least intervention) | W: CONSTRAINED \u2014 feasible only with owner rule exception | conflicts=['W-INT-Y4500-b-CLKSEG']"
+      "detail": "CLK-N/W/E existing=True | S: FEASIBLE \u2014 recommended (least intervention, owner target ~5m2 met) | W: CONSTRAINED \u2014 feasible only with owner rule exception (sliding leaf) | conflicts=['W-INT-Y4500-b-CLKSEG']"
     },
     {
       "gate": "G3 kitchen cabinets untouched",
@@ -26,9 +26,9 @@
       "detail": "MB 1800x2100; SMB 1800x2100"
     },
     {
-      "gate": "G6 secondary bath 3-piece fits",
+      "gate": "G6 secondary bath 3-piece fits ~5m2",
       "result": "PASS",
-      "detail": "zone 2250x1650 = 3.71m2, fixtures=3; drain via shared MBATH wet wall TO_VERIFY"
+      "detail": "shell 2250x1650 + annex -> 5.0m2, fixtures=3; drain via shared MBATH wet wall TO_VERIFY"
     },
     {
       "gate": "G7 balcony glass-door route clear",
@@ -74,6 +74,36 @@
       "gate": "G14 4 rooms + 3 baths functional",
       "result": "PASS",
       "detail": "program satisfied"
+    },
+    {
+      "gate": "G15 no furniture overlap",
+      "result": "PASS",
+      "detail": "overlaps=[]"
+    },
+    {
+      "gate": "G16 door swings clear of new furniture/fixtures",
+      "result": "PASS",
+      "detail": "collisions=[]"
+    },
+    {
+      "gate": "G17 SMB bath service clearances",
+      "result": "PASS",
+      "detail": "zones=['door_swing', 'wc_front', 'vanity_front', 'shower_entry']; intruders=[]"
+    },
+    {
+      "gate": "G18 guest-room entry/aisle/balcony clear",
+      "result": "PASS",
+      "detail": "west aisle 900mm wide to glass door; blockers=[]"
+    },
+    {
+      "gate": "G19 study circulation aisle clear",
+      "result": "PASS",
+      "detail": "aisle 1500x4000; blockers=[]"
+    },
+    {
+      "gate": "G20 split-level net-area account present",
+      "result": "PASS",
+      "detail": "returned 4.09 vs ramp 3.3 -> net +0.79m2 (PROVISIONAL)"
     }
   ],
   "overall": "PASS"

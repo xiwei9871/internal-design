@@ -149,13 +149,13 @@ DEMOLISHED = {
     'W-INT-DRY-STUB':   'kitchen dry-side stub — opened',
     'W-INT-Y4500-b-CLKSEG': 'cloakroom-south segment of Y4500-b — OPEN to secondary master (owner RC1.5: this is how it merged); DWG draws only 600mm stub x10800-11400 -> residual, TO_VERIFY',
 }
-# RC1.5 owner correction: cloakroom N/W/E walls are RETAINED (green-marked in
-# owner annotation), corroborated by measured-DWG coverage. They were NOT
-# demolished — earlier claim withdrawn.
+# RC1.5/RC2 owner confirmation: cloakroom N/W/E walls are RETAINED —
+# owner marked them green on the supplied image AND the measured DWG draws
+# them (coverage 0.75-1.0). Two sources agree; they were NOT demolished.
 CLK_RETAINED = {
-    'W-INT-CLK-N': 'cloakroom N wall RETAINED (owner RC1.5) — incl. existing door opening to corridor (leaf status TO_VERIFY)',
-    'W-INT-CLK-E': 'cloakroom E wall RETAINED (owner RC1.5) — shared with master-bath wet zone',
-    'W-INT-CLK-W': 'cloakroom W wall RETAINED (owner RC1.5) — bounds suite foyer',
+    'W-INT-CLK-N': 'cloakroom N wall RETAINED (owner image markup + DWG drawn) — incl. existing door opening to corridor (leaf status TO_VERIFY)',
+    'W-INT-CLK-E': 'cloakroom E wall RETAINED (owner image markup + DWG drawn) — shared with master-bath wet zone',
+    'W-INT-CLK-W': 'cloakroom W wall RETAINED (owner image markup + DWG drawn) — bounds suite foyer',
 }
 PARTIAL = {
     'W-INT-X7900-U': 'lower part removed/open per measured; upper part = GUEST_BATH west wall kept',

@@ -542,7 +542,7 @@
    "dwg_stale_geometry": false,
    "confidence": "HIGH",
    "evidence": "hollow band + door arc",
-   "note": "cloakroom N wall RETAINED (owner RC1.5) — incl. existing door opening to corridor (leaf status TO_VERIFY)"
+   "note": "cloakroom N wall RETAINED (owner image markup + DWG drawn) — incl. existing door opening to corridor (leaf status TO_VERIFY)"
   },
   {
    "id": "W-INT-CLK-E",
@@ -563,7 +563,7 @@
    "dwg_stale_geometry": false,
    "confidence": "MED",
    "evidence": "hollow band upper, dark junction lower",
-   "note": "cloakroom E wall RETAINED (owner RC1.5) — shared with master-bath wet zone"
+   "note": "cloakroom E wall RETAINED (owner image markup + DWG drawn) — shared with master-bath wet zone"
   },
   {
    "id": "W-INT-CLK-W",
@@ -584,7 +584,7 @@
    "dwg_stale_geometry": false,
    "confidence": "HIGH",
    "evidence": "hollow band",
-   "note": "cloakroom W wall RETAINED (owner RC1.5) — bounds suite foyer"
+   "note": "cloakroom W wall RETAINED (owner image markup + DWG drawn) — bounds suite foyer"
   },
   {
    "id": "W-INT-COR-N-STUB",

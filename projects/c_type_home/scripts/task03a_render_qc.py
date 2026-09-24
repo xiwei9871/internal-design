@@ -76,14 +76,16 @@ ax.legend(handles=[Line2D([], [], color=WCOL['noopen'], lw=6, label='NO-OPEN (ow
                    Line2D([], [], color='#9334e6', lw=2, ls='--', label='glazing/door')], fontsize=7, loc='lower left')
 save(fig, 'task03a_s1_current_existing.png')
 
+def draw_new(ax):
+    for r in CD['new_walls']:
+        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor=WCOL['new'], zorder=4))
+    for r in CD['new_doors']:
+        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='#9334e6', zorder=4))
+
 # S2 demolition / keep / new
 fig, ax = base('Task03A · Demolition / Keep / New')
-draw_walls(ax, 'all'); draw_openings(ax)
-# new walls (bath south partition — cloakroom shell kept)
-ax.add_patch(Rectangle((9050, 4550), 450, 100, facecolor=WCOL['new'], zorder=4))
-ax.add_patch(Rectangle((10300, 4550), 1000, 100, facecolor=WCOL['new'], zorder=4))
-ax.add_patch(Rectangle((9500, 4550), 800, 100, facecolor='#9334e6', zorder=4))
-ax.text(9200, 5400, 'NEW south partition\n(bath door) — shell kept', fontsize=6, color=WCOL['new'])
+draw_walls(ax, 'all'); draw_openings(ax); draw_new(ax)
+ax.text(9200, 5400, 'NEW bath enclosure:\nsouth partition + annex walls\n(shell N/W/E kept)', fontsize=6, color=WCOL['new'])
 ax.legend(handles=[Line2D([], [], color=WCOL['noopen'], lw=6, label='NO-OPEN (owner rule/exterior)'),
                    Line2D([], [], color=WCOL['keep'], lw=6, label='keep / modifiable'),
                    Line2D([], [], color=WCOL['remove'], lw=6, label='demolished/absent'),
@@ -93,7 +95,13 @@ save(fig, 'task03a_s2_demolition.png')
 
 # S3 furniture plan
 fig, ax = base('Task03A · Proposed Furniture Plan')
-draw_walls(ax, 'current'); draw_furn(ax); draw_openings(ax)
+draw_walls(ax, 'current'); draw_furn(ax); draw_openings(ax); draw_new(ax)
+# door-swing envelopes (dashed) so swing/fixture conflicts are visible
+for s in CD['door_swings']:
+    r = s['rect']
+    ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
+                           edgecolor='#e8710a', lw=1.2, ls=':', zorder=4))
+    ax.text(r[0], r[3]+80, 'swing '+s['door'], fontsize=5, color='#e8710a')
 save(fig, 'task03a_s3_furniture.png')
 
 # S4 split-level study
@@ -110,6 +118,10 @@ ax.add_patch(Rectangle((rp[0], rp[1]), rp[2]-rp[0], rp[3]-rp[1], facecolor='#d2e
 ax.annotate('', xy=(rp[2]-100, (rp[1]+rp[3])/2), xytext=(rp[0]+100, (rp[1]+rp[3])/2), arrowprops=dict(arrowstyle='->', color='#1a73e8'))
 ax.text(6000, 8100, 'STAIR: 2 risers, delta LEVEL_TO_VERIFY\n(owner <=350 vs CAD ~400)', fontsize=7)
 ax.text(3500, 5100, 'RAMP: 3000 run x1100, climb +x onto open passage\nslope 1:7.5-1:8.6 PROVISIONAL — ASSISTED WHEELCHAIR\nFUTURE PROVISION (not code claim)', fontsize=7, color='#1a73e8')
+ac = CD['level']['area_comparison']
+ax.text(3500, 4400, f"AREA ACCOUNT: returned platform {ac['returned_platform_m2']}m2\n"
+                    f"vs ramp footprint {ac['ramp_footprint_m2']}m2 -> net +{ac['net_unobstructed_public_gain_m2']}m2\n"
+                    f"value = regular living rectangle + step-free route (PROVISIONAL)", fontsize=7, color='#b06000')
 ax.text(7950, 6500, 'kept UPPER landing\n+ suite foyer', fontsize=7, color='#b06000')
 ax.text(5950, 7200, 'platform arm\nreturned to L1\n→ bigger living/dining', fontsize=7, color='#188038')
 ax.set_xlim(2500, 13500); ax.set_ylim(4000, 11000)
@@ -123,39 +135,51 @@ for f in CD['furniture']:
         x1, y1, x2, y2 = f['rect']
         ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor='#34a853', alpha=.3, edgecolor='#34a853', zorder=3))
         ax.text((x1+x2)/2, (y1+y2)/2, f['id']+'\n'+f['note'][:38], fontsize=5, ha='center', va='center')
-ax.add_patch(Rectangle((9050, 4550), 450, 100, facecolor=WCOL['new'], zorder=4))
-ax.add_patch(Rectangle((10300, 4550), 1000, 100, facecolor=WCOL['new'], zorder=4))
-ax.add_patch(Rectangle((9500, 4550), 800, 100, facecolor='#9334e6', zorder=4))
-ax.set_xlim(7000, 16800); ax.set_ylim(4000, 11500)
+draw_new(ax)
+for s in CD['door_swings']:
+    if s['door'] in ('D-SMB2-S', 'D-MB'):
+        r = s['rect']
+        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
+                               edgecolor='#e8710a', lw=1.2, ls=':', zorder=4))
+ax.set_xlim(7000, 16800); ax.set_ylim(3400, 11500)
 save(fig, 'task03a_s5_bathrooms.png')
 
 # S6 W vs S comparison
 fig, axs = plt.subplots(1, 2, figsize=(15, 9), dpi=130)
+smb2 = [f for f in CD['furniture'] if f['id'].startswith('SMB2-')]
 for ax, opt in zip(axs, 'WS'):
-    ax.set_xlim(7000, 12500); ax.set_ylim(3500, 7500); ax.set_aspect('equal')
+    ax.set_xlim(7000, 12500); ax.set_ylim(3200, 7500); ax.set_aspect('equal')
     ax.set_title(f'Option {opt}', fontsize=12); ax.grid(alpha=.15)
     for w in M['walls']:
         x1, y1, x2, y2 = w['rect_mm']
-        if x2 > 7000 and x1 < 12500 and y2 > 3500 and y1 < 7500:
+        if x2 > 7000 and x1 < 12500 and y2 > 3200 and y1 < 7500:
             ax.add_patch(Rectangle((x1, y1), x2-x1, y2-y1, facecolor=wcolor(w), zorder=2))
+    for r in CD['new_walls']:
+        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor=WCOL['new'], zorder=4))
+    for f in smb2:
+        x1, y1, x2, y2 = f['rect']
+        ax.add_patch(Rectangle((x1, y1), x2-x1, y2-y1, facecolor='#34a853', alpha=.35, edgecolor='#34a853', zorder=3))
+        ax.text((x1+x2)/2, (y1+y2)/2, f['id'].replace('SMB2-',''), fontsize=6, ha='center', va='center')
     if opt == 'W':
-        # cloakroom shell kept; W needs a cut in retained CLK-W (white-class)
-        ax.add_patch(Rectangle((8950, 4650), 100, 1800, facecolor=WCOL['noopen'], zorder=3))
-        ax.add_patch(Rectangle((8950, 5200), 100, 750, facecolor=WCOL['conflict'], alpha=.8, zorder=5, hatch='xx'))
-        ax.annotate('proposed cut in RETAINED\nCLK-W (white-class wall)', xy=(8950, 5575), xytext=(7300, 5900),
+        # W needs a cut in retained CLK-W (white-class); sliding leaf
+        ax.add_patch(Rectangle((8950, 4700), 100, 700, facecolor=WCOL['conflict'], alpha=.8, zorder=5, hatch='xx'))
+        ax.annotate('SLIDING door cut in RETAINED\nCLK-W (white-class wall)', xy=(8950, 5050), xytext=(7300, 5400),
                     fontsize=8, arrowprops=dict(arrowstyle='->'))
         ax.add_patch(Rectangle((7800, 4650), 1100, 1650, facecolor='#fce8b2', edgecolor='#f9ab00', zorder=1))
         ax.text(7850, 4750, 'foyer', fontsize=7)
-        ax.text(7200, 7000, 'CONSTRAINED — needs owner exception\nto open white-class CLK-W;\ndoor not facing bed', fontsize=8, color='#e8710a')
+        ax.text(7200, 7000, 'CONSTRAINED — needs owner exception\nto open white-class CLK-W;\nsliding leaf; door not facing bed', fontsize=8, color='#e8710a')
     else:
-        ax.add_patch(Rectangle((9050, 4550), 450, 100, facecolor=WCOL['new'], zorder=4))
-        ax.add_patch(Rectangle((10300, 4550), 1000, 100, facecolor=WCOL['new'], zorder=4))
-        ax.add_patch(Rectangle((9500, 4550), 800, 100, facecolor='#9334e6', zorder=4))
-        ax.add_patch(Rectangle((10800, 4450), 600, 250, facecolor=WCOL['conflict'], alpha=.7, zorder=5))
-        ax.annotate('door in NEW south partition\n(direct from bedroom)', xy=(9900, 4600), xytext=(7300, 5200),
+        for r in CD['new_doors']:
+            ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='#9334e6', zorder=5))
+        r = CD['smb']['clearances']['door_swing']
+        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
+                               edgecolor='#e8710a', lw=1.2, ls=':', zorder=5))
+        ax.text(r[0]-150, r[3]+60, 'swing zone\n(fixture-free)', fontsize=6, color='#e8710a')
+        ax.add_patch(Rectangle((10800, 4450), 600, 100, facecolor=WCOL['conflict'], alpha=.7, zorder=5))
+        ax.annotate('door in NEW south partition\n(hinge E, swings into annex)', xy=(9400, 3850), xytext=(7300, 4400),
                     fontsize=8, arrowprops=dict(arrowstyle='->'))
-        ax.text(11000, 4900, 'residual stub\nTO_VERIFY', fontsize=6, color=WCOL['conflict'])
-        ax.text(7200, 7000, 'FEASIBLE — RECOMMENDED\nzero demolition; door axis faces bed zone\n(mitigate: door at west end / frosted glass)', fontsize=8, color='#188038')
+        ax.text(10900, 4200, 'stub\nTO_VERIFY', fontsize=6, color=WCOL['conflict'])
+        ax.text(7200, 7000, 'FEASIBLE — RECOMMENDED\n~5.0m2 shell+annex; zero demolition;\ndoor west end, swing clear of fixtures', fontsize=8, color='#188038')
 fig.savefig(QC / 'task03a_s6_smb_ws.png', bbox_inches='tight', facecolor='white')
 fig.savefig(QC / 'task03a_s6_smb_ws.pdf', bbox_inches='tight', facecolor='white')
 print('task03a_s6_smb_ws.png')
