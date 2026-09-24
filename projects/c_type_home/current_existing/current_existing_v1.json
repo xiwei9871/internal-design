@@ -1,0 +1,1224 @@
+{
+ "meta": {
+  "task": "TASK03A current-existing baseline",
+  "coord_system": "task01-compatible mm",
+  "measured_origin": [
+   1299472.0,
+   -297794.0
+  ],
+  "offset_task01_to_measured": [
+   -1300.0,
+   1336.0
+  ],
+  "authority": "measured DWG > owner statements > task01 reconstruction"
+ },
+ "walls": [
+  {
+   "id": "W-EXT-W",
+   "rect_mm": [
+    2700,
+    2300,
+    2900,
+    13600
+   ],
+   "type": "exterior",
+   "measured_coverage": 0.91,
+   "struct_overlap_mm2": 1059760,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-EXT-S",
+   "rect_mm": [
+    6050,
+    -200,
+    15400,
+    0
+   ],
+   "type": "exterior",
+   "measured_coverage": 0.52,
+   "struct_overlap_mm2": 0,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-EXT-S-W1",
+   "rect_mm": [
+    4600,
+    -200,
+    5000,
+    0
+   ],
+   "type": "exterior",
+   "measured_coverage": 0.0,
+   "struct_overlap_mm2": 0,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-EXT-S-W2",
+   "rect_mm": [
+    5380,
+    -200,
+    6050,
+    0
+   ],
+   "type": "exterior",
+   "measured_coverage": 0.25,
+   "struct_overlap_mm2": 0,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-EXT-E1",
+   "rect_mm": [
+    15400,
+    0,
+    15600,
+    4500
+   ],
+   "type": "exterior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 259720,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-EXT-E2",
+   "rect_mm": [
+    16300,
+    4400,
+    16500,
+    10900
+   ],
+   "type": "exterior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 179800,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-EXT-NE",
+   "rect_mm": [
+    13600,
+    11350,
+    15800,
+    11550
+   ],
+   "type": "exterior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 0,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-EXT-NE2",
+   "rect_mm": [
+    15600,
+    10700,
+    16500,
+    10900
+   ],
+   "type": "exterior",
+   "measured_coverage": 0.83,
+   "struct_overlap_mm2": 159980,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-EXT-N-LV",
+   "rect_mm": [
+    2700,
+    12750,
+    7900,
+    12950
+   ],
+   "type": "exterior",
+   "measured_coverage": 0.97,
+   "struct_overlap_mm2": 219980,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-BAY-F",
+   "rect_mm": [
+    3800,
+    13400,
+    6900,
+    13600
+   ],
+   "type": "exterior",
+   "measured_coverage": 0.1,
+   "struct_overlap_mm2": 0,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-BAY-JW",
+   "rect_mm": [
+    3700,
+    12950,
+    3800,
+    13400
+   ],
+   "type": "exterior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 24995,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-BAY-JE",
+   "rect_mm": [
+    6900,
+    12950,
+    7000,
+    13400
+   ],
+   "type": "exterior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 39980,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-EXT-N-BAL",
+   "rect_mm": [
+    7900,
+    13400,
+    13000,
+    13600
+   ],
+   "type": "railing_parapet",
+   "measured_coverage": 0.0,
+   "struct_overlap_mm2": 60,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "INTERIOR_TO_VERIFY",
+   "note": ""
+  },
+  {
+   "id": "W-BALC-W",
+   "rect_mm": [
+    1300,
+    450,
+    1500,
+    2400
+   ],
+   "type": "railing_parapet",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 19960,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "INTERIOR_TO_VERIFY",
+   "note": ""
+  },
+  {
+   "id": "W-BALC-S",
+   "rect_mm": [
+    1300,
+    450,
+    5800,
+    650
+   ],
+   "type": "railing_parapet",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 60020,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-BALC-N",
+   "rect_mm": [
+    1300,
+    2400,
+    5800,
+    2560
+   ],
+   "type": "interior",
+   "measured_coverage": 0.37,
+   "struct_overlap_mm2": 255984,
+   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": "life-balcony/dining separation — opened (owner orange line)"
+  },
+  {
+   "id": "W-INT-X5800",
+   "rect_mm": [
+    5700,
+    -150,
+    5900,
+    4700
+   ],
+   "type": "interior",
+   "measured_coverage": 0.12,
+   "struct_overlap_mm2": 299890,
+   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": "kitchen west wall to dining — owner: opened up; measured cov low"
+  },
+  {
+   "id": "W-INT-X5800-STUB",
+   "rect_mm": [
+    5650,
+    4700,
+    5750,
+    5950
+   ],
+   "type": "interior",
+   "measured_coverage": 0.12,
+   "struct_overlap_mm2": 10,
+   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "MODIFIABLE_PARTITION",
+   "note": "kitchen/dining stub — opened"
+  },
+  {
+   "id": "W-INT-X7900-L",
+   "rect_mm": [
+    7800,
+    -150,
+    8000,
+    4670
+   ],
+   "type": "interior",
+   "measured_coverage": 0.94,
+   "struct_overlap_mm2": 293960,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-INT-X7900-U",
+   "rect_mm": [
+    7800,
+    4670,
+    7900,
+    13550
+   ],
+   "type": "interior",
+   "measured_coverage": 0.58,
+   "struct_overlap_mm2": 123020,
+   "disposition": "PARTIAL_REMOVED_TO_VERIFY",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": "lower part removed/open per measured; upper part = GUEST_BATH west wall kept"
+  },
+  {
+   "id": "W-INT-X9800",
+   "rect_mm": [
+    9700,
+    7700,
+    9900,
+    10900
+   ],
+   "type": "interior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 0,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "INTERIOR_TO_VERIFY",
+   "note": ""
+  },
+  {
+   "id": "W-INT-X11500",
+   "rect_mm": [
+    11400,
+    -200,
+    11600,
+    6500
+   ],
+   "type": "interior",
+   "measured_coverage": 0.95,
+   "struct_overlap_mm2": 559860,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-INT-X13000",
+   "rect_mm": [
+    12900,
+    4630,
+    13100,
+    13600
+   ],
+   "type": "interior",
+   "measured_coverage": 0.85,
+   "struct_overlap_mm2": 319920,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-INT-Y4500-a",
+   "rect_mm": [
+    5700,
+    4450,
+    8236,
+    4700
+   ],
+   "type": "interior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 624975,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-INT-CLK-N",
+   "rect_mm": [
+    9050,
+    6300,
+    11400,
+    6500
+   ],
+   "type": "interior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 0,
+   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "MODIFIABLE_PARTITION",
+   "note": "cloakroom N wall — owner: demolished, merged into secondary master"
+  },
+  {
+   "id": "W-INT-CLK-E",
+   "rect_mm": [
+    11300,
+    4500,
+    11400,
+    6300
+   ],
+   "type": "interior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 80020,
+   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": "cloakroom E wall — demolished"
+  },
+  {
+   "id": "W-INT-CLK-W",
+   "rect_mm": [
+    8950,
+    4500,
+    9050,
+    6300
+   ],
+   "type": "interior",
+   "measured_coverage": 0.75,
+   "struct_overlap_mm2": 0,
+   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "MODIFIABLE_PARTITION",
+   "note": "cloakroom W wall — demolished"
+  },
+  {
+   "id": "W-INT-COR-N-STUB",
+   "rect_mm": [
+    11400,
+    6300,
+    12100,
+    6500
+   ],
+   "type": "interior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 0,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "INTERIOR_TO_VERIFY",
+   "note": ""
+  },
+  {
+   "id": "W-INT-BEDN-S",
+   "rect_mm": [
+    13100,
+    6300,
+    16300,
+    6500
+   ],
+   "type": "interior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 0,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "INTERIOR_TO_VERIFY",
+   "note": ""
+  },
+  {
+   "id": "W-INT-WC-S",
+   "rect_mm": [
+    7900,
+    7800,
+    9800,
+    8000
+   ],
+   "type": "interior",
+   "measured_coverage": 0.75,
+   "struct_overlap_mm2": 139840,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-INT-STD-S",
+   "rect_mm": [
+    9800,
+    7800,
+    13000,
+    8000
+   ],
+   "type": "interior",
+   "measured_coverage": 0.81,
+   "struct_overlap_mm2": 139880,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-INT-Y10800",
+   "rect_mm": [
+    7900,
+    10700,
+    13000,
+    10900
+   ],
+   "type": "interior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 120020,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-INT-Y10800-EXT",
+   "rect_mm": [
+    13000,
+    10700,
+    13700,
+    10900
+   ],
+   "type": "interior",
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 139980,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-SHAFT-K",
+   "rect_mm": [
+    7150,
+    750,
+    7250,
+    3650
+   ],
+   "type": "shaft",
+   "measured_coverage": 0.0,
+   "struct_overlap_mm2": 0,
+   "disposition": "PARTIAL_REMOVED_TO_VERIFY",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "MODIFIABLE_PARTITION",
+   "note": "kitchen shaft line absent in measured; keep as TO_VERIFY marker"
+  },
+  {
+   "id": "W-INT-DRY-STUB",
+   "rect_mm": [
+    7150,
+    3870,
+    7250,
+    4670
+   ],
+   "type": "interior",
+   "measured_coverage": 0.0,
+   "struct_overlap_mm2": 76980,
+   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": "kitchen dry-side stub — opened"
+  },
+  {
+   "id": "W-INT-NICHE",
+   "rect_mm": [
+    7150,
+    4700,
+    7400,
+    7800
+   ],
+   "type": "interior",
+   "measured_coverage": 0.0,
+   "struct_overlap_mm2": 50,
+   "disposition": "PARTIAL_REMOVED_TO_VERIFY",
+   "layer": "A-WALL-EXST-REMOVE",
+   "wall_class": "MODIFIABLE_PARTITION",
+   "note": "niche wall absent in measured — treated as removed/open; resolves old D-10 as open passage"
+  },
+  {
+   "id": "W-INT-Y4500-bc",
+   "rect_mm": [
+    11400,
+    4450,
+    16500,
+    4650
+   ],
+   "type": "interior",
+   "measured_coverage": 0.76,
+   "struct_overlap_mm2": 229940,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  },
+  {
+   "id": "W-INT-Y4500-b",
+   "rect_mm": [
+    8236,
+    4450,
+    11400,
+    4650
+   ],
+   "type": "interior",
+   "measured_coverage": 0.29,
+   "struct_overlap_mm2": 120020,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "note": ""
+  }
+ ],
+ "structural_fills_measured": [
+  [
+   2699.9,
+   10300.2,
+   3799.9,
+   13200.2
+  ],
+  [
+   6899.9,
+   13000.2,
+   8199.9,
+   13400.2
+  ],
+  [
+   1299.9,
+   2300.2,
+   2899.9,
+   4700.2
+  ],
+  [
+   5499.9,
+   0.20000000000004547,
+   5899.9,
+   700.2
+  ],
+  [
+   7099.9,
+   0.20000000000004547,
+   8599.9,
+   700.2
+  ],
+  [
+   5699.9,
+   3900.2,
+   8199.9,
+   4700.2
+  ],
+  [
+   10799.9,
+   0.20000000000004547,
+   12199.9,
+   1400.1999999999998
+  ],
+  [
+   14699.9,
+   0.20000000000004547,
+   15499.9,
+   1400.1999999999998
+  ],
+  [
+   10799.9,
+   3900.2,
+   11599.9,
+   5300.2
+  ],
+  [
+   14699.9,
+   3300.2,
+   15499.9,
+   4700.2
+  ],
+  [
+   16199.9,
+   4500.2,
+   16399.9,
+   5300.2
+  ],
+  [
+   7799.9,
+   7800.200000000001,
+   8599.9,
+   8600.2
+  ],
+  [
+   12299.9,
+   7800.200000000001,
+   13099.9,
+   8600.2
+  ],
+  [
+   12399.9,
+   10300.2,
+   13699.9,
+   11100.2
+  ],
+  [
+   15599.9,
+   9900.2,
+   16399.9,
+   11100.2
+  ]
+ ],
+ "openings": [
+  {
+   "id": "ENT-1",
+   "kind": "entry_double_leaf",
+   "meas_zone": [
+    [
+     1400,
+     6400
+    ],
+    [
+     1600,
+     8100
+    ]
+   ],
+   "status": "EXISTING",
+   "note": "main entry on west wall, two door-block inserts; width TO_VERIFY",
+   "rect_mm": [
+    2700,
+    5064,
+    2900,
+    6764
+   ]
+  },
+  {
+   "id": "D-LIV-STUDY?",
+   "kind": "door",
+   "meas_zone": [
+    [
+     6600,
+     5900
+    ],
+    [
+     7000,
+     7000
+    ]
+   ],
+   "status": "EXISTING_TO_VERIFY",
+   "note": "arc r1000 at meas(5400,6936) on S-楼梯 layer — guest-bath/vestibule door, position TO_VERIFY",
+   "rect_mm": [
+    7900,
+    4564,
+    8300,
+    5664
+   ]
+  },
+  {
+   "id": "D-SM",
+   "kind": "door",
+   "meas_zone": [
+    [
+     6700,
+     5700
+    ],
+    [
+     7400,
+     6100
+    ]
+   ],
+   "status": "EXISTING",
+   "note": "secondary master door opening to upper landing (insert rot206)",
+   "rect_mm": [
+    8000,
+    4364,
+    8700,
+    4764
+   ]
+  },
+  {
+   "id": "D-MB",
+   "kind": "door",
+   "meas_zone": [
+    [
+     11600,
+     5900
+    ],
+    [
+     12000,
+     6400
+    ]
+   ],
+   "status": "EXISTING",
+   "note": "master bedroom door on X13000 wall",
+   "rect_mm": [
+    12900,
+    4564,
+    13300,
+    5064
+   ]
+  },
+  {
+   "id": "D-BATHM",
+   "kind": "door",
+   "meas_zone": [
+    [
+     11200,
+     7500
+    ],
+    [
+     11800,
+     7900
+    ]
+   ],
+   "status": "EXISTING",
+   "note": "master bath door opening to corridor",
+   "rect_mm": [
+    12500,
+    6164,
+    13100,
+    6564
+   ]
+  },
+  {
+   "id": "D-STUDY",
+   "kind": "door",
+   "meas_zone": [
+    [
+     11500,
+     7900
+    ],
+    [
+     12100,
+     8300
+    ]
+   ],
+   "status": "EXISTING",
+   "note": "study (NE bedroom) door on X13000 wall",
+   "rect_mm": [
+    12800,
+    6564,
+    13400,
+    6964
+   ]
+  },
+  {
+   "id": "D-GBATH",
+   "kind": "door",
+   "meas_zone": [
+    [
+     9200,
+     9136
+    ],
+    [
+     10000,
+     9536
+    ]
+   ],
+   "status": "EXISTING",
+   "note": "guest bath south door (insert @meas x8300/y9336, on WC-S wall segment)",
+   "rect_mm": [
+    10500,
+    7800,
+    11300,
+    8200
+   ]
+  },
+  {
+   "id": "D-GBED",
+   "kind": "door",
+   "meas_zone": [
+    [
+     9600,
+     9136
+    ],
+    [
+     10400,
+     9536
+    ]
+   ],
+   "status": "EXISTING",
+   "note": "guest bedroom south door (insert @meas x8700/y9336, on STD-S wall)",
+   "rect_mm": [
+    10900,
+    7800,
+    11700,
+    8200
+   ]
+  },
+  {
+   "id": "D-MASTER?",
+   "kind": "door",
+   "meas_zone": [
+    [
+     10100,
+     4400
+    ],
+    [
+     10900,
+     4700
+    ]
+   ],
+   "status": "TO_VERIFY",
+   "note": "master bedroom entry on north wall Y4500-bc per dev plan; not a block insert in measured DWG — position to verify",
+   "rect_mm": [
+    11400,
+    3064,
+    12200,
+    3364
+   ]
+  },
+  {
+   "id": "G-GB-BALC",
+   "kind": "glazing_door_double",
+   "meas_zone": [
+    [
+     9200,
+     12036
+    ],
+    [
+     11700,
+     12436
+    ]
+   ],
+   "status": "EXISTING_KEEP",
+   "note": "double glass door guest bedroom -> north balcony (was black wall, removed by owner)",
+   "rect_mm": [
+    10500,
+    10700,
+    13000,
+    11100
+   ]
+  },
+  {
+   "id": "G-DIN-LIV",
+   "kind": "sliding_glass_3track",
+   "meas_zone": [
+    [
+     1650,
+     5866
+    ],
+    [
+     4350,
+     6051
+    ]
+   ],
+   "status": "EXISTING_KEEP",
+   "note": "owner blue-line new sliding glass door kitchen-dining domain <-> living, ~2700mm 3-track",
+   "rect_mm": [
+    2950,
+    4530,
+    5650,
+    4715
+   ]
+  },
+  {
+   "id": "D-BALC-W",
+   "kind": "door",
+   "meas_zone": [
+    [
+     6500,
+     13900
+    ],
+    [
+     7100,
+     14500
+    ]
+   ],
+   "status": "EXISTING",
+   "note": "west door into north balcony (insert rot270 at 6700,14236)",
+   "rect_mm": [
+    7800,
+    12564,
+    8400,
+    13164
+   ]
+  },
+  {
+   "id": "OPEN-COR-LIV",
+   "kind": "open_passage",
+   "meas_zone": [
+    [
+     5850,
+     6100
+    ],
+    [
+     6100,
+     7800
+    ]
+   ],
+   "status": "EXISTING_OPEN",
+   "note": "former niche/D-10 zone absent in measured = open side of corridor onto living platform",
+   "rect_mm": [
+    7150,
+    4764,
+    7400,
+    6464
+   ]
+  }
+ ],
+ "split_level": {
+  "zone_meas": [
+   5900,
+   7936,
+   6500,
+   9136
+  ],
+  "risers": 2,
+  "tread_mm": 300,
+  "run_direction": "+x (west=lower living/dining, east=upper bedroom wing)",
+  "level_difference_mm": 400,
+  "level_status": "ELEVATION_TO_VERIFY",
+  "note": "owner estimate ~400mm (earlier said <=350); two 300mm treads drawn in S-楼梯",
+  "zone_mm": [
+   7200.0,
+   6600.0,
+   7800.0,
+   7800.0
+  ]
+ },
+ "keep_items": [
+  {
+   "id": "K-CABINETS",
+   "kind": "kitchen_cabinet_system",
+   "src": "cabinet_plan.pdf",
+   "meas_zone": [
+    [
+     4200,
+     1336
+    ],
+    [
+     6900,
+     6036
+    ]
+   ],
+   "note": "L/U kitchen cabinetry KEEP; fridge slot 905x710; dishwasher 600; sink 990",
+   "rect_mm": [
+    5500.0,
+    0.0,
+    8200.0,
+    4700.0
+   ]
+  },
+  {
+   "id": "BALC-CAB-RED",
+   "kind": "cabinet",
+   "meas_zone": [
+    [
+     100,
+     1400
+    ],
+    [
+     700,
+     3900
+    ]
+   ],
+   "note": "life balcony red cabinet KEEP",
+   "rect_mm": [
+    1400.0,
+    64.0,
+    2000.0,
+    2564.0
+   ]
+  },
+  {
+   "id": "WD-10KG",
+   "kind": "washer_dryer",
+   "meas_zone": [
+    [
+     6600,
+     14400
+    ],
+    [
+     7300,
+     15100
+    ]
+   ],
+   "note": "10kg washer+10kg dryer stacked, north balcony west end",
+   "rect_mm": [
+    7900.0,
+    13064.0,
+    8600.0,
+    13764.0
+   ]
+  },
+  {
+   "id": "WB-MASTER",
+   "kind": "wardrobe",
+   "meas_zone": [
+    [
+     10300,
+     5300
+    ],
+    [
+     14200,
+     5900
+    ]
+   ],
+   "note": "master bedroom custom wardrobe on north wall KEEP",
+   "rect_mm": [
+    11600.0,
+    3964.0,
+    15500.0,
+    4564.0
+   ]
+  },
+  {
+   "id": "WB-STUDY",
+   "kind": "wardrobe",
+   "meas_zone": [
+    [
+     11800,
+     9336
+    ],
+    [
+     14900,
+     9736
+    ]
+   ],
+   "note": "NE-bedroom (study) wardrobe on south wall KEEP, may convert to file/equipment",
+   "rect_mm": [
+    13100.0,
+    8000.0,
+    16200.0,
+    8400.0
+   ]
+  },
+  {
+   "id": "WB-CLK",
+   "kind": "wardrobe",
+   "meas_zone": [
+    [
+     7650,
+     5836
+    ],
+    [
+     8250,
+     7636
+    ]
+   ],
+   "note": "former cloakroom wardrobe on west side — conflicts with 5sqm bath carve-out, TO_VERIFY",
+   "rect_mm": [
+    8950.0,
+    4500.0,
+    9550.0,
+    6300.0
+   ]
+  },
+  {
+   "id": "SHOE-CAB",
+   "kind": "cabinet_low",
+   "meas_zone": [
+    [
+     200,
+     6600
+    ],
+    [
+     900,
+     7900
+    ]
+   ],
+   "note": "entry low shoe cabinet KEEP",
+   "rect_mm": [
+    1500.0,
+    5264.0,
+    2200.0,
+    6564.0
+   ]
+  },
+  {
+   "id": "GB-DRY/WET",
+   "kind": "bath_zones",
+   "meas_zone": [
+    [
+     6600,
+     9336
+    ],
+    [
+     8500,
+     12236
+    ]
+   ],
+   "note": "guest bath: front(green,S)=dry vanity+toilet; rear(red,N)=wet shower+3kg washer",
+   "rect_mm": [
+    7900.0,
+    8000.0,
+    9800.0,
+    10900.0
+   ]
+  }
+ ],
+ "measured_dims": {
+  "north_chain": [
+   5100,
+   1900,
+   3200,
+   3300
+  ],
+  "south_chain": [
+   1400,
+   3000,
+   2100,
+   3600,
+   3900,
+   900
+  ],
+  "west_chain": [
+   500,
+   1800,
+   2200,
+   8500
+  ],
+  "east_chain": [
+   4500,
+   1900,
+   4500,
+   2800
+  ]
+ }
+}

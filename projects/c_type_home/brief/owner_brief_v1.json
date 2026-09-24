@@ -1,0 +1,83 @@
+{
+  "meta": {"version": "owner_brief_v1", "task": "TASK03A", "date": "2026-09-24",
+           "statuses": ["CONFIRMED", "PREFERRED", "TO_VERIFY"]},
+  "household": {
+    "permanent": [
+      {"who": "mother_68", "room": "MASTER_BEDROOM", "status": "CONFIRMED"},
+      {"who": "owner_38+wife", "room": "SECONDARY_MASTER_BEDROOM", "status": "CONFIRMED"}
+    ],
+    "occasional": ["daughter", "future_child2", "aunt1", "aunt2"],
+    "program": "2 suites + 1 guest bedroom + 1 study + 3 baths; study keeps backup-sleep capability",
+    "status": "CONFIRMED"
+  },
+  "rooms": {
+    "MASTER_BEDROOM": {"display": "主卧", "bed": [1800, 2100], "wardrobe": "KEEP existing custom",
+      "priority": "AGING_IN_PLACE", "route": "entrance -> bedside -> MASTER_BATH unobstructed",
+      "bedside_clearance_target_mm": 900, "status": "CONFIRMED"},
+    "SECONDARY_MASTER_BEDROOM": {"display": "次主卧", "bed": [1800, 2100],
+      "note": "former cloakroom merged; carve ~5sqm SECONDARY_MASTER_BATH inside",
+      "status": "CONFIRMED"},
+    "STUDY": {"display": "书房", "location": "east former bedroom (NE)",
+      "desk_mm": [1600, 1800, 700, 800], "dual_monitors": true, "bookcase": true,
+      "printer": true, "nas_equipment": true, "backup_sleep": "DAYBED/SOFA_BED no permanent bed",
+      "daylight": "monitors side-lit not facing window", "status": "CONFIRMED"},
+    "GUEST_BEDROOM": {"display": "客卧", "location": "former study next to GUEST_BATH",
+      "bed": "lower 1500 wide + optional upper bunk 900-1000 (children/young only)",
+      "desk_mm": [900, 1200, 400, 450],
+      "hard_rule": "large double glass door to north balcony must stay unblocked; no door to GUEST_BATH (white wall)",
+      "status": "CONFIRMED"},
+    "FLEX_FAMILY_ROOM": {"display": "客厅(弹性家庭活动厅)",
+      "furniture": ["3-seat sofa", "2-seat sofa", "lounge chair", "small movable coffee/side tables"],
+      "no_tv": true, "projection": "99% laser-TV/projector; reserve viewing wall relation only",
+      "central_open_area": "children play/exercise/gathering/future wheelchair",
+      "principles": ["low obstruction", "few sharp corners", "wide routes", "movable furniture"],
+      "status": "CONFIRMED"},
+    "NORTH_BALCONY": {"display": "北阳台", "program": "shared enclosed life balcony",
+      "functions": ["plants along glazing", "natural drying (existing hand-crank rack)",
+                    "reading/tea", "washer10+dryer10 stacked at west end (current)"],
+      "furniture": "light movable", "level_step": "2 risers vs guest bedroom; express in CAD",
+      "status": "CONFIRMED"},
+    "ENTRY": {"display": "玄关", "keep": ["low shoe cabinet", "drop surface", "bench opposite"],
+      "no_full_height_wall": true, "status": "CONFIRMED"}
+  },
+  "baths": {
+    "MASTER_BATH": {"remove": "bathtub", "type": "large aging-friendly shower bath",
+      "features": ["low/zero threshold", "wide entry", "slim black frame glass",
+                   "folding seat", "grab bars", "handheld+overhead shower",
+                   "smart toilet", "single vanity+storage", "radiator", "anti-slip", "night safety"],
+      "status": "CONFIRMED"},
+    "SECONDARY_MASTER_BATH": {"area": "~5sqm in former cloakroom zone",
+      "features": ["single vanity+storage", "smart toilet", "independent shower ~900x1200",
+                   "dry/wet separation", "no radiator required"],
+      "entry": "WEST foyer preferred, SOUTH alt — decided by CAD comparison; never to public corridor",
+      "status": "CONFIRMED"},
+    "GUEST_BATH": {"zones": "front(green)=dry vanity+smart toilet; rear(red)=wet shower+3kg washer",
+      "washer": "in wet-service band, not in direct spray; wall-hung alternative allowed",
+      "radiator": "keep existing unless impossible", "status": "CONFIRMED"}
+  },
+  "kitchen_dining": {
+    "cabinets": "KEEP new 2024 cabinets (cabinet_plan.pdf); no island; no appliance-wall moves",
+    "core_strip": "N-S cooking strip: tile floor + tiled walls; rest of domain wood floor",
+    "table_mm": [1500, 600], "seats": "normal <=4+child, peak <=8",
+    "status": "CONFIRMED"
+  },
+  "structure": {
+    "white_wall_rule": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING; not verified-structural label; formal structural check required before construction",
+    "black_wall_rule": "concept-stage modifiable",
+    "status": "CONFIRMED"
+  },
+  "split_level": {
+    "risers": 2, "height_diff_mm": 400, "status": "TO_VERIFY",
+    "normal_route": "two-step stair",
+    "ramp": {"location": "kitchen-side boundary of platform edge", "run_mm": [2500, 3000],
+             "intent": "ASSISTED_WHEELCHAIR_FUTURE_PROVISION — NOT code-compliant claim",
+             "slope": "computed from verified rise"},
+    "platform": "shrink former leisure platform to minimum landing; return rectangular area to living room",
+    "status": "PREFERRED"
+  },
+  "laundry": {"guest_bath_3kg": "keep or wall-hung", "main_10kg_pair": "north balcony west end",
+              "drying": "natural drying primary (mother); balcony racks; life-balcony assist",
+              "status": "CONFIRMED"},
+  "storage": {"principle": "total storage broadly sufficient; restore equivalent capacity where secondary-master bath removes wardrobe volume", "status": "CONFIRMED"},
+  "style_refs": {"bath_glass": "slim black frame sliding shower partition (owner image)", "status": "PREFERRED"}
+}

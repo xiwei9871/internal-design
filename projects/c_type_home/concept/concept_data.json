@@ -1,0 +1,503 @@
+{
+ "level": {
+  "lower_zone_note": "living+dining+kitchen+balconies at L1(+-0)",
+  "upper_zone_note": "bedroom wing + corridor + retained landing at L2(+400 TO_VERIFY)",
+  "stair_mm": [
+   7200,
+   6600,
+   7800,
+   7800
+  ],
+  "landing_kept_mm": [
+   [
+    7800,
+    4650,
+    9100,
+    6300
+   ],
+   [
+    7800,
+    6300,
+    13000,
+    7800
+   ]
+  ],
+  "returned_to_L1_mm": [
+   5900,
+   4650,
+   7200,
+   7800
+  ],
+  "ramp": {
+   "note": "ASSISTED_WHEELCHAIR_FUTURE_PROVISION not code-compliant",
+   "run_mm": 3000,
+   "width_mm": 1100,
+   "slope": "400/3000 = 1:7.5 TO_VERIFY",
+   "rect_mm": [
+    4150,
+    5600,
+    7150,
+    6700
+   ],
+   "topology": "climbs +x along south edge of returned strip (kitchen side); top lands on former-niche open passage x7150-7800 y4650-6600 -> upper landing"
+  }
+ },
+ "smb": {
+  "zone_mm": [
+   9050,
+   4650,
+   11300,
+   6300
+  ],
+  "area_m2": 3.71,
+  "entry_W": {
+   "door_rect": [
+    9050,
+    5200,
+    9050,
+    5950
+   ],
+   "swing": "into foyer",
+   "foyer_mm": [
+    7800,
+    4650,
+    9050,
+    6300
+   ]
+  },
+  "entry_S": {
+   "blocked": "W-INT-Y4500-b is OWNER_DECLARED_NO_OPENING (white fill, 200mm, column overlap) — new opening prohibited",
+   "verdict": "INFEASIBLE unless owner reclassifies wall"
+  },
+  "fixtures": {
+   "shower": [
+    10300,
+    4650,
+    11300,
+    5850
+   ],
+   "vanity": [
+    9050,
+    4650,
+    9850,
+    5250
+   ],
+   "wc": [
+    9850,
+    4650,
+    10300,
+    5250
+   ]
+  },
+  "drain_note": "east wall shared with MASTER_BATH wet zone — primary drain/vent candidate, TO_VERIFY"
+ },
+ "furniture": [
+  {
+   "id": "SOFA-3",
+   "rect": [
+    2900,
+    9500,
+    3800,
+    11700
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "3-seat on west wall, faces east screen"
+  },
+  {
+   "id": "SOFA-2",
+   "rect": [
+    4600,
+    7900,
+    6300,
+    8800
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "2-seat south, faces north"
+  },
+  {
+   "id": "LOUNGE-1",
+   "rect": [
+    3300,
+    12000,
+    4100,
+    12700
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "lounge chair NW"
+  },
+  {
+   "id": "COFFEE-MOV",
+   "rect": [
+    5000,
+    9800,
+    5800,
+    10400
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "small movable round-corner table"
+  },
+  {
+   "id": "PROJ-SCREEN",
+   "rect": [
+    7200,
+    9800,
+    7750,
+    12200
+   ],
+   "layer": "A-NOTE",
+   "note": "projection/laser-TV relation on east wall (no fixed cabinet)"
+  },
+  {
+   "id": "DIN-TABLE",
+   "rect": [
+    3700,
+    4800,
+    5200,
+    5400
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "1500x600 table, seats <=8 peak"
+  },
+  {
+   "id": "K-CAB",
+   "rect": [
+    5500.0,
+    0.0,
+    8200.0,
+    4700.0
+   ],
+   "layer": "A-FURN-EXST-KEEP",
+   "note": "2024 cabinets KEEP"
+  },
+  {
+   "id": "MB-BED",
+   "rect": [
+    12600,
+    300,
+    14400,
+    2400
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "1800x2100; route door->bed->bath clear"
+  },
+  {
+   "id": "MB-WARD",
+   "rect": [
+    11600,
+    3850,
+    15300,
+    4450
+   ],
+   "layer": "A-FURN-EXST-KEEP",
+   "note": "existing wardrobe KEEP"
+  },
+  {
+   "id": "SMB-BED",
+   "rect": [
+    8800,
+    300,
+    10600,
+    2400
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "1800x2100"
+  },
+  {
+   "id": "SMB-WARD",
+   "rect": [
+    10800,
+    3700,
+    11400,
+    4450
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "new wardrobe restoring lost cloakroom capacity"
+  },
+  {
+   "id": "ST-DESK",
+   "rect": [
+    13800,
+    6500,
+    15500,
+    7300
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "1700x800 desk on south wall; east window side-lit"
+  },
+  {
+   "id": "ST-DAYBED",
+   "rect": [
+    15000,
+    9500,
+    16000,
+    11300
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "daybed backup sleep"
+  },
+  {
+   "id": "ST-BOOK",
+   "rect": [
+    15500,
+    8500,
+    16300,
+    10500
+   ],
+   "layer": "A-FURN-EXST-KEEP",
+   "note": "existing wardrobe->book/file/equip"
+  },
+  {
+   "id": "ST-NAS",
+   "rect": [
+    13100,
+    6500,
+    13800,
+    7100
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "NAS/printer shelf, ventilated"
+  },
+  {
+   "id": "GB-BUNK",
+   "rect": [
+    9850,
+    8300,
+    11350,
+    10400
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "lower 1500 + optional upper 900-1000 bunk"
+  },
+  {
+   "id": "GB-DESK",
+   "rect": [
+    12100,
+    8000,
+    12900,
+    8450
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "narrow desk 800x450 (entry side)"
+  },
+  {
+   "id": "GB-GLASSDOOR-ZONE",
+   "rect": [
+    10500,
+    10400,
+    13000,
+    10700
+   ],
+   "layer": "A-NOTE",
+   "note": "KEEP CLEAR: double glass door to balcony"
+  },
+  {
+   "id": "GB-BALC-STEP",
+   "rect": [
+    10500,
+    10700,
+    13000,
+    10900
+   ],
+   "layer": "A-LEVEL",
+   "note": "level transition at glass door: guest bed upper -> balcony lower, 2 risers TO_VERIFY"
+  },
+  {
+   "id": "NB-WD",
+   "rect": [
+    7900,
+    13064,
+    8600,
+    13764
+   ],
+   "layer": "A-FURN-EXST-KEEP",
+   "note": "10kg W+D stacked, west end"
+  },
+  {
+   "id": "NB-PLANTS",
+   "rect": [
+    7900,
+    13100,
+    13000,
+    13400
+   ],
+   "layer": "A-NOTE",
+   "note": "plant line along glazing"
+  },
+  {
+   "id": "NB-TEA",
+   "rect": [
+    11000,
+    11800,
+    11800,
+    12400
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "light movable tea set"
+  },
+  {
+   "id": "SHOE-CAB",
+   "rect": [
+    2900,
+    4600,
+    3400,
+    5600
+   ],
+   "layer": "A-FURN-EXST-KEEP",
+   "note": "existing low shoe cabinet"
+  },
+  {
+   "id": "BENCH",
+   "rect": [
+    2900,
+    6800,
+    3400,
+    7200
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "shoe bench opposite door side"
+  },
+  {
+   "id": "GBATH-VANITY",
+   "rect": [
+    7900,
+    8000,
+    8600,
+    8600
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "dry zone vanity"
+  },
+  {
+   "id": "GBATH-WC",
+   "rect": [
+    8700,
+    8000,
+    9400,
+    8600
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "smart toilet"
+  },
+  {
+   "id": "GBATH-SHOWER",
+   "rect": [
+    7900,
+    9800,
+    9650,
+    10700
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "wet zone shower"
+  },
+  {
+   "id": "GBATH-3KG",
+   "rect": [
+    9000,
+    9200,
+    9600,
+    9800
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "3kg washer, wet-service band, out of spray"
+  },
+  {
+   "id": "MBATH-SHOWER",
+   "rect": [
+    13100,
+    5500,
+    15300,
+    6300
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "walk-in shower 2200x800+, zero-threshold target, fold seat+grab bars"
+  },
+  {
+   "id": "MBATH-WC",
+   "rect": [
+    15200,
+    4650,
+    16000,
+    5300
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "smart toilet SE"
+  },
+  {
+   "id": "MBATH-VANITY",
+   "rect": [
+    15400,
+    5500,
+    16300,
+    6300
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "single vanity+storage NE"
+  },
+  {
+   "id": "MBATH-RAD",
+   "rect": [
+    13600,
+    4650,
+    14200,
+    4900
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "radiator keep"
+  },
+  {
+   "id": "SMB2-SHOWER",
+   "rect": [
+    10300,
+    4650,
+    11300,
+    5850
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "~1000x1200 shower, wet side vs master bath wall"
+  },
+  {
+   "id": "SMB2-WC",
+   "rect": [
+    9550,
+    4650,
+    10300,
+    5250
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": ""
+  },
+  {
+   "id": "SMB2-VANITY",
+   "rect": [
+    9050,
+    4650,
+    9550,
+    5250
+   ],
+   "layer": "A-FIXT-PLUMB",
+   "note": "single vanity"
+  },
+  {
+   "id": "RAMP",
+   "rect": [
+    4150,
+    5600,
+    7150,
+    6700
+   ],
+   "layer": "A-ACCESS-RAMP",
+   "note": "ramp 2800 run, ~1:7, ASSISTED WHEELCHAIR FUTURE PROVISION"
+  },
+  {
+   "id": "STAIR",
+   "rect": [
+    7200,
+    6600,
+    7800,
+    7800
+   ],
+   "layer": "A-ACCESS-STAIR",
+   "note": "2 risers ~400 TO_VERIFY"
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+  "gates": [
+    {
+      "gate": "G1 measured DWG units+hash recorded",
+      "result": "PASS",
+      "detail": "\u4e16\u7eaa\u6b23\u56edFF.dwg sha=f01a9bb5de96 units=mm (INSUNITS=4) immutable=True"
+    },
+    {
+      "gate": "G2 Option S honestly blocked on no-opening wall",
+      "result": "PASS",
+      "detail": "S verdict: INFEASIBLE unless owner reclassifies wall; no-opening set has 28 walls"
+    },
+    {
+      "gate": "G3 kitchen cabinets untouched",
+      "result": "PASS",
+      "detail": "keep zone [5500.0, 0.0, 8200.0, 4700.0]; intruders=[]"
+    },
+    {
+      "gate": "G4 glazing preserved (sliding door + balcony glazing)",
+      "result": "PASS",
+      "detail": "G-GB-BALC:EXISTING_KEEP; G-DIN-LIV:EXISTING_KEEP"
+    },
+    {
+      "gate": "G5 1800x2100 beds fit",
+      "result": "PASS",
+      "detail": "MB 1800x2100; SMB 1800x2100"
+    },
+    {
+      "gate": "G6 secondary bath 3-piece fits",
+      "result": "PASS",
+      "detail": "zone 2250x1650 = 3.71m2, fixtures=3; drain via shared MBATH wet wall TO_VERIFY"
+    },
+    {
+      "gate": "G7 balcony glass-door route clear",
+      "result": "PASS",
+      "detail": "zone [10500, 10400, 13000, 10700]; blockers=[]"
+    },
+    {
+      "gate": "G8 living flexible core open",
+      "result": "PASS",
+      "detail": "open core 2800x3200; intruders=[] (small movable table exempt)"
+    },
+    {
+      "gate": "G9 stair/ramp documented, slope flagged",
+      "result": "PASS",
+      "detail": "rise~400 TO_VERIFY; run 3000; slope 1:7.5 assisted-use (no code claim)"
+    },
+    {
+      "gate": "G10 level diff TO_VERIFY",
+      "result": "PASS",
+      "detail": "rise=400mm owner-reported; status=ELEVATION_TO_VERIFY"
+    },
+    {
+      "gate": "G11 study program complete",
+      "result": "PASS",
+      "detail": "desk 1700x800 + wardrobe-storage + daybed backup sleep + NAS shelf"
+    },
+    {
+      "gate": "G12 guest bath wet/dry preserved",
+      "result": "PASS",
+      "detail": "wet=rear shower+3kg washer; dry=front WC+vanity"
+    },
+    {
+      "gate": "G13 KEEP furniture/cabinets placed",
+      "result": "PASS",
+      "detail": "keeps: ['K-CAB', 'MB-WARD', 'ST-BOOK', 'NB-WD', 'SHOE-CAB']"
+    },
+    {
+      "gate": "G14 4 rooms + 3 baths functional",
+      "result": "PASS",
+      "detail": "program satisfied"
+    }
+  ],
+  "overall": "PASS"
+}
