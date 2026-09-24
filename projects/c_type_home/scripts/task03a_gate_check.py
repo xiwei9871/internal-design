@@ -23,12 +23,15 @@ src = MAN['sources'][0]
 gate('G1 measured DWG units+hash recorded', 'mm' in src['units'] and len(src['sha256']) == 64,
      f"{src['file']} sha={src['sha256'][:12]} units={src['units']} immutable={src['immutable']}")
 
-# G2 W/S both evaluated on NEW walls; conflicts flagged not hidden
+# G2 W/S honest compare: S on NEW partition feasible; W constrained by retained CLK-W; conflicts flagged
 conflicts = [w['id'] for w in CE['walls'] if 'CONFLICT' in w['wall_class']]
-w_ok = 'FEASIBLE' in CD['smb']['entry_W'].get('verdict', '')
+clk_kept = all(any(w['id'] == f'W-INT-CLK-{d}' and w['disposition'] == 'EXISTING'
+                   for w in CE['walls']) for d in 'NWE')
+w_ok = 'CONSTRAINED' in CD['smb']['entry_W'].get('verdict', '')
 s_ok = 'FEASIBLE' in CD['smb']['entry_S'].get('verdict', '')
-gate('G2 W/S honest compare (no auto-kill), conflicts flagged', w_ok and s_ok and len(conflicts) >= 3,
-     f"W: {CD['smb']['entry_W']['verdict']} | S: {CD['smb']['entry_S']['verdict']} | conflicts={conflicts}")
+gate('G2 cloakroom shell kept; S on new partition; W constrained honestly',
+     clk_kept and w_ok and s_ok and len(conflicts) >= 1,
+     f"CLK-N/W/E existing={clk_kept} | S: {CD['smb']['entry_S']['verdict']} | W: {CD['smb']['entry_W']['verdict']} | conflicts={conflicts}")
 
 # G3 kitchen cabinet zone untouched by proposed furniture/plumbing
 kcab = next(f['rect'] for f in F if f['id'] == 'K-CAB')

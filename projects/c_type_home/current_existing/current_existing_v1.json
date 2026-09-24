@@ -534,15 +534,15 @@
    "type": "interior",
    "measured_coverage": 1.0,
    "struct_overlap_mm2": 0,
-   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
-   "layer": "A-WALL-EXST-REMOVE",
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
    "original_color_class": "WHITE_FILL",
-   "owner_rule_applied": "CLASSIFICATION_CONFLICT_TO_REVIEW",
-   "wall_class": "CLASSIFICATION_CONFLICT_TO_REVIEW",
-   "dwg_stale_geometry": true,
+   "owner_rule_applied": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "dwg_stale_geometry": false,
    "confidence": "HIGH",
    "evidence": "hollow band + door arc",
-   "note": "cloakroom N wall — owner: demolished, merged into secondary master"
+   "note": "cloakroom N wall RETAINED (owner RC1.5) — incl. existing door opening to corridor (leaf status TO_VERIFY)"
   },
   {
    "id": "W-INT-CLK-E",
@@ -555,15 +555,15 @@
    "type": "interior",
    "measured_coverage": 1.0,
    "struct_overlap_mm2": 80020,
-   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
-   "layer": "A-WALL-EXST-REMOVE",
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
    "original_color_class": "WHITE_FILL",
-   "owner_rule_applied": "CLASSIFICATION_CONFLICT_TO_REVIEW",
-   "wall_class": "CLASSIFICATION_CONFLICT_TO_REVIEW",
-   "dwg_stale_geometry": true,
+   "owner_rule_applied": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "dwg_stale_geometry": false,
    "confidence": "MED",
    "evidence": "hollow band upper, dark junction lower",
-   "note": "cloakroom E wall — demolished"
+   "note": "cloakroom E wall RETAINED (owner RC1.5) — shared with master-bath wet zone"
   },
   {
    "id": "W-INT-CLK-W",
@@ -576,15 +576,15 @@
    "type": "interior",
    "measured_coverage": 0.75,
    "struct_overlap_mm2": 0,
-   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
-   "layer": "A-WALL-EXST-REMOVE",
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
    "original_color_class": "WHITE_FILL",
-   "owner_rule_applied": "CLASSIFICATION_CONFLICT_TO_REVIEW",
-   "wall_class": "CLASSIFICATION_CONFLICT_TO_REVIEW",
-   "dwg_stale_geometry": true,
+   "owner_rule_applied": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "dwg_stale_geometry": false,
    "confidence": "HIGH",
    "evidence": "hollow band",
-   "note": "cloakroom W wall — demolished"
+   "note": "cloakroom W wall RETAINED (owner RC1.5) — bounds suite foyer"
   },
   {
    "id": "W-INT-COR-N-STUB",
@@ -836,7 +836,7 @@
    "dwg_stale_geometry": false,
    "confidence": "MED",
    "evidence": "cloakroom-south segment; only 600mm stub x10800-11400 drawn in measured DWG",
-   "note": "cloakroom-south segment of Y4500-b — open/removed; secondary master is continuous space (owner); DWG draws only 600mm stub x10800-11400 -> stale"
+   "note": "cloakroom-south segment of Y4500-b — OPEN to secondary master (owner RC1.5: this is how it merged); DWG draws only 600mm stub x10800-11400 -> residual, TO_VERIFY"
   }
  ],
  "structural_fills_measured": [
@@ -1106,6 +1106,28 @@
     7800,
     11700,
     8200
+   ]
+  },
+  {
+   "id": "D-CLK",
+   "kind": "door",
+   "meas_zone": [
+    [
+     8500,
+     7636
+    ],
+    [
+     9200,
+     7836
+    ]
+   ],
+   "status": "EXISTING_TO_VERIFY",
+   "note": "cloakroom north door opening (dev plan arc on CLK-N); leaf status TO_VERIFY — reusable as bath N entry candidate",
+   "rect_mm": [
+    9800,
+    6300,
+    10500,
+    6500
    ]
   },
   {

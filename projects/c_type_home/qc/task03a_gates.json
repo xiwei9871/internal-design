@@ -6,9 +6,9 @@
       "detail": "\u4e16\u7eaa\u6b23\u56edFF.dwg sha=f01a9bb5de96 units=mm (INSUNITS=4) immutable=True"
     },
     {
-      "gate": "G2 W/S honest compare (no auto-kill), conflicts flagged",
+      "gate": "G2 cloakroom shell kept; S on new partition; W constrained honestly",
       "result": "PASS",
-      "detail": "W: FEASIBLE \u2014 preferred | S: FEASIBLE \u2014 conditional on stub/presence field check | conflicts=['W-INT-CLK-N', 'W-INT-CLK-E', 'W-INT-CLK-W', 'W-INT-Y4500-b-CLKSEG']"
+      "detail": "CLK-N/W/E existing=True | S: FEASIBLE \u2014 recommended (least intervention) | W: CONSTRAINED \u2014 feasible only with owner rule exception | conflicts=['W-INT-Y4500-b-CLKSEG']"
     },
     {
       "gate": "G3 kitchen cabinets untouched",

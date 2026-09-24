@@ -51,7 +51,19 @@
    6300
   ],
   "area_m2": 3.71,
-  "site_truth": "cloakroom gone; only 600mm residual stub x10800-11400@y4500-4700 drawn on S-S.WALL — verify on site",
+  "site_truth": "RC1.5 owner correction: cloakroom N/W/E walls RETAINED (white-class); south side OPEN to bedroom (Y4500-b-CLKSEG absent, only 600mm stub x10800-11400 drawn — TO_VERIFY). Bath = existing shell + NEW south partition (wall or frosted glass) + interior wet/dry glass. No demolition.",
+  "entry_S": {
+   "door_rect": [
+    9500,
+    4550,
+    10300,
+    4650
+   ],
+   "swing": "into bath; door leaf in NEW south partition",
+   "pros": "zero existing-wall cutting; uses the open south edge; direct en-suite from bedroom",
+   "cons": "door axis faces bed zone (owner prefers not) — mitigate: place door at west end x9050-9550 or use frosted-glass partition; residual stub x10800-11400 TO_VERIFY",
+   "verdict": "FEASIBLE — recommended (least intervention)"
+  },
   "entry_W": {
    "door_rect": [
     9050,
@@ -66,23 +78,17 @@
     9050,
     6300
    ],
-   "pros": "private suite vestibule; door does NOT face bed; foyer buffers bath/bedroom",
-   "cons": "slightly longer path; uses landing area",
-   "verdict": "FEASIBLE — preferred"
+   "pros": "private suite vestibule; door does NOT face bed",
+   "cons": "requires NEW OPENING in existing CLK-W — white-class wall under owner-declared no-opening rule; needs explicit owner exception + structural check",
+   "verdict": "CONSTRAINED — feasible only with owner rule exception"
   },
-  "entry_S": {
-   "door_rect": [
-    9500,
-    4650,
-    10300,
-    4650
-   ],
-   "swing": "into bath, door in NEW south partition",
-   "pros": "shortest direct path from bedroom",
-   "cons": "door faces bed zone (owner dislikes); closes the open merged feel; keep door x9500-10300 clear of residual stub at x10800-11400 (TO_VERIFY)",
-   "verdict": "FEASIBLE — conditional on stub/presence field check"
+  "entry_N": {
+   "door_rect": "existing cloakroom door on CLK-N (D-CLK, leaf TO_VERIFY)",
+   "pros": "reuse existing opening; zero work",
+   "cons": "opens to shared corridor, not en-suite",
+   "verdict": "FALLBACK"
   },
-  "comparison": "both feasible on NEW walls; W preferred (privacy + door not facing bed); owner decides",
+  "comparison": "S recommended (all-new partition, no existing wall touched). W only if owner grants exception to open CLK-W. N = zero-cost fallback.",
   "fixtures": {
    "shower": [
     10300,

@@ -146,11 +146,16 @@ DEMOLISHED = {
     'W-INT-X5800':      'kitchen west wall to dining — owner: opened up; measured cov low',
     'W-INT-X5800-STUB': 'kitchen/dining stub — opened',
     'W-BALC-N':         'life-balcony/dining separation — opened (owner orange line)',
-    'W-INT-CLK-N':      'cloakroom N wall — owner: demolished, merged into secondary master',
-    'W-INT-CLK-E':      'cloakroom E wall — demolished',
-    'W-INT-CLK-W':      'cloakroom W wall — demolished',
     'W-INT-DRY-STUB':   'kitchen dry-side stub — opened',
-    'W-INT-Y4500-b-CLKSEG': 'cloakroom-south segment of Y4500-b — open/removed; secondary master is continuous space (owner); DWG draws only 600mm stub x10800-11400 -> stale',
+    'W-INT-Y4500-b-CLKSEG': 'cloakroom-south segment of Y4500-b — OPEN to secondary master (owner RC1.5: this is how it merged); DWG draws only 600mm stub x10800-11400 -> residual, TO_VERIFY',
+}
+# RC1.5 owner correction: cloakroom N/W/E walls are RETAINED (green-marked in
+# owner annotation), corroborated by measured-DWG coverage. They were NOT
+# demolished — earlier claim withdrawn.
+CLK_RETAINED = {
+    'W-INT-CLK-N': 'cloakroom N wall RETAINED (owner RC1.5) — incl. existing door opening to corridor (leaf status TO_VERIFY)',
+    'W-INT-CLK-E': 'cloakroom E wall RETAINED (owner RC1.5) — shared with master-bath wet zone',
+    'W-INT-CLK-W': 'cloakroom W wall RETAINED (owner RC1.5) — bounds suite foyer',
 }
 PARTIAL = {
     'W-INT-X7900-U': 'lower part removed/open per measured; upper part = GUEST_BATH west wall kept',
@@ -206,7 +211,7 @@ for w in GEO['walls']:
                       'wall_class': pol,
                       'dwg_stale_geometry': stale,
                       'confidence': conf, 'evidence': ev,
-                      'note': DEMOLISHED.get(pid) or PARTIAL.get(pid) or ''})
+                      'note': DEMOLISHED.get(pid) or PARTIAL.get(pid) or CLK_RETAINED.get(pid) or ''})
 
 # ---------------------------------------------------------------- openings (current state, measured)
 def T(p): return [round(p[0] - DX), round(p[1] - DY)]
@@ -227,6 +232,8 @@ openings = [
      'status': 'EXISTING', 'note': 'guest bath south door (insert @meas x8300/y9336, on WC-S wall segment)'},
     {'id': 'D-GBED', 'kind': 'door', 'meas_zone': [[9600, 9136], [10400, 9536]],
      'status': 'EXISTING', 'note': 'guest bedroom south door (insert @meas x8700/y9336, on STD-S wall)'},
+    {'id': 'D-CLK', 'kind': 'door', 'meas_zone': [[8500, 7636], [9200, 7836]],
+     'status': 'EXISTING_TO_VERIFY', 'note': 'cloakroom north door opening (dev plan arc on CLK-N); leaf status TO_VERIFY — reusable as bath N entry candidate'},
     {'id': 'D-MASTER?', 'kind': 'door', 'meas_zone': [[10100, 4400], [10900, 4700]],
      'status': 'TO_VERIFY', 'note': 'master bedroom entry on north wall Y4500-bc per dev plan; not a block insert in measured DWG — position to verify'},
     {'id': 'G-GB-BALC', 'kind': 'glazing_door_double', 'meas_zone': [[9200, 12036], [11700, 12436]],

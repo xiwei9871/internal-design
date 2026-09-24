@@ -79,18 +79,26 @@ SMB = {'x1': 9050, 'y1': 4650, 'x2': 11300, 'y2': 6300}
 CD['smb'] = {
  'zone_mm': [SMB['x1'], SMB['y1'], SMB['x2'], SMB['y2']],
  'area_m2': round((SMB['x2']-SMB['x1'])*(SMB['y2']-SMB['y1'])/1e6, 2),
- 'site_truth': 'cloakroom gone; only 600mm residual stub x10800-11400@y4500-4700 drawn on S-S.WALL — verify on site',
+ 'site_truth': 'RC1.5 owner correction: cloakroom N/W/E walls RETAINED (white-class); '
+               'south side OPEN to bedroom (Y4500-b-CLKSEG absent, only 600mm stub x10800-11400 drawn — TO_VERIFY). '
+               'Bath = existing shell + NEW south partition (wall or frosted glass) + interior wet/dry glass. No demolition.',
+ 'entry_S': {'door_rect': [9500, 4550, 10300, 4650], 'swing': 'into bath; door leaf in NEW south partition',
+             'pros': 'zero existing-wall cutting; uses the open south edge; direct en-suite from bedroom',
+             'cons': 'door axis faces bed zone (owner prefers not) — mitigate: place door at west end '
+                     'x9050-9550 or use frosted-glass partition; residual stub x10800-11400 TO_VERIFY',
+             'verdict': 'FEASIBLE — recommended (least intervention)'},
  'entry_W': {'door_rect': [9050, 5200, 9050, 5950], 'swing': 'into foyer',
              'foyer_mm': [7800, 4650, 9050, 6300],
-             'pros': 'private suite vestibule; door does NOT face bed; foyer buffers bath/bedroom',
-             'cons': 'slightly longer path; uses landing area',
-             'verdict': 'FEASIBLE — preferred'},
- 'entry_S': {'door_rect': [9500, 4650, 10300, 4650], 'swing': 'into bath, door in NEW south partition',
-             'pros': 'shortest direct path from bedroom',
-             'cons': 'door faces bed zone (owner dislikes); closes the open merged feel; '
-                     'keep door x9500-10300 clear of residual stub at x10800-11400 (TO_VERIFY)',
-             'verdict': 'FEASIBLE — conditional on stub/presence field check'},
- 'comparison': 'both feasible on NEW walls; W preferred (privacy + door not facing bed); owner decides',
+             'pros': 'private suite vestibule; door does NOT face bed',
+             'cons': 'requires NEW OPENING in existing CLK-W — white-class wall under owner-declared '
+                     'no-opening rule; needs explicit owner exception + structural check',
+             'verdict': 'CONSTRAINED — feasible only with owner rule exception'},
+ 'entry_N': {'door_rect': 'existing cloakroom door on CLK-N (D-CLK, leaf TO_VERIFY)',
+             'pros': 'reuse existing opening; zero work',
+             'cons': 'opens to shared corridor, not en-suite',
+             'verdict': 'FALLBACK'},
+ 'comparison': 'S recommended (all-new partition, no existing wall touched). '
+               'W only if owner grants exception to open CLK-W. N = zero-cost fallback.',
  'fixtures': {'shower': [10300, 4650, 11300, 5850],   # ~1000x1200 against east (master-bath wet) wall
               'vanity': [9050, 4650, 9850, 5250],
               'wc':     [9850, 4650, 10300, 5250]},
@@ -166,13 +174,17 @@ for o in M['openings']:
     lay = {'sliding_glass_3track': 'A-GLAZ-EXST-KEEP', 'glazing_door_double': 'A-GLAZ-EXST-KEEP',
            'open_passage': 'A-NOTE'}.get(o['kind'], 'A-DOOR-EXST-KEEP')
     rect(msp, lay, *o['rect_mm'])
-# new bath walls: west (with W door gap y5200-5950), north (seal corridor), east glass
+# new bath enclosure: cloakroom shell N/W/E kept (drawn by walls());
+# NEW south partition along open edge y4550-4650 with door x9500-10300;
+# interior wet/dry glass partition optional (marked A-NOTE)
 x1, y1, x2, y2 = SMB['x1'], SMB['y1'], SMB['x2'], SMB['y2']
-rect(msp, 'A-WALL-NEW', x1 - 100, y1, x1, 5200)          # west wall below door
-rect(msp, 'A-WALL-NEW', x1 - 100, 5950, x1, y2)          # west wall above door
-rect(msp, 'A-WALL-NEW', x1, y2, x2, y2 + 100)            # north wall (seal to corridor)
-rect(msp, 'A-DOOR-NEW', x1 - 100, 5200, x1, 5950)        # W door leaf zone
-label(msp, 'SEC-MASTER-BATH W-door', x1 - 200, 5950, 130)
+rect(msp, 'A-WALL-NEW', x1, 4550, 9500, 4650)            # new south wall west part
+rect(msp, 'A-WALL-NEW', 10300, 4550, x2, 4650)           # new south wall east part
+rect(msp, 'A-DOOR-NEW', 9500, 4550, 10300, 4650)         # S door leaf zone
+label(msp, 'SEC-MASTER-BATH S-door in NEW partition', x1 - 200, 4350, 130)
+# residual stub marker
+rect(msp, 'A-QC', 10800, 4450, 11400, 4550)
+label(msp, 'stub TO_VERIFY', 10800, 4300, 120)
 # landing edge: new level boundary line along x7800 + stair
 rect(msp, 'A-LEVEL', 7800, 4650, 7900, 7800)
 label(msp, 'L2 upper (delta LEVEL_TO_VERIFY)', 7950, 7600, 140)
@@ -209,22 +221,21 @@ for t, x, y in ROOMS:
 doc.saveas(str(ROOT / 'concept' / 'task03a_preferred_plan.dxf'))
 
 # ================================================================ option compare DXF
-for opt in ('W', 'S'):
+for opt in ('S', 'W'):
     d = new_doc(); m = d.modelspace(); walls(m)
-    if opt == 'W':
-        rect(m, 'A-WALL-NEW', x1 - 100, y1, x1, 5200); rect(m, 'A-WALL-NEW', x1 - 100, 5950, x1, y2)
-        rect(m, 'A-DOOR-NEW', x1 - 100, 5200, x1, 5950)
-        label(m, 'OPTION W: door to suite foyer (PREFERRED)', 7000, 4500, 200)
-    else:
-        # RC1: Y4500-b cloakroom segment is absent/stale -> south wall is NEW
-        # construction; door placed in it at x9500-10300, clear of residual stub
-        rect(m, 'A-WALL-NEW', x1 - 100, y1, x1, y2)                    # west wall solid
-        rect(m, 'A-WALL-NEW', x1, 4550, 9500, 4650)                   # new south wall w/ gap
+    if opt == 'S':
+        # RC1.5: cloakroom shell kept; south edge open -> NEW partition w/ door
+        rect(m, 'A-WALL-NEW', x1, 4550, 9500, 4650)
         rect(m, 'A-WALL-NEW', 10300, 4550, x2, 4650)
-        rect(m, 'A-DOOR-NEW', 9500, 4550, 10300, 4650)                # S door leaf zone
-        rect(m, 'A-QC', 10800, 4450, 11400, 4700)                     # residual stub TO_VERIFY
-        label(m, 'OPTION S: door in NEW south wall, direct from bedroom (FEASIBLE-conditional)', 7000, 4300, 180)
+        rect(m, 'A-DOOR-NEW', 9500, 4550, 10300, 4650)
+        rect(m, 'A-QC', 10800, 4450, 11400, 4550)                     # residual stub TO_VERIFY
+        label(m, 'OPTION S: NEW south partition + door, zero demolition (RECOMMENDED)', 7000, 4300, 180)
         label(m, 'residual stub x10800-11400 TO_VERIFY', 10400, 4200, 130)
+    else:
+        # W needs a NEW OPENING cut in existing CLK-W (white-class) — owner exception
+        rect(m, 'A-QC', 8950, 5200, 9050, 5950)                       # proposed cut zone
+        label(m, 'OPTION W: opening cut in EXISTING CLK-W (white-class) — needs owner exception', 7000, 4300, 170)
+        label(m, 'CLK-W retained wall — cut zone marked', 7000, 4600, 150)
     for f in F:
         if 'SMB2' in f['id'] or 'SMB-' in f['id']:
             rect(m, f['layer'], *f['rect'])
