@@ -1,6 +1,12 @@
 {
  "meta": {
-  "task": "TASK03A current-existing baseline",
+  "task": "TASK03A RC1 current-existing baseline",
+  "rc1_changes": [
+   "DWG governs dimensions; owner statements govern wall existence",
+   "white/black class from dev-plan visual read + owner declaration — no thickness inference",
+   "north balcony = OPEN, enclosure PROPOSED",
+   "level delta = LEVEL_DELTA_TO_VERIFY (owner <=350 vs CAD ~400)"
+  ],
   "coord_system": "task01-compatible mm",
   "measured_origin": [
    1299472.0,
@@ -10,7 +16,7 @@
    -1300.0,
    1336.0
   ],
-  "authority": "measured DWG > owner statements > task01 reconstruction"
+  "authority": "measured DWG (dims) + owner statements (existence) > developer plan (policy/history) > task02 semantics"
  },
  "walls": [
   {
@@ -26,7 +32,12 @@
    "struct_overlap_mm2": 1059760,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid filled band",
    "note": ""
   },
   {
@@ -42,7 +53,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "solid filled band",
    "note": ""
   },
   {
@@ -58,7 +74,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "solid filled band",
    "note": ""
   },
   {
@@ -74,7 +95,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "solid filled band",
    "note": ""
   },
   {
@@ -90,7 +116,12 @@
    "struct_overlap_mm2": 259720,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid filled band",
    "note": ""
   },
   {
@@ -106,7 +137,12 @@
    "struct_overlap_mm2": 179800,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid filled band",
    "note": ""
   },
   {
@@ -122,7 +158,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "hollow band at AC bay",
    "note": ""
   },
   {
@@ -138,7 +179,12 @@
    "struct_overlap_mm2": 159980,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "hollow band at AC bay",
    "note": ""
   },
   {
@@ -154,7 +200,12 @@
    "struct_overlap_mm2": 219980,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid filled band N of living",
    "note": ""
   },
   {
@@ -170,7 +221,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "hollow band at bay window",
    "note": ""
   },
   {
@@ -186,7 +242,12 @@
    "struct_overlap_mm2": 24995,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "hollow band",
    "note": ""
   },
   {
@@ -202,7 +263,12 @@
    "struct_overlap_mm2": 39980,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "wall_class": "NO_OPEN_EXTERIOR_ENVELOPE",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "hollow band",
    "note": ""
   },
   {
@@ -218,7 +284,12 @@
    "struct_overlap_mm2": 60,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "INTERIOR_TO_VERIFY",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "thin hollow band = balcony parapet/rail edge",
    "note": ""
   },
   {
@@ -234,7 +305,12 @@
    "struct_overlap_mm2": 19960,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "INTERIOR_TO_VERIFY",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "solid band",
    "note": ""
   },
   {
@@ -250,7 +326,12 @@
    "struct_overlap_mm2": 60020,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "solid band",
    "note": ""
   },
   {
@@ -266,7 +347,12 @@
    "struct_overlap_mm2": 255984,
    "disposition": "DEMOLISHED_OWNER_CONFIRMED",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "DEMOLISHED_OR_PARTIAL",
+   "wall_class": "DEMOLISHED_OR_PARTIAL",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "solid band",
    "note": "life-balcony/dining separation — opened (owner orange line)"
   },
   {
@@ -282,7 +368,12 @@
    "struct_overlap_mm2": 299890,
    "disposition": "DEMOLISHED_OWNER_CONFIRMED",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "DEMOLISHED_OR_PARTIAL",
+   "wall_class": "DEMOLISHED_OR_PARTIAL",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid band kitchen/dining",
    "note": "kitchen west wall to dining — owner: opened up; measured cov low"
   },
   {
@@ -298,7 +389,12 @@
    "struct_overlap_mm2": 10,
    "disposition": "DEMOLISHED_OWNER_CONFIRMED",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "MODIFIABLE_PARTITION",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "DEMOLISHED_OR_PARTIAL",
+   "wall_class": "DEMOLISHED_OR_PARTIAL",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "solid stub",
    "note": "kitchen/dining stub — opened"
   },
   {
@@ -314,7 +410,12 @@
    "struct_overlap_mm2": 293960,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "solid band kitchen east",
    "note": ""
   },
   {
@@ -330,7 +431,12 @@
    "struct_overlap_mm2": 123020,
    "disposition": "PARTIAL_REMOVED_TO_VERIFY",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "AMBIGUOUS",
+   "owner_rule_applied": "DEMOLISHED_OR_PARTIAL",
+   "wall_class": "DEMOLISHED_OR_PARTIAL",
+   "dwg_stale_geometry": true,
+   "confidence": "LOW",
+   "evidence": "column block at top + mixed band — review",
    "note": "lower part removed/open per measured; upper part = GUEST_BATH west wall kept"
   },
   {
@@ -346,7 +452,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "INTERIOR_TO_VERIFY",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "thin dark line gbath/study divider",
    "note": ""
   },
   {
@@ -362,7 +473,12 @@
    "struct_overlap_mm2": 559860,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid band bed/master divider",
    "note": ""
   },
   {
@@ -378,7 +494,12 @@
    "struct_overlap_mm2": 319920,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
    "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "hollow thin band study/master-bath divider",
    "note": ""
   },
   {
@@ -394,7 +515,12 @@
    "struct_overlap_mm2": 624975,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid band kitchen north",
    "note": ""
   },
   {
@@ -410,7 +536,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "DEMOLISHED_OWNER_CONFIRMED",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "MODIFIABLE_PARTITION",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "CLASSIFICATION_CONFLICT_TO_REVIEW",
+   "wall_class": "CLASSIFICATION_CONFLICT_TO_REVIEW",
+   "dwg_stale_geometry": true,
+   "confidence": "HIGH",
+   "evidence": "hollow band + door arc",
    "note": "cloakroom N wall — owner: demolished, merged into secondary master"
   },
   {
@@ -426,7 +557,12 @@
    "struct_overlap_mm2": 80020,
    "disposition": "DEMOLISHED_OWNER_CONFIRMED",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "CLASSIFICATION_CONFLICT_TO_REVIEW",
+   "wall_class": "CLASSIFICATION_CONFLICT_TO_REVIEW",
+   "dwg_stale_geometry": true,
+   "confidence": "MED",
+   "evidence": "hollow band upper, dark junction lower",
    "note": "cloakroom E wall — demolished"
   },
   {
@@ -442,7 +578,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "DEMOLISHED_OWNER_CONFIRMED",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "MODIFIABLE_PARTITION",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "CLASSIFICATION_CONFLICT_TO_REVIEW",
+   "wall_class": "CLASSIFICATION_CONFLICT_TO_REVIEW",
+   "dwg_stale_geometry": true,
+   "confidence": "HIGH",
+   "evidence": "hollow band",
    "note": "cloakroom W wall — demolished"
   },
   {
@@ -458,7 +599,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "INTERIOR_TO_VERIFY",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "LOW",
+   "evidence": "small dark block",
    "note": ""
   },
   {
@@ -474,7 +620,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "INTERIOR_TO_VERIFY",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "hollow band + door arc",
    "note": ""
   },
   {
@@ -490,7 +641,12 @@
    "struct_overlap_mm2": 139840,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid band guest-bath south",
    "note": ""
   },
   {
@@ -506,7 +662,12 @@
    "struct_overlap_mm2": 139880,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
    "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "hollow band + study door arc",
    "note": ""
   },
   {
@@ -522,7 +683,12 @@
    "struct_overlap_mm2": 120020,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid band under north balcony",
    "note": ""
   },
   {
@@ -538,7 +704,12 @@
    "struct_overlap_mm2": 139980,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "solid band",
    "note": ""
   },
   {
@@ -554,7 +725,12 @@
    "struct_overlap_mm2": 0,
    "disposition": "PARTIAL_REMOVED_TO_VERIFY",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "MODIFIABLE_PARTITION",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "DEMOLISHED_OR_PARTIAL",
+   "wall_class": "DEMOLISHED_OR_PARTIAL",
+   "dwg_stale_geometry": false,
+   "confidence": "LOW",
+   "evidence": "dark stub kitchen shaft",
    "note": "kitchen shaft line absent in measured; keep as TO_VERIFY marker"
   },
   {
@@ -570,7 +746,12 @@
    "struct_overlap_mm2": 76980,
    "disposition": "DEMOLISHED_OWNER_CONFIRMED",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "DEMOLISHED_OR_PARTIAL",
+   "wall_class": "DEMOLISHED_OR_PARTIAL",
+   "dwg_stale_geometry": false,
+   "confidence": "LOW",
+   "evidence": "small dark stub",
    "note": "kitchen dry-side stub — opened"
   },
   {
@@ -586,7 +767,12 @@
    "struct_overlap_mm2": 50,
    "disposition": "PARTIAL_REMOVED_TO_VERIFY",
    "layer": "A-WALL-EXST-REMOVE",
-   "wall_class": "MODIFIABLE_PARTITION",
+   "original_color_class": "THIN_LINE",
+   "owner_rule_applied": "DEMOLISHED_OR_PARTIAL",
+   "wall_class": "DEMOLISHED_OR_PARTIAL",
+   "dwg_stale_geometry": false,
+   "confidence": "LOW",
+   "evidence": "thin partition niche",
    "note": "niche wall absent in measured — treated as removed/open; resolves old D-10 as open passage"
   },
   {
@@ -602,24 +788,55 @@
    "struct_overlap_mm2": 229940,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "original_color_class": "AMBIGUOUS",
+   "owner_rule_applied": "CLASSIFICATION_TO_REVIEW",
+   "wall_class": "CLASSIFICATION_TO_REVIEW",
+   "dwg_stale_geometry": false,
+   "confidence": "LOW",
+   "evidence": "black at X11500 junction, hollow band w/ door at master bath — review",
    "note": ""
   },
   {
-   "id": "W-INT-Y4500-b",
+   "id": "W-INT-Y4500-b-FOYER",
    "rect_mm": [
     8236,
+    4450,
+    9050,
+    4650
+   ],
+   "type": "interior",
+   "measured_coverage": 0.2,
+   "struct_overlap_mm2": 0,
+   "disposition": "EXISTING",
+   "layer": "A-WALL-EXST-KEEP",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "MODIFIABLE_DECLARED",
+   "wall_class": "MODIFIABLE_DECLARED",
+   "dwg_stale_geometry": false,
+   "confidence": "LOW",
+   "evidence": "foyer-side segment w/ D-SM door jamb; not on S-S.WALL in DWG",
+   "note": ""
+  },
+  {
+   "id": "W-INT-Y4500-b-CLKSEG",
+   "rect_mm": [
+    9050,
     4450,
     11400,
     4650
    ],
    "type": "interior",
-   "measured_coverage": 0.29,
+   "measured_coverage": 0.27,
    "struct_overlap_mm2": 120020,
-   "disposition": "EXISTING",
-   "layer": "A-WALL-EXST-KEEP",
-   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
-   "note": ""
+   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
+   "layer": "A-WALL-EXST-REMOVE",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "CLASSIFICATION_CONFLICT_TO_REVIEW",
+   "wall_class": "CLASSIFICATION_CONFLICT_TO_REVIEW",
+   "dwg_stale_geometry": false,
+   "confidence": "MED",
+   "evidence": "cloakroom-south segment; only 600mm stub x10800-11400 drawn in measured DWG",
+   "note": "cloakroom-south segment of Y4500-b — open/removed; secondary master is continuous space (owner); DWG draws only 600mm stub x10800-11400 -> stale"
   }
  ],
  "structural_fills_measured": [
@@ -927,7 +1144,7 @@
     ]
    ],
    "status": "EXISTING_KEEP",
-   "note": "double glass door guest bedroom -> north balcony (was black wall, removed by owner)",
+   "note": "existing interior double glass door guest bedroom -> north balcony (replaced demolished black wall). NOT the exterior enclosure.",
    "rect_mm": [
     10500,
     10700,
@@ -1012,15 +1229,29 @@
   "risers": 2,
   "tread_mm": 300,
   "run_direction": "+x (west=lower living/dining, east=upper bedroom wing)",
-  "level_difference_mm": 400,
-  "level_status": "ELEVATION_TO_VERIFY",
-  "note": "owner estimate ~400mm (earlier said <=350); two 300mm treads drawn in S-楼梯",
+  "level_difference_mm": null,
+  "level_status": "LEVEL_DELTA_TO_VERIFY",
+  "owner_estimate_mm": "<=350 (2 risers, 3rd step is the platform itself)",
+  "cad_derived_mm": "~400 (inferred; not directly dimensioned in DWG)",
+  "field_measure_request": "L1 finished floor -> L2 finished floor vertical delta",
+  "note": "two 300mm treads drawn in S-楼梯; ramp slope + platform cut + living rectangle all PROVISIONAL until measured",
   "zone_mm": [
    7200.0,
    6600.0,
    7800.0,
    7800.0
   ]
+ },
+ "balconies": {
+  "north_balcony": {
+   "current_enclosure": "OPEN_NOT_ENCLOSED",
+   "future_enclosure": "PROPOSED_LEGAL_TO_ENCLOSE",
+   "evidence": "owner statement RC1; DWG north-edge multilines = parapet/railing, NOT glazing",
+   "interior_door": "G-GB-BALC (guest bedroom <-> balcony, existing)"
+  },
+  "life_balcony": {
+   "red_cabinet": "KEEP"
+  }
  },
  "keep_items": [
   {

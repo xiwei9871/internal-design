@@ -89,7 +89,59 @@ def struct_overlap_mm2(rect):
     return tot
 
 # ---------------------------------------------------------------- dispositions
-# owner-confirmed demolitions (P2) + measured support flags
+# RC1 RULE: measured DWG decides DIMENSIONS; owner-confirmed current condition
+# decides EXISTENCE. DWG lines that contradict confirmed reality -> dwg_stale.
+# Wall demolishability class comes ONLY from dev-plan VISUAL white/black
+# reading + owner declaration (manual table below) — never from thickness/hatch.
+#
+# Manual visual read of source_plan_original.jpg (RC1, per-wall crops):
+#   WHITE_FILL  = hollow band with dark double outline (dev-plan "white wall")
+#   BLACK_FILL  = solid filled band/block (dev-plan "black wall")
+#   THIN_LINE   = single/thin line partition
+#   AMBIGUOUS   = mixed or unreadable -> owner review
+VISUAL = {  # wall_id: (original_color_class, confidence, evidence)
+    'W-EXT-W':        ('BLACK_FILL', 'HIGH',   'solid filled band'),
+    'W-EXT-S':        ('BLACK_FILL', 'MED',    'solid filled band'),
+    'W-EXT-S-W1':     ('BLACK_FILL', 'MED',    'solid filled band'),
+    'W-EXT-S-W2':     ('BLACK_FILL', 'MED',    'solid filled band'),
+    'W-EXT-E1':       ('BLACK_FILL', 'HIGH',   'solid filled band'),
+    'W-EXT-E2':       ('BLACK_FILL', 'HIGH',   'solid filled band'),
+    'W-EXT-NE':       ('WHITE_FILL', 'HIGH',   'hollow band at AC bay'),
+    'W-EXT-NE2':      ('WHITE_FILL', 'HIGH',   'hollow band at AC bay'),
+    'W-EXT-N-LV':     ('BLACK_FILL', 'HIGH',   'solid filled band N of living'),
+    'W-EXT-N-BAL':    ('WHITE_FILL', 'MED',    'thin hollow band = balcony parapet/rail edge'),
+    'W-BAY-F':        ('WHITE_FILL', 'HIGH',   'hollow band at bay window'),
+    'W-BAY-JW':       ('WHITE_FILL', 'MED',    'hollow band'),
+    'W-BAY-JE':       ('WHITE_FILL', 'MED',    'hollow band'),
+    'W-BALC-W':       ('BLACK_FILL', 'MED',    'solid band'),
+    'W-BALC-S':       ('BLACK_FILL', 'MED',    'solid band'),
+    'W-BALC-N':       ('BLACK_FILL', 'MED',    'solid band'),
+    'W-INT-X5800':    ('BLACK_FILL', 'HIGH',   'solid band kitchen/dining'),
+    'W-INT-X5800-STUB':('BLACK_FILL','MED',    'solid stub'),
+    'W-INT-X7900-L':  ('BLACK_FILL', 'MED',    'solid band kitchen east'),
+    'W-INT-X7900-U':  ('AMBIGUOUS',  'LOW',    'column block at top + mixed band — review'),
+    'W-INT-X9800':    ('BLACK_FILL', 'MED',    'thin dark line gbath/study divider'),
+    'W-INT-X11500':   ('BLACK_FILL', 'HIGH',   'solid band bed/master divider'),
+    'W-INT-X13000':   ('WHITE_FILL', 'MED',    'hollow thin band study/master-bath divider'),
+    'W-INT-Y4500-a':  ('BLACK_FILL', 'HIGH',   'solid band kitchen north'),
+    'W-INT-Y4500-b':  ('WHITE_FILL', 'MED',    'hollow band under cloakroom; W end dark at foyer junction'),
+    'W-INT-Y4500-bc': ('AMBIGUOUS',  'LOW',    'black at X11500 junction, hollow band w/ door at master bath — review'),
+    'W-INT-CLK-N':    ('WHITE_FILL', 'HIGH',   'hollow band + door arc'),
+    'W-INT-CLK-W':    ('WHITE_FILL', 'HIGH',   'hollow band'),
+    'W-INT-CLK-E':    ('WHITE_FILL', 'MED',    'hollow band upper, dark junction lower'),
+    'W-INT-COR-N-STUB':('BLACK_FILL','LOW',    'small dark block'),
+    'W-INT-BEDN-S':   ('WHITE_FILL', 'HIGH',   'hollow band + door arc'),
+    'W-INT-WC-S':     ('BLACK_FILL', 'HIGH',   'solid band guest-bath south'),
+    'W-INT-STD-S':    ('WHITE_FILL', 'HIGH',   'hollow band + study door arc'),
+    'W-INT-Y10800':   ('BLACK_FILL', 'HIGH',   'solid band under north balcony'),
+    'W-INT-Y10800-EXT':('BLACK_FILL','HIGH',   'solid band'),
+    'W-SHAFT-K':      ('BLACK_FILL', 'LOW',    'dark stub kitchen shaft'),
+    'W-INT-DRY-STUB': ('BLACK_FILL', 'LOW',    'small dark stub'),
+    'W-INT-NICHE':    ('THIN_LINE',  'LOW',    'thin partition niche'),
+    # RC1 splits
+    'W-INT-Y4500-b-FOYER': ('BLACK_FILL','LOW','foyer-side segment w/ D-SM door jamb; not on S-S.WALL in DWG'),
+    'W-INT-Y4500-b-CLKSEG':('WHITE_FILL','MED','cloakroom-south segment; only 600mm stub x10800-11400 drawn in measured DWG'),
+}
 DEMOLISHED = {
     'W-INT-X5800':      'kitchen west wall to dining — owner: opened up; measured cov low',
     'W-INT-X5800-STUB': 'kitchen/dining stub — opened',
@@ -98,35 +150,63 @@ DEMOLISHED = {
     'W-INT-CLK-E':      'cloakroom E wall — demolished',
     'W-INT-CLK-W':      'cloakroom W wall — demolished',
     'W-INT-DRY-STUB':   'kitchen dry-side stub — opened',
+    'W-INT-Y4500-b-CLKSEG': 'cloakroom-south segment of Y4500-b — open/removed; secondary master is continuous space (owner); DWG draws only 600mm stub x10800-11400 -> stale',
 }
 PARTIAL = {
     'W-INT-X7900-U': 'lower part removed/open per measured; upper part = GUEST_BATH west wall kept',
     'W-INT-NICHE':   'niche wall absent in measured — treated as removed/open; resolves old D-10 as open passage',
     'W-SHAFT-K':     'kitchen shaft line absent in measured; keep as TO_VERIFY marker',
 }
-# walls that are structural per measured hatch / exterior envelope -> NO-OPENING
+# RC1: split the old monolithic Y4500-b rect into foyer segment (kept, has D-SM)
+# and cloakroom segment (open/absent per owner + DWG stale)
+SPLIT_WALLS = {
+    'W-INT-Y4500-b': [
+        ('W-INT-Y4500-b-FOYER',  [8236, 4450, 9050, 4650]),
+        ('W-INT-Y4500-b-CLKSEG', [9050, 4450, 11400, 4650]),
+    ]
+}
+
+def policy_for(wid, visual_cls, disp, wall_type):
+    """owner-declared rule mapping — NOT structural inference."""
+    if disp != 'EXISTING':
+        # demolished/partial walls: if they were drawn WHITE -> real conflict
+        if visual_cls == 'WHITE_FILL':
+            return 'CLASSIFICATION_CONFLICT_TO_REVIEW'
+        return 'DEMOLISHED_OR_PARTIAL'
+    if wall_type == 'exterior':
+        return 'NO_OPEN_EXTERIOR_ENVELOPE'
+    if visual_cls == 'WHITE_FILL':
+        return 'OWNER_DECLARED_NO_DEMOLITION_NO_OPENING'
+    if visual_cls == 'BLACK_FILL' or visual_cls == 'THIN_LINE':
+        return 'MODIFIABLE_DECLARED'
+    return 'CLASSIFICATION_TO_REVIEW'
+
 walls = []
 for w in GEO['walls']:
-    x1, y1, x2, y2 = w['rect_mm']
-    cov = coverage(x1, y1, x2, y2)
-    so = struct_overlap_mm2(w['rect_mm'])
     wid = w['id']
-    if wid in DEMOLISHED:
-        disp, lay = 'DEMOLISHED_OWNER_CONFIRMED', 'A-WALL-EXST-REMOVE'
-    elif wid in PARTIAL:
-        disp, lay = 'PARTIAL_REMOVED_TO_VERIFY', 'A-WALL-EXST-REMOVE'
-    else:
-        disp, lay = 'EXISTING', 'A-WALL-EXST-KEEP'
-    if w.get('type') == 'exterior' or so > 40000:
-        cls = 'OWNER_DECLARED_NO_DEMOLITION_NO_OPENING'
-    elif wid in DEMOLISHED or wid in PARTIAL:
-        cls = 'MODIFIABLE_PARTITION'
-    else:
-        cls = 'INTERIOR_TO_VERIFY'   # need source-plan white/black check
-    walls.append({'id': wid, 'rect_mm': w['rect_mm'], 'type': w.get('type'),
-                  'measured_coverage': round(cov, 2), 'struct_overlap_mm2': round(so),
-                  'disposition': disp, 'layer': lay, 'wall_class': cls,
-                  'note': DEMOLISHED.get(wid) or PARTIAL.get(wid) or ''})
+    pieces = SPLIT_WALLS.get(wid, [(wid, w['rect_mm'])])
+    for pid, rect in pieces:
+        x1, y1, x2, y2 = rect
+        cov = coverage(x1, y1, x2, y2)
+        so = struct_overlap_mm2(rect)
+        if pid in DEMOLISHED:
+            disp, lay = 'DEMOLISHED_OWNER_CONFIRMED', 'A-WALL-EXST-REMOVE'
+        elif pid in PARTIAL:
+            disp, lay = 'PARTIAL_REMOVED_TO_VERIFY', 'A-WALL-EXST-REMOVE'
+        else:
+            disp, lay = 'EXISTING', 'A-WALL-EXST-KEEP'
+        vcls, conf, ev = VISUAL.get(pid, VISUAL.get(wid, ('AMBIGUOUS', 'LOW', 'no manual read')))
+        pol = policy_for(pid, vcls, disp, w.get('type'))
+        stale = bool(disp != 'EXISTING' and cov > 0.5)
+        walls.append({'id': pid, 'rect_mm': rect, 'type': w.get('type'),
+                      'measured_coverage': round(cov, 2), 'struct_overlap_mm2': round(so),
+                      'disposition': disp, 'layer': lay,
+                      'original_color_class': vcls,
+                      'owner_rule_applied': pol,
+                      'wall_class': pol,
+                      'dwg_stale_geometry': stale,
+                      'confidence': conf, 'evidence': ev,
+                      'note': DEMOLISHED.get(pid) or PARTIAL.get(pid) or ''})
 
 # ---------------------------------------------------------------- openings (current state, measured)
 def T(p): return [round(p[0] - DX), round(p[1] - DY)]
@@ -150,7 +230,7 @@ openings = [
     {'id': 'D-MASTER?', 'kind': 'door', 'meas_zone': [[10100, 4400], [10900, 4700]],
      'status': 'TO_VERIFY', 'note': 'master bedroom entry on north wall Y4500-bc per dev plan; not a block insert in measured DWG — position to verify'},
     {'id': 'G-GB-BALC', 'kind': 'glazing_door_double', 'meas_zone': [[9200, 12036], [11700, 12436]],
-     'status': 'EXISTING_KEEP', 'note': 'double glass door guest bedroom -> north balcony (was black wall, removed by owner)'},
+     'status': 'EXISTING_KEEP', 'note': 'existing interior double glass door guest bedroom -> north balcony (replaced demolished black wall). NOT the exterior enclosure.'},
     {'id': 'G-DIN-LIV', 'kind': 'sliding_glass_3track', 'meas_zone': [[1650, 5866], [4350, 6051]],
      'status': 'EXISTING_KEEP', 'note': 'owner blue-line new sliding glass door kitchen-dining domain <-> living, ~2700mm 3-track'},
     {'id': 'D-BALC-W', 'kind': 'door', 'meas_zone': [[6500, 13900], [7100, 14500]],
@@ -163,10 +243,15 @@ for o in openings:
                     T(o['meas_zone'][1])[0], T(o['meas_zone'][1])[1]]
 
 # ---------------------------------------------------------------- stairs / level
+# RC1: two estimates conflict and are BOTH recorded — nothing resolved silently.
 stairs = {'zone_meas': [5900, 7936, 6500, 9136], 'risers': 2, 'tread_mm': 300,
           'run_direction': '+x (west=lower living/dining, east=upper bedroom wing)',
-          'level_difference_mm': 400, 'level_status': 'ELEVATION_TO_VERIFY',
-          'note': 'owner estimate ~400mm (earlier said <=350); two 300mm treads drawn in S-楼梯'}
+          'level_difference_mm': None,
+          'level_status': 'LEVEL_DELTA_TO_VERIFY',
+          'owner_estimate_mm': '<=350 (2 risers, 3rd step is the platform itself)',
+          'cad_derived_mm': '~400 (inferred; not directly dimensioned in DWG)',
+          'field_measure_request': 'L1 finished floor -> L2 finished floor vertical delta',
+          'note': 'two 300mm treads drawn in S-楼梯; ramp slope + platform cut + living rectangle all PROVISIONAL until measured'}
 stairs['zone_mm'] = [stairs['zone_meas'][0]-DX, stairs['zone_meas'][1]-DY,
                      stairs['zone_meas'][2]-DX, stairs['zone_meas'][3]-DY]
 
@@ -193,10 +278,24 @@ for k in keep:
     k['rect_mm'] = [k['meas_zone'][0][0]-DX, k['meas_zone'][0][1]-DY,
                     k['meas_zone'][1][0]-DX, k['meas_zone'][1][1]-DY]
 
+balconies = {
+    'north_balcony': {
+        'current_enclosure': 'OPEN_NOT_ENCLOSED',
+        'future_enclosure': 'PROPOSED_LEGAL_TO_ENCLOSE',
+        'evidence': 'owner statement RC1; DWG north-edge multilines = parapet/railing, NOT glazing',
+        'interior_door': 'G-GB-BALC (guest bedroom <-> balcony, existing)'},
+    'life_balcony': {'red_cabinet': 'KEEP'},
+}
+
 model = {
-    'meta': {'task': 'TASK03A current-existing baseline', 'coord_system': 'task01-compatible mm',
+    'meta': {'task': 'TASK03A RC1 current-existing baseline',
+             'rc1_changes': ['DWG governs dimensions; owner statements govern wall existence',
+                             'white/black class from dev-plan visual read + owner declaration — no thickness inference',
+                             'north balcony = OPEN, enclosure PROPOSED',
+                             'level delta = LEVEL_DELTA_TO_VERIFY (owner <=350 vs CAD ~400)'],
+             'coord_system': 'task01-compatible mm',
              'measured_origin': [OX_ABS, OY_ABS], 'offset_task01_to_measured': [DX, DY],
-             'authority': 'measured DWG > owner statements > task01 reconstruction'},
+             'authority': 'measured DWG (dims) + owner statements (existence) > developer plan (policy/history) > task02 semantics'},
     'walls': walls,
     'structural_fills_measured': [[t01(*[min(p[0] for p in poly), min(p[1] for p in poly)])[0],
                                    t01(*[min(p[0] for p in poly), min(p[1] for p in poly)])[1],
@@ -204,6 +303,7 @@ model = {
                                   for poly in hatch_polys],
     'openings': openings,
     'split_level': stairs,
+    'balconies': balconies,
     'keep_items': keep,
     'measured_dims': {'north_chain': [5100, 1900, 3200, 3300],
                       'south_chain': [1400, 3000, 2100, 3600, 3900, 900],

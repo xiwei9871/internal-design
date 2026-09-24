@@ -35,8 +35,14 @@ def label(msp, txt, x, y, h=160, lay='A-NOTE', rot=0):
 
 def walls(msp):
     for w in M['walls']:
+        cls = w['wall_class']
         if w['disposition'] == 'EXISTING':
-            lay = 'A-WALL-OWNER-NOOPEN' if 'NO_DEMOLITION' in w['wall_class'] else 'A-WALL-EXST-KEEP'
+            if 'NO_DEMOLITION' in cls or 'NO_OPEN' in cls:
+                lay = 'A-WALL-OWNER-NOOPEN'
+            elif 'REVIEW' in cls:
+                lay = 'A-QC'
+            else:
+                lay = 'A-WALL-EXST-KEEP'
         else:
             lay = 'A-WALL-EXST-REMOVE'
         rect(msp, lay, *w['rect_mm'])
@@ -51,31 +57,41 @@ CD = {}
 # returned to lower level: x5900-7200 y4650-7800 strip (west of stair/landing)
 CD['level'] = {
  'lower_zone_note': 'living+dining+kitchen+balconies at L1(+-0)',
- 'upper_zone_note': 'bedroom wing + corridor + retained landing at L2(+400 TO_VERIFY)',
+ 'upper_zone_note': 'bedroom wing + corridor + retained landing at L2 (delta TO_VERIFY)',
+ 'delta_status': 'LEVEL_DELTA_TO_VERIFY — owner <=350 vs CAD ~400; all slope/platform/living numbers PROVISIONAL',
  'stair_mm': [7200, 6600, 7800, 7800],
  'landing_kept_mm': [[7800, 4650, 9100, 6300], [7800, 6300, 13000, 7800]],
  'returned_to_L1_mm': [5900, 4650, 7200, 7800],
- 'ramp': {'note': 'ASSISTED_WHEELCHAIR_FUTURE_PROVISION not code-compliant',
-          'run_mm': 3000, 'width_mm': 1100, 'slope': '400/3000 = 1:7.5 TO_VERIFY',
+ 'ramp': {'note': 'ASSISTED_WHEELCHAIR_FUTURE_PROVISION not code-compliant; PROVISIONAL pending level measure',
+          'run_mm': 3000, 'width_mm': 1100,
+          'slope': '1:7.5 @400mm / 1:8.6 @350mm — PROVISIONAL',
           'rect_mm': [4150, 5600, 7150, 6700],
           'topology': 'climbs +x along south edge of returned strip (kitchen side); '
                       'top lands on former-niche open passage x7150-7800 y4650-6600 -> upper landing'},
 }
 
 # ---- new walls (concept)
-# Secondary master bath in former cloakroom x9050-11300 y4650-6300 (task01)
-# Option W (preferred): door on west wall into suite foyer x7800-9050.
-# Rebuild CLK-W line as new wall with door opening; CLK-N rebuilt (seal corridor side);
-# internal wet/dry partition glass.
+# Secondary master bath in former cloakroom x9050-11300 y4650-6300 (task01).
+# RC1 truth: CLK walls demolished; Y4500-b cloakroom segment open/absent in
+# measured DWG (only 600mm stub at x10800-11400) -> the zone is continuous
+# with the secondary master. BOTH entries place doors in NEW partition walls.
 SMB = {'x1': 9050, 'y1': 4650, 'x2': 11300, 'y2': 6300}
 CD['smb'] = {
  'zone_mm': [SMB['x1'], SMB['y1'], SMB['x2'], SMB['y2']],
  'area_m2': round((SMB['x2']-SMB['x1'])*(SMB['y2']-SMB['y1'])/1e6, 2),
+ 'site_truth': 'cloakroom gone; only 600mm residual stub x10800-11400@y4500-4700 drawn on S-S.WALL — verify on site',
  'entry_W': {'door_rect': [9050, 5200, 9050, 5950], 'swing': 'into foyer',
-             'foyer_mm': [7800, 4650, 9050, 6300]},
- 'entry_S': {'blocked': 'W-INT-Y4500-b is OWNER_DECLARED_NO_OPENING (white fill, 200mm, column overlap) — new opening prohibited',
-             'verdict': 'INFEASIBLE unless owner reclassifies wall'},
- 'fixtures': {'shower': [10300, 4650, 11300-0, 5850],   # ~1000x1200 against east (master-bath wet) wall
+             'foyer_mm': [7800, 4650, 9050, 6300],
+             'pros': 'private suite vestibule; door does NOT face bed; foyer buffers bath/bedroom',
+             'cons': 'slightly longer path; uses landing area',
+             'verdict': 'FEASIBLE — preferred'},
+ 'entry_S': {'door_rect': [9500, 4650, 10300, 4650], 'swing': 'into bath, door in NEW south partition',
+             'pros': 'shortest direct path from bedroom',
+             'cons': 'door faces bed zone (owner dislikes); closes the open merged feel; '
+                     'keep door x9500-10300 clear of residual stub at x10800-11400 (TO_VERIFY)',
+             'verdict': 'FEASIBLE — conditional on stub/presence field check'},
+ 'comparison': 'both feasible on NEW walls; W preferred (privacy + door not facing bed); owner decides',
+ 'fixtures': {'shower': [10300, 4650, 11300, 5850],   # ~1000x1200 against east (master-bath wet) wall
               'vanity': [9050, 4650, 9850, 5250],
               'wc':     [9850, 4650, 10300, 5250]},
  'drain_note': 'east wall shared with MASTER_BATH wet zone — primary drain/vent candidate, TO_VERIFY',
@@ -137,9 +153,9 @@ furn('SMB2-WC', 9550, 4650, 10300, 5250, lay='A-FIXT-PLUMB')
 furn('SMB2-VANITY', 9050, 4650, 9550, 5250, lay='A-FIXT-PLUMB', note='single vanity')
 # RAMP (kitchen-side of platform edge, in lowered strip)
 furn('RAMP', *CD['level']['ramp']['rect_mm'], lay='A-ACCESS-RAMP',
-     note='ramp 2800 run, ~1:7, ASSISTED WHEELCHAIR FUTURE PROVISION')
+     note='ramp 3000 run, slope 1:7.5-1:8.6 PROVISIONAL, ASSISTED WHEELCHAIR FUTURE PROVISION')
 # STAIR
-furn('STAIR', *CD['level']['stair_mm'], lay='A-ACCESS-STAIR', note='2 risers ~400 TO_VERIFY')
+furn('STAIR', *CD['level']['stair_mm'], lay='A-ACCESS-STAIR', note='2 risers, delta LEVEL_TO_VERIFY (<=350 owner / ~400 CAD)')
 CD['furniture'] = F
 
 # ================================================================ emit main DXF
@@ -159,7 +175,7 @@ rect(msp, 'A-DOOR-NEW', x1 - 100, 5200, x1, 5950)        # W door leaf zone
 label(msp, 'SEC-MASTER-BATH W-door', x1 - 200, 5950, 130)
 # landing edge: new level boundary line along x7800 + stair
 rect(msp, 'A-LEVEL', 7800, 4650, 7900, 7800)
-label(msp, 'L2 +400 upper (TO_VERIFY)', 7950, 7600, 140)
+label(msp, 'L2 upper (delta LEVEL_TO_VERIFY)', 7950, 7600, 140)
 label(msp, 'L1 +-0 returned to living', 5950, 7000, 140)
 # ramp (E-W along kitchen side, climbs +x onto open passage -> landing)
 rr = CD['level']['ramp']['rect_mm']
@@ -167,14 +183,14 @@ rect(msp, 'A-ACCESS-RAMP', *rr)
 for i in range(11):
     x = rr[0] + (rr[2] - rr[0]) * i / 10
     msp.add_line((x, rr[1]), (x, rr[3]), dxfattribs={'layer': 'A-ACCESS-RAMP'})
-label(msp, 'RAMP 3000 run ~1:7.5 assisted-wheelchair study', rr[0], rr[3] + 120, 130)
+label(msp, 'RAMP 3000 run, slope 1:7.5-8.6 PROVISIONAL assisted-use', rr[0], rr[3] + 120, 130)
 # stair
 rect(msp, 'A-ACCESS-STAIR', *CD['level']['stair_mm'])
 sx = CD['level']['stair_mm']
 for i in range(3):
     x = sx[0] + (sx[2] - sx[0]) * i / 2
     msp.add_line((x, sx[1]), (x, sx[3]), dxfattribs={'layer': 'A-ACCESS-STAIR'})
-label(msp, '2 RISERS ~400', sx[0], sx[3] + 120, 130)
+label(msp, '2 RISERS (delta TO_VERIFY)', sx[0], sx[3] + 120, 130)
 # furniture + labels
 for f in F:
     rect(msp, f['layer'], *f['rect'])
@@ -195,16 +211,20 @@ doc.saveas(str(ROOT / 'concept' / 'task03a_preferred_plan.dxf'))
 # ================================================================ option compare DXF
 for opt in ('W', 'S'):
     d = new_doc(); m = d.modelspace(); walls(m)
-    rect(m, 'A-WALL-NEW', x1 - 100, y1, x1, y2) if opt == 'W' else None
     if opt == 'W':
         rect(m, 'A-WALL-NEW', x1 - 100, y1, x1, 5200); rect(m, 'A-WALL-NEW', x1 - 100, 5950, x1, y2)
         rect(m, 'A-DOOR-NEW', x1 - 100, 5200, x1, 5950)
         label(m, 'OPTION W: door to suite foyer (PREFERRED)', 7000, 4500, 200)
     else:
-        rect(m, 'A-WALL-NEW', x1 - 100, y1, x1, y2)
-        # S door would need opening in NO-OPENING wall Y4500-b
-        rect(m, 'A-QC', 9800, 4450, 10800, 4650)
-        label(m, 'OPTION S: BLOCKED — new opening in OWNER_DECLARED_NO_OPENING wall Y4500-b', 7000, 4300, 180)
+        # RC1: Y4500-b cloakroom segment is absent/stale -> south wall is NEW
+        # construction; door placed in it at x9500-10300, clear of residual stub
+        rect(m, 'A-WALL-NEW', x1 - 100, y1, x1, y2)                    # west wall solid
+        rect(m, 'A-WALL-NEW', x1, 4550, 9500, 4650)                   # new south wall w/ gap
+        rect(m, 'A-WALL-NEW', 10300, 4550, x2, 4650)
+        rect(m, 'A-DOOR-NEW', 9500, 4550, 10300, 4650)                # S door leaf zone
+        rect(m, 'A-QC', 10800, 4450, 11400, 4700)                     # residual stub TO_VERIFY
+        label(m, 'OPTION S: door in NEW south wall, direct from bedroom (FEASIBLE-conditional)', 7000, 4300, 180)
+        label(m, 'residual stub x10800-11400 TO_VERIFY', 10400, 4200, 130)
     for f in F:
         if 'SMB2' in f['id'] or 'SMB-' in f['id']:
             rect(m, f['layer'], *f['rect'])
@@ -219,8 +239,8 @@ for r in CD['level']['landing_kept_mm']: rect(m, 'A-LEVEL', *r)
 rect(m, 'A-LEVEL', *CD['level']['returned_to_L1_mm'])
 label(m, 'KEPT UPPER LANDING + FOYER', 8000, 6600, 180)
 label(m, 'RETURNED TO L1 (lowered to living level)', 5950, 7300, 160)
-label(m, 'STAIR 2 risers ~400mm', 6300, 7900, 160)
-label(m, 'RAMP study 2800x1100 slope~1:7 (400mm TO_VERIFY)', 5900, 4800, 160)
+label(m, 'STAIR 2 risers (delta LEVEL_TO_VERIFY)', 6300, 7900, 160)
+label(m, 'RAMP study 3000x1100 slope 1:7.5-1:8.6 PROVISIONAL', 5900, 4800, 160)
 d.saveas(str(ROOT / 'concept' / 'split_level_study.dxf'))
 
 json.dump(CD, open(ROOT / 'concept' / 'concept_data.json', 'w'), ensure_ascii=False, indent=1)

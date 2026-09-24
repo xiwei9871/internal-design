@@ -6,9 +6,9 @@
       "detail": "\u4e16\u7eaa\u6b23\u56edFF.dwg sha=f01a9bb5de96 units=mm (INSUNITS=4) immutable=True"
     },
     {
-      "gate": "G2 Option S honestly blocked on no-opening wall",
+      "gate": "G2 W/S honest compare (no auto-kill), conflicts flagged",
       "result": "PASS",
-      "detail": "S verdict: INFEASIBLE unless owner reclassifies wall; no-opening set has 28 walls"
+      "detail": "W: FEASIBLE \u2014 preferred | S: FEASIBLE \u2014 conditional on stub/presence field check | conflicts=['W-INT-CLK-N', 'W-INT-CLK-E', 'W-INT-CLK-W', 'W-INT-Y4500-b-CLKSEG']"
     },
     {
       "gate": "G3 kitchen cabinets untouched",
@@ -41,14 +41,19 @@
       "detail": "open core 2800x3200; intruders=[] (small movable table exempt)"
     },
     {
-      "gate": "G9 stair/ramp documented, slope flagged",
+      "gate": "G9 stair/ramp documented, slope PROVISIONAL",
       "result": "PASS",
-      "detail": "rise~400 TO_VERIFY; run 3000; slope 1:7.5 assisted-use (no code claim)"
+      "detail": "run 3000x1100; slope 1:7.5 @400mm / 1:8.6 @350mm \u2014 PROVISIONAL; assisted-use (no code claim)"
     },
     {
-      "gate": "G10 level diff TO_VERIFY",
+      "gate": "G10 level delta conflict recorded",
       "result": "PASS",
-      "detail": "rise=400mm owner-reported; status=ELEVATION_TO_VERIFY"
+      "detail": "owner <=350 (2 risers, 3rd step is the platform itself) vs CAD ~400 (inferred; not directly dimensioned in DWG) \u2014 field measure requested"
+    },
+    {
+      "gate": "G10b N balcony OPEN + enclosure PROPOSED",
+      "result": "PASS",
+      "detail": "current=OPEN_NOT_ENCLOSED, future=PROPOSED_LEGAL_TO_ENCLOSE"
     },
     {
       "gate": "G11 study program complete",

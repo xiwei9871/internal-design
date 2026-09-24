@@ -1,7 +1,8 @@
 {
  "level": {
   "lower_zone_note": "living+dining+kitchen+balconies at L1(+-0)",
-  "upper_zone_note": "bedroom wing + corridor + retained landing at L2(+400 TO_VERIFY)",
+  "upper_zone_note": "bedroom wing + corridor + retained landing at L2 (delta TO_VERIFY)",
+  "delta_status": "LEVEL_DELTA_TO_VERIFY — owner <=350 vs CAD ~400; all slope/platform/living numbers PROVISIONAL",
   "stair_mm": [
    7200,
    6600,
@@ -29,10 +30,10 @@
    7800
   ],
   "ramp": {
-   "note": "ASSISTED_WHEELCHAIR_FUTURE_PROVISION not code-compliant",
+   "note": "ASSISTED_WHEELCHAIR_FUTURE_PROVISION not code-compliant; PROVISIONAL pending level measure",
    "run_mm": 3000,
    "width_mm": 1100,
-   "slope": "400/3000 = 1:7.5 TO_VERIFY",
+   "slope": "1:7.5 @400mm / 1:8.6 @350mm — PROVISIONAL",
    "rect_mm": [
     4150,
     5600,
@@ -50,6 +51,7 @@
    6300
   ],
   "area_m2": 3.71,
+  "site_truth": "cloakroom gone; only 600mm residual stub x10800-11400@y4500-4700 drawn on S-S.WALL — verify on site",
   "entry_W": {
    "door_rect": [
     9050,
@@ -63,12 +65,24 @@
     4650,
     9050,
     6300
-   ]
+   ],
+   "pros": "private suite vestibule; door does NOT face bed; foyer buffers bath/bedroom",
+   "cons": "slightly longer path; uses landing area",
+   "verdict": "FEASIBLE — preferred"
   },
   "entry_S": {
-   "blocked": "W-INT-Y4500-b is OWNER_DECLARED_NO_OPENING (white fill, 200mm, column overlap) — new opening prohibited",
-   "verdict": "INFEASIBLE unless owner reclassifies wall"
+   "door_rect": [
+    9500,
+    4650,
+    10300,
+    4650
+   ],
+   "swing": "into bath, door in NEW south partition",
+   "pros": "shortest direct path from bedroom",
+   "cons": "door faces bed zone (owner dislikes); closes the open merged feel; keep door x9500-10300 clear of residual stub at x10800-11400 (TO_VERIFY)",
+   "verdict": "FEASIBLE — conditional on stub/presence field check"
   },
+  "comparison": "both feasible on NEW walls; W preferred (privacy + door not facing bed); owner decides",
   "fixtures": {
    "shower": [
     10300,
@@ -486,7 +500,7 @@
     6700
    ],
    "layer": "A-ACCESS-RAMP",
-   "note": "ramp 2800 run, ~1:7, ASSISTED WHEELCHAIR FUTURE PROVISION"
+   "note": "ramp 3000 run, slope 1:7.5-1:8.6 PROVISIONAL, ASSISTED WHEELCHAIR FUTURE PROVISION"
   },
   {
    "id": "STAIR",
@@ -497,7 +511,7 @@
     7800
    ],
    "layer": "A-ACCESS-STAIR",
-   "note": "2 risers ~400 TO_VERIFY"
+   "note": "2 risers, delta LEVEL_TO_VERIFY (<=350 owner / ~400 CAD)"
   }
  ]
 }

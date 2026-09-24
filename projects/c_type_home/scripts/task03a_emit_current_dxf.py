@@ -39,11 +39,18 @@ def rect(lay, r, hatch=False):
     return pl
 
 for w in M['walls']:
+    cls = w['wall_class']
     if w['disposition'] == 'EXISTING':
-        lay = 'A-WALL-OWNER-NOOPEN' if 'NO_DEMOLITION' in w['wall_class'] else 'A-WALL-EXST-KEEP'
+        if 'NO_DEMOLITION' in cls or 'NO_OPEN' in cls:
+            lay = 'A-WALL-OWNER-NOOPEN'
+        elif 'REVIEW' in cls:
+            lay = 'A-QC'
+        else:
+            lay = 'A-WALL-EXST-KEEP'
         rect(lay, w['rect_mm'])
     else:
-        rect('A-WALL-EXST-REMOVE', w['rect_mm'])   # ghost: demolished/absent
+        lay = 'A-QC' if 'CONFLICT' in cls else 'A-WALL-EXST-REMOVE'
+        rect(lay, w['rect_mm'])   # ghost: demolished/absent; conflict walls on A-QC
 
 for o in M['openings']:
     lay = {'sliding_glass_3track': 'A-GLAZ-EXST-KEEP',
@@ -66,7 +73,7 @@ zx1, zy1, zx2, zy2 = st['zone_mm']
 for i in range(3):
     x = zx1 + (zx2 - zx1) * i / 2
     msp.add_line((x, zy1), (x, zy2), dxfattribs={'layer': 'A-ACCESS-STAIR'})
-msp.add_text('L1->L2 2 RISERS ~400mm TO_VERIFY', height=140,
+msp.add_text('L1->L2 2 RISERS — delta LEVEL_TO_VERIFY (owner<=350 / CAD~400)', height=140,
              dxfattribs={'layer': 'A-LEVEL'}).set_placement((zx1 - 200, zy2 + 200))
 
 doc.saveas(str(ROOT / 'current_existing' / 'current_existing_v1.dxf'))

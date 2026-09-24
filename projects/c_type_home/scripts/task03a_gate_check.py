@@ -23,11 +23,12 @@ src = MAN['sources'][0]
 gate('G1 measured DWG units+hash recorded', 'mm' in src['units'] and len(src['sha256']) == 64,
      f"{src['file']} sha={src['sha256'][:12]} units={src['units']} immutable={src['immutable']}")
 
-# G2 W-INT-Y4500-b (Option S wall) must carry no proposed opening
-no_open = [w['id'] for w in CE['walls'] if w.get('wall_class') == 'OWNER_DECLARED_NO_DEMOLITION_NO_OPENING']
-s_blocked = 'NO_OPENING' in json.dumps(CD['smb']['entry_S'])
-gate('G2 Option S honestly blocked on no-opening wall', s_blocked and any('Y4500-b' in w for w in no_open),
-     f"S verdict: {CD['smb']['entry_S'].get('verdict','?')}; no-opening set has {len(no_open)} walls")
+# G2 W/S both evaluated on NEW walls; conflicts flagged not hidden
+conflicts = [w['id'] for w in CE['walls'] if 'CONFLICT' in w['wall_class']]
+w_ok = 'FEASIBLE' in CD['smb']['entry_W'].get('verdict', '')
+s_ok = 'FEASIBLE' in CD['smb']['entry_S'].get('verdict', '')
+gate('G2 W/S honest compare (no auto-kill), conflicts flagged', w_ok and s_ok and len(conflicts) >= 3,
+     f"W: {CD['smb']['entry_W']['verdict']} | S: {CD['smb']['entry_S']['verdict']} | conflicts={conflicts}")
 
 # G3 kitchen cabinet zone untouched by proposed furniture/plumbing
 kcab = next(f['rect'] for f in F if f['id'] == 'K-CAB')
@@ -66,15 +67,22 @@ bad = [f['id'] for f in F if f['layer'] == 'A-FURN-PROP' and inter(f['rect'], co
 gate('G8 living flexible core open', not bad,
      f"open core {core[2]-core[0]}x{core[3]-core[1]}; intruders={bad} (small movable table exempt)")
 
-# G9 stair/ramp slope math + approach
-lv = CD['level']; ramp = lv['ramp']; rise = CE['split_level']['level_difference_mm']
-slope = rise / ramp['run_mm']
-gate('G9 stair/ramp documented, slope flagged', ramp['run_mm'] >= 2500 and 0.13 <= slope <= 0.17,
-     f"rise~{rise} TO_VERIFY; run {ramp['run_mm']}; slope 1:{ramp['run_mm']/rise:.1f} assisted-use (no code claim)")
+# G9 stair/ramp documented; slope range flagged provisional; delta unresolved
+lv = CD['level']; ramp = lv['ramp']
+sl = CE['split_level']
+gate('G9 stair/ramp documented, slope PROVISIONAL', ramp['run_mm'] >= 2500 and 'PROVISIONAL' in ramp['slope'],
+     f"run {ramp['run_mm']}x{ramp['width_mm']}; slope {ramp['slope']}; assisted-use (no code claim)")
 
-# G10 level difference marked TO_VERIFY
-gate('G10 level diff TO_VERIFY', CE['split_level']['level_status'] == 'ELEVATION_TO_VERIFY',
-     f"rise={rise}mm owner-reported; status={CE['split_level']['level_status']}")
+# G10 level delta conflict explicitly recorded
+gate('G10 level delta conflict recorded', sl['level_status'] == 'LEVEL_DELTA_TO_VERIFY'
+     and sl['level_difference_mm'] is None and 'owner_estimate_mm' in sl,
+     f"owner {sl['owner_estimate_mm']} vs CAD {sl['cad_derived_mm']} — field measure requested")
+
+# G10b north balcony open now, enclosure proposed
+nb = CE['balconies']['north_balcony']
+gate('G10b N balcony OPEN + enclosure PROPOSED', nb['current_enclosure'] == 'OPEN_NOT_ENCLOSED'
+     and 'PROPOSED' in nb['future_enclosure'],
+     f"current={nb['current_enclosure']}, future={nb['future_enclosure']}")
 
 # G11 study program: desk + storage + backup sleep
 ids = [f['id'] for f in F]
