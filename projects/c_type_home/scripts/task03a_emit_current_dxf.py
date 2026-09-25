@@ -15,6 +15,9 @@ LAYERS = {
     'A-DOOR-EXST-KEEP':   3,
     'A-DOOR-NEW':         4,
     'A-GLAZ-EXST-KEEP':   6,
+    'A-WIND-EXST-KEEP':   4,   # cyan — existing window glazing
+    'A-WIND-TO-VERIFY':   6,   # magenta — ambiguous opening, field verify
+    'A-GLAZ-PROP':        5,   # blue — proposed glazing (N balcony enclosure)
     'A-FURN-EXST-KEEP':   30,
     'A-FURN-PROP':        2,
     'A-FIXT-PLUMB':       4,
@@ -59,6 +62,40 @@ for o in M['openings']:
     rect(lay, o['rect_mm'])
     cx = (o['rect_mm'][0] + o['rect_mm'][2]) / 2; cy = (o['rect_mm'][1] + o['rect_mm'][3]) / 2
     msp.add_text(o['id'], height=160, dxfattribs={'layer': 'A-NOTE'}).set_placement((cx, cy))
+
+# ---------------------------------------------------------------- RC2.2 windows
+def glazing_lines(rect_, lay):
+    """3-line window symbol inside the wall band of an opening."""
+    x1, y1, x2, y2 = rect_
+    if (x2 - x1) >= (y2 - y1):
+        for i in (0.25, 0.5, 0.75):
+            y = y1 + (y2 - y1) * i
+            msp.add_line((x1, y), (x2, y), dxfattribs={'layer': lay})
+    else:
+        for i in (0.25, 0.5, 0.75):
+            x = x1 + (x2 - x1) * i
+            msp.add_line((x, y1), (x, y2), dxfattribs={'layer': lay})
+
+for win in M.get('windows', []):
+    vs = win['verification_status']
+    lay = {'CONFIRMED': 'A-WIND-EXST-KEEP', 'MEASURED': 'A-WIND-EXST-KEEP',
+           'TO_VERIFY': 'A-WIND-TO-VERIFY', 'PROPOSED': 'A-GLAZ-PROP'}[vs]
+    r = win['opening_rect_mm']
+    if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
+        # proposed glazing along parapet north face — dashed impression via thin line
+        msp.add_line((r[0], r[3]), (r[2], r[3]), dxfattribs={'layer': lay})
+        msp.add_text('PROPOSED enclosure (now OPEN)', height=140,
+                     dxfattribs={'layer': lay}).set_placement((r[0], r[3] + 200))
+        continue
+    glazing_lines(r, lay)
+    bay = win.get('bay')
+    if bay:
+        for j in bay['jambs']:
+            rect(lay, j)
+        rect(lay, bay['front'])
+    cx, cy = (r[0] + r[2]) / 2, (r[1] + r[3]) / 2
+    msp.add_text(win['window_id'], height=110,
+                 dxfattribs={'layer': 'A-NOTE'}).set_placement((cx - 200, cy + 260))
 
 for k in M['keep_items']:
     rect('A-FURN-EXST-KEEP', k['rect_mm'])

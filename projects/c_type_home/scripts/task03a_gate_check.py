@@ -167,6 +167,99 @@ gate('G20 split-level net-area account present',
      f"returned {acv.get('returned_platform_m2')} vs ramp {acv.get('ramp_footprint_m2')} "
      f"-> net +{acv.get('net_unobstructed_public_gain_m2')}m2 (PROVISIONAL)")
 
+# ================================================================ RC2.2 gates
+WREG = json.load(open(os.path.join(ROOT, 'current_existing/window_register.json')))['windows']
+REG_FIELDS = {'window_id', 'room_or_zone', 'orientation_plan_relative', 'window_type',
+              'source_plan_evidence', 'measured_dwg_evidence', 'current_status',
+              'proposed_status', 'span_mm', 'sill_or_bay_note', 'confidence',
+              'verification_status', 'notes'}
+WTYPES = {'STANDARD_WINDOW', 'BAY_WINDOW', 'BALCONY_GLAZING', 'GLASS_DOOR',
+          'PROPOSED_BALCONY_ENCLOSURE'}
+VSTATS = {'CONFIRMED', 'MEASURED', 'TO_VERIFY', 'PROPOSED'}
+
+# G21 every perimeter window/bay/glazing identified on the dev plan + measured DWG
+# is registered (perimeter review result — encoded once, then register must cover it)
+EXPECTED = {'W-KIT-S', 'W-KIT-SW', 'W-SMB-S', 'W-MB-S', 'W-LIV-N', 'W-STUDY-NE',
+            'W-GBATH-N', 'G-GB-BALC', 'D-BALC-W', 'G-DIN-LIV', 'N-BALC-ENCL'}
+ids = {w['window_id'] for w in WREG}
+missing = EXPECTED - ids
+bad_fields = [w['window_id'] for w in WREG
+              if not REG_FIELDS <= set(w) or w['window_type'] not in WTYPES
+              or w['verification_status'] not in VSTATS]
+gate('G21 original-plan window coverage (register complete)',
+     not missing and not bad_fields,
+     f"registered={len(WREG)}; missing={sorted(missing)}; malformed={bad_fields}")
+
+# G22 no continuous solid wall through any registered window/glass-door span
+conf = []
+for win in WREG:
+    if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
+        continue
+    op = win['opening_rect_mm']
+    hit = [w['id'] for w in CE['walls'] if w['disposition'] == 'EXISTING'
+           and not (w['rect_mm'][2] <= op[0] or w['rect_mm'][0] >= op[2] or
+                    w['rect_mm'][3] <= op[1] or w['rect_mm'][1] >= op[3])]
+    if hit:
+        conf.append(f"{win['window_id']}<-{hit}")
+gate('G22 no solid wall through window span', not conf,
+     f"checked {len(WREG)} openings; conflicts={conf}")
+
+# G23 north balcony time-state
+nb = CE['balconies']['north_balcony']
+ggb = next((w for w in WREG if w['window_id'] == 'G-GB-BALC'), None)
+nbe = next((w for w in WREG if w['window_id'] == 'N-BALC-ENCL'), None)
+gate('G23 N-balcony time-state (open now / proposed / glass door keep)',
+     nb['current_enclosure'] == 'OPEN_NOT_ENCLOSED'
+     and 'PROPOSED' in nb['future_enclosure']
+     and ggb is not None and ggb['proposed_status'] == 'EXISTING_KEEP'
+     and nbe is not None and nbe['verification_status'] == 'PROPOSED',
+     f"current={nb['current_enclosure']}; future={nb['future_enclosure']}; "
+     f"G-GB-BALC={ggb['proposed_status'] if ggb else 'MISSING'}")
+
+# G24 no orphan wall graphics in presentation drawing:
+# every EXISTING wall must touch another wall / window opening / bay component,
+# except legit detached types (balcony parapets)
+def _touches(a, b, tol=45):
+    return not (a[2] + tol <= b[0] or a[0] - tol >= b[2] or
+                a[3] + tol <= b[1] or a[1] - tol >= b[3])
+nodes = [w['rect_mm'] for w in CE['walls'] if w['disposition'] == 'EXISTING']
+for win in WREG:
+    if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
+        continue
+    nodes.append(win['opening_rect_mm'])
+    for j in win.get('bay', {}).get('jambs', []):
+        nodes.append(j)
+    if win.get('bay'):
+        nodes.append(win['bay']['front'])
+# demolished/opening context: a free wall END explained by a demolished wall or
+# registered door opening is a real envelope end, not a floating graphic
+context = nodes + [w['rect_mm'] for w in CE['walls'] if w['disposition'] != 'EXISTING'] + \
+          [o['rect_mm'] for o in CE['openings']]
+EXEMPT = {'railing_parapet'}
+orphans = []
+for w in CE['walls']:
+    if w['disposition'] != 'EXISTING' or w['type'] in EXEMPT:
+        continue
+    r = w['rect_mm']
+    if not any(_touches(r, n) for n in context if n is not r):
+        orphans.append(w['id'])
+gate('G24 no orphan wall graphics', not orphans,
+     f"orphans={orphans} (parapets + explained free ends exempt)")
+
+# G25 layout freeze vs RC2.1 baseline 246ff12
+BASE = json.load(open(os.path.join(ROOT, 'qc/layout_baseline_246ff12.json')))
+diffs = []
+for k in ('level', 'new_walls', 'new_doors', 'smb', 'guest_path', 'door_swings'):
+    if CD.get(k) != BASE.get(k):
+        diffs.append(k)
+fb = {f['id']: f for f in BASE['furniture']}
+for f in CD['furniture']:
+    b = fb.get(f['id'])
+    if b is None or b['rect'] != f['rect']:
+        diffs.append(f"furniture:{f['id']}")
+gate('G25 layout freeze vs RC2.1', not diffs,
+     f"changed={diffs if diffs else 'none'} (windows/wall-split/render changes exempt)")
+
 overall = all(r['result'] == 'PASS' for r in results)
 print(f"\n=== TASK03A GATES: {sum(r['result']=='PASS' for r in results)}/{len(results)} {'ALL PASS' if overall else 'HAS FAIL'} ===")
 json.dump({'gates': results, 'overall': 'PASS' if overall else 'FAIL'},

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Task03A QC renders — 6 sheets. task01 coords."""
+"""Task03A QC + presentation renders. task01 coords.
+RC2.2: window register overlay, wall/window conflict check, before/after
+cleanup sheet, and s3 split into owner-facing presentation + QC diagnostic."""
 import json, matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -11,10 +13,13 @@ plt.rcParams['font.family'] = 'PingFang SC'
 ROOT = Path(__file__).resolve().parent.parent
 M = json.load(open(ROOT / 'current_existing' / 'current_existing_v1.json'))
 CD = json.load(open(ROOT / 'concept' / 'concept_data.json'))
+WB = json.load(open(ROOT / 'qc' / 'walls_baseline_246ff12.json'))  # RC2.1 walls
 QC = ROOT / 'qc'
 
 WCOL = {'keep': '#9aa0a6', 'noopen': '#d93025', 'remove': '#dadce0', 'new': '#188038',
         'conflict': '#e8710a', 'review': '#9334e6'}
+WIN_COL = {'CONFIRMED': '#1a73e8', 'MEASURED': '#1a73e8',
+           'TO_VERIFY': '#9334e6', 'PROPOSED': '#188038'}
 
 def wcolor(w):
     cls = w['wall_class']
@@ -24,14 +29,82 @@ def wcolor(w):
     if 'REVIEW' in cls or 'CONFLICT' in cls: return WCOL['review']
     return WCOL['keep']
 
-def draw_walls(ax, mode='current'):
-    for w in M['walls']:
+def draw_walls(ax, mode='current', walls=None, presentation=False):
+    for w in (walls if walls is not None else M['walls']):
         x1, y1, x2, y2 = w['rect_mm']
         if mode == 'current' and w['disposition'] != 'EXISTING':
             continue
-        ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor=wcolor(w), edgecolor='none', zorder=2))
+        c = wcolor(w)
+        if presentation and 'REVIEW' in w['wall_class']:
+            c = WCOL['keep']          # classification dispute is QC info, not owner-facing
+        ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor=c, edgecolor='none', zorder=2))
 
-def draw_furn(ax):
+def draw_windows(ax, qc=False):
+    """window/glazing graphics — glass lines in the wall-band gap + bay outlines."""
+    for win in M.get('windows', []):
+        vs = win['verification_status']
+        col = WIN_COL[vs]
+        r = win['opening_rect_mm']
+        if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
+            ax.plot([r[0], r[2]], [r[3], r[3]], color=col, lw=1.8, ls='--', zorder=4)
+            ax.text((r[0] + r[2]) / 2, r[3] + 160,
+                    'PROPOSED enclosure' + (f' ({win["window_id"]})' if qc else ''),
+                    fontsize=6, color=col, ha='center')
+            continue
+        x1, y1, x2, y2 = r
+        if (x2 - x1) >= (y2 - y1):
+            for i in (0.25, 0.5, 0.75):
+                y = y1 + (y2 - y1) * i
+                ax.plot([x1, x2], [y, y], color=col, lw=1.0, zorder=4)
+        else:
+            for i in (0.25, 0.5, 0.75):
+                x = x1 + (x2 - x1) * i
+                ax.plot([x, x], [y1, y2], color=col, lw=1.0, zorder=4)
+        bay = win.get('bay')
+        if bay:
+            for j in bay['jambs']:
+                ax.add_patch(Rectangle((j[0], j[1]), j[2] - j[0], j[3] - j[1],
+                                       facecolor='none', edgecolor=col, lw=1.0, zorder=4))
+            f = bay['front']
+            ax.add_patch(Rectangle((f[0], f[1]), f[2] - f[0], f[3] - f[1],
+                                   facecolor='none', edgecolor=col, lw=1.4, zorder=4))
+        if qc:
+            tag = f"{win['window_id']}\n{vs}" if vs != 'CONFIRMED' else win['window_id']
+            ax.text((x1 + x2) / 2, y2 + 120, tag, fontsize=5, color=col,
+                    ha='center', zorder=6)
+
+def draw_door_symbols(ax):
+    """presentation-grade door: white gap + leaf line + swing arc."""
+    import math
+    for o in M['openings']:
+        if o['kind'] == 'open_passage':
+            continue
+        x1, y1, x2, y2 = o['rect_mm']
+        ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor='white',
+                               edgecolor='none', zorder=3))
+        if 'glaz' in o['kind'] or 'glass' in o['kind']:
+            for i in (0.3, 0.7):
+                if (x2 - x1) >= (y2 - y1):
+                    x = x1 + (x2 - x1) * i
+                    ax.plot([x, x], [y1, y2], color='#1a73e8', lw=1.2, zorder=4)
+                else:
+                    y = y1 + (y2 - y1) * i
+                    ax.plot([x1, x2], [y, y], color='#1a73e8', lw=1.2, zorder=4)
+        else:
+            span = max(x2 - x1, y2 - y1)
+            if (x2 - x1) >= (y2 - y1):   # horizontal wall: leaf swings in -y
+                ax.plot([x1, x1 + span * 0.7], [y1, y1 - span * 0.7], color='#555', lw=1.0, zorder=4)
+                arc = matplotlib.patches.Arc((x1, y1), 2 * span * 0.7, 2 * span * 0.7,
+                                             angle=0, theta1=270, theta2=360,
+                                             color='#999', lw=0.7, zorder=4)
+            else:                       # vertical wall: leaf swings +x
+                ax.plot([x2, x2 + span * 0.7], [y2, y2 - span * 0.7], color='#555', lw=1.0, zorder=4)
+                arc = matplotlib.patches.Arc((x2, y2), 2 * span * 0.7, 2 * span * 0.7,
+                                             angle=0, theta1=270, theta2=360,
+                                             color='#999', lw=0.7, zorder=4)
+            ax.add_patch(arc)
+
+def draw_furn(ax, label_ids=True):
     for f in CD['furniture']:
         x1, y1, x2, y2 = f['rect']
         c = '#f9ab00' if f['layer'] == 'A-FURN-EXST-KEEP' else \
@@ -39,19 +112,58 @@ def draw_furn(ax):
              ('#1a73e8' if 'ACCESS' in f['layer'] else '#f4b400'))
         ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor=c, alpha=.35,
                                edgecolor=c, lw=1.0, zorder=3))
-        ax.text((x1 + x2) / 2, (y1 + y2) / 2, f['id'], fontsize=5.5, ha='center', va='center', zorder=5)
+        if label_ids:
+            ax.text((x1 + x2) / 2, (y1 + y2) / 2, f['id'], fontsize=5.5,
+                    ha='center', va='center', zorder=5)
+
+def draw_furn_presentation(ax):
+    """owner-facing furniture: friendly labels, no internal IDs."""
+    NICE = {'SOFA-3': '3-seat sofa', 'SOFA-2': '2-seat sofa', 'LOUNGE-1': 'lounge',
+            'COFFEE-MOV': 'coffee (movable)', 'PROJ-SCREEN': 'screen wall',
+            'DIN-TABLE': 'dining 1500×600', 'K-CAB': 'kitchen cabinets (keep)',
+            'MB-BED': 'bed 1800×2100', 'MB-WARD': 'wardrobe (keep)',
+            'SMB-BED': 'bed 1800×2100', 'SMB-WARD': 'wardrobe',
+            'ST-DESK': 'desk 1700×800', 'ST-DAYBED': 'daybed', 'ST-BOOK': 'storage (keep)',
+            'ST-NAS': 'NAS/printer shelf', 'GB-BUNK': 'bunk 1500×2100 (lower+optional upper)',
+            'GB-DESK': 'desk', 'GB-GLASSDOOR-ZONE': None, 'GB-BALC-STEP': None,
+            'NB-WD': 'W+D stacked (keep)', 'NB-PLANTS': None, 'NB-TEA': 'tea set (movable)',
+            'SHOE-CAB': 'shoe cab (keep)', 'BENCH': 'bench',
+            'GBATH-VANITY': 'vanity', 'GBATH-WC': 'WC', 'GBATH-SHOWER': 'shower',
+            'GBATH-3KG': '3kg washer', 'MBATH-SHOWER': 'shower 1600×900',
+            'MBATH-WC': 'WC', 'MBATH-VANITY': 'vanity', 'MBATH-RAD': 'radiator',
+            'SMB2-SHOWER': 'shower 800×1650', 'SMB2-WC': 'WC', 'SMB2-VANITY': 'vanity',
+            'RAMP': 'ramp 3000×1100 (provisional)', 'STAIR': '2 risers'}
+    for f in CD['furniture']:
+        x1, y1, x2, y2 = f['rect']
+        nice = NICE.get(f['id'], f['id'])
+        c = '#f9ab00' if f['layer'] == 'A-FURN-EXST-KEEP' else \
+            ('#34a853' if f['layer'] == 'A-FIXT-PLUMB' else
+             ('#1a73e8' if 'ACCESS' in f['layer'] else '#f4b400'))
+        if f['layer'] == 'A-NOTE' and nice is None:
+            continue
+        ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor=c, alpha=.3,
+                               edgecolor=c, lw=0.9, zorder=3))
+        if nice and (x2 - x1) * (y2 - y1) > 300000:
+            ax.text((x1 + x2) / 2, (y1 + y2) / 2, nice, fontsize=6,
+                    ha='center', va='center', zorder=5, color='#333')
 
 def draw_openings(ax):
     for o in M['openings']:
         x1, y1, x2, y2 = o['rect_mm']
-        c = '#9334e6' if 'GLAZ' in o.get('kind', '') or 'glaz' in o.get('kind', '') else '#188038'
+        c = '#9334e6' if 'glaz' in o.get('kind', '') or 'glass' in o.get('kind', '') else '#188038'
         ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor='none',
                                edgecolor=c, lw=1.6, ls='--', zorder=4))
         ax.text((x1 + x2) / 2, y2 + 90, o['id'], fontsize=5, ha='center', color=c, zorder=5)
 
+def draw_new(ax):
+    for r in CD['new_walls']:
+        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor=WCOL['new'], zorder=4))
+    for r in CD['new_doors']:
+        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='#9334e6', zorder=4))
+
 def base(title):
     fig, ax = plt.subplots(figsize=(13, 14), dpi=130)
-    ax.set_xlim(0, 16800); ax.set_ylim(-600, 15200); ax.set_aspect('equal')
+    ax.set_xlim(0, 16800); ax.set_ylim(-900, 15200); ax.set_aspect('equal')
     ax.set_title(title, fontsize=13); ax.grid(alpha=.15)
     return fig, ax
 
@@ -60,9 +172,25 @@ def save(fig, name):
     fig.savefig(QC / name.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
     plt.close(fig); print(name)
 
-# S1 current existing
-fig, ax = base('Task03A · Current Existing Plan(measured DWG)')
-draw_walls(ax, 'current'); draw_openings(ax)
+QC_LEGEND = [
+    Line2D([], [], color=WCOL['keep'], lw=6, label='existing wall (modifiable)'),
+    Line2D([], [], color=WCOL['noopen'], lw=6, label='owner-declared no-opening / exterior wall'),
+    Line2D([], [], color=WCOL['remove'], lw=6, label='demolished / absent wall'),
+    Line2D([], [], color=WCOL['new'], lw=6, label='NEW wall'),
+    Line2D([], [], color=WIN_COL['CONFIRMED'], lw=2, label='existing window (3-line glazing)'),
+    Line2D([], [], color=WIN_COL['PROPOSED'], lw=2, ls='--', label='proposed glazing (N balcony)'),
+    Line2D([], [], color='#1a73e8', lw=1.5, label='existing glass door'),
+    Line2D([], [], color='#f4b400', lw=6, alpha=.5, label='furniture (proposed)'),
+    Line2D([], [], color='#f9ab00', lw=6, alpha=.5, label='furniture/cabinet KEEP'),
+    Line2D([], [], color='#34a853', lw=6, alpha=.5, label='plumbing fixture'),
+    Line2D([], [], color='#e8710a', lw=1.5, ls=':', label='door-swing envelope'),
+    Line2D([], [], color='#188038', lw=1.5, ls='-.', label='clear circulation zone/path'),
+    Line2D([], [], color='#9334e6', lw=1.5, ls='--', label='TO_VERIFY geometry/opening'),
+]
+
+# ================================================================ S1 current existing
+fig, ax = base('Task03A · Current Existing Plan (measured DWG)')
+draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_openings(ax)
 for k in M['keep_items']:
     x1, y1, x2, y2 = k['rect_mm']
     ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor='#f9ab00', alpha=.3, edgecolor='#f9ab00', zorder=3))
@@ -70,48 +198,142 @@ for k in M['keep_items']:
 st = M['split_level']['zone_mm']
 ax.add_patch(Rectangle((st[0], st[1]), st[2]-st[0], st[3]-st[1], facecolor='#1a73e8', alpha=.4, zorder=3))
 ax.text(st[0]-400, st[3]+150, '2 risers, delta LEVEL_TO_VERIFY', fontsize=7, color='#1a73e8')
-ax.text(7900, 13900, 'N BALCONY: OPEN now; enclosure PROPOSED', fontsize=7, color='#188038')
-ax.legend(handles=[Line2D([], [], color=WCOL['noopen'], lw=6, label='NO-OPEN (owner rule/exterior)'),
-                   Line2D([], [], color=WCOL['keep'], lw=6, label='existing wall (modifiable/review)'),
-                   Line2D([], [], color='#9334e6', lw=2, ls='--', label='glazing/door')], fontsize=7, loc='lower left')
+ax.text(7900, 14100, 'N BALCONY: OPEN now; enclosure PROPOSED', fontsize=7, color='#188038')
+ax.text(2600, 1300, 'LIFE BALCONY parapet\n(real, measured)', fontsize=6, color='#666')
+ax.legend(handles=QC_LEGEND, fontsize=6, loc='lower left', ncol=2)
 save(fig, 'task03a_s1_current_existing.png')
 
-def draw_new(ax):
-    for r in CD['new_walls']:
-        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor=WCOL['new'], zorder=4))
-    for r in CD['new_doors']:
-        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='#9334e6', zorder=4))
-
-# S2 demolition / keep / new
+# ================================================================ S2 demolition / keep / new
 fig, ax = base('Task03A · Demolition / Keep / New')
-draw_walls(ax, 'all'); draw_openings(ax); draw_new(ax)
+draw_walls(ax, 'all'); draw_windows(ax, qc=True); draw_openings(ax); draw_new(ax)
 ax.text(9200, 5400, 'NEW bath enclosure:\nsouth partition + annex walls\n(shell N/W/E kept)', fontsize=6, color=WCOL['new'])
-ax.legend(handles=[Line2D([], [], color=WCOL['noopen'], lw=6, label='NO-OPEN (owner rule/exterior)'),
-                   Line2D([], [], color=WCOL['keep'], lw=6, label='keep / modifiable'),
-                   Line2D([], [], color=WCOL['remove'], lw=6, label='demolished/absent'),
-                   Line2D([], [], color=WCOL['conflict'], lw=6, label='CLASSIFICATION_CONFLICT (white-class but demolished)'),
-                   Line2D([], [], color=WCOL['new'], lw=6, label='new wall')], fontsize=7, loc='lower left')
+ax.legend(handles=QC_LEGEND, fontsize=6, loc='lower left', ncol=2)
 save(fig, 'task03a_s2_demolition.png')
 
-# S3 furniture plan
-fig, ax = base('Task03A · Proposed Furniture Plan')
-draw_walls(ax, 'current'); draw_furn(ax); draw_openings(ax); draw_new(ax)
-# door-swing envelopes (dashed) so swing/fixture conflicts are visible
+# ================================================================ S3 PRESENTATION (owner-facing)
+fig, ax = base('Task03A · Proposed Furniture Plan — PRESENTATION')
+draw_walls(ax, 'current', presentation=True); draw_windows(ax); draw_door_symbols(ax)
+draw_furn_presentation(ax); draw_new(ax)
+ROOMS = [('FLEX FAMILY ROOM 客厅', 4200, 10600), ('DINING 餐厅', 3700, 6600),
+         ('KITCHEN 厨房', 6200, 2500), ('LIFE BALC 生活阳台', 2600, 1500),
+         ('MASTER BED 主卧', 12500, 2800), ('SEC MASTER BED 次主卧', 9000, 2800),
+         ('SEC MASTER BATH 次主卫', 9200, 5600), ('MASTER BATH 主卫', 14200, 5500),
+         ('STUDY 书房', 14000, 10000), ('GUEST BED 客卧', 11750, 9900),
+         ('GUEST BATH 客卫', 8200, 9600), ('N BALCONY 北阳台', 9800, 12200),
+         ('LANDING/FOYER 平台', 8000, 6800)]
+for t, x, y in ROOMS:
+    ax.text(x, y, t, fontsize=8, fontweight='bold', color='#202124', zorder=6)
+# key dimensions only
+for txt, x, y in [('living clear ~4850×4850 (provisional)', 4300, 9000),
+                  ('sec-master bath ~5.0m²', 9050, 3500),
+                  ('level delta TO_VERIFY ≤350/~400', 7200, 7900)]:
+    ax.text(x, y, txt, fontsize=6, color='#666', style='italic')
+ax.legend(handles=[Line2D([], [], color=WCOL['keep'], lw=6, label='existing wall'),
+                   Line2D([], [], color=WCOL['noopen'], lw=6, label='exterior / no-opening wall'),
+                   Line2D([], [], color=WCOL['new'], lw=6, label='new wall'),
+                   Line2D([], [], color='#1a73e8', lw=2, label='window / glass door'),
+                   Line2D([], [], color='#188038', lw=2, ls='--', label='proposed balcony glazing'),
+                   Line2D([], [], color='#f4b400', lw=6, alpha=.5, label='furniture'),
+                   Line2D([], [], color='#34a853', lw=6, alpha=.5, label='bathroom fixture'),
+                   Line2D([], [], color='#1a73e8', lw=6, alpha=.4, label='stairs / ramp')],
+          fontsize=6, loc='lower left')
+save(fig, 'task03a_s3_furniture_presentation.png')
+
+# ================================================================ S3 QC (diagnostic)
+fig, ax = base('Task03A · Proposed Furniture Plan — QC')
+draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_furn(ax)
+draw_openings(ax); draw_new(ax)
 for s in CD['door_swings']:
     r = s['rect']
     ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
                            edgecolor='#e8710a', lw=1.2, ls=':', zorder=4))
     ax.text(r[0], r[3]+80, 'swing '+s['door'], fontsize=5, color='#e8710a')
-# guest-room continuous path entry -> balcony (RC2.1, >=800 throat)
-for i, r in enumerate(CD['guest_path']):
+for r in CD['guest_path']:
     ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
                            edgecolor='#188038', lw=1.2, ls='-.', zorder=4))
 ax.text(11800, 9600, 'path >=800\nentry->balcony', fontsize=5, color='#188038', ha='center')
-save(fig, 'task03a_s3_furniture.png')
+ax.legend(handles=QC_LEGEND, fontsize=5.5, loc='lower left', ncol=2)
+save(fig, 'task03a_s3_furniture_qc.png')
 
-# S4 split-level study
+# ================================================================ window register overlay
+fig, ax = base('Task03A · Window Register Overlay')
+draw_walls(ax, 'current'); draw_windows(ax, qc=True)
+for win in M.get('windows', []):
+    r = win['opening_rect_mm']
+    col = WIN_COL[win['verification_status']]
+    ax.add_patch(Rectangle((r[0]-60, r[1]-60), r[2]-r[0]+120, r[3]-r[1]+120,
+                           facecolor='none', edgecolor=col, lw=1.0, ls=':', zorder=5))
+ax.legend(handles=[Line2D([], [], color=WIN_COL['CONFIRMED'], lw=2, label='CONFIRMED / MEASURED'),
+                   Line2D([], [], color=WIN_COL['TO_VERIFY'], lw=2, label='TO_VERIFY'),
+                   Line2D([], [], color=WIN_COL['PROPOSED'], lw=2, ls='--', label='PROPOSED')],
+          fontsize=7, loc='lower left')
+save(fig, 'window_register_overlay.png')
+
+# ================================================================ wall/window conflict check
+fig, ax = base('Task03A · Wall-Through-Window Conflict Check')
+draw_walls(ax, 'current'); draw_windows(ax, qc=True)
+conflicts = []
+for win in M.get('windows', []):
+    if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
+        continue
+    op = win['opening_rect_mm']
+    hit = [w['id'] for w in M['walls'] if w['disposition'] == 'EXISTING'
+           and not (w['rect_mm'][2] <= op[0] or w['rect_mm'][0] >= op[2] or
+                    w['rect_mm'][3] <= op[1] or w['rect_mm'][1] >= op[3])]
+    col = '#d93025' if hit else '#188038'
+    ax.add_patch(Rectangle((op[0]-40, op[1]-40), op[2]-op[0]+80, op[3]-op[1]+80,
+                           facecolor='none', edgecolor=col, lw=1.6, zorder=6))
+    ax.text(op[0], op[1]-320, f"{win['window_id']}: {'CONFLICT '+str(hit) if hit else 'clear'}",
+            fontsize=5.5, color=col, zorder=6)
+    conflicts += hit
+ax.text(600, 14700, f'solid-wall-through-window conflicts: {len(conflicts)}', fontsize=9,
+        color='#d93025' if conflicts else '#188038')
+save(fig, 'wall_window_conflict_check.png')
+
+# ================================================================ cleanup before/after
+AREAS = [('bottom-left phantom L (parapet)', (500, 6600), (-300, 3000)),
+         ('top floating red (living bay)', (2400, 8200), (12400, 14600)),
+         ('right floating red (study NE bay)', (12800, 16800), (10400, 12600)),
+         ('south windows', (4400, 16000), (-1400, 2200))]
+fig, axs = plt.subplots(4, 2, figsize=(16, 22), dpi=120)
+for row, (name, (xa, xb), (ya, yb)) in enumerate(AREAS):
+    for col, (walls, wins, tag) in enumerate(((WB['walls'], [], 'BEFORE'),
+                                             (M['walls'], M['windows'], 'AFTER'))):
+        ax = axs[row][col]
+        ax.set_xlim(xa, xb); ax.set_ylim(ya, yb); ax.set_aspect('equal')
+        ax.set_title(f'{tag} — {name}', fontsize=9); ax.grid(alpha=.12)
+        for w in walls:
+            if w['disposition'] != 'EXISTING':
+                continue
+            x1, y1, x2, y2 = w['rect_mm']
+            ax.add_patch(Rectangle((x1, y1), x2-x1, y2-y1, facecolor=wcolor(w), zorder=2))
+        for win in wins:
+            r = win['opening_rect_mm']
+            colr = WIN_COL[win['verification_status']]
+            if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
+                ax.plot([r[0], r[2]], [r[3], r[3]], color=colr, lw=1.6, ls='--', zorder=4)
+                continue
+            x1, y1, x2, y2 = r
+            if (x2-x1) >= (y2-y1):
+                for i in (0.25, 0.5, 0.75):
+                    ax.plot([x1, x2], [y1+(y2-y1)*i]*2, color=colr, lw=1.0, zorder=4)
+            else:
+                for i in (0.25, 0.5, 0.75):
+                    ax.plot([x1+(x2-x1)*i]*2, [y1, y2], color=colr, lw=1.0, zorder=4)
+            bay = win.get('bay')
+            if bay:
+                for j in bay['jambs']:
+                    ax.add_patch(Rectangle((j[0], j[1]), j[2]-j[0], j[3]-j[1],
+                                           facecolor='none', edgecolor=colr, lw=1.0, zorder=4))
+                f = bay['front']
+                ax.add_patch(Rectangle((f[0], f[1]), f[2]-f[0], f[3]-f[1],
+                                       facecolor='none', edgecolor=colr, lw=1.3, zorder=4))
+fig.tight_layout()
+save(fig, 'window_cleanup_before_after.png')
+
+# ================================================================ S4 split-level study
 fig, ax = base('Task03A · Split-Level Accessibility Study(2 risers + ramp)')
-draw_walls(ax, 'current')
+draw_walls(ax, 'current'); draw_windows(ax)
 for r in CD['level']['landing_kept_mm']:
     ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='#fce8b2', edgecolor='#f9ab00', zorder=2))
 r = CD['level']['returned_to_L1_mm']
@@ -132,9 +354,9 @@ ax.text(5950, 7200, 'platform arm\nreturned to L1\n→ bigger living/dining', fo
 ax.set_xlim(2500, 13500); ax.set_ylim(4000, 11000)
 save(fig, 'task03a_s4_splitlevel.png')
 
-# S5 bathroom study
+# ================================================================ S5 bathroom study
 fig, ax = base('Task03A · Bathroom Layout Study')
-draw_walls(ax, 'current')
+draw_walls(ax, 'current'); draw_windows(ax, qc=True)
 for f in CD['furniture']:
     if any(k in f['id'] for k in ('BATH', 'SMB2', 'MBATH', 'GBATH')):
         x1, y1, x2, y2 = f['rect']
@@ -146,7 +368,6 @@ for s in CD['door_swings']:
         r = s['rect']
         ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
                                edgecolor='#e8710a', lw=1.2, ls=':', zorder=4))
-# SMB2 shower glass partition + real entry opening (RC2.1)
 gp = CD['smb']['shower_glass']['panel']
 ax.add_patch(Rectangle((gp[0], gp[1]), gp[2]-gp[0], gp[3]-gp[1], facecolor='#9334e6', alpha=.5, zorder=5))
 ax.annotate('glass panel; 750 entry\nsouth of it; aisle 800', xy=(10450, 5800),
@@ -155,7 +376,7 @@ ax.annotate('glass panel; 750 entry\nsouth of it; aisle 800', xy=(10450, 5800),
 ax.set_xlim(7000, 16800); ax.set_ylim(3400, 11500)
 save(fig, 'task03a_s5_bathrooms.png')
 
-# S6 W vs S comparison
+# ================================================================ S6 W vs S comparison
 fig, axs = plt.subplots(1, 2, figsize=(15, 9), dpi=130)
 smb2 = [f for f in CD['furniture'] if f['id'].startswith('SMB2-')]
 for ax, opt in zip(axs, 'WS'):
@@ -172,7 +393,6 @@ for ax, opt in zip(axs, 'WS'):
         ax.add_patch(Rectangle((x1, y1), x2-x1, y2-y1, facecolor='#34a853', alpha=.35, edgecolor='#34a853', zorder=3))
         ax.text((x1+x2)/2, (y1+y2)/2, f['id'].replace('SMB2-',''), fontsize=6, ha='center', va='center')
     if opt == 'W':
-        # W needs a cut in retained CLK-W (white-class); sliding leaf
         ax.add_patch(Rectangle((8950, 4700), 100, 700, facecolor=WCOL['conflict'], alpha=.8, zorder=5, hatch='xx'))
         ax.annotate('SLIDING door cut in RETAINED\nCLK-W (white-class wall)', xy=(8950, 5050), xytext=(7300, 5400),
                     fontsize=8, arrowprops=dict(arrowstyle='->'))

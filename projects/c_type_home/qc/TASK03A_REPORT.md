@@ -1,4 +1,13 @@
-# TASK 03A RC2.1 — Measured Existing → Verified Owner Brief → Concept Floor Plan
+# TASK 03A RC2.2 — Measured Existing → Verified Owner Brief → Concept Floor Plan
+
+Status: **REVIEW-READY / GATES PASS 26/26** (not FINAL PASS — owner review pending)
+Branch: `feat/c-type-task03a-measured-concept` (base `improve/design-output-v14 @ 20637d1`)
+
+> **RC2.2 (window register + drawing cleanup)**: 11-record window register (`current_existing/window_register.json/.csv`); all dev-plan windows/bays reconstructed with wall segmentation + glazing symbols; floating wall segments root-caused (living bay front misplaced → glazed front of `W-LIV-N`; study `W-EXT-NE` band was inside NE bay projection → corrected to measured face); bottom-left grey L = real life-balcony parapet, now labeled; furniture plan split into owner-facing **presentation** + diagnostic **QC** sheets; new gates G21–G25. Full detail: `qc/TASK03A_RC2_2_WINDOW_CLEANUP.md`. No layout/design coordinate changed (G25 freeze-verified vs `246ff12`).
+
+---
+
+# RC2.1 notes (kept for history)
 
 Status: **REVIEW-READY / GATES PASS 21/21** (not FINAL PASS — owner review gates pending)
 Branch: `feat/c-type-task03a-measured-concept` (base `improve/design-output-v14 @ 20637d1`)

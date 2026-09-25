@@ -104,6 +104,31 @@
       "gate": "G20 split-level net-area account present",
       "result": "PASS",
       "detail": "returned 4.09 vs ramp 3.3 -> net +0.79m2 (PROVISIONAL)"
+    },
+    {
+      "gate": "G21 original-plan window coverage (register complete)",
+      "result": "PASS",
+      "detail": "registered=11; missing=[]; malformed=[]"
+    },
+    {
+      "gate": "G22 no solid wall through window span",
+      "result": "PASS",
+      "detail": "checked 11 openings; conflicts=[]"
+    },
+    {
+      "gate": "G23 N-balcony time-state (open now / proposed / glass door keep)",
+      "result": "PASS",
+      "detail": "current=OPEN_NOT_ENCLOSED; future=PROPOSED_LEGAL_TO_ENCLOSE; G-GB-BALC=EXISTING_KEEP"
+    },
+    {
+      "gate": "G24 no orphan wall graphics",
+      "result": "PASS",
+      "detail": "orphans=[] (parapets + explained free ends exempt)"
+    },
+    {
+      "gate": "G25 layout freeze vs RC2.1",
+      "result": "PASS",
+      "detail": "changed=none (windows/wall-split/render changes exempt)"
     }
   ],
   "overall": "PASS"

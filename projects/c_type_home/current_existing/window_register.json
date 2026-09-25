@@ -1,0 +1,346 @@
+{
+ "meta": {
+  "task": "TASK03A RC2.2 window register",
+  "authority": "P1 owner-confirmed status > P2 dev-plan graphic > P3 measured DWG",
+  "north_balcony_time_state": "current OPEN_NOT_ENCLOSED / enclosure PROPOSED / G-GB-BALC interior door EXISTING_KEEP"
+ },
+ "windows": [
+  {
+   "window_id": "W-KIT-S",
+   "room_or_zone": "kitchen",
+   "orientation_plan_relative": "south",
+   "window_type": "STANDARD_WINDOW",
+   "host_wall": "W-EXT-S",
+   "opening_rect_mm": [
+    6100,
+    -200,
+    7100,
+    0
+   ],
+   "span_mm": 1000,
+   "source_plan_evidence": "thin-line window symbol inside south wall band under kitchen",
+   "measured_dwg_evidence": "4-line glazing symbol x6100-7100 inside S-S.WALL band y0-200",
+   "current_status": "EXISTING_WINDOW",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "in-wall window, no projection",
+   "confidence": "HIGH",
+   "verification_status": "CONFIRMED",
+   "notes": "kitchen south window; both sources agree",
+   "split_applied": true
+  },
+  {
+   "window_id": "W-KIT-SW",
+   "room_or_zone": "kitchen/life-balcony corner",
+   "orientation_plan_relative": "south",
+   "window_type": "STANDARD_WINDOW",
+   "host_wall": null,
+   "opening_rect_mm": [
+    5000,
+    -200,
+    5380,
+    0
+   ],
+   "span_mm": 380,
+   "source_plan_evidence": "break in south wall band beside AC box — could be small window or door to life balcony",
+   "measured_dwg_evidence": "gap x5000-5380 between south wall segments (W-EXT-S-W1/-W2)",
+   "current_status": "OPENING_TO_VERIFY",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "narrow 380mm gap",
+   "confidence": "LOW",
+   "verification_status": "TO_VERIFY",
+   "notes": "ambiguous narrow opening — verify on site whether window or balcony door"
+  },
+  {
+   "window_id": "W-SMB-S",
+   "room_or_zone": "secondary master bedroom",
+   "orientation_plan_relative": "south",
+   "window_type": "BAY_WINDOW",
+   "host_wall": "W-EXT-S",
+   "opening_rect_mm": [
+    8500,
+    -200,
+    10900,
+    0
+   ],
+   "span_mm": 2400,
+   "source_plan_evidence": "protruding box outline on south edge at secondary bedroom",
+   "measured_dwg_evidence": "outer-face gap x8500-10900; bay box x8400-11000 projecting to y-700; jamb+front triple lines",
+   "current_status": "EXISTING_WINDOW",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "bay projects 700 south; glazed front x8400-11000 y-700/-650/-600",
+   "confidence": "HIGH",
+   "verification_status": "CONFIRMED",
+   "bay": {
+    "jambs": [
+     [
+      8400,
+      -700,
+      8500,
+      0
+     ],
+     [
+      10900,
+      -700,
+      11000,
+      0
+     ]
+    ],
+    "front": [
+     8400,
+     -700,
+     11000,
+     -600
+    ]
+   },
+   "notes": "south bay window",
+   "split_applied": true
+  },
+  {
+   "window_id": "W-MB-S",
+   "room_or_zone": "master bedroom",
+   "orientation_plan_relative": "south",
+   "window_type": "BAY_WINDOW",
+   "host_wall": "W-EXT-S",
+   "opening_rect_mm": [
+    12100,
+    -200,
+    14800,
+    0
+   ],
+   "span_mm": 2700,
+   "source_plan_evidence": "protruding box outline on south edge at master bedroom",
+   "measured_dwg_evidence": "outer-face gap x12100-14800; bay box x12000-14900 projecting to y-700; jamb+front triple lines",
+   "current_status": "EXISTING_WINDOW",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "bay projects 700 south; glazed front x12000-14900 y-700/-650/-600",
+   "confidence": "HIGH",
+   "verification_status": "CONFIRMED",
+   "bay": {
+    "jambs": [
+     [
+      12000,
+      -700,
+      12100,
+      0
+     ],
+     [
+      14800,
+      -700,
+      14900,
+      0
+     ]
+    ],
+    "front": [
+     12000,
+     -700,
+     14900,
+     -600
+    ]
+   },
+   "notes": "south bay window",
+   "split_applied": true
+  },
+  {
+   "window_id": "W-LIV-N",
+   "room_or_zone": "living",
+   "orientation_plan_relative": "north",
+   "window_type": "BAY_WINDOW",
+   "host_wall": "W-EXT-N-LV",
+   "opening_rect_mm": [
+    3800,
+    12750,
+    6900,
+    12950
+   ],
+   "span_mm": 3100,
+   "source_plan_evidence": "hollow bay band + protruding outline on north edge at living room",
+   "measured_dwg_evidence": "wall-face gap x3800-6900 (faces y13000/13200); glazed front triple-line y13800/13850/13900 x3600-7100",
+   "current_status": "EXISTING_WINDOW",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "bay projects ~900 north of wall face; glazed front x3600-7100 y13800-13900",
+   "confidence": "HIGH",
+   "verification_status": "CONFIRMED",
+   "bay": {
+    "jambs": [
+     [
+      3650,
+      12950,
+      3800,
+      13800
+     ],
+     [
+      6900,
+      12950,
+      7050,
+      13800
+     ]
+    ],
+    "front": [
+     3600,
+     13800,
+     7100,
+     13900
+    ]
+   },
+   "notes": "living-room north bay — the old W-BAY-F rect sat mid-air at y13400-13600 (floating segment); corrected to measured front y13800-13900",
+   "split_applied": true
+  },
+  {
+   "window_id": "W-STUDY-NE",
+   "room_or_zone": "study",
+   "orientation_plan_relative": "north (NE corner)",
+   "window_type": "BAY_WINDOW",
+   "host_wall": null,
+   "opening_rect_mm": [
+    13600,
+    10900,
+    15700,
+    11100
+   ],
+   "span_mm": 2100,
+   "source_plan_evidence": "stepped/protruding outline at NE corner of study on dev plan",
+   "measured_dwg_evidence": "wall face y11100 with gap x13600-15700; bay jambs x13500-13600 & x15700-15800 spanning y11100-11800; glazed front triple-line y11700/11750/11800",
+   "current_status": "EXISTING_WINDOW",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "full-width bay projects to y11800; glazed front x13500-15800 y11700-11800",
+   "confidence": "HIGH",
+   "verification_status": "CONFIRMED",
+   "bay": {
+    "jambs": [
+     [
+      13500,
+      11100,
+      13600,
+      11800
+     ],
+     [
+      15700,
+      11100,
+      15800,
+      11800
+     ]
+    ],
+    "front": [
+     13500,
+     11700,
+     15800,
+     11800
+    ]
+   },
+   "notes": "study lit by this NE bay — east wall is solid in BOTH sources (no east window); old W-EXT-NE band y11350-11550 sat inside bay projection = floating red segment, corrected"
+  },
+  {
+   "window_id": "W-GBATH-N",
+   "room_or_zone": "guest bath",
+   "orientation_plan_relative": "north",
+   "window_type": "STANDARD_WINDOW",
+   "host_wall": "W-INT-Y10800",
+   "opening_rect_mm": [
+    8900,
+    10700,
+    9700,
+    10900
+   ],
+   "span_mm": 800,
+   "source_plan_evidence": "dev-plan read ambiguous at this band — bath onto open balcony",
+   "measured_dwg_evidence": "triple-line glazing symbol x8900-9700 within wall band y10900-11040",
+   "current_status": "EXISTING_WINDOW",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "in-wall window facing open north balcony",
+   "confidence": "MED",
+   "verification_status": "TO_VERIFY",
+   "notes": "DWG draws glazing lines but dev-plan unclear — verify on site",
+   "split_applied": true
+  },
+  {
+   "window_id": "G-GB-BALC",
+   "room_or_zone": "guest bedroom",
+   "orientation_plan_relative": "north",
+   "window_type": "GLASS_DOOR",
+   "host_wall": "W-INT-Y10800",
+   "opening_rect_mm": [
+    10400,
+    10700,
+    12400,
+    10900
+   ],
+   "span_mm": 2000,
+   "source_plan_evidence": "glass door zone to balcony marked on dev plan",
+   "measured_dwg_evidence": "triple-line glazing x10400-12400 in wall band; door insert present",
+   "current_status": "EXISTING_GLASS_DOOR",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "double glass door; interior door — NOT the exterior balcony enclosure",
+   "confidence": "HIGH",
+   "verification_status": "CONFIRMED",
+   "notes": "existing double glass door guest bedroom -> north balcony; keep-clear zone wider than leaf span",
+   "split_applied": true
+  },
+  {
+   "window_id": "D-BALC-W",
+   "room_or_zone": "north balcony west",
+   "orientation_plan_relative": "west end of north balcony",
+   "window_type": "GLASS_DOOR",
+   "host_wall": "W-EXT-N-LV",
+   "opening_rect_mm": [
+    7800,
+    12750,
+    8400,
+    12950
+   ],
+   "span_mm": 600,
+   "source_plan_evidence": "door mark at balcony west end",
+   "measured_dwg_evidence": "door block insert rot270 at balcony west edge; north wall face ends x7800 (measured)",
+   "current_status": "EXISTING_DOOR",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "access door into north balcony from living side",
+   "confidence": "MED",
+   "verification_status": "MEASURED",
+   "notes": "leaf type (solid vs glazed) TO_VERIFY on site",
+   "split_applied": true
+  },
+  {
+   "window_id": "G-DIN-LIV",
+   "room_or_zone": "kitchen/dining <-> living",
+   "orientation_plan_relative": "interior",
+   "window_type": "GLASS_DOOR",
+   "host_wall": null,
+   "opening_rect_mm": [
+    2950,
+    4530,
+    5650,
+    4715
+   ],
+   "span_mm": 2700,
+   "source_plan_evidence": "owner blue-line markup — new sliding glass partition",
+   "measured_dwg_evidence": "owner statement; existing opening in measured plan",
+   "current_status": "EXISTING_GLASS_DOOR",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "3-track sliding glass door ~2700mm, interior partition",
+   "confidence": "HIGH",
+   "verification_status": "CONFIRMED",
+   "notes": "owner-installed sliding glass partition kitchen/dining <-> living"
+  },
+  {
+   "window_id": "N-BALC-ENCL",
+   "room_or_zone": "north balcony outer edge",
+   "orientation_plan_relative": "north",
+   "window_type": "PROPOSED_BALCONY_ENCLOSURE",
+   "host_wall": null,
+   "opening_rect_mm": [
+    7900,
+    13400,
+    13000,
+    13600
+   ],
+   "span_mm": 5100,
+   "source_plan_evidence": "dev plan shows open balcony parapet",
+   "measured_dwg_evidence": "parapet outline x7880-13020 y11100-13820 — railing only, NO glazing",
+   "current_status": "OPEN_NOT_ENCLOSED",
+   "proposed_status": "PROPOSED_LEGAL_TO_ENCLOSE",
+   "sill_or_bay_note": "proposed glazing sits on existing parapet line",
+   "confidence": "HIGH",
+   "verification_status": "PROPOSED",
+   "notes": "TIME-STATE: current = OPEN_NOT_ENCLOSED; future enclosure = PROPOSED only — must not be drawn as existing window"
+  }
+ ]
+}

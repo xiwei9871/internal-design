@@ -16,6 +16,7 @@ M = json.load(open(ROOT / 'current_existing' / 'current_existing_v1.json'))
 LAYERS = {'A-WALL-EXST-KEEP': 7, 'A-WALL-OWNER-NOOPEN': 1, 'A-WALL-EXST-REMOVE': 8,
           'A-WALL-NEW': 5, 'A-DOOR-EXST-KEEP': 3, 'A-DOOR-NEW': 4,
           'A-GLAZ-EXST-KEEP': 6, 'A-FURN-EXST-KEEP': 30, 'A-FURN-PROP': 2,
+          'A-WIND-EXST-KEEP': 4, 'A-WIND-TO-VERIFY': 6, 'A-GLAZ-PROP': 5,
           'A-FIXT-PLUMB': 4, 'A-ACCESS-RAMP': 3, 'A-ACCESS-STAIR': 3,
           'A-LEVEL': 140, 'A-DIMS': 8, 'A-NOTE': 7, 'A-QC': 1}
 
@@ -184,7 +185,7 @@ furn('SMB-BED', 8800, 300, 10600, 2400, note='1800x2100')
 furn('SMB-WARD', 10800, 3700, 11400, 4450, note='new wardrobe restoring lost cloakroom capacity')
 # STUDY (R-BED-N x13100-16300 y6500-11350): RC2 — fix daybed/bookcase overlap and
 # door-swing collisions (D-STUDY swing envelope x13100-13900 y6564-7364 stays clear)
-furn('ST-DESK', 14000, 6500, 15700, 7300, note='1700x800 desk on south wall, east of door swing; east window side-lit')
+furn('ST-DESK', 14000, 6500, 15700, 7300, note='1700x800 desk on south wall, east of door swing; NE bay window lights room')
 furn('ST-DAYBED', 13100, 8300, 13900, 10300, note='800x2000 daybed on west wall, north of door swing')
 furn('ST-BOOK', 15500, 8500, 16300, 10500, lay='A-FURN-EXST-KEEP', note='existing wardrobe->book/file/equip')
 furn('ST-NAS', 13100, 7450, 13800, 8050, note='NAS/printer shelf, ventilated, north of door swing')
@@ -236,6 +237,28 @@ for o in M['openings']:
     lay = {'sliding_glass_3track': 'A-GLAZ-EXST-KEEP', 'glazing_door_double': 'A-GLAZ-EXST-KEEP',
            'open_passage': 'A-NOTE'}.get(o['kind'], 'A-DOOR-EXST-KEEP')
     rect(msp, lay, *o['rect_mm'])
+# windows / glazing (RC2.2 register)
+for win in M.get('windows', []):
+    vs = win['verification_status']
+    lay = {'CONFIRMED': 'A-WIND-EXST-KEEP', 'MEASURED': 'A-WIND-EXST-KEEP',
+           'TO_VERIFY': 'A-WIND-TO-VERIFY', 'PROPOSED': 'A-GLAZ-PROP'}[vs]
+    r = win['opening_rect_mm']
+    if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
+        msp.add_line((r[0], r[3]), (r[2], r[3]), dxfattribs={'layer': lay})
+        continue
+    if (r[2]-r[0]) >= (r[3]-r[1]):
+        for i in (0.25, 0.5, 0.75):
+            y = r[1] + (r[3]-r[1])*i
+            msp.add_line((r[0], y), (r[2], y), dxfattribs={'layer': lay})
+    else:
+        for i in (0.25, 0.5, 0.75):
+            x = r[0] + (r[2]-r[0])*i
+            msp.add_line((x, r[1]), (x, r[3]), dxfattribs={'layer': lay})
+    bay = win.get('bay')
+    if bay:
+        for j in bay['jambs']:
+            rect(msp, lay, *j)
+        rect(msp, lay, *bay['front'])
 # new bath enclosure: cloakroom shell N/W/E kept (drawn by walls());
 # NEW walls = south partition (door gap) + annex east/west walls into bedroom;
 # interior wet/dry glass partition optional (marked A-NOTE)

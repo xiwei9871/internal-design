@@ -171,6 +171,137 @@ SPLIT_WALLS = {
     ]
 }
 
+# ================================================================ RC2.2 window register
+# Authority: P1 owner-confirmed current status > P2 dev-plan graphic > P3 measured DWG.
+# Every dev-plan window/bay/glazing on the perimeter gets a record; ambiguous ones
+# stay TO_VERIFY — never silently reverted to solid wall.
+WINDOWS = [
+    {'window_id': 'W-KIT-S', 'room_or_zone': 'kitchen', 'orientation_plan_relative': 'south',
+     'window_type': 'STANDARD_WINDOW', 'host_wall': 'W-EXT-S',
+     'opening_rect_mm': [6100, -200, 7100, 0], 'span_mm': 1000,
+     'source_plan_evidence': 'thin-line window symbol inside south wall band under kitchen',
+     'measured_dwg_evidence': '4-line glazing symbol x6100-7100 inside S-S.WALL band y0-200',
+     'current_status': 'EXISTING_WINDOW', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'in-wall window, no projection',
+     'confidence': 'HIGH', 'verification_status': 'CONFIRMED',
+     'notes': 'kitchen south window; both sources agree'},
+    {'window_id': 'W-KIT-SW', 'room_or_zone': 'kitchen/life-balcony corner', 'orientation_plan_relative': 'south',
+     'window_type': 'STANDARD_WINDOW', 'host_wall': None,
+     'opening_rect_mm': [5000, -200, 5380, 0], 'span_mm': 380,
+     'source_plan_evidence': 'break in south wall band beside AC box — could be small window or door to life balcony',
+     'measured_dwg_evidence': 'gap x5000-5380 between south wall segments (W-EXT-S-W1/-W2)',
+     'current_status': 'OPENING_TO_VERIFY', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'narrow 380mm gap',
+     'confidence': 'LOW', 'verification_status': 'TO_VERIFY',
+     'notes': 'ambiguous narrow opening — verify on site whether window or balcony door'},
+    {'window_id': 'W-SMB-S', 'room_or_zone': 'secondary master bedroom', 'orientation_plan_relative': 'south',
+     'window_type': 'BAY_WINDOW', 'host_wall': 'W-EXT-S',
+     'opening_rect_mm': [8500, -200, 10900, 0], 'span_mm': 2400,
+     'source_plan_evidence': 'protruding box outline on south edge at secondary bedroom',
+     'measured_dwg_evidence': 'outer-face gap x8500-10900; bay box x8400-11000 projecting to y-700; jamb+front triple lines',
+     'current_status': 'EXISTING_WINDOW', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'bay projects 700 south; glazed front x8400-11000 y-700/-650/-600',
+     'confidence': 'HIGH', 'verification_status': 'CONFIRMED',
+     'bay': {'jambs': [[8400, -700, 8500, 0], [10900, -700, 11000, 0]],
+             'front': [8400, -700, 11000, -600]},
+     'notes': 'south bay window'},
+    {'window_id': 'W-MB-S', 'room_or_zone': 'master bedroom', 'orientation_plan_relative': 'south',
+     'window_type': 'BAY_WINDOW', 'host_wall': 'W-EXT-S',
+     'opening_rect_mm': [12100, -200, 14800, 0], 'span_mm': 2700,
+     'source_plan_evidence': 'protruding box outline on south edge at master bedroom',
+     'measured_dwg_evidence': 'outer-face gap x12100-14800; bay box x12000-14900 projecting to y-700; jamb+front triple lines',
+     'current_status': 'EXISTING_WINDOW', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'bay projects 700 south; glazed front x12000-14900 y-700/-650/-600',
+     'confidence': 'HIGH', 'verification_status': 'CONFIRMED',
+     'bay': {'jambs': [[12000, -700, 12100, 0], [14800, -700, 14900, 0]],
+             'front': [12000, -700, 14900, -600]},
+     'notes': 'south bay window'},
+    {'window_id': 'W-LIV-N', 'room_or_zone': 'living', 'orientation_plan_relative': 'north',
+     'window_type': 'BAY_WINDOW', 'host_wall': 'W-EXT-N-LV',
+     'opening_rect_mm': [3800, 12750, 6900, 12950], 'span_mm': 3100,
+     'source_plan_evidence': 'hollow bay band + protruding outline on north edge at living room',
+     'measured_dwg_evidence': 'wall-face gap x3800-6900 (faces y13000/13200); glazed front triple-line y13800/13850/13900 x3600-7100',
+     'current_status': 'EXISTING_WINDOW', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'bay projects ~900 north of wall face; glazed front x3600-7100 y13800-13900',
+     'confidence': 'HIGH', 'verification_status': 'CONFIRMED',
+     'bay': {'jambs': [[3650, 12950, 3800, 13800], [6900, 12950, 7050, 13800]],
+             'front': [3600, 13800, 7100, 13900]},
+     'notes': 'living-room north bay — the old W-BAY-F rect sat mid-air at y13400-13600 (floating segment); corrected to measured front y13800-13900'},
+    {'window_id': 'W-STUDY-NE', 'room_or_zone': 'study', 'orientation_plan_relative': 'north (NE corner)',
+     'window_type': 'BAY_WINDOW', 'host_wall': None,
+     'opening_rect_mm': [13600, 10900, 15700, 11100], 'span_mm': 2100,
+     'source_plan_evidence': 'stepped/protruding outline at NE corner of study on dev plan',
+     'measured_dwg_evidence': 'wall face y11100 with gap x13600-15700; bay jambs x13500-13600 & x15700-15800 spanning y11100-11800; glazed front triple-line y11700/11750/11800',
+     'current_status': 'EXISTING_WINDOW', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'full-width bay projects to y11800; glazed front x13500-15800 y11700-11800',
+     'confidence': 'HIGH', 'verification_status': 'CONFIRMED',
+     'bay': {'jambs': [[13500, 11100, 13600, 11800], [15700, 11100, 15800, 11800]],
+             'front': [13500, 11700, 15800, 11800]},
+     'notes': 'study lit by this NE bay — east wall is solid in BOTH sources (no east window); old W-EXT-NE band y11350-11550 sat inside bay projection = floating red segment, corrected'},
+    {'window_id': 'W-GBATH-N', 'room_or_zone': 'guest bath', 'orientation_plan_relative': 'north',
+     'window_type': 'STANDARD_WINDOW', 'host_wall': 'W-INT-Y10800',
+     'opening_rect_mm': [8900, 10700, 9700, 10900], 'span_mm': 800,
+     'source_plan_evidence': 'dev-plan read ambiguous at this band — bath onto open balcony',
+     'measured_dwg_evidence': 'triple-line glazing symbol x8900-9700 within wall band y10900-11040',
+     'current_status': 'EXISTING_WINDOW', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'in-wall window facing open north balcony',
+     'confidence': 'MED', 'verification_status': 'TO_VERIFY',
+     'notes': 'DWG draws glazing lines but dev-plan unclear — verify on site'},
+    {'window_id': 'G-GB-BALC', 'room_or_zone': 'guest bedroom', 'orientation_plan_relative': 'north',
+     'window_type': 'GLASS_DOOR', 'host_wall': 'W-INT-Y10800',
+     'opening_rect_mm': [10400, 10700, 12400, 10900], 'span_mm': 2000,
+     'source_plan_evidence': 'glass door zone to balcony marked on dev plan',
+     'measured_dwg_evidence': 'triple-line glazing x10400-12400 in wall band; door insert present',
+     'current_status': 'EXISTING_GLASS_DOOR', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'double glass door; interior door — NOT the exterior balcony enclosure',
+     'confidence': 'HIGH', 'verification_status': 'CONFIRMED',
+     'notes': 'existing double glass door guest bedroom -> north balcony; keep-clear zone wider than leaf span'},
+    {'window_id': 'D-BALC-W', 'room_or_zone': 'north balcony west', 'orientation_plan_relative': 'west end of north balcony',
+     'window_type': 'GLASS_DOOR', 'host_wall': 'W-EXT-N-LV',
+     'opening_rect_mm': [7800, 12750, 8400, 12950], 'span_mm': 600,
+     'source_plan_evidence': 'door mark at balcony west end',
+     'measured_dwg_evidence': 'door block insert rot270 at balcony west edge; north wall face ends x7800 (measured)',
+     'current_status': 'EXISTING_DOOR', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'access door into north balcony from living side',
+     'confidence': 'MED', 'verification_status': 'MEASURED',
+     'notes': 'leaf type (solid vs glazed) TO_VERIFY on site'},
+    {'window_id': 'G-DIN-LIV', 'room_or_zone': 'kitchen/dining <-> living', 'orientation_plan_relative': 'interior',
+     'window_type': 'GLASS_DOOR', 'host_wall': None,
+     'opening_rect_mm': [2950, 4530, 5650, 4715], 'span_mm': 2700,
+     'source_plan_evidence': 'owner blue-line markup — new sliding glass partition',
+     'measured_dwg_evidence': 'owner statement; existing opening in measured plan',
+     'current_status': 'EXISTING_GLASS_DOOR', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': '3-track sliding glass door ~2700mm, interior partition',
+     'confidence': 'HIGH', 'verification_status': 'CONFIRMED',
+     'notes': 'owner-installed sliding glass partition kitchen/dining <-> living'},
+    {'window_id': 'N-BALC-ENCL', 'room_or_zone': 'north balcony outer edge', 'orientation_plan_relative': 'north',
+     'window_type': 'PROPOSED_BALCONY_ENCLOSURE', 'host_wall': None,
+     'opening_rect_mm': [7900, 13400, 13000, 13600], 'span_mm': 5100,
+     'source_plan_evidence': 'dev plan shows open balcony parapet',
+     'measured_dwg_evidence': 'parapet outline x7880-13020 y11100-13820 — railing only, NO glazing',
+     'current_status': 'OPEN_NOT_ENCLOSED', 'proposed_status': 'PROPOSED_LEGAL_TO_ENCLOSE',
+     'sill_or_bay_note': 'proposed glazing sits on existing parapet line',
+     'confidence': 'HIGH', 'verification_status': 'PROPOSED',
+     'notes': 'TIME-STATE: current = OPEN_NOT_ENCLOSED; future enclosure = PROPOSED only — must not be drawn as existing window'},
+]
+
+# RC2.2 rect corrections — only where a wall rect contradicts measured window/bay
+# geometry (display-level correction; no furniture/layout change).
+RECT_OVERRIDE = {
+    'W-BAY-JW':  [3650, 12950, 3800, 13800],   # living bay west jamb -> measured extent
+    'W-BAY-JE':  [6900, 12950, 7050, 13800],   # living bay east jamb
+    'W-EXT-NE':  [13000, 10900, 13600, 11100], # study north wall WEST segment (was floating band inside bay)
+    'W-EXT-NE2': [15700, 10900, 16400, 11100], # study north wall EAST segment to east wall
+}
+# W-BAY-F is not a wall — it is the glazed front of W-LIV-N (kept as bay component)
+DROP_WALLS = {'W-BAY-F'}
+# entry door opening in west exterior wall (measured leaf gap y5440-6540)
+DOOR_SPLITS = {
+    'W-EXT-W': [[2700, 2300, 2900, 5440], [2700, 6540, 2900, 13600]],
+}
+VISUAL.update({'W-EXT-NE-WSEG': ('WHITE_FILL', 'HIGH', 'study N wall west of bay opening'),
+               'W-EXT-NE-ESEG': ('WHITE_FILL', 'HIGH', 'study N wall east of bay opening')})
+
 def policy_for(wid, visual_cls, disp, wall_type):
     """owner-declared rule mapping — NOT structural inference."""
     if disp != 'EXISTING':
@@ -189,7 +320,13 @@ def policy_for(wid, visual_cls, disp, wall_type):
 walls = []
 for w in GEO['walls']:
     wid = w['id']
-    pieces = SPLIT_WALLS.get(wid, [(wid, w['rect_mm'])])
+    if wid in DROP_WALLS:
+        continue                                    # glazed bay front, not a wall
+    base_rect = RECT_OVERRIDE.get(wid, w['rect_mm'])
+    if wid in DOOR_SPLITS:
+        pieces = [(f'{wid}-S{i}', r) for i, r in enumerate(DOOR_SPLITS[wid])]
+    else:
+        pieces = SPLIT_WALLS.get(wid, [(wid, base_rect)])
     for pid, rect in pieces:
         x1, y1, x2, y2 = rect
         cov = coverage(x1, y1, x2, y2)
@@ -212,6 +349,46 @@ for w in GEO['walls']:
                       'dwg_stale_geometry': stale,
                       'confidence': conf, 'evidence': ev,
                       'note': DEMOLISHED.get(pid) or PARTIAL.get(pid) or CLK_RETAINED.get(pid) or ''})
+
+# ------------------------------------------------- RC2.2 wall splits at window openings
+# For every registered window/glass-door whose opening cuts a host wall, split the
+# wall record into wall | opening | wall so no solid wall crosses a glazed span.
+def _strict_overlap(a, b):
+    return not (a[2] <= b[0] or a[0] >= b[2] or a[3] <= b[1] or a[1] >= b[3])
+
+def _cut(rect, op):
+    """remove op span from rect along rect's long axis -> remaining pieces"""
+    x1, y1, x2, y2 = rect
+    ox1, oy1, ox2, oy2 = op
+    out = []
+    if (x2 - x1) >= (y2 - y1):
+        if ox1 - x1 > 10: out.append([x1, y1, ox1, y2])
+        if x2 - ox2 > 10: out.append([ox2, y1, x2, y2])
+    else:
+        if oy1 - y1 > 10: out.append([x1, y1, x2, oy1])
+        if y2 - oy2 > 10: out.append([x1, oy2, x2, y2])
+    return out
+
+for win in WINDOWS:
+    host = win.get('host_wall')
+    if not host:
+        continue
+    op = win['opening_rect_mm']
+    nxt = []
+    for w in walls:
+        r = w['rect_mm']
+        if (w['id'] == host or w['id'].startswith(host + '#')) and _strict_overlap(r, op):
+            for i, p in enumerate(_cut(r, op)):
+                seg = dict(w)
+                seg['id'] = f"{host}#{win['window_id']}.{i}"
+                seg['rect_mm'] = p
+                seg['note'] = (seg.get('note', '') +
+                               f" [segment of {host} cut at {win['window_id']}]").strip()
+                nxt.append(seg)
+            win['split_applied'] = True
+        else:
+            nxt.append(w)
+    walls = nxt
 
 # ---------------------------------------------------------------- openings (current state, measured)
 def T(p): return [round(p[0] - DX), round(p[1] - DY)]
@@ -236,8 +413,8 @@ openings = [
      'status': 'EXISTING_TO_VERIFY', 'note': 'cloakroom north door opening (dev plan arc on CLK-N); leaf status TO_VERIFY — reusable as bath N entry candidate'},
     {'id': 'D-MASTER?', 'kind': 'door', 'meas_zone': [[10100, 4400], [10900, 4700]],
      'status': 'TO_VERIFY', 'note': 'master bedroom entry on north wall Y4500-bc per dev plan; not a block insert in measured DWG — position to verify'},
-    {'id': 'G-GB-BALC', 'kind': 'glazing_door_double', 'meas_zone': [[9200, 12036], [11700, 12436]],
-     'status': 'EXISTING_KEEP', 'note': 'existing interior double glass door guest bedroom -> north balcony (replaced demolished black wall). NOT the exterior enclosure.'},
+    {'id': 'G-GB-BALC', 'kind': 'glazing_door_double', 'meas_zone': [[9100, 12036], [11100, 12236]],
+     'status': 'EXISTING_KEEP', 'note': 'existing interior double glass door guest bedroom -> north balcony, glazing x10400-12400 per DWG triple-line (replaced demolished black wall). NOT the exterior enclosure.'},
     {'id': 'G-DIN-LIV', 'kind': 'sliding_glass_3track', 'meas_zone': [[1650, 5866], [4350, 6051]],
      'status': 'EXISTING_KEEP', 'note': 'owner blue-line new sliding glass door kitchen-dining domain <-> living, ~2700mm 3-track'},
     {'id': 'D-BALC-W', 'kind': 'door', 'meas_zone': [[6500, 13900], [7100, 14500]],
@@ -309,6 +486,7 @@ model = {
                                    max(p[0] for p in poly)-DX, max(p[1] for p in poly)-DY]
                                   for poly in hatch_polys],
     'openings': openings,
+    'windows': WINDOWS,
     'split_level': stairs,
     'balconies': balconies,
     'keep_items': keep,
@@ -318,6 +496,25 @@ model = {
                       'east_chain': [4500, 1900, 4500, 2800]},
 }
 OUT_JSON.write_text(json.dumps(model, ensure_ascii=False, indent=1))
+
+# RC2.2: formal window register — JSON + CSV (evidence-led)
+REG_JSON = ROOT / 'current_existing' / 'window_register.json'
+REG_CSV = ROOT / 'current_existing' / 'window_register.csv'
+REG_FIELDS = ['window_id', 'room_or_zone', 'orientation_plan_relative', 'window_type',
+              'source_plan_evidence', 'measured_dwg_evidence', 'current_status',
+              'proposed_status', 'span_mm', 'sill_or_bay_note', 'confidence',
+              'verification_status', 'notes']
+REG_JSON.write_text(json.dumps({'meta': {'task': 'TASK03A RC2.2 window register',
+                    'authority': 'P1 owner-confirmed status > P2 dev-plan graphic > P3 measured DWG',
+                    'north_balcony_time_state': 'current OPEN_NOT_ENCLOSED / enclosure PROPOSED / G-GB-BALC interior door EXISTING_KEEP'},
+                                'windows': WINDOWS}, ensure_ascii=False, indent=1))
+import csv
+with open(REG_CSV, 'w', newline='') as f:
+    w = csv.DictWriter(f, fieldnames=REG_FIELDS)
+    w.writeheader()
+    for win in WINDOWS:
+        w.writerow({k: win.get(k, '') for k in REG_FIELDS})
 print('model written:', OUT_JSON)
+print('window register:', len(WINDOWS), 'records ->', REG_JSON.name, '+', REG_CSV.name)
 print('walls kept:', sum(1 for w in walls if w['disposition'] == 'EXISTING'),
       'demolished:', sum(1 for w in walls if 'DEMOL' in w['disposition'] or 'PARTIAL' in w['disposition']))
