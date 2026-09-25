@@ -102,6 +102,11 @@ for s in CD['door_swings']:
     ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
                            edgecolor='#e8710a', lw=1.2, ls=':', zorder=4))
     ax.text(r[0], r[3]+80, 'swing '+s['door'], fontsize=5, color='#e8710a')
+# guest-room continuous path entry -> balcony (RC2.1, >=800 throat)
+for i, r in enumerate(CD['guest_path']):
+    ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
+                           edgecolor='#188038', lw=1.2, ls='-.', zorder=4))
+ax.text(11800, 9600, 'path >=800\nentry->balcony', fontsize=5, color='#188038', ha='center')
 save(fig, 'task03a_s3_furniture.png')
 
 # S4 split-level study
@@ -141,6 +146,12 @@ for s in CD['door_swings']:
         r = s['rect']
         ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
                                edgecolor='#e8710a', lw=1.2, ls=':', zorder=4))
+# SMB2 shower glass partition + real entry opening (RC2.1)
+gp = CD['smb']['shower_glass']['panel']
+ax.add_patch(Rectangle((gp[0], gp[1]), gp[2]-gp[0], gp[3]-gp[1], facecolor='#9334e6', alpha=.5, zorder=5))
+ax.annotate('glass panel; 750 entry\nsouth of it; aisle 800', xy=(10450, 5800),
+            xytext=(7600, 6800), fontsize=6, color='#9334e6',
+            arrowprops=dict(arrowstyle='->', color='#9334e6'))
 ax.set_xlim(7000, 16800); ax.set_ylim(3400, 11500)
 save(fig, 'task03a_s5_bathrooms.png')
 
@@ -176,10 +187,17 @@ for ax, opt in zip(axs, 'WS'):
                                edgecolor='#e8710a', lw=1.2, ls=':', zorder=5))
         ax.text(r[0]-150, r[3]+60, 'swing zone\n(fixture-free)', fontsize=6, color='#e8710a')
         ax.add_patch(Rectangle((10800, 4450), 600, 100, facecolor=WCOL['conflict'], alpha=.7, zorder=5))
-        ax.annotate('door in NEW south partition\n(hinge E, swings into annex)', xy=(9400, 3850), xytext=(7300, 4400),
+        ax.annotate('door 750 in NEW south partition\n(hinge E, swings into annex)', xy=(9400, 3850), xytext=(7300, 4400),
                     fontsize=8, arrowprops=dict(arrowstyle='->'))
+        gp = CD['smb']['shower_glass']['panel']
+        ax.add_patch(Rectangle((gp[0], gp[1]), gp[2]-gp[0], gp[3]-gp[1], facecolor='#9334e6', alpha=.5, zorder=5))
+        ax.text(10600, 5100, '750 entry\n(glass above)', fontsize=5, color='#9334e6')
+        ma = CD['smb']['clearances']['main_aisle']
+        ax.add_patch(Rectangle((ma[0], ma[1]), ma[2]-ma[0], ma[3]-ma[1], facecolor='none',
+                               edgecolor='#188038', lw=1.0, ls='-.', zorder=5))
+        ax.text(9730, 6000, 'aisle\n800', fontsize=6, color='#188038')
         ax.text(10900, 4200, 'stub\nTO_VERIFY', fontsize=6, color=WCOL['conflict'])
-        ax.text(7200, 7000, 'FEASIBLE — RECOMMENDED\n~5.0m2 shell+annex; zero demolition;\ndoor west end, swing clear of fixtures', fontsize=8, color='#188038')
+        ax.text(7200, 7000, 'FEASIBLE — RECOMMENDED\n~5.0m2 shell+annex; zero demolition;\n750 door; 800 continuous aisle', fontsize=8, color='#188038')
 fig.savefig(QC / 'task03a_s6_smb_ws.png', bbox_inches='tight', facecolor='white')
 fig.savefig(QC / 'task03a_s6_smb_ws.pdf', bbox_inches='tight', facecolor='white')
 print('task03a_s6_smb_ws.png')

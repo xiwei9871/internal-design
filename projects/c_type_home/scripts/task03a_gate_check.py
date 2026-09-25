@@ -128,20 +128,30 @@ for s in CD['door_swings']:
             bad.append(f"{s['door']}x{f['id']}")
 gate('G16 door swings clear of new furniture/fixtures', not bad, f"collisions={bad}")
 
-# G17 secondary bath service clearances (door swing, WC front, vanity front, shower entry)
+# G17 secondary bath: clearances fixture-free AND main aisle >=750 continuous
 bad = []
 for name, r in CD['smb']['clearances'].items():
     for f in solid:
         if inter(f['rect'], r):
             bad.append(f"{name}x{f['id']}")
-gate('G17 SMB bath service clearances', not bad,
-     f"zones={list(CD['smb']['clearances'])}; intruders={bad}")
+ma = CD['smb']['clearances']['main_aisle']
+aisle_w = ma[2] - ma[0]
+gate('G17 SMB bath clearances + main aisle >=750', not bad and aisle_w >= 750,
+     f"main aisle {aisle_w}mm continuous; zones={list(CD['smb']['clearances'])}; intruders={bad}")
 
-# G18 guest room: entry swing + west aisle to balcony + bunk ladder zone
-aisle = [9900, 8000, 10800, 10400]
-bad = [f['id'] for f in solid if f['layer'] == 'A-FURN-PROP' and inter(f['rect'], aisle)]
-gate('G18 guest-room entry/aisle/balcony clear', not bad,
-     f"west aisle {aisle[2]-aisle[0]}mm wide to glass door; blockers={bad}")
+# G18 guest room: connected entry->balcony path — every segment fixture-free,
+# every consecutive shared edge >=750 (catches the old 300mm throat)
+path = CD['guest_path']
+def shared_edge(a, b):
+    if abs(a[3] - b[1]) < 1 or abs(b[3] - a[1]) < 1:
+        return max(0, min(a[2], b[2]) - max(a[0], b[0]))
+    return 0
+bad = [f['id'] for f in solid if any(inter(f['rect'], r) for r in path)]
+throats = [shared_edge(path[i], path[i+1]) for i in range(len(path) - 1)]
+widths = [r[2] - r[0] for r in path]
+gate('G18 guest-room path to balcony >=750 continuous',
+     not bad and min(throats) >= 750 and min(widths) >= 750,
+     f"segment widths={widths}; throat widths={throats}; blockers={bad}")
 
 # G19 study real circulation: main aisle between daybed row and book wall
 st_aisle = [14000, 7300, 15500, 11300]

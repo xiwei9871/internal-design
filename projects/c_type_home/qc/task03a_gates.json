@@ -86,14 +86,14 @@
       "detail": "collisions=[]"
     },
     {
-      "gate": "G17 SMB bath service clearances",
+      "gate": "G17 SMB bath clearances + main aisle >=750",
       "result": "PASS",
-      "detail": "zones=['door_swing', 'wc_front', 'vanity_front', 'shower_entry']; intruders=[]"
+      "detail": "main aisle 800mm continuous; zones=['door_swing', 'wc_front', 'vanity_front', 'shower_entry', 'main_aisle']; intruders=[]"
     },
     {
-      "gate": "G18 guest-room entry/aisle/balcony clear",
+      "gate": "G18 guest-room path to balcony >=750 continuous",
       "result": "PASS",
-      "detail": "west aisle 900mm wide to glass door; blockers=[]"
+      "detail": "segment widths=[1300, 800, 1500, 2500]; throat widths=[800, 800, 1500]; blockers=[]"
     },
     {
       "gate": "G19 study circulation aisle clear",

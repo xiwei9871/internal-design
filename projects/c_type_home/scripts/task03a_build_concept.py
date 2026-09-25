@@ -94,11 +94,11 @@ SMB = {'x1': 9050, 'y1': 4650, 'x2': 11300, 'y2': 6300}
 ANNEX = [9050, 3900, 10700, 4450]          # interior of annexed bedroom strip
 NEW_WALLS = [                              # rect + id
  ([8950, 3800, 9100, 3900], 'NW-SMB-S1'),   # south partition west of door
- ([9750, 3800, 10800, 3900], 'NW-SMB-S2'),  # south partition east of door
+ ([9850, 3800, 10800, 3900], 'NW-SMB-S2'),  # south partition east of door
  ([8950, 3900, 9050, 4500], 'NW-SMB-W'),    # annex west wall -> meets CLK-W
  ([10700, 3900, 10800, 4450], 'NW-SMB-E'),  # annex east wall -> meets stub
 ]
-NEW_DOORS = [([9100, 3800, 9750, 3900], 'D-SMB2-S')]  # S entry leaf, hinge east
+NEW_DOORS = [([9100, 3800, 9850, 3900], 'D-SMB2-S')]  # S entry leaf 750, hinge east
 CD['new_walls'] = [r for r, _ in NEW_WALLS]
 CD['new_doors'] = [r for r, _ in NEW_DOORS]
 CD['smb'] = {
@@ -109,9 +109,9 @@ CD['smb'] = {
  'site_truth': 'cloakroom N/W/E walls EXISTING (owner image markup + DWG drawn — consistent); '
                'south side OPEN to bedroom (Y4500-b-CLKSEG absent, only 600mm stub x10800-11400 — TO_VERIFY). '
                'Bath = shell + L-annex into bedroom + NEW south partition (wall or frosted glass). No demolition.',
- 'entry_S': {'door_rect': [9100, 3800, 9750, 3900],
-             'swing': 'hinge east @x9750, leaf ~650, swings INTO bath annex; swing zone x9100-9750 y3900-4550 kept fixture-free',
-             'pros': 'zero existing-wall cutting; door at west end of new partition; meets ~5m2 owner target',
+ 'entry_S': {'door_rect': [9100, 3800, 9850, 3900],
+             'swing': 'hinge east @x9850, leaf 750, swings INTO bath annex; swing zone x9100-9850 y3900-4650 kept fixture-free',
+             'pros': 'zero existing-wall cutting; 750 door at west end of new partition; meets ~5m2 owner target',
              'cons': 'annex bites 1700x550 of bedroom; door axis still roughly toward bed — mitigate with frosted glass partition; residual stub x10800-11400 TO_VERIFY',
              'verdict': 'FEASIBLE — recommended (least intervention, owner target ~5m2 met)'},
  'entry_W': {'door_rect': [8950, 4700, 9050, 5400],
@@ -127,20 +127,34 @@ CD['smb'] = {
              'verdict': 'FALLBACK'},
  'comparison': 'S recommended (new partition only). W = sliding door, but requires owner exception '
                'to open retained white-class CLK-W. N = zero-cost fallback.',
- 'fixtures': {'shower': [10300, 4900, 11300, 6300],   # 1000x1400 on east (master-bath wet) wall
-              'wc':     [9050, 5450, 9750, 6300],     # 700x850 NW corner
-              'vanity': [9950, 3900, 10700, 4450]},   # 750x550 in annex east
- 'clearances': {'door_swing':   [9100, 3900, 9750, 4550],
-                'wc_front':     [9050, 4750, 9750, 5450],
-                'vanity_front': [9950, 4450, 10700, 4900],
-                'shower_entry': [9750, 4900, 10300, 6300]},
+ # RC2.1 throat closure: WC 650 / aisle 800 / shower 800 — main path 800mm continuous
+ 'fixtures': {'shower': [10500, 4650, 11300, 6300],   # 800x1650 east column (shared master-bath wet wall)
+              'wc':     [9050, 5500, 9700, 6300],     # 650x800 NW corner
+              'vanity': [9850, 3900, 10500, 4450]},   # 700x550 in annex east
+ 'shower_glass': {'panel': [10450, 5400, 10500, 6300],
+                  'opening': '750mm clear entry on west face, y4650-5400'},
+ 'clearances': {'door_swing':   [9100, 3900, 9850, 4650],
+                'wc_front':     [9050, 4700, 9700, 5500],
+                'vanity_front': [9850, 4450, 10500, 4900],
+                'shower_entry': [9700, 4650, 10500, 5400],
+                'main_aisle':   [9700, 4650, 10500, 6300]},   # 800mm continuous
  'drain_note': 'east wall shared with MASTER_BATH wet zone — primary drain/vent candidate, TO_VERIFY',
 }
 
+# guest bedroom continuous path entry -> balcony glass door (RC2.1):
+# door leaf re-hung OUTWARD or surface sliding on existing opening -> interior
+# freed for portrait bunk on west wall; east lane >=800 continuous to glass zone
+CD['guest_path'] = [
+ [10900, 8000, 12200, 8300],   # entry strip below bunk/desk line
+ [11400, 8300, 12200, 8450],   # pinch between bunk east face and desk
+ [11400, 8450, 12900, 10400],  # open east lane
+ [10500, 10400, 13000, 10700], # balcony glass-door zone
+]
+
 # door swing envelopes (conservative squares, leaf = opening width)
 CD['door_swings'] = [
- {'door': 'D-SMB2-S', 'rect': [9100, 3900, 9750, 4550], 'note': 'new S partition door, swings into bath'},
- {'door': 'D-GBED',   'rect': [10900, 8000, 11700, 8800], 'note': 'guest bed door swings into room'},
+ {'door': 'D-SMB2-S', 'rect': [9100, 3900, 9850, 4650], 'note': 'new S partition door, swings into bath'},
+ {'door': 'D-GBED',   'rect': [10900, 7000, 11700, 7800], 'note': 'RC2.1: leaf re-hung OUTWARD into corridor or surface sliding — interior freed; exterior swing noted, TO_VERIFY'},
  {'door': 'D-STUDY',  'rect': [13100, 6564, 13900, 7364], 'note': 'study door swings east into room'},
  {'door': 'D-MB',     'rect': [13100, 4564, 13900, 5364], 'note': 'master bath door swings east into bath'},
  {'door': 'D-SM',     'rect': [8000, 3564, 8700, 4364],   'note': 'secondary master door swings into bedroom'},
@@ -174,11 +188,12 @@ furn('ST-DESK', 14000, 6500, 15700, 7300, note='1700x800 desk on south wall, eas
 furn('ST-DAYBED', 13100, 8300, 13900, 10300, note='800x2000 daybed on west wall, north of door swing')
 furn('ST-BOOK', 15500, 8500, 16300, 10500, lay='A-FURN-EXST-KEEP', note='existing wardrobe->book/file/equip')
 furn('ST-NAS', 13100, 7450, 13800, 8050, note='NAS/printer shelf, ventilated, north of door swing')
-# GUEST BEDROOM (x9900-12900 y8000-10700): RC2 — door swing x10900-11700 y8000-8800
-# and glass-door zone stay clear; bunk rotated landscape, head on east wall,
-# ladder at west end inside the 900mm west aisle
-furn('GB-BUNK', 10800, 8900, 12900, 10400, note='2100x1500 landscape, head east wall; ladder west end; alt: re-hang door outward/sliding frees west wall for portrait 1500x2100')
-furn('GB-DESK', 12100, 8000, 12900, 8450, note='narrow desk 800x450 SE corner, clear of door swing')
+# GUEST BEDROOM (x9900-12900 y8000-10700): RC2.1 — entry door re-hung outward /
+# surface sliding on EXISTING opening (no new white-wall cut) -> interior swing
+# zone freed; portrait bunk back on west wall; continuous >=800 east lane
+# entry -> bedside -> balcony glass door (fixes the 300mm throat)
+furn('GB-BUNK', 9900, 8300, 11400, 10400, note='1500x2100 portrait on west wall; ladder at south end')
+furn('GB-DESK', 12200, 8000, 12900, 8450, note='narrow desk 700x450 SE corner, east of 800mm lane')
 furn('GB-GLASSDOOR-ZONE', 10500, 10400, 13000, 10700, lay='A-NOTE', note='KEEP CLEAR: double glass door to balcony')
 furn('GB-BALC-STEP', 10500, 10700, 13000, 10900, lay='A-LEVEL', note='level transition at glass door: guest bed upper -> balcony lower, 2 risers TO_VERIFY')
 # NORTH BALCONY x7900-13000 y10900-13400
@@ -200,11 +215,12 @@ furn('MBATH-SHOWER', 14700, 5400, 16300, 6300, lay='A-FIXT-PLUMB', note='corner 
 furn('MBATH-WC', 15500, 4650, 16300, 5350, lay='A-FIXT-PLUMB', note='smart toilet SE, front clearance faces west')
 furn('MBATH-VANITY', 13100, 5500, 13700, 6300, lay='A-FIXT-PLUMB', note='single vanity NW, north of door swing')
 furn('MBATH-RAD', 13900, 4650, 14500, 4900, lay='A-FIXT-PLUMB', note='radiator keep on south wall, clear of door swing')
-# SECONDARY MASTER BATH — RC2: shell + south annex (~5.0m2); S door in new
-# partition, hinge east, swings into annex (zone x9100-9750 y3900-4550 clear)
-furn('SMB2-SHOWER', 10300, 4900, 11300, 6300, lay='A-FIXT-PLUMB', note='1000x1400 on east wall (shared master-bath wet wall)')
-furn('SMB2-WC', 9050, 5450, 9750, 6300, lay='A-FIXT-PLUMB', note='smart toilet NW, 700mm front clearance')
-furn('SMB2-VANITY', 9950, 3900, 10700, 4450, lay='A-FIXT-PLUMB', note='750x550 vanity in annex east, clear of door swing')
+# SECONDARY MASTER BATH — RC2.1: shell + south annex (~5.0m2); S door 750 in new
+# partition (hinge east, swings into annex); main aisle 800 continuous:
+# WC 650 west / aisle x9700-10500 / shower 800 east column w/ 750 glass entry
+furn('SMB2-SHOWER', 10500, 4650, 11300, 6300, lay='A-FIXT-PLUMB', note='800x1650 east column (shared master-bath wet wall); glass panel y5400-6300, 750 entry at south')
+furn('SMB2-WC', 9050, 5500, 9700, 6300, lay='A-FIXT-PLUMB', note='smart toilet NW 650x800, 800mm front clearance')
+furn('SMB2-VANITY', 9850, 3900, 10500, 4450, lay='A-FIXT-PLUMB', note='700x550 vanity in annex east, clear of door swing')
 # RAMP (kitchen-side of platform edge, in lowered strip)
 furn('RAMP', *CD['level']['ramp']['rect_mm'], lay='A-ACCESS-RAMP',
      note='ramp 3000 run, slope 1:7.5-1:8.6 PROVISIONAL, ASSISTED WHEELCHAIR FUTURE PROVISION')

@@ -59,7 +59,7 @@
    3900
   ],
   [
-   9750,
+   9850,
    3800,
    10800,
    3900
@@ -81,7 +81,7 @@
   [
    9100,
    3800,
-   9750,
+   9850,
    3900
   ]
  ],
@@ -105,11 +105,11 @@
    "door_rect": [
     9100,
     3800,
-    9750,
+    9850,
     3900
    ],
-   "swing": "hinge east @x9750, leaf ~650, swings INTO bath annex; swing zone x9100-9750 y3900-4550 kept fixture-free",
-   "pros": "zero existing-wall cutting; door at west end of new partition; meets ~5m2 owner target",
+   "swing": "hinge east @x9850, leaf 750, swings INTO bath annex; swing zone x9100-9850 y3900-4650 kept fixture-free",
+   "pros": "zero existing-wall cutting; 750 door at west end of new partition; meets ~5m2 owner target",
    "cons": "annex bites 1700x550 of bedroom; door axis still roughly toward bed — mitigate with frosted glass partition; residual stub x10800-11400 TO_VERIFY",
    "verdict": "FEASIBLE — recommended (least intervention, owner target ~5m2 met)"
   },
@@ -140,60 +140,101 @@
   "comparison": "S recommended (new partition only). W = sliding door, but requires owner exception to open retained white-class CLK-W. N = zero-cost fallback.",
   "fixtures": {
    "shower": [
-    10300,
-    4900,
+    10500,
+    4650,
     11300,
     6300
    ],
    "wc": [
     9050,
-    5450,
-    9750,
+    5500,
+    9700,
     6300
    ],
    "vanity": [
-    9950,
+    9850,
     3900,
-    10700,
+    10500,
     4450
    ]
+  },
+  "shower_glass": {
+   "panel": [
+    10450,
+    5400,
+    10500,
+    6300
+   ],
+   "opening": "750mm clear entry on west face, y4650-5400"
   },
   "clearances": {
    "door_swing": [
     9100,
     3900,
-    9750,
-    4550
+    9850,
+    4650
    ],
    "wc_front": [
     9050,
-    4750,
-    9750,
-    5450
+    4700,
+    9700,
+    5500
    ],
    "vanity_front": [
-    9950,
+    9850,
     4450,
-    10700,
+    10500,
     4900
    ],
    "shower_entry": [
-    9750,
-    4900,
-    10300,
+    9700,
+    4650,
+    10500,
+    5400
+   ],
+   "main_aisle": [
+    9700,
+    4650,
+    10500,
     6300
    ]
   },
   "drain_note": "east wall shared with MASTER_BATH wet zone — primary drain/vent candidate, TO_VERIFY"
  },
+ "guest_path": [
+  [
+   10900,
+   8000,
+   12200,
+   8300
+  ],
+  [
+   11400,
+   8300,
+   12200,
+   8450
+  ],
+  [
+   11400,
+   8450,
+   12900,
+   10400
+  ],
+  [
+   10500,
+   10400,
+   13000,
+   10700
+  ]
+ ],
  "door_swings": [
   {
    "door": "D-SMB2-S",
    "rect": [
     9100,
     3900,
-    9750,
-    4550
+    9850,
+    4650
    ],
    "note": "new S partition door, swings into bath"
   },
@@ -201,11 +242,11 @@
    "door": "D-GBED",
    "rect": [
     10900,
-    8000,
+    7000,
     11700,
-    8800
+    7800
    ],
-   "note": "guest bed door swings into room"
+   "note": "RC2.1: leaf re-hung OUTWARD into corridor or surface sliding — interior freed; exterior swing noted, TO_VERIFY"
   },
   {
    "door": "D-STUDY",
@@ -407,24 +448,24 @@
   {
    "id": "GB-BUNK",
    "rect": [
-    10800,
-    8900,
-    12900,
+    9900,
+    8300,
+    11400,
     10400
    ],
    "layer": "A-FURN-PROP",
-   "note": "2100x1500 landscape, head east wall; ladder west end; alt: re-hang door outward/sliding frees west wall for portrait 1500x2100"
+   "note": "1500x2100 portrait on west wall; ladder at south end"
   },
   {
    "id": "GB-DESK",
    "rect": [
-    12100,
+    12200,
     8000,
     12900,
     8450
    ],
    "layer": "A-FURN-PROP",
-   "note": "narrow desk 800x450 SE corner, clear of door swing"
+   "note": "narrow desk 700x450 SE corner, east of 800mm lane"
   },
   {
    "id": "GB-GLASSDOOR-ZONE",
@@ -594,35 +635,35 @@
   {
    "id": "SMB2-SHOWER",
    "rect": [
-    10300,
-    4900,
+    10500,
+    4650,
     11300,
     6300
    ],
    "layer": "A-FIXT-PLUMB",
-   "note": "1000x1400 on east wall (shared master-bath wet wall)"
+   "note": "800x1650 east column (shared master-bath wet wall); glass panel y5400-6300, 750 entry at south"
   },
   {
    "id": "SMB2-WC",
    "rect": [
     9050,
-    5450,
-    9750,
+    5500,
+    9700,
     6300
    ],
    "layer": "A-FIXT-PLUMB",
-   "note": "smart toilet NW, 700mm front clearance"
+   "note": "smart toilet NW 650x800, 800mm front clearance"
   },
   {
    "id": "SMB2-VANITY",
    "rect": [
-    9950,
+    9850,
     3900,
-    10700,
+    10500,
     4450
    ],
    "layer": "A-FIXT-PLUMB",
-   "note": "750x550 vanity in annex east, clear of door swing"
+   "note": "700x550 vanity in annex east, clear of door swing"
   },
   {
    "id": "RAMP",
