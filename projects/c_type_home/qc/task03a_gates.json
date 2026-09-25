@@ -223,12 +223,12 @@
     {
       "gate": "RC4-G3 version lineage MEASURED<-V01<-V02",
       "result": "PASS",
-      "detail": "V01=684a17280870 V02=ca592fcfd3e7"
+      "detail": "V01=5210557086ce V02=4e9dd3d4faf1"
     },
     {
       "gate": "RC4-G4 all DEMO/SUPERSEDED/CORRECTED in change registry",
       "result": "PASS",
-      "detail": "registry=41 (corr/new=28) untraced_entities=0"
+      "detail": "registry=42 (corr/new=27) untraced_entities=0"
     },
     {
       "gate": "RC4-G5 9 registry windows in CAD",
@@ -269,6 +269,11 @@
       "gate": "RC4-G12 no parent overwrite",
       "result": "PASS",
       "detail": "MEASURED+V01 shas still match manifest"
+    },
+    {
+      "gate": "RC4-G13 open balcony: railing_parapet never on wall layer",
+      "result": "PASS",
+      "detail": "parapets=['W-EXT-N-BAL', 'W-BALC-W', 'W-BALC-S', 'W-NBALC-E-PAR'] violations=none"
     }
   ],
   "overall": "PASS"

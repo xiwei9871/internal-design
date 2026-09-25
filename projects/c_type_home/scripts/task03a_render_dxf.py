@@ -37,7 +37,8 @@ def sha(p):
     return hashlib.sha256(open(p, 'rb').read()).hexdigest()
 
 
-def render(dxf_path, profile, name):
+def render(dxf_path, profile, name, crop=None):
+    """crop: optional task01 rect [x1,y1,x2,y2] used as the view limits."""
     doc = ezdxf.readfile(str(dxf_path))
     msp = doc.modelspace()
     hide_l = PRESENTATION_HIDE_LAYERS if profile == 'PRESENTATION' else REVIEW_HIDE_LAYERS
@@ -67,16 +68,22 @@ def render(dxf_path, profile, name):
     ext = bbox.extents(in_plan)
     w = ext.extmax.x - ext.extmin.x
     h = ext.extmax.y - ext.extmin.y
+    if crop:
+        vx1, vy1, vx2, vy2 = crop[0] + AX, crop[1] + AY, crop[2] + AX, crop[3] + AY
+        w, h = vx2 - vx1, vy2 - vy1
+    else:
+        vx1, vy1 = ext.extmin.x - w * 0.02, ext.extmin.y - h * 0.02
+        vx2, vy2 = ext.extmax.x + w * 0.02, ext.extmax.y + h * 0.02
     scale = 13.0 / max(w, 1)
     fig = plt.figure(figsize=(w * scale, h * scale), dpi=160)
     ax = fig.add_axes([0, 0, 1, 1])
     ax.set_axis_off()
     ax.set_facecolor('white')
     ctx = RenderContext(doc)
-    out = MatplotlibBackend(ax)
+    out = MatplotlibBackend(ax, adjust_figure=False)   # never let backend resize the fig
     Frontend(ctx, out).draw_layout(msp, filter_func=keep, finalize=True)
-    ax.set_xlim(ext.extmin.x - w * 0.02, ext.extmax.x + w * 0.02)
-    ax.set_ylim(ext.extmin.y - h * 0.02, ext.extmax.y + h * 0.02)
+    ax.set_xlim(vx1, vx2)
+    ax.set_ylim(vy1, vy2)
     ax.set_aspect('equal')
     png = QC / f'{name}.png'
     pdf = QC / f'{name}.pdf'
@@ -105,3 +112,6 @@ render(CAD / 'design_v01_existing_sync.dxf', 'CAD_REVIEW', 'rc4_v01_cad_review')
 render(CAD / 'design_v01_existing_sync.dxf', 'PRESENTATION', 'rc4_v01_presentation')
 render(CAD / 'design_v02_f1_l1.dxf', 'CAD_REVIEW', 'rc4_v02_f1_cad_review')
 render(CAD / 'design_v02_f1_l1.dxf', 'PRESENTATION', 'rc4_v02_f1_presentation')
+# RC4.1 visual check: north balcony must read as open parapet/railing, not wall
+render(CAD / 'design_v01_existing_sync.dxf', 'CAD_REVIEW', 'rc4_v01_open_balcony_check',
+       crop=[7200, 10400, 13600, 14000])

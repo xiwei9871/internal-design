@@ -160,3 +160,41 @@ Legacy `task03a_render_qc.py` marked DEPRECATED_FOR_FORMAL_OUTPUT (kept for migr
 ### Review outputs
 - `qc/rc4_v01_cad_review.png/.pdf`, `qc/rc4_v01_presentation.png/.pdf`
 - `qc/rc4_v02_f1_cad_review.png/.pdf`, `qc/rc4_v02_f1_presentation.png/.pdf`
+
+---
+
+## RC4.1 — closeout (review findings)
+
+### cover_ratio() bug
+`dy = min(ex[3], wr[1]) - max(ex[1], wr[1])` used `wr[1]` twice — zero-area
+LINE entities took the 1D branch so walls were unaffected, but areal
+entities (LWPOLYLINE/HATCH) could score wrong coverage. Fixed to `wr[3]`.
+Re-run disposition diff (buggy → fixed, 16 handles):
+- `307CB3`: KEEP → **DEMO** (W-INT-X5800 owner-confirmed demolished —
+  the only semantic change; entity now correctly on A-WALL-DEMO)
+- 15 others: KEEP → KEEP, now correctly matched to EXISTING walls
+  (incl. W-EXT-N-BAL parapet polyline, FOYER/CLK-W bands — no layer change)
+
+### Parapet/railing dispatch
+Builder now branches on canonical `type`: `railing_parapet` → new layer
+`A-PARP-EXST`, never `A-WALL-EXST-CORR`. Records: W-EXT-N-BAL,
+W-NBALC-E-PAR (north balcony, OPEN_NOT_ENCLOSED), W-BALC-W, W-BALC-S.
+New gate RC4-G13: no railing_parapet geometry on wall layers; parapet
+linework must exist. `qc/rc4_v01_open_balcony_check.png` = cropped review
+of the north balcony for eyeball confirmation.
+
+### change_type refactor
+`DEMOLITION` (real teardown) / `SURVEY_SUPERSEDED` (stale survey, audit) /
+`EXISTING_CORRECTION` (current-condition fixes, was OWNER_CORRECTION/NEW_DESIGN) /
+`EXISTING_ENRICHMENT` (survey of existing assets into CAD: kitchen cabinets,
+keep-items — was NEW_DESIGN) / `PROPOSED_DESIGN` (F1 furniture etc.).
+`owner_confirmation` is now false for PDF/CAD-derived records (kitchen
+cabinets etc.); true only where the owner actually confirmed.
+
+### Review render crop
+Flat-banner bug was `MatplotlibBackend.finalize()` resizing the figure by
+autoscaled content (off-plan RC-GRILL legend). Now `adjust_figure=False` +
+explicit plan-region limits — CAD_REVIEW shares the plan crop with
+PRESENTATION; nothing deleted from the DXF.
+
+Registry now 42 entries; gates 55/55 PASS.

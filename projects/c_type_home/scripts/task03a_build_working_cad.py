@@ -60,6 +60,7 @@ LAYERS = {  # name: (color, linetype)
  'A-SURVEY-SUPERSEDED':(6,   'DASHED'),   # survey stale/overridden by owner correction
  'A-SURVEY-HATCH':     (9,   'CONTINUOUS'),  # cosmetic wall fills — audit only, never presentation
  'A-WALL-EXST-CORR':   (1,   'CONTINUOUS'),  # corrected current walls
+ 'A-PARP-EXST':        (210, 'CONTINUOUS'),  # parapet/railing — never on a wall layer
  'A-OPEN-EXST':        (3,   'CONTINUOUS'),  # door/opening extents
  'A-GLAZ-EXST':        (4,   'CONTINUOUS'),  # registry glazing (windows + glass doors)
  'A-CAB-EXST-BASE':    (34,  'CONTINUOUS'),
@@ -162,7 +163,7 @@ def cover_ratio(ebbox, wr):
             return 0.0
         dy = min(ex[3], wr[3]) - max(ex[1], wr[1])
         return max(0.0, dy) / max(eh, 1e-6)
-    dx = min(ex[2], wr[2]) - max(ex[0], wr[0]); dy = min(ex[3], wr[1]) - max(ex[1], wr[1])
+    dx = min(ex[2], wr[2]) - max(ex[0], wr[0]); dy = min(ex[3], wr[3]) - max(ex[1], wr[1])
     if dx <= 0 or dy <= 0:
         return 0.0
     return dx * dy / (ew * eh)
@@ -258,12 +259,15 @@ for w in WALLS:
         needs = True
     if not needs:
         continue
-    e = draw_rect(msp, 'A-WALL-EXST-CORR', w['rect_mm'], abs_=False)
-    reg('OWNER_CORRECTION' if w['measured_coverage'] < 0.5 else 'NEW_DESIGN',
-        None, 'A-WALL-EXST-CORR', f"rect_task01={w['rect_mm']}",
-        f"{w['id']} canonical current wall not (fully) present in survey "
-        f"(coverage={w['measured_coverage']}) — drawn as corrected wall",
-        'canonical_plan_v1 + owner confirmations', True, 'APPLIED',
+    # dispatch by canonical type: parapet/railing is NOT a wall
+    lay = 'A-PARP-EXST' if w.get('type') == 'railing_parapet' else 'A-WALL-EXST-CORR'
+    e = draw_rect(msp, lay, w['rect_mm'], abs_=False)
+    owner_conf = ('owner' in str(w.get('evidence', '')).lower()
+                  or 'OWNER_CONFIRMED' in w['disposition'])
+    reg('EXISTING_CORRECTION', None, lay, f"rect_task01={w['rect_mm']}",
+        f"{w['id']} canonical current {w.get('type','wall')} not (fully) present "
+        f"in survey (coverage={w['measured_coverage']}) — drawn as corrected linework",
+        w.get('evidence', 'canonical_plan_v1'), owner_conf, 'APPLIED',
         repl_handle=e.dxf.handle)
     corr_n += 1
 print(f'  corrected walls drawn: {corr_n}')
@@ -306,9 +310,10 @@ for c in KREG:
     r = c['rect_mm']
     tag(msp, c['id'], 'V01', f"{c.get('dimension_status','?')}/{c.get('placement_status','?')}",
         to_abs(((r[0]+r[2])/2, (r[1]+r[3])/2)), {'KIND': c['kind'], 'PARENT': c.get('parent', '')})
-    reg('NEW_DESIGN', None, lay, f"rect_task01={c['rect_mm']}",
-        f"kitchen cabinet {c['id']} projected from cabinet PDF into CAD",
-        '世纪欣园3-1-901_cabinet_plan.pdf + kitchen_cabinet_register', True, 'APPLIED')
+    reg('EXISTING_ENRICHMENT', None, lay, f"rect_task01={c['rect_mm']}",
+        f"existing kitchen cabinet {c['id']} projected from cabinet PDF into CAD",
+        '世纪欣园3-1-901_cabinet_plan.pdf + kitchen_cabinet_register — PDF-derived, not owner-verified',
+        False, 'APPLIED')
 
 # ---------- existing keep items + room labels
 for k in M.get('keep_items', []):
@@ -376,7 +381,8 @@ for fid, f in L1_IDS.items():
         ins = msp.add_blockref(bname, to_abs((r[0], r[1])), dxfattribs={'layer': lay})
         ins.add_attrib('ELEM_ID', fid); ins.add_attrib('VER', 'V02')
         ins.add_attrib('STATUS', f['layer']); ins.add_attrib('DIMS', f"{w_}x{h_}")
-    reg('NEW_DESIGN', None, lay, f"rect_task01={r}",
+    reg('EXISTING_ENRICHMENT' if lay == 'A-FURN-EXST-KEEP' else 'PROPOSED_DESIGN',
+        None, lay, f"rect_task01={r}",
         f"F1.1 furniture {fid} placed", 'furniture_l1_final.json @ d144789', True,
         'APPLIED', repl_handle=ins.dxf.handle, version='V02')
 

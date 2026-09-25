@@ -651,7 +651,7 @@ gate('RC4-G8 F1.1 furniture coords match d144789', not f_diffs,
      f"items={len(f1_items)-1} changed={f_diffs or 'none'}")
 
 # RC4-G9 CAD/canonical alignment — canonical EXISTING walls covered by CAD wall linework
-wall_rects = _rects_on(_msp1, ('S-S.WALL', 'A-WALL-EXST-CORR'))
+wall_rects = _rects_on(_msp1, ('S-S.WALL', 'A-WALL-EXST-CORR', 'A-PARP-EXST'))
 w_weak = [w['id'] for w in CE['walls'] if w['disposition'] == 'EXISTING'
           and _cover(w['rect_mm'], wall_rects) < 0.5]
 gate('RC4-G9 canonical walls covered by CAD linework', not w_weak,
@@ -689,6 +689,23 @@ g12 = (CVER['MEASURED']['sha256'] == _sha_file(os.path.join(CADDIR, 'measured_wo
        and CVER['V01']['sha256'] == _sha_file(os.path.join(CADDIR, 'design_v01_existing_sync.dxf')))
 gate('RC4-G12 no parent overwrite', g12,
      f"MEASURED+V01 shas still match manifest")
+
+# RC4-G13 open balcony — parapet/railing never on a wall layer; no enclosing
+# wall drawn on the balcony's open boundaries
+par_walls = [w for w in CE['walls'] if w.get('type') == 'railing_parapet']
+corr_rects = _rects_on(_msp1, ('A-WALL-EXST-CORR',))
+parp_rects = _rects_on(_msp1, ('A-PARP-EXST',))
+bal_bad = []
+for pw in par_walls:
+    r = pw['rect_mm']
+    if any(inter(r, cr) for cr in corr_rects):
+        bal_bad.append(f"{pw['id']}:on-wall-layer")
+    # parapet must be represented by parapet linework or inherited survey lines
+    if (_cover(r, parp_rects) < 0.5
+            and _cover(r, _rects_on(_msp1, ('S-S.WALL',))) < 0.5):
+        bal_bad.append(f"{pw['id']}:no-parapet-linework")
+gate('RC4-G13 open balcony: railing_parapet never on wall layer', not bal_bad,
+     f"parapets={[w['id'] for w in par_walls]} violations={bal_bad or 'none'}")
 
 overall = all(r['result'] == 'PASS' for r in results)
 print(f"\n=== TASK03A GATES: {sum(r['result']=='PASS' for r in results)}/{len(results)} {'ALL PASS' if overall else 'HAS FAIL'} ===")

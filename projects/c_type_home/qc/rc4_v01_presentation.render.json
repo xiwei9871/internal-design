@@ -1,9 +1,9 @@
 {
  "source_dxf": "cad/design_v01_existing_sync.dxf",
- "source_dxf_sha256": "684a172808709a39660484af2099fc99e1097608648edcc09f590ab4ff07626b",
+ "source_dxf_sha256": "5210557086ce08d2ca40cb5b14be909ba83608e68b22bcfd151ed73904cf6c00",
  "parent_cad_sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
  "render_profile": "PRESENTATION",
- "generated_at": "2026-09-25T19:55:35",
+ "generated_at": "2026-09-25T20:35:41",
  "visible_layers": [
   "A-CAB-EXST-BASE",
   "A-CAB-EXST-TALL",
@@ -12,6 +12,7 @@
   "A-FURN-EXST-KEEP",
   "A-GLAZ-EXST",
   "A-OPEN-EXST",
+  "A-PARP-EXST",
   "A-TEXT",
   "A-WALL-EXST-CORR",
   "F-DOOR",

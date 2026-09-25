@@ -1,9 +1,9 @@
 {
  "source_dxf": "cad/design_v02_f1_l1.dxf",
- "source_dxf_sha256": "ca592fcfd3e714ea51c79112c55fac39935377df2f6cb4960f3ecd785496ce72",
- "parent_cad_sha256": "684a172808709a39660484af2099fc99e1097608648edcc09f590ab4ff07626b",
+ "source_dxf_sha256": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d",
+ "parent_cad_sha256": "5210557086ce08d2ca40cb5b14be909ba83608e68b22bcfd151ed73904cf6c00",
  "render_profile": "CAD_REVIEW",
- "generated_at": "2026-09-25T19:55:36",
+ "generated_at": "2026-09-25T20:35:42",
  "visible_layers": [
   "A-ACCESS-RAMP",
   "A-ACCESS-STAIR",
@@ -17,6 +17,7 @@
   "A-GLAZ-EXST",
   "A-NOTE",
   "A-OPEN-EXST",
+  "A-PARP-EXST",
   "A-QC-ZONE",
   "A-SURVEY-HATCH",
   "A-TEXT",

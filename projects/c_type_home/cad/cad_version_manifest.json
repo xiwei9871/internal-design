@@ -14,7 +14,7 @@
    "file": "cad/design_v01_existing_sync.dxf",
    "parent": "MEASURED",
    "parent_sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
-   "sha256": "684a172808709a39660484af2099fc99e1097608648edcc09f590ab4ff07626b",
+   "sha256": "5210557086ce08d2ca40cb5b14be909ba83608e68b22bcfd151ed73904cf6c00",
    "immutable": true,
    "scope": "confirmed existing corrections (frozen base RC3.1)"
   },
@@ -22,8 +22,8 @@
    "version": "V02",
    "file": "cad/design_v02_f1_l1.dxf",
    "parent": "V01",
-   "parent_sha256": "684a172808709a39660484af2099fc99e1097608648edcc09f590ab4ff07626b",
-   "sha256": "ca592fcfd3e714ea51c79112c55fac39935377df2f6cb4960f3ecd785496ce72",
+   "parent_sha256": "5210557086ce08d2ca40cb5b14be909ba83608e68b22bcfd151ed73904cf6c00",
+   "sha256": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d",
    "immutable": true,
    "scope": "F1.1 level-1 furniture"
   }
