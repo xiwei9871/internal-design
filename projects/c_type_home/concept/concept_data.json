@@ -787,5 +787,20 @@
     12650
    ]
   ]
+ },
+ "l1_seating": {
+  "DIN-SEATING-N": [
+   3300,
+   3700,
+   4800,
+   4300
+  ],
+  "DIN-SEATING-S": [
+   3300,
+   2500,
+   4800,
+   3100
+  ],
+  "note": "600mm pull-out each long side, daily 4-seat use; S side opens into the demolished-wall balcony merge"
  }
 }

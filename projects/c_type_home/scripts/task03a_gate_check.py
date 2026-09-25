@@ -334,6 +334,12 @@ for tag, sp in sidecars.items():
         continue
     if json.load(open(sp)).get('canonical_sha') != canon_file_sha:
         sc_bad.append(f'{tag}:sha_mismatch')
+rm_outputs = (json.load(open(sidecars['qc/render_manifest.json'])).get('outputs', [])
+              if os.path.exists(sidecars['qc/render_manifest.json']) else [])
+for expected_sheet in ('task03a_s1_current_existing.png', 'task03a_s6_smb_ws.png',
+                       'task03a_f1_level1_furniture_qc.png'):
+    if expected_sheet not in rm_outputs:
+        sc_bad.append(f'manifest_missing:{expected_sheet}')
 gate('G28 canonical base hash + output sidecars consistent',
      not hash_bad and not sc_bad,
      f"sections={list(sections)}; mismatched={hash_bad}; sidecars={sc_bad or 'all match'}")
@@ -482,6 +488,19 @@ for fid, b in fb.items():
         l2_diffs.append(fid)
 gate('F1-G10 L2 furniture/baths unchanged', not l2_diffs,
      f"changed={l2_diffs or 'none'}")
+
+# F1-G11 dining seating clearance — 600mm pull-out each long side fixture-free
+seat_bad = []
+for zn, r in CD['l1_seating'].items():
+    if not isinstance(r, list):
+        continue
+    for f in solid:
+        if 'ACCESS' in f['layer']:
+            continue
+        if inter(f['rect'], r):
+            seat_bad.append(f"{zn}x{f['id']}")
+gate('F1-G11 dining seating pull-out zones clear', not seat_bad,
+     f"zones=DIN-SEATING-N/S 600mm; blockers={seat_bad or 'none'}")
 
 overall = all(r['result'] == 'PASS' for r in results)
 print(f"\n=== TASK03A GATES: {sum(r['result']=='PASS' for r in results)}/{len(results)} {'ALL PASS' if overall else 'HAS FAIL'} ===")

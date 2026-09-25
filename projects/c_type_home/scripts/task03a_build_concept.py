@@ -254,6 +254,13 @@ L1_PATHS = {
 }
 CD['l1_paths'] = L1_PATHS
 
+# F1.1: dining seating clearance zones — chair pull-out on both long sides
+# of DIN-TABLE (1500x600 seats on the long edges); fixture-free requirement.
+CD['l1_seating'] = {'DIN-SEATING-N': [3300, 3700, 4800, 4300],
+                    'DIN-SEATING-S': [3300, 2500, 4800, 3100],
+                    'note': '600mm pull-out each long side, daily 4-seat use; '
+                            'S side opens into the demolished-wall balcony merge'}
+
 # ================================================================ emit main DXF
 doc = new_doc(); msp = doc.modelspace()
 walls(msp)
@@ -398,7 +405,7 @@ F1 = {'canonical_geometry_sha': _sha,
                              'status': 'UNDECIDED — position locked only'},
       'north_balcony': {'current': 'OPEN_NOT_ENCLOSED',
                         'future_enclosure': 'PROPOSED_FUTURE (note only, not current)'},
-      'paths': L1_PATHS}
+      'paths': L1_PATHS, 'dining_seating_zones': CD['l1_seating']}
 L1_ZONE = {'LIV-SOFA-3', 'LIV-SOFA-2', 'LIV-LOUNGE', 'LIV-SIDE-TABLE', 'LIV-COFFEE-MOV',
            'LIV-MEDIA-WALL', 'DIN-TABLE', 'ENTRY-SHOE-CAB', 'ENTRY-BENCH', 'LBALC-CAB',
            'K-CAB', 'RAMP', 'STAIR-EXISTING', 'NB-WD', 'NB-PLANTS', 'NB-TEA'}

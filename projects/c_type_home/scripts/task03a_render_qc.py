@@ -477,9 +477,7 @@ for ax, opt in zip(axs, 'WS'):
         ax.text(9730, 6000, 'aisle\n800', fontsize=6, color='#188038')
         ax.text(10900, 4200, 'stub\nTO_VERIFY', fontsize=6, color=WCOL['conflict'])
         ax.text(7200, 7000, 'FEASIBLE — RECOMMENDED\n~5.0m2 shell+annex; zero demolition;\n750 door; 800 continuous aisle', fontsize=8, color='#188038')
-fig.savefig(QC / 'task03a_s6_smb_ws.png', bbox_inches='tight', facecolor='white')
-fig.savefig(QC / 'task03a_s6_smb_ws.pdf', bbox_inches='tight', facecolor='white')
-print('task03a_s6_smb_ws.png')
+save(fig, 'task03a_s6_smb_ws.png')
 
 # ================================================================ F1 PRESENTATION (L1 owner-facing)
 fig, ax = base('Task03A-F1 · Level-1 Furniture Final — PRESENTATION')
@@ -519,6 +517,14 @@ for pname, segs in CD['l1_paths'].items():
         ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
                                edgecolor='#188038', lw=1.4, ls='-.', zorder=4))
     ax.text(segs[0][0], segs[0][3]+100, pname, fontsize=5.5, color='#188038')
+# F1.1: dining seating pull-out zones on both long sides of the table
+for zn, r in CD['l1_seating'].items():
+    if not isinstance(r, list):
+        continue
+    ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
+                           edgecolor='#e8710a', lw=1.4, ls='--', zorder=4))
+    ax.text((r[0]+r[2])/2, (r[1]+r[3])/2, zn + '\n600mm pull-out', fontsize=5,
+            color='#e8710a', ha='center', va='center')
 ax.legend(handles=QC_LEGEND, fontsize=5.5, loc='lower left', ncol=2)
 save(fig, 'task03a_f1_level1_furniture_qc.png')
 

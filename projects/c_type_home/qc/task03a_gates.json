@@ -204,6 +204,11 @@
       "gate": "F1-G10 L2 furniture/baths unchanged",
       "result": "PASS",
       "detail": "changed=none"
+    },
+    {
+      "gate": "F1-G11 dining seating pull-out zones clear",
+      "result": "PASS",
+      "detail": "zones=DIN-SEATING-N/S 600mm; blockers=none"
     }
   ],
   "overall": "PASS"
