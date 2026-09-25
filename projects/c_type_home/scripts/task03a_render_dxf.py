@@ -83,6 +83,8 @@ def validate_canonical_alignment(dxf_path, *, emit=True):
         layers = ({'A-PARP-EXST', 'S-S.WALL'} if category == 'parapet'
                   else {'A-WALL-EXST-CORR', 'S-S.WALL'})
         x1, y1, x2, y2 = w['rect_mm']
+        if not (x2 > x1 and y2 > y1):
+            raise RuntimeError(f"canonical alignment failed for {dxf_path.name}: {w['id']} invalid rect {w['rect_mm']!r}")
         horizontal = (x2 - x1) >= (y2 - y1)
         intervals = []
         matched = set()
