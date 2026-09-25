@@ -21,10 +21,14 @@ WCOL = {'keep': '#9aa0a6', 'noopen': '#d93025', 'remove': '#dadce0', 'new': '#18
 WIN_COL = {'CONFIRMED': '#1a73e8', 'MEASURED': '#1a73e8',
            'TO_VERIFY': '#9334e6', 'PROPOSED': '#188038'}
 
+WCOL['parapet'] = '#b7a99a'
+
 def wcolor(w):
     cls = w['wall_class']
     if w['disposition'] != 'EXISTING':
         return WCOL['conflict'] if 'CONFLICT' in cls else WCOL['remove']
+    if w.get('type') == 'railing_parapet':
+        return WCOL['parapet']   # balcony railing/parapet — not a solid red exterior wall
     if 'NO_DEMOLITION' in cls or 'NO_OPEN' in cls: return WCOL['noopen']
     if 'REVIEW' in cls or 'CONFLICT' in cls: return WCOL['review']
     return WCOL['keep']
@@ -42,19 +46,9 @@ def draw_walls(ax, mode='current', walls=None, presentation=False):
 def draw_windows(ax, qc=False):
     """window/glazing graphics — glass lines in the wall-band gap + bay outlines."""
     for win in M.get('windows', []):
-        vs = win['verification_status']
-        col = WIN_COL[vs]
+        vs = win['measurement_status']
+        col = WIN_COL.get(vs, WIN_COL['CONFIRMED'])
         r = win['opening_rect_mm']
-        if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
-            if (r[2] - r[0]) >= (r[3] - r[1]):
-                ax.plot([r[0], r[2]], [(r[1] + r[3]) / 2] * 2, color=col, lw=1.8, ls='--', zorder=4)
-                tx, ty = (r[0] + r[2]) / 2, r[3] + 160
-            else:
-                ax.plot([(r[0] + r[2]) / 2] * 2, [r[1], r[3]], color=col, lw=1.8, ls='--', zorder=4)
-                tx, ty = r[2] + 160, (r[1] + r[3]) / 2
-            ax.text(tx, ty, 'PROPOSED enclosure' + (f' ({win["window_id"]})' if qc else ''),
-                    fontsize=6, color=col, ha='center')
-            continue
         x1, y1, x2, y2 = r
         if (x2 - x1) >= (y2 - y1):
             for i in (0.25, 0.5, 0.75):
@@ -182,7 +176,7 @@ QC_LEGEND = [
     Line2D([], [], color=WCOL['remove'], lw=6, label='demolished / absent wall'),
     Line2D([], [], color=WCOL['new'], lw=6, label='NEW wall'),
     Line2D([], [], color=WIN_COL['CONFIRMED'], lw=2, label='existing window (3-line glazing)'),
-    Line2D([], [], color=WIN_COL['PROPOSED'], lw=2, ls='--', label='proposed glazing (N balcony)'),
+    Line2D([], [], color=WCOL['parapet'], lw=6, label='balcony parapet / railing'),
     Line2D([], [], color='#1a73e8', lw=1.5, label='existing glass door'),
     Line2D([], [], color='#f4b400', lw=6, alpha=.5, label='furniture (proposed)'),
     Line2D([], [], color='#f9ab00', lw=6, alpha=.5, label='furniture/cabinet KEEP'),
@@ -236,7 +230,7 @@ ax.legend(handles=[Line2D([], [], color=WCOL['keep'], lw=6, label='existing wall
                    Line2D([], [], color=WCOL['noopen'], lw=6, label='exterior / no-opening wall'),
                    Line2D([], [], color=WCOL['new'], lw=6, label='new wall'),
                    Line2D([], [], color='#1a73e8', lw=2, label='window / glass door'),
-                   Line2D([], [], color='#188038', lw=2, ls='--', label='proposed balcony glazing'),
+                   Line2D([], [], color=WCOL['parapet'], lw=6, label='balcony parapet / railing'),
                    Line2D([], [], color='#f4b400', lw=6, alpha=.5, label='furniture'),
                    Line2D([], [], color='#34a853', lw=6, alpha=.5, label='bathroom fixture'),
                    Line2D([], [], color='#1a73e8', lw=6, alpha=.4, label='stairs / ramp')],
@@ -261,16 +255,20 @@ save(fig, 'task03a_s3_furniture_qc.png')
 
 # ================================================================ window register overlay
 fig, ax = base('Task03A · Window Register Overlay')
-draw_walls(ax, 'current'); draw_windows(ax, qc=True)
+draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_door_symbols(ax)
 for win in M.get('windows', []):
     r = win['opening_rect_mm']
-    col = WIN_COL[win['verification_status']]
+    col = WIN_COL.get(win['measurement_status'], WIN_COL['CONFIRMED'])
     ax.add_patch(Rectangle((r[0]-60, r[1]-60), r[2]-r[0]+120, r[3]-r[1]+120,
                            facecolor='none', edgecolor=col, lw=1.0, ls=':', zorder=5))
-ax.legend(handles=[Line2D([], [], color=WIN_COL['CONFIRMED'], lw=2, label='CONFIRMED / MEASURED'),
-                   Line2D([], [], color=WIN_COL['TO_VERIFY'], lw=2, label='TO_VERIFY'),
-                   Line2D([], [], color=WIN_COL['PROPOSED'], lw=2, ls='--', label='PROPOSED')],
-          fontsize=7, loc='lower left')
+ax.text(10300, 13100, 'OPEN BALCONY (CURRENT)\nparapet only — enclosure = future design',
+        fontsize=7, color='#5f6368', ha='center')
+ax.legend(handles=[Line2D([], [], color=WIN_COL['CONFIRMED'], lw=2, label='confirmed window / glass door'),
+                   Line2D([], [], color=WCOL['keep'], lw=6, label='interior wall'),
+                   Line2D([], [], color=WCOL['parapet'], lw=6, label='balcony parapet / railing'),
+                   Line2D([], [], color=WCOL['noopen'], lw=6, label='exterior / no-open wall'),
+                   Line2D([], [], color='#1a73e8', lw=1.2, label='ordinary door (swing)')],
+          fontsize=6.5, loc='lower left')
 save(fig, 'window_register_overlay.png')
 
 # ================================================================ wall/window conflict check
@@ -278,8 +276,8 @@ fig, ax = base('Task03A · Wall-Through-Window Conflict Check')
 draw_walls(ax, 'current'); draw_windows(ax, qc=True)
 conflicts = []
 for win in M.get('windows', []):
-    if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
-        continue
+    if win['type'] in ('BALCONY_WINDOW',):
+        continue                     # glazing sits ON parapet — overlap is by design
     op = win['opening_rect_mm']
     hit = [w['id'] for w in M['walls'] if w['disposition'] == 'EXISTING'
            and not (w['rect_mm'][2] <= op[0] or w['rect_mm'][0] >= op[2] or
@@ -313,13 +311,7 @@ for row, (name, (xa, xb), (ya, yb)) in enumerate(AREAS):
             ax.add_patch(Rectangle((x1, y1), x2-x1, y2-y1, facecolor=wcolor(w), zorder=2))
         for win in wins:
             r = win['opening_rect_mm']
-            colr = WIN_COL[win['verification_status']]
-            if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
-                if (r[2]-r[0]) >= (r[3]-r[1]):
-                    ax.plot([r[0], r[2]], [(r[1]+r[3])/2]*2, color=colr, lw=1.6, ls='--', zorder=4)
-                else:
-                    ax.plot([(r[0]+r[2])/2]*2, [r[1], r[3]], color=colr, lw=1.6, ls='--', zorder=4)
-                continue
+            colr = WIN_COL.get(win['measurement_status'], WIN_COL['CONFIRMED'])
             x1, y1, x2, y2 = r
             if (x2-x1) >= (y2-y1):
                 for i in (0.25, 0.5, 0.75):

@@ -57,7 +57,7 @@ for w in M['walls']:
 
 for o in M['openings']:
     lay = {'sliding_glass_3track': 'A-GLAZ-EXST-KEEP',
-           'glazing_door_double': 'A-GLAZ-EXST-KEEP',
+           'glazing_door_double': 'A-GLAZ-EXST-KEEP', 'glazing_door': 'A-GLAZ-EXST-KEEP',
            'open_passage': 'A-NOTE'}.get(o['kind'], 'A-DOOR-EXST-KEEP')
     rect(lay, o['rect_mm'])
     cx = (o['rect_mm'][0] + o['rect_mm'][2]) / 2; cy = (o['rect_mm'][1] + o['rect_mm'][3]) / 2
@@ -77,21 +77,10 @@ def glazing_lines(rect_, lay):
             msp.add_line((x, y1), (x, y2), dxfattribs={'layer': lay})
 
 for win in M.get('windows', []):
-    vs = win['verification_status']
+    vs = win['measurement_status']
     lay = {'CONFIRMED': 'A-WIND-EXST-KEEP', 'MEASURED': 'A-WIND-EXST-KEEP',
-           'TO_VERIFY': 'A-WIND-TO-VERIFY', 'PROPOSED': 'A-GLAZ-PROP'}[vs]
+           'TO_VERIFY': 'A-WIND-TO-VERIFY', 'PROPOSED': 'A-GLAZ-PROP'}.get(vs, 'A-WIND-EXST-KEEP')
     r = win['opening_rect_mm']
-    if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
-        # proposed glazing along parapet edge — dashed impression via thin line
-        if (r[2] - r[0]) >= (r[3] - r[1]):
-            msp.add_line((r[0], (r[1]+r[3])/2), (r[2], (r[1]+r[3])/2), dxfattribs={'layer': lay})
-            msp.add_text('PROPOSED enclosure (now OPEN)', height=140,
-                         dxfattribs={'layer': lay}).set_placement((r[0], r[3] + 200))
-        else:
-            msp.add_line(((r[0]+r[2])/2, r[1]), ((r[0]+r[2])/2, r[3]), dxfattribs={'layer': lay})
-            msp.add_text('PROPOSED enclosure E return (now OPEN)', height=140,
-                         dxfattribs={'layer': lay}).set_placement((r[2] + 150, (r[1]+r[3])/2))
-        continue
     glazing_lines(r, lay)
     bay = win.get('bay')
     if bay:

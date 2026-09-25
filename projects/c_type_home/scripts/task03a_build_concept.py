@@ -235,20 +235,15 @@ walls(msp)
 # openings
 for o in M['openings']:
     lay = {'sliding_glass_3track': 'A-GLAZ-EXST-KEEP', 'glazing_door_double': 'A-GLAZ-EXST-KEEP',
+           'glazing_door': 'A-GLAZ-EXST-KEEP',
            'open_passage': 'A-NOTE'}.get(o['kind'], 'A-DOOR-EXST-KEEP')
     rect(msp, lay, *o['rect_mm'])
 # windows / glazing (RC2.2 register)
 for win in M.get('windows', []):
-    vs = win['verification_status']
+    vs = win['measurement_status']
     lay = {'CONFIRMED': 'A-WIND-EXST-KEEP', 'MEASURED': 'A-WIND-EXST-KEEP',
-           'TO_VERIFY': 'A-WIND-TO-VERIFY', 'PROPOSED': 'A-GLAZ-PROP'}[vs]
+           'TO_VERIFY': 'A-WIND-TO-VERIFY', 'PROPOSED': 'A-GLAZ-PROP'}.get(vs, 'A-WIND-EXST-KEEP')
     r = win['opening_rect_mm']
-    if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
-        if (r[2]-r[0]) >= (r[3]-r[1]):
-            msp.add_line((r[0], (r[1]+r[3])/2), (r[2], (r[1]+r[3])/2), dxfattribs={'layer': lay})
-        else:
-            msp.add_line(((r[0]+r[2])/2, r[1]), ((r[0]+r[2])/2, r[3]), dxfattribs={'layer': lay})
-        continue
     if (r[2]-r[0]) >= (r[3]-r[1]):
         for i in (0.25, 0.5, 0.75):
             y = r[1] + (r[3]-r[1])*i

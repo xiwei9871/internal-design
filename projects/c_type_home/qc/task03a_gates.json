@@ -18,7 +18,7 @@
     {
       "gate": "G4 glazing preserved (sliding door + balcony glazing)",
       "result": "PASS",
-      "detail": "G-GB-BALC:EXISTING_KEEP; G-DIN-LIV:EXISTING_KEEP"
+      "detail": "G-GB-BALC:EXISTING_KEEP; G-DIN-LIV:EXISTING_KEEP; G-LIV-NBALC:EXISTING_CONFIRMED"
     },
     {
       "gate": "G5 1800x2100 beds fit",
@@ -106,27 +106,37 @@
       "detail": "returned 4.09 vs ramp 3.3 -> net +0.79m2 (PROVISIONAL)"
     },
     {
-      "gate": "G21 owner-marked glazing zones fully covered by register",
+      "gate": "G21 registry IDs == owner truth set (exact, not subset)",
       "result": "PASS",
-      "detail": "zones=14; uncovered={}; registered=14; malformed=[]"
+      "detail": "total=9; missing=set(); unexpected=set(); malformed=[]"
     },
     {
-      "gate": "G22 no solid wall through window span",
+      "gate": "G22 type correctness + no solid wall through opening",
       "result": "PASS",
-      "detail": "checked 14 openings; conflicts=[]"
+      "detail": "type_mismatches={}; wall_conflicts=[]"
     },
     {
-      "gate": "G23 N-balcony time-state + L-shaped enclosure (N run + E return)",
+      "gate": "G23 north balcony current state = OPEN (no enclosure records)",
       "result": "PASS",
-      "detail": "current=OPEN_NOT_ENCLOSED; future=PROPOSED_LEGAL_TO_ENCLOSE; G-GB-BALC=EXISTING_KEEP; enclosure runs=['N-BALC-ENCL', 'N-BALC-ENCL-E']"
+      "detail": "existing_north_enclosure=False; existing_east_enclosure=False; enclosure_records=[]; future=PROPOSED_LEGAL_TO_ENCLOSE"
     },
     {
-      "gate": "G24 no orphan wall graphics",
+      "gate": "G24 TV-wall glass door G-LIV-NBALC placed + wall split + no phantom door",
       "result": "PASS",
-      "detail": "orphans=[] (parapets + explained free ends exempt)"
+      "detail": "host=W-INT-X7900-U-TV; span=850; opening_y=12050-12900 (wall_mid=10675, north=True); wall_segments=2; phantom_D-BALC-W=[]"
     },
     {
-      "gate": "G25 layout freeze vs RC2.1",
+      "gate": "G25 bay windows have wall opening + outward projection geometry",
+      "result": "PASS",
+      "detail": "bays_checked=['W-LIV-N', 'W-STUDY-NE', 'W-SMB-S', 'W-MB-S']; bad=[]"
+    },
+    {
+      "gate": "G26 ordinary door openings preserved in model",
+      "result": "PASS",
+      "detail": "measured_door_count=14; model_door_count=14; missing_door_ids=set()"
+    },
+    {
+      "gate": "G27 layout freeze vs RC2.1",
       "result": "PASS",
       "detail": "changed=none (windows/wall-split/render changes exempt)"
     }
