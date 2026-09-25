@@ -82,10 +82,15 @@ for win in M.get('windows', []):
            'TO_VERIFY': 'A-WIND-TO-VERIFY', 'PROPOSED': 'A-GLAZ-PROP'}[vs]
     r = win['opening_rect_mm']
     if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
-        # proposed glazing along parapet north face — dashed impression via thin line
-        msp.add_line((r[0], r[3]), (r[2], r[3]), dxfattribs={'layer': lay})
-        msp.add_text('PROPOSED enclosure (now OPEN)', height=140,
-                     dxfattribs={'layer': lay}).set_placement((r[0], r[3] + 200))
+        # proposed glazing along parapet edge — dashed impression via thin line
+        if (r[2] - r[0]) >= (r[3] - r[1]):
+            msp.add_line((r[0], (r[1]+r[3])/2), (r[2], (r[1]+r[3])/2), dxfattribs={'layer': lay})
+            msp.add_text('PROPOSED enclosure (now OPEN)', height=140,
+                         dxfattribs={'layer': lay}).set_placement((r[0], r[3] + 200))
+        else:
+            msp.add_line(((r[0]+r[2])/2, r[1]), ((r[0]+r[2])/2, r[3]), dxfattribs={'layer': lay})
+            msp.add_text('PROPOSED enclosure E return (now OPEN)', height=140,
+                         dxfattribs={'layer': lay}).set_placement((r[2] + 150, (r[1]+r[3])/2))
         continue
     glazing_lines(r, lay)
     bay = win.get('bay')

@@ -244,7 +244,10 @@ for win in M.get('windows', []):
            'TO_VERIFY': 'A-WIND-TO-VERIFY', 'PROPOSED': 'A-GLAZ-PROP'}[vs]
     r = win['opening_rect_mm']
     if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
-        msp.add_line((r[0], r[3]), (r[2], r[3]), dxfattribs={'layer': lay})
+        if (r[2]-r[0]) >= (r[3]-r[1]):
+            msp.add_line((r[0], (r[1]+r[3])/2), (r[2], (r[1]+r[3])/2), dxfattribs={'layer': lay})
+        else:
+            msp.add_line(((r[0]+r[2])/2, r[1]), ((r[0]+r[2])/2, r[3]), dxfattribs={'layer': lay})
         continue
     if (r[2]-r[0]) >= (r[3]-r[1]):
         for i in (0.25, 0.5, 0.75):

@@ -1,12 +1,19 @@
-# TASK03A RC2.2 — Window Register & Drawing Expression Cleanup
+# TASK03A RC2.2 / RC2.3 — Window Register & Drawing Expression Cleanup
 
-Base: `feat/c-type-task03a-measured-concept` @ `246ff12` (RC2.1).
+Base: `feat/c-type-task03a-measured-concept` @ `246ff12` (RC2.1); RC2.3 adds coverage-only patch.
 Scope: window/opening reconstruction + CAD presentation cleanup only.
 **No furniture, bathroom, guest-path, stair/ramp or room-program coordinates changed** (G25 verified against frozen baseline `qc/layout_baseline_246ff12.json` + `qc/walls_baseline_246ff12.json`).
 
+## 0. RC2.3 additions (coverage closure)
+
+- **N-BALC-ENCL-E** added — east return of the owner-marked L-shaped enclosure. Measured DWG draws the east parapet leg: nested LWPOLY verticals x12900/12980/13020 spanning y11100–13820 + line x13100. Register now models the L as two runs: north `N-BALC-ENCL` (5100) + east return `N-BALC-ENCL-E` (2700). Both `PROPOSED`.
+- **W-LBALC-S + W-LBALC-W** added — life-balcony glazing bands on the south and west parapets (owner green-marked window zones). DWG draws parapet band only (y500/700 south, x1300-1500 west) — glazing presence/extent `TO_VERIFY` on site. Parapet walls kept beneath them; G22 exempts `BALCONY_GLAZING` (glass intentionally coincident with parapet).
+- **G21 upgraded**: now checks `coverage_zones` (14 owner-marked/dev-plan/measured zones embedded in the register JSON) — every zone must be ≥90% covered by register opening rects. Zone-level `uncovered = 0`, not just "expected IDs exist".
+- **G23 upgraded**: requires both enclosure runs (N + E return) present and `PROPOSED`.
+
 ## 1. Window register summary
 
-`current_existing/window_register.json` + `.csv` — **11 records**.
+`current_existing/window_register.json` + `.csv` — **14 records**.
 
 | window_id | room/zone | type | span_mm | verification | evidence basis |
 |---|---|---|---|---|---|
@@ -20,16 +27,19 @@ Scope: window/opening reconstruction + CAD presentation cleanup only.
 | G-GB-BALC | guest bedroom | GLASS_DOOR | 2000 | CONFIRMED | DWG triple-line x10400–12400; interior door, EXISTING_KEEP |
 | D-BALC-W | north balcony west | GLASS_DOOR | 600 | MEASURED | door insert rot270; leaf type TO_VERIFY |
 | G-DIN-LIV | kitchen/dining↔living | GLASS_DOOR | 2700 | CONFIRMED | owner blue-line 3-track sliding, EXISTING_KEEP |
-| N-BALC-ENCL | north balcony edge | PROPOSED_BALCONY_ENCLOSURE | 5100 | PROPOSED | parapet only today — OPEN_NOT_ENCLOSED |
+| N-BALC-ENCL | north balcony edge | PROPOSED_BALCONY_ENCLOSURE | 5100 | PROPOSED | parapet only today — OPEN_NOT_ENCLOSED; north run of L |
+| N-BALC-ENCL-E | north balcony east | PROPOSED_BALCONY_ENCLOSURE | 2700 | PROPOSED | east parapet leg x12900–13020 y11100–13820 in DWG; east return of L |
+| W-LBALC-S | life balcony south | BALCONY_GLAZING | 4500 | TO_VERIFY | owner-marked window zone; DWG parapet only |
+| W-LBALC-W | life balcony west | BALCONY_GLAZING | 1900 | TO_VERIFY | owner-marked window zone; DWG parapet only |
 
-Counts: **11 total** · DWG-precisely-located 8 · TO_VERIFY 2 (W-KIT-SW, W-GBATH-N) · MEASURED 1 · bay windows 4 · glass doors 3 · proposed enclosure 1.
+Counts: **14 total** · DWG-precisely-located 8 · CONFIRMED 7 · MEASURED 1 · TO_VERIFY 4 (W-KIT-SW, W-GBATH-N, W-LBALC-S, W-LBALC-W) · PROPOSED 2 · bay windows 4 · glass doors 3 · balcony glazing 2.
 
 **East wall: NO window** — solid in both dev plan and measured DWG (inner face continuous y4500–10900). Study is lit by the NE bay window; earlier note claiming "east window side-lit" was wrong and is corrected.
 
 ## 2. North balcony time-state (preserved)
 
 - current exterior enclosure: `OPEN_NOT_ENCLOSED` (DWG draws parapet outline only)
-- future enclosure: `PROPOSED` — drawn as dashed green glazing line on `A-GLAZ-PROP`, never as existing window
+- future enclosure: `PROPOSED` — **L-shaped**: north run + east return, both dashed green on `A-GLAZ-PROP`, never as existing window
 - `G-GB-BALC` interior double glass door: `EXISTING_KEEP` — separate record from exterior enclosure
 
 ## 3. Broken geometry — root causes
@@ -37,6 +47,7 @@ Counts: **11 total** · DWG-precisely-located 8 · TO_VERIFY 2 (W-KIT-SW, W-GBAT
 **Bottom-left phantom L (grey thick lines, x1300–5800 y450–2400)**
 Root cause: real measured geometry — the **life-balcony parapet walls** `W-BALC-W`/`W-BALC-S` (DWG line x1300–5500 y500 confirms). They *looked* like stale orphans because the balcony's north separation wall was demolished (opened to dining), leaving the parapet visually floating with no room label.
 Fix: kept (they are real railing/parapet), labeled `LIFE BALCONY parapet`, exempted in orphan gate as `railing_parapet` type.
+**RC2.3 follow-up**: the parapet is only the railing BASE — the owner's green markup denotes the glazing band above it. Added `W-LBALC-S`/`W-LBALC-W` as `BALCONY_GLAZING` records `TO_VERIFY` (DWG wall layer shows no glazing lines; field-verify). The parapet exemption no longer stands in for the window question.
 
 **Top floating red segments (living room north)**
 Root cause: `W-BAY-F` was modeled at y13400–13600 but the measured bay glazed front is at y13800–13900 — the rect sat mid-air inside the bay projection. `W-BAY-JW/JE` jambs also ended 400mm short.
@@ -77,5 +88,6 @@ New gates: G21 register coverage (missing=0) · G22 wall-through-window (0) · G
 
 - `W-KIT-SW` 380mm south opening — window or balcony door, field check
 - `W-GBATH-N` bath→balcony window — DWG drawn, dev-plan ambiguous
+- `W-LBALC-S`/`W-LBALC-W` life-balcony glazing bands — owner-marked, DWG shows parapet only
 - `D-BALC-W` leaf type (solid vs glazed)
 - level delta ≤350 vs ~400; SMB-bath drainage; 600mm cloakroom stub

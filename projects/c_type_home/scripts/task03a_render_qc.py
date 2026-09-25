@@ -46,9 +46,13 @@ def draw_windows(ax, qc=False):
         col = WIN_COL[vs]
         r = win['opening_rect_mm']
         if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
-            ax.plot([r[0], r[2]], [r[3], r[3]], color=col, lw=1.8, ls='--', zorder=4)
-            ax.text((r[0] + r[2]) / 2, r[3] + 160,
-                    'PROPOSED enclosure' + (f' ({win["window_id"]})' if qc else ''),
+            if (r[2] - r[0]) >= (r[3] - r[1]):
+                ax.plot([r[0], r[2]], [(r[1] + r[3]) / 2] * 2, color=col, lw=1.8, ls='--', zorder=4)
+                tx, ty = (r[0] + r[2]) / 2, r[3] + 160
+            else:
+                ax.plot([(r[0] + r[2]) / 2] * 2, [r[1], r[3]], color=col, lw=1.8, ls='--', zorder=4)
+                tx, ty = r[2] + 160, (r[1] + r[3]) / 2
+            ax.text(tx, ty, 'PROPOSED enclosure' + (f' ({win["window_id"]})' if qc else ''),
                     fontsize=6, color=col, ha='center')
             continue
         x1, y1, x2, y2 = r
@@ -311,7 +315,10 @@ for row, (name, (xa, xb), (ya, yb)) in enumerate(AREAS):
             r = win['opening_rect_mm']
             colr = WIN_COL[win['verification_status']]
             if win['window_type'] == 'PROPOSED_BALCONY_ENCLOSURE':
-                ax.plot([r[0], r[2]], [r[3], r[3]], color=colr, lw=1.6, ls='--', zorder=4)
+                if (r[2]-r[0]) >= (r[3]-r[1]):
+                    ax.plot([r[0], r[2]], [(r[1]+r[3])/2]*2, color=colr, lw=1.6, ls='--', zorder=4)
+                else:
+                    ax.plot([(r[0]+r[2])/2]*2, [r[1], r[3]], color=colr, lw=1.6, ls='--', zorder=4)
                 continue
             x1, y1, x2, y2 = r
             if (x2-x1) >= (y2-y1):

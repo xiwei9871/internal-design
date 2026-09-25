@@ -1696,14 +1696,80 @@
     13600
    ],
    "span_mm": 5100,
-   "source_plan_evidence": "dev plan shows open balcony parapet",
+   "source_plan_evidence": "dev plan shows open balcony parapet; owner green markup = L-shaped enclosure boundary",
    "measured_dwg_evidence": "parapet outline x7880-13020 y11100-13820 — railing only, NO glazing",
    "current_status": "OPEN_NOT_ENCLOSED",
    "proposed_status": "PROPOSED_LEGAL_TO_ENCLOSE",
-   "sill_or_bay_note": "proposed glazing sits on existing parapet line",
+   "sill_or_bay_note": "proposed glazing sits on existing parapet line — NORTH run of L",
    "confidence": "HIGH",
    "verification_status": "PROPOSED",
    "notes": "TIME-STATE: current = OPEN_NOT_ENCLOSED; future enclosure = PROPOSED only — must not be drawn as existing window"
+  },
+  {
+   "window_id": "N-BALC-ENCL-E",
+   "room_or_zone": "north balcony east edge",
+   "orientation_plan_relative": "east return of balcony L",
+   "window_type": "PROPOSED_BALCONY_ENCLOSURE",
+   "host_wall": null,
+   "opening_rect_mm": [
+    12900,
+    10900,
+    13100,
+    13600
+   ],
+   "span_mm": 2700,
+   "source_plan_evidence": "dev plan: thin parapet band on balcony east side + AC platform beyond",
+   "measured_dwg_evidence": "east parapet leg drawn: nested LWPOLY verticals x12900/12980/13020 spanning y11100-13820 + line x13100 y11100-13900",
+   "current_status": "OPEN_NOT_ENCLOSED",
+   "proposed_status": "PROPOSED_LEGAL_TO_ENCLOSE",
+   "sill_or_bay_note": "proposed glazing on existing east parapet leg — EAST return completing the L (RC2.3)",
+   "confidence": "HIGH",
+   "verification_status": "PROPOSED",
+   "notes": "east return of owner-marked L enclosure; AC platform sits beyond it"
+  },
+  {
+   "window_id": "W-LBALC-S",
+   "room_or_zone": "life balcony south edge",
+   "orientation_plan_relative": "south",
+   "window_type": "BALCONY_GLAZING",
+   "host_wall": null,
+   "opening_rect_mm": [
+    1300,
+    500,
+    5800,
+    700
+   ],
+   "span_mm": 4500,
+   "source_plan_evidence": "owner green markup = window area; dev plan thin hollow band along balcony south edge",
+   "measured_dwg_evidence": "parapet band drawn y500/700 x1300-5700 — NO glazing lines above it in DWG wall layer",
+   "current_status": "EXISTING_GLAZING_OWNER_MARKED",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "glazing band sits ON south parapet (railing base kept)",
+   "confidence": "MED",
+   "verification_status": "TO_VERIFY",
+   "notes": "owner marks this as window zone; DWG draws parapet only — field-verify glazing presence + sill height (RC2.3)"
+  },
+  {
+   "window_id": "W-LBALC-W",
+   "room_or_zone": "life balcony west edge",
+   "orientation_plan_relative": "west",
+   "window_type": "BALCONY_GLAZING",
+   "host_wall": null,
+   "opening_rect_mm": [
+    1300,
+    500,
+    1500,
+    2400
+   ],
+   "span_mm": 1900,
+   "source_plan_evidence": "owner green markup = window area; dev plan thin hollow band along balcony west edge",
+   "measured_dwg_evidence": "parapet band drawn x1300-1500 y500-2500 — NO glazing lines above it in DWG wall layer",
+   "current_status": "EXISTING_GLAZING_OWNER_MARKED",
+   "proposed_status": "EXISTING_KEEP",
+   "sill_or_bay_note": "glazing band sits ON west parapet (railing base kept)",
+   "confidence": "MED",
+   "verification_status": "TO_VERIFY",
+   "notes": "west leg of life-balcony glazing L — field-verify with W-LBALC-S"
   }
  ],
  "split_level": {

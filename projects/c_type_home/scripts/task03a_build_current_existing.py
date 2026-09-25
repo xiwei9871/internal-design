@@ -277,12 +277,58 @@ WINDOWS = [
     {'window_id': 'N-BALC-ENCL', 'room_or_zone': 'north balcony outer edge', 'orientation_plan_relative': 'north',
      'window_type': 'PROPOSED_BALCONY_ENCLOSURE', 'host_wall': None,
      'opening_rect_mm': [7900, 13400, 13000, 13600], 'span_mm': 5100,
-     'source_plan_evidence': 'dev plan shows open balcony parapet',
+     'source_plan_evidence': 'dev plan shows open balcony parapet; owner green markup = L-shaped enclosure boundary',
      'measured_dwg_evidence': 'parapet outline x7880-13020 y11100-13820 — railing only, NO glazing',
      'current_status': 'OPEN_NOT_ENCLOSED', 'proposed_status': 'PROPOSED_LEGAL_TO_ENCLOSE',
-     'sill_or_bay_note': 'proposed glazing sits on existing parapet line',
+     'sill_or_bay_note': 'proposed glazing sits on existing parapet line — NORTH run of L',
      'confidence': 'HIGH', 'verification_status': 'PROPOSED',
      'notes': 'TIME-STATE: current = OPEN_NOT_ENCLOSED; future enclosure = PROPOSED only — must not be drawn as existing window'},
+    {'window_id': 'N-BALC-ENCL-E', 'room_or_zone': 'north balcony east edge', 'orientation_plan_relative': 'east return of balcony L',
+     'window_type': 'PROPOSED_BALCONY_ENCLOSURE', 'host_wall': None,
+     'opening_rect_mm': [12900, 10900, 13100, 13600], 'span_mm': 2700,
+     'source_plan_evidence': 'dev plan: thin parapet band on balcony east side + AC platform beyond',
+     'measured_dwg_evidence': 'east parapet leg drawn: nested LWPOLY verticals x12900/12980/13020 spanning y11100-13820 + line x13100 y11100-13900',
+     'current_status': 'OPEN_NOT_ENCLOSED', 'proposed_status': 'PROPOSED_LEGAL_TO_ENCLOSE',
+     'sill_or_bay_note': 'proposed glazing on existing east parapet leg — EAST return completing the L (RC2.3)',
+     'confidence': 'HIGH', 'verification_status': 'PROPOSED',
+     'notes': 'east return of owner-marked L enclosure; AC platform sits beyond it'},
+    {'window_id': 'W-LBALC-S', 'room_or_zone': 'life balcony south edge', 'orientation_plan_relative': 'south',
+     'window_type': 'BALCONY_GLAZING', 'host_wall': None,
+     'opening_rect_mm': [1300, 500, 5800, 700], 'span_mm': 4500,
+     'source_plan_evidence': 'owner green markup = window area; dev plan thin hollow band along balcony south edge',
+     'measured_dwg_evidence': 'parapet band drawn y500/700 x1300-5700 — NO glazing lines above it in DWG wall layer',
+     'current_status': 'EXISTING_GLAZING_OWNER_MARKED', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'glazing band sits ON south parapet (railing base kept)',
+     'confidence': 'MED', 'verification_status': 'TO_VERIFY',
+     'notes': 'owner marks this as window zone; DWG draws parapet only — field-verify glazing presence + sill height (RC2.3)'},
+    {'window_id': 'W-LBALC-W', 'room_or_zone': 'life balcony west edge', 'orientation_plan_relative': 'west',
+     'window_type': 'BALCONY_GLAZING', 'host_wall': None,
+     'opening_rect_mm': [1300, 500, 1500, 2400], 'span_mm': 1900,
+     'source_plan_evidence': 'owner green markup = window area; dev plan thin hollow band along balcony west edge',
+     'measured_dwg_evidence': 'parapet band drawn x1300-1500 y500-2500 — NO glazing lines above it in DWG wall layer',
+     'current_status': 'EXISTING_GLAZING_OWNER_MARKED', 'proposed_status': 'EXISTING_KEEP',
+     'sill_or_bay_note': 'glazing band sits ON west parapet (railing base kept)',
+     'confidence': 'MED', 'verification_status': 'TO_VERIFY',
+     'notes': 'west leg of life-balcony glazing L — field-verify with W-LBALC-S'},
+]
+
+# owner-marked glazing/opening zones (green-marked image + dev-plan perimeter review).
+# G21 asserts every zone is covered by register record(s) — coverage, not just IDs.
+COVERAGE_ZONES = [
+    {'zone_id': 'Z-LBALC-S', 'rect_mm': [1300, 450, 5800, 700], 'source': 'owner green-marked life-balcony window band (south)'},
+    {'zone_id': 'Z-LBALC-W', 'rect_mm': [1300, 450, 1500, 2450], 'source': 'owner green-marked life-balcony window band (west)'},
+    {'zone_id': 'Z-NBALC-N', 'rect_mm': [7900, 13400, 13000, 13600], 'source': 'owner green-marked N-balcony enclosure (north run)'},
+    {'zone_id': 'Z-NBALC-E', 'rect_mm': [12900, 10900, 13100, 13600], 'source': 'owner green-marked N-balcony enclosure (east return of L)'},
+    {'zone_id': 'Z-S-KIT', 'rect_mm': [6100, -200, 7100, 0], 'source': 'dev-plan + DWG kitchen south window'},
+    {'zone_id': 'Z-S-GAP', 'rect_mm': [5000, -200, 5380, 0], 'source': 'south wall gap beside AC box'},
+    {'zone_id': 'Z-S-SMB', 'rect_mm': [8500, -200, 10900, 0], 'source': 'dev-plan + DWG SMB south bay'},
+    {'zone_id': 'Z-S-MB', 'rect_mm': [12100, -200, 14800, 0], 'source': 'dev-plan + DWG master south bay'},
+    {'zone_id': 'Z-N-LIV', 'rect_mm': [3800, 12750, 6900, 12950], 'source': 'dev-plan + DWG living north bay'},
+    {'zone_id': 'Z-NE-STUDY', 'rect_mm': [13600, 10900, 15700, 11100], 'source': 'dev-plan stepped outline + DWG jambs, study NE bay'},
+    {'zone_id': 'Z-GBATH-N', 'rect_mm': [8900, 10700, 9700, 10900], 'source': 'DWG triple-line glazing, guest bath -> balcony'},
+    {'zone_id': 'Z-GBED-DOOR', 'rect_mm': [10400, 10700, 12400, 10900], 'source': 'dev-plan + DWG guest-bed glass door'},
+    {'zone_id': 'Z-BALC-W-DOOR', 'rect_mm': [7800, 12750, 8400, 12950], 'source': 'DWG door insert, balcony west access'},
+    {'zone_id': 'Z-DIN-LIV', 'rect_mm': [2950, 4530, 5650, 4715], 'source': 'owner blue-line sliding glass partition'},
 ]
 
 # RC2.2 rect corrections — only where a wall rect contradicts measured window/bay
@@ -507,7 +553,9 @@ REG_FIELDS = ['window_id', 'room_or_zone', 'orientation_plan_relative', 'window_
 REG_JSON.write_text(json.dumps({'meta': {'task': 'TASK03A RC2.2 window register',
                     'authority': 'P1 owner-confirmed status > P2 dev-plan graphic > P3 measured DWG',
                     'north_balcony_time_state': 'current OPEN_NOT_ENCLOSED / enclosure PROPOSED / G-GB-BALC interior door EXISTING_KEEP'},
-                                'windows': WINDOWS}, ensure_ascii=False, indent=1))
+                                'windows': WINDOWS,
+                                'coverage_zones': COVERAGE_ZONES},
+                   ensure_ascii=False, indent=1))
 import csv
 with open(REG_CSV, 'w', newline='') as f:
     w = csv.DictWriter(f, fieldnames=REG_FIELDS)
