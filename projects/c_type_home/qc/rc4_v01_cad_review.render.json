@@ -1,0 +1,31 @@
+{
+ "source_dxf": "cad/design_v01_existing_sync.dxf",
+ "source_dxf_sha256": "684a172808709a39660484af2099fc99e1097608648edcc09f590ab4ff07626b",
+ "parent_cad_sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
+ "render_profile": "CAD_REVIEW",
+ "generated_at": "2026-09-25T19:55:35",
+ "visible_layers": [
+  "A-CAB-EXST-BASE",
+  "A-CAB-EXST-TALL",
+  "A-CAB-EXST-WALL",
+  "A-ELEM-TAG",
+  "A-EQPM-EXST",
+  "A-FURN-EXST-KEEP",
+  "A-GLAZ-EXST",
+  "A-OPEN-EXST",
+  "A-SURVEY-HATCH",
+  "A-TEXT",
+  "A-WALL-DEMO",
+  "A-WALL-EXST-CORR",
+  "F-DOOR",
+  "F-FURN",
+  "F-SAN FIT",
+  "F-TEXT",
+  "RC-GRILL",
+  "S-COLUMN",
+  "S-S.WALL",
+  "S-楼梯"
+ ],
+ "hidden_layers": [],
+ "hidden_entity_types": []
+}

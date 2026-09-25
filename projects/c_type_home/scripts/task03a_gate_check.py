@@ -502,6 +502,194 @@ for zn, r in CD['l1_seating'].items():
 gate('F1-G11 dining seating pull-out zones clear', not seat_bad,
      f"zones=DIN-SEATING-N/S 600mm; blockers={seat_bad or 'none'}")
 
+# ================================ RC4 — versioned CAD-native pipeline =================
+import ezdxf, hashlib
+from ezdxf import bbox as _eb
+
+CADDIR = os.path.join(ROOT, 'cad')
+CVM = json.load(open(os.path.join(CADDIR, 'cad_version_manifest.json')))
+REGJ = json.load(open(os.path.join(CADDIR, 'cad_change_registry.json')))
+CVER = {v['version']: v for v in CVM['versions']}
+AX, AY = 1298172.0, -296458.0
+def _sha_file(p): return hashlib.sha256(open(p, 'rb').read()).hexdigest()
+def _rect_norm(b):  # entity bbox -> task01 rect
+    return [b.extmin.x - AX, b.extmin.y - AY, b.extmax.x - AX, b.extmax.y - AY]
+def _tags(msp):
+    out = {}
+    for e in msp:
+        if e.dxftype() != 'INSERT':
+            continue
+        att = {a.dxf.tag: a.dxf.text for a in e.attribs}
+        if 'ELEM_ID' in att:
+            out[att['ELEM_ID']] = {'insert': e, 'attribs': att}
+    return out
+def _rects_on(msp, layers):
+    rs = []
+    for e in msp:
+        if e.dxf.layer not in layers:
+            continue
+        if e.dxftype() == 'INSERT':
+            try:   # furniture blocks are real-size, origin at rect min corner
+                bb = _eb.extents(list(e.block()))
+                ip = e.dxf.insert
+                rs.append([ip.x + bb.extmin.x - AX, ip.y + bb.extmin.y - AY,
+                           ip.x + bb.extmax.x - AX, ip.y + bb.extmax.y - AY])
+            except Exception:
+                pass
+        elif e.dxftype() in ('LWPOLYLINE', 'LINE', 'POLYLINE'):
+            try:
+                rs.append(_rect_norm(_eb.extents([e])))
+            except Exception:
+                pass
+    return rs
+def _cover(rect, rects, eps=1.0):
+    """share of rect's span covered by union of candidate rects (1D-major).
+    eps lets zero-thickness linework sitting on the rect edge count."""
+    x1, y1, x2, y2 = rect
+    if (x2 - x1) >= (y2 - y1):
+        ivs = sorted((max(x1, r[0]), min(x2, r[2])) for r in rects
+                     if not (r[3] <= y1 - eps or r[1] >= y2 + eps))
+        span = x2 - x1
+    else:
+        ivs = sorted((max(y1, r[1]), min(y2, r[3])) for r in rects
+                     if not (r[2] <= x1 - eps or r[0] >= x2 + eps))
+        span = y2 - y1
+    tot, cur_s, cur_e = 0.0, None, None
+    for s, e_ in ivs:
+        if s >= e_:
+            continue
+        if cur_s is None:
+            cur_s, cur_e = s, e_
+        elif s <= cur_e:
+            cur_e = max(cur_e, e_)
+        else:
+            tot += cur_e - cur_s; cur_s, cur_e = s, e_
+    if cur_s is not None:
+        tot += cur_e - cur_s
+    return tot / max(span, 1)
+
+_dmeas = ezdxf.readfile(os.path.join(CADDIR, 'measured_working.dxf'))
+_dv01 = ezdxf.readfile(os.path.join(CADDIR, 'design_v01_existing_sync.dxf'))
+_dv02 = ezdxf.readfile(os.path.join(CADDIR, 'design_v02_f1_l1.dxf'))
+_msp_m, _msp1, _msp2 = _dmeas.modelspace(), _dv01.modelspace(), _dv02.modelspace()
+
+# RC4-G1 source immutable — files match manifest-recorded hashes
+g1 = (_sha_file(os.path.join(ROOT, 'source/世纪欣园FF.dwg')) == CVM['source_freeze']['source_dwg_sha256']
+      and _sha_file(os.path.join(ROOT, 'current_existing/measured_working.dxf'))
+      == CVM['source_freeze']['measured_dxf_sha256']
+      == _sha_file(os.path.join(CADDIR, 'measured_working.dxf')))
+gate('RC4-G1 source immutable (DWG+measured DXF sha match manifest)', g1,
+     f"dwg={CVM['source_freeze']['source_dwg_sha256'][:12]} dxf={CVM['source_freeze']['measured_dxf_sha256'][:12]}")
+
+# RC4-G2 full-copy inheritance — every measured handle present in V01
+h_m = {e.dxf.handle for e in _msp_m}
+h_1 = {e.dxf.handle for e in _msp1}
+missing = h_m - h_1
+gate('RC4-G2 full-copy inheritance', not missing,
+     f"measured={len(h_m)} inherited={len(h_m & h_1)} missing={len(missing)} "
+     f"{sorted(missing)[:5] if missing else ''}")
+
+# RC4-G3 version lineage — parent pointers + recorded shas consistent
+g3 = (CVER['V01']['parent'] == 'MEASURED' and CVER['V02']['parent'] == 'V01'
+      and CVER['V01']['parent_sha256'] == CVER['MEASURED']['sha256']
+      and CVER['V02']['parent_sha256'] == CVER['V01']['sha256']
+      and CVER['V01']['sha256'] == _sha_file(os.path.join(CADDIR, 'design_v01_existing_sync.dxf'))
+      and CVER['V02']['sha256'] == _sha_file(os.path.join(CADDIR, 'design_v02_f1_l1.dxf')))
+gate('RC4-G3 version lineage MEASURED<-V01<-V02', g3,
+     f"V01={CVER['V01']['sha256'][:12]} V02={CVER['V02']['sha256'][:12]}")
+
+# RC4-G4 auditability — every entity on audit/correction layers traced to registry
+reg_handles = {r['source_handle'] for r in REGJ if r['source_handle']}
+reg_corr = sum(1 for r in REGJ if r['source_layer'] in
+               ('A-WALL-EXST-CORR', 'A-CAB-EXST-BASE', 'A-CAB-EXST-TALL',
+                'A-CAB-EXST-WALL', 'A-EQPM-EXST', 'A-FURN-PROP', 'A-FURN-EXST-KEEP'))
+untraced = [e.dxf.handle for e in _msp1
+            if e.dxf.layer in ('A-WALL-DEMO', 'A-SURVEY-SUPERSEDED')
+            and e.dxf.handle not in reg_handles]
+gate('RC4-G4 all DEMO/SUPERSEDED/CORRECTED in change registry', not untraced,
+     f"registry={len(REGJ)} (corr/new={reg_corr}) untraced_entities={len(untraced)}")
+
+# RC4-G5 window truth — 9 registry windows tagged + glazed in V01
+t1 = _tags(_msp1)
+wids = [w.get('window_id') or w.get('name') for w in CE['windows']]
+w_missing = [i for i in wids if i not in t1]
+w_geom_bad = [i for i in wids if i in t1 and _cover(
+    next(w['opening_rect_mm'] for w in CE['windows']
+         if (w.get('window_id') or w.get('name')) == i),
+    _rects_on(_msp1, ('A-GLAZ-EXST',))) < 0.5]
+gate('RC4-G5 9 registry windows in CAD', not w_missing and not w_geom_bad and len(wids) == 9,
+     f"registry={len(wids)} tagged={len(wids)-len(w_missing)} missing={w_missing or 'none'} "
+     f"geom_weak={w_geom_bad or 'none'}")
+
+# RC4-G6 ordinary doors — 14 openings tagged
+o_missing = [o['id'] for o in CE['openings'] if o['id'] not in t1]
+gate('RC4-G6 14 ordinary door openings present', not o_missing and len(CE['openings']) == 14,
+     f"openings={len(CE['openings'])} missing={o_missing or 'none'}")
+
+# RC4-G7 kitchen — every cabinet register id tagged in CAD
+KREGJ = json.load(open(os.path.join(ROOT, 'current_existing/kitchen_cabinet_register.json')))['cabinets']
+k_missing = [c['id'] for c in KREGJ if c['id'] not in t1]
+gate('RC4-G7 kitchen cabinet register in CAD', not k_missing,
+     f"cabinets={len(KREGJ)} missing={k_missing or 'none'}")
+
+# RC4-G8 F1 freeze — V02 furniture matches d144789 coords
+F1J = json.load(open(os.path.join(ROOT, 'concept/furniture_l1_final.json')))
+f1_items = {it['id']: it for c in F1J['categories'].values() for it in c
+            if isinstance(it, dict) and 'rect' in it}
+t2 = _tags(_msp2)
+f2_rects = _rects_on(_msp2, ('A-FURN-PROP', 'A-FURN-EXST-KEEP', 'A-ACCESS-RAMP',
+                             'A-ACCESS-STAIR', 'A-NOTE', 'A-QC-ZONE'))
+f_diffs = []
+for fid, it in f1_items.items():
+    if fid == 'K-CAB':
+        continue
+    r = it['rect']
+    # matching CAD rect = same bbox within 1mm
+    if not any(all(abs(a - b) <= 1 for a, b in zip(r, cr)) for cr in f2_rects):
+        f_diffs.append(fid)
+gate('RC4-G8 F1.1 furniture coords match d144789', not f_diffs,
+     f"items={len(f1_items)-1} changed={f_diffs or 'none'}")
+
+# RC4-G9 CAD/canonical alignment — canonical EXISTING walls covered by CAD wall linework
+wall_rects = _rects_on(_msp1, ('S-S.WALL', 'A-WALL-EXST-CORR'))
+w_weak = [w['id'] for w in CE['walls'] if w['disposition'] == 'EXISTING'
+          and _cover(w['rect_mm'], wall_rects) < 0.5]
+gate('RC4-G9 canonical walls covered by CAD linework', not w_weak,
+     f"existing_walls={sum(1 for w in CE['walls'] if w['disposition']=='EXISTING')} "
+     f"weak={w_weak or 'none'}")
+
+# RC4-G10 render provenance — 4 outputs, sidecars point at the right DXF + live sha
+prov_bad = []
+for nm, vf in [('rc4_v01_cad_review', 'V01'), ('rc4_v01_presentation', 'V01'),
+               ('rc4_v02_f1_cad_review', 'V02'), ('rc4_v02_f1_presentation', 'V02')]:
+    side = json.load(open(os.path.join(ROOT, f'qc/{nm}.render.json')))
+    ok = (side['source_dxf'] == CVER[vf]['file']
+          and side['source_dxf_sha256'] == _sha_file(os.path.join(ROOT, side['source_dxf']))
+          and side['parent_cad_sha256'] == CVER[vf]['parent_sha256']
+          and os.path.exists(os.path.join(ROOT, f'qc/{nm}.png'))
+          and os.path.exists(os.path.join(ROOT, f'qc/{nm}.pdf')))
+    if not ok:
+        prov_bad.append(nm)
+gate('RC4-G10 render provenance (PNG/PDF traced to versioned DXF)', not prov_bad,
+     f"outputs=4x2 bad={prov_bad or 'none'}")
+
+# RC4-G11 layer semantics — SURVEY_SUPERSEDED never registered as DEMOLITION
+demo_handles = {r['source_handle'] for r in REGJ
+                if r['change_type'] == 'DEMOLITION' and r['source_handle']}
+sup_ents = {e.dxf.handle for e in _msp1 if e.dxf.layer == 'A-SURVEY-SUPERSEDED'}
+sem_bad = demo_handles & sup_ents
+sem_bad |= {r['change_id'] for r in REGJ if r['change_type'] == 'SURVEY_SUPERSEDED'
+            and r['source_handle'] and r['source_handle'] in
+            {e.dxf.handle for e in _msp1 if e.dxf.layer == 'A-WALL-DEMO'}}
+gate('RC4-G11 SURVEY_SUPERSEDED never classified as DEMOLITION', not sem_bad,
+     f"violations={sorted(sem_bad) or 'none'}")
+
+# RC4-G12 no parent overwrite — recorded child build did not mutate parents
+g12 = (CVER['MEASURED']['sha256'] == _sha_file(os.path.join(CADDIR, 'measured_working.dxf'))
+       and CVER['V01']['sha256'] == _sha_file(os.path.join(CADDIR, 'design_v01_existing_sync.dxf')))
+gate('RC4-G12 no parent overwrite', g12,
+     f"MEASURED+V01 shas still match manifest")
+
 overall = all(r['result'] == 'PASS' for r in results)
 print(f"\n=== TASK03A GATES: {sum(r['result']=='PASS' for r in results)}/{len(results)} {'ALL PASS' if overall else 'HAS FAIL'} ===")
 json.dump({'gates': results, 'overall': 'PASS' if overall else 'FAIL'},

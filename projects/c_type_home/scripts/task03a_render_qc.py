@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 """Task03A QC + presentation renders. task01 coords.
 RC2.2: window register overlay, wall/window conflict check, before/after
-cleanup sheet, and s3 split into owner-facing presentation + QC diagnostic."""
+cleanup sheet, and s3 split into owner-facing presentation + QC diagnostic.
+
+LEGACY / DEPRECATED_FOR_FORMAL_OUTPUT (RC4):
+This script draws geometry straight from JSON via matplotlib. Since RC4 the
+formal pipeline is `design_vXX.dxf -> ezdxf renderer -> PNG/PDF`
+(scripts/task03a_render_dxf.py). Kept temporarily as a migration reference;
+do not use its S1-S6 outputs as formal deliverables."""
 import json, hashlib, matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt

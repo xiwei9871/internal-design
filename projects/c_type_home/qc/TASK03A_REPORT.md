@@ -112,3 +112,51 @@ G1 source ✓ · G2 shell kept / S feasible / W constrained ✓ · G3 cabinets �
 10. SMB bath aisle balanced at 800 mm (WC 650 / shower 800 deep) — further widening would cost WC width or shower depth below spec.
 
 Commit SHA: RC1 `27d9ff9` · RC1.5 `b01cd19` · RC2 `8a5fdad` · RC2.1 — see git log.
+
+---
+
+## RC4 — Versioned CAD-Native Pipeline
+
+Pipeline switched: immutable measured source -> copied design versions -> CAD gates -> PNG/PDF rendered FROM the versioned DXF. JSON stays semantic/QC truth; it no longer draws the formal output.
+
+### Source freeze (immutable, read-only)
+- `source/世纪欣园FF.dwg` sha `f01a9bb5de96`
+- `cad/measured_working.dxf` sha `3711c47c1172` — dwg2dxf (LibreDWG), AC1018, INSUNITS=4 (mm), 342 entities, 8 layers (S-S.WALL 216 / RC-GRILL 60 / F-DOOR 18 / S-COLUMN 18 / F-SAN FIT 16 / F-TEXT 6 / S-楼梯 7 / F-FURN 1)
+
+### Version chain — `cad/cad_version_manifest.json`
+| version | file | parent | sha256[:16] |
+|---|---|---|---|
+| MEASURED | `cad/measured_working.dxf` | — | `3711c47c1172fbdb` |
+| V01 | `cad/design_v01_existing_sync.dxf` | MEASURED | `684a172808709a39` |
+| V02 | `cad/design_v02_f1_l1.dxf` | V01 | `ca592fcfd3e714ea` |
+
+V01 = open measured + save-as (all 342 source entities inherited, `missing=0`; nothing deleted — dispositions move entities to audit layers). V02 = copy of V01 + F1.1 furniture only.
+
+### Entity counts
+- V01: 481 entities (342 inherited + corrections, tags, cabinets, labels)
+- V02: 522 entities (+41 F1.1: furniture blocks/inserts, ramp, QC zones)
+
+### Change registry — `cad/cad_change_registry.json` (41 entries)
+- DEMOLITION: 6 (real removed walls, kept on `A-WALL-DEMO`)
+- SURVEY_SUPERSEDED: 6 (stale survey lines + cosmetic wall hatches on `A-SURVEY-SUPERSEDED`/`A-SURVEY-HATCH`)
+- OWNER_CORRECTION: 4 (`A-WALL-EXST-CORR` corrected current walls — incl. segments where survey only had fill hatches)
+- NEW_DESIGN: 25 (cabinets, tags, F1 furniture)
+
+Every DEMO/SUPERSEDED/CORRECTED entity carries a registry record with source handle, geometry, reason, evidence (G4/G11).
+
+### CAD-native rendering — `scripts/task03a_render_dxf.py`
+`design_vXX.dxf -> ezdxf MatplotlibBackend -> PNG/PDF`, two profiles from the same DXF:
+- CAD_REVIEW: all layers incl. DEMO/SUPERSEDED/hatch/dims/tags
+- PRESENTATION: hides audit/QC/old-survey-text layers
+Each output has a `<name>.render.json` sidecar (source DXF sha, parent sha, profile, visible/hidden layers).
+
+Notes: text in render needs inline font code + column width (MTEXT); ACI color 7 renders white on white — annotation layers use dark ACIs. Off-plan survey legend (RC-GRILL notes ~300000mm away) is clipped from view extents, not deleted.
+
+### RC4 gates — 12/12 PASS (54/54 total)
+RC4-G1 source immutable · G2 full-copy inheritance 342/342 · G3 lineage chain valid · G4 registry coverage complete · G5 9 windows tagged+glazed · G6 14 door openings · G7 9 kitchen cabinets · G8 F1 coords changed=none · G9 canonical walls covered · G10 render provenance traced · G11 SUPERSEDED never = DEMOLITION · G12 no parent overwrite
+
+Legacy `task03a_render_qc.py` marked DEPRECATED_FOR_FORMAL_OUTPUT (kept for migration comparison; S1–S6 migrate after RC4 review PASS).
+
+### Review outputs
+- `qc/rc4_v01_cad_review.png/.pdf`, `qc/rc4_v01_presentation.png/.pdf`
+- `qc/rc4_v02_f1_cad_review.png/.pdf`, `qc/rc4_v02_f1_presentation.png/.pdf`

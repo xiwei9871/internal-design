@@ -1,0 +1,64 @@
+{
+ "project": "c_type_home",
+ "coordinate_note": "cad/ DXFs in measured-absolute coords; task01 = abs - (1298172, -296458)",
+ "versions": [
+  {
+   "version": "MEASURED",
+   "file": "cad/measured_working.dxf",
+   "sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
+   "immutable": true,
+   "source": "dwg2dxf conversion of source/世纪欣园FF.dwg"
+  },
+  {
+   "version": "V01",
+   "file": "cad/design_v01_existing_sync.dxf",
+   "parent": "MEASURED",
+   "parent_sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
+   "sha256": "684a172808709a39660484af2099fc99e1097608648edcc09f590ab4ff07626b",
+   "immutable": true,
+   "scope": "confirmed existing corrections (frozen base RC3.1)"
+  },
+  {
+   "version": "V02",
+   "file": "cad/design_v02_f1_l1.dxf",
+   "parent": "V01",
+   "parent_sha256": "684a172808709a39660484af2099fc99e1097608648edcc09f590ab4ff07626b",
+   "sha256": "ca592fcfd3e714ea51c79112c55fac39935377df2f6cb4960f3ecd785496ce72",
+   "immutable": true,
+   "scope": "F1.1 level-1 furniture"
+  }
+ ],
+ "source_freeze": {
+  "source_dwg": "source/世纪欣园FF.dwg",
+  "source_dwg_sha256": "f01a9bb5de964e0362296d12ca510fd7dc99060ddd0e8f8c4b6ab1e63a6fc360",
+  "measured_dxf": "cad/measured_working.dxf",
+  "measured_dxf_sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
+  "dxf_version": "AC1018",
+  "insunits": 4,
+  "entity_count": 342,
+  "entity_type_counts": {
+   "TEXT": 40,
+   "CIRCLE": 18,
+   "INSERT": 13,
+   "LINE": 223,
+   "LWPOLYLINE": 15,
+   "HATCH": 6,
+   "ARC": 3,
+   "DIMENSION": 18,
+   "MTEXT": 6
+  },
+  "layer_count": 8,
+  "layer_entity_counts": {
+   "RC-GRILL": 60,
+   "S-S.WALL": 216,
+   "F-DOOR": 18,
+   "F-SAN FIT": 16,
+   "F-FURN": 1,
+   "S-COLUMN": 18,
+   "F-TEXT": 6,
+   "S-楼梯": 7
+  },
+  "conversion_tool": "dwg2dxf (LibreDWG)",
+  "conversion_tool_version": "recorded in TASK01 era; binary version TO_VERIFY"
+ }
+}

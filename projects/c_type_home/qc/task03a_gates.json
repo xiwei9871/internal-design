@@ -209,6 +209,66 @@
       "gate": "F1-G11 dining seating pull-out zones clear",
       "result": "PASS",
       "detail": "zones=DIN-SEATING-N/S 600mm; blockers=none"
+    },
+    {
+      "gate": "RC4-G1 source immutable (DWG+measured DXF sha match manifest)",
+      "result": "PASS",
+      "detail": "dwg=f01a9bb5de96 dxf=3711c47c1172"
+    },
+    {
+      "gate": "RC4-G2 full-copy inheritance",
+      "result": "PASS",
+      "detail": "measured=342 inherited=342 missing=0 "
+    },
+    {
+      "gate": "RC4-G3 version lineage MEASURED<-V01<-V02",
+      "result": "PASS",
+      "detail": "V01=684a17280870 V02=ca592fcfd3e7"
+    },
+    {
+      "gate": "RC4-G4 all DEMO/SUPERSEDED/CORRECTED in change registry",
+      "result": "PASS",
+      "detail": "registry=41 (corr/new=28) untraced_entities=0"
+    },
+    {
+      "gate": "RC4-G5 9 registry windows in CAD",
+      "result": "PASS",
+      "detail": "registry=9 tagged=9 missing=none geom_weak=none"
+    },
+    {
+      "gate": "RC4-G6 14 ordinary door openings present",
+      "result": "PASS",
+      "detail": "openings=14 missing=none"
+    },
+    {
+      "gate": "RC4-G7 kitchen cabinet register in CAD",
+      "result": "PASS",
+      "detail": "cabinets=9 missing=none"
+    },
+    {
+      "gate": "RC4-G8 F1.1 furniture coords match d144789",
+      "result": "PASS",
+      "detail": "items=15 changed=none"
+    },
+    {
+      "gate": "RC4-G9 canonical walls covered by CAD linework",
+      "result": "PASS",
+      "detail": "existing_walls=39 weak=none"
+    },
+    {
+      "gate": "RC4-G10 render provenance (PNG/PDF traced to versioned DXF)",
+      "result": "PASS",
+      "detail": "outputs=4x2 bad=none"
+    },
+    {
+      "gate": "RC4-G11 SURVEY_SUPERSEDED never classified as DEMOLITION",
+      "result": "PASS",
+      "detail": "violations=none"
+    },
+    {
+      "gate": "RC4-G12 no parent overwrite",
+      "result": "PASS",
+      "detail": "MEASURED+V01 shas still match manifest"
     }
   ],
   "overall": "PASS"
