@@ -123,7 +123,7 @@
     {
       "gate": "G24 TV-wall glass door G-LIV-NBALC placed + wall split + no phantom door",
       "result": "PASS",
-      "detail": "host=W-INT-X7900-U-TV; span=850; opening_y=12050-12900 (wall_mid=10675, north=True); wall_segments=2; phantom_D-BALC-W=[]"
+      "detail": "host=W-INT-X7900-U-TV; span=850; opening_y=11800-12650 (wall_mid=10675, north=True); wall_segments=2; phantom_D-BALC-W=[]"
     },
     {
       "gate": "G25 bay windows have wall opening + outward projection geometry",

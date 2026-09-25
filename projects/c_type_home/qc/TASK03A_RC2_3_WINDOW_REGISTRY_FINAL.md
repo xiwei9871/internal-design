@@ -91,3 +91,23 @@ G-GB-BALC, G-DIN-LIV, G-LIV-NBALC, open passage). G26 asserts
 - `qc/wall_window_conflict_check.png` — 0 conflicts
 - `qc/task03a_s3_furniture_presentation.png` — owner-facing plan
 - `current_existing/current_existing_v1.{json,dxf}`, `concept/*.dxf` regenerated
+
+---
+
+## RC2.4 — Glass-door Geometry Closure
+
+**Root cause of the RC2.3 contradiction**: the DWG 850mm gap
+(y12050–12900) included the door frame's corner return into the north-wall
+band (y12750–12950). Placing the whole gap as the clear opening pushed the
+door into the corner, so the full-geometry conflict check reported 1 conflict
+while G22's weakened "middle-half" rule passed it — an inconsistent state.
+
+**Fix**: clear opening moved to the owner-marked section's true centre —
+`y11800–12650` (850mm, same span). The upper ~150mm of the DWG gap is frame/
+corner return and remains wall (`W-INT-X7900-U-TV` segment y12650–13550).
+No overlap with `W-EXT-N-LV#W-LIV-N.1` (top of opening = y12650 < wall inner
+face y12750).
+
+- G22 reverted to **full clear-opening** check — no core-shrink exemption
+- `wall_window_conflict_check.png`: `conflicts = 0`, consistent with G22 PASS
+- 9-record registry frozen unchanged; layout freeze G27 unchanged

@@ -529,7 +529,7 @@
     7800,
     7800,
     7900,
-    12050
+    11800
    ],
    "type": "interior",
    "measured_coverage": 0.87,
@@ -548,7 +548,7 @@
    "id": "W-INT-X7900-U-TV#G-LIV-NBALC.1",
    "rect_mm": [
     7800,
-    12900,
+    12650,
     7900,
     13550
    ],
@@ -1370,20 +1370,20 @@
    "meas_zone": [
     [
      6500,
-     13386
+     13136
     ],
     [
      6600,
-     14236
+     13986
     ]
    ],
    "status": "EXISTING_CONFIRMED",
-   "note": "TV wall -> north balcony glass door; measured gap y12050-12900 = 850mm (owner confirmed location; was mis-read as west-parapet door)",
+   "note": "TV wall -> north balcony glass door, 850mm clear opening centered on owner-marked section (was mis-read as west-parapet door)",
    "rect_mm": [
     7800,
-    12050,
+    11800,
     7900,
-    12900
+    12650
    ]
   },
   {
@@ -1462,19 +1462,19 @@
    "current_status": "EXISTING_CONFIRMED",
    "span_mm": 850,
    "projection_mm": 0,
-   "source": "owner confirmed glass door on TV-wall north section; DWG gap y12050-12900 (850mm) + door insert on wall line",
+   "source": "owner confirmed glass door centered on TV-wall north section; DWG gap y12050-12900 includes upper frame/corner return — clear opening placed owner-centered",
    "confidence": "HIGH",
    "measurement_status": "CONFIRMED",
    "host_wall_id": "W-INT-X7900-U-TV",
    "opening_rect_mm": [
     7800,
-    12050,
+    11800,
     7900,
-    12900
+    12650
    ],
    "door_type": "glass door (leaf type field-check)",
    "clear_width_mm": 850,
-   "notes": "the door previously mis-recorded as D-BALC-W on west parapet — same physical door, corrected location",
+   "notes": "the door previously mis-recorded as D-BALC-W on west parapet — same physical door, corrected location; top 150mm of DWG gap = frame/corner return kept as wall, not counted in clear opening",
    "split_applied": true
   },
   {

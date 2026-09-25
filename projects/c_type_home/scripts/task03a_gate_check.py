@@ -197,13 +197,8 @@ for win in WREG:
     if win['type'] == 'BALCONY_WINDOW':
         continue                     # glazing sits ON parapet by design
     op = list(win['opening_rect_mm'])
-    # conflict = wall crossing the opening's MIDDLE HALF along its long axis.
-    # Perpendicular walls touching the first/last quarter are frame corner
-    # returns (e.g. G-LIV-NBALC top 150mm inside the N-wall corner band).
-    if (op[2] - op[0]) >= (op[3] - op[1]):
-        m = (op[2] - op[0]) * 0.25; op[0] += m; op[2] -= m
-    else:
-        m = (op[3] - op[1]) * 0.25; op[1] += m; op[3] -= m
+    # full clear-opening check — frame/corner returns must be modeled as wall
+    # or frame geometry OUTSIDE the opening, not excused by shrinking the test
     hit = [w['id'] for w in CE['walls'] if w['disposition'] == 'EXISTING'
            and not (w['rect_mm'][2] <= op[0] or w['rect_mm'][0] >= op[2] or
                     w['rect_mm'][3] <= op[1] or w['rect_mm'][1] >= op[3])]
