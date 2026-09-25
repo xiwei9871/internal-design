@@ -258,7 +258,11 @@ def wall_faces_report():
 def draw_wall_faces(ax, profile, dxf_path=None, alignment=None):
     if dxf_path is not None:
         alignment = validate_canonical_alignment(dxf_path, emit=False)
-    report = {'wall_face_ids': [], 'parapet_ids': [], 'cuts': [], 'wall_reports': [], 'alignment': alignment or []}
+    if alignment is None:
+        raise RuntimeError('draw_wall_faces requires validated alignment or dxf_path')
+    if len(alignment) != 39 or not all(item.get('pass') for item in alignment):
+        raise RuntimeError('draw_wall_faces requires passing canonical alignment')
+    report = {'wall_face_ids': [], 'parapet_ids': [], 'cuts': [], 'wall_reports': [], 'alignment': alignment}
     for item in wall_faces_report():
         wid, wtype = item['wall_id'], item['wall_type']
         if wtype == 'railing_parapet':
