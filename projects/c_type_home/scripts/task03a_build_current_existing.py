@@ -434,9 +434,54 @@ stairs['zone_mm'] = [stairs['zone_meas'][0]-DX, stairs['zone_meas'][1]-DY,
                      stairs['zone_meas'][2]-DX, stairs['zone_meas'][3]-DY]
 
 # ---------------------------------------------------------------- keep fixtures
+# ---------------------------------------------------------------- kitchen cabinets (RC3)
+# Source: source/世纪欣园3-1-901_cabinet_plan.pdf (shop drawing 2024-08-31).
+# U-shape: east-wall main run 3915 (== interior 4450 - sink-leg depth 535),
+# south sink leg 1210 under W-KIT-S window, north fridge tall cab 1840x700.
+# Room interior x5900-7800 x y0-4450; west wall demolished -> open to dining.
+KITCHEN_CABS = [
+    {'id': 'K-RUN-E', 'kind': 'base_cabinet_run', 'rect_mm': [7200, 535, 7800, 4450],
+     'depth_mm': 600, 'len_mm': 3915, 'status': 'EXISTING_KEEP',
+     'measurement_status': 'CONFIRMED',
+     'source': 'cabinet PDF p0 — 3915 main run; modules 18/413/414/灶具900/洗碗机600/513/518/50',
+     'note': 'east-wall run; module order from PDF dim chain, y-bounds per run start 535'},
+    {'id': 'K-COOK', 'kind': 'cooktop_slot', 'rect_mm': [7200, 2705, 7800, 3605],
+     'span_mm': 900, 'status': 'EXISTING_KEEP', 'measurement_status': 'CONFIRMED',
+     'source': 'cabinet PDF p0 灶具 900 on 3915 run (north-of-centre per dim chain)',
+     'note': 'cooktop position; range hood above (烟机插座 on wall-cab elevation)'},
+    {'id': 'K-DISHW', 'kind': 'dishwasher_slot', 'rect_mm': [7200, 2105, 7800, 2705],
+     'span_mm': 600, 'status': 'EXISTING_KEEP', 'measurement_status': 'CONFIRMED',
+     'source': 'cabinet PDF p0 洗碗机位置 600 on 3915 run',
+     'note': 'open slot for dishwasher'},
+    {'id': 'K-BASKET', 'kind': 'pull_basket_module', 'rect_mm': [7200, 3605, 7800, 4400],
+     'span_mm': 800, 'status': 'EXISTING_KEEP', 'measurement_status': 'TO_VERIFY',
+     'source': 'cabinet PDF p0 拉篮/调味拉篮 800 — exact position within run to verify',
+     'note': 'spice pull-basket module, drawn near cooktop per PDF; y-bounds approximate'},
+    {'id': 'K-FRIDGE-TALL', 'kind': 'tall_cabinet', 'rect_mm': [5900, 3750, 7740, 4450],
+     'depth_mm': 700, 'len_mm': 1840, 'status': 'EXISTING_KEEP',
+     'measurement_status': 'CONFIRMED',
+     'source': 'cabinet PDF p0 — 冰箱高柜 1840 along north wall',
+     'note': 'tall unit incl. double-door fridge slot + side cabs + sockets'},
+    {'id': 'K-FRIDGE', 'kind': 'fridge_slot', 'rect_mm': [6835, 3750, 7740, 4450],
+     'span_mm': 905, 'status': 'EXISTING_KEEP', 'measurement_status': 'TO_VERIFY',
+     'source': 'cabinet PDF — fridge 905x710 inside tall cab; internal split TO_VERIFY',
+     'note': 'double-door fridge 905x710 (note: 710 depth incl. gap per PDF)'},
+    {'id': 'K-RUN-S', 'kind': 'base_cabinet_sink_leg', 'rect_mm': [6100, 0, 7310, 600],
+     'depth_mm': 600, 'len_mm': 1210, 'status': 'EXISTING_KEEP',
+     'measurement_status': 'CONFIRMED',
+     'source': 'cabinet PDF p0 — sink leg 990+220 next to 窗 (window)',
+     'note': 'south-wall leg under W-KIT-S window; x-origin aligned to window centre ±210'},
+    {'id': 'K-SINK', 'kind': 'sink_slot', 'rect_mm': [6100, 0, 7090, 600],
+     'span_mm': 990, 'status': 'EXISTING_KEEP', 'measurement_status': 'CONFIRMED',
+     'source': 'cabinet PDF p0 水槽柜 990 + filler 220',
+     'note': 'sink cabinet under south window'},
+    {'id': 'K-WALL-E', 'kind': 'wall_cabinet_run', 'rect_mm': [7420, 535, 7800, 4450],
+     'depth_mm': 380, 'len_mm': 3915, 'status': 'EXISTING_KEEP',
+     'measurement_status': 'TO_VERIFY',
+     'source': 'cabinet PDF p1 吊柜 — 380 deep along main run, widths 374/569/569/459/459/460/460/50',
+     'note': 'wall-mounted cabinets; module splits per PDF elevation, exact y-bounds TO_VERIFY'},
+]
 keep = [
-    {'id': 'K-CABINETS', 'kind': 'kitchen_cabinet_system', 'src': 'cabinet_plan.pdf',
-     'meas_zone': [[4200, 1336], [6900, 6036]], 'note': 'L/U kitchen cabinetry KEEP; fridge slot 905x710; dishwasher 600; sink 990'},
     {'id': 'BALC-CAB-RED', 'kind': 'cabinet', 'meas_zone': [[100, 1400], [700, 3900]],
      'note': 'life balcony red cabinet KEEP'},
     {'id': 'WD-10KG', 'kind': 'washer_dryer', 'meas_zone': [[6600, 14400], [7300, 15100]],
@@ -488,6 +533,7 @@ model = {
     'windows': WINDOWS,
     'split_level': stairs,
     'balconies': balconies,
+    'kitchen_cabinets': KITCHEN_CABS,
     'keep_items': keep,
     'measured_dims': {'north_chain': [5100, 1900, 3200, 3300],
                       'south_chain': [1400, 3000, 2100, 3600, 3900, 900],
@@ -514,6 +560,46 @@ with open(REG_CSV, 'w', newline='') as f:
     w.writeheader()
     for win in WINDOWS:
         w.writerow({k: win.get(k, '') for k in REG_FIELDS})
+
+# ---------------------------------------------------------------- RC3 outputs
+# kitchen cabinet register — real cabinet footprints from the shop drawing,
+# same task01 mm coordinate system as the measured DWG model
+KCAB_JSON = ROOT / 'current_existing' / 'kitchen_cabinet_register.json'
+KCAB_FIELDS = ['id', 'kind', 'rect_mm', 'depth_mm', 'len_mm', 'span_mm',
+               'status', 'measurement_status', 'source', 'note']
+KCAB_JSON.write_text(json.dumps({'meta': {
+        'task': 'TASK03A RC3 kitchen cabinet register',
+        'source_pdf': 'source/世纪欣园3-1-901_cabinet_plan.pdf (shop drawing 2024-08-31)',
+        'coord_system': 'task01-compatible mm — same as measured DWG model',
+        'layout': 'U-shape: east run 3915 + south sink leg 1210 (under window) + north fridge tall cab 1840; west side open to dining (wall demolished)',
+        'status': 'all EXISTING_KEEP — new cabinetry, do not touch'},
+    'cabinets': KITCHEN_CABS}, ensure_ascii=False, indent=1))
+KCAB_CSV = ROOT / 'current_existing' / 'kitchen_cabinet_register.csv'
+with open(KCAB_CSV, 'w', newline='') as f:
+    w = csv.DictWriter(f, fieldnames=KCAB_FIELDS)
+    w.writeheader()
+    for k in KITCHEN_CABS:
+        w.writerow({kk: k.get(kk, '') for kk in KCAB_FIELDS})
+
+# canonical plan — single geometry source every downstream artefact renders from
+import hashlib
+def _sha(obj):
+    return hashlib.sha256(json.dumps(obj, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
+canonical = {'meta': {'task': 'TASK03A RC3 canonical base v1',
+                      'rule': 'one canonical geometry — every sheet/DXF renders from this file'},
+             'walls': model['walls'], 'openings': model['openings'],
+             'windows': model['windows'], 'balconies': model['balconies'],
+             'split_level': model['split_level'], 'keep_items': model['keep_items'],
+             'kitchen_cabinets': KITCHEN_CABS,
+             'owner_corrections': ['OWNER_CONFIRMED_WALL_CORRECTION_2026-09-25 '
+                                   '(kitchen/balcony SE corner gap closed)'],
+             'owner_fenestration_ref': 'OWNER_CONFIRMED_FENESTRATION_REFERENCE_2026-09-25'}
+canonical['hashes'] = {k: _sha(canonical[k]) for k in
+                       ('walls', 'openings', 'windows', 'kitchen_cabinets',
+                        'keep_items', 'balconies', 'split_level')}
+(ROOT / 'current_existing' / 'canonical_plan_v1.json').write_text(
+    json.dumps(canonical, ensure_ascii=False, indent=1))
+
 print('model written:', OUT_JSON)
 print('window register:', len(WINDOWS), 'records ->', REG_JSON.name, '+', REG_CSV.name)
 print('walls kept:', sum(1 for w in walls if w['disposition'] == 'EXISTING'),

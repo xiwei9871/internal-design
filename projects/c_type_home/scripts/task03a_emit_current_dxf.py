@@ -18,7 +18,9 @@ LAYERS = {
     'A-WIND-EXST-KEEP':   4,   # cyan — existing window glazing
     'A-WIND-TO-VERIFY':   6,   # magenta — ambiguous opening, field verify
     'A-GLAZ-PROP':        5,   # blue — proposed glazing (N balcony enclosure)
+    'A-PARP-EXST':        8,   # grey — balcony parapet/railing
     'A-FURN-EXST-KEEP':   30,
+    'A-CAB-EXST-KEEP':    40,  # orange — kitchen cabinet footprints (shop drawing)
     'A-FURN-PROP':        2,
     'A-FIXT-PLUMB':       4,
     'A-ACCESS-RAMP':      3,
@@ -44,7 +46,9 @@ def rect(lay, r, hatch=False):
 for w in M['walls']:
     cls = w['wall_class']
     if w['disposition'] == 'EXISTING':
-        if 'NO_DEMOLITION' in cls or 'NO_OPEN' in cls:
+        if w.get('type') == 'railing_parapet':
+            lay = 'A-PARP-EXST'        # balcony railing/parapet — not a solid wall
+        elif 'NO_DEMOLITION' in cls or 'NO_OPEN' in cls:
             lay = 'A-WALL-OWNER-NOOPEN'
         elif 'REVIEW' in cls:
             lay = 'A-QC'
@@ -95,6 +99,14 @@ for k in M['keep_items']:
     rect('A-FURN-EXST-KEEP', k['rect_mm'])
     msp.add_text(k['id'], height=140, dxfattribs={'layer': 'A-NOTE'}).set_placement(
         (k['rect_mm'][0] + 60, k['rect_mm'][1] + 60))
+
+# RC3: kitchen cabinet footprints (shop drawing, EXISTING_KEEP)
+for c in M.get('kitchen_cabinets', []):
+    lay = 'A-CAB-EXST-KEEP'
+    rect(lay, c['rect_mm'])
+    msp.add_text(f"{c['id']} {c['kind']}", height=110,
+                 dxfattribs={'layer': 'A-NOTE'}).set_placement(
+        (c['rect_mm'][0] + 40, c['rect_mm'][1] + 40))
 
 # split level: stair zone + level boundary note
 st = M['split_level']

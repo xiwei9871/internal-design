@@ -18,6 +18,7 @@ LAYERS = {'A-WALL-EXST-KEEP': 7, 'A-WALL-OWNER-NOOPEN': 1, 'A-WALL-EXST-REMOVE':
           'A-GLAZ-EXST-KEEP': 6, 'A-FURN-EXST-KEEP': 30, 'A-FURN-PROP': 2,
           'A-WIND-EXST-KEEP': 4, 'A-WIND-TO-VERIFY': 6, 'A-GLAZ-PROP': 5,
           'A-FIXT-PLUMB': 4, 'A-ACCESS-RAMP': 3, 'A-ACCESS-STAIR': 3,
+          'A-CAB-EXST-KEEP': 40, 'A-PARP-EXST': 8,
           'A-LEVEL': 140, 'A-DIMS': 8, 'A-NOTE': 7, 'A-QC': 1}
 
 def new_doc():
@@ -38,7 +39,9 @@ def walls(msp):
     for w in M['walls']:
         cls = w['wall_class']
         if w['disposition'] == 'EXISTING':
-            if 'NO_DEMOLITION' in cls or 'NO_OPEN' in cls:
+            if w.get('type') == 'railing_parapet':
+                lay = 'A-PARP-EXST'
+            elif 'NO_DEMOLITION' in cls or 'NO_OPEN' in cls:
                 lay = 'A-WALL-OWNER-NOOPEN'
             elif 'REVIEW' in cls:
                 lay = 'A-QC'
@@ -175,8 +178,10 @@ furn('COFFEE-MOV', 5000, 9800, 5800, 10400, note='small movable round-corner tab
 furn('PROJ-SCREEN', 7200, 9800, 7750, 12200, lay='A-NOTE', note='projection/laser-TV relation on east wall (no fixed cabinet)')
 # DINING (x2900-5700 y2560-7900): table 1500x600 near kitchen side
 furn('DIN-TABLE', 3700, 4800, 5200, 5400, note='1500x600 table, seats <=8 peak')
-# KITCHEN: existing cabinets KEEP (from model keep_items K-CABINETS task01 x5500-8200 y0-4700)
-furn('K-CAB', *M['keep_items'][0]['rect_mm'], lay='A-FURN-EXST-KEEP', note='2024 cabinets KEEP')
+# KITCHEN: cabinet keep ZONE boundary only — real footprints live in
+# kitchen_cabinet_register.json (RC3); G3 uses this rect as the no-intrusion zone
+furn('K-CAB', 5500, 0, 8200, 4700, lay='A-FURN-EXST-KEEP',
+     note='kitchen cabinet KEEP zone — modules in kitchen_cabinet_register')
 # MASTER BEDROOM x11600-15300 y0-4450: bed head south wall
 furn('MB-BED', 12600, 300, 14400, 2400, note='1800x2100; route door->bed->bath clear')
 furn('MB-WARD', 11600, 3850, 15300, 4450, lay='A-FURN-EXST-KEEP', note='existing wardrobe KEEP')
@@ -257,6 +262,9 @@ for win in M.get('windows', []):
         for j in bay['jambs']:
             rect(msp, lay, *j)
         rect(msp, lay, *bay['front'])
+# RC3: kitchen cabinet footprints on the same canonical base
+for c in M.get('kitchen_cabinets', []):
+    rect(msp, 'A-CAB-EXST-KEEP', *c['rect_mm'])
 # new bath enclosure: cloakroom shell N/W/E kept (drawn by walls());
 # NEW walls = south partition (door gap) + annex east/west walls into bedroom;
 # interior wet/dry glass partition optional (marked A-NOTE)

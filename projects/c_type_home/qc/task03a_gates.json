@@ -13,7 +13,7 @@
     {
       "gate": "G3 kitchen cabinets untouched",
       "result": "PASS",
-      "detail": "keep zone [5500.0, 0.0, 8200.0, 4700.0]; intruders=[]"
+      "detail": "keep zone [5500, 0, 8200, 4700]; intruders=[]"
     },
     {
       "gate": "G4 glazing preserved (sliding door + balcony glazing)",
@@ -139,6 +139,16 @@
       "gate": "G27 layout freeze vs RC2.1",
       "result": "PASS",
       "detail": "changed=none (windows/wall-split/render changes exempt)"
+    },
+    {
+      "gate": "G28 canonical base hash consistency across outputs",
+      "result": "PASS",
+      "detail": "sections=['walls', 'openings', 'windows', 'kitchen_cabinets', 'keep_items', 'balconies', 'split_level']; mismatched=[]"
+    },
+    {
+      "gate": "G29 kitchen cabinets clear of walls/windows/doors",
+      "result": "PASS",
+      "detail": "cabinet_conflicts=[]"
     }
   ],
   "overall": "PASS"

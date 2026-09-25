@@ -1,0 +1,10 @@
+id,kind,rect_mm,depth_mm,len_mm,span_mm,status,measurement_status,source,note
+K-RUN-E,base_cabinet_run,"[7200, 535, 7800, 4450]",600,3915,,EXISTING_KEEP,CONFIRMED,cabinet PDF p0 — 3915 main run; modules 18/413/414/灶具900/洗碗机600/513/518/50,"east-wall run; module order from PDF dim chain, y-bounds per run start 535"
+K-COOK,cooktop_slot,"[7200, 2705, 7800, 3605]",,,900,EXISTING_KEEP,CONFIRMED,cabinet PDF p0 灶具 900 on 3915 run (north-of-centre per dim chain),cooktop position; range hood above (烟机插座 on wall-cab elevation)
+K-DISHW,dishwasher_slot,"[7200, 2105, 7800, 2705]",,,600,EXISTING_KEEP,CONFIRMED,cabinet PDF p0 洗碗机位置 600 on 3915 run,open slot for dishwasher
+K-BASKET,pull_basket_module,"[7200, 3605, 7800, 4400]",,,800,EXISTING_KEEP,TO_VERIFY,cabinet PDF p0 拉篮/调味拉篮 800 — exact position within run to verify,"spice pull-basket module, drawn near cooktop per PDF; y-bounds approximate"
+K-FRIDGE-TALL,tall_cabinet,"[5900, 3750, 7740, 4450]",700,1840,,EXISTING_KEEP,CONFIRMED,cabinet PDF p0 — 冰箱高柜 1840 along north wall,tall unit incl. double-door fridge slot + side cabs + sockets
+K-FRIDGE,fridge_slot,"[6835, 3750, 7740, 4450]",,,905,EXISTING_KEEP,TO_VERIFY,cabinet PDF — fridge 905x710 inside tall cab; internal split TO_VERIFY,double-door fridge 905x710 (note: 710 depth incl. gap per PDF)
+K-RUN-S,base_cabinet_sink_leg,"[6100, 0, 7310, 600]",600,1210,,EXISTING_KEEP,CONFIRMED,cabinet PDF p0 — sink leg 990+220 next to 窗 (window),south-wall leg under W-KIT-S window; x-origin aligned to window centre ±210
+K-SINK,sink_slot,"[6100, 0, 7090, 600]",,,990,EXISTING_KEEP,CONFIRMED,cabinet PDF p0 水槽柜 990 + filler 220,sink cabinet under south window
+K-WALL-E,wall_cabinet_run,"[7420, 535, 7800, 4450]",380,3915,,EXISTING_KEEP,TO_VERIFY,"cabinet PDF p1 吊柜 — 380 deep along main run, widths 374/569/569/459/459/460/460/50","wall-mounted cabinets; module splits per PDF elevation, exact y-bounds TO_VERIFY"

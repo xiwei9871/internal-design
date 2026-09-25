@@ -1,22 +1,7 @@
 {
  "meta": {
-  "task": "TASK03A RC1 current-existing baseline",
-  "rc1_changes": [
-   "DWG governs dimensions; owner statements govern wall existence",
-   "white/black class from dev-plan visual read + owner declaration — no thickness inference",
-   "north balcony = OPEN, enclosure PROPOSED",
-   "level delta = LEVEL_DELTA_TO_VERIFY (owner <=350 vs CAD ~400)"
-  ],
-  "coord_system": "task01-compatible mm",
-  "measured_origin": [
-   1299472.0,
-   -297794.0
-  ],
-  "offset_task01_to_measured": [
-   -1300.0,
-   1336.0
-  ],
-  "authority": "measured DWG (dims) + owner statements (existence) > developer plan (policy/history) > task02 semantics"
+  "task": "TASK03A RC3 canonical base v1",
+  "rule": "one canonical geometry — every sheet/DXF renders from this file"
  },
  "walls": [
   {
@@ -1007,98 +992,6 @@
    "note": "north balcony east parapet/railing — OPEN above, NOT an enclosed wall"
   }
  ],
- "structural_fills_measured": [
-  [
-   2699.9,
-   10300.2,
-   3799.9,
-   13200.2
-  ],
-  [
-   6899.9,
-   13000.2,
-   8199.9,
-   13400.2
-  ],
-  [
-   1299.9,
-   2300.2,
-   2899.9,
-   4700.2
-  ],
-  [
-   5499.9,
-   0.20000000000004547,
-   5899.9,
-   700.2
-  ],
-  [
-   7099.9,
-   0.20000000000004547,
-   8599.9,
-   700.2
-  ],
-  [
-   5699.9,
-   3900.2,
-   8199.9,
-   4700.2
-  ],
-  [
-   10799.9,
-   0.20000000000004547,
-   12199.9,
-   1400.1999999999998
-  ],
-  [
-   14699.9,
-   0.20000000000004547,
-   15499.9,
-   1400.1999999999998
-  ],
-  [
-   10799.9,
-   3900.2,
-   11599.9,
-   5300.2
-  ],
-  [
-   14699.9,
-   3300.2,
-   15499.9,
-   4700.2
-  ],
-  [
-   16199.9,
-   4500.2,
-   16399.9,
-   5300.2
-  ],
-  [
-   7799.9,
-   7800.200000000001,
-   8599.9,
-   8600.2
-  ],
-  [
-   12299.9,
-   7800.200000000001,
-   13099.9,
-   8600.2
-  ],
-  [
-   12399.9,
-   10300.2,
-   13699.9,
-   11100.2
-  ],
-  [
-   15599.9,
-   9900.2,
-   16399.9,
-   11100.2
-  ]
- ],
  "openings": [
   {
    "id": "ENT-1",
@@ -1695,6 +1588,24 @@
    "split_applied": true
   }
  ],
+ "balconies": {
+  "north_balcony": {
+   "current_enclosure": "OPEN_NOT_ENCLOSED",
+   "existing_north_enclosure": false,
+   "existing_east_enclosure": false,
+   "future_enclosure": "PROPOSED_LEGAL_TO_ENCLOSE",
+   "future_design_constraints": "N+east enclosure runs are FUTURE PROPOSED design — recorded here, NOT in current window registry",
+   "evidence": "owner statement RC1; DWG north/east-edge multilines = parapet/railing, NOT glazing",
+   "interior_doors": [
+    "G-GB-BALC (guest bedroom <-> balcony, existing)",
+    "G-LIV-NBALC (TV wall -> balcony, existing, 850mm)"
+   ]
+  },
+  "life_balcony": {
+   "red_cabinet": "KEEP",
+   "glazing": "W-LBALC-S existing window on south parapet (owner confirmed)"
+  }
+ },
  "split_level": {
   "zone_meas": [
    5900,
@@ -1718,165 +1629,6 @@
    7800.0
   ]
  },
- "balconies": {
-  "north_balcony": {
-   "current_enclosure": "OPEN_NOT_ENCLOSED",
-   "existing_north_enclosure": false,
-   "existing_east_enclosure": false,
-   "future_enclosure": "PROPOSED_LEGAL_TO_ENCLOSE",
-   "future_design_constraints": "N+east enclosure runs are FUTURE PROPOSED design — recorded here, NOT in current window registry",
-   "evidence": "owner statement RC1; DWG north/east-edge multilines = parapet/railing, NOT glazing",
-   "interior_doors": [
-    "G-GB-BALC (guest bedroom <-> balcony, existing)",
-    "G-LIV-NBALC (TV wall -> balcony, existing, 850mm)"
-   ]
-  },
-  "life_balcony": {
-   "red_cabinet": "KEEP",
-   "glazing": "W-LBALC-S existing window on south parapet (owner confirmed)"
-  }
- },
- "kitchen_cabinets": [
-  {
-   "id": "K-RUN-E",
-   "kind": "base_cabinet_run",
-   "rect_mm": [
-    7200,
-    535,
-    7800,
-    4450
-   ],
-   "depth_mm": 600,
-   "len_mm": 3915,
-   "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 — 3915 main run; modules 18/413/414/灶具900/洗碗机600/513/518/50",
-   "note": "east-wall run; module order from PDF dim chain, y-bounds per run start 535"
-  },
-  {
-   "id": "K-COOK",
-   "kind": "cooktop_slot",
-   "rect_mm": [
-    7200,
-    2705,
-    7800,
-    3605
-   ],
-   "span_mm": 900,
-   "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 灶具 900 on 3915 run (north-of-centre per dim chain)",
-   "note": "cooktop position; range hood above (烟机插座 on wall-cab elevation)"
-  },
-  {
-   "id": "K-DISHW",
-   "kind": "dishwasher_slot",
-   "rect_mm": [
-    7200,
-    2105,
-    7800,
-    2705
-   ],
-   "span_mm": 600,
-   "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 洗碗机位置 600 on 3915 run",
-   "note": "open slot for dishwasher"
-  },
-  {
-   "id": "K-BASKET",
-   "kind": "pull_basket_module",
-   "rect_mm": [
-    7200,
-    3605,
-    7800,
-    4400
-   ],
-   "span_mm": 800,
-   "status": "EXISTING_KEEP",
-   "measurement_status": "TO_VERIFY",
-   "source": "cabinet PDF p0 拉篮/调味拉篮 800 — exact position within run to verify",
-   "note": "spice pull-basket module, drawn near cooktop per PDF; y-bounds approximate"
-  },
-  {
-   "id": "K-FRIDGE-TALL",
-   "kind": "tall_cabinet",
-   "rect_mm": [
-    5900,
-    3750,
-    7740,
-    4450
-   ],
-   "depth_mm": 700,
-   "len_mm": 1840,
-   "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 — 冰箱高柜 1840 along north wall",
-   "note": "tall unit incl. double-door fridge slot + side cabs + sockets"
-  },
-  {
-   "id": "K-FRIDGE",
-   "kind": "fridge_slot",
-   "rect_mm": [
-    6835,
-    3750,
-    7740,
-    4450
-   ],
-   "span_mm": 905,
-   "status": "EXISTING_KEEP",
-   "measurement_status": "TO_VERIFY",
-   "source": "cabinet PDF — fridge 905x710 inside tall cab; internal split TO_VERIFY",
-   "note": "double-door fridge 905x710 (note: 710 depth incl. gap per PDF)"
-  },
-  {
-   "id": "K-RUN-S",
-   "kind": "base_cabinet_sink_leg",
-   "rect_mm": [
-    6100,
-    0,
-    7310,
-    600
-   ],
-   "depth_mm": 600,
-   "len_mm": 1210,
-   "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 — sink leg 990+220 next to 窗 (window)",
-   "note": "south-wall leg under W-KIT-S window; x-origin aligned to window centre ±210"
-  },
-  {
-   "id": "K-SINK",
-   "kind": "sink_slot",
-   "rect_mm": [
-    6100,
-    0,
-    7090,
-    600
-   ],
-   "span_mm": 990,
-   "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 水槽柜 990 + filler 220",
-   "note": "sink cabinet under south window"
-  },
-  {
-   "id": "K-WALL-E",
-   "kind": "wall_cabinet_run",
-   "rect_mm": [
-    7420,
-    535,
-    7800,
-    4450
-   ],
-   "depth_mm": 380,
-   "len_mm": 3915,
-   "status": "EXISTING_KEEP",
-   "measurement_status": "TO_VERIFY",
-   "source": "cabinet PDF p1 吊柜 — 380 deep along main run, widths 374/569/569/459/459/460/460/50",
-   "note": "wall-mounted cabinets; module splits per PDF elevation, exact y-bounds TO_VERIFY"
-  }
- ],
  "keep_items": [
   {
    "id": "BALC-CAB-RED",
@@ -2026,32 +1778,158 @@
    ]
   }
  ],
- "measured_dims": {
-  "north_chain": [
-   5100,
-   1900,
-   3200,
-   3300
-  ],
-  "south_chain": [
-   1400,
-   3000,
-   2100,
-   3600,
-   3900,
-   900
-  ],
-  "west_chain": [
-   500,
-   1800,
-   2200,
-   8500
-  ],
-  "east_chain": [
-   4500,
-   1900,
-   4500,
-   2800
-  ]
+ "kitchen_cabinets": [
+  {
+   "id": "K-RUN-E",
+   "kind": "base_cabinet_run",
+   "rect_mm": [
+    7200,
+    535,
+    7800,
+    4450
+   ],
+   "depth_mm": 600,
+   "len_mm": 3915,
+   "status": "EXISTING_KEEP",
+   "measurement_status": "CONFIRMED",
+   "source": "cabinet PDF p0 — 3915 main run; modules 18/413/414/灶具900/洗碗机600/513/518/50",
+   "note": "east-wall run; module order from PDF dim chain, y-bounds per run start 535"
+  },
+  {
+   "id": "K-COOK",
+   "kind": "cooktop_slot",
+   "rect_mm": [
+    7200,
+    2705,
+    7800,
+    3605
+   ],
+   "span_mm": 900,
+   "status": "EXISTING_KEEP",
+   "measurement_status": "CONFIRMED",
+   "source": "cabinet PDF p0 灶具 900 on 3915 run (north-of-centre per dim chain)",
+   "note": "cooktop position; range hood above (烟机插座 on wall-cab elevation)"
+  },
+  {
+   "id": "K-DISHW",
+   "kind": "dishwasher_slot",
+   "rect_mm": [
+    7200,
+    2105,
+    7800,
+    2705
+   ],
+   "span_mm": 600,
+   "status": "EXISTING_KEEP",
+   "measurement_status": "CONFIRMED",
+   "source": "cabinet PDF p0 洗碗机位置 600 on 3915 run",
+   "note": "open slot for dishwasher"
+  },
+  {
+   "id": "K-BASKET",
+   "kind": "pull_basket_module",
+   "rect_mm": [
+    7200,
+    3605,
+    7800,
+    4400
+   ],
+   "span_mm": 800,
+   "status": "EXISTING_KEEP",
+   "measurement_status": "TO_VERIFY",
+   "source": "cabinet PDF p0 拉篮/调味拉篮 800 — exact position within run to verify",
+   "note": "spice pull-basket module, drawn near cooktop per PDF; y-bounds approximate"
+  },
+  {
+   "id": "K-FRIDGE-TALL",
+   "kind": "tall_cabinet",
+   "rect_mm": [
+    5900,
+    3750,
+    7740,
+    4450
+   ],
+   "depth_mm": 700,
+   "len_mm": 1840,
+   "status": "EXISTING_KEEP",
+   "measurement_status": "CONFIRMED",
+   "source": "cabinet PDF p0 — 冰箱高柜 1840 along north wall",
+   "note": "tall unit incl. double-door fridge slot + side cabs + sockets"
+  },
+  {
+   "id": "K-FRIDGE",
+   "kind": "fridge_slot",
+   "rect_mm": [
+    6835,
+    3750,
+    7740,
+    4450
+   ],
+   "span_mm": 905,
+   "status": "EXISTING_KEEP",
+   "measurement_status": "TO_VERIFY",
+   "source": "cabinet PDF — fridge 905x710 inside tall cab; internal split TO_VERIFY",
+   "note": "double-door fridge 905x710 (note: 710 depth incl. gap per PDF)"
+  },
+  {
+   "id": "K-RUN-S",
+   "kind": "base_cabinet_sink_leg",
+   "rect_mm": [
+    6100,
+    0,
+    7310,
+    600
+   ],
+   "depth_mm": 600,
+   "len_mm": 1210,
+   "status": "EXISTING_KEEP",
+   "measurement_status": "CONFIRMED",
+   "source": "cabinet PDF p0 — sink leg 990+220 next to 窗 (window)",
+   "note": "south-wall leg under W-KIT-S window; x-origin aligned to window centre ±210"
+  },
+  {
+   "id": "K-SINK",
+   "kind": "sink_slot",
+   "rect_mm": [
+    6100,
+    0,
+    7090,
+    600
+   ],
+   "span_mm": 990,
+   "status": "EXISTING_KEEP",
+   "measurement_status": "CONFIRMED",
+   "source": "cabinet PDF p0 水槽柜 990 + filler 220",
+   "note": "sink cabinet under south window"
+  },
+  {
+   "id": "K-WALL-E",
+   "kind": "wall_cabinet_run",
+   "rect_mm": [
+    7420,
+    535,
+    7800,
+    4450
+   ],
+   "depth_mm": 380,
+   "len_mm": 3915,
+   "status": "EXISTING_KEEP",
+   "measurement_status": "TO_VERIFY",
+   "source": "cabinet PDF p1 吊柜 — 380 deep along main run, widths 374/569/569/459/459/460/460/50",
+   "note": "wall-mounted cabinets; module splits per PDF elevation, exact y-bounds TO_VERIFY"
+  }
+ ],
+ "owner_corrections": [
+  "OWNER_CONFIRMED_WALL_CORRECTION_2026-09-25 (kitchen/balcony SE corner gap closed)"
+ ],
+ "owner_fenestration_ref": "OWNER_CONFIRMED_FENESTRATION_REFERENCE_2026-09-25",
+ "hashes": {
+  "walls": "c49e2697aeb2d4fc",
+  "openings": "e74b99f90dadce91",
+  "windows": "a3a67e381429922b",
+  "kitchen_cabinets": "6e0aa29a79b6afdd",
+  "keep_items": "69a6fcfb35307a6a",
+  "balconies": "cd586064ee7eefca",
+  "split_level": "c69f315a7db6d5b3"
  }
 }

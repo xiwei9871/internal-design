@@ -280,6 +280,40 @@ for f in CD['furniture']:
 gate('G27 layout freeze vs RC2.1', not diffs,
      f"changed={diffs if diffs else 'none'} (windows/wall-split/render changes exempt)")
 
+# ================================================================ RC3 gates
+# G28 canonical base consistency — every artefact renders from one geometry
+import hashlib
+CANON = json.load(open(os.path.join(ROOT, 'current_existing/canonical_plan_v1.json')))
+KREG = json.load(open(os.path.join(ROOT, 'current_existing/kitchen_cabinet_register.json')))['cabinets']
+def _sha(o):
+    return hashlib.sha256(json.dumps(o, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
+hash_bad = []
+sections = {'walls': CE['walls'], 'openings': CE['openings'], 'windows': CE['windows'],
+            'kitchen_cabinets': KREG, 'keep_items': CE['keep_items'],
+            'balconies': CE['balconies'], 'split_level': CE['split_level']}
+for k, obj in sections.items():
+    if _sha(obj) != CANON['hashes'].get(k):
+        hash_bad.append(k)
+    if CANON.get(k) != (KREG if k == 'kitchen_cabinets' else CE.get(k)):
+        hash_bad.append(f'{k}:content')
+gate('G28 canonical base hash consistency across outputs',
+     not hash_bad,
+     f"sections={list(sections)}; mismatched={hash_bad}")
+
+# G29 kitchen cabinets never overlap walls / windows / door openings
+cab_conf = []
+blockers = ([w['rect_mm'] for w in CE['walls'] if w['disposition'] == 'EXISTING']
+            + [w['opening_rect_mm'] for w in CE['windows']]
+            + [o['rect_mm'] for o in CE['openings']])
+for c in KREG:
+    r = c['rect_mm']
+    hit = [b for b in blockers
+           if not (b[2] <= r[0] or b[0] >= r[2] or b[3] <= r[1] or b[1] >= r[3])]
+    if hit:
+        cab_conf.append(c['id'])
+gate('G29 kitchen cabinets clear of walls/windows/doors',
+     not cab_conf, f"cabinet_conflicts={cab_conf}")
+
 overall = all(r['result'] == 'PASS' for r in results)
 print(f"\n=== TASK03A GATES: {sum(r['result']=='PASS' for r in results)}/{len(results)} {'ALL PASS' if overall else 'HAS FAIL'} ===")
 json.dump({'gates': results, 'overall': 'PASS' if overall else 'FAIL'},

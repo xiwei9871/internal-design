@@ -108,6 +108,10 @@ def draw_furn(ax, label_ids=True):
         c = '#f9ab00' if f['layer'] == 'A-FURN-EXST-KEEP' else \
             ('#34a853' if f['layer'] == 'A-FIXT-PLUMB' else
              ('#1a73e8' if 'ACCESS' in f['layer'] else '#f4b400'))
+        if f['id'] == 'K-CAB':
+            ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor='none',
+                                   edgecolor='#b06000', lw=0.8, ls='-.', zorder=3))
+            continue
         ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor=c, alpha=.35,
                                edgecolor=c, lw=1.0, zorder=3))
         if label_ids:
@@ -139,11 +143,43 @@ def draw_furn_presentation(ax):
              ('#1a73e8' if 'ACCESS' in f['layer'] else '#f4b400'))
         if f['layer'] == 'A-NOTE' and nice is None:
             continue
+        if f['id'] == 'K-CAB':
+            # placeholder zone only — real footprints come from the cabinet register
+            ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor='none',
+                                   edgecolor='#b06000', lw=0.8, ls='-.', zorder=3))
+            continue
         ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor=c, alpha=.3,
                                edgecolor=c, lw=0.9, zorder=3))
         if nice and (x2 - x1) * (y2 - y1) > 300000:
             ax.text((x1 + x2) / 2, (y1 + y2) / 2, nice, fontsize=6,
                     ha='center', va='center', zorder=5, color='#333')
+
+CAB_FILL = {'base_cabinet_run': '#f9ab00', 'base_cabinet_sink_leg': '#f9ab00',
+            'tall_cabinet': '#e8710a', 'wall_cabinet_run': '#fdd663'}
+CAB_LBL = {'base_cabinet_run': 'base cabs', 'base_cabinet_sink_leg': 'sink leg',
+           'tall_cabinet': 'fridge tall cab', 'wall_cabinet_run': 'wall cabs',
+           'cooktop_slot': '灶具 cooktop', 'dishwasher_slot': '洗碗机 DW slot',
+           'pull_basket_module': '拉篮', 'fridge_slot': 'fridge 905×710',
+           'sink_slot': '水槽 sink'}
+
+def draw_cabinets(ax, qc=False):
+    """kitchen cabinet register — real footprints, not a placeholder block."""
+    for c in M.get('kitchen_cabinets', []):
+        x1, y1, x2, y2 = c['rect_mm']
+        if c['kind'] == 'wall_cabinet_run':
+            ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor='none',
+                                   edgecolor='#e8710a', lw=1.2, ls='--', zorder=4))
+        elif c['kind'].endswith('_slot') or c['kind'] == 'pull_basket_module':
+            ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor='none',
+                                   edgecolor='#b06000', lw=1.0, ls=':', zorder=5))
+        else:
+            ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1,
+                                   facecolor=CAB_FILL.get(c['kind'], '#f9ab00'),
+                                   alpha=.45, edgecolor='#b06000', lw=1.0, zorder=3))
+        lbl = CAB_LBL.get(c['kind'], c['id']) if not qc else f"{c['id']} {c['measurement_status']}"
+        ax.text((x1 + x2) / 2, (y1 + y2) / 2, lbl, fontsize=4.6,
+                ha='center', va='center', zorder=6,
+                rotation=90 if (x2 - x1) < (y2 - y1) else 0)
 
 def draw_openings(ax):
     for o in M['openings']:
@@ -188,7 +224,7 @@ QC_LEGEND = [
 
 # ================================================================ S1 current existing
 fig, ax = base('Task03A · Current Existing Plan (measured DWG)')
-draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_openings(ax)
+draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_openings(ax); draw_cabinets(ax, qc=True)
 for k in M['keep_items']:
     x1, y1, x2, y2 = k['rect_mm']
     ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, facecolor='#f9ab00', alpha=.3, edgecolor='#f9ab00', zorder=3))
@@ -203,7 +239,7 @@ save(fig, 'task03a_s1_current_existing.png')
 
 # ================================================================ S2 demolition / keep / new
 fig, ax = base('Task03A · Demolition / Keep / New')
-draw_walls(ax, 'all'); draw_windows(ax, qc=True); draw_openings(ax); draw_new(ax)
+draw_walls(ax, 'all'); draw_windows(ax, qc=True); draw_openings(ax); draw_new(ax); draw_cabinets(ax, qc=True)
 ax.text(9200, 5400, 'NEW bath enclosure:\nsouth partition + annex walls\n(shell N/W/E kept)', fontsize=6, color=WCOL['new'])
 ax.legend(handles=QC_LEGEND, fontsize=6, loc='lower left', ncol=2)
 save(fig, 'task03a_s2_demolition.png')
@@ -211,7 +247,7 @@ save(fig, 'task03a_s2_demolition.png')
 # ================================================================ S3 PRESENTATION (owner-facing)
 fig, ax = base('Task03A · Proposed Furniture Plan — PRESENTATION')
 draw_walls(ax, 'current', presentation=True); draw_windows(ax); draw_door_symbols(ax)
-draw_furn_presentation(ax); draw_new(ax)
+draw_furn_presentation(ax); draw_new(ax); draw_cabinets(ax)
 ROOMS = [('FLEX FAMILY ROOM 客厅', 4200, 10600), ('DINING 餐厅', 3700, 6600),
          ('KITCHEN 厨房', 6200, 2500), ('LIFE BALC 生活阳台', 2600, 1500),
          ('MASTER BED 主卧', 12500, 2800), ('SEC MASTER BED 次主卧', 9000, 2800),
@@ -239,7 +275,7 @@ save(fig, 'task03a_s3_furniture_presentation.png')
 
 # ================================================================ S3 QC (diagnostic)
 fig, ax = base('Task03A · Proposed Furniture Plan — QC')
-draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_furn(ax)
+draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_furn(ax); draw_cabinets(ax, qc=True)
 draw_openings(ax); draw_new(ax)
 for s in CD['door_swings']:
     r = s['rect']
@@ -255,7 +291,7 @@ save(fig, 'task03a_s3_furniture_qc.png')
 
 # ================================================================ window register overlay
 fig, ax = base('Task03A · Window Register Overlay')
-draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_door_symbols(ax)
+draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_door_symbols(ax); draw_cabinets(ax, qc=True)
 for win in M.get('windows', []):
     r = win['opening_rect_mm']
     col = WIN_COL.get(win['measurement_status'], WIN_COL['CONFIRMED'])
@@ -329,6 +365,23 @@ for row, (name, (xa, xb), (ya, yb)) in enumerate(AREAS):
                                        facecolor='none', edgecolor=colr, lw=1.3, zorder=4))
 fig.tight_layout()
 save(fig, 'window_cleanup_before_after.png')
+
+# ================================================================ kitchen cabinet alignment overlay
+fig, ax = plt.subplots(figsize=(11, 10), dpi=130)
+ax.set_xlim(4300, 8600); ax.set_ylim(-800, 5300); ax.set_aspect('equal')
+ax.set_title('Task03A · Kitchen Cabinet Alignment Overlay (cabinet PDF x measured walls)', fontsize=11)
+ax.grid(alpha=.15)
+draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_door_symbols(ax)
+draw_cabinets(ax, qc=True)
+for t in ax.texts:
+    t.set_clip_on(True)              # keep out-of-zoom labels from inflating the canvas
+ax.legend(handles=[Line2D([], [], color='#f9ab00', lw=6, alpha=.5, label='base cabinet'),
+                   Line2D([], [], color='#e8710a', lw=6, alpha=.6, label='tall cab / wall cab'),
+                   Line2D([], [], color='#b06000', lw=1.2, ls=':', label='equipment slot'),
+                   Line2D([], [], color='#1a73e8', lw=2, label='window / glass door'),
+                   Line2D([], [], color=WCOL['parapet'], lw=6, label='parapet')],
+          fontsize=6, loc='lower left')
+save(fig, 'kitchen_cabinet_alignment_overlay.png')
 
 # ================================================================ S4 split-level study
 fig, ax = base('Task03A · Split-Level Accessibility Study(2 risers + ramp)')

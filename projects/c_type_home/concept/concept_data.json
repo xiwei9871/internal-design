@@ -349,13 +349,13 @@
   {
    "id": "K-CAB",
    "rect": [
-    5500.0,
-    0.0,
-    8200.0,
-    4700.0
+    5500,
+    0,
+    8200,
+    4700
    ],
    "layer": "A-FURN-EXST-KEEP",
-   "note": "2024 cabinets KEEP"
+   "note": "kitchen cabinet KEEP zone — modules in kitchen_cabinet_register"
   },
   {
    "id": "MB-BED",
