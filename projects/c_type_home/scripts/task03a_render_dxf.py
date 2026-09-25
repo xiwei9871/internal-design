@@ -61,6 +61,7 @@ WALL_FACE = {  # render-only wall poche, by canonical type
     'railing_parapet': dict(fc='#eeeeee', ec='#a0a0a0', lw=0.6, z=1),
 }
 REVIEW_WALL_FACE_ALPHA = 0.45            # review gets a lighter poche underlay
+CANONICAL_WALL_TYPES = {'exterior', 'interior', 'shaft', 'railing_parapet'}
 
 
 def validate_canonical_alignment(dxf_path, *, emit=True):
@@ -75,7 +76,12 @@ def validate_canonical_alignment(dxf_path, *, emit=True):
         if w.get('disposition') != 'EXISTING':
             continue
         is_parapet = w.get('type') == 'railing_parapet'
-        layers = {'A-PARP-EXST', 'S-S.WALL'} if is_parapet else {'A-WALL-EXST-CORR', 'S-S.WALL'}
+        wall_type = w.get('type')
+        if wall_type not in CANONICAL_WALL_TYPES:
+            raise RuntimeError(f"canonical alignment failed for {dxf_path.name}: {w['id']} unknown wall type {wall_type!r}")
+        category = 'parapet' if is_parapet else 'solid'
+        layers = ({'A-PARP-EXST', 'S-S.WALL'} if category == 'parapet'
+                  else {'A-WALL-EXST-CORR', 'S-S.WALL'})
         x1, y1, x2, y2 = w['rect_mm']
         horizontal = (x2 - x1) >= (y2 - y1)
         intervals = []
@@ -108,7 +114,8 @@ def validate_canonical_alignment(dxf_path, *, emit=True):
         span = (x2 - x1) if horizontal else (y2 - y1)
         coverage = total / max(span, 1.0)
         passed = coverage >= 0.5
-        item = {'wall_id': w['id'], 'matched_layers': sorted(matched),
+        item = {'wall_id': w['id'], 'wall_type': wall_type, 'category': category,
+                'matched_layers': sorted(matched),
                 'coverage': round(coverage, 4), 'pass': passed}
         report.append(item)
         if emit:
@@ -304,8 +311,8 @@ def before_after(dxf_path, name, zones):
     print(f'{name}.png  (before/after zones)')
 
 
-validate_canonical_alignment(CAD / 'design_v01_existing_sync.dxf')
-validate_canonical_alignment(CAD / 'design_v02_f1_l1.dxf')
+validate_canonical_alignment(CAD / 'design_v01_existing_sync.dxf', emit=False)
+validate_canonical_alignment(CAD / 'design_v02_f1_l1.dxf', emit=False)
 render(CAD / 'design_v01_existing_sync.dxf', 'CAD_REVIEW', 'rc4_v01_cad_review')
 render(CAD / 'design_v01_existing_sync.dxf', 'PRESENTATION', 'rc4_v01_presentation')
 render(CAD / 'design_v02_f1_l1.dxf', 'CAD_REVIEW', 'rc4_v02_f1_cad_review')
