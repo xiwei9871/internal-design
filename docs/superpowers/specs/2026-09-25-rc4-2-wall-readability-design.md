@@ -44,7 +44,10 @@ merged into the wall style.
    rectangles using axis-aligned rectangle splitting. The result is a list of
    rectangular fragments, not a compound Matplotlib path hole. The renderer
    records the source wall area, cut area, and fragment area so the identity
-   `wall area - cut area = fragment area` can be gated.
+   `wall area - cut area = fragment area` can be gated. A hostless fenestration
+   whose opening is already a gap between active DXF wall segments is recorded
+   as an `active_gap` association after checking its glazing geometry and gap
+   boundaries; it is never accepted from JSON alone.
 5. Draw DXF entities through the ezdxf frontend using the existing layer/type
    filters.
 6. Save PNG, PDF, and a provenance sidecar that includes the source DXF hash,
@@ -118,8 +121,9 @@ The existing gate checker is extended with five gates:
   `HUMAN VISUAL REVIEW = REQUIRED`; this gate never claims that a drawing
   looks good by itself.
 - **RC4-G15 wall-window hierarchy:** all 9 registered fenestration records have
-  an opening cut associated with a wall or an explicitly registered parapet
-  host, with no uncut solid overlay covering the opening.
+  either a `wall_cut`/`parapet_cut` association or a verified `active_gap`
+  association bounded by active DXF geometry, with no uncut solid overlay
+  covering the opening.
 - **RC4-G16 parapet hierarchy:** all four canonical parapets are reported as
   parapets, use the parapet style, and are absent from the wall-face list.
 - **RC4-G17 Presentation layer hygiene:** the render sidecars report no visible
@@ -149,15 +153,16 @@ after inspecting the full-plan and before/after images.
 
 The renderer fails fast if a required semantic wall/window field is missing,
 if a wall rectangle is invalid, or if a requested versioned DXF is absent. A
-window that has no host wall may still be accepted when its opening rectangle
-is covered by a canonical existing wall or parapet; the gate records that
-association explicitly. No unregistered survey fill is used as a fallback.
+A window that has no host wall may be accepted only when its opening rectangle
+is covered by active glazing and bounded by active wall segments; the gate
+records that association explicitly as `active_gap`. No unregistered survey
+fill is used as a fallback.
 
 ## Verification
 
 After implementation:
 
-1. Run the renderer with the bundled workspace Python so all four formal
+1. Run the renderer with the project `.venv/bin/python` so all four formal
    renders and RC4.2 audit outputs are regenerated.
 2. Run `scripts/task03a_gate_check.py` and confirm all prior gates plus
    RC4-G14–G18 pass.
