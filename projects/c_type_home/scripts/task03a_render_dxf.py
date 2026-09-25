@@ -311,22 +311,27 @@ def before_after(dxf_path, name, zones):
     print(f'{name}.png  (before/after zones)')
 
 
-validate_canonical_alignment(CAD / 'design_v01_existing_sync.dxf', emit=False)
-validate_canonical_alignment(CAD / 'design_v02_f1_l1.dxf', emit=False)
-render(CAD / 'design_v01_existing_sync.dxf', 'CAD_REVIEW', 'rc4_v01_cad_review')
-render(CAD / 'design_v01_existing_sync.dxf', 'PRESENTATION', 'rc4_v01_presentation')
-render(CAD / 'design_v02_f1_l1.dxf', 'CAD_REVIEW', 'rc4_v02_f1_cad_review')
-render(CAD / 'design_v02_f1_l1.dxf', 'PRESENTATION', 'rc4_v02_f1_presentation')
-# RC4.1 visual check: north balcony must read as open parapet/railing, not wall
-render(CAD / 'design_v01_existing_sync.dxf', 'CAD_REVIEW', 'rc4_v01_open_balcony_check',
-       crop=[7200, 10400, 13600, 14000])
-# RC4.2 readability outputs
-ZONES = {
-    'living-N-window': [2500, 11000, 7500, 14000],
-    'Nbalc-guestbath-guestbed-study': [7400, 9000, 14000, 14000],
-    'dining-lifebalc-kitchen': [800, -800, 8300, 5200],
-    'smbath-mbath-mbed-smbed': [7400, -800, 16800, 9200],
-}
-before_after(CAD / 'design_v02_f1_l1.dxf', 'rc4_2_wall_display_before_after', ZONES)
-render(CAD / 'design_v02_f1_l1.dxf', 'PRESENTATION', 'rc4_2_wall_readability_check',
-       label_walls=True)
+def main():
+    validate_canonical_alignment(CAD / 'design_v01_existing_sync.dxf', emit=False)
+    validate_canonical_alignment(CAD / 'design_v02_f1_l1.dxf', emit=False)
+    render(CAD / 'design_v01_existing_sync.dxf', 'CAD_REVIEW', 'rc4_v01_cad_review')
+    render(CAD / 'design_v01_existing_sync.dxf', 'PRESENTATION', 'rc4_v01_presentation')
+    render(CAD / 'design_v02_f1_l1.dxf', 'CAD_REVIEW', 'rc4_v02_f1_cad_review')
+    render(CAD / 'design_v02_f1_l1.dxf', 'PRESENTATION', 'rc4_v02_f1_presentation')
+    # RC4.1 visual check: north balcony must read as open parapet/railing, not wall
+    render(CAD / 'design_v01_existing_sync.dxf', 'CAD_REVIEW', 'rc4_v01_open_balcony_check',
+           crop=[7200, 10400, 13600, 14000])
+    # RC4.2 readability outputs
+    ZONES = {
+        'living-N-window': [2500, 11000, 7500, 14000],
+        'Nbalc-guestbath-guestbed-study': [7400, 9000, 14000, 14000],
+        'dining-lifebalc-kitchen': [800, -800, 8300, 5200],
+        'smbath-mbath-mbed-smbed': [7400, -800, 16800, 9200],
+    }
+    before_after(CAD / 'design_v02_f1_l1.dxf', 'rc4_2_wall_display_before_after', ZONES)
+    render(CAD / 'design_v02_f1_l1.dxf', 'PRESENTATION', 'rc4_2_wall_readability_check',
+           label_walls=True)
+
+
+if __name__ == '__main__':
+    main()
