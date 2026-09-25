@@ -123,8 +123,9 @@ def draw_furn(ax, label_ids=True):
 
 def draw_furn_presentation(ax):
     """owner-facing furniture: friendly labels, no internal IDs."""
-    NICE = {'SOFA-3': '3-seat sofa', 'SOFA-2': '2-seat sofa', 'LOUNGE-1': 'lounge',
-            'COFFEE-MOV': 'coffee (movable)', 'PROJ-SCREEN': 'screen wall',
+    NICE = {'LIV-SOFA-3': '3-seat sofa', 'LIV-SOFA-2': '2-seat sofa',
+            'LIV-LOUNGE': 'lounge', 'LIV-SIDE-TABLE': 'side table',
+            'LIV-COFFEE-MOV': 'coffee (movable)', 'LIV-MEDIA-WALL': 'media wall',
             'DIN-TABLE': 'dining 1500×600', 'K-CAB': 'kitchen cabinets (keep)',
             'MB-BED': 'bed 1800×2100', 'MB-WARD': 'wardrobe (keep)',
             'SMB-BED': 'bed 1800×2100', 'SMB-WARD': 'wardrobe',
@@ -132,12 +133,13 @@ def draw_furn_presentation(ax):
             'ST-NAS': 'NAS/printer shelf', 'GB-BUNK': 'bunk 1500×2100 (lower+optional upper)',
             'GB-DESK': 'desk', 'GB-GLASSDOOR-ZONE': None, 'GB-BALC-STEP': None,
             'NB-WD': 'W+D stacked (keep)', 'NB-PLANTS': None, 'NB-TEA': 'tea set (movable)',
-            'SHOE-CAB': 'shoe cab (keep)', 'BENCH': 'bench',
+            'ENTRY-SHOE-CAB': 'shoe cab (keep)', 'ENTRY-BENCH': 'bench',
+            'LBALC-CAB': 'balcony cab (keep)',
             'GBATH-VANITY': 'vanity', 'GBATH-WC': 'WC', 'GBATH-SHOWER': 'shower',
             'GBATH-3KG': '3kg washer', 'MBATH-SHOWER': 'shower 1600×900',
             'MBATH-WC': 'WC', 'MBATH-VANITY': 'vanity', 'MBATH-RAD': 'radiator',
             'SMB2-SHOWER': 'shower 800×1650', 'SMB2-WC': 'WC', 'SMB2-VANITY': 'vanity',
-            'RAMP': 'ramp 3000×1100 (provisional)', 'STAIR': '2 risers'}
+            'RAMP': 'ramp 2500×1100 (provisional)', 'STAIR-EXISTING': 'existing 3-step stair'}
     for f in CD['furniture']:
         x1, y1, x2, y2 = f['rect']
         nice = NICE.get(f['id'], f['id'])
@@ -253,7 +255,7 @@ save(fig, 'task03a_s2_demolition.png')
 fig, ax = base('Task03A · Proposed Furniture Plan — PRESENTATION')
 draw_walls(ax, 'current', presentation=True); draw_windows(ax); draw_door_symbols(ax)
 draw_furn_presentation(ax); draw_new(ax); draw_cabinets(ax)
-ROOMS = [('FLEX FAMILY ROOM 客厅', 4200, 10600), ('DINING 餐厅', 3700, 6600),
+ROOMS = [('FLEX FAMILY ROOM 客厅', 4200, 10600), ('DINING 餐厅', 4000, 2200),
          ('KITCHEN 厨房', 6200, 2500), ('LIFE BALC 生活阳台', 2600, 1500),
          ('MASTER BED 主卧', 12500, 2800), ('SEC MASTER BED 次主卧', 9000, 2800),
          ('SEC MASTER BATH 次主卫', 9200, 5600), ('MASTER BATH 主卫', 14200, 5500),
@@ -478,6 +480,47 @@ for ax, opt in zip(axs, 'WS'):
 fig.savefig(QC / 'task03a_s6_smb_ws.png', bbox_inches='tight', facecolor='white')
 fig.savefig(QC / 'task03a_s6_smb_ws.pdf', bbox_inches='tight', facecolor='white')
 print('task03a_s6_smb_ws.png')
+
+# ================================================================ F1 PRESENTATION (L1 owner-facing)
+fig, ax = base('Task03A-F1 · Level-1 Furniture Final — PRESENTATION')
+draw_walls(ax, 'current', presentation=True); draw_windows(ax); draw_door_symbols(ax)
+draw_furn_presentation(ax); draw_new(ax); draw_cabinets(ax)
+for t, x, y in ROOMS:
+    ax.text(x, y, t, fontsize=8, fontweight='bold', color='#202124', zorder=6)
+for txt, x, y in [('living centre kept OPEN — kids/ageing/movable furniture', 4300, 9000),
+                 ('MEDIA WALL: A clean / B floating stone — undecided', 7950, 13300),
+                 ('ramp 2500×1100, 1:6.25 — assisted/power wheelchair', 4600, 6000),
+                 ('existing 3-step stair = daily route', 6900, 8100),
+                 ('level delta TO_VERIFY ≤350/~400', 8100, 6900)]:
+    ax.text(x, y, txt, fontsize=6, color='#666', style='italic')
+ax.legend(handles=[Line2D([], [], color=WCOL['keep'], lw=6, label='existing wall'),
+                   Line2D([], [], color=WCOL['noopen'], lw=6, label='exterior / no-opening wall'),
+                   Line2D([], [], color=WCOL['new'], lw=6, label='new wall'),
+                   Line2D([], [], color='#1a73e8', lw=2, label='window / glass door'),
+                   Line2D([], [], color=WCOL['parapet'], lw=6, label='balcony parapet / railing'),
+                   Line2D([], [], color='#f4b400', lw=6, alpha=.5, label='furniture'),
+                   Line2D([], [], color='#f9ab00', lw=6, alpha=.5, label='KEEP furniture/cabinet'),
+                   Line2D([], [], color='#34a853', lw=6, alpha=.5, label='bathroom fixture'),
+                   Line2D([], [], color='#1a73e8', lw=6, alpha=.4, label='existing stair / new ramp')],
+          fontsize=6, loc='lower left')
+save(fig, 'task03a_f1_level1_furniture_presentation.png')
+
+# ================================================================ F1 QC (L1 diagnostic)
+fig, ax = base('Task03A-F1 · Level-1 Furniture Final — QC')
+draw_walls(ax, 'current'); draw_windows(ax, qc=True); draw_furn(ax); draw_cabinets(ax, qc=True)
+draw_openings(ax); draw_new(ax)
+for s in CD['door_swings']:
+    r = s['rect']
+    ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
+                           edgecolor='#e8710a', lw=1.2, ls=':', zorder=4))
+    ax.text(r[0], r[3]+80, 'swing '+s['door'], fontsize=5, color='#e8710a')
+for pname, segs in CD['l1_paths'].items():
+    for r in segs:
+        ax.add_patch(Rectangle((r[0], r[1]), r[2]-r[0], r[3]-r[1], facecolor='none',
+                               edgecolor='#188038', lw=1.4, ls='-.', zorder=4))
+    ax.text(segs[0][0], segs[0][3]+100, pname, fontsize=5.5, color='#188038')
+ax.legend(handles=QC_LEGEND, fontsize=5.5, loc='lower left', ncol=2)
+save(fig, 'task03a_f1_level1_furniture_qc.png')
 
 # RC3.1: sidecar manifest — every rendered sheet declares the canonical base it used
 json.dump({'canonical_sha': CANON_SHA, 'outputs': _RENDERED},

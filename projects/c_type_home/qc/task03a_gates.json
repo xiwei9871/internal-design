@@ -38,12 +38,12 @@
     {
       "gate": "G8 living flexible core open",
       "result": "PASS",
-      "detail": "open core 2800x3200; intruders=[] (small movable table exempt)"
+      "detail": "open core 3800x4350; intruders=[] (small movable table exempt)"
     },
     {
       "gate": "G9 stair/ramp documented, slope PROVISIONAL",
       "result": "PASS",
-      "detail": "run 3000x1100; slope 1:7.5 @400mm / 1:8.6 @350mm \u2014 PROVISIONAL; assisted-use (no code claim)"
+      "detail": "run 2500x1100; slope 400 / 2500 = 1:6.25 \u2014 PROVISIONAL; assisted-use (no code claim)"
     },
     {
       "gate": "G10 level delta conflict recorded",
@@ -68,7 +68,7 @@
     {
       "gate": "G13 KEEP furniture/cabinets placed",
       "result": "PASS",
-      "detail": "keeps: ['K-CAB', 'MB-WARD', 'ST-BOOK', 'NB-WD', 'SHOE-CAB']"
+      "detail": "keeps: ['K-CAB', 'MB-WARD', 'ST-BOOK', 'NB-WD', 'ENTRY-SHOE-CAB', 'LBALC-CAB']"
     },
     {
       "gate": "G14 4 rooms + 3 baths functional",
@@ -103,7 +103,7 @@
     {
       "gate": "G20 split-level net-area account present",
       "result": "PASS",
-      "detail": "returned 4.09 vs ramp 3.3 -> net +0.79m2 (PROVISIONAL)"
+      "detail": "returned 4.09 vs ramp 2.75 -> net +1.34m2 (PROVISIONAL)"
     },
     {
       "gate": "G21 registry IDs == owner truth set (exact, not subset)",
@@ -136,9 +136,9 @@
       "detail": "measured_door_count=14; model_door_count=14; missing_door_ids=set()"
     },
     {
-      "gate": "G27 layout freeze vs RC2.1",
+      "gate": "G27 layout freeze vs RC2.1 (L2/background scope)",
       "result": "PASS",
-      "detail": "changed=none (windows/wall-split/render changes exempt)"
+      "detail": "changed=none (L1 furniture governed by F1 gates)"
     },
     {
       "gate": "G28 canonical base hash + output sidecars consistent",
@@ -154,6 +154,56 @@
       "gate": "G30 no unexplained floor-cabinet overlap",
       "result": "PASS",
       "detail": "collisions=none; exempted=['K-RUN-ExK-RUN-S corner_join 110x65mm (declared)']"
+    },
+    {
+      "gate": "F1-G1 frozen base referenced",
+      "result": "PASS",
+      "detail": "f1_sha=e83c1d69e6b5da74 canon=e83c1d69e6b5da74"
+    },
+    {
+      "gate": "F1-G2 living layout per markup",
+      "result": "PASS",
+      "detail": "missing/bad=none"
+    },
+    {
+      "gate": "F1-G3 old central ramp removed",
+      "result": "PASS",
+      "detail": "residue=none"
+    },
+    {
+      "gate": "F1-G4 new ramp south-edge 2500x1100 -> landing",
+      "result": "PASS",
+      "detail": "rect=[5300, 4715, 7800, 5815] run=2500 width=1100 top_x=7800"
+    },
+    {
+      "gate": "F1-G5 dining table 1500x600 in dining zone",
+      "result": "PASS",
+      "detail": "rect=[3300, 3100, 4800, 3700] old_pos_clear=True"
+    },
+    {
+      "gate": "F1-G6 entry preserved",
+      "result": "PASS",
+      "detail": "present=['ENTRY-SHOE-CAB', 'ENTRY-BENCH']"
+    },
+    {
+      "gate": "F1-G7 kitchen cabinets frozen vs canonical",
+      "result": "PASS",
+      "detail": "cabinet section == kitchen_cabinet_register"
+    },
+    {
+      "gate": "F1-G8 five L1 circulation paths fixture-free",
+      "result": "PASS",
+      "detail": "blockers=none"
+    },
+    {
+      "gate": "F1-G9 L1 furniture no collision",
+      "result": "PASS",
+      "detail": "collisions=none"
+    },
+    {
+      "gate": "F1-G10 L2 furniture/baths unchanged",
+      "result": "PASS",
+      "detail": "changed=none"
     }
   ],
   "overall": "PASS"

@@ -66,22 +66,24 @@ CD['level'] = {
  'stair_mm': [7200, 6600, 7800, 7800],
  'landing_kept_mm': [[7800, 4650, 9100, 6300], [7800, 6300, 13000, 7800]],
  'returned_to_L1_mm': [5900, 4650, 7200, 7800],
- 'ramp': {'note': 'ASSISTED_WHEELCHAIR_FUTURE_PROVISION not code-compliant; PROVISIONAL pending level measure',
-          'run_mm': 3000, 'width_mm': 1100,
-          'slope': '1:7.5 @400mm / 1:8.6 @350mm — PROVISIONAL',
-          'rect_mm': [4150, 5600, 7150, 6700],
-          'topology': 'climbs +x along south edge of returned strip (kitchen side); '
-                      'top lands on former-niche open passage x7150-7800 y4650-6600 -> upper landing'},
- # RC2 E: honest net-area account — ramp footprint eats most of the returned area;
- # the real gain is regularising the living rectangle, not net floor area.
+ 'ramp': {'note': 'ASSISTED / POWER-WHEELCHAIR RAMP — NOT code-compliant accessible ramp; PROVISIONAL pending level measure',
+          'run_mm': 2500, 'width_mm': 1100,
+          'slope': '400 / 2500 = 1:6.25 — PROVISIONAL',
+          'rect_mm': [5300, 4715, 7800, 5815],
+          'topology': 'owner-marked zone: south edge of L1 public transition strip, E-W, climbs +x; '
+                      'high end flush with L2 landing west edge x7800 y4715-5815; '
+                      'low end on L1 living floor x5300; 65mm clear of G-DIN-LIV track; '
+                      'coexists with existing stair, no dead end'},
+ # RC2 E/F1: honest net-area account — ramp footprint eats part of the returned
+ # area; the real gain is regularising the living rectangle, not net floor area.
  'area_comparison': {
    'returned_platform_m2': round((7200-5900)*(7800-4650)/1e6, 2),          # 4.09
-   'ramp_footprint_m2': round(3000*1100/1e6, 2),                           # 3.30
-   'net_unobstructed_public_gain_m2': round((7200-5900)*(7800-4650)/1e6 - 3000*1100/1e6, 2),  # +0.79
+   'ramp_footprint_m2': round(2500*1100/1e6, 2),                           # 2.75
+   'net_unobstructed_public_gain_m2': round((7200-5900)*(7800-4650)/1e6 - 2500*1100/1e6, 2),  # +1.34
    'living_largest_clear_rect': '4850x4850 (23.5m2) + returned annex — PROVISIONAL',
    'primary_circulation_mm': '>=1100 (ramp doubles as future step-free route)',
-   'verdict': 'net floor gain modest (+0.79m2); value = rectangular living room + '
-              'future assisted-wheelchair provision — PROVISIONAL until level delta measured'},
+   'verdict': 'net floor gain modest (+1.34m2); value = rectangular living room + '
+              'future assisted/power-wheelchair provision — PROVISIONAL until level delta measured'},
 }
 
 # ---- new walls (concept)
@@ -169,15 +171,19 @@ F = []
 def furn(id_, x1, y1, x2, y2, lay='A-FURN-PROP', note=''):
     F.append({'id': id_, 'rect': [x1, y1, x2, y2], 'layer': lay, 'note': note})
 
-# LIVING (x2900-7750 y7900-12750 + annex x5900-7200 y4650-7800 lowered)
-# viewing axis W->E: screen on east wall; sofas face east/north, central zone kept open
-furn('SOFA-3', 2900, 9500, 3800, 11700, note='3-seat on west wall, faces east screen')
-furn('SOFA-2', 4600, 7900, 6300, 8800, note='2-seat south, faces north')
-furn('LOUNGE-1', 3300, 12000, 4100, 12700, note='lounge chair NW')
-furn('COFFEE-MOV', 5000, 9800, 5800, 10400, note='small movable round-corner table')
-furn('PROJ-SCREEN', 7200, 9800, 7750, 12200, lay='A-NOTE', note='projection/laser-TV relation on east wall (no fixed cabinet)')
-# DINING (x2900-5700 y2560-7900): table 1500x600 near kitchen side
-furn('DIN-TABLE', 3700, 4800, 5200, 5400, note='1500x600 table, seats <=8 peak')
+# LIVING (x2900-7750 y4650-13550) — F1 owner-confirmed layout:
+# 3-seat on west wall (N-S), 2-seat horizontal under north bay window,
+# single lounge south-central, NW corner side table (LOUNGE-1 removed),
+# small movable coffee table, media wall position locked on east wall
+furn('LIV-SOFA-3', 2900, 9500, 3800, 11700, note='3-seat 2200x900 on west wall, faces east media wall')
+furn('LIV-SOFA-2', 4550, 11800, 6350, 12650, note='2-seat 1800x850 horizontal under W-LIV-N bay; 100mm clear of window face')
+furn('LIV-LOUNGE', 5450, 6200, 6950, 7300, note='single day-lounge 1500x1100, south-central; old LOUNGE-1 deleted')
+furn('LIV-SIDE-TABLE', 3450, 11850, 3900, 12300, lay='A-FURN-PROP', note='small movable side table 450x450, NW corner (replaces LOUNGE-1)')
+furn('LIV-COFFEE-MOV', 5700, 8400, 6450, 9500, note='small movable coffee table 750x1100; centre kept open for kids/ageing')
+furn('LIV-MEDIA-WALL', 7750, 9000, 7900, 12400, lay='A-NOTE',
+     note='MEDIA WALL locked: OPTION_A=CLEAN_WALL / OPTION_B=FLOATING_STONE_PANEL — undecided; projector/laser-TV oriented, NO full-wall cabinet')
+# DINING (x2900-5500 y2560-4450, south of G-DIN-LIV): table 1500x600 in real dining zone
+furn('DIN-TABLE', 3300, 3100, 4800, 3700, note='1500x600 table, <=4 adults+kid daily; clear of entry, G-DIN-LIV, kitchen edge, ramp')
 # KITCHEN: cabinet keep ZONE boundary only — real footprints live in
 # kitchen_cabinet_register.json (RC3); G3 uses this rect as the no-intrusion zone
 furn('K-CAB', 5500, 0, 8200, 4700, lay='A-FURN-EXST-KEEP',
@@ -207,8 +213,11 @@ furn('NB-WD', 7900, 13064, 8600, 13764, lay='A-FURN-EXST-KEEP', note='10kg W+D s
 furn('NB-PLANTS', 7900, 13100, 13000, 13400, lay='A-NOTE', note='plant line along glazing')
 furn('NB-TEA', 11000, 11800, 11800, 12400, note='light movable tea set')
 # ENTRY (west wall x2700-2900, y~4500-5500 zone / door at y5440-6540)
-furn('SHOE-CAB', 2900, 4600, 3400, 5600, lay='A-FURN-EXST-KEEP', note='existing low shoe cabinet')
-furn('BENCH', 2900, 6800, 3400, 7200, note='shoe bench opposite door side')
+furn('ENTRY-SHOE-CAB', 2900, 4600, 3400, 5600, lay='A-FURN-EXST-KEEP', note='existing low shoe cabinet, south side of entry door')
+furn('ENTRY-BENCH', 2900, 6800, 3400, 7200, note='shoe bench, north side of entry door')
+# LIFE BALCONY: existing cabinet KEEP (upper storage + counter + lower storage)
+furn('LBALC-CAB', 1400, 64, 2000, 2564, lay='A-FURN-EXST-KEEP',
+     note='existing balcony cabinet KEEP — storage + counter, no redesign')
 # GUEST BATH x7900-9650 y8000-10700: front-dry(S)/rear-wet(N)
 furn('GBATH-VANITY', 7900, 8000, 8600, 8600, lay='A-FIXT-PLUMB', note='dry zone vanity')
 furn('GBATH-WC', 8700, 8000, 9400, 8600, lay='A-FIXT-PLUMB', note='smart toilet')
@@ -227,12 +236,23 @@ furn('MBATH-RAD', 13900, 4650, 14500, 4900, lay='A-FIXT-PLUMB', note='radiator k
 furn('SMB2-SHOWER', 10500, 4650, 11300, 6300, lay='A-FIXT-PLUMB', note='800x1650 east column (shared master-bath wet wall); glass panel y5400-6300, 750 entry at south')
 furn('SMB2-WC', 9050, 5500, 9700, 6300, lay='A-FIXT-PLUMB', note='smart toilet NW 650x800, 800mm front clearance')
 furn('SMB2-VANITY', 9850, 3900, 10500, 4450, lay='A-FIXT-PLUMB', note='700x550 vanity in annex east, clear of door swing')
-# RAMP (kitchen-side of platform edge, in lowered strip)
+# RAMP (F1: owner-marked south-edge zone, E-W, top flush with L2 landing)
 furn('RAMP', *CD['level']['ramp']['rect_mm'], lay='A-ACCESS-RAMP',
-     note='ramp 3000 run, slope 1:7.5-1:8.6 PROVISIONAL, ASSISTED WHEELCHAIR FUTURE PROVISION')
-# STAIR
-furn('STAIR', *CD['level']['stair_mm'], lay='A-ACCESS-STAIR', note='2 risers, delta LEVEL_TO_VERIFY (<=350 owner / ~400 CAD)')
+     note='ramp 2500x1100, slope 400/2500=1:6.25 PROVISIONAL, ASSISTED / POWER-WHEELCHAIR RAMP')
+# EXISTING STAIR (owner: existing 3-step transition; exact delta TO_VERIFY)
+furn('STAIR-EXISTING', *CD['level']['stair_mm'], lay='A-ACCESS-STAIR',
+     note='EXISTING 3-STEP TRANSITION; exact level delta TO_VERIFY (<=350 owner / ~400 CAD)')
 CD['furniture'] = F
+
+# ---- F1 circulation paths (fixture-free zones, checked by F1-G8)
+L1_PATHS = {
+ 'P1 entry->living':             [[2950, 5600, 3900, 6764], [3400, 6764, 4600, 8500]],
+ 'P2 entry->dining->kitchen':    [[3400, 4530, 4500, 5064], [2950, 3700, 5500, 4530]],
+ 'P3 living->stair->L2':         [[4200, 7300, 7150, 7900], [7150, 6600, 7800, 7900]],
+ 'P4 L1->ramp->L2 landing':      [[4500, 4715, 5300, 5815], [5300, 4715, 7800, 5815], [7800, 4715, 8150, 5815]],
+ 'P5 living->G-LIV-NBALC->balc': [[6900, 11000, 7800, 12000], [7800, 11800, 7900, 12650]],
+}
+CD['l1_paths'] = L1_PATHS
 
 # ================================================================ emit main DXF
 doc = new_doc(); msp = doc.modelspace()
@@ -287,14 +307,14 @@ rect(msp, 'A-ACCESS-RAMP', *rr)
 for i in range(11):
     x = rr[0] + (rr[2] - rr[0]) * i / 10
     msp.add_line((x, rr[1]), (x, rr[3]), dxfattribs={'layer': 'A-ACCESS-RAMP'})
-label(msp, 'RAMP 3000 run, slope 1:7.5-8.6 PROVISIONAL assisted-use', rr[0], rr[3] + 120, 130)
+label(msp, 'RAMP 2500 run, slope 400/2500=1:6.25 PROVISIONAL, ASSISTED/POWER-WHEELCHAIR', rr[0], rr[3] + 120, 130)
 # stair
 rect(msp, 'A-ACCESS-STAIR', *CD['level']['stair_mm'])
 sx = CD['level']['stair_mm']
 for i in range(3):
     x = sx[0] + (sx[2] - sx[0]) * i / 2
     msp.add_line((x, sx[1]), (x, sx[3]), dxfattribs={'layer': 'A-ACCESS-STAIR'})
-label(msp, '2 RISERS (delta TO_VERIFY)', sx[0], sx[3] + 120, 130)
+label(msp, 'EXISTING 3-STEP TRANSITION (delta TO_VERIFY)', sx[0], sx[3] + 120, 130)
 # furniture + labels
 for f in F:
     rect(msp, f['layer'], *f['rect'])
@@ -355,8 +375,71 @@ d.saveas(str(ROOT / 'concept' / 'split_level_study.dxf'))
 
 json.dump(CD, open(ROOT / 'concept' / 'concept_data.json', 'w'), ensure_ascii=False, indent=1)
 _sha = hashlib.sha256((ROOT / 'current_existing' / 'canonical_plan_v1.json').read_bytes()).hexdigest()[:16]
+
+# ---- F1: furniture_l1_final.json — categorised L1 contract referencing frozen base
+L1_IDS = {f['id'] for f in F}
+def _cat(id_):
+    if id_ in ('ENTRY-SHOE-CAB', 'ENTRY-BENCH', 'LBALC-CAB', 'K-CAB', 'NB-WD'):
+        return 'fixed_keep'
+    if id_ in ('RAMP', 'STAIR-EXISTING'):
+        return 'accessibility'
+    if id_ == 'LIV-MEDIA-WALL':
+        return 'media'
+    if id_ in ('LIV-SIDE-TABLE', 'LIV-COFFEE-MOV', 'NB-TEA'):
+        return 'movable_furniture'
+    return 'proposed_large_furniture'
+F1 = {'canonical_geometry_sha': _sha,
+      'scope': 'L1 furniture final — frozen base RC3.1; L2 furniture/baths untouched',
+      'categories': {'fixed_keep': [], 'proposed_large_furniture': [],
+                     'movable_furniture': [], 'accessibility': [], 'media': [],
+                     'circulation': []},
+      'removed': ['LOUNGE-1', 'old central RAMP [4150,5600,7150,6700]', 'PROJ-SCREEN (-> LIV-MEDIA-WALL)'],
+      'media_wall_options': {'OPTION_A': 'CLEAN_WALL', 'OPTION_B': 'FLOATING_STONE_PANEL',
+                             'status': 'UNDECIDED — position locked only'},
+      'north_balcony': {'current': 'OPEN_NOT_ENCLOSED',
+                        'future_enclosure': 'PROPOSED_FUTURE (note only, not current)'},
+      'paths': L1_PATHS}
+L1_ZONE = {'LIV-SOFA-3', 'LIV-SOFA-2', 'LIV-LOUNGE', 'LIV-SIDE-TABLE', 'LIV-COFFEE-MOV',
+           'LIV-MEDIA-WALL', 'DIN-TABLE', 'ENTRY-SHOE-CAB', 'ENTRY-BENCH', 'LBALC-CAB',
+           'K-CAB', 'RAMP', 'STAIR-EXISTING', 'NB-WD', 'NB-PLANTS', 'NB-TEA'}
+for f in F:
+    if f['id'] in L1_ZONE:
+        F1['categories'][_cat(f['id'])].append(f)
+json.dump(F1, open(ROOT / 'concept' / 'furniture_l1_final.json', 'w'), ensure_ascii=False, indent=1)
+
+# ---- F1 dedicated DXF: canonical base + L1 furniture only (L2 shown as background)
+doc1 = new_doc(); m1 = doc1.modelspace()
+walls(m1)
+for o in M['openings']:
+    lay = {'sliding_glass_3track': 'A-GLAZ-EXST-KEEP', 'glazing_door_double': 'A-GLAZ-EXST-KEEP',
+           'glazing_door': 'A-GLAZ-EXST-KEEP',
+           'open_passage': 'A-NOTE'}.get(o['kind'], 'A-DOOR-EXST-KEEP')
+    rect(m1, lay, *o['rect_mm'])
+for win in M.get('windows', []):
+    lay = 'A-WIND-EXST-KEEP'
+    r = win['opening_rect_mm']
+    if (r[2]-r[0]) >= (r[3]-r[1]):
+        for i in (0.25, 0.5, 0.75):
+            m1.add_line((r[0], r[1] + (r[3]-r[1])*i), (r[2], r[1] + (r[3]-r[1])*i), dxfattribs={'layer': lay})
+    else:
+        for i in (0.25, 0.5, 0.75):
+            m1.add_line((r[0] + (r[2]-r[0])*i, r[1]), (r[0] + (r[2]-r[0])*i, r[3]), dxfattribs={'layer': lay})
+    bay = win.get('bay')
+    if bay:
+        for j in bay['jambs']:
+            rect(m1, lay, *j)
+        rect(m1, lay, *bay['front'])
+for c in M.get('kitchen_cabinets', []):
+    rect(m1, 'A-CAB-EXST-KEEP', *c['rect_mm'])
+for f in F:
+    if f['id'] in L1_ZONE:
+        rect(m1, f['layer'], *f['rect'])
+        label(m1, f['id'], (f['rect'][0]+f['rect'][2])/2 - 300, (f['rect'][1]+f['rect'][3])/2, 110)
+doc1.saveas(str(ROOT / 'concept' / 'task03a_f1_level1_furniture.dxf'))
+
 json.dump({'canonical_sha': _sha,
            'outputs': ['task03a_preferred_plan.dxf', 'option_smb_entry_S.dxf',
-                       'option_smb_entry_W.dxf', 'split_level_study.dxf']},
+                       'option_smb_entry_W.dxf', 'split_level_study.dxf',
+                       'task03a_f1_level1_furniture.dxf']},
           open(ROOT / 'concept' / 'concept_dxf_base.json', 'w'), indent=1)
-print('concept dxf + options + study written; furniture:', len(F))
+print('concept dxf + options + study + f1 written; furniture:', len(F))

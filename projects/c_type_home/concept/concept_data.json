@@ -30,25 +30,25 @@
    7800
   ],
   "ramp": {
-   "note": "ASSISTED_WHEELCHAIR_FUTURE_PROVISION not code-compliant; PROVISIONAL pending level measure",
-   "run_mm": 3000,
+   "note": "ASSISTED / POWER-WHEELCHAIR RAMP — NOT code-compliant accessible ramp; PROVISIONAL pending level measure",
+   "run_mm": 2500,
    "width_mm": 1100,
-   "slope": "1:7.5 @400mm / 1:8.6 @350mm — PROVISIONAL",
+   "slope": "400 / 2500 = 1:6.25 — PROVISIONAL",
    "rect_mm": [
-    4150,
-    5600,
-    7150,
-    6700
+    5300,
+    4715,
+    7800,
+    5815
    ],
-   "topology": "climbs +x along south edge of returned strip (kitchen side); top lands on former-niche open passage x7150-7800 y4650-6600 -> upper landing"
+   "topology": "owner-marked zone: south edge of L1 public transition strip, E-W, climbs +x; high end flush with L2 landing west edge x7800 y4715-5815; low end on L1 living floor x5300; 65mm clear of G-DIN-LIV track; coexists with existing stair, no dead end"
   },
   "area_comparison": {
    "returned_platform_m2": 4.09,
-   "ramp_footprint_m2": 3.3,
-   "net_unobstructed_public_gain_m2": 0.79,
+   "ramp_footprint_m2": 2.75,
+   "net_unobstructed_public_gain_m2": 1.34,
    "living_largest_clear_rect": "4850x4850 (23.5m2) + returned annex — PROVISIONAL",
    "primary_circulation_mm": ">=1100 (ramp doubles as future step-free route)",
-   "verdict": "net floor gain modest (+0.79m2); value = rectangular living room + future assisted-wheelchair provision — PROVISIONAL until level delta measured"
+   "verdict": "net floor gain modest (+1.34m2); value = rectangular living room + future assisted/power-wheelchair provision — PROVISIONAL until level delta measured"
   }
  },
  "new_walls": [
@@ -281,7 +281,7 @@
  ],
  "furniture": [
   {
-   "id": "SOFA-3",
+   "id": "LIV-SOFA-3",
    "rect": [
     2900,
     9500,
@@ -289,62 +289,73 @@
     11700
    ],
    "layer": "A-FURN-PROP",
-   "note": "3-seat on west wall, faces east screen"
+   "note": "3-seat 2200x900 on west wall, faces east media wall"
   },
   {
-   "id": "SOFA-2",
+   "id": "LIV-SOFA-2",
    "rect": [
-    4600,
-    7900,
-    6300,
-    8800
+    4550,
+    11800,
+    6350,
+    12650
    ],
    "layer": "A-FURN-PROP",
-   "note": "2-seat south, faces north"
+   "note": "2-seat 1800x850 horizontal under W-LIV-N bay; 100mm clear of window face"
   },
   {
-   "id": "LOUNGE-1",
+   "id": "LIV-LOUNGE",
    "rect": [
-    3300,
-    12000,
-    4100,
-    12700
+    5450,
+    6200,
+    6950,
+    7300
    ],
    "layer": "A-FURN-PROP",
-   "note": "lounge chair NW"
+   "note": "single day-lounge 1500x1100, south-central; old LOUNGE-1 deleted"
   },
   {
-   "id": "COFFEE-MOV",
+   "id": "LIV-SIDE-TABLE",
    "rect": [
-    5000,
-    9800,
-    5800,
-    10400
+    3450,
+    11850,
+    3900,
+    12300
    ],
    "layer": "A-FURN-PROP",
-   "note": "small movable round-corner table"
+   "note": "small movable side table 450x450, NW corner (replaces LOUNGE-1)"
   },
   {
-   "id": "PROJ-SCREEN",
+   "id": "LIV-COFFEE-MOV",
    "rect": [
-    7200,
-    9800,
+    5700,
+    8400,
+    6450,
+    9500
+   ],
+   "layer": "A-FURN-PROP",
+   "note": "small movable coffee table 750x1100; centre kept open for kids/ageing"
+  },
+  {
+   "id": "LIV-MEDIA-WALL",
+   "rect": [
     7750,
-    12200
+    9000,
+    7900,
+    12400
    ],
    "layer": "A-NOTE",
-   "note": "projection/laser-TV relation on east wall (no fixed cabinet)"
+   "note": "MEDIA WALL locked: OPTION_A=CLEAN_WALL / OPTION_B=FLOATING_STONE_PANEL — undecided; projector/laser-TV oriented, NO full-wall cabinet"
   },
   {
    "id": "DIN-TABLE",
    "rect": [
-    3700,
+    3300,
+    3100,
     4800,
-    5200,
-    5400
+    3700
    ],
    "layer": "A-FURN-PROP",
-   "note": "1500x600 table, seats <=8 peak"
+   "note": "1500x600 table, <=4 adults+kid daily; clear of entry, G-DIN-LIV, kitchen edge, ramp"
   },
   {
    "id": "K-CAB",
@@ -523,7 +534,7 @@
    "note": "light movable tea set"
   },
   {
-   "id": "SHOE-CAB",
+   "id": "ENTRY-SHOE-CAB",
    "rect": [
     2900,
     4600,
@@ -531,10 +542,10 @@
     5600
    ],
    "layer": "A-FURN-EXST-KEEP",
-   "note": "existing low shoe cabinet"
+   "note": "existing low shoe cabinet, south side of entry door"
   },
   {
-   "id": "BENCH",
+   "id": "ENTRY-BENCH",
    "rect": [
     2900,
     6800,
@@ -542,7 +553,18 @@
     7200
    ],
    "layer": "A-FURN-PROP",
-   "note": "shoe bench opposite door side"
+   "note": "shoe bench, north side of entry door"
+  },
+  {
+   "id": "LBALC-CAB",
+   "rect": [
+    1400,
+    64,
+    2000,
+    2564
+   ],
+   "layer": "A-FURN-EXST-KEEP",
+   "note": "existing balcony cabinet KEEP — storage + counter, no redesign"
   },
   {
    "id": "GBATH-VANITY",
@@ -668,16 +690,16 @@
   {
    "id": "RAMP",
    "rect": [
-    4150,
-    5600,
-    7150,
-    6700
+    5300,
+    4715,
+    7800,
+    5815
    ],
    "layer": "A-ACCESS-RAMP",
-   "note": "ramp 3000 run, slope 1:7.5-1:8.6 PROVISIONAL, ASSISTED WHEELCHAIR FUTURE PROVISION"
+   "note": "ramp 2500x1100, slope 400/2500=1:6.25 PROVISIONAL, ASSISTED / POWER-WHEELCHAIR RAMP"
   },
   {
-   "id": "STAIR",
+   "id": "STAIR-EXISTING",
    "rect": [
     7200,
     6600,
@@ -685,7 +707,85 @@
     7800
    ],
    "layer": "A-ACCESS-STAIR",
-   "note": "2 risers, delta LEVEL_TO_VERIFY (<=350 owner / ~400 CAD)"
+   "note": "EXISTING 3-STEP TRANSITION; exact level delta TO_VERIFY (<=350 owner / ~400 CAD)"
   }
- ]
+ ],
+ "l1_paths": {
+  "P1 entry->living": [
+   [
+    2950,
+    5600,
+    3900,
+    6764
+   ],
+   [
+    3400,
+    6764,
+    4600,
+    8500
+   ]
+  ],
+  "P2 entry->dining->kitchen": [
+   [
+    3400,
+    4530,
+    4500,
+    5064
+   ],
+   [
+    2950,
+    3700,
+    5500,
+    4530
+   ]
+  ],
+  "P3 living->stair->L2": [
+   [
+    4200,
+    7300,
+    7150,
+    7900
+   ],
+   [
+    7150,
+    6600,
+    7800,
+    7900
+   ]
+  ],
+  "P4 L1->ramp->L2 landing": [
+   [
+    4500,
+    4715,
+    5300,
+    5815
+   ],
+   [
+    5300,
+    4715,
+    7800,
+    5815
+   ],
+   [
+    7800,
+    4715,
+    8150,
+    5815
+   ]
+  ],
+  "P5 living->G-LIV-NBALC->balc": [
+   [
+    6900,
+    11000,
+    7800,
+    12000
+   ],
+   [
+    7800,
+    11800,
+    7900,
+    12650
+   ]
+  ]
+ }
 }

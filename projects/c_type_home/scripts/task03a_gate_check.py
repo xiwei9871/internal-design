@@ -63,9 +63,9 @@ gate('G7 balcony glass-door route clear', not bad, f"zone {zone}; blockers={bad}
 
 # G8 living flexible core kept open (small movable tables exempt per owner brief)
 def movable_ok(f):
-    w = f['rect'][2]-f['rect'][0]; h = f['rect'][3]-f['rect'][1]
-    return 'movable' in f.get('note','') and max(w,h) <= 900
-core = [4300, 8900, 7100, 12100]
+    return f['id'] in {'LIV-COFFEE-MOV', 'LIV-SIDE-TABLE'} or \
+        ('movable' in f.get('note', '') and max(f['rect'][2]-f['rect'][0], f['rect'][3]-f['rect'][1]) <= 900)
+core = [3900, 7400, 7700, 11750]   # F1 owner layout: between W sofa / S lounge / N 2-seat / E media wall
 bad = [f['id'] for f in F if f['layer'] == 'A-FURN-PROP' and inter(f['rect'], core) and not movable_ok(f)]
 gate('G8 living flexible core open', not bad,
      f"open core {core[2]-core[0]}x{core[3]-core[1]}; intruders={bad} (small movable table exempt)")
@@ -98,7 +98,7 @@ gate('G12 guest bath wet/dry preserved', all(k in ids for k in ('GBATH-SHOWER', 
 
 # G13 KEEP items honored
 keeps = [f['id'] for f in F if f['layer'] == 'A-FURN-EXST-KEEP']
-gate('G13 KEEP furniture/cabinets placed', {'K-CAB', 'MB-WARD', 'ST-BOOK', 'NB-WD', 'SHOE-CAB'} <= set(keeps),
+gate('G13 KEEP furniture/cabinets placed', {'K-CAB', 'MB-WARD', 'ST-BOOK', 'NB-WD', 'ENTRY-SHOE-CAB', 'LBALC-CAB'} <= set(keeps),
      f"keeps: {keeps}")
 
 # G14 four named rooms + three baths functional
@@ -271,14 +271,38 @@ BASE = json.load(open(os.path.join(ROOT, 'qc/layout_baseline_246ff12.json')))
 diffs = []
 for k in ('level', 'new_walls', 'new_doors', 'smb', 'guest_path', 'door_swings'):
     if CD.get(k) != BASE.get(k):
-        diffs.append(k)
+        # F1: ramp relocated per owner markup — exempt ramp subtree, freeze the rest
+        if k == 'level':
+            lv = {a: b for a, b in CD['level'].items() if a != 'ramp'}
+            bv = {a: b for a, b in BASE['level'].items() if a != 'ramp'}
+            lv['area_comparison'] = {k2: v for k2, v in lv['area_comparison'].items()
+                                     if k2 not in ('ramp_footprint_m2', 'net_unobstructed_public_gain_m2', 'verdict')}
+            bv['area_comparison'] = {k2: v for k2, v in bv['area_comparison'].items()
+                                     if k2 not in ('ramp_footprint_m2', 'net_unobstructed_public_gain_m2', 'verdict')}
+            if lv != bv:
+                diffs.append(k)
+        else:
+            diffs.append(k)
 fb = {f['id']: f for f in BASE['furniture']}
+# F1: L1 furniture intentionally re-laid per owner markup — freeze applies to
+# L2 furniture/baths/keeps only; L1 governed by F1 gates + furniture_l1_final.json
+L1_CHANGED = {'SOFA-3', 'SOFA-2', 'LOUNGE-1', 'COFFEE-MOV', 'PROJ-SCREEN', 'DIN-TABLE',
+              'SHOE-CAB', 'BENCH', 'RAMP', 'STAIR',
+              'LIV-SOFA-3', 'LIV-SOFA-2', 'LIV-LOUNGE', 'LIV-SIDE-TABLE', 'LIV-COFFEE-MOV',
+              'LIV-MEDIA-WALL', 'ENTRY-SHOE-CAB', 'ENTRY-BENCH', 'LBALC-CAB', 'STAIR-EXISTING'}
 for f in CD['furniture']:
+    if f['id'] in L1_CHANGED:
+        continue
     b = fb.get(f['id'])
     if b is None or b['rect'] != f['rect']:
         diffs.append(f"furniture:{f['id']}")
-gate('G27 layout freeze vs RC2.1', not diffs,
-     f"changed={diffs if diffs else 'none'} (windows/wall-split/render changes exempt)")
+for fid, b in fb.items():
+    if fid in L1_CHANGED:
+        continue
+    if fid not in {f['id'] for f in CD['furniture']}:
+        diffs.append(f"missing:{fid}")
+gate('G27 layout freeze vs RC2.1 (L2/background scope)', not diffs,
+     f"changed={diffs if diffs else 'none'} (L1 furniture governed by F1 gates)")
 
 # ================================================================ RC3 gates
 # G28 canonical base consistency — every artefact renders from one geometry
@@ -359,6 +383,105 @@ for i, a in enumerate(ids):
 gate('G30 no unexplained floor-cabinet overlap',
      not cab_collisions,
      f"collisions={cab_collisions or 'none'}; exempted={cab_exempted or 'none'}")
+
+# ================================================================ F1 gates — L1 furniture final
+F1J = json.load(open(os.path.join(ROOT, 'concept/furniture_l1_final.json')))
+fbyid = {f['id']: f for f in F}
+
+# F1-G1 base frozen — F1 contract references the same canonical sha
+gate('F1-G1 frozen base referenced', F1J.get('canonical_geometry_sha') == canon_file_sha,
+     f"f1_sha={F1J.get('canonical_geometry_sha')} canon={canon_file_sha}")
+
+# F1-G2 living layout per owner markup
+need = ['LIV-SOFA-3', 'LIV-SOFA-2', 'LIV-LOUNGE', 'LIV-SIDE-TABLE', 'LIV-COFFEE-MOV', 'LIV-MEDIA-WALL']
+liv_bad = [i for i in need if i not in fbyid]
+if 'LOUNGE-1' in fbyid or 'SOFA-3' in fbyid or 'SOFA-2' in fbyid or 'PROJ-SCREEN' in fbyid:
+    liv_bad.append('stale id present')
+orients = []
+s3 = fbyid.get('LIV-SOFA-3', {}).get('rect')
+if s3 and not (s3[0] <= 2950 and (s3[3]-s3[1]) > (s3[2]-s3[0])):
+    orients.append('SOFA-3 not west-wall N-S')
+s2 = fbyid.get('LIV-SOFA-2', {}).get('rect')
+if s2 and not ((s2[2]-s2[0]) > (s2[3]-s2[1]) and s2[1] > 11000):
+    orients.append('SOFA-2 not horizontal under N window')
+gate('F1-G2 living layout per markup', not liv_bad and not orients,
+     f"missing/bad={liv_bad or orients or 'none'}")
+
+# F1-G3 old central ramp footprint gone
+old_ramp = [4150, 5600, 7150, 6700]
+ramp_residue = [f['id'] for f in F if f['rect'] == old_ramp]
+ramp_data_ok = CD['level']['ramp']['rect_mm'] != old_ramp
+gate('F1-G3 old central ramp removed', not ramp_residue and ramp_data_ok,
+     f"residue={ramp_residue or 'none'}")
+
+# F1-G4 new ramp ~2500x1100 south-edge, top flush with landing west edge
+rr = CD['level']['ramp']['rect_mm']
+run, wid = rr[2]-rr[0], rr[3]-rr[1]
+gate('F1-G4 new ramp south-edge 2500x1100 -> landing',
+     run == 2500 and wid == 1100 and rr[1] >= 4650 and rr[1] <= 4765
+     and rr[2] == 7800 and 'ASSISTED' in CD['level']['ramp'].get('note', ''),
+     f"rect={rr} run={run} width={wid} top_x={rr[2]}")
+
+# F1-G5 dining table relocated to real dining zone
+dt = fbyid.get('DIN-TABLE', {}).get('rect')
+old_dt_free = not any(inter(f['rect'], [3700, 4800, 5200, 5400])
+                      for f in F if f['layer'] in SOLID)
+gate('F1-G5 dining table 1500x600 in dining zone',
+     dt and (dt[2]-dt[0], dt[3]-dt[1]) == (1500, 600)
+     and 2900 <= dt[0] and dt[2] <= 5500 and 2560 <= dt[1] and dt[3] <= 4450 and old_dt_free,
+     f"rect={dt} old_pos_clear={old_dt_free}")
+
+# F1-G6 entry preserved
+gate('F1-G6 entry preserved', all(i in fbyid for i in ('ENTRY-SHOE-CAB', 'ENTRY-BENCH')),
+     f"present={[i for i in ('ENTRY-SHOE-CAB','ENTRY-BENCH') if i in fbyid]}")
+
+# F1-G7 kitchen frozen — cabinet register identical to canonical section
+gate('F1-G7 kitchen cabinets frozen vs canonical',
+     CANON.get('kitchen_cabinets') == KREG,
+     'cabinet section == kitchen_cabinet_register')
+
+# F1-G8 five primary paths fixture-free (access ramps/stairs are the path itself)
+path_bad = []
+for pname, segs in CD['l1_paths'].items():
+    for f in solid:
+        if 'ACCESS' in f['layer']:
+            continue
+        for r in segs:
+            if inter(f['rect'], r):
+                path_bad.append(f"{pname}x{f['id']}")
+gate('F1-G8 five L1 circulation paths fixture-free', not path_bad,
+     f"blockers={path_bad or 'none'}")
+
+# F1-G9 no furniture collision (large items vs each other + walls/openings/windows)
+L1_SOLID = [f for f in solid if f['id'] in
+            {'LIV-SOFA-3', 'LIV-SOFA-2', 'LIV-LOUNGE', 'LIV-SIDE-TABLE', 'LIV-COFFEE-MOV',
+             'DIN-TABLE', 'ENTRY-SHOE-CAB', 'ENTRY-BENCH', 'LBALC-CAB'}]
+f1ov = []
+for i in range(len(L1_SOLID)):
+    for j in range(i + 1, len(L1_SOLID)):
+        if inter(L1_SOLID[i]['rect'], L1_SOLID[j]['rect']):
+            f1ov.append(f"{L1_SOLID[i]['id']}x{L1_SOLID[j]['id']}")
+blockers2 = ([w['rect_mm'] for w in CE['walls'] if w['disposition'] == 'EXISTING']
+             + [o['rect_mm'] for o in CE['openings']]
+             + [w['opening_rect_mm'] for w in CE['windows']])
+for f in L1_SOLID:
+    if f['layer'] == 'A-FURN-EXST-KEEP':
+        continue   # existing keeps already resolved on site vs door/wall tolerance bands
+    for b in blockers2:
+        if inter(f['rect'], b):
+            f1ov.append(f"{f['id']}xBLOCKER{b}")
+gate('F1-G9 L1 furniture no collision', not f1ov, f"collisions={f1ov or 'none'}")
+
+# F1-G10 L2 untouched — all non-L1 furniture identical to RC2.1 baseline
+l2_diffs = []
+for fid, b in fb.items():
+    if fid in L1_CHANGED:
+        continue
+    cur = fbyid.get(fid)
+    if cur is None or cur['rect'] != b['rect']:
+        l2_diffs.append(fid)
+gate('F1-G10 L2 furniture/baths unchanged', not l2_diffs,
+     f"changed={l2_diffs or 'none'}")
 
 overall = all(r['result'] == 'PASS' for r in results)
 print(f"\n=== TASK03A GATES: {sum(r['result']=='PASS' for r in results)}/{len(results)} {'ALL PASS' if overall else 'HAS FAIL'} ===")

@@ -1,0 +1,285 @@
+{
+ "canonical_geometry_sha": "e83c1d69e6b5da74",
+ "scope": "L1 furniture final — frozen base RC3.1; L2 furniture/baths untouched",
+ "categories": {
+  "fixed_keep": [
+   {
+    "id": "K-CAB",
+    "rect": [
+     5500,
+     0,
+     8200,
+     4700
+    ],
+    "layer": "A-FURN-EXST-KEEP",
+    "note": "kitchen cabinet KEEP zone — modules in kitchen_cabinet_register"
+   },
+   {
+    "id": "NB-WD",
+    "rect": [
+     7900,
+     13064,
+     8600,
+     13764
+    ],
+    "layer": "A-FURN-EXST-KEEP",
+    "note": "10kg W+D stacked, west end"
+   },
+   {
+    "id": "ENTRY-SHOE-CAB",
+    "rect": [
+     2900,
+     4600,
+     3400,
+     5600
+    ],
+    "layer": "A-FURN-EXST-KEEP",
+    "note": "existing low shoe cabinet, south side of entry door"
+   },
+   {
+    "id": "ENTRY-BENCH",
+    "rect": [
+     2900,
+     6800,
+     3400,
+     7200
+    ],
+    "layer": "A-FURN-PROP",
+    "note": "shoe bench, north side of entry door"
+   },
+   {
+    "id": "LBALC-CAB",
+    "rect": [
+     1400,
+     64,
+     2000,
+     2564
+    ],
+    "layer": "A-FURN-EXST-KEEP",
+    "note": "existing balcony cabinet KEEP — storage + counter, no redesign"
+   }
+  ],
+  "proposed_large_furniture": [
+   {
+    "id": "LIV-SOFA-3",
+    "rect": [
+     2900,
+     9500,
+     3800,
+     11700
+    ],
+    "layer": "A-FURN-PROP",
+    "note": "3-seat 2200x900 on west wall, faces east media wall"
+   },
+   {
+    "id": "LIV-SOFA-2",
+    "rect": [
+     4550,
+     11800,
+     6350,
+     12650
+    ],
+    "layer": "A-FURN-PROP",
+    "note": "2-seat 1800x850 horizontal under W-LIV-N bay; 100mm clear of window face"
+   },
+   {
+    "id": "LIV-LOUNGE",
+    "rect": [
+     5450,
+     6200,
+     6950,
+     7300
+    ],
+    "layer": "A-FURN-PROP",
+    "note": "single day-lounge 1500x1100, south-central; old LOUNGE-1 deleted"
+   },
+   {
+    "id": "DIN-TABLE",
+    "rect": [
+     3300,
+     3100,
+     4800,
+     3700
+    ],
+    "layer": "A-FURN-PROP",
+    "note": "1500x600 table, <=4 adults+kid daily; clear of entry, G-DIN-LIV, kitchen edge, ramp"
+   },
+   {
+    "id": "NB-PLANTS",
+    "rect": [
+     7900,
+     13100,
+     13000,
+     13400
+    ],
+    "layer": "A-NOTE",
+    "note": "plant line along glazing"
+   }
+  ],
+  "movable_furniture": [
+   {
+    "id": "LIV-SIDE-TABLE",
+    "rect": [
+     3450,
+     11850,
+     3900,
+     12300
+    ],
+    "layer": "A-FURN-PROP",
+    "note": "small movable side table 450x450, NW corner (replaces LOUNGE-1)"
+   },
+   {
+    "id": "LIV-COFFEE-MOV",
+    "rect": [
+     5700,
+     8400,
+     6450,
+     9500
+    ],
+    "layer": "A-FURN-PROP",
+    "note": "small movable coffee table 750x1100; centre kept open for kids/ageing"
+   },
+   {
+    "id": "NB-TEA",
+    "rect": [
+     11000,
+     11800,
+     11800,
+     12400
+    ],
+    "layer": "A-FURN-PROP",
+    "note": "light movable tea set"
+   }
+  ],
+  "accessibility": [
+   {
+    "id": "RAMP",
+    "rect": [
+     5300,
+     4715,
+     7800,
+     5815
+    ],
+    "layer": "A-ACCESS-RAMP",
+    "note": "ramp 2500x1100, slope 400/2500=1:6.25 PROVISIONAL, ASSISTED / POWER-WHEELCHAIR RAMP"
+   },
+   {
+    "id": "STAIR-EXISTING",
+    "rect": [
+     7200,
+     6600,
+     7800,
+     7800
+    ],
+    "layer": "A-ACCESS-STAIR",
+    "note": "EXISTING 3-STEP TRANSITION; exact level delta TO_VERIFY (<=350 owner / ~400 CAD)"
+   }
+  ],
+  "media": [
+   {
+    "id": "LIV-MEDIA-WALL",
+    "rect": [
+     7750,
+     9000,
+     7900,
+     12400
+    ],
+    "layer": "A-NOTE",
+    "note": "MEDIA WALL locked: OPTION_A=CLEAN_WALL / OPTION_B=FLOATING_STONE_PANEL — undecided; projector/laser-TV oriented, NO full-wall cabinet"
+   }
+  ],
+  "circulation": []
+ },
+ "removed": [
+  "LOUNGE-1",
+  "old central RAMP [4150,5600,7150,6700]",
+  "PROJ-SCREEN (-> LIV-MEDIA-WALL)"
+ ],
+ "media_wall_options": {
+  "OPTION_A": "CLEAN_WALL",
+  "OPTION_B": "FLOATING_STONE_PANEL",
+  "status": "UNDECIDED — position locked only"
+ },
+ "north_balcony": {
+  "current": "OPEN_NOT_ENCLOSED",
+  "future_enclosure": "PROPOSED_FUTURE (note only, not current)"
+ },
+ "paths": {
+  "P1 entry->living": [
+   [
+    2950,
+    5600,
+    3900,
+    6764
+   ],
+   [
+    3400,
+    6764,
+    4600,
+    8500
+   ]
+  ],
+  "P2 entry->dining->kitchen": [
+   [
+    3400,
+    4530,
+    4500,
+    5064
+   ],
+   [
+    2950,
+    3700,
+    5500,
+    4530
+   ]
+  ],
+  "P3 living->stair->L2": [
+   [
+    4200,
+    7300,
+    7150,
+    7900
+   ],
+   [
+    7150,
+    6600,
+    7800,
+    7900
+   ]
+  ],
+  "P4 L1->ramp->L2 landing": [
+   [
+    4500,
+    4715,
+    5300,
+    5815
+   ],
+   [
+    5300,
+    4715,
+    7800,
+    5815
+   ],
+   [
+    7800,
+    4715,
+    8150,
+    5815
+   ]
+  ],
+  "P5 living->G-LIV-NBALC->balc": [
+   [
+    6900,
+    11000,
+    7800,
+    12000
+   ],
+   [
+    7800,
+    11800,
+    7900,
+    12650
+   ]
+  ]
+ }
+}
