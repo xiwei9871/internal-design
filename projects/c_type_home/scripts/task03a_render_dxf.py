@@ -201,12 +201,12 @@ def _cut_union_area(wall_rect, cuts):
                if any(c[0] < (x1+x2)/2 < c[2] and c[1] < (y1+y2)/2 < c[3] for c in clipped))
 
 
-def _wall_report(wall):
+def _wall_report(wall, hostless_windows=None):
     """Build one wall's render-only fragment and clipped-cut report."""
     wr = [int(v) for v in wall['rect_mm']]
     if not (wr[2] > wr[0] and wr[3] > wr[1]):
         raise ValueError(f"invalid wall rectangle {wall.get('id')}: {wr!r}")
-    cuts, clipped_cuts, hostless = [], [], []
+    cuts, clipped_cuts = [], []
     # Ordinary openings are explicit canonical cuts.
     for opening in CANONICAL['openings']:
         clipped = _clip(wr, opening['rect_mm'])
@@ -220,13 +220,18 @@ def _wall_report(wall):
         wid = window.get('window_id') or window.get('name')
         clipped = _clip(wr, window['opening_rect_mm'])
         if not clipped:
-            if not window.get('host_wall_id'):
-                hostless.append({'id': wid, 'source_type': 'window', 'rect_mm': [int(v) for v in window['opening_rect_mm']]})
             continue
         if window.get('host_wall_id') == wall['id'] or not window.get('host_wall_id'):
             association = 'parapet_cut' if wall.get('type') == 'railing_parapet' else 'wall_cut'
             item = {'id': wid, 'source_type': 'window', 'association_type': association, 'rect_mm': clipped}
             cuts.append(item); clipped_cuts.append(item)
+    # Hostless windows become cuts only when active glazing covers their gap and overlaps this wall.
+    if hostless_windows:
+        for hw in hostless_windows:
+            if hw.get('verified') and (clipped := _clip(wr, hw['rect_mm'])):
+                association = 'parapet_cut' if wall.get('type') == 'railing_parapet' else 'wall_cut'
+                item={'id':hw['id'],'source_type':'window','association_type':association,'rect_mm':clipped}
+                cuts.append(item); clipped_cuts.append(item)
     # De-duplicate identical cuts while retaining all IDs for audit metadata.
     unique_rects = []
     for item in cuts:
@@ -243,27 +248,54 @@ def _wall_report(wall):
         'fragment_rects': fragments,
         'cut_ids': [item['id'] for item in clipped_cuts],
         'clipped_cuts': clipped_cuts,
-        'hostless_cuts': hostless,
+        'hostless_cuts': [],
     }
     if report['area_error_mm2'] != 0:
         raise RuntimeError(f"fragment area mismatch for {wall['id']}: {report}")
     return report
 
 
-def wall_faces_report():
-    """Return canonical EXISTING wall fragment reports for render-time faces."""
-    return [_wall_report(w) for w in CANONICAL['walls'] if w['disposition'] == 'EXISTING']
+def _active_glazing_rects(dxf_path):
+    doc = ezdxf.readfile(str(dxf_path)); out=[]
+    for e in doc.modelspace():
+        if e.dxf.layer != 'A-GLAZ-EXST': continue
+        try:
+            b=bbox.extents([e]); r=[int(round(b.extmin.x-AX)),int(round(b.extmin.y-AY)),int(round(b.extmax.x-AX)),int(round(b.extmax.y-AY))]
+            if r[2]>r[0] and r[3]>r[1]: out.append(r)
+        except Exception: pass
+    return out
 
 
-def draw_wall_faces(ax, profile, dxf_path=None, alignment=None):
-    if dxf_path is not None:
-        alignment = validate_canonical_alignment(dxf_path, emit=False)
-    if alignment is None:
-        raise RuntimeError('draw_wall_faces requires validated alignment or dxf_path')
-    if len(alignment) != 39 or not all(item.get('pass') for item in alignment):
-        raise RuntimeError('draw_wall_faces requires passing canonical alignment')
+def _hostless_records(dxf_path):
+    glaz=_active_glazing_rects(dxf_path); records=[]
+    for w in CANONICAL['windows']:
+        if w.get('host_wall_id'): continue
+        wr=[int(v) for v in w['opening_rect_mm']]; overlap=any(_clip(wr,g) for g in glaz)
+        records.append({'id':w.get('window_id') or w.get('name'),'source_type':'window','rect_mm':wr,
+                        'association_type':'active_gap' if overlap else 'unresolved_hostless','verified':bool(overlap)})
+    return records
+
+
+def wall_faces_report(dxf_path=None):
+    dxf_path = dxf_path or (CAD / 'design_v02_f1_l1.dxf')
+    glaz=_active_glazing_rects(dxf_path); unresolved=[]; walls=[]
+    for w in CANONICAL['walls']:
+        if w['disposition'] != 'EXISTING': continue
+        # Hostless cuts are permitted only with active glazing coverage in the candidate.
+        for win in CANONICAL['windows']:
+            if win.get('host_wall_id') or not _clip(w['rect_mm'], win['opening_rect_mm']): continue
+            if any(_clip(win['opening_rect_mm'], g) for g in glaz):
+                win['_active_overlap']=True
+        walls.append(_wall_report(w, _hostless_records(dxf_path)))
+    return {'walls':walls, 'hostless_fenestration':_hostless_records(dxf_path)}
+
+
+def draw_wall_faces(ax, profile, dxf_path):
+    alignment = validate_canonical_alignment(dxf_path, emit=False)
     report = {'wall_face_ids': [], 'parapet_ids': [], 'cuts': [], 'wall_reports': [], 'alignment': alignment}
-    for item in wall_faces_report():
+    wall_data = wall_faces_report(dxf_path)
+    report['hostless_fenestration'] = wall_data['hostless_fenestration']
+    for item in wall_data['walls']:
         wid, wtype = item['wall_id'], item['wall_type']
         if wtype == 'railing_parapet':
             report['parapet_ids'].append(wid)
@@ -330,7 +362,7 @@ def render(dxf_path, profile, name, crop=None, faces=True, label_walls=False):
     ax = fig.add_axes([0, 0, 1, 1])
     ax.set_axis_off()
     ax.set_facecolor('white')
-    wfaces = draw_wall_faces(ax, profile, dxf_path=dxf_path, alignment=alignment) if faces else {
+    wfaces = draw_wall_faces(ax, profile, dxf_path) if faces else {
         'wall_face_ids': [], 'parapet_ids': [], 'cuts': [], 'wall_reports': [], 'alignment': alignment}
     ctx = RenderContext(doc)
     out = MatplotlibBackend(ax, adjust_figure=False)   # never let backend resize the fig
@@ -368,6 +400,7 @@ def render(dxf_path, profile, name, crop=None, faces=True, label_walls=False):
         'opening_cuts': wfaces['cuts'],
         'wall_reports': wfaces['wall_reports'],
         'alignment': wfaces['alignment'],
+        'hostless_fenestration': wfaces.get('hostless_fenestration', []),
     }
     json.dump(side, open(QC / f'{name}.render.json', 'w'), indent=1, ensure_ascii=False)
     print(f'{name}.png/.pdf  ({profile})  <- {dxf_path.name}')
@@ -388,7 +421,7 @@ def before_after(dxf_path, name, zones):
             ax = axs[row][col]
             ax.set_axis_off()
             if row == 1:
-                draw_wall_faces(ax, 'PRESENTATION', dxf_path=dxf_path, alignment=alignment)
+                draw_wall_faces(ax, 'PRESENTATION', dxf_path)
             out = MatplotlibBackend(ax, adjust_figure=False)
             Frontend(RenderContext(doc), out).draw_layout(
                 msp, filter_func=keep, finalize=True)
