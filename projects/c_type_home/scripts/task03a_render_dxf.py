@@ -221,7 +221,7 @@ def _wall_report(wall, hostless_windows=None):
         clipped = _clip(wr, window['opening_rect_mm'])
         if not clipped:
             continue
-        if window.get('host_wall_id') == wall['id'] or not window.get('host_wall_id'):
+        if window.get('host_wall_id') == wall['id']:
             association = 'parapet_cut' if wall.get('type') == 'railing_parapet' else 'wall_cut'
             item = {'id': wid, 'source_type': 'window', 'association_type': association, 'rect_mm': clipped}
             cuts.append(item); clipped_cuts.append(item)
