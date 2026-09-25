@@ -1,0 +1,37 @@
+{
+  "baseline_label": "RC4.2 baseline frozen from RC4.1 presentation outputs",
+  "view_box": null,
+  "view_box_note": "View-box extraction is deferred to renderer integration.",
+  "artifacts": [
+    {
+      "source": "projects/c_type_home/qc/rc4_v01_presentation.png",
+      "destination": "projects/c_type_home/qc/rc4_2_baseline/rc4_1_v01_presentation.png",
+      "sha256": "37a9fb82ad7cd4219fc9cdb204b45edc7e65fcfff723394ecac3cdf3d6ef9dec",
+      "png_dimensions": {
+        "width": 2080,
+        "height": 2055
+      }
+    },
+    {
+      "source": "projects/c_type_home/qc/rc4_v02_f1_presentation.png",
+      "destination": "projects/c_type_home/qc/rc4_2_baseline/rc4_1_v02_f1_presentation.png",
+      "sha256": "ae226d24e58dea0ae9e1269d75e8759d39df2e1ec54af25386a61a6a7f48ee53",
+      "png_dimensions": {
+        "width": 2080,
+        "height": 2055
+      }
+    },
+    {
+      "source": "projects/c_type_home/qc/rc4_v01_presentation.pdf",
+      "destination": "projects/c_type_home/qc/rc4_2_baseline/rc4_1_v01_presentation.pdf",
+      "sha256": "099c289079e74785de743adbcb21d77f640081d2b37dce497e045cf549623c3a",
+      "png_dimensions": null
+    },
+    {
+      "source": "projects/c_type_home/qc/rc4_v02_f1_presentation.pdf",
+      "destination": "projects/c_type_home/qc/rc4_2_baseline/rc4_1_v02_f1_presentation.pdf",
+      "sha256": "8200025316220af26a0d59d9fec5a0d9ba6b32701c609cb126b587cec97c4509",
+      "png_dimensions": null
+    }
+  ]
+}
