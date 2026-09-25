@@ -2,7 +2,7 @@
 """Task03A QC + presentation renders. task01 coords.
 RC2.2: window register overlay, wall/window conflict check, before/after
 cleanup sheet, and s3 split into owner-facing presentation + QC diagnostic."""
-import json, matplotlib
+import json, hashlib, matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
@@ -13,6 +13,9 @@ plt.rcParams['font.family'] = 'PingFang SC'
 ROOT = Path(__file__).resolve().parent.parent
 M = json.load(open(ROOT / 'current_existing' / 'current_existing_v1.json'))
 CD = json.load(open(ROOT / 'concept' / 'concept_data.json'))
+CANON_SHA = hashlib.sha256(
+    (ROOT / 'current_existing' / 'canonical_plan_v1.json').read_bytes()).hexdigest()[:16]
+_RENDERED = []
 WB = json.load(open(ROOT / 'qc' / 'walls_baseline_246ff12.json'))  # RC2.1 walls
 QC = ROOT / 'qc'
 
@@ -176,7 +179,8 @@ def draw_cabinets(ax, qc=False):
             ax.add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1,
                                    facecolor=CAB_FILL.get(c['kind'], '#f9ab00'),
                                    alpha=.45, edgecolor='#b06000', lw=1.0, zorder=3))
-        lbl = CAB_LBL.get(c['kind'], c['id']) if not qc else f"{c['id']} {c['measurement_status']}"
+        lbl = CAB_LBL.get(c['kind'], c['id']) if not qc else (
+            f"{c['id']} {c.get('dimension_status', '?')}/{c.get('placement_status', '?')}")
         ax.text((x1 + x2) / 2, (y1 + y2) / 2, lbl, fontsize=4.6,
                 ha='center', va='center', zorder=6,
                 rotation=90 if (x2 - x1) < (y2 - y1) else 0)
@@ -204,6 +208,7 @@ def base(title):
 def save(fig, name):
     fig.savefig(QC / name, bbox_inches='tight', facecolor='white')
     fig.savefig(QC / name.replace('.png', '.pdf'), bbox_inches='tight', facecolor='white')
+    _RENDERED.append(name)
     plt.close(fig); print(name)
 
 QC_LEGEND = [
@@ -473,3 +478,8 @@ for ax, opt in zip(axs, 'WS'):
 fig.savefig(QC / 'task03a_s6_smb_ws.png', bbox_inches='tight', facecolor='white')
 fig.savefig(QC / 'task03a_s6_smb_ws.pdf', bbox_inches='tight', facecolor='white')
 print('task03a_s6_smb_ws.png')
+
+# RC3.1: sidecar manifest — every rendered sheet declares the canonical base it used
+json.dump({'canonical_sha': CANON_SHA, 'outputs': _RENDERED},
+          open(QC / 'render_manifest.json', 'w'), indent=1)
+print('render_manifest.json  canonical_sha=', CANON_SHA)

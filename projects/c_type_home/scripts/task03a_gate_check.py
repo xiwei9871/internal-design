@@ -296,9 +296,23 @@ for k, obj in sections.items():
         hash_bad.append(k)
     if CANON.get(k) != (KREG if k == 'kitchen_cabinets' else CE.get(k)):
         hash_bad.append(f'{k}:content')
-gate('G28 canonical base hash consistency across outputs',
-     not hash_bad,
-     f"sections={list(sections)}; mismatched={hash_bad}")
+# RC3.1: every rendered sheet / DXF must carry a sidecar declaring the same canonical sha
+canon_file_sha = hashlib.sha256(
+    open(os.path.join(ROOT, 'current_existing/canonical_plan_v1.json'), 'rb').read()
+).hexdigest()[:16]
+sidecars = {'qc/render_manifest.json': os.path.join(ROOT, 'qc/render_manifest.json'),
+            'current_existing_v1.dxf': os.path.join(ROOT, 'current_existing/current_existing_v1.base.json'),
+            'concept_dxfs': os.path.join(ROOT, 'concept/concept_dxf_base.json')}
+sc_bad = []
+for tag, sp in sidecars.items():
+    if not os.path.exists(sp):
+        sc_bad.append(f'{tag}:missing')
+        continue
+    if json.load(open(sp)).get('canonical_sha') != canon_file_sha:
+        sc_bad.append(f'{tag}:sha_mismatch')
+gate('G28 canonical base hash + output sidecars consistent',
+     not hash_bad and not sc_bad,
+     f"sections={list(sections)}; mismatched={hash_bad}; sidecars={sc_bad or 'all match'}")
 
 # G29 kitchen cabinets never overlap walls / windows / door openings
 cab_conf = []
@@ -313,6 +327,38 @@ for c in KREG:
         cab_conf.append(c['id'])
 gate('G29 kitchen cabinets clear of walls/windows/doors',
      not cab_conf, f"cabinet_conflicts={cab_conf}")
+
+# G30 independent floor-standing cabinets never overlap in area.
+# Exemptions: parent/child containment, wall_cabinet_above, declared corner_join zones.
+floor_kinds = {'base_cabinet_run', 'tall_cabinet', 'base_cabinet_sink_leg'}
+floor_cabs = {c['id']: c for c in KREG if c['kind'] in floor_kinds and not c.get('parent')}
+def _overlap(a, b):
+    dx = min(a[2], b[2]) - max(a[0], b[0]); dy = min(a[3], b[3]) - max(a[1], b[1])
+    return (dx, dy) if dx > 0 and dy > 0 else None
+def _zone_contains(zone, rect):
+    return (zone and zone[0] <= rect[0] and zone[1] <= rect[1]
+            and zone[2] >= rect[2] and zone[3] >= rect[3])
+cab_collisions, cab_exempted = [], []
+ids = sorted(floor_cabs)
+for i, a in enumerate(ids):
+    for b in ids[i + 1:]:
+        ov = _overlap(floor_cabs[a]['rect_mm'], floor_cabs[b]['rect_mm'])
+        if not ov:
+            continue
+        dx, dy = ov
+        orect = [max(floor_cabs[a]['rect_mm'][0], floor_cabs[b]['rect_mm'][0]),
+                 max(floor_cabs[a]['rect_mm'][1], floor_cabs[b]['rect_mm'][1]),
+                 min(floor_cabs[a]['rect_mm'][2], floor_cabs[b]['rect_mm'][2]),
+                 min(floor_cabs[a]['rect_mm'][3], floor_cabs[b]['rect_mm'][3])]
+        join = next((c[j] for c in (floor_cabs[a], floor_cabs[b])
+                     for j in ['corner_join'] if c.get(j) and c[j].get('with') in (a, b)), None)
+        if join and _zone_contains(join.get('zone'), orect):
+            cab_exempted.append(f"{a}x{b} corner_join {dx}x{dy}mm (declared)")
+        else:
+            cab_collisions.append(f"{a}x{b} overlap {dx}x{dy}mm = {dx*dy/1e6:.3f}m2")
+gate('G30 no unexplained floor-cabinet overlap',
+     not cab_collisions,
+     f"collisions={cab_collisions or 'none'}; exempted={cab_exempted or 'none'}")
 
 overall = all(r['result'] == 'PASS' for r in results)
 print(f"\n=== TASK03A GATES: {sum(r['result']=='PASS' for r in results)}/{len(results)} {'ALL PASS' if overall else 'HAS FAIL'} ===")

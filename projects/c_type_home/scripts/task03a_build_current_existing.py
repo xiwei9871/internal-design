@@ -148,6 +148,7 @@ DEMOLISHED = {
     'W-BALC-N':         'life-balcony/dining separation — opened (owner orange line)',
     'W-INT-DRY-STUB':   'kitchen dry-side stub — opened',
     'W-INT-Y4500-b-CLKSEG': 'cloakroom-south segment of Y4500-b — OPEN to secondary master (owner RC1.5: this is how it merged); DWG draws only 600mm stub x10800-11400 -> residual, TO_VERIFY',
+    'W-INT-Y4500-bc-OPEN': 'corridor section OPEN — owner-confirmed passage (RC3.1); only x12900-16500 is master-bath wall',
 }
 # RC1.5/RC2 owner confirmation: cloakroom N/W/E walls are RETAINED —
 # owner marked them green on the supplied image AND the measured DWG draws
@@ -175,6 +176,12 @@ SPLIT_WALLS = {
     'W-INT-X7900-U': [
         ('W-INT-X7900-U-OPEN', [7800, 4670, 7900, 7800]),
         ('W-INT-X7900-U-TV',   [7800, 7800, 7900, 13550]),
+    ],
+    # RC3.1 owner-confirmed: x11400-12900 of Y4500-bc is open corridor,
+    # x12900-16500 is the master-bath north wall only
+    'W-INT-Y4500-bc': [
+        ('W-INT-Y4500-bc-OPEN',  [11400, 4450, 12900, 4650]),
+        ('W-INT-Y4500-bc-MBATH', [12900, 4450, 16500, 4650]),
     ]
 }
 
@@ -283,7 +290,9 @@ DOOR_SPLITS = {
 VISUAL.update({'W-EXT-NE-WSEG': ('WHITE_FILL', 'HIGH', 'study N wall west of bay opening'),
                'W-EXT-NE-ESEG': ('WHITE_FILL', 'HIGH', 'study N wall east of bay opening'),
                'W-INT-X7900-U-TV': ('BLACK_FILL', 'HIGH', 'TV/bath wall band — faces drawn in DWG, carries 850mm balcony glass-door gap y12050-12900'),
-               'W-INT-X7900-U-OPEN': ('BLACK_FILL', 'HIGH', 'mid/lower section open per measured DWG — no wall faces y4500-7800')})
+               'W-INT-X7900-U-OPEN': ('BLACK_FILL', 'HIGH', 'mid/lower section open per measured DWG — no wall faces y4500-7800'),
+               'W-INT-Y4500-bc-MBATH': ('WHITE_FILL', 'HIGH', 'master-bath north wall x12900-16500 — owner-confirmed solid'),
+               'W-INT-Y4500-bc-OPEN': ('BLACK_FILL', 'HIGH', 'x11400-12900 open corridor per owner — no wall here')})
 
 def policy_for(wid, visual_cls, disp, wall_type):
     """owner-declared rule mapping — NOT structural inference."""
@@ -440,46 +449,59 @@ stairs['zone_mm'] = [stairs['zone_meas'][0]-DX, stairs['zone_meas'][1]-DY,
 # south sink leg 1210 under W-KIT-S window, north fridge tall cab 1840x700.
 # Room interior x5900-7800 x y0-4450; west wall demolished -> open to dining.
 KITCHEN_CABS = [
-    {'id': 'K-RUN-E', 'kind': 'base_cabinet_run', 'rect_mm': [7200, 535, 7800, 4450],
-     'depth_mm': 600, 'len_mm': 3915, 'status': 'EXISTING_KEEP',
-     'measurement_status': 'CONFIRMED',
-     'source': 'cabinet PDF p0 — 3915 main run; modules 18/413/414/灶具900/洗碗机600/513/518/50',
-     'note': 'east-wall run; module order from PDF dim chain, y-bounds per run start 535'},
-    {'id': 'K-COOK', 'kind': 'cooktop_slot', 'rect_mm': [7200, 2705, 7800, 3605],
-     'span_mm': 900, 'status': 'EXISTING_KEEP', 'measurement_status': 'CONFIRMED',
-     'source': 'cabinet PDF p0 灶具 900 on 3915 run (north-of-centre per dim chain)',
-     'note': 'cooktop position; range hood above (烟机插座 on wall-cab elevation)'},
-    {'id': 'K-DISHW', 'kind': 'dishwasher_slot', 'rect_mm': [7200, 2105, 7800, 2705],
-     'span_mm': 600, 'status': 'EXISTING_KEEP', 'measurement_status': 'CONFIRMED',
-     'source': 'cabinet PDF p0 洗碗机位置 600 on 3915 run',
+    {'id': 'K-RUN-E', 'kind': 'base_cabinet_run', 'rect_mm': [7200, 535, 7800, 3750],
+     'depth_mm': 600, 'len_mm': 3215, 'status': 'EXISTING_KEEP',
+     'dimension_status': 'CONFIRMED', 'placement_status': 'CONFIRMED',
+     'source': 'cabinet PDF p0 — east run; wall chain 3915 = physical run 3215 + 700 corner absorbed by tall cab',
+     'relation': {'type': 'abuts', 'with': 'K-FRIDGE-TALL', 'face': 'north (tall cab face y3750)'},
+     'corner_join': {'with': 'K-RUN-S', 'zone': [7200, 535, 7310, 600],
+                     'note': 'SE corner base cab — footprints share corner, join belongs to this junction'},
+     'note': 'east-wall run stops at fridge tall-cab face; PDF "3915" is wall-to-wall incl. corner zone'},
+    {'id': 'K-COOK', 'kind': 'cooktop_slot', 'rect_mm': [7200, 2400, 7800, 3300],
+     'span_mm': 900, 'status': 'EXISTING_KEEP', 'parent': 'K-RUN-E',
+     'dimension_status': 'CONFIRMED', 'placement_status': 'TO_VERIFY',
+     'source': 'cabinet PDF p0 灶具 900 on east run (dim chain 194/413/414 north of it)',
+     'note': 'cooktop; range hood + socket above per elevation p1'},
+    {'id': 'K-DISHW', 'kind': 'dishwasher_slot', 'rect_mm': [7200, 1800, 7800, 2400],
+     'span_mm': 600, 'status': 'EXISTING_KEEP', 'parent': 'K-RUN-E',
+     'dimension_status': 'CONFIRMED', 'placement_status': 'TO_VERIFY',
+     'source': 'cabinet PDF p0 洗碗机位置 600 on east run',
      'note': 'open slot for dishwasher'},
-    {'id': 'K-BASKET', 'kind': 'pull_basket_module', 'rect_mm': [7200, 3605, 7800, 4400],
-     'span_mm': 800, 'status': 'EXISTING_KEEP', 'measurement_status': 'TO_VERIFY',
-     'source': 'cabinet PDF p0 拉篮/调味拉篮 800 — exact position within run to verify',
-     'note': 'spice pull-basket module, drawn near cooktop per PDF; y-bounds approximate'},
+    {'id': 'K-BASKET', 'kind': 'pull_basket_module', 'rect_mm': [7200, 3300, 7800, 3750],
+     'span_mm': 450, 'status': 'EXISTING_KEEP', 'parent': 'K-RUN-E',
+     'dimension_status': 'TO_VERIFY', 'placement_status': 'TO_VERIFY',
+     'source': 'cabinet PDF p0 拉篮/调味拉篮 800 near cooktop — clipped to run north end',
+     'note': 'spice pull-basket; exact bounds to verify'},
     {'id': 'K-FRIDGE-TALL', 'kind': 'tall_cabinet', 'rect_mm': [5900, 3750, 7740, 4450],
      'depth_mm': 700, 'len_mm': 1840, 'status': 'EXISTING_KEEP',
-     'measurement_status': 'CONFIRMED',
-     'source': 'cabinet PDF p0 — 冰箱高柜 1840 along north wall',
-     'note': 'tall unit incl. double-door fridge slot + side cabs + sockets'},
+     'dimension_status': 'CONFIRMED', 'placement_status': 'CONFIRMED',
+     'source': 'cabinet PDF p0 — 冰箱高柜 1840 on north wall, holds the NE corner (base run abuts its face)',
+     'relation': {'type': 'corner_owner', 'with': 'K-RUN-E',
+                  'note': 'tall cab occupies the NE corner; run stops at its face — the 700-deep corner zone is tall-cab floor, resolving the former 540x700 overlap'},
+     'note': 'tall unit incl. double-door fridge slot + side cabs + sockets; east end stops 60mm short of east wall (filler)'},
     {'id': 'K-FRIDGE', 'kind': 'fridge_slot', 'rect_mm': [6835, 3750, 7740, 4450],
-     'span_mm': 905, 'status': 'EXISTING_KEEP', 'measurement_status': 'TO_VERIFY',
+     'span_mm': 905, 'status': 'EXISTING_KEEP', 'parent': 'K-FRIDGE-TALL',
+     'dimension_status': 'CONFIRMED', 'placement_status': 'TO_VERIFY',
      'source': 'cabinet PDF — fridge 905x710 inside tall cab; internal split TO_VERIFY',
-     'note': 'double-door fridge 905x710 (note: 710 depth incl. gap per PDF)'},
+     'note': 'double-door fridge 905x710 (710 depth incl. gap per PDF)'},
     {'id': 'K-RUN-S', 'kind': 'base_cabinet_sink_leg', 'rect_mm': [6100, 0, 7310, 600],
      'depth_mm': 600, 'len_mm': 1210, 'status': 'EXISTING_KEEP',
-     'measurement_status': 'CONFIRMED',
+     'dimension_status': 'CONFIRMED', 'placement_status': 'TO_VERIFY',
      'source': 'cabinet PDF p0 — sink leg 990+220 next to 窗 (window)',
-     'note': 'south-wall leg under W-KIT-S window; x-origin aligned to window centre ±210'},
+     'corner_join': {'with': 'K-RUN-E', 'zone': [7200, 535, 7310, 600],
+                     'note': 'SE corner join — 110x65 shared footprint is the physical corner base cab'},
+     'note': 'south-wall leg under W-KIT-S window; length 1210 confirmed, x-origin ±210 to verify'},
     {'id': 'K-SINK', 'kind': 'sink_slot', 'rect_mm': [6100, 0, 7090, 600],
-     'span_mm': 990, 'status': 'EXISTING_KEEP', 'measurement_status': 'CONFIRMED',
+     'span_mm': 990, 'status': 'EXISTING_KEEP', 'parent': 'K-RUN-S',
+     'dimension_status': 'CONFIRMED', 'placement_status': 'TO_VERIFY',
      'source': 'cabinet PDF p0 水槽柜 990 + filler 220',
      'note': 'sink cabinet under south window'},
-    {'id': 'K-WALL-E', 'kind': 'wall_cabinet_run', 'rect_mm': [7420, 535, 7800, 4450],
-     'depth_mm': 380, 'len_mm': 3915, 'status': 'EXISTING_KEEP',
-     'measurement_status': 'TO_VERIFY',
-     'source': 'cabinet PDF p1 吊柜 — 380 deep along main run, widths 374/569/569/459/459/460/460/50',
-     'note': 'wall-mounted cabinets; module splits per PDF elevation, exact y-bounds TO_VERIFY'},
+    {'id': 'K-WALL-E', 'kind': 'wall_cabinet_run', 'rect_mm': [7420, 535, 7800, 3750],
+     'depth_mm': 380, 'len_mm': 3215, 'status': 'EXISTING_KEEP', 'parent': 'K-RUN-E',
+     'relation': {'type': 'wall_cabinet_above', 'with': 'K-RUN-E'},
+     'dimension_status': 'CONFIRMED', 'placement_status': 'TO_VERIFY',
+     'source': 'cabinet PDF p1 吊柜 — 380 deep over east run, widths 374/569/569/459/459/460/460/50',
+     'note': 'wall-mounted cabinets; module splits + hood position per elevation, y-bounds TO_VERIFY'},
 ]
 keep = [
     {'id': 'BALC-CAB-RED', 'kind': 'cabinet', 'meas_zone': [[100, 1400], [700, 3900]],
@@ -566,7 +588,8 @@ with open(REG_CSV, 'w', newline='') as f:
 # same task01 mm coordinate system as the measured DWG model
 KCAB_JSON = ROOT / 'current_existing' / 'kitchen_cabinet_register.json'
 KCAB_FIELDS = ['id', 'kind', 'rect_mm', 'depth_mm', 'len_mm', 'span_mm',
-               'status', 'measurement_status', 'source', 'note']
+               'status', 'dimension_status', 'placement_status',
+               'parent', 'source', 'note']
 KCAB_JSON.write_text(json.dumps({'meta': {
         'task': 'TASK03A RC3 kitchen cabinet register',
         'source_pdf': 'source/世纪欣园3-1-901_cabinet_plan.pdf (shop drawing 2024-08-31)',

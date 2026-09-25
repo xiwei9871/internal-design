@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Emit current_existing_v1.dxf from current_existing_v1.json (task01 coords).
 Layers per taskbook §17. Existing geometry only — no proposal geometry."""
-import ezdxf, json
+import ezdxf, json, hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -120,4 +120,7 @@ msp.add_text('L1->L2 2 RISERS — delta LEVEL_TO_VERIFY (owner<=350 / CAD~400)',
              dxfattribs={'layer': 'A-LEVEL'}).set_placement((zx1 - 200, zy2 + 200))
 
 doc.saveas(str(ROOT / 'current_existing' / 'current_existing_v1.dxf'))
+_sha = hashlib.sha256((ROOT / 'current_existing' / 'canonical_plan_v1.json').read_bytes()).hexdigest()[:16]
+json.dump({'canonical_sha': _sha, 'outputs': ['current_existing_v1.dxf']},
+          open(ROOT / 'current_existing' / 'current_existing_v1.base.json', 'w'), indent=1)
 print('dxf written')

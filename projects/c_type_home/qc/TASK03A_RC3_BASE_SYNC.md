@@ -54,3 +54,57 @@ All sheets + DXFs regenerate from the same model/canonical data:
 
 Furniture NOT re-laid out this round — K-CAB zone + real cabinet geometry
 is now the hard constraint for the upcoming furniture pass.
+
+---
+
+# RC3.1 — Wall Correction + Cabinet Collision Closure + Output Hash Sidecars
+
+Owner review of RC3 @ 5164f25 found three issues; all closed here.
+
+## 1. W-INT-Y4500-bc split (owner-confirmed corridor opening)
+
+Was: continuous wall [11400,4450,16500,4650].
+Now:
+- `W-INT-Y4500-bc-OPEN`  [11400,4450,12900,4650]  DEMOLISHED_OWNER_CONFIRMED — corridor, no current wall
+- `W-INT-Y4500-bc-MBATH` [12900,4450,16500,4650]  EXISTING — retained master-bath wall
+
+Propagates to canonical_plan_v1.json, all S1-S6 sheets, overlays and DXFs
+(all regenerated from the same canonical base).
+
+## 2. Kitchen cabinet collision resolved (0.378m2 -> 0)
+
+Root cause re-read from cabinet PDF p0: the "3915" east-wall dimension is a
+wall-to-wall chain that includes the 700mm-deep NE corner, which belongs to the
+refrigerator tall cabinet (it holds the corner, sockets + side cabs per PDF).
+The physical east base run is 3215mm ending at the tall-cab face y=3750.
+
+Final footprints:
+- K-RUN-E        [7200,535,7800,3750]   physical 3215mm (PDF chain 3915 incl. corner)
+- K-FRIDGE-TALL  [5900,3750,7740,4450]  owns NE corner; abuts run at y=3750
+- K-RUN-S        [6100,0,7310,600]      sink leg under W-KIT-S
+- modules        K-COOK 900 / K-DISHW 600 / K-BASKET / K-SINK 990 / K-FRIDGE 905x710
+                 nested via `parent` inside their runs
+- K-WALL-E       [7420,535,7800,3750]   380-deep wall cabs, `wall_cabinet_above` K-RUN-E
+
+Relationship semantics added: `parent` (module nesting), `relation.type`
+(abuts / corner_owner / wall_cabinet_above), `corner_join` (declared zone).
+SE corner K-RUN-E x K-RUN-S overlap 110x65mm declared as `corner_join` zone
+[7200,535,7310,600] — a real shared corner base cabinet, exempted by G30.
+
+## 3. Confidence split
+
+Every cabinet record now carries `dimension_status` + `placement_status`
+instead of a single CONFIRMED flag. E.g. K-RUN-S: length 1210 CONFIRMED,
+placement TO_VERIFY (x-origin ±210). Module positions inside runs are
+placement TO_VERIFY where the PDF dim chain does not pin them.
+
+## 4. Gates
+
+- G28 strengthened: checks canonical section hashes AND every output sidecar
+  (qc/render_manifest.json, current_existing_v1.base.json,
+  concept/concept_dxf_base.json) — all report canonical_sha = identical value.
+- G30 new: floor-standing cabinets (runs + tall cab) pairwise overlap must be
+  zero except declared corner_join zones.
+  Result: collisions=none; exempted=[K-RUN-E x K-RUN-S corner_join 110x65mm].
+
+31/31 ALL PASS. Furniture coordinates unchanged (G27 freeze: changed=none).

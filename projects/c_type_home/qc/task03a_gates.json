@@ -141,14 +141,19 @@
       "detail": "changed=none (windows/wall-split/render changes exempt)"
     },
     {
-      "gate": "G28 canonical base hash consistency across outputs",
+      "gate": "G28 canonical base hash + output sidecars consistent",
       "result": "PASS",
-      "detail": "sections=['walls', 'openings', 'windows', 'kitchen_cabinets', 'keep_items', 'balconies', 'split_level']; mismatched=[]"
+      "detail": "sections=['walls', 'openings', 'windows', 'kitchen_cabinets', 'keep_items', 'balconies', 'split_level']; mismatched=[]; sidecars=all match"
     },
     {
       "gate": "G29 kitchen cabinets clear of walls/windows/doors",
       "result": "PASS",
       "detail": "cabinet_conflicts=[]"
+    },
+    {
+      "gate": "G30 no unexplained floor-cabinet overlap",
+      "result": "PASS",
+      "detail": "collisions=none; exempted=['K-RUN-ExK-RUN-S corner_join 110x65mm (declared)']"
     }
   ],
   "overall": "PASS"

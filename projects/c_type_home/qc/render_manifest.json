@@ -1,0 +1,15 @@
+{
+ "canonical_sha": "e83c1d69e6b5da74",
+ "outputs": [
+  "task03a_s1_current_existing.png",
+  "task03a_s2_demolition.png",
+  "task03a_s3_furniture_presentation.png",
+  "task03a_s3_furniture_qc.png",
+  "window_register_overlay.png",
+  "wall_window_conflict_check.png",
+  "window_cleanup_before_after.png",
+  "kitchen_cabinet_alignment_overlay.png",
+  "task03a_s4_splitlevel.png",
+  "task03a_s5_bathrooms.png"
+ ]
+}

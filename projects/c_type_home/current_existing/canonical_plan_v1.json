@@ -908,24 +908,45 @@
    "note": "niche wall absent in measured — treated as removed/open; resolves old D-10 as open passage"
   },
   {
-   "id": "W-INT-Y4500-bc",
+   "id": "W-INT-Y4500-bc-OPEN",
    "rect_mm": [
     11400,
+    4450,
+    12900,
+    4650
+   ],
+   "type": "interior",
+   "measured_coverage": 0.2,
+   "struct_overlap_mm2": 39980,
+   "disposition": "DEMOLISHED_OWNER_CONFIRMED",
+   "layer": "A-WALL-EXST-REMOVE",
+   "original_color_class": "BLACK_FILL",
+   "owner_rule_applied": "DEMOLISHED_OR_PARTIAL",
+   "wall_class": "DEMOLISHED_OR_PARTIAL",
+   "dwg_stale_geometry": false,
+   "confidence": "HIGH",
+   "evidence": "x11400-12900 open corridor per owner — no wall here",
+   "note": "corridor section OPEN — owner-confirmed passage (RC3.1); only x12900-16500 is master-bath wall"
+  },
+  {
+   "id": "W-INT-Y4500-bc-MBATH",
+   "rect_mm": [
+    12900,
     4450,
     16500,
     4650
    ],
    "type": "interior",
-   "measured_coverage": 0.76,
-   "struct_overlap_mm2": 229940,
+   "measured_coverage": 1.0,
+   "struct_overlap_mm2": 189960,
    "disposition": "EXISTING",
    "layer": "A-WALL-EXST-KEEP",
-   "original_color_class": "AMBIGUOUS",
-   "owner_rule_applied": "CLASSIFICATION_TO_REVIEW",
-   "wall_class": "CLASSIFICATION_TO_REVIEW",
+   "original_color_class": "WHITE_FILL",
+   "owner_rule_applied": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
+   "wall_class": "OWNER_DECLARED_NO_DEMOLITION_NO_OPENING",
    "dwg_stale_geometry": false,
-   "confidence": "LOW",
-   "evidence": "black at X11500 junction, hollow band w/ door at master bath — review",
+   "confidence": "HIGH",
+   "evidence": "master-bath north wall x12900-16500 — owner-confirmed solid",
    "note": ""
   },
   {
@@ -1786,43 +1807,63 @@
     7200,
     535,
     7800,
-    4450
+    3750
    ],
    "depth_mm": 600,
-   "len_mm": 3915,
+   "len_mm": 3215,
    "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 — 3915 main run; modules 18/413/414/灶具900/洗碗机600/513/518/50",
-   "note": "east-wall run; module order from PDF dim chain, y-bounds per run start 535"
+   "dimension_status": "CONFIRMED",
+   "placement_status": "CONFIRMED",
+   "source": "cabinet PDF p0 — east run; wall chain 3915 = physical run 3215 + 700 corner absorbed by tall cab",
+   "relation": {
+    "type": "abuts",
+    "with": "K-FRIDGE-TALL",
+    "face": "north (tall cab face y3750)"
+   },
+   "corner_join": {
+    "with": "K-RUN-S",
+    "zone": [
+     7200,
+     535,
+     7310,
+     600
+    ],
+    "note": "SE corner base cab — footprints share corner, join belongs to this junction"
+   },
+   "note": "east-wall run stops at fridge tall-cab face; PDF \"3915\" is wall-to-wall incl. corner zone"
   },
   {
    "id": "K-COOK",
    "kind": "cooktop_slot",
    "rect_mm": [
     7200,
-    2705,
+    2400,
     7800,
-    3605
+    3300
    ],
    "span_mm": 900,
    "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 灶具 900 on 3915 run (north-of-centre per dim chain)",
-   "note": "cooktop position; range hood above (烟机插座 on wall-cab elevation)"
+   "parent": "K-RUN-E",
+   "dimension_status": "CONFIRMED",
+   "placement_status": "TO_VERIFY",
+   "source": "cabinet PDF p0 灶具 900 on east run (dim chain 194/413/414 north of it)",
+   "note": "cooktop; range hood + socket above per elevation p1"
   },
   {
    "id": "K-DISHW",
    "kind": "dishwasher_slot",
    "rect_mm": [
     7200,
-    2105,
+    1800,
     7800,
-    2705
+    2400
    ],
    "span_mm": 600,
    "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 洗碗机位置 600 on 3915 run",
+   "parent": "K-RUN-E",
+   "dimension_status": "CONFIRMED",
+   "placement_status": "TO_VERIFY",
+   "source": "cabinet PDF p0 洗碗机位置 600 on east run",
    "note": "open slot for dishwasher"
   },
   {
@@ -1830,15 +1871,17 @@
    "kind": "pull_basket_module",
    "rect_mm": [
     7200,
-    3605,
+    3300,
     7800,
-    4400
+    3750
    ],
-   "span_mm": 800,
+   "span_mm": 450,
    "status": "EXISTING_KEEP",
-   "measurement_status": "TO_VERIFY",
-   "source": "cabinet PDF p0 拉篮/调味拉篮 800 — exact position within run to verify",
-   "note": "spice pull-basket module, drawn near cooktop per PDF; y-bounds approximate"
+   "parent": "K-RUN-E",
+   "dimension_status": "TO_VERIFY",
+   "placement_status": "TO_VERIFY",
+   "source": "cabinet PDF p0 拉篮/调味拉篮 800 near cooktop — clipped to run north end",
+   "note": "spice pull-basket; exact bounds to verify"
   },
   {
    "id": "K-FRIDGE-TALL",
@@ -1852,9 +1895,15 @@
    "depth_mm": 700,
    "len_mm": 1840,
    "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
-   "source": "cabinet PDF p0 — 冰箱高柜 1840 along north wall",
-   "note": "tall unit incl. double-door fridge slot + side cabs + sockets"
+   "dimension_status": "CONFIRMED",
+   "placement_status": "CONFIRMED",
+   "source": "cabinet PDF p0 — 冰箱高柜 1840 on north wall, holds the NE corner (base run abuts its face)",
+   "relation": {
+    "type": "corner_owner",
+    "with": "K-RUN-E",
+    "note": "tall cab occupies the NE corner; run stops at its face — the 700-deep corner zone is tall-cab floor, resolving the former 540x700 overlap"
+   },
+   "note": "tall unit incl. double-door fridge slot + side cabs + sockets; east end stops 60mm short of east wall (filler)"
   },
   {
    "id": "K-FRIDGE",
@@ -1867,9 +1916,11 @@
    ],
    "span_mm": 905,
    "status": "EXISTING_KEEP",
-   "measurement_status": "TO_VERIFY",
+   "parent": "K-FRIDGE-TALL",
+   "dimension_status": "CONFIRMED",
+   "placement_status": "TO_VERIFY",
    "source": "cabinet PDF — fridge 905x710 inside tall cab; internal split TO_VERIFY",
-   "note": "double-door fridge 905x710 (note: 710 depth incl. gap per PDF)"
+   "note": "double-door fridge 905x710 (710 depth incl. gap per PDF)"
   },
   {
    "id": "K-RUN-S",
@@ -1883,9 +1934,20 @@
    "depth_mm": 600,
    "len_mm": 1210,
    "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
+   "dimension_status": "CONFIRMED",
+   "placement_status": "TO_VERIFY",
    "source": "cabinet PDF p0 — sink leg 990+220 next to 窗 (window)",
-   "note": "south-wall leg under W-KIT-S window; x-origin aligned to window centre ±210"
+   "corner_join": {
+    "with": "K-RUN-E",
+    "zone": [
+     7200,
+     535,
+     7310,
+     600
+    ],
+    "note": "SE corner join — 110x65 shared footprint is the physical corner base cab"
+   },
+   "note": "south-wall leg under W-KIT-S window; length 1210 confirmed, x-origin ±210 to verify"
   },
   {
    "id": "K-SINK",
@@ -1898,7 +1960,9 @@
    ],
    "span_mm": 990,
    "status": "EXISTING_KEEP",
-   "measurement_status": "CONFIRMED",
+   "parent": "K-RUN-S",
+   "dimension_status": "CONFIRMED",
+   "placement_status": "TO_VERIFY",
    "source": "cabinet PDF p0 水槽柜 990 + filler 220",
    "note": "sink cabinet under south window"
   },
@@ -1909,14 +1973,20 @@
     7420,
     535,
     7800,
-    4450
+    3750
    ],
    "depth_mm": 380,
-   "len_mm": 3915,
+   "len_mm": 3215,
    "status": "EXISTING_KEEP",
-   "measurement_status": "TO_VERIFY",
-   "source": "cabinet PDF p1 吊柜 — 380 deep along main run, widths 374/569/569/459/459/460/460/50",
-   "note": "wall-mounted cabinets; module splits per PDF elevation, exact y-bounds TO_VERIFY"
+   "parent": "K-RUN-E",
+   "relation": {
+    "type": "wall_cabinet_above",
+    "with": "K-RUN-E"
+   },
+   "dimension_status": "CONFIRMED",
+   "placement_status": "TO_VERIFY",
+   "source": "cabinet PDF p1 吊柜 — 380 deep over east run, widths 374/569/569/459/459/460/460/50",
+   "note": "wall-mounted cabinets; module splits + hood position per elevation, y-bounds TO_VERIFY"
   }
  ],
  "owner_corrections": [
@@ -1924,10 +1994,10 @@
  ],
  "owner_fenestration_ref": "OWNER_CONFIRMED_FENESTRATION_REFERENCE_2026-09-25",
  "hashes": {
-  "walls": "c49e2697aeb2d4fc",
+  "walls": "20d1f01c17d38c87",
   "openings": "e74b99f90dadce91",
   "windows": "a3a67e381429922b",
-  "kitchen_cabinets": "6e0aa29a79b6afdd",
+  "kitchen_cabinets": "48135426700cf7f6",
   "keep_items": "69a6fcfb35307a6a",
   "balconies": "cd586064ee7eefca",
   "split_level": "c69f315a7db6d5b3"

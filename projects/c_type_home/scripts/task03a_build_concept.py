@@ -7,7 +7,7 @@ Coords = task01 mm system. Produces:
   qc/*.png renders
 All design data also dumped to concept/concept_data.json for QC/tests.
 """
-import ezdxf, json, math
+import ezdxf, json, math, hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -354,4 +354,9 @@ label(m, f"AREA ACCOUNT: returned {ac['returned_platform_m2']}m2 vs ramp {ac['ra
 d.saveas(str(ROOT / 'concept' / 'split_level_study.dxf'))
 
 json.dump(CD, open(ROOT / 'concept' / 'concept_data.json', 'w'), ensure_ascii=False, indent=1)
+_sha = hashlib.sha256((ROOT / 'current_existing' / 'canonical_plan_v1.json').read_bytes()).hexdigest()[:16]
+json.dump({'canonical_sha': _sha,
+           'outputs': ['task03a_preferred_plan.dxf', 'option_smb_entry_S.dxf',
+                       'option_smb_entry_W.dxf', 'split_level_study.dxf']},
+          open(ROOT / 'concept' / 'concept_dxf_base.json', 'w'), indent=1)
 print('concept dxf + options + study written; furniture:', len(F))
