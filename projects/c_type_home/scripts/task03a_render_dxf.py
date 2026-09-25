@@ -22,8 +22,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.path import Path as MplPath
-from matplotlib.patches import PathPatch
+from matplotlib.patches import Rectangle
 from ezdxf.addons.drawing import RenderContext, Frontend
 from ezdxf.addons.drawing.matplotlib import MatplotlibBackend
 from ezdxf import bbox
@@ -131,65 +130,140 @@ def sha(p):
     return hashlib.sha256(open(p, 'rb').read()).hexdigest()
 
 
-def _ring(r):
-    return [(r[0], r[1]), (r[2], r[1]), (r[2], r[3]), (r[0], r[3])]
-
-
 def _clip(a, b):
-    x1, y1 = max(a[0], b[0]), max(a[1], b[1])
-    x2, y2 = min(a[2], b[2]), min(a[3], b[3])
-    return [x1, y1, x2, y2] if x2 > x1 + 1 and y2 > y1 + 1 else None
+    """Return the positive integer intersection of two task-coordinate rects."""
+    x1, y1 = max(int(a[0]), int(b[0])), max(int(a[1]), int(b[1]))
+    x2, y2 = min(int(a[2]), int(b[2])), min(int(a[3]), int(b[3]))
+    return [x1, y1, x2, y2] if x2 > x1 and y2 > y1 else None
 
 
-def _wall_patch(wall, holes, style, alpha=1.0):
-    """wall rect with opening holes — opposite winding = cut."""
-    r = [wall['rect_mm'][i] + (AX if i % 2 == 0 else AY) for i in range(4)]
-    verts = _ring(r) + [r[0], r[1]]
-    codes = [MplPath.MOVETO, MplPath.LINETO, MplPath.LINETO,
-             MplPath.LINETO, MplPath.CLOSEPOLY]
-    for h in holes:
-        verts += list(reversed(_ring(h))) + [h[0], h[1]]
-        codes += [MplPath.MOVETO, MplPath.LINETO, MplPath.LINETO,
-                  MplPath.LINETO, MplPath.CLOSEPOLY]
-    return PathPatch(MplPath(verts, codes), facecolor=style['fc'],
-                     edgecolor=style['ec'], lw=style['lw'],
-                     zorder=style['z'], alpha=alpha, joinstyle='miter')
+def _rect_area(r):
+    return (r[2] - r[0]) * (r[3] - r[1])
+
+
+def _fragment_rectangles(wall_rect, cuts):
+    """Subtract a rect union using an exact integer edge grid.
+
+    Each grid cell is included iff its integer midpoint is outside every cut.
+    Adjacent included cells are merged first across x and then across y, giving
+    deterministic axis-aligned rectangular fragments and exact integer areas.
+    """
+    # Clip once more here so direct smoke callers can pass partly external cuts.
+    cuts = [c for c in (_clip(wall_rect, c) for c in cuts) if c]
+    x_edges = sorted({int(wall_rect[0]), int(wall_rect[2]),
+                      *(int(c[0]) for c in cuts), *(int(c[2]) for c in cuts)})
+    y_edges = sorted({int(wall_rect[1]), int(wall_rect[3]),
+                      *(int(c[1]) for c in cuts), *(int(c[3]) for c in cuts)})
+    # Horizontal runs of included cells on each y strip.
+    runs_by_y = []
+    for yi in range(len(y_edges) - 1):
+        y1, y2 = y_edges[yi:yi + 2]
+        runs, run_start = [], None
+        for xi in range(len(x_edges) - 1):
+            x1, x2 = x_edges[xi:xi + 2]
+            if x2 <= wall_rect[0] or x1 >= wall_rect[2] or y2 <= wall_rect[1] or y1 >= wall_rect[3]:
+                inside = False
+            else:
+                mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+                inside = not any(c[0] < mx < c[2] and c[1] < my < c[3] for c in cuts)
+            if inside and run_start is None:
+                run_start = xi
+            if (not inside or xi == len(x_edges) - 2) and run_start is not None:
+                end = xi + 1 if inside and xi == len(x_edges) - 2 else xi
+                runs.append((run_start, end)); run_start = None
+        runs_by_y.append(runs)
+    # Merge equal x-runs on consecutive y strips.
+    active = {}
+    fragments = []
+    for yi, runs in enumerate(runs_by_y):
+        current = set(runs)
+        next_active = {}
+        for run in sorted(current):
+            if run in active:
+                next_active[run] = active[run]
+            else:
+                next_active[run] = [x_edges[run[0]], y_edges[yi], x_edges[run[1]], y_edges[yi + 1]]
+        for run, rect in active.items():
+            if run not in current:
+                fragments.append(rect)
+        active = next_active
+    fragments.extend(active.values())
+    return [r for r in fragments if r[2] > r[0] and r[3] > r[1]]
+
+
+def _wall_report(wall):
+    """Build one wall's render-only fragment and clipped-cut report."""
+    wr = [int(v) for v in wall['rect_mm']]
+    if not (wr[2] > wr[0] and wr[3] > wr[1]):
+        raise ValueError(f"invalid wall rectangle {wall.get('id')}: {wr!r}")
+    cuts, clipped_cuts, hostless = [], [], []
+    # Ordinary openings are explicit canonical cuts.
+    for opening in CE['openings']:
+        clipped = _clip(wr, opening['rect_mm'])
+        if clipped:
+            item = {'id': opening['id'], 'source_type': 'opening', 'rect_mm': clipped}
+            cuts.append(item); clipped_cuts.append(item)
+    # Window cuts require a registered host wall; hostless fenestration is
+    # retained as metadata only because a gap already present in CAD must not
+    # be invented from JSON alone.
+    for window in CE['windows']:
+        wid = window.get('window_id') or window.get('name')
+        if window.get('host_wall_id') != wall['id']:
+            if not window.get('host_wall_id'):
+                c = _clip(wr, window['opening_rect_mm'])
+                if c:
+                    hostless.append({'id': wid, 'source_type': 'window', 'rect_mm': c})
+            continue
+        clipped = _clip(wr, window['opening_rect_mm'])
+        if clipped:
+            item = {'id': wid, 'source_type': 'window', 'rect_mm': clipped}
+            cuts.append(item); clipped_cuts.append(item)
+    # De-duplicate identical cuts while retaining all IDs for audit metadata.
+    unique_rects = []
+    for item in cuts:
+        if item['rect_mm'] not in unique_rects:
+            unique_rects.append(item['rect_mm'])
+    fragments = _fragment_rectangles(wr, unique_rects)
+    wall_area = _rect_area(wr)
+    cut_union = sum(_rect_area(r) for r in _fragment_rectangles(wr, []) ) - sum(_rect_area(r) for r in fragments)
+    # The preceding expression is exact because the no-cut fragments equal the wall.
+    report = {
+        'wall_id': wall['id'], 'wall_type': wall.get('type', 'interior'),
+        'wall_area_mm2': wall_area, 'cut_union_area_mm2': cut_union,
+        'fragment_area_mm2': sum(_rect_area(r) for r in fragments),
+        'area_error_mm2': wall_area - cut_union - sum(_rect_area(r) for r in fragments),
+        'fragment_rects': fragments,
+        'cut_ids': [item['id'] for item in clipped_cuts],
+        'clipped_cuts': clipped_cuts,
+        'hostless_cuts': hostless,
+    }
+    if report['area_error_mm2'] != 0:
+        raise RuntimeError(f"fragment area mismatch for {wall['id']}: {report}")
+    return report
 
 
 def wall_faces_report():
-    """canonical EXISTING walls -> render-only faces w/ opening+window cuts."""
-    open_items = ([(o['id'], o['rect_mm']) for o in CE['openings']]
-                  + [(w.get('window_id') or w.get('name'), w['opening_rect_mm'])
-                     for w in CE['windows']])
-    faces, parapets, cuts = [], [], []
-    for w in CE['walls']:
-        if w['disposition'] != 'EXISTING':
-            continue
-        wtype = w.get('type', 'interior')
-        holes, cut_ids = [], []
-        for oid, orr in open_items:
-            c = _clip(w['rect_mm'], orr)
-            if c:
-                holes.append([c[0] + AX, c[1] + AY, c[2] + AX, c[3] + AY])
-                cut_ids.append(oid)
-        style = WALL_FACE.get(wtype, WALL_FACE['interior'])
-        patch = _wall_patch(w, holes, style)
-        (parapets if wtype == 'railing_parapet' else faces).append(w['id'])
-        cuts += [(w['id'], i) for i in cut_ids]
-        yield w['id'], wtype, patch, cut_ids
+    """Return canonical EXISTING wall fragment reports for render-time faces."""
+    return [_wall_report(w) for w in CE['walls'] if w['disposition'] == 'EXISTING']
 
 
 def draw_wall_faces(ax, profile):
-    report = {'wall_face_ids': [], 'parapet_ids': [], 'cuts': []}
-    for wid, wtype, patch, cut_ids in wall_faces_report():
+    report = {'wall_face_ids': [], 'parapet_ids': [], 'cuts': [], 'wall_reports': []}
+    for item in wall_faces_report():
+        wid, wtype = item['wall_id'], item['wall_type']
         if wtype == 'railing_parapet':
             report['parapet_ids'].append(wid)
         else:
             report['wall_face_ids'].append(wid)
-        report['cuts'] += [{'wall': wid, 'opening': o} for o in cut_ids]
-        if profile == 'CAD_REVIEW':
-            patch.set_alpha(REVIEW_WALL_FACE_ALPHA)
-        ax.add_patch(patch)
+        report['cuts'] += [{'wall': wid, 'opening': oid} for oid in item['cut_ids']]
+        report['wall_reports'].append(item)
+        style = WALL_FACE.get(wtype, WALL_FACE['interior'])
+        alpha = REVIEW_WALL_FACE_ALPHA if profile == 'CAD_REVIEW' else 1.0
+        for r in item['fragment_rects']:
+            ax.add_patch(Rectangle((r[0] + AX, r[1] + AY), r[2] - r[0], r[3] - r[1],
+                                   facecolor=style['fc'], edgecolor=style['ec'],
+                                   lw=style['lw'], zorder=style['z'], alpha=alpha,
+                                   joinstyle='miter'))
     return report
 
 
