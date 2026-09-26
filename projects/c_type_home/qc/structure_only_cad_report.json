@@ -7,7 +7,7 @@
   },
   "output": {
     "dxf": "cad/structure_only_source_sync.dxf",
-    "dxf_sha256": "e2153e84ceeb3904c1201cd0a0c36eaeeeeb237db5a8d2797505463183523885"
+    "dxf_sha256": "3dcb49bfd6e617817089dda4fdfadec49bcf7c09e92b0012e3779e1c5c7e72e2"
   },
   "deleted_entities": [
     {
@@ -15,7 +15,40 @@
       "layer": "F-FURN",
       "type": "TEXT",
       "text": "冰箱",
-      "reason": "furniture layer"
+      "reason": "furniture layer",
+      "classification": "FURNITURE_SOURCE_ENTITY"
+    },
+    {
+      "handle": "307F68",
+      "layer": "S-S.WALL",
+      "type": "INSERT",
+      "text": "",
+      "reason": "nested F-FURN furniture block",
+      "classification": "FURNITURE_SOURCE_ENTITY"
+    },
+    {
+      "handle": "30830F",
+      "layer": "S-楼梯",
+      "type": "LINE",
+      "text": "",
+      "reason": "owner-confirmed fan-shaped lounge/platform geometry",
+      "classification": "NON_STRUCTURAL_SOURCE_OVERLAY"
+    },
+    {
+      "handle": "308310",
+      "layer": "S-楼梯",
+      "type": "LINE",
+      "text": "",
+      "reason": "owner-confirmed fan-shaped lounge/platform geometry",
+      "classification": "NON_STRUCTURAL_SOURCE_OVERLAY"
+    },
+    {
+      "handle": "308311",
+      "layer": "S-楼梯",
+      "type": "ARC",
+      "text": "",
+      "reason": "owner-confirmed fan-shaped lounge/platform geometry",
+      "classification": "NON_STRUCTURAL_SOURCE_OVERLAY"
     }
   ],
   "source_entity_counts": {
@@ -49,27 +82,90 @@
     "F-DOOR|LWPOLYLINE": 7,
     "F-SAN FIT|LINE": 14,
     "F-SAN FIT|ARC": 2,
-    "S-S.WALL|INSERT": 1,
     "S-COLUMN|DIMENSION": 18,
     "F-TEXT|MTEXT": 6,
-    "S-楼梯|LINE": 6,
-    "S-楼梯|ARC": 1
+    "S-楼梯|LINE": 4
   },
   "wall_match": {
-    "source_count": 216,
-    "output_count": 216,
+    "source_count": 215,
+    "output_count": 215,
     "missing": [],
     "extra": [],
     "max_coordinate_delta_mm": 0.0,
     "geometry_mismatches": []
   },
   "retained_entity_match": {
-    "source_count": 341,
-    "output_count": 341,
+    "source_count": 337,
+    "output_count": 337,
     "missing": [],
     "extra": [],
     "max_coordinate_delta_mm": 0.0,
     "geometry_mismatches": []
+  },
+  "expected_retained_entity_count": 337,
+  "explicit_exclusion_registry": [
+    {
+      "classification": "NON_STRUCTURAL_SOURCE_OVERLAY",
+      "reason": "owner-confirmed lounge/leisure geometry to remove",
+      "source_handles": [
+        "30830F",
+        "308310",
+        "308311"
+      ]
+    },
+    {
+      "classification": "FURNITURE_SOURCE_ENTITY",
+      "reason": "source furniture layer or nested F-FURN block",
+      "source_handles": [
+        "307F67",
+        "307F68"
+      ]
+    }
+  ],
+  "lounge_entity_audit": {
+    "json": "qc/lounge_entity_audit.json",
+    "png": "qc/lounge_entity_audit.png",
+    "approved_handles": [
+      "30830F",
+      "308310",
+      "308311"
+    ]
+  },
+  "lounge_geometry_remaining": 0,
+  "lounge_geometry_remaining_handles": [],
+  "outside_lounge_layer_checks": {
+    "S-S.WALL": {
+      "source_count": 215,
+      "output_count": 215,
+      "missing": [],
+      "extra": [],
+      "max_coordinate_delta_mm": 0.0,
+      "geometry_mismatches": []
+    },
+    "F-DOOR": {
+      "source_count": 18,
+      "output_count": 18,
+      "missing": [],
+      "extra": [],
+      "max_coordinate_delta_mm": 0.0,
+      "geometry_mismatches": []
+    },
+    "S-COLUMN": {
+      "source_count": 18,
+      "output_count": 18,
+      "missing": [],
+      "extra": [],
+      "max_coordinate_delta_mm": 0.0,
+      "geometry_mismatches": []
+    },
+    "S-楼梯": {
+      "source_count": 4,
+      "output_count": 4,
+      "missing": [],
+      "extra": [],
+      "max_coordinate_delta_mm": 0.0,
+      "geometry_mismatches": []
+    }
   },
   "residual_furniture_entities": [],
   "residual_leisure_overlay_entities": [],

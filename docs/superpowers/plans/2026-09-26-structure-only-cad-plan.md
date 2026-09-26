@@ -14,6 +14,7 @@
 
 **Files:**
 
+- Create: `projects/c_type_home/scripts/audit_lounge_entities.py`
 - Create: `tests/test_structure_only_cad.py`
 - Test target: `projects/c_type_home/scripts/build_structure_only_cad.py`
 
@@ -48,12 +49,25 @@
 
   Expected: FAIL because the builder and report do not exist.
 
+- [ ] **Step 3: Run the source lounge geometry audit before deletion.**
+
+  ```bash
+  rtk .venv/bin/python projects/c_type_home/scripts/audit_lounge_entities.py
+  ```
+
+  Confirm the audit reports `30830F`, `308310`, `308311` on `S-楼梯` as the
+  fan-shaped lounge/platform candidates, the straight stair handles as retained
+  context, and `307F68` as a nested `F-FURN` block. Review
+  `qc/lounge_entity_audit.png` before the builder deletes any candidate.
+
 ### Task 2: Implement the source-faithful DXF builder
 
 **Files:**
 
 - Create: `projects/c_type_home/scripts/build_structure_only_cad.py`
 - Create: `projects/c_type_home/qc/structure_only_cad_report.json`
+- Create: `projects/c_type_home/qc/lounge_entity_audit.json`
+- Create: `projects/c_type_home/qc/lounge_entity_audit.png`
 - Create: `projects/c_type_home/cad/structure_only_source_sync.dxf`
 
 - [ ] **Step 1: Load and freeze the direct source.**
@@ -64,11 +78,12 @@
 
 - [ ] **Step 2: Define the deletion predicate.**
 
-  Delete modelspace entities only when their layer is one of
-  `F-FURN`, `A-FURN-PROP`, `A-FURN-EXST-KEEP`, or when text contains one of
-  `休闲厅`, `平台`, `LANDING`, `LOUNGE`, `RAMP` in a derived overlay input.
-  Do not delete `S-S.WALL`, `S-COLUMN`, `F-DOOR`, `F-SAN FIT`, `S-楼梯`, or any
-  source window/wall entity.
+  Use the audit-approved exclusions exactly:
+  `30830F`, `308310`, `308311` (`S-楼梯` fan-shaped lounge/platform),
+  `307F67` (`F-FURN` text), and `307F68` (`S-S.WALL` INSERT with nested
+  `F-FURN` block). Do not delete the straight stair handles
+  `308341`, `308342`, `308343`, `308345`, or any other wall/window/door/column
+  entity.
 
 - [ ] **Step 3: Serialize the derived DXF without synthetic geometry.**
 
@@ -80,8 +95,10 @@
 
   For each retained wall/column/door/window/stair entity, record handle, layer,
   DXF type, and normalized geometry. Compare output to source by source handle;
-  report missing, extra, and coordinate deltas. Require maximum retained wall
-  delta `<= 0.01 mm` and zero missing/extra wall handles.
+  report missing, extra, and coordinate deltas. Require
+  `expected retained entities = source entities - explicit lounge exclusions -
+  furniture exclusions`, maximum retained wall delta `<= 0.01 mm`, and zero
+  unexplained missing/extra handles.
 
 - [ ] **Step 5: Add green-box checks.**
 

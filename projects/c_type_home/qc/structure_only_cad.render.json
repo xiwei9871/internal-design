@@ -1,6 +1,6 @@
 {
   "source_dxf": "cad/structure_only_source_sync.dxf",
-  "source_dxf_sha256": "e2153e84ceeb3904c1201cd0a0c36eaeeeeb237db5a8d2797505463183523885",
+  "source_dxf_sha256": "3dcb49bfd6e617817089dda4fdfadec49bcf7c09e92b0012e3779e1c5c7e72e2",
   "render_profile": "STRUCTURE_ONLY_CAD",
   "synthetic_wall_faces": false,
   "coordinate_mapping": {
@@ -57,13 +57,13 @@
   "outputs": {
     "png": {
       "file": "qc/structure_only_cad.png",
-      "sha256": "0e6280ad979dc62bb1e627e7599f1e4465284f79981b52ef2a90dbd40ab147e5"
+      "sha256": "2b95ca79054a7f3555e28a55b7c980724061edf1d8d0726ef5b0aa8611e1b8d4"
     },
     "pdf": {
       "file": "qc/structure_only_cad.pdf",
-      "sha256": "8e46ce1b6155c7070efd1741ee31faa334c1a25acefcc213e0900a3b4a124a9b"
+      "sha256": "a91513b61958bf519f5595cb14a9abda2d0b072b873035255131c1ff231d9765"
     }
   },
   "renderer_sha256": "d9932fa30efc8501f455adc4a51169beb5ab189288fdbc3090b48858b01cb89c",
-  "generated_at": "2026-09-26T12:06:20"
+  "generated_at": "2026-09-26T12:35:54"
 }

@@ -23,6 +23,8 @@ QC = ROOT / "qc"
 SOURCE = CAD / "measured_working.dxf"
 OUTPUT = CAD / "structure_only_source_sync.dxf"
 REPORT_PATH = QC / "structure_only_cad_report.json"
+AUDIT_JSON_PATH = QC / "lounge_entity_audit.json"
+AUDIT_PNG_PATH = QC / "lounge_entity_audit.png"
 AX, AY = 1298172.0, -296458.0
 SOURCE_SHA = "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233"
 FURNITURE_LAYERS = {"F-FURN", "A-FURN-PROP", "A-FURN-EXST-KEEP"}
@@ -30,6 +32,16 @@ OVERLAY_LAYERS = {
     "A-ACCESS-RAMP", "A-ACCESS-STAIR", "A-LEVEL", "A-QC-ZONE",
 }
 OVERLAY_WORDS = ("休闲厅", "平台", "LANDING", "LOUNGE", "RAMP")
+LOUNGE_EXCLUSION_HANDLES = ["30830F", "308310", "308311"]
+NESTED_FURNITURE_HANDLES = ["307F68"]
+LOUNGE_EXPECTATIONS = {
+    "30830F": {"layer": "S-楼梯", "type": "LINE"},
+    "308310": {"layer": "S-楼梯", "type": "LINE"},
+    "308311": {"layer": "S-楼梯", "type": "ARC"},
+}
+NESTED_FURNITURE_EXPECTATIONS = {
+    "307F68": {"layer": "S-S.WALL", "type": "INSERT", "block": "bing"},
+}
 LAYER_STYLE_OVERRIDES = {
     # ACI 7 is white on the Matplotlib white canvas; keep geometry untouched
     # but make the source wall layer readable in the CAD deliverable.
@@ -150,6 +162,11 @@ def _is_overlay_text(entity):
 
 
 def _deletion_reason(entity):
+    handle = entity.dxf.get("handle")
+    if handle in LOUNGE_EXCLUSION_HANDLES:
+        return "owner-confirmed fan-shaped lounge/platform geometry"
+    if handle in NESTED_FURNITURE_HANDLES:
+        return "nested F-FURN furniture block"
     layer = entity.dxf.layer
     if layer in FURNITURE_LAYERS:
         return "furniture layer"
@@ -256,6 +273,17 @@ def build():
         raise RuntimeError(f"source DXF SHA mismatch: {SOURCE}")
     source_doc = ezdxf.readfile(str(SOURCE))
     source_records = _walk_records(source_doc)
+    for handle, expected in LOUNGE_EXPECTATIONS.items():
+        entity = source_doc.entitydb.get(handle)
+        if entity is None or entity.dxf.layer != expected["layer"] or entity.dxftype() != expected["type"]:
+            raise RuntimeError(f"lounge exclusion source mismatch: {handle}")
+    for handle, expected in NESTED_FURNITURE_EXPECTATIONS.items():
+        entity = source_doc.entitydb.get(handle)
+        if entity is None or entity.dxf.layer != expected["layer"] or entity.dxftype() != expected["type"]:
+            raise RuntimeError(f"nested furniture exclusion source mismatch: {handle}")
+        block = source_doc.blocks.get(entity.dxf.name)
+        if entity.dxf.name != expected["block"] or not any(be.dxf.layer == "F-FURN" for be in block):
+            raise RuntimeError(f"nested furniture block mismatch: {handle}")
     deleted = []
     for entity in list(source_doc.modelspace()):
         reason = _deletion_reason(entity)
@@ -266,6 +294,10 @@ def build():
                 "type": entity.dxftype(),
                 "text": _text_value(entity),
                 "reason": reason,
+                "classification": (
+                    "NON_STRUCTURAL_SOURCE_OVERLAY" if entity.dxf.get("handle") in LOUNGE_EXCLUSION_HANDLES
+                    else "FURNITURE_SOURCE_ENTITY"
+                ),
             })
             source_doc.modelspace().delete_entity(entity)
     for layer_name, style in LAYER_STYLE_OVERRIDES.items():
@@ -284,14 +316,25 @@ def build():
     output_doc = ezdxf.readfile(str(OUTPUT))
     output_records = _walk_records(output_doc)
 
-    wall_pred = lambda record: record["layer"] == "S-S.WALL"
-    retained_pred = lambda record: record["handle"] not in {item["handle"] for item in deleted}
+    exclusion_handles = {item["handle"] for item in deleted}
+    wall_pred = lambda record: record["layer"] == "S-S.WALL" and record["handle"] not in exclusion_handles
+    retained_pred = lambda record: record["handle"] not in exclusion_handles
     wall_match = _compare_records(source_records, output_records, wall_pred)
     retained_match = _compare_records(source_records, output_records, retained_pred)
     residual_furniture = [
         rec for rec in output_records.values()
         if rec["layer"] in FURNITURE_LAYERS
     ]
+    for rec in output_records.values():
+        if rec["type"] != "INSERT":
+            continue
+        entity = output_doc.entitydb.get(rec["handle"])
+        try:
+            block = output_doc.blocks.get(entity.dxf.name)
+            if any(be.dxf.layer == "F-FURN" for be in block):
+                residual_furniture.append(rec)
+        except Exception:
+            continue
     residual_overlay = [
         rec for rec in output_records.values()
         if rec["type"] in {"TEXT", "MTEXT", "ATTRIB", "ATTDEF"}
@@ -299,12 +342,47 @@ def build():
     ]
     green_checks = _source_wall_checks(source_doc=ezdxf.readfile(str(SOURCE)))
     standard_window = _source_window_check(ezdxf.readfile(str(SOURCE)))
+    outside_lounge_layers = {}
+    for layer in ("S-S.WALL", "F-DOOR", "S-COLUMN", "S-楼梯"):
+        outside_lounge_layers[layer] = _compare_records(
+            source_records,
+            output_records,
+            lambda record, layer=layer: record["layer"] == layer and record["handle"] not in exclusion_handles,
+        )
+    lounge_remaining = sorted(
+        handle for handle in LOUNGE_EXCLUSION_HANDLES if handle in output_records
+    )
+    exclusion_registry = [
+        {
+            "classification": "NON_STRUCTURAL_SOURCE_OVERLAY",
+            "reason": "owner-confirmed lounge/leisure geometry to remove",
+            "source_handles": LOUNGE_EXCLUSION_HANDLES,
+        },
+        {
+            "classification": "FURNITURE_SOURCE_ENTITY",
+            "reason": "source furniture layer or nested F-FURN block",
+            "source_handles": sorted(
+                handle for handle in exclusion_handles if handle not in LOUNGE_EXCLUSION_HANDLES
+            ),
+        },
+    ]
     report = {
         "status": "PASS" if (
             not wall_match["missing"] and not wall_match["extra"]
             and wall_match["max_coordinate_delta_mm"] <= 0.01
             and not wall_match["geometry_mismatches"]
             and not residual_furniture and not residual_overlay
+            and lounge_remaining == []
+            and sorted(LOUNGE_EXCLUSION_HANDLES) == sorted(
+                next(item["source_handles"] for item in exclusion_registry
+                     if item["classification"] == "NON_STRUCTURAL_SOURCE_OVERLAY")
+            )
+            and all(
+                not item["missing"] and not item["extra"]
+                and item["max_coordinate_delta_mm"] <= 0.01
+                and not item["geometry_mismatches"]
+                for item in outside_lounge_layers.values()
+            )
             and all(item["source_wall_linework"] for item in green_checks)
             and standard_window["surrounding_wall_linework"]
         ) else "FAIL",
@@ -332,6 +410,16 @@ def build():
         },
         "wall_match": wall_match,
         "retained_entity_match": retained_match,
+        "expected_retained_entity_count": len(source_records) - len(exclusion_handles),
+        "explicit_exclusion_registry": exclusion_registry,
+        "lounge_entity_audit": {
+            "json": str(AUDIT_JSON_PATH.relative_to(ROOT)),
+            "png": str(AUDIT_PNG_PATH.relative_to(ROOT)),
+            "approved_handles": LOUNGE_EXCLUSION_HANDLES,
+        },
+        "lounge_geometry_remaining": len(lounge_remaining),
+        "lounge_geometry_remaining_handles": lounge_remaining,
+        "outside_lounge_layer_checks": outside_lounge_layers,
         "residual_furniture_entities": residual_furniture,
         "residual_leisure_overlay_entities": residual_overlay,
         "green_box_checks": green_checks,

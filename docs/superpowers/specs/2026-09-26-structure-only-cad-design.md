@@ -27,6 +27,8 @@ Create:
 - `projects/c_type_home/qc/structure_only_cad.png`
 - `projects/c_type_home/qc/structure_only_cad.pdf`
 - `projects/c_type_home/qc/structure_only_cad.render.json`
+- `projects/c_type_home/qc/lounge_entity_audit.json`
+- `projects/c_type_home/qc/lounge_entity_audit.png`
 
 The DXF is a derived CAD deliverable, not a presentation overlay. Its retained
 wall, column, door, window, stair, sanitary and source annotation entities are
@@ -36,9 +38,15 @@ source geometry and layer exactly within 0.01 mm.
 
 ## Deletion scope
 
-The only source furniture deletion is entity `F-FURN` and any future entities
-on the explicit furniture layers `F-FURN`, `A-FURN-PROP`, and
-`A-FURN-EXST-KEEP`. No wall or window entity may be deleted or synthesized.
+The output uses an explicit exclusion registry. The approved lounge/platform
+source handles are `30830F`, `308310`, and `308311` on `S-楼梯`; they form the
+vertical/quarter-arc/horizontal fan-shaped boundary. The straight two-riser
+stair handles `308341`, `308342`, `308343`, and `308345` remain.
+
+Furniture exclusions include source `F-FURN` entities and the `S-S.WALL`
+`INSERT 307F68`, whose `bing` block contains nested `F-FURN` geometry. No
+unlisted wall, window, door, column, or retained stair entity may be deleted or
+synthesized.
 
 The source conversion contains no platform or leisure-room geometry. Any
 `休闲厅`, `平台`, `LANDING`, `LOUNGE`, or `RAMP` text/overlay encountered in a
@@ -56,6 +64,9 @@ The report must record:
 - extra/missing wall handles, coordinate mismatches, and furniture residues;
 - explicit status for the green-box regions, checked against source `S-S.WALL`
   linework;
+- explicit lounge entity audit with handle, layer, DXF type, bbox, geometry and
+  source layer determination;
+- `lounge_geometry_remaining = 0` and exact registry handle matching;
 - explicit confirmation that the nine registered windows remain source-backed
   and that standard windows do not erase surrounding wall geometry.
 
