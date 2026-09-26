@@ -2,6 +2,8 @@
   "date": "2026-09-26",
   "sample_count": 30,
   "scope": "temporary sample audit only; no formal library import",
+  "classification_basis": "technical_only",
+  "license_is_informational_only": true,
   "samples": [
     {
       "source_file": "Architecture/Furniture/Bedroom/BedSingle.dxf",
@@ -24,6 +26,13 @@
         990.5999999999999,
         1917.6999999999998
       ],
+      "actual_drawn_bbox_mm": [
+        990.5999999999999,
+        1917.6999999999998
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -47,10 +56,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Bedroom/BedSingle.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/BedSingle.dxf",
@@ -78,6 +86,13 @@
         1524.0,
         2070.1
       ],
+      "actual_drawn_bbox_mm": [
+        1524.0,
+        2070.1
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -101,10 +116,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Bedroom/BedQueen.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/BedQueen.dxf",
@@ -132,6 +146,13 @@
         1930.3999999999999,
         2070.1
       ],
+      "actual_drawn_bbox_mm": [
+        1930.3999999999999,
+        2070.1
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -155,10 +176,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Bedroom/BedKing.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/BedKing.dxf",
@@ -186,6 +206,13 @@
         1625.6,
         914.4
       ],
+      "actual_drawn_bbox_mm": [
+        1625.6,
+        914.4
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -209,10 +236,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Living Room/CouchUpholstered.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Living%20Room/CouchUpholstered.dxf",
@@ -240,6 +266,13 @@
         2235.2,
         914.4
       ],
+      "actual_drawn_bbox_mm": [
+        2235.2,
+        914.4
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -263,10 +296,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Living Room/SofaUpholstered.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Living%20Room/SofaUpholstered.dxf",
@@ -294,6 +326,16 @@
         2286.0,
         1117.6
       ],
+      "actual_drawn_bbox_mm": [
+        2286.0,
+        1117.6
+      ],
+      "nominal_product_geometry_mm": [
+        1828.8,
+        1117.6
+      ],
+      "nominal_geometry_basis": "filename_dimension_inch",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -317,10 +359,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Dining Room/TableRect-90-72x44.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Dining%20Room/TableRect-90-72x44.dxf",
@@ -348,6 +389,13 @@
         456.450801151184,
         508.0
       ],
+      "actual_drawn_bbox_mm": [
+        456.450801151184,
+        508.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -371,10 +419,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Dining Room/Chair.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Dining%20Room/Chair.dxf",
@@ -402,6 +449,13 @@
         571.3480679761448,
         508.000000112864
       ],
+      "actual_drawn_bbox_mm": [
+        571.3480679761448,
+        508.000000112864
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -425,10 +479,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Office/Chair.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Office/Chair.dxf",
@@ -456,6 +509,16 @@
         1524.0,
         762.0
       ],
+      "actual_drawn_bbox_mm": [
+        1524.0,
+        762.0
+      ],
+      "nominal_product_geometry_mm": [
+        1524.0,
+        762.0
+      ],
+      "nominal_geometry_basis": "filename_dimension_inch",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -478,10 +541,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Office/Desk-60x30.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Office/Desk-60x30.dxf",
@@ -509,6 +571,13 @@
         457.2,
         711.2001227426085
       ],
+      "actual_drawn_bbox_mm": [
+        457.2,
+        711.2001227426085
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -533,10 +602,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Fixtures/Bathroom/Toilet.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Fixtures/Bathroom/Toilet.dxf",
@@ -564,6 +632,16 @@
         914.4,
         914.4
       ],
+      "actual_drawn_bbox_mm": [
+        914.4,
+        914.4
+      ],
+      "nominal_product_geometry_mm": [
+        914.4,
+        914.4
+      ],
+      "nominal_geometry_basis": "filename_dimension_inch",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -588,10 +666,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Fixtures/Bathroom/ShowerBase-36x36.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Fixtures/Bathroom/ShowerBase-36x36.dxf",
@@ -619,6 +696,13 @@
         762.0000000000001,
         762.0000000000001
       ],
+      "actual_drawn_bbox_mm": [
+        762.0000000000001,
+        762.0000000000001
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -643,10 +727,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Appliances/Laundry/Washer.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Appliances/Laundry/Washer.dxf",
@@ -674,6 +757,13 @@
         838.1999999999999,
         685.8
       ],
+      "actual_drawn_bbox_mm": [
+        838.1999999999999,
+        685.8
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -697,10 +787,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Appliances/Kitchen/Refrigerator-SbS.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Appliances/Kitchen/Refrigerator-SbS.dxf",
@@ -728,6 +817,13 @@
         965.1999999999999,
         457.2
       ],
+      "actual_drawn_bbox_mm": [
+        965.1999999999999,
+        457.2
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         0.0,
         0.0,
@@ -750,10 +846,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "CONFLICT",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license conflict"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "GSStnb/dxfBlocks",
       "path": "Architecture/Furniture/Bedroom/Armoire.dxf",
       "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/Armoire.dxf",
@@ -781,6 +876,13 @@
         1005.3551944830194,
         2123.611239683384
       ],
+      "actual_drawn_bbox_mm": [
+        1005.3551944830194,
+        2123.611239683384
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         0.0,
         0.0,
@@ -803,10 +905,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "UNKNOWN",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license missing/unclear"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "uncreatednet/DXF-library",
       "path": "beds/cama simples.dxf",
       "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/beds/cama%20simples.dxf",
@@ -834,6 +935,13 @@
         1902.4323236841265,
         2165.8679373679306
       ],
+      "actual_drawn_bbox_mm": [
+        1902.4323236841265,
+        2165.8679373679306
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         0.0,
         0.0,
@@ -856,10 +964,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "UNKNOWN",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license missing/unclear"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "uncreatednet/DXF-library",
       "path": "beds/cama casal handdrawn.dxf",
       "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/beds/cama%20casal%20handdrawn.dxf",
@@ -887,6 +994,13 @@
         1600.0042526694056,
         710.000000000079
       ],
+      "actual_drawn_bbox_mm": [
+        1600.0042526694056,
+        710.000000000079
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         8.235001091598692,
         14.81659999999993,
@@ -909,10 +1023,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "UNKNOWN",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license missing/unclear"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "uncreatednet/DXF-library",
       "path": "lounge/sofa 2 lugares.dxf",
       "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/lounge/sofa%202%20lugares.dxf",
@@ -940,6 +1053,13 @@
         2200.00000000001,
         800.0000000000007
       ],
+      "actual_drawn_bbox_mm": [
+        2200.00000000001,
+        800.0000000000007
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         14.8759301794967,
         -13.0713285161051,
@@ -963,10 +1083,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "UNKNOWN",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license missing/unclear"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "uncreatednet/DXF-library",
       "path": "lounge/sofa 3 lugares.dxf",
       "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/lounge/sofa%203%20lugares.dxf",
@@ -994,6 +1113,16 @@
         1630.103558837959,
         1200.0000000000455
       ],
+      "actual_drawn_bbox_mm": [
+        1630.103558837959,
+        1200.0000000000455
+      ],
+      "nominal_product_geometry_mm": [
+        1200.0,
+        800.0
+      ],
+      "nominal_geometry_basis": "filename_dimension_cm",
+      "unit_confidence": "medium",
       "base_point_native": [
         0.0,
         0.0,
@@ -1018,10 +1147,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "UNKNOWN",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license missing/unclear"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "uncreatednet/DXF-library",
       "path": "tables/Mesa120x080_4.dxf",
       "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/tables/Mesa120x080_4.dxf",
@@ -1049,6 +1177,13 @@
         450.00000000068206,
         499.8002390881311
       ],
+      "actual_drawn_bbox_mm": [
+        450.00000000068206,
+        499.8002390881311
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         0.0,
         0.0,
@@ -1072,10 +1207,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "UNKNOWN",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license missing/unclear"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "uncreatednet/DXF-library",
       "path": "chairs/cadeira escritorio planta.dxf",
       "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/chairs/cadeira%20escritorio%20planta.dxf",
@@ -1103,6 +1237,13 @@
         370.0000000012551,
         490.0000000006912
       ],
+      "actual_drawn_bbox_mm": [
+        370.0000000012551,
+        490.0000000006912
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         0.0,
         0.0,
@@ -1127,9 +1268,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "UNKNOWN",
-      "classification": "REJECT",
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
       "reject_or_normalize_reasons": [
-        "license missing/unclear",
         "geometry far from origin"
       ],
       "repo": "uncreatednet/DXF-library",
@@ -1159,6 +1300,13 @@
         600.0,
         600.0
       ],
+      "actual_drawn_bbox_mm": [
+        600.0,
+        600.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         2633.164029515109,
         3768.9549067825,
@@ -1184,10 +1332,9 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "UNKNOWN",
-      "classification": "REJECT",
-      "reject_or_normalize_reasons": [
-        "license missing/unclear"
-      ],
+      "license_is_informational_only": true,
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
       "repo": "uncreatednet/DXF-library",
       "path": "basins/Std600.dxf",
       "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/basins/Std600.dxf",
@@ -1215,6 +1362,13 @@
         2032.0000000000814,
         1828.8000000000732
       ],
+      "actual_drawn_bbox_mm": [
+        2032.0000000000814,
+        1828.8000000000732
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         -1.4210854715202e-14,
         23.71653543307085,
@@ -1238,6 +1392,7 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "MIT",
+      "license_is_informational_only": true,
       "classification": "NORMALIZE",
       "reject_or_normalize_reasons": [],
       "repo": "Lendres/CAD-Support-Files",
@@ -1267,6 +1422,13 @@
         2032.0000000000814,
         1524.0000000000612
       ],
+      "actual_drawn_bbox_mm": [
+        2032.0000000000814,
+        1524.0000000000612
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         0.0,
         143.4330708661446,
@@ -1290,6 +1452,7 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "MIT",
+      "license_is_informational_only": true,
       "classification": "NORMALIZE",
       "reject_or_normalize_reasons": [],
       "repo": "Lendres/CAD-Support-Files",
@@ -1319,6 +1482,13 @@
         2032.0,
         787.4
       ],
+      "actual_drawn_bbox_mm": [
+        2032.0,
+        787.4
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         0.0,
         0.0,
@@ -1342,6 +1512,7 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "MIT",
+      "license_is_informational_only": true,
       "classification": "NORMALIZE",
       "reject_or_normalize_reasons": [],
       "repo": "Lendres/CAD-Support-Files",
@@ -1371,6 +1542,13 @@
         1619.8681621249432,
         3037.673151838001
       ],
+      "actual_drawn_bbox_mm": [
+        1619.8681621249432,
+        3037.673151838001
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "high",
       "base_point_native": [
         703.9554716610754,
         404.7337783042354,
@@ -1396,6 +1574,7 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "MIT",
+      "license_is_informational_only": true,
       "classification": "NORMALIZE",
       "reject_or_normalize_reasons": [],
       "repo": "Lendres/CAD-Support-Files",
@@ -1425,6 +1604,13 @@
         1219.200000000023,
         609.5999999999999
       ],
+      "actual_drawn_bbox_mm": [
+        1219.200000000023,
+        609.5999999999999
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         0.0,
         0.0,
@@ -1450,6 +1636,7 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "MIT",
+      "license_is_informational_only": true,
       "classification": "NORMALIZE",
       "reject_or_normalize_reasons": [],
       "repo": "Lendres/CAD-Support-Files",
@@ -1479,6 +1666,13 @@
         685.8,
         533.4000000000074
       ],
+      "actual_drawn_bbox_mm": [
+        685.8,
+        533.4000000000074
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         0.0,
         0.0,
@@ -1502,6 +1696,7 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "MIT",
+      "license_is_informational_only": true,
       "classification": "NORMALIZE",
       "reject_or_normalize_reasons": [],
       "repo": "Lendres/CAD-Support-Files",
@@ -1531,6 +1726,13 @@
         685.7999999999985,
         762.0
       ],
+      "actual_drawn_bbox_mm": [
+        685.7999999999985,
+        762.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         296.56931016562,
         163.1633539333452,
@@ -1554,6 +1756,7 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "MIT",
+      "license_is_informational_only": true,
       "classification": "NORMALIZE",
       "reject_or_normalize_reasons": [
         "geometry far from origin"
@@ -1585,6 +1788,13 @@
         762.0000000000075,
         673.1000000000108
       ],
+      "actual_drawn_bbox_mm": [
+        762.0000000000075,
+        673.1000000000108
+      ],
+      "nominal_product_geometry_mm": null,
+      "nominal_geometry_basis": "not_stated",
+      "unit_confidence": "medium",
       "base_point_native": [
         108.6774597167969,
         163.0470886230469,
@@ -1607,6 +1817,7 @@
       "two_d_plan_available": true,
       "plan_legend_suitable": true,
       "license_gate": "MIT",
+      "license_is_informational_only": true,
       "classification": "NORMALIZE",
       "reject_or_normalize_reasons": [],
       "repo": "Lendres/CAD-Support-Files",
@@ -1618,8 +1829,8 @@
   ],
   "contact_sheet": "qc/a0_2_cad_contact_sheet.png",
   "license_notes": {
-    "GSStnb/dxfBlocks": "API metadata CC0-1.0 conflicts with README CC BY-NC-SA-4.0; REJECT",
-    "uncreatednet/DXF-library": "no repository license; REJECT",
-    "Lendres/CAD-Support-Files": "MIT repo license; NORMALIZE candidates after per-file check"
+    "GSStnb/dxfBlocks": "API metadata CC0-1.0 conflicts with README CC BY-NC-SA-4.0; metadata retained, does not affect technical classification",
+    "uncreatednet/DXF-library": "no repository license; metadata retained, does not affect technical classification",
+    "Lendres/CAD-Support-Files": "MIT repo license; metadata retained, does not affect technical classification"
   }
 }

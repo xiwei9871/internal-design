@@ -55,6 +55,21 @@ def _unit_info(doc, source, category):
     return "unknown", None, "no reliable unit evidence"
 
 
+def _nominal_product_geometry(source):
+    """Use only explicit dimension tokens; never invent nominal sizes."""
+    stem = Path(source).stem
+    match = re.search(r"(?<!\d)(\d{3,4})\s*[xX]\s*(\d{2,4})(?!\d)", stem)
+    if match:
+        a, b = float(match.group(1)), float(match.group(2))
+        if a <= 300 and b <= 300:
+            return [a * 10.0, b * 10.0], "filename_dimension_cm"
+        return [a, b], "filename_dimension_mm"
+    match = re.search(r"(?<!\d)(\d{2})\s*[xX]\s*(\d{2})(?!\d)", stem)
+    if match and any(token in stem.lower() for token in ["inch", "ft", "table", "desk", "shower"]):
+        return [float(match.group(1)) * 25.4, float(match.group(2)) * 25.4], "filename_dimension_inch"
+    return None, "not_stated"
+
+
 def _entity_bbox(entity):
     try:
         ext = bbox.extents([entity])
@@ -117,15 +132,17 @@ def _collect_metrics(doc, source, category, repo):
     # A single 2D outline with manageable entity count is suitable as a legend.
     plan_suitable = two_d_plan and width_mm is not None and depth_mm is not None and width_mm > 50 and depth_mm > 50
     legal = LICENSE_GATE.get(repo, "UNKNOWN")
-    if legal in {"UNKNOWN", "CONFLICT"}:
-        classification = "REJECT"
-    elif not plan_suitable or has_xref or special:
-        classification = "REJECT"
+    unit_confidence = "high" if units in {"inch", "mm"} else ("medium" if factor else "low")
+    nominal_mm, nominal_basis = _nominal_product_geometry(source)
+    if not plan_suitable or has_xref or special or factor is None or width_mm is None or depth_mm is None:
+        classification = "REJECT_TECHNICAL"
     else:
-        classification = "NORMALIZE" if units != "mm" or far_from_origin or len(layers) > 1 else "APPROVED"
+        needs_normalization = (
+            units != "mm" or far_from_origin or len(layers) > 1
+            or any(not math.isclose(v, round(v), abs_tol=0.01) for v in [width_mm, depth_mm])
+        )
+        classification = "NORMALIZE" if needs_normalization else "APPROVED_AS_IS"
     reject_reasons = []
-    if legal == "UNKNOWN": reject_reasons.append("license missing/unclear")
-    if legal == "CONFLICT": reject_reasons.append("license conflict")
     if not two_d_plan: reject_reasons.append("not a clean planar 2D symbol")
     if has_xref: reject_reasons.append("XREF present")
     if special: reject_reasons.append("unsupported/proxy-like entity type")
@@ -141,6 +158,10 @@ def _collect_metrics(doc, source, category, repo):
         "bbox_native": [minx, miny, maxx, maxy],
         "width_depth_native": [width_native, depth_native],
         "actual_width_depth_mm": [width_mm, depth_mm],
+        "actual_drawn_bbox_mm": [width_mm, depth_mm],
+        "nominal_product_geometry_mm": nominal_mm,
+        "nominal_geometry_basis": nominal_basis,
+        "unit_confidence": unit_confidence,
         "base_point_native": base,
         "far_from_origin": far_from_origin,
         "modelspace_entity_count": len(entities),
@@ -155,6 +176,7 @@ def _collect_metrics(doc, source, category, repo):
         "two_d_plan_available": two_d_plan,
         "plan_legend_suitable": plan_suitable,
         "license_gate": legal,
+        "license_is_informational_only": True,
         "classification": classification,
         "reject_or_normalize_reasons": reject_reasons,
     }
@@ -261,14 +283,14 @@ def make_contact_sheet(samples):
                 except Exception:
                     pass
         status=metric["classification"]
-        color={"APPROVED":"#2a9d8f","NORMALIZE":"#e9c46a","REJECT":"#e76f51"}.get(status,"#777")
+        color={"APPROVED_AS_IS":"#2a9d8f","NORMALIZE":"#e9c46a","REJECT_TECHNICAL":"#e76f51"}.get(status,"#777")
         for spine in ax.spines.values(): spine.set_visible(True); spine.set_color(color); spine.set_linewidth(3)
         source_name=f"{sample['repo'].split('/')[0]} / {Path(sample['path']).name}"
         dims=metric["actual_width_depth_mm"]
         dim_txt=f"{dims[0]:.0f}×{dims[1]:.0f} mm" if dims[0] is not None else "unit unknown"
         ax.set_title(f"#{idx+1} {sample['category']}\n{source_name}\n{dim_txt} · {status}",fontsize=7,color="#111")
     for ax in axes[len(samples):]: ax.axis("off")
-    fig.suptitle("A0.2 2D CAD Plan Symbol Contact Sheet — common scale / mm footprint",fontsize=16)
+    fig.suptitle("A0.2R Technical-only 2D CAD Plan Symbol Contact Sheet — common scale / mm footprint",fontsize=16)
     fig.tight_layout(rect=[0,0,1,0.97])
     out=QC/"a0_2_cad_contact_sheet.png";fig.savefig(out,dpi=160,facecolor="white");plt.close(fig);return out
 
@@ -282,14 +304,15 @@ def main():
         metric.update({"repo":sample["repo"],"path":sample["path"],"url":sample.get("url"),"local_path":sample["local_path"],"converted_path":sample.get("converted_path")})
         rows.append(metric);pairs.append((sample,metric))
     contact=make_contact_sheet(pairs)
-    report={"date":"2026-09-26","sample_count":len(rows),"scope":"temporary sample audit only; no formal library import","samples":rows,"contact_sheet":str(contact.relative_to(ROOT)),"license_notes":{"GSStnb/dxfBlocks":"API metadata CC0-1.0 conflicts with README CC BY-NC-SA-4.0; REJECT","uncreatednet/DXF-library":"no repository license; REJECT","Lendres/CAD-Support-Files":"MIT repo license; NORMALIZE candidates after per-file check"}}
+    report={"date":"2026-09-26","sample_count":len(rows),"scope":"temporary sample audit only; no formal library import","classification_basis":"technical_only","license_is_informational_only":True,"samples":rows,"contact_sheet":str(contact.relative_to(ROOT)),"license_notes":{"GSStnb/dxfBlocks":"API metadata CC0-1.0 conflicts with README CC BY-NC-SA-4.0; metadata retained, does not affect technical classification","uncreatednet/DXF-library":"no repository license; metadata retained, does not affect technical classification","Lendres/CAD-Support-Files":"MIT repo license; metadata retained, does not affect technical classification"}}
     out=QC/"a0_2_cad_sample_report.json";out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
     md=QC/"a0_2_cad_sample_report.md"
-    lines=["# A0.2 2D CAD Block Sample Audit","","No formal library files were added. Samples remain in `/tmp/a0_2_cad_samples`.","",f"Contact sheet: `{contact.relative_to(ROOT)}`","", "|#|source|category|units|actual W×D mm|bbox/layers|base/far|XREF/OLE/proxy|plan legend|classification|", "|-:|---|---|---|---:|---|---|---|---|---|"]
+    lines=["# A0.2R Technical-only 2D CAD Block Sample Audit","","No formal library files were added. Samples remain in `/tmp/a0_2_cad_samples`.","","Classification is technical-only; license is metadata and does not affect APPROVED_AS_IS / NORMALIZE / REJECT_TECHNICAL.","",f"Contact sheet: `{contact.relative_to(ROOT)}`","", "|#|source|category|units|nominal W×D mm|actual bbox W×D mm|bbox/layers|base/far|XREF/OLE/proxy|plan legend|classification|", "|-:|---|---|---|---:|---:|---|---|---|---|---|"]
     for i,(s,m) in enumerate(zip(manifest['samples'],rows),1):
-        dims=m['actual_width_depth_mm']; dims='×'.join(f'{x:.0f}' for x in dims) if dims[0] is not None else 'unknown'
-        lines.append(f"|{i}|{s['repo']}:{s['path']}|{s['category']}|{m['units']}|{dims}|{m['bbox_native']} / {m['layer_count']} layers|{m['base_point_native']} / {m['far_from_origin']}|{m['xref']}/{m['ole']}/{m['proxy_or_unsupported_types']}|{m['plan_legend_suitable']}|**{m['classification']}**|")
-    lines += ["", "## Classification rules", "", "- `APPROVED`: license gate clear, clean 2D plan, reliable units/base point, no normalization required.", "- `NORMALIZE`: technically usable 2D plan but unit/base point/layer cleanup is required.", "- `REJECT`: license missing/conflicting, not a clean plan symbol, unsupported geometry, or unsuitable format.", "", "## No formal import", "", "No V02/V03 CAD, canonical data, or furniture library was modified."]
+        actual=m['actual_drawn_bbox_mm']; actual='×'.join(f'{x:.0f}' for x in actual) if actual[0] is not None else 'unknown'
+        nominal=m['nominal_product_geometry_mm']; nominal='×'.join(f'{x:.0f}' for x in nominal) if nominal and nominal[0] is not None else 'not stated'
+        lines.append(f"|{i}|{s['repo']}:{s['path']}|{s['category']}|{m['units']}|{nominal}|{actual}|{m['bbox_native']} / {m['layer_count']} layers|{m['base_point_native']} / {m['far_from_origin']}|{m['xref']}/{m['ole']}/{m['proxy_or_unsupported_types']}|{m['plan_legend_suitable']}|**{m['classification']}**|")
+    lines += ["", "## Classification rules", "", "- `APPROVED_AS_IS`: clean 2D plan, reliable units/base point, no technical cleanup required.", "- `NORMALIZE`: technically usable plan; unit conversion, base-point relocation, layer cleanup, block wrapping, or minor geometry cleanup is required.", "- `REJECT_TECHNICAL`: geometry/scale/meaning is genuinely unsuitable or cannot be normalized safely.", "- License is recorded separately and never changes this technical classification.", "", "## No formal import", "", "No V02/V03 CAD, canonical data, or furniture library was modified."]
     md.write_text('\n'.join(lines)+'\n')
     print(json.dumps({"report":str(out),"markdown":str(md),"contact_sheet":str(contact),"counts":dict(Counter(m['classification'] for m in rows))},ensure_ascii=False,indent=2))
 
