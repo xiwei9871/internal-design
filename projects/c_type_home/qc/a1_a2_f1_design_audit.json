@@ -284,7 +284,7 @@
         "precedent_id": "PREC-015",
         "project_name": "Apartment Renovation in Sants",
         "relevance_score": 0.6853,
-        "evidence_confidence": 0.85,
+        "evidence_confidence": 0.5,
         "tags": [
           "before-after",
           "child-friendly",
@@ -301,7 +301,7 @@
         "precedent_id": "PREC-017",
         "project_name": "Renovation of Sofia's apartment",
         "relevance_score": 0.6525,
-        "evidence_confidence": 1.0,
+        "evidence_confidence": 0.5,
         "tags": [
           "before-after",
           "child-friendly",
@@ -336,7 +336,7 @@
         "precedent_id": "PREC-005",
         "project_name": "Residential Extension MF Pavilion",
         "relevance_score": 0.8985,
-        "evidence_confidence": 0.9875,
+        "evidence_confidence": 1.0,
         "tags": [
           "child-friendly",
           "existing-structure",
@@ -372,7 +372,7 @@
         "precedent_id": "PREC-055",
         "project_name": "Renovation of the Jiakaxia Ancient Courtyard",
         "relevance_score": 0.4471,
-        "evidence_confidence": 0.85,
+        "evidence_confidence": 0.0,
         "tags": [
           "balcony-connected",
           "before-after",
@@ -395,35 +395,33 @@
         "precedent_ids": [
           "PREC-004",
           "PREC-009",
-          "PREC-030",
           "PREC-013",
           "PREC-014"
         ],
         "evidence": [
           {
             "precedent_id": "PREC-004",
-            "evidence": "Captured metadata carries shared tags aging-in-place, step-free-route and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-009",
-            "evidence": "Captured metadata carries shared tags aging-in-place, step-free-route and floor_plan_available=true.",
-            "confidence": "HIGH"
-          },
-          {
-            "precedent_id": "PREC-030",
-            "evidence": "Captured metadata carries shared tags aging-in-place, step-free-route and floor_plan_available=false.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-013",
-            "evidence": "Captured metadata carries shared tags split-level and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-014",
-            "evidence": "Captured metadata carries shared tags split-level and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground plan has irregular split-level/courtyard geometry; the living/dining/kitchen group is central and bedrooms/support rooms occupy wings.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           }
         ]
       },
@@ -432,36 +430,41 @@
         "name": "VISIBLE-SOCIAL-ROUTE",
         "precedent_ids": [
           "PREC-002",
-          "PREC-006",
-          "PREC-050",
           "PREC-004",
-          "PREC-009"
+          "PREC-009",
+          "PREC-013",
+          "PREC-014"
         ],
         "evidence": [
           {
             "precedent_id": "PREC-002",
-            "evidence": "Captured metadata carries shared tags clear-circulation, visual-connection and floor_plan_available=true.",
-            "confidence": "HIGH"
-          },
-          {
-            "precedent_id": "PREC-006",
-            "evidence": "Captured metadata carries shared tags clear-circulation, visual-connection and floor_plan_available=true.",
-            "confidence": "HIGH"
-          },
-          {
-            "precedent_id": "PREC-050",
-            "evidence": "Captured metadata carries shared tags clear-circulation, visual-connection and floor_plan_available=false.",
-            "confidence": "MEDIUM"
+            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-004",
-            "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-009",
-            "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
+          },
+          {
+            "precedent_id": "PREC-013",
+            "evidence": "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
+          },
+          {
+            "precedent_id": "PREC-014",
+            "evidence": "Ground plan has irregular split-level/courtyard geometry; the living/dining/kitchen group is central and bedrooms/support rooms occupy wings.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           }
         ]
       },
@@ -471,35 +474,26 @@
         "precedent_ids": [
           "PREC-004",
           "PREC-009",
-          "PREC-030",
-          "PREC-057",
           "PREC-002"
         ],
         "evidence": [
           {
             "precedent_id": "PREC-004",
-            "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-009",
-            "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=true.",
-            "confidence": "HIGH"
-          },
-          {
-            "precedent_id": "PREC-030",
-            "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=false.",
-            "confidence": "MEDIUM"
-          },
-          {
-            "precedent_id": "PREC-057",
-            "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=false.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-002",
-            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           }
         ]
       },
@@ -509,35 +503,26 @@
         "precedent_ids": [
           "PREC-002",
           "PREC-004",
-          "PREC-006",
-          "PREC-009",
-          "PREC-027"
+          "PREC-009"
         ],
         "evidence": [
           {
             "precedent_id": "PREC-002",
-            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-004",
-            "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
-            "confidence": "MEDIUM"
-          },
-          {
-            "precedent_id": "PREC-006",
-            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-009",
-            "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
-            "confidence": "MEDIUM"
-          },
-          {
-            "precedent_id": "PREC-027",
-            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           }
         ]
       },
@@ -549,33 +534,38 @@
           "PREC-003",
           "PREC-007",
           "PREC-008",
-          "PREC-010"
+          "PREC-001"
         ],
         "evidence": [
           {
             "precedent_id": "PREC-002",
-            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-003",
-            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-007",
-            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "evidence": "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-008",
-            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "evidence": "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
-            "precedent_id": "PREC-010",
-            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "precedent_id": "PREC-001",
+            "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           }
         ]
       },
@@ -585,35 +575,40 @@
         "precedent_ids": [
           "PREC-002",
           "PREC-003",
-          "PREC-006",
           "PREC-007",
-          "PREC-008"
+          "PREC-008",
+          "PREC-013"
         ],
         "evidence": [
           {
             "precedent_id": "PREC-002",
-            "evidence": "Captured metadata carries shared tags clear-circulation, kitchen-adjacency and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-003",
-            "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
-            "confidence": "MEDIUM"
-          },
-          {
-            "precedent_id": "PREC-006",
-            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-007",
-            "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-008",
-            "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
+          },
+          {
+            "precedent_id": "PREC-013",
+            "evidence": "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           }
         ]
       },
@@ -624,34 +619,32 @@
           "PREC-001",
           "PREC-002",
           "PREC-003",
-          "PREC-005",
-          "PREC-006"
+          "PREC-005"
         ],
         "evidence": [
           {
             "precedent_id": "PREC-001",
-            "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-002",
-            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-003",
-            "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-005",
-            "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
-            "confidence": "MEDIUM"
-          },
-          {
-            "precedent_id": "PREC-006",
-            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
-            "confidence": "MEDIUM"
+            "evidence": "Plan shows an added pavilion/extension attached to an existing home with public rooms and a planted or terrace edge.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           }
         ]
       },
@@ -661,35 +654,40 @@
         "precedent_ids": [
           "PREC-007",
           "PREC-008",
-          "PREC-010",
-          "PREC-031",
-          "PREC-048"
+          "PREC-001",
+          "PREC-002",
+          "PREC-003"
         ],
         "evidence": [
           {
             "precedent_id": "PREC-007",
-            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "evidence": "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-008",
-            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "evidence": "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
-            "precedent_id": "PREC-010",
-            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=true.",
-            "confidence": "HIGH"
+            "precedent_id": "PREC-001",
+            "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
-            "precedent_id": "PREC-031",
-            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=false.",
-            "confidence": "MEDIUM"
+            "precedent_id": "PREC-002",
+            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           },
           {
-            "precedent_id": "PREC-048",
-            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=false.",
-            "confidence": "MEDIUM"
+            "precedent_id": "PREC-003",
+            "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+            "confidence": "HIGH",
+            "verification_status": "VERIFIED_PRECEDENT"
           }
         ]
       }

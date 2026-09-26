@@ -167,7 +167,7 @@ def main() -> int:
     parser.add_argument("--hard-only", action="store_true", help="only hard project constraints and local-code checks")
     parser.add_argument("--precedents", action="store_true", help="include precedents; default output includes them")
     parser.add_argument("--patterns", action="store_true", help="include patterns; default output includes them")
-    parser.add_argument("--curation-level", choices=["METADATA_ONLY", "CURATED"], help="filter precedent level")
+    parser.add_argument("--curation-level", choices=["METADATA_ONLY", "CURATED_METADATA", "VERIFIED_PRECEDENT"], help="filter precedent level")
     parser.add_argument("--top", type=int, default=8)
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON")
     args = parser.parse_args()

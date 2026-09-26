@@ -3,7 +3,8 @@
   "collection_date": "2026-09-26",
   "levels": {
     "METADATA_ONLY": "URL and structured public metadata candidate; no deep strategy claim",
-    "CURATED": "top-ranked candidate with bounded metadata-derived strategy and project-specific lessons; original page/plan still requires human review"
+    "CURATED_METADATA": "top-ranked metadata record with bounded strategy and lessons; original page/plan not visually verified",
+    "VERIFIED_PRECEDENT": "project page and floor plan opened and visually reviewed; spatial observations and 2-5 project-specific lessons recorded"
   },
   "sources": [
     {
@@ -15,7 +16,9 @@
       "image_dependency": false,
       "candidate_count": 80,
       "selected_count": 60,
-      "curated_count": 18,
+      "verified_count": 10,
+      "curated_metadata_count": 8,
+      "metadata_only_count": 42,
       "snapshot": "projects/c_type_home/knowledge/precedents/candidate_metadata_v01.json",
       "id_registry": "projects/c_type_home/knowledge/precedents/precedent_id_registry_v01.json",
       "url_validation": "80 candidate pages fetched during research; selected links retain the existing precedent IDs."

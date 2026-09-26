@@ -21,6 +21,7 @@ class A1A2KnowledgeTests(unittest.TestCase):
         cls.precedents = json.loads((PREC_DIR / "precedent_index_v01.json").read_text())["precedents"]
         cls.patterns = json.loads((PREC_DIR / "pattern_library_v01.json").read_text())["patterns"]
         cls.a2qa = json.loads((PREC_DIR / "precedent_qa.json").read_text())
+        cls.verification = json.loads((PREC_DIR / "verification_registry_v01.json").read_text())
         cls.audit = json.loads((PROJECT / "qc/a1_a2_f1_design_audit.json").read_text())
 
     def test_a1_count_schema_and_gates(self):
@@ -48,15 +49,24 @@ class A1A2KnowledgeTests(unittest.TestCase):
         self.assertTrue(all(isinstance(p["floor_plan_available"], bool) for p in self.precedents))
         self.assertTrue(all((p["evidence_type"] == "PROJECT_DERIVED" and p["project_basis"] and p["evidence"]) or len(set(p["precedent_ids"])) >= 2 for p in self.patterns))
         self.assertTrue(all((p["evidence_type"] == "PROJECT_DERIVED" or len(p["evidence"]) == len(p["precedent_ids"])) and all(e["evidence"] and e["confidence"] for e in p["evidence"] ) for p in self.patterns))
-        self.assertEqual(sum(p["curation_level"] == "CURATED" for p in self.precedents), 18)
+        self.assertTrue(all(p["evidence_type"] == "PROJECT_DERIVED" or p["evidence_confidence"] != "HIGH" or all(e.get("verification_status") == "VERIFIED_PRECEDENT" for e in p["evidence"]) for p in self.patterns))
+        self.assertEqual(sum(p["curation_level"] == "VERIFIED_PRECEDENT" for p in self.precedents), 10)
+        self.assertEqual(sum(p["curation_level"] == "CURATED_METADATA" for p in self.precedents), 8)
         self.assertEqual(sum(p["curation_level"] == "METADATA_ONLY" for p in self.precedents), 42)
         self.assertTrue(all("relevance_score" in p and "evidence_confidence" in p for p in self.precedents))
         self.assertTrue(all(p["relevance_components"].get("area_similarity") is None or p["area_m2"] is not None for p in self.precedents))
         self.assertLessEqual(max(p["relevance_components"]["household_similarity"] for p in self.precedents), 0.65)
         self.assertTrue(all(p["relevance_components"]["household_similarity"] == 0.0 for p in self.precedents if p["household_program_status"] == "not_stated_in_captured_metadata"))
-        curated = [p for p in self.precedents if p["curation_level"] == "CURATED"]
+        curated = [p for p in self.precedents if p["curation_level"] in {"CURATED_METADATA", "VERIFIED_PRECEDENT"}]
         self.assertTrue(all(p["actual_spatial_strategy"] and 2 <= len(p["design_lessons"]) <= 5 and p["curation_review"]["override_used"] for p in curated))
         self.assertGreaterEqual(len({p["design_lessons"][0] for p in curated}), 15)
+        verified = [p for p in self.precedents if p["curation_level"] == "VERIFIED_PRECEDENT"]
+        self.assertEqual(len(verified), 10)
+        self.assertTrue(all(p["verification_confidence"] == 1.0 and p["floor_plan_url"] and len(p["verified_spatial_observations"]) >= 2 for p in verified))
+        self.assertTrue(all(p["evidence_confidence"] == 1.0 for p in verified))
+        self.assertTrue(all(p["evidence_confidence"] < 1.0 for p in self.precedents if p["curation_level"] != "VERIFIED_PRECEDENT"))
+        self.assertEqual(self.verification["verified_count"], 10)
+        self.assertEqual(len(self.verification["verified"]), 10)
         self.assertEqual(next(p for p in self.precedents if p["url"].endswith("renovation-of-joan-blanques-apartment-allaround-lab"))["precedent_id"], "PREC-002")
 
     def run_query(self, *args):

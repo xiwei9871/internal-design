@@ -13,15 +13,15 @@
       "project_type": "house_or_residence",
       "area_m2": null,
       "area_evidence": "unknown_not_scored",
-      "household_program": "single-family use is stated in the project title",
+      "household_program": "single-family use stated in the project title",
       "household_program_status": "stated_in_captured_metadata",
       "floor_plan_available": true,
       "before_after_plan_available": true,
       "renovation_constraints": [
-        "existing or adaptive-reuse shell is named",
-        "renovation/conversion/extension brief is named"
+        "existing warehouse/party-wall shell",
+        "full renovation"
       ],
-      "actual_spatial_strategy": "Full renovation of a warehouse-like building between party walls into a single-family home; the useful comparison is how a constrained shell can carry a new public zone without pretending it is a new-build envelope.",
+      "actual_spatial_strategy": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.; A large garden/terrace is a separate visual destination; furniture is drawn inside the shell rather than floating in the route.; Entry and service spaces feed the central social rooms before the private rooms.",
       "tags": [
         "adaptive-reuse",
         "before-after",
@@ -33,8 +33,8 @@
         "open-living-dining",
         "renovation"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.9206,
       "relevance_to_c_type": 0.9206,
       "relevance_components": {
@@ -45,6 +45,7 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
+      "relevance_evidence_confidence": 1.0,
       "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
@@ -59,19 +60,21 @@
         "PAT-LIV-02",
         "PAT-LIV-03",
         "PAT-LIV-05",
+        "PAT-BED-02",
+        "PAT-KIT-01",
         "PAT-CHD-01",
         "PAT-STOR-02",
         "PAT-REN-01"
       ],
       "design_lessons": [
         "Keep party-wall and service constraints explicit before opening a public living sequence.",
-        "Use the floor-plan marker to compare how the new family program is distributed inside the retained shell.",
-        "Separate evidence of adaptive reuse from C-type aging requirements; family use does not equal an owner-and-mother household."
+        "Use the plan to compare how a family program is distributed inside a retained shell.",
+        "Separate adaptive-reuse evidence from the C-type aging and split-level requirements."
       ],
       "lessons": [
         "Keep party-wall and service constraints explicit before opening a public living sequence.",
-        "Use the floor-plan marker to compare how the new family program is distributed inside the retained shell.",
-        "Separate evidence of adaptive reuse from C-type aging requirements; family use does not equal an owner-and-mother household."
+        "Use the plan to compare how a family program is distributed inside a retained shell.",
+        "Separate adaptive-reuse evidence from the C-type aging and split-level requirements."
       ],
       "not_applicable": [
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
@@ -84,10 +87,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 1.0,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/5360/58b0/c07a/8005/e900/009a/medium_jpg/Planos_casa_OV_Guim_Costa_2.jpg?1398823065",
+      "verified_spatial_observations": [
+        "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+        "A large garden/terrace is a separate visual destination; furniture is drawn inside the shell rather than floating in the route.",
+        "Entry and service spaces feed the central social rooms before the private rooms."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/505261/renovation-of-an-industrial-building-into-a-single-family-house-guim-costa-calsamiglia",
+        "https://images.adsttc.com/media/images/5360/58b0/c07a/8005/e900/009a/medium_jpg/Planos_casa_OV_Guim_Costa_2.jpg?1398823065"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": "Tàrrega, Spain"
@@ -100,16 +126,17 @@
       "country": "Spain",
       "year": 2021,
       "project_type": "apartment_or_loft",
-      "area_m2": null,
-      "area_evidence": "unknown_not_scored",
-      "household_program": "couple is stated in the captured description",
+      "area_m2": 75.0,
+      "area_evidence": "verified_project_page",
+      "household_program": "young couple; public page states this explicitly",
       "household_program_status": "stated_in_captured_metadata",
       "floor_plan_available": true,
       "before_after_plan_available": true,
       "renovation_constraints": [
-        "renovation/conversion/extension brief is named"
+        "apartment renovation",
+        "open-plan brief with later compartmentalization"
       ],
-      "actual_spatial_strategy": "The captured brief says a young couple wanted the apartment as open as possible; use it as an open-plan comparison where openness is a stated client driver rather than a stylistic assumption.",
+      "actual_spatial_strategy": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.; Living and dining occupy a continuous central band while kitchen and laundry are loaded along the service edge.; The brief asks for openness that can still become two differentiated work areas.",
       "tags": [
         "before-after",
         "clear-circulation",
@@ -121,8 +148,8 @@
         "renovation",
         "visual-connection"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.9206,
       "relevance_to_c_type": 0.9206,
       "relevance_components": {
@@ -133,6 +160,7 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
+      "relevance_evidence_confidence": 1.0,
       "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
@@ -151,22 +179,24 @@
         "PAT-LIV-06",
         "PAT-CIR-01",
         "PAT-BED-01",
+        "PAT-BED-02",
         "PAT-KIT-01",
         "PAT-KIT-02",
         "PAT-AGE-02",
         "PAT-CHD-01",
         "PAT-STOR-01",
-        "PAT-STOR-02"
+        "PAT-STOR-02",
+        "PAT-REN-01"
       ],
       "design_lessons": [
-        "Compare how an open public zone remains legible when partitions are reduced.",
+        "Compare how an open public zone stays legible when partitions are reduced.",
         "Check which edges still anchor furniture and storage after opening the plan.",
-        "Do not transfer the young-couple brief to the C-type plan; retain the older resident's route priority."
+        "Do not transfer the young-couple brief to the C-type plan; retain the older resident route priority."
       ],
       "lessons": [
-        "Compare how an open public zone remains legible when partitions are reduced.",
+        "Compare how an open public zone stays legible when partitions are reduced.",
         "Check which edges still anchor furniture and storage after opening the plan.",
-        "Do not transfer the young-couple brief to the C-type plan; retain the older resident's route priority."
+        "Do not transfer the young-couple brief to the C-type plan; retain the older resident route priority."
       ],
       "not_applicable": [
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
@@ -179,10 +209,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 1.0,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/60ae/428e/f91c/81d9/db00/005e/medium_jpg/Allaround_Lab_Joan_Blanques_planta_y_alzado.jpg?1622033028",
+      "verified_spatial_observations": [
+        "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+        "Living and dining occupy a continuous central band while kitchen and laundry are loaded along the service edge.",
+        "The brief asks for openness that can still become two differentiated work areas."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/962398/renovation-of-joan-blanques-apartment-allaround-lab",
+        "https://images.adsttc.com/media/images/60ae/428e/f91c/81d9/db00/005e/medium_jpg/Allaround_Lab_Joan_Blanques_planta_y_alzado.jpg?1622033028"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": "Barcelona, Spain"
@@ -197,14 +250,15 @@
       "project_type": "apartment_or_loft",
       "area_m2": null,
       "area_evidence": "unknown_not_scored",
-      "household_program": "family use is stated in the captured title/description; resident ages are not stated",
+      "household_program": "family loft; family use stated in the project title",
       "household_program_status": "stated_in_captured_metadata",
       "floor_plan_available": true,
       "before_after_plan_available": true,
       "renovation_constraints": [
-        "renovation/conversion/extension brief is named"
+        "old laboratory conversion",
+        "courtyard setting"
       ],
-      "actual_spatial_strategy": "Conversion of an old laboratory in a Milan courtyard setting into a family loft; compare adaptive reuse, family program and connected public space while retaining the distinction between a loft brief and this split-level home.",
+      "actual_spatial_strategy": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.; The circular stair acts as a spatial anchor; furniture groups turn around the central void instead of all facing one wall.; The family loft keeps one connected public zone while retaining private room thresholds.",
       "tags": [
         "adaptive-reuse",
         "before-after",
@@ -218,8 +272,8 @@
         "open-living-dining",
         "renovation"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.9206,
       "relevance_to_c_type": 0.9206,
       "relevance_components": {
@@ -230,6 +284,7 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
+      "relevance_evidence_confidence": 1.0,
       "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
@@ -245,6 +300,7 @@
         "PAT-LIV-03",
         "PAT-LIV-04",
         "PAT-LIV-05",
+        "PAT-BED-02",
         "PAT-KIT-01",
         "PAT-KIT-02",
         "PAT-CHD-01",
@@ -253,13 +309,13 @@
       ],
       "design_lessons": [
         "Map what the old laboratory shell contributes before treating openness as free space.",
-        "Look for how family activities share a connected zone without requiring every seat to face one focal point.",
-        "Use the plan marker to test service-edge and circulation-edge alignment."
+        "Study how family activities share a connected zone without requiring every seat to face one focal point.",
+        "Use the central stair/core as an anchor only when the existing geometry provides one."
       ],
       "lessons": [
         "Map what the old laboratory shell contributes before treating openness as free space.",
-        "Look for how family activities share a connected zone without requiring every seat to face one focal point.",
-        "Use the plan marker to test service-edge and circulation-edge alignment."
+        "Study how family activities share a connected zone without requiring every seat to face one focal point.",
+        "Use the central stair/core as an anchor only when the existing geometry provides one."
       ],
       "not_applicable": [
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
@@ -272,10 +328,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 1.0,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/6282/63c9/60c6/3501/6660/3b41/medium_jpg/a10-p0-plan.jpg?1652712461",
+      "verified_spatial_observations": [
+        "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+        "The circular stair acts as a spatial anchor; furniture groups turn around the central void instead of all facing one wall.",
+        "The family loft keeps one connected public zone while retaining private room thresholds."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/981991/renovation-of-a-milan-laboratory-to-a-family-loft-tomoarchitects",
+        "https://images.adsttc.com/media/images/6282/63c9/60c6/3501/6660/3b41/medium_jpg/a10-p0-plan.jpg?1652712461"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": "Milan, Italy"
@@ -290,14 +369,15 @@
       "project_type": "residential_building",
       "area_m2": null,
       "area_evidence": "unknown_not_scored",
-      "household_program": "family use is stated in the captured title/description; resident ages are not stated",
+      "household_program": "single-family home extension; stated in the captured description",
       "household_program_status": "stated_in_captured_metadata",
       "floor_plan_available": true,
       "before_after_plan_available": false,
       "renovation_constraints": [
-        "renovation/conversion/extension brief is named"
+        "independent programmatic extension",
+        "existing single-family home"
       ],
-      "actual_spatial_strategy": "An independent programmatic extension is described as being added to an existing single-family home; compare addition-as-program with the C-type rule that existing KEEP elements remain fixed.",
+      "actual_spatial_strategy": "Plan shows an added pavilion/extension attached to an existing home with public rooms and a planted or terrace edge.; The added program reads as a distinct wing; existing rooms and extension are connected through a controlled threshold.; The outdoor edge creates a view-based secondary axis without dissolving the existing house into one undifferentiated room.",
       "tags": [
         "child-friendly",
         "existing-structure",
@@ -307,8 +387,8 @@
         "open-living-dining",
         "renovation"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.8985,
       "relevance_to_c_type": 0.8985,
       "relevance_components": {
@@ -319,7 +399,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.875
       },
-      "evidence_confidence": 0.9875,
+      "relevance_evidence_confidence": 0.9875,
+      "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
         "household": "explicit_family_but_not_owner_mother_pair",
@@ -337,13 +418,13 @@
         "PAT-STOR-02"
       ],
       "design_lessons": [
-        "Separate the new programmatic room from the retained house datum.",
-        "Study whether the extension creates a clear public destination or merely adds another competing center.",
+        "Separate a new programmatic room from the retained house datum.",
+        "Study whether the extension creates a clear public destination or another competing center.",
         "Treat this as an addition precedent, not evidence for changing C-type walls."
       ],
       "lessons": [
-        "Separate the new programmatic room from the retained house datum.",
-        "Study whether the extension creates a clear public destination or merely adds another competing center.",
+        "Separate a new programmatic room from the retained house datum.",
+        "Study whether the extension creates a clear public destination or another competing center.",
         "Treat this as an addition precedent, not evidence for changing C-type walls."
       ],
       "not_applicable": [
@@ -357,10 +438,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 0.9875,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/5d15/7d8c/284d/d137/2600/005a/medium_jpg/190621_MF_Pavilion_planta_arquitectonica.jpg?1561689470",
+      "verified_spatial_observations": [
+        "Plan shows an added pavilion/extension attached to an existing home with public rooms and a planted or terrace edge.",
+        "The added program reads as a distinct wing; existing rooms and extension are connected through a controlled threshold.",
+        "The outdoor edge creates a view-based secondary axis without dissolving the existing house into one undifferentiated room."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/920031/residential-extension-mf-pavilion-guillermo-tirado-gzz-architects",
+        "https://images.adsttc.com/media/images/5d15/7d8c/284d/d137/2600/005a/medium_jpg/190621_MF_Pavilion_planta_arquitectonica.jpg?1561689470"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": "San Pedro Garza García, Mexico"
@@ -395,8 +499,8 @@
         "renovation",
         "visual-connection"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "CURATED_METADATA",
+      "curation_level": "CURATED_METADATA",
       "relevance_score": 0.8235,
       "relevance_to_c_type": 0.8235,
       "relevance_components": {
@@ -407,7 +511,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
-      "evidence_confidence": 1.0,
+      "relevance_evidence_confidence": 1.0,
+      "evidence_confidence": 0.5,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -417,13 +522,7 @@
         "tags": "deterministic_tag_rules"
       },
       "design_patterns": [
-        "PAT-LIV-01",
-        "PAT-CIR-01",
-        "PAT-KIT-02",
-        "PAT-AGE-02",
-        "PAT-CHD-01",
-        "PAT-STOR-01",
-        "PAT-REN-01"
+        "PAT-STOR-01"
       ],
       "design_lessons": [
         "Retain the existing shell as a design datum when public circulation is shared.",
@@ -449,6 +548,12 @@
         "source_text_scope": "metadata-only; original page and plan still require human review",
         "override_used": true
       },
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -462,16 +567,18 @@
       "country": "Spain",
       "year": 2020,
       "project_type": "apartment_or_loft",
-      "area_m2": null,
-      "area_evidence": "unknown_not_scored",
+      "area_m2": 129.9,
+      "area_evidence": "verified_project_page_1399_ft2_converted",
       "household_program": null,
       "household_program_status": "not_stated_in_captured_metadata",
       "floor_plan_available": true,
       "before_after_plan_available": true,
       "renovation_constraints": [
-        "renovation/conversion/extension brief is named"
+        "ground-floor old warehouse conversion",
+        "three structural bays parallel to facade",
+        "large rear courtyard"
       ],
-      "actual_spatial_strategy": "Conversion of the ground floor of an old warehouse into an apartment, with the captured description stating that the warehouse was divided into three; compare subdivision, daylight and public-zone sequencing.",
+      "actual_spatial_strategy": "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.; Living/dining/kitchen occupy the central bay, with bedrooms and services toward the private end and the courtyard as a visual terminus.; The bay rhythm organizes zones without arbitrary partitions.",
       "tags": [
         "adaptive-reuse",
         "before-after",
@@ -482,8 +589,8 @@
         "renovation",
         "study-guest-hybrid"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.8235,
       "relevance_to_c_type": 0.8235,
       "relevance_components": {
@@ -494,6 +601,7 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
+      "relevance_evidence_confidence": 1.0,
       "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
@@ -511,14 +619,14 @@
         "PAT-REN-01"
       ],
       "design_lessons": [
-        "Test how subdivision can preserve a readable public zone.",
-        "Use the plan marker to inspect where daylight and circulation survive the conversion.",
-        "Keep warehouse conversion lessons separate from the C-type no-unrelated-wall-change constraint."
+        "Use structural bay rhythm to organize public and private zones.",
+        "Keep the courtyard as a visual destination while preserving a direct route.",
+        "Do not transfer warehouse conversion assumptions to C-type walls without measured evidence."
       ],
       "lessons": [
-        "Test how subdivision can preserve a readable public zone.",
-        "Use the plan marker to inspect where daylight and circulation survive the conversion.",
-        "Keep warehouse conversion lessons separate from the C-type no-unrelated-wall-change constraint."
+        "Use structural bay rhythm to organize public and private zones.",
+        "Keep the courtyard as a visual destination while preserving a direct route.",
+        "Do not transfer warehouse conversion assumptions to C-type walls without measured evidence."
       ],
       "not_applicable": [
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
@@ -531,10 +639,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 1.0,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/5f9a/e8ae/63c0/17d5/3500/00b3/large_jpg/1_(2).jpg?1603987624",
+      "verified_spatial_observations": [
+        "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
+        "Living/dining/kitchen occupy the central bay, with bedrooms and services toward the private end and the courtyard as a visual terminus.",
+        "The bay rhythm organizes zones without arbitrary partitions."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/950512/apartment-renovation-in-girona-hiha-studio",
+        "https://images.adsttc.com/media/images/5f9a/e8ae/63c0/17d5/3500/00b3/large_jpg/1_(2).jpg?1603987624"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": "Girona, Spain"
@@ -554,10 +685,10 @@
       "floor_plan_available": true,
       "before_after_plan_available": true,
       "renovation_constraints": [
-        "existing or adaptive-reuse shell is named",
-        "renovation/conversion/extension brief is named"
+        "integration of several existing building typologies",
+        "irregular shell and level transitions"
       ],
-      "actual_spatial_strategy": "Several buildings of different typologies were integrated into one housing use; compare how mismatched existing pieces are made legible as one sequence.",
+      "actual_spatial_strategy": "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.; Stair and thick shell edges make the transitions legible rather than hiding them behind floating furniture.; Furniture is grouped in rooms; open links occur at existing connections between the old pieces.",
       "tags": [
         "adaptive-reuse",
         "before-after",
@@ -571,8 +702,8 @@
         "renovation",
         "study-guest-hybrid"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.8235,
       "relevance_to_c_type": 0.8235,
       "relevance_components": {
@@ -583,6 +714,7 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
+      "relevance_evidence_confidence": 1.0,
       "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
@@ -600,14 +732,14 @@
         "PAT-REN-01"
       ],
       "design_lessons": [
-        "Use changes in shell geometry to define zones instead of adding arbitrary floating objects.",
+        "Use existing shell changes to define zones before adding new partitions.",
         "Check how transitions between old pieces affect the main route and visual hierarchy.",
-        "Treat the integration strategy as a precedent for reading existing geometry, not for copying a style."
+        "Treat integration strategy as a precedent for reading geometry, not for copying a style."
       ],
       "lessons": [
-        "Use changes in shell geometry to define zones instead of adding arbitrary floating objects.",
+        "Use existing shell changes to define zones before adding new partitions.",
         "Check how transitions between old pieces affect the main route and visual hierarchy.",
-        "Treat the integration strategy as a precedent for reading existing geometry, not for copying a style."
+        "Treat integration strategy as a precedent for reading geometry, not for copying a style."
       ],
       "not_applicable": [
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
@@ -620,10 +752,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 1.0,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/62ab/ec1a/6f92/4304/4abf/8262/medium_jpg/01-planta-baja-ok-3.jpg?1655434324",
+      "verified_spatial_observations": [
+        "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
+        "Stair and thick shell edges make the transitions legible rather than hiding them behind floating furniture.",
+        "Furniture is grouped in rooms; open links occur at existing connections between the old pieces."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/983855/renovation-of-a-mill-and-hayloft-for-residential-use-funcionable-arquitectura",
+        "https://images.adsttc.com/media/images/62ab/ec1a/6f92/4304/4abf/8262/medium_jpg/01-planta-baja-ok-3.jpg?1655434324"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": "Oropesa, Spain"
@@ -643,9 +798,10 @@
       "floor_plan_available": true,
       "before_after_plan_available": true,
       "renovation_constraints": [
-        "renovation/conversion/extension brief is named"
+        "1970s detached-house renovation",
+        "existing structure preserved; bathrooms changed"
       ],
-      "actual_spatial_strategy": "Energetic renovation of a 1970s detached house with an explicit effort to preserve existing structure; only bathrooms are named as changed in the captured description.",
+      "actual_spatial_strategy": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.; Bathrooms and service spaces are changed while the existing circulation and room edges remain legible.; Furniture is organized inside the existing rooms rather than used to redraw the shell.",
       "tags": [
         "accessible-bathroom",
         "aging-in-place",
@@ -658,8 +814,8 @@
         "step-free-route",
         "wet-dry-zoning"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.8235,
       "relevance_to_c_type": 0.8235,
       "relevance_components": {
@@ -670,6 +826,7 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
+      "relevance_evidence_confidence": 1.0,
       "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
@@ -693,12 +850,12 @@
       ],
       "design_lessons": [
         "Preserve measured structure before placing new program elements.",
-        "Separate energy/structure retention from the later bathroom-specific intervention.",
+        "Separate energy/structure retention from later bathroom-specific intervention.",
         "Use this as support for a KEEP-first workflow, not as evidence of aging compliance."
       ],
       "lessons": [
         "Preserve measured structure before placing new program elements.",
-        "Separate energy/structure retention from the later bathroom-specific intervention.",
+        "Separate energy/structure retention from later bathroom-specific intervention.",
         "Use this as support for a KEEP-first workflow, not as evidence of aging compliance."
       ],
       "not_applicable": [
@@ -712,10 +869,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 1.0,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/6323/5686/a724/4838/504b/bcdc/medium_jpg/02-ground-floor-plan-2.jpg?1663260634",
+      "verified_spatial_observations": [
+        "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+        "Bathrooms and service spaces are changed while the existing circulation and room edges remain legible.",
+        "Furniture is organized inside the existing rooms rather than used to redraw the shell."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/989061/residential-house-renovation-frohlich-gassner-architekten",
+        "https://images.adsttc.com/media/images/6323/5686/a724/4838/504b/bcdc/medium_jpg/02-ground-floor-plan-2.jpg?1663260634"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": "Diedorf, Germany"
@@ -747,8 +927,8 @@
         "renovation",
         "study-guest-hybrid"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "CURATED_METADATA",
+      "curation_level": "CURATED_METADATA",
       "relevance_score": 0.8015,
       "relevance_to_c_type": 0.8015,
       "relevance_components": {
@@ -759,7 +939,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.875
       },
-      "evidence_confidence": 0.9875,
+      "relevance_evidence_confidence": 0.9875,
+      "evidence_confidence": 0.5,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -768,11 +949,7 @@
         "renovation": "keyword_match",
         "tags": "deterministic_tag_rules"
       },
-      "design_patterns": [
-        "PAT-LIV-04",
-        "PAT-BED-02",
-        "PAT-KIT-01"
-      ],
+      "design_patterns": [],
       "design_lessons": [
         "Treat entry as a spatial threshold with storage and sightline consequences.",
         "Check how a public-corridor interface affects the first visual axis into the home.",
@@ -797,6 +974,12 @@
         "source_text_scope": "metadata-only; original page and plan still require human review",
         "override_used": true
       },
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -829,8 +1012,8 @@
         "floor-plan",
         "renovation"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "CURATED_METADATA",
+      "curation_level": "CURATED_METADATA",
       "relevance_score": 0.7794,
       "relevance_to_c_type": 0.7794,
       "relevance_components": {
@@ -841,7 +1024,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.75
       },
-      "evidence_confidence": 0.975,
+      "relevance_evidence_confidence": 0.975,
+      "evidence_confidence": 0.5,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -875,6 +1059,12 @@
         "source_text_scope": "metadata-only; original page and plan still require human review",
         "override_used": true
       },
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -890,14 +1080,15 @@
       "project_type": "care_or_aging_residential",
       "area_m2": null,
       "area_evidence": "unknown_not_scored",
-      "household_program": "care or elderly residential use is stated in the captured title/description",
+      "household_program": "residential care home for 105 elderly residents; stated in the public description",
       "household_program_status": "stated_in_captured_metadata",
       "floor_plan_available": true,
       "before_after_plan_available": false,
       "renovation_constraints": [
-        "no specific renovation constraint stated in captured metadata"
+        "care-home program",
+        "institutional shared circulation and support spaces"
       ],
-      "actual_spatial_strategy": "A residential care home for 105 elderly residents on a park-like plot; its relevance is social visibility and support-space organization, not household-scale dimensions.",
+      "actual_spatial_strategy": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.; Shared social/day spaces occur at central visible nodes rather than every room facing one media wall.; The repeated route-and-node structure is useful for social visibility analysis but not domestic-scale transfer.",
       "tags": [
         "accessible-bathroom",
         "aging-in-place",
@@ -907,8 +1098,8 @@
         "multigenerational",
         "step-free-route"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.775,
       "relevance_to_c_type": 0.775,
       "relevance_components": {
@@ -919,7 +1110,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.875
       },
-      "evidence_confidence": 0.9575,
+      "relevance_evidence_confidence": 0.9575,
+      "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
         "household": "explicit_aging_or_care_but_different_program",
@@ -957,10 +1149,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 0.9575,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/572f/8d54/e58e/ced5/a800/0044/medium_jpg/PH_Andritz_Plan_Groundfloor.jpg?1462734159",
+      "verified_spatial_observations": [
+        "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
+        "Shared social/day spaces occur at central visible nodes rather than every room facing one media wall.",
+        "The repeated route-and-node structure is useful for social visibility analysis but not domestic-scale transfer."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/787044/residential-care-home-andritz-dietger-wissounig-architekten",
+        "https://images.adsttc.com/media/images/572f/8d54/e58e/ced5/a800/0044/medium_jpg/PH_Andritz_Plan_Groundfloor.jpg?1462734159"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": "Graz, Austria"
@@ -989,8 +1204,8 @@
         "floor-plan",
         "study-guest-hybrid"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "CURATED_METADATA",
+      "curation_level": "CURATED_METADATA",
       "relevance_score": 0.7353,
       "relevance_to_c_type": 0.7353,
       "relevance_components": {
@@ -1001,7 +1216,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.5
       },
-      "evidence_confidence": 0.95,
+      "relevance_evidence_confidence": 0.95,
+      "evidence_confidence": 0.5,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1035,6 +1251,12 @@
         "source_text_scope": "metadata-only; original page and plan still require human review",
         "override_used": true
       },
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1055,9 +1277,10 @@
       "floor_plan_available": true,
       "before_after_plan_available": false,
       "renovation_constraints": [
-        "no specific renovation constraint stated in captured metadata"
+        "main-floor apartment renovation",
+        "internal quiet patio"
       ],
-      "actual_spatial_strategy": "A main-floor apartment is organized around an internal quiet patio isolated from the Poble Nou streets; compare inward visual extension and privacy control.",
+      "actual_spatial_strategy": "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.; The patio forms the primary visual axis and daylight source; furniture stays around its edges.; The old/new plan comparison shows the courtyard relationship as a deliberate organizer, not leftover space.",
       "tags": [
         "balcony-connected",
         "courtyard",
@@ -1068,8 +1291,8 @@
         "split-level-courtyard",
         "visual-connection"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.7176,
       "relevance_to_c_type": 0.7176,
       "relevance_components": {
@@ -1080,7 +1303,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 1.0
       },
-      "evidence_confidence": 0.97,
+      "relevance_evidence_confidence": 0.97,
+      "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1090,17 +1314,21 @@
         "tags": "deterministic_tag_rules"
       },
       "design_patterns": [
+        "PAT-LIV-04",
         "PAT-LIV-06",
-        "PAT-AGE-01"
+        "PAT-KIT-02",
+        "PAT-AGE-01",
+        "PAT-AGE-02",
+        "PAT-CHD-01"
       ],
       "design_lessons": [
-        "Treat a quiet patio or balcony as a visual destination, not only an exit.",
-        "Balance inward view with the need for a readable entry route.",
+        "Treat a patio or balcony as a visual destination, not only an exit.",
+        "Balance inward view with a readable entry route.",
         "Check whether furniture preserves the view axis before adding decoration."
       ],
       "lessons": [
-        "Treat a quiet patio or balcony as a visual destination, not only an exit.",
-        "Balance inward view with the need for a readable entry route.",
+        "Treat a patio or balcony as a visual destination, not only an exit.",
+        "Balance inward view with a readable entry route.",
         "Check whether furniture preserves the view axis before adding decoration."
       ],
       "not_applicable": [
@@ -1114,10 +1342,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 0.97,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/5551/3d35/e58e/ce92/c700/01fd/medium_jpg/floor_plan.jpg?1431387432",
+      "verified_spatial_observations": [
+        "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
+        "The patio forms the primary visual axis and daylight source; furniture stays around its edges.",
+        "The old/new plan comparison shows the courtyard relationship as a deliberate organizer, not leftover space."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/629964/apartment-and-courtyard-in-barcelona-cavaa-arquitectes",
+        "https://images.adsttc.com/media/images/5551/3d35/e58e/ce92/c700/01fd/medium_jpg/floor_plan.jpg?1431387432"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": null
@@ -1137,9 +1388,10 @@
       "floor_plan_available": true,
       "before_after_plan_available": false,
       "renovation_constraints": [
-        "no specific renovation constraint stated in captured metadata"
+        "split-level/courtyard house geometry",
+        "irregular site edges"
       ],
-      "actual_spatial_strategy": "A residence in Goa combines geometry and nature around a split-level courtyard; compare level changes as spatial composition while keeping the C-type ramp status provisional.",
+      "actual_spatial_strategy": "Ground plan has irregular split-level/courtyard geometry; the living/dining/kitchen group is central and bedrooms/support rooms occupy wings.; Courtyard and level changes create multiple view destinations; routes bend around rather than through the main furniture groups.; Diagonal site edges organize the public zone with landscape and view rather than a single orthogonal axis.",
       "tags": [
         "balcony-connected",
         "courtyard",
@@ -1149,8 +1401,8 @@
         "split-level-courtyard",
         "visual-connection"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "VERIFIED_PRECEDENT",
+      "curation_level": "VERIFIED_PRECEDENT",
       "relevance_score": 0.6956,
       "relevance_to_c_type": 0.6956,
       "relevance_components": {
@@ -1161,7 +1413,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.875
       },
-      "evidence_confidence": 0.9575,
+      "relevance_evidence_confidence": 0.9575,
+      "evidence_confidence": 1.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1172,16 +1425,17 @@
       },
       "design_patterns": [
         "PAT-LIV-06",
-        "PAT-AGE-01"
+        "PAT-AGE-01",
+        "PAT-AGE-02"
       ],
       "design_lessons": [
         "Use level change to organize views and destinations, not to imply accessibility.",
-        "Keep courtyard or balcony sightlines open through the furniture group.",
+        "Keep courtyard sightlines open through the furniture group.",
         "Field-measure C-type level deltas before borrowing any route conclusion."
       ],
       "lessons": [
         "Use level change to organize views and destinations, not to imply accessibility.",
-        "Keep courtyard or balcony sightlines open through the furniture group.",
+        "Keep courtyard sightlines open through the furniture group.",
         "Field-measure C-type level deltas before borrowing any route conclusion."
       ],
       "not_applicable": [
@@ -1195,10 +1449,33 @@
           "controlled tags"
         ],
         "evidence_confidence": 0.9575,
-        "source_text_scope": "metadata-only; original page and plan still require human review",
-        "override_used": true
+        "source_text_scope": "project page and floor plan visually opened and reviewed",
+        "override_used": true,
+        "verification_complete": true
       },
+      "verification_status": "VERIFIED_PRECEDENT",
+      "verification_confidence": 1.0,
+      "verification_method": "browser_page_and_floor_plan_visual_review",
+      "floor_plan_url": "https://images.adsttc.com/media/images/56a2/3ad8/e58e/ceeb/1500/001c/medium_jpg/ground.jpg?1453472364",
+      "verified_spatial_observations": [
+        "Ground plan has irregular split-level/courtyard geometry; the living/dining/kitchen group is central and bedrooms/support rooms occupy wings.",
+        "Courtyard and level changes create multiple view destinations; routes bend around rather than through the main furniture groups.",
+        "Diagonal site edges organize the public zone with landscape and view rather than a single orthogonal axis."
+      ],
+      "verified_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
+      "verification_date": "2026-09-26",
+      "verification_source_urls": [
+        "https://www.archdaily.com/780835/house-around-a-split-level-courtyard-rubber-soul",
+        "https://images.adsttc.com/media/images/56a2/3ad8/e58e/ceeb/1500/001c/medium_jpg/ground.jpg?1453472364"
+      ],
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
       "location": "Moira, India"
@@ -1225,8 +1502,8 @@
         "existing-structure",
         "floor-plan"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "CURATED_METADATA",
+      "curation_level": "CURATED_METADATA",
       "relevance_score": 0.6912,
       "relevance_to_c_type": 0.6912,
       "relevance_components": {
@@ -1237,7 +1514,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.25
       },
-      "evidence_confidence": 0.925,
+      "relevance_evidence_confidence": 0.925,
+      "evidence_confidence": 0.5,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1271,6 +1549,12 @@
         "source_text_scope": "metadata-only; original page and plan still require human review",
         "override_used": true
       },
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1304,8 +1588,8 @@
         "open-living-dining",
         "renovation"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "CURATED_METADATA",
+      "curation_level": "CURATED_METADATA",
       "relevance_score": 0.6853,
       "relevance_to_c_type": 0.6853,
       "relevance_components": {
@@ -1316,7 +1600,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
-      "evidence_confidence": 0.85,
+      "relevance_evidence_confidence": 0.85,
+      "evidence_confidence": 0.5,
       "evidence": {
         "area": "unknown",
         "household": "explicit_family_but_not_owner_mother_pair",
@@ -1351,6 +1636,12 @@
         "source_text_scope": "metadata-only; original page and plan still require human review",
         "override_used": true
       },
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1384,8 +1675,8 @@
         "open-living-dining",
         "renovation"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "CURATED_METADATA",
+      "curation_level": "CURATED_METADATA",
       "relevance_score": 0.6525,
       "relevance_to_c_type": 0.6525,
       "relevance_components": {
@@ -1396,7 +1687,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
-      "evidence_confidence": 1.0,
+      "relevance_evidence_confidence": 1.0,
+      "evidence_confidence": 0.5,
       "evidence": {
         "area": "explicit_area",
         "household": "explicit_family_but_not_owner_mother_pair",
@@ -1431,6 +1723,12 @@
         "source_text_scope": "metadata-only; original page and plan still require human review",
         "override_used": true
       },
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1460,8 +1758,8 @@
         "kitchen-adjacency",
         "study-guest-hybrid"
       ],
-      "metadata_level": "CURATED",
-      "curation_level": "CURATED",
+      "metadata_level": "CURATED_METADATA",
+      "curation_level": "CURATED_METADATA",
       "relevance_score": 0.6294,
       "relevance_to_c_type": 0.6294,
       "relevance_components": {
@@ -1472,7 +1770,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.5
       },
-      "evidence_confidence": 0.92,
+      "relevance_evidence_confidence": 0.92,
+      "evidence_confidence": 0.5,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1506,6 +1805,12 @@
         "source_text_scope": "metadata-only; original page and plan still require human review",
         "override_used": true
       },
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1546,7 +1851,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.625
       },
-      "evidence_confidence": 0.8125,
+      "relevance_evidence_confidence": 0.8125,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "explicit_family_but_not_owner_mother_pair",
@@ -1565,6 +1871,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1603,7 +1915,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.375
       },
-      "evidence_confidence": 0.9075,
+      "relevance_evidence_confidence": 0.9075,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1621,6 +1934,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1659,7 +1978,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.375
       },
-      "evidence_confidence": 0.9075,
+      "relevance_evidence_confidence": 0.9075,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1668,10 +1988,7 @@
         "renovation": "keyword_match",
         "tags": "deterministic_tag_rules"
       },
-      "design_patterns": [
-        "PAT-BTH-01",
-        "PAT-BTH-02"
-      ],
+      "design_patterns": [],
       "design_lessons": null,
       "lessons": [
         "Candidate retained for metadata comparison; detailed project strategy was not curated in this pass."
@@ -1680,6 +1997,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1718,7 +2041,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.375
       },
-      "evidence_confidence": 0.9075,
+      "relevance_evidence_confidence": 0.9075,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1736,6 +2060,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1774,7 +2104,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.375
       },
-      "evidence_confidence": 0.9075,
+      "relevance_evidence_confidence": 0.9075,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1792,6 +2123,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1829,7 +2166,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.25
       },
-      "evidence_confidence": 0.895,
+      "relevance_evidence_confidence": 0.895,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1847,6 +2185,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1884,7 +2228,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.25
       },
-      "evidence_confidence": 0.895,
+      "relevance_evidence_confidence": 0.895,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1902,6 +2247,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1939,7 +2290,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.25
       },
-      "evidence_confidence": 0.895,
+      "relevance_evidence_confidence": 0.895,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -1957,6 +2309,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -1994,7 +2352,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.25
       },
-      "evidence_confidence": 0.895,
+      "relevance_evidence_confidence": 0.895,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2004,7 +2363,6 @@
         "tags": "deterministic_tag_rules"
       },
       "design_patterns": [
-        "PAT-CIR-01",
         "PAT-STOR-01"
       ],
       "design_lessons": null,
@@ -2015,6 +2373,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2052,7 +2416,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.25
       },
-      "evidence_confidence": 0.895,
+      "relevance_evidence_confidence": 0.895,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2070,6 +2435,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2107,7 +2478,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.25
       },
-      "evidence_confidence": 0.895,
+      "relevance_evidence_confidence": 0.895,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2125,6 +2497,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2167,7 +2545,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.875
       },
-      "evidence_confidence": 0.8375,
+      "relevance_evidence_confidence": 0.8375,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2176,9 +2555,7 @@
         "renovation": "keyword_match",
         "tags": "deterministic_tag_rules"
       },
-      "design_patterns": [
-        "PAT-BED-02"
-      ],
+      "design_patterns": [],
       "design_lessons": null,
       "lessons": [
         "Candidate retained for metadata comparison; detailed project strategy was not curated in this pass."
@@ -2188,6 +2565,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2224,7 +2607,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2242,6 +2626,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2278,7 +2668,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2296,6 +2687,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2332,7 +2729,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2350,6 +2748,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2386,7 +2790,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2404,6 +2809,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2440,7 +2851,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2458,6 +2870,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2494,7 +2912,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2512,6 +2931,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2548,7 +2973,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2566,6 +2992,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2602,7 +3034,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2620,6 +3053,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2656,7 +3095,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2674,6 +3114,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2710,7 +3156,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2728,6 +3175,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2764,7 +3217,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2782,6 +3236,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2818,7 +3278,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2836,6 +3297,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2872,7 +3339,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2890,6 +3358,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2926,7 +3400,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2944,6 +3419,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -2980,7 +3461,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -2998,6 +3480,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3034,7 +3522,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.8825,
+      "relevance_evidence_confidence": 0.8825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3052,6 +3541,12 @@
         "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3093,7 +3588,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.75
       },
-      "evidence_confidence": 0.825,
+      "relevance_evidence_confidence": 0.825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3102,9 +3598,7 @@
         "renovation": "keyword_match",
         "tags": "deterministic_tag_rules"
       },
-      "design_patterns": [
-        "PAT-BED-02"
-      ],
+      "design_patterns": [],
       "design_lessons": null,
       "lessons": [
         "Candidate retained for metadata comparison; detailed project strategy was not curated in this pass."
@@ -3114,6 +3608,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3155,7 +3655,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.75
       },
-      "evidence_confidence": 0.825,
+      "relevance_evidence_confidence": 0.825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3174,6 +3675,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3216,7 +3723,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.875
       },
-      "evidence_confidence": 0.8075,
+      "relevance_evidence_confidence": 0.8075,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "explicit_aging_or_care_but_different_program",
@@ -3225,12 +3733,7 @@
         "renovation": "keyword_match",
         "tags": "deterministic_tag_rules"
       },
-      "design_patterns": [
-        "PAT-BED-01",
-        "PAT-BTH-01",
-        "PAT-BTH-02",
-        "PAT-AGE-01"
-      ],
+      "design_patterns": [],
       "design_lessons": null,
       "lessons": [
         "Candidate retained for metadata comparison; detailed project strategy was not curated in this pass."
@@ -3240,6 +3743,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3280,7 +3789,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.625
       },
-      "evidence_confidence": 0.8125,
+      "relevance_evidence_confidence": 0.8125,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3299,6 +3809,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3339,7 +3855,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.625
       },
-      "evidence_confidence": 0.8125,
+      "relevance_evidence_confidence": 0.8125,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3358,6 +3875,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3398,7 +3921,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.625
       },
-      "evidence_confidence": 0.8125,
+      "relevance_evidence_confidence": 0.8125,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3417,6 +3941,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3456,7 +3986,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 0.5
       },
-      "evidence_confidence": 0.8,
+      "relevance_evidence_confidence": 0.8,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3475,6 +4006,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3514,7 +4051,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.5
       },
-      "evidence_confidence": 0.77,
+      "relevance_evidence_confidence": 0.77,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "explicit_aging_or_care_but_different_program",
@@ -3523,11 +4061,7 @@
         "renovation": "keyword_match",
         "tags": "deterministic_tag_rules"
       },
-      "design_patterns": [
-        "PAT-BED-01",
-        "PAT-BTH-01",
-        "PAT-BTH-02"
-      ],
+      "design_patterns": [],
       "design_lessons": null,
       "lessons": [
         "Candidate retained for metadata comparison; detailed project strategy was not curated in this pass."
@@ -3537,6 +4071,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3582,7 +4122,8 @@
         "renovation_constraints": 1.0,
         "relevant_tags": 1.0
       },
-      "evidence_confidence": 0.85,
+      "relevance_evidence_confidence": 0.85,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3591,9 +4132,7 @@
         "renovation": "keyword_match",
         "tags": "deterministic_tag_rules"
       },
-      "design_patterns": [
-        "PAT-LIV-06"
-      ],
+      "design_patterns": [],
       "design_lessons": null,
       "lessons": [
         "Candidate retained for metadata comparison; detailed project strategy was not curated in this pass."
@@ -3603,6 +4142,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3644,7 +4189,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.75
       },
-      "evidence_confidence": 0.795,
+      "relevance_evidence_confidence": 0.795,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3653,9 +4199,7 @@
         "renovation": "keyword_match",
         "tags": "deterministic_tag_rules"
       },
-      "design_patterns": [
-        "PAT-LIV-06"
-      ],
+      "design_patterns": [],
       "design_lessons": null,
       "lessons": [
         "Candidate retained for metadata comparison; detailed project strategy was not curated in this pass."
@@ -3665,6 +4209,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3705,7 +4255,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.625
       },
-      "evidence_confidence": 0.7825,
+      "relevance_evidence_confidence": 0.7825,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3715,7 +4266,6 @@
         "tags": "deterministic_tag_rules"
       },
       "design_patterns": [
-        "PAT-AGE-02",
         "PAT-STOR-01"
       ],
       "design_lessons": null,
@@ -3727,6 +4277,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3763,7 +4319,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.7325,
+      "relevance_evidence_confidence": 0.7325,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3782,6 +4339,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3818,7 +4381,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.7325,
+      "relevance_evidence_confidence": 0.7325,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3837,6 +4401,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",
@@ -3873,7 +4443,8 @@
         "renovation_constraints": 0.4,
         "relevant_tags": 0.125
       },
-      "evidence_confidence": 0.7325,
+      "relevance_evidence_confidence": 0.7325,
+      "evidence_confidence": 0.0,
       "evidence": {
         "area": "unknown",
         "household": "unknown",
@@ -3892,6 +4463,12 @@
         "No floor-plan marker in the metadata snapshot; visual verification is required."
       ],
       "curation_review": null,
+      "verification_status": "NOT_VERIFIED",
+      "verification_confidence": null,
+      "verification_method": null,
+      "floor_plan_url": null,
+      "verified_spatial_observations": null,
+      "verified_fields": [],
       "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied",
       "target_household": "permanent owner + mother; wife, child and wider family are periodic residents or visitors",
       "household_similarity_note": "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches.",

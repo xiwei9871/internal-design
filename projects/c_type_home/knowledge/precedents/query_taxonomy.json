@@ -76,7 +76,8 @@
   ],
   "curation_levels": [
     "METADATA_ONLY",
-    "CURATED"
+    "CURATED_METADATA",
+    "VERIFIED_PRECEDENT"
   ],
   "notes": "Tags are controlled strings; relevance order is deterministic and evidence_confidence is separate from relevance_score."
 }

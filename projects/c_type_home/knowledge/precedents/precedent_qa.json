@@ -41,9 +41,9 @@
       "detail": "area unknown is null; confidence is separate"
     },
     {
-      "gate": "A2-G8 two-level curation",
+      "gate": "A2-G8 three-level curation",
       "result": "PASS",
-      "detail": "curated=18 metadata_only=42"
+      "detail": "verified=10 curated_metadata=8 metadata_only=42"
     },
     {
       "gate": "A2-G9 owner/mother household correction is explicit",
@@ -54,6 +54,16 @@
       "gate": "A2-G10 curated records have project-specific detail",
       "result": "PASS",
       "detail": "all curated records carry strategy, 2-5 lessons and an explicit curation review"
+    },
+    {
+      "gate": "A2-G11 verified precedents are visually checked",
+      "result": "PASS",
+      "detail": "10 verified records carry page/plan URLs, observations and confidence=1.0"
+    },
+    {
+      "gate": "A2-G12 high-confidence pattern evidence is verified-only",
+      "result": "PASS",
+      "detail": "metadata-only links never create HIGH pattern confidence"
     }
   ],
   "generated_date": "2026-09-26"
