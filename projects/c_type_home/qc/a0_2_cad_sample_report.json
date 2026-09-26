@@ -1,0 +1,1625 @@
+{
+  "date": "2026-09-26",
+  "sample_count": 30,
+  "scope": "temporary sample audit only; no formal library import",
+  "samples": [
+    {
+      "source_file": "Architecture/Furniture/Bedroom/BedSingle.dxf",
+      "category": "bed",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -19.5,
+        -75.5,
+        19.5,
+        0.0
+      ],
+      "width_depth_native": [
+        39.0,
+        75.5
+      ],
+      "actual_width_depth_mm": [
+        990.5999999999999,
+        1917.6999999999998
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 23,
+      "entity_types": {
+        "ARC": 8,
+        "LINE": 15
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 23
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Bedroom/BedSingle.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/BedSingle.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/01_BedSingle.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Furniture/Bedroom/BedQueen.dxf",
+      "category": "bed",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -30.0,
+        -81.5,
+        30.0,
+        0.0
+      ],
+      "width_depth_native": [
+        60.0,
+        81.5
+      ],
+      "actual_width_depth_mm": [
+        1524.0,
+        2070.1
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 32,
+      "entity_types": {
+        "ARC": 12,
+        "LINE": 20
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 32
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Bedroom/BedQueen.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/BedQueen.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/02_BedQueen.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Furniture/Bedroom/BedKing.dxf",
+      "category": "bed",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -38.0,
+        -81.5,
+        38.0,
+        0.0
+      ],
+      "width_depth_native": [
+        76.0,
+        81.5
+      ],
+      "actual_width_depth_mm": [
+        1930.3999999999999,
+        2070.1
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 32,
+      "entity_types": {
+        "ARC": 12,
+        "LINE": 20
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 32
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Bedroom/BedKing.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/BedKing.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/03_BedKing.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Furniture/Living Room/CouchUpholstered.dxf",
+      "category": "sofa",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -32.0,
+        -36.0,
+        32.0,
+        0.0
+      ],
+      "width_depth_native": [
+        64.0,
+        36.0
+      ],
+      "actual_width_depth_mm": [
+        1625.6,
+        914.4
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 26,
+      "entity_types": {
+        "ARC": 12,
+        "LINE": 14
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 26
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Living Room/CouchUpholstered.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Living%20Room/CouchUpholstered.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/04_CouchUpholstered.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Furniture/Living Room/SofaUpholstered.dxf",
+      "category": "sofa",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -44.0,
+        -36.0,
+        44.0,
+        0.0
+      ],
+      "width_depth_native": [
+        88.0,
+        36.0
+      ],
+      "actual_width_depth_mm": [
+        2235.2,
+        914.4
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 29,
+      "entity_types": {
+        "ARC": 14,
+        "LINE": 15
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 29
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Living Room/SofaUpholstered.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Living%20Room/SofaUpholstered.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/05_SofaUpholstered.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Furniture/Dining Room/TableRect-90-72x44.dxf",
+      "category": "dining_table",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -45.0,
+        -22.0,
+        45.0,
+        22.0
+      ],
+      "width_depth_native": [
+        90.0,
+        44.0
+      ],
+      "actual_width_depth_mm": [
+        2286.0,
+        1117.6
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 18,
+      "entity_types": {
+        "ARC": 8,
+        "LINE": 10
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 18
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Dining Room/TableRect-90-72x44.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Dining%20Room/TableRect-90-72x44.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/06_TableRect_90_72x44.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Furniture/Dining Room/Chair.dxf",
+      "category": "dining_chair",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -8.985251991165041,
+        -20.0,
+        8.985251991165038,
+        -4.440892098500626e-16
+      ],
+      "width_depth_native": [
+        17.97050398233008,
+        20.0
+      ],
+      "actual_width_depth_mm": [
+        456.450801151184,
+        508.0
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 13,
+      "entity_types": {
+        "ARC": 8,
+        "LINE": 5
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 13
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Dining Room/Chair.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Dining%20Room/Chair.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/07_Chair.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Furniture/Office/Chair.dxf",
+      "category": "office_chair",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -11.247009212128834,
+        -20.0,
+        11.247009212128834,
+        4.4434647072932876e-09
+      ],
+      "width_depth_native": [
+        22.494018424257668,
+        20.000000004443464
+      ],
+      "actual_width_depth_mm": [
+        571.3480679761448,
+        508.000000112864
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 32,
+      "entity_types": {
+        "ARC": 20,
+        "LINE": 12
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 32
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Office/Chair.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Office/Chair.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/08_Chair.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Furniture/Office/Desk-60x30.dxf",
+      "category": "desk",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -30.0,
+        -30.0,
+        30.0,
+        0.0
+      ],
+      "width_depth_native": [
+        60.0,
+        30.0
+      ],
+      "actual_width_depth_mm": [
+        1524.0,
+        762.0
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 4,
+      "entity_types": {
+        "LINE": 4
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 4
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Office/Desk-60x30.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Office/Desk-60x30.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/09_Desk_60x30.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Fixtures/Bathroom/Toilet.dxf",
+      "category": "wc",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -9.0,
+        -28.000004832386164,
+        9.0,
+        0.0
+      ],
+      "width_depth_native": [
+        18.0,
+        28.000004832386164
+      ],
+      "actual_width_depth_mm": [
+        457.2,
+        711.2001227426085
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 14,
+      "entity_types": {
+        "ELLIPSE": 2,
+        "ARC": 6,
+        "LINE": 6
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "[BlocksDimn]": 14
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Fixtures/Bathroom/Toilet.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Fixtures/Bathroom/Toilet.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/10_Toilet.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Fixtures/Bathroom/ShowerBase-36x36.dxf",
+      "category": "shower",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -18.0,
+        -36.0,
+        18.0,
+        0.0
+      ],
+      "width_depth_native": [
+        36.0,
+        36.0
+      ],
+      "actual_width_depth_mm": [
+        914.4,
+        914.4
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 13,
+      "entity_types": {
+        "LINE": 8,
+        "ARC": 4,
+        "CIRCLE": 1
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 13
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Fixtures/Bathroom/ShowerBase-36x36.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Fixtures/Bathroom/ShowerBase-36x36.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/11_ShowerBase_36x36.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Appliances/Laundry/Washer.dxf",
+      "category": "washer",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -15.000000000000007,
+        -30.000000000000007,
+        15.0,
+        0.0
+      ],
+      "width_depth_native": [
+        30.000000000000007,
+        30.000000000000007
+      ],
+      "actual_width_depth_mm": [
+        762.0000000000001,
+        762.0000000000001
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 13,
+      "entity_types": {
+        "LINE": 10,
+        "ARC": 2,
+        "TEXT": 1
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 13
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Appliances/Laundry/Washer.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Appliances/Laundry/Washer.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/12_Washer.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Appliances/Kitchen/Refrigerator-SbS.dxf",
+      "category": "fridge",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -16.5,
+        -27.0,
+        16.5,
+        0.0
+      ],
+      "width_depth_native": [
+        33.0,
+        27.0
+      ],
+      "actual_width_depth_mm": [
+        838.1999999999999,
+        685.8
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 20,
+      "entity_types": {
+        "LINE": 16,
+        "ARC": 4
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 20
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Appliances/Kitchen/Refrigerator-SbS.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Appliances/Kitchen/Refrigerator-SbS.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/13_Refrigerator_SbS.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Architecture/Furniture/Bedroom/Armoire.dxf",
+      "category": "wardrobe",
+      "dxf_or_dwg": "dxf",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        -19.0,
+        -18.0,
+        19.0,
+        0.0
+      ],
+      "width_depth_native": [
+        38.0,
+        18.0
+      ],
+      "actual_width_depth_mm": [
+        965.1999999999999,
+        457.2
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 4,
+      "entity_types": {
+        "LINE": 4
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 4
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "CONFLICT",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license conflict"
+      ],
+      "repo": "GSStnb/dxfBlocks",
+      "path": "Architecture/Furniture/Bedroom/Armoire.dxf",
+      "url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/Armoire.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/14_Armoire.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "beds/cama simples.dxf",
+      "category": "bed",
+      "dxf_or_dwg": "dxf",
+      "units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "unit_evidence": "sub-10 native footprint implies meters",
+      "bbox_native": [
+        -0.0685220800100753,
+        -0.0438807973121413,
+        0.9368331144729443,
+        2.079730442371243
+      ],
+      "width_depth_native": [
+        1.0053551944830195,
+        2.123611239683384
+      ],
+      "actual_width_depth_mm": [
+        1005.3551944830194,
+        2123.611239683384
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 262,
+      "entity_types": {
+        "LINE": 262
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 262
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "UNKNOWN",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license missing/unclear"
+      ],
+      "repo": "uncreatednet/DXF-library",
+      "path": "beds/cama simples.dxf",
+      "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/beds/cama%20simples.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/15_cama_simples.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "beds/cama casal handdrawn.dxf",
+      "category": "bed",
+      "dxf_or_dwg": "dxf",
+      "units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "unit_evidence": "sub-10 native footprint implies meters",
+      "bbox_native": [
+        -0.1157230114697856,
+        -0.0670914299246237,
+        1.786709312214341,
+        2.098776507443307
+      ],
+      "width_depth_native": [
+        1.9024323236841265,
+        2.165867937367931
+      ],
+      "actual_width_depth_mm": [
+        1902.4323236841265,
+        2165.8679373679306
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 393,
+      "entity_types": {
+        "LINE": 393
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 393
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "UNKNOWN",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license missing/unclear"
+      ],
+      "repo": "uncreatednet/DXF-library",
+      "path": "beds/cama casal handdrawn.dxf",
+      "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/beds/cama%20casal%20handdrawn.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/16_cama_casal_handdrawn.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "lounge/sofa 2 lugares.dxf",
+      "category": "sofa",
+      "dxf_or_dwg": "dxf",
+      "units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "unit_evidence": "sub-10 native footprint implies meters",
+      "bbox_native": [
+        8.136498965264016,
+        14.10659999999992,
+        9.736503217933421,
+        14.8166
+      ],
+      "width_depth_native": [
+        1.6000042526694056,
+        0.710000000000079
+      ],
+      "actual_width_depth_mm": [
+        1600.0042526694056,
+        710.000000000079
+      ],
+      "base_point_native": [
+        8.235001091598692,
+        14.81659999999993,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 21,
+      "entity_types": {
+        "LINE": 21
+      },
+      "block_count": 3,
+      "layer_count": 1,
+      "layers": {
+        "0": 21
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "UNKNOWN",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license missing/unclear"
+      ],
+      "repo": "uncreatednet/DXF-library",
+      "path": "lounge/sofa 2 lugares.dxf",
+      "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/lounge/sofa%202%20lugares.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/17_sofa_2_lugares.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "lounge/sofa 3 lugares.dxf",
+      "category": "sofa",
+      "dxf_or_dwg": "dxf",
+      "units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "unit_evidence": "sub-10 native footprint implies meters",
+      "bbox_native": [
+        15.13401701062513,
+        -13.01902170742213,
+        17.33401701062514,
+        -12.21902170742213
+      ],
+      "width_depth_native": [
+        2.20000000000001,
+        0.8000000000000007
+      ],
+      "actual_width_depth_mm": [
+        2200.00000000001,
+        800.0000000000007
+      ],
+      "base_point_native": [
+        14.8759301794967,
+        -13.0713285161051,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 56,
+      "entity_types": {
+        "LINE": 38,
+        "ARC": 18
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 56
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "UNKNOWN",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license missing/unclear"
+      ],
+      "repo": "uncreatednet/DXF-library",
+      "path": "lounge/sofa 3 lugares.dxf",
+      "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/lounge/sofa%203%20lugares.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/18_sofa_3_lugares.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "tables/Mesa120x080_4.dxf",
+      "category": "dining_table",
+      "dxf_or_dwg": "dxf",
+      "units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "unit_evidence": "sub-10 native footprint implies meters",
+      "bbox_native": [
+        -0.8150517794189795,
+        0.0,
+        0.8150517794189795,
+        1.2000000000000455
+      ],
+      "width_depth_native": [
+        1.630103558837959,
+        1.2000000000000455
+      ],
+      "actual_width_depth_mm": [
+        1630.103558837959,
+        1200.0000000000455
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 261,
+      "entity_types": {
+        "ARC": 80,
+        "LINE": 165,
+        "CIRCLE": 16
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 261
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "UNKNOWN",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license missing/unclear"
+      ],
+      "repo": "uncreatednet/DXF-library",
+      "path": "tables/Mesa120x080_4.dxf",
+      "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/tables/Mesa120x080_4.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/19_Mesa120x080_4.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "chairs/cadeira escritorio planta.dxf",
+      "category": "office_chair",
+      "dxf_or_dwg": "dxf",
+      "units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "unit_evidence": "sub-10 native footprint implies meters",
+      "bbox_native": [
+        -0.2250000000002274,
+        0.0259166899686534,
+        0.2250000000004547,
+        0.5257169290567845
+      ],
+      "width_depth_native": [
+        0.4500000000006821,
+        0.4998002390881311
+      ],
+      "actual_width_depth_mm": [
+        450.00000000068206,
+        499.8002390881311
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 21,
+      "entity_types": {
+        "ARC": 10,
+        "LINE": 11
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 21
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "UNKNOWN",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license missing/unclear"
+      ],
+      "repo": "uncreatednet/DXF-library",
+      "path": "chairs/cadeira escritorio planta.dxf",
+      "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/chairs/cadeira%20escritorio%20planta.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/20_cadeira_escritorio_planta.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "wc/bacia planta.dxf",
+      "category": "wc",
+      "dxf_or_dwg": "dxf",
+      "units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "unit_evidence": "sub-10 native footprint implies meters",
+      "bbox_native": [
+        2356.874815812421,
+        7461.843389571666,
+        2357.244815812422,
+        7462.333389571667
+      ],
+      "width_depth_native": [
+        0.3700000000012551,
+        0.4900000000006912
+      ],
+      "actual_width_depth_mm": [
+        370.0000000012551,
+        490.0000000006912
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": true,
+      "modelspace_entity_count": 22,
+      "entity_types": {
+        "LINE": 12,
+        "ARC": 7,
+        "POLYLINE": 3
+      },
+      "block_count": 3,
+      "layer_count": 1,
+      "layers": {
+        "0": 22
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "UNKNOWN",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license missing/unclear",
+        "geometry far from origin"
+      ],
+      "repo": "uncreatednet/DXF-library",
+      "path": "wc/bacia planta.dxf",
+      "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/wc/bacia%20planta.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/21_bacia_planta.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "basins/Std600.dxf",
+      "category": "vanity",
+      "dxf_or_dwg": "dxf",
+      "units": "mm_inferred",
+      "unit_scale_to_mm": 1.0,
+      "unit_evidence": "dimension token / native footprint implies mm",
+      "bbox_native": [
+        2333.164029515109,
+        3409.339522167115,
+        2933.164029515109,
+        4009.339522167115
+      ],
+      "width_depth_native": [
+        600.0,
+        600.0
+      ],
+      "actual_width_depth_mm": [
+        600.0,
+        600.0
+      ],
+      "base_point_native": [
+        2633.164029515109,
+        3768.9549067825,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 61,
+      "entity_types": {
+        "POLYLINE": 2,
+        "LINE": 37,
+        "ARC": 20,
+        "CIRCLE": 2
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 61
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "UNKNOWN",
+      "classification": "REJECT",
+      "reject_or_normalize_reasons": [
+        "license missing/unclear"
+      ],
+      "repo": "uncreatednet/DXF-library",
+      "path": "basins/Std600.dxf",
+      "url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/basins/Std600.dxf",
+      "local_path": "/tmp/a0_2_cad_samples/22_Std600.dxf",
+      "converted_path": null
+    },
+    {
+      "source_file": "Blocks/Architectural/Bed - King.dwg",
+      "category": "bed",
+      "dxf_or_dwg": "dwg",
+      "units": "inch_inferred",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "filename/known imperial source",
+      "bbox_native": [
+        0.0,
+        23.71653543307086,
+        80.00000000000321,
+        95.71653543307374
+      ],
+      "width_depth_native": [
+        80.00000000000321,
+        72.00000000000288
+      ],
+      "actual_width_depth_mm": [
+        2032.0000000000814,
+        1828.8000000000732
+      ],
+      "base_point_native": [
+        -1.4210854715202e-14,
+        23.71653543307085,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 14,
+      "entity_types": {
+        "LINE": 13,
+        "INSERT": 1
+      },
+      "block_count": 3,
+      "layer_count": 1,
+      "layers": {
+        "0": 14
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "MIT",
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
+      "repo": "Lendres/CAD-Support-Files",
+      "path": "Blocks/Architectural/Bed - King.dwg",
+      "url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/Bed%20-%20King.dwg",
+      "local_path": "/tmp/a0_2_cad_samples/23_Bed_King.dwg",
+      "converted_path": "/tmp/a0_2_cad_samples/23_Bed_King.dxf"
+    },
+    {
+      "source_file": "Blocks/Architectural/Bed - Queen.dwg",
+      "category": "bed",
+      "dxf_or_dwg": "dwg",
+      "units": "inch_inferred",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "filename/known imperial source",
+      "bbox_native": [
+        1.4210854715202004e-14,
+        143.4330708661446,
+        80.00000000000323,
+        203.433070866147
+      ],
+      "width_depth_native": [
+        80.00000000000321,
+        60.000000000002416
+      ],
+      "actual_width_depth_mm": [
+        2032.0000000000814,
+        1524.0000000000612
+      ],
+      "base_point_native": [
+        0.0,
+        143.4330708661446,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 14,
+      "entity_types": {
+        "LINE": 13,
+        "INSERT": 1
+      },
+      "block_count": 3,
+      "layer_count": 1,
+      "layers": {
+        "0": 14
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "MIT",
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
+      "repo": "Lendres/CAD-Support-Files",
+      "path": "Blocks/Architectural/Bed - Queen.dwg",
+      "url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/Bed%20-%20Queen.dwg",
+      "local_path": "/tmp/a0_2_cad_samples/24_Bed_Queen.dwg",
+      "converted_path": "/tmp/a0_2_cad_samples/24_Bed_Queen.dxf"
+    },
+    {
+      "source_file": "Blocks/Architectural/Sofa - 7 ft - Straightback.dwg",
+      "category": "sofa",
+      "dxf_or_dwg": "dwg",
+      "units": "inch_inferred",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "filename/known imperial source",
+      "bbox_native": [
+        -40.0,
+        -31.0,
+        40.0,
+        0.0
+      ],
+      "width_depth_native": [
+        80.0,
+        31.0
+      ],
+      "actual_width_depth_mm": [
+        2032.0,
+        787.4
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 4,
+      "entity_types": {
+        "LWPOLYLINE": 2,
+        "LINE": 2
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 4
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "MIT",
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
+      "repo": "Lendres/CAD-Support-Files",
+      "path": "Blocks/Architectural/Sofa - 7 ft - Straightback.dwg",
+      "url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/Sofa%20-%207%20ft%20-%20Straightback.dwg",
+      "local_path": "/tmp/a0_2_cad_samples/25_Sofa_7_ft_Straightback.dwg",
+      "converted_path": "/tmp/a0_2_cad_samples/25_Sofa_7_ft_Straightback.dxf"
+    },
+    {
+      "source_file": "Blocks/Architectural/Dining Table for 8.dwg",
+      "category": "dining_table",
+      "dxf_or_dwg": "dwg",
+      "units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "header:$INSUNITS=1",
+      "bbox_native": [
+        703.7054716606006,
+        412.00810350928583,
+        767.4798087521337,
+        531.6015346840103
+      ],
+      "width_depth_native": [
+        63.7743370915332,
+        119.59343117472446
+      ],
+      "actual_width_depth_mm": [
+        1619.8681621249432,
+        3037.673151838001
+      ],
+      "base_point_native": [
+        703.9554716610754,
+        404.7337783042354,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 329,
+      "entity_types": {
+        "ARC": 184,
+        "SPLINE": 16,
+        "LINE": 127,
+        "CIRCLE": 2
+      },
+      "block_count": 3,
+      "layer_count": 1,
+      "layers": {
+        "0": 329
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "MIT",
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
+      "repo": "Lendres/CAD-Support-Files",
+      "path": "Blocks/Architectural/Dining Table for 8.dwg",
+      "url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/Dining%20Table%20for%208.dwg",
+      "local_path": "/tmp/a0_2_cad_samples/26_Dining_Table_for_8.dwg",
+      "converted_path": "/tmp/a0_2_cad_samples/26_Dining_Table_for_8.dxf"
+    },
+    {
+      "source_file": "Blocks/Architectural/Desk - Writing.dwg",
+      "category": "desk",
+      "dxf_or_dwg": "dwg",
+      "units": "inch_inferred",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "filename/known imperial source",
+      "bbox_native": [
+        -24.0,
+        -24.0,
+        24.00000000000091,
+        0.0
+      ],
+      "width_depth_native": [
+        48.00000000000091,
+        24.0
+      ],
+      "actual_width_depth_mm": [
+        1219.200000000023,
+        609.5999999999999
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 41,
+      "entity_types": {
+        "LINE": 25,
+        "LWPOLYLINE": 7,
+        "ARC": 2,
+        "TEXT": 7
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 41
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "MIT",
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
+      "repo": "Lendres/CAD-Support-Files",
+      "path": "Blocks/Architectural/Desk - Writing.dwg",
+      "url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/Desk%20-%20Writing.dwg",
+      "local_path": "/tmp/a0_2_cad_samples/27_Desk_Writing.dwg",
+      "converted_path": "/tmp/a0_2_cad_samples/27_Desk_Writing.dxf"
+    },
+    {
+      "source_file": "Blocks/Architectural/TOILET.DWG",
+      "category": "wc",
+      "dxf_or_dwg": "dwg",
+      "units": "inch_inferred",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "filename/known imperial source",
+      "bbox_native": [
+        1.0,
+        -10.50000000000023,
+        28.0,
+        10.50000000000006
+      ],
+      "width_depth_native": [
+        27.0,
+        21.00000000000029
+      ],
+      "actual_width_depth_mm": [
+        685.8,
+        533.4000000000074
+      ],
+      "base_point_native": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 14,
+      "entity_types": {
+        "LWPOLYLINE": 1,
+        "LINE": 13
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 14
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "MIT",
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
+      "repo": "Lendres/CAD-Support-Files",
+      "path": "Blocks/Architectural/TOILET.DWG",
+      "url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/TOILET.DWG",
+      "local_path": "/tmp/a0_2_cad_samples/28_TOILET.dwg",
+      "converted_path": "/tmp/a0_2_cad_samples/28_TOILET.dxf"
+    },
+    {
+      "source_file": "Blocks/Architectural/Washer.dwg",
+      "category": "washer",
+      "dxf_or_dwg": "dwg",
+      "units": "inch_inferred",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "filename/known imperial source",
+      "bbox_native": [
+        296.56931016562,
+        133.1633539333452,
+        323.5693101656199,
+        163.1633539333452
+      ],
+      "width_depth_native": [
+        26.999999999999943,
+        30.0
+      ],
+      "actual_width_depth_mm": [
+        685.7999999999985,
+        762.0
+      ],
+      "base_point_native": [
+        296.56931016562,
+        163.1633539333452,
+        0.0
+      ],
+      "far_from_origin": true,
+      "modelspace_entity_count": 18,
+      "entity_types": {
+        "ARC": 5,
+        "LINE": 13
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 18
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "MIT",
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [
+        "geometry far from origin"
+      ],
+      "repo": "Lendres/CAD-Support-Files",
+      "path": "Blocks/Architectural/Washer.dwg",
+      "url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/Washer.dwg",
+      "local_path": "/tmp/a0_2_cad_samples/29_Washer.dwg",
+      "converted_path": "/tmp/a0_2_cad_samples/29_Washer.dxf"
+    },
+    {
+      "source_file": "Blocks/Architectural/Refridgerator - 30 inch.dwg",
+      "category": "fridge",
+      "dxf_or_dwg": "dwg",
+      "units": "inch_inferred",
+      "unit_scale_to_mm": 25.4,
+      "unit_evidence": "filename/known imperial source",
+      "bbox_native": [
+        108.6774560064295,
+        136.5470934068817,
+        138.6774560064298,
+        163.0470934068821
+      ],
+      "width_depth_native": [
+        30.0000000000003,
+        26.500000000000426
+      ],
+      "actual_width_depth_mm": [
+        762.0000000000075,
+        673.1000000000108
+      ],
+      "base_point_native": [
+        108.6774597167969,
+        163.0470886230469,
+        0.0
+      ],
+      "far_from_origin": false,
+      "modelspace_entity_count": 7,
+      "entity_types": {
+        "LINE": 7
+      },
+      "block_count": 2,
+      "layer_count": 1,
+      "layers": {
+        "0": 7
+      },
+      "xref": false,
+      "ole": false,
+      "proxy_or_unsupported_types": [],
+      "planar_z": true,
+      "two_d_plan_available": true,
+      "plan_legend_suitable": true,
+      "license_gate": "MIT",
+      "classification": "NORMALIZE",
+      "reject_or_normalize_reasons": [],
+      "repo": "Lendres/CAD-Support-Files",
+      "path": "Blocks/Architectural/Refridgerator - 30 inch.dwg",
+      "url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/Refridgerator%20-%2030%20inch.dwg",
+      "local_path": "/tmp/a0_2_cad_samples/30_Refridgerator_30_inch.dwg",
+      "converted_path": "/tmp/a0_2_cad_samples/30_Refridgerator_30_inch.dxf"
+    }
+  ],
+  "contact_sheet": "qc/a0_2_cad_contact_sheet.png",
+  "license_notes": {
+    "GSStnb/dxfBlocks": "API metadata CC0-1.0 conflicts with README CC BY-NC-SA-4.0; REJECT",
+    "uncreatednet/DXF-library": "no repository license; REJECT",
+    "Lendres/CAD-Support-Files": "MIT repo license; NORMALIZE candidates after per-file check"
+  }
+}
