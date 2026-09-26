@@ -21,6 +21,8 @@ class A03CadLibraryTests(unittest.TestCase):
     def test_selected_count_and_no_design_scaling(self):
         self.assertEqual(len(self.manifest["blocks"]), 20)
         self.assertTrue(all(item["geometry_scaled"] is False for item in self.manifest["blocks"]))
+        self.assertTrue(all(item["design_geometry_rescaled"] is False for item in self.manifest["blocks"]))
+        self.assertTrue(all("unit_conversion_applied" in item for item in self.manifest["blocks"]))
 
     def test_normalized_units_and_bbox_contract(self):
         for item in self.manifest["blocks"]:

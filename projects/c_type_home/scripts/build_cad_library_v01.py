@@ -275,6 +275,8 @@ def build():
             "entity_count": len(list(readback_block)), "layer_count": len(set(e.dxf.layer for e in readback_block)),
             "xref": metric["xref"], "ole": metric["ole"], "proxy": bool(metric["proxy_or_unsupported_types"]),
             "geometry_scaled": False, "normalized_units": "mm", "bbox_delta_mm": bbox_delta,
+            "unit_conversion_applied": factor != 1.0,
+            "design_geometry_rescaled": False,
             "normalized_file": str(normalized_path.relative_to(LIB)), "preview_file": str(preview.relative_to(LIB)),
             "license_gate": item["license_gate"], "qa_status": qa_status,
         }
