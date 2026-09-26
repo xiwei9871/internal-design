@@ -17,6 +17,7 @@ class F1R01HTests(unittest.TestCase):
         qa = self.metrics["qa"]
         self.assertTrue(qa["actual_dxf_block_geometry_rendered"])
         self.assertGreaterEqual(qa["a0_block_ref_count"], 8)
+        self.assertTrue(qa["transformed_block_bbox_within_tolerance"])
         self.assertFalse(qa["formal_cad_writeback"])
         self.assertTrue(qa["central_clear_zone_reported_descriptively"])
         self.assertFalse(qa["negative_space_ratio_used_as_pass_fail"])

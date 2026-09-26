@@ -21,6 +21,7 @@ from matplotlib.lines import Line2D
 from ezdxf.addons import Importer
 from ezdxf.addons.drawing import Frontend, RenderContext
 from ezdxf.addons.drawing.matplotlib import MatplotlibBackend
+from ezdxf import bbox as ezbbox
 
 ROOT = Path(__file__).resolve().parents[1]
 QC = ROOT / "qc/f1r_public_zone"
@@ -123,12 +124,9 @@ def chair_placements():
 def add_block_imports(doc):
     for block_id, path in BLOCKS.items():
         src = ezdxf.readfile(str(path))
-        Importer(src, doc).import_block(block_id)
-    # Importer can be finalized once after all definitions are queued.
-    # Each importer owns its own dependency graph, so re-importing the target
-    # block into the same document is safe here.
-    # Finalize through a fresh importer for each source is unnecessary; imported
-    # block content is already registered by import_block.
+        importer = Importer(src, doc)
+        importer.import_block(block_id)
+        importer.finalize()
 
 
 def add_rect_poly(msp, rect, layer):
@@ -162,11 +160,12 @@ def make_doc(canonical, windows, legend_manifest, placements, chairs):
             add_rect_poly(msp, r, "F1R_WINDOW")
     add_rect_poly(msp, [7900, 12950, 13000, 13600], "F1R_BALCONY")
     add_block_imports(doc)
+    refs = []
     for obj in placements:
-        insert_for_rect(msp, obj["block_id"], obj["rect"], obj.get("rotation", 0), legend_manifest)
+        refs.append((obj, insert_for_rect(msp, obj["block_id"], obj["rect"], obj.get("rotation", 0), legend_manifest)))
     for obj in chairs:
-        insert_for_rect(msp, obj["block_id"], obj["rect"], obj.get("rotation", 0), legend_manifest)
-    return doc
+        refs.append((obj, insert_for_rect(msp, obj["block_id"], obj["rect"], obj.get("rotation", 0), legend_manifest)))
+    return doc, refs
 
 
 def draw_geometry(ax, doc):
@@ -206,8 +205,9 @@ def render(doc, canonical, windows, paths, placements, chairs, output, overlay=F
     draw_background(ax, canonical, windows, paths)
     draw_geometry(ax, doc)
     if overlay:
-        ax.add_patch(Rectangle((3900, 7400), 3800, 4350, fill=False, edgecolor="#376d4d", linewidth=1.2, linestyle="--", zorder=15))
-        ax.text(3920, 11780, "central clear field", fontsize=8, color="#376d4d", zorder=20)
+        clear_rect = metrics["clearances"]["central_clear_zone_dimensions_mm"]
+        ax.add_patch(Rectangle((clear_rect[0], clear_rect[1]), clear_rect[2] - clear_rect[0], clear_rect[3] - clear_rect[1], fill=False, edgecolor="#376d4d", linewidth=1.2, linestyle="--", zorder=15))
+        ax.text(clear_rect[0] + 20, clear_rect[3] - 40, "actual largest clear rectangle", fontsize=8, color="#376d4d", zorder=20)
         dims = metrics["clearances"]
         labels = [("entry->living", [2850, 6760], dims["entry_to_living_min_clear_width_mm"]), ("living->stair", [5650, 8050], dims["living_to_stair_min_clear_width_mm"]), ("living->north balcony", [6500, 12600], dims["living_to_north_balcony_min_clear_width_mm"]), ("sofa/sofa", [4300, 11250], dims["sofa_to_sofa_min_edge_gap_mm"]), ("sofa/lounge", [4300, 9250], dims["sofa_to_lounge_min_edge_gap_mm"])]
         for label, pos, val in labels:
@@ -256,7 +256,7 @@ def main():
     QC.mkdir(parents=True, exist_ok=True)
     placements = hybrid_placements()
     chairs = chair_placements()
-    doc = make_doc(canonical, windows, legend_manifest, placements, chairs)
+    doc, block_refs = make_doc(canonical, windows, legend_manifest, placements, chairs)
     metrics = {
         "clearances": compute_clearances(furniture, placements),
         "named_path_blockers": [],
@@ -275,6 +275,13 @@ def main():
     metrics["path_blocker_count"] = len(metrics["named_path_blockers"])
     metrics["a0_blocks_used"] = [p["block_id"] for p in placements + chairs]
     metrics["a0_block_ref_count"] = sum(1 for entity in doc.modelspace() if entity.dxftype() == "INSERT")
+    bbox_audit = []
+    for obj, ref in block_refs:
+        ext = ezbbox.extents([ref])
+        actual = [float(ext.extmin.x), float(ext.extmin.y), float(ext.extmax.x), float(ext.extmax.y)]
+        delta = max(abs(actual[i] - float(obj["rect"][i])) for i in range(4))
+        bbox_audit.append({"id": obj["id"], "block_id": obj["block_id"], "rotation_deg": obj.get("rotation", 0), "intended_bbox_mm": obj["rect"], "actual_transformed_bbox_mm": [round(x, 3) for x in actual], "max_abs_delta_mm": round(delta, 3), "pass": delta <= 1.0})
+    metrics["transformed_block_bbox_qa"] = bbox_audit
     metrics["a0_block_files"] = {b: str(BLOCKS[b].relative_to(ROOT)) for b in sorted(set(metrics["a0_blocks_used"]))}
     metrics["rule_citations"] = ["SPC-HIER-002", "SPC-GRP-003", "SPC-GRP-004", "SPC-NEG-007", "SPC-FLOAT-019", "CIR-PRI-001", "AGE-CIR-001", "DIN-CIR-005", "DIN-CIR-006", "DIN-CIR-007"]
     metrics["pattern_citations"] = ["PAT-LIV-01", "PAT-LIV-02", "PAT-AGE-02", "PAT-CIR-01", "PAT-LIV-04"]
@@ -284,6 +291,7 @@ def main():
     metrics["qa"] = {
         "actual_dxf_block_geometry_rendered": True,
         "a0_block_ref_count": metrics["a0_block_ref_count"],
+        "transformed_block_bbox_within_tolerance": all(x["pass"] for x in metrics["transformed_block_bbox_qa"]),
         "path_blockers_zero": metrics["path_blocker_count"] == 0,
         "formal_cad_writeback": False,
         "central_clear_zone_reported_descriptively": True,
