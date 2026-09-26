@@ -1,7 +1,5 @@
 {
   "baseline_label": "RC4.2 baseline frozen from RC4.1 presentation outputs",
-  "view_box": null,
-  "view_box_note": "View-box extraction is deferred to renderer integration.",
   "artifacts": [
     {
       "source": "projects/c_type_home/qc/rc4_v01_presentation.png",
@@ -10,6 +8,37 @@
       "png_dimensions": {
         "width": 2080,
         "height": 2055
+      },
+      "coordinate_mapping": {
+        "view_box_absolute": [
+          1299155.1130761222,
+          -297471.06448036124,
+          1315628.8017043897,
+          -281191.71150157606
+        ],
+        "view_box_task01": [
+          983.1130761222448,
+          -1013.0644803612377,
+          17456.80170438974,
+          15266.288498423935
+        ],
+        "axes_pixel_bounds_bottom_origin": [
+          3.4638958368304884e-13,
+          0.0,
+          2079.999999999999,
+          2055.4628025304764
+        ],
+        "canvas_size": [
+          2080,
+          2055
+        ],
+        "figure_pixel_extent": [
+          0.0,
+          0.0,
+          2080.0,
+          2055.4628025304764
+        ],
+        "source_renderer_commit": "d6d8f2a"
       }
     },
     {
@@ -19,19 +48,114 @@
       "png_dimensions": {
         "width": 2080,
         "height": 2055
+      },
+      "coordinate_mapping": {
+        "view_box_absolute": [
+          1299155.1130761222,
+          -297471.06448036124,
+          1315628.8017043897,
+          -281191.71150157606
+        ],
+        "view_box_task01": [
+          983.1130761222448,
+          -1013.0644803612377,
+          17456.80170438974,
+          15266.288498423935
+        ],
+        "axes_pixel_bounds_bottom_origin": [
+          3.4638958368304884e-13,
+          0.0,
+          2079.999999999999,
+          2055.4628025304764
+        ],
+        "canvas_size": [
+          2080,
+          2055
+        ],
+        "figure_pixel_extent": [
+          0.0,
+          0.0,
+          2080.0,
+          2055.4628025304764
+        ],
+        "source_renderer_commit": "d6d8f2a"
       }
     },
     {
       "source": "projects/c_type_home/qc/rc4_v01_presentation.pdf",
       "destination": "projects/c_type_home/qc/rc4_2_baseline/rc4_1_v01_presentation.pdf",
       "sha256": "099c289079e74785de743adbcb21d77f640081d2b37dce497e045cf549623c3a",
-      "png_dimensions": null
+      "png_dimensions": null,
+      "coordinate_mapping": {
+        "view_box_absolute": [
+          1299155.1130761222,
+          -297471.06448036124,
+          1315628.8017043897,
+          -281191.71150157606
+        ],
+        "view_box_task01": [
+          983.1130761222448,
+          -1013.0644803612377,
+          17456.80170438974,
+          15266.288498423935
+        ],
+        "axes_pixel_bounds_bottom_origin": [
+          3.4638958368304884e-13,
+          0.0,
+          2079.999999999999,
+          2055.4628025304764
+        ],
+        "canvas_size": [
+          2080,
+          2055
+        ],
+        "figure_pixel_extent": [
+          0.0,
+          0.0,
+          2080.0,
+          2055.4628025304764
+        ],
+        "source_renderer_commit": "d6d8f2a"
+      }
     },
     {
       "source": "projects/c_type_home/qc/rc4_v02_f1_presentation.pdf",
       "destination": "projects/c_type_home/qc/rc4_2_baseline/rc4_1_v02_f1_presentation.pdf",
       "sha256": "8200025316220af26a0d59d9fec5a0d9ba6b32701c609cb126b587cec97c4509",
-      "png_dimensions": null
+      "png_dimensions": null,
+      "coordinate_mapping": {
+        "view_box_absolute": [
+          1299155.1130761222,
+          -297471.06448036124,
+          1315628.8017043897,
+          -281191.71150157606
+        ],
+        "view_box_task01": [
+          983.1130761222448,
+          -1013.0644803612377,
+          17456.80170438974,
+          15266.288498423935
+        ],
+        "axes_pixel_bounds_bottom_origin": [
+          3.4638958368304884e-13,
+          0.0,
+          2079.999999999999,
+          2055.4628025304764
+        ],
+        "canvas_size": [
+          2080,
+          2055
+        ],
+        "figure_pixel_extent": [
+          0.0,
+          0.0,
+          2080.0,
+          2055.4628025304764
+        ],
+        "source_renderer_commit": "d6d8f2a"
+      }
     }
-  ]
+  ],
+  "coordinate_mapping_method": "Original d6d8f2a DXF extents algorithm and Matplotlib equal-aspect axes; no baseline image re-rendering.",
+  "baseline_source_commit": "d6d8f2a"
 }

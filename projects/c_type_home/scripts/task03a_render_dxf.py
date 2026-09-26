@@ -18,6 +18,7 @@ Each output carries a .render.json sidecar for provenance; aggregate render
 report goes to qc/rc4_render_report.json (consumed by gates RC4-G14..G17).
 """
 import ezdxf, json, hashlib, datetime
+from PIL import Image
 from pathlib import Path
 import matplotlib
 matplotlib.use('Agg')
@@ -33,7 +34,6 @@ QC = ROOT / 'qc'
 
 matplotlib.rcParams['font.family'] = ['PingFang SC', 'Arial Unicode MS', 'sans-serif']
 
-CE = json.load(open(ROOT / 'current_existing/current_existing_v1.json'))
 CANONICAL = json.load(open(ROOT / 'current_existing/canonical_plan_v1.json'))
 
 AX, AY = 1298172.0, -296458.0          # task01 origin in abs coords
@@ -46,21 +46,67 @@ PRESENTATION_HIDE_TYPES = {'HATCH', 'DIMENSION'}
 REVIEW_HIDE_LAYERS = set()
 REVIEW_HIDE_TYPES = set()
 
-# presentation layer restyle (in-memory only — DXF on disk untouched)
-PRESENTATION_LAYER_STYLE = {
-    'A-GLAZ-EXST': dict(color=153),        # glazing lighter: wall dominates
-    'A-OPEN-EXST': dict(color=8),          # opening extents toned down
+ZORDER = {'wall_fill':10, 'wall_outline':20, 'parapet':30,
+          'openings':40, 'glazing_doors':45, 'furniture':50, 'text':60}
+WALL_FACE = {
+    'exterior': dict(fc='#a3a7ab', ec='#353b42', lw=1.5),
+    'interior': dict(fc='#c8cbcf', ec='#555d65', lw=0.95),
+    'shaft': dict(fc='#c8cbcf', ec='#555d65', lw=0.95),
+    'railing_parapet': dict(fc='#f0f1f2', ec='#a4aab0', lw=0.55),
 }
-PRESENTATION_LAYER_LINWEIGHT = {'A-GLAZ-EXST': 9, 'A-OPEN-EXST': 9}
+CANONICAL_WALL_TYPES = set(WALL_FACE)
 
-WALL_FACE = {  # render-only wall poche, by canonical type
-    'exterior':        dict(fc='#8f8f8f', ec='#262626', lw=1.8, z=1),
-    'interior':        dict(fc='#c4c4c4', ec='#4d4d4d', lw=1.0, z=1),
-    'shaft':           dict(fc='#c4c4c4', ec='#4d4d4d', lw=1.0, z=1),
-    'railing_parapet': dict(fc='#eeeeee', ec='#a0a0a0', lw=0.6, z=1),
-}
-REVIEW_WALL_FACE_ALPHA = 0.45            # review gets a lighter poche underlay
-CANONICAL_WALL_TYPES = {'exterior', 'interior', 'shaft', 'railing_parapet'}
+
+def _entity_category(entity, layer):
+    if entity.dxftype() in {'TEXT','MTEXT','ATTRIB','ATTDEF'}:
+        return 'text'
+    if layer=='A-PARP-EXST':
+        return 'parapet'
+    if layer=='A-OPEN-EXST':
+        return 'openings'
+    if layer in {'A-GLAZ-EXST','F-DOOR'}:
+        return 'glazing_doors'
+    if layer in {'S-S.WALL','A-WALL-EXST-CORR','S-COLUMN'}:
+        return 'wall_outline'
+    return 'furniture'
+
+
+class PresentationFrontend(Frontend):
+    """Style resolved drawing properties, never modify DXF entities/layers."""
+    def __init__(self, ctx, backend, **kwargs):
+        super().__init__(ctx,backend,**kwargs)
+        self.axes=backend.ax
+        self.artist_audit=[]
+        self.entity_audit=[]
+
+    def override_properties(self, entity, properties):
+        super().override_properties(entity,properties)
+        layer=properties.layer
+        if layer in PRESENTATION_HIDE_LAYERS or entity.dxftype() in PRESENTATION_HIDE_TYPES:
+            properties.is_visible=False
+            return
+        category=_entity_category(entity,layer)
+        colors={'wall_outline':'#626a72','parapet':'#a4aab0','openings':'#9ca5ad',
+                'glazing_doors':'#70929b','furniture':'#617581','text':'#39434d'}
+        weights={'wall_outline':0.35,'parapet':0.55,'openings':0.30,
+                 'glazing_doors':0.45,'furniture':0.6,'text':0.4}
+        properties.color=colors[category]
+        properties.lineweight=weights[category]
+
+    def draw_entity(self, entity, properties):
+        before={id(a) for a in self.axes.get_children()}
+        super().draw_entity(entity,properties)
+        category=_entity_category(entity,properties.layer)
+        self.entity_audit.append({'handle':entity.dxf.get('handle','virtual'),
+                                  'type':entity.dxftype(),'layer':properties.layer})
+        for artist in self.axes.get_children():
+            if id(artist) in before or hasattr(artist,'_rc42_category'):
+                continue
+            artist._rc42_category=category
+            artist.set_zorder(ZORDER[category])
+            self.artist_audit.append({'category':category,'zorder':artist.get_zorder(),
+                                     'type':type(artist).__name__, 'layer':properties.layer,
+                                     'handle':entity.dxf.get('handle','virtual')})
 
 
 def validate_canonical_alignment(dxf_path, *, emit=True):
@@ -201,115 +247,147 @@ def _cut_union_area(wall_rect, cuts):
                if any(c[0] < (x1+x2)/2 < c[2] and c[1] < (y1+y2)/2 < c[3] for c in clipped))
 
 
-def _wall_report(wall, hostless_windows=None):
-    """Build one wall's render-only fragment and clipped-cut report."""
-    wr = [int(v) for v in wall['rect_mm']]
-    if not (wr[2] > wr[0] and wr[3] > wr[1]):
-        raise ValueError(f"invalid wall rectangle {wall.get('id')}: {wr!r}")
-    cuts, clipped_cuts = [], []
-    # Ordinary openings are explicit canonical cuts.
-    for opening in CANONICAL['openings']:
-        clipped = _clip(wr, opening['rect_mm'])
-        if clipped:
-            item = {'id': opening['id'], 'source_type': 'opening', 'rect_mm': clipped}
-            cuts.append(item); clipped_cuts.append(item)
-    # Window cuts require a registered host wall; hostless fenestration is
-    # retained as metadata only because a gap already present in CAD must not
-    # be invented from JSON alone.
-    for window in CANONICAL['windows']:
-        wid = window.get('window_id') or window.get('name')
-        clipped = _clip(wr, window['opening_rect_mm'])
-        if not clipped:
-            continue
-        if window.get('host_wall_id') == wall['id']:
-            association = 'parapet_cut' if wall.get('type') == 'railing_parapet' else 'wall_cut'
-            item = {'id': wid, 'source_type': 'window', 'association_type': association, 'rect_mm': clipped}
-            cuts.append(item); clipped_cuts.append(item)
-    # Hostless windows become cuts only when active glazing covers their gap and overlaps this wall.
-    if hostless_windows:
-        for hw in hostless_windows:
-            if hw.get('verified') and (clipped := _clip(wr, hw['rect_mm'])):
-                association = 'parapet_cut' if wall.get('type') == 'railing_parapet' else 'wall_cut'
-                item={'id':hw['id'],'source_type':'window','association_type':association,'rect_mm':clipped}
-                cuts.append(item); clipped_cuts.append(item)
-    # De-duplicate identical cuts while retaining all IDs for audit metadata.
-    unique_rects = []
-    for item in cuts:
-        if item['rect_mm'] not in unique_rects:
-            unique_rects.append(item['rect_mm'])
-    fragments = _fragment_rectangles(wr, unique_rects)
+def _wall_report(wall):
+    wr = list(wall['rect_mm'])
+    cuts = []
+    for source_type, items, key in [('opening', CANONICAL['openings'], 'rect_mm'),
+                                     ('window', CANONICAL['windows'], 'opening_rect_mm')]:
+        for item in items:
+            clipped = _clip(wr, item[key])
+            if clipped:
+                cuts.append({'id': item.get('window_id') or item['id'],
+                             'source_type': source_type, 'rect_mm': clipped})
+    rects = [cut['rect_mm'] for cut in cuts]
+    fragments = _fragment_rectangles(wr, rects)
     wall_area = _rect_area(wr)
-    cut_union = _cut_union_area(wr, [item['rect_mm'] for item in clipped_cuts])
-    report = {
-        'wall_id': wall['id'], 'wall_type': wall.get('type', 'interior'),
-        'wall_area_mm2': wall_area, 'cut_union_area_mm2': cut_union,
-        'fragment_area_mm2': sum(_rect_area(r) for r in fragments),
-        'area_error_mm2': wall_area - cut_union - sum(_rect_area(r) for r in fragments),
-        'fragment_rects': fragments,
-        'cut_ids': [item['id'] for item in clipped_cuts],
-        'clipped_cuts': clipped_cuts,
-        'hostless_cuts': [],
-    }
-    if report['area_error_mm2'] != 0:
-        raise RuntimeError(f"fragment area mismatch for {wall['id']}: {report}")
-    return report
+    cut_area = _cut_union_area(wr, rects)
+    fragment_area = sum(_rect_area(f) for f in fragments)
+    result = {'wall_id': wall['id'], 'wall_type': wall['type'], 'rect_mm': wr,
+              'wall_area_mm2': wall_area, 'cut_union_area_mm2': cut_area,
+              'fragment_area_mm2': fragment_area,
+              'area_error_mm2': wall_area-cut_area-fragment_area,
+              'fragment_rects': fragments, 'cut_ids': [c['id'] for c in cuts],
+              'clipped_cuts': cuts}
+    if result['area_error_mm2'] != 0:
+        raise RuntimeError(f"Area mismatch: {wall['id']}")
+    return result
 
 
-def _active_glazing_rects(dxf_path):
-    doc = ezdxf.readfile(str(dxf_path)); out=[]
-    for e in doc.modelspace():
-        if e.dxf.layer != 'A-GLAZ-EXST': continue
-        try:
-            b=bbox.extents([e]); r=[int(round(b.extmin.x-AX)),int(round(b.extmin.y-AY)),int(round(b.extmax.x-AX)),int(round(b.extmax.y-AY))]
-            if r[2]>r[0] and r[3]>r[1]: out.append(r)
-        except Exception: pass
-    return out
-
-
-def _hostless_records(dxf_path):
-    glaz=_active_glazing_rects(dxf_path); records=[]
-    for w in CANONICAL['windows']:
-        if w.get('host_wall_id'): continue
-        wr=[int(v) for v in w['opening_rect_mm']]; overlap=any(_clip(wr,g) for g in glaz)
-        records.append({'id':w.get('window_id') or w.get('name'),'source_type':'window','rect_mm':wr,
-                        'association_type':'active_gap' if overlap else 'unresolved_hostless','verified':bool(overlap)})
+def _active_geometry(dxf_path):
+    doc = ezdxf.readfile(str(dxf_path))
+    records = []
+    layers = {'S-S.WALL', 'A-WALL-EXST-CORR', 'A-PARP-EXST', 'A-GLAZ-EXST'}
+    for entity in doc.modelspace():
+        if entity.dxf.layer not in layers or entity.dxftype() not in {'LINE', 'LWPOLYLINE', 'POLYLINE'}:
+            continue
+        b = bbox.extents([entity])
+        if not b.has_data:
+            continue
+        records.append({'handle': entity.dxf.handle, 'layer': entity.dxf.layer,
+                        'type': entity.dxftype(),
+                        'rect_mm': [b.extmin.x-AX, b.extmin.y-AY, b.extmax.x-AX, b.extmax.y-AY]})
     return records
 
 
-def wall_faces_report(dxf_path=None):
-    dxf_path = dxf_path or (CAD / 'design_v02_f1_l1.dxf')
-    glaz=_active_glazing_rects(dxf_path); unresolved=[]; walls=[]
-    for w in CANONICAL['walls']:
-        if w['disposition'] != 'EXISTING': continue
-        # Hostless cuts are permitted only with active glazing coverage in the candidate.
-        for win in CANONICAL['windows']:
-            if win.get('host_wall_id') or not _clip(w['rect_mm'], win['opening_rect_mm']): continue
-            if any(_clip(win['opening_rect_mm'], g) for g in glaz):
-                win['_active_overlap']=True
-        walls.append(_wall_report(w, _hostless_records(dxf_path)))
-    return {'walls':walls, 'hostless_fenestration':_hostless_records(dxf_path)}
+def _fenestration_evidence(geometry, walls, alignment):
+    """One evidence entry per opening, including pre-split DXF gaps."""
+    aligned = {a['wall_id']: a for a in alignment}
+    records = []
+    for window in CANONICAL['windows']:
+        wid, wr = window['window_id'], window['opening_rect_mm']
+        glazing = [g for g in geometry if g['layer']=='A-GLAZ-EXST'
+                   and g['type'] in {'LWPOLYLINE', 'POLYLINE'}
+                   and all(abs(a-b) <= 1 for a,b in zip(g['rect_mm'],wr))]
+        if not glazing:
+            raise RuntimeError(f"Geometry discrepancy: {wid} has no matching active DXF glazing rectangle")
+        cut_hosts = [w['wall_id'] for w in walls if any(c['id']==wid for c in w['clipped_cuts'])]
+        overlay = sum(_rect_area(c) for w in walls for f in w['fragment_rects'] if (c := _clip(f,wr)))
+        if overlay:
+            raise RuntimeError(f"Uncut overlay in {wid}: {overlay} mm2")
+        horizontal = wr[2]-wr[0] >= wr[3]-wr[1]
+        axis, cross = (0,1) if horizontal else (1,0)
+        canonical_boundaries = []
+        for wall in walls:
+            r = wall['rect_mm']
+            if r[cross+2] < wr[cross]-1 or r[cross] > wr[cross+2]+1:
+                continue
+            for side, edge, coordinate in [('low',axis+2,wr[axis]),('high',axis,wr[axis+2])]:
+                if abs(r[edge]-coordinate) <= 1 and aligned[wall['wall_id']]['pass']:
+                    canonical_boundaries.append({'side':side,'wall_id':wall['wall_id'],
+                                                 'alignment':aligned[wall['wall_id']]})
+        boundaries=[]
+        for side,coordinate in [('low',wr[axis]),('high',wr[axis+2])]:
+            candidates=[]
+            for g in geometry:
+                if g in glazing:
+                    continue
+                r=g['rect_mm']
+                if r[cross+2] < wr[cross]-1 or r[cross] > wr[cross+2]+1:
+                    continue
+                if side=='low' and r[axis+2] > coordinate+1:
+                    continue
+                if side=='high' and r[axis] < coordinate-1:
+                    continue
+                distance=min(abs(r[axis]-coordinate),abs(r[axis+2]-coordinate))
+                tolerance=51 if wid=='G-DIN-LIV' else 1
+                if distance <= tolerance:
+                    candidates.append(dict(g, setback_mm=round(distance,3)))
+            if candidates:
+                best=min(candidates,key=lambda c:c['setback_mm'])
+                boundaries.append(dict(best,side=side))
+        if cut_hosts:
+            types={w['wall_type'] for w in walls if w['wall_id'] in cut_hosts}
+            association='parapet_cut' if types=={'railing_parapet'} else 'wall_cut'
+        else:
+            association='active_gap'
+            sides={b['side'] for b in boundaries}|{b['side'] for b in canonical_boundaries}
+            if sides!={'low','high'}:
+                raise RuntimeError(f"Geometry discrepancy: {wid} has unresolved gap boundaries {sorted(sides)}")
+        records.append({'id':wid,'opening_rect_mm':wr,'association_type':association,
+                        'source_handles':[g['handle'] for g in glazing],
+                        'glazing_entities':glazing,'cut_hosts':cut_hosts,
+                        'boundary_entities':boundaries,'aligned_boundaries':canonical_boundaries,
+                        'overlay_overlap_mm2':overlay,'verified':True,
+                        'note':'Frame setbacks measured from unchanged DXF.' if wid=='G-DIN-LIV' else ''})
+    return records
+
+
+def wall_faces_report(dxf_path):
+    alignment=validate_canonical_alignment(dxf_path,emit=False)
+    walls=[_wall_report(w) for w in CANONICAL['walls'] if w['disposition']=='EXISTING']
+    geometry=_active_geometry(dxf_path)
+    fenestration=_fenestration_evidence(geometry,walls,alignment)
+    return {'walls':walls,'alignment':alignment,'fenestration':fenestration,
+            'hostless_fenestration':[f for f in fenestration if not next(
+                w for w in CANONICAL['windows'] if w['window_id']==f['id']).get('host_wall_id')]}
 
 
 def draw_wall_faces(ax, profile, dxf_path):
-    alignment = validate_canonical_alignment(dxf_path, emit=False)
-    report = {'wall_face_ids': [], 'parapet_ids': [], 'cuts': [], 'wall_reports': [], 'alignment': alignment}
-    wall_data = wall_faces_report(dxf_path)
-    report['hostless_fenestration'] = wall_data['hostless_fenestration']
-    for item in wall_data['walls']:
-        wid, wtype = item['wall_id'], item['wall_type']
-        if wtype == 'railing_parapet':
-            report['parapet_ids'].append(wid)
-        else:
-            report['wall_face_ids'].append(wid)
-        report['cuts'] += [{'wall': wid, 'opening': oid} for oid in item['cut_ids']]
-        report['wall_reports'].append(item)
-        style = WALL_FACE.get(wtype, WALL_FACE['interior'])
-        alpha = REVIEW_WALL_FACE_ALPHA if profile == 'CAD_REVIEW' else 1.0
-        for r in item['fragment_rects']:
-            ax.add_patch(Rectangle((r[0] + AX, r[1] + AY), r[2] - r[0], r[3] - r[1],
-                                   facecolor=style['fc'], edgecolor=style['ec'],
-                                   lw=style['lw'], zorder=style['z'], alpha=alpha,
-                                   joinstyle='miter'))
+    data=wall_faces_report(dxf_path)
+    solids=[w for w in data['walls'] if w['wall_type']!='railing_parapet']
+    parapets=[w for w in data['walls'] if w['wall_type']=='railing_parapet']
+    report={'wall_face_ids':[w['wall_id'] for w in solids],
+            'parapet_ids':[w['wall_id'] for w in parapets],
+            'wall_reports':data['walls'],'alignment':data['alignment'],
+            'fenestration':data['fenestration'], 'hostless_fenestration':data['hostless_fenestration'],
+            'cuts':[{'wall':w['wall_id'],'opening':i} for w in data['walls'] for i in w['cut_ids']],
+            'overlay_artists':[]}
+    for group,is_parapet in [(solids,False),(parapets,True)]:
+        for wall in group:
+            style=WALL_FACE[wall['wall_type']]
+            for rect in wall['fragment_rects']:
+                stages=['parapet'] if is_parapet else ['wall_fill','wall_outline']
+                for stage in stages:
+                    fill=stage in {'wall_fill','parapet'}
+                    artist=Rectangle((rect[0]+AX,rect[1]+AY),rect[2]-rect[0],rect[3]-rect[1],
+                                     facecolor=style['fc'] if fill else 'none',
+                                     edgecolor='none' if stage=='wall_fill' else style['ec'],
+                                     lw=0 if stage=='wall_fill' else style['lw'],
+                                     zorder=ZORDER[stage],joinstyle='miter')
+                    artist._rc42_category=stage
+                    ax.add_patch(artist)
+                    report['overlay_artists'].append({'wall_id':wall['wall_id'],'category':stage,
+                        'zorder':artist.get_zorder(),'rect_mm':rect,'line_width_pt':artist.get_linewidth()})
     return report
 
 
@@ -318,13 +396,6 @@ def render(dxf_path, profile, name, crop=None, faces=True, label_walls=False):
     alignment = validate_canonical_alignment(dxf_path, emit=False)
     doc = ezdxf.readfile(str(dxf_path))
     msp = doc.modelspace()
-    if profile == 'PRESENTATION':            # in-memory restyle only
-        for ln, st in PRESENTATION_LAYER_STYLE.items():
-            if ln in doc.layers:
-                doc.layers.get(ln).dxf.color = st['color']
-        for ln, lw in PRESENTATION_LAYER_LINWEIGHT.items():
-            if ln in doc.layers:
-                doc.layers.get(ln).dxf.lineweight = lw
     hide_l = PRESENTATION_HIDE_LAYERS if profile == 'PRESENTATION' else REVIEW_HIDE_LAYERS
     hide_t = PRESENTATION_HIDE_TYPES if profile == 'PRESENTATION' else REVIEW_HIDE_TYPES
 
@@ -362,22 +433,29 @@ def render(dxf_path, profile, name, crop=None, faces=True, label_walls=False):
     ax = fig.add_axes([0, 0, 1, 1])
     ax.set_axis_off()
     ax.set_facecolor('white')
-    wfaces = draw_wall_faces(ax, profile, dxf_path) if faces else {
+    wfaces = draw_wall_faces(ax, profile, dxf_path) if faces and profile == 'PRESENTATION' else {
         'wall_face_ids': [], 'parapet_ids': [], 'cuts': [], 'wall_reports': [], 'alignment': alignment}
     ctx = RenderContext(doc)
     out = MatplotlibBackend(ax, adjust_figure=False)   # never let backend resize the fig
-    Frontend(ctx, out).draw_layout(msp, filter_func=keep, finalize=True)
+    frontend = PresentationFrontend(ctx,out) if profile=='PRESENTATION' else Frontend(ctx,out)
+    frontend.draw_layout(msp, filter_func=keep, finalize=True)
     if label_walls:
-        for wl in CE['walls']:
+        for wl in CANONICAL['walls']:
             if wl['disposition'] != 'EXISTING':
                 continue
             r = wl['rect_mm']
             ax.text((r[0] + r[2]) / 2 + AX, (r[1] + r[3]) / 2 + AY, wl['id'],
                     fontsize=3.2, color='#aa2200', ha='center', va='center',
-                    rotation=0 if (r[2] - r[0]) >= (r[3] - r[1]) else 90, zorder=9)
+                    rotation=0 if (r[2] - r[0]) >= (r[3] - r[1]) else 90, zorder=70)
     ax.set_xlim(vx1, vx2)
     ax.set_ylim(vy1, vy2)
     ax.set_aspect('equal')
+    fig.canvas.draw()
+    coordinate_mapping={'view_box_absolute':[vx1,vy1,vx2,vy2],
+        'view_box_task01':[vx1-AX,vy1-AY,vx2-AX,vy2-AY],
+        'axes_pixel_bounds_bottom_origin':list(ax.bbox.bounds),
+        'canvas_size':list(fig.canvas.get_width_height()),
+        'figure_pixel_extent':list(fig.bbox.bounds)}
     png = QC / f'{name}.png'
     pdf = QC / f'{name}.pdf'
     fig.savefig(png, dpi=160, facecolor='white')
@@ -391,8 +469,14 @@ def render(dxf_path, profile, name, crop=None, faces=True, label_walls=False):
         'parent_cad_sha256': next((v['parent_sha256'] for v in man['versions']
                                    if v['file'] == str(dxf_path.relative_to(ROOT))), None),
         'render_profile': profile,
+        'coordinate_mapping':coordinate_mapping,
+        'canonical_sha256':sha(ROOT/'current_existing/canonical_plan_v1.json'),
+        'renderer_sha256':sha(Path(__file__)),
+        'outputs':{'png':{'file':str(png.relative_to(ROOT)) if png.is_relative_to(ROOT) else str(png),'sha256':sha(png)},
+                   'pdf':{'file':str(pdf.relative_to(ROOT)) if pdf.is_relative_to(ROOT) else str(pdf),'sha256':sha(pdf)}},
         'generated_at': datetime.datetime.now().isoformat(timespec='seconds'),
         'visible_layers': sorted({e.dxf.layer for e in msp if keep(e)}),
+        'visible_entity_types':sorted({e.dxftype() for e in msp if keep(e)}),
         'hidden_layers': sorted(hide_l),
         'hidden_entity_types': sorted(hide_t),
         'wall_faces': wfaces['wall_face_ids'],
@@ -401,64 +485,108 @@ def render(dxf_path, profile, name, crop=None, faces=True, label_walls=False):
         'wall_reports': wfaces['wall_reports'],
         'alignment': wfaces['alignment'],
         'hostless_fenestration': wfaces.get('hostless_fenestration', []),
+        'fenestration': wfaces.get('fenestration', []),
+        'zorder':ZORDER, 'wall_styles':WALL_FACE,
+        'overlay_artists':wfaces.get('overlay_artists',[]),
+        'dxf_artists':getattr(frontend,'artist_audit',[]),
+        'drawn_entities':getattr(frontend,'entity_audit',[]),
     }
     json.dump(side, open(QC / f'{name}.render.json', 'w'), indent=1, ensure_ascii=False)
     print(f'{name}.png/.pdf  ({profile})  <- {dxf_path.name}')
-    return wfaces
+    return side
 
 
-def before_after(dxf_path, name, zones):
-    """2xN composite: top row = legacy look (no faces), bottom = wall faces."""
-    alignment = validate_canonical_alignment(dxf_path, emit=False)
-    doc = ezdxf.readfile(str(dxf_path))
-    msp = doc.modelspace()
-    keep = lambda e: (e.dxf.layer not in PRESENTATION_HIDE_LAYERS
-                      and e.dxftype() not in PRESENTATION_HIDE_TYPES)
-    fig, axs = plt.subplots(2, len(zones), figsize=(4.6 * len(zones), 9.5), dpi=150)
-    fig.subplots_adjust(wspace=0.06, hspace=0.04)
-    for row in range(2):
-        for col, (zl, zr) in enumerate(zones.items()):
-            ax = axs[row][col]
-            ax.set_axis_off()
-            if row == 1:
-                draw_wall_faces(ax, 'PRESENTATION', dxf_path)
-            out = MatplotlibBackend(ax, adjust_figure=False)
-            Frontend(RenderContext(doc), out).draw_layout(
-                msp, filter_func=keep, finalize=True)
-            ax.set_xlim(zr[0] + AX, zr[2] + AX)
-            ax.set_ylim(zr[1] + AY, zr[3] + AY)
-            ax.set_aspect('equal')
-            if row == 0:
-                ax.set_title(f'BEFORE — {zl}', fontsize=8)
-            else:
-                ax.set_title(f'AFTER — {zl}', fontsize=8)
-    png = QC / f'{name}.png'
-    fig.savefig(png, dpi=150, facecolor='white')
-    plt.close(fig)
-    print(f'{name}.png  (before/after zones)')
+FROZEN_DXF = {
+    'design_v01_existing_sync.dxf':'5210557086ce08d2ca40cb5b14be909ba83608e68b22bcfd151ed73904cf6c00',
+    'design_v02_f1_l1.dxf':'4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d',
+}
+
+
+def assert_frozen_inputs():
+    for name,digest in FROZEN_DXF.items():
+        if sha(CAD/name)!=digest:
+            raise RuntimeError(f"Frozen DXF SHA mismatch: {name}")
+    report=json.loads((QC/'rc4_2_geometry_diff.json').read_text())
+    for item in report['files']:
+        if sha(ROOT/item['file'])!=item['baseline_sha256']:
+            raise RuntimeError(f"Geometry/input freeze violation: {item['file']}")
+    return report
+
+
+def assert_baseline():
+    manifest=json.loads((QC/'rc4_2_baseline/manifest.json').read_text())
+    repo=ROOT.parents[1]
+    for item in manifest['artifacts']:
+        path=repo/item['destination']
+        if sha(path)!=item['sha256'] or not item.get('coordinate_mapping'):
+            raise RuntimeError(f"Baseline corrupted or unmapped: {path}")
+    return manifest
+
+
+def _pixel_crop(path,mapping,zone):
+    image=Image.open(path).convert('RGB')
+    x0,y0,x1,y1=mapping['view_box_task01']
+    ax,ay,aw,ah=mapping['axes_pixel_bounds_bottom_origin']
+    canvas_height=mapping['canvas_size'][1]
+    left=ax+(zone[0]-x0)/(x1-x0)*aw
+    right=ax+(zone[2]-x0)/(x1-x0)*aw
+    top=canvas_height-(ay+(zone[3]-y0)/(y1-y0)*ah)
+    bottom=canvas_height-(ay+(zone[1]-y0)/(y1-y0)*ah)
+    bounds=tuple(round(v) for v in [left,top,right,bottom])
+    return image.crop(bounds),list(bounds)
+
+
+def before_after(side):
+    manifest=assert_baseline()
+    baseline=next(a for a in manifest['artifacts'] if a['destination'].endswith('rc4_1_v02_f1_presentation.png'))
+    path=ROOT.parents[1]/baseline['destination']
+    after=ROOT/side['outputs']['png']['file']
+    zones={
+        'A  Living north bay':[2500,11000,7500,14100],
+        'B  North balcony / guest / study':[7400,7700,16700,14000],
+        'C  Dining / life balcony / kitchen':[1100,-800,8400,5600],
+        'D + E  Bedrooms / baths / south bays':[7400,-900,16800,9300],
+    }
+    fig,axes=plt.subplots(2,4,figsize=(19,10),dpi=180,facecolor='white')
+    fig.subplots_adjust(wspace=.04,hspace=.05,left=.01,right=.99,top=.92,bottom=.035)
+    evidence=[]
+    for col,(title,zone) in enumerate(zones.items()):
+        crops=[]
+        for row,(source,mapping) in enumerate([(path,baseline['coordinate_mapping']),(after,side['coordinate_mapping'])]):
+            cropped,pixels=_pixel_crop(source,mapping,zone)
+            axes[row,col].imshow(cropped);axes[row,col].axis('off')
+            axes[row,col].set_title(('RC4.1 BEFORE | ' if row==0 else 'RC4.2 AFTER | ')+title,fontsize=9)
+            crops.append({'source':str(source.relative_to(ROOT)),'source_sha256':sha(source),'pixel_bounds':pixels})
+        evidence.append({'label':title,'rect_mm':zone,'crops':crops})
+    fig.suptitle('RC4.2 Wall Display | Same V02 CAD | Frozen RC4.1 baseline',fontsize=16)
+    fig.text(.5,.01,'HUMAN VISUAL REVIEW = REQUIRED',ha='center',fontsize=11,color='#7f4b13')
+    output=QC/'rc4_2_wall_display_before_after.png';fig.savefig(output,dpi=180,facecolor='white');plt.close(fig)
+    return {'file':str(output.relative_to(ROOT)),'sha256':sha(output),'baseline_sha256':baseline['sha256'],'zones':evidence}
 
 
 def main():
-    validate_canonical_alignment(CAD / 'design_v01_existing_sync.dxf', emit=False)
-    validate_canonical_alignment(CAD / 'design_v02_f1_l1.dxf', emit=False)
-    render(CAD / 'design_v01_existing_sync.dxf', 'CAD_REVIEW', 'rc4_v01_cad_review')
-    render(CAD / 'design_v01_existing_sync.dxf', 'PRESENTATION', 'rc4_v01_presentation')
-    render(CAD / 'design_v02_f1_l1.dxf', 'CAD_REVIEW', 'rc4_v02_f1_cad_review')
-    render(CAD / 'design_v02_f1_l1.dxf', 'PRESENTATION', 'rc4_v02_f1_presentation')
-    # RC4.1 visual check: north balcony must read as open parapet/railing, not wall
-    render(CAD / 'design_v01_existing_sync.dxf', 'CAD_REVIEW', 'rc4_v01_open_balcony_check',
-           crop=[7200, 10400, 13600, 14000])
-    # RC4.2 readability outputs
-    ZONES = {
-        'living-N-window': [2500, 11000, 7500, 14000],
-        'Nbalc-guestbath-guestbed-study': [7400, 9000, 14000, 14000],
-        'dining-lifebalc-kitchen': [800, -800, 8300, 5200],
-        'smbath-mbath-mbed-smbed': [7400, -800, 16800, 9200],
-    }
-    before_after(CAD / 'design_v02_f1_l1.dxf', 'rc4_2_wall_display_before_after', ZONES)
-    render(CAD / 'design_v02_f1_l1.dxf', 'PRESENTATION', 'rc4_2_wall_readability_check',
-           label_walls=True)
+    frozen=assert_frozen_inputs();baseline=assert_baseline()
+    for name in FROZEN_DXF:
+        wall_faces_report(CAD/name)
+    versions={}
+    for version,name,output in [('V01','design_v01_existing_sync.dxf','rc4_v01_presentation'),
+                                ('V02','design_v02_f1_l1.dxf','rc4_v02_f1_presentation')]:
+        versions[version]=render(CAD/name,'PRESENTATION',output)
+    check=render(CAD/'design_v02_f1_l1.dxf','PRESENTATION','rc4_2_wall_readability_check',label_walls=True)
+    comparison=before_after(versions['V02'])
+    assert_frozen_inputs();assert_baseline()
+    report={'release':'RC4.2','human_visual_review':'REQUIRED',
+            'human_visual_review_label':'HUMAN VISUAL REVIEW = REQUIRED',
+            'baseline_manifest':'qc/rc4_2_baseline/manifest.json',
+            'baseline_manifest_sha256':sha(QC/'rc4_2_baseline/manifest.json'),
+            'geometry_diff':'qc/rc4_2_geometry_diff.json','versions':versions,
+            'before_after':comparison,'readability_check':check,
+            'geometry_changed':'none','source_cad_checks':'exact SHA before and after rendering'}
+    (QC/'rc4_render_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+chr(10))
+    frozen['checkpoint']='after RC4.2 rendering'
+    (QC/'rc4_2_geometry_diff.json').write_text(json.dumps(frozen,ensure_ascii=False,indent=2)+chr(10))
+    print('HUMAN VISUAL REVIEW = REQUIRED; frozen CAD hashes unchanged.')
 
 
-if __name__ == '__main__':
+if __name__=='__main__':
     main()

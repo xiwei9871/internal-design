@@ -1,0 +1,96 @@
+{
+  "baseline_commit": "d6d8f2a",
+  "checkpoint": "after RC4.2 rendering",
+  "files": [
+    {
+      "file": "source/世纪欣园FF.dwg",
+      "baseline_sha256": "f01a9bb5de964e0362296d12ca510fd7dc99060ddd0e8f8c4b6ab1e63a6fc360",
+      "current_sha256": "f01a9bb5de964e0362296d12ca510fd7dc99060ddd0e8f8c4b6ab1e63a6fc360",
+      "byte_identical": true
+    },
+    {
+      "file": "cad/measured_working.dxf",
+      "baseline_sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
+      "current_sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
+      "byte_identical": true
+    },
+    {
+      "file": "cad/design_v01_existing_sync.dxf",
+      "baseline_sha256": "5210557086ce08d2ca40cb5b14be909ba83608e68b22bcfd151ed73904cf6c00",
+      "current_sha256": "5210557086ce08d2ca40cb5b14be909ba83608e68b22bcfd151ed73904cf6c00",
+      "byte_identical": true
+    },
+    {
+      "file": "cad/design_v02_f1_l1.dxf",
+      "baseline_sha256": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d",
+      "current_sha256": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d",
+      "byte_identical": true
+    },
+    {
+      "file": "current_existing/canonical_plan_v1.json",
+      "baseline_sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444",
+      "current_sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444",
+      "byte_identical": true
+    },
+    {
+      "file": "current_existing/current_existing_v1.json",
+      "baseline_sha256": "765eebe7f8f8e822d2a733a10edae861024f47e6132346daa074975344db47ce",
+      "current_sha256": "765eebe7f8f8e822d2a733a10edae861024f47e6132346daa074975344db47ce",
+      "byte_identical": true
+    },
+    {
+      "file": "concept/furniture_l1_final.json",
+      "baseline_sha256": "5b41adf5722365f9bf023e7d534058edc1692c13e5d1027c0ec055cc2b75cda9",
+      "current_sha256": "5b41adf5722365f9bf023e7d534058edc1692c13e5d1027c0ec055cc2b75cda9",
+      "byte_identical": true
+    },
+    {
+      "file": "concept/concept_data.json",
+      "baseline_sha256": "046b77355c62d7f4550ff067e1c7077bd6efc5a33c89c61deff39e68eb62c036",
+      "current_sha256": "046b77355c62d7f4550ff067e1c7077bd6efc5a33c89c61deff39e68eb62c036",
+      "byte_identical": true
+    },
+    {
+      "file": "current_existing/window_register.json",
+      "baseline_sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a",
+      "current_sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a",
+      "byte_identical": true
+    },
+    {
+      "file": "current_existing/kitchen_cabinet_register.json",
+      "baseline_sha256": "65a926f773b3c9b9c3334e1b504744512ceb299825b1252aca32b7a4b24219fa",
+      "current_sha256": "65a926f773b3c9b9c3334e1b504744512ceb299825b1252aca32b7a4b24219fa",
+      "byte_identical": true
+    },
+    {
+      "file": "cad/cad_version_manifest.json",
+      "baseline_sha256": "d1e1845cb073e4a624e7bef42c9e4f2db9940ae35a51c479ca0ab75bacf028b7",
+      "current_sha256": "d1e1845cb073e4a624e7bef42c9e4f2db9940ae35a51c479ca0ab75bacf028b7",
+      "byte_identical": true
+    },
+    {
+      "file": "cad/cad_change_registry.json",
+      "baseline_sha256": "c32c23212e87cc588451a2be511da46bdae872dc50030043aca0fbf0105f8cc6",
+      "current_sha256": "c32c23212e87cc588451a2be511da46bdae872dc50030043aca0fbf0105f8cc6",
+      "byte_identical": true
+    },
+    {
+      "file": "scripts/task03a_build_working_cad.py",
+      "baseline_sha256": "4cd0664cbcbb4db88e0104c1fe4f4191e9b2830edd8dafbecb1562146ad82e25",
+      "current_sha256": "4cd0664cbcbb4db88e0104c1fe4f4191e9b2830edd8dafbecb1562146ad82e25",
+      "byte_identical": true
+    }
+  ],
+  "geometry_changes": {
+    "walls": "none",
+    "openings": "none",
+    "windows": "none",
+    "kitchen_cabinets": "none",
+    "keep_items": "none",
+    "balconies": "none",
+    "split_level": "none"
+  },
+  "f1_changed": "none",
+  "parapets_changed": "none",
+  "overall": "UNCHANGED"
+}

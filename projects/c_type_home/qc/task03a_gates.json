@@ -274,6 +274,31 @@
       "gate": "RC4-G13 open balcony: railing_parapet never on wall layer",
       "result": "PASS",
       "detail": "parapets=['W-EXT-N-BAL', 'W-BALC-W', 'W-BALC-S', 'W-NBALC-E-PAR'] violations=none"
+    },
+    {
+      "gate": "RC4-G14 wall-face completeness",
+      "result": "PASS",
+      "detail": "V01/V02 35 walls + 4 parapets; live alignment, fragments, areas, artists, provenance; errors=none"
+    },
+    {
+      "gate": "RC4-G15 wall-window hierarchy",
+      "result": "PASS",
+      "detail": "V01/V02 9 unique DXF-backed fenestrations; zero overlay in openings; fixed artist hierarchy; errors=none"
+    },
+    {
+      "gate": "RC4-G16 parapet hierarchy",
+      "result": "PASS",
+      "detail": "4 parapets outside wall face IDs and artists; lighter/thinner style; errors=none"
+    },
+    {
+      "gate": "RC4-G17 presentation layer hygiene",
+      "result": "PASS",
+      "detail": "filtered layers/types and actual nested drawn entities checked; errors=none"
+    },
+    {
+      "gate": "RC4-G18 geometry frozen",
+      "result": "PASS",
+      "detail": "exact V01/V02 SHA locks and 13 byte-identical files vs d6d8f2a; changed=none"
     }
   ],
   "overall": "PASS"

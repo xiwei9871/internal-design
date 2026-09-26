@@ -37,15 +37,15 @@
  "renderer_sha256": "eabeaf2197d1e72777246509037edfb46e499163dc846732a91a46151b18ed3c",
  "outputs": {
   "png": {
-   "file": "qc/rc4_v02_f1_presentation.png",
-   "sha256": "bc5fb117f6b64d4b096b1cf1fabea8eca8ec650094f719689d61082ca4641a73"
+   "file": "qc/rc4_2_wall_readability_check.png",
+   "sha256": "16973ade236bf7bc88665cf8b8799159939299e25370f09b944070b7e4481767"
   },
   "pdf": {
-   "file": "qc/rc4_v02_f1_presentation.pdf",
-   "sha256": "272ccdafe9a587714814b5a071aad0b95b364ea6bea4610c1e1954bbd1e53458"
+   "file": "qc/rc4_2_wall_readability_check.pdf",
+   "sha256": "e4b8c08b30484d2ee6185b22a996008c4bf63de5ab869e543c148e715a68b384"
   }
  },
- "generated_at": "2026-09-26T09:36:04",
+ "generated_at": "2026-09-26T09:36:05",
  "visible_layers": [
   "A-ACCESS-RAMP",
   "A-ACCESS-STAIR",

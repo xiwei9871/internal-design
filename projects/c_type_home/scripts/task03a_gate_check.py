@@ -707,7 +707,136 @@ for pw in par_walls:
 gate('RC4-G13 open balcony: railing_parapet never on wall layer', not bal_bad,
      f"parapets={[w['id'] for w in par_walls]} violations={bal_bad or 'none'}")
 
+# RC4.2: evaluate live render evidence and exact frozen inputs independently.
+import importlib.util
+import subprocess
+from pathlib import Path
+_rs = importlib.util.spec_from_file_location('rc42_renderer', Path(ROOT)/'scripts/task03a_render_dxf.py')
+_rr = importlib.util.module_from_spec(_rs)
+_rs.loader.exec_module(_rr)
+_rcpath = Path(ROOT)/'qc/rc4_render_report.json'
+_rc = json.loads(_rcpath.read_text()) if _rcpath.exists() else {}
+_canonical = json.loads((Path(ROOT)/'current_existing/canonical_plan_v1.json').read_text())
+_expected = {w['id']:w for w in _canonical['walls'] if w['disposition']=='EXISTING'}
+_solids = {k for k,w in _expected.items() if w['type']!='railing_parapet'}
+_parapets = set(_expected)-_solids
+_bads = {n:[] for n in range(14,19)}
+for version,name,output in [('V01','design_v01_existing_sync.dxf','rc4_v01_presentation'),
+                            ('V02','design_v02_f1_l1.dxf','rc4_v02_f1_presentation')]:
+    try:
+        side=json.loads((Path(ROOT)/f'qc/{output}.render.json').read_text())
+        if _rc.get('versions',{}).get(version)!=side:
+            _bads[14].append(f'{version}: aggregate/sidecar mismatch')
+        fresh=_rr.wall_faces_report(Path(CADDIR)/name)
+        if side.get('wall_reports')!=fresh['walls'] or side.get('alignment')!=fresh['alignment']:
+            _bads[14].append(f'{version}: stale fragment/alignment records')
+        if set(side.get('wall_faces',[]))!=_solids or set(side.get('parapet_faces',[]))!=_parapets:
+            _bads[14].append(f'{version}: wall/parapet ID completeness')
+        artists=side.get('overlay_artists',[])
+        for w in fresh['walls']:
+            if w['area_error_mm2']!=0:
+                _bads[14].append(f'{version}:{w["wall_id"]}: area error')
+            stages=['parapet'] if w['wall_type']=='railing_parapet' else ['wall_fill','wall_outline']
+            for rect in w['fragment_rects']:
+                for stage in stages:
+                    if not any(a['wall_id']==w['wall_id'] and a['category']==stage and a['rect_mm']==rect for a in artists):
+                        _bads[14].append(f'{version}:{w["wall_id"]}: artist missing')
+        for category,min_width in [('exterior',1.0),('interior',0.7)]:
+            if side['wall_styles'][category]['lw']<min_width:
+                _bads[14].append(f'{version}:{category}: outline below minimum')
+        if side.get('source_dxf_sha256')!=_sha_file(Path(CADDIR)/name):
+            _bads[14].append(f'{version}: DXF provenance')
+        if side.get('renderer_sha256')!=_sha_file(Path(ROOT)/'scripts/task03a_render_dxf.py'):
+            _bads[14].append(f'{version}: renderer provenance')
+        for artifact in side['outputs'].values():
+            if _sha_file(Path(ROOT)/artifact['file'])!=artifact['sha256']:
+                _bads[14].append(f'{version}: stale output {artifact["file"]}')
+        fen=side.get('fenestration',[])
+        ids=[f['id'] for f in fen]
+        expected_ids={w['window_id'] for w in _canonical['windows']}
+        if len(ids)!=9 or set(ids)!=expected_ids or fen!=fresh['fenestration']:
+            _bads[15].append(f'{version}: fenestration evidence missing/stale')
+        for f in fen:
+            if not f['verified'] or f['overlay_overlap_mm2']!=0 or not f['source_handles']:
+                _bads[15].append(f'{version}:{f["id"]}: unverified/occluded')
+        order=side['zorder']
+        sequence=[order[k] for k in ['wall_fill','wall_outline','parapet','openings','glazing_doors','furniture','text']]
+        if sequence!=sorted(set(sequence)):
+            _bads[15].append(f'{version}: z-order hierarchy')
+        for a in side.get('dxf_artists',[])+artists:
+            if a['zorder']!=order[a['category']]:
+                _bads[15].append(f'{version}: actual artist z-order')
+        if set(side['wall_faces']) & _parapets or set(side['parapet_faces'])!=_parapets:
+            _bads[16].append(f'{version}: parapet routed as wall')
+        for a in artists:
+            if (a['wall_id'] in _parapets)!=(a['category']=='parapet'):
+                _bads[16].append(f'{version}:{a["wall_id"]}: parapet artist routing')
+        styles=side['wall_styles']
+        def gray(hex_color):
+            return sum(int(hex_color[i:i+2],16) for i in (1,3,5))/3
+        if not (styles['railing_parapet']['lw']<styles['interior']['lw']<styles['exterior']['lw']
+                and gray(styles['railing_parapet']['fc'])>gray(styles['interior']['fc'])>gray(styles['exterior']['fc'])):
+            _bads[16].append(f'{version}: parapet style hierarchy')
+        hidden=_rr.PRESENTATION_HIDE_LAYERS
+        if not hidden.issubset(side.get('hidden_layers',[])) or hidden.intersection(side['visible_layers']):
+            _bads[17].append(f'{version}: hidden/visible layers')
+        if not _rr.PRESENTATION_HIDE_TYPES.issubset(side['hidden_entity_types']):
+            _bads[17].append(f'{version}: hidden entity types')
+        for e in side.get('drawn_entities',[]):
+            if e['layer'] in hidden or e['type'] in _rr.PRESENTATION_HIDE_TYPES:
+                _bads[17].append(f'{version}:{e["handle"]}: forbidden drawn entity')
+        if set(side.get('visible_entity_types',[])) & _rr.PRESENTATION_HIDE_TYPES:
+            _bads[17].append(f'{version}: forbidden visible type')
+    except Exception as error:
+        for n in range(14,18):
+            _bads[n].append(f'{version}: {type(error).__name__}: {error}')
+
+# Independent byte comparison to RC4.1; never trust a rewritten live manifest.
+_frozen_paths=['source/世纪欣园FF.dwg','cad/measured_working.dxf',
+ 'cad/design_v01_existing_sync.dxf','cad/design_v02_f1_l1.dxf',
+ 'current_existing/canonical_plan_v1.json','current_existing/current_existing_v1.json',
+ 'concept/furniture_l1_final.json','concept/concept_data.json',
+ 'current_existing/window_register.json','current_existing/kitchen_cabinet_register.json',
+ 'cad/cad_version_manifest.json','cad/cad_change_registry.json','scripts/task03a_build_working_cad.py']
+for file in _frozen_paths:
+    try:
+        original=subprocess.check_output(['git','show',f'd6d8f2a:projects/c_type_home/{file}'],cwd=ROOT)
+        if (Path(ROOT)/file).read_bytes()!=original:
+            _bads[18].append(file)
+    except Exception as error:
+        _bads[18].append(f'{file}: {error}')
+for name,digest in {
+ 'design_v01_existing_sync.dxf':'5210557086ce08d2ca40cb5b14be909ba83608e68b22bcfd151ed73904cf6c00',
+ 'design_v02_f1_l1.dxf':'4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d'}.items():
+    if _sha_file(Path(CADDIR)/name)!=digest:
+        _bads[18].append(f'{name}: exact SHA lock')
+try:
+    baseline=_rr.assert_baseline()
+    for art in baseline['artifacts']:
+        source=subprocess.check_output(['git','show','d6d8f2a:'+art['source']],cwd=ROOT)
+        if hashlib.sha256(source).hexdigest()!=art['sha256']:
+            _bads[14].append('baseline provenance '+art['source'])
+    if _rc.get('human_visual_review')!='REQUIRED':
+        _bads[14].append('human review must remain REQUIRED')
+except Exception as error:
+    _bads[14].append(f'baseline/review: {error}')
+
+gate('RC4-G14 wall-face completeness',not _bads[14],
+     f'V01/V02 35 walls + 4 parapets; live alignment, fragments, areas, artists, provenance; errors={_bads[14] or "none"}')
+gate('RC4-G15 wall-window hierarchy',not _bads[15],
+     f'V01/V02 9 unique DXF-backed fenestrations; zero overlay in openings; fixed artist hierarchy; errors={_bads[15] or "none"}')
+gate('RC4-G16 parapet hierarchy',not _bads[16],
+     f'4 parapets outside wall face IDs and artists; lighter/thinner style; errors={_bads[16] or "none"}')
+gate('RC4-G17 presentation layer hygiene',not _bads[17],
+     f'filtered layers/types and actual nested drawn entities checked; errors={_bads[17] or "none"}')
+gate('RC4-G18 geometry frozen',not _bads[18],
+     f'exact V01/V02 SHA locks and 13 byte-identical files vs d6d8f2a; changed={_bads[18] or "none"}')
+print('HUMAN VISUAL REVIEW = REQUIRED')
+
 overall = all(r['result'] == 'PASS' for r in results)
 print(f"\n=== TASK03A GATES: {sum(r['result']=='PASS' for r in results)}/{len(results)} {'ALL PASS' if overall else 'HAS FAIL'} ===")
 json.dump({'gates': results, 'overall': 'PASS' if overall else 'FAIL'},
           open(os.path.join(ROOT, 'qc/task03a_gates.json'), 'w'), indent=2)
+
+if not overall:
+    raise SystemExit(1)
