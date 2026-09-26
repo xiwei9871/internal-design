@@ -1,0 +1,908 @@
+{
+  "version": "f1r-v0.1",
+  "scope": "concept comparison only; no CAD/canonical/V03 writes",
+  "generated_date": "2026-09-26",
+  "inputs": {
+    "furniture_l1_final.json": "5b41adf5722365f9bf023e7d534058edc1692c13e5d1027c0ec055cc2b75cda9",
+    "concept_data.json": "046b77355c62d7f4550ff067e1c7077bd6efc5a33c89c61deff39e68eb62c036",
+    "canonical_plan_v1.json": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444",
+    "window_register.json": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a",
+    "design_legend_manifest_v01.json": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+  },
+  "options": {
+    "baseline": {
+      "label": "00 F1 current baseline",
+      "short": "frozen current F1 arrangement",
+      "placements": [
+        {
+          "id": "LIV-SOFA-3",
+          "block_id": "SOFA_3S_2200x900_PLAN",
+          "rect": [
+            2900,
+            9500,
+            3800,
+            11700
+          ],
+          "rotation_deg": 90,
+          "group": "living",
+          "role": "3-seat sofa",
+          "spatial_reason": "F1 west-wall sofa; faces east media wall",
+          "footprint_mm": [
+            2200,
+            900
+          ]
+        },
+        {
+          "id": "LIV-SOFA-2",
+          "block_id": "SOFA_2S_1800x850_PLAN",
+          "rect": [
+            4550,
+            11800,
+            6350,
+            12650
+          ],
+          "rotation_deg": 0,
+          "group": "living",
+          "role": "2-seat sofa",
+          "spatial_reason": "F1 north-bay sofa; 100 mm clear of window face",
+          "footprint_mm": [
+            1800,
+            850
+          ]
+        },
+        {
+          "id": "LIV-LOUNGE",
+          "block_id": "F1_DAY_LOUNGE_1500x1100",
+          "rect": [
+            5450,
+            6200,
+            6950,
+            7300
+          ],
+          "rotation_deg": 0,
+          "group": "living",
+          "role": "day-lounge",
+          "spatial_reason": "F1 south-central day-lounge",
+          "footprint_mm": null
+        },
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3300,
+            3100,
+            4800,
+            3700
+          ],
+          "rotation_deg": 0,
+          "group": "dining",
+          "role": "dining table",
+          "spatial_reason": "F1 daily 4-adult+child table",
+          "footprint_mm": [
+            1500,
+            600
+          ]
+        },
+        {
+          "id": "LIV-SIDE-TABLE",
+          "block_id": "F1_SIDE_TABLE_450x450",
+          "rect": [
+            3450,
+            11850,
+            3900,
+            12300
+          ],
+          "rotation_deg": 0,
+          "group": "living",
+          "role": "side table",
+          "spatial_reason": "F1 movable side table",
+          "footprint_mm": null
+        },
+        {
+          "id": "LIV-COFFEE-MOV",
+          "block_id": "F1_COFFEE_750x1100",
+          "rect": [
+            5700,
+            8400,
+            6450,
+            9500
+          ],
+          "rotation_deg": 0,
+          "group": "living",
+          "role": "coffee table",
+          "spatial_reason": "F1 movable; central core kept open",
+          "footprint_mm": null
+        }
+      ],
+      "rules": [
+        "SPC-HIER-001",
+        "SPC-GRP-003",
+        "SPC-NEG-007",
+        "DIN-CIR-007",
+        "LIV-BAL-010"
+      ],
+      "patterns": [
+        "PAT-LIV-01",
+        "PAT-LIV-04",
+        "PAT-CIR-01"
+      ],
+      "pros": [
+        "Current F1 furniture and route record remain visible as the comparison baseline."
+      ],
+      "cons": [
+        "F1 audit identifies weak hierarchy, conversation grouping and object reasons."
+      ],
+      "axis": "entry -> living/media edge competes with north balcony view",
+      "conversation": [],
+      "metrics": {
+        "path_blockers": [],
+        "path_blocker_count": 0,
+        "living_core_mm2": 16530000,
+        "living_core_occupied_mm2": 825000,
+        "negative_space_ratio": 0.9501,
+        "living_furniture_bbox": [
+          2900,
+          6200,
+          6950,
+          12650
+        ],
+        "conversation_relationships": [],
+        "main_visual_axis": "entry -> living/media edge competes with north balcony view",
+        "dining_table_kept": true
+      },
+      "pattern_evidence": [
+        {
+          "pattern_id": "PAT-LIV-01",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-001",
+            "PREC-002",
+            "PREC-003"
+          ]
+        },
+        {
+          "pattern_id": "PAT-LIV-04",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-002",
+            "PREC-003",
+            "PREC-007",
+            "PREC-013"
+          ]
+        },
+        {
+          "pattern_id": "PAT-CIR-01",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-002",
+            "PREC-009"
+          ]
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "SPC-HIER-001",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-GRP-003",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-NEG-007",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "DIN-CIR-007",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "LIV-BAL-010",
+          "classification": "TECHNICAL_REFERENCE",
+          "source_strength": "STRONG",
+          "automatic_gate": true
+        }
+      ]
+    },
+    "single_axis_social_core": {
+      "label": "01 Single-axis social core",
+      "short": "one conversation group; projection becomes secondary mode",
+      "placements": [
+        {
+          "id": "LIV-SOFA-3",
+          "block_id": "SOFA_3S_2200x900_PLAN",
+          "rect": [
+            2900,
+            9000,
+            3800,
+            11200
+          ],
+          "rotation_deg": 90,
+          "group": "living",
+          "role": "3-seat sofa",
+          "spatial_reason": "anchor one side of a face-to-face conversation group while preserving P1",
+          "footprint_mm": [
+            2200,
+            900
+          ]
+        },
+        {
+          "id": "LIV-SOFA-2",
+          "block_id": "SOFA_2S_1800x850_PLAN",
+          "rect": [
+            4850,
+            10800,
+            6650,
+            11650
+          ],
+          "rotation_deg": 0,
+          "group": "living",
+          "role": "2-seat sofa",
+          "spatial_reason": "forms the second edge of the social group while leaving P5 open",
+          "footprint_mm": [
+            1800,
+            850
+          ]
+        },
+        {
+          "id": "LIV-LOUNGE",
+          "block_id": "LOUNGE_CHAIR_900x900_PLAN",
+          "rect": [
+            4700,
+            8400,
+            5600,
+            9300
+          ],
+          "rotation_deg": 90,
+          "group": "living",
+          "role": "lounge chair",
+          "spatial_reason": "third seat turns toward the conversation group, not only the media wall",
+          "footprint_mm": [
+            900,
+            900
+          ]
+        },
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3300,
+            3100,
+            4800,
+            3700
+          ],
+          "rotation_deg": 0,
+          "group": "dining",
+          "role": "dining table",
+          "spatial_reason": "retain F1 dining/kitchen anchor",
+          "footprint_mm": [
+            1500,
+            600
+          ]
+        }
+      ],
+      "rules": [
+        "SPC-HIER-002",
+        "SPC-GRP-003",
+        "SPC-GRP-004",
+        "SPC-NEG-007",
+        "LIV-FLEX-003",
+        "DIN-CIR-007"
+      ],
+      "patterns": [
+        "PAT-LIV-01",
+        "PAT-LIV-02",
+        "PAT-LIV-04",
+        "PAT-AGE-02"
+      ],
+      "pros": [
+        "Creates one readable conversation group instead of three independent seats.",
+        "Keeps the central field available for child activity and aging-friendly movement.",
+        "Leaves the projector wall as a secondary mode rather than the only orientation."
+      ],
+      "cons": [
+        "Requires changing the current 2-seat sofa position/orientation.",
+        "Throw distance and glare still need the selected product.",
+        "The third seat is smaller and may need a later comfort check."
+      ],
+      "axis": "entry -> social core -> north balcony; media wall is secondary focal edge",
+      "conversation": [
+        "LIV-SOFA-3 <-> LIV-SOFA-2",
+        "LIV-SOFA-3 <-> LIV-LOUNGE"
+      ],
+      "metrics": {
+        "path_blockers": [],
+        "path_blocker_count": 0,
+        "living_core_mm2": 16530000,
+        "living_core_occupied_mm2": 2340000,
+        "negative_space_ratio": 0.8584,
+        "living_furniture_bbox": [
+          2900,
+          8400,
+          6650,
+          11650
+        ],
+        "conversation_relationships": [
+          "LIV-SOFA-3 <-> LIV-SOFA-2",
+          "LIV-SOFA-3 <-> LIV-LOUNGE"
+        ],
+        "main_visual_axis": "entry -> social core -> north balcony; media wall is secondary focal edge",
+        "dining_table_kept": true
+      },
+      "pattern_evidence": [
+        {
+          "pattern_id": "PAT-LIV-01",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-001",
+            "PREC-002",
+            "PREC-003"
+          ]
+        },
+        {
+          "pattern_id": "PAT-LIV-02",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-001",
+            "PREC-002",
+            "PREC-003"
+          ]
+        },
+        {
+          "pattern_id": "PAT-LIV-04",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-002",
+            "PREC-003",
+            "PREC-007",
+            "PREC-013"
+          ]
+        },
+        {
+          "pattern_id": "PAT-AGE-02",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-009",
+            "PREC-013"
+          ]
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "SPC-HIER-002",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-GRP-003",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-GRP-004",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-NEG-007",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "LIV-FLEX-003",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "DIN-CIR-007",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        }
+      ],
+      "legend_footprints": {
+        "SOFA_3S_2200x900_PLAN": [
+          2200,
+          900
+        ],
+        "SOFA_2S_1800x850_PLAN": [
+          1800,
+          850
+        ],
+        "LOUNGE_CHAIR_900x900_PLAN": [
+          900,
+          900
+        ],
+        "DINING_TABLE_1500x600_PLAN": [
+          1500,
+          600
+        ]
+      }
+    },
+    "view_first_balcony": {
+      "label": "02 View-first / north-balcony hierarchy",
+      "short": "north balcony becomes the primary visual extension",
+      "placements": [
+        {
+          "id": "LIV-SOFA-3",
+          "block_id": "SOFA_3S_2200x900_PLAN",
+          "rect": [
+            4000,
+            8600,
+            6200,
+            9500
+          ],
+          "rotation_deg": 0,
+          "group": "living",
+          "role": "3-seat sofa",
+          "spatial_reason": "long seat faces north view/balcony axis while preserving P1/P3",
+          "footprint_mm": [
+            2200,
+            900
+          ]
+        },
+        {
+          "id": "LIV-SOFA-2",
+          "block_id": "SOFA_2S_1800x850_PLAN",
+          "rect": [
+            5700,
+            10200,
+            6550,
+            12000
+          ],
+          "rotation_deg": 90,
+          "group": "living",
+          "role": "2-seat sofa",
+          "spatial_reason": "secondary seat turns toward the view and keeps the media edge quiet",
+          "footprint_mm": [
+            1800,
+            850
+          ]
+        },
+        {
+          "id": "LIV-LOUNGE",
+          "block_id": "LOUNGE_CHAIR_900x900_PLAN",
+          "rect": [
+            6300,
+            8200,
+            7200,
+            9100
+          ],
+          "rotation_deg": 0,
+          "group": "living",
+          "role": "lounge chair",
+          "spatial_reason": "small reading/view seat aligned with the balcony axis",
+          "footprint_mm": [
+            900,
+            900
+          ]
+        },
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3300,
+            3100,
+            4800,
+            3700
+          ],
+          "rotation_deg": 0,
+          "group": "dining",
+          "role": "dining table",
+          "spatial_reason": "retain F1 dining/kitchen anchor",
+          "footprint_mm": [
+            1500,
+            600
+          ]
+        }
+      ],
+      "rules": [
+        "SPC-SIGHT-013",
+        "SPC-SIGHT-014",
+        "SPC-HIER-002",
+        "SPC-EDGE-011",
+        "LIV-BAL-010",
+        "DIN-CIR-007"
+      ],
+      "patterns": [
+        "PAT-LIV-06",
+        "PAT-AGE-02",
+        "PAT-LIV-04",
+        "PAT-CIR-01"
+      ],
+      "pros": [
+        "Makes the open north balcony a visual extension rather than a leftover route.",
+        "Reduces the room's dependence on a TV/media focal point.",
+        "Supports daylight, view and a calmer seating hierarchy."
+      ],
+      "cons": [
+        "Projector viewing direction becomes less direct and must be product-checked.",
+        "The north-bay sofa and balcony threshold need a detailed glare/privacy review.",
+        "A view-first arrangement may feel less compact for group viewing."
+      ],
+      "axis": "entry -> dining -> living view axis -> open north balcony",
+      "conversation": [
+        "LIV-SOFA-3 <-> LIV-LOUNGE"
+      ],
+      "metrics": {
+        "path_blockers": [],
+        "path_blocker_count": 0,
+        "living_core_mm2": 16530000,
+        "living_core_occupied_mm2": 4107500,
+        "negative_space_ratio": 0.7515,
+        "living_furniture_bbox": [
+          4000,
+          8200,
+          7200,
+          12000
+        ],
+        "conversation_relationships": [
+          "LIV-SOFA-3 <-> LIV-LOUNGE"
+        ],
+        "main_visual_axis": "entry -> dining -> living view axis -> open north balcony",
+        "dining_table_kept": true
+      },
+      "pattern_evidence": [
+        {
+          "pattern_id": "PAT-LIV-06",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-002",
+            "PREC-013",
+            "PREC-014"
+          ]
+        },
+        {
+          "pattern_id": "PAT-AGE-02",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-009",
+            "PREC-013"
+          ]
+        },
+        {
+          "pattern_id": "PAT-LIV-04",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-002",
+            "PREC-003",
+            "PREC-007",
+            "PREC-013"
+          ]
+        },
+        {
+          "pattern_id": "PAT-CIR-01",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-002",
+            "PREC-009"
+          ]
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "SPC-SIGHT-013",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-SIGHT-014",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-HIER-002",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-EDGE-011",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "LIV-BAL-010",
+          "classification": "TECHNICAL_REFERENCE",
+          "source_strength": "STRONG",
+          "automatic_gate": true
+        },
+        {
+          "rule_id": "DIN-CIR-007",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        }
+      ],
+      "legend_footprints": {
+        "SOFA_3S_2200x900_PLAN": [
+          2200,
+          900
+        ],
+        "SOFA_2S_1800x850_PLAN": [
+          1800,
+          850
+        ],
+        "LOUNGE_CHAIR_900x900_PLAN": [
+          900,
+          900
+        ],
+        "DINING_TABLE_1500x600_PLAN": [
+          1500,
+          600
+        ]
+      }
+    },
+    "negative_space_spine": {
+      "label": "03 Negative-space + circulation spine",
+      "short": "edge-load furniture; organize one clear central field",
+      "placements": [
+        {
+          "id": "LIV-SOFA-3",
+          "block_id": "SOFA_3S_2200x900_PLAN",
+          "rect": [
+            2900,
+            9500,
+            3800,
+            11700
+          ],
+          "rotation_deg": 90,
+          "group": "living",
+          "role": "3-seat sofa",
+          "spatial_reason": "edge-load west wall; preserve P1/P3 spine",
+          "footprint_mm": [
+            2200,
+            900
+          ]
+        },
+        {
+          "id": "LIV-SOFA-2",
+          "block_id": "SOFA_2S_1800x850_PLAN",
+          "rect": [
+            4550,
+            11800,
+            6350,
+            12650
+          ],
+          "rotation_deg": 0,
+          "group": "living",
+          "role": "2-seat sofa",
+          "spatial_reason": "edge-load north bay; preserve central activity field",
+          "footprint_mm": [
+            1800,
+            850
+          ]
+        },
+        {
+          "id": "LIV-LOUNGE",
+          "block_id": "LOUNGE_CHAIR_900x900_PLAN",
+          "rect": [
+            6200,
+            8200,
+            7100,
+            9100
+          ],
+          "rotation_deg": 0,
+          "group": "living",
+          "role": "lounge chair",
+          "spatial_reason": "single edge seat anchors the east/south edge without floating in the core",
+          "footprint_mm": [
+            900,
+            900
+          ]
+        },
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3300,
+            3100,
+            4800,
+            3700
+          ],
+          "rotation_deg": 0,
+          "group": "dining",
+          "role": "dining table",
+          "spatial_reason": "retain F1 dining/kitchen anchor",
+          "footprint_mm": [
+            1500,
+            600
+          ]
+        }
+      ],
+      "rules": [
+        "SPC-NEG-007",
+        "SPC-NEG-008",
+        "SPC-FLOAT-019",
+        "SPC-FLOAT-020",
+        "CIR-PRI-001",
+        "AGE-CIR-001",
+        "DIN-CIR-007"
+      ],
+      "patterns": [
+        "PAT-CIR-01",
+        "PAT-LIV-01",
+        "PAT-LIV-02",
+        "PAT-STOR-02"
+      ],
+      "pros": [
+        "Maximizes a readable child/aging activity field and furniture-free circulation spine.",
+        "Every remaining object has an explicit edge, route or grouping reason.",
+        "Lowest object density and simplest future reconfiguration."
+      ],
+      "cons": [
+        "Conversation grouping is weaker than Option 01.",
+        "The room may feel sparse unless lighting/rug/material cues define zones later.",
+        "Lounge chair becomes optional and should be removed if it reads as an isolated object."
+      ],
+      "axis": "entry -> clear central spine -> stair/balcony; media wall remains an edge condition",
+      "conversation": [
+        "LIV-SOFA-3 <-> LIV-SOFA-2 (secondary)"
+      ],
+      "metrics": {
+        "path_blockers": [],
+        "path_blocker_count": 0,
+        "living_core_mm2": 16530000,
+        "living_core_occupied_mm2": 810000,
+        "negative_space_ratio": 0.951,
+        "living_furniture_bbox": [
+          2900,
+          8200,
+          7100,
+          12650
+        ],
+        "conversation_relationships": [
+          "LIV-SOFA-3 <-> LIV-SOFA-2 (secondary)"
+        ],
+        "main_visual_axis": "entry -> clear central spine -> stair/balcony; media wall remains an edge condition",
+        "dining_table_kept": true
+      },
+      "pattern_evidence": [
+        {
+          "pattern_id": "PAT-CIR-01",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-002",
+            "PREC-009"
+          ]
+        },
+        {
+          "pattern_id": "PAT-LIV-01",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-001",
+            "PREC-002",
+            "PREC-003"
+          ]
+        },
+        {
+          "pattern_id": "PAT-LIV-02",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "HIGH",
+          "verified_precedent_ids": [
+            "PREC-001",
+            "PREC-002",
+            "PREC-003"
+          ]
+        },
+        {
+          "pattern_id": "PAT-STOR-02",
+          "evidence_type": "EXTERNAL_PRECEDENT",
+          "evidence_confidence": "MEDIUM",
+          "verified_precedent_ids": [
+            "PREC-001",
+            "PREC-002",
+            "PREC-003",
+            "PREC-005",
+            "PREC-004"
+          ]
+        }
+      ],
+      "rule_checks": [
+        {
+          "rule_id": "SPC-NEG-007",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-NEG-008",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-FLOAT-019",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "SPC-FLOAT-020",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "CIR-PRI-001",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "AGE-CIR-001",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        },
+        {
+          "rule_id": "DIN-CIR-007",
+          "classification": "DESIGN_HEURISTIC",
+          "source_strength": "MEDIUM",
+          "automatic_gate": false
+        }
+      ],
+      "legend_footprints": {
+        "SOFA_3S_2200x900_PLAN": [
+          2200,
+          900
+        ],
+        "SOFA_2S_1800x850_PLAN": [
+          1800,
+          850
+        ],
+        "LOUNGE_CHAIR_900x900_PLAN": [
+          900,
+          900
+        ],
+        "DINING_TABLE_1500x600_PLAN": [
+          1500,
+          600
+        ]
+      }
+    }
+  },
+  "qa": {
+    "same_scale_comparison_created": true,
+    "all_nonbaseline_paths_clear": true,
+    "all_option_rules_exist": true,
+    "all_option_patterns_exist": true,
+    "all_placement_blocks_resolvable": true,
+    "all_option_objects_have_spatial_reason": true,
+    "concept_only_write_boundary": true,
+    "input_hashes_recorded": true
+  },
+  "a0_policy": "placements reference A0.4 design-standard block IDs and target footprints; SVG is a review artifact, not formal CAD",
+  "a1_policy": "all option rule references are loaded from design_rulebook_v01.json; weak/medium heuristics remain non-automatic",
+  "a2_policy": "pattern references include evidence_type, confidence and verified precedent IDs from pattern_library_v01.json",
+  "status": "HUMAN_REVIEW"
+}
