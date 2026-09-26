@@ -12,12 +12,14 @@
     "circulation",
     "storage",
     "balcony",
-    "renovation"
+    "renovation",
+    "spatial_composition"
   ],
   "tags": [
     "open-living-dining",
     "kitchen-adjacency",
     "flexible-living",
+    "periodic-family",
     "child-friendly",
     "aging-in-place",
     "multigenerational",
@@ -50,14 +52,31 @@
     "dual-mode-dining",
     "entry-storage",
     "community-living",
-    "split-level-courtyard"
+    "split-level-courtyard",
+    "spatial-composition",
+    "visual-hierarchy",
+    "focal-hierarchy",
+    "furniture-grouping",
+    "conversation",
+    "scale-proportion",
+    "negative-space",
+    "spatial-balance",
+    "edge-alignment",
+    "sightlines",
+    "zone-definition",
+    "rhythm-repetition"
   ],
   "rule_types": [
     "BEST_PRACTICE",
     "HARD_PROJECT_CONSTRAINT",
     "PROJECT_PREFERENCE",
     "TECHNICAL_GUIDELINE",
-    "TO_VERIFY_LOCAL_CODE"
+    "TO_VERIFY_LOCAL_CODE",
+    "TO_VERIFY_PRODUCT"
   ],
-  "notes": "Tags are controlled strings; relevance order is deterministic."
+  "curation_levels": [
+    "METADATA_ONLY",
+    "CURATED"
+  ],
+  "notes": "Tags are controlled strings; relevance order is deterministic and evidence_confidence is separate from relevance_score."
 }

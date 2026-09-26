@@ -22,6 +22,7 @@ PREC_DIR = KNOWLEDGE / "precedents"
 QC_DIR = ROOT / "qc"
 SNAPSHOT = Path("/tmp/a2_archdaily_scored.json")
 TRACKED_SNAPSHOT = PREC_DIR / "candidate_metadata_v01.json"
+ID_REGISTRY = PREC_DIR / "precedent_id_registry_v01.json"
 RESEARCH_DATE = "2026-09-26"
 REPO_URL = "https://github.com/xiwei9871/internal-design"
 
@@ -31,6 +32,21 @@ VALID_RULE_TYPES = {
     "BEST_PRACTICE",
     "PROJECT_PREFERENCE",
     "TO_VERIFY_LOCAL_CODE",
+    "TO_VERIFY_PRODUCT",
+}
+
+SOURCE_STRENGTH = {
+    "SRC-NKBA-KITCHEN": "STRONG",
+    "SRC-AARP-HOMEFIT": "MEDIUM",
+    "SRC-ADA-2010-REFERENCE": "STRONG",
+    "SRC-CUD-UD": "MEDIUM",
+    "SRC-HUD-AGING": "MEDIUM",
+    "SRC-NAHB-AIP": "MEDIUM",
+    "SRC-CPSC-HOME-SAFETY": "MEDIUM",
+    "SRC-PRACTICE-ERGONOMICS": "MEDIUM",
+    "SRC-PRACTICE-SPATIAL": "MEDIUM",
+    "SRC-PROJECTOR-PRODUCT": "WEAK",
+    "SRC-C-TYPE-BRIEF": "STRONG",
 }
 
 
@@ -52,16 +68,34 @@ def source_registry_rules() -> list[dict[str, Any]]:
         {"source_id": "SRC-CUD-UD", "name": "Center for Universal Design, NC State", "source_type": "universal_design_reference", "url": "https://design.ncsu.edu/research/center-for-universal-design/", "jurisdiction": "general_reference", "use": "Universal design principles and inclusive planning vocabulary.", "mandatory_status": "reference_only"},
         {"source_id": "SRC-HUD-AGING", "name": "HUD Aging in Place resources", "source_type": "government_guidance", "url": "https://www.huduser.gov/portal/periodicals/em/spring13/highlight2.html", "jurisdiction": "US_reference_only", "use": "Aging-in-place adaptation topics; not a project code determination.", "mandatory_status": "reference_only"},
         {"source_id": "SRC-NAHB-AIP", "name": "NAHB Certified Aging-in-Place resources", "source_type": "professional_guideline", "url": "https://www.nahb.org/other/aging-in-place", "jurisdiction": "US_reference_only", "use": "Residential aging-in-place planning prompts.", "mandatory_status": "reference_only"},
-        {"source_id": "SRC-ENERGY-STAR", "name": "ENERGY STAR appliance resources", "source_type": "manufacturer_and_program_reference", "url": "https://www.energystar.gov/products/appliances", "jurisdiction": "general_reference", "use": "Appliance dimensions remain product-specific; verify selected model.", "mandatory_status": "reference_only"},
         {"source_id": "SRC-CPSC-HOME-SAFETY", "name": "US Consumer Product Safety Commission home safety resources", "source_type": "home_safety_reference", "url": "https://www.cpsc.gov/Safety-Education/Safety-Guides", "jurisdiction": "US_reference_only", "use": "Child and household safety prompts; not a substitute for local requirements.", "mandatory_status": "reference_only"},
-        {"source_id": "SRC-PRACTICE-ERGONOMICS", "name": "Residential ergonomics practice reference", "source_type": "professional_practice", "url": "https://www.archdaily.com/tag/interior-design", "jurisdiction": "general_reference", "use": "General planning heuristics; dimensions are review targets, not code.", "mandatory_status": "reference_only"},
+        {"source_id": "SRC-PRACTICE-ERGONOMICS", "name": "Whole Building Design Guide accessibility and ergonomics references", "source_type": "recognized_design_reference", "url": "https://www.wbdg.org/design-objectives/accessible", "jurisdiction": "general_reference", "use": "Recognized design reference for inclusive movement and ergonomic review; not local code.", "mandatory_status": "reference_only"},
+        {"source_id": "SRC-PRACTICE-SPATIAL", "name": "RIBA professional design resources", "source_type": "recognized_design_reference", "url": "https://www.architecture.com/knowledge-and-resources/resources-landing-page", "jurisdiction": "general_reference", "use": "Qualitative composition and design-process reference; no numeric code authority.", "mandatory_status": "reference_only"},
+        {"source_id": "SRC-PROJECTOR-PRODUCT", "name": "Selected projector or laser-TV product documentation (pending selection)", "source_type": "selected_product_pending", "url": "https://www.projectorcentral.com/", "jurisdiction": "project", "use": "Product-specific throw, image-size, glare and mounting data must be filled after a model is selected.", "mandatory_status": "TO_VERIFY_PRODUCT"},
         {"source_id": "SRC-C-TYPE-BRIEF", "name": "C-type home owner brief and measured project record", "source_type": "project_brief", "url": REPO_URL, "jurisdiction": "project", "use": "Confirmed KEEP items, household needs, unresolved TO_VERIFY statuses.", "mandatory_status": "project_authority"},
     ]
 
 
-def r(rule_id: str, category: str, topic: str, rule_type: str, priority: str, statement: str, *, min_mm: int | None = None, preferred_mm: int | None = None, maximum_mm: int | None = None, dimensions_mm: list[int] | None = None, rooms: list[str] | None = None, when: list[str] | None = None, tags: list[str] | None = None, source_id: str = "SRC-PRACTICE-ERGONOMICS", source_url: str | None = None, source_type: str = "professional_practice", jurisdiction: str = "general_reference", gateable: bool = True, notes: str = "") -> dict[str, Any]:
-    registry = {x["source_id"]: x["url"] for x in source_registry_rules()}
-    return {"rule_id": rule_id, "category": category, "topic": topic, "rule_type": rule_type, "priority": priority, "statement": statement, "recommended_min_mm": min_mm, "preferred_mm": preferred_mm, "maximum_mm": maximum_mm, "recommended_dimensions_mm": dimensions_mm, "applicable_when": when or [], "applicable_rooms": rooms or [category], "tags": tags or [], "source_id": source_id, "source_url": source_url or registry.get(source_id, REPO_URL), "source_type": source_type, "jurisdiction": jurisdiction, "gateable": gateable, "project_override": None, "notes": notes}
+def r(rule_id: str, category: str, topic: str, rule_type: str, priority: str, statement: str, *, min_mm: int | None = None, preferred_mm: int | None = None, maximum_mm: int | None = None, dimensions_mm: list[int] | None = None, rooms: list[str] | None = None, when: list[str] | None = None, tags: list[str] | None = None, source_id: str = "SRC-PRACTICE-ERGONOMICS", source_url: str | None = None, source_type: str = "professional_practice", jurisdiction: str = "general_reference", gateable: bool | None = None, notes: str = "", classification: str | None = None, source_strength: str | None = None, verification_status: str | None = None) -> dict[str, Any]:
+    registry_rows = {x["source_id"]: x for x in source_registry_rules()}
+    registry = {key: row["url"] for key, row in registry_rows.items()}
+    if source_type == "professional_practice" and source_id in registry_rows:
+        source_type = registry_rows[source_id]["source_type"]
+    strength = source_strength or SOURCE_STRENGTH.get(source_id, "WEAK")
+    has_numeric = any(v is not None for v in (min_mm, preferred_mm, maximum_mm, dimensions_mm))
+    if classification is None:
+        if rule_type == "HARD_PROJECT_CONSTRAINT":
+            classification = "PROJECT_CONSTRAINT"
+        elif rule_type in {"TO_VERIFY_LOCAL_CODE", "TO_VERIFY_PRODUCT"}:
+            classification = rule_type
+        elif has_numeric and strength != "STRONG":
+            classification = "DESIGN_HEURISTIC"
+        else:
+            classification = "TECHNICAL_REFERENCE" if has_numeric else "DESIGN_HEURISTIC"
+    if gateable is None:
+        gateable = bool(rule_type == "HARD_PROJECT_CONSTRAINT" or (has_numeric and strength == "STRONG" and rule_type == "TECHNICAL_GUIDELINE"))
+    automatic_gate = bool(gateable and strength == "STRONG" and classification not in {"DESIGN_HEURISTIC", "TO_VERIFY_LOCAL_CODE", "TO_VERIFY_PRODUCT"})
+    return {"rule_id": rule_id, "category": category, "topic": topic, "rule_type": rule_type, "priority": priority, "statement": statement, "recommended_min_mm": min_mm, "preferred_mm": preferred_mm, "maximum_mm": maximum_mm, "recommended_dimensions_mm": dimensions_mm, "applicable_when": when or [], "applicable_rooms": rooms or [category], "tags": tags or [], "source_id": source_id, "source_url": source_url or registry.get(source_id, REPO_URL), "source_type": source_type, "jurisdiction": jurisdiction, "gateable": gateable, "automatic_gate": automatic_gate, "classification": classification, "source_strength": strength, "verification_status": verification_status, "project_override": None, "notes": notes}
 
 
 def build_rules() -> list[dict[str, Any]]:
@@ -71,9 +105,9 @@ def build_rules() -> list[dict[str, Any]]:
         r("LIV-CIRC-002", "living", "secondary route", "TECHNICAL_GUIDELINE", "HIGH", "Keep a secondary route around the seating group where the plan has more than one approach.", min_mm=750, preferred_mm=900, rooms=["living"], when=["two_sided_access"], tags=["clear-circulation"]),
         r("LIV-FLEX-003", "living", "activity core", "BEST_PRACTICE", "HIGH", "Reserve a central, furniture-light activity core for children, conversation and temporary setups.", min_mm=2500, preferred_mm=3000, rooms=["living"], when=["child_activity", "flexible_living"], tags=["child-friendly", "furniture-free-core", "flexible-living"]),
         r("LIV-FLEX-004", "living", "movable furniture", "PROJECT_PREFERENCE", "MEDIUM", "Use movable tables and seats for flexible living instead of fixing every object in the activity core.", maximum_mm=900, rooms=["living"], when=["projector_living", "child_activity"], tags=["projector-media", "child-friendly", "flexible-living"]),
-        r("LIV-MEDIA-005", "living", "projector sightline", "TECHNICAL_GUIDELINE", "HIGH", "Check projector or laser-TV throw, sightline and glare against the selected device before fixing the media wall.", rooms=["living"], when=["projector_or_laser_tv"], tags=["projector-media", "non-tv-centric"], source_id="SRC-ENERGY-STAR", source_type="manufacturer_and_program_reference", notes="Device throw distance is product-specific; verify the selected model."),
+        r("LIV-MEDIA-005", "living", "projector sightline", "TO_VERIFY_PRODUCT", "HIGH", "After an actual projector or laser-TV model is selected, verify throw, sightline, image size, glare and mounting constraints before fixing the media wall.", rooms=["living"], when=["projector_or_laser_tv", "selected_product"], tags=["projector-media", "non-tv-centric"], source_id="SRC-PROJECTOR-PRODUCT", source_type="selected_product_pending", jurisdiction="project", gateable=False, classification="TO_VERIFY_PRODUCT", source_strength="WEAK", verification_status="TO_VERIFY_PRODUCT", notes="No device model is selected; this rule cannot act as a hard automatic failure."),
         r("LIV-MEDIA-006", "living", "media wall and glazing", "BEST_PRACTICE", "HIGH", "Keep media equipment and its viewing axis outside the opening swing and clear route to a balcony or window.", min_mm=900, rooms=["living"], when=["balcony_connected"], tags=["projector-media", "balcony-connected", "clear-circulation"]),
-        r("LIV-DIST-007", "living", "viewing distance", "TECHNICAL_GUIDELINE", "MEDIUM", "Set viewing distance from the selected image size and device specification, then test the furniture arrangement at full scale.", rooms=["living"], when=["projector_or_laser_tv"], tags=["projector-media"], source_id="SRC-ENERGY-STAR", source_type="manufacturer_and_program_reference", notes="No universal screen distance is assumed."),
+        r("LIV-DIST-007", "living", "viewing distance", "TO_VERIFY_PRODUCT", "HIGH", "After the actual projector or laser-TV model and image size are selected, verify viewing distance and test the furniture arrangement at full scale.", rooms=["living"], when=["projector_or_laser_tv", "selected_product"], tags=["projector-media"], source_id="SRC-PROJECTOR-PRODUCT", source_type="selected_product_pending", jurisdiction="project", gateable=False, classification="TO_VERIFY_PRODUCT", source_strength="WEAK", verification_status="TO_VERIFY_PRODUCT", notes="No universal screen distance is assumed."),
         r("LIV-EDGE-008", "living", "edge-loaded furniture", "BEST_PRACTICE", "HIGH", "Place large fixed furniture along room edges so the center can support more than one use.", rooms=["living"], when=["flexible_living"], tags=["edge-loaded-furniture", "furniture-free-core"]),
         r("LIV-SOC-009", "living", "social seating", "BEST_PRACTICE", "MEDIUM", "Arrange at least two seats to support face-to-face conversation without crossing the primary route.", min_mm=900, rooms=["living"], when=["conversation"], tags=["clear-circulation", "flexible-living"]),
         r("LIV-BAL-010", "living", "balcony connection", "TECHNICAL_GUIDELINE", "HIGH", "Keep the living-to-balcony route continuous and free of fixed furniture; treat a future enclosure as a separate option.", min_mm=900, preferred_mm=1100, rooms=["living", "balcony"], when=["open_balcony"], tags=["balcony-connected", "clear-circulation"], source_id="SRC-C-TYPE-BRIEF", source_type="project_brief", jurisdiction="project", notes="Current north balcony is open; future enclosure remains proposed."),
@@ -186,7 +220,29 @@ def build_rules() -> list[dict[str, Any]]:
         r("STO-LINEN-009", "storage", "linen shelf", "BEST_PRACTICE", "LOW", "Allow enough shelf depth for folded linen while keeping the front clear for opening and retrieval.", min_mm=300, rooms=["storage", "bathroom", "bedroom"], when=["linen_storage"], tags=["storage"]),
         r("STO-MNT-010", "storage", "service access", "TECHNICAL_GUIDELINE", "MEDIUM", "Do not bury service valves, electrical panels or appliance connections behind fixed storage without a removable access strategy.", min_mm=600, rooms=["storage", "kitchen", "bathroom"], when=["services"], tags=["storage", "existing-structure"]),
     ]
-    assert len(rules) == 100, len(rules)
+    rules += [
+        r("SPC-HIER-001", "spatial_composition", "public-zone hierarchy", "BEST_PRACTICE", "HIGH", "Make the entry, living, dining and kitchen sequence legible as a hierarchy of arrival, activity and support rather than four competing centers.", rooms=["living", "dining", "kitchen", "circulation"], when=["open_public_zone"], tags=["spatial-composition", "visual-hierarchy"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-HIER-002", "spatial_composition", "focal hierarchy", "BEST_PRACTICE", "HIGH", "Choose one primary focal condition for a view and give secondary focal points a quieter visual weight.", rooms=["living", "dining"], when=["multi_focal_room"], tags=["spatial-composition", "focal-hierarchy"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-GRP-003", "spatial_composition", "furniture grouping", "BEST_PRACTICE", "HIGH", "Group seats and tables around a shared activity or view so that each piece participates in a readable composition.", rooms=["living", "dining"], when=["seating_group"], tags=["spatial-composition", "furniture-grouping"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-GRP-004", "spatial_composition", "conversation grouping", "BEST_PRACTICE", "HIGH", "Provide at least one face-to-face conversation relationship that is not dependent on the projection axis.", rooms=["living"], when=["conversation", "projector_living"], tags=["spatial-composition", "furniture-grouping", "conversation"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-SCL-005", "spatial_composition", "scale and proportion", "BEST_PRACTICE", "MEDIUM", "Check furniture scale against the room volume and adjacent openings; do not let one oversized piece make the rest read as leftovers.", rooms=["living", "dining", "bedroom"], when=["furniture_selection"], tags=["spatial-composition", "scale-proportion"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-SCL-006", "spatial_composition", "scale transition", "BEST_PRACTICE", "MEDIUM", "Use deliberate scale transitions between fixed cabinetry, large seating and small movable objects.", rooms=["living", "dining", "kitchen"], when=["mixed_furniture_scale"], tags=["spatial-composition", "scale-proportion"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-NEG-007", "spatial_composition", "negative space", "BEST_PRACTICE", "HIGH", "Treat negative space as an intentional shape with edges, access and a visual role rather than as unfilled remainder.", rooms=["living", "dining", "circulation"], when=["open_public_zone"], tags=["spatial-composition", "negative-space"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-NEG-008", "spatial_composition", "leftover wedges", "BEST_PRACTICE", "MEDIUM", "Investigate leftover wedges and narrow gaps created by furniture before accepting them as useful space.", rooms=["living", "dining", "bedroom"], when=["furniture_layout"], tags=["spatial-composition", "negative-space"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-BAL-009", "spatial_composition", "spatial balance", "BEST_PRACTICE", "MEDIUM", "Balance visual weight across the room while allowing asymmetry when it is anchored by a clear edge, axis or view.", rooms=["living", "dining"], when=["furniture_layout"], tags=["spatial-composition", "spatial-balance"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-BAL-010", "spatial_composition", "visual weight", "BEST_PRACTICE", "MEDIUM", "Avoid concentrating all tall, dark or fixed elements on one side unless the opposite side has a deliberate counterweight.", rooms=["living", "dining", "kitchen"], when=["open_public_zone"], tags=["spatial-composition", "spatial-balance"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-EDGE-011", "spatial_composition", "architectural edge alignment", "BEST_PRACTICE", "HIGH", "Align major furniture with walls, bays, glazing lines or service edges when that alignment clarifies the room rather than hiding an opening.", rooms=["living", "dining", "bedroom"], when=["architectural_edge"], tags=["spatial-composition", "edge-alignment"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-EDGE-012", "spatial_composition", "opening relationship", "BEST_PRACTICE", "HIGH", "Keep furniture-to-wall relationships legible at doors, windows and bay projections; do not use furniture to erase architectural evidence.", rooms=["living", "dining", "bedroom"], when=["window_or_door"], tags=["spatial-composition", "edge-alignment", "existing-structure"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-SIGHT-013", "spatial_composition", "main visual axis", "BEST_PRACTICE", "HIGH", "Protect the primary visual axis from entry toward the most valuable view or social destination before adding decorative objects.", rooms=["living", "circulation"], when=["entry_view"], tags=["spatial-composition", "sightlines"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-SIGHT-014", "spatial_composition", "daylight and view", "BEST_PRACTICE", "HIGH", "Preserve daylight and balcony or courtyard views as part of the composition, not only as a circulation requirement.", rooms=["living", "dining", "bedroom"], when=["balcony_connected", "window_present"], tags=["spatial-composition", "sightlines", "daylight"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-ZONE-015", "spatial_composition", "zone definition", "BEST_PRACTICE", "MEDIUM", "Define living, dining, child activity and passage zones with edges, orientation, lighting or furniture grouping rather than arbitrary rectangles alone.", rooms=["living", "dining", "circulation"], when=["open_plan"], tags=["spatial-composition", "zone-definition"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-ZONE-016", "spatial_composition", "soft boundaries", "BEST_PRACTICE", "MEDIUM", "Use a soft boundary only when it supports the intended relationship; do not create pseudo-walls that block sightlines without giving privacy or storage.", rooms=["living", "dining"], when=["open_plan"], tags=["spatial-composition", "zone-definition", "sightlines"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-RHY-017", "spatial_composition", "rhythm and repetition", "BEST_PRACTICE", "LOW", "Repeat a line, material, opening rhythm or furniture proportion deliberately so the public zone reads as one composition.", rooms=["living", "dining", "kitchen"], when=["open_public_zone"], tags=["spatial-composition", "rhythm-repetition"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-RHY-018", "spatial_composition", "repetition with variation", "BEST_PRACTICE", "LOW", "Allow controlled variation inside a repeated rhythm so the room does not become either visually noisy or mechanically uniform.", rooms=["living", "dining"], when=["material_or_furniture_set"], tags=["spatial-composition", "rhythm-repetition"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-FLOAT-019", "spatial_composition", "floating furniture reason", "BEST_PRACTICE", "HIGH", "Do not float a sofa, table or chair in open space without a clear reason such as a view, conversation group, route edge or zone definition.", rooms=["living", "dining", "study"], when=["open_plan"], tags=["spatial-composition", "furniture-grouping", "negative-space"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+        r("SPC-FLOAT-020", "spatial_composition", "anchor or remove", "BEST_PRACTICE", "HIGH", "Anchor an isolated object to an architectural edge or a meaningful group, or remove it from the composition.", rooms=["living", "dining", "study"], when=["furniture_layout"], tags=["spatial-composition", "furniture-grouping", "edge-alignment"], source_id="SRC-PRACTICE-SPATIAL", source_type="recognized_design_reference"),
+    ]
+    assert len(rules) == 120, len(rules)
     assert len({x["rule_id"] for x in rules}) == len(rules)
     assert all(x["rule_type"] in VALID_RULE_TYPES for x in rules)
     return rules
@@ -195,7 +251,7 @@ def build_rules() -> list[dict[str, Any]]:
 def project_principles() -> dict[str, Any]:
     principles = [
         {"principle_id": "P-AGE-MOTHER", "rule_type": "HARD_PROJECT_CONSTRAINT", "priority": "HIGH", "statement": "Mother is 68; aging-in-place is a first-order planning priority for daily routes, bedroom and bathroom decisions.", "status": "CONFIRMED", "source_id": "SRC-C-TYPE-BRIEF", "source_url": REPO_URL, "applies_to": ["living", "bedroom", "bathroom", "circulation"], "tags": ["aging-in-place"], "to_verify": []},
-        {"principle_id": "P-OWNER-COUPLE", "rule_type": "PROJECT_PREFERENCE", "priority": "HIGH", "statement": "The owner couple are permanent residents; periodic family and guests must be accommodated without making the daily plan hotel-like.", "status": "CONFIRMED", "source_id": "SRC-C-TYPE-BRIEF", "source_url": REPO_URL, "applies_to": ["living", "bedroom", "study"], "tags": ["flexible-living"], "to_verify": []},
+        {"principle_id": "P-OWNER-COUPLE", "rule_type": "PROJECT_PREFERENCE", "priority": "HIGH", "statement": "The permanent daily residents are the owner and his mother; wife, child and wider family are periodic residents or visitors and must be accommodated without making the daily plan hotel-like.", "status": "CONFIRMED", "source_id": "SRC-C-TYPE-BRIEF", "source_url": REPO_URL, "applies_to": ["living", "bedroom", "study"], "tags": ["aging-in-place", "flexible-living", "periodic-family"], "to_verify": []},
         {"principle_id": "P-ROOM-PROGRAM", "rule_type": "HARD_PROJECT_CONSTRAINT", "priority": "HIGH", "statement": "Retain four rooms and three bathrooms as the confirmed program.", "status": "CONFIRMED", "source_id": "SRC-C-TYPE-BRIEF", "source_url": REPO_URL, "applies_to": ["bedroom", "bathroom"], "tags": ["existing-structure"], "to_verify": []},
         {"principle_id": "P-KITCHEN-KEEP", "rule_type": "HARD_PROJECT_CONSTRAINT", "priority": "HIGH", "statement": "Existing kitchen cabinetry is KEEP; do not redesign or silently relocate it during concept studies.", "status": "CONFIRMED", "source_id": "SRC-C-TYPE-BRIEF", "source_url": REPO_URL, "applies_to": ["kitchen", "storage"], "tags": ["existing-structure", "kitchen-adjacency"], "to_verify": []},
         {"principle_id": "P-PROJECTOR-LIVING", "rule_type": "PROJECT_PREFERENCE", "priority": "HIGH", "statement": "Living is projector/laser-TV dominant rather than TV-centric; media equipment must coexist with a flexible central activity area.", "status": "CONFIRMED", "source_id": "SRC-C-TYPE-BRIEF", "source_url": REPO_URL, "applies_to": ["living"], "tags": ["projector-media", "non-tv-centric", "flexible-living"], "to_verify": ["selected_device_throw_and_glare"]},
@@ -208,11 +264,18 @@ def project_principles() -> dict[str, Any]:
     return {"version": "v0.1", "project": "C-type home", "principles": principles, "status_legend": {"CONFIRMED": "owner or measured record", "CONFIRMED_WITH_TO_VERIFY": "principle confirmed, dimension or compliance unresolved", "TO_VERIFY": "must be resolved before construction or compliance claim"}}
 
 
-def parse_year_country(description: str) -> tuple[int | None, str | None]:
+def parse_year_country(description: str) -> tuple[int | None, str | None, str | None]:
     m = re.search(r"Completed in (\d{4}) in ([^.]+)", description or "")
     if not m:
-        return None, None
-    return int(m.group(1)), m.group(2).strip(" ,") or None
+        m = re.search(r"Built by .*? in ([^.]+?) with date (\d{4})", description or "")
+        if not m:
+            return None, None, None
+        location = m.group(1).strip(" ,") or None
+        country = location.rsplit(",", 1)[-1].strip() if location else None
+        return int(m.group(2)), country, location
+    location = m.group(2).strip(" ,") or None
+    country = location.rsplit(",", 1)[-1].strip() if location else None
+    return int(m.group(1)), country, location
 
 
 def project_type(text: str) -> str:
@@ -228,7 +291,7 @@ def project_type(text: str) -> str:
     return "residential_reference"
 
 
-CONTROLLED_TAGS = ["open-living-dining", "kitchen-adjacency", "flexible-living", "child-friendly", "aging-in-place", "multigenerational", "projector-media", "balcony-connected", "split-level", "renovation", "existing-structure", "storage-zoning", "storage", "clear-circulation", "accessible-bathroom", "elderly-bedroom", "study-guest-hybrid", "daylight", "courtyard", "adaptive-reuse", "care-housing", "small-footprint", "before-after", "floor-plan", "family-loft", "visual-connection", "wet-dry-zoning", "step-free-route", "furniture-free-core", "edge-loaded-furniture", "non-tv-centric", "dining-kitchen-extension", "dual-mode-dining", "entry-storage", "community-living", "split-level-courtyard"]
+CONTROLLED_TAGS = ["open-living-dining", "kitchen-adjacency", "flexible-living", "periodic-family", "child-friendly", "aging-in-place", "multigenerational", "projector-media", "balcony-connected", "split-level", "renovation", "existing-structure", "storage-zoning", "storage", "clear-circulation", "accessible-bathroom", "elderly-bedroom", "study-guest-hybrid", "daylight", "courtyard", "adaptive-reuse", "care-housing", "small-footprint", "before-after", "floor-plan", "family-loft", "visual-connection", "wet-dry-zoning", "step-free-route", "furniture-free-core", "edge-loaded-furniture", "non-tv-centric", "dining-kitchen-extension", "dual-mode-dining", "entry-storage", "community-living", "split-level-courtyard", "spatial-composition", "visual-hierarchy", "focal-hierarchy", "furniture-grouping", "conversation", "scale-proportion", "negative-space", "spatial-balance", "edge-alignment", "sightlines", "zone-definition", "rhythm-repetition"]
 
 
 def infer_tags(title: str, description: str, floor_plan: bool) -> list[str]:
@@ -269,21 +332,38 @@ def infer_tags(title: str, description: str, floor_plan: bool) -> list[str]:
     return sorted(x for x in tags if x in CONTROLLED_TAGS)
 
 
-def relevance_score(item: dict[str, Any], tags: list[str], title: str, description: str) -> tuple[float, dict[str, float]]:
+def relevance_score(item: dict[str, Any], tags: list[str], title: str, description: str) -> tuple[float, dict[str, float | None], float, dict[str, str]]:
     text = (title + " " + description).lower()
     space = 1.0 if re.search(r"apartment|house|housing|residen|loft|home|villa|barn|care", text) else 0.4
     area_raw = item.get("area_m2")
     if isinstance(area_raw, (int, float)):
         area = max(0.0, min(1.0, 1.0 - abs(float(area_raw) - 150.0) / 150.0))
+        area_evidence = "explicit_area"
     else:
-        area = 0.5
-    household = 1.0 if re.search(r"family|elderly|child|care|community|couple", text) else 0.4
+        area = None
+        area_evidence = "unknown"
+    if re.search(r"elderly couple|elderly household|older couple", text):
+        household, household_evidence = 0.65, "explicit_older_pair_but_not_owner_mother_pair"
+    elif re.search(r"elderly|care home|nursing|aging", text):
+        household, household_evidence = 0.45, "explicit_aging_or_care_but_different_program"
+    elif re.search(r"multigenerational|three-generation|three generation", text):
+        household, household_evidence = 0.65, "explicit_multigenerational_but_not_owner_mother_pair"
+    elif re.search(r"family|children|child|couple", text):
+        household, household_evidence = 0.55, "explicit_family_but_not_owner_mother_pair"
+    else:
+        household, household_evidence = 0.0, "unknown"
     plan = 1.0 if bool(item.get("floor_plan_available")) else 0.0
     renovation = 1.0 if re.search(r"renovat|conversion|extension|heritage|existing|former|industrial", text) else 0.4
     tag_score = min(1.0, len(tags) / 8.0)
-    components = {"space_type_match": space, "area_similarity": area, "household_similarity": household, "floor_plan": plan, "renovation_constraints": renovation, "relevant_tags": tag_score}
-    score = 0.20 * space + 0.15 * area + 0.15 * household + 0.20 * plan + 0.15 * renovation + 0.15 * tag_score
-    return round(score, 4), components
+    components: dict[str, float | None] = {"space_type_match": space, "area_similarity": area, "household_similarity": household, "floor_plan": plan, "renovation_constraints": renovation, "relevant_tags": tag_score}
+    weights = {"space_type_match": 0.20, "area_similarity": 0.15, "household_similarity": 0.15, "floor_plan": 0.20, "renovation_constraints": 0.15, "relevant_tags": 0.15}
+    available = [key for key, value in components.items() if value is not None]
+    denominator = sum(weights[key] for key in available)
+    score = sum(weights[key] * float(components[key]) for key in available) / denominator if denominator else 0.0
+    evidence = {"area": area_evidence, "household": household_evidence, "floor_plan": "explicit_boolean", "space_type": "keyword_match", "renovation": "keyword_match", "tags": "deterministic_tag_rules"}
+    known = sum(1 for key in ("area_similarity", "household_similarity") if components[key] is not None)
+    confidence = (0.55 + 0.15 * known + 0.15 * plan + 0.10 * min(1.0, len(tags) / 8.0) + 0.05 * renovation)
+    return round(score, 4), components, round(min(1.0, confidence), 4), evidence
 
 
 def load_candidates() -> list[dict[str, Any]]:
@@ -303,12 +383,14 @@ def load_candidates() -> list[dict[str, Any]]:
         if excluded.search(title + " " + desc):
             continue
         tags = x.get("tags") if tracked and isinstance(x.get("tags"), list) else infer_tags(title, desc, bool(x.get("floor_plan_available")))
-        score = x.get("relevance_to_c_type") if tracked and isinstance(x.get("relevance_to_c_type"), (int, float)) else None
+        score = x.get("relevance_score") if tracked and isinstance(x.get("relevance_score"), (int, float)) else None
         comps = x.get("relevance_components") if tracked and isinstance(x.get("relevance_components"), dict) else None
-        if score is None or comps is None:
-            score, comps = relevance_score(x, tags, title, desc)
-        year, country = parse_year_country(desc)
-        rows.append({"_url": x.get("url"), "_title": title, "_description": desc, "_floor_plan": bool(x.get("floor_plan_available")), "_area": x.get("area_m2"), "_tags": tags, "_score": score, "_components": comps, "_year": year, "_country": country})
+        confidence = x.get("evidence_confidence") if tracked and isinstance(x.get("evidence_confidence"), (int, float)) else None
+        evidence = x.get("evidence") if tracked and isinstance(x.get("evidence"), dict) else None
+        if score is None or comps is None or confidence is None or evidence is None:
+            score, comps, confidence, evidence = relevance_score(x, tags, title, desc)
+        year, country, location = parse_year_country(desc)
+        rows.append({"_url": x.get("url"), "_title": title, "_description": desc, "_floor_plan": bool(x.get("floor_plan_available")), "_area": x.get("area_m2"), "_tags": tags, "_score": score, "_components": comps, "_confidence": confidence, "_evidence": evidence, "_year": year, "_country": country, "_location": location})
     rows.sort(key=lambda x: (-x["_score"], x["_url"]))
     return rows[:60]
 
@@ -338,44 +420,172 @@ def pattern_defs() -> list[dict[str, Any]]:
     ]
 
 
+CURATED_OVERRIDES: dict[str, dict[str, Any]] = {
+    "Renovation of an Industrial Building into a Single Family House": {
+        "actual_spatial_strategy": "Full renovation of a warehouse-like building between party walls into a single-family home; the useful comparison is how a constrained shell can carry a new public zone without pretending it is a new-build envelope.",
+        "design_lessons": ["Keep party-wall and service constraints explicit before opening a public living sequence.", "Use the floor-plan marker to compare how the new family program is distributed inside the retained shell.", "Separate evidence of adaptive reuse from C-type aging requirements; family use does not equal an owner-and-mother household."]},
+    "Renovation of Joan Blanques apartment": {
+        "actual_spatial_strategy": "The captured brief says a young couple wanted the apartment as open as possible; use it as an open-plan comparison where openness is a stated client driver rather than a stylistic assumption.",
+        "design_lessons": ["Compare how an open public zone remains legible when partitions are reduced.", "Check which edges still anchor furniture and storage after opening the plan.", "Do not transfer the young-couple brief to the C-type plan; retain the older resident's route priority."]},
+    "Renovation of a Milan Laboratory to a Family Loft": {
+        "actual_spatial_strategy": "Conversion of an old laboratory in a Milan courtyard setting into a family loft; compare adaptive reuse, family program and connected public space while retaining the distinction between a loft brief and this split-level home.",
+        "design_lessons": ["Map what the old laboratory shell contributes before treating openness as free space.", "Look for how family activities share a connected zone without requiring every seat to face one focal point.", "Use the plan marker to test service-edge and circulation-edge alignment."]},
+    "Residential Extension MF Pavilion": {
+        "actual_spatial_strategy": "An independent programmatic extension is described as being added to an existing single-family home; compare addition-as-program with the C-type rule that existing KEEP elements remain fixed.",
+        "design_lessons": ["Separate the new programmatic room from the retained house datum.", "Study whether the extension creates a clear public destination or merely adds another competing center.", "Treat this as an addition precedent, not evidence for changing C-type walls."]},
+    "Residential Care Home Andritz": {
+        "actual_spatial_strategy": "A residential care home for 105 elderly residents on a park-like plot; its relevance is social visibility and support-space organization, not household-scale dimensions.",
+        "design_lessons": ["Study how routes and shared spaces support independence without isolating residents.", "Borrow visibility and support-space questions, not institutional scale.", "Keep local accessibility review separate from this non-local reference."]},
+    "Residential Complex Le Lorrain": {
+        "actual_spatial_strategy": "Renovation of a former iron dealer into a social-housing complex of four flats connected by a shared relationship; compare adaptive reuse and shared circulation at the building scale.",
+        "design_lessons": ["Retain the existing shell as a design datum when public circulation is shared.", "Check whether a shared connector clarifies or competes with each dwelling's private center.", "Do not infer C-type household or clearance dimensions from a multi-flat project."]},
+    "Apartment Renovation in Girona": {
+        "actual_spatial_strategy": "Conversion of the ground floor of an old warehouse into an apartment, with the captured description stating that the warehouse was divided into three; compare subdivision, daylight and public-zone sequencing.",
+        "design_lessons": ["Test how subdivision can preserve a readable public zone.", "Use the plan marker to inspect where daylight and circulation survive the conversion.", "Keep warehouse conversion lessons separate from the C-type no-unrelated-wall-change constraint."]},
+    "Renovation of a Mill and Hayloft for Residential use": {
+        "actual_spatial_strategy": "Several buildings of different typologies were integrated into one housing use; compare how mismatched existing pieces are made legible as one sequence.",
+        "design_lessons": ["Use changes in shell geometry to define zones instead of adding arbitrary floating objects.", "Check how transitions between old pieces affect the main route and visual hierarchy.", "Treat the integration strategy as a precedent for reading existing geometry, not for copying a style."]},
+    "Residential House Renovation": {
+        "actual_spatial_strategy": "Energetic renovation of a 1970s detached house with an explicit effort to preserve existing structure; only bathrooms are named as changed in the captured description.",
+        "design_lessons": ["Preserve measured structure before placing new program elements.", "Separate energy/structure retention from the later bathroom-specific intervention.", "Use this as support for a KEEP-first workflow, not as evidence of aging compliance."]},
+    "Apartment Renovation in Singapore": {
+        "actual_spatial_strategy": "Renovation of a 30-year-old HDB flat that re-examines the interface between the flat and the public corridor; compare threshold and arrival sequencing.",
+        "design_lessons": ["Treat entry as a spatial threshold with storage and sightline consequences.", "Check how a public-corridor interface affects the first visual axis into the home.", "Do not transfer Singapore code or HDB dimensions to this project."]},
+    "Renovation and Extension of a Heritage-protected Residence Building": {
+        "actual_spatial_strategy": "A heritage-protected residential building dating from 1891 retained its exterior while accommodating later internal changes; compare preservation of the architectural edge with interior adaptation.",
+        "design_lessons": ["Keep exterior and opening evidence visible when changing interior use.", "Use edge alignment to avoid hiding heritage geometry behind new furniture.", "Separate heritage constraints from C-type measured-wall authority."]},
+    "Residential and Studio Building at the Former Berlin Flower Market (IBeB)": {
+        "actual_spatial_strategy": "The former central flower market is described as a mixed residential and studio setting; compare live/work adjacency and the risk of competing public/private centers.",
+        "design_lessons": ["Use a service or storage edge to separate work and living without closing every sightline.", "Test whether a secondary work function needs its own visual anchor.", "Keep mixed-use lessons distinct from the C-type periodic-guest study brief."]},
+    "Apartment and Courtyard in Barcelona": {
+        "actual_spatial_strategy": "A main-floor apartment is organized around an internal quiet patio isolated from the Poble Nou streets; compare inward visual extension and privacy control.",
+        "design_lessons": ["Treat a quiet patio or balcony as a visual destination, not only an exit.", "Balance inward view with the need for a readable entry route.", "Check whether furniture preserves the view axis before adding decoration."]},
+    "House Around a Split Level Courtyard": {
+        "actual_spatial_strategy": "A residence in Goa combines geometry and nature around a split-level courtyard; compare level changes as spatial composition while keeping the C-type ramp status provisional.",
+        "design_lessons": ["Use level change to organize views and destinations, not to imply accessibility.", "Keep courtyard or balcony sightlines open through the furniture group.", "Field-measure C-type level deltas before borrowing any route conclusion."]},
+    "Apartment Renovation in Sants": {
+        "actual_spatial_strategy": "The captured description states a calm, sober atmosphere with natural materials and a low budget for a family program; compare restraint and family zoning rather than surface style.",
+        "design_lessons": ["Use a small number of coherent material or furniture cues to establish calm.", "Let the family program define grouping before selecting decorative objects.", "No floor-plan marker was captured, so treat spatial claims as lower-confidence until the source plan is checked."]},
+    "Residential Building Gatternweg": {
+        "actual_spatial_strategy": "The captured description says the volume, surfaces and floor-plan solutions differ from neighboring structures; compare deliberate differentiation with the need for a clear internal public hierarchy.",
+        "design_lessons": ["Make deviations from the existing context intentional and legible.", "Use the floor-plan marker to test whether differentiation improves or fragments circulation.", "Do not import building-scale formal moves into the C-type living room without a spatial reason."]},
+    "Renovation of Sofia's apartment": {
+        "actual_spatial_strategy": "A 70 m² Buenos Aires apartment is described as housing a typical traditional family and having been inhabited for years by a young woman; compare adaptation to an existing resident pattern rather than assuming a blank brief.",
+        "design_lessons": ["Start from the resident's established daily pattern before changing the public zone.", "Use the stated 70 m² area only as a broad scale reference, not a C-type dimension.", "No floor-plan marker was captured; verify the actual plan before using the strategy."]},
+    "Housing for the Elderly: Examples of Independent and Community Living": {
+        "actual_spatial_strategy": "This is an ArchDaily reference article about independent and community living examples rather than one verified project; retain it as a low-confidence aging precedent.",
+        "design_lessons": ["Use it to generate questions about independence and community, not as a measured layout precedent.", "Keep household-scale decisions tied to the C-type brief and field measurements.", "Do not cite it as proof of a local accessibility requirement."]},
+    "Housing Apartment at Badade Nagar": {
+        "actual_spatial_strategy": "The captured brief says a proposed 10-to-11-story tower was reconsidered for a mid-size residential housing project; compare how a change in density brief affects shared circulation and public/private hierarchy.",
+        "design_lessons": ["Separate a changed development brief from the interior decisions it produces.", "Use the floor-plan marker to inspect how shared access and dwelling privacy are balanced.", "Do not transfer multi-unit density assumptions to the C-type home."]},
+}
+
+
+def curated_detail(x: dict[str, Any], project_name: str, text: str, tags: list[str]) -> dict[str, Any]:
+    """Create bounded, source-traceable detail for the highest-ranked candidates."""
+    household = None
+    if "care home" in text or "nursing home" in text or "elderly" in text:
+        household = "care or elderly residential use is stated in the captured title/description"
+    elif "single family" in text:
+        household = "single-family use is stated in the project title"
+    elif "family" in text or "children" in text:
+        household = "family use is stated in the captured title/description; resident ages are not stated"
+    elif "couple" in text:
+        household = "couple is stated in the captured description"
+    constraints = []
+    if "industrial" in text or "former" in text or "mill" in text or "barn" in text:
+        constraints.append("existing or adaptive-reuse shell is named")
+    if "heritage" in text:
+        constraints.append("heritage protection is named")
+    if "renovat" in text or "conversion" in text or "extension" in text:
+        constraints.append("renovation/conversion/extension brief is named")
+    if not constraints:
+        constraints.append("no specific renovation constraint stated in captured metadata")
+    if "split-level" in tags or "split-level-courtyard" in tags:
+        strategy = "the captured title names split-level/courtyard sequencing; compare how level changes organize public movement"
+    elif "adaptive-reuse" in tags:
+        strategy = "the captured title/description names adaptive reuse; compare shell retention against new public-zone insertions"
+    elif "balcony-connected" in tags or "courtyard" in tags:
+        strategy = "courtyard, garden or balcony language suggests a visual extension; compare edge placement against the view"
+    elif "family-loft" in tags or "open-living-dining" in tags:
+        strategy = "family/open or loft language suggests a connected public zone; compare how activities are grouped without full partitions"
+    elif "care-housing" in tags or "aging-in-place" in tags:
+        strategy = "care or aging language suggests a social and accessible route; compare visibility and support spaces"
+    else:
+        strategy = f"the captured project type is {project_type(text)}; verify the actual plan before borrowing a spatial move"
+    lessons = [
+        f"{project_name}: {strategy}.",
+        f"Use the {'floor-plan-marked' if x['_floor_plan'] else 'non-floor-plan-marked'} source only to compare relationships; do not infer C-type dimensions from it.",
+    ]
+    if "existing-structure" in tags:
+        lessons.append("Map retained walls/openings/services first, then separate the new intervention from the existing shell.")
+    if "child-friendly" in tags or "multigenerational" in tags:
+        lessons.append("Check whether the public-zone grouping supports different household rhythms instead of assuming one shared center.")
+    override = next((v for key, v in CURATED_OVERRIDES.items() if key.lower() in project_name.lower()), None)
+    if override:
+        strategy = override["actual_spatial_strategy"]
+        lessons = override["design_lessons"]
+    return {"household_program": household, "household_program_status": "stated_in_captured_metadata" if household else "not_stated_in_captured_metadata", "renovation_constraints": constraints, "actual_spatial_strategy": strategy, "design_lessons": lessons[:4], "curation_review": {"review_basis": ["public title", "captured description", "floor-plan marker", "controlled tags"], "evidence_confidence": x["_confidence"], "source_text_scope": "metadata-only; original page and plan still require human review", "override_used": bool(override)}}
+
+
 def build_precedents() -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]]:
     candidates = load_candidates()
+    legacy_ids = json.loads(ID_REGISTRY.read_text()).get("ids", {}) if ID_REGISTRY.exists() else {}
     precedents = []
+    curated_limit = 18
     for i, x in enumerate(candidates, 1):
         title, desc = x["_title"], x["_description"]
         tags = x["_tags"]
-        project_name = re.sub(r"\\s*\\|\\s*ArchDaily\\s*$", "", title).strip()
+        project_name = re.sub(r"\s*\|\s*ArchDaily\s*$", "", title).strip()
         if " / " in project_name:
             project_name = project_name.split(" / ")[0].strip()
         text = (title + " " + desc).lower()
-        lessons = []
-        if "renovat" in text or "conversion" in text or "extension" in text:
-            lessons.append("Review how existing structure or a renovation brief is translated into a new spatial relationship.")
+        level = "CURATED" if i <= curated_limit else "METADATA_ONLY"
+        if level == "CURATED":
+            curated = curated_detail(x, project_name, text, tags)
+            lessons = curated["design_lessons"]
         else:
-            lessons.append("Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.")
-        if "floor-plan" in tags:
-            lessons.append("A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension.")
-        else:
-            lessons.append("No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent.")
+            curated = {"household_program": None, "household_program_status": "not_curated", "renovation_constraints": None, "actual_spatial_strategy": None, "design_lessons": None, "curation_review": None}
+            lessons = ["Candidate retained for metadata comparison; detailed project strategy was not curated in this pass."]
         not_applicable = ["Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."]
         if not x["_floor_plan"]:
             not_applicable.append("No floor-plan marker in the metadata snapshot; visual verification is required.")
-        precedents.append({"precedent_id": f"PREC-{i:03d}", "project_name": project_name, "source": "ArchDaily", "url": x["_url"], "country": x["_country"], "year": x["_year"], "project_type": project_type(title + " " + desc), "area_m2": x["_area"] if isinstance(x["_area"], (int, float)) else None, "floor_plan_available": x["_floor_plan"], "before_after_plan_available": bool(x["_floor_plan"] and re.search(r"renovat|before|after|conversion", text)), "tags": tags, "relevance_to_c_type": x["_score"], "relevance_components": x["_components"], "design_patterns": [], "lessons": lessons, "not_applicable": not_applicable, "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"})
+        item = {"precedent_id": legacy_ids.get(x["_url"], f"PREC-{i:03d}"), "project_name": project_name, "source": "ArchDaily", "url": x["_url"], "country": x["_country"], "year": x["_year"], "project_type": project_type(title + " " + desc), "area_m2": x["_area"] if isinstance(x["_area"], (int, float)) else None, "area_evidence": "explicit_public_metadata" if isinstance(x["_area"], (int, float)) else "unknown_not_scored", "household_program": curated["household_program"], "household_program_status": curated["household_program_status"], "floor_plan_available": x["_floor_plan"], "before_after_plan_available": bool(x["_floor_plan"] and re.search(r"renovat|before|after|conversion", text)), "renovation_constraints": curated["renovation_constraints"], "actual_spatial_strategy": curated["actual_spatial_strategy"], "tags": tags, "metadata_level": level, "curation_level": level, "relevance_score": x["_score"], "relevance_to_c_type": x["_score"], "relevance_components": x["_components"], "evidence_confidence": x["_confidence"], "evidence": x["_evidence"], "design_patterns": [], "design_lessons": curated["design_lessons"], "lessons": lessons, "not_applicable": not_applicable, "curation_review": curated["curation_review"], "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"}
+        item["target_household"] = "permanent owner + mother; wife, child and wider family are periodic residents or visitors"
+        item["household_similarity_note"] = "Similarity is against the corrected owner+mother target; unknown or different programs are not full matches."
+        item["location"] = x["_location"]
+        precedents.append(item)
     defs = pattern_defs()
     for idx, pat in enumerate(defs):
-        matches = [p for p in precedents if set(pat["tags"]).intersection(p["tags"])]
+        if pat["pattern_id"] == "PAT-LIV-07":
+            pat["precedent_ids"] = []
+            pat["evidence"] = [
+                {"precedent_id": "PROJECT-C-TYPE-BRIEF", "evidence": "Owner brief explicitly makes projector/laser-TV dominant and rejects a TV-centric living room.", "confidence": "HIGH"},
+                {"precedent_id": "PROJECT-F1-LAYOUT", "evidence": "F1 records a locked media wall together with a flexible central living core.", "confidence": "HIGH"},
+            ]
+            pat["evidence_type"] = "PROJECT_DERIVED"
+            pat["project_basis"] = ["P-PROJECTOR-LIVING", "LIV-MEDIA-005", "LIV-FLEX-003"]
+            pat["evidence_note"] = "This pattern is primarily derived from the C-type brief and F1 record; external precedents are not claimed as evidence for projector behavior."
+            continue
+        matches = sorted([p for p in precedents if set(pat["tags"]).intersection(p["tags"])], key=lambda p: (-len(set(pat["tags"]).intersection(p["tags"])), -p["relevance_score"], p["precedent_id"]))
         if len(matches) < 2:
             matches = [precedents[(idx * 3) % len(precedents)], precedents[(idx * 3 + 1) % len(precedents)]]
-        support = sorted({p["precedent_id"] for p in matches})[:5]
-        if len(support) < 2:
-            support = [precedents[(idx * 3) % len(precedents)]["precedent_id"], precedents[(idx * 3 + 1) % len(precedents)]["precedent_id"]]
-        pat["precedent_ids"] = support
-        pat["evidence_note"] = "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
-        for p in precedents:
-            if p["precedent_id"] in support:
-                p["design_patterns"].append(pat["pattern_id"])
-    patterns = [{"pattern_id": p["pattern_id"], "name": p["name"], "room": p["room"], "tags": p["tags"], "method": p["method"], "benefit": p["benefit"], "risk": p["risk"], "precedent_ids": p["precedent_ids"], "evidence_note": p["evidence_note"]} for p in defs]
-    source_registry = {"version": "v0.1", "collection_date": RESEARCH_DATE, "sources": [{"source_id": "A2-SRC-ARCHDAILY", "name": "ArchDaily project pages", "source_type": "metadata_only_project_database", "url": "https://www.archdaily.com/", "license_note": "Only URL, public metadata and short original synthesis are stored; no images or article text are mirrored.", "image_dependency": False, "candidate_count": 80, "selected_count": len(precedents), "snapshot": "projects/c_type_home/knowledge/precedents/candidate_metadata_v01.json", "url_validation": "80 candidate pages fetched during research; selected links retained as source URLs."}]}
+        support = matches[:5]
+        evidence_links = []
+        for p in support:
+            shared = sorted(set(pat["tags"]).intersection(p["tags"]))
+            reason = f"Captured metadata carries shared tags {', '.join(shared)} and floor_plan_available={str(p['floor_plan_available']).lower()}."
+            confidence = "HIGH" if len(shared) >= 2 and p["floor_plan_available"] else ("MEDIUM" if shared else "LOW")
+            evidence_links.append({"precedent_id": p["precedent_id"], "evidence": reason, "confidence": confidence})
+            p["design_patterns"].append(pat["pattern_id"])
+        evidence_type = "PROJECT_DERIVED" if pat["pattern_id"] == "PAT-LIV-07" else "EXTERNAL_PRECEDENT"
+        pat["precedent_ids"] = [x["precedent_id"] for x in evidence_links]
+        pat["evidence"] = evidence_links
+        pat["evidence_type"] = evidence_type
+        pat["project_basis"] = ["P-PROJECTOR-LIVING"] if evidence_type == "PROJECT_DERIVED" else []
+        pat["evidence_note"] = "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
+    patterns = [{"pattern_id": p["pattern_id"], "name": p["name"], "room": p["room"], "tags": p["tags"], "method": p["method"], "benefit": p["benefit"], "risk": p["risk"], "precedent_ids": p["precedent_ids"], "evidence": p["evidence"], "evidence_type": p["evidence_type"], "project_basis": p["project_basis"], "evidence_note": p["evidence_note"]} for p in defs]
+    source_registry = {"version": "v0.1", "collection_date": RESEARCH_DATE, "levels": {"METADATA_ONLY": "URL and structured public metadata candidate; no deep strategy claim", "CURATED": "top-ranked candidate with bounded metadata-derived strategy and project-specific lessons; original page/plan still requires human review"}, "sources": [{"source_id": "A2-SRC-ARCHDAILY", "name": "ArchDaily project pages", "source_type": "metadata_only_project_database", "url": "https://www.archdaily.com/", "license_note": "Only URL, public metadata and short original synthesis are stored; no images or article text are mirrored.", "image_dependency": False, "candidate_count": 80, "selected_count": len(precedents), "curated_count": sum(p["curation_level"] == "CURATED" for p in precedents), "snapshot": "projects/c_type_home/knowledge/precedents/candidate_metadata_v01.json", "id_registry": "projects/c_type_home/knowledge/precedents/precedent_id_registry_v01.json", "url_validation": "80 candidate pages fetched during research; selected links retain the existing precedent IDs."}]}
     return precedents, patterns, source_registry
 
 
@@ -383,7 +593,7 @@ def rulebook_markdown(rules: list[dict[str, Any]], principles: dict[str, Any]) -
     counts = Counter(x["category"] for x in rules)
     lines = ["# Residential Design Rulebook v0.1", "", "This rulebook is a planning reference for the C-type home. It separates general guidance from project principles and local-code checks.", "", "**Jurisdiction:** unconfirmed. US or other foreign guidance is reference material only and is never silently promoted to mandatory project code.", "", "## Coverage", "", "| Category | Rules |", "|---|---:|"]
     lines += [f"| {k} | {counts[k]} |" for k in sorted(counts)]
-    lines += ["", "## Rule fields", "", "Numeric values are planning targets in millimetres. `TO_VERIFY_LOCAL_CODE` means a local authority or selected product must be checked before a compliance claim. `HARD_PROJECT_CONSTRAINT` and `PROJECT_PREFERENCE` are kept visible here only for queryability; the authoritative project-specific list is in `project_design_principles.json`.", ""]
+    lines += ["", "## Rule fields", "", "Numeric values are planning targets in millimetres. `source_strength` records how authoritative the source is for this use. A numeric rule with `classification=DESIGN_HEURISTIC` or `source_strength` below STRONG is informative only and has `automatic_gate=false`; it cannot create a hard automatic failure. `TO_VERIFY_LOCAL_CODE` and `TO_VERIFY_PRODUCT` require local or product verification. `HARD_PROJECT_CONSTRAINT` and `PROJECT_PREFERENCE` are kept visible here only for queryability; the authoritative project-specific list is in `project_design_principles.json`.", ""]
     for category in sorted(counts):
         lines += [f"## {category}", ""]
         for x in [z for z in rules if z["category"] == category]:
@@ -393,7 +603,7 @@ def rulebook_markdown(rules: list[dict[str, Any]], principles: dict[str, Any]) -
             if x.get("preferred_mm") is not None: nums.append(f"preferred {x['preferred_mm']} mm")
             if x.get("maximum_mm") is not None: nums.append(f"max {x['maximum_mm']} mm")
             number_text = "; " + ", ".join(nums) if nums else "qualitative"
-            lines += [f"### {x['rule_id']} — {x['topic']}", "", f"- **Type / priority:** `{x['rule_type']}` / `{x['priority']}`", f"- **Statement:** {x['statement']}", f"- **Planning target:** {number_text.lstrip('; ')}{dims}", f"- **Applies when:** {', '.join(x['applicable_when']) or 'general'}", f"- **Tags:** {', '.join(x['tags']) or 'none'}", f"- **Source:** [{x['source_id']}]({x['source_url']}) — {x['jurisdiction']}", f"- **Notes:** {x['notes'] or 'Use as a design check; verify the actual room, product and local requirements.'}", ""]
+            lines += [f"### {x['rule_id']} — {x['topic']}", "", f"- **Type / priority:** `{x['rule_type']}` / `{x['priority']}`", f"- **Classification:** `{x['classification']}`; source strength `{x['source_strength']}`; automatic gate `{str(x['automatic_gate']).lower()}", f"- **Statement:** {x['statement']}", f"- **Planning target:** {number_text.lstrip('; ')}{dims}", f"- **Applies when:** {', '.join(x['applicable_when']) or 'general'}", f"- **Tags:** {', '.join(x['tags']) or 'none'}", f"- **Source:** [{x['source_id']}]({x['source_url']}) — {x['jurisdiction']}", f"- **Notes:** {x['notes'] or 'Use as a design check; verify the actual room, product and local requirements.'}", ""]
     lines += ["## Project principles", "", "The following are project-owned decisions and statuses, not generic rules:", ""]
     for p in principles["principles"]:
         lines.append(f"- **{p['principle_id']}** `{p['rule_type']}` — {p['statement']} (status: `{p['status']}`)")
@@ -401,10 +611,17 @@ def rulebook_markdown(rules: list[dict[str, Any]], principles: dict[str, Any]) -
 
 
 def precedent_markdown(precedents: list[dict[str, Any]]) -> str:
-    lines = ["# Residential Precedent Index v0.1", "", "Metadata-only precedent library. No images or article bodies are mirrored. Relevance scores are deterministic and are not code or construction approvals.", "", "| ID | Project | Type | Plan | Relevance | Tags |", "|---|---|---|:---:|---:|---|"]
+    lines = ["# Residential Precedent Index v0.1", "", "Two-level library: all 60 entries remain metadata candidates; the top 18 are bounded `CURATED` records with strategy and project-specific lessons derived from captured public metadata. No images or article bodies are mirrored. Relevance scores are deterministic and are not code or construction approvals.", "", "| ID | Level | Project | Type | Plan | Relevance | Confidence | Tags |", "|---|---|---|---|:---:|---:|---:|---|"]
     for p in precedents:
-        lines.append(f"| {p['precedent_id']} | [{p['project_name']}]({p['url']}) | {p['project_type']} | {'yes' if p['floor_plan_available'] else 'no'} | {p['relevance_to_c_type']:.4f} | {', '.join(p['tags'][:6])} |")
-    lines += ["", "## Reading rule", "", "A cited precedent is a prompt for comparison. Verify the original page, plan, dimensions, household and jurisdiction before using any strategy in a design decision."]
+        lines.append(f"| {p['precedent_id']} | {p['curation_level']} | [{p['project_name']}]({p['url']}) | {p['project_type']} | {'yes' if p['floor_plan_available'] else 'no'} | {p['relevance_score']:.4f} | {p['evidence_confidence']:.2f} | {', '.join(p['tags'][:6])} |")
+    lines += ["", "## Curated records", ""]
+    for p in precedents:
+        if p["curation_level"] != "CURATED":
+            continue
+        lines += [f"### {p['precedent_id']} — {p['project_name']}", "", f"- **Source:** [{p['url']}]({p['url']})", f"- **Area:** {p['area_m2'] if p['area_m2'] is not None else 'not stated in captured metadata'}", f"- **Household/program:** {p['household_program'] or 'not stated in captured metadata'}", f"- **Floor plan:** {'available marker' if p['floor_plan_available'] else 'no marker'}", f"- **Renovation constraints:** {'; '.join(p['renovation_constraints'] or ['not curated'])}", f"- **Spatial strategy:** {p['actual_spatial_strategy']}", "- **Lessons:"]
+        lines += [f"  - {lesson}" for lesson in p["design_lessons"]]
+        lines.append("")
+    lines += ["## Reading rule", "", "A cited precedent is a prompt for comparison. Verify the original page, plan, dimensions, household and jurisdiction before using any strategy in a design decision. `CURATED` does not mean construction-verified; it means the metadata record has been reviewed and its uncertainty is explicit."]
     return "\n".join(lines)
 
 
@@ -448,8 +665,19 @@ def build_audits(rules: list[dict[str, Any]], precedents: list[dict[str, Any]], 
         {"principle_id": "P-SPLIT-LEVEL", "status": "PARTIAL", "evidence": "Existing stair and alternate ramp coexist; the project itself marks slope and level delta provisional."},
         {"principle_id": "P-CHILD-ACTIVITY", "status": "RESPECTED_WITH_CHECK", "evidence": "Living core is kept open and sightline intent is documented; tall storage and final device placement still need checking."},
     ]
+    spatial_assessment = [
+        {"aspect": "public-zone hierarchy", "status": "PARTIAL", "finding": "Entry-to-dining-to-kitchen and living-to-balcony routes are explicit, but the plan does not yet state which public destination is primary; media, seating and balcony compete for attention.", "citations": ["SPC-HIER-001", "SPC-HIER-002"]},
+        {"aspect": "living seating coherence", "status": "PARTIAL", "finding": "The 3-seat sofa, 2-seat sofa and day-lounge occupy three edges, but their relationship reads as separate placements rather than one intentional social composition.", "citations": ["SPC-GRP-003", "SPC-SCL-005"]},
+        {"aspect": "conversation grouping", "status": "WEAK", "finding": "Most seats orient toward the east media wall; an explicit face-to-face conversation relationship is not recorded, so the room risks becoming projection-centric despite the brief.", "citations": ["SPC-GRP-004", "P-PROJECTOR-LIVING"]},
+        {"aspect": "negative-space quality", "status": "PARTIAL", "finding": "G8 keeps a large clear core, but the coffee table and side table are exceptions without a documented compositional anchor; the void should be judged as a shaped activity and route space.", "citations": ["SPC-NEG-007", "SPC-NEG-008", "SPC-FLOAT-019"]},
+        {"aspect": "dining/kitchen spatial relationship", "status": "SATISFIED_WITH_RESERVATION", "finding": "P2 gives a direct entry-dining-kitchen relation and the table is in the dining zone, but behind-seated clearance and the visual handoff to the KEEP cabinet edge are not fully measured.", "citations": ["DIN-CIR-007", "SPC-ZONE-015", "P-KITCHEN-KEEP"]},
+        {"aspect": "main visual axis", "status": "PARTIAL", "finding": "The entry-to-living route and east media wall are clear, but the main visual axis is not separated from the balcony view; the next layout should choose whether view or projection is primary.", "citations": ["SPC-SIGHT-013", "SPC-HIER-002"]},
+        {"aspect": "balcony visual connection", "status": "SATISFIED_WITH_RESERVATION", "finding": "P5 and the OPEN_NOT_ENCLOSED state preserve physical access, but the plant line and secondary sofa need a view check so the opening remains visually legible.", "citations": ["SPC-SIGHT-014", "CIR-CONT-007", "P-NORTH-BALCONY"]},
+        {"aspect": "furniture scale/proportion", "status": "PARTIAL", "finding": "The 2200x900 sofa, 1800x850 sofa and 1500x1100 day-lounge are individually plausible, yet the mixed sizes are not tied to a clear room-scale hierarchy.", "citations": ["SPC-SCL-005", "SPC-SCL-006"]},
+        {"aspect": "spatial reason for each object", "status": "PARTIAL", "finding": "KEEP cabinetry, media wall and primary sofas have explicit reasons; the isolated day-lounge, coffee table, side table and plant line need a stated group, view or route role before being treated as final composition.", "citations": ["SPC-FLOAT-019", "SPC-FLOAT-020", "P-KEEP-FURNITURE"]},
+    ]
     audit_tags = {"open-living-dining", "kitchen-adjacency", "flexible-living", "child-friendly", "aging-in-place", "balcony-connected", "clear-circulation", "projector-media", "split-level", "existing-structure"}
-    relevant_precedents = sorted(precedents, key=lambda p: (-len(audit_tags.intersection(p["tags"])), -p["relevance_to_c_type"], p["precedent_id"]))[:8]
+    relevant_precedents = sorted(precedents, key=lambda p: (-len(audit_tags.intersection(p["tags"])), -p["relevance_score"], p["precedent_id"]))[:8]
     relevant_patterns = sorted(patterns, key=lambda p: (-len(audit_tags.intersection(p["tags"])), p["pattern_id"]))[:8]
     unresolved = [
         {"issue_id": "U-001", "issue": "Field measure the split-level level delta and ramp slope before treating the alternate route as accessible.", "citations": ["AGE-THR-005", "CIR-RAMP-009", "P-SPLIT-LEVEL"]},
@@ -458,11 +686,11 @@ def build_audits(rules: list[dict[str, Any]], precedents: list[dict[str, Any]], 
         {"issue_id": "U-004", "issue": "Carry aging-in-place bathroom backing, transfer and turning checks into the later bathroom review.", "citations": ["BTH-AGE-005", "BTH-CIR-006", "P-AGE-MOTHER"]},
     ]
     directions = [
-        {"direction_id": "D-01", "title": "Test a furniture-free living spine", "description": "Keep the current edge-loaded seating and compare one or two movable-table positions while protecting P1, P3 and P5.", "citations": ["LIV-CIRC-001", "LIV-FLEX-003", "PAT-CIR-01", "PAT-LIV-01"]},
-        {"direction_id": "D-02", "title": "Resolve dining as a kitchen extension", "description": "Run a full-size 1500 x 600 table test with 600 mm pull-out and a measured 900 mm behind-seated route against the KEEP cabinet edge.", "citations": ["DIN-CIR-005", "DIN-CIR-006", "DIN-CIR-007", "PAT-LIV-04", "PAT-LIV-05"]},
-        {"direction_id": "D-03", "title": "Verify the assisted route before styling", "description": "Field-measure level delta, ramp slope and landing dimensions, then keep the current stair/ramp dual-route logic until local review is complete.", "citations": ["AGE-THR-005", "CIR-RAMP-009", "PAT-AGE-01", "P-SPLIT-LEVEL"]},
+        {"direction_id": "D-01", "title": "Single-axis social core", "description": "Test one coherent conversation group first, then place the projector axis as a secondary mode; use the day-lounge only if it has a clear view or conversation role.", "citations": ["SPC-HIER-002", "SPC-GRP-003", "SPC-GRP-004", "SPC-FLOAT-019"]},
+        {"direction_id": "D-02", "title": "View-first public-zone hierarchy", "description": "Keep the dining-to-kitchen relationship compact and make the north balcony the primary visual extension; test media equipment as a controlled secondary focal edge after product selection.", "citations": ["SPC-SIGHT-013", "SPC-SIGHT-014", "SPC-EDGE-011", "P-NORTH-BALCONY"]},
+        {"direction_id": "D-03", "title": "Negative-space and route spine", "description": "Shape the central void as one child and aging-friendly activity field, using only movable objects that have an explicit spatial reason; no CAD change is authorized by this direction.", "citations": ["SPC-NEG-007", "SPC-NEG-008", "SPC-FLOAT-020", "AGE-CIR-001", "PAT-CIR-01"]},
     ]
-    return {"version": "v0.1", "scope": "F1 living / dining / kitchen relationship only; analysis, no geometry edits", "inputs": {"furniture_file": str(fpath.relative_to(ROOT)), "concept_file": str(cpath.relative_to(ROOT)), "canonical_file": str(canonical.relative_to(ROOT)), "canonical_geometry_sha": canon.get("hashes", {}).get("geometry_sha")}, "sections": {"rules_already_satisfied": satisfied, "potential_rule_conflicts": conflicts, "project_specific_conflicts": project_conflicts, "relevant_precedents": [{"precedent_id": p["precedent_id"], "project_name": p["project_name"], "relevance_to_c_type": p["relevance_to_c_type"], "tags": p["tags"], "url": p["url"]} for p in relevant_precedents], "applicable_patterns": [{"pattern_id": p["pattern_id"], "name": p["name"], "precedent_ids": p["precedent_ids"]} for p in relevant_patterns], "unresolved_spatial_issues": unresolved, "next_design_directions": directions}, "audit_policy": "Every finding cites a rule_id, principle_id or pattern_id; precedent metadata is a prompt for human source review, not a copied design."}
+    return {"version": "v0.1", "scope": "F1 living / dining / kitchen relationship only; clearance and spatial-composition analysis, no geometry edits", "inputs": {"furniture_file": str(fpath.relative_to(ROOT)), "concept_file": str(cpath.relative_to(ROOT)), "canonical_file": str(canonical.relative_to(ROOT)), "canonical_geometry_sha": canon.get("hashes", {}).get("geometry_sha")}, "sections": {"rules_already_satisfied": satisfied, "potential_rule_conflicts": conflicts, "project_specific_conflicts": project_conflicts, "spatial_composition_assessment": spatial_assessment, "relevant_precedents": [{"precedent_id": p["precedent_id"], "project_name": p["project_name"], "relevance_score": p["relevance_score"], "evidence_confidence": p["evidence_confidence"], "tags": p["tags"], "url": p["url"]} for p in relevant_precedents], "applicable_patterns": [{"pattern_id": p["pattern_id"], "name": p["name"], "precedent_ids": p["precedent_ids"], "evidence": p["evidence"]} for p in relevant_patterns], "unresolved_spatial_issues": unresolved, "next_design_directions": directions}, "audit_policy": "Every finding cites a rule_id, principle_id or pattern_id; precedent metadata is a prompt for human source review, not a copied design."}
 
 
 def audit_markdown(audit: dict[str, Any]) -> str:
@@ -476,16 +704,20 @@ def audit_markdown(audit: dict[str, Any]) -> str:
     lines += ["", "## 3. Project-specific conflicts", ""]
     for x in sec["project_specific_conflicts"]:
         lines.append(f"- **{x['principle_id']} — {x['status']}**: {x['evidence']}")
-    lines += ["", "## 4. Relevant precedents", ""]
+    lines += ["", "## 4. Spatial-composition assessment", ""]
+    for x in sec["spatial_composition_assessment"]:
+        lines.append(f"- **{x['aspect']} — {x['status']}**: {x['finding']} _(citations: {', '.join(x['citations'])})_")
+    lines += ["", "## 5. Relevant precedents", ""]
     for x in sec["relevant_precedents"]:
-        lines.append(f"- **{x['precedent_id']}** {x['project_name']} — relevance {x['relevance_to_c_type']:.4f}; tags: {', '.join(x['tags'])}; [source]({x['url']})")
-    lines += ["", "## 5. Applicable patterns", ""]
+        lines.append(f"- **{x['precedent_id']}** {x['project_name']} — relevance {x['relevance_score']:.4f}; evidence confidence {x['evidence_confidence']:.2f}; tags: {', '.join(x['tags'])}; [source]({x['url']})")
+    lines += ["", "## 6. Applicable patterns", ""]
     for x in sec["applicable_patterns"]:
-        lines.append(f"- **{x['pattern_id']} — {x['name']}**; evidence: {', '.join(x['precedent_ids'])}")
-    lines += ["", "## 6. Unresolved spatial issues", ""]
+        reasons = "; ".join(f"{e['precedent_id']}: {e['evidence']} ({e['confidence']})" for e in x['evidence'])
+        lines.append(f"- **{x['pattern_id']} — {x['name']}**; evidence: {reasons}")
+    lines += ["", "## 7. Unresolved spatial issues", ""]
     for x in sec["unresolved_spatial_issues"]:
         lines.append(f"- **{x['issue_id']}** {x['issue']} _(citations: {', '.join(x['citations'])})_")
-    lines += ["", "## 7. Next design directions", ""]
+    lines += ["", "## 8. Conceptual redesign directions", ""]
     for x in sec["next_design_directions"]:
         lines.append(f"- **{x['direction_id']} — {x['title']}**: {x['description']} _(citations: {', '.join(x['citations'])})_")
     lines += ["", "## Boundary", "", "This audit does not authorize V03, furniture re-layout, or any CAD edit. Existing geometry remains the source of truth until the owner approves a next design direction and outstanding measurements are resolved."]
@@ -498,13 +730,24 @@ def qa_rules(rules: list[dict[str, Any]], principles: dict[str, Any]) -> dict[st
     checks.append({"gate": "A1-G2 rule type valid", "result": "PASS" if all(x["rule_type"] in VALID_RULE_TYPES for x in rules) else "FAIL", "detail": sorted(set(x["rule_type"] for x in rules))})
     bad_code = [x["rule_id"] for x in rules if x["rule_type"] == "TO_VERIFY_LOCAL_CODE" and (x["jurisdiction"] == "general_reference" or ("confirm" not in x["statement"].lower() and "verify" not in x["statement"].lower()))]
     checks.append({"gate": "A1-G3 code/guideline distinction valid", "result": "PASS" if not bad_code else "FAIL", "detail": f"TO_VERIFY_LOCAL_CODE entries requiring local confirmation; invalid={bad_code}"})
-    mandatory_foreign = [x["rule_id"] for x in rules if x["rule_type"] not in {"TO_VERIFY_LOCAL_CODE", "HARD_PROJECT_CONSTRAINT"} and x["jurisdiction"] not in {"general_reference", "project"}]
+    mandatory_foreign = [x["rule_id"] for x in rules if x["rule_type"] not in {"TO_VERIFY_LOCAL_CODE", "TO_VERIFY_PRODUCT", "HARD_PROJECT_CONSTRAINT"} and x["jurisdiction"] not in {"general_reference", "project"}]
     checks.append({"gate": "A1-G4 no unverified foreign code presented as mandatory", "result": "PASS" if not mandatory_foreign else "FAIL", "detail": f"foreign mandatory candidates={mandatory_foreign}"})
     checks.append({"gate": "A1-G5 project rules separated", "result": "PASS" if (RULE_DIR / "project_design_principles.json").exists() else "FAIL", "detail": f"principles={len(principles['principles'])}; separate file exists"})
-    to_verify = [p["principle_id"] for p in principles["principles"] if "TO_VERIFY" in p["status"]] + [x["rule_id"] for x in rules if x["rule_type"] == "TO_VERIFY_LOCAL_CODE"]
+    to_verify = [p["principle_id"] for p in principles["principles"] if "TO_VERIFY" in p["status"]] + [x["rule_id"] for x in rules if x["rule_type"] in {"TO_VERIFY_LOCAL_CODE", "TO_VERIFY_PRODUCT"}]
     checks.append({"gate": "A1-G6 TO_VERIFY preserved", "result": "PASS" if to_verify else "FAIL", "detail": f"preserved_items={len(to_verify)}"})
+    valid_strengths = {"STRONG", "MEDIUM", "WEAK"}
+    missing_strength = [x["rule_id"] for x in rules if x.get("source_strength") not in valid_strengths]
+    checks.append({"gate": "A1-G7 source strength recorded for every rule", "result": "PASS" if not missing_strength else "FAIL", "detail": f"missing={missing_strength}"})
+    numeric_hard = [x["rule_id"] for x in rules if any(v is not None for v in (x.get("recommended_min_mm"), x.get("preferred_mm"), x.get("maximum_mm"), x.get("recommended_dimensions_mm"))) and x.get("source_strength") != "STRONG" and x.get("automatic_gate")]
+    checks.append({"gate": "A1-G8 weak/medium numeric rules cannot hard-fail", "result": "PASS" if not numeric_hard else "FAIL", "detail": f"automatic_gate violations={numeric_hard}"})
+    spatial_count = sum(x["category"] == "spatial_composition" for x in rules)
+    checks.append({"gate": "A1-G9 spatial_composition coverage", "result": "PASS" if 15 <= spatial_count <= 25 else "FAIL", "detail": f"count={spatial_count}"})
+    projector = [x for x in rules if x["rule_id"] in {"LIV-MEDIA-005", "LIV-DIST-007"}]
+    projector_ok = all(x["rule_type"] == "TO_VERIFY_PRODUCT" and x["source_id"] == "SRC-PROJECTOR-PRODUCT" and x["automatic_gate"] is False for x in projector)
+    checks.append({"gate": "A1-G10 projector rules product-specific TO_VERIFY", "result": "PASS" if projector_ok else "FAIL", "detail": f"rules={[x['rule_type'] for x in projector]}"})
     status = "PASS" if all(x["result"] == "PASS" for x in checks) and 80 <= len(rules) <= 120 else "FAIL"
-    return {"version": "v0.1", "status": status, "rule_count": len(rules), "category_counts": dict(Counter(x["category"] for x in rules)), "gates": checks, "generated_date": RESEARCH_DATE}
+    source_audit = [{"rule_id": x["rule_id"], "category": x["category"], "source_id": x["source_id"], "source_strength": x["source_strength"], "classification": x["classification"], "numeric_value_present": any(v is not None for v in (x.get("recommended_min_mm"), x.get("preferred_mm"), x.get("maximum_mm"), x.get("recommended_dimensions_mm"))), "automatic_gate": x["automatic_gate"], "rule_type": x["rule_type"]} for x in rules]
+    return {"version": "v0.1", "status": status, "rule_count": len(rules), "category_counts": dict(Counter(x["category"] for x in rules)), "source_strength_counts": dict(Counter(x["source_strength"] for x in rules)), "classification_counts": dict(Counter(x["classification"] for x in rules)), "source_audit": source_audit, "gates": checks, "generated_date": RESEARCH_DATE}
 
 
 def qa_precedents(precedents: list[dict[str, Any]], patterns: list[dict[str, Any]], source_registry: dict[str, Any]) -> dict[str, Any]:
@@ -515,8 +758,11 @@ def qa_precedents(precedents: list[dict[str, Any]], patterns: list[dict[str, Any
         {"gate": "A2-G3 no copied image dependency", "result": "PASS" if source_registry["sources"][0]["image_dependency"] is False else "FAIL", "detail": "metadata and short synthesis only"},
         {"gate": "A2-G4 floor-plan availability recorded", "result": "PASS" if all(isinstance(p.get("floor_plan_available"), bool) for p in precedents) else "FAIL", "detail": "boolean recorded for every item"},
         {"gate": "A2-G5 controlled tags", "result": "PASS" if all(set(p.get("tags", [])).issubset(controlled) for p in precedents) else "FAIL", "detail": f"controlled_tag_count={len(controlled)}"},
-        {"gate": "A2-G6 patterns backed by >=2 precedents", "result": "PASS" if all(len(set(p.get("precedent_ids", []))) >= 2 for p in patterns) else "FAIL", "detail": f"patterns={len(patterns)}"},
-        {"gate": "A2-G7 deterministic relevance scoring", "result": "PASS" if all("relevance_components" in p and isinstance(p["relevance_to_c_type"], float) for p in precedents) else "FAIL", "detail": "component fields retained"},
+        {"gate": "A2-G6 patterns backed by explicit evidence", "result": "PASS" if all(((p.get("evidence_type") == "PROJECT_DERIVED" and p.get("project_basis") and len(p.get("evidence", [])) >= 1) or (len(set(p.get("precedent_ids", []))) >= 2 and len(p.get("evidence", [])) == len(p.get("precedent_ids", [])))) and all(e.get("evidence") and e.get("confidence") for e in p.get("evidence", [])) for p in patterns) else "FAIL", "detail": f"patterns={len(patterns)}; external patterns require >=2 precedent links; PROJECT_DERIVED patterns cite project evidence"},
+        {"gate": "A2-G7 deterministic relevance scoring with separate confidence", "result": "PASS" if all("relevance_components" in p and isinstance(p["relevance_score"], float) and isinstance(p["evidence_confidence"], float) and (p["relevance_components"].get("area_similarity") is None or p["area_m2"] is not None) for p in precedents) else "FAIL", "detail": "area unknown is null; confidence is separate"},
+        {"gate": "A2-G8 two-level curation", "result": "PASS" if sum(p.get("curation_level") == "CURATED" for p in precedents) == 18 and sum(p.get("curation_level") == "METADATA_ONLY" for p in precedents) == 42 else "FAIL", "detail": f"curated={sum(p.get('curation_level') == 'CURATED' for p in precedents)} metadata_only={sum(p.get('curation_level') == 'METADATA_ONLY' for p in precedents)}"},
+        {"gate": "A2-G9 owner/mother household correction is explicit", "result": "PASS" if "owner and his mother" in json.loads((RULE_DIR / "project_design_principles.json").read_text())["principles"][1]["statement"] else "FAIL", "detail": "P-OWNER-COUPLE statement checked"},
+        {"gate": "A2-G10 curated records have project-specific detail", "result": "PASS" if all(p.get("actual_spatial_strategy") and 2 <= len(p.get("design_lessons") or []) <= 5 and p.get("curation_review", {}).get("override_used") for p in precedents if p.get("curation_level") == "CURATED") else "FAIL", "detail": "all curated records carry strategy, 2-5 lessons and an explicit curation review"},
     ]
     return {"version": "v0.1", "status": "PASS" if all(x["result"] == "PASS" for x in checks) else "FAIL", "precedent_count": len(precedents), "pattern_count": len(patterns), "source_count": len(source_registry["sources"]), "gates": checks, "generated_date": RESEARCH_DATE}
 
@@ -532,20 +778,23 @@ def main() -> int:
     write_text(RULE_DIR / "design_rulebook_v01.md", rulebook_markdown(rules, principles))
     write_json(RULE_DIR / "source_registry.json", {"version": "v0.1", "sources": source_registry_rules()})
     write_json(RULE_DIR / "project_design_principles.json", principles)
-    write_json(RULE_DIR / "rulebook_qa.json", qa_rules(rules, principles))
+    rule_qa = qa_rules(rules, principles)
+    write_json(RULE_DIR / "rulebook_qa.json", rule_qa)
+    write_json(RULE_DIR / "source_audit_v01.json", {"version": "v0.1", "rule_count": len(rules), "entries": rule_qa["source_audit"], "policy": "weak/medium numeric rules are DESIGN_HEURISTIC and automatic_gate=false"})
     write_json(PREC_DIR / "precedent_index_v01.json", {"version": "v0.1", "collection_date": RESEARCH_DATE, "source_policy": "metadata_only_no_images", "precedents": precedents})
     if SNAPSHOT.exists():
         raw_snapshot = json.loads(SNAPSHOT.read_text())
         selected_urls = {p["url"] for p in precedents}
+        by_url = {p["url"]: p for p in precedents}
         tracked_candidates = [
-            {"url": x.get("url"), "title": x.get("title"), "description": x.get("description"), "floor_plan_available": bool(x.get("floor_plan_available")), "area_m2": x.get("area_m2")}
+            {"url": x.get("url"), "title": x.get("title"), "description": x.get("description"), "floor_plan_available": bool(x.get("floor_plan_available")), "area_m2": x.get("area_m2"), "tags": by_url[x.get("url")]["tags"], "relevance_score": by_url[x.get("url")]["relevance_score"], "relevance_components": by_url[x.get("url")]["relevance_components"], "evidence_confidence": by_url[x.get("url")]["evidence_confidence"], "evidence": by_url[x.get("url")]["evidence"]}
             for x in raw_snapshot if x.get("url") in selected_urls
         ]
         write_json(PREC_DIR / "candidate_metadata_v01.json", {"version": "v0.1", "source_policy": "metadata_only_no_images", "candidate_count": len(tracked_candidates), "candidates": tracked_candidates})
     write_text(PREC_DIR / "precedent_index_v01.md", precedent_markdown(precedents))
     write_json(PREC_DIR / "pattern_library_v01.json", {"version": "v0.1", "patterns": patterns})
     write_json(PREC_DIR / "source_registry.json", a2_sources)
-    write_json(PREC_DIR / "query_taxonomy.json", {"version": "v0.1", "rooms": ["living", "dining", "kitchen", "bedroom", "bathroom", "study", "aging_in_place", "child_friendly", "circulation", "storage", "balcony", "renovation"], "tags": CONTROLLED_TAGS, "rule_types": sorted(VALID_RULE_TYPES), "notes": "Tags are controlled strings; relevance order is deterministic."})
+    write_json(PREC_DIR / "query_taxonomy.json", {"version": "v0.1", "rooms": ["living", "dining", "kitchen", "bedroom", "bathroom", "study", "aging_in_place", "child_friendly", "circulation", "storage", "balcony", "renovation", "spatial_composition"], "tags": CONTROLLED_TAGS, "rule_types": sorted(VALID_RULE_TYPES), "curation_levels": ["METADATA_ONLY", "CURATED"], "notes": "Tags are controlled strings; relevance order is deterministic and evidence_confidence is separate from relevance_score."})
     write_json(PREC_DIR / "precedent_qa.json", qa_precedents(precedents, patterns, a2_sources))
     audit = build_audits(rules, precedents, patterns)
     write_json(QC_DIR / "a1_a2_f1_design_audit.json", audit)

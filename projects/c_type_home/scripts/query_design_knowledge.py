@@ -13,7 +13,7 @@ RULE_DIR = ROOT / "knowledge/design_rules"
 PREC_DIR = ROOT / "knowledge/precedents"
 
 PRIORITY_RANK = {"HIGH": 3, "MEDIUM": 2, "LOW": 1}
-HARD_TYPES = {"HARD_PROJECT_CONSTRAINT", "TO_VERIFY_LOCAL_CODE"}
+HARD_TYPES = {"HARD_PROJECT_CONSTRAINT", "TO_VERIFY_LOCAL_CODE", "TO_VERIFY_PRODUCT"}
 ALIASES = {
     "projector": ["projector-media", "non-tv-centric", "projector_or_laser_tv"],
     "media": ["projector-media"],
@@ -26,6 +26,7 @@ ALIASES = {
     "child": ["child-friendly", "child_activity"],
     "storage": ["storage", "storage-zoning"],
     "route": ["clear-circulation"],
+    "composition": ["spatial-composition"],
 }
 
 
@@ -77,7 +78,9 @@ def score(obj: dict[str, Any], room: str | None, tags: list[str]) -> int:
     overlap = len(own.intersection(aliases))
     room_bonus = 5 if room_match(obj, room) else 0
     priority_bonus = PRIORITY_RANK.get(obj.get("priority"), 0)
-    if "relevance_to_c_type" in obj:
+    if "relevance_score" in obj:
+        relevance_bonus = round(float(obj["relevance_score"]) * 10)
+    elif "relevance_to_c_type" in obj:
         relevance_bonus = round(float(obj["relevance_to_c_type"]) * 10)
     else:
         relevance_bonus = 0
@@ -122,9 +125,11 @@ def filter_patterns(patterns: list[dict[str, Any]], room: str | None, tags: list
     return rows[:top]
 
 
-def filter_precedents(precedents: list[dict[str, Any]], room: str | None, tags: list[str], top: int) -> list[dict[str, Any]]:
+def filter_precedents(precedents: list[dict[str, Any]], room: str | None, tags: list[str], top: int, curation_level: str | None) -> list[dict[str, Any]]:
     rows = []
     for obj in precedents:
+        if curation_level and obj.get("curation_level") != curation_level:
+            continue
         text = (obj.get("project_name", "") + " " + obj.get("project_type", "")).lower()
         room_bonus = 5 if room and room.replace("_", "-") in obj_tags_normalized(obj) else 0
         s = score(obj, room, tags) + room_bonus
@@ -134,7 +139,7 @@ def filter_precedents(precedents: list[dict[str, Any]], room: str | None, tags: 
         row["query_score"] = s
         row["trace"] = {"precedent_id": obj.get("precedent_id"), "source": obj.get("source"), "url": obj.get("url")}
         rows.append(row)
-    rows.sort(key=lambda x: (-x["query_score"], -float(x.get("relevance_to_c_type", 0)), x["precedent_id"]))
+    rows.sort(key=lambda x: (-x["query_score"], -float(x.get("relevance_score", x.get("relevance_to_c_type", 0))), x["precedent_id"]))
     return rows[:top]
 
 
@@ -146,10 +151,11 @@ def render_text(result: dict[str, Any]) -> str:
         lines.append(f"- {rid} [{x.get('rule_type')}] score={x['query_score']}: {x.get('statement')} (source {x.get('source_id')})")
     lines += ["", "Relevant Patterns"]
     for x in result["patterns"]:
-        lines.append(f"- {x['pattern_id']} {x['name']} score={x['query_score']} evidence={','.join(x.get('precedent_ids', []))}")
+        reasons = "; ".join(f"{e['precedent_id']}:{e.get('confidence')}" for e in x.get("evidence", []))
+        lines.append(f"- {x['pattern_id']} {x['name']} score={x['query_score']} evidence={reasons}")
     lines += ["", "Relevant Precedents"]
     for x in result["precedents"]:
-        lines.append(f"- {x['precedent_id']} {x['project_name']} score={x['query_score']} plan={'yes' if x.get('floor_plan_available') else 'no'} url={x['url']}")
+        lines.append(f"- {x['precedent_id']} [{x.get('curation_level')}] {x['project_name']} score={x['query_score']} relevance={x.get('relevance_score')} confidence={x.get('evidence_confidence')} plan={'yes' if x.get('floor_plan_available') else 'no'} url={x['url']}")
     return "\n".join(lines)
 
 
@@ -157,10 +163,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Query residential design rules, patterns and precedents deterministically.")
     parser.add_argument("--room", help="room or topic, e.g. living or bedroom")
     parser.add_argument("--tags", nargs="*", default=[], help="space-separated controlled tags or aliases")
-    parser.add_argument("--rule-type", choices=["HARD_PROJECT_CONSTRAINT", "TECHNICAL_GUIDELINE", "BEST_PRACTICE", "PROJECT_PREFERENCE", "TO_VERIFY_LOCAL_CODE"])
+    parser.add_argument("--rule-type", choices=["HARD_PROJECT_CONSTRAINT", "TECHNICAL_GUIDELINE", "BEST_PRACTICE", "PROJECT_PREFERENCE", "TO_VERIFY_LOCAL_CODE", "TO_VERIFY_PRODUCT"])
     parser.add_argument("--hard-only", action="store_true", help="only hard project constraints and local-code checks")
     parser.add_argument("--precedents", action="store_true", help="include precedents; default output includes them")
     parser.add_argument("--patterns", action="store_true", help="include patterns; default output includes them")
+    parser.add_argument("--curation-level", choices=["METADATA_ONLY", "CURATED"], help="filter precedent level")
     parser.add_argument("--top", type=int, default=8)
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON")
     args = parser.parse_args()
@@ -170,10 +177,10 @@ def main() -> int:
     tags = normalize_tags(args.tags)
     explicit_sections = args.precedents or args.patterns
     result = {
-        "query": {"room": args.room, "tags": tags, "rule_type": args.rule_type, "hard_only": args.hard_only, "top": args.top},
+        "query": {"room": args.room, "tags": tags, "rule_type": args.rule_type, "hard_only": args.hard_only, "curation_level": args.curation_level, "top": args.top},
         "rules": filter_rules(all_rules, args.room, tags, args.rule_type, args.hard_only, args.top),
         "patterns": filter_patterns(patterns, args.room, tags, args.top) if (not explicit_sections or args.patterns) else [],
-        "precedents": filter_precedents(precedents, args.room, tags, args.top) if (not explicit_sections or args.precedents) else [],
+        "precedents": filter_precedents(precedents, args.room, tags, args.top, args.curation_level) if (not explicit_sections or args.precedents) else [],
     }
     if args.json:
         print(json.dumps(result, ensure_ascii=False, indent=2))

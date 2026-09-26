@@ -1,6 +1,6 @@
 {
   "version": "v0.1",
-  "scope": "F1 living / dining / kitchen relationship only; analysis, no geometry edits",
+  "scope": "F1 living / dining / kitchen relationship only; clearance and spatial-composition analysis, no geometry edits",
   "inputs": {
     "furniture_file": "concept/furniture_l1_final.json",
     "concept_file": "concept/concept_data.json",
@@ -22,14 +22,14 @@
         "status": "SATISFIED",
         "evidence": "F1 G8 gate defines a 3800 x 4350 mm flexible living core and exempts only small movable tables.",
         "source_id": "SRC-PRACTICE-ERGONOMICS",
-        "source_url": "https://www.archdaily.com/tag/interior-design"
+        "source_url": "https://www.wbdg.org/design-objectives/accessible"
       },
       {
         "rule_id": "LIV-MEDIA-006",
         "status": "SATISFIED_WITH_RESERVATION",
         "evidence": "LIV-MEDIA-WALL is locked at the east edge and P5 to the north balcony is recorded.",
         "source_id": "SRC-PRACTICE-ERGONOMICS",
-        "source_url": "https://www.archdaily.com/tag/interior-design",
+        "source_url": "https://www.wbdg.org/design-objectives/accessible",
         "issue": "Selected projector throw and glare remain TO_VERIFY."
       },
       {
@@ -37,21 +37,21 @@
         "status": "SATISFIED",
         "evidence": "Large sofas are edge-loaded west/north and the media wall is edge-loaded east.",
         "source_id": "SRC-PRACTICE-ERGONOMICS",
-        "source_url": "https://www.archdaily.com/tag/interior-design"
+        "source_url": "https://www.wbdg.org/design-objectives/accessible"
       },
       {
         "rule_id": "DIN-CIR-005",
         "status": "SATISFIED",
         "evidence": "DIN-SEATING-N/S zones record 600 mm pull-out each long side for the 1500 x 600 table.",
         "source_id": "SRC-PRACTICE-ERGONOMICS",
-        "source_url": "https://www.archdaily.com/tag/interior-design"
+        "source_url": "https://www.wbdg.org/design-objectives/accessible"
       },
       {
         "rule_id": "DIN-CIR-007",
         "status": "SATISFIED_WITH_RESERVATION",
         "evidence": "F1 P2 entry-to-dining-to-kitchen route is explicitly recorded.",
         "source_id": "SRC-PRACTICE-ERGONOMICS",
-        "source_url": "https://www.archdaily.com/tag/interior-design",
+        "source_url": "https://www.wbdg.org/design-objectives/accessible",
         "issue": "Check chair pull-out against the live kitchen edge after any change."
       },
       {
@@ -91,7 +91,7 @@
         "status": "POTENTIAL_CONFLICT",
         "evidence": "The current F1 record does not expose every secondary route width as a measured polygon.",
         "source_id": "SRC-PRACTICE-ERGONOMICS",
-        "source_url": "https://www.archdaily.com/tag/interior-design",
+        "source_url": "https://www.wbdg.org/design-objectives/accessible",
         "issue": "Verify every furniture-free segment around the seating group, not only named paths."
       },
       {
@@ -99,7 +99,7 @@
         "status": "POTENTIAL_CONFLICT",
         "evidence": "Dining seating zones document 600 mm pull-out, but a separate behind-seated passage is not explicitly measured.",
         "source_id": "SRC-PRACTICE-ERGONOMICS",
-        "source_url": "https://www.archdaily.com/tag/interior-design",
+        "source_url": "https://www.wbdg.org/design-objectives/accessible",
         "issue": "Test the south and north sides against the 900 mm target before freezing dining furniture."
       },
       {
@@ -154,11 +154,99 @@
         "evidence": "Living core is kept open and sightline intent is documented; tall storage and final device placement still need checking."
       }
     ],
+    "spatial_composition_assessment": [
+      {
+        "aspect": "public-zone hierarchy",
+        "status": "PARTIAL",
+        "finding": "Entry-to-dining-to-kitchen and living-to-balcony routes are explicit, but the plan does not yet state which public destination is primary; media, seating and balcony compete for attention.",
+        "citations": [
+          "SPC-HIER-001",
+          "SPC-HIER-002"
+        ]
+      },
+      {
+        "aspect": "living seating coherence",
+        "status": "PARTIAL",
+        "finding": "The 3-seat sofa, 2-seat sofa and day-lounge occupy three edges, but their relationship reads as separate placements rather than one intentional social composition.",
+        "citations": [
+          "SPC-GRP-003",
+          "SPC-SCL-005"
+        ]
+      },
+      {
+        "aspect": "conversation grouping",
+        "status": "WEAK",
+        "finding": "Most seats orient toward the east media wall; an explicit face-to-face conversation relationship is not recorded, so the room risks becoming projection-centric despite the brief.",
+        "citations": [
+          "SPC-GRP-004",
+          "P-PROJECTOR-LIVING"
+        ]
+      },
+      {
+        "aspect": "negative-space quality",
+        "status": "PARTIAL",
+        "finding": "G8 keeps a large clear core, but the coffee table and side table are exceptions without a documented compositional anchor; the void should be judged as a shaped activity and route space.",
+        "citations": [
+          "SPC-NEG-007",
+          "SPC-NEG-008",
+          "SPC-FLOAT-019"
+        ]
+      },
+      {
+        "aspect": "dining/kitchen spatial relationship",
+        "status": "SATISFIED_WITH_RESERVATION",
+        "finding": "P2 gives a direct entry-dining-kitchen relation and the table is in the dining zone, but behind-seated clearance and the visual handoff to the KEEP cabinet edge are not fully measured.",
+        "citations": [
+          "DIN-CIR-007",
+          "SPC-ZONE-015",
+          "P-KITCHEN-KEEP"
+        ]
+      },
+      {
+        "aspect": "main visual axis",
+        "status": "PARTIAL",
+        "finding": "The entry-to-living route and east media wall are clear, but the main visual axis is not separated from the balcony view; the next layout should choose whether view or projection is primary.",
+        "citations": [
+          "SPC-SIGHT-013",
+          "SPC-HIER-002"
+        ]
+      },
+      {
+        "aspect": "balcony visual connection",
+        "status": "SATISFIED_WITH_RESERVATION",
+        "finding": "P5 and the OPEN_NOT_ENCLOSED state preserve physical access, but the plant line and secondary sofa need a view check so the opening remains visually legible.",
+        "citations": [
+          "SPC-SIGHT-014",
+          "CIR-CONT-007",
+          "P-NORTH-BALCONY"
+        ]
+      },
+      {
+        "aspect": "furniture scale/proportion",
+        "status": "PARTIAL",
+        "finding": "The 2200x900 sofa, 1800x850 sofa and 1500x1100 day-lounge are individually plausible, yet the mixed sizes are not tied to a clear room-scale hierarchy.",
+        "citations": [
+          "SPC-SCL-005",
+          "SPC-SCL-006"
+        ]
+      },
+      {
+        "aspect": "spatial reason for each object",
+        "status": "PARTIAL",
+        "finding": "KEEP cabinetry, media wall and primary sofas have explicit reasons; the isolated day-lounge, coffee table, side table and plant line need a stated group, view or route role before being treated as final composition.",
+        "citations": [
+          "SPC-FLOAT-019",
+          "SPC-FLOAT-020",
+          "P-KEEP-FURNITURE"
+        ]
+      }
+    ],
     "relevant_precedents": [
       {
         "precedent_id": "PREC-002",
         "project_name": "Renovation of Joan Blanques apartment",
-        "relevance_to_c_type": 0.925,
+        "relevance_score": 0.9206,
+        "evidence_confidence": 1.0,
         "tags": [
           "before-after",
           "clear-circulation",
@@ -175,7 +263,8 @@
       {
         "precedent_id": "PREC-003",
         "project_name": "Renovation of a Milan Laboratory to a Family Loft",
-        "relevance_to_c_type": 0.925,
+        "relevance_score": 0.9206,
+        "evidence_confidence": 1.0,
         "tags": [
           "adaptive-reuse",
           "before-after",
@@ -194,7 +283,8 @@
       {
         "precedent_id": "PREC-015",
         "project_name": "Apartment Renovation in Sants",
-        "relevance_to_c_type": 0.725,
+        "relevance_score": 0.6853,
+        "evidence_confidence": 0.85,
         "tags": [
           "before-after",
           "child-friendly",
@@ -210,7 +300,8 @@
       {
         "precedent_id": "PREC-017",
         "project_name": "Renovation of Sofia's apartment",
-        "relevance_to_c_type": 0.72,
+        "relevance_score": 0.6525,
+        "evidence_confidence": 1.0,
         "tags": [
           "before-after",
           "child-friendly",
@@ -226,7 +317,8 @@
       {
         "precedent_id": "PREC-001",
         "project_name": "Renovation of an Industrial Building into a Single Family House",
-        "relevance_to_c_type": 0.925,
+        "relevance_score": 0.9206,
+        "evidence_confidence": 1.0,
         "tags": [
           "adaptive-reuse",
           "before-after",
@@ -243,7 +335,8 @@
       {
         "precedent_id": "PREC-005",
         "project_name": "Residential Extension MF Pavilion",
-        "relevance_to_c_type": 0.9062,
+        "relevance_score": 0.8985,
+        "evidence_confidence": 0.9875,
         "tags": [
           "child-friendly",
           "existing-structure",
@@ -258,7 +351,8 @@
       {
         "precedent_id": "PREC-008",
         "project_name": "Renovation of a Mill and Hayloft for Residential use",
-        "relevance_to_c_type": 0.835,
+        "relevance_score": 0.8235,
+        "evidence_confidence": 1.0,
         "tags": [
           "adaptive-reuse",
           "before-after",
@@ -277,7 +371,8 @@
       {
         "precedent_id": "PREC-055",
         "project_name": "Renovation of the Jiakaxia Ancient Courtyard",
-        "relevance_to_c_type": 0.515,
+        "relevance_score": 0.4471,
+        "evidence_confidence": 0.85,
         "tags": [
           "balcony-connected",
           "before-after",
@@ -300,9 +395,36 @@
         "precedent_ids": [
           "PREC-004",
           "PREC-009",
+          "PREC-030",
           "PREC-013",
-          "PREC-014",
-          "PREC-021"
+          "PREC-014"
+        ],
+        "evidence": [
+          {
+            "precedent_id": "PREC-004",
+            "evidence": "Captured metadata carries shared tags aging-in-place, step-free-route and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-009",
+            "evidence": "Captured metadata carries shared tags aging-in-place, step-free-route and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-030",
+            "evidence": "Captured metadata carries shared tags aging-in-place, step-free-route and floor_plan_available=false.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-013",
+            "evidence": "Captured metadata carries shared tags split-level and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-014",
+            "evidence": "Captured metadata carries shared tags split-level and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          }
         ]
       },
       {
@@ -310,21 +432,75 @@
         "name": "VISIBLE-SOCIAL-ROUTE",
         "precedent_ids": [
           "PREC-002",
-          "PREC-004",
           "PREC-006",
-          "PREC-009",
-          "PREC-013"
+          "PREC-050",
+          "PREC-004",
+          "PREC-009"
+        ],
+        "evidence": [
+          {
+            "precedent_id": "PREC-002",
+            "evidence": "Captured metadata carries shared tags clear-circulation, visual-connection and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-006",
+            "evidence": "Captured metadata carries shared tags clear-circulation, visual-connection and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-050",
+            "evidence": "Captured metadata carries shared tags clear-circulation, visual-connection and floor_plan_available=false.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-004",
+            "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-009",
+            "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          }
         ]
       },
       {
         "pattern_id": "PAT-BED-01",
         "name": "BEDROOM CLEAR-SIDE ROUTE",
         "precedent_ids": [
-          "PREC-002",
           "PREC-004",
-          "PREC-006",
           "PREC-009",
-          "PREC-027"
+          "PREC-030",
+          "PREC-057",
+          "PREC-002"
+        ],
+        "evidence": [
+          {
+            "precedent_id": "PREC-004",
+            "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-009",
+            "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-030",
+            "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=false.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-057",
+            "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=false.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-002",
+            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          }
         ]
       },
       {
@@ -336,17 +512,71 @@
           "PREC-006",
           "PREC-009",
           "PREC-027"
+        ],
+        "evidence": [
+          {
+            "precedent_id": "PREC-002",
+            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-004",
+            "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-006",
+            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-009",
+            "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-027",
+            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          }
         ]
       },
       {
         "pattern_id": "PAT-KIT-01",
         "name": "RETAINED-KITCHEN WORKFLOW",
         "precedent_ids": [
-          "PREC-001",
           "PREC-002",
           "PREC-003",
-          "PREC-004",
-          "PREC-005"
+          "PREC-007",
+          "PREC-008",
+          "PREC-010"
+        ],
+        "evidence": [
+          {
+            "precedent_id": "PREC-002",
+            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-003",
+            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-007",
+            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-008",
+            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-010",
+            "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+            "confidence": "HIGH"
+          }
         ]
       },
       {
@@ -358,6 +588,33 @@
           "PREC-006",
           "PREC-007",
           "PREC-008"
+        ],
+        "evidence": [
+          {
+            "precedent_id": "PREC-002",
+            "evidence": "Captured metadata carries shared tags clear-circulation, kitchen-adjacency and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-003",
+            "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-006",
+            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-007",
+            "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-008",
+            "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          }
         ]
       },
       {
@@ -369,17 +626,71 @@
           "PREC-003",
           "PREC-005",
           "PREC-006"
+        ],
+        "evidence": [
+          {
+            "precedent_id": "PREC-001",
+            "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-002",
+            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-003",
+            "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-005",
+            "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-006",
+            "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+            "confidence": "MEDIUM"
+          }
         ]
       },
       {
         "pattern_id": "PAT-BED-02",
         "name": "STUDY + BACKUP SLEEPING",
         "precedent_ids": [
-          "PREC-001",
-          "PREC-002",
-          "PREC-003",
-          "PREC-004",
-          "PREC-005"
+          "PREC-007",
+          "PREC-008",
+          "PREC-010",
+          "PREC-031",
+          "PREC-048"
+        ],
+        "evidence": [
+          {
+            "precedent_id": "PREC-007",
+            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-008",
+            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-010",
+            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=true.",
+            "confidence": "HIGH"
+          },
+          {
+            "precedent_id": "PREC-031",
+            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=false.",
+            "confidence": "MEDIUM"
+          },
+          {
+            "precedent_id": "PREC-048",
+            "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=false.",
+            "confidence": "MEDIUM"
+          }
         ]
       }
     ],
@@ -425,36 +736,36 @@
     "next_design_directions": [
       {
         "direction_id": "D-01",
-        "title": "Test a furniture-free living spine",
-        "description": "Keep the current edge-loaded seating and compare one or two movable-table positions while protecting P1, P3 and P5.",
+        "title": "Single-axis social core",
+        "description": "Test one coherent conversation group first, then place the projector axis as a secondary mode; use the day-lounge only if it has a clear view or conversation role.",
         "citations": [
-          "LIV-CIRC-001",
-          "LIV-FLEX-003",
-          "PAT-CIR-01",
-          "PAT-LIV-01"
+          "SPC-HIER-002",
+          "SPC-GRP-003",
+          "SPC-GRP-004",
+          "SPC-FLOAT-019"
         ]
       },
       {
         "direction_id": "D-02",
-        "title": "Resolve dining as a kitchen extension",
-        "description": "Run a full-size 1500 x 600 table test with 600 mm pull-out and a measured 900 mm behind-seated route against the KEEP cabinet edge.",
+        "title": "View-first public-zone hierarchy",
+        "description": "Keep the dining-to-kitchen relationship compact and make the north balcony the primary visual extension; test media equipment as a controlled secondary focal edge after product selection.",
         "citations": [
-          "DIN-CIR-005",
-          "DIN-CIR-006",
-          "DIN-CIR-007",
-          "PAT-LIV-04",
-          "PAT-LIV-05"
+          "SPC-SIGHT-013",
+          "SPC-SIGHT-014",
+          "SPC-EDGE-011",
+          "P-NORTH-BALCONY"
         ]
       },
       {
         "direction_id": "D-03",
-        "title": "Verify the assisted route before styling",
-        "description": "Field-measure level delta, ramp slope and landing dimensions, then keep the current stair/ramp dual-route logic until local review is complete.",
+        "title": "Negative-space and route spine",
+        "description": "Shape the central void as one child and aging-friendly activity field, using only movable objects that have an explicit spatial reason; no CAD change is authorized by this direction.",
         "citations": [
-          "AGE-THR-005",
-          "CIR-RAMP-009",
-          "PAT-AGE-01",
-          "P-SPLIT-LEVEL"
+          "SPC-NEG-007",
+          "SPC-NEG-008",
+          "SPC-FLOAT-020",
+          "AGE-CIR-001",
+          "PAT-CIR-01"
         ]
       }
     ]

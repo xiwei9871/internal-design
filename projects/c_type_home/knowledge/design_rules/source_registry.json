@@ -56,15 +56,6 @@
       "mandatory_status": "reference_only"
     },
     {
-      "source_id": "SRC-ENERGY-STAR",
-      "name": "ENERGY STAR appliance resources",
-      "source_type": "manufacturer_and_program_reference",
-      "url": "https://www.energystar.gov/products/appliances",
-      "jurisdiction": "general_reference",
-      "use": "Appliance dimensions remain product-specific; verify selected model.",
-      "mandatory_status": "reference_only"
-    },
-    {
       "source_id": "SRC-CPSC-HOME-SAFETY",
       "name": "US Consumer Product Safety Commission home safety resources",
       "source_type": "home_safety_reference",
@@ -75,12 +66,30 @@
     },
     {
       "source_id": "SRC-PRACTICE-ERGONOMICS",
-      "name": "Residential ergonomics practice reference",
-      "source_type": "professional_practice",
-      "url": "https://www.archdaily.com/tag/interior-design",
+      "name": "Whole Building Design Guide accessibility and ergonomics references",
+      "source_type": "recognized_design_reference",
+      "url": "https://www.wbdg.org/design-objectives/accessible",
       "jurisdiction": "general_reference",
-      "use": "General planning heuristics; dimensions are review targets, not code.",
+      "use": "Recognized design reference for inclusive movement and ergonomic review; not local code.",
       "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "name": "RIBA professional design resources",
+      "source_type": "recognized_design_reference",
+      "url": "https://www.architecture.com/knowledge-and-resources/resources-landing-page",
+      "jurisdiction": "general_reference",
+      "use": "Qualitative composition and design-process reference; no numeric code authority.",
+      "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-PROJECTOR-PRODUCT",
+      "name": "Selected projector or laser-TV product documentation (pending selection)",
+      "source_type": "selected_product_pending",
+      "url": "https://www.projectorcentral.com/",
+      "jurisdiction": "project",
+      "use": "Product-specific throw, image-size, glare and mounting data must be filled after a model is selected.",
+      "mandatory_status": "TO_VERIFY_PRODUCT"
     },
     {
       "source_id": "SRC-C-TYPE-BRIEF",

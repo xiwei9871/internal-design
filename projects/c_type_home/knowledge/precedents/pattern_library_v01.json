@@ -20,7 +20,36 @@
         "PREC-005",
         "PREC-006"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-006",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-LIV-02",
@@ -37,10 +66,39 @@
         "PREC-001",
         "PREC-002",
         "PREC-003",
-        "PREC-004",
-        "PREC-005"
+        "PREC-005",
+        "PREC-004"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-LIV-03",
@@ -57,10 +115,39 @@
         "PREC-001",
         "PREC-002",
         "PREC-003",
-        "PREC-004",
-        "PREC-005"
+        "PREC-005",
+        "PREC-004"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-LIV-04",
@@ -80,7 +167,36 @@
         "PREC-008",
         "PREC-010"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-007",
+          "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-008",
+          "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-010",
+          "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-LIV-05",
@@ -97,10 +213,39 @@
         "PREC-001",
         "PREC-002",
         "PREC-003",
-        "PREC-004",
-        "PREC-005"
+        "PREC-005",
+        "PREC-004"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags flexible-living and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-LIV-06",
@@ -114,13 +259,42 @@
       "benefit": "Makes a small living room feel deeper and preserves outdoor access.",
       "risk": "A future enclosure must be shown as a separate scenario.",
       "precedent_ids": [
-        "PREC-002",
-        "PREC-006",
         "PREC-013",
         "PREC-014",
-        "PREC-050"
+        "PREC-055",
+        "PREC-056",
+        "PREC-002"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-013",
+          "evidence": "Captured metadata carries shared tags balcony-connected, visual-connection and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-014",
+          "evidence": "Captured metadata carries shared tags balcony-connected, visual-connection and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-055",
+          "evidence": "Captured metadata carries shared tags balcony-connected, visual-connection and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-056",
+          "evidence": "Captured metadata carries shared tags balcony-connected, visual-connection and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags visual-connection and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-LIV-07",
@@ -133,11 +307,26 @@
       "method": "Treat the projection wall as one edge of a multi-use room rather than the room's only orientation.",
       "benefit": "Allows conversation and child activity to coexist with viewing.",
       "risk": "Throw distance, glare and cable access must be checked with the selected device.",
-      "precedent_ids": [
-        "PREC-019",
-        "PREC-020"
+      "precedent_ids": [],
+      "evidence": [
+        {
+          "precedent_id": "PROJECT-C-TYPE-BRIEF",
+          "evidence": "Owner brief explicitly makes projector/laser-TV dominant and rejects a TV-centric living room.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PROJECT-F1-LAYOUT",
+          "evidence": "F1 records a locked media wall together with a flexible central living core.",
+          "confidence": "HIGH"
+        }
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence_type": "PROJECT_DERIVED",
+      "project_basis": [
+        "P-PROJECTOR-LIVING",
+        "LIV-MEDIA-005",
+        "LIV-FLEX-003"
+      ],
+      "evidence_note": "This pattern is primarily derived from the C-type brief and F1 record; external precedents are not claimed as evidence for projector behavior."
     },
     {
       "pattern_id": "PAT-CIR-01",
@@ -157,7 +346,36 @@
         "PREC-009",
         "PREC-027"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-006",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-009",
+          "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-027",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-BED-01",
@@ -172,13 +390,42 @@
       "benefit": "Improves night movement and caregiver access.",
       "risk": "Wardrobe and door swings often consume the apparent clearance.",
       "precedent_ids": [
-        "PREC-002",
         "PREC-004",
-        "PREC-006",
         "PREC-009",
-        "PREC-027"
+        "PREC-030",
+        "PREC-057",
+        "PREC-002"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-009",
+          "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-030",
+          "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-057",
+          "evidence": "Captured metadata carries shared tags aging-in-place, elderly-bedroom and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-BED-02",
@@ -192,13 +439,42 @@
       "benefit": "Keeps a study useful daily while allowing periodic guests.",
       "risk": "A daybed or sofa bed can close the only work aisle.",
       "precedent_ids": [
-        "PREC-001",
-        "PREC-002",
-        "PREC-003",
-        "PREC-004",
-        "PREC-005"
+        "PREC-007",
+        "PREC-008",
+        "PREC-010",
+        "PREC-031",
+        "PREC-048"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-007",
+          "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-008",
+          "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-010",
+          "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-031",
+          "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-048",
+          "evidence": "Captured metadata carries shared tags flexible-living, study-guest-hybrid and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-BTH-01",
@@ -214,11 +490,40 @@
       "precedent_ids": [
         "PREC-004",
         "PREC-009",
-        "PREC-021",
         "PREC-030",
-        "PREC-057"
+        "PREC-057",
+        "PREC-021"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom, aging-in-place and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-009",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom, aging-in-place and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-030",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom, aging-in-place and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-057",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom, aging-in-place and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-021",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-BTH-02",
@@ -238,7 +543,36 @@
         "PREC-030",
         "PREC-057"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom, wet-dry-zoning and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-009",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-021",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-030",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-057",
+          "evidence": "Captured metadata carries shared tags accessible-bathroom and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-KIT-01",
@@ -252,13 +586,42 @@
       "benefit": "Honors KEEP decisions while still improving public-space flow.",
       "risk": "Unmeasured services or appliance doors can invalidate the assumed datum.",
       "precedent_ids": [
-        "PREC-001",
         "PREC-002",
         "PREC-003",
-        "PREC-004",
-        "PREC-005"
+        "PREC-007",
+        "PREC-008",
+        "PREC-010"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-007",
+          "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-008",
+          "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-010",
+          "evidence": "Captured metadata carries shared tags existing-structure, kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "HIGH"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-KIT-02",
@@ -278,7 +641,36 @@
         "PREC-007",
         "PREC-008"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags clear-circulation, kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-006",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-007",
+          "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-008",
+          "evidence": "Captured metadata carries shared tags kitchen-adjacency and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-AGE-01",
@@ -295,11 +687,40 @@
       "precedent_ids": [
         "PREC-004",
         "PREC-009",
+        "PREC-030",
         "PREC-013",
-        "PREC-014",
-        "PREC-021"
+        "PREC-014"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags aging-in-place, step-free-route and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-009",
+          "evidence": "Captured metadata carries shared tags aging-in-place, step-free-route and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-030",
+          "evidence": "Captured metadata carries shared tags aging-in-place, step-free-route and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-013",
+          "evidence": "Captured metadata carries shared tags split-level and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-014",
+          "evidence": "Captured metadata carries shared tags split-level and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-AGE-02",
@@ -315,12 +736,41 @@
       "risk": "Visual connection must not compromise privacy or glare control.",
       "precedent_ids": [
         "PREC-002",
-        "PREC-004",
         "PREC-006",
-        "PREC-009",
-        "PREC-013"
+        "PREC-050",
+        "PREC-004",
+        "PREC-009"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags clear-circulation, visual-connection and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-006",
+          "evidence": "Captured metadata carries shared tags clear-circulation, visual-connection and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-050",
+          "evidence": "Captured metadata carries shared tags clear-circulation, visual-connection and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-009",
+          "evidence": "Captured metadata carries shared tags aging-in-place and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-CHD-01",
@@ -341,7 +791,36 @@
         "PREC-005",
         "PREC-006"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags visual-connection and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Captured metadata carries shared tags child-friendly and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-006",
+          "evidence": "Captured metadata carries shared tags visual-connection and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-STOR-01",
@@ -360,7 +839,31 @@
         "PREC-027",
         "PREC-050"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-006",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-027",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-050",
+          "evidence": "Captured metadata carries shared tags clear-circulation and floor_plan_available=false.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-STOR-02",
@@ -377,10 +880,39 @@
         "PREC-001",
         "PREC-002",
         "PREC-003",
-        "PREC-004",
-        "PREC-005"
+        "PREC-005",
+        "PREC-004"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Captured metadata carries shared tags existing-structure and floor_plan_available=true.",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     },
     {
       "pattern_id": "PAT-REN-01",
@@ -396,12 +928,41 @@
       "risk": "A stale survey can make a precise-looking plan wrong.",
       "precedent_ids": [
         "PREC-001",
-        "PREC-002",
         "PREC-003",
-        "PREC-004",
-        "PREC-005"
+        "PREC-006",
+        "PREC-007",
+        "PREC-008"
       ],
-      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Captured metadata carries shared tags adaptive-reuse, existing-structure, renovation and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Captured metadata carries shared tags adaptive-reuse, existing-structure, renovation and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-006",
+          "evidence": "Captured metadata carries shared tags adaptive-reuse, existing-structure, renovation and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-007",
+          "evidence": "Captured metadata carries shared tags adaptive-reuse, existing-structure, renovation and floor_plan_available=true.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PREC-008",
+          "evidence": "Captured metadata carries shared tags adaptive-reuse, existing-structure, renovation and floor_plan_available=true.",
+          "confidence": "HIGH"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "evidence_note": "Each link records the captured metadata reason; inspect the cited source page and plan before design transfer."
     }
   ]
 }

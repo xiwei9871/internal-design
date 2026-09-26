@@ -25,7 +25,7 @@
       "principle_id": "P-OWNER-COUPLE",
       "rule_type": "PROJECT_PREFERENCE",
       "priority": "HIGH",
-      "statement": "The owner couple are permanent residents; periodic family and guests must be accommodated without making the daily plan hotel-like.",
+      "statement": "The permanent daily residents are the owner and his mother; wife, child and wider family are periodic residents or visitors and must be accommodated without making the daily plan hotel-like.",
       "status": "CONFIRMED",
       "source_id": "SRC-C-TYPE-BRIEF",
       "source_url": "https://github.com/xiwei9871/internal-design",
@@ -35,7 +35,9 @@
         "study"
       ],
       "tags": [
-        "flexible-living"
+        "aging-in-place",
+        "flexible-living",
+        "periodic-family"
       ],
       "to_verify": []
     },

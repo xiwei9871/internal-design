@@ -28,17 +28,32 @@
     {
       "gate": "A2-G5 controlled tags",
       "result": "PASS",
-      "detail": "controlled_tag_count=36"
+      "detail": "controlled_tag_count=49"
     },
     {
-      "gate": "A2-G6 patterns backed by >=2 precedents",
+      "gate": "A2-G6 patterns backed by explicit evidence",
       "result": "PASS",
-      "detail": "patterns=20"
+      "detail": "patterns=20; external patterns require >=2 precedent links; PROJECT_DERIVED patterns cite project evidence"
     },
     {
-      "gate": "A2-G7 deterministic relevance scoring",
+      "gate": "A2-G7 deterministic relevance scoring with separate confidence",
       "result": "PASS",
-      "detail": "component fields retained"
+      "detail": "area unknown is null; confidence is separate"
+    },
+    {
+      "gate": "A2-G8 two-level curation",
+      "result": "PASS",
+      "detail": "curated=18 metadata_only=42"
+    },
+    {
+      "gate": "A2-G9 owner/mother household correction is explicit",
+      "result": "PASS",
+      "detail": "P-OWNER-COUPLE statement checked"
+    },
+    {
+      "gate": "A2-G10 curated records have project-specific detail",
+      "result": "PASS",
+      "detail": "all curated records carry strategy, 2-5 lessons and an explicit curation review"
     }
   ],
   "generated_date": "2026-09-26"

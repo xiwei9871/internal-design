@@ -1,33 +1,7 @@
 {
   "version": "v0.1",
-  "status": "PASS",
   "rule_count": 120,
-  "category_counts": {
-    "living": 10,
-    "dining": 10,
-    "kitchen": 10,
-    "bedroom": 10,
-    "bathroom": 10,
-    "study": 10,
-    "aging_in_place": 10,
-    "child_friendly": 10,
-    "circulation": 10,
-    "storage": 10,
-    "spatial_composition": 20
-  },
-  "source_strength_counts": {
-    "MEDIUM": 98,
-    "WEAK": 2,
-    "STRONG": 20
-  },
-  "classification_counts": {
-    "DESIGN_HEURISTIC": 98,
-    "TO_VERIFY_PRODUCT": 2,
-    "TECHNICAL_REFERENCE": 13,
-    "TO_VERIFY_LOCAL_CODE": 5,
-    "PROJECT_CONSTRAINT": 2
-  },
-  "source_audit": [
+  "entries": [
     {
       "rule_id": "LIV-CIRC-001",
       "category": "living",
@@ -1229,64 +1203,5 @@
       "rule_type": "BEST_PRACTICE"
     }
   ],
-  "gates": [
-    {
-      "gate": "A1-G1 source URL present",
-      "result": "PASS",
-      "detail": "120/120 rules have source_url"
-    },
-    {
-      "gate": "A1-G2 rule type valid",
-      "result": "PASS",
-      "detail": [
-        "BEST_PRACTICE",
-        "HARD_PROJECT_CONSTRAINT",
-        "PROJECT_PREFERENCE",
-        "TECHNICAL_GUIDELINE",
-        "TO_VERIFY_LOCAL_CODE",
-        "TO_VERIFY_PRODUCT"
-      ]
-    },
-    {
-      "gate": "A1-G3 code/guideline distinction valid",
-      "result": "PASS",
-      "detail": "TO_VERIFY_LOCAL_CODE entries requiring local confirmation; invalid=[]"
-    },
-    {
-      "gate": "A1-G4 no unverified foreign code presented as mandatory",
-      "result": "PASS",
-      "detail": "foreign mandatory candidates=[]"
-    },
-    {
-      "gate": "A1-G5 project rules separated",
-      "result": "PASS",
-      "detail": "principles=10; separate file exists"
-    },
-    {
-      "gate": "A1-G6 TO_VERIFY preserved",
-      "result": "PASS",
-      "detail": "preserved_items=9"
-    },
-    {
-      "gate": "A1-G7 source strength recorded for every rule",
-      "result": "PASS",
-      "detail": "missing=[]"
-    },
-    {
-      "gate": "A1-G8 weak/medium numeric rules cannot hard-fail",
-      "result": "PASS",
-      "detail": "automatic_gate violations=[]"
-    },
-    {
-      "gate": "A1-G9 spatial_composition coverage",
-      "result": "PASS",
-      "detail": "count=20"
-    },
-    {
-      "gate": "A1-G10 projector rules product-specific TO_VERIFY",
-      "result": "PASS",
-      "detail": "rules=['TO_VERIFY_PRODUCT', 'TO_VERIFY_PRODUCT']"
-    }
-  ],
-  "generated_date": "2026-09-26"
+  "policy": "weak/medium numeric rules are DESIGN_HEURISTIC and automatic_gate=false"
 }
