@@ -392,36 +392,19 @@
       {
         "pattern_id": "PAT-AGE-01",
         "name": "STEP-FREE-ALTERNATE-ROUTE",
-        "precedent_ids": [
-          "PREC-004",
-          "PREC-009",
-          "PREC-013",
-          "PREC-014"
-        ],
+        "precedent_ids": [],
         "evidence": [
           {
-            "precedent_id": "PREC-004",
-            "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+            "precedent_id": "RULE-AGE-THR-005",
+            "evidence": "The parallel stair plus assisted-route requirement comes from the C-type split-level brief and the unresolved level/slope rule; verified cases do not directly prove this topology.",
             "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
+            "verification_status": "RULE_DERIVED"
           },
           {
-            "precedent_id": "PREC-009",
-            "evidence": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
+            "precedent_id": "PROJECT-C-TYPE-BRIEF",
+            "evidence": "Owner brief explicitly retains the existing stair and asks for an assisted/power-wheelchair alternate route.",
             "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-013",
-            "evidence": "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-014",
-            "evidence": "Ground plan has irregular split-level/courtyard geometry; the living/dining/kitchen group is central and bedrooms/support rooms occupy wings.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
+            "verification_status": "PROJECT_DERIVED"
           }
         ]
       },
@@ -429,25 +412,10 @@
         "pattern_id": "PAT-AGE-02",
         "name": "VISIBLE-SOCIAL-ROUTE",
         "precedent_ids": [
-          "PREC-002",
-          "PREC-004",
           "PREC-009",
-          "PREC-013",
-          "PREC-014"
+          "PREC-013"
         ],
         "evidence": [
-          {
-            "precedent_id": "PREC-002",
-            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-004",
-            "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
           {
             "precedent_id": "PREC-009",
             "evidence": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
@@ -456,13 +424,7 @@
           },
           {
             "precedent_id": "PREC-013",
-            "evidence": "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-014",
-            "evidence": "Ground plan has irregular split-level/courtyard geometry; the living/dining/kitchen group is central and bedrooms/support rooms occupy wings.",
+            "evidence": "The patio forms the primary visual axis and daylight source; furniture stays around its edges.",
             "confidence": "HIGH",
             "verification_status": "VERIFIED_PRECEDENT"
           }
@@ -471,29 +433,13 @@
       {
         "pattern_id": "PAT-BED-01",
         "name": "BEDROOM CLEAR-SIDE ROUTE",
-        "precedent_ids": [
-          "PREC-004",
-          "PREC-009",
-          "PREC-002"
-        ],
+        "precedent_ids": [],
         "evidence": [
           {
-            "precedent_id": "PREC-004",
-            "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+            "precedent_id": "RULE-BED-AGE-002",
+            "evidence": "The assisted-side bed route and caregiver access are design-rule requirements; the verified case plans do not show a confirmed bed-to-bath clear-side measurement.",
             "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-009",
-            "evidence": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-002",
-            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
+            "verification_status": "RULE_DERIVED"
           }
         ]
       },
@@ -502,19 +448,12 @@
         "name": "FURNITURE-FREE CIRCULATION SPINE",
         "precedent_ids": [
           "PREC-002",
-          "PREC-004",
           "PREC-009"
         ],
         "evidence": [
           {
             "precedent_id": "PREC-002",
             "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-004",
-            "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
             "confidence": "HIGH",
             "verification_status": "VERIFIED_PRECEDENT"
           },
@@ -540,31 +479,31 @@
           {
             "precedent_id": "PREC-002",
             "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
-            "confidence": "HIGH",
+            "confidence": "MEDIUM",
             "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-003",
             "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
-            "confidence": "HIGH",
+            "confidence": "MEDIUM",
             "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-007",
             "evidence": "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
-            "confidence": "HIGH",
+            "confidence": "MEDIUM",
             "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-008",
             "evidence": "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
-            "confidence": "HIGH",
+            "confidence": "MEDIUM",
             "verification_status": "VERIFIED_PRECEDENT"
           },
           {
             "precedent_id": "PREC-001",
             "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
-            "confidence": "HIGH",
+            "confidence": "MEDIUM",
             "verification_status": "VERIFIED_PRECEDENT"
           }
         ]
@@ -572,43 +511,13 @@
       {
         "pattern_id": "PAT-KIT-02",
         "name": "COMPACT-WORK-TRIANGLE",
-        "precedent_ids": [
-          "PREC-002",
-          "PREC-003",
-          "PREC-007",
-          "PREC-008",
-          "PREC-013"
-        ],
+        "precedent_ids": [],
         "evidence": [
           {
-            "precedent_id": "PREC-002",
-            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+            "precedent_id": "RULE-KIT-WRK-004",
+            "evidence": "Compact sink-cook-refrigerator workflow is derived from NKBA/work-zone rules; verified plans show kitchen adjacency but do not confirm appliance-door and landing dimensions.",
             "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-003",
-            "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-007",
-            "evidence": "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-008",
-            "evidence": "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-013",
-            "evidence": "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
+            "verification_status": "RULE_DERIVED"
           }
         ]
       },
@@ -618,8 +527,7 @@
         "precedent_ids": [
           "PREC-001",
           "PREC-002",
-          "PREC-003",
-          "PREC-005"
+          "PREC-003"
         ],
         "evidence": [
           {
@@ -637,12 +545,6 @@
           {
             "precedent_id": "PREC-003",
             "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-005",
-            "evidence": "Plan shows an added pavilion/extension attached to an existing home with public rooms and a planted or terrace edge.",
             "confidence": "HIGH",
             "verification_status": "VERIFIED_PRECEDENT"
           }
@@ -651,43 +553,13 @@
       {
         "pattern_id": "PAT-BED-02",
         "name": "STUDY + BACKUP SLEEPING",
-        "precedent_ids": [
-          "PREC-007",
-          "PREC-008",
-          "PREC-001",
-          "PREC-002",
-          "PREC-003"
-        ],
+        "precedent_ids": [],
         "evidence": [
           {
-            "precedent_id": "PREC-007",
-            "evidence": "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
+            "precedent_id": "RULE-STD-FLEX-007",
+            "evidence": "Study plus backup sleeping is derived from the C-type periodic-guest brief and the study rules; verified plans did not directly show a daybed/workstation hybrid.",
             "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-008",
-            "evidence": "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-001",
-            "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-002",
-            "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
-          },
-          {
-            "precedent_id": "PREC-003",
-            "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
-            "confidence": "HIGH",
-            "verification_status": "VERIFIED_PRECEDENT"
+            "verification_status": "RULE_DERIVED"
           }
         ]
       }

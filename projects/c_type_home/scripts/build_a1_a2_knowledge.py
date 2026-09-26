@@ -580,6 +580,60 @@ def build_precedents() -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict
         item["location"] = x["_location"]
         precedents.append(item)
     defs = pattern_defs()
+    RULE_DERIVED_PATTERNS = {
+        "PAT-AGE-01": {
+            "basis": ["AGE-THR-005", "CIR-RAMP-009", "P-SPLIT-LEVEL"],
+            "evidence": [
+                {"precedent_id": "RULE-AGE-THR-005", "evidence": "The parallel stair plus assisted-route requirement comes from the C-type split-level brief and the unresolved level/slope rule; verified cases do not directly prove this topology.", "confidence": "HIGH", "verification_status": "RULE_DERIVED"},
+                {"precedent_id": "PROJECT-C-TYPE-BRIEF", "evidence": "Owner brief explicitly retains the existing stair and asks for an assisted/power-wheelchair alternate route.", "confidence": "HIGH", "verification_status": "PROJECT_DERIVED"},
+            ],
+        },
+        "PAT-BED-01": {
+            "basis": ["BED-CIR-001", "BED-AGE-002", "BED-AGE-010"],
+            "evidence": [{"precedent_id": "RULE-BED-AGE-002", "evidence": "The assisted-side bed route and caregiver access are design-rule requirements; the verified case plans do not show a confirmed bed-to-bath clear-side measurement.", "confidence": "HIGH", "verification_status": "RULE_DERIVED"}],
+        },
+        "PAT-BED-02": {
+            "basis": ["STD-FLEX-007", "STD-FLEX-008", "P-OWNER-COUPLE"],
+            "evidence": [{"precedent_id": "RULE-STD-FLEX-007", "evidence": "Study plus backup sleeping is derived from the C-type periodic-guest brief and the study rules; verified plans did not directly show a daybed/workstation hybrid.", "confidence": "HIGH", "verification_status": "RULE_DERIVED"}],
+        },
+        "PAT-BTH-01": {
+            "basis": ["BTH-AGE-005", "BTH-SHW-004", "AGE-BTH-007", "AGE-BTH-008"],
+            "evidence": [{"precedent_id": "RULE-BTH-AGE-005", "evidence": "The coordinated aging-in-place bathroom system is derived from shower, backing, transfer and local-code rules; the verified care plan is contextual, not a product-clearance proof.", "confidence": "HIGH", "verification_status": "RULE_DERIVED"}],
+        },
+        "PAT-BTH-02": {
+            "basis": ["BTH-WC-001", "BTH-VAN-003", "BTH-DOOR-007", "BTH-SAF-008"],
+            "evidence": [{"precedent_id": "RULE-BTH-DOOR-007", "evidence": "Wet/dry clear zones are derived from fixture approach and door-swing rules; verified case plans do not provide a confirmed C-type shower-entry clearance.", "confidence": "HIGH", "verification_status": "RULE_DERIVED"}],
+        },
+        "PAT-KIT-02": {
+            "basis": ["KIT-CIR-001", "KIT-WRK-004", "KIT-WRK-005", "KIT-WRK-006", "KIT-SAF-008"],
+            "evidence": [{"precedent_id": "RULE-KIT-WRK-004", "evidence": "Compact sink-cook-refrigerator workflow is derived from NKBA/work-zone rules; verified plans show kitchen adjacency but do not confirm appliance-door and landing dimensions.", "confidence": "HIGH", "verification_status": "RULE_DERIVED"}],
+        },
+    }
+    CONTEXTUAL_CONFIDENCE_CAPS = {
+        "PAT-LIV-03": "MEDIUM",
+        "PAT-LIV-05": "MEDIUM",
+        "PAT-CHD-01": "MEDIUM",
+        "PAT-STOR-01": "LOW",
+        "PAT-STOR-02": "MEDIUM",
+        "PAT-KIT-01": "MEDIUM",
+    }
+    VERIFIED_SUPPORT_OVERRIDES = {
+        "PAT-LIV-01": ["PREC-001", "PREC-002", "PREC-003"],
+        "PAT-LIV-02": ["PREC-001", "PREC-002", "PREC-003"],
+        "PAT-CIR-01": ["PREC-002", "PREC-009"],
+        "PAT-AGE-02": ["PREC-009", "PREC-013"],
+        "PAT-LIV-06": ["PREC-002", "PREC-013", "PREC-014"],
+        "PAT-LIV-04": ["PREC-002", "PREC-003", "PREC-007", "PREC-013"],
+    }
+    OBSERVATION_KEYWORDS = {
+        "PAT-CIR-01": ["route", "circulation", "strip", "transitions"],
+        "PAT-AGE-02": ["social", "shared", "visible", "daylight", "visual"],
+        "PAT-LIV-02": ["edge", "shell", "furniture", "anchor"],
+        "PAT-LIV-04": ["living/dining/kitchen", "dining", "cooking", "public"],
+        "PAT-LIV-06": ["visual", "courtyard", "garden", "view", "daylight"],
+        "PAT-REN-01": ["existing", "shell", "structural", "old", "retained"],
+    }
+    precedent_by_id = {p["precedent_id"]: p for p in precedents}
     for idx, pat in enumerate(defs):
         if pat["pattern_id"] == "PAT-LIV-07":
             pat["precedent_ids"] = []
@@ -593,7 +647,20 @@ def build_precedents() -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict
             pat["evidence_confidence"] = "HIGH"
             pat["evidence_note"] = "This pattern is primarily derived from the C-type brief and F1 record; external precedents are not claimed as evidence for projector behavior."
             continue
-        matches = sorted([p for p in precedents if set(pat["tags"]).intersection(p["tags"])], key=lambda p: (-len(set(pat["tags"]).intersection(p["tags"])), -(1 if p.get("verification_status") == "VERIFIED_PRECEDENT" else 0), -p["relevance_score"], p["precedent_id"]))
+        if pat["pattern_id"] in RULE_DERIVED_PATTERNS:
+            derived = RULE_DERIVED_PATTERNS[pat["pattern_id"]]
+            pat["precedent_ids"] = []
+            pat["evidence"] = derived["evidence"]
+            pat["evidence_type"] = "RULE_DERIVED"
+            pat["project_basis"] = derived["basis"]
+            pat["verified_precedent_ids"] = []
+            pat["evidence_confidence"] = "HIGH"
+            pat["evidence_note"] = "This pattern is rule-derived; verified precedents may be contextual references but are not claimed as direct proof."
+            continue
+        if pat["pattern_id"] in VERIFIED_SUPPORT_OVERRIDES:
+            matches = [precedent_by_id[pid] for pid in VERIFIED_SUPPORT_OVERRIDES[pat["pattern_id"]] if pid in precedent_by_id]
+        else:
+            matches = sorted([p for p in precedents if set(pat["tags"]).intersection(p["tags"])], key=lambda p: (-len(set(pat["tags"]).intersection(p["tags"])), -(1 if p.get("verification_status") == "VERIFIED_PRECEDENT" else 0), -p["relevance_score"], p["precedent_id"]))
         if len(matches) < 2:
             matches = [precedents[(idx * 3) % len(precedents)], precedents[(idx * 3 + 1) % len(precedents)]]
         verified_matches = [p for p in matches if p.get("verification_status") == "VERIFIED_PRECEDENT"]
@@ -603,7 +670,9 @@ def build_precedents() -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict
             shared = sorted(set(pat["tags"]).intersection(p["tags"]))
             if p.get("verification_status") == "VERIFIED_PRECEDENT":
                 obs = p.get("verified_spatial_observations") or []
-                reason = obs[0] if obs else "Project page and floor plan were opened; no bounded observation was retained."
+                keywords = OBSERVATION_KEYWORDS.get(pat["pattern_id"], [])
+                matching_obs = [text for text in obs if any(keyword.lower() in text.lower() for keyword in keywords)]
+                reason = (matching_obs[0] if matching_obs else (obs[0] if obs else "Project page and floor plan were opened; no bounded observation was retained."))
                 confidence = "HIGH"
             else:
                 reason = f"Metadata candidate carries shared tags {', '.join(shared)} and floor_plan_available={str(p['floor_plan_available']).lower()}; spatial action not visually verified."
@@ -617,6 +686,11 @@ def build_precedents() -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict
         pat["project_basis"] = ["P-PROJECTOR-LIVING"] if evidence_type == "PROJECT_DERIVED" else []
         pat["verified_precedent_ids"] = [p["precedent_id"] for p in support if p.get("verification_status") == "VERIFIED_PRECEDENT"]
         pat["evidence_confidence"] = "HIGH" if len(pat["verified_precedent_ids"]) >= 2 else ("MEDIUM" if pat["verified_precedent_ids"] else "LOW")
+        if pat["pattern_id"] in CONTEXTUAL_CONFIDENCE_CAPS:
+            cap = CONTEXTUAL_CONFIDENCE_CAPS[pat["pattern_id"]]
+            pat["evidence_confidence"] = cap
+            for link in pat["evidence"]:
+                link["confidence"] = cap
         pat["evidence_note"] = "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
     patterns = [{"pattern_id": p["pattern_id"], "name": p["name"], "room": p["room"], "tags": p["tags"], "method": p["method"], "benefit": p["benefit"], "risk": p["risk"], "precedent_ids": p["precedent_ids"], "evidence": p["evidence"], "evidence_type": p["evidence_type"], "project_basis": p["project_basis"], "verified_precedent_ids": p["verified_precedent_ids"], "evidence_confidence": p["evidence_confidence"], "evidence_note": p["evidence_note"]} for p in defs]
     source_registry = {"version": "v0.1", "collection_date": RESEARCH_DATE, "levels": {"METADATA_ONLY": "URL and structured public metadata candidate; no deep strategy claim", "CURATED_METADATA": "top-ranked metadata record with bounded strategy and lessons; original page/plan not visually verified", "VERIFIED_PRECEDENT": "project page and floor plan opened and visually reviewed; spatial observations and 2-5 project-specific lessons recorded"}, "sources": [{"source_id": "A2-SRC-ARCHDAILY", "name": "ArchDaily project pages", "source_type": "metadata_only_project_database", "url": "https://www.archdaily.com/", "license_note": "Only URL, public metadata and short original synthesis are stored; no images or article text are mirrored.", "image_dependency": False, "candidate_count": 80, "selected_count": len(precedents), "verified_count": sum(p["curation_level"] == "VERIFIED_PRECEDENT" for p in precedents), "curated_metadata_count": sum(p["curation_level"] == "CURATED_METADATA" for p in precedents), "metadata_only_count": sum(p["curation_level"] == "METADATA_ONLY" for p in precedents), "snapshot": "projects/c_type_home/knowledge/precedents/candidate_metadata_v01.json", "id_registry": "projects/c_type_home/knowledge/precedents/precedent_id_registry_v01.json", "url_validation": "80 candidate pages fetched during research; selected links retain the existing precedent IDs."}]}
@@ -794,13 +868,13 @@ def qa_precedents(precedents: list[dict[str, Any]], patterns: list[dict[str, Any
         {"gate": "A2-G3 no copied image dependency", "result": "PASS" if source_registry["sources"][0]["image_dependency"] is False else "FAIL", "detail": "metadata and short synthesis only"},
         {"gate": "A2-G4 floor-plan availability recorded", "result": "PASS" if all(isinstance(p.get("floor_plan_available"), bool) for p in precedents) else "FAIL", "detail": "boolean recorded for every item"},
         {"gate": "A2-G5 controlled tags", "result": "PASS" if all(set(p.get("tags", [])).issubset(controlled) for p in precedents) else "FAIL", "detail": f"controlled_tag_count={len(controlled)}"},
-        {"gate": "A2-G6 patterns backed by explicit evidence", "result": "PASS" if all(((p.get("evidence_type") == "PROJECT_DERIVED" and p.get("project_basis") and len(p.get("evidence", [])) >= 1) or (len(set(p.get("precedent_ids", []))) >= 2 and len(p.get("evidence", [])) == len(p.get("precedent_ids", [])))) and all(e.get("evidence") and e.get("confidence") for e in p.get("evidence", [])) for p in patterns) else "FAIL", "detail": f"patterns={len(patterns)}; external patterns require >=2 precedent links; PROJECT_DERIVED patterns cite project evidence"},
+        {"gate": "A2-G6 patterns backed by explicit evidence", "result": "PASS" if all(((p.get("evidence_type") in {"PROJECT_DERIVED", "RULE_DERIVED"} and p.get("project_basis") and len(p.get("evidence", [])) >= 1) or (len(set(p.get("precedent_ids", []))) >= 2 and len(p.get("evidence", [])) == len(p.get("precedent_ids", [])))) and all(e.get("evidence") and e.get("confidence") for e in p.get("evidence", [])) for p in patterns) else "FAIL", "detail": f"patterns={len(patterns)}; external patterns require >=2 precedent links; derived patterns cite project/rule evidence"},
         {"gate": "A2-G7 deterministic relevance scoring with separate confidence", "result": "PASS" if all("relevance_components" in p and isinstance(p["relevance_score"], float) and isinstance(p["evidence_confidence"], float) and (p["relevance_components"].get("area_similarity") is None or p["area_m2"] is not None) for p in precedents) else "FAIL", "detail": "area unknown is null; confidence is separate"},
         {"gate": "A2-G8 three-level curation", "result": "PASS" if sum(p.get("curation_level") == "VERIFIED_PRECEDENT" for p in precedents) == 10 and sum(p.get("curation_level") == "CURATED_METADATA" for p in precedents) == 8 and sum(p.get("curation_level") == "METADATA_ONLY" for p in precedents) == 42 else "FAIL", "detail": f"verified={sum(p.get('curation_level') == 'VERIFIED_PRECEDENT' for p in precedents)} curated_metadata={sum(p.get('curation_level') == 'CURATED_METADATA' for p in precedents)} metadata_only={sum(p.get('curation_level') == 'METADATA_ONLY' for p in precedents)}"},
         {"gate": "A2-G9 owner/mother household correction is explicit", "result": "PASS" if "owner and his mother" in json.loads((RULE_DIR / "project_design_principles.json").read_text())["principles"][1]["statement"] else "FAIL", "detail": "P-OWNER-COUPLE statement checked"},
         {"gate": "A2-G10 curated records have project-specific detail", "result": "PASS" if all(p.get("actual_spatial_strategy") and 2 <= len(p.get("design_lessons") or []) <= 5 and p.get("curation_review", {}).get("override_used") for p in precedents if p.get("curation_level") in {"CURATED_METADATA", "VERIFIED_PRECEDENT"}) else "FAIL", "detail": "all curated records carry strategy, 2-5 lessons and an explicit curation review"},
         {"gate": "A2-G11 verified precedents are visually checked", "result": "PASS" if all(p.get("verification_status") == "VERIFIED_PRECEDENT" and p.get("verification_confidence") == 1.0 and p.get("floor_plan_url") and len(p.get("verified_spatial_observations") or []) >= 2 and p.get("verification_method") == "browser_page_and_floor_plan_visual_review" for p in precedents if p.get("curation_level") == "VERIFIED_PRECEDENT") else "FAIL", "detail": "10 verified records carry page/plan URLs, observations and confidence=1.0"},
-        {"gate": "A2-G12 high-confidence pattern evidence is verified-only", "result": "PASS" if all(p.get("evidence_confidence") != "HIGH" or p.get("evidence_type") == "PROJECT_DERIVED" or all(e.get("verification_status") == "VERIFIED_PRECEDENT" for e in p.get("evidence", [])) for p in patterns) else "FAIL", "detail": "metadata-only links never create HIGH pattern confidence"},
+        {"gate": "A2-G12 high-confidence pattern evidence is verified-only or explicitly derived", "result": "PASS" if all(p.get("evidence_confidence") != "HIGH" or p.get("evidence_type") in {"PROJECT_DERIVED", "RULE_DERIVED"} or all(e.get("verification_status") == "VERIFIED_PRECEDENT" for e in p.get("evidence", [])) for p in patterns) else "FAIL", "detail": "metadata-only links never create HIGH pattern confidence; rule/project derivations are explicit"},
     ]
     return {"version": "v0.1", "status": "PASS" if all(x["result"] == "PASS" for x in checks) else "FAIL", "precedent_count": len(precedents), "pattern_count": len(patterns), "source_count": len(source_registry["sources"]), "gates": checks, "generated_date": RESEARCH_DATE}
 

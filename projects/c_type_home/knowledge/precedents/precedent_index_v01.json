@@ -60,7 +60,6 @@
         "PAT-LIV-02",
         "PAT-LIV-03",
         "PAT-LIV-05",
-        "PAT-BED-02",
         "PAT-KIT-01",
         "PAT-CHD-01",
         "PAT-STOR-02",
@@ -178,11 +177,7 @@
         "PAT-LIV-05",
         "PAT-LIV-06",
         "PAT-CIR-01",
-        "PAT-BED-01",
-        "PAT-BED-02",
         "PAT-KIT-01",
-        "PAT-KIT-02",
-        "PAT-AGE-02",
         "PAT-CHD-01",
         "PAT-STOR-01",
         "PAT-STOR-02",
@@ -300,9 +295,7 @@
         "PAT-LIV-03",
         "PAT-LIV-04",
         "PAT-LIV-05",
-        "PAT-BED-02",
         "PAT-KIT-01",
-        "PAT-KIT-02",
         "PAT-CHD-01",
         "PAT-STOR-02",
         "PAT-REN-01"
@@ -410,8 +403,6 @@
         "tags": "deterministic_tag_rules"
       },
       "design_patterns": [
-        "PAT-LIV-01",
-        "PAT-LIV-02",
         "PAT-LIV-03",
         "PAT-LIV-05",
         "PAT-CHD-01",
@@ -613,9 +604,7 @@
       },
       "design_patterns": [
         "PAT-LIV-04",
-        "PAT-BED-02",
         "PAT-KIT-01",
-        "PAT-KIT-02",
         "PAT-REN-01"
       ],
       "design_lessons": [
@@ -725,10 +714,7 @@
         "tags": "deterministic_tag_rules"
       },
       "design_patterns": [
-        "PAT-LIV-04",
-        "PAT-BED-02",
         "PAT-KIT-01",
-        "PAT-KIT-02",
         "PAT-REN-01"
       ],
       "design_lessons": [
@@ -837,15 +823,8 @@
         "tags": "deterministic_tag_rules"
       },
       "design_patterns": [
-        "PAT-LIV-02",
         "PAT-LIV-03",
         "PAT-LIV-05",
-        "PAT-CIR-01",
-        "PAT-BED-01",
-        "PAT-BTH-01",
-        "PAT-BTH-02",
-        "PAT-AGE-01",
-        "PAT-AGE-02",
         "PAT-STOR-02"
       ],
       "design_lessons": [
@@ -1122,10 +1101,6 @@
       },
       "design_patterns": [
         "PAT-CIR-01",
-        "PAT-BED-01",
-        "PAT-BTH-01",
-        "PAT-BTH-02",
-        "PAT-AGE-01",
         "PAT-AGE-02"
       ],
       "design_lessons": [
@@ -1316,8 +1291,6 @@
       "design_patterns": [
         "PAT-LIV-04",
         "PAT-LIV-06",
-        "PAT-KIT-02",
-        "PAT-AGE-01",
         "PAT-AGE-02",
         "PAT-CHD-01"
       ],
@@ -1424,9 +1397,7 @@
         "tags": "deterministic_tag_rules"
       },
       "design_patterns": [
-        "PAT-LIV-06",
-        "PAT-AGE-01",
-        "PAT-AGE-02"
+        "PAT-LIV-06"
       ],
       "design_lessons": [
         "Use level change to organize views and destinations, not to imply accessibility.",

@@ -33,7 +33,7 @@
     {
       "gate": "A2-G6 patterns backed by explicit evidence",
       "result": "PASS",
-      "detail": "patterns=20; external patterns require >=2 precedent links; PROJECT_DERIVED patterns cite project evidence"
+      "detail": "patterns=20; external patterns require >=2 precedent links; derived patterns cite project/rule evidence"
     },
     {
       "gate": "A2-G7 deterministic relevance scoring with separate confidence",
@@ -61,9 +61,9 @@
       "detail": "10 verified records carry page/plan URLs, observations and confidence=1.0"
     },
     {
-      "gate": "A2-G12 high-confidence pattern evidence is verified-only",
+      "gate": "A2-G12 high-confidence pattern evidence is verified-only or explicitly derived",
       "result": "PASS",
-      "detail": "metadata-only links never create HIGH pattern confidence"
+      "detail": "metadata-only links never create HIGH pattern confidence; rule/project derivations are explicit"
     }
   ],
   "generated_date": "2026-09-26"
