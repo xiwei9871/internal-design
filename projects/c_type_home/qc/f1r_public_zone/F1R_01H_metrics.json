@@ -1,0 +1,82 @@
+{
+  "clearances": {
+    "entry_to_living_min_clear_width_mm": 950,
+    "living_to_stair_min_clear_width_mm": 600,
+    "living_to_north_balcony_min_clear_width_mm": 850,
+    "sofa_to_sofa_min_edge_gap_mm": 1050,
+    "sofa_to_lounge_min_edge_gap_mm": 900,
+    "central_clear_zone_dimensions_mm": [
+      5600,
+      7400,
+      7700,
+      10800
+    ],
+    "dining_chair_pullout_mm": 600,
+    "behind_seated_dining_passage_mm": 600,
+    "dining_to_kitchen_edge_clear_mm": 700
+  },
+  "named_path_blockers": [],
+  "central_clear_zone": [
+    5600,
+    7400,
+    7700,
+    10800
+  ],
+  "dining_chair_pullout_method": "F1 DIN-SEATING-N/S zones retain 600 mm; chairs are actual A0.4 DINING_CHAIR_450x500_PLAN review footprints.",
+  "behind_seated_passage_method": "F1 seating zones provide a 600 mm envelope; final chair-body/turning review remains TO_VERIFY.",
+  "status": "CONCEPT_REVIEW",
+  "path_blocker_count": 0,
+  "a0_blocks_used": [
+    "SOFA_3S_2200x900_PLAN",
+    "SOFA_2S_1800x850_PLAN",
+    "LOUNGE_CHAIR_900x900_PLAN",
+    "DINING_TABLE_1500x600_PLAN",
+    "DINING_CHAIR_450x500_PLAN",
+    "DINING_CHAIR_450x500_PLAN",
+    "DINING_CHAIR_450x500_PLAN",
+    "DINING_CHAIR_450x500_PLAN"
+  ],
+  "a0_block_ref_count": 8,
+  "a0_block_files": {
+    "DINING_CHAIR_450x500_PLAN": "assets/cad_library/standard/normalized/DINING_CHAIR_450x500_PLAN.dxf",
+    "DINING_TABLE_1500x600_PLAN": "assets/cad_library/standard/normalized/DINING_TABLE_1500x600_PLAN.dxf",
+    "LOUNGE_CHAIR_900x900_PLAN": "assets/cad_library/standard/normalized/LOUNGE_CHAIR_900x900_PLAN.dxf",
+    "SOFA_2S_1800x850_PLAN": "assets/cad_library/standard/normalized/SOFA_2S_1800x850_PLAN.dxf",
+    "SOFA_3S_2200x900_PLAN": "assets/cad_library/standard/normalized/SOFA_3S_2200x900_PLAN.dxf"
+  },
+  "rule_citations": [
+    "SPC-HIER-002",
+    "SPC-GRP-003",
+    "SPC-GRP-004",
+    "SPC-NEG-007",
+    "SPC-FLOAT-019",
+    "CIR-PRI-001",
+    "AGE-CIR-001",
+    "DIN-CIR-005",
+    "DIN-CIR-006",
+    "DIN-CIR-007"
+  ],
+  "pattern_citations": [
+    "PAT-LIV-01",
+    "PAT-LIV-02",
+    "PAT-AGE-02",
+    "PAT-CIR-01",
+    "PAT-LIV-04"
+  ],
+  "input_hashes": {
+    "furniture_l1_final.json": "5b41adf5722365f9bf023e7d534058edc1692c13e5d1027c0ec055cc2b75cda9",
+    "concept_data.json": "046b77355c62d7f4550ff067e1c7077bd6efc5a33c89c61deff39e68eb62c036",
+    "canonical_plan_v1.json": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444",
+    "window_register.json": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a",
+    "design_legend_manifest_v01.json": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+  },
+  "qa": {
+    "actual_dxf_block_geometry_rendered": true,
+    "a0_block_ref_count": 8,
+    "path_blockers_zero": true,
+    "formal_cad_writeback": false,
+    "central_clear_zone_reported_descriptively": true,
+    "negative_space_ratio_used_as_pass_fail": false,
+    "dining_pullout_and_behind_seated_reported": true
+  }
+}
