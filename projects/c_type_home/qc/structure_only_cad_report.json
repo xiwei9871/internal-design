@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "source": {
+    "dwg": "source/世纪欣园FF.dwg",
+    "dxf": "cad/measured_working.dxf",
+    "dxf_sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233"
+  },
+  "output": {
+    "dxf": "cad/structure_only_source_sync.dxf",
+    "dxf_sha256": "e2153e84ceeb3904c1201cd0a0c36eaeeeeb237db5a8d2797505463183523885"
+  },
+  "deleted_entities": [
+    {
+      "handle": "307F67",
+      "layer": "F-FURN",
+      "type": "TEXT",
+      "text": "冰箱",
+      "reason": "furniture layer"
+    }
+  ],
+  "source_entity_counts": {
+    "RC-GRILL|TEXT": 39,
+    "RC-GRILL|CIRCLE": 18,
+    "RC-GRILL|INSERT": 3,
+    "S-S.WALL|LINE": 201,
+    "S-S.WALL|LWPOLYLINE": 8,
+    "F-DOOR|INSERT": 9,
+    "S-S.WALL|HATCH": 6,
+    "F-DOOR|LINE": 2,
+    "F-DOOR|LWPOLYLINE": 7,
+    "F-SAN FIT|LINE": 14,
+    "F-SAN FIT|ARC": 2,
+    "F-FURN|TEXT": 1,
+    "S-S.WALL|INSERT": 1,
+    "S-COLUMN|DIMENSION": 18,
+    "F-TEXT|MTEXT": 6,
+    "S-楼梯|LINE": 6,
+    "S-楼梯|ARC": 1
+  },
+  "output_entity_counts": {
+    "RC-GRILL|TEXT": 39,
+    "RC-GRILL|CIRCLE": 18,
+    "RC-GRILL|INSERT": 3,
+    "S-S.WALL|LINE": 201,
+    "S-S.WALL|LWPOLYLINE": 8,
+    "F-DOOR|INSERT": 9,
+    "S-S.WALL|HATCH": 6,
+    "F-DOOR|LINE": 2,
+    "F-DOOR|LWPOLYLINE": 7,
+    "F-SAN FIT|LINE": 14,
+    "F-SAN FIT|ARC": 2,
+    "S-S.WALL|INSERT": 1,
+    "S-COLUMN|DIMENSION": 18,
+    "F-TEXT|MTEXT": 6,
+    "S-楼梯|LINE": 6,
+    "S-楼梯|ARC": 1
+  },
+  "wall_match": {
+    "source_count": 216,
+    "output_count": 216,
+    "missing": [],
+    "extra": [],
+    "max_coordinate_delta_mm": 0.0,
+    "geometry_mismatches": []
+  },
+  "retained_entity_match": {
+    "source_count": 341,
+    "output_count": 341,
+    "missing": [],
+    "extra": [],
+    "max_coordinate_delta_mm": 0.0,
+    "geometry_mismatches": []
+  },
+  "residual_furniture_entities": [],
+  "residual_leisure_overlay_entities": [],
+  "green_box_checks": [
+    {
+      "name": "upper_horizontal",
+      "rect_mm": [
+        9735,
+        6226,
+        10551,
+        6566
+      ],
+      "source_wall_handles": [
+        "307B12",
+        "307B74"
+      ],
+      "source_wall_linework": true
+    },
+    {
+      "name": "right_vertical",
+      "rect_mm": [
+        11382,
+        2955,
+        11643,
+        3398
+      ],
+      "source_wall_handles": [
+        "307B58",
+        "307B59",
+        "307D41"
+      ],
+      "source_wall_linework": true
+    },
+    {
+      "name": "life_balcony",
+      "rect_mm": [
+        1292,
+        -197,
+        5426,
+        2575
+      ],
+      "source_wall_handles": [
+        "307B1B",
+        "307B1C",
+        "307B30",
+        "307B31",
+        "307B60",
+        "307B61",
+        "307B62",
+        "307B63",
+        "307CB3",
+        "307CFC",
+        "307D18"
+      ],
+      "source_wall_linework": true
+    }
+  ],
+  "standard_window_check": {
+    "window_id": "W-KIT-S",
+    "type": "STANDARD_WINDOW",
+    "opening_rect_mm": [
+      6100,
+      -200,
+      7100,
+      0
+    ],
+    "source_glazing_rect_mm": [
+      6100,
+      -200,
+      7100,
+      0
+    ],
+    "surrounding_wall_handles": [
+      "307B1F",
+      "307CC1",
+      "307CC3",
+      "307CC4",
+      "307CC7",
+      "307CC8",
+      "307CC9",
+      "307D18"
+    ],
+    "surrounding_wall_linework": true,
+    "note": "Standard window occupies only the registered opening rectangle; source wall linework remains."
+  },
+  "coordinate_system": {
+    "origin_abs": [
+      1298172.0,
+      -296458.0
+    ],
+    "units": "mm",
+    "task01": "abs - origin_abs"
+  },
+  "layer_style_overrides": {
+    "S-S.WALL": {
+      "color": 250,
+      "lineweight": 70
+    },
+    "S-楼梯": {
+      "color": 8,
+      "lineweight": 35
+    },
+    "F-DOOR": {
+      "color": 8,
+      "lineweight": 20
+    },
+    "F-SAN FIT": {
+      "color": 8,
+      "lineweight": 13
+    },
+    "F-TEXT": {
+      "color": 250
+    }
+  },
+  "serialization_normalization": "trailing spaces stripped from DXF text lines only"
+}
