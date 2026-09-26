@@ -1,0 +1,1024 @@
+{
+  "status": "PASS",
+  "version": "v0.1",
+  "geometry_scaled": false,
+  "block_count": 20,
+  "issues": [],
+  "raw_sources_sha_unchanged": true,
+  "compiled_block_count": 20,
+  "contact_sheet": "assets/cad_library/previews/contact_sheet_v01.png",
+  "blocks": [
+    {
+      "id": "SRC_GS_BED_SINGLE_PLAN",
+      "category": "bed",
+      "block_name": "SRC_GS_BED_SINGLE_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Bedroom/BedSingle.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/BedSingle.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_BED_SINGLE_PLAN.dxf",
+      "source_sha256": "eb684a14f83b50a0554ca53c1388d85822c0a35f7bfb77f21ce4acc006f27041",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -495.29999999999995,
+        -1917.7,
+        495.29999999999995,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        -495.29999999999995,
+        -1917.7,
+        495.29999999999995,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        990.5999999999999,
+        1917.6999999999998
+      ],
+      "base_point_convention": "head-center",
+      "base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 23,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_BED_SINGLE_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_BED_SINGLE_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_BED_QUEEN_PLAN",
+      "category": "bed",
+      "block_name": "SRC_GS_BED_QUEEN_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Bedroom/BedQueen.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/BedQueen.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_BED_QUEEN_PLAN.dxf",
+      "source_sha256": "afba89d6a30f0118f787068da2bd4e4cc511e446885d82dbbf84f8737b6a5ea4",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -762.0,
+        -2070.1,
+        762.0,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        -762.0,
+        -2070.1,
+        762.0,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        1524.0,
+        2070.1
+      ],
+      "base_point_convention": "head-center",
+      "base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 32,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_BED_QUEEN_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_BED_QUEEN_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_BED_KING_PLAN",
+      "category": "bed",
+      "block_name": "SRC_GS_BED_KING_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Bedroom/BedKing.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/BedKing.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_BED_KING_PLAN.dxf",
+      "source_sha256": "eaa86b1df0e841b7c36dc436452595e4bdef79cab96e31322272e2138fed7b5e",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -965.1999999999999,
+        -2070.1,
+        965.1999999999999,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        -965.1999999999999,
+        -2070.1,
+        965.1999999999999,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        1930.3999999999999,
+        2070.1
+      ],
+      "base_point_convention": "head-center",
+      "base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 32,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_BED_KING_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_BED_KING_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_SOFA_2S_PLAN",
+      "category": "sofa",
+      "block_name": "SRC_GS_SOFA_2S_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Living Room/CouchUpholstered.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Living%20Room/CouchUpholstered.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_SOFA_2S_PLAN.dxf",
+      "source_sha256": "a17c70f5805fdf1d8bf5a3bde43e36e6249c7840f828a24b56a70170ee3eeb2f",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -812.8,
+        -914.4,
+        812.8,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        -812.8,
+        -914.4,
+        812.8,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        1625.6,
+        914.4
+      ],
+      "base_point_convention": "back-center",
+      "base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 26,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_SOFA_2S_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_SOFA_2S_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_SOFA_3S_PLAN",
+      "category": "sofa",
+      "block_name": "SRC_GS_SOFA_3S_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Living Room/SofaUpholstered.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Living%20Room/SofaUpholstered.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_SOFA_3S_PLAN.dxf",
+      "source_sha256": "a88e33038d12c1028800afe96cd3bd794e67f67884830b250f3cedf25650818d",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -1117.6,
+        -914.4,
+        1117.6,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        -1117.6,
+        -914.4,
+        1117.6,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        2235.2,
+        914.4
+      ],
+      "base_point_convention": "back-center",
+      "base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 29,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_SOFA_3S_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_SOFA_3S_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_DINING_TABLE_PLAN",
+      "category": "dining_table",
+      "block_name": "SRC_GS_DINING_TABLE_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Dining Room/TableRect-90-72x44.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Dining%20Room/TableRect-90-72x44.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_DINING_TABLE_PLAN.dxf",
+      "source_sha256": "78cd83751ad24ff357d37a96aca556349edc86980b3c8c03ece989480735e7f6",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -1143.0,
+        -558.8,
+        1143.0,
+        558.8
+      ],
+      "normalized_bbox_mm": [
+        -1143.0,
+        -558.8,
+        1143.0,
+        558.8
+      ],
+      "nominal_product_geometry_mm": [
+        1828.8,
+        1117.6
+      ],
+      "actual_drawn_bbox_mm": [
+        2286.0,
+        1117.6
+      ],
+      "base_point_convention": "center",
+      "base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 18,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_DINING_TABLE_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_DINING_TABLE_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_DINING_CHAIR_PLAN",
+      "category": "dining_chair",
+      "block_name": "SRC_GS_DINING_CHAIR_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Dining Room/Chair.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Dining%20Room/Chair.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_DINING_CHAIR_PLAN.dxf",
+      "source_sha256": "13cf43b97018cb747378a3dc1d5f49b37e84d427824c9b0ec06ddd565b2359ff",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -228.22540057559206,
+        -508.0,
+        228.22540057559198,
+        -2.1316282072803006e-14
+      ],
+      "normalized_bbox_mm": [
+        -228.22540057559203,
+        -254.0,
+        228.22540057559203,
+        253.99999999999997
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        456.450801151184,
+        508.0
+      ],
+      "base_point_convention": "center",
+      "base_point_mm": [
+        -4.263256414560601e-14,
+        -254.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 13,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 5.684341886080802e-14,
+      "normalized_file": "normalized/SRC_GS_DINING_CHAIR_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_DINING_CHAIR_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_OFFICE_CHAIR_PLAN",
+      "category": "office_chair",
+      "block_name": "SRC_GS_OFFICE_CHAIR_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Office/Chair.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Office/Chair.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_OFFICE_CHAIR_PLAN.dxf",
+      "source_sha256": "62ec0f6d70c87597bc40648c2997069a76ae7b1aa7d6f17173577ad17598c92d",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -285.6740339880724,
+        -508.0,
+        285.6740339880724,
+        1.128640008118964e-07
+      ],
+      "normalized_bbox_mm": [
+        -285.6740339880724,
+        -254.000000056432,
+        285.6740339880724,
+        254.00000005643201
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        571.3480679761448,
+        508.000000112864
+      ],
+      "base_point_convention": "center",
+      "base_point_mm": [
+        0.0,
+        -253.999999943568
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 32,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_OFFICE_CHAIR_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_OFFICE_CHAIR_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_DESK_PLAN",
+      "category": "desk",
+      "block_name": "SRC_GS_DESK_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Office/Desk-60x30.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Office/Desk-60x30.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_DESK_PLAN.dxf",
+      "source_sha256": "eb036656fab8e9baaf2c963a01e6738186a33f9ec13c3468a28be461853c9e57",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -762.0,
+        -762.0,
+        762.0,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        -762.0,
+        -381.0,
+        762.0,
+        381.0
+      ],
+      "nominal_product_geometry_mm": [
+        1524.0,
+        762.0
+      ],
+      "actual_drawn_bbox_mm": [
+        1524.0,
+        762.0
+      ],
+      "base_point_convention": "center",
+      "base_point_mm": [
+        0.0,
+        -381.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 4,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_DESK_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_DESK_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_WC_PLAN",
+      "category": "wc",
+      "block_name": "SRC_GS_WC_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Fixtures/Bathroom/Toilet.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Fixtures/Bathroom/Toilet.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_WC_PLAN.dxf",
+      "source_sha256": "0082a9c214d4d55f09b3936ce4361234a7dfae1fb05d05190b181739d78c036e",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -228.6,
+        -711.2001227426085,
+        228.6,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        -228.6,
+        -711.2001227426085,
+        228.6,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        457.2,
+        711.2001227426085
+      ],
+      "base_point_convention": "rear-center / wall-connection side",
+      "base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 14,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_WC_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_WC_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_SHOWER_PLAN",
+      "category": "shower",
+      "block_name": "SRC_GS_SHOWER_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Fixtures/Bathroom/ShowerBase-36x36.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Fixtures/Bathroom/ShowerBase-36x36.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_SHOWER_PLAN.dxf",
+      "source_sha256": "c3b3e9042052c2b47c75610690cf4041811be05d7bb12a693be7ef7130d643ff",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -457.2,
+        -914.4,
+        457.2,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        -457.2,
+        -457.2,
+        457.2,
+        457.2
+      ],
+      "nominal_product_geometry_mm": [
+        914.4,
+        914.4
+      ],
+      "actual_drawn_bbox_mm": [
+        914.4,
+        914.4
+      ],
+      "base_point_convention": "center",
+      "base_point_mm": [
+        0.0,
+        -457.2
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 13,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_SHOWER_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_SHOWER_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_WASHER_PLAN",
+      "category": "washer",
+      "block_name": "SRC_GS_WASHER_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Appliances/Laundry/Washer.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Appliances/Laundry/Washer.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_WASHER_PLAN.dxf",
+      "source_sha256": "a6456ccccb1affeec705a03ee55412c23e758cc6cf65e05a19b3679ab60ea75f",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -381.0000000000001,
+        -762.0000000000001,
+        381.0,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        0.0,
+        -762.0000000000001,
+        762.0000000000001,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        762.0000000000001,
+        762.0000000000001
+      ],
+      "base_point_convention": "back-left",
+      "base_point_mm": [
+        -381.0000000000001,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 13,
+      "layer_count": 2,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_WASHER_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_WASHER_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_FRIDGE_PLAN",
+      "category": "fridge",
+      "block_name": "SRC_GS_FRIDGE_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Appliances/Kitchen/Refrigerator-SbS.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Appliances/Kitchen/Refrigerator-SbS.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_FRIDGE_PLAN.dxf",
+      "source_sha256": "2a797c8ab7bd6c7925db7ebbc8c41c62d6a2ec877243eab33e5fac8c10ea028e",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -419.09999999999997,
+        -685.8,
+        419.09999999999997,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        0.0,
+        -685.8,
+        838.1999999999999,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        838.1999999999999,
+        685.8
+      ],
+      "base_point_convention": "back-left",
+      "base_point_mm": [
+        -419.09999999999997,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 20,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_FRIDGE_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_FRIDGE_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_GS_WARDROBE_PLAN",
+      "category": "wardrobe",
+      "block_name": "SRC_GS_WARDROBE_PLAN",
+      "source_repo": "GSStnb/dxfBlocks",
+      "source_file": "Architecture/Furniture/Bedroom/Armoire.dxf",
+      "source_url": "https://raw.githubusercontent.com/GSStnb/dxfBlocks/master/Architecture/Furniture/Bedroom/Armoire.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_GS_WARDROBE_PLAN.dxf",
+      "source_sha256": "7347ff893a23eeac9826228207b4b4c87824dbf7e1806adafc50c09cc1c62687",
+      "source_units": "inch",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        -482.59999999999997,
+        -457.2,
+        482.59999999999997,
+        0.0
+      ],
+      "normalized_bbox_mm": [
+        0.0,
+        -457.2,
+        965.1999999999999,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        965.1999999999999,
+        457.2
+      ],
+      "base_point_convention": "back-left",
+      "base_point_mm": [
+        -482.59999999999997,
+        0.0
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 4,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_GS_WARDROBE_PLAN.dxf",
+      "preview_file": "previews/SRC_GS_WARDROBE_PLAN.png",
+      "license_gate": "CONFLICT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_UNC_BED_DOUBLE_PLAN",
+      "category": "bed",
+      "block_name": "SRC_UNC_BED_DOUBLE_PLAN",
+      "source_repo": "uncreatednet/DXF-library",
+      "source_file": "beds/cama casal handdrawn.dxf",
+      "source_url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/beds/cama%20casal%20handdrawn.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_UNC_BED_DOUBLE_PLAN.dxf",
+      "source_sha256": "0976fa7d93f9851037a58a4416467fc1618bbbbe19d7ecbbf4d3841b1c9e2df5",
+      "source_units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "source_bbox_mm": [
+        -115.7230114697856,
+        -67.09142992462371,
+        1786.709312214341,
+        2098.776507443307
+      ],
+      "normalized_bbox_mm": [
+        -951.2161618420632,
+        -2165.8679373679306,
+        951.2161618420633,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        1902.4323236841265,
+        2165.8679373679306
+      ],
+      "base_point_convention": "head-center",
+      "base_point_mm": [
+        835.4931503722777,
+        2098.776507443307
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 393,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 2.2737367544323206e-13,
+      "normalized_file": "normalized/SRC_UNC_BED_DOUBLE_PLAN.dxf",
+      "preview_file": "previews/SRC_UNC_BED_DOUBLE_PLAN.png",
+      "license_gate": "UNKNOWN",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_UNC_SOFA_3S_PLAN",
+      "category": "sofa",
+      "block_name": "SRC_UNC_SOFA_3S_PLAN",
+      "source_repo": "uncreatednet/DXF-library",
+      "source_file": "lounge/sofa 3 lugares.dxf",
+      "source_url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/lounge/sofa%203%20lugares.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_UNC_SOFA_3S_PLAN.dxf",
+      "source_sha256": "49aaa0d0d7e65830619e4729731b19117851953cce63779a19bcf16249cf78b8",
+      "source_units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "source_bbox_mm": [
+        15134.01701062513,
+        -13019.021707422131,
+        17334.01701062514,
+        -12219.02170742213
+      ],
+      "normalized_bbox_mm": [
+        -1100.0000000000055,
+        -800.0000000000018,
+        1100.0000000000036,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        2200.00000000001,
+        800.0000000000007
+      ],
+      "base_point_convention": "back-center",
+      "base_point_mm": [
+        16234.017010625135,
+        -12219.02170742213
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 56,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_UNC_SOFA_3S_PLAN.dxf",
+      "preview_file": "previews/SRC_UNC_SOFA_3S_PLAN.png",
+      "license_gate": "UNKNOWN",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_UNC_DINING_TABLE_PLAN",
+      "category": "dining_table",
+      "block_name": "SRC_UNC_DINING_TABLE_PLAN",
+      "source_repo": "uncreatednet/DXF-library",
+      "source_file": "tables/Mesa120x080_4.dxf",
+      "source_url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/tables/Mesa120x080_4.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_UNC_DINING_TABLE_PLAN.dxf",
+      "source_sha256": "d5ee28ef40c869c3d2c352df687fbf5f4b8d8185b11c56421e7c7c422fe54b66",
+      "source_units": "meter_inferred",
+      "unit_scale_to_mm": 1000.0,
+      "source_bbox_mm": [
+        -815.0517794189795,
+        0.0,
+        815.0517794189795,
+        1200.0000000000455
+      ],
+      "normalized_bbox_mm": [
+        -815.0517794189795,
+        -600.0000000000227,
+        815.0517794189795,
+        600.0000000000227
+      ],
+      "nominal_product_geometry_mm": [
+        1200.0,
+        800.0
+      ],
+      "actual_drawn_bbox_mm": [
+        1630.103558837959,
+        1200.0000000000455
+      ],
+      "base_point_convention": "center",
+      "base_point_mm": [
+        0.0,
+        600.0000000000227
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 261,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_UNC_DINING_TABLE_PLAN.dxf",
+      "preview_file": "previews/SRC_UNC_DINING_TABLE_PLAN.png",
+      "license_gate": "UNKNOWN",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_UNC_VANITY_600_PLAN",
+      "category": "vanity",
+      "block_name": "SRC_UNC_VANITY_600_PLAN",
+      "source_repo": "uncreatednet/DXF-library",
+      "source_file": "basins/Std600.dxf",
+      "source_url": "https://raw.githubusercontent.com/uncreatednet/DXF-library/master/basins/Std600.dxf",
+      "source_raw_file": "assets/cad_library/raw/SRC_UNC_VANITY_600_PLAN.dxf",
+      "source_sha256": "10a2780b2f58b8c8f1683e3a809f99d611230a8271792f3336d1d8948c527735",
+      "source_units": "mm_inferred",
+      "unit_scale_to_mm": 1.0,
+      "source_bbox_mm": [
+        2333.164029515109,
+        3409.339522167115,
+        2933.164029515109,
+        4009.339522167115
+      ],
+      "normalized_bbox_mm": [
+        -300.0,
+        -300.0,
+        300.0,
+        300.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        600.0,
+        600.0
+      ],
+      "base_point_convention": "center",
+      "base_point_mm": [
+        2633.164029515109,
+        3709.339522167115
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 61,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_UNC_VANITY_600_PLAN.dxf",
+      "preview_file": "previews/SRC_UNC_VANITY_600_PLAN.png",
+      "license_gate": "UNKNOWN",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_LENDRES_WC_PLAN",
+      "category": "wc",
+      "block_name": "SRC_LENDRES_WC_PLAN",
+      "source_repo": "Lendres/CAD-Support-Files",
+      "source_file": "Blocks/Architectural/TOILET.DWG",
+      "source_url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/TOILET.DWG",
+      "source_raw_file": "assets/cad_library/raw/SRC_LENDRES_WC_PLAN.dwg",
+      "source_sha256": "01e4625cb1afa3940771e0ad82897c776dd5919b194233cf582b4e57378f6ca1",
+      "source_units": "inch_inferred",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        25.4,
+        -266.7000000000058,
+        711.1999999999999,
+        266.7000000000015
+      ],
+      "normalized_bbox_mm": [
+        -342.9,
+        -533.4000000000074,
+        342.9,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        685.8,
+        533.4000000000074
+      ],
+      "base_point_convention": "rear-center / wall-connection side",
+      "base_point_mm": [
+        368.29999999999995,
+        266.7000000000015
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 14,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_LENDRES_WC_PLAN.dxf",
+      "preview_file": "previews/SRC_LENDRES_WC_PLAN.png",
+      "license_gate": "MIT",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SRC_LENDRES_BED_KING_PLAN",
+      "category": "bed",
+      "block_name": "SRC_LENDRES_BED_KING_PLAN",
+      "source_repo": "Lendres/CAD-Support-Files",
+      "source_file": "Blocks/Architectural/Bed - King.dwg",
+      "source_url": "https://raw.githubusercontent.com/Lendres/CAD-Support-Files/main/Blocks/Architectural/Bed%20-%20King.dwg",
+      "source_raw_file": "assets/cad_library/raw/SRC_LENDRES_BED_KING_PLAN.dwg",
+      "source_sha256": "9dc124cceefba4528f841a96fbfff2b2fdc48b2b258c99d6d0a46a9135e1919a",
+      "source_units": "inch_inferred",
+      "unit_scale_to_mm": 25.4,
+      "source_bbox_mm": [
+        0.0,
+        602.3999999999997,
+        2032.0000000000814,
+        2431.200000000073
+      ],
+      "normalized_bbox_mm": [
+        -1016.0000000000407,
+        -1828.8000000000734,
+        1016.0000000000407,
+        0.0
+      ],
+      "nominal_product_geometry_mm": null,
+      "actual_drawn_bbox_mm": [
+        2032.0000000000814,
+        1828.8000000000732
+      ],
+      "base_point_convention": "head-center",
+      "base_point_mm": [
+        1016.0000000000407,
+        2431.200000000073
+      ],
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 17,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "geometry_scaled": false,
+      "normalized_units": "mm",
+      "bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SRC_LENDRES_BED_KING_PLAN.dxf",
+      "preview_file": "previews/SRC_LENDRES_BED_KING_PLAN.png",
+      "license_gate": "MIT",
+      "qa_status": "PASS"
+    }
+  ]
+}
