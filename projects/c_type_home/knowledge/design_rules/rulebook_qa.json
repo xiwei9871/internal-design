@@ -1,0 +1,56 @@
+{
+  "version": "v0.1",
+  "status": "PASS",
+  "rule_count": 100,
+  "category_counts": {
+    "living": 10,
+    "dining": 10,
+    "kitchen": 10,
+    "bedroom": 10,
+    "bathroom": 10,
+    "study": 10,
+    "aging_in_place": 10,
+    "child_friendly": 10,
+    "circulation": 10,
+    "storage": 10
+  },
+  "gates": [
+    {
+      "gate": "A1-G1 source URL present",
+      "result": "PASS",
+      "detail": "100/100 rules have source_url"
+    },
+    {
+      "gate": "A1-G2 rule type valid",
+      "result": "PASS",
+      "detail": [
+        "BEST_PRACTICE",
+        "HARD_PROJECT_CONSTRAINT",
+        "PROJECT_PREFERENCE",
+        "TECHNICAL_GUIDELINE",
+        "TO_VERIFY_LOCAL_CODE"
+      ]
+    },
+    {
+      "gate": "A1-G3 code/guideline distinction valid",
+      "result": "PASS",
+      "detail": "TO_VERIFY_LOCAL_CODE entries requiring local confirmation; invalid=[]"
+    },
+    {
+      "gate": "A1-G4 no unverified foreign code presented as mandatory",
+      "result": "PASS",
+      "detail": "foreign mandatory candidates=[]"
+    },
+    {
+      "gate": "A1-G5 project rules separated",
+      "result": "PASS",
+      "detail": "principles=10; separate file exists"
+    },
+    {
+      "gate": "A1-G6 TO_VERIFY preserved",
+      "result": "PASS",
+      "detail": "preserved_items=7"
+    }
+  ],
+  "generated_date": "2026-09-26"
+}

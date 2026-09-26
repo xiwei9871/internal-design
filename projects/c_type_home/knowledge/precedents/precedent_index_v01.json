@@ -1,0 +1,2313 @@
+{
+  "version": "v0.1",
+  "collection_date": "2026-09-26",
+  "source_policy": "metadata_only_no_images",
+  "precedents": [
+    {
+      "precedent_id": "PREC-001",
+      "project_name": "Renovation of an Industrial Building into a Single Family House",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/505261/renovation-of-an-industrial-building-into-a-single-family-house-guim-costa-calsamiglia",
+      "country": null,
+      "year": null,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": true,
+      "tags": [
+        "adaptive-reuse",
+        "before-after",
+        "child-friendly",
+        "existing-structure",
+        "flexible-living",
+        "floor-plan",
+        "multigenerational",
+        "open-living-dining",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.925,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [
+        "PAT-LIV-01",
+        "PAT-LIV-02",
+        "PAT-LIV-03",
+        "PAT-LIV-05",
+        "PAT-BED-02",
+        "PAT-KIT-01",
+        "PAT-CHD-01",
+        "PAT-STOR-02",
+        "PAT-REN-01"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-002",
+      "project_name": "Renovation of Joan Blanques apartment",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/962398/renovation-of-joan-blanques-apartment-allaround-lab",
+      "country": "Barcelona, Spain",
+      "year": 2021,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": true,
+      "tags": [
+        "before-after",
+        "clear-circulation",
+        "existing-structure",
+        "flexible-living",
+        "floor-plan",
+        "kitchen-adjacency",
+        "open-living-dining",
+        "renovation",
+        "visual-connection"
+      ],
+      "relevance_to_c_type": 0.925,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [
+        "PAT-LIV-01",
+        "PAT-LIV-02",
+        "PAT-LIV-03",
+        "PAT-LIV-04",
+        "PAT-LIV-05",
+        "PAT-LIV-06",
+        "PAT-CIR-01",
+        "PAT-BED-01",
+        "PAT-BED-02",
+        "PAT-KIT-01",
+        "PAT-KIT-02",
+        "PAT-AGE-02",
+        "PAT-CHD-01",
+        "PAT-STOR-01",
+        "PAT-STOR-02",
+        "PAT-REN-01"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-003",
+      "project_name": "Renovation of a Milan Laboratory to a Family Loft",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/981991/renovation-of-a-milan-laboratory-to-a-family-loft-tomoarchitects",
+      "country": "Milan, Italy",
+      "year": 2016,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": true,
+      "tags": [
+        "adaptive-reuse",
+        "before-after",
+        "child-friendly",
+        "existing-structure",
+        "family-loft",
+        "flexible-living",
+        "floor-plan",
+        "kitchen-adjacency",
+        "multigenerational",
+        "open-living-dining",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.925,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [
+        "PAT-LIV-01",
+        "PAT-LIV-02",
+        "PAT-LIV-03",
+        "PAT-LIV-04",
+        "PAT-LIV-05",
+        "PAT-BED-02",
+        "PAT-KIT-01",
+        "PAT-KIT-02",
+        "PAT-CHD-01",
+        "PAT-STOR-02",
+        "PAT-REN-01"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-004",
+      "project_name": "Residential House Renovation",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/989061/residential-house-renovation-frohlich-gassner-architekten",
+      "country": "Diedorf, Germany",
+      "year": 2022,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": true,
+      "tags": [
+        "accessible-bathroom",
+        "aging-in-place",
+        "before-after",
+        "elderly-bedroom",
+        "existing-structure",
+        "flexible-living",
+        "floor-plan",
+        "renovation",
+        "step-free-route",
+        "wet-dry-zoning"
+      ],
+      "relevance_to_c_type": 0.925,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [
+        "PAT-LIV-02",
+        "PAT-LIV-03",
+        "PAT-LIV-05",
+        "PAT-CIR-01",
+        "PAT-BED-01",
+        "PAT-BED-02",
+        "PAT-BTH-01",
+        "PAT-BTH-02",
+        "PAT-KIT-01",
+        "PAT-AGE-01",
+        "PAT-AGE-02",
+        "PAT-STOR-02",
+        "PAT-REN-01"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-005",
+      "project_name": "Residential Extension MF Pavilion",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/920031/residential-extension-mf-pavilion-guillermo-tirado-gzz-architects",
+      "country": "San Pedro Garza García, Mexico",
+      "year": 2018,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "child-friendly",
+        "existing-structure",
+        "flexible-living",
+        "floor-plan",
+        "multigenerational",
+        "open-living-dining",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.9062,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.875
+      },
+      "design_patterns": [
+        "PAT-LIV-01",
+        "PAT-LIV-02",
+        "PAT-LIV-03",
+        "PAT-LIV-05",
+        "PAT-BED-02",
+        "PAT-KIT-01",
+        "PAT-CHD-01",
+        "PAT-STOR-02",
+        "PAT-REN-01"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-006",
+      "project_name": "Residential Complex Le Lorrain",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/181207/residential-complex-le-lorrain-mdw-architecture",
+      "country": "Belgium",
+      "year": 2011,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": true,
+      "tags": [
+        "adaptive-reuse",
+        "before-after",
+        "clear-circulation",
+        "community-living",
+        "existing-structure",
+        "flexible-living",
+        "floor-plan",
+        "renovation",
+        "visual-connection"
+      ],
+      "relevance_to_c_type": 0.835,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [
+        "PAT-LIV-01",
+        "PAT-LIV-06",
+        "PAT-CIR-01",
+        "PAT-BED-01",
+        "PAT-KIT-02",
+        "PAT-AGE-02",
+        "PAT-CHD-01",
+        "PAT-STOR-01"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-007",
+      "project_name": "Apartment Renovation in Girona",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/950512/apartment-renovation-in-girona-hiha-studio",
+      "country": "Girona, Spain",
+      "year": 2020,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": true,
+      "tags": [
+        "adaptive-reuse",
+        "before-after",
+        "existing-structure",
+        "flexible-living",
+        "floor-plan",
+        "kitchen-adjacency",
+        "renovation",
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.835,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [
+        "PAT-LIV-04",
+        "PAT-KIT-02"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-008",
+      "project_name": "Renovation of a Mill and Hayloft for Residential use",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/983855/renovation-of-a-mill-and-hayloft-for-residential-use-funcionable-arquitectura",
+      "country": "Oropesa, Spain",
+      "year": 2021,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": true,
+      "tags": [
+        "adaptive-reuse",
+        "before-after",
+        "community-living",
+        "existing-structure",
+        "family-loft",
+        "flexible-living",
+        "floor-plan",
+        "kitchen-adjacency",
+        "open-living-dining",
+        "renovation",
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.835,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [
+        "PAT-LIV-04",
+        "PAT-KIT-02"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-009",
+      "project_name": "Residential Care Home Andritz",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/787044/residential-care-home-andritz-dietger-wissounig-architekten",
+      "country": "Graz, Austria",
+      "year": 2015,
+      "project_type": "care_or_aging_residential",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "accessible-bathroom",
+        "aging-in-place",
+        "care-housing",
+        "elderly-bedroom",
+        "floor-plan",
+        "multigenerational",
+        "step-free-route"
+      ],
+      "relevance_to_c_type": 0.8163,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.875
+      },
+      "design_patterns": [
+        "PAT-CIR-01",
+        "PAT-BED-01",
+        "PAT-BTH-01",
+        "PAT-BTH-02",
+        "PAT-AGE-01",
+        "PAT-AGE-02"
+      ],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-010",
+      "project_name": "Apartment Renovation in Singapore",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/954840/apartment-renovation-in-singapore-studio-wills-plus-architects",
+      "country": "Singapore",
+      "year": 2018,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": true,
+      "tags": [
+        "before-after",
+        "existing-structure",
+        "flexible-living",
+        "floor-plan",
+        "kitchen-adjacency",
+        "renovation",
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.8163,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.875
+      },
+      "design_patterns": [
+        "PAT-LIV-04"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-011",
+      "project_name": "Renovation and Extension of a Heritage-protected Residence Building",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/958661/renovation-and-extension-of-a-heritage-protected-residence-building-amjgs-architektur",
+      "country": "Zurich, Switzerland",
+      "year": 2020,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": true,
+      "tags": [
+        "adaptive-reuse",
+        "before-after",
+        "existing-structure",
+        "flexible-living",
+        "floor-plan",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.7975,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.75
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-012",
+      "project_name": "Residential and Studio Building at the Former Berlin Flower Market (IBeB)",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/941785/residential-and-studio-building-at-the-former-berlin-flower-market-ibeb-ifau-plus-heide-and-von-beckerath",
+      "country": "Berlin, Germany",
+      "year": 2018,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "adaptive-reuse",
+        "existing-structure",
+        "floor-plan",
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.76,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.5
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-013",
+      "project_name": "Apartment and Courtyard in Barcelona",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/629964/apartment-and-courtyard-in-barcelona-cavaa-arquitectes",
+      "country": null,
+      "year": null,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "balcony-connected",
+        "courtyard",
+        "daylight",
+        "floor-plan",
+        "kitchen-adjacency",
+        "split-level",
+        "split-level-courtyard",
+        "visual-connection"
+      ],
+      "relevance_to_c_type": 0.745,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [
+        "PAT-LIV-06",
+        "PAT-AGE-01",
+        "PAT-AGE-02"
+      ],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-014",
+      "project_name": "House Around a Split Level Courtyard",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/780835/house-around-a-split-level-courtyard-rubber-soul",
+      "country": "Moira, India",
+      "year": 2015,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "balcony-connected",
+        "courtyard",
+        "daylight",
+        "floor-plan",
+        "split-level",
+        "split-level-courtyard",
+        "visual-connection"
+      ],
+      "relevance_to_c_type": 0.7262,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.875
+      },
+      "design_patterns": [
+        "PAT-LIV-06",
+        "PAT-AGE-01"
+      ],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-015",
+      "project_name": "Apartment Renovation in Sants",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/985123/apartment-renovation-in-sants-parramon-plus-tahull-arquitectes",
+      "country": "Barcelona, Spain",
+      "year": 2021,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "before-after",
+        "child-friendly",
+        "existing-structure",
+        "flexible-living",
+        "kitchen-adjacency",
+        "multigenerational",
+        "open-living-dining",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.725,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-016",
+      "project_name": "Residential Building Gatternweg",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/924189/residential-building-gatternweg-felippi-wyssen-architects",
+      "country": "Riehen, Switzerland",
+      "year": 2019,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "existing-structure",
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.7225,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.25
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-017",
+      "project_name": "Renovation of Sofia's apartment",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/1029144/renovation-of-sofias-apartment-pedro-ignacio-yanez-plus-carolina-recondo",
+      "country": "Argentina",
+      "year": 2024,
+      "project_type": "apartment_or_loft",
+      "area_m2": 70.0,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "before-after",
+        "child-friendly",
+        "existing-structure",
+        "flexible-living",
+        "kitchen-adjacency",
+        "multigenerational",
+        "open-living-dining",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.72,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.4666666666666667,
+        "household_similarity": 1.0,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-018",
+      "project_name": "Housing Apartment at Badade Nagar",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/992589/housing-apartment-at-badade-nagar-studio-frozen-music",
+      "country": "Nashik, India",
+      "year": 2022,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "community-living",
+        "floor-plan",
+        "kitchen-adjacency",
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.67,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.5
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-019",
+      "project_name": "Renovation Of A Village House",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/93634/renovation-of-a-village-house-l%25e2%2580%2599autre-fabrique-architectures",
+      "country": "Saint-Hilaire-du-Rosier, France",
+      "year": 2010,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "before-after",
+        "child-friendly",
+        "existing-structure",
+        "flexible-living",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.6688,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.625
+      },
+      "design_patterns": [
+        "PAT-LIV-07"
+      ],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-020",
+      "project_name": "Residential Building in Bucharest",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/212507/residential-building-in-bucharest-synthesis-architecture",
+      "country": "Bucharest, Romania",
+      "year": 2011,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "community-living",
+        "floor-plan",
+        "small-footprint"
+      ],
+      "relevance_to_c_type": 0.6512,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.375
+      },
+      "design_patterns": [
+        "PAT-LIV-07"
+      ],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-021",
+      "project_name": "Residential Building DMT",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/543390/residential-building-dmt-tp3-architekten",
+      "country": "Sankt Florian, Austria",
+      "year": 2014,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "accessible-bathroom",
+        "floor-plan",
+        "step-free-route"
+      ],
+      "relevance_to_c_type": 0.6512,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.375
+      },
+      "design_patterns": [
+        "PAT-BTH-01",
+        "PAT-BTH-02",
+        "PAT-AGE-01"
+      ],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-022",
+      "project_name": "Residential Quarter FRML",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/943799/residential-quarter-frml-ms-plus-architekten-bucker-holling-schwager-partgmbb",
+      "country": "Münster, Germany",
+      "year": 2019,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "community-living",
+        "floor-plan",
+        "kitchen-adjacency"
+      ],
+      "relevance_to_c_type": 0.6512,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.375
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-023",
+      "project_name": "Residential Building Gartenstrasse",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/951694/residential-building-gartenstrasse-durren-architekten",
+      "country": "Sarnen, Switzerland",
+      "year": 2019,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan",
+        "kitchen-adjacency",
+        "small-footprint"
+      ],
+      "relevance_to_c_type": 0.6512,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.375
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-024",
+      "project_name": "Residential Barn",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/1000274/residential-barn-be-architektur",
+      "country": "Zürich, Switzerland",
+      "year": 2022,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "adaptive-reuse",
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6325,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.25
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-025",
+      "project_name": "Residential complex Ciekurkrasti",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/606777/residential-complex-ciekurkrasti-ab3d",
+      "country": "Ādaži, Latvia",
+      "year": 2014,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "community-living",
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6325,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.25
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-026",
+      "project_name": "Residential Building in Via Bellincione",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/780594/residential-building-in-via-bellincione-dap-studio",
+      "country": "Milan, Italy",
+      "year": 2014,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan",
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.6325,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.25
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-027",
+      "project_name": "Residential Passages in Barrio las Cruces",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/922447/residential-passages-in-barrio-las-cruces-el-taller-de-s",
+      "country": "Santa Fé, Colombia",
+      "year": 2018,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "clear-circulation",
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6325,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.25
+      },
+      "design_patterns": [
+        "PAT-CIR-01",
+        "PAT-BED-01",
+        "PAT-STOR-01"
+      ],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-028",
+      "project_name": "Apartments at Straumehagen",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/930943/apartments-at-straumehagen-3rw-arkitekter",
+      "country": "Straume, Norway",
+      "year": 2017,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan",
+        "kitchen-adjacency"
+      ],
+      "relevance_to_c_type": 0.6325,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.25
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-029",
+      "project_name": "Residential Complex Schmollerplatz",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/942983/residential-complex-schmollerplatz-zanderroth-architekten",
+      "country": "Berlin, Germany",
+      "year": 2019,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "community-living",
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6325,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.25
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-030",
+      "project_name": "Housing for the Elderly: Examples of Independent and Community Living | ArchDaily",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/941691/housing-for-the-elderly-examples-of-independence-and-community-living",
+      "country": null,
+      "year": null,
+      "project_type": "care_or_aging_residential",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "accessible-bathroom",
+        "aging-in-place",
+        "care-housing",
+        "community-living",
+        "elderly-bedroom",
+        "multigenerational",
+        "step-free-route"
+      ],
+      "relevance_to_c_type": 0.6163,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 0.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.875
+      },
+      "design_patterns": [
+        "PAT-BTH-01",
+        "PAT-BTH-02"
+      ],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-031",
+      "project_name": "Renovation of 1960s Apartment",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/1029431/renovation-of-1960s-apartment-studio-jakob-sellaoui",
+      "country": "Vienna, Austria",
+      "year": 2025,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "before-after",
+        "community-living",
+        "existing-structure",
+        "flexible-living",
+        "kitchen-adjacency",
+        "renovation",
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.6162,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.875
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-032",
+      "project_name": "Residential Park Lozen",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/1017957/residential-park-lozen-ipa-architecture-and-more",
+      "country": "Sofia, Bulgaria",
+      "year": 2023,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-033",
+      "project_name": "Residense in Vilnius",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/1030077/residential-house-in-vilnius-architectural-bureau-gnatkevicius-and-partners",
+      "country": "Vilnius, Lithuania",
+      "year": 2024,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-034",
+      "project_name": "Residential Building In Slovenia",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/111496/residential-building-in-slovenia-ravnikar-potokar-arhitekturni",
+      "country": "Nova Gorica, Slovenia",
+      "year": 2010,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-035",
+      "project_name": "Residential Township in South India",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/138729/residential-township-in-south-india-v-i-d-a",
+      "country": null,
+      "year": null,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-036",
+      "project_name": "Residential Center Cugat Natura | ArchDaily",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/250024/residential-center-cugat-natura-jf-arquitectes",
+      "country": null,
+      "year": null,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-037",
+      "project_name": "Residential St. Josephhof",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/421900/residential-st-josephhof-mecanoo",
+      "country": "Nijmegen, The Netherlands",
+      "year": 2008,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-038",
+      "project_name": "Residential Building In Cureglia",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/429907/residential-building-in-cureglia-stefano-moor-bonetti-e-bonetti-architetti",
+      "country": "Cureglia, Switzerland",
+      "year": 2009,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-039",
+      "project_name": "Residential Design Innovation in Downtown Kirkland",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/623306/residential-design-innovation-in-downtown-kirkland-medici-architects",
+      "country": null,
+      "year": null,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-040",
+      "project_name": "Residential Building at Heiligenstock",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/636161/residential-building-at-heiligenstock-christ-christ-associated-architects",
+      "country": "Wiesbaden, Germany",
+      "year": 2014,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-041",
+      "project_name": "Residential Building in St Sulpice",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/874702/residential-building-in-st-sulpice-lacroix-chessex",
+      "country": "Saint Sulpice, Switzerland",
+      "year": 2016,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-042",
+      "project_name": "Residential Tower 28",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/920272/residential-tower-28-hill-west-architects",
+      "country": "Queens, United States",
+      "year": 2017,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-043",
+      "project_name": "Residential Building in Galileo",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/923969/residential-building-in-galileo-pepe-gascon-arquitectura",
+      "country": "Terrassa, Spain",
+      "year": 2019,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-044",
+      "project_name": "Residential Block in Paupys",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/946813/residential-block-in-paupys-architekturos-linija",
+      "country": "Vilnius, Lithuania",
+      "year": 2020,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-045",
+      "project_name": "Residential Houses in the Pinewood Near Vilnius",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/956969/residential-houses-in-the-pinewood-near-vilnius-paleko-architektu-studija",
+      "country": "Vilna, Lithuania",
+      "year": 2019,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-046",
+      "project_name": "Residential Building Canonica",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/957514/residential-building-canonica-deamicisarchitetti",
+      "country": "Milan, Italy",
+      "year": 2019,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-047",
+      "project_name": "Residential Building in Sadovye Kvartaly",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/963140/residential-building-in-sadovye-kvartaly-speech",
+      "country": "Moskva, Russia",
+      "year": 2020,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": true,
+      "before_after_plan_available": false,
+      "tags": [
+        "floor-plan"
+      ],
+      "relevance_to_c_type": 0.6138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 1.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "A floor-plan marker is available in the metadata snapshot; inspect the original page before borrowing a dimension."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-048",
+      "project_name": "Apartment Renovation for a Musician in Madrid",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/938642/apartment-renovation-for-a-musician-in-madrid-idearch-studio",
+      "country": "Madrid, Spain",
+      "year": 2018,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "before-after",
+        "existing-structure",
+        "flexible-living",
+        "kitchen-adjacency",
+        "renovation",
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.5975,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.75
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-049",
+      "project_name": "Housing renovation in Sant Antoni",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/989294/housing-renovation-in-sant-antoni-parramon-plus-tahull-arquitectes",
+      "country": "Barcelona, Spain",
+      "year": 2022,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "before-after",
+        "community-living",
+        "existing-structure",
+        "flexible-living",
+        "renovation",
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.5975,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.75
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-050",
+      "project_name": "Housing in Copenhagen: A Commitment to Equality and Community Living | ArchDaily",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/994390/housing-in-copenhagen-a-commitment-to-equality-and-community-living",
+      "country": null,
+      "year": null,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "clear-circulation",
+        "community-living",
+        "multigenerational",
+        "open-living-dining",
+        "visual-connection"
+      ],
+      "relevance_to_c_type": 0.5788,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 1.0,
+        "floor_plan": 0.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.625
+      },
+      "design_patterns": [
+        "PAT-LIV-06",
+        "PAT-STOR-01"
+      ],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-051",
+      "project_name": "Residential Chalet Conversion into Administrative Building",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/1031774/residential-chalet-conversion-into-administrative-building-madeleine-architectes",
+      "country": "Val-d'Illiez, Switzerland",
+      "year": 2025,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "adaptive-reuse",
+        "before-after",
+        "existing-structure",
+        "flexible-living",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.5787,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.625
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-052",
+      "project_name": "Apartment Renovation in Mooca Neighbourhood",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/944759/apartment-renovation-in-mooca-neighbourhood-firma-plus-oitentaedois",
+      "country": "Parque da Mooca, Brazil",
+      "year": 2018,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "before-after",
+        "existing-structure",
+        "flexible-living",
+        "kitchen-adjacency",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.5787,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.625
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-053",
+      "project_name": "Renovation of an Apartment in Walden-7 Building",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/987456/renovation-of-an-apartment-in-walden-7-building-bonell-plus-doriga",
+      "country": "Sant Just Desvern, Spain",
+      "year": 2019,
+      "project_type": "apartment_or_loft",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "before-after",
+        "existing-structure",
+        "flexible-living",
+        "kitchen-adjacency",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.5787,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.625
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-054",
+      "project_name": "Renovation of a Village House",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/938451/renovation-of-a-village-house-unparelldarquitectes",
+      "country": null,
+      "year": null,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "before-after",
+        "existing-structure",
+        "flexible-living",
+        "renovation"
+      ],
+      "relevance_to_c_type": 0.56,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 0.5
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-055",
+      "project_name": "Renovation of the Jiakaxia Ancient Courtyard",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/1031087/renovation-of-the-jiakaxia-ancient-courtyard-hypersity-architects",
+      "country": "Lhasa, China",
+      "year": 2024,
+      "project_type": "residential_reference",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "balcony-connected",
+        "before-after",
+        "courtyard",
+        "daylight",
+        "existing-structure",
+        "flexible-living",
+        "renovation",
+        "split-level",
+        "split-level-courtyard",
+        "visual-connection"
+      ],
+      "relevance_to_c_type": 0.515,
+      "relevance_components": {
+        "space_type_match": 0.4,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 1.0,
+        "relevant_tags": 1.0
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Review how existing structure or a renovation brief is translated into a new spatial relationship.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-056",
+      "project_name": "4 Residential Courtyards That Invite Nature Inside Through Glass | ArchDaily",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/999675/residential-courtyards-that-invite-nature-inside-through-glass",
+      "country": null,
+      "year": null,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "balcony-connected",
+        "courtyard",
+        "daylight",
+        "split-level",
+        "split-level-courtyard",
+        "visual-connection"
+      ],
+      "relevance_to_c_type": 0.5075,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.75
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-057",
+      "project_name": "Residential and Nursing Home Simmering",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/268705/residential-and-nursing-home-simmering-josef-weichenbrger-architects-gzs",
+      "country": "Vienna, Austria",
+      "year": 2005,
+      "project_type": "care_or_aging_residential",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "accessible-bathroom",
+        "aging-in-place",
+        "care-housing",
+        "elderly-bedroom"
+      ],
+      "relevance_to_c_type": 0.47,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.5
+      },
+      "design_patterns": [
+        "PAT-BTH-01",
+        "PAT-BTH-02"
+      ],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-058",
+      "project_name": "Residential Building in Montesilvano",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/126191/residential-building-in-montesilvano-studio-zero85",
+      "country": "Montesilvano, Italy",
+      "year": 2009,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.4138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-059",
+      "project_name": "Residential Building in Cagliari",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/82389/residential-building-in-cagliari-dante-o-benini-partners-architects",
+      "country": "Cagliari, Italy",
+      "year": 2010,
+      "project_type": "residential_building",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "community-living"
+      ],
+      "relevance_to_c_type": 0.4138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    },
+    {
+      "precedent_id": "PREC-060",
+      "project_name": "House in Los Angeles 1 Art Studio and Residential Compound",
+      "source": "ArchDaily",
+      "url": "https://www.archdaily.com/949565/house-in-los-angeles-1-art-studio-and-residential-compound-the-ladg",
+      "country": "Los Angeles, United States",
+      "year": 2020,
+      "project_type": "house_or_residence",
+      "area_m2": null,
+      "floor_plan_available": false,
+      "before_after_plan_available": false,
+      "tags": [
+        "study-guest-hybrid"
+      ],
+      "relevance_to_c_type": 0.4138,
+      "relevance_components": {
+        "space_type_match": 1.0,
+        "area_similarity": 0.5,
+        "household_similarity": 0.4,
+        "floor_plan": 0.0,
+        "renovation_constraints": 0.4,
+        "relevant_tags": 0.125
+      },
+      "design_patterns": [],
+      "lessons": [
+        "Use the project as a spatial reference only after checking its plan, household and jurisdictional differences.",
+        "No verified floor-plan marker was found in the metadata snapshot; treat this as a strategy reference, not a measured precedent."
+      ],
+      "not_applicable": [
+        "Country, code and household assumptions differ from the C-type brief; this is not a compliance precedent.",
+        "No floor-plan marker in the metadata snapshot; visual verification is required."
+      ],
+      "metadata_basis": "title, description, floor-plan marker and deterministic tag rules; no article body or image copied"
+    }
+  ]
+}

@@ -1,0 +1,2984 @@
+{
+  "version": "v0.1",
+  "jurisdiction_status": "UNCONFIRMED",
+  "rules": [
+    {
+      "rule_id": "LIV-CIRC-001",
+      "category": "living",
+      "topic": "primary route",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep the main living route continuously clear for normal walking and assisted movement.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1100,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "entry_to_living",
+        "living_to_stair"
+      ],
+      "applicable_rooms": [
+        "living"
+      ],
+      "tags": [
+        "clear-circulation",
+        "aging-in-place"
+      ],
+      "source_id": "SRC-AARP-HOMEFIT",
+      "source_url": "https://www.aarp.org/livable-communities/info-2020/homefit-guide.html",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "LIV-CIRC-002",
+      "category": "living",
+      "topic": "secondary route",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep a secondary route around the seating group where the plan has more than one approach.",
+      "recommended_min_mm": 750,
+      "preferred_mm": 900,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "two_sided_access"
+      ],
+      "applicable_rooms": [
+        "living"
+      ],
+      "tags": [
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "LIV-FLEX-003",
+      "category": "living",
+      "topic": "activity core",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Reserve a central, furniture-light activity core for children, conversation and temporary setups.",
+      "recommended_min_mm": 2500,
+      "preferred_mm": 3000,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_activity",
+        "flexible_living"
+      ],
+      "applicable_rooms": [
+        "living"
+      ],
+      "tags": [
+        "child-friendly",
+        "furniture-free-core",
+        "flexible-living"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "LIV-FLEX-004",
+      "category": "living",
+      "topic": "movable furniture",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "MEDIUM",
+      "statement": "Use movable tables and seats for flexible living instead of fixing every object in the activity core.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": 900,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "projector_living",
+        "child_activity"
+      ],
+      "applicable_rooms": [
+        "living"
+      ],
+      "tags": [
+        "projector-media",
+        "child-friendly",
+        "flexible-living"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "LIV-MEDIA-005",
+      "category": "living",
+      "topic": "projector sightline",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Check projector or laser-TV throw, sightline and glare against the selected device before fixing the media wall.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "projector_or_laser_tv"
+      ],
+      "applicable_rooms": [
+        "living"
+      ],
+      "tags": [
+        "projector-media",
+        "non-tv-centric"
+      ],
+      "source_id": "SRC-ENERGY-STAR",
+      "source_url": "https://www.energystar.gov/products/appliances",
+      "source_type": "manufacturer_and_program_reference",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": "Device throw distance is product-specific; verify the selected model."
+    },
+    {
+      "rule_id": "LIV-MEDIA-006",
+      "category": "living",
+      "topic": "media wall and glazing",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Keep media equipment and its viewing axis outside the opening swing and clear route to a balcony or window.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "balcony_connected"
+      ],
+      "applicable_rooms": [
+        "living"
+      ],
+      "tags": [
+        "projector-media",
+        "balcony-connected",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "LIV-DIST-007",
+      "category": "living",
+      "topic": "viewing distance",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Set viewing distance from the selected image size and device specification, then test the furniture arrangement at full scale.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "projector_or_laser_tv"
+      ],
+      "applicable_rooms": [
+        "living"
+      ],
+      "tags": [
+        "projector-media"
+      ],
+      "source_id": "SRC-ENERGY-STAR",
+      "source_url": "https://www.energystar.gov/products/appliances",
+      "source_type": "manufacturer_and_program_reference",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": "No universal screen distance is assumed."
+    },
+    {
+      "rule_id": "LIV-EDGE-008",
+      "category": "living",
+      "topic": "edge-loaded furniture",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Place large fixed furniture along room edges so the center can support more than one use.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "flexible_living"
+      ],
+      "applicable_rooms": [
+        "living"
+      ],
+      "tags": [
+        "edge-loaded-furniture",
+        "furniture-free-core"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "LIV-SOC-009",
+      "category": "living",
+      "topic": "social seating",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Arrange at least two seats to support face-to-face conversation without crossing the primary route.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "conversation"
+      ],
+      "applicable_rooms": [
+        "living"
+      ],
+      "tags": [
+        "clear-circulation",
+        "flexible-living"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "LIV-BAL-010",
+      "category": "living",
+      "topic": "balcony connection",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep the living-to-balcony route continuous and free of fixed furniture; treat a future enclosure as a separate option.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1100,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "open_balcony"
+      ],
+      "applicable_rooms": [
+        "living",
+        "balcony"
+      ],
+      "tags": [
+        "balcony-connected",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "source_type": "project_brief",
+      "jurisdiction": "project",
+      "gateable": true,
+      "project_override": null,
+      "notes": "Current north balcony is open; future enclosure remains proposed."
+    },
+    {
+      "rule_id": "DIN-TBL-001",
+      "category": "dining",
+      "topic": "table width",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Use a table width that supports place settings without reducing the circulation strip.",
+      "recommended_min_mm": 750,
+      "preferred_mm": 900,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "daily_dining"
+      ],
+      "applicable_rooms": [
+        "dining"
+      ],
+      "tags": [
+        "dining-kitchen-extension"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "DIN-TBL-002",
+      "category": "dining",
+      "topic": "four-seat table",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "A compact four-seat table is commonly planned around a 1200 by 750 mm footprint before chair clearances.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": [
+        1200,
+        750
+      ],
+      "applicable_when": [
+        "four_seats"
+      ],
+      "applicable_rooms": [
+        "dining"
+      ],
+      "tags": [
+        "dual-mode-dining"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "DIN-TBL-003",
+      "category": "dining",
+      "topic": "six-seat table",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "A six-seat table is commonly planned around a 1500 by 800 mm footprint before chair clearances.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": [
+        1500,
+        800
+      ],
+      "applicable_when": [
+        "six_seats"
+      ],
+      "applicable_rooms": [
+        "dining"
+      ],
+      "tags": [
+        "dual-mode-dining"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "DIN-TBL-004",
+      "category": "dining",
+      "topic": "eight-seat table",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "LOW",
+      "statement": "An eight-seat table is commonly planned around a 1800 by 900 mm footprint before chair clearances.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": [
+        1800,
+        900
+      ],
+      "applicable_when": [
+        "eight_seats"
+      ],
+      "applicable_rooms": [
+        "dining"
+      ],
+      "tags": [
+        "dual-mode-dining"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "DIN-CIR-005",
+      "category": "dining",
+      "topic": "chair pull-out",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Allow room to pull a dining chair out and sit without blocking the adjacent path.",
+      "recommended_min_mm": 600,
+      "preferred_mm": 750,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "seated_use"
+      ],
+      "applicable_rooms": [
+        "dining"
+      ],
+      "tags": [
+        "clear-circulation",
+        "dual-mode-dining"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "DIN-CIR-006",
+      "category": "dining",
+      "topic": "passage behind diner",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Where people pass behind a seated diner, retain a clear passage beyond the chair pull-out zone.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1000,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "through_route_behind_seats"
+      ],
+      "applicable_rooms": [
+        "dining"
+      ],
+      "tags": [
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "DIN-CIR-007",
+      "category": "dining",
+      "topic": "kitchen relationship",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Keep a direct, unobstructed path between dining and kitchen work zones.",
+      "recommended_min_mm": 1000,
+      "preferred_mm": 1100,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "open_plan"
+      ],
+      "applicable_rooms": [
+        "dining",
+        "kitchen"
+      ],
+      "tags": [
+        "dining-kitchen-extension",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "DIN-CIR-008",
+      "category": "dining",
+      "topic": "door swing conflict",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Do not let a door swing overlap the table, chair pull-out or the only dining route.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "near_door"
+      ],
+      "applicable_rooms": [
+        "dining"
+      ],
+      "tags": [
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "DIN-FAM-009",
+      "category": "dining",
+      "topic": "child sightline",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Place the everyday child seat where an adult can see the activity area and kitchen without turning through a door swing.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_present"
+      ],
+      "applicable_rooms": [
+        "dining",
+        "living"
+      ],
+      "tags": [
+        "child-friendly",
+        "visual-connection"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "DIN-FLEX-010",
+      "category": "dining",
+      "topic": "flexible seating side",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "MEDIUM",
+      "statement": "Keep at least one long side of the table adaptable for a child seat, wheelchair approach or temporary extension.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "flexible_household"
+      ],
+      "applicable_rooms": [
+        "dining"
+      ],
+      "tags": [
+        "child-friendly",
+        "aging-in-place",
+        "dual-mode-dining"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-CIR-001",
+      "category": "kitchen",
+      "topic": "single-cook aisle",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep the primary kitchen work aisle clear of doors, stools and loose furniture.",
+      "recommended_min_mm": 1000,
+      "preferred_mm": 1100,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "single_cook"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "kitchen-adjacency",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-CIR-002",
+      "category": "kitchen",
+      "topic": "preferred work aisle",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Prefer a wider work aisle when two people may pass or work at the same time.",
+      "recommended_min_mm": 1100,
+      "preferred_mm": 1200,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "two_cooks"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "kitchen-adjacency",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-CIR-003",
+      "category": "kitchen",
+      "topic": "two-cook aisle",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "For opposing work runs, check appliance doors and two-person movement at the same time.",
+      "recommended_min_mm": 1200,
+      "preferred_mm": 1300,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "opposing_runs"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "kitchen-adjacency"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-WRK-004",
+      "category": "kitchen",
+      "topic": "prep run",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Provide a usable continuous prep run beside the sink or cooking zone.",
+      "recommended_min_mm": 600,
+      "preferred_mm": 900,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "food_prep"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "kitchen-adjacency"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-WRK-005",
+      "category": "kitchen",
+      "topic": "sink landing",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Keep a landing area beside the sink for dishes and transfer tasks.",
+      "recommended_min_mm": 600,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "sink"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "kitchen-adjacency"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-WRK-006",
+      "category": "kitchen",
+      "topic": "refrigerator landing",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Provide a landing surface at the refrigerator opening side.",
+      "recommended_min_mm": 450,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "refrigerator"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "kitchen-adjacency"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-WRK-007",
+      "category": "kitchen",
+      "topic": "cooking landing",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Provide a landing surface beside the cooking appliance and confirm heat-safe clearance.",
+      "recommended_min_mm": 300,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "hob_or_oven"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "kitchen-adjacency"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-SAF-008",
+      "category": "kitchen",
+      "topic": "appliance doors",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Test refrigerator, oven and dishwasher doors against each other and against the main route.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "appliance_door_open"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "kitchen-adjacency",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-SAF-009",
+      "category": "kitchen",
+      "topic": "pinch points",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Do not create a sub-900 mm pinch point between cabinetry, an island and an open appliance door.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "island_or_peninsula"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "kitchen-adjacency",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "KIT-KEEP-010",
+      "category": "kitchen",
+      "topic": "retained cabinetry record",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "When existing cabinetry is KEEP, record its measured footprint and services before proposing adjacent changes.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "existing_cabinetry_keep"
+      ],
+      "applicable_rooms": [
+        "kitchen"
+      ],
+      "tags": [
+        "existing-structure",
+        "kitchen-adjacency"
+      ],
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "source_type": "project_brief",
+      "jurisdiction": "project",
+      "gateable": true,
+      "project_override": null,
+      "notes": "This protects the current kitchen cabinet decision without redesigning it."
+    },
+    {
+      "rule_id": "BED-CIR-001",
+      "category": "bedroom",
+      "topic": "bed-side route",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep a usable clear route beside the bed rather than forcing entry across the bed end.",
+      "recommended_min_mm": 750,
+      "preferred_mm": 900,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "bed_access"
+      ],
+      "applicable_rooms": [
+        "bedroom"
+      ],
+      "tags": [
+        "clear-circulation",
+        "elderly-bedroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BED-AGE-002",
+      "category": "bedroom",
+      "topic": "both-side access",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "For an aging-in-place bedroom, prefer access on both sides of the bed or document the assisted side explicitly.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "aging_in_place",
+        "caregiver_access"
+      ],
+      "applicable_rooms": [
+        "bedroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "elderly-bedroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BED-CIR-003",
+      "category": "bedroom",
+      "topic": "bed-foot route",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep the bed foot clear enough for turning, making the bed and passing to storage.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1100,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "bed_foot_route"
+      ],
+      "applicable_rooms": [
+        "bedroom"
+      ],
+      "tags": [
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BED-STOR-004",
+      "category": "bedroom",
+      "topic": "wardrobe operation",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep a clear standing zone in front of wardrobe doors and drawers.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1000,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "wardrobe_or_drawer"
+      ],
+      "applicable_rooms": [
+        "bedroom",
+        "storage"
+      ],
+      "tags": [
+        "storage",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BED-DOOR-005",
+      "category": "bedroom",
+      "topic": "door swing",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep bedroom door swings from colliding with the bed, wardrobe or the only bed-side route.",
+      "recommended_min_mm": 800,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "near_door"
+      ],
+      "applicable_rooms": [
+        "bedroom"
+      ],
+      "tags": [
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BED-WIN-006",
+      "category": "bedroom",
+      "topic": "window access",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Keep at least one usable approach to an operable window for daylight, ventilation and maintenance.",
+      "recommended_min_mm": 750,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "window_present"
+      ],
+      "applicable_rooms": [
+        "bedroom"
+      ],
+      "tags": [
+        "daylight",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BED-ERG-007",
+      "category": "bedroom",
+      "topic": "bedside reach",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Place lighting, call controls and a landing surface within seated reach at the assisted bed side.",
+      "recommended_min_mm": 600,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "aging_in_place"
+      ],
+      "applicable_rooms": [
+        "bedroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "elderly-bedroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BED-ERG-008",
+      "category": "bedroom",
+      "topic": "headboard wall",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Prefer a stable wall behind the headboard and keep a window opening free from headboard conflicts.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "bed_head"
+      ],
+      "applicable_rooms": [
+        "bedroom"
+      ],
+      "tags": [
+        "elderly-bedroom",
+        "daylight"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BED-FLEX-009",
+      "category": "bedroom",
+      "topic": "flexible clear zone",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "MEDIUM",
+      "statement": "Retain a clear zone that can accept a cot, luggage, caregiver chair or temporary child use.",
+      "recommended_min_mm": 1800,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "periodic_family"
+      ],
+      "applicable_rooms": [
+        "bedroom"
+      ],
+      "tags": [
+        "flexible-living",
+        "child-friendly"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BED-AGE-010",
+      "category": "bedroom",
+      "topic": "route to bathroom",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep the bedroom-to-bathroom route direct, well lit and free from loose furniture.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1100,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "ensuite_or_night_route"
+      ],
+      "applicable_rooms": [
+        "bedroom",
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BTH-WC-001",
+      "category": "bathroom",
+      "topic": "WC front clearance",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep a clear approach in front of the WC for transfer, cleaning and assisted use.",
+      "recommended_min_mm": 600,
+      "preferred_mm": 750,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "wc"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BTH-WC-002",
+      "category": "bathroom",
+      "topic": "WC side clearance",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Check side clearance beside the WC against the user's transfer method and local requirements.",
+      "recommended_min_mm": 380,
+      "preferred_mm": 450,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "wc",
+        "transfer"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BTH-VAN-003",
+      "category": "bathroom",
+      "topic": "vanity front",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep a clear standing or seated approach in front of the vanity.",
+      "recommended_min_mm": 750,
+      "preferred_mm": 900,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "vanity"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BTH-SHW-004",
+      "category": "bathroom",
+      "topic": "shower footprint",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Use a shower footprint large enough for safe entry, turning and a future seat when aging-in-place is a priority.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": [
+        900,
+        1200
+      ],
+      "applicable_when": [
+        "shower",
+        "aging_in_place"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BTH-AGE-005",
+      "category": "bathroom",
+      "topic": "shower support",
+      "rule_type": "TO_VERIFY_LOCAL_CODE",
+      "priority": "HIGH",
+      "statement": "Confirm local requirements and backing for grab rails, a seat and controls before closing bathroom walls.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "aging_in_place",
+        "shower"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-ADA-2010-REFERENCE",
+      "source_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+      "source_type": "official_code_reference",
+      "jurisdiction": "local_unconfirmed",
+      "gateable": false,
+      "project_override": null,
+      "notes": "The ADA source is a US reference only; local jurisdiction is not confirmed."
+    },
+    {
+      "rule_id": "BTH-CIR-006",
+      "category": "bathroom",
+      "topic": "turning area",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Where future wheelchair use is a stated goal, test a turning area rather than relying on a narrow aisle.",
+      "recommended_min_mm": 1500,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "future_wheelchair"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BTH-DOOR-007",
+      "category": "bathroom",
+      "topic": "door swing",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep the bathroom door swing out of the transfer, shower entry and only clear aisle.",
+      "recommended_min_mm": 750,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "near_door"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "accessible-bathroom",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BTH-SAF-008",
+      "category": "bathroom",
+      "topic": "threshold",
+      "rule_type": "TO_VERIFY_LOCAL_CODE",
+      "priority": "HIGH",
+      "statement": "Confirm local threshold, waterproofing and drainage requirements before fixing the shower build-up.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "shower",
+        "wet_area"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-ADA-2010-REFERENCE",
+      "source_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+      "source_type": "official_code_reference",
+      "jurisdiction": "local_unconfirmed",
+      "gateable": false,
+      "project_override": null,
+      "notes": "Exact threshold and drainage rules depend on the local authority and selected system."
+    },
+    {
+      "rule_id": "BTH-SAF-009",
+      "category": "bathroom",
+      "topic": "slip and contrast",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Use slip-resistant wet-area finishes and enough visual contrast to distinguish fixtures and floor edges.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "aging_in_place"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "BTH-MNT-010",
+      "category": "bathroom",
+      "topic": "maintenance access",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Reserve access to shut-offs, traps, drains and exhaust equipment without removing fixed cabinetry.",
+      "recommended_min_mm": 600,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "services"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-DESK-001",
+      "category": "study",
+      "topic": "desk depth",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Use enough desk depth for the monitor, working documents and a comfortable keyboard position.",
+      "recommended_min_mm": 750,
+      "preferred_mm": 800,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "desk"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "study-guest-hybrid"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-DESK-002",
+      "category": "study",
+      "topic": "desk width",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Provide a work width that supports the planned displays and a clear writing zone.",
+      "recommended_min_mm": 1200,
+      "preferred_mm": 1700,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "desk",
+        "dual_monitor"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "study-guest-hybrid"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-CIR-003",
+      "category": "study",
+      "topic": "chair pullback",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep a clear pullback zone behind the desk chair.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1100,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "desk"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "clear-circulation",
+        "study-guest-hybrid"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-CIR-004",
+      "category": "study",
+      "topic": "shared aisle",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Do not let a daybed, storage unit or chair pullback close the only study aisle.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "study_plus_sleep"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "clear-circulation",
+        "study-guest-hybrid"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-TECH-005",
+      "category": "study",
+      "topic": "screen glare",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Place monitors so window glare can be controlled without blocking the required daylight route.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "window_present",
+        "screen"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "daylight",
+        "study-guest-hybrid"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-TECH-006",
+      "category": "study",
+      "topic": "printer reach",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "LOW",
+      "statement": "Put printer and frequently used equipment within a short reach of the work chair without encroaching on the route.",
+      "recommended_min_mm": 450,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "printer_or_NAS"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "study-guest-hybrid",
+        "storage"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-FLEX-007",
+      "category": "study",
+      "topic": "backup sleep footprint",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "MEDIUM",
+      "statement": "If the study doubles as guest sleep, reserve the sleep footprint before fixing storage or equipment.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "backup_sleep"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "study-guest-hybrid",
+        "flexible-living"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-FLEX-008",
+      "category": "study",
+      "topic": "daybed route",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Keep a clear approach to a daybed so the backup sleeping mode does not block the desk route.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "daybed"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "study-guest-hybrid",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-STOR-009",
+      "category": "study",
+      "topic": "equipment ventilation",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Provide ventilation and service access for NAS, printer or other heat-producing equipment.",
+      "recommended_min_mm": 100,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "NAS_or_equipment"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "storage",
+        "study-guest-hybrid"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STD-WIN-010",
+      "category": "study",
+      "topic": "window route",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "LOW",
+      "statement": "Keep one clear path to the study window for ventilation and maintenance.",
+      "recommended_min_mm": 750,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "window_present"
+      ],
+      "applicable_rooms": [
+        "study"
+      ],
+      "tags": [
+        "daylight",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "AGE-CIR-001",
+      "category": "aging_in_place",
+      "topic": "main route",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Design the primary daily route so an older adult can walk with a helper or mobility aid without a furniture pinch point.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1100,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "daily_route"
+      ],
+      "applicable_rooms": [
+        "living",
+        "bedroom",
+        "bathroom",
+        "circulation"
+      ],
+      "tags": [
+        "aging-in-place",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-AARP-HOMEFIT",
+      "source_url": "https://www.aarp.org/livable-communities/info-2020/homefit-guide.html",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "AGE-CIR-002",
+      "category": "aging_in_place",
+      "topic": "future mobility width",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Where future wheelchair or power-chair use is a project goal, test wider route segments instead of only the minimum walking route.",
+      "recommended_min_mm": 1100,
+      "preferred_mm": 1200,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "future_wheelchair"
+      ],
+      "applicable_rooms": [
+        "living",
+        "bedroom",
+        "bathroom",
+        "circulation"
+      ],
+      "tags": [
+        "aging-in-place",
+        "step-free-route"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "AGE-TURN-003",
+      "category": "aging_in_place",
+      "topic": "turning area",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Reserve a turning test area at key changes of direction, especially near bathroom and bedroom entries.",
+      "recommended_min_mm": 1500,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "future_wheelchair",
+        "turning"
+      ],
+      "applicable_rooms": [
+        "bedroom",
+        "bathroom",
+        "circulation"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "AGE-DOOR-004",
+      "category": "aging_in_place",
+      "topic": "clear door opening",
+      "rule_type": "TO_VERIFY_LOCAL_CODE",
+      "priority": "HIGH",
+      "statement": "Confirm local clear-opening and maneuvering-side requirements for doors serving the aging-in-place route.",
+      "recommended_min_mm": 810,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "door",
+        "future_wheelchair"
+      ],
+      "applicable_rooms": [
+        "bedroom",
+        "bathroom",
+        "circulation"
+      ],
+      "tags": [
+        "aging-in-place",
+        "step-free-route"
+      ],
+      "source_id": "SRC-ADA-2010-REFERENCE",
+      "source_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+      "source_type": "official_code_reference",
+      "jurisdiction": "local_unconfirmed",
+      "gateable": false,
+      "project_override": null,
+      "notes": "810 mm is a reference target only; verify local code and door hardware."
+    },
+    {
+      "rule_id": "AGE-THR-005",
+      "category": "aging_in_place",
+      "topic": "thresholds",
+      "rule_type": "TO_VERIFY_LOCAL_CODE",
+      "priority": "HIGH",
+      "statement": "Measure and confirm each level change, threshold and ramp slope before treating the route as accessible.",
+      "recommended_min_mm": 0,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "split_level",
+        "ramp"
+      ],
+      "applicable_rooms": [
+        "circulation",
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "step-free-route",
+        "split-level"
+      ],
+      "source_id": "SRC-ADA-2010-REFERENCE",
+      "source_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+      "source_type": "official_code_reference",
+      "jurisdiction": "local_unconfirmed",
+      "gateable": false,
+      "project_override": null,
+      "notes": "The existing level delta and ramp are explicitly TO_VERIFY in the project record."
+    },
+    {
+      "rule_id": "AGE-HDW-006",
+      "category": "aging_in_place",
+      "topic": "hardware",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Prefer lever handles and controls that can be operated without tight grasping or twisting.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "aging_in_place"
+      ],
+      "applicable_rooms": [
+        "bedroom",
+        "bathroom",
+        "circulation"
+      ],
+      "tags": [
+        "aging-in-place"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "AGE-BTH-007",
+      "category": "aging_in_place",
+      "topic": "bathroom backing",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Coordinate structural backing for grab rails and future supports before bathroom finishes are closed.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "aging_in_place"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "AGE-BTH-008",
+      "category": "aging_in_place",
+      "topic": "seated shower",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Provide a shower layout that can accept a stable seat and reachable controls without blocking the entry.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "aging_in_place",
+        "shower"
+      ],
+      "applicable_rooms": [
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "AGE-LGT-009",
+      "category": "aging_in_place",
+      "topic": "lighting continuity",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Keep lighting even along night routes and avoid abrupt glare or shadow at steps and bathroom entries.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "night_route"
+      ],
+      "applicable_rooms": [
+        "circulation",
+        "bedroom",
+        "bathroom"
+      ],
+      "tags": [
+        "aging-in-place",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "AGE-LEV-010",
+      "category": "aging_in_place",
+      "topic": "level delta",
+      "rule_type": "HARD_PROJECT_CONSTRAINT",
+      "priority": "HIGH",
+      "statement": "Do not label the assisted or power-wheelchair route as compliant until the actual level delta and slope are field measured.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "split_level",
+        "ramp"
+      ],
+      "applicable_rooms": [
+        "circulation"
+      ],
+      "tags": [
+        "aging-in-place",
+        "step-free-route",
+        "split-level"
+      ],
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "source_type": "project_brief",
+      "jurisdiction": "project",
+      "gateable": true,
+      "project_override": null,
+      "notes": "Current project data records owner <=350 mm versus CAD approximately 400 mm; both remain provisional."
+    },
+    {
+      "rule_id": "CHD-ACT-001",
+      "category": "child_friendly",
+      "topic": "activity core",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Give children a visible, furniture-light activity area that does not occupy the only adult route.",
+      "recommended_min_mm": 2500,
+      "preferred_mm": 3000,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_activity"
+      ],
+      "applicable_rooms": [
+        "living",
+        "dining"
+      ],
+      "tags": [
+        "child-friendly",
+        "furniture-free-core"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CHD-VIS-002",
+      "category": "child_friendly",
+      "topic": "adult sightline",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Keep a direct sightline from everyday seating or dining to the child activity area.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_activity",
+        "supervision"
+      ],
+      "applicable_rooms": [
+        "living",
+        "dining",
+        "kitchen"
+      ],
+      "tags": [
+        "child-friendly",
+        "visual-connection"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CHD-CIR-003",
+      "category": "child_friendly",
+      "topic": "play route",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep the child activity edge outside the main walking route and away from door swings.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_activity"
+      ],
+      "applicable_rooms": [
+        "living",
+        "dining"
+      ],
+      "tags": [
+        "child-friendly",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CHD-FUR-004",
+      "category": "child_friendly",
+      "topic": "stable furniture",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Use stable, anti-tip furniture and anchor tall storage where children can reach it.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_present"
+      ],
+      "applicable_rooms": [
+        "living",
+        "bedroom",
+        "storage"
+      ],
+      "tags": [
+        "child-friendly",
+        "storage"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CHD-FUR-005",
+      "category": "child_friendly",
+      "topic": "edge safety",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Prefer protected or rounded exposed corners on furniture at child head and shoulder height.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_present"
+      ],
+      "applicable_rooms": [
+        "living",
+        "dining",
+        "study"
+      ],
+      "tags": [
+        "child-friendly"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CHD-STOR-006",
+      "category": "child_friendly",
+      "topic": "reachable toy storage",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "MEDIUM",
+      "statement": "Keep daily toy and activity storage within a reachable band while keeping heavy or hazardous items locked.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": 1200,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_activity"
+      ],
+      "applicable_rooms": [
+        "living",
+        "storage"
+      ],
+      "tags": [
+        "child-friendly",
+        "storage"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CHD-SAF-007",
+      "category": "child_friendly",
+      "topic": "outlet safety",
+      "rule_type": "TO_VERIFY_LOCAL_CODE",
+      "priority": "MEDIUM",
+      "statement": "Confirm local electrical and outlet protection requirements for areas used by children.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_present"
+      ],
+      "applicable_rooms": [
+        "living",
+        "bedroom",
+        "study"
+      ],
+      "tags": [
+        "child-friendly"
+      ],
+      "source_id": "SRC-CPSC-HOME-SAFETY",
+      "source_url": "https://www.cpsc.gov/Safety-Education/Safety-Guides",
+      "source_type": "home_safety_reference",
+      "jurisdiction": "local_unconfirmed",
+      "gateable": false,
+      "project_override": null,
+      "notes": "Local electrical rules are not established in this project phase."
+    },
+    {
+      "rule_id": "CHD-SAF-008",
+      "category": "child_friendly",
+      "topic": "blind corners",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Avoid sharp visual blind corners where children enter a route from the activity area.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_activity"
+      ],
+      "applicable_rooms": [
+        "living",
+        "dining",
+        "circulation"
+      ],
+      "tags": [
+        "child-friendly",
+        "visual-connection"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CHD-CLN-009",
+      "category": "child_friendly",
+      "topic": "cleanable boundary",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "LOW",
+      "statement": "Choose a cleanable, replaceable edge for messy activity rather than hard-wiring a fragile finish into the main route.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "child_activity"
+      ],
+      "applicable_rooms": [
+        "living",
+        "dining"
+      ],
+      "tags": [
+        "child-friendly",
+        "flexible-living"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CHD-FLEX-010",
+      "category": "child_friendly",
+      "topic": "reconfiguration",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "MEDIUM",
+      "statement": "Keep at least one furniture arrangement that can change as a child grows without moving walls.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "periodic_family"
+      ],
+      "applicable_rooms": [
+        "living",
+        "study",
+        "bedroom"
+      ],
+      "tags": [
+        "child-friendly",
+        "flexible-living"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-PRI-001",
+      "category": "circulation",
+      "topic": "primary path",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep the primary path continuous, readable and free from furniture overlap.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1100,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "daily_route"
+      ],
+      "applicable_rooms": [
+        "circulation",
+        "living",
+        "dining",
+        "bedroom"
+      ],
+      "tags": [
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-PRI-002",
+      "category": "circulation",
+      "topic": "preferred path",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Prefer a wider path where an older adult, helper or child may meet another person.",
+      "recommended_min_mm": 1100,
+      "preferred_mm": 1200,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "assisted_movement"
+      ],
+      "applicable_rooms": [
+        "circulation",
+        "living"
+      ],
+      "tags": [
+        "clear-circulation",
+        "aging-in-place"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-SEC-003",
+      "category": "circulation",
+      "topic": "secondary path",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Keep secondary routes wide enough for a person to pass without turning sideways.",
+      "recommended_min_mm": 750,
+      "preferred_mm": 900,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "secondary_route"
+      ],
+      "applicable_rooms": [
+        "circulation",
+        "living",
+        "bedroom"
+      ],
+      "tags": [
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-TURN-004",
+      "category": "circulation",
+      "topic": "turning node",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "At a route change or dead-end, test a turning area rather than assuming a straight width is enough.",
+      "recommended_min_mm": 1500,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "turning",
+        "future_wheelchair"
+      ],
+      "applicable_rooms": [
+        "circulation"
+      ],
+      "tags": [
+        "aging-in-place",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-DOOR-005",
+      "category": "circulation",
+      "topic": "door maneuvering",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep door maneuvering space outside the only circulation route and avoid overlapping furniture.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "door"
+      ],
+      "applicable_rooms": [
+        "circulation",
+        "living",
+        "bedroom",
+        "bathroom"
+      ],
+      "tags": [
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-PINCH-006",
+      "category": "circulation",
+      "topic": "pinch point",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Investigate any path segment below 750 mm and do not hide it inside a furniture annotation.",
+      "recommended_min_mm": 750,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "narrow_segment"
+      ],
+      "applicable_rooms": [
+        "circulation"
+      ],
+      "tags": [
+        "clear-circulation",
+        "aging-in-place"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-CONT-007",
+      "category": "circulation",
+      "topic": "balcony continuity",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "HIGH",
+      "statement": "Keep the path from living space to a currently open balcony continuous; future enclosure is a separate scenario.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "balcony_connected"
+      ],
+      "applicable_rooms": [
+        "circulation",
+        "living",
+        "balcony"
+      ],
+      "tags": [
+        "balcony-connected",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "source_type": "project_brief",
+      "jurisdiction": "project",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-STAIR-008",
+      "category": "circulation",
+      "topic": "stair landing",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep a stable landing at the top and bottom of stairs and prevent furniture from narrowing it.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "stairs"
+      ],
+      "applicable_rooms": [
+        "circulation"
+      ],
+      "tags": [
+        "split-level",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-RAMP-009",
+      "category": "circulation",
+      "topic": "alternate route",
+      "rule_type": "HARD_PROJECT_CONSTRAINT",
+      "priority": "HIGH",
+      "statement": "Document the assisted or power-wheelchair route beside the existing stair and keep both routes legible until field verification.",
+      "recommended_min_mm": 1100,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "split_level",
+        "ramp"
+      ],
+      "applicable_rooms": [
+        "circulation"
+      ],
+      "tags": [
+        "split-level",
+        "step-free-route",
+        "aging-in-place"
+      ],
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "source_type": "project_brief",
+      "jurisdiction": "project",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "CIR-VIS-010",
+      "category": "circulation",
+      "topic": "visual orientation",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Use lighting, sightlines or a stable edge to make route junctions readable without adding a fixed obstacle.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "route_junction"
+      ],
+      "applicable_rooms": [
+        "circulation",
+        "living"
+      ],
+      "tags": [
+        "visual-connection",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-WARD-001",
+      "category": "storage",
+      "topic": "wardrobe depth",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Use approximately 600 mm depth for a full-depth hanging wardrobe unless the product requires more.",
+      "recommended_min_mm": 600,
+      "preferred_mm": 600,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "hanging_storage"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "bedroom"
+      ],
+      "tags": [
+        "storage"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-WARD-002",
+      "category": "storage",
+      "topic": "wardrobe front",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "HIGH",
+      "statement": "Keep a clear operating zone in front of wardrobe doors and drawers.",
+      "recommended_min_mm": 900,
+      "preferred_mm": 1000,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "wardrobe_or_drawer"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "bedroom"
+      ],
+      "tags": [
+        "storage",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-DRAW-003",
+      "category": "storage",
+      "topic": "drawer front",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Test drawer pull-out against the adjacent path, bed and door swing.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "drawer"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "bedroom",
+        "kitchen"
+      ],
+      "tags": [
+        "storage",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-REACH-004",
+      "category": "storage",
+      "topic": "reachable shelf",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Keep frequently used shelves within a reachable band and reserve high shelves for occasional or light items.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": 1800,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "aging_in_place",
+        "daily_storage"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "bedroom",
+        "kitchen"
+      ],
+      "tags": [
+        "storage",
+        "aging-in-place"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-ENTRY-005",
+      "category": "storage",
+      "topic": "shoe storage depth",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "LOW",
+      "statement": "Keep entry shoe storage shallow enough that it does not reduce the entry route.",
+      "recommended_min_mm": null,
+      "preferred_mm": null,
+      "maximum_mm": 350,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "entry"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "circulation"
+      ],
+      "tags": [
+        "storage",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-ENTRY-006",
+      "category": "storage",
+      "topic": "entry bench",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "MEDIUM",
+      "statement": "Provide a stable seated perch with clear approach at the entry when shoes or mobility aids are used.",
+      "recommended_min_mm": 600,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "entry",
+        "aging_in_place"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "circulation"
+      ],
+      "tags": [
+        "storage",
+        "aging-in-place"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-KIT-007",
+      "category": "storage",
+      "topic": "pantry aisle",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Keep pantry and tall-unit doors from reducing the main kitchen aisle when open.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "pantry_or_tall_unit"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "kitchen"
+      ],
+      "tags": [
+        "storage",
+        "kitchen-adjacency",
+        "clear-circulation"
+      ],
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-BAL-008",
+      "category": "storage",
+      "topic": "balcony cabinet",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "MEDIUM",
+      "statement": "Retain existing balcony storage only when its doors and counter do not block the open-balcony route.",
+      "recommended_min_mm": 900,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "existing_balcony_cabinet"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "balcony",
+        "living"
+      ],
+      "tags": [
+        "storage",
+        "balcony-connected",
+        "existing-structure"
+      ],
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "source_type": "project_brief",
+      "jurisdiction": "project",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-LINEN-009",
+      "category": "storage",
+      "topic": "linen shelf",
+      "rule_type": "BEST_PRACTICE",
+      "priority": "LOW",
+      "statement": "Allow enough shelf depth for folded linen while keeping the front clear for opening and retrieval.",
+      "recommended_min_mm": 300,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "linen_storage"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "bathroom",
+        "bedroom"
+      ],
+      "tags": [
+        "storage"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    },
+    {
+      "rule_id": "STO-MNT-010",
+      "category": "storage",
+      "topic": "service access",
+      "rule_type": "TECHNICAL_GUIDELINE",
+      "priority": "MEDIUM",
+      "statement": "Do not bury service valves, electrical panels or appliance connections behind fixed storage without a removable access strategy.",
+      "recommended_min_mm": 600,
+      "preferred_mm": null,
+      "maximum_mm": null,
+      "recommended_dimensions_mm": null,
+      "applicable_when": [
+        "services"
+      ],
+      "applicable_rooms": [
+        "storage",
+        "kitchen",
+        "bathroom"
+      ],
+      "tags": [
+        "storage",
+        "existing-structure"
+      ],
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_url": "https://www.archdaily.com/tag/interior-design",
+      "source_type": "professional_practice",
+      "jurisdiction": "general_reference",
+      "gateable": true,
+      "project_override": null,
+      "notes": ""
+    }
+  ]
+}

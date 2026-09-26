@@ -1,0 +1,407 @@
+{
+  "version": "v0.1",
+  "patterns": [
+    {
+      "pattern_id": "PAT-LIV-01",
+      "name": "CLEAR CENTRAL LIVING CORE",
+      "room": "living",
+      "tags": [
+        "furniture-free-core",
+        "clear-circulation",
+        "child-friendly"
+      ],
+      "method": "Load fixed furniture to the perimeter and reserve a central rectangle for play, conversation and temporary furniture.",
+      "benefit": "Supports child activity and multiple living modes without moving walls.",
+      "risk": "The room can feel under-furnished if edge pieces do not provide enough seating or storage.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-006"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-LIV-02",
+      "name": "EDGE-LOADED FURNITURE",
+      "room": "living",
+      "tags": [
+        "edge-loaded-furniture",
+        "flexible-living"
+      ],
+      "method": "Place large fixed pieces on wall or service edges and keep the center visually and physically light.",
+      "benefit": "Protects routes and preserves reconfiguration options.",
+      "risk": "Edge loading must still leave sightlines and daylight usable.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-004",
+        "PREC-005"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-LIV-03",
+      "name": "STORAGE-AS-ZONING",
+      "room": "living",
+      "tags": [
+        "storage-zoning",
+        "existing-structure"
+      ],
+      "method": "Use a shallow storage edge or cabinet line to define zones without closing the open plan.",
+      "benefit": "Adds order while retaining visual connection.",
+      "risk": "Cabinet doors and service access can create a new pinch point.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-004",
+        "PREC-005"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-LIV-04",
+      "name": "DINING-AS-KITCHEN-EXTENSION",
+      "room": "dining",
+      "tags": [
+        "dining-kitchen-extension",
+        "kitchen-adjacency"
+      ],
+      "method": "Keep dining close to the kitchen workflow while protecting a separate route through the public zone.",
+      "benefit": "Reduces carrying distance and supports everyday family use.",
+      "risk": "A table can become a corridor obstacle if chair pull-out is not modeled.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-003",
+        "PREC-007",
+        "PREC-008",
+        "PREC-010"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-LIV-05",
+      "name": "DUAL-MODE-DINING",
+      "room": "dining",
+      "tags": [
+        "dual-mode-dining",
+        "flexible-living"
+      ],
+      "method": "Size the daily table for normal use and keep one side adaptable for a child seat, helper or occasional extension.",
+      "benefit": "Avoids over-sizing the everyday table while preserving flexibility.",
+      "risk": "The adaptable side needs a real clear zone, not only a note.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-004",
+        "PREC-005"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-LIV-06",
+      "name": "BALCONY VISUAL EXTENSION",
+      "room": "living",
+      "tags": [
+        "balcony-connected",
+        "visual-connection"
+      ],
+      "method": "Keep the living-to-balcony opening visually legible and free of tall or fixed blockers.",
+      "benefit": "Makes a small living room feel deeper and preserves outdoor access.",
+      "risk": "A future enclosure must be shown as a separate scenario.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-006",
+        "PREC-013",
+        "PREC-014",
+        "PREC-050"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-LIV-07",
+      "name": "NON-TV-CENTRIC MEDIA WALL",
+      "room": "living",
+      "tags": [
+        "projector-media",
+        "non-tv-centric"
+      ],
+      "method": "Treat the projection wall as one edge of a multi-use room rather than the room's only orientation.",
+      "benefit": "Allows conversation and child activity to coexist with viewing.",
+      "risk": "Throw distance, glare and cable access must be checked with the selected device.",
+      "precedent_ids": [
+        "PREC-019",
+        "PREC-020"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-CIR-01",
+      "name": "FURNITURE-FREE CIRCULATION SPINE",
+      "room": "circulation",
+      "tags": [
+        "clear-circulation",
+        "aging-in-place"
+      ],
+      "method": "Reserve a continuous spine between entry, living, stairs and balcony before placing loose furniture.",
+      "benefit": "Makes assisted movement legible and reduces repeated re-layout.",
+      "risk": "A spine that is only clear on paper can fail at doors and corners.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-004",
+        "PREC-006",
+        "PREC-009",
+        "PREC-027"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-BED-01",
+      "name": "BEDROOM CLEAR-SIDE ROUTE",
+      "room": "bedroom",
+      "tags": [
+        "elderly-bedroom",
+        "aging-in-place",
+        "clear-circulation"
+      ],
+      "method": "Give the assisted bed side a direct route and a reachable landing surface; document any one-sided compromise.",
+      "benefit": "Improves night movement and caregiver access.",
+      "risk": "Wardrobe and door swings often consume the apparent clearance.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-004",
+        "PREC-006",
+        "PREC-009",
+        "PREC-027"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-BED-02",
+      "name": "STUDY + BACKUP SLEEPING",
+      "room": "study",
+      "tags": [
+        "study-guest-hybrid",
+        "flexible-living"
+      ],
+      "method": "Set the desk, chair pullback and backup sleep footprint together before fixing storage.",
+      "benefit": "Keeps a study useful daily while allowing periodic guests.",
+      "risk": "A daybed or sofa bed can close the only work aisle.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-004",
+        "PREC-005"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-BTH-01",
+      "name": "AGING-IN-PLACE BATHROOM",
+      "room": "bathroom",
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "method": "Coordinate shower footprint, transfer clearances, support backing, door swing and turning tests as one system.",
+      "benefit": "Prevents a nominally large bathroom from failing at the fixture interface.",
+      "risk": "Local code and actual product dimensions must be verified.",
+      "precedent_ids": [
+        "PREC-004",
+        "PREC-009",
+        "PREC-021",
+        "PREC-030",
+        "PREC-057"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-BTH-02",
+      "name": "WET-DRY CLEAR ZONES",
+      "room": "bathroom",
+      "tags": [
+        "wet-dry-zoning",
+        "accessible-bathroom"
+      ],
+      "method": "Place wet fixtures and dry approach zones so the main route is not forced through the shower entry.",
+      "benefit": "Improves safety, cleaning and simultaneous use.",
+      "risk": "Glass panels and drain falls can reduce the theoretical aisle.",
+      "precedent_ids": [
+        "PREC-004",
+        "PREC-009",
+        "PREC-021",
+        "PREC-030",
+        "PREC-057"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-KIT-01",
+      "name": "RETAINED-KITCHEN WORKFLOW",
+      "room": "kitchen",
+      "tags": [
+        "existing-structure",
+        "kitchen-adjacency"
+      ],
+      "method": "Treat existing cabinetry as a fixed service datum and improve adjacent dining and circulation around it.",
+      "benefit": "Honors KEEP decisions while still improving public-space flow.",
+      "risk": "Unmeasured services or appliance doors can invalidate the assumed datum.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-004",
+        "PREC-005"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-KIT-02",
+      "name": "COMPACT-WORK-TRIANGLE",
+      "room": "kitchen",
+      "tags": [
+        "kitchen-adjacency",
+        "clear-circulation"
+      ],
+      "method": "Keep sink, cooking and refrigeration relationships short while checking each open appliance door.",
+      "benefit": "Supports efficient daily cooking without expanding the kitchen footprint.",
+      "risk": "Triangle diagrams can hide two-person conflicts.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-003",
+        "PREC-006",
+        "PREC-007",
+        "PREC-008"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-AGE-01",
+      "name": "STEP-FREE-ALTERNATE-ROUTE",
+      "room": "circulation",
+      "tags": [
+        "step-free-route",
+        "split-level",
+        "aging-in-place"
+      ],
+      "method": "Retain the existing stair for daily use and document a parallel assisted route until level and slope are measured.",
+      "benefit": "Keeps current life practical while planning for future mobility.",
+      "risk": "It is not a compliance claim until field measurement and local review are complete.",
+      "precedent_ids": [
+        "PREC-004",
+        "PREC-009",
+        "PREC-013",
+        "PREC-014",
+        "PREC-021"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-AGE-02",
+      "name": "VISIBLE-SOCIAL-ROUTE",
+      "room": "living",
+      "tags": [
+        "aging-in-place",
+        "visual-connection",
+        "clear-circulation"
+      ],
+      "method": "Place everyday seats and routes where an older resident can remain socially connected without crossing obstacles.",
+      "benefit": "Supports autonomy and supervision without segregating the resident.",
+      "risk": "Visual connection must not compromise privacy or glare control.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-004",
+        "PREC-006",
+        "PREC-009",
+        "PREC-013"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-CHD-01",
+      "name": "CHILD-ACTIVITY-SIGHTLINE",
+      "room": "living",
+      "tags": [
+        "child-friendly",
+        "visual-connection",
+        "furniture-free-core"
+      ],
+      "method": "Put the child activity edge within direct sight of adult seating or dining and outside the primary route.",
+      "benefit": "Allows supervision while preserving adult use of the room.",
+      "risk": "The sightline can be lost after adding tall storage or a screen.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-006"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-STOR-01",
+      "name": "ENTRY-STORAGE-BUFFER",
+      "room": "storage",
+      "tags": [
+        "entry-storage",
+        "clear-circulation"
+      ],
+      "method": "Use a shallow shoe, coat or bench zone to absorb arrival clutter without narrowing the entry path.",
+      "benefit": "Improves everyday order and reduces loose objects in circulation.",
+      "risk": "Deep cabinets or open doors can turn the buffer into a choke point.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-006",
+        "PREC-027",
+        "PREC-050"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-STOR-02",
+      "name": "BUILT-IN-BUFFER-EDGE",
+      "room": "storage",
+      "tags": [
+        "storage-zoning",
+        "existing-structure"
+      ],
+      "method": "Place built-in storage at an edge where it can define a room without consuming the flexible center.",
+      "benefit": "Combines zoning and storage with a small footprint.",
+      "risk": "Service access and future furniture changes need an explicit reserve.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-004",
+        "PREC-005"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    },
+    {
+      "pattern_id": "PAT-REN-01",
+      "name": "EXISTING-STRUCTURE-AS-GRID",
+      "room": "renovation",
+      "tags": [
+        "existing-structure",
+        "renovation",
+        "adaptive-reuse"
+      ],
+      "method": "Use measured walls, openings and retained services as the grid for new furniture and partitions.",
+      "benefit": "Reduces accidental demolition and keeps the proposal traceable to the source building.",
+      "risk": "A stale survey can make a precise-looking plan wrong.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-004",
+        "PREC-005"
+      ],
+      "evidence_note": "Strategy extraction from metadata and floor-plan availability; inspect cited source pages before design transfer."
+    }
+  ]
+}

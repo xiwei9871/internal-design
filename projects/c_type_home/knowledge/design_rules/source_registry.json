@@ -1,0 +1,95 @@
+{
+  "version": "v0.1",
+  "sources": [
+    {
+      "source_id": "SRC-NKBA-KITCHEN",
+      "name": "NKBA Kitchen Planning Guidelines",
+      "source_type": "professional_guideline",
+      "url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+      "jurisdiction": "general_reference",
+      "use": "Kitchen aisle, work-zone and landing heuristics; not local code.",
+      "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-AARP-HOMEFIT",
+      "name": "AARP HomeFit Guide",
+      "source_type": "aging_in_place_guideline",
+      "url": "https://www.aarp.org/livable-communities/info-2020/homefit-guide.html",
+      "jurisdiction": "general_reference",
+      "use": "Home accessibility and aging-in-place planning prompts.",
+      "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-ADA-2010-REFERENCE",
+      "name": "2010 ADA Standards for Accessible Design",
+      "source_type": "official_code_reference",
+      "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+      "jurisdiction": "US_reference_only",
+      "use": "Reference dimensions only; local jurisdiction is unconfirmed.",
+      "mandatory_status": "never_assume_local"
+    },
+    {
+      "source_id": "SRC-CUD-UD",
+      "name": "Center for Universal Design, NC State",
+      "source_type": "universal_design_reference",
+      "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+      "jurisdiction": "general_reference",
+      "use": "Universal design principles and inclusive planning vocabulary.",
+      "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-HUD-AGING",
+      "name": "HUD Aging in Place resources",
+      "source_type": "government_guidance",
+      "url": "https://www.huduser.gov/portal/periodicals/em/spring13/highlight2.html",
+      "jurisdiction": "US_reference_only",
+      "use": "Aging-in-place adaptation topics; not a project code determination.",
+      "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-NAHB-AIP",
+      "name": "NAHB Certified Aging-in-Place resources",
+      "source_type": "professional_guideline",
+      "url": "https://www.nahb.org/other/aging-in-place",
+      "jurisdiction": "US_reference_only",
+      "use": "Residential aging-in-place planning prompts.",
+      "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-ENERGY-STAR",
+      "name": "ENERGY STAR appliance resources",
+      "source_type": "manufacturer_and_program_reference",
+      "url": "https://www.energystar.gov/products/appliances",
+      "jurisdiction": "general_reference",
+      "use": "Appliance dimensions remain product-specific; verify selected model.",
+      "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-CPSC-HOME-SAFETY",
+      "name": "US Consumer Product Safety Commission home safety resources",
+      "source_type": "home_safety_reference",
+      "url": "https://www.cpsc.gov/Safety-Education/Safety-Guides",
+      "jurisdiction": "US_reference_only",
+      "use": "Child and household safety prompts; not a substitute for local requirements.",
+      "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "name": "Residential ergonomics practice reference",
+      "source_type": "professional_practice",
+      "url": "https://www.archdaily.com/tag/interior-design",
+      "jurisdiction": "general_reference",
+      "use": "General planning heuristics; dimensions are review targets, not code.",
+      "mandatory_status": "reference_only"
+    },
+    {
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "name": "C-type home owner brief and measured project record",
+      "source_type": "project_brief",
+      "url": "https://github.com/xiwei9871/internal-design",
+      "jurisdiction": "project",
+      "use": "Confirmed KEEP items, household needs, unresolved TO_VERIFY statuses.",
+      "mandatory_status": "project_authority"
+    }
+  ]
+}

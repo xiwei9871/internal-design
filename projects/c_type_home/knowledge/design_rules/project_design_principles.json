@@ -1,0 +1,214 @@
+{
+  "version": "v0.1",
+  "project": "C-type home",
+  "principles": [
+    {
+      "principle_id": "P-AGE-MOTHER",
+      "rule_type": "HARD_PROJECT_CONSTRAINT",
+      "priority": "HIGH",
+      "statement": "Mother is 68; aging-in-place is a first-order planning priority for daily routes, bedroom and bathroom decisions.",
+      "status": "CONFIRMED",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "living",
+        "bedroom",
+        "bathroom",
+        "circulation"
+      ],
+      "tags": [
+        "aging-in-place"
+      ],
+      "to_verify": []
+    },
+    {
+      "principle_id": "P-OWNER-COUPLE",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "HIGH",
+      "statement": "The owner couple are permanent residents; periodic family and guests must be accommodated without making the daily plan hotel-like.",
+      "status": "CONFIRMED",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "living",
+        "bedroom",
+        "study"
+      ],
+      "tags": [
+        "flexible-living"
+      ],
+      "to_verify": []
+    },
+    {
+      "principle_id": "P-ROOM-PROGRAM",
+      "rule_type": "HARD_PROJECT_CONSTRAINT",
+      "priority": "HIGH",
+      "statement": "Retain four rooms and three bathrooms as the confirmed program.",
+      "status": "CONFIRMED",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "bedroom",
+        "bathroom"
+      ],
+      "tags": [
+        "existing-structure"
+      ],
+      "to_verify": []
+    },
+    {
+      "principle_id": "P-KITCHEN-KEEP",
+      "rule_type": "HARD_PROJECT_CONSTRAINT",
+      "priority": "HIGH",
+      "statement": "Existing kitchen cabinetry is KEEP; do not redesign or silently relocate it during concept studies.",
+      "status": "CONFIRMED",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "kitchen",
+        "storage"
+      ],
+      "tags": [
+        "existing-structure",
+        "kitchen-adjacency"
+      ],
+      "to_verify": []
+    },
+    {
+      "principle_id": "P-PROJECTOR-LIVING",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "HIGH",
+      "statement": "Living is projector/laser-TV dominant rather than TV-centric; media equipment must coexist with a flexible central activity area.",
+      "status": "CONFIRMED",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "living"
+      ],
+      "tags": [
+        "projector-media",
+        "non-tv-centric",
+        "flexible-living"
+      ],
+      "to_verify": [
+        "selected_device_throw_and_glare"
+      ]
+    },
+    {
+      "principle_id": "P-CHILD-ACTIVITY",
+      "rule_type": "PROJECT_PREFERENCE",
+      "priority": "HIGH",
+      "statement": "Provide a visible child activity area that can be cleared or reconfigured without moving walls.",
+      "status": "CONFIRMED",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "living",
+        "dining"
+      ],
+      "tags": [
+        "child-friendly",
+        "flexible-living"
+      ],
+      "to_verify": []
+    },
+    {
+      "principle_id": "P-NORTH-BALCONY",
+      "rule_type": "HARD_PROJECT_CONSTRAINT",
+      "priority": "HIGH",
+      "statement": "North balcony is OPEN_NOT_ENCLOSED now; any enclosure is a future proposal and must not be drawn as existing.",
+      "status": "CONFIRMED",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "living",
+        "balcony",
+        "circulation"
+      ],
+      "tags": [
+        "balcony-connected",
+        "existing-structure"
+      ],
+      "to_verify": [
+        "future_enclosure_brief"
+      ]
+    },
+    {
+      "principle_id": "P-SPLIT-LEVEL",
+      "rule_type": "HARD_PROJECT_CONSTRAINT",
+      "priority": "HIGH",
+      "statement": "Existing stairs remain the daily route; an assisted/power-wheelchair alternate route is documented beside them, but its level delta and slope are provisional.",
+      "status": "CONFIRMED_WITH_TO_VERIFY",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "circulation",
+        "living"
+      ],
+      "tags": [
+        "split-level",
+        "step-free-route",
+        "aging-in-place"
+      ],
+      "to_verify": [
+        "field_measure_level_delta",
+        "field_measure_ramp_slope",
+        "local_accessibility_review"
+      ]
+    },
+    {
+      "principle_id": "P-KEEP-FURNITURE",
+      "rule_type": "HARD_PROJECT_CONSTRAINT",
+      "priority": "HIGH",
+      "statement": "Confirmed KEEP furniture and cabinetry remain unless an explicit later decision changes them.",
+      "status": "CONFIRMED",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "living",
+        "dining",
+        "kitchen",
+        "storage",
+        "balcony"
+      ],
+      "tags": [
+        "existing-structure"
+      ],
+      "to_verify": [
+        "keep_register_measurement_review"
+      ]
+    },
+    {
+      "principle_id": "P-UNRESOLVED-STATUS",
+      "rule_type": "TO_VERIFY_LOCAL_CODE",
+      "priority": "HIGH",
+      "statement": "Unresolved dimensions, levels, fixture clearances, local code and product selections remain explicitly TO_VERIFY; they cannot be promoted to PASS by visual plausibility.",
+      "status": "TO_VERIFY",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_url": "https://github.com/xiwei9871/internal-design",
+      "applies_to": [
+        "living",
+        "dining",
+        "kitchen",
+        "bedroom",
+        "bathroom",
+        "study",
+        "circulation"
+      ],
+      "tags": [
+        "aging-in-place",
+        "existing-structure"
+      ],
+      "to_verify": [
+        "all_unresolved_measurements",
+        "local_code",
+        "selected_products"
+      ]
+    }
+  ],
+  "status_legend": {
+    "CONFIRMED": "owner or measured record",
+    "CONFIRMED_WITH_TO_VERIFY": "principle confirmed, dimension or compliance unresolved",
+    "TO_VERIFY": "must be resolved before construction or compliance claim"
+  }
+}

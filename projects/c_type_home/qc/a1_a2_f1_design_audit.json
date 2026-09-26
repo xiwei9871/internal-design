@@ -1,0 +1,463 @@
+{
+  "version": "v0.1",
+  "scope": "F1 living / dining / kitchen relationship only; analysis, no geometry edits",
+  "inputs": {
+    "furniture_file": "concept/furniture_l1_final.json",
+    "concept_file": "concept/concept_data.json",
+    "canonical_file": "current_existing/canonical_plan_v1.json",
+    "canonical_geometry_sha": null
+  },
+  "sections": {
+    "rules_already_satisfied": [
+      {
+        "rule_id": "LIV-CIRC-001",
+        "status": "SATISFIED_WITH_RESERVATION",
+        "evidence": "F1 P1/P3/P5 paths are explicitly recorded; public transition is documented as >=1100 mm in concept_data.",
+        "source_id": "SRC-AARP-HOMEFIT",
+        "source_url": "https://www.aarp.org/livable-communities/info-2020/homefit-guide.html",
+        "issue": "Confirm wall-side pinch points after final furniture INSERTs."
+      },
+      {
+        "rule_id": "LIV-FLEX-003",
+        "status": "SATISFIED",
+        "evidence": "F1 G8 gate defines a 3800 x 4350 mm flexible living core and exempts only small movable tables.",
+        "source_id": "SRC-PRACTICE-ERGONOMICS",
+        "source_url": "https://www.archdaily.com/tag/interior-design"
+      },
+      {
+        "rule_id": "LIV-MEDIA-006",
+        "status": "SATISFIED_WITH_RESERVATION",
+        "evidence": "LIV-MEDIA-WALL is locked at the east edge and P5 to the north balcony is recorded.",
+        "source_id": "SRC-PRACTICE-ERGONOMICS",
+        "source_url": "https://www.archdaily.com/tag/interior-design",
+        "issue": "Selected projector throw and glare remain TO_VERIFY."
+      },
+      {
+        "rule_id": "LIV-EDGE-008",
+        "status": "SATISFIED",
+        "evidence": "Large sofas are edge-loaded west/north and the media wall is edge-loaded east.",
+        "source_id": "SRC-PRACTICE-ERGONOMICS",
+        "source_url": "https://www.archdaily.com/tag/interior-design"
+      },
+      {
+        "rule_id": "DIN-CIR-005",
+        "status": "SATISFIED",
+        "evidence": "DIN-SEATING-N/S zones record 600 mm pull-out each long side for the 1500 x 600 table.",
+        "source_id": "SRC-PRACTICE-ERGONOMICS",
+        "source_url": "https://www.archdaily.com/tag/interior-design"
+      },
+      {
+        "rule_id": "DIN-CIR-007",
+        "status": "SATISFIED_WITH_RESERVATION",
+        "evidence": "F1 P2 entry-to-dining-to-kitchen route is explicitly recorded.",
+        "source_id": "SRC-PRACTICE-ERGONOMICS",
+        "source_url": "https://www.archdaily.com/tag/interior-design",
+        "issue": "Check chair pull-out against the live kitchen edge after any change."
+      },
+      {
+        "rule_id": "KIT-KEEP-010",
+        "status": "SATISFIED",
+        "evidence": "K-CAB is in fixed_keep and the project brief marks existing kitchen cabinetry KEEP.",
+        "source_id": "SRC-C-TYPE-BRIEF",
+        "source_url": "https://github.com/xiwei9871/internal-design"
+      },
+      {
+        "rule_id": "AGE-CIR-001",
+        "status": "SATISFIED_WITH_RESERVATION",
+        "evidence": "F1 records a primary circulation target >=1100 mm and a separate ramp route.",
+        "source_id": "SRC-AARP-HOMEFIT",
+        "source_url": "https://www.aarp.org/livable-communities/info-2020/homefit-guide.html",
+        "issue": "This is a planning record, not an accessibility compliance finding."
+      },
+      {
+        "rule_id": "CIR-CONT-007",
+        "status": "SATISFIED",
+        "evidence": "P5 living -> G-LIV-NBALC -> north balcony is explicitly recorded; balcony current state is OPEN_NOT_ENCLOSED.",
+        "source_id": "SRC-C-TYPE-BRIEF",
+        "source_url": "https://github.com/xiwei9871/internal-design"
+      },
+      {
+        "rule_id": "CIR-RAMP-009",
+        "status": "SATISFIED_WITH_TO_VERIFY",
+        "evidence": "Existing stair and assisted/power-wheelchair ramp are both documented in concept_data.",
+        "source_id": "SRC-C-TYPE-BRIEF",
+        "source_url": "https://github.com/xiwei9871/internal-design",
+        "issue": "Level delta and slope remain provisional."
+      }
+    ],
+    "potential_rule_conflicts": [
+      {
+        "rule_id": "LIV-CIRC-002",
+        "status": "POTENTIAL_CONFLICT",
+        "evidence": "The current F1 record does not expose every secondary route width as a measured polygon.",
+        "source_id": "SRC-PRACTICE-ERGONOMICS",
+        "source_url": "https://www.archdaily.com/tag/interior-design",
+        "issue": "Verify every furniture-free segment around the seating group, not only named paths."
+      },
+      {
+        "rule_id": "DIN-CIR-006",
+        "status": "POTENTIAL_CONFLICT",
+        "evidence": "Dining seating zones document 600 mm pull-out, but a separate behind-seated passage is not explicitly measured.",
+        "source_id": "SRC-PRACTICE-ERGONOMICS",
+        "source_url": "https://www.archdaily.com/tag/interior-design",
+        "issue": "Test the south and north sides against the 900 mm target before freezing dining furniture."
+      },
+      {
+        "rule_id": "KIT-SAF-008",
+        "status": "UNRESOLVED",
+        "evidence": "The cabinet KEEP zone is protected, but appliance-door envelopes are not represented in furniture_l1_final.json.",
+        "source_id": "SRC-NKBA-KITCHEN",
+        "source_url": "https://www.nkba.org/standards-guidelines/kitchen-planning-guidelines/",
+        "issue": "Verify selected refrigerator/oven/dishwasher doors and landing surfaces."
+      },
+      {
+        "rule_id": "AGE-THR-005",
+        "status": "TO_VERIFY",
+        "evidence": "Ramp slope is recorded as 400 / 2500 = 1:6.25 PROVISIONAL and level delta is owner <=350 vs CAD ~400.",
+        "source_id": "SRC-ADA-2010-REFERENCE",
+        "source_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "issue": "Field measure level change and obtain local accessibility review."
+      },
+      {
+        "rule_id": "BTH-AGE-005",
+        "status": "NOT_IN_F1_SCOPE",
+        "evidence": "F1 audit covers living/dining/kitchen; bathroom fixture backing and transfer geometry are not part of this layout snapshot.",
+        "source_id": "SRC-ADA-2010-REFERENCE",
+        "source_url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+        "issue": "Carry into the bathroom-specific review before construction."
+      }
+    ],
+    "project_specific_conflicts": [
+      {
+        "principle_id": "P-KITCHEN-KEEP",
+        "status": "RESPECTED",
+        "evidence": "K-CAB remains in fixed_keep; no kitchen cabinet rewrite was proposed."
+      },
+      {
+        "principle_id": "P-PROJECTOR-LIVING",
+        "status": "PARTIAL",
+        "evidence": "Media wall position is locked and no full-wall cabinet is specified; device throw/glare still TO_VERIFY."
+      },
+      {
+        "principle_id": "P-NORTH-BALCONY",
+        "status": "RESPECTED",
+        "evidence": "Current model records OPEN_NOT_ENCLOSED; future enclosure remains note-only."
+      },
+      {
+        "principle_id": "P-SPLIT-LEVEL",
+        "status": "PARTIAL",
+        "evidence": "Existing stair and alternate ramp coexist; the project itself marks slope and level delta provisional."
+      },
+      {
+        "principle_id": "P-CHILD-ACTIVITY",
+        "status": "RESPECTED_WITH_CHECK",
+        "evidence": "Living core is kept open and sightline intent is documented; tall storage and final device placement still need checking."
+      }
+    ],
+    "relevant_precedents": [
+      {
+        "precedent_id": "PREC-002",
+        "project_name": "Renovation of Joan Blanques apartment",
+        "relevance_to_c_type": 0.925,
+        "tags": [
+          "before-after",
+          "clear-circulation",
+          "existing-structure",
+          "flexible-living",
+          "floor-plan",
+          "kitchen-adjacency",
+          "open-living-dining",
+          "renovation",
+          "visual-connection"
+        ],
+        "url": "https://www.archdaily.com/962398/renovation-of-joan-blanques-apartment-allaround-lab"
+      },
+      {
+        "precedent_id": "PREC-003",
+        "project_name": "Renovation of a Milan Laboratory to a Family Loft",
+        "relevance_to_c_type": 0.925,
+        "tags": [
+          "adaptive-reuse",
+          "before-after",
+          "child-friendly",
+          "existing-structure",
+          "family-loft",
+          "flexible-living",
+          "floor-plan",
+          "kitchen-adjacency",
+          "multigenerational",
+          "open-living-dining",
+          "renovation"
+        ],
+        "url": "https://www.archdaily.com/981991/renovation-of-a-milan-laboratory-to-a-family-loft-tomoarchitects"
+      },
+      {
+        "precedent_id": "PREC-015",
+        "project_name": "Apartment Renovation in Sants",
+        "relevance_to_c_type": 0.725,
+        "tags": [
+          "before-after",
+          "child-friendly",
+          "existing-structure",
+          "flexible-living",
+          "kitchen-adjacency",
+          "multigenerational",
+          "open-living-dining",
+          "renovation"
+        ],
+        "url": "https://www.archdaily.com/985123/apartment-renovation-in-sants-parramon-plus-tahull-arquitectes"
+      },
+      {
+        "precedent_id": "PREC-017",
+        "project_name": "Renovation of Sofia's apartment",
+        "relevance_to_c_type": 0.72,
+        "tags": [
+          "before-after",
+          "child-friendly",
+          "existing-structure",
+          "flexible-living",
+          "kitchen-adjacency",
+          "multigenerational",
+          "open-living-dining",
+          "renovation"
+        ],
+        "url": "https://www.archdaily.com/1029144/renovation-of-sofias-apartment-pedro-ignacio-yanez-plus-carolina-recondo"
+      },
+      {
+        "precedent_id": "PREC-001",
+        "project_name": "Renovation of an Industrial Building into a Single Family House",
+        "relevance_to_c_type": 0.925,
+        "tags": [
+          "adaptive-reuse",
+          "before-after",
+          "child-friendly",
+          "existing-structure",
+          "flexible-living",
+          "floor-plan",
+          "multigenerational",
+          "open-living-dining",
+          "renovation"
+        ],
+        "url": "https://www.archdaily.com/505261/renovation-of-an-industrial-building-into-a-single-family-house-guim-costa-calsamiglia"
+      },
+      {
+        "precedent_id": "PREC-005",
+        "project_name": "Residential Extension MF Pavilion",
+        "relevance_to_c_type": 0.9062,
+        "tags": [
+          "child-friendly",
+          "existing-structure",
+          "flexible-living",
+          "floor-plan",
+          "multigenerational",
+          "open-living-dining",
+          "renovation"
+        ],
+        "url": "https://www.archdaily.com/920031/residential-extension-mf-pavilion-guillermo-tirado-gzz-architects"
+      },
+      {
+        "precedent_id": "PREC-008",
+        "project_name": "Renovation of a Mill and Hayloft for Residential use",
+        "relevance_to_c_type": 0.835,
+        "tags": [
+          "adaptive-reuse",
+          "before-after",
+          "community-living",
+          "existing-structure",
+          "family-loft",
+          "flexible-living",
+          "floor-plan",
+          "kitchen-adjacency",
+          "open-living-dining",
+          "renovation",
+          "study-guest-hybrid"
+        ],
+        "url": "https://www.archdaily.com/983855/renovation-of-a-mill-and-hayloft-for-residential-use-funcionable-arquitectura"
+      },
+      {
+        "precedent_id": "PREC-055",
+        "project_name": "Renovation of the Jiakaxia Ancient Courtyard",
+        "relevance_to_c_type": 0.515,
+        "tags": [
+          "balcony-connected",
+          "before-after",
+          "courtyard",
+          "daylight",
+          "existing-structure",
+          "flexible-living",
+          "renovation",
+          "split-level",
+          "split-level-courtyard",
+          "visual-connection"
+        ],
+        "url": "https://www.archdaily.com/1031087/renovation-of-the-jiakaxia-ancient-courtyard-hypersity-architects"
+      }
+    ],
+    "applicable_patterns": [
+      {
+        "pattern_id": "PAT-AGE-01",
+        "name": "STEP-FREE-ALTERNATE-ROUTE",
+        "precedent_ids": [
+          "PREC-004",
+          "PREC-009",
+          "PREC-013",
+          "PREC-014",
+          "PREC-021"
+        ]
+      },
+      {
+        "pattern_id": "PAT-AGE-02",
+        "name": "VISIBLE-SOCIAL-ROUTE",
+        "precedent_ids": [
+          "PREC-002",
+          "PREC-004",
+          "PREC-006",
+          "PREC-009",
+          "PREC-013"
+        ]
+      },
+      {
+        "pattern_id": "PAT-BED-01",
+        "name": "BEDROOM CLEAR-SIDE ROUTE",
+        "precedent_ids": [
+          "PREC-002",
+          "PREC-004",
+          "PREC-006",
+          "PREC-009",
+          "PREC-027"
+        ]
+      },
+      {
+        "pattern_id": "PAT-CIR-01",
+        "name": "FURNITURE-FREE CIRCULATION SPINE",
+        "precedent_ids": [
+          "PREC-002",
+          "PREC-004",
+          "PREC-006",
+          "PREC-009",
+          "PREC-027"
+        ]
+      },
+      {
+        "pattern_id": "PAT-KIT-01",
+        "name": "RETAINED-KITCHEN WORKFLOW",
+        "precedent_ids": [
+          "PREC-001",
+          "PREC-002",
+          "PREC-003",
+          "PREC-004",
+          "PREC-005"
+        ]
+      },
+      {
+        "pattern_id": "PAT-KIT-02",
+        "name": "COMPACT-WORK-TRIANGLE",
+        "precedent_ids": [
+          "PREC-002",
+          "PREC-003",
+          "PREC-006",
+          "PREC-007",
+          "PREC-008"
+        ]
+      },
+      {
+        "pattern_id": "PAT-LIV-01",
+        "name": "CLEAR CENTRAL LIVING CORE",
+        "precedent_ids": [
+          "PREC-001",
+          "PREC-002",
+          "PREC-003",
+          "PREC-005",
+          "PREC-006"
+        ]
+      },
+      {
+        "pattern_id": "PAT-BED-02",
+        "name": "STUDY + BACKUP SLEEPING",
+        "precedent_ids": [
+          "PREC-001",
+          "PREC-002",
+          "PREC-003",
+          "PREC-004",
+          "PREC-005"
+        ]
+      }
+    ],
+    "unresolved_spatial_issues": [
+      {
+        "issue_id": "U-001",
+        "issue": "Field measure the split-level level delta and ramp slope before treating the alternate route as accessible.",
+        "citations": [
+          "AGE-THR-005",
+          "CIR-RAMP-009",
+          "P-SPLIT-LEVEL"
+        ]
+      },
+      {
+        "issue_id": "U-002",
+        "issue": "Verify projector/laser-TV throw, glare and cable/service path with the selected product.",
+        "citations": [
+          "LIV-MEDIA-005",
+          "LIV-DIST-007",
+          "P-PROJECTOR-LIVING"
+        ]
+      },
+      {
+        "issue_id": "U-003",
+        "issue": "Measure dining chair pull-out and the behind-seated passage together with the retained kitchen edge.",
+        "citations": [
+          "DIN-CIR-005",
+          "DIN-CIR-006",
+          "DIN-CIR-007",
+          "P-KITCHEN-KEEP"
+        ]
+      },
+      {
+        "issue_id": "U-004",
+        "issue": "Carry aging-in-place bathroom backing, transfer and turning checks into the later bathroom review.",
+        "citations": [
+          "BTH-AGE-005",
+          "BTH-CIR-006",
+          "P-AGE-MOTHER"
+        ]
+      }
+    ],
+    "next_design_directions": [
+      {
+        "direction_id": "D-01",
+        "title": "Test a furniture-free living spine",
+        "description": "Keep the current edge-loaded seating and compare one or two movable-table positions while protecting P1, P3 and P5.",
+        "citations": [
+          "LIV-CIRC-001",
+          "LIV-FLEX-003",
+          "PAT-CIR-01",
+          "PAT-LIV-01"
+        ]
+      },
+      {
+        "direction_id": "D-02",
+        "title": "Resolve dining as a kitchen extension",
+        "description": "Run a full-size 1500 x 600 table test with 600 mm pull-out and a measured 900 mm behind-seated route against the KEEP cabinet edge.",
+        "citations": [
+          "DIN-CIR-005",
+          "DIN-CIR-006",
+          "DIN-CIR-007",
+          "PAT-LIV-04",
+          "PAT-LIV-05"
+        ]
+      },
+      {
+        "direction_id": "D-03",
+        "title": "Verify the assisted route before styling",
+        "description": "Field-measure level delta, ramp slope and landing dimensions, then keep the current stair/ramp dual-route logic until local review is complete.",
+        "citations": [
+          "AGE-THR-005",
+          "CIR-RAMP-009",
+          "PAT-AGE-01",
+          "P-SPLIT-LEVEL"
+        ]
+      }
+    ]
+  },
+  "audit_policy": "Every finding cites a rule_id, principle_id or pattern_id; precedent metadata is a prompt for human source review, not a copied design."
+}

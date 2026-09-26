@@ -1,0 +1,45 @@
+{
+  "version": "v0.1",
+  "status": "PASS",
+  "precedent_count": 60,
+  "pattern_count": 20,
+  "source_count": 1,
+  "gates": [
+    {
+      "gate": "A2-G1 50-80 precedents",
+      "result": "PASS",
+      "detail": 60
+    },
+    {
+      "gate": "A2-G2 every precedent has valid URL",
+      "result": "PASS",
+      "detail": "all URLs use https"
+    },
+    {
+      "gate": "A2-G3 no copied image dependency",
+      "result": "PASS",
+      "detail": "metadata and short synthesis only"
+    },
+    {
+      "gate": "A2-G4 floor-plan availability recorded",
+      "result": "PASS",
+      "detail": "boolean recorded for every item"
+    },
+    {
+      "gate": "A2-G5 controlled tags",
+      "result": "PASS",
+      "detail": "controlled_tag_count=36"
+    },
+    {
+      "gate": "A2-G6 patterns backed by >=2 precedents",
+      "result": "PASS",
+      "detail": "patterns=20"
+    },
+    {
+      "gate": "A2-G7 deterministic relevance scoring",
+      "result": "PASS",
+      "detail": "component fields retained"
+    }
+  ],
+  "generated_date": "2026-09-26"
+}

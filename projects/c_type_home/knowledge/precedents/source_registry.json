@@ -1,0 +1,18 @@
+{
+  "version": "v0.1",
+  "collection_date": "2026-09-26",
+  "sources": [
+    {
+      "source_id": "A2-SRC-ARCHDAILY",
+      "name": "ArchDaily project pages",
+      "source_type": "metadata_only_project_database",
+      "url": "https://www.archdaily.com/",
+      "license_note": "Only URL, public metadata and short original synthesis are stored; no images or article text are mirrored.",
+      "image_dependency": false,
+      "candidate_count": 80,
+      "selected_count": 60,
+      "snapshot": "projects/c_type_home/knowledge/precedents/candidate_metadata_v01.json",
+      "url_validation": "80 candidate pages fetched during research; selected links retained as source URLs."
+    }
+  ]
+}
