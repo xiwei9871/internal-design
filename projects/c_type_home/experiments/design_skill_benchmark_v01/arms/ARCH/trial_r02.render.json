@@ -1,0 +1,15 @@
+{
+  "png": {
+    "file": "experiments/design_skill_benchmark_v01/arms/ARCH/trial_r02.png",
+    "sha256": "39d437d772a672514be6e1b8b9a0a0c31ee1fea7643c7d4d65249acc2b73a0ca"
+  },
+  "renderer": "run_benchmark.py::render_dxf",
+  "source_dxf": "experiments/design_skill_benchmark_v01/arms/ARCH/trial_r02.dxf",
+  "source_dxf_sha256": "4c1fdf7254e8f697fccc038c67aef60755192bd0b93bac17a01d5c70ef3ae40f",
+  "view_task01": [
+    2400,
+    1500,
+    8800,
+    13800
+  ]
+}

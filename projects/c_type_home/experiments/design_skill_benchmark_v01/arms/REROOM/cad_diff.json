@@ -1,0 +1,9 @@
+{
+  "base_dxf": "experiments/design_skill_benchmark_v01/base/public_zone_clean_base.dxf",
+  "d0_furniture_entity_count": 8,
+  "final_dxf": "experiments/design_skill_benchmark_v01/arms/REROOM/trial_final.dxf",
+  "formal_geometry_preserved": true,
+  "non_furniture_changed_handles": [],
+  "non_furniture_missing_handles": [],
+  "unexpected_added_non_furniture_handles": []
+}

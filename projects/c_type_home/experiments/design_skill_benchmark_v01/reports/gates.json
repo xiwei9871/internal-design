@@ -1,0 +1,136 @@
+{
+  "arm_mapping": "experiments/design_skill_benchmark_v01/blind_review/arm_mapping.json",
+  "arms": {
+    "ARCH": {
+      "final_dxf_sha256": "4c1fdf7254e8f697fccc038c67aef60755192bd0b93bac17a01d5c70ef3ae40f",
+      "geometry_violations_per_iteration": {
+        "final": 1,
+        "r01": 1,
+        "r02": 1
+      },
+      "iteration_count": 2,
+      "manual_interventions": 0,
+      "tool_calls": "UNKNOWN / NOT MEASURED",
+      "wall_clock_seconds": 1.917
+    },
+    "CTRL": {
+      "final_dxf_sha256": "4dcccfb8e48e78e4999570b7ee7e26c140979f30cece5f6b3494e5ff51dfefc3",
+      "geometry_violations_per_iteration": {
+        "final": 1,
+        "r01": 2,
+        "r02": 1
+      },
+      "iteration_count": 2,
+      "manual_interventions": 0,
+      "tool_calls": "UNKNOWN / NOT MEASURED",
+      "wall_clock_seconds": 1.936
+    },
+    "REROOM": {
+      "final_dxf_sha256": "aae168901fdfddc87f1663ed3465bd2266598f816d56da3f89d6e9c9b3734c48",
+      "geometry_violations_per_iteration": {
+        "final": 1,
+        "r01": 2,
+        "r02": 1
+      },
+      "iteration_count": 2,
+      "manual_interventions": 0,
+      "tool_calls": "UNKNOWN / NOT MEASURED",
+      "wall_clock_seconds": 2.015
+    },
+    "STUDIO": {
+      "final_dxf_sha256": "d38c6fdf5fd9d00be81535ce683ffb10204d602d98654c1fd886cdc9d3be1da1",
+      "geometry_violations_per_iteration": {
+        "final": 1,
+        "r01": 1,
+        "r02": 1
+      },
+      "iteration_count": 2,
+      "manual_interventions": 0,
+      "tool_calls": "UNKNOWN / NOT MEASURED",
+      "wall_clock_seconds": 1.999
+    }
+  },
+  "base_cad_sha256": "0bdc0c5cc8b716122af39d48547f8031dde0fd607dd03c8903e1702121381368",
+  "blind_outputs": {
+    "A": "experiments/design_skill_benchmark_v01/blind_review/A.png",
+    "A_clearance": "experiments/design_skill_benchmark_v01/blind_review/A_clearance.png",
+    "B": "experiments/design_skill_benchmark_v01/blind_review/B.png",
+    "B_clearance": "experiments/design_skill_benchmark_v01/blind_review/B_clearance.png",
+    "C": "experiments/design_skill_benchmark_v01/blind_review/C.png",
+    "C_clearance": "experiments/design_skill_benchmark_v01/blind_review/C_clearance.png",
+    "D": "experiments/design_skill_benchmark_v01/blind_review/D.png",
+    "D_clearance": "experiments/design_skill_benchmark_v01/blind_review/D_clearance.png"
+  },
+  "formal_input_sha_after": {
+    "a0_4": {
+      "file": "assets/cad_library/standard/compiled/residential_design_legends_v01.dxf",
+      "sha256": "a10f61f253c2340e8ac070f14b51242f7b9d56615fb98aee5a5458db7d618a9e"
+    },
+    "a1": {
+      "file": "knowledge/design_rules/design_rulebook_v01.json",
+      "sha256": "120148ad14317b4141ac7ec67c3af00af3be8e50a57feae83d701b135df2dbce"
+    },
+    "a2": {
+      "file": "knowledge/precedents/pattern_library_v01.json",
+      "sha256": "a247b63bfbaa5f9b38e6f64915178cc9c0dfda98137feda4d119c92d5cbde4b1"
+    },
+    "canonical": {
+      "file": "current_existing/canonical_plan_v1.json",
+      "sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444"
+    },
+    "v02": {
+      "file": "cad/design_v02_f1_l1.dxf",
+      "sha256": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d"
+    },
+    "windows": {
+      "file": "current_existing/window_register.json",
+      "sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a"
+    }
+  },
+  "formal_input_sha_before": {
+    "a0_4": {
+      "file": "assets/cad_library/standard/compiled/residential_design_legends_v01.dxf",
+      "sha256": "a10f61f253c2340e8ac070f14b51242f7b9d56615fb98aee5a5458db7d618a9e"
+    },
+    "a1": {
+      "file": "knowledge/design_rules/design_rulebook_v01.json",
+      "sha256": "120148ad14317b4141ac7ec67c3af00af3be8e50a57feae83d701b135df2dbce"
+    },
+    "a2": {
+      "file": "knowledge/precedents/pattern_library_v01.json",
+      "sha256": "a247b63bfbaa5f9b38e6f64915178cc9c0dfda98137feda4d119c92d5cbde4b1"
+    },
+    "canonical": {
+      "file": "current_existing/canonical_plan_v1.json",
+      "sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444"
+    },
+    "v02": {
+      "file": "cad/design_v02_f1_l1.dxf",
+      "sha256": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d"
+    },
+    "windows": {
+      "file": "current_existing/window_register.json",
+      "sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a"
+    }
+  },
+  "gates": {
+    "G0_SOURCE_AUDIT": true,
+    "G1_BASE_CAD": true,
+    "G2_ISOLATION": true,
+    "G3_CAD_FIRST": true,
+    "G4_ACTUAL_BLOCKS": true,
+    "G5_ITERATIVE_REVIEW": true,
+    "G6_SAME_INPUTS": true,
+    "G7_BLIND_OUTPUT": true,
+    "G8_FORMAL_CAD_SAFETY": true
+  },
+  "generated_at_utc": "2026-09-27T03:03:45.641897+00:00",
+  "status": "HUMAN_REVIEW",
+  "stop_condition": "Do not start V03; do not write formal CAD; await human review.",
+  "verification_summary": {
+    "unittest_status": "PASS",
+    "unittest_tests": 4,
+    "verifier_checks": 37,
+    "verifier_status": "PASS"
+  }
+}
