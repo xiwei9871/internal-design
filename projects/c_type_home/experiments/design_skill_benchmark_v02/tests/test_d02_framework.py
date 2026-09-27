@@ -35,5 +35,23 @@ class D02FrameworkTests(unittest.TestCase):
         ]
         self.assertTrue(validate_iteration_causality(good)["pass"])
 
+    def test_packager_requires_real_agent_evidence(self):
+        from package_d02 import validate_session_evidence
+        result = validate_session_evidence("STUDIO")
+        self.assertTrue(result["pass"])
+        self.assertTrue(result["real_agent_action"])
+        self.assertTrue(result["feedback_causality"])
+
+    def test_packager_rejects_missing_review(self):
+        from package_d02 import validate_session_evidence
+        result = validate_session_evidence("CTRL")
+        self.assertTrue(result["pass"])
+
+    def test_blind_report_hides_arm_mapping(self):
+        report = (EXP / "reports/d02_report.md").read_text()
+        for token in ("CTRL", "ARCH", "STUDIO", "REROOM"):
+            self.assertNotIn(token, report)
+        self.assertTrue((EXP / "blind_review/arm_mapping.secret.json").exists())
+
 if __name__ == "__main__":
     unittest.main()

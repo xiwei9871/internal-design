@@ -1,0 +1,151 @@
+{
+  "arm_evidence": {
+    "ARCH": {
+      "arm": "ARCH",
+      "bbox_qa": true,
+      "bbox_qa_r01": true,
+      "bbox_qa_r02": true,
+      "causality": {
+        "pass": true,
+        "r01_feedback_first_timestamp": "2026-09-27T11:32:32.456+00:00",
+        "r02_edit_first_timestamp": "2026-09-27T11:38:23.228+00:00",
+        "reason": "r02 edits must occur after r01 render/geometry/review evidence"
+      },
+      "feedback_causality": true,
+      "furniture_count_r01": 8,
+      "furniture_count_r02": 8,
+      "isolation": true,
+      "iteration_logs_ok": true,
+      "log_sources": {
+        "iteration_01": "native_iteration_log",
+        "iteration_02": "native_iteration_log"
+      },
+      "pass": true,
+      "real_agent_action": true,
+      "saved_cad_provenance": true,
+      "session_summary": true,
+      "skill_material_read": true,
+      "visual_review_evidence": true
+    },
+    "CTRL": {
+      "arm": "CTRL",
+      "bbox_qa": true,
+      "bbox_qa_r01": true,
+      "bbox_qa_r02": true,
+      "causality": {
+        "pass": true,
+        "r01_feedback_first_timestamp": "2026-09-27T12:21:13.827+00:00",
+        "r02_edit_first_timestamp": "2026-09-27T12:22:50.499+00:00",
+        "reason": "r02 edits must occur after r01 render/geometry/review evidence"
+      },
+      "feedback_causality": true,
+      "furniture_count_r01": 7,
+      "furniture_count_r02": 6,
+      "isolation": true,
+      "iteration_logs_ok": true,
+      "log_sources": {
+        "iteration_01": "native_iteration_log",
+        "iteration_02": "native_iteration_log"
+      },
+      "pass": true,
+      "real_agent_action": true,
+      "saved_cad_provenance": true,
+      "session_summary": true,
+      "skill_material_read": true,
+      "visual_review_evidence": true
+    },
+    "REROOM": {
+      "arm": "REROOM",
+      "bbox_qa": true,
+      "bbox_qa_r01": true,
+      "bbox_qa_r02": true,
+      "causality": {
+        "pass": true,
+        "r01_feedback_first_timestamp": "2026-09-27T12:13:42.932+00:00",
+        "r02_edit_first_timestamp": "2026-09-27T12:15:46.285+00:00",
+        "reason": "r02 edits must occur after r01 render/geometry/review evidence"
+      },
+      "feedback_causality": true,
+      "furniture_count_r01": 8,
+      "furniture_count_r02": 8,
+      "isolation": true,
+      "iteration_logs_ok": true,
+      "log_sources": {
+        "iteration_01": "native_iteration_log",
+        "iteration_02": "native_iteration_log"
+      },
+      "pass": true,
+      "real_agent_action": true,
+      "saved_cad_provenance": true,
+      "session_summary": true,
+      "skill_material_read": true,
+      "visual_review_evidence": true
+    },
+    "STUDIO": {
+      "arm": "STUDIO",
+      "bbox_qa": true,
+      "bbox_qa_r01": false,
+      "bbox_qa_r02": true,
+      "causality": {
+        "pass": true,
+        "r01_feedback_first_timestamp": "2026-09-27T03:47:44.876+00:00",
+        "r02_edit_first_timestamp": "2026-09-27T03:50:06.019+00:00",
+        "reason": "r02 edits must occur after r01 render/geometry/review evidence"
+      },
+      "feedback_causality": true,
+      "furniture_count_r01": 8,
+      "furniture_count_r02": 8,
+      "isolation": true,
+      "iteration_logs_ok": true,
+      "log_sources": {
+        "iteration_01": "native_iteration_log",
+        "iteration_02": "native_iteration_log"
+      },
+      "pass": true,
+      "real_agent_action": true,
+      "saved_cad_provenance": true,
+      "session_summary": true,
+      "skill_material_read": true,
+      "visual_review_evidence": true
+    }
+  },
+  "blind_outputs": {
+    "A": "experiments/design_skill_benchmark_v02/blind_review/A.png",
+    "A_clearance": "experiments/design_skill_benchmark_v02/blind_review/A_clearance.png",
+    "B": "experiments/design_skill_benchmark_v02/blind_review/B.png",
+    "B_clearance": "experiments/design_skill_benchmark_v02/blind_review/B_clearance.png",
+    "C": "experiments/design_skill_benchmark_v02/blind_review/C.png",
+    "C_clearance": "experiments/design_skill_benchmark_v02/blind_review/C_clearance.png",
+    "D": "experiments/design_skill_benchmark_v02/blind_review/D.png",
+    "D_clearance": "experiments/design_skill_benchmark_v02/blind_review/D_clearance.png"
+  },
+  "formal_input_sha256": {
+    "a0_4": "a10f61f253c2340e8ac070f14b51242f7b9d56615fb98aee5a5458db7d618a9e",
+    "canonical": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444",
+    "v02": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d",
+    "windows": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a"
+  },
+  "gate_count": 17,
+  "gates": {
+    "G0.5_NO_COORDINATE_PRESETS": true,
+    "G0_SOURCE_AUDIT": true,
+    "G10_REAL_SKILL_LOAD": true,
+    "G11_REAL_AGENT_ACTION": true,
+    "G12_FEEDBACK_CAUSALITY": true,
+    "G13_VISUAL_REVIEW": true,
+    "G14_METHOD_DIFFERENTIATION": true,
+    "G15_BLIND_INTEGRITY": true,
+    "G1_BASE_CAD": true,
+    "G2_ISOLATION": true,
+    "G3_CAD_FIRST": true,
+    "G4_ACTUAL_BLOCKS": true,
+    "G5_ITERATIVE_REVIEW": true,
+    "G6_SAME_INPUTS": true,
+    "G7_BLIND_OUTPUT": true,
+    "G8_FORMAL_CAD_SAFETY": true,
+    "G9_NO_HARDCODED_LAYOUT": true
+  },
+  "mapping_secret": "experiments/design_skill_benchmark_v02/blind_review/arm_mapping.secret.json",
+  "note": "D0.1 is infrastructure prototype pass / skill benchmark invalid; D0.2 uses independent agent sessions.",
+  "status": "HUMAN_REVIEW"
+}

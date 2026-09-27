@@ -1,0 +1,61 @@
+{
+  "method": "CTRL",
+  "files": [
+    {
+      "path": "design_skill_benchmark_v02/scripts/cad_tool.py",
+      "sha256": "b474554d848cf500195679ecad2b43701eb2562f2948d1d6ef2b7b13d81c2239"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/SKILL.md",
+      "sha256": "3fdb254fb960c4cce74ba80d062355c9b9140a94dd02d60ebe8c58f49686647d"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/a0_4.dxf",
+      "sha256": "a10f61f253c2340e8ac070f14b51242f7b9d56615fb98aee5a5458db7d618a9e"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/a0_4_manifest.json",
+      "sha256": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/a1_rulebook.json",
+      "sha256": "120148ad14317b4141ac7ec67c3af00af3be8e50a57feae83d701b135df2dbce"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/a2_pattern_library.json",
+      "sha256": "a247b63bfbaa5f9b38e6f64915178cc9c0dfda98137feda4d119c92d5cbde4b1"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/brief.json",
+      "sha256": "f062aaaa2e7d1f19ff9edf61e8746340fd6fa599eab5ddcebe2e7cd60c1eb239"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/brief.md",
+      "sha256": "51e8af352d2244b24efbee6bb9856f531ed3c00a4edb1f3bb72ac97377bc8535"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/canonical.json",
+      "sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/input_manifest.json",
+      "sha256": "5b4edc1ef86b525741dbf06c6e0bf2158cdeeaf5042a287645e2565b5b036ed9"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/kitchen_register.json",
+      "sha256": "65a926f773b3c9b9c3334e1b504744512ceb299825b1252aca32b7a4b24219fa"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/public_zone_clean_base.dxf",
+      "sha256": "17c5d07fd5afec2a6b3751b89727f4e1329b9b0a2fccd5b221aad900a6954984"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/common/window_register.json",
+      "sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a"
+    },
+    {
+      "path": "design_skill_benchmark_v02/sessions/CTRL/session_manifest.json",
+      "sha256": "9b2a89c919dfa6f1f30b8744c9467329fa5a0cbaa5fcf2e4f87900591fcba90a"
+    }
+  ]
+}
