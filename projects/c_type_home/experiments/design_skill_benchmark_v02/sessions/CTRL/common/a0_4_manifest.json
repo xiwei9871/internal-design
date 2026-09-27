@@ -1,0 +1,694 @@
+{
+  "version": "v0.1",
+  "geometry_scaled": true,
+  "legends": [
+    {
+      "id": "BED_1800x2100_PLAN",
+      "category": "bed",
+      "derived_from": "SRC_GS_BED_KING_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -965.1999999999999,
+        -2070.1,
+        965.1999999999999,
+        0.0
+      ],
+      "design_target_bbox_mm": [
+        1800,
+        2100
+      ],
+      "normalized_bbox_mm": [
+        -900.0,
+        -2100.0,
+        900.0,
+        0.0
+      ],
+      "scale_x": 0.9324492333195193,
+      "scale_y": 1.0144437466789045,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "bed head-center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 32,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/BED_1800x2100_PLAN.dxf",
+      "preview_file": "previews/BED_1800x2100_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "BED_1500x2000_PLAN",
+      "category": "bed",
+      "derived_from": "SRC_GS_BED_QUEEN_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -762.0,
+        -2070.1,
+        762.0,
+        0.0
+      ],
+      "design_target_bbox_mm": [
+        1500,
+        2000
+      ],
+      "normalized_bbox_mm": [
+        -750.0,
+        -2000.0,
+        750.0,
+        0.0
+      ],
+      "scale_x": 0.984251968503937,
+      "scale_y": 0.9661369015989566,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "bed head-center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 32,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/BED_1500x2000_PLAN.dxf",
+      "preview_file": "previews/BED_1500x2000_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "BED_900x2000_PLAN",
+      "category": "bed",
+      "derived_from": "SRC_GS_BED_SINGLE_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -495.29999999999995,
+        -1917.7,
+        495.29999999999995,
+        0.0
+      ],
+      "design_target_bbox_mm": [
+        900,
+        2000
+      ],
+      "normalized_bbox_mm": [
+        -450.0,
+        -2000.0,
+        450.0,
+        0.0
+      ],
+      "scale_x": 0.9085402786190189,
+      "scale_y": 1.0429159931167544,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "bed head-center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 23,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/BED_900x2000_PLAN.dxf",
+      "preview_file": "previews/BED_900x2000_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SOFA_3S_2200x900_PLAN",
+      "category": "sofa",
+      "derived_from": "SRC_GS_SOFA_3S_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -1117.6,
+        -914.4,
+        1117.6,
+        0.0
+      ],
+      "design_target_bbox_mm": [
+        2200,
+        900
+      ],
+      "normalized_bbox_mm": [
+        -1100.0,
+        -900.0,
+        1100.0,
+        0.0
+      ],
+      "scale_x": 0.984251968503937,
+      "scale_y": 0.984251968503937,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "sofa back-center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 29,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SOFA_3S_2200x900_PLAN.dxf",
+      "preview_file": "previews/SOFA_3S_2200x900_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SOFA_2S_1800x850_PLAN",
+      "category": "sofa",
+      "derived_from": "SRC_GS_SOFA_2S_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -812.8,
+        -914.4,
+        812.8,
+        0.0
+      ],
+      "design_target_bbox_mm": [
+        1800,
+        850
+      ],
+      "normalized_bbox_mm": [
+        -900.0,
+        -850.0,
+        900.0,
+        0.0
+      ],
+      "scale_x": 1.1072834645669292,
+      "scale_y": 0.9295713035870516,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "sofa back-center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 26,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SOFA_2S_1800x850_PLAN.dxf",
+      "preview_file": "previews/SOFA_2S_1800x850_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "LOUNGE_CHAIR_900x900_PLAN",
+      "category": "lounge_chair",
+      "derived_from": "SRC_GS_OFFICE_CHAIR_PLAN",
+      "semantic_proxy": true,
+      "proxy_reason": "source block is a semantic proxy; geometry is footprint-only",
+      "source_bbox_mm": [
+        -285.6740339880724,
+        -254.000000056432,
+        285.6740339880724,
+        254.00000005643201
+      ],
+      "design_target_bbox_mm": [
+        900,
+        900
+      ],
+      "normalized_bbox_mm": [
+        -449.999992682496,
+        -450.0,
+        449.999992682496,
+        449.9995990075732
+      ],
+      "scale_x": 1.5752219189049175,
+      "scale_y": 1.7716535429134728,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "semantic proxy from office chair; center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 32,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0004009924268757459,
+      "normalized_file": "normalized/LOUNGE_CHAIR_900x900_PLAN.dxf",
+      "preview_file": "previews/LOUNGE_CHAIR_900x900_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "DESK_1700x800_PLAN",
+      "category": "desk",
+      "derived_from": "SRC_GS_DESK_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -762.0,
+        -381.0,
+        762.0,
+        381.0
+      ],
+      "design_target_bbox_mm": [
+        1700,
+        800
+      ],
+      "normalized_bbox_mm": [
+        -850.0,
+        -400.0,
+        850.0,
+        400.0
+      ],
+      "scale_x": 1.1154855643044619,
+      "scale_y": 1.0498687664041995,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "desk center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 4,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/DESK_1700x800_PLAN.dxf",
+      "preview_file": "previews/DESK_1700x800_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "DINING_TABLE_1500x600_PLAN",
+      "category": "dining_table",
+      "derived_from": "SRC_GS_DINING_TABLE_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -1143.0,
+        -558.8,
+        1143.0,
+        558.8
+      ],
+      "design_target_bbox_mm": [
+        1500,
+        600
+      ],
+      "normalized_bbox_mm": [
+        -750.0,
+        -300.0,
+        750.0,
+        300.0
+      ],
+      "scale_x": 0.6561679790026247,
+      "scale_y": 0.5368647100930566,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "table center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 18,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/DINING_TABLE_1500x600_PLAN.dxf",
+      "preview_file": "previews/DINING_TABLE_1500x600_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "DINING_CHAIR_450x500_PLAN",
+      "category": "dining_chair",
+      "derived_from": "SRC_GS_DINING_CHAIR_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -228.22540057559203,
+        -254.0,
+        228.22540057559203,
+        253.99999999999997
+      ],
+      "design_target_bbox_mm": [
+        450,
+        500
+      ],
+      "normalized_bbox_mm": [
+        -224.99986031527948,
+        -250.0,
+        224.99986031527948,
+        250.0
+      ],
+      "scale_x": 0.9858674776450935,
+      "scale_y": 0.984251968503937,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "chair center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 13,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.00027936944104567374,
+      "normalized_file": "normalized/DINING_CHAIR_450x500_PLAN.dxf",
+      "preview_file": "previews/DINING_CHAIR_450x500_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "WC_STD_450x700_PLAN",
+      "category": "wc",
+      "derived_from": "SRC_GS_WC_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -228.6,
+        -711.2001227426085,
+        228.6,
+        0.0
+      ],
+      "design_target_bbox_mm": [
+        450,
+        700
+      ],
+      "normalized_bbox_mm": [
+        -225.0,
+        -699.9998791903669,
+        225.0,
+        0.0
+      ],
+      "scale_x": 0.984251968503937,
+      "scale_y": 0.9842517986366237,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "WC rear-center / wall connection side",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 14,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0001208096331311026,
+      "normalized_file": "normalized/WC_STD_450x700_PLAN.dxf",
+      "preview_file": "previews/WC_STD_450x700_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "VANITY_600x500_PLAN",
+      "category": "vanity",
+      "derived_from": "SRC_UNC_VANITY_600_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -300.0,
+        -300.0,
+        300.0,
+        300.0
+      ],
+      "design_target_bbox_mm": [
+        600,
+        500
+      ],
+      "normalized_bbox_mm": [
+        -300.0,
+        -250.0,
+        300.0,
+        250.0
+      ],
+      "scale_x": 1.0,
+      "scale_y": 0.8333333333333334,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "vanity center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 61,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/VANITY_600x500_PLAN.dxf",
+      "preview_file": "previews/VANITY_600x500_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "VANITY_900x500_PLAN",
+      "category": "vanity",
+      "derived_from": "SRC_UNC_VANITY_600_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -300.0,
+        -300.0,
+        300.0,
+        300.0
+      ],
+      "design_target_bbox_mm": [
+        900,
+        500
+      ],
+      "normalized_bbox_mm": [
+        -450.0,
+        -250.0,
+        450.0,
+        250.0
+      ],
+      "scale_x": 1.5,
+      "scale_y": 0.8333333333333334,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "vanity center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 61,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/VANITY_900x500_PLAN.dxf",
+      "preview_file": "previews/VANITY_900x500_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "SHOWER_900x1200_PLAN",
+      "category": "shower",
+      "derived_from": "SRC_GS_SHOWER_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        -457.2,
+        -457.2,
+        457.2,
+        457.2
+      ],
+      "design_target_bbox_mm": [
+        900,
+        1200
+      ],
+      "normalized_bbox_mm": [
+        -450.0,
+        -600.0,
+        450.0,
+        600.0
+      ],
+      "scale_x": 0.984251968503937,
+      "scale_y": 1.3123359580052494,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "shower center",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 13,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/SHOWER_900x1200_PLAN.dxf",
+      "preview_file": "previews/SHOWER_900x1200_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "WARDROBE_D600_PLAN",
+      "category": "wardrobe",
+      "derived_from": "SRC_GS_WARDROBE_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        0.0,
+        -457.2,
+        965.1999999999999,
+        0.0
+      ],
+      "design_target_bbox_mm": [
+        965.1999999999999,
+        600.0
+      ],
+      "normalized_bbox_mm": [
+        0.0,
+        -600.0,
+        965.1999999999999,
+        0.0
+      ],
+      "scale_x": 1.0,
+      "scale_y": 1.3123359580052494,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "wardrobe back-left; source width retained",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 4,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 0.0,
+      "normalized_file": "normalized/WARDROBE_D600_PLAN.dxf",
+      "preview_file": "previews/WARDROBE_D600_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "WASHER_600x650_PLAN",
+      "category": "washer",
+      "derived_from": "SRC_GS_WASHER_PLAN",
+      "semantic_proxy": false,
+      "proxy_reason": null,
+      "source_bbox_mm": [
+        0.0,
+        -762.0000000000001,
+        762.0000000000001,
+        0.0
+      ],
+      "design_target_bbox_mm": [
+        600,
+        650
+      ],
+      "normalized_bbox_mm": [
+        -4.4758597528195284e-14,
+        -649.9999999999999,
+        600.0,
+        0.0
+      ],
+      "scale_x": 0.7874015748031495,
+      "scale_y": 0.853018372703412,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "appliance back-left",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 12,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 1.1368683772161603e-13,
+      "normalized_file": "normalized/WASHER_600x650_PLAN.dxf",
+      "preview_file": "previews/WASHER_600x650_PLAN.png",
+      "qa_status": "PASS"
+    },
+    {
+      "id": "DRYER_600x650_PLAN",
+      "category": "dryer",
+      "derived_from": "SRC_GS_WASHER_PLAN",
+      "semantic_proxy": true,
+      "proxy_reason": "source block is a semantic proxy; geometry is footprint-only",
+      "source_bbox_mm": [
+        0.0,
+        -762.0000000000001,
+        762.0000000000001,
+        0.0
+      ],
+      "design_target_bbox_mm": [
+        600,
+        650
+      ],
+      "normalized_bbox_mm": [
+        -4.4758597528195284e-14,
+        -649.9999999999999,
+        600.0,
+        0.0
+      ],
+      "scale_x": 0.7874015748031495,
+      "scale_y": 0.853018372703412,
+      "unit_conversion_applied": false,
+      "geometry_scaled": true,
+      "design_geometry_rescaled": true,
+      "base_point_convention": "semantic proxy from washer; appliance back-left",
+      "normalized_base_point_mm": [
+        0.0,
+        0.0
+      ],
+      "entity_count": 12,
+      "layer_count": 1,
+      "xref": false,
+      "ole": false,
+      "proxy": false,
+      "normalized_units": "mm",
+      "target_bbox_delta_mm": 1.1368683772161603e-13,
+      "normalized_file": "normalized/DRYER_600x650_PLAN.dxf",
+      "preview_file": "previews/DRYER_600x650_PLAN.png",
+      "qa_status": "PASS"
+    }
+  ]
+}

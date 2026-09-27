@@ -1,0 +1,30 @@
+{
+  "agent_must_generate": [
+    "commands.jsonl",
+    "iteration_01/agent_review.md",
+    "iteration_02/agent_review.md"
+  ],
+  "allowed_inputs": [
+    "common/*",
+    "SKILL.md",
+    "references/*",
+    "scripts/cad_tool.py"
+  ],
+  "arm": "STUDIO",
+  "iteration_limit": 2,
+  "prohibited_inputs": [
+    "D0.1 experiment",
+    "F1R outputs",
+    "other arm sessions",
+    "other arm mapping"
+  ],
+  "source_material": [
+    "arch-skills__skills__asset-management-interior__references__benchmark.md",
+    "arch-skills__skills__asset-management-interior__references__case-anatomy.md",
+    "arch-skills__skills__asset-management-interior__references__concept-engine.md",
+    "arch-skills__skills__asset-management-interior__references__plan-review.md",
+    "arch-skills__skills__asset-management-interior__references__spatial-devices.md",
+    "arch-skills__skills__asset-management-interior__references__aesthetic-canon.md",
+    "arch-skills__skills__asset-management-interior__SKILL.md"
+  ]
+}

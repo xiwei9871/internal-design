@@ -1,0 +1,29 @@
+{
+  "agent_must_generate": [
+    "commands.jsonl",
+    "iteration_01/agent_review.md",
+    "iteration_02/agent_review.md"
+  ],
+  "allowed_inputs": [
+    "common/*",
+    "SKILL.md",
+    "references/*",
+    "scripts/cad_tool.py"
+  ],
+  "arm": "ARCH",
+  "iteration_limit": 2,
+  "prohibited_inputs": [
+    "D0.1 experiment",
+    "F1R outputs",
+    "other arm sessions",
+    "other arm mapping"
+  ],
+  "source_material": [
+    "Skills-Architects__skills__architect-foundations__SKILL.md",
+    "Skills-Architects__skills__spatial-planning__SKILL.md",
+    "Skills-Architects__skills__building-typology__SKILL.md",
+    "Skills-Architects__skills__accessibility-design__SKILL.md",
+    "Skills-Architects__skills__design-theory__SKILL.md",
+    "Skills-Architects__skills__concept-design__SKILL.md"
+  ]
+}
