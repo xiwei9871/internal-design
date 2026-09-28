@@ -1,0 +1,91 @@
+{
+  "method": "ARCH",
+  "hash_algorithm": "SHA-256",
+  "created_at_utc": "2026-09-27T10:44:53+00:00",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "e9adb02a28dbfd6c1948e12b985db0f0d70ff1fcd2ba0f4c10df1a32875b9277"
+    },
+    {
+      "path": "references/Skills-Architects__skills__accessibility-design__SKILL.md",
+      "sha256": "3e9afc9176811df28ac871064d606f3a3a4709558aa07e8f76e2f20422b199c4"
+    },
+    {
+      "path": "references/Skills-Architects__skills__architect-foundations__SKILL.md",
+      "sha256": "9cab67def6cfd8f96eb6199f8fcfc80b9e244f4c31991e1981e1ec72d6c5ceb2"
+    },
+    {
+      "path": "references/Skills-Architects__skills__building-typology__SKILL.md",
+      "sha256": "2dfc03f58949f873f7fad81cb7a373f3b04a87d2e708ffa66a556c19cad8c294"
+    },
+    {
+      "path": "references/Skills-Architects__skills__concept-design__SKILL.md",
+      "sha256": "ccfd082c8714b6c484a10f4312406e4c6c6a66ab776036bd5fb0d306254e3e4e"
+    },
+    {
+      "path": "references/Skills-Architects__skills__design-theory__SKILL.md",
+      "sha256": "30546c4e5c2b30572312f1a4c3c340a98ca707e191856668ef6cfbb346ac4c5f"
+    },
+    {
+      "path": "references/Skills-Architects__skills__spatial-planning__SKILL.md",
+      "sha256": "ed41a80bfe210361133eaa11c9ce80144b3a446bee53917bec827dce56b46580"
+    },
+    {
+      "path": "common/a0_4.dxf",
+      "sha256": "a10f61f253c2340e8ac070f14b51242f7b9d56615fb98aee5a5458db7d618a9e"
+    },
+    {
+      "path": "common/a0_4_manifest.json",
+      "sha256": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+    },
+    {
+      "path": "common/a1_rulebook.json",
+      "sha256": "120148ad14317b4141ac7ec67c3af00af3be8e50a57feae83d701b135df2dbce"
+    },
+    {
+      "path": "common/a2_pattern_library.json",
+      "sha256": "a247b63bfbaa5f9b38e6f64915178cc9c0dfda98137feda4d119c92d5cbde4b1"
+    },
+    {
+      "path": "common/brief.json",
+      "sha256": "f062aaaa2e7d1f19ff9edf61e8746340fd6fa599eab5ddcebe2e7cd60c1eb239"
+    },
+    {
+      "path": "common/brief.md",
+      "sha256": "51e8af352d2244b24efbee6bb9856f531ed3c00a4edb1f3bb72ac97377bc8535"
+    },
+    {
+      "path": "common/canonical.json",
+      "sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444"
+    },
+    {
+      "path": "common/input_manifest.json",
+      "sha256": "5b4edc1ef86b525741dbf06c6e0bf2158cdeeaf5042a287645e2565b5b036ed9"
+    },
+    {
+      "path": "common/kitchen_register.json",
+      "sha256": "65a926f773b3c9b9c3334e1b504744512ceb299825b1252aca32b7a4b24219fa"
+    },
+    {
+      "path": "common/public_zone_clean_base.dxf",
+      "sha256": "17c5d07fd5afec2a6b3751b89727f4e1329b9b0a2fccd5b221aad900a6954984"
+    },
+    {
+      "path": "common/window_register.json",
+      "sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a"
+    },
+    {
+      "path": "session_manifest.json",
+      "sha256": "b24ca17e85905f7f525dd120be636e513c41caba35ffe94907b89dc9a2171a78"
+    },
+    {
+      "path": "files_opened.sha256",
+      "sha256": "a81a38e0daaa72d1fed155387e185a0df9182622d422010d7e3dee16d206d0fc"
+    }
+  ],
+  "tool": {
+    "path": "../../scripts/cad_tool.py",
+    "sha256": "b474554d848cf500195679ecad2b43701eb2562f2948d1d6ef2b7b13d81c2239"
+  }
+}

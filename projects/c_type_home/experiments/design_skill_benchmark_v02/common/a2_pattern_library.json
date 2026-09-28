@@ -1,0 +1,926 @@
+{
+  "version": "v0.1",
+  "patterns": [
+    {
+      "pattern_id": "PAT-LIV-01",
+      "name": "CLEAR CENTRAL LIVING CORE",
+      "room": "living",
+      "tags": [
+        "furniture-free-core",
+        "clear-circulation",
+        "child-friendly"
+      ],
+      "method": "Load fixed furniture to the perimeter and reserve a central rectangle for play, conversation and temporary furniture.",
+      "benefit": "Supports child activity and multiple living modes without moving walls.",
+      "risk": "The room can feel under-furnished if edge pieces do not provide enough seating or storage.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003"
+      ],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-LIV-02",
+      "name": "EDGE-LOADED FURNITURE",
+      "room": "living",
+      "tags": [
+        "edge-loaded-furniture",
+        "flexible-living"
+      ],
+      "method": "Place large fixed pieces on wall or service edges and keep the center visually and physically light.",
+      "benefit": "Protects routes and preserves reconfiguration options.",
+      "risk": "Edge loading must still leave sightlines and daylight usable.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Living and dining occupy a continuous central band while kitchen and laundry are loaded along the service edge.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "The circular stair acts as a spatial anchor; furniture groups turn around the central void instead of all facing one wall.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003"
+      ],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-LIV-03",
+      "name": "STORAGE-AS-ZONING",
+      "room": "living",
+      "tags": [
+        "storage-zoning",
+        "existing-structure"
+      ],
+      "method": "Use a shallow storage edge or cabinet line to define zones without closing the open plan.",
+      "benefit": "Adds order while retaining visual connection.",
+      "risk": "Cabinet doors and service access can create a new pinch point.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-004"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Plan shows an added pavilion/extension attached to an existing home with public rooms and a planted or terrace edge.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-004"
+      ],
+      "evidence_confidence": "MEDIUM",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-LIV-04",
+      "name": "DINING-AS-KITCHEN-EXTENSION",
+      "room": "dining",
+      "tags": [
+        "dining-kitchen-extension",
+        "kitchen-adjacency"
+      ],
+      "method": "Keep dining close to the kitchen workflow while protecting a separate route through the public zone.",
+      "benefit": "Reduces carrying distance and supports everyday family use.",
+      "risk": "A table can become a corridor obstacle if chair pull-out is not modeled.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-003",
+        "PREC-007",
+        "PREC-013"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-007",
+          "evidence": "Living/dining/kitchen occupy the central bay, with bedrooms and services toward the private end and the courtyard as a visual terminus.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-013",
+          "evidence": "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-002",
+        "PREC-003",
+        "PREC-007",
+        "PREC-013"
+      ],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-LIV-05",
+      "name": "DUAL-MODE-DINING",
+      "room": "dining",
+      "tags": [
+        "dual-mode-dining",
+        "flexible-living"
+      ],
+      "method": "Size the daily table for normal use and keep one side adaptable for a child seat, helper or occasional extension.",
+      "benefit": "Avoids over-sizing the everyday table while preserving flexibility.",
+      "risk": "The adaptable side needs a real clear zone, not only a note.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-004"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Plan shows an added pavilion/extension attached to an existing home with public rooms and a planted or terrace edge.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-004"
+      ],
+      "evidence_confidence": "MEDIUM",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-LIV-06",
+      "name": "BALCONY VISUAL EXTENSION",
+      "room": "living",
+      "tags": [
+        "balcony-connected",
+        "visual-connection"
+      ],
+      "method": "Keep the living-to-balcony opening visually legible and free of tall or fixed blockers.",
+      "benefit": "Makes a small living room feel deeper and preserves outdoor access.",
+      "risk": "A future enclosure must be shown as a separate scenario.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-013",
+        "PREC-014"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-013",
+          "evidence": "The patio forms the primary visual axis and daylight source; furniture stays around its edges.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-014",
+          "evidence": "Ground plan has irregular split-level/courtyard geometry; the living/dining/kitchen group is central and bedrooms/support rooms occupy wings.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-002",
+        "PREC-013",
+        "PREC-014"
+      ],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-LIV-07",
+      "name": "NON-TV-CENTRIC MEDIA WALL",
+      "room": "living",
+      "tags": [
+        "projector-media",
+        "non-tv-centric"
+      ],
+      "method": "Treat the projection wall as one edge of a multi-use room rather than the room's only orientation.",
+      "benefit": "Allows conversation and child activity to coexist with viewing.",
+      "risk": "Throw distance, glare and cable access must be checked with the selected device.",
+      "precedent_ids": [],
+      "evidence": [
+        {
+          "precedent_id": "PROJECT-C-TYPE-BRIEF",
+          "evidence": "Owner brief explicitly makes projector/laser-TV dominant and rejects a TV-centric living room.",
+          "confidence": "HIGH"
+        },
+        {
+          "precedent_id": "PROJECT-F1-LAYOUT",
+          "evidence": "F1 records a locked media wall together with a flexible central living core.",
+          "confidence": "HIGH"
+        }
+      ],
+      "evidence_type": "PROJECT_DERIVED",
+      "project_basis": [
+        "P-PROJECTOR-LIVING",
+        "LIV-MEDIA-005",
+        "LIV-FLEX-003"
+      ],
+      "verified_precedent_ids": [],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "This pattern is primarily derived from the C-type brief and F1 record; external precedents are not claimed as evidence for projector behavior."
+    },
+    {
+      "pattern_id": "PAT-CIR-01",
+      "name": "FURNITURE-FREE CIRCULATION SPINE",
+      "room": "circulation",
+      "tags": [
+        "clear-circulation",
+        "aging-in-place"
+      ],
+      "method": "Reserve a continuous spine between entry, living, stairs and balcony before placing loose furniture.",
+      "benefit": "Makes assisted movement legible and reduces repeated re-layout.",
+      "risk": "A spine that is only clear on paper can fail at doors and corners.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-009"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-009",
+          "evidence": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-002",
+        "PREC-009"
+      ],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-BED-01",
+      "name": "BEDROOM CLEAR-SIDE ROUTE",
+      "room": "bedroom",
+      "tags": [
+        "elderly-bedroom",
+        "aging-in-place",
+        "clear-circulation"
+      ],
+      "method": "Give the assisted bed side a direct route and a reachable landing surface; document any one-sided compromise.",
+      "benefit": "Improves night movement and caregiver access.",
+      "risk": "Wardrobe and door swings often consume the apparent clearance.",
+      "precedent_ids": [],
+      "evidence": [
+        {
+          "precedent_id": "RULE-BED-AGE-002",
+          "evidence": "The assisted-side bed route and caregiver access are design-rule requirements; the verified case plans do not show a confirmed bed-to-bath clear-side measurement.",
+          "confidence": "HIGH",
+          "verification_status": "RULE_DERIVED"
+        }
+      ],
+      "evidence_type": "RULE_DERIVED",
+      "project_basis": [
+        "BED-CIR-001",
+        "BED-AGE-002",
+        "BED-AGE-010"
+      ],
+      "verified_precedent_ids": [],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "This pattern is rule-derived; verified precedents may be contextual references but are not claimed as direct proof."
+    },
+    {
+      "pattern_id": "PAT-BED-02",
+      "name": "STUDY + BACKUP SLEEPING",
+      "room": "study",
+      "tags": [
+        "study-guest-hybrid",
+        "flexible-living"
+      ],
+      "method": "Set the desk, chair pullback and backup sleep footprint together before fixing storage.",
+      "benefit": "Keeps a study useful daily while allowing periodic guests.",
+      "risk": "A daybed or sofa bed can close the only work aisle.",
+      "precedent_ids": [],
+      "evidence": [
+        {
+          "precedent_id": "RULE-STD-FLEX-007",
+          "evidence": "Study plus backup sleeping is derived from the C-type periodic-guest brief and the study rules; verified plans did not directly show a daybed/workstation hybrid.",
+          "confidence": "HIGH",
+          "verification_status": "RULE_DERIVED"
+        }
+      ],
+      "evidence_type": "RULE_DERIVED",
+      "project_basis": [
+        "STD-FLEX-007",
+        "STD-FLEX-008",
+        "P-OWNER-COUPLE"
+      ],
+      "verified_precedent_ids": [],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "This pattern is rule-derived; verified precedents may be contextual references but are not claimed as direct proof."
+    },
+    {
+      "pattern_id": "PAT-BTH-01",
+      "name": "AGING-IN-PLACE BATHROOM",
+      "room": "bathroom",
+      "tags": [
+        "aging-in-place",
+        "accessible-bathroom"
+      ],
+      "method": "Coordinate shower footprint, transfer clearances, support backing, door swing and turning tests as one system.",
+      "benefit": "Prevents a nominally large bathroom from failing at the fixture interface.",
+      "risk": "Local code and actual product dimensions must be verified.",
+      "precedent_ids": [],
+      "evidence": [
+        {
+          "precedent_id": "RULE-BTH-AGE-005",
+          "evidence": "The coordinated aging-in-place bathroom system is derived from shower, backing, transfer and local-code rules; the verified care plan is contextual, not a product-clearance proof.",
+          "confidence": "HIGH",
+          "verification_status": "RULE_DERIVED"
+        }
+      ],
+      "evidence_type": "RULE_DERIVED",
+      "project_basis": [
+        "BTH-AGE-005",
+        "BTH-SHW-004",
+        "AGE-BTH-007",
+        "AGE-BTH-008"
+      ],
+      "verified_precedent_ids": [],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "This pattern is rule-derived; verified precedents may be contextual references but are not claimed as direct proof."
+    },
+    {
+      "pattern_id": "PAT-BTH-02",
+      "name": "WET-DRY CLEAR ZONES",
+      "room": "bathroom",
+      "tags": [
+        "wet-dry-zoning",
+        "accessible-bathroom"
+      ],
+      "method": "Place wet fixtures and dry approach zones so the main route is not forced through the shower entry.",
+      "benefit": "Improves safety, cleaning and simultaneous use.",
+      "risk": "Glass panels and drain falls can reduce the theoretical aisle.",
+      "precedent_ids": [],
+      "evidence": [
+        {
+          "precedent_id": "RULE-BTH-DOOR-007",
+          "evidence": "Wet/dry clear zones are derived from fixture approach and door-swing rules; verified case plans do not provide a confirmed C-type shower-entry clearance.",
+          "confidence": "HIGH",
+          "verification_status": "RULE_DERIVED"
+        }
+      ],
+      "evidence_type": "RULE_DERIVED",
+      "project_basis": [
+        "BTH-WC-001",
+        "BTH-VAN-003",
+        "BTH-DOOR-007",
+        "BTH-SAF-008"
+      ],
+      "verified_precedent_ids": [],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "This pattern is rule-derived; verified precedents may be contextual references but are not claimed as direct proof."
+    },
+    {
+      "pattern_id": "PAT-KIT-01",
+      "name": "RETAINED-KITCHEN WORKFLOW",
+      "room": "kitchen",
+      "tags": [
+        "existing-structure",
+        "kitchen-adjacency"
+      ],
+      "method": "Treat existing cabinetry as a fixed service datum and improve adjacent dining and circulation around it.",
+      "benefit": "Honors KEEP decisions while still improving public-space flow.",
+      "risk": "Unmeasured services or appliance doors can invalidate the assumed datum.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-003",
+        "PREC-007",
+        "PREC-008",
+        "PREC-001"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-007",
+          "evidence": "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-008",
+          "evidence": "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-002",
+        "PREC-003",
+        "PREC-007",
+        "PREC-008",
+        "PREC-001"
+      ],
+      "evidence_confidence": "MEDIUM",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-KIT-02",
+      "name": "COMPACT-WORK-TRIANGLE",
+      "room": "kitchen",
+      "tags": [
+        "kitchen-adjacency",
+        "clear-circulation"
+      ],
+      "method": "Keep sink, cooking and refrigeration relationships short while checking each open appliance door.",
+      "benefit": "Supports efficient daily cooking without expanding the kitchen footprint.",
+      "risk": "Triangle diagrams can hide two-person conflicts.",
+      "precedent_ids": [],
+      "evidence": [
+        {
+          "precedent_id": "RULE-KIT-WRK-004",
+          "evidence": "Compact sink-cook-refrigerator workflow is derived from NKBA/work-zone rules; verified plans show kitchen adjacency but do not confirm appliance-door and landing dimensions.",
+          "confidence": "HIGH",
+          "verification_status": "RULE_DERIVED"
+        }
+      ],
+      "evidence_type": "RULE_DERIVED",
+      "project_basis": [
+        "KIT-CIR-001",
+        "KIT-WRK-004",
+        "KIT-WRK-005",
+        "KIT-WRK-006",
+        "KIT-SAF-008"
+      ],
+      "verified_precedent_ids": [],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "This pattern is rule-derived; verified precedents may be contextual references but are not claimed as direct proof."
+    },
+    {
+      "pattern_id": "PAT-AGE-01",
+      "name": "STEP-FREE-ALTERNATE-ROUTE",
+      "room": "circulation",
+      "tags": [
+        "step-free-route",
+        "split-level",
+        "aging-in-place"
+      ],
+      "method": "Retain the existing stair for daily use and document a parallel assisted route until level and slope are measured.",
+      "benefit": "Keeps current life practical while planning for future mobility.",
+      "risk": "It is not a compliance claim until field measurement and local review are complete.",
+      "precedent_ids": [],
+      "evidence": [
+        {
+          "precedent_id": "RULE-AGE-THR-005",
+          "evidence": "The parallel stair plus assisted-route requirement comes from the C-type split-level brief and the unresolved level/slope rule; verified cases do not directly prove this topology.",
+          "confidence": "HIGH",
+          "verification_status": "RULE_DERIVED"
+        },
+        {
+          "precedent_id": "PROJECT-C-TYPE-BRIEF",
+          "evidence": "Owner brief explicitly retains the existing stair and asks for an assisted/power-wheelchair alternate route.",
+          "confidence": "HIGH",
+          "verification_status": "PROJECT_DERIVED"
+        }
+      ],
+      "evidence_type": "RULE_DERIVED",
+      "project_basis": [
+        "AGE-THR-005",
+        "CIR-RAMP-009",
+        "P-SPLIT-LEVEL"
+      ],
+      "verified_precedent_ids": [],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "This pattern is rule-derived; verified precedents may be contextual references but are not claimed as direct proof."
+    },
+    {
+      "pattern_id": "PAT-AGE-02",
+      "name": "VISIBLE-SOCIAL-ROUTE",
+      "room": "living",
+      "tags": [
+        "aging-in-place",
+        "visual-connection",
+        "clear-circulation"
+      ],
+      "method": "Place everyday seats and routes where an older resident can remain socially connected without crossing obstacles.",
+      "benefit": "Supports autonomy and supervision without segregating the resident.",
+      "risk": "Visual connection must not compromise privacy or glare control.",
+      "precedent_ids": [
+        "PREC-009",
+        "PREC-013"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-009",
+          "evidence": "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-013",
+          "evidence": "The patio forms the primary visual axis and daylight source; furniture stays around its edges.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-009",
+        "PREC-013"
+      ],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-CHD-01",
+      "name": "CHILD-ACTIVITY-SIGHTLINE",
+      "room": "living",
+      "tags": [
+        "child-friendly",
+        "visual-connection",
+        "furniture-free-core"
+      ],
+      "method": "Put the child activity edge within direct sight of adult seating or dining and outside the primary route.",
+      "benefit": "Allows supervision while preserving adult use of the room.",
+      "risk": "The sightline can be lost after adding tall storage or a screen.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-013"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Plan shows an added pavilion/extension attached to an existing home with public rooms and a planted or terrace edge.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-013",
+          "evidence": "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-013"
+      ],
+      "evidence_confidence": "MEDIUM",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-STOR-01",
+      "name": "ENTRY-STORAGE-BUFFER",
+      "room": "storage",
+      "tags": [
+        "entry-storage",
+        "clear-circulation"
+      ],
+      "method": "Use a shallow shoe, coat or bench zone to absorb arrival clutter without narrowing the entry path.",
+      "benefit": "Improves everyday order and reduces loose objects in circulation.",
+      "risk": "Deep cabinets or open doors can turn the buffer into a choke point.",
+      "precedent_ids": [
+        "PREC-002",
+        "PREC-006",
+        "PREC-027",
+        "PREC-050"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "LOW",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-006",
+          "evidence": "Metadata candidate carries shared tags clear-circulation and floor_plan_available=true; spatial action not visually verified.",
+          "confidence": "LOW",
+          "verification_status": "NOT_VERIFIED"
+        },
+        {
+          "precedent_id": "PREC-027",
+          "evidence": "Metadata candidate carries shared tags clear-circulation and floor_plan_available=true; spatial action not visually verified.",
+          "confidence": "LOW",
+          "verification_status": "NOT_VERIFIED"
+        },
+        {
+          "precedent_id": "PREC-050",
+          "evidence": "Metadata candidate carries shared tags clear-circulation and floor_plan_available=false; spatial action not visually verified.",
+          "confidence": "LOW",
+          "verification_status": "NOT_VERIFIED"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-002"
+      ],
+      "evidence_confidence": "LOW",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-STOR-02",
+      "name": "BUILT-IN-BUFFER-EDGE",
+      "room": "storage",
+      "tags": [
+        "storage-zoning",
+        "existing-structure"
+      ],
+      "method": "Place built-in storage at an edge where it can define a room without consuming the flexible center.",
+      "benefit": "Combines zoning and storage with a small footprint.",
+      "risk": "Service access and future furniture changes need an explicit reserve.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-004"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-005",
+          "evidence": "Plan shows an added pavilion/extension attached to an existing home with public rooms and a planted or terrace edge.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-004",
+          "evidence": "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+          "confidence": "MEDIUM",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-001",
+        "PREC-002",
+        "PREC-003",
+        "PREC-005",
+        "PREC-004"
+      ],
+      "evidence_confidence": "MEDIUM",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    },
+    {
+      "pattern_id": "PAT-REN-01",
+      "name": "EXISTING-STRUCTURE-AS-GRID",
+      "room": "renovation",
+      "tags": [
+        "existing-structure",
+        "renovation",
+        "adaptive-reuse"
+      ],
+      "method": "Use measured walls, openings and retained services as the grid for new furniture and partitions.",
+      "benefit": "Reduces accidental demolition and keeps the proposal traceable to the source building.",
+      "risk": "A stale survey can make a precise-looking plan wrong.",
+      "precedent_ids": [
+        "PREC-001",
+        "PREC-003",
+        "PREC-007",
+        "PREC-008",
+        "PREC-002"
+      ],
+      "evidence": [
+        {
+          "precedent_id": "PREC-001",
+          "evidence": "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-003",
+          "evidence": "The family loft keeps one connected public zone while retaining private room thresholds.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-007",
+          "evidence": "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-008",
+          "evidence": "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        },
+        {
+          "precedent_id": "PREC-002",
+          "evidence": "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+          "confidence": "HIGH",
+          "verification_status": "VERIFIED_PRECEDENT"
+        }
+      ],
+      "evidence_type": "EXTERNAL_PRECEDENT",
+      "project_basis": [],
+      "verified_precedent_ids": [
+        "PREC-001",
+        "PREC-003",
+        "PREC-007",
+        "PREC-008",
+        "PREC-002"
+      ],
+      "evidence_confidence": "HIGH",
+      "evidence_note": "Verified links describe an opened project page and floor plan; metadata-only links are explicitly low-confidence and do not support a high-confidence pattern claim."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "source_dxf": "cad/structure_only_source_sync.dxf",
+  "source_dxf_sha256": "3dcb49bfd6e617817089dda4fdfadec49bcf7c09e92b0012e3779e1c5c7e72e2",
+  "render_profile": "STRUCTURE_ONLY_CAD",
+  "synthetic_wall_faces": false,
+  "coordinate_mapping": {
+    "view_box_absolute": [
+      1299169.914780512,
+      -297470.8483372771,
+      1314873.914780512,
+      -281191.71573967574
+    ],
+    "view_box_task01": [
+      997.9147805119865,
+      -1012.8483372770716,
+      16701.914780511986,
+      15266.28426032426
+    ],
+    "axes_pixel_bounds_bottom_origin": [
+      0.0,
+      0.0,
+      2080.0,
+      2156.176502993554
+    ],
+    "canvas_size": [
+      2080,
+      2156
+    ],
+    "figure_pixel_extent": [
+      0.0,
+      0.0,
+      2080.0,
+      2156.176502993554
+    ]
+  },
+  "hidden_layers": [
+    "RC-GRILL"
+  ],
+  "hidden_entity_types": [
+    "DIMENSION"
+  ],
+  "visible_layers": [
+    "F-DOOR",
+    "F-SAN FIT",
+    "F-TEXT",
+    "S-S.WALL",
+    "S-楼梯"
+  ],
+  "visible_entity_types": [
+    "ARC",
+    "HATCH",
+    "INSERT",
+    "LINE",
+    "LWPOLYLINE",
+    "MTEXT"
+  ],
+  "outputs": {
+    "png": {
+      "file": "qc/structure_only_cad.png",
+      "sha256": "2b95ca79054a7f3555e28a55b7c980724061edf1d8d0726ef5b0aa8611e1b8d4"
+    },
+    "pdf": {
+      "file": "qc/structure_only_cad.pdf",
+      "sha256": "a91513b61958bf519f5595cb14a9abda2d0b072b873035255131c1ff231d9765"
+    }
+  },
+  "renderer_sha256": "d9932fa30efc8501f455adc4a51169beb5ab189288fdbc3090b48858b01cb89c",
+  "generated_at": "2026-09-26T12:35:54"
+}

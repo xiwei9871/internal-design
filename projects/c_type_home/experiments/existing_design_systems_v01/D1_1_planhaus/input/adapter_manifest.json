@@ -1,0 +1,27 @@
+{
+  "transform": {
+    "origin_task01_mm": [
+      2700,
+      -200
+    ],
+    "mm_per_cm": 10.0,
+    "axis": "X east / Y north"
+  },
+  "roundtrip_tolerance_mm": 1.0,
+  "source_handles_file": "input/source_handle_map.json",
+  "options": [
+    "A",
+    "B",
+    "C"
+  ],
+  "phase_order": [
+    "brief",
+    "concept",
+    "zone",
+    "furnish",
+    "validate",
+    "render",
+    "review",
+    "revise"
+  ]
+}

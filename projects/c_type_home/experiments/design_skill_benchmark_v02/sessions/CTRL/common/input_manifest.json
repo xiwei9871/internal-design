@@ -1,0 +1,51 @@
+{
+  "common_input_set_sha256": "6fd542f1e215a0587a7a49187b2df73de069418778d493b172a2270d732ca3bf",
+  "common_inputs": {
+    "a0_4.dxf": {
+      "file": "common/a0_4.dxf",
+      "sha256": "a10f61f253c2340e8ac070f14b51242f7b9d56615fb98aee5a5458db7d618a9e"
+    },
+    "a0_4_manifest.json": {
+      "file": "common/a0_4_manifest.json",
+      "sha256": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+    },
+    "a1_rulebook.json": {
+      "file": "common/a1_rulebook.json",
+      "sha256": "120148ad14317b4141ac7ec67c3af00af3be8e50a57feae83d701b135df2dbce"
+    },
+    "a2_pattern_library.json": {
+      "file": "common/a2_pattern_library.json",
+      "sha256": "a247b63bfbaa5f9b38e6f64915178cc9c0dfda98137feda4d119c92d5cbde4b1"
+    },
+    "brief.json": {
+      "file": "common/brief.json",
+      "sha256": "f062aaaa2e7d1f19ff9edf61e8746340fd6fa599eab5ddcebe2e7cd60c1eb239"
+    },
+    "brief.md": {
+      "file": "common/brief.md",
+      "sha256": "51e8af352d2244b24efbee6bb9856f531ed3c00a4edb1f3bb72ac97377bc8535"
+    },
+    "canonical.json": {
+      "file": "common/canonical.json",
+      "sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444"
+    },
+    "kitchen_register.json": {
+      "file": "common/kitchen_register.json",
+      "sha256": "65a926f773b3c9b9c3334e1b504744512ceb299825b1252aca32b7a4b24219fa"
+    },
+    "public_zone_clean_base.dxf": {
+      "file": "common/public_zone_clean_base.dxf",
+      "sha256": "17c5d07fd5afec2a6b3751b89727f4e1329b9b0a2fccd5b221aad900a6954984"
+    },
+    "window_register.json": {
+      "file": "common/window_register.json",
+      "sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a"
+    }
+  },
+  "prohibited_inputs": [
+    "D0.1 experiment directories",
+    "D0.1 trial DXFs",
+    "F1R outputs",
+    "any prewritten furniture coordinate list"
+  ]
+}

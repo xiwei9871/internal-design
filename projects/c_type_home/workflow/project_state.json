@@ -1,0 +1,58 @@
+{
+  "project": "c_type_home",
+  "pipeline": "Residential Design Pipeline v2.0",
+  "updated": "2026-09-28",
+  "existing_geometry": "PASS",
+  "asset_library": "PASS",
+  "design_rulebook": "PASS",
+  "precedent_library": "PASS",
+  "design_brief": "NOT_STARTED",
+  "functional_design": "NOT_APPROVED",
+  "3d_blockout": "NOT_STARTED",
+  "visual_spatial_review": "NOT_STARTED",
+  "approved_design_contract": "NOT_CREATED",
+  "formal_design_cad": "HOLD",
+  "construction_docs": "HOLD",
+  "formal_cad_allowed": false,
+  "stage_status": {
+    "S0_EXISTING_FREEZE": "PASS",
+    "S1_BRIEF": "NOT_STARTED",
+    "S2_FUNCTIONAL_DESIGN": "NOT_APPROVED",
+    "S2_HUMAN_APPROVAL": "HOLD",
+    "S3_3D_BLOCKOUT": "NOT_STARTED",
+    "S4_SPATIAL_REVIEW": "NOT_STARTED",
+    "S4_HUMAN_APPROVAL": "HOLD",
+    "S5_DESIGN_CONTRACT_FREEZE": "NOT_CREATED",
+    "S6_PRODUCTION": "HOLD",
+    "S7_CONSTRUCTION_DOCS": "HOLD"
+  },
+  "gate_evidence": {
+    "S0_G1_COORDINATE_INTEGRITY": "PASS",
+    "S0_G2_WALL_OPENING_INTEGRITY": "PASS",
+    "S0_G3_UNIT_INTEGRITY": "PASS",
+    "S0_G4_EXISTING_PROPOSED_SEPARATION": "PASS",
+    "S0_G5_TO_VERIFY_PRESERVED": "PASS",
+    "S2_HUMAN_APPROVAL": "HOLD",
+    "S3_3D_BLOCKOUT": "NOT_STARTED",
+    "S4_SPATIAL_REVIEW": "NOT_STARTED",
+    "S4_HUMAN_APPROVAL": "HOLD",
+    "S5_DESIGN_CONTRACT_FREEZE": "NOT_CREATED"
+  },
+  "existing_geometry_authority": {
+    "measured_cad": "projects/c_type_home/current_existing/measured_working.dxf",
+    "canonical": "projects/c_type_home/current_existing/canonical_plan_v1.json",
+    "window_register": "projects/c_type_home/current_existing/window_register.json",
+    "field_measurements": "recorded as TO_VERIFY where not confirmed"
+  },
+  "experiments": {
+    "D0.1": "INFRASTRUCTURE PROTOTYPE PASS / SKILL BENCHMARK INVALID",
+    "D0.2": "BENCHMARK EXECUTION VALID / DESIGN QUALITY NOT ACCEPTED",
+    "F1R": "RESEARCH ONLY / NOT APPROVED DESIGN",
+    "D1": "IN PROGRESS / NOT APPROVED DESIGN"
+  },
+  "approval_policy": {
+    "only_human_can_set_human_approval_gates": true,
+    "automatic_clearance_pass_does_not_approve_design": true,
+    "formal_cad_requires_all_pipeline_prerequisites": true
+  }
+}

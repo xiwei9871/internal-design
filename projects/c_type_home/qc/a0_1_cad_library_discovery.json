@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-26",
+  "scope": "Internet CAD library discovery only; no block downloads",
+  "approved_for_download": [],
+  "conditional_candidates": [
+    "https://github.com/Lendres/CAD-Support-Files"
+  ],
+  "hold_sources": [
+    "https://github.com/GSStnb/dxfBlocks",
+    "https://github.com/uncreatednet/DXF-library",
+    "https://github.com/growdigital/blocks-furniture",
+    "https://github.com/partcad/partcad-furniture-basic",
+    "https://www.cad-block.com/",
+    "https://www.firstinarchitecture.co.uk/free-cad-blocks/",
+    "https://www.archweb.com/en/cad-dwg/",
+    "https://www.arcat.com/details/cad_details.shtml",
+    "https://www.bimobject.com/en",
+    "https://www.caddetails.com/",
+    "https://www.traceparts.com/en"
+  ],
+  "source_count": 18,
+  "license_rule": "Unclear license means HOLD; free download is not a reuse grant",
+  "downloaded_files": []
+}

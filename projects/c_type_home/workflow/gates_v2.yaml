@@ -1,0 +1,49 @@
+version: "2.0"
+pipeline: Residential Design Pipeline
+stage_count: 7
+preflight:
+  id: S0_EXISTING_FREEZE
+  status: required
+  checks:
+    - S0_G1_COORDINATE_INTEGRITY
+    - S0_G2_WALL_OPENING_INTEGRITY
+    - S0_G3_UNIT_INTEGRITY
+    - S0_G4_EXISTING_PROPOSED_SEPARATION
+    - S0_G5_TO_VERIFY_PRESERVED
+stages:
+  - id: S1_BRIEF
+    output: projects/c_type_home/design/brief_v01.json
+    gate: complete_fact_based_brief
+  - id: S2_FUNCTIONAL_DESIGN
+    output: projects/c_type_home/design/concepts/<concept_id>/
+    gate: at_least_two_genuinely_distinct_functional_alternatives
+  - id: S2_HUMAN_APPROVAL
+    gate: explicit_human_approval_of_functional_plan
+  - id: S3_3D_BLOCKOUT
+    output: Blender same-scale blockout and required camera views
+    gate: actual-scale shell, openings, stairs, fixed cabinetry, furniture envelopes
+  - id: S4_SPATIAL_REVIEW
+    output: geometry and spatial/visual reviewer reports
+    gate: independent_geometry_and_spatial_review
+  - id: S4_HUMAN_APPROVAL
+    gate: explicit_human_approval_after_3d_review
+  - id: S5_DESIGN_CONTRACT_FREEZE
+    output: projects/c_type_home/design/approved_design_vXX.json
+    gate: schema_valid_contract_with_provenance_and_approval
+  - id: S6_PRODUCTION
+    output: DXF, Blender, FreeCAD and schedules generated from one frozen contract
+    gate: all_consumers_record_contract_hash
+  - id: S7_CONSTRUCTION_DOCS
+    output: construction drawing set
+    gate: client-confirmed design and construction-specific verification
+formal_cad_allowed:
+  all_of:
+    - S2_HUMAN_APPROVAL
+    - S3_3D_BLOCKOUT
+    - S4_SPATIAL_REVIEW
+    - S4_HUMAN_APPROVAL
+    - S5_DESIGN_CONTRACT_FREEZE
+  otherwise: BLOCK
+  consumers_must_read_approved_contract: true
+  cad_must_not_be_used_as_primary_design_generator: true
+

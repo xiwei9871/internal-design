@@ -1,0 +1,16 @@
+{
+  "base_file": "experiments/design_skill_benchmark_v02/base/public_zone_clean_base.dxf",
+  "base_sha256": "17c5d07fd5afec2a6b3751b89727f4e1329b9b0a2fccd5b221aad900a6954984",
+  "note": "D0.2 clean base removes all old A-FURN-PROP INSERTs without reading D0.1 placement data.",
+  "removed_a_furn_prop_insert_handles": [
+    "308617",
+    "308621",
+    "30862B",
+    "308635",
+    "308646",
+    "308650"
+  ],
+  "source_v02": "cad/design_v02_f1_l1.dxf",
+  "source_v02_sha256": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d",
+  "structural_signature_unchanged": true
+}

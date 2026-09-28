@@ -1,0 +1,1 @@
+S2 creates at least two functionally different concepts. Store functional plan, design_model.json, rationale and clearance evidence. Human approval is mandatory before S3.

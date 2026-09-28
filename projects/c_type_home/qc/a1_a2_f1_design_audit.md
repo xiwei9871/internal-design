@@ -1,0 +1,83 @@
+# A1/A2 F1 Design Knowledge Audit
+
+**Scope:** F1 living / dining / kitchen relationship. This is an analysis artifact; it does not modify CAD or canonical data.
+
+## 1. Rules already satisfied
+
+- **LIV-CIRC-001 — SATISFIED_WITH_RESERVATION**: F1 P1/P3/P5 paths are explicitly recorded; public transition is documented as >=1100 mm in concept_data. _(source: SRC-AARP-HOMEFIT)_ **Issue:** Confirm wall-side pinch points after final furniture INSERTs.
+- **LIV-FLEX-003 — SATISFIED**: F1 G8 gate defines a 3800 x 4350 mm flexible living core and exempts only small movable tables. _(source: SRC-PRACTICE-ERGONOMICS)_
+- **LIV-MEDIA-006 — SATISFIED_WITH_RESERVATION**: LIV-MEDIA-WALL is locked at the east edge and P5 to the north balcony is recorded. _(source: SRC-PRACTICE-ERGONOMICS)_ **Issue:** Selected projector throw and glare remain TO_VERIFY.
+- **LIV-EDGE-008 — SATISFIED**: Large sofas are edge-loaded west/north and the media wall is edge-loaded east. _(source: SRC-PRACTICE-ERGONOMICS)_
+- **DIN-CIR-005 — SATISFIED**: DIN-SEATING-N/S zones record 600 mm pull-out each long side for the 1500 x 600 table. _(source: SRC-PRACTICE-ERGONOMICS)_
+- **DIN-CIR-007 — SATISFIED_WITH_RESERVATION**: F1 P2 entry-to-dining-to-kitchen route is explicitly recorded. _(source: SRC-PRACTICE-ERGONOMICS)_ **Issue:** Check chair pull-out against the live kitchen edge after any change.
+- **KIT-KEEP-010 — SATISFIED**: K-CAB is in fixed_keep and the project brief marks existing kitchen cabinetry KEEP. _(source: SRC-C-TYPE-BRIEF)_
+- **AGE-CIR-001 — SATISFIED_WITH_RESERVATION**: F1 records a primary circulation target >=1100 mm and a separate ramp route. _(source: SRC-AARP-HOMEFIT)_ **Issue:** This is a planning record, not an accessibility compliance finding.
+- **CIR-CONT-007 — SATISFIED**: P5 living -> G-LIV-NBALC -> north balcony is explicitly recorded; balcony current state is OPEN_NOT_ENCLOSED. _(source: SRC-C-TYPE-BRIEF)_
+- **CIR-RAMP-009 — SATISFIED_WITH_TO_VERIFY**: Existing stair and assisted/power-wheelchair ramp are both documented in concept_data. _(source: SRC-C-TYPE-BRIEF)_ **Issue:** Level delta and slope remain provisional.
+
+## 2. Potential rule conflicts
+
+- **LIV-CIRC-002 — POTENTIAL_CONFLICT**: The current F1 record does not expose every secondary route width as a measured polygon. **Next check:** Verify every furniture-free segment around the seating group, not only named paths.
+- **DIN-CIR-006 — POTENTIAL_CONFLICT**: Dining seating zones document 600 mm pull-out, but a separate behind-seated passage is not explicitly measured. **Next check:** Test the south and north sides against the 900 mm target before freezing dining furniture.
+- **KIT-SAF-008 — UNRESOLVED**: The cabinet KEEP zone is protected, but appliance-door envelopes are not represented in furniture_l1_final.json. **Next check:** Verify selected refrigerator/oven/dishwasher doors and landing surfaces.
+- **AGE-THR-005 — TO_VERIFY**: Ramp slope is recorded as 400 / 2500 = 1:6.25 PROVISIONAL and level delta is owner <=350 vs CAD ~400. **Next check:** Field measure level change and obtain local accessibility review.
+- **BTH-AGE-005 — NOT_IN_F1_SCOPE**: F1 audit covers living/dining/kitchen; bathroom fixture backing and transfer geometry are not part of this layout snapshot. **Next check:** Carry into the bathroom-specific review before construction.
+
+## 3. Project-specific conflicts
+
+- **P-KITCHEN-KEEP — RESPECTED**: K-CAB remains in fixed_keep; no kitchen cabinet rewrite was proposed.
+- **P-PROJECTOR-LIVING — PARTIAL**: Media wall position is locked and no full-wall cabinet is specified; device throw/glare still TO_VERIFY.
+- **P-NORTH-BALCONY — RESPECTED**: Current model records OPEN_NOT_ENCLOSED; future enclosure remains note-only.
+- **P-SPLIT-LEVEL — PARTIAL**: Existing stair and alternate ramp coexist; the project itself marks slope and level delta provisional.
+- **P-CHILD-ACTIVITY — RESPECTED_WITH_CHECK**: Living core is kept open and sightline intent is documented; tall storage and final device placement still need checking.
+
+## 4. Spatial-composition assessment
+
+- **public-zone hierarchy — PARTIAL**: Entry-to-dining-to-kitchen and living-to-balcony routes are explicit, but the plan does not yet state which public destination is primary; media, seating and balcony compete for attention. _(citations: SPC-HIER-001, SPC-HIER-002)_
+- **living seating coherence — PARTIAL**: The 3-seat sofa, 2-seat sofa and day-lounge occupy three edges, but their relationship reads as separate placements rather than one intentional social composition. _(citations: SPC-GRP-003, SPC-SCL-005)_
+- **conversation grouping — WEAK**: Most seats orient toward the east media wall; an explicit face-to-face conversation relationship is not recorded, so the room risks becoming projection-centric despite the brief. _(citations: SPC-GRP-004, P-PROJECTOR-LIVING)_
+- **negative-space quality — PARTIAL**: G8 keeps a large clear core, but the coffee table and side table are exceptions without a documented compositional anchor; the void should be judged as a shaped activity and route space. _(citations: SPC-NEG-007, SPC-NEG-008, SPC-FLOAT-019)_
+- **dining/kitchen spatial relationship — SATISFIED_WITH_RESERVATION**: P2 gives a direct entry-dining-kitchen relation and the table is in the dining zone, but behind-seated clearance and the visual handoff to the KEEP cabinet edge are not fully measured. _(citations: DIN-CIR-007, SPC-ZONE-015, P-KITCHEN-KEEP)_
+- **main visual axis — PARTIAL**: The entry-to-living route and east media wall are clear, but the main visual axis is not separated from the balcony view; the next layout should choose whether view or projection is primary. _(citations: SPC-SIGHT-013, SPC-HIER-002)_
+- **balcony visual connection — SATISFIED_WITH_RESERVATION**: P5 and the OPEN_NOT_ENCLOSED state preserve physical access, but the plant line and secondary sofa need a view check so the opening remains visually legible. _(citations: SPC-SIGHT-014, CIR-CONT-007, P-NORTH-BALCONY)_
+- **furniture scale/proportion — PARTIAL**: The 2200x900 sofa, 1800x850 sofa and 1500x1100 day-lounge are individually plausible, yet the mixed sizes are not tied to a clear room-scale hierarchy. _(citations: SPC-SCL-005, SPC-SCL-006)_
+- **spatial reason for each object — PARTIAL**: KEEP cabinetry, media wall and primary sofas have explicit reasons; the isolated day-lounge, coffee table, side table and plant line need a stated group, view or route role before being treated as final composition. _(citations: SPC-FLOAT-019, SPC-FLOAT-020, P-KEEP-FURNITURE)_
+
+## 5. Relevant precedents
+
+- **PREC-002** Renovation of Joan Blanques apartment — relevance 0.9206; evidence confidence 1.00; tags: before-after, clear-circulation, existing-structure, flexible-living, floor-plan, kitchen-adjacency, open-living-dining, renovation, visual-connection; [source](https://www.archdaily.com/962398/renovation-of-joan-blanques-apartment-allaround-lab)
+- **PREC-003** Renovation of a Milan Laboratory to a Family Loft — relevance 0.9206; evidence confidence 1.00; tags: adaptive-reuse, before-after, child-friendly, existing-structure, family-loft, flexible-living, floor-plan, kitchen-adjacency, multigenerational, open-living-dining, renovation; [source](https://www.archdaily.com/981991/renovation-of-a-milan-laboratory-to-a-family-loft-tomoarchitects)
+- **PREC-015** Apartment Renovation in Sants — relevance 0.6853; evidence confidence 0.50; tags: before-after, child-friendly, existing-structure, flexible-living, kitchen-adjacency, multigenerational, open-living-dining, renovation; [source](https://www.archdaily.com/985123/apartment-renovation-in-sants-parramon-plus-tahull-arquitectes)
+- **PREC-017** Renovation of Sofia's apartment — relevance 0.6525; evidence confidence 0.50; tags: before-after, child-friendly, existing-structure, flexible-living, kitchen-adjacency, multigenerational, open-living-dining, renovation; [source](https://www.archdaily.com/1029144/renovation-of-sofias-apartment-pedro-ignacio-yanez-plus-carolina-recondo)
+- **PREC-001** Renovation of an Industrial Building into a Single Family House — relevance 0.9206; evidence confidence 1.00; tags: adaptive-reuse, before-after, child-friendly, existing-structure, flexible-living, floor-plan, multigenerational, open-living-dining, renovation; [source](https://www.archdaily.com/505261/renovation-of-an-industrial-building-into-a-single-family-house-guim-costa-calsamiglia)
+- **PREC-005** Residential Extension MF Pavilion — relevance 0.8985; evidence confidence 1.00; tags: child-friendly, existing-structure, flexible-living, floor-plan, multigenerational, open-living-dining, renovation; [source](https://www.archdaily.com/920031/residential-extension-mf-pavilion-guillermo-tirado-gzz-architects)
+- **PREC-008** Renovation of a Mill and Hayloft for Residential use — relevance 0.8235; evidence confidence 1.00; tags: adaptive-reuse, before-after, community-living, existing-structure, family-loft, flexible-living, floor-plan, kitchen-adjacency, open-living-dining, renovation, study-guest-hybrid; [source](https://www.archdaily.com/983855/renovation-of-a-mill-and-hayloft-for-residential-use-funcionable-arquitectura)
+- **PREC-055** Renovation of the Jiakaxia Ancient Courtyard — relevance 0.4471; evidence confidence 0.00; tags: balcony-connected, before-after, courtyard, daylight, existing-structure, flexible-living, renovation, split-level, split-level-courtyard, visual-connection; [source](https://www.archdaily.com/1031087/renovation-of-the-jiakaxia-ancient-courtyard-hypersity-architects)
+
+## 6. Applicable patterns
+
+- **PAT-AGE-01 — STEP-FREE-ALTERNATE-ROUTE**; evidence: RULE-AGE-THR-005: The parallel stair plus assisted-route requirement comes from the C-type split-level brief and the unresolved level/slope rule; verified cases do not directly prove this topology. (HIGH); PROJECT-C-TYPE-BRIEF: Owner brief explicitly retains the existing stair and asks for an assisted/power-wheelchair alternate route. (HIGH)
+- **PAT-AGE-02 — VISIBLE-SOCIAL-ROUTE**; evidence: PREC-009: Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces. (HIGH); PREC-013: The patio forms the primary visual axis and daylight source; furniture stays around its edges. (HIGH)
+- **PAT-BED-01 — BEDROOM CLEAR-SIDE ROUTE**; evidence: RULE-BED-AGE-002: The assisted-side bed route and caregiver access are design-rule requirements; the verified case plans do not show a confirmed bed-to-bath clear-side measurement. (HIGH)
+- **PAT-CIR-01 — FURNITURE-FREE CIRCULATION SPINE**; evidence: PREC-002: Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones. (HIGH); PREC-009: Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces. (HIGH)
+- **PAT-KIT-01 — RETAINED-KITCHEN WORKFLOW**; evidence: PREC-002: Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones. (MEDIUM); PREC-003: Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right. (MEDIUM); PREC-007: The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear. (MEDIUM); PREC-008: Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces. (MEDIUM); PREC-001: Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell. (MEDIUM)
+- **PAT-KIT-02 — COMPACT-WORK-TRIANGLE**; evidence: RULE-KIT-WRK-004: Compact sink-cook-refrigerator workflow is derived from NKBA/work-zone rules; verified plans show kitchen adjacency but do not confirm appliance-door and landing dimensions. (HIGH)
+- **PAT-LIV-01 — CLEAR CENTRAL LIVING CORE**; evidence: PREC-001: Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell. (HIGH); PREC-002: Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones. (HIGH); PREC-003: Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right. (HIGH)
+- **PAT-BED-02 — STUDY + BACKUP SLEEPING**; evidence: RULE-STD-FLEX-007: Study plus backup sleeping is derived from the C-type periodic-guest brief and the study rules; verified plans did not directly show a daybed/workstation hybrid. (HIGH)
+
+## 7. Unresolved spatial issues
+
+- **U-001** Field measure the split-level level delta and ramp slope before treating the alternate route as accessible. _(citations: AGE-THR-005, CIR-RAMP-009, P-SPLIT-LEVEL)_
+- **U-002** Verify projector/laser-TV throw, glare and cable/service path with the selected product. _(citations: LIV-MEDIA-005, LIV-DIST-007, P-PROJECTOR-LIVING)_
+- **U-003** Measure dining chair pull-out and the behind-seated passage together with the retained kitchen edge. _(citations: DIN-CIR-005, DIN-CIR-006, DIN-CIR-007, P-KITCHEN-KEEP)_
+- **U-004** Carry aging-in-place bathroom backing, transfer and turning checks into the later bathroom review. _(citations: BTH-AGE-005, BTH-CIR-006, P-AGE-MOTHER)_
+
+## 8. Conceptual redesign directions
+
+- **D-01 — Single-axis social core**: Test one coherent conversation group first, then place the projector axis as a secondary mode; use the day-lounge only if it has a clear view or conversation role. _(citations: SPC-HIER-002, SPC-GRP-003, SPC-GRP-004, SPC-FLOAT-019)_
+- **D-02 — View-first public-zone hierarchy**: Keep the dining-to-kitchen relationship compact and make the north balcony the primary visual extension; test media equipment as a controlled secondary focal edge after product selection. _(citations: SPC-SIGHT-013, SPC-SIGHT-014, SPC-EDGE-011, P-NORTH-BALCONY)_
+- **D-03 — Negative-space and route spine**: Shape the central void as one child and aging-friendly activity field, using only movable objects that have an explicit spatial reason; no CAD change is authorized by this direction. _(citations: SPC-NEG-007, SPC-NEG-008, SPC-FLOAT-020, AGE-CIR-001, PAT-CIR-01)_
+
+## Boundary
+
+This audit does not authorize V03, furniture re-layout, or any CAD edit. Existing geometry remains the source of truth until the owner approves a next design direction and outstanding measurements are resolved.

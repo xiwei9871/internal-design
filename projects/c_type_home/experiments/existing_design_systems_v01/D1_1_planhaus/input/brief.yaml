@@ -1,0 +1,35 @@
+household:
+  permanent:
+  - owner, 38
+  - mother, 68
+  periodic:
+  - wife
+  - child
+  - relatives / guests
+living:
+- not TV-centric
+- projector compatible
+- conversation
+- child activity
+- elder-friendly circulation
+- low fixed obstacle density
+- north balcony access
+dining:
+- 4 daily seats
+- close relationship to existing kitchen
+- comfortable chair pullout
+- do not choke G-DIN-LIV
+existing:
+- kitchen cabinets KEEP
+- walls/openings immutable
+- stair immutable
+- ramp immutable
+- G-LIV-NBALC clear opening 850mm existing limitation; no worsening
+source:
+  dxf: base/public_zone_clean_base.dxf
+  transform:
+    origin_task01_mm:
+    - 2700
+    - -200
+    mm_per_cm: 10.0
+    axis: X east / Y north

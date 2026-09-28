@@ -1,0 +1,1 @@
+Read workflow/RESIDENTIAL_DESIGN_PIPELINE_V2.md and workflow/gates_v2.yaml before acting. The machine validator is workflow/validate_pipeline_state.py.

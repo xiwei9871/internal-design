@@ -1,0 +1,31 @@
+{
+  "ReRoom_paper": "arXiv:2609.03596",
+  "ReRoom_paper_sha256": "f114affd5240b7634e88a31b2d6e3d881a6b3883bbd5c2e20fde93d9743022f7",
+  "Skills-Architects_commit": "30a0845dddcaebd765fc396059573d02e99c5b63",
+  "adapter_sources": {
+    "ARCH": [
+      "Skills-Architects__skills__architect-foundations__SKILL.md",
+      "Skills-Architects__skills__spatial-planning__SKILL.md",
+      "Skills-Architects__skills__building-typology__SKILL.md",
+      "Skills-Architects__skills__accessibility-design__SKILL.md",
+      "Skills-Architects__skills__design-theory__SKILL.md",
+      "Skills-Architects__skills__concept-design__SKILL.md"
+    ],
+    "CTRL": [
+      "project inputs only"
+    ],
+    "REROOM": [
+      "paper arXiv:2609.03596 Appendix S6 note"
+    ],
+    "STUDIO": [
+      "arch-skills__skills__asset-management-interior__references__benchmark.md",
+      "arch-skills__skills__asset-management-interior__references__case-anatomy.md",
+      "arch-skills__skills__asset-management-interior__references__concept-engine.md",
+      "arch-skills__skills__asset-management-interior__references__plan-review.md",
+      "arch-skills__skills__asset-management-interior__references__spatial-devices.md",
+      "arch-skills__skills__asset-management-interior__references__aesthetic-canon.md",
+      "arch-skills__skills__asset-management-interior__SKILL.md"
+    ]
+  },
+  "arch-skills_commit": "478d5ae32806e5a95dfcbeb70ba5a68126c22e9e"
+}

@@ -1,0 +1,80 @@
+{
+  "method": "REROOM",
+  "paper": {
+    "title": "ReRoom: Blending Virtual and Physical Contexts for In Situ Room Planning in Mixed Reality",
+    "arxiv": "2609.03596",
+    "version": "v1 (2026-09-03)",
+    "section": "Appendix S6 — Skill-Guided Agent Instructions",
+    "source_url": "https://arxiv.org/html/2609.03596v1",
+    "local_source": "references/arxiv_2609.03596v1.html",
+    "local_source_sha256": "62c9e9e28560b563326d87bef9c03fcee37cbf4852b0cf94092ca0c7366b4b87",
+    "extracted_text": "references/arxiv_2609.03596v1.txt",
+    "extracted_text_sha256": "85b80e836a26fb3fd7b9be6f59e73ae7985c2020646b6a4b999c3365acb9664e"
+  },
+  "files": [
+    {
+      "file": "SKILL.md",
+      "sha256": "57f2319be0e1369a9e01981b33b973a54b99bc0bd3fee879f2d6cdb2f48d1631"
+    },
+    {
+      "file": "session_manifest.json",
+      "sha256": "2879a832884760de903496005b3783381cf1eca70d3bdcd7bf18ebc4af12539f"
+    },
+    {
+      "file": "common/a0_4.dxf",
+      "sha256": "a10f61f253c2340e8ac070f14b51242f7b9d56615fb98aee5a5458db7d618a9e"
+    },
+    {
+      "file": "common/a0_4_manifest.json",
+      "sha256": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+    },
+    {
+      "file": "common/a1_rulebook.json",
+      "sha256": "120148ad14317b4141ac7ec67c3af00af3be8e50a57feae83d701b135df2dbce"
+    },
+    {
+      "file": "common/a2_pattern_library.json",
+      "sha256": "a247b63bfbaa5f9b38e6f64915178cc9c0dfda98137feda4d119c92d5cbde4b1"
+    },
+    {
+      "file": "common/brief.json",
+      "sha256": "f062aaaa2e7d1f19ff9edf61e8746340fd6fa599eab5ddcebe2e7cd60c1eb239"
+    },
+    {
+      "file": "common/brief.md",
+      "sha256": "51e8af352d2244b24efbee6bb9856f531ed3c00a4edb1f3bb72ac97377bc8535"
+    },
+    {
+      "file": "common/canonical.json",
+      "sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444"
+    },
+    {
+      "file": "common/input_manifest.json",
+      "sha256": "5b4edc1ef86b525741dbf06c6e0bf2158cdeeaf5042a287645e2565b5b036ed9"
+    },
+    {
+      "file": "common/kitchen_register.json",
+      "sha256": "65a926f773b3c9b9c3334e1b504744512ceb299825b1252aca32b7a4b24219fa"
+    },
+    {
+      "file": "common/public_zone_clean_base.dxf",
+      "sha256": "17c5d07fd5afec2a6b3751b89727f4e1329b9b0a2fccd5b221aad900a6954984"
+    },
+    {
+      "file": "common/window_register.json",
+      "sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a"
+    },
+    {
+      "file": "references/arxiv_2609.03596v1.html",
+      "sha256": "62c9e9e28560b563326d87bef9c03fcee37cbf4852b0cf94092ca0c7366b4b87"
+    },
+    {
+      "file": "references/arxiv_2609.03596v1.txt",
+      "sha256": "85b80e836a26fb3fd7b9be6f59e73ae7985c2020646b6a4b999c3365acb9664e"
+    },
+    {
+      "file": "../../scripts/cad_tool.py",
+      "sha256": "b474554d848cf500195679ecad2b43701eb2562f2948d1d6ef2b7b13d81c2239"
+    }
+  ]
+}

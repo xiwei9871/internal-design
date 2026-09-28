@@ -1,0 +1,727 @@
+{
+  "arm": "ARCH",
+  "evidence": {
+    "arm": "ARCH",
+    "bbox_qa": true,
+    "bbox_qa_r01": true,
+    "bbox_qa_r02": true,
+    "causality": {
+      "pass": true,
+      "r01_feedback_first_timestamp": "2026-09-27T11:32:32.456+00:00",
+      "r02_edit_first_timestamp": "2026-09-27T11:38:23.228+00:00",
+      "reason": "r02 edits must occur after r01 render/geometry/review evidence"
+    },
+    "feedback_causality": true,
+    "furniture_count_r01": 8,
+    "furniture_count_r02": 8,
+    "geometry_r01": {
+      "furniture": [
+        {
+          "actual_bbox_task01": [
+            3400.0,
+            2250.0,
+            4900.0,
+            2850.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "block": "DINING_TABLE_1500x600_PLAN",
+          "expected_bbox_task01": [
+            3400.0,
+            2250.0,
+            4900.0,
+            2850.0
+          ],
+          "handle": "308869",
+          "rotation": 0
+        },
+        {
+          "actual_bbox_task01": [
+            3525.000139684649,
+            1350.0,
+            3974.999860315351,
+            1850.0
+          ],
+          "bbox_delta_mm": 0.0001396846491843462,
+          "block": "DINING_CHAIR_450x500_PLAN",
+          "expected_bbox_task01": [
+            3525.0,
+            1350.0,
+            3975.0,
+            1850.0
+          ],
+          "handle": "3088DC",
+          "rotation": 0
+        },
+        {
+          "actual_bbox_task01": [
+            4325.000139684649,
+            1350.0,
+            4774.999860315351,
+            1850.0
+          ],
+          "bbox_delta_mm": 0.0001396846491843462,
+          "block": "DINING_CHAIR_450x500_PLAN",
+          "expected_bbox_task01": [
+            4325.0,
+            1350.0,
+            4775.0,
+            1850.0
+          ],
+          "handle": "308950",
+          "rotation": 0
+        },
+        {
+          "actual_bbox_task01": [
+            3525.000139684649,
+            3250.0,
+            3974.999860315351,
+            3750.0
+          ],
+          "bbox_delta_mm": 0.0001396846491843462,
+          "block": "DINING_CHAIR_450x500_PLAN",
+          "expected_bbox_task01": [
+            3525.0,
+            3250.0,
+            3975.0,
+            3750.0
+          ],
+          "handle": "3089C5",
+          "rotation": 180.0
+        },
+        {
+          "actual_bbox_task01": [
+            4325.000139684649,
+            3250.0,
+            4774.999860315351,
+            3750.0
+          ],
+          "bbox_delta_mm": 0.0001396846491843462,
+          "block": "DINING_CHAIR_450x500_PLAN",
+          "expected_bbox_task01": [
+            4325.0,
+            3250.0,
+            4775.0,
+            3750.0
+          ],
+          "handle": "308A3B",
+          "rotation": 180.0
+        },
+        {
+          "actual_bbox_task01": [
+            3500.0,
+            8900.0,
+            4400.0,
+            11100.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "block": "SOFA_3S_2200x900_PLAN",
+          "expected_bbox_task01": [
+            3500.0,
+            8900.0,
+            4400.0,
+            11100.0
+          ],
+          "handle": "308AB2",
+          "rotation": 90.0
+        },
+        {
+          "actual_bbox_task01": [
+            4400.0,
+            10950.0,
+            6200.0,
+            11800.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "block": "SOFA_2S_1800x850_PLAN",
+          "expected_bbox_task01": [
+            4400.0,
+            10950.0,
+            6200.0,
+            11800.0
+          ],
+          "handle": "308B2A",
+          "rotation": 0
+        },
+        {
+          "actual_bbox_task01": [
+            4750.0000073174015,
+            9750.0,
+            5649.9999926825985,
+            10649.999599007599
+          ],
+          "bbox_delta_mm": 0.00040099240140989423,
+          "block": "LOUNGE_CHAIR_900x900_PLAN",
+          "expected_bbox_task01": [
+            4750.0,
+            9750.0,
+            5650.0,
+            10650.0
+          ],
+          "handle": "308BA3",
+          "rotation": 0
+        }
+      ],
+      "furniture_count": 8,
+      "furniture_overlap_count": 0,
+      "furniture_overlaps": [],
+      "measurement_anchors": "ROUTE_ANCHORS are immutable architectural measurement anchors; no arm furniture coordinates are stored in this tool",
+      "route_clearances": {
+        "dining_to_keep_kitchen": {
+          "actual_measured_min_mm": 15.0,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 1000,
+          "route_points_task01": [
+            [
+              4500,
+              3300
+            ],
+            [
+              5600,
+              3300
+            ]
+          ]
+        },
+        "dining_to_living_transition": {
+          "actual_measured_min_mm": 1900.0,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 900,
+          "route_points_task01": [
+            [
+              4400,
+              3800
+            ],
+            [
+              4400,
+              5200
+            ]
+          ]
+        },
+        "entry_to_living": {
+          "actual_measured_min_mm": 2676.6,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 900,
+          "route_points_task01": [
+            [
+              3900,
+              5700
+            ],
+            [
+              4550,
+              8200
+            ]
+          ]
+        },
+        "living_to_north_balcony": {
+          "actual_measured_min_mm": 2107.3,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 850,
+          "route_points_task01": [
+            [
+              6900,
+              11100
+            ],
+            [
+              7800,
+              12100
+            ]
+          ]
+        },
+        "living_to_stair": {
+          "actual_measured_min_mm": 2047.4,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 900,
+          "route_points_task01": [
+            [
+              4700,
+              8200
+            ],
+            [
+              7150,
+              7350
+            ]
+          ]
+        }
+      },
+      "source_dxf": "projects/c_type_home/experiments/design_skill_benchmark_v02/sessions/ARCH/iteration_01/after.dxf",
+      "source_dxf_sha256": "b50bc3a89cfa686513fdcf2a91b45d2432a49ac76c04d304066a70c1fc40eb1e",
+      "transformed_bbox_all_pass": true
+    },
+    "geometry_r02": {
+      "furniture": [
+        {
+          "actual_bbox_task01": [
+            3400.0,
+            2250.0,
+            4900.0,
+            2850.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "block": "DINING_TABLE_1500x600_PLAN",
+          "expected_bbox_task01": [
+            3400.0,
+            2250.0,
+            4900.0,
+            2850.0
+          ],
+          "handle": "308869",
+          "rotation": 0
+        },
+        {
+          "actual_bbox_task01": [
+            3525.000139684649,
+            1350.0,
+            3974.999860315351,
+            1850.0
+          ],
+          "bbox_delta_mm": 0.0001396846491843462,
+          "block": "DINING_CHAIR_450x500_PLAN",
+          "expected_bbox_task01": [
+            3525.0,
+            1350.0,
+            3975.0,
+            1850.0
+          ],
+          "handle": "3088DC",
+          "rotation": 0
+        },
+        {
+          "actual_bbox_task01": [
+            4325.000139684649,
+            1350.0,
+            4774.999860315351,
+            1850.0
+          ],
+          "bbox_delta_mm": 0.0001396846491843462,
+          "block": "DINING_CHAIR_450x500_PLAN",
+          "expected_bbox_task01": [
+            4325.0,
+            1350.0,
+            4775.0,
+            1850.0
+          ],
+          "handle": "308950",
+          "rotation": 0
+        },
+        {
+          "actual_bbox_task01": [
+            3525.000139684649,
+            3850.0,
+            3974.999860315351,
+            4350.0
+          ],
+          "bbox_delta_mm": 0.0001396846491843462,
+          "block": "DINING_CHAIR_450x500_PLAN",
+          "expected_bbox_task01": [
+            3525.0,
+            3850.0,
+            3975.0,
+            4350.0
+          ],
+          "handle": "3089C5",
+          "rotation": 180.0
+        },
+        {
+          "actual_bbox_task01": [
+            4325.000139684649,
+            3850.0,
+            4774.999860315351,
+            4350.0
+          ],
+          "bbox_delta_mm": 0.0001396846491843462,
+          "block": "DINING_CHAIR_450x500_PLAN",
+          "expected_bbox_task01": [
+            4325.0,
+            3850.0,
+            4775.0,
+            4350.0
+          ],
+          "handle": "308A3B",
+          "rotation": 180.0
+        },
+        {
+          "actual_bbox_task01": [
+            3500.0,
+            8900.0,
+            4400.0,
+            11100.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "block": "SOFA_3S_2200x900_PLAN",
+          "expected_bbox_task01": [
+            3500.0,
+            8900.0,
+            4400.0,
+            11100.0
+          ],
+          "handle": "308AB2",
+          "rotation": 90.0
+        },
+        {
+          "actual_bbox_task01": [
+            4600.0,
+            10650.0,
+            6400.0,
+            11500.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "block": "SOFA_2S_1800x850_PLAN",
+          "expected_bbox_task01": [
+            4600.0,
+            10650.0,
+            6400.0,
+            11500.0
+          ],
+          "handle": "308B2A",
+          "rotation": 0
+        },
+        {
+          "actual_bbox_task01": [
+            5450.0000073174015,
+            9650.0,
+            6349.9999926825985,
+            10549.999599007599
+          ],
+          "bbox_delta_mm": 0.00040099240140989423,
+          "block": "LOUNGE_CHAIR_900x900_PLAN",
+          "expected_bbox_task01": [
+            5450.0,
+            9650.0,
+            6350.0,
+            10550.0
+          ],
+          "handle": "308BA3",
+          "rotation": 0
+        }
+      ],
+      "furniture_count": 8,
+      "furniture_overlap_count": 0,
+      "furniture_overlaps": [],
+      "measurement_anchors": "ROUTE_ANCHORS are immutable architectural measurement anchors; no arm furniture coordinates are stored in this tool",
+      "route_clearances": {
+        "dining_to_keep_kitchen": {
+          "actual_measured_min_mm": 15.0,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 1000,
+          "route_points_task01": [
+            [
+              4500,
+              3300
+            ],
+            [
+              5600,
+              3300
+            ]
+          ]
+        },
+        "dining_to_living_transition": {
+          "actual_measured_min_mm": 1900.0,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 900,
+          "route_points_task01": [
+            [
+              4400,
+              3800
+            ],
+            [
+              4400,
+              5200
+            ]
+          ]
+        },
+        "entry_to_living": {
+          "actual_measured_min_mm": 2676.6,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 900,
+          "route_points_task01": [
+            [
+              3900,
+              5700
+            ],
+            [
+              4550,
+              8200
+            ]
+          ]
+        },
+        "living_to_north_balcony": {
+          "actual_measured_min_mm": 2107.3,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 850,
+          "route_points_task01": [
+            [
+              6900,
+              11100
+            ],
+            [
+              7800,
+              12100
+            ]
+          ]
+        },
+        "living_to_stair": {
+          "actual_measured_min_mm": 2047.4,
+          "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+          "reference_target_mm": 900,
+          "route_points_task01": [
+            [
+              4700,
+              8200
+            ],
+            [
+              7150,
+              7350
+            ]
+          ]
+        }
+      },
+      "source_dxf": "projects/c_type_home/experiments/design_skill_benchmark_v02/sessions/ARCH/iteration_02/after.dxf",
+      "source_dxf_sha256": "86ca60e3b01ac50f4d388578a7877bc1e47135d9a48edb2fd21e90555153f4be",
+      "transformed_bbox_all_pass": true
+    },
+    "isolation": true,
+    "iteration_logs_ok": true,
+    "log_sources": {
+      "iteration_01": "native_iteration_log",
+      "iteration_02": "native_iteration_log"
+    },
+    "pass": true,
+    "real_agent_action": true,
+    "saved_cad_provenance": true,
+    "session_summary": true,
+    "skill_material_read": true,
+    "visual_review_evidence": true
+  },
+  "final": {
+    "furniture": [
+      {
+        "actual_bbox_task01": [
+          3400.0,
+          2250.0,
+          4900.0,
+          2850.0
+        ],
+        "bbox_delta_mm": 0.0,
+        "block": "DINING_TABLE_1500x600_PLAN",
+        "expected_bbox_task01": [
+          3400.0,
+          2250.0,
+          4900.0,
+          2850.0
+        ],
+        "handle": "308869",
+        "rotation": 0
+      },
+      {
+        "actual_bbox_task01": [
+          3525.000139684649,
+          1350.0,
+          3974.999860315351,
+          1850.0
+        ],
+        "bbox_delta_mm": 0.0001396846491843462,
+        "block": "DINING_CHAIR_450x500_PLAN",
+        "expected_bbox_task01": [
+          3525.0,
+          1350.0,
+          3975.0,
+          1850.0
+        ],
+        "handle": "3088DC",
+        "rotation": 0
+      },
+      {
+        "actual_bbox_task01": [
+          4325.000139684649,
+          1350.0,
+          4774.999860315351,
+          1850.0
+        ],
+        "bbox_delta_mm": 0.0001396846491843462,
+        "block": "DINING_CHAIR_450x500_PLAN",
+        "expected_bbox_task01": [
+          4325.0,
+          1350.0,
+          4775.0,
+          1850.0
+        ],
+        "handle": "308950",
+        "rotation": 0
+      },
+      {
+        "actual_bbox_task01": [
+          3525.000139684649,
+          3850.0,
+          3974.999860315351,
+          4350.0
+        ],
+        "bbox_delta_mm": 0.0001396846491843462,
+        "block": "DINING_CHAIR_450x500_PLAN",
+        "expected_bbox_task01": [
+          3525.0,
+          3850.0,
+          3975.0,
+          4350.0
+        ],
+        "handle": "3089C5",
+        "rotation": 180.0
+      },
+      {
+        "actual_bbox_task01": [
+          4325.000139684649,
+          3850.0,
+          4774.999860315351,
+          4350.0
+        ],
+        "bbox_delta_mm": 0.0001396846491843462,
+        "block": "DINING_CHAIR_450x500_PLAN",
+        "expected_bbox_task01": [
+          4325.0,
+          3850.0,
+          4775.0,
+          4350.0
+        ],
+        "handle": "308A3B",
+        "rotation": 180.0
+      },
+      {
+        "actual_bbox_task01": [
+          3500.0,
+          8900.0,
+          4400.0,
+          11100.0
+        ],
+        "bbox_delta_mm": 0.0,
+        "block": "SOFA_3S_2200x900_PLAN",
+        "expected_bbox_task01": [
+          3500.0,
+          8900.0,
+          4400.0,
+          11100.0
+        ],
+        "handle": "308AB2",
+        "rotation": 90.0
+      },
+      {
+        "actual_bbox_task01": [
+          4600.0,
+          10650.0,
+          6400.0,
+          11500.0
+        ],
+        "bbox_delta_mm": 0.0,
+        "block": "SOFA_2S_1800x850_PLAN",
+        "expected_bbox_task01": [
+          4600.0,
+          10650.0,
+          6400.0,
+          11500.0
+        ],
+        "handle": "308B2A",
+        "rotation": 0
+      },
+      {
+        "actual_bbox_task01": [
+          5450.0000073174015,
+          9650.0,
+          6349.9999926825985,
+          10549.999599007599
+        ],
+        "bbox_delta_mm": 0.00040099240140989423,
+        "block": "LOUNGE_CHAIR_900x900_PLAN",
+        "expected_bbox_task01": [
+          5450.0,
+          9650.0,
+          6350.0,
+          10550.0
+        ],
+        "handle": "308BA3",
+        "rotation": 0
+      }
+    ],
+    "furniture_count": 8,
+    "furniture_overlap_count": 0,
+    "furniture_overlaps": [],
+    "measurement_anchors": "ROUTE_ANCHORS are immutable architectural measurement anchors; no arm furniture coordinates are stored in this tool",
+    "route_clearances": {
+      "dining_to_keep_kitchen": {
+        "actual_measured_min_mm": 15.0,
+        "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+        "reference_target_mm": 1000,
+        "route_points_task01": [
+          [
+            4500,
+            3300
+          ],
+          [
+            5600,
+            3300
+          ]
+        ]
+      },
+      "dining_to_living_transition": {
+        "actual_measured_min_mm": 1900.0,
+        "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+        "reference_target_mm": 900,
+        "route_points_task01": [
+          [
+            4400,
+            3800
+          ],
+          [
+            4400,
+            5200
+          ]
+        ]
+      },
+      "entry_to_living": {
+        "actual_measured_min_mm": 2676.6,
+        "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+        "reference_target_mm": 900,
+        "route_points_task01": [
+          [
+            3900,
+            5700
+          ],
+          [
+            4550,
+            8200
+          ]
+        ]
+      },
+      "living_to_north_balcony": {
+        "actual_measured_min_mm": 2107.3,
+        "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+        "reference_target_mm": 850,
+        "route_points_task01": [
+          [
+            6900,
+            11100
+          ],
+          [
+            7800,
+            12100
+          ]
+        ]
+      },
+      "living_to_stair": {
+        "actual_measured_min_mm": 2047.4,
+        "measurement_method": "saved-DXF furniture plus canonical wall/opening geometry cross-sections",
+        "reference_target_mm": 900,
+        "route_points_task01": [
+          [
+            4700,
+            8200
+          ],
+          [
+            7150,
+            7350
+          ]
+        ]
+      }
+    },
+    "source_dxf": "projects/c_type_home/experiments/design_skill_benchmark_v02/sessions/ARCH/iteration_02/after.dxf",
+    "source_dxf_sha256": "86ca60e3b01ac50f4d388578a7877bc1e47135d9a48edb2fd21e90555153f4be",
+    "transformed_bbox_all_pass": true
+  },
+  "source_session": "experiments/design_skill_benchmark_v02/sessions/ARCH"
+}

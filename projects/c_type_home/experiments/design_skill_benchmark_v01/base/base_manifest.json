@@ -1,0 +1,17 @@
+{
+  "base_file": "experiments/design_skill_benchmark_v01/base/public_zone_clean_base.dxf",
+  "base_sha256": "0bdc0c5cc8b716122af39d48547f8031dde0fd607dd03c8903e1702121381368",
+  "note": "Only old public movable furniture INSERTs were removed; walls/openings/KEEP kitchen/stair/ramp remain.",
+  "removed_count": 6,
+  "removed_public_movable_insert_names": [
+    "FURN_COFFEE_TABLE",
+    "FURN_LOUNGE",
+    "FURN_SIDE_TABLE",
+    "FURN_SOFA_2",
+    "FURN_SOFA_3",
+    "FURN_TABLE_RECT"
+  ],
+  "source_file": "cad/design_v02_f1_l1.dxf",
+  "source_sha256": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d",
+  "structural_signature_unchanged": true
+}

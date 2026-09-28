@@ -1,0 +1,1072 @@
+{
+  "version": "f1r-02-v0.1",
+  "status": "HUMAN_REVIEW",
+  "scope": "dining-only optimization; living and formal CAD frozen",
+  "search": {
+    "grid_mm": 50,
+    "orientations_deg": [
+      0,
+      90
+    ],
+    "feasible_candidates_by_orientation": {
+      "0": 7,
+      "90": 72
+    },
+    "candidate_count_feasible": 79
+  },
+  "frozen_living_ids": [
+    "LIV-SOFA-3",
+    "LIV-SOFA-2",
+    "LIV-LOUNGE",
+    "LIV-MEDIA-WALL"
+  ],
+  "existing_limitation": {
+    "id": "G-LIV-NBALC",
+    "clear_width_mm": 850,
+    "classification": "EXISTING_CONFIRMED_LIMITATION",
+    "rule": "NO_WORSENING"
+  },
+  "knowledge_refs": {
+    "rules": [
+      "DIN-CIR-005",
+      "DIN-CIR-006",
+      "DIN-CIR-007",
+      "SPC-ZONE-015",
+      "SPC-GRP-003"
+    ],
+    "patterns": [
+      "PAT-LIV-04",
+      "PAT-LIV-05"
+    ],
+    "reference_note": "numeric values are planning references, not automatic code gates"
+  },
+  "candidates": [
+    {
+      "rotation": 0,
+      "center_mm": [
+        3750,
+        2600
+      ],
+      "placements": [
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3000,
+            2300,
+            4500,
+            2900
+          ],
+          "rotation": 0,
+          "role": "dining table",
+          "reason": "candidate table placement"
+        },
+        {
+          "id": "DIN-CHAIR-1",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3150.0,
+            3000,
+            3600.0,
+            3500
+          ],
+          "rotation": 0,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        },
+        {
+          "id": "DIN-CHAIR-2",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3900.0,
+            3000,
+            4350.0,
+            3500
+          ],
+          "rotation": 0,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        },
+        {
+          "id": "DIN-CHAIR-3",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3150.0,
+            1700,
+            3600.0,
+            2200
+          ],
+          "rotation": 0,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        },
+        {
+          "id": "DIN-CHAIR-4",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3900.0,
+            1700,
+            4350.0,
+            2200
+          ],
+          "rotation": 0,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        }
+      ],
+      "metrics": {
+        "table_actual_bbox_mm": [
+          3000.0,
+          2300.0,
+          4500.0,
+          2900.0
+        ],
+        "chairs_actual_bboxes_mm": [
+          [
+            3150.0001396847206,
+            3000.0,
+            3599.9998603152794,
+            3500.0
+          ],
+          [
+            3900.0001396847206,
+            3000.0,
+            4349.99986031528,
+            3500.0
+          ],
+          [
+            3150.0001396847206,
+            1700.0,
+            3599.9998603152794,
+            2200.0
+          ],
+          [
+            3900.0001396847206,
+            1700.0,
+            4349.99986031528,
+            2200.0
+          ]
+        ],
+        "table_to_chair_near_edge_gap_mm": 100.0,
+        "seated_envelope_from_table_edge_mm": 600.0,
+        "extra_pullout_travel_available_mm": 1030.0,
+        "extra_pullout_travel_by_chair": [
+          {
+            "chair_id": "DIN-CHAIR-1",
+            "back_direction": [
+              0,
+              1
+            ],
+            "extra_pullout_travel_available_mm": 1030.0
+          },
+          {
+            "chair_id": "DIN-CHAIR-2",
+            "back_direction": [
+              0,
+              1
+            ],
+            "extra_pullout_travel_available_mm": 1030.0
+          },
+          {
+            "chair_id": "DIN-CHAIR-3",
+            "back_direction": [
+              0,
+              -1
+            ],
+            "extra_pullout_travel_available_mm": 1050.0
+          },
+          {
+            "chair_id": "DIN-CHAIR-4",
+            "back_direction": [
+              0,
+              -1
+            ],
+            "extra_pullout_travel_available_mm": 1050.0
+          }
+        ],
+        "through_passage_behind_seated_mm": 1030.0,
+        "g_din_liv_transition_clear_mm": 1030.0,
+        "g_din_liv_transition_basis": "behind occupied north-side chairs",
+        "table_to_keep_kitchen_gap_mm": 1000.0,
+        "closest_chair_to_keep_kitchen_gap_mm": 1150.0,
+        "chair_to_keep_kitchen_gaps_mm": [
+          1900.0,
+          1150.0,
+          1900.0,
+          1150.0
+        ],
+        "p2_path_clear": true,
+        "p2_path_blockers": [],
+        "all_named_paths_clear": true,
+        "path_blockers": [],
+        "overlaps": [],
+        "bbox_qa": true,
+        "targets": {
+          "seated_envelope_min_mm": 600,
+          "behind_seated_passage_min_mm": 900,
+          "table_to_keep_kitchen_min_mm": 1000,
+          "g_din_liv_transition_min_mm": 900
+        },
+        "status": "FEASIBLE_CANDIDATE"
+      },
+      "bbox_rows": [
+        {
+          "id": "LIV-SOFA-3",
+          "block_id": "SOFA_3S_2200x900_PLAN",
+          "rect": [
+            2900,
+            9000,
+            3800,
+            11200
+          ],
+          "rotation": 90,
+          "role": "primary social anchor",
+          "reason": "west edge anchor; faces the social group, not a solitary media axis",
+          "actual_rect": [
+            2900.0,
+            9000.0,
+            3800.0,
+            11200.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "LIV-SOFA-2",
+          "block_id": "SOFA_2S_1800x850_PLAN",
+          "rect": [
+            4850,
+            10800,
+            6650,
+            11650
+          ],
+          "rotation": 0,
+          "role": "conversation side",
+          "reason": "second side of the conversation group; north edge leaves the central field open",
+          "actual_rect": [
+            4850.0,
+            10800.0,
+            6650.0,
+            11650.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "LIV-LOUNGE",
+          "block_id": "LOUNGE_CHAIR_900x900_PLAN",
+          "rect": [
+            4700,
+            8400,
+            5600,
+            9300
+          ],
+          "rotation": 90,
+          "role": "optional third seat",
+          "reason": "only retained because it turns toward the group; remove if it reads isolated in review",
+          "actual_rect": [
+            4700.000200496213,
+            8400.000007317503,
+            5599.999799503787,
+            9299.999992682497
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3000,
+            2300,
+            4500,
+            2900
+          ],
+          "rotation": 0,
+          "role": "dining table",
+          "reason": "candidate table placement",
+          "actual_rect": [
+            3000.0,
+            2300.0,
+            4500.0,
+            2900.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-1",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3150.0,
+            3000,
+            3600.0,
+            3500
+          ],
+          "rotation": 0,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            3150.0001396847206,
+            3000.0,
+            3599.9998603152794,
+            3500.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-2",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3900.0,
+            3000,
+            4350.0,
+            3500
+          ],
+          "rotation": 0,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            3900.0001396847206,
+            3000.0,
+            4349.99986031528,
+            3500.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-3",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3150.0,
+            1700,
+            3600.0,
+            2200
+          ],
+          "rotation": 0,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            3150.0001396847206,
+            1700.0,
+            3599.9998603152794,
+            2200.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-4",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3900.0,
+            1700,
+            4350.0,
+            2200
+          ],
+          "rotation": 0,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            3900.0001396847206,
+            1700.0,
+            4349.99986031528,
+            2200.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        }
+      ],
+      "plan_png": "/Users/xiwei/interior_design/projects/c_type_home/qc/f1r_public_zone/F1R_02_candidate_1.png"
+    },
+    {
+      "rotation": 90,
+      "center_mm": [
+        4200,
+        2550
+      ],
+      "placements": [
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3900,
+            1800,
+            4500,
+            3300
+          ],
+          "rotation": 90,
+          "role": "dining table",
+          "reason": "candidate table placement"
+        },
+        {
+          "id": "DIN-CHAIR-1",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3300,
+            1950.0,
+            3800,
+            2400.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        },
+        {
+          "id": "DIN-CHAIR-2",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3300,
+            2700.0,
+            3800,
+            3150.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        },
+        {
+          "id": "DIN-CHAIR-3",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            4600,
+            1950.0,
+            5100,
+            2400.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        },
+        {
+          "id": "DIN-CHAIR-4",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            4600,
+            2700.0,
+            5100,
+            3150.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        }
+      ],
+      "metrics": {
+        "table_actual_bbox_mm": [
+          3900.0,
+          1800.0,
+          4500.0,
+          3300.0
+        ],
+        "chairs_actual_bboxes_mm": [
+          [
+            3300.0,
+            1950.0001396847206,
+            3800.0,
+            2399.9998603152794
+          ],
+          [
+            3300.0,
+            2700.0001396847206,
+            3800.0,
+            3149.9998603152794
+          ],
+          [
+            4600.0,
+            1950.0001396847206,
+            5100.0,
+            2399.9998603152794
+          ],
+          [
+            4600.0,
+            2700.0001396847206,
+            5100.0,
+            3149.9998603152794
+          ]
+        ],
+        "table_to_chair_near_edge_gap_mm": 100.0,
+        "seated_envelope_from_table_edge_mm": 600.0,
+        "extra_pullout_travel_available_mm": 400.0,
+        "extra_pullout_travel_by_chair": [
+          {
+            "chair_id": "DIN-CHAIR-1",
+            "back_direction": [
+              -1,
+              0
+            ],
+            "extra_pullout_travel_available_mm": 1800.0
+          },
+          {
+            "chair_id": "DIN-CHAIR-2",
+            "back_direction": [
+              -1,
+              0
+            ],
+            "extra_pullout_travel_available_mm": 400.0
+          },
+          {
+            "chair_id": "DIN-CHAIR-3",
+            "back_direction": [
+              1,
+              0
+            ],
+            "extra_pullout_travel_available_mm": 400.0
+          },
+          {
+            "chair_id": "DIN-CHAIR-4",
+            "back_direction": [
+              1,
+              0
+            ],
+            "extra_pullout_travel_available_mm": 400.0
+          }
+        ],
+        "through_passage_behind_seated_mm": null,
+        "g_din_liv_transition_clear_mm": 1380.0,
+        "g_din_liv_transition_basis": "clear passage around north end of occupied dining group",
+        "table_to_keep_kitchen_gap_mm": 1000.0,
+        "closest_chair_to_keep_kitchen_gap_mm": 400.0,
+        "chair_to_keep_kitchen_gaps_mm": [
+          1700.0,
+          1700.0,
+          400.0,
+          400.0
+        ],
+        "p2_path_clear": true,
+        "p2_path_blockers": [],
+        "all_named_paths_clear": true,
+        "path_blockers": [],
+        "overlaps": [],
+        "bbox_qa": true,
+        "targets": {
+          "seated_envelope_min_mm": 600,
+          "behind_seated_passage_min_mm": 900,
+          "table_to_keep_kitchen_min_mm": 1000,
+          "g_din_liv_transition_min_mm": 900
+        },
+        "status": "FEASIBLE_CANDIDATE"
+      },
+      "bbox_rows": [
+        {
+          "id": "LIV-SOFA-3",
+          "block_id": "SOFA_3S_2200x900_PLAN",
+          "rect": [
+            2900,
+            9000,
+            3800,
+            11200
+          ],
+          "rotation": 90,
+          "role": "primary social anchor",
+          "reason": "west edge anchor; faces the social group, not a solitary media axis",
+          "actual_rect": [
+            2900.0,
+            9000.0,
+            3800.0,
+            11200.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "LIV-SOFA-2",
+          "block_id": "SOFA_2S_1800x850_PLAN",
+          "rect": [
+            4850,
+            10800,
+            6650,
+            11650
+          ],
+          "rotation": 0,
+          "role": "conversation side",
+          "reason": "second side of the conversation group; north edge leaves the central field open",
+          "actual_rect": [
+            4850.0,
+            10800.0,
+            6650.0,
+            11650.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "LIV-LOUNGE",
+          "block_id": "LOUNGE_CHAIR_900x900_PLAN",
+          "rect": [
+            4700,
+            8400,
+            5600,
+            9300
+          ],
+          "rotation": 90,
+          "role": "optional third seat",
+          "reason": "only retained because it turns toward the group; remove if it reads isolated in review",
+          "actual_rect": [
+            4700.000200496213,
+            8400.000007317503,
+            5599.999799503787,
+            9299.999992682497
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3900,
+            1800,
+            4500,
+            3300
+          ],
+          "rotation": 90,
+          "role": "dining table",
+          "reason": "candidate table placement",
+          "actual_rect": [
+            3900.0,
+            1800.0,
+            4500.0,
+            3300.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-1",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3300,
+            1950.0,
+            3800,
+            2400.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            3300.0,
+            1950.0001396847206,
+            3800.0,
+            2399.9998603152794
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-2",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3300,
+            2700.0,
+            3800,
+            3150.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            3300.0,
+            2700.0001396847206,
+            3800.0,
+            3149.9998603152794
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-3",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            4600,
+            1950.0,
+            5100,
+            2400.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            4600.0,
+            1950.0001396847206,
+            5100.0,
+            2399.9998603152794
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-4",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            4600,
+            2700.0,
+            5100,
+            3150.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            4600.0,
+            2700.0001396847206,
+            5100.0,
+            3149.9998603152794
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        }
+      ],
+      "plan_png": "/Users/xiwei/interior_design/projects/c_type_home/qc/f1r_public_zone/F1R_02_candidate_2.png"
+    },
+    {
+      "rotation": 90,
+      "center_mm": [
+        4200,
+        2800
+      ],
+      "placements": [
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3900,
+            2050,
+            4500,
+            3550
+          ],
+          "rotation": 90,
+          "role": "dining table",
+          "reason": "candidate table placement"
+        },
+        {
+          "id": "DIN-CHAIR-1",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3300,
+            2200.0,
+            3800,
+            2650.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        },
+        {
+          "id": "DIN-CHAIR-2",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3300,
+            2950.0,
+            3800,
+            3400.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        },
+        {
+          "id": "DIN-CHAIR-3",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            4600,
+            2200.0,
+            5100,
+            2650.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        },
+        {
+          "id": "DIN-CHAIR-4",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            4600,
+            2950.0,
+            5100,
+            3400.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration"
+        }
+      ],
+      "metrics": {
+        "table_actual_bbox_mm": [
+          3900.0,
+          2050.0,
+          4500.0,
+          3550.0
+        ],
+        "chairs_actual_bboxes_mm": [
+          [
+            3300.0,
+            2200.0001396847206,
+            3800.0,
+            2649.9998603152794
+          ],
+          [
+            3300.0,
+            2950.0001396847206,
+            3800.0,
+            3399.9998603152794
+          ],
+          [
+            4600.0,
+            2200.0001396847206,
+            5100.0,
+            2649.9998603152794
+          ],
+          [
+            4600.0,
+            2950.0001396847206,
+            5100.0,
+            3399.9998603152794
+          ]
+        ],
+        "table_to_chair_near_edge_gap_mm": 100.0,
+        "seated_envelope_from_table_edge_mm": 600.0,
+        "extra_pullout_travel_available_mm": 400.0,
+        "extra_pullout_travel_by_chair": [
+          {
+            "chair_id": "DIN-CHAIR-1",
+            "back_direction": [
+              -1,
+              0
+            ],
+            "extra_pullout_travel_available_mm": 400.0
+          },
+          {
+            "chair_id": "DIN-CHAIR-2",
+            "back_direction": [
+              -1,
+              0
+            ],
+            "extra_pullout_travel_available_mm": 400.0
+          },
+          {
+            "chair_id": "DIN-CHAIR-3",
+            "back_direction": [
+              1,
+              0
+            ],
+            "extra_pullout_travel_available_mm": 400.0
+          },
+          {
+            "chair_id": "DIN-CHAIR-4",
+            "back_direction": [
+              1,
+              0
+            ],
+            "extra_pullout_travel_available_mm": 400.0
+          }
+        ],
+        "through_passage_behind_seated_mm": null,
+        "g_din_liv_transition_clear_mm": 1130.0,
+        "g_din_liv_transition_basis": "clear passage around north end of occupied dining group",
+        "table_to_keep_kitchen_gap_mm": 1000.0,
+        "closest_chair_to_keep_kitchen_gap_mm": 400.0,
+        "chair_to_keep_kitchen_gaps_mm": [
+          1700.0,
+          1700.0,
+          400.0,
+          400.0
+        ],
+        "p2_path_clear": true,
+        "p2_path_blockers": [],
+        "all_named_paths_clear": true,
+        "path_blockers": [],
+        "overlaps": [],
+        "bbox_qa": true,
+        "targets": {
+          "seated_envelope_min_mm": 600,
+          "behind_seated_passage_min_mm": 900,
+          "table_to_keep_kitchen_min_mm": 1000,
+          "g_din_liv_transition_min_mm": 900
+        },
+        "status": "FEASIBLE_CANDIDATE"
+      },
+      "bbox_rows": [
+        {
+          "id": "LIV-SOFA-3",
+          "block_id": "SOFA_3S_2200x900_PLAN",
+          "rect": [
+            2900,
+            9000,
+            3800,
+            11200
+          ],
+          "rotation": 90,
+          "role": "primary social anchor",
+          "reason": "west edge anchor; faces the social group, not a solitary media axis",
+          "actual_rect": [
+            2900.0,
+            9000.0,
+            3800.0,
+            11200.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "LIV-SOFA-2",
+          "block_id": "SOFA_2S_1800x850_PLAN",
+          "rect": [
+            4850,
+            10800,
+            6650,
+            11650
+          ],
+          "rotation": 0,
+          "role": "conversation side",
+          "reason": "second side of the conversation group; north edge leaves the central field open",
+          "actual_rect": [
+            4850.0,
+            10800.0,
+            6650.0,
+            11650.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "LIV-LOUNGE",
+          "block_id": "LOUNGE_CHAIR_900x900_PLAN",
+          "rect": [
+            4700,
+            8400,
+            5600,
+            9300
+          ],
+          "rotation": 90,
+          "role": "optional third seat",
+          "reason": "only retained because it turns toward the group; remove if it reads isolated in review",
+          "actual_rect": [
+            4700.000200496213,
+            8400.000007317503,
+            5599.999799503787,
+            9299.999992682497
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-TABLE",
+          "block_id": "DINING_TABLE_1500x600_PLAN",
+          "rect": [
+            3900,
+            2050,
+            4500,
+            3550
+          ],
+          "rotation": 90,
+          "role": "dining table",
+          "reason": "candidate table placement",
+          "actual_rect": [
+            3900.0,
+            2050.0,
+            4500.0,
+            3550.0
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-1",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3300,
+            2200.0,
+            3800,
+            2650.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            3300.0,
+            2200.0001396847206,
+            3800.0,
+            2649.9998603152794
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-2",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            3300,
+            2950.0,
+            3800,
+            3400.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            3300.0,
+            2950.0001396847206,
+            3800.0,
+            3399.9998603152794
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-3",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            4600,
+            2200.0,
+            5100,
+            2650.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            4600.0,
+            2200.0001396847206,
+            5100.0,
+            2649.9998603152794
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        },
+        {
+          "id": "DIN-CHAIR-4",
+          "block_id": "DINING_CHAIR_450x500_PLAN",
+          "rect": [
+            4600,
+            2950.0,
+            5100,
+            3400.0
+          ],
+          "rotation": 90,
+          "role": "dining chair",
+          "reason": "candidate four-seat daily configuration",
+          "actual_rect": [
+            4600.0,
+            2950.0001396847206,
+            5100.0,
+            3399.9998603152794
+          ],
+          "bbox_delta_mm": 0.0,
+          "bbox_pass": true
+        }
+      ],
+      "plan_png": "/Users/xiwei/interior_design/projects/c_type_home/qc/f1r_public_zone/F1R_02_candidate_3.png"
+    }
+  ],
+  "input_hashes": {
+    "furniture_l1_final.json": "5b41adf5722365f9bf023e7d534058edc1692c13e5d1027c0ec055cc2b75cda9",
+    "canonical_plan_v1.json": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444",
+    "window_register.json": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a",
+    "design_legend_manifest_v01.json": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+  },
+  "selection_policy": "All selected candidates satisfy zero obstacle overlap, zero named P2 blockers, seated envelope >=600 mm, table-to-KEEP kitchen >=1000 mm, and a clear G-DIN-LIV transition >=900 mm; through-passage-behind-seated is reported only for 0-degree layouts where occupied chairs directly face that route. Final choice remains human review."
+}

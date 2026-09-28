@@ -1,0 +1,20 @@
+{
+  "source_dxf": "projects/c_type_home/experiments/existing_design_systems_v01/base/public_zone_clean_base.dxf",
+  "planhaus_units": "cm",
+  "mm_per_cm": 10.0,
+  "origin_task01_mm": [
+    2700,
+    -200
+  ],
+  "room_envelope_roundtrip_max_error_mm": 0.0,
+  "opening_handles_preserved": true,
+  "fixed_kitchen_source_handles": [
+    "30856C",
+    "308572",
+    "3085F7"
+  ],
+  "stair_ramp_source_handles": [
+    "308678",
+    "30866F"
+  ]
+}

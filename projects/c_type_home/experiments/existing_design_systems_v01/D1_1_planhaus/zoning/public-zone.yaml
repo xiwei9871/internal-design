@@ -1,0 +1,230 @@
+id: public-zone
+name: Public zone (living/dining/kitchen)
+area_m2: 72.8
+source:
+  dxf: base/public_zone_clean_base.dxf
+  transform:
+    origin_task01_mm:
+    - 2700
+    - -200
+    mm_per_cm: 10.0
+    axis: X east / Y north
+  source_handles: input/source_handle_map.json
+walls:
+- id: A-B
+  direction: east
+  length: 520
+- id: B-C
+  direction: north
+  length: 1400
+- id: C-D
+  direction: west
+  length: 520
+- id: D-A
+  direction: south
+  length: 1400
+validation:
+  trace_closes: true
+  calculated_area: 72.8
+  area_matches: true
+  area_note: DXF-derived public-zone envelope x=2700..7900mm, y=0..13800mm; not a
+    legal room-area survey
+ceiling_height: 270
+built_ins:
+- id: kitchen-cabinets
+  type: kitchen
+  wall: A-B
+  position: 280
+  length: 230
+  depth: 47
+  zone: kitchen
+  source_handles:
+  - 30856C
+  - '308572'
+  - 3085F7
+- id: ramp-exclusion
+  type: other
+  dimensions:
+    width: 250
+    depth: 110
+    height: 1
+  position:
+    wall:
+    - A-B
+    - B-C
+    offset:
+    - 492
+    - 260
+  orientation: E-W
+  source_handles:
+  - 30866F
+  source_bbox_task01:
+  - 5300
+  - 4715
+  - 7800
+  - 5815
+- id: stair-exclusion
+  type: other
+  dimensions:
+    width: 60
+    depth: 120
+    height: 1
+  position:
+    wall:
+    - A-B
+    - B-C
+    offset:
+    - 680
+    - 70
+  orientation: E-W
+  source_handles:
+  - '308678'
+  source_bbox_task01:
+  - 7200
+  - 6600
+  - 7800
+  - 7800
+openings:
+- id: entry
+  wall: D-A
+  position: 704
+  width: 170
+  to: entry/hall
+  has_door: true
+  source_handles:
+  - 30844A
+  source_bbox_task01:
+  - 2700
+  - 5064
+  - 2900
+  - 6764
+windows:
+- id: north-bay
+  wall: C-D
+  position: 100
+  width: 310
+  type: bay-window
+  source_handles:
+  - 3084AC
+  - 3084B0
+  - 3084B1
+  source_bbox_task01:
+  - 3800
+  - 12750
+  - 6900
+  - 12950
+- id: north-balcony-door
+  wall: B-C
+  position: 1180
+  width: 85
+  type: sliding-door
+  source_handles:
+  - 30849E
+  - 3084B9
+  source_bbox_task01:
+  - 7800
+  - 11800
+  - 7900
+  - 12650
+  notes: Corrected from registered DXF opening; 850mm existing clear width, no worsening
+heating: []
+plumbing: []
+notes: No furniture is present in the zone phase. Zones are functional envelopes only.
+fixed_features:
+- id: g-din-liv-partition
+  bbox_cm:
+  - 25
+  - 473
+  - 295
+  - 491
+  kind: internal_sliding_partition
+  source_handles:
+  - '308497'
+  - 3084DA
+- id: north-balcony-clear-opening
+  bbox_cm:
+  - 510
+  - 1180
+  - 530
+  - 1265
+  kind: existing_opening
+  source_handles:
+  - 30849E
+focal_point:
+  ref: north-bay
+  why: The only broad daylight/view edge; the primary conversation zone orients toward
+    it without occupying the balcony-door approach.
+circulation:
+- id: entry-balcony
+  from: entry
+  to: north-balcony-door
+  rule: CIRC-01
+zones:
+- id: conversation
+  purpose: Family conversation and child activity field
+  anchor: conversation-group
+  bounds:
+    x:
+    - 60
+    - 430
+    y:
+    - 760
+    - 1160
+  lighting:
+  - ambient
+  - accent
+- id: dining
+  purpose: Four-seat dining zone directly related to retained kitchen
+  anchor: dining-group
+  bounds:
+    x:
+    - 60
+    - 300
+    y:
+    - 120
+    - 450
+  lighting:
+  - ambient
+  - task
+- id: kitchen
+  purpose: Existing kitchen service zone retained in place
+  anchor: kitchen-cabinets
+  bounds:
+    x:
+    - 280
+    - 510
+    y:
+    - 0
+    - 120
+  lighting:
+  - ambient
+  - task
+- id: balcony-approach
+  purpose: Clear approach and threshold to north balcony door
+  anchor: north-balcony-door
+  bounds:
+    x:
+    - 430
+    - 520
+    y:
+    - 900
+    - 1380
+  lighting:
+  - ambient
+opening_source_mapping:
+  entry:
+    source_rect_task01:
+    - 2700
+    - 5064
+    - 2900
+    - 6764
+    wall_position_cm: 704
+    width_cm: 170
+  G-DIN-LIV:
+    source_rect_task01:
+    - 2950
+    - 4530
+    - 5650
+    - 4715
+    status: internal sliding partition; represented as fixed_feature only because
+      Planhaus room_spatial endpoint model supports polygon wall openings only

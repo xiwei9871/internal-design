@@ -1,0 +1,81 @@
+{
+  "session": "STUDIO",
+  "files": [
+    {
+      "file": "SKILL.md",
+      "sha256": "698bc724e6d07b6685dd1f032e369121b34eb5fe6355e32fdac4c25496cfdab8"
+    },
+    {
+      "file": "references/arch-skills__skills__asset-management-interior__SKILL.md",
+      "sha256": "0d800f4e038017d8cad3f8e8507817c8eb200ed1aba3326d7900546f3757da8d"
+    },
+    {
+      "file": "references/arch-skills__skills__asset-management-interior__references__aesthetic-canon.md",
+      "sha256": "2091548d2e8c4d349e244dc77b26919ad2d1246cf7c51c5886bfbfbcc2158e57"
+    },
+    {
+      "file": "references/arch-skills__skills__asset-management-interior__references__benchmark.md",
+      "sha256": "0910dc14f1105cbd3a4445797f879fb196bd28a6da85ad3aeba1178e7c28fdfd"
+    },
+    {
+      "file": "references/arch-skills__skills__asset-management-interior__references__case-anatomy.md",
+      "sha256": "88e7d6572732afb2913d000f778a365335368217b73d254319562b51a933735f"
+    },
+    {
+      "file": "references/arch-skills__skills__asset-management-interior__references__concept-engine.md",
+      "sha256": "8d782c159ae8519946eb45b6f50279837f26299743515527ef63bc69e81580d7"
+    },
+    {
+      "file": "references/arch-skills__skills__asset-management-interior__references__plan-review.md",
+      "sha256": "798e81d9ef5cb629f123242eafd37d80f1d12625a560549ca1da1c2b56fbbf8b"
+    },
+    {
+      "file": "references/arch-skills__skills__asset-management-interior__references__spatial-devices.md",
+      "sha256": "8627223b275cc2ceff43ce8c077d747560c417d95e2f3ecd896975bf052ef62c"
+    },
+    {
+      "file": "common/a0_4.dxf",
+      "sha256": "a10f61f253c2340e8ac070f14b51242f7b9d56615fb98aee5a5458db7d618a9e"
+    },
+    {
+      "file": "common/a0_4_manifest.json",
+      "sha256": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+    },
+    {
+      "file": "common/a1_rulebook.json",
+      "sha256": "120148ad14317b4141ac7ec67c3af00af3be8e50a57feae83d701b135df2dbce"
+    },
+    {
+      "file": "common/a2_pattern_library.json",
+      "sha256": "a247b63bfbaa5f9b38e6f64915178cc9c0dfda98137feda4d119c92d5cbde4b1"
+    },
+    {
+      "file": "common/brief.json",
+      "sha256": "f062aaaa2e7d1f19ff9edf61e8746340fd6fa599eab5ddcebe2e7cd60c1eb239"
+    },
+    {
+      "file": "common/brief.md",
+      "sha256": "51e8af352d2244b24efbee6bb9856f531ed3c00a4edb1f3bb72ac97377bc8535"
+    },
+    {
+      "file": "common/canonical.json",
+      "sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444"
+    },
+    {
+      "file": "common/input_manifest.json",
+      "sha256": "5b4edc1ef86b525741dbf06c6e0bf2158cdeeaf5042a287645e2565b5b036ed9"
+    },
+    {
+      "file": "common/kitchen_register.json",
+      "sha256": "65a926f773b3c9b9c3334e1b504744512ceb299825b1252aca32b7a4b24219fa"
+    },
+    {
+      "file": "common/public_zone_clean_base.dxf",
+      "sha256": "17c5d07fd5afec2a6b3751b89727f4e1329b9b0a2fccd5b221aad900a6954984"
+    },
+    {
+      "file": "common/window_register.json",
+      "sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "png": {
+    "file": "experiments/design_skill_benchmark_v01/arms/REROOM/trial_r02.png",
+    "sha256": "9d8e9a11e0328074321d791baa4a44816c03f679adc7cb7803b6cb4f23bed2ad"
+  },
+  "renderer": "run_benchmark.py::render_dxf",
+  "source_dxf": "experiments/design_skill_benchmark_v01/arms/REROOM/trial_r02.dxf",
+  "source_dxf_sha256": "aae168901fdfddc87f1663ed3465bd2266598f816d56da3f89d6e9c9b3734c48",
+  "view_task01": [
+    2400,
+    1500,
+    8800,
+    13800
+  ]
+}

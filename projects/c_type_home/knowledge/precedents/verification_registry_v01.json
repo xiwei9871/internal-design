@@ -1,0 +1,217 @@
+{
+  "version": "v0.1",
+  "verification_method": "browser_page_and_floor_plan_visual_review",
+  "verified_count": 10,
+  "verified": [
+    {
+      "precedent_id": "PREC-001",
+      "project_name": "Renovation of an Industrial Building into a Single Family House",
+      "project_url": "https://www.archdaily.com/505261/renovation-of-an-industrial-building-into-a-single-family-house-guim-costa-calsamiglia",
+      "floor_plan_url": "https://images.adsttc.com/media/images/5360/58b0/c07a/8005/e900/009a/medium_jpg/Planos_casa_OV_Guim_Costa_2.jpg?1398823065",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "Ground-floor plan places living and dining in a central open strip, with kitchen/service and bedrooms at the edges of a long constrained shell.",
+        "A large garden/terrace is a separate visual destination; furniture is drawn inside the shell rather than floating in the route.",
+        "Entry and service spaces feed the central social rooms before the private rooms."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    },
+    {
+      "precedent_id": "PREC-002",
+      "project_name": "Renovation of Joan Blanques apartment",
+      "project_url": "https://www.archdaily.com/962398/renovation-of-joan-blanques-apartment-allaround-lab",
+      "floor_plan_url": "https://images.adsttc.com/media/images/60ae/428e/f91c/81d9/db00/005e/medium_jpg/Allaround_Lab_Joan_Blanques_planta_y_alzado.jpg?1622033028",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "Plan is a long strip from garden through living/dining/cooking/laundry to private rooms; labels explicitly separate the zones.",
+        "Living and dining occupy a continuous central band while kitchen and laundry are loaded along the service edge.",
+        "The brief asks for openness that can still become two differentiated work areas."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    },
+    {
+      "precedent_id": "PREC-003",
+      "project_name": "Renovation of a Milan Laboratory to a Family Loft",
+      "project_url": "https://www.archdaily.com/981991/renovation-of-a-milan-laboratory-to-a-family-loft-tomoarchitects",
+      "floor_plan_url": "https://images.adsttc.com/media/images/6282/63c9/60c6/3501/6660/3b41/medium_jpg/a10-p0-plan.jpg?1652712461",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "Ground-floor plan shows open living on the left, dining at center, a circular stair/core near the middle, and private rooms to the right.",
+        "The circular stair acts as a spatial anchor; furniture groups turn around the central void instead of all facing one wall.",
+        "The family loft keeps one connected public zone while retaining private room thresholds."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    },
+    {
+      "precedent_id": "PREC-005",
+      "project_name": "Residential Extension MF Pavilion",
+      "project_url": "https://www.archdaily.com/920031/residential-extension-mf-pavilion-guillermo-tirado-gzz-architects",
+      "floor_plan_url": "https://images.adsttc.com/media/images/5d15/7d8c/284d/d137/2600/005a/medium_jpg/190621_MF_Pavilion_planta_arquitectonica.jpg?1561689470",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "Plan shows an added pavilion/extension attached to an existing home with public rooms and a planted or terrace edge.",
+        "The added program reads as a distinct wing; existing rooms and extension are connected through a controlled threshold.",
+        "The outdoor edge creates a view-based secondary axis without dissolving the existing house into one undifferentiated room."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    },
+    {
+      "precedent_id": "PREC-007",
+      "project_name": "Apartment Renovation in Girona",
+      "project_url": "https://www.archdaily.com/950512/apartment-renovation-in-girona-hiha-studio",
+      "floor_plan_url": "https://images.adsttc.com/media/images/5f9a/e8ae/63c0/17d5/3500/00b3/large_jpg/1_(2).jpg?1603987624",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "The ground-floor plan shows three structural bays parallel to the facade and a large courtyard at the rear.",
+        "Living/dining/kitchen occupy the central bay, with bedrooms and services toward the private end and the courtyard as a visual terminus.",
+        "The bay rhythm organizes zones without arbitrary partitions."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    },
+    {
+      "precedent_id": "PREC-008",
+      "project_name": "Renovation of a Mill and Hayloft for Residential use",
+      "project_url": "https://www.archdaily.com/983855/renovation-of-a-mill-and-hayloft-for-residential-use-funcionable-arquitectura",
+      "floor_plan_url": "https://images.adsttc.com/media/images/62ab/ec1a/6f92/4304/4abf/8262/medium_jpg/01-planta-baja-ok-3.jpg?1655434324",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "Ground-floor plan integrates several existing pieces into a long irregular sequence of public rooms, yards and support spaces.",
+        "Stair and thick shell edges make the transitions legible rather than hiding them behind floating furniture.",
+        "Furniture is grouped in rooms; open links occur at existing connections between the old pieces."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    },
+    {
+      "precedent_id": "PREC-004",
+      "project_name": "Residential House Renovation",
+      "project_url": "https://www.archdaily.com/989061/residential-house-renovation-frohlich-gassner-architekten",
+      "floor_plan_url": "https://images.adsttc.com/media/images/6323/5686/a724/4838/504b/bcdc/medium_jpg/02-ground-floor-plan-2.jpg?1663260634",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "Ground-floor plan retains a compact existing shell with living/dining/kitchen and stair; the upper floor is separate.",
+        "Bathrooms and service spaces are changed while the existing circulation and room edges remain legible.",
+        "Furniture is organized inside the existing rooms rather than used to redraw the shell."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    },
+    {
+      "precedent_id": "PREC-009",
+      "project_name": "Residential Care Home Andritz",
+      "project_url": "https://www.archdaily.com/787044/residential-care-home-andritz-dietger-wissounig-architekten",
+      "floor_plan_url": "https://images.adsttc.com/media/images/572f/8d54/e58e/ced5/a800/0044/medium_jpg/PH_Andritz_Plan_Groundfloor.jpg?1462734159",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "Ground-floor plan is an institutional care layout with repeated bedroom clusters around shared circulation and support spaces.",
+        "Shared social/day spaces occur at central visible nodes rather than every room facing one media wall.",
+        "The repeated route-and-node structure is useful for social visibility analysis but not domestic-scale transfer."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    },
+    {
+      "precedent_id": "PREC-013",
+      "project_name": "Apartment and Courtyard in Barcelona",
+      "project_url": "https://www.archdaily.com/629964/apartment-and-courtyard-in-barcelona-cavaa-arquitectes",
+      "floor_plan_url": "https://images.adsttc.com/media/images/5551/3d35/e58e/ce92/c700/01fd/medium_jpg/floor_plan.jpg?1431387432",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "New floor plan wraps rooms around a large internal quiet patio; living/dining occupies the central band and private rooms sit at the edges.",
+        "The patio forms the primary visual axis and daylight source; furniture stays around its edges.",
+        "The old/new plan comparison shows the courtyard relationship as a deliberate organizer, not leftover space."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    },
+    {
+      "precedent_id": "PREC-014",
+      "project_name": "House Around a Split Level Courtyard",
+      "project_url": "https://www.archdaily.com/780835/house-around-a-split-level-courtyard-rubber-soul",
+      "floor_plan_url": "https://images.adsttc.com/media/images/56a2/3ad8/e58e/ceeb/1500/001c/medium_jpg/ground.jpg?1453472364",
+      "verification_date": "2026-09-26",
+      "verification_confidence": 1.0,
+      "observations": [
+        "Ground plan has irregular split-level/courtyard geometry; the living/dining/kitchen group is central and bedrooms/support rooms occupy wings.",
+        "Courtyard and level changes create multiple view destinations; routes bend around rather than through the main furniture groups.",
+        "Diagonal site edges organize the public zone with landscape and view rather than a single orthogonal axis."
+      ],
+      "source_fields": [
+        "project_page_opened",
+        "floor_plan_opened",
+        "spatial_strategy",
+        "circulation",
+        "program",
+        "renovation_constraints"
+      ]
+    }
+  ]
+}

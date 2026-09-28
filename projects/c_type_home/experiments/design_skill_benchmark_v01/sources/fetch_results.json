@@ -1,0 +1,142 @@
+[
+  {
+    "source": "Skills-Architects",
+    "sha": "30a0845dddcaebd765fc396059573d02e99c5b63",
+    "path": "skills/architect-foundations/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Abhinavbwj/Skills-Architects/30a0845dddcaebd765fc396059573d02e99c5b63/skills/architect-foundations/SKILL.md",
+    "local_file": "read/Skills-Architects__skills__architect-foundations__SKILL.md",
+    "status": "READ",
+    "sha256": "9cab67def6cfd8f96eb6199f8fcfc80b9e244f4c31991e1981e1ec72d6c5ceb2",
+    "bytes": 53828
+  },
+  {
+    "source": "Skills-Architects",
+    "sha": "30a0845dddcaebd765fc396059573d02e99c5b63",
+    "path": "skills/spatial-planning/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Abhinavbwj/Skills-Architects/30a0845dddcaebd765fc396059573d02e99c5b63/skills/spatial-planning/SKILL.md",
+    "local_file": "read/Skills-Architects__skills__spatial-planning__SKILL.md",
+    "status": "READ",
+    "sha256": "ed41a80bfe210361133eaa11c9ce80144b3a446bee53917bec827dce56b46580",
+    "bytes": 34568
+  },
+  {
+    "source": "Skills-Architects",
+    "sha": "30a0845dddcaebd765fc396059573d02e99c5b63",
+    "path": "skills/building-typology/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Abhinavbwj/Skills-Architects/30a0845dddcaebd765fc396059573d02e99c5b63/skills/building-typology/SKILL.md",
+    "local_file": "read/Skills-Architects__skills__building-typology__SKILL.md",
+    "status": "READ",
+    "sha256": "2dfc03f58949f873f7fad81cb7a373f3b04a87d2e708ffa66a556c19cad8c294",
+    "bytes": 34087
+  },
+  {
+    "source": "Skills-Architects",
+    "sha": "30a0845dddcaebd765fc396059573d02e99c5b63",
+    "path": "skills/accessibility-design/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Abhinavbwj/Skills-Architects/30a0845dddcaebd765fc396059573d02e99c5b63/skills/accessibility-design/SKILL.md",
+    "local_file": "read/Skills-Architects__skills__accessibility-design__SKILL.md",
+    "status": "READ",
+    "sha256": "3e9afc9176811df28ac871064d606f3a3a4709558aa07e8f76e2f20422b199c4",
+    "bytes": 29737
+  },
+  {
+    "source": "Skills-Architects",
+    "sha": "30a0845dddcaebd765fc396059573d02e99c5b63",
+    "path": "skills/design-theory/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Abhinavbwj/Skills-Architects/30a0845dddcaebd765fc396059573d02e99c5b63/skills/design-theory/SKILL.md",
+    "local_file": "read/Skills-Architects__skills__design-theory__SKILL.md",
+    "status": "READ",
+    "sha256": "30546c4e5c2b30572312f1a4c3c340a98ca707e191856668ef6cfbb346ac4c5f",
+    "bytes": 34187
+  },
+  {
+    "source": "Skills-Architects",
+    "sha": "30a0845dddcaebd765fc396059573d02e99c5b63",
+    "path": "skills/concept-design/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Abhinavbwj/Skills-Architects/30a0845dddcaebd765fc396059573d02e99c5b63/skills/concept-design/SKILL.md",
+    "local_file": "read/Skills-Architects__skills__concept-design__SKILL.md",
+    "status": "READ",
+    "sha256": "ccfd082c8714b6c484a10f4312406e4c6c6a66ab776036bd5fb0d306254e3e4e",
+    "bytes": 45169
+  },
+  {
+    "source": "arch-skills",
+    "sha": "478d5ae32806e5a95dfcbeb70ba5a68126c22e9e",
+    "path": "skills/asset-management-interior/SKILL.md",
+    "url": "https://raw.githubusercontent.com/gujun1502/arch-skills/478d5ae32806e5a95dfcbeb70ba5a68126c22e9e/skills/asset-management-interior/SKILL.md",
+    "local_file": "read/arch-skills__skills__asset-management-interior__SKILL.md",
+    "status": "READ",
+    "sha256": "0d800f4e038017d8cad3f8e8507817c8eb200ed1aba3326d7900546f3757da8d",
+    "bytes": 13795
+  },
+  {
+    "source": "arch-skills",
+    "sha": "478d5ae32806e5a95dfcbeb70ba5a68126c22e9e",
+    "path": "skills/asset-management-interior/references/plan-review.md",
+    "url": "https://raw.githubusercontent.com/gujun1502/arch-skills/478d5ae32806e5a95dfcbeb70ba5a68126c22e9e/skills/asset-management-interior/references/plan-review.md",
+    "local_file": "read/arch-skills__skills__asset-management-interior__references__plan-review.md",
+    "status": "READ",
+    "sha256": "798e81d9ef5cb629f123242eafd37d80f1d12625a560549ca1da1c2b56fbbf8b",
+    "bytes": 10792
+  },
+  {
+    "source": "arch-skills",
+    "sha": "478d5ae32806e5a95dfcbeb70ba5a68126c22e9e",
+    "path": "skills/asset-management-interior/references/spatial-devices.md",
+    "url": "https://raw.githubusercontent.com/gujun1502/arch-skills/478d5ae32806e5a95dfcbeb70ba5a68126c22e9e/skills/asset-management-interior/references/spatial-devices.md",
+    "local_file": "read/arch-skills__skills__asset-management-interior__references__spatial-devices.md",
+    "status": "READ",
+    "sha256": "8627223b275cc2ceff43ce8c077d747560c417d95e2f3ecd896975bf052ef62c",
+    "bytes": 9229
+  },
+  {
+    "source": "arch-skills",
+    "sha": "478d5ae32806e5a95dfcbeb70ba5a68126c22e9e",
+    "path": "skills/asset-management-interior/references/case-anatomy.md",
+    "url": "https://raw.githubusercontent.com/gujun1502/arch-skills/478d5ae32806e5a95dfcbeb70ba5a68126c22e9e/skills/asset-management-interior/references/case-anatomy.md",
+    "local_file": "read/arch-skills__skills__asset-management-interior__references__case-anatomy.md",
+    "status": "READ",
+    "sha256": "88e7d6572732afb2913d000f778a365335368217b73d254319562b51a933735f",
+    "bytes": 11210
+  },
+  {
+    "source": "arch-skills",
+    "sha": "478d5ae32806e5a95dfcbeb70ba5a68126c22e9e",
+    "path": "skills/asset-management-interior/references/concept-engine.md",
+    "url": "https://raw.githubusercontent.com/gujun1502/arch-skills/478d5ae32806e5a95dfcbeb70ba5a68126c22e9e/skills/asset-management-interior/references/concept-engine.md",
+    "local_file": "read/arch-skills__skills__asset-management-interior__references__concept-engine.md",
+    "status": "READ",
+    "sha256": "8d782c159ae8519946eb45b6f50279837f26299743515527ef63bc69e81580d7",
+    "bytes": 12044
+  },
+  {
+    "source": "arch-skills",
+    "sha": "478d5ae32806e5a95dfcbeb70ba5a68126c22e9e",
+    "path": "skills/asset-management-interior/references/benchmark.md",
+    "url": "https://raw.githubusercontent.com/gujun1502/arch-skills/478d5ae32806e5a95dfcbeb70ba5a68126c22e9e/skills/asset-management-interior/references/benchmark.md",
+    "local_file": "read/arch-skills__skills__asset-management-interior__references__benchmark.md",
+    "status": "READ",
+    "sha256": "0910dc14f1105cbd3a4445797f879fb196bd28a6da85ad3aeba1178e7c28fdfd",
+    "bytes": 10231
+  },
+  {
+    "source": "arch-skills",
+    "sha": "478d5ae32806e5a95dfcbeb70ba5a68126c22e9e",
+    "path": "skills/asset-management-interior/references/aesthetic-canon.md",
+    "url": "https://raw.githubusercontent.com/gujun1502/arch-skills/478d5ae32806e5a95dfcbeb70ba5a68126c22e9e/skills/asset-management-interior/references/aesthetic-canon.md",
+    "local_file": "read/arch-skills__skills__asset-management-interior__references__aesthetic-canon.md",
+    "status": "READ",
+    "sha256": "2091548d2e8c4d349e244dc77b26919ad2d1246cf7c51c5886bfbfbcc2158e57",
+    "bytes": 21520
+  },
+  {
+    "source": "ReRoom",
+    "sha": "arXiv:2609.03596",
+    "path": "paper.pdf",
+    "url": "https://arxiv.org/pdf/2609.03596",
+    "local_file": "read/ReRoom__paper.pdf",
+    "status": "READ",
+    "sha256": "f114affd5240b7634e88a31b2d6e3d881a6b3883bbd5c2e20fde93d9743022f7",
+    "bytes": 41166268
+  }
+]

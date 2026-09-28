@@ -1,0 +1,347 @@
+{
+  "version": "f1r-01h-v2",
+  "status": "HUMAN_REVIEW",
+  "method": "geometric_free_space_v2",
+  "clearances": {
+    "entry_to_living_actual_min_mm": 2280,
+    "entry_to_living_reference_min_mm": 900,
+    "entry_to_living_reference_preferred_mm": 1100,
+    "living_to_stair_actual_min_mm": 1200,
+    "living_to_stair_approach_actual_min_mm": 2580,
+    "living_to_stair_opening_actual_mm": 1200,
+    "living_to_stair_reference_secondary_min_mm": 750,
+    "living_to_stair_reference_preferred_mm": 900,
+    "living_to_north_balcony_actual_min_mm": 850,
+    "living_to_north_balcony_approach_actual_min_mm": 980,
+    "living_to_north_balcony_opening_actual_mm": 850,
+    "living_to_north_balcony_reference_min_mm": 900,
+    "living_to_north_balcony_reference_preferred_mm": 1100,
+    "sofa_to_sofa_min_edge_gap_mm": 1050,
+    "sofa_to_lounge_min_edge_gap_mm": 900,
+    "dining_chair_pullout_actual_min_mm": 150.0,
+    "dining_chair_pullout_reference_min_mm": 600,
+    "behind_seated_passage_actual_min_mm": 180.0,
+    "behind_seated_passage_reference_min_mm": 900,
+    "table_to_keep_kitchen_actual_min_mm": 700.0,
+    "table_to_keep_kitchen_reference_min_mm": 1000,
+    "sampling_method": "sampled cross-sections along architectural anchor polylines; route rectangle widths not used as measurements"
+  },
+  "route_sampling": {
+    "entry_to_living": [
+      [
+        2800,
+        5900
+      ],
+      [
+        3400,
+        6800
+      ],
+      [
+        4300,
+        7000
+      ],
+      [
+        4300,
+        8200
+      ]
+    ],
+    "living_to_stair": [
+      [
+        4500,
+        7000
+      ],
+      [
+        6000,
+        7000
+      ],
+      [
+        7100,
+        7000
+      ]
+    ],
+    "living_to_north_balcony": [
+      [
+        6000,
+        11800
+      ],
+      [
+        7000,
+        12000
+      ],
+      [
+        7750,
+        12225
+      ]
+    ],
+    "cross_section_step_mm": 10,
+    "polyline_sample_step_mm": 100
+  },
+  "reference_envelopes": {
+    "entry_to_living": [
+      [
+        2950,
+        5600,
+        3900,
+        6764
+      ],
+      [
+        3400,
+        6764,
+        4600,
+        8500
+      ]
+    ],
+    "living_to_stair": [
+      [
+        4200,
+        7300,
+        7150,
+        7900
+      ],
+      [
+        7150,
+        6600,
+        7800,
+        7900
+      ]
+    ],
+    "living_to_north_balcony": [
+      [
+        6900,
+        11000,
+        7800,
+        12000
+      ],
+      [
+        7800,
+        11800,
+        7900,
+        12650
+      ]
+    ]
+  },
+  "path_blocker_test": {
+    "count": 0,
+    "meaning": "no direct rectangle intersection in named path envelope; this is not a minimum-clearance result"
+  },
+  "actual_largest_clear_rectangle_mm": [
+    5600.0,
+    7800,
+    7700,
+    10800.0
+  ],
+  "transformed_block_bbox_qa": [
+    {
+      "id": "LIV-SOFA-3",
+      "block_id": "SOFA_3S_2200x900_PLAN",
+      "rotation_deg": 90,
+      "intended_bbox_mm": [
+        2900,
+        9000,
+        3800,
+        11200
+      ],
+      "actual_transformed_bbox_mm": [
+        2900.0,
+        9000.0,
+        3800.0,
+        11200.0
+      ],
+      "max_abs_delta_mm": 0.0,
+      "pass": true
+    },
+    {
+      "id": "LIV-SOFA-2",
+      "block_id": "SOFA_2S_1800x850_PLAN",
+      "rotation_deg": 0,
+      "intended_bbox_mm": [
+        4850,
+        10800,
+        6650,
+        11650
+      ],
+      "actual_transformed_bbox_mm": [
+        4850.0,
+        10800.0,
+        6650.0,
+        11650.0
+      ],
+      "max_abs_delta_mm": 0.0,
+      "pass": true
+    },
+    {
+      "id": "LIV-LOUNGE",
+      "block_id": "LOUNGE_CHAIR_900x900_PLAN",
+      "rotation_deg": 90,
+      "intended_bbox_mm": [
+        4700,
+        8400,
+        5600,
+        9300
+      ],
+      "actual_transformed_bbox_mm": [
+        4700.0,
+        8400.0,
+        5600.0,
+        9300.0
+      ],
+      "max_abs_delta_mm": 0.0,
+      "pass": true
+    },
+    {
+      "id": "DIN-TABLE",
+      "block_id": "DINING_TABLE_1500x600_PLAN",
+      "rotation_deg": 0,
+      "intended_bbox_mm": [
+        3300,
+        3100,
+        4800,
+        3700
+      ],
+      "actual_transformed_bbox_mm": [
+        3300.0,
+        3100.0,
+        4800.0,
+        3700.0
+      ],
+      "max_abs_delta_mm": 0.0,
+      "pass": true
+    },
+    {
+      "id": "DIN-CHAIR-N1",
+      "block_id": "DINING_CHAIR_450x500_PLAN",
+      "rotation_deg": 0,
+      "intended_bbox_mm": [
+        3450,
+        3850,
+        3900,
+        4350
+      ],
+      "actual_transformed_bbox_mm": [
+        3450.0,
+        3850.0,
+        3900.0,
+        4350.0
+      ],
+      "max_abs_delta_mm": 0.0,
+      "pass": true
+    },
+    {
+      "id": "DIN-CHAIR-N2",
+      "block_id": "DINING_CHAIR_450x500_PLAN",
+      "rotation_deg": 0,
+      "intended_bbox_mm": [
+        4200,
+        3850,
+        4650,
+        4350
+      ],
+      "actual_transformed_bbox_mm": [
+        4200.0,
+        3850.0,
+        4650.0,
+        4350.0
+      ],
+      "max_abs_delta_mm": 0.0,
+      "pass": true
+    },
+    {
+      "id": "DIN-CHAIR-S1",
+      "block_id": "DINING_CHAIR_450x500_PLAN",
+      "rotation_deg": 180,
+      "intended_bbox_mm": [
+        3450,
+        2450,
+        3900,
+        2950
+      ],
+      "actual_transformed_bbox_mm": [
+        3450.0,
+        2450.0,
+        3900.0,
+        2950.0
+      ],
+      "max_abs_delta_mm": 0.0,
+      "pass": true
+    },
+    {
+      "id": "DIN-CHAIR-S2",
+      "block_id": "DINING_CHAIR_450x500_PLAN",
+      "rotation_deg": 180,
+      "intended_bbox_mm": [
+        4200,
+        2450,
+        4650,
+        2950
+      ],
+      "actual_transformed_bbox_mm": [
+        4200.0,
+        2450.0,
+        4650.0,
+        2950.0
+      ],
+      "max_abs_delta_mm": 0.0,
+      "pass": true
+    }
+  ],
+  "dining": {
+    "dining_table_actual_bbox_mm": [
+      3300.0,
+      3100.0,
+      4800.0,
+      3700.0
+    ],
+    "dining_chair_actual_bboxes_mm": [
+      [
+        3450.0,
+        3850.0,
+        3900.0,
+        4350.0
+      ],
+      [
+        4200.0,
+        3850.0,
+        4650.0,
+        4350.0
+      ],
+      [
+        3450.0,
+        2450.0,
+        3900.0,
+        2950.0
+      ],
+      [
+        4200.0,
+        2450.0,
+        4650.0,
+        2950.0
+      ]
+    ],
+    "dining_chair_pullout_actual_min_mm": 150.0,
+    "behind_seated_passage_actual_min_mm": 180.0,
+    "north_behind_seated_gap_mm": 180.0,
+    "south_behind_seated_gap_mm": 2450.0,
+    "table_to_keep_kitchen_actual_min_mm": 700.0,
+    "reference_targets": {
+      "chair_pullout_mm": 600,
+      "behind_seated_passage_mm": 900,
+      "table_to_kitchen_mm": 1000
+    }
+  },
+  "a0_block_ref_count": 8,
+  "formal_cad_writeback": false,
+  "input_hashes": {
+    "furniture_l1_final.json": "5b41adf5722365f9bf023e7d534058edc1692c13e5d1027c0ec055cc2b75cda9",
+    "concept_data.json": "046b77355c62d7f4550ff067e1c7077bd6efc5a33c89c61deff39e68eb62c036",
+    "canonical_plan_v1.json": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444",
+    "window_register.json": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a",
+    "design_legend_manifest_v01.json": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+  },
+  "qa": {
+    "actual_dxf_block_geometry_rendered": true,
+    "transformed_bbox_all_within_1mm": true,
+    "routes_measured_from_geometry": true,
+    "reference_envelopes_kept_separate": true,
+    "negative_space_ratio_used_as_pass_fail": false
+  }
+}

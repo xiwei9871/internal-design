@@ -1,0 +1,1292 @@
+{
+  "version": "v0.1",
+  "status": "PASS",
+  "rule_count": 120,
+  "category_counts": {
+    "living": 10,
+    "dining": 10,
+    "kitchen": 10,
+    "bedroom": 10,
+    "bathroom": 10,
+    "study": 10,
+    "aging_in_place": 10,
+    "child_friendly": 10,
+    "circulation": 10,
+    "storage": 10,
+    "spatial_composition": 20
+  },
+  "source_strength_counts": {
+    "MEDIUM": 98,
+    "WEAK": 2,
+    "STRONG": 20
+  },
+  "classification_counts": {
+    "DESIGN_HEURISTIC": 98,
+    "TO_VERIFY_PRODUCT": 2,
+    "TECHNICAL_REFERENCE": 13,
+    "TO_VERIFY_LOCAL_CODE": 5,
+    "PROJECT_CONSTRAINT": 2
+  },
+  "source_audit": [
+    {
+      "rule_id": "LIV-CIRC-001",
+      "category": "living",
+      "source_id": "SRC-AARP-HOMEFIT",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "LIV-CIRC-002",
+      "category": "living",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "LIV-FLEX-003",
+      "category": "living",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "LIV-FLEX-004",
+      "category": "living",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "PROJECT_PREFERENCE"
+    },
+    {
+      "rule_id": "LIV-MEDIA-005",
+      "category": "living",
+      "source_id": "SRC-PROJECTOR-PRODUCT",
+      "source_strength": "WEAK",
+      "classification": "TO_VERIFY_PRODUCT",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "TO_VERIFY_PRODUCT"
+    },
+    {
+      "rule_id": "LIV-MEDIA-006",
+      "category": "living",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "LIV-DIST-007",
+      "category": "living",
+      "source_id": "SRC-PROJECTOR-PRODUCT",
+      "source_strength": "WEAK",
+      "classification": "TO_VERIFY_PRODUCT",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "TO_VERIFY_PRODUCT"
+    },
+    {
+      "rule_id": "LIV-EDGE-008",
+      "category": "living",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "LIV-SOC-009",
+      "category": "living",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "LIV-BAL-010",
+      "category": "living",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "DIN-TBL-001",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "DIN-TBL-002",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "DIN-TBL-003",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "DIN-TBL-004",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "DIN-CIR-005",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "DIN-CIR-006",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "DIN-CIR-007",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "DIN-CIR-008",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "DIN-FAM-009",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "DIN-FLEX-010",
+      "category": "dining",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "PROJECT_PREFERENCE"
+    },
+    {
+      "rule_id": "KIT-CIR-001",
+      "category": "kitchen",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "KIT-CIR-002",
+      "category": "kitchen",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "KIT-CIR-003",
+      "category": "kitchen",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "KIT-WRK-004",
+      "category": "kitchen",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "KIT-WRK-005",
+      "category": "kitchen",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "KIT-WRK-006",
+      "category": "kitchen",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "KIT-WRK-007",
+      "category": "kitchen",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "KIT-SAF-008",
+      "category": "kitchen",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "KIT-SAF-009",
+      "category": "kitchen",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "KIT-KEEP-010",
+      "category": "kitchen",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_strength": "STRONG",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "BED-CIR-001",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "BED-AGE-002",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "BED-CIR-003",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "BED-STOR-004",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "BED-DOOR-005",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "BED-WIN-006",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "BED-ERG-007",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "BED-ERG-008",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "BED-FLEX-009",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "PROJECT_PREFERENCE"
+    },
+    {
+      "rule_id": "BED-AGE-010",
+      "category": "bedroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "BTH-WC-001",
+      "category": "bathroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "BTH-WC-002",
+      "category": "bathroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "BTH-VAN-003",
+      "category": "bathroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "BTH-SHW-004",
+      "category": "bathroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "BTH-AGE-005",
+      "category": "bathroom",
+      "source_id": "SRC-ADA-2010-REFERENCE",
+      "source_strength": "STRONG",
+      "classification": "TO_VERIFY_LOCAL_CODE",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "TO_VERIFY_LOCAL_CODE"
+    },
+    {
+      "rule_id": "BTH-CIR-006",
+      "category": "bathroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "BTH-DOOR-007",
+      "category": "bathroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "BTH-SAF-008",
+      "category": "bathroom",
+      "source_id": "SRC-ADA-2010-REFERENCE",
+      "source_strength": "STRONG",
+      "classification": "TO_VERIFY_LOCAL_CODE",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "TO_VERIFY_LOCAL_CODE"
+    },
+    {
+      "rule_id": "BTH-SAF-009",
+      "category": "bathroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "BTH-MNT-010",
+      "category": "bathroom",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STD-DESK-001",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STD-DESK-002",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "STD-CIR-003",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STD-CIR-004",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STD-TECH-005",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "STD-TECH-006",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "STD-FLEX-007",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "PROJECT_PREFERENCE"
+    },
+    {
+      "rule_id": "STD-FLEX-008",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STD-STOR-009",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STD-WIN-010",
+      "category": "study",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "AGE-CIR-001",
+      "category": "aging_in_place",
+      "source_id": "SRC-AARP-HOMEFIT",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "AGE-CIR-002",
+      "category": "aging_in_place",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "AGE-TURN-003",
+      "category": "aging_in_place",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "AGE-DOOR-004",
+      "category": "aging_in_place",
+      "source_id": "SRC-ADA-2010-REFERENCE",
+      "source_strength": "STRONG",
+      "classification": "TO_VERIFY_LOCAL_CODE",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TO_VERIFY_LOCAL_CODE"
+    },
+    {
+      "rule_id": "AGE-THR-005",
+      "category": "aging_in_place",
+      "source_id": "SRC-ADA-2010-REFERENCE",
+      "source_strength": "STRONG",
+      "classification": "TO_VERIFY_LOCAL_CODE",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TO_VERIFY_LOCAL_CODE"
+    },
+    {
+      "rule_id": "AGE-HDW-006",
+      "category": "aging_in_place",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "AGE-BTH-007",
+      "category": "aging_in_place",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "AGE-BTH-008",
+      "category": "aging_in_place",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "AGE-LGT-009",
+      "category": "aging_in_place",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "AGE-LEV-010",
+      "category": "aging_in_place",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_strength": "STRONG",
+      "classification": "PROJECT_CONSTRAINT",
+      "numeric_value_present": false,
+      "automatic_gate": true,
+      "rule_type": "HARD_PROJECT_CONSTRAINT"
+    },
+    {
+      "rule_id": "CHD-ACT-001",
+      "category": "child_friendly",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "CHD-VIS-002",
+      "category": "child_friendly",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "CHD-CIR-003",
+      "category": "child_friendly",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "CHD-FUR-004",
+      "category": "child_friendly",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "CHD-FUR-005",
+      "category": "child_friendly",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "CHD-STOR-006",
+      "category": "child_friendly",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "PROJECT_PREFERENCE"
+    },
+    {
+      "rule_id": "CHD-SAF-007",
+      "category": "child_friendly",
+      "source_id": "SRC-CPSC-HOME-SAFETY",
+      "source_strength": "MEDIUM",
+      "classification": "TO_VERIFY_LOCAL_CODE",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "TO_VERIFY_LOCAL_CODE"
+    },
+    {
+      "rule_id": "CHD-SAF-008",
+      "category": "child_friendly",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "CHD-CLN-009",
+      "category": "child_friendly",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "CHD-FLEX-010",
+      "category": "child_friendly",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "PROJECT_PREFERENCE"
+    },
+    {
+      "rule_id": "CIR-PRI-001",
+      "category": "circulation",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "CIR-PRI-002",
+      "category": "circulation",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "CIR-SEC-003",
+      "category": "circulation",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "CIR-TURN-004",
+      "category": "circulation",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "CIR-DOOR-005",
+      "category": "circulation",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "CIR-PINCH-006",
+      "category": "circulation",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "CIR-CONT-007",
+      "category": "circulation",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "CIR-STAIR-008",
+      "category": "circulation",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "CIR-RAMP-009",
+      "category": "circulation",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_strength": "STRONG",
+      "classification": "PROJECT_CONSTRAINT",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "HARD_PROJECT_CONSTRAINT"
+    },
+    {
+      "rule_id": "CIR-VIS-010",
+      "category": "circulation",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "STO-WARD-001",
+      "category": "storage",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STO-WARD-002",
+      "category": "storage",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STO-DRAW-003",
+      "category": "storage",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STO-REACH-004",
+      "category": "storage",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "STO-ENTRY-005",
+      "category": "storage",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "STO-ENTRY-006",
+      "category": "storage",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "STO-KIT-007",
+      "category": "storage",
+      "source_id": "SRC-NKBA-KITCHEN",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": true,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "STO-BAL-008",
+      "category": "storage",
+      "source_id": "SRC-C-TYPE-BRIEF",
+      "source_strength": "STRONG",
+      "classification": "TECHNICAL_REFERENCE",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "PROJECT_PREFERENCE"
+    },
+    {
+      "rule_id": "STO-LINEN-009",
+      "category": "storage",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "STO-MNT-010",
+      "category": "storage",
+      "source_id": "SRC-PRACTICE-ERGONOMICS",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": true,
+      "automatic_gate": false,
+      "rule_type": "TECHNICAL_GUIDELINE"
+    },
+    {
+      "rule_id": "SPC-HIER-001",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-HIER-002",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-GRP-003",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-GRP-004",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-SCL-005",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-SCL-006",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-NEG-007",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-NEG-008",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-BAL-009",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-BAL-010",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-EDGE-011",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-EDGE-012",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-SIGHT-013",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-SIGHT-014",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-ZONE-015",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-ZONE-016",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-RHY-017",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-RHY-018",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-FLOAT-019",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    },
+    {
+      "rule_id": "SPC-FLOAT-020",
+      "category": "spatial_composition",
+      "source_id": "SRC-PRACTICE-SPATIAL",
+      "source_strength": "MEDIUM",
+      "classification": "DESIGN_HEURISTIC",
+      "numeric_value_present": false,
+      "automatic_gate": false,
+      "rule_type": "BEST_PRACTICE"
+    }
+  ],
+  "gates": [
+    {
+      "gate": "A1-G1 source URL present",
+      "result": "PASS",
+      "detail": "120/120 rules have source_url"
+    },
+    {
+      "gate": "A1-G2 rule type valid",
+      "result": "PASS",
+      "detail": [
+        "BEST_PRACTICE",
+        "HARD_PROJECT_CONSTRAINT",
+        "PROJECT_PREFERENCE",
+        "TECHNICAL_GUIDELINE",
+        "TO_VERIFY_LOCAL_CODE",
+        "TO_VERIFY_PRODUCT"
+      ]
+    },
+    {
+      "gate": "A1-G3 code/guideline distinction valid",
+      "result": "PASS",
+      "detail": "TO_VERIFY_LOCAL_CODE entries requiring local confirmation; invalid=[]"
+    },
+    {
+      "gate": "A1-G4 no unverified foreign code presented as mandatory",
+      "result": "PASS",
+      "detail": "foreign mandatory candidates=[]"
+    },
+    {
+      "gate": "A1-G5 project rules separated",
+      "result": "PASS",
+      "detail": "principles=10; separate file exists"
+    },
+    {
+      "gate": "A1-G6 TO_VERIFY preserved",
+      "result": "PASS",
+      "detail": "preserved_items=9"
+    },
+    {
+      "gate": "A1-G7 source strength recorded for every rule",
+      "result": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "gate": "A1-G8 weak/medium numeric rules cannot hard-fail",
+      "result": "PASS",
+      "detail": "automatic_gate violations=[]"
+    },
+    {
+      "gate": "A1-G9 spatial_composition coverage",
+      "result": "PASS",
+      "detail": "count=20"
+    },
+    {
+      "gate": "A1-G10 projector rules product-specific TO_VERIFY",
+      "result": "PASS",
+      "detail": "rules=['TO_VERIFY_PRODUCT', 'TO_VERIFY_PRODUCT']"
+    }
+  ],
+  "generated_date": "2026-09-26"
+}

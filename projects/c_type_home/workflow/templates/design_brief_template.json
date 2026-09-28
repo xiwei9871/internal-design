@@ -1,0 +1,15 @@
+{
+  "schema": "residential-design-brief-v1",
+  "status": "DRAFT",
+  "household": {"permanent": [], "periodic": []},
+  "activities": [],
+  "storage_requirements": [],
+  "aging_in_place": [],
+  "child_use": [],
+  "existing_keep": [],
+  "must_have": [],
+  "nice_to_have": [],
+  "forbidden_changes": [],
+  "evidence": [],
+  "to_verify": []
+}

@@ -1,0 +1,60 @@
+{
+  "common_input_set_sha256": "088f6875b55f49982d2e48d6da84a310452929d4c54b2471063c40f530ebcca3",
+  "common_inputs": {
+    "a0_4_compiled": {
+      "file": "assets/cad_library/standard/compiled/residential_design_legends_v01.dxf",
+      "sha256": "a10f61f253c2340e8ac070f14b51242f7b9d56615fb98aee5a5458db7d618a9e"
+    },
+    "a0_4_manifest": {
+      "file": "assets/cad_library/standard/manifests/design_legend_manifest_v01.json",
+      "sha256": "9640230259785f047a56c95d729eb02cd65e76f22b372486dcc21aa83753a021"
+    },
+    "a1_rulebook": {
+      "file": "knowledge/design_rules/design_rulebook_v01.json",
+      "sha256": "120148ad14317b4141ac7ec67c3af00af3be8e50a57feae83d701b135df2dbce"
+    },
+    "a2_pattern_library": {
+      "file": "knowledge/precedents/pattern_library_v01.json",
+      "sha256": "a247b63bfbaa5f9b38e6f64915178cc9c0dfda98137feda4d119c92d5cbde4b1"
+    },
+    "canonical_geometry": {
+      "file": "current_existing/canonical_plan_v1.json",
+      "sha256": "e83c1d69e6b5da74cb7481536f056dc5b9ccf0f4bd643995c10f4bcbc78b3444"
+    },
+    "kitchen_register": {
+      "file": "current_existing/kitchen_cabinet_register.json",
+      "sha256": "65a926f773b3c9b9c3334e1b504744512ceb299825b1252aca32b7a4b24219fa"
+    },
+    "measured_cad": {
+      "file": "current_existing/measured_working.dxf",
+      "sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233"
+    },
+    "project_brief_json": {
+      "file": "brief/owner_brief_v1.json",
+      "sha256": "f062aaaa2e7d1f19ff9edf61e8746340fd6fa599eab5ddcebe2e7cd60c1eb239"
+    },
+    "project_brief_md": {
+      "file": "brief/owner_brief_v1.md",
+      "sha256": "51e8af352d2244b24efbee6bb9856f531ed3c00a4edb1f3bb72ac97377bc8535"
+    },
+    "v02_base_cad": {
+      "file": "cad/design_v02_f1_l1.dxf",
+      "sha256": "4e9dd3d4faf137d5db06160843b5dfc024cfab9bfcf571db7911dd76ea0b1c1d"
+    },
+    "window_register": {
+      "file": "current_existing/window_register.json",
+      "sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a"
+    }
+  },
+  "experiment": "D0.1 Residential CAD Design Skill Benchmark",
+  "iteration_limit": 2,
+  "model": "CURRENT_CODEX_SESSION",
+  "prohibited_inputs": [
+    "projects/c_type_home/qc/f1r_public_zone/*",
+    "F1R_01H*",
+    "F1R_02*",
+    "old F1R JSON layout coordinates"
+  ],
+  "same_geometry_qa": "run_benchmark.py::analyze_trial",
+  "same_renderer": "run_benchmark.py::render_dxf"
+}
