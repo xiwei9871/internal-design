@@ -1,0 +1,1 @@
+S4 requires independent geometry and spatial/visual review. Read saved renders. Revise the design model, not only the image.

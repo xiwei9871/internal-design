@@ -1,0 +1,17 @@
+{
+  "schema": "functional-concept-v1",
+  "id": "concept_A",
+  "status": "DRAFT",
+  "architecture_reference": {},
+  "focal_hierarchy": [],
+  "functional_groups": [],
+  "zones": [],
+  "circulation": [],
+  "sightlines": [],
+  "negative_space": [],
+  "objects": [],
+  "rationale": "",
+  "tradeoffs": [],
+  "clearance_report": "",
+  "human_approval": {"status": "HOLD", "reviewer": null, "timestamp": null}
+}

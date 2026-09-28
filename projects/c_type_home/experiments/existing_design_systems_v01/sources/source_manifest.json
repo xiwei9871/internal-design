@@ -1,0 +1,172 @@
+{
+  "planhaus": {
+    "repo": "https://github.com/pepuscz/planhaus",
+    "commit": "5b78df6a370ce2f1cb23ea1c239351235e2718bc",
+    "files_read": [
+      {
+        "file": "skills/concept/SKILL.md",
+        "sha256": "c6bc16c52a8557b7bc751a57ea9779ffda4765eb35cd7b8df83304bdf5386ee9",
+        "read": true
+      },
+      {
+        "file": "skills/zone/SKILL.md",
+        "sha256": "86e4d927de8d68cd8d870567f7f6088ad8cc4997f817695a3efee3b5d4122772",
+        "read": true
+      },
+      {
+        "file": "skills/furnish/SKILL.md",
+        "sha256": "07211f26b47ed15766f80fac181fdbd25592fd36e126ca2c1115a975faf705e5",
+        "read": true
+      },
+      {
+        "file": "skills/validate/SKILL.md",
+        "sha256": "268db86832453d7e70089d316a19a09631e65ea60a60dd5ff9cfbcc7d69555ad",
+        "read": true
+      },
+      {
+        "file": "skills/review/SKILL.md",
+        "sha256": "5eb097e8a66782615382ce59a48a291b8ecf1fa778835de59b6c14ace2364bb1",
+        "read": true
+      },
+      {
+        "file": "skills/position/SKILL.md",
+        "sha256": "ce3a1203ad4b17d8bec8247f497b83ef44a77d35bbb6e8ef0e8342209e98077a",
+        "read": true
+      },
+      {
+        "file": "agents/space-planner.md",
+        "sha256": "30f7b2ebc04d2b788aab8621df9f31432e4b0417332cf5e10d5acf9a312c61b6",
+        "read": true
+      },
+      {
+        "file": "agents/design-reviewer.md",
+        "sha256": "241f82595a8a54156e634cf7b99736fd6023ae420121177507fe45693fb3b6db",
+        "read": true
+      },
+      {
+        "file": "scripts/rules/clearances.yaml",
+        "sha256": "9452e6f38307b155b58e7a2feb812e51d60ed9c60d5078d6cb6a9ecd30bd1978",
+        "read": true
+      },
+      {
+        "file": "templates/design-checklist.yaml",
+        "sha256": "9162e819fc2c3734ac9cbac511d23239b74d47d1a6041e6c363457351e543407",
+        "read": true
+      }
+    ],
+    "executed_files": [
+      "scripts/room_spatial.py",
+      "scripts/rules/clearances.yaml",
+      "skills/concept/SKILL.md",
+      "skills/zone/SKILL.md",
+      "skills/furnish/SKILL.md",
+      "skills/review/SKILL.md",
+      "agents/space-planner.md",
+      "agents/design-reviewer.md"
+    ],
+    "execution_mode": "native YAML schema + native room_spatial rules + contract-driven review; no A1/A2 inputs loaded",
+    "native_phase_artifacts": [
+      "D1_1_planhaus/input/brief.yaml",
+      "D1_1_planhaus/input/concept.yaml",
+      "D1_1_planhaus/zoning/option_A.yaml",
+      "D1_1_planhaus/zoning/option_B.yaml",
+      "D1_1_planhaus/zoning/option_C.yaml",
+      "D1_1_planhaus/furnish/final_room.yaml",
+      "D1_1_planhaus/planhaus_validate.txt",
+      "D1_1_planhaus/planhaus_review.md"
+    ]
+  },
+  "lego_net": {
+    "repo": "https://github.com/QiuhongAnnaWei/LEGO-Net",
+    "commit": "198ac4978ef73f64aabb3d9074e2ca364d1b389d",
+    "files_read": [
+      {
+        "file": "README.md",
+        "local": "sources/LEGO-Net/README.md",
+        "sha256": "6c4e701c8cbfb148d529e8c268746169c562f0e11e08268ee46e9d93954d3ae2",
+        "status": "READ"
+      },
+      {
+        "file": "train.py",
+        "local": "sources/LEGO-Net/train.py",
+        "sha256": "621859d0c53ac90beec2819569647d151c29df62120e28cac1eea72f907312fc",
+        "status": "READ"
+      },
+      {
+        "file": "filepath.py",
+        "local": "sources/LEGO-Net/filepath.py",
+        "sha256": "672a2c59992c3b7c6d8f8b5922a6571d950c92f60e213e6f75f87cc064e9d589",
+        "status": "READ"
+      },
+      {
+        "file": "data/TDFront.py",
+        "local": "sources/LEGO-Net/data/TDFront.py",
+        "sha256": "a8f15db2a5541360fc316c1e2e9ecdc9e055dfbbf26903de56db36fe33383328",
+        "status": "READ"
+      },
+      {
+        "file": "data/preprocess_TDFront.py",
+        "local": "sources/LEGO-Net/data/preprocess_TDFront.py",
+        "sha256": "e0bd00b4ccb693fdfa6a888e833c07c02c065f03aa54595b5ff25d5b1ea60efd",
+        "status": "READ"
+      },
+      {
+        "file": "environment.yml",
+        "local": "sources/LEGO-Net/environment.yml",
+        "sha256": "d2b56fb61174a01be8d29c4d1cdff900366efd1bff039c6689f069ad986d7ae1",
+        "status": "READ"
+      }
+    ],
+    "official_weight_links": "Google Drive links in README; not downloaded without explicit data acquisition step"
+  },
+  "atiss": {
+    "repo": "https://github.com/nv-tlabs/ATISS",
+    "commit": "0909ce0000e52bf1bf300a6a558109f7f8383fd9",
+    "files_read": [
+      {
+        "file": "README.md",
+        "url": "https://raw.githubusercontent.com/nv-tlabs/ATISS/0909ce0000e52bf1bf300a6a558109f7f8383fd9/README.md",
+        "sha256": "9392c742fad840b28787e26b22046718bc1855f3acfb6ea22acf5d848d6e86f4",
+        "status": "READ",
+        "bytes": 14404
+      },
+      {
+        "file": "environment.yaml",
+        "url": "https://raw.githubusercontent.com/nv-tlabs/ATISS/0909ce0000e52bf1bf300a6a558109f7f8383fd9/environment.yaml",
+        "sha256": "56f93dd47e1aecfb5f0c52228eb2aaa954679903a94582c4492b8c1bcd6f18a4",
+        "status": "READ",
+        "bytes": 402
+      },
+      {
+        "file": "generate_scenes.py",
+        "url": "https://raw.githubusercontent.com/nv-tlabs/ATISS/0909ce0000e52bf1bf300a6a558109f7f8383fd9/generate_scenes.py",
+        "status": "UNVERIFIED",
+        "error": "HTTPError:HTTP Error 404: Not Found"
+      },
+      {
+        "file": "preprocess_data.py",
+        "url": "https://raw.githubusercontent.com/nv-tlabs/ATISS/0909ce0000e52bf1bf300a6a558109f7f8383fd9/preprocess_data.py",
+        "status": "UNVERIFIED",
+        "error": "HTTPError:HTTP Error 404: Not Found"
+      },
+      {
+        "file": "config/bedroom.yaml",
+        "url": "https://raw.githubusercontent.com/nv-tlabs/ATISS/0909ce0000e52bf1bf300a6a558109f7f8383fd9/config/bedroom.yaml",
+        "status": "UNVERIFIED",
+        "error": "HTTPError:HTTP Error 404: Not Found"
+      },
+      {
+        "file": "config/livingroom.yaml",
+        "url": "https://raw.githubusercontent.com/nv-tlabs/ATISS/0909ce0000e52bf1bf300a6a558109f7f8383fd9/config/livingroom.yaml",
+        "status": "UNVERIFIED",
+        "error": "HTTPError:HTTP Error 404: Not Found"
+      }
+    ],
+    "official_weight_status": "requires 3D-FRONT/3D-FUTURE and released checkpoint path; not downloaded"
+  },
+  "three_d_front": {
+    "access_status": "PUBLIC_DATASET_PAGE_REQUIRES_SEPARATE_DOWNLOAD/TERMS_CHECK",
+    "url": "https://tianchi.aliyun.com/specials/promotion/alibaba-3d-scene-dataset",
+    "downloaded": false
+  }
+}

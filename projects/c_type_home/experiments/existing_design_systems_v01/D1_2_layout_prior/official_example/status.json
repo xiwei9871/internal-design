@@ -1,0 +1,9 @@
+{
+  "LEGO-Net": "BLOCKED_ENVIRONMENT",
+  "ATISS": "BLOCKED_ENVIRONMENT",
+  "reason": "Both require PyTorch-era environments and external dataset/pretrained weight files not present in this workspace; no official example was claimed as executed.",
+  "torch_available": false,
+  "torchvision_available": false,
+  "3d_front_data_present": false,
+  "pretrained_weights_present": false
+}

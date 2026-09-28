@@ -1,0 +1,32 @@
+narrative: A public zone shared every day by the owner and mother, with wife, child,
+  relatives and guests joining periodically. The plan must support conversation, child
+  activity, dining for four, projector use, and comfortable movement through the retained
+  split-level structure.
+style:
+  primary: not assessed in D1 layout experiment
+  secondary: []
+  signals: []
+  avoid:
+  - TV-centric hierarchy
+  - fixed obstacles in the central family activity field
+layout_priorities:
+- preserve the existing 850 mm north-balcony opening without worsening it
+- retain the kitchen and all walls/openings/stair/ramp
+- keep the G-DIN-LIV transition usable
+- support four daily dining seats close to the KEEP kitchen
+- prioritize a clear family conversation group and useful negative space
+- allow child activity and elder-friendly circulation
+room_hierarchy:
+- room: public-zone
+  emphasis: focal hierarchy, circulation, living grouping, kitchen-linked dining
+  why: this D1 test evaluates public-zone layout only
+scope:
+  materials: false
+  lighting_design: false
+  budget: false
+  product_selection: false
+sources:
+- owner_brief_v1.json
+- canonical_plan_v1.json
+- window_register.json
+- D1.1 user brief

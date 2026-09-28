@@ -1,0 +1,19 @@
+{
+  "formal_cad_allowed": false,
+  "missing_prerequisites": [
+    "S2_HUMAN_APPROVAL",
+    "S3_3D_BLOCKOUT",
+    "S4_SPATIAL_REVIEW",
+    "S4_HUMAN_APPROVAL",
+    "S5_DESIGN_CONTRACT_FREEZE"
+  ],
+  "required_prerequisites": [
+    "S2_HUMAN_APPROVAL",
+    "S3_3D_BLOCKOUT",
+    "S4_SPATIAL_REVIEW",
+    "S4_HUMAN_APPROVAL",
+    "S5_DESIGN_CONTRACT_FREEZE"
+  ],
+  "declared_formal_design_cad": "HOLD",
+  "declared_construction_docs": "HOLD"
+}

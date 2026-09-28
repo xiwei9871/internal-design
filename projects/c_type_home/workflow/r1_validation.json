@@ -1,0 +1,28 @@
+{
+  "status": "PIPELINE_V2_FROZEN",
+  "design": "HOLD",
+  "gates": {
+    "R1-G1_PREVIOUS_PIPELINE_EVIDENCE_REVIEWED": true,
+    "R1-G2_WORKFLOW_DOCUMENTS_CREATED": true,
+    "R1-G3_MACHINE_STAGE_GATE_DEFINITIONS_CREATED": true,
+    "R1-G4_PROJECT_LOCAL_SKILL_CREATED": true,
+    "R1-G5_PROJECT_STATE_BLOCKS_FORMAL_CAD": true,
+    "R1-G6_EXPERIMENTS_PRESERVED_NON_APPROVED": true,
+    "R1-G7_PROTECTED_SOURCE_HASHES_UNCHANGED": true,
+    "R1-G8_NO_V03_CREATED": true,
+    "R1-G9_NO_FORMAL_FURNITURE_LAYOUT_CHANGED": true
+  },
+  "tests": {
+    "workflow_unittest_count": 3,
+    "workflow_unittest_status": "PASS",
+    "formal_cad_allowed": false,
+    "missing_prerequisites": [
+      "S2_HUMAN_APPROVAL",
+      "S3_3D_BLOCKOUT",
+      "S4_SPATIAL_REVIEW",
+      "S4_HUMAN_APPROVAL",
+      "S5_DESIGN_CONTRACT_FREEZE"
+    ]
+  },
+  "commit_policy": "R1 only freezes workflow; no S1/S2 design is approved."
+}

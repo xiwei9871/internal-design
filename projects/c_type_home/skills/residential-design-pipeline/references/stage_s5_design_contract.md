@@ -1,0 +1,1 @@
+S5 freezes approved_design_vXX.json only after S2/S3/S4 human gates. Every object carries basis and verification status.

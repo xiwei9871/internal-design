@@ -1,0 +1,1 @@
+S3 uses actual scale and the existing/design coordinate reference. Render top/axon and eye-level route views. Keep materials secondary.

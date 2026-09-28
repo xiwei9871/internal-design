@@ -1,0 +1,14 @@
+{
+  "name": "planhaus",
+  "description": "Interior-design copilot plugin for Claude Desktop / Cowork / Claude Code",
+  "owner": {
+    "name": "Josef Gattermayer"
+  },
+  "plugins": [
+    {
+      "name": "planhaus",
+      "source": "./",
+      "description": "LLM-assisted interior design. Spatial reasoning, room geometry validation, product catalog search, 60-30-10 composition framework."
+    }
+  ]
+}

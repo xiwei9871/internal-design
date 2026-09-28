@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Approved residential design contract",
+  "type": "object",
+  "required": ["schema", "architecture_reference", "zones", "furniture", "approval_status"],
+  "properties": {
+    "schema": {"const": "approved-residential-design-v1"},
+    "architecture_reference": {"type": "object", "required": ["source", "source_hash", "coordinate_system"]},
+    "zones": {"type": "array", "items": {"type": "object", "required": ["id", "functional_group", "reason"]}},
+    "furniture": {"type": "array", "items": {"type": "object", "required": ["id", "dimensions", "position", "orientation", "functional_group", "design_role", "basis", "verification_status"]}},
+    "fixtures": {"type": "array"},
+    "fixed_cabinetry": {"type": "array"},
+    "approval_status": {"enum": ["DRAFT", "HUMAN_APPROVED", "FROZEN"]},
+    "to_verify": {"type": "array"}
+  }
+}
