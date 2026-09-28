@@ -1,0 +1,144 @@
+{
+  "schema": "residential-design-brief-v1",
+  "version": "v01",
+  "project": "c_type_home",
+  "approval_status": "DRAFT_HUMAN_REVIEW",
+  "stage_boundary": {
+    "layout_coordinates": "S2_ONLY",
+    "furniture_layout": "NOT_IN_S1",
+    "formal_cad": "HOLD",
+    "purpose": "fact-based brief; no room layout is approved by this file"
+  },
+  "household": {
+    "permanent": [
+      "owner",
+      "mother"
+    ],
+    "ages": {
+      "owner": 38,
+      "mother": 68
+    },
+    "periodic": [
+      "wife",
+      "child",
+      "relatives/guests"
+    ],
+    "residential_intent": "long-term self-use with aging-in-place and periodic family return"
+  },
+  "confirmed": {
+    "room_program": {
+      "primary_bedroom": "mother long-term bedroom",
+      "secondary_primary_bedroom": "owner long-term bedroom; wife joins periodically",
+      "study": "formal work room first; backup sleep capability",
+      "guest_room": "periodic child/relative room",
+      "bathrooms": "primary ensuite, secondary ensuite, shared guest/public bath"
+    },
+    "existing_keep": [
+      "kitchen KEEP",
+      "walls/openings immutable for current design phase",
+      "existing stair KEEP",
+      "existing ramp/provisional assisted route KEEP as measured exclusion",
+      "existing fixed cabinets/storage where registered",
+      "G-DIN-LIV retained sliding-glass partition",
+      "north-balcony current state OPEN_NOT_ENCLOSED"
+    ],
+    "north_balcony": {
+      "current_status": "OPEN_NOT_ENCLOSED",
+      "future_enclosure": "PROPOSED_TO_VERIFY",
+      "design_requirement": "preserve access and daylight/view relationship without relying on future enclosure"
+    },
+    "public_zone": {
+      "living": [
+        "daily conversation",
+        "child activity",
+        "elder-friendly circulation",
+        "low fixed-obstacle density",
+        "projector/laser-TV compatible"
+      ],
+      "hierarchy": "non-TV-centric; projector is secondary capability, not the sole focal point",
+      "dining": [
+        "four daily seats",
+        "kitchen-linked",
+        "comfortable chair pull-out",
+        "do not choke G-DIN-LIV"
+      ],
+      "dining_table_nominal_mm": [
+        1500,
+        600
+      ]
+    },
+    "mother_aging_in_place": [
+      "primary bedroom to bathroom route should have assisted-mobility potential",
+      "primary bathroom should prioritize low/zero threshold shower, wide entry, grab bars, fold-down seat and hand shower",
+      "avoid dependence on tight furniture gaps or isolated obstacles"
+    ],
+    "laundry": {
+      "main_laundry": "north balcony main wash/dry pair with natural drying retained",
+      "secondary_small_wash": "guest/public bathroom small-item wash capability"
+    }
+  },
+  "functional_requirements": {
+    "primary_bathroom": [
+      "aging-in-place shower",
+      "WC",
+      "single basin",
+      "dry/wet separation",
+      "night safety"
+    ],
+    "secondary_bathroom": [
+      "three-piece ensuite",
+      "shower about 900x1200mm target",
+      "dry/wet separation",
+      "no public corridor door"
+    ],
+    "study": [
+      "desk about 1600-1800x700-800mm",
+      "dual-display work capability",
+      "storage/printer/NAS",
+      "backup sleep without losing study function"
+    ],
+    "guest_room": [
+      "periodic sleeping",
+      "small desk optional",
+      "north-balcony/glass-door route preserved"
+    ],
+    "storage": [
+      "adequate total storage",
+      "do not create visual clutter",
+      "recover storage if bathroom work consumes wardrobe volume"
+    ]
+  },
+  "s2_design_questions": [
+    "What is the public-zone focal hierarchy when the room is not TV-centric?",
+    "How do seating, child activity and the entry-stair-balcony spine form one spatial group?",
+    "How does the four-seat dining group relate to the retained kitchen and G-DIN-LIV?",
+    "Where is negative space useful rather than merely empty?",
+    "How should the mother's bedroom and primary bath form an assisted route?",
+    "How can the study remain a real study while providing backup sleep?",
+    "What exact secondary-bath door and service routing are feasible?"
+  ],
+  "forbidden_changes": [
+    "do not modify formal CAD in S1",
+    "do not treat the north balcony as enclosed existing area",
+    "do not classify owner wall advice as structural certification",
+    "do not let A1/A2 or a clearance pass select a final furniture layout"
+  ],
+  "to_verify": [
+    "LEVEL_DELTA_TO_VERIFY",
+    "assisted_route_slope_and_landings_TO_VERIFY",
+    "secondary_bath_door_and_drainage_TO_VERIFY",
+    "wall_modification_and_structural_classification_TO_VERIFY",
+    "north_balcony_future_enclosure_legality_TO_VERIFY",
+    "final_fixture_and_appliance_SKU_dimensions_TO_VERIFY",
+    "field door clearances and cabinet tolerances TO_VERIFY"
+  ],
+  "evidence": [
+    "brief/owner_brief_v1.json",
+    "brief/owner_brief_v1.md",
+    "current_existing/canonical_plan_v1.json",
+    "current_existing/window_register.json",
+    "current_existing/kitchen_cabinet_register.json",
+    "owner-confirmed D0/R1 brief decisions recorded in project conversation"
+  ],
+  "next_gate": "S1 human review before S2 functional concepts"
+}
