@@ -1,0 +1,5324 @@
+{
+  "task": "Repository Source-Boundary Cleanup V2.1",
+  "project": "projects/c_type_home",
+  "base": "origin/improve/design-output-v14",
+  "branch": "chore/c-type-source-boundary-v2",
+  "supersedes_commit": "67b8677355ecc7efd97b5b057d319bb7e658124b",
+  "generated_from": "git status --porcelain=v1 --untracked-files=all",
+  "current_visible": {
+    "files": 1265,
+    "bytes": 717549159
+  },
+  "metrics": {
+    "IGNORE_GENERATED": {
+      "files": 672,
+      "bytes": 405831858
+    },
+    "MANUAL_REVIEW": {
+      "files": 12,
+      "bytes": 612293
+    },
+    "REFERENCE_EXTERNAL": {
+      "files": 228,
+      "bytes": 301100321
+    },
+    "TRACK_LATER_OR_LFS": {
+      "files": 7,
+      "bytes": 4769409
+    },
+    "TRACK_NOW": {
+      "files": 346,
+      "bytes": 5235278
+    }
+  },
+  "categories": {
+    "TRACK_NOW": [
+      {
+        "path": "docs/superpowers/plans/2026-09-28-s2-current-design-v1.md",
+        "bytes": 3392
+      },
+      {
+        "path": "docs/superpowers/plans/2026-10-02-secondary-bath-options.md",
+        "bytes": 4200
+      },
+      {
+        "path": "projects/c_type_home/CODEX_HANDOFF_B1.md",
+        "bytes": 17407
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/PRE_B1_SOURCE_DIFF.json",
+        "bytes": 8337
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/PRE_B1_SOURCE_RESOLUTION.md",
+        "bytes": 5520
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/build_freecad_working.py",
+        "bytes": 13704
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/cad_conversion_report.md",
+        "bytes": 1849
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/freecad_import_probe.py.freecad_import.json",
+        "bytes": 277
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_2000_ascii.dxf.freecad_import.json",
+        "bytes": 1073
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/B1_DOOR_SEMANTIC_RESOLUTION.md",
+        "bytes": 1449
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/B1_FIDELITY_REPORT.md",
+        "bytes": 1256
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/B1_FORMALIZATION_DELTA.md",
+        "bytes": 2584
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/B1_FORMALIZATION_DELTA_V003.md",
+        "bytes": 3833
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/B1_SPATIAL_ISSUES.md",
+        "bytes": 1122
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/FURNITURE_3D_DIMENSION_REGISTER_V01.csv",
+        "bytes": 6978
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/FURNITURE_3D_DIMENSION_REGISTER_V01.md",
+        "bytes": 6496
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/FURNITURE_HEIGHT_ANOMALY_REPORT.md",
+        "bytes": 399
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/b1_build_log.json",
+        "bytes": 1006
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/b1_fidelity_check.json",
+        "bytes": 11297
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/b1_model.json",
+        "bytes": 37379
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/blockout_temp_dimensions_v01.json",
+        "bytes": 3193
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/furniture_3d_dimension_register_v01.json",
+        "bytes": 19910
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/furniture_orientation_register_v01.json",
+        "bytes": 28268
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/CORRECTED_UPPER_FLOOR_MESH.json",
+        "bytes": 14981
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/R4_DELIVERY_MANIFEST.json",
+        "bytes": 1528
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/R4_OPTION_A_MANIFEST.json",
+        "bytes": 3166
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/R4_OPTION_B_MANIFEST.json",
+        "bytes": 3164
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/R4_REVIEW.md",
+        "bytes": 4519
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/THRESHOLD_ACTUAL_GEOMETRY_DEBUG.json",
+        "bytes": 80177
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/UPPER_FLOOR_FULL_SOURCE.json",
+        "bytes": 57346
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/correct_bedroom_door.py",
+        "bytes": 12275
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/prepare_corrected_clay.py",
+        "bytes": 4625
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/prepare_floor_repair.py",
+        "bytes": 2966
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/work_state.md",
+        "bytes": 908
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_ARCHITECTURE_TRANSFER.md",
+        "bytes": 3475
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_EXISTING_BASELINE_REPORT.md",
+        "bytes": 7332
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_FLOOR_REGIONS.json",
+        "bytes": 21721
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_FREEZE_MANIFEST.json",
+        "bytes": 2728
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_GEOMETRY_GATE.json",
+        "bytes": 2328
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_GEOMETRY_GATE_V2.json",
+        "bytes": 2098
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_LEVEL_FIELD.json",
+        "bytes": 108853
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B1_READINESS_CHECKLIST.md",
+        "bytes": 3362
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/FURNITURE_TRANSFORMS_FROZEN_V02.json",
+        "bytes": 43847
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/PASCAL_LAYOUT_FROZEN_v3.json",
+        "bytes": 116213
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/Z_DATUM_SPEC.json",
+        "bytes": 1967
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B0_INTEGRITY_PREFLIGHT.json",
+        "bytes": 2150
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_ASSET_REGISTER.json",
+        "bytes": 92964
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_BUILD_INTEGRITY.json",
+        "bytes": 4187
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_DECISIONS.json",
+        "bytes": 314
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_DELIVERY_MANIFEST.json",
+        "bytes": 2952
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_DELIVERY_SHA256.txt",
+        "bytes": 1218
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_FRESH_OPEN_VALIDATION.json",
+        "bytes": 39181
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_HUMAN_REVIEW.md",
+        "bytes": 5282
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_IMPLEMENTATION_PLAN.md",
+        "bytes": 2605
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_CABINET_3D_REGISTER_V01.json",
+        "bytes": 15364
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_TEXT.json",
+        "bytes": 284
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/build_design_model.py",
+        "bytes": 39853
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/reference_notes.md",
+        "bytes": 3499
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/work_state.md",
+        "bytes": 1418
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/APPROVAL_EVIDENCE.json",
+        "bytes": 1243
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/CAMERA_REGISTER.json",
+        "bytes": 13015
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/FREEZE_CONTRACT.md",
+        "bytes": 1102
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_DIMENSION_SCHEDULE.csv",
+        "bytes": 4724
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_DIMENSION_SCHEDULE.json",
+        "bytes": 9288
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_FREEZE_MANIFEST.json",
+        "bytes": 19203
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_FREEZE_REPORT.md",
+        "bytes": 4437
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_MODEL_REGISTER.json",
+        "bytes": 22165
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_VIEW_INDEX.md",
+        "bytes": 2493
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/RENDER_VERIFICATION_MANIFEST.json",
+        "bytes": 1598
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_MANIFEST.json",
+        "bytes": 3712
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_REPORT.md",
+        "bytes": 8850
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_VIEW_INDEX.md",
+        "bytes": 1911
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/BRANCH_CONTRACT.json",
+        "bytes": 667
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/RAMP_FEASIBILITY.json",
+        "bytes": 8737
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/RAMP_FEASIBILITY.md",
+        "bytes": 3648
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/SECTION_MEASUREMENT.json",
+        "bytes": 741
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/TRANSITION_CLEARANCE.json",
+        "bytes": 869
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/scripts/build_options.py",
+        "bytes": 10714
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/scripts/export_source_geometry.py",
+        "bytes": 1299
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/FRESH_OPEN_DIFF.json",
+        "bytes": 17666
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/LIVING_CAMERA_REGISTER.json",
+        "bytes": 2185
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/LIVING_CORRECTION_MANIFEST.json",
+        "bytes": 7739
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/LIVING_MODEL_INVENTORY.json",
+        "bytes": 75962
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/LIVING_REVIEW.md",
+        "bytes": 4218
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/VISUAL_REVIEW.json",
+        "bytes": 623
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/reference_notes.md",
+        "bytes": 2507
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/work_state.md",
+        "bytes": 968
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/D107_LATEST_USER_CLARIFICATION.md",
+        "bytes": 1001
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/V1_DOOR_ENCLOSURE_FAILURE.json",
+        "bytes": 1551
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/V2_CAMERA_REGISTER.json",
+        "bytes": 1557
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/V2_MANIFEST.json",
+        "bytes": 6651
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/V2_REVIEW.md",
+        "bytes": 3266
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/V2_VISUAL_REVIEW.json",
+        "bytes": 444
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/reference_notes.md",
+        "bytes": 1743
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/work_state.md",
+        "bytes": 1099
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/V3_MANIFEST.json",
+        "bytes": 3238
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/V3_REVIEW.md",
+        "bytes": 2150
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/correct_d107_sides.py",
+        "bytes": 10622
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/work_state.md",
+        "bytes": 785
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/LIVING_LAYOUT_FINALIZE_V1.json",
+        "bytes": 4512
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/LIVING_PRODUCTION_BRIEF.md",
+        "bytes": 1948
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/materials/beige_wall_001/asset-manifest.json",
+        "bytes": 1972
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/materials/marble_01/asset-manifest.json",
+        "bytes": 1888
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/materials/oak_wood_planks/asset-manifest.json",
+        "bytes": 1992
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/materials/rough_linen/asset-manifest.json",
+        "bytes": 1924
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/materials/washed_grey_oak_veneer/asset-manifest.json",
+        "bytes": 2110
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/CURRENT_STAGE.json",
+        "bytes": 551
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/SOURCE_PREFLIGHT.json",
+        "bytes": 4171
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_FIXTURE_CLEANUP_V1.md",
+        "bytes": 2865
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/COORDINATE_FRAME_SANITY.md",
+        "bytes": 2757
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/FIDELITY_NUMERIC.json",
+        "bytes": 3655
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/FINAL_2D_GATE.json",
+        "bytes": 258
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/FULL_HOUSE_FURNITURE_CALIBRATION.md",
+        "bytes": 3461
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/FURNITURE_ASSET_CALIBRATION_V01.json",
+        "bytes": 9376
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/FURNITURE_ASSET_CALIBRATION_V02.json",
+        "bytes": 43847
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/F_DOOR_EXTRACTION.json",
+        "bytes": 2445
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/KITCHEN_CABINET_3D_REGISTER_V01.json",
+        "bytes": 4034
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/KITCHEN_CABINET_3D_REGISTER_V01.md",
+        "bytes": 1580
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/LIVING_ASSET_CALIBRATION.md",
+        "bytes": 3969
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_ACTIVE_SCENE_IDENTITY.md",
+        "bytes": 2919
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_B1_FIDELITY.md",
+        "bytes": 2617
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_B1_FURNITURE_FIT.md",
+        "bytes": 2954
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_B1_REPRESENTATION_LIMITATIONS.md",
+        "bytes": 3464
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_B1_REVIEW_PACK.md",
+        "bytes": 2720
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_B1_VS_BLENDER_V003.md",
+        "bytes": 2628
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_VISUAL_FIDELITY_DIAGNOSIS.md",
+        "bytes": 6062
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/UNPAIRED_RESOLUTION.md",
+        "bytes": 1976
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/WALL_SCHEMA_DIFF.md",
+        "bytes": 4821
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/canonical_arch_v2.json",
+        "bytes": 26401
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/collisions_raw.json",
+        "bytes": 35134
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/export_pascal_b1_arch_only_v1.json",
+        "bytes": 58546
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/export_pascal_b1_blocks_v1.json",
+        "bytes": 101215
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/export_pascal_b1_full_v1.json",
+        "bytes": 95844
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/export_pascal_b1_full_v2.json",
+        "bytes": 100818
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/fidelity_raw.json",
+        "bytes": 15502
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/furniture_fit_raw.json",
+        "bytes": 15165
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/master_direct_arch_v1.json",
+        "bytes": 24921
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/master_direct_arch_v1_walls.json",
+        "bytes": 19440
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_arch_id_map.json",
+        "bytes": 22082
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_arch_scene.json",
+        "bytes": 57478
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_arch_truth_id_map.json",
+        "bytes": 14014
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_arch_truth_scene.json",
+        "bytes": 45394
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_blocks_id_map.json",
+        "bytes": 37458
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_blocks_scene.json",
+        "bytes": 103685
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_full_id_map.json",
+        "bytes": 37458
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_full_scene.json",
+        "bytes": 103533
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_living_calib_v1.json",
+        "bytes": 59511
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_master_direct_furnished_v1.json",
+        "bytes": 99890
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_master_direct_furnished_v2.json",
+        "bytes": 103470
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_master_direct_furnished_v3.json",
+        "bytes": 116213
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_master_direct_idmap.json",
+        "bytes": 14125
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_master_direct_scene.json",
+        "bytes": 67663
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_wall_debug_scene.json",
+        "bytes": 14798
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/verify_scene_v3.json",
+        "bytes": 4544
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/ARCH_GROUND_TRUTH_FINGERPRINT.json",
+        "bytes": 106940
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/ARCH_SOURCE_INVENTORY.md",
+        "bytes": 3551
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/ARCH_SOURCE_REBASE_DIFF.json",
+        "bytes": 1758
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/ARCH_SOURCE_REBASE_DIFF.md",
+        "bytes": 3071
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/BAY_DUPLICATE_CHECK.json",
+        "bytes": 421
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/CANONICAL_BAY_ADD_BACK_REPORT.md",
+        "bytes": 3166
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/DATA_AUTHORITY_REGISTER_V01.json",
+        "bytes": 2258
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/DATA_AUTHORITY_REGISTER_V01.md",
+        "bytes": 1931
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/DOOR_WIDTH_VALIDATION.md",
+        "bytes": 1000
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/EXTRACTOR_COVERAGE.json",
+        "bytes": 51405
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/FINAL_BAY_WINDOW_REGISTER.json",
+        "bytes": 2944
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/FINAL_OPENING_ACTIVE_REGISTER.json",
+        "bytes": 9010
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/FINAL_WALL_ACTIVE_REGISTER.json",
+        "bytes": 21041
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/FINAL_WALL_REGISTER_V01.json",
+        "bytes": 25360
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/FINAL_WALL_REGISTER_V01.md",
+        "bytes": 11478
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/F_DOOR_GEOMETRY.json",
+        "bytes": 59262
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/G_GB_BALC_PROVENANCE.md",
+        "bytes": 1427
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/KITCHEN_WALL_PROVENANCE.md",
+        "bytes": 2170
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/OPENING_9_VALIDATION.json",
+        "bytes": 2550
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/SECONDARY_MASTER_WALL_PROVENANCE.md",
+        "bytes": 1755
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/VERIFIED_ARCH_BASELINE_RECOVERY.md",
+        "bytes": 3192
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/door_width_validation.json",
+        "bytes": 1752
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/wall_resolutions.json",
+        "bytes": 4923
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/CURRENT_FCSTD_VS_FINAL_WINDOW_REGISTER.md",
+        "bytes": 1640
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/FINAL_WINDOW_REGISTER_95ab90e.csv",
+        "bytes": 2810
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/FINAL_WINDOW_REGISTER_95ab90e.json",
+        "bytes": 7165
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/FINAL_WINDOW_REGISTER_95ab90e.md",
+        "bytes": 1629
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/FURNITURE_DIMENSION_CHANGE_PROPOSAL.md",
+        "bytes": 4444
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_1_change_log.json",
+        "bytes": 4908
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_1_clearance_report.json",
+        "bytes": 15761
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_1_clearance_report.md",
+        "bytes": 2361
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_HUMAN_REVIEW_PACK.md",
+        "bytes": 8244
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_LOCAL_MEASUREMENTS.md",
+        "bytes": 1361
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_change_log.json",
+        "bytes": 331
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_clearance_report.md",
+        "bytes": 2176
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S1_REQUIREMENT_COVERAGE.json",
+        "bytes": 1923
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S1_REQUIREMENT_COVERAGE.md",
+        "bytes": 1146
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S1_REQUIREMENT_COVERAGE_R2_2.md",
+        "bytes": 1014
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_model.json",
+        "bytes": 56842
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_REJECTED.circulation_report.json",
+        "bytes": 8411
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_REJECTED.design_model.json",
+        "bytes": 84308
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_REJECTED.dimension_register.json",
+        "bytes": 39494
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_REJECTED_reason.md",
+        "bytes": 286
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_REVIEW_FAIL.md",
+        "bytes": 348
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_R2_review.md",
+        "bytes": 1688
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_final_window_registry_audit.py",
+        "bytes": 6750
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_furniture_dimension_audit_v01.py",
+        "bytes": 16980
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_latest_fcstd_audit_v2.py",
+        "bytes": 16547
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_latest_update_audit.py",
+        "bytes": 9453
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_r2_2_local_details.py",
+        "bytes": 11007
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_s2_current_design_v1.py",
+        "bytes": 32693
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_s2_guide_baseline_v1.py",
+        "bytes": 12868
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_s2_r2_1_completeness.py",
+        "bytes": 19344
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_s2_r2_1_fcstd.py",
+        "bytes": 2532
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_s2_r2_fcstd.py",
+        "bytes": 3821
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_s2_r2_normalization.py",
+        "bytes": 28519
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/design_model_v01.json",
+        "bytes": 84308
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/door_collision_report_v02.md",
+        "bytes": 1446
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/extract_fcstd_guide.py",
+        "bytes": 7509
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/furniture_dimension_register_v03.json",
+        "bytes": 46298
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/guide_fidelity_report.md",
+        "bytes": 5355
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/guide_fidelity_report_v2.md",
+        "bytes": 3855
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/human_guide_inventory.json",
+        "bytes": 24032
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/latest_fcstd_ingest_v2.json",
+        "bytes": 45644
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/latest_fcstd_names_v3.json",
+        "bytes": 40967
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/latest_fcstd_round3.json",
+        "bytes": 44538
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/latest_fcstd_structure_v2.json",
+        "bytes": 101518
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/latest_fcstd_structure_v3.json",
+        "bytes": 91663
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/normalization_change_log_v01.json",
+        "bytes": 49290
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/object_count_diff.json",
+        "bytes": 808
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/restore_window_semantics_v02.py",
+        "bytes": 10959
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/s2_collision_circulation_report.json",
+        "bytes": 8411
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/s2_gate_status_v01.json",
+        "bytes": 2167
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/s2_guide_baseline_v2.json",
+        "bytes": 34146
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/window_history_verification_v02.json",
+        "bytes": 6106
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/window_restore_plan_v02.json",
+        "bytes": 3764
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/window_restore_verification_v02.json",
+        "bytes": 687
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/window_restore_verification_v02.md",
+        "bytes": 847
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/window_semantic_register_reopened.json",
+        "bytes": 2451
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/CURRENT_REVIEW.md",
+        "bytes": 830
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/DELIVERY_MANIFEST.json",
+        "bytes": 284
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/FREECAD_BEDROOM_DOOR_LOCAL.json",
+        "bytes": 10576
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/FREECAD_CURRENT_GEOMETRY_RAW.json",
+        "bytes": 10893
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/FREECAD_LATEST_LAYOUT_REGISTER.json",
+        "bytes": 1297
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/FREECAD_WORKING_INSPECTION.json",
+        "bytes": 0
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_A_MANIFEST.json",
+        "bytes": 2363
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_B_MANIFEST.json",
+        "bytes": 2345
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_SPEC.md",
+        "bytes": 538
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/build_options.py",
+        "bytes": 8676
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/A_UNIFIED_WALL_MESH.json",
+        "bytes": 3445
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/A_WALL_INPUT.json",
+        "bytes": 4213
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/BASE_DETAIL_VERTICES.json",
+        "bytes": 42645
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/BASE_INSPECTION.json",
+        "bytes": 42792
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/B_UNIFIED_WALL_MESH.json",
+        "bytes": 1369
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/B_WALL_INPUT.json",
+        "bytes": 1577
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/D107_ROLLBACK_REGISTER.json",
+        "bytes": 2849
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/DELIVERY_MANIFEST.json",
+        "bytes": 6513
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+        "bytes": 75325
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/LAYOUT_CONTRACT.json",
+        "bytes": 12491
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/LOCAL_ROLLBACK_JOIN_BOUNDARY_DEBUG.json",
+        "bytes": 3
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/OPTION_A_MANIFEST.json",
+        "bytes": 12696
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/OPTION_B_MANIFEST.json",
+        "bytes": 12693
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/R3_REVIEW.md",
+        "bytes": 7451
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/RESTORED_STATE_MANIFEST.json",
+        "bytes": 503
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/REVIEW_IMAGE_MANIFEST.json",
+        "bytes": 4915
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/ROLLBACK_SURFACE_DEBUG.json",
+        "bytes": 3
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/STUDY_FREECAD_BOUNDS.json",
+        "bytes": 455
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/STUDY_TEA_REGISTER.json",
+        "bytes": 4254
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/build_models.py",
+        "bytes": 26711
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/prepare_layout.py",
+        "bytes": 6772
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/prepare_rollback.py",
+        "bytes": 2609
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/work_state.md",
+        "bytes": 1770
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/write_delivery.py",
+        "bytes": 11669
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/research_notes.md",
+        "bytes": 549
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/B1_1_SITE_ASSET_REGISTER.json",
+        "bytes": 99700
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_COLUMN_LOGIC_V02.json",
+        "bytes": 1763
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_ISLAND_AND_UTILITY_REGISTER_V01.json",
+        "bytes": 4892
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_V2_DELIVERY_MANIFEST.json",
+        "bytes": 1255
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/NARROW_FRONT_REFINEMENT_V03.json",
+        "bytes": 1793
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/PHOTO_REGISTRATION_PLAN.md",
+        "bytes": 2178
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/PHOTO_REGISTRATION_REPORT.json",
+        "bytes": 23836
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/REGISTER_SCENE_LOG.txt",
+        "bytes": 501
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_CORRECTION_REPORT.md",
+        "bytes": 2068
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_CORRECTION_REPORT_REGISTRATION_HISTORY.md",
+        "bytes": 4020
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_DETAIL_REGISTER_V01.json",
+        "bytes": 12786
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_DIMENSION_ESTIMATES_V01.json",
+        "bytes": 5854
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_PHOTO_REGISTER_V01.json",
+        "bytes": 7666
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/WINDOW_AND_BUFFET_SITE_REGISTER_V04.json",
+        "bytes": 1433
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/add_island_and_utility.py",
+        "bytes": 10056
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/build_registered_scene.py",
+        "bytes": 2704
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/correct_kitchen_logic.py",
+        "bytes": 8775
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/correct_windows_and_buffet_v4.py",
+        "bytes": 9312
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/ingest_photos.py",
+        "bytes": 3742
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/CAMERA_DEFINITIONS.json",
+        "bytes": 2690
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_REVIEW_INDEX.md",
+        "bytes": 1353
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_LOG.txt",
+        "bytes": 3613
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/package_evidence.py",
+        "bytes": 14521
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/refine_narrow_front_v3.py",
+        "bytes": 5838
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/registration_inputs.py",
+        "bytes": 5589
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/solve_registration.py",
+        "bytes": 5374
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/work_state.md",
+        "bytes": 2652
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/CORNER_REPAIR_REGISTER.json",
+        "bytes": 44035
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2_FROZEN_MANIFEST.json",
+        "bytes": 1008
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2_MANIFEST.json",
+        "bytes": 848
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_MANIFEST.json",
+        "bytes": 2030
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/V5_MANIFEST.json",
+        "bytes": 9792
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/V5_VISUAL_REVIEW.json",
+        "bytes": 322
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/build_corner_repair.py",
+        "bytes": 10984
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/export_junction_reference.py",
+        "bytes": 2233
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/reference_notes.md",
+        "bytes": 616
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/work_state.md",
+        "bytes": 2154
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/OPENING_AND_BAY_REGISTER.json",
+        "bytes": 15176
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/SOURCE_EXTERIOR_SAMPLES.json",
+        "bytes": 112667
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/V4_MANIFEST.json",
+        "bytes": 14334
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/V4_REVIEW.md",
+        "bytes": 4096
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/V4_TOPOLOGY.json",
+        "bytes": 124
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/V4_VIEW_INDEX.md",
+        "bytes": 3112
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/V4_VISUAL_REVIEW.json",
+        "bytes": 754
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/WALL_JUNCTION_PREFLIGHT.json",
+        "bytes": 39370
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/build_continuous_walls.py",
+        "bytes": 18463
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/prepare_all_openings.py",
+        "bytes": 12554
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/reference_notes.md",
+        "bytes": 2542
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/work_state.md",
+        "bytes": 1225
+      },
+      {
+        "path": "projects/c_type_home/scripts/arch_extraction_audit.py",
+        "bytes": 4300
+      },
+      {
+        "path": "projects/c_type_home/scripts/arch_ground_truth_visual_check.py",
+        "bytes": 5337
+      },
+      {
+        "path": "projects/c_type_home/scripts/arch_truth_inventory.py",
+        "bytes": 2149
+      },
+      {
+        "path": "projects/c_type_home/scripts/b0_geometry_gate.py",
+        "bytes": 4066
+      },
+      {
+        "path": "projects/c_type_home/scripts/b0_section_v5.py",
+        "bytes": 3722
+      },
+      {
+        "path": "projects/c_type_home/scripts/b0_zone_coverage_audit.py",
+        "bytes": 49357
+      },
+      {
+        "path": "projects/c_type_home/scripts/b0_zone_map_v5.py",
+        "bytes": 7365
+      },
+      {
+        "path": "projects/c_type_home/scripts/b1_build.py",
+        "bytes": 17774
+      },
+      {
+        "path": "projects/c_type_home/scripts/b1_extract.py",
+        "bytes": 13365
+      },
+      {
+        "path": "projects/c_type_home/scripts/b1_fcstd_dump.py",
+        "bytes": 2025
+      },
+      {
+        "path": "projects/c_type_home/scripts/blender_b0_build.py",
+        "bytes": 26300
+      },
+      {
+        "path": "projects/c_type_home/scripts/build_arch_truth_v2.py",
+        "bytes": 23282
+      },
+      {
+        "path": "projects/c_type_home/scripts/build_master_direct_v1.py",
+        "bytes": 20591
+      },
+      {
+        "path": "projects/c_type_home/scripts/furniture_3d_register.py",
+        "bytes": 12463
+      },
+      {
+        "path": "projects/c_type_home/scripts/furniture_orientation_inference_v1.py",
+        "bytes": 12727
+      },
+      {
+        "path": "projects/c_type_home/scripts/master_v2_to_pascal.py",
+        "bytes": 31262
+      },
+      {
+        "path": "projects/c_type_home/scripts/master_wall_coverage_audit.py",
+        "bytes": 10478
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_arch_fixture_cleanup_v1.py",
+        "bytes": 5705
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_b1_blender_roundtrip.py",
+        "bytes": 2642
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_b1_fidelity.py",
+        "bytes": 6516
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_b1_fidelity_pack.py",
+        "bytes": 15795
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_b1_furniture_fit.py",
+        "bytes": 3299
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_b1_visual_overlay.py",
+        "bytes": 4998
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_fullhouse_calibration_v1.py",
+        "bytes": 13811
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_living_asset_calibration_v1.py",
+        "bytes": 9494
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_mcp_http.py",
+        "bytes": 2028
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_mcp_rpc.py",
+        "bytes": 3474
+      },
+      {
+        "path": "projects/c_type_home/scripts/wall_band_extractor_v2.py",
+        "bytes": 11242
+      },
+      {
+        "path": "projects/c_type_home/scripts/wall_truth_reconciliation.py",
+        "bytes": 11348
+      }
+    ],
+    "IGNORE_GENERATED": [
+      {
+        "path": "projects/c_type_home/cad/freecad_import/cad_conversion_qa.json",
+        "bytes": 6298
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/freecad_import_probe.py",
+        "bytes": 1266
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/source_audit_libredwg.json",
+        "bytes": 3411783
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/test_cp936_r12.dxf",
+        "bytes": 232406
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/test_cp936_r2000.dxf",
+        "bytes": 1042764
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/working_v2_qa.json",
+        "bytes": 1213
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_2000_ascii.dxf",
+        "bytes": 1042762
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WINDOW_RESTORED.FCStd",
+        "bytes": 212519
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.FCStd",
+        "bytes": 406951
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.dxf",
+        "bytes": 82419
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING_blocks_legacy.dxf",
+        "bytes": 88679
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING_v2.dxf",
+        "bytes": 82419
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_r12_ascii.dxf",
+        "bytes": 232404
+      },
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_libredwg_default.dxf",
+        "bytes": 1350728
+      },
+      {
+        "path": "projects/c_type_home/d107_v3_view.png",
+        "bytes": 192163
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/B1_CONTACT_SHEET.png",
+        "bytes": 980279
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/FURNITURE_FACING_REVIEW.png",
+        "bytes": 116121
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/FURNITURE_ORIENTATION_AUDIT.md",
+        "bytes": 2493
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/b1_fcstd_objects.json",
+        "bytes": 131924
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_BLOCKOUT_AXON.png",
+        "bytes": 1269350
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_BLOCKOUT_PLAN.png",
+        "bytes": 1156285
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_DINING_KITCHEN.png",
+        "bytes": 1338097
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_GUEST.png",
+        "bytes": 1308643
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_GUEST_BATH.png",
+        "bytes": 1330451
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_LIVING.png",
+        "bytes": 1300856
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_MOTHER_BATH.png",
+        "bytes": 1259977
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_MOTHER_BEDROOM.png",
+        "bytes": 1314769
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_NORTH_BALCONY.png",
+        "bytes": 1113909
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_OWNER_BEDROOM.png",
+        "bytes": 1322163
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_OWNER_ENSUITE.png",
+        "bytes": 1271334
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_SPLIT_LEVEL.png",
+        "bytes": 1333452
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/renders/B1_STUDY.png",
+        "bytes": 1354239
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/世纪欣园_B1_BLOCKOUT_V001.blend",
+        "bytes": 163865
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/世纪欣园_B1_BLOCKOUT_V002.blend",
+        "bytes": 161771
+      },
+      {
+        "path": "projects/c_type_home/design/b1_blockout/世纪欣园_B1_BLOCKOUT_V003.blend",
+        "bytes": 162838
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/OPTION_B_INWARD_R4.blend",
+        "bytes": 1573318
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/R4_A_ACTUAL_GEOMETRY.json",
+        "bytes": 1700185
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/R4_A_RENDER_MANIFEST.json",
+        "bytes": 1127
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/R4_B_ACTUAL_GEOMETRY.json",
+        "bytes": 1683193
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/R4_OPTION_A_QA.json",
+        "bytes": 1482
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/R4_OPTION_B_QA.json",
+        "bytes": 1482
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/check_door_sweep.py",
+        "bytes": 1813
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/inspect_threshold.py",
+        "bytes": 1529
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/package_corrected_ai.py",
+        "bytes": 2607
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/renders/DOOR_AND_FLOOR_REPAIR_COMPARISON.png",
+        "bytes": 632388
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/renders/R4_A_DOOR_AXON_90.png",
+        "bytes": 1516573
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/renders/R4_A_DOOR_CONTEXT_00.png",
+        "bytes": 1318402
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/renders/R4_A_DOOR_FRONT_00.png",
+        "bytes": 1300146
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/renders/R4_A_DOOR_FRONT_45.png",
+        "bytes": 1296498
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/run_corrected_ai.py",
+        "bytes": 3830
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/write_r4_review.py",
+        "bytes": 6055
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_AXON.png",
+        "bytes": 2065535
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_AXON_CEIL.png",
+        "bytes": 2043746
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_CAD_TRACE_OVERLAY_V5.png",
+        "bytes": 119524
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_CEILING_AXON_V5.png",
+        "bytes": 1408345
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_CEILING_CAD_OVERLAY.png",
+        "bytes": 128179
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_CONTINUOUS_WALL_AUDIT.json",
+        "bytes": 20482
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_CONTINUOUS_WALL_AUDIT.png",
+        "bytes": 54578
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_EXISTING_TOP_V1.png",
+        "bytes": 1962754
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_EXISTING_VS_FUTURE_V1.png",
+        "bytes": 1962754
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_FLOOR_CAD_OVERLAY.png",
+        "bytes": 129732
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_GAP06_TOPOLOGY_REVIEW.png",
+        "bytes": 115832
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_LEVEL_ZONE_MAP_V4.png",
+        "bytes": 142063
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_LEVEL_ZONE_MAP_V5.png",
+        "bytes": 163880
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_LEVEL_ZONE_MAP_V6.png",
+        "bytes": 165023
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_LEVEL_ZONE_MAP_V7.png",
+        "bytes": 132261
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_LEVEL_ZONE_MAP_V8_CLEAN.png",
+        "bytes": 132828
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_SPLIT_LEVEL_AXON_V3.png",
+        "bytes": 920216
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_SPLIT_LEVEL_AXON_V5.png",
+        "bytes": 2067948
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_SPLIT_LEVEL_SECTION_V3.png",
+        "bytes": 82095
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_SPLIT_LEVEL_SECTION_V5.png",
+        "bytes": 87277
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_TOP.png",
+        "bytes": 2006654
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_ZONE_COVERAGE_AUDIT.json",
+        "bytes": 11164
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_ZONE_COVERAGE_AUDIT.png",
+        "bytes": 97732
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_shell.blend",
+        "bytes": 377488
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B1_RENOVATION_DESIGN.blend",
+        "bytes": 374932
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/_audit_strip_zoom.png",
+        "bytes": 50471
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/_cad_trace_all.png",
+        "bytes": 105073
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/_cad_trace_leisure.png",
+        "bytes": 112941
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_AXON.png",
+        "bytes": 2125007
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_BATHROOMS_CONTACT_SHEET.png",
+        "bytes": 1256063
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_BATH_GUEST.png",
+        "bytes": 2059001
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_BATH_MOTHER.png",
+        "bytes": 1918448
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_BATH_OWNER.png",
+        "bytes": 2099096
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_DESIGN_MODEL_V1.blend",
+        "bytes": 813857
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_GUEST_BED.png",
+        "bytes": 2094189
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_KITCHEN.png",
+        "bytes": 2067603
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_LEISURE.png",
+        "bytes": 2032751
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_LIVING.png",
+        "bytes": 2190017
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_MOTHER_BED.png",
+        "bytes": 2135342
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_OWNER_BED.png",
+        "bytes": 2152088
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_QA_REPORT.json",
+        "bytes": 15416
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_RENDER_MANIFEST.json",
+        "bytes": 220702
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_REVIEW_CONTACT_SHEET.png",
+        "bytes": 4260655
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_STUDY.png",
+        "bytes": 2368806
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/B1_1_TOP.png",
+        "bytes": 1944161
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/BUILD_LOG.txt",
+        "bytes": 8671
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_CONTACT_SHEET.png",
+        "bytes": 655628
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE-1.png",
+        "bytes": 195678
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE-2.png",
+        "bytes": 500910
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE-3.png",
+        "bytes": 426153
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE-4.png",
+        "bytes": 324323
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE-5.png",
+        "bytes": 376036
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE-6.png",
+        "bytes": 344910
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE_1.png",
+        "bytes": 226733
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE_2.png",
+        "bytes": 530639
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE_3.png",
+        "bytes": 484166
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE_4.png",
+        "bytes": 366672
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE_5.png",
+        "bytes": 380823
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_PAGE_6.png",
+        "bytes": 359731
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_UPRIGHT_1.png",
+        "bytes": 260321
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_UPRIGHT_2.png",
+        "bytes": 517969
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_UPRIGHT_3.png",
+        "bytes": 476538
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_UPRIGHT_4.png",
+        "bytes": 372862
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_UPRIGHT_5.png",
+        "bytes": 374256
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/KITCHEN_PDF_UPRIGHT_6.png",
+        "bytes": 356794
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_AXON.png",
+        "bytes": 2890588
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_BATH_GUEST.png",
+        "bytes": 2820052
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_BATH_MOTHER.png",
+        "bytes": 2659844
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_BATH_OWNER.png",
+        "bytes": 2837150
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_GUEST_BED.png",
+        "bytes": 2861773
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_KITCHEN.png",
+        "bytes": 2886199
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_LEISURE.png",
+        "bytes": 2808692
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_LIVING.png",
+        "bytes": 2975070
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_MOTHER_BED.png",
+        "bytes": 2932107
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_OWNER_BED.png",
+        "bytes": 2944295
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_STUDY.png",
+        "bytes": 3145747
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/RAW_B1_1_TOP.png",
+        "bytes": 2702864
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/REVIEW_RENDER_LOG.txt",
+        "bytes": 2115
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/SOURCE_SCENE_SNAPSHOT.json",
+        "bytes": 517723
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/finalize_review.py",
+        "bytes": 6150
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/inspect_sources.py",
+        "bytes": 3620
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/package_review.py",
+        "bytes": 14271
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/render_review.py",
+        "bytes": 4965
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b1_1/validate_candidate.py",
+        "bytes": 5585
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/APPROVED_OBJECT_SNAPSHOT.json",
+        "bytes": 5289739
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_CONTACT_SHEET.png",
+        "bytes": 838172
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_QA.json",
+        "bytes": 828
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_QA_LAST_CHECK.json",
+        "bytes": 828
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/PIXEL_EQUIVALENCE_QA.json",
+        "bytes": 965
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/approval_evidence/USER_APPROVED_BUFFET.png",
+        "bytes": 2602246
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/approval_evidence/USER_APPROVED_SINK.png",
+        "bytes": 2627139
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/freeze_kitchen.py",
+        "bytes": 21067
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/package_kitchen.py",
+        "bytes": 14008
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/verification_renders/VERIFIED_05_sink_corner.png",
+        "bytes": 2629449
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/verification_renders/VERIFIED_10_photo5_buffet_front.png",
+        "bytes": 2604544
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_A.blend",
+        "bytes": 1666900
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_B.blend",
+        "bytes": 1652614
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_AXON.png",
+        "bytes": 2076413
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_PLAN.png",
+        "bytes": 1656928
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_SECTION.png",
+        "bytes": 243282
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_VIEW_01.png",
+        "bytes": 1670991
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_VIEW_02.png",
+        "bytes": 1729065
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_AXON.png",
+        "bytes": 2061905
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_PLAN.png",
+        "bytes": 1650031
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_SECTION.png",
+        "bytes": 239162
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_VIEW_01.png",
+        "bytes": 1635025
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_VIEW_02.png",
+        "bytes": 1728865
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_COMPARE_SHEET.png",
+        "bytes": 768875
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_RAMP_FEASIBILITY.png",
+        "bytes": 64335
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/renders/proxies/FINAL_A_SECTION.jpg",
+        "bytes": 65687
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/renders/proxies/FINAL_B_SECTION.jpg",
+        "bytes": 65436
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/renders/proxies/FINAL_COMPARE_REVIEW.jpg",
+        "bytes": 149827
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/renders/proxies/OPTION_A_CHECK.jpg",
+        "bytes": 96739
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/renders/proxies/OPTION_B_CHECK.jpg",
+        "bytes": 94211
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/A_EXPOSED_RINGS.json",
+        "bytes": 11358
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/DELIVERY_INTEGRITY.json",
+        "bytes": 244
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/FRESH_REOPEN_QA.json",
+        "bytes": 2625
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/GEOMETRY_TOP_TRIANGLES.json",
+        "bytes": 78937
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/OPTION_A_BUILD_QA.json",
+        "bytes": 3583
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/OPTION_A_INHERITED_STATE_LOCK.json",
+        "bytes": 40277
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/OPTION_A_RENDERS.json",
+        "bytes": 2696
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/OPTION_B_BUILD_QA.json",
+        "bytes": 4027
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/OPTION_B_INHERITED_STATE_LOCK.json",
+        "bytes": 40277
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/OPTION_B_RENDERS.json",
+        "bytes": 2694
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/OPTION_FOOTPRINT_CHECK.png",
+        "bytes": 13999
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/OPTION_GEOMETRY.json",
+        "bytes": 27750
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/SOURCE_FLOOR_FOOTPRINTS.json",
+        "bytes": 6166
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/reports/SOURCE_LOCAL_GEOMETRY.json",
+        "bytes": 39699
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/scripts/option_geometry.py",
+        "bytes": 1842
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/scripts/package_compare.py",
+        "bytes": 9207
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/scripts/render_options.py",
+        "bytes": 3267
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/scripts/verify_reopened.py",
+        "bytes": 2008
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/B1_LIVING_CORRECTED_V1.blend",
+        "bytes": 844862
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/BLUE_PANEL_INVENTORY.json",
+        "bytes": 426726
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/LIVING_CORRECTION_QA.json",
+        "bytes": 1159
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/LIVING_RENDER_MANIFEST.json",
+        "bytes": 149569
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/correct_living.py",
+        "bytes": 19621
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/drafts/B1_LIVING_CORRECTED_DRAFT01.blend",
+        "bytes": 841306
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/inspect_blue_panel.py",
+        "bytes": 1805
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/inspect_living_model.py",
+        "bytes": 1632
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/LIVING_01.png",
+        "bytes": 1711201
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/LIVING_02.png",
+        "bytes": 1771418
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/LIVING_03.png",
+        "bytes": 1636259
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/LIVING_04.png",
+        "bytes": 1711317
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/LIVING_05.png",
+        "bytes": 1867407
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/LIVING_06.png",
+        "bytes": 1597884
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/LIVING_07.png",
+        "bytes": 1726019
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/inspection_proxies/LIVING_01.png",
+        "bytes": 118888
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/inspection_proxies/LIVING_02.png",
+        "bytes": 139981
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/inspection_proxies/LIVING_03.png",
+        "bytes": 109822
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/inspection_proxies/LIVING_04.png",
+        "bytes": 111742
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/inspection_proxies/LIVING_05.png",
+        "bytes": 158647
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/inspection_proxies/LIVING_06.png",
+        "bytes": 98047
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/renders/inspection_proxies/LIVING_07.png",
+        "bytes": 112761
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/B1_LIVING_CORRECTED_V2.blend",
+        "bytes": 869505
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/V2_QA.json",
+        "bytes": 4414
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/V2_RENDER_MANIFEST.json",
+        "bytes": 124649
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/correct_door_enclosures.py",
+        "bytes": 18924
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_01.png",
+        "bytes": 1539065
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_02.png",
+        "bytes": 1619964
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_03.png",
+        "bytes": 1616424
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_04.png",
+        "bytes": 1616656
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_05.png",
+        "bytes": 1725221
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/inspection_proxies/DOOR_ENCLOSURE_01.png",
+        "bytes": 84166
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/inspection_proxies/DOOR_ENCLOSURE_02.png",
+        "bytes": 108998
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/inspection_proxies/DOOR_ENCLOSURE_03.png",
+        "bytes": 102466
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/inspection_proxies/DOOR_ENCLOSURE_04.png",
+        "bytes": 100287
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/renders/inspection_proxies/DOOR_ENCLOSURE_05.png",
+        "bytes": 127228
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/B1_LIVING_CORRECTED_V3.blend",
+        "bytes": 868517
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/V3_QA.json",
+        "bytes": 536
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/V3_RENDER_MANIFEST.json",
+        "bytes": 1011
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/drafts/B1_LIVING_CORRECTED_V3_overlap_draft.blend",
+        "bytes": 867884
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/renders/D107_SIDES_01.png",
+        "bytes": 1618541
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/renders/D107_SIDES_02.png",
+        "bytes": 1585432
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/renders/inspection_proxies/D107_SIDES_01.png",
+        "bytes": 111481
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/renders/inspection_proxies/D107_SIDES_02.png",
+        "bytes": 83097
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/FLOOR_GRID.json",
+        "bytes": 751775
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/FLOOR_HEIGHT_PLAN.png",
+        "bytes": 4032
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/LAYOUT_CLEARANCE_AUDIT.json",
+        "bytes": 11455
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/LAYOUT_CLEARANCE_AUDIT.md",
+        "bytes": 3363
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/LAYOUT_CLEARANCE_PLAN.png",
+        "bytes": 42264
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/MATERIAL_ASSET_NOTES.json",
+        "bytes": 18820
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/MATERIAL_ASSET_NOTES.md",
+        "bytes": 7431
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/reports/source_render_preflight/render-manifest.json",
+        "bytes": 20128
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/scripts/furniture_geometry.py",
+        "bytes": 8317
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/scripts/layout_design.py",
+        "bytes": 2339
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/scripts/materials_library.py",
+        "bytes": 11491
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/scripts/preflight_source.py",
+        "bytes": 2399
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_AXON.png",
+        "bytes": 376398
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_BAY_LIV_N.png",
+        "bytes": 26516
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_BAY_MB_S.png",
+        "bytes": 21486
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_BAY_SMB_S.png",
+        "bytes": 20563
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_BAY_STUDY_NE.png",
+        "bytes": 26794
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_CONTACT_SHEET.png",
+        "bytes": 306617
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_GLASS_OPENINGS.png",
+        "bytes": 85187
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_NORTH_LIVING_BAY.png",
+        "bytes": 22285
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_PLAN.png",
+        "bytes": 29656
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_SOUTH_BAYS.png",
+        "bytes": 24686
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ARCH_TRUTH_STUDY_BAY.png",
+        "bytes": 23555
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/D107_BEFORE_AFTER.png",
+        "bytes": 72358
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/EXTRACTED_WALL_BANDS.png",
+        "bytes": 38844
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/FULL_HOUSE_3D_CLEAN_V3.png",
+        "bytes": 238797
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/LIVING_CALIBRATED_3D.png",
+        "bytes": 384787
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/LIVING_PRIMITIVE_VS_ASSET_PLAN.png",
+        "bytes": 53424
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_DIRECT_V1_CHECK.png",
+        "bytes": 44849
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_DIRECT_VS_PASCAL_OVERLAY.png",
+        "bytes": 158741
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_RAW_WALLS.png",
+        "bytes": 35244
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_V2_2D_REFERENCE.png",
+        "bytes": 39042
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_V2_ARCH_REFERENCE.png",
+        "bytes": 37049
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_V2_FURNITURE_PLAN.png",
+        "bytes": 97944
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_V2_GROUND_TRUTH_2D.png",
+        "bytes": 116756
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_V2_RAW_ARCH_TOP.png",
+        "bytes": 124751
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_V2_VS_PASCAL_OVERLAY.png",
+        "bytes": 49674
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_VS_EXTRACTED_OVERLAY.png",
+        "bytes": 41917
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/MASTER_VS_PASCAL_2D_OVERLAY_FINAL.png",
+        "bytes": 150705
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_ARCH_2D.png",
+        "bytes": 143648
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_ARCH_RENDERED_2D.png",
+        "bytes": 35384
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_B1_ADVISORY_AUDIT.md",
+        "bytes": 3272
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_B1_AXON.png",
+        "bytes": 2194819
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_B1_CONTACT_SHEET.png",
+        "bytes": 3804701
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_B1_PLAN.png",
+        "bytes": 2538218
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_BLOCKOUT_CLEAN_AXON.png",
+        "bytes": 294995
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_BLOCKOUT_CLEAN_PLAN.png",
+        "bytes": 51354
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_FURNITURE_PLAN.png",
+        "bytes": 113684
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_KITCHEN_BLOCKOUT.png",
+        "bytes": 97096
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_MASTER_DIRECT_2D.png",
+        "bytes": 72642
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_REVIEW_D_MB.png",
+        "bytes": 7256
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_REVIEW_D_SM.png",
+        "bytes": 9260
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_REVIEW_LIMITATIONS.png",
+        "bytes": 25674
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_REVIEW_ZONE_MAP.png",
+        "bytes": 21892
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_VS_MASTER_ARCH_OVERLAY.png",
+        "bytes": 96833
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/PASCAL_VS_MASTER_FURNITURE_OVERLAY.png",
+        "bytes": 180458
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/SHOWER_ENCLOSURE_REVIEW.png",
+        "bytes": 80449
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/SOFA_NATIVE_AXIS_REVIEW.png",
+        "bytes": 140400
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/WALL_TOPOLOGY_RECONSTRUCTION.md",
+        "bytes": 3793
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/WHOLE_HOUSE_2D.png",
+        "bytes": 224566
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/WHOLE_HOUSE_2D_PLAN.png",
+        "bytes": 136110
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/WHOLE_HOUSE_3D_CLEAN.png",
+        "bytes": 322670
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ZONE_GUEST_BEDROOM.png",
+        "bytes": 31661
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ZONE_LIVING_DINING.png",
+        "bytes": 50502
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ZONE_MOTHER_BEDROOM.png",
+        "bytes": 44774
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ZONE_NORTH_BALCONY.png",
+        "bytes": 32691
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ZONE_OWNER_BEDROOM.png",
+        "bytes": 32220
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ZONE_STUDY.png",
+        "bytes": 37506
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/ZONE_THREE_BATHROOMS.png",
+        "bytes": 47036
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/kitchen_pdf/p1.png",
+        "bytes": 398200
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/kitchen_pdf/p2.png",
+        "bytes": 1089487
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/kitchen_pdf/p3.png",
+        "bytes": 1010009
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/kitchen_pdf/p4.png",
+        "bytes": 744130
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/kitchen_pdf/p5.png",
+        "bytes": 769556
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/kitchen_pdf/p6.png",
+        "bytes": 742998
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/pascal_full_scene_exported.json",
+        "bytes": 124409
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/ARCH_GROUND_TRUTH_EXTRACTION_AUDIT.md",
+        "bytes": 7401
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/CANONICAL_WALL_ONLY.png",
+        "bytes": 17254
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/FINAL_WALL_REGISTER_OVERLAY.png",
+        "bytes": 31699
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/MASTER_ARCH_OBJECT_INVENTORY.json",
+        "bytes": 320197
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/MASTER_CAD_WALL_TRACE.png",
+        "bytes": 16371
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/MASTER_VS_CANONICAL_WALL_OVERLAY.png",
+        "bytes": 25177
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/MASTER_VS_PASCAL_WALL_OVERLAY.png",
+        "bytes": 26617
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/MASTER_VS_PASCAL_WALL_OVERLAY_V2.png",
+        "bytes": 74288
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/MASTER_WALL_COVERAGE_AUDIT.md",
+        "bytes": 5026
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/MASTER_WALL_ONLY.png",
+        "bytes": 10666
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/ORIGINAL_PLAN_WALL_TRACE.png",
+        "bytes": 19818
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/PASCAL_FINAL_WALL_ONLY.png",
+        "bytes": 10552
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/PASCAL_FINAL_WALL_ONLY_V2.png",
+        "bytes": 10537
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/PASCAL_STUDY_BAY_REVIEW.png",
+        "bytes": 36752
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/PASCAL_WALL_ONLY.png",
+        "bytes": 32620
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/PASCAL_WALL_RENDER_AUDIT.md",
+        "bytes": 3191
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/WALL_ONLY_OVERLAY.png",
+        "bytes": 26617
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/pascal_wall_render_audit.json",
+        "bytes": 8871
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/wall_audit/wall_coverage_audit.json",
+        "bytes": 11800
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_b1/世纪欣园_PASCAL_B1_FULL_V1.blend",
+        "bytes": 260957
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/SKILL.md",
+        "bytes": 20228
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/evals/evals.json",
+        "bytes": 21332
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/evals/trigger-evals.json",
+        "bytes": 1391
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/examples/all-tested-poses-fail.md",
+        "bytes": 1444
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/examples/clear-footprint.md",
+        "bytes": 2495
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/examples/insufficient-evidence.md",
+        "bytes": 1761
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/examples/no-sign-in-dimension-precheck.md",
+        "bytes": 1752
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/examples/rotated-footprint-fails.md",
+        "bytes": 1790
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/examples/unproven-height-metadata.md",
+        "bytes": 2166
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/SKILL.md",
+        "bytes": 7050
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/evals/evals.json",
+        "bytes": 2859
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/evals/trigger-evals.json",
+        "bytes": 1466
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/examples/autonomous-private-project.md",
+        "bytes": 855
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/examples/hosted-existing-account.md",
+        "bytes": 680
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/examples/local-project.md",
+        "bytes": 873
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/DEVIN_PASCAL_CAPABILITY.md",
+        "bytes": 1260
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/PASCAL_POC_AXON.png",
+        "bytes": 1231288
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/PASCAL_POC_BLENDER.png",
+        "bytes": 1187006
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/PASCAL_POC_FIDELITY.md",
+        "bytes": 2384
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/PASCAL_POC_PLAN.png",
+        "bytes": 1241152
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/PASCAL_POC_WORKFLOW_ASSESSMENT.md",
+        "bytes": 2690
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/pascal_id_map.json",
+        "bytes": 2422
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/pascal_scene.json",
+        "bytes": 32426
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/skills-lock.json",
+        "bytes": 503
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/世纪欣园_PASCAL_POC.blend",
+        "bytes": 244077
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/FURNITURE_DIMENSION_AUDIT_V01.csv",
+        "bytes": 12849
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/FURNITURE_DIMENSION_AUDIT_V01.md",
+        "bytes": 12643
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/LATEST_FCSTD_UPDATE_AUDIT.md",
+        "bytes": 1155
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/LATEST_FCSTD_UPDATE_AUDIT.png",
+        "bytes": 299993
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_CRITICAL_ISSUES.png",
+        "bytes": 140404
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_LOCAL_DETAIL_REVIEW.png",
+        "bytes": 571537
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_geometry_audit.json",
+        "bytes": 7138
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_geometry_audit.md",
+        "bytes": 953
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1.png",
+        "bytes": 389679
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2.FCStd",
+        "bytes": 230590
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2.dxf",
+        "bytes": 99644
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2.png",
+        "bytes": 253877
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_1.FCStd",
+        "bytes": 236437
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_1.png",
+        "bytes": 351945
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_2_AUDIT.FCStd",
+        "bytes": 407000
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_2_AUDIT.png",
+        "bytes": 280354
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_REJECTED.png",
+        "bytes": 389679
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_REJECTED_design_audit.md",
+        "bytes": 2680
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_design_audit.md",
+        "bytes": 2680
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V1.png",
+        "bytes": 267645
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V2.png",
+        "bytes": 280354
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_R2_DIFF_OVERLAY.png",
+        "bytes": 298929
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/build_r2_2_review_pack.py",
+        "bytes": 15568
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/fresh_fcstd_dimension_audit.json",
+        "bytes": 47184
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/furniture_dimension_register_v01.json",
+        "bytes": 39494
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/furniture_dimension_register_v02.json",
+        "bytes": 49005
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/geometry_fingerprint_after.json",
+        "bytes": 259056
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/geometry_fingerprint_before.json",
+        "bytes": 259056
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/latest_update_audit_v01.json",
+        "bytes": 1632
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/s2_guide_baseline_v1.json",
+        "bytes": 34736
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/DELIVERY_MANIFEST_HISTORICAL_R1.json",
+        "bytes": 645
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_A_RENDER_MANIFEST.json",
+        "bytes": 1085
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_A_SLIDING.blend",
+        "bytes": 1322920
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_B_INWARD_SWING.blend",
+        "bytes": 1333707
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_B_RENDER_MANIFEST.json",
+        "bytes": 1085
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_COMPARISON.json",
+        "bytes": 5139
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_COMPARISON.md",
+        "bytes": 418
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_COMPARISON_HISTORICAL_R1.md",
+        "bytes": 1321
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/OPTION_SPEC_HISTORICAL_R1.md",
+        "bytes": 2498
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/drafts/OPTION_A_MANIFEST.json",
+        "bytes": 2363
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/drafts/OPTION_A_SLIDING.blend",
+        "bytes": 1320955
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/drafts/OPTION_B_INWARD_SWING.blend",
+        "bytes": 1323559
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/drafts/OPTION_B_MANIFEST.json",
+        "bytes": 2345
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/drafts/prelocal_OPTION_A_MANIFEST.json",
+        "bytes": 2363
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/drafts/prelocal_OPTION_A_SLIDING.blend",
+        "bytes": 1326230
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/drafts/prelocal_OPTION_B_INWARD_SWING.blend",
+        "bytes": 1321618
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/drafts/prelocal_OPTION_B_MANIFEST.json",
+        "bytes": 2345
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/inspect_base_r2.py",
+        "bytes": 1672
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/A_ACTUAL_GEOMETRY.json",
+        "bytes": 1652913
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/A_FRESH_OPEN_QA.json",
+        "bytes": 309
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/A_RENDER_MANIFEST.json",
+        "bytes": 3027
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/A_UNIFIED_WALL_MESH.json",
+        "bytes": 3135
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/A_UNIFIED_WALL_MESH.json.failed-cell.wkt",
+        "bytes": 18094
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/A_WALL_INPUT.json",
+        "bytes": 3162
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/BASE_DETAIL_VERTICES.json",
+        "bytes": 42645
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/BASE_INSPECTION.json",
+        "bytes": 42792
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/BASE_WALLS.json",
+        "bytes": 643440
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/B_ACTUAL_GEOMETRY.json",
+        "bytes": 1643244
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/B_FRESH_OPEN_QA.json",
+        "bytes": 309
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/B_RENDER_MANIFEST.json",
+        "bytes": 2989
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/B_UNIFIED_WALL_MESH.json",
+        "bytes": 1369
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/B_WALL_INPUT.json",
+        "bytes": 1577
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/CLEARANCE_QA.json",
+        "bytes": 4412
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/LAYOUT_CONTRACT.json",
+        "bytes": 12447
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/OPTION_A_MANIFEST.json",
+        "bytes": 4402
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/OPTION_A_SLIDING_R2.blend",
+        "bytes": 1407720
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/OPTION_B_INWARD_R2.blend",
+        "bytes": 1396152
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/OPTION_B_MANIFEST.json",
+        "bytes": 4400
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/PLAN_GEOMETRY.json",
+        "bytes": 184491
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/REVIEW_IMAGE_MANIFEST.json",
+        "bytes": 3315
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/build_models.py",
+        "bytes": 18704
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/check_clearances.py",
+        "bytes": 6833
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/make_review.py",
+        "bytes": 6300
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/prepare_layout.py",
+        "bytes": 6327
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/AB_MODEL_COMPARISON.png",
+        "bytes": 117805
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/AB_PLAN_COMPARISON.png",
+        "bytes": 27049
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/A_CONTEXT_AXON_100.png",
+        "bytes": 233752
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/A_CUTAWAY_AXON_100.png",
+        "bytes": 184039
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/A_ENTRY_001.png",
+        "bytes": 148911
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/A_ENTRY_100.png",
+        "bytes": 153256
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/A_INTERIOR_100.png",
+        "bytes": 177125
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/A_PLAN_DIMENSIONED.png",
+        "bytes": 52874
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/B_CONTEXT_AXON_100.png",
+        "bytes": 233603
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/B_CUTAWAY_AXON_100.png",
+        "bytes": 185419
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/B_ENTRY_001.png",
+        "bytes": 149945
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/B_ENTRY_100.png",
+        "bytes": 155197
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/B_INTERIOR_100.png",
+        "bytes": 177115
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/proxies/B_PLAN_DIMENSIONED.png",
+        "bytes": 53212
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/AB_MODEL_COMPARISON.png",
+        "bytes": 1541159
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/AB_PLAN_COMPARISON.png",
+        "bytes": 158134
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/A_CONTEXT_AXON_100.png",
+        "bytes": 2480929
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/A_CUTAWAY_AXON_100.png",
+        "bytes": 2198719
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/A_ENTRY_001.png",
+        "bytes": 2121441
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/A_ENTRY_100.png",
+        "bytes": 2136074
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/A_INTERIOR_100.png",
+        "bytes": 2304350
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/A_PLAN_DIMENSIONED.png",
+        "bytes": 91826
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/B_CONTEXT_AXON_100.png",
+        "bytes": 2478499
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/B_CUTAWAY_AXON_100.png",
+        "bytes": 2205979
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/B_ENTRY_001.png",
+        "bytes": 2126773
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/B_ENTRY_100.png",
+        "bytes": 2134821
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/B_INTERIOR_100.png",
+        "bytes": 2304078
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/renders/B_PLAN_DIMENSIONED.png",
+        "bytes": 89777
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/solid_backend.py",
+        "bytes": 6403
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/A_ACTUAL_GEOMETRY.json",
+        "bytes": 1190801
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/A_FRESH_OPEN_QA.json",
+        "bytes": 1143
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/A_RENDER_MANIFEST.json",
+        "bytes": 6809
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/BASE_WALLS.json",
+        "bytes": 643440
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/B_ACTUAL_GEOMETRY.json",
+        "bytes": 1176755
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/B_FRESH_OPEN_QA.json",
+        "bytes": 1142
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/B_RENDER_MANIFEST.json",
+        "bytes": 4734
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/CLEARANCE_QA.json",
+        "bytes": 4505
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_MESH.json",
+        "bytes": 220169
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/OPTION_A_SLIDING_R3.blend",
+        "bytes": 1464401
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/OPTION_B_INWARD_R3.blend",
+        "bytes": 1510900
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/PLAN_GEOMETRY.json",
+        "bytes": 184719
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/RESTORED_OPEN_STATE_BEFORE_BATH_R3.blend",
+        "bytes": 1397572
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/check_clearances.py",
+        "bytes": 7229
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/make_review.py",
+        "bytes": 7510
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/AB_MODEL_COMPARISON.png",
+        "bytes": 98987
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/AB_PLAN_COMPARISON.png",
+        "bytes": 26915
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_CONTEXT_AXON_100.png",
+        "bytes": 228784
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_CUTAWAY_AXON_100.png",
+        "bytes": 177441
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_ENTRY_001.png",
+        "bytes": 155352
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_ENTRY_100.png",
+        "bytes": 159703
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_INTERIOR_100.png",
+        "bytes": 177158
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_PLAN_DIMENSIONED.png",
+        "bytes": 52812
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_RESTORED_AREA_100.png",
+        "bytes": 245865
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_ROLLBACK_BEFORE_001.png",
+        "bytes": 252126
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_STUDY_100.png",
+        "bytes": 204671
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/A_TEA_COUNTER_100.png",
+        "bytes": 200540
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/B_CONTEXT_AXON_100.png",
+        "bytes": 228700
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/B_CUTAWAY_AXON_100.png",
+        "bytes": 179159
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/B_ENTRY_001.png",
+        "bytes": 155885
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/B_ENTRY_100.png",
+        "bytes": 160277
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/B_INTERIOR_100.png",
+        "bytes": 177149
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/B_PLAN_DIMENSIONED.png",
+        "bytes": 53145
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/B_RESTORED_AREA_100.png",
+        "bytes": 245678
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/STUDY_STYLE_AND_FUNCTION.png",
+        "bytes": 121536
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/proxies/WEST_WALL_RESTORE_SEQUENCE.png",
+        "bytes": 155628
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/AB_MODEL_COMPARISON.png",
+        "bytes": 1482614
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/AB_PLAN_COMPARISON.png",
+        "bytes": 158858
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_CONTEXT_AXON_100.png",
+        "bytes": 2460856
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_CUTAWAY_AXON_100.png",
+        "bytes": 2163583
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_ENTRY_001.png",
+        "bytes": 2164776
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_ENTRY_100.png",
+        "bytes": 2179586
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_INTERIOR_100.png",
+        "bytes": 2304215
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_PLAN_DIMENSIONED.png",
+        "bytes": 91812
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_RESTORED_AREA_100.png",
+        "bytes": 2528510
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_ROLLBACK_BEFORE_001.png",
+        "bytes": 2054887
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_STUDY_100.png",
+        "bytes": 2395668
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/A_TEA_COUNTER_100.png",
+        "bytes": 2367814
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/B_CONTEXT_AXON_100.png",
+        "bytes": 2458263
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/B_CUTAWAY_AXON_100.png",
+        "bytes": 2170404
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/B_ENTRY_001.png",
+        "bytes": 2163422
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/B_ENTRY_100.png",
+        "bytes": 2169499
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/B_INTERIOR_100.png",
+        "bytes": 2304195
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/B_PLAN_DIMENSIONED.png",
+        "bytes": 89761
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/B_RESTORED_AREA_100.png",
+        "bytes": 2525484
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/STUDY_STYLE_AND_FUNCTION.png",
+        "bytes": 1597271
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/renders/WEST_WALL_RESTORE_SEQUENCE.png",
+        "bytes": 1839991
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/solid_backend.py",
+        "bytes": 6403
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/study_tea.py",
+        "bytes": 7479
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/OPTION_A_ENTRY.png",
+        "bytes": 1672418
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/OPTION_A_INTERIOR.png",
+        "bytes": 1637680
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/OPTION_A_TOP.png",
+        "bytes": 1640308
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/OPTION_B_ENTRY.png",
+        "bytes": 1663133
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/OPTION_B_INTERIOR.png",
+        "bytes": 1628725
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/OPTION_B_TOP.png",
+        "bytes": 1635790
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/inspection_proxies/OPTION_A_ENTRY.png",
+        "bytes": 97440
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/inspection_proxies/OPTION_A_INTERIOR.png",
+        "bytes": 105766
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/inspection_proxies/OPTION_A_TOP.png",
+        "bytes": 97631
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/inspection_proxies/OPTION_B_ENTRY.png",
+        "bytes": 97198
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/inspection_proxies/OPTION_B_INTERIOR.png",
+        "bytes": 102307
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/renders/inspection_proxies/OPTION_B_TOP.png",
+        "bytes": 97620
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/B1_1_SITE_CORRECTED_V1.blend",
+        "bytes": 757332
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/B1_1_SITE_CORRECTED_V2.blend",
+        "bytes": 798426
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/B1_1_SITE_CORRECTED_V3.blend",
+        "bytes": 798182
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/B1_1_SITE_CORRECTED_V4.blend",
+        "bytes": 806273
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/B1_1_SITE_REGISTERED_V1.blend",
+        "bytes": 16713005
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/ISLAND_UTILITY_BUILD_LOG.txt",
+        "bytes": 542
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_COMPLETION_QA.json",
+        "bytes": 1278
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_COMPLETION_RENDER_LOG.txt",
+        "bytes": 941
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_COMPLETION_RENDER_MANIFEST.json",
+        "bytes": 887
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_LOGIC_BUILD_LOG.txt",
+        "bytes": 598
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_LOGIC_QA.json",
+        "bytes": 1261
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_LOGIC_RENDER_LOG.txt",
+        "bytes": 1210
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_TOP_RENDER_LOG.txt",
+        "bytes": 383
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/NARROW_FRONT_V3_RENDER_LOG.txt",
+        "bytes": 405
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/REGISTRATION_RENDER_LOG.txt",
+        "bytes": 1325
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_EVIDENCE_QA.json",
+        "bytes": 1416
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/WINDOW_BUFFET_V4_BUILD_LOG.txt",
+        "bytes": 1963
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/WINDOW_BUFFET_V4_RENDER_LOG.txt",
+        "bytes": 4097
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/CAMERA_FILE_GEOMETRY_QA.json",
+        "bytes": 94
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_RENDER_LOG.txt",
+        "bytes": 3395
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_MULTIVIEW_QA.json",
+        "bytes": 3583
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_REVIEW_CAMERA_SET.blend",
+        "bytes": 798831
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/RENDER_MANIFEST_FULL.json",
+        "bytes": 156181
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/RENDER_MANIFEST_PREVIEW.json",
+        "bytes": 156190
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/package_multiview.py",
+        "bytes": 6395
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/render_kitchen_multiview.py",
+        "bytes": 7662
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v3/RENDER_MANIFEST_V3.json",
+        "bytes": 506
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/KITCHEN_REVIEW_CAMERA_SET_V4.blend",
+        "bytes": 812727
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/RENDER_MANIFEST_V4.json",
+        "bytes": 10266
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/render_kitchen_completion.py",
+        "bytes": 3358
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/render_kitchen_logic.py",
+        "bytes": 3758
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/render_narrow_front_v3.py",
+        "bytes": 3222
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/render_registration.py",
+        "bytes": 1716
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/render_windows_buffet_v4.py",
+        "bytes": 4724
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/validate_kitchen_completion.py",
+        "bytes": 3598
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/validate_kitchen_logic.py",
+        "bytes": 3496
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/B1_WALL_CORNERS_REPAIRED_V5.blend",
+        "bytes": 1261792
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V1.blend",
+        "bytes": 1261792
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2.blend",
+        "bytes": 1263850
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/V4_JUNCTION_REFERENCE.json",
+        "bytes": 1587010
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/V5_QA.json",
+        "bytes": 736
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/V5_RENDER_MANIFEST.json",
+        "bytes": 1379
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/V5_SOLID_INPUT.json",
+        "bytes": 1599055
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/audit_missing_corners.py",
+        "bytes": 5331
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_AFTER_01.png",
+        "bytes": 2929994
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_AFTER_02.png",
+        "bytes": 2881958
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_BEFORE_01.png",
+        "bytes": 2936263
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_BEFORE_02.png",
+        "bytes": 2888154
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/repair_display_cabinet_wall.py",
+        "bytes": 3865
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/solid_corner_backend.py",
+        "bytes": 5676
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/ACTIVE_WALL_INVENTORY.json",
+        "bytes": 175615
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/B1_WALL_JUNCTIONS_CORRECTED_V4.blend",
+        "bytes": 1165799
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/CONTINUOUS_WALL_MESH.json",
+        "bytes": 373977
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/DRAFT_OPENING_EDGE_DIAGNOSTIC.json",
+        "bytes": 9396
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/NONMANIFOLD_DIAGNOSTIC.json",
+        "bytes": 6982
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/SURFACE_DEVIATION_DIAGNOSTIC.json",
+        "bytes": 465
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/V4_QA.json",
+        "bytes": 965
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/V4_RENDER_MANIFEST.json",
+        "bytes": 8157
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/WALL_SOLID_INPUTS.json",
+        "bytes": 205074
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/drafts/WALL_BOOLEAN_OPENING_DRAFT.blend",
+        "bytes": 1021601
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/drafts/WALL_UNION_EDGE_CONTACT_DRAFT.blend",
+        "bytes": 891974
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspect_wall_junctions.py",
+        "bytes": 2199
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_01.png",
+        "bytes": 156161
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_02.png",
+        "bytes": 140221
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_03.png",
+        "bytes": 90072
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_04.png",
+        "bytes": 140032
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_BAY_W-MB-S.png",
+        "bytes": 94471
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_BAY_W-SMB-S.png",
+        "bytes": 94546
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_BAY_W-STUDY-NE.png",
+        "bytes": 112451
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_DOOR_D-BATHM.png",
+        "bytes": 94945
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_DOOR_D-GUEST-BATH.png",
+        "bytes": 89830
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_DOOR_D-GUEST-ROOM.png",
+        "bytes": 86953
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_DOOR_D-MB.png",
+        "bytes": 86113
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_DOOR_D-STUDY.png",
+        "bytes": 91576
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_DOOR_ENT-1.png",
+        "bytes": 83495
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_GUEST_GLASS.png",
+        "bytes": 99978
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/inspection_proxies/WALL_JUNCTIONS_LEISURE_GLASS.png",
+        "bytes": 126595
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/refine_review_cameras.py",
+        "bytes": 1797
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_01.png",
+        "bytes": 2407706
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_02.png",
+        "bytes": 2364923
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_03.png",
+        "bytes": 2036085
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_04.png",
+        "bytes": 2180464
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_BAY_W-MB-S.png",
+        "bytes": 2055290
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_BAY_W-SMB-S.png",
+        "bytes": 2051957
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_BAY_W-STUDY-NE.png",
+        "bytes": 2163778
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-BATHM.png",
+        "bytes": 2070967
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-GUEST-BATH.png",
+        "bytes": 2070167
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-GUEST-ROOM.png",
+        "bytes": 2024039
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-MB.png",
+        "bytes": 2043350
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-STUDY.png",
+        "bytes": 2044719
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_ENT-1.png",
+        "bytes": 1999001
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_GUEST_GLASS.png",
+        "bytes": 2078753
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_LEISURE_GLASS.png",
+        "bytes": 2166283
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/solid_wall_backend.py",
+        "bytes": 5589
+      },
+      {
+        "path": "projects/c_type_home/render_test_inspect.py",
+        "bytes": 1980
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/build_living_batch_v1.py",
+        "bytes": 6485
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/build_living_test.py",
+        "bytes": 10396
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/create_a1_validation_v2.py",
+        "bytes": 4284
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/finish_single_test.py",
+        "bytes": 4978
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/living_a1_validation_v2/package_validation.py",
+        "bytes": 2241
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/living_a1_validation_v2/prepare_three_prompts.py",
+        "bytes": 5484
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/living_a1_validation_v2/run_three.py",
+        "bytes": 2571
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/living_batch_v1/package_batch.py",
+        "bytes": 1649
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/living_batch_v1/prepare_jobs.py",
+        "bytes": 6521
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/living_batch_v1/run_ai_batch.py",
+        "bytes": 3264
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/living_batch_v1/write_batch_report.py",
+        "bytes": 10485
+      },
+      {
+        "path": "projects/c_type_home/renders/r3_option_a/make_camera_plan.py",
+        "bytes": 2919
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_exploration_v1/build_jobs.py",
+        "bytes": 1521
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_exploration_v1/contact_sheets.py",
+        "bytes": 2459
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_exploration_v1/finalize_exploration.py",
+        "bytes": 13384
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_exploration_v1/prompt_rules.py",
+        "bytes": 8590
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_exploration_v1/record_visual_review.py",
+        "bytes": 6553
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_exploration_v1/reference_pipeline.py",
+        "bytes": 7830
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_exploration_v1/retry_review.py",
+        "bytes": 2252
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_exploration_v1/run_batch.py",
+        "bytes": 3160
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_exploration_v1/test_api.py",
+        "bytes": 2056
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/export_plan_lines.py",
+        "bytes": 1471
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/layout_spec.py",
+        "bytes": 3070
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/package_delivery.py",
+        "bytes": 14360
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/prepare_layout_references.py",
+        "bytes": 9586
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/render_plan_diagram.py",
+        "bytes": 3543
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/run_bounded_corrections.py",
+        "bytes": 1982
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/run_layout_images.py",
+        "bytes": 8636
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/verify_delivery.py",
+        "bytes": 4154
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_light_seating_v3/correct_window_link.py",
+        "bytes": 1902
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_light_seating_v3/finish_delivery.py",
+        "bytes": 4533
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_light_seating_v3/generate_images.py",
+        "bytes": 5676
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_light_seating_v3/prepare_references.py",
+        "bytes": 6275
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_with_sideboard_v4/finish_delivery.py",
+        "bytes": 6745
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_with_sideboard_v4/generate_images.py",
+        "bytes": 5053
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/living_with_sideboard_v4/prepare_references.py",
+        "bytes": 8067
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/api_preflight.py",
+        "bytes": 3545
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/bounded_review_retries.py",
+        "bytes": 2667
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/checkpoint_handover.py",
+        "bytes": 895
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/finalize_delivery.py",
+        "bytes": 20322
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/overnight_runner.py",
+        "bytes": 6740
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/preflight_inventory.py",
+        "bytes": 2480
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/prepare_all_references.py",
+        "bytes": 1319
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/prompt_system.py",
+        "bytes": 17840
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/qa_proxy.py",
+        "bytes": 1761
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/render_room.py",
+        "bytes": 5522
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/resume_after_handover.py",
+        "bytes": 667
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/reuse_living.py",
+        "bytes": 2961
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/review_tools.py",
+        "bytes": 1907
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/room_package.py",
+        "bytes": 3060
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/room_plan.py",
+        "bytes": 8236
+      },
+      {
+        "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/verify_delivery.py",
+        "bytes": 5960
+      },
+      {
+        "path": "projects/c_type_home/scripts/final_2d_review_v1.py",
+        "bytes": 11704
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_b1_render.py",
+        "bytes": 3365
+      },
+      {
+        "path": "projects/c_type_home/scripts/pascal_b1_review_pack.py",
+        "bytes": 5983
+      }
+    ],
+    "TRACK_LATER_OR_LFS": [
+      {
+        "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+        "bytes": 213027
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+        "bytes": 1584568
+      },
+      {
+        "path": "projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend",
+        "bytes": 374932
+      },
+      {
+        "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_APPROVED_AS_IS_V1.blend",
+        "bytes": 820968
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_1.dxf",
+        "bytes": 105064
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V2.FCStd",
+        "bytes": 407000
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2_FROZEN.blend",
+        "bytes": 1263850
+      }
+    ],
+    "REFERENCE_EXTERNAL": [
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/references/codex-clipboard-e331df3f-377e-40cd-9269-8639253d3463.png",
+        "bytes": 162515
+      },
+      {
+        "path": "projects/c_type_home/design/bedroom_door_r4/references/user_EW_inward_door_plan.png",
+        "bytes": 5132
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/references/US_ACCESS_BOARD_ADA_STANDARDS.html",
+        "bytes": 809107
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/references/US_ACCESS_BOARD_RAMPS_REFERENCE.html",
+        "bytes": 65453
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/references/US_ACCESS_BOARD_RAMPS_REFERENCE.txt",
+        "bytes": 20462
+      },
+      {
+        "path": "projects/c_type_home/design/leisure_compare_v1/references/US_ACCESS_BOARD_RAMP_CLAUSE_EXCERPTS.json",
+        "bytes": 2159
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/references/bay_front.jpg",
+        "bytes": 2363440
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/references/bay_oblique.jpg",
+        "bytes": 2768827
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/references/door_red_green_screenshot.png",
+        "bytes": 2212984
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/references/living_front.jpg",
+        "bytes": 2587827
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v1/references/model_screenshot.png",
+        "bytes": 1400800
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/references/north_balcony_door_site.jpg",
+        "bytes": 57582
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/references/north_door_v1_viewport.png",
+        "bytes": 1117671
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/references/secondary_door_site.jpg",
+        "bytes": 99770
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/references/secondary_door_v1_render.png",
+        "bytes": 1596334
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v2/references/v1_viewport_front.png",
+        "bytes": 1277031
+      },
+      {
+        "path": "projects/c_type_home/design/living_correction_v3/references/USER_FINAL_RED_BLUE_MARKUP.png",
+        "bytes": 121557
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/CATALOG_INDEX.json",
+        "bytes": 744
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/CATALOG_REFERENCE_NOTES.json",
+        "bytes": 13534
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/CATALOG_REFERENCE_NOTES.md",
+        "bytes": 5032
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_lookup_p25.jpg",
+        "bytes": 186990
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_lookup_p37.jpg",
+        "bytes": 195400
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_lookup_p49.jpg",
+        "bytes": 193050
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_lookup_p61.jpg",
+        "bytes": 198719
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_lookup_p73.jpg",
+        "bytes": 145149
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_overview_01.jpg",
+        "bytes": 169762
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_overview_02.jpg",
+        "bytes": 177606
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p01.png",
+        "bytes": 1313180
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p02.png",
+        "bytes": 11358
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p03.png",
+        "bytes": 935762
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p04.png",
+        "bytes": 1881893
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p05.png",
+        "bytes": 354135
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p06.png",
+        "bytes": 1541607
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p07.png",
+        "bytes": 768341
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p08.png",
+        "bytes": 1651071
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p09.png",
+        "bytes": 1209898
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p10.png",
+        "bytes": 1819408
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p11.png",
+        "bytes": 867856
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p12.png",
+        "bytes": 1662621
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p13.png",
+        "bytes": 738927
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p14.png",
+        "bytes": 1634094
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p15.png",
+        "bytes": 1268176
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p16.png",
+        "bytes": 829288
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p17.png",
+        "bytes": 1520558
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p18.png",
+        "bytes": 1578906
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p19.png",
+        "bytes": 1184638
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p20.png",
+        "bytes": 1704731
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p21.png",
+        "bytes": 762782
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p22.png",
+        "bytes": 1510103
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p23.png",
+        "bytes": 734093
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p24.png",
+        "bytes": 988929
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p30.png",
+        "bytes": 2169793
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p38.png",
+        "bytes": 1763945
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p43.png",
+        "bytes": 1932392
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p63.png",
+        "bytes": 1057571
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p77_band1.png",
+        "bytes": 438297
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p77_band2.png",
+        "bytes": 423036
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p77_band3.png",
+        "bytes": 448278
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p78_band1.png",
+        "bytes": 420969
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p78_band2.png",
+        "bytes": 359611
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p78_band3.png",
+        "bytes": 486493
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p79_band1.png",
+        "bytes": 494687
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p79_band2.png",
+        "bytes": 327690
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/amber_pdf_p79_band3.png",
+        "bytes": 4896
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_overview_01.jpg",
+        "bytes": 124802
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p04.png",
+        "bytes": 352267
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p05.png",
+        "bytes": 419000
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p06.png",
+        "bytes": 411890
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p07.png",
+        "bytes": 411258
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p08.png",
+        "bytes": 382866
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p09.png",
+        "bytes": 310734
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p10.png",
+        "bytes": 290783
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p11.png",
+        "bytes": 354283
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p12.png",
+        "bytes": 224350
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p13.png",
+        "bytes": 334083
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p14.png",
+        "bytes": 466213
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/ash_pdf_p25.png",
+        "bytes": 313175
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_lookup_p18.jpg",
+        "bytes": 186338
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_lookup_p30.jpg",
+        "bytes": 181770
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_lookup_p42.jpg",
+        "bytes": 179230
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_lookup_p54.jpg",
+        "bytes": 147748
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_overview_01.jpg",
+        "bytes": 178403
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_overview_02.jpg",
+        "bytes": 70376
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p02.png",
+        "bytes": 442212
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p03.png",
+        "bytes": 1252181
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p04.png",
+        "bytes": 735975
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p05.png",
+        "bytes": 845815
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p06.png",
+        "bytes": 968136
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p07.png",
+        "bytes": 1775166
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p08.png",
+        "bytes": 1301517
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p09.png",
+        "bytes": 1184033
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p10.png",
+        "bytes": 1201027
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p11.png",
+        "bytes": 756986
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p12.png",
+        "bytes": 806041
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p13.png",
+        "bytes": 770363
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p14.png",
+        "bytes": 1003527
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p15.png",
+        "bytes": 910855
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p16.png",
+        "bytes": 1139427
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p17.png",
+        "bytes": 1232077
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p26.png",
+        "bytes": 908464
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/catalog_proxies/electronic_pdf_p27.png",
+        "bytes": 1043621
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/木甲木乙 电子图册_TEXT.json",
+        "bytes": 3574
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/木甲木乙-琥珀木_TEXT.json",
+        "bytes": 3263
+      },
+      {
+        "path": "projects/c_type_home/design/living_finalize_v1/references/木甲木乙-白蜡木系列_TEXT.json",
+        "bytes": 4709
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/references/evidence-boundaries.md",
+        "bytes": 6422
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/references/report-template.md",
+        "bytes": 6978
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/references/setup.md",
+        "bytes": 9093
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/references/setup.md",
+        "bytes": 10718
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/references/tool-workflows.md",
+        "bytes": 4279
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/references/codex-clipboard-354c1424-3a6a-4396-9b53-593f25202854.png",
+        "bytes": 5132
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/references/codex-clipboard-5c73909c-89d5-48fe-874f-caab028bb19a.png",
+        "bytes": 183861
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/references/codex-clipboard-5f307eaa-e314-41c7-bedc-8c926c7ec75b.jpg",
+        "bytes": 162052
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/references/codex-clipboard-bfcdaaf7-6103-4fd8-bfb1-f6f783eb74f9.png",
+        "bytes": 906587
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/references/codex-clipboard-cec2437f-e292-4eb2-aaf4-d2f15dbdb7c6.png",
+        "bytes": 2021827
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/references/codex-clipboard-cf9ce4fa-9ef6-4325-90e0-603ab9acde34.png",
+        "bytes": 1253908
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r2/references/codex-clipboard-f4a4ed59-72b9-4a91-aa50-0e9d276600b2.png",
+        "bytes": 5132
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/references/codex-clipboard-2f96232b-31e2-4acc-a9a4-6d3da5a66ad1.png",
+        "bytes": 230462
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/references/codex-clipboard-354c1424-3a6a-4396-9b53-593f25202854.png",
+        "bytes": 5132
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/references/codex-clipboard-5c73909c-89d5-48fe-874f-caab028bb19a.png",
+        "bytes": 183861
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/references/codex-clipboard-5f307eaa-e314-41c7-bedc-8c926c7ec75b.jpg",
+        "bytes": 162052
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/references/codex-clipboard-6d949081-6927-4f07-9b5b-5d9ec6ff0d9a.png",
+        "bytes": 2212984
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/references/codex-clipboard-bfcdaaf7-6103-4fd8-bfb1-f6f783eb74f9.png",
+        "bytes": 906587
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/references/codex-clipboard-cec2437f-e292-4eb2-aaf4-d2f15dbdb7c6.png",
+        "bytes": 2021827
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/references/codex-clipboard-cf9ce4fa-9ef6-4325-90e0-603ab9acde34.png",
+        "bytes": 1253908
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/r3/references/codex-clipboard-f4a4ed59-72b9-4a91-aa50-0e9d276600b2.png",
+        "bytes": 5132
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/references/CURRENT_SOUTH_OPENING_MARKUP.png",
+        "bytes": 777485
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/references/CURRENT_STUDY_WARDROBE_SITE.jpg",
+        "bytes": 132976
+      },
+      {
+        "path": "projects/c_type_home/design/secondary_bath_options/references/USER_BLACK_WHITE_WALL_AUTHORITY.jpg",
+        "bytes": 131399
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/BUFFET_PDF_ELEVATION_DETAIL.png",
+        "bytes": 206952
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/ISLAND_PDF_DETAIL_1.png",
+        "bytes": 399660
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/ISLAND_PDF_DETAIL_4.png",
+        "bytes": 124899
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/KITCHEN_SITE_COMPARE.png",
+        "bytes": 5149688
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/MODEL_REG_SITE_PHOTO_KITCHEN_001.png",
+        "bytes": 1696086
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/MODEL_REG_SITE_PHOTO_KITCHEN_002.png",
+        "bytes": 1682435
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/MODEL_REG_SITE_PHOTO_KITCHEN_003.png",
+        "bytes": 1717353
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/MODEL_REG_SITE_PHOTO_KITCHEN_004.png",
+        "bytes": 1675721
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/MODEL_REG_SITE_PHOTO_KITCHEN_005.png",
+        "bytes": 1475808
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/MODEL_REG_SITE_PHOTO_KITCHEN_006.png",
+        "bytes": 1470115
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/PHOTO_REG_SITE_PHOTO_KITCHEN_001.png",
+        "bytes": 4468206
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/PHOTO_REG_SITE_PHOTO_KITCHEN_002.png",
+        "bytes": 4448584
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/PHOTO_REG_SITE_PHOTO_KITCHEN_003.png",
+        "bytes": 4517557
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/PHOTO_REG_SITE_PHOTO_KITCHEN_004.png",
+        "bytes": 4356989
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/PHOTO_REG_SITE_PHOTO_KITCHEN_005.png",
+        "bytes": 3925508
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/PHOTO_REG_SITE_PHOTO_KITCHEN_006.png",
+        "bytes": 3917199
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/RAW_KITCHEN_AFTER_AXON.png",
+        "bytes": 1937038
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/RAW_KITCHEN_AFTER_FRONT.png",
+        "bytes": 1837725
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/RAW_KITCHEN_AFTER_TOP.png",
+        "bytes": 1751109
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/RAW_KITCHEN_BEFORE_FRONT.png",
+        "bytes": 1807770
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/RAW_KITCHEN_LOGIC_CORRECTED.png",
+        "bytes": 2905875
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/RAW_SITE_ISLAND_UTILITY.png",
+        "bytes": 2113185
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/RAW_SITE_KITCHEN_COMPLETE.png",
+        "bytes": 2873325
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/RAW_SITE_KITCHEN_TOP.png",
+        "bytes": 2623607
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_DETAIL_ANNOTATED_001.png",
+        "bytes": 1625057
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_DETAIL_ANNOTATED_003.png",
+        "bytes": 1647471
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_DETAIL_ANNOTATED_005.png",
+        "bytes": 1465778
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_DETAIL_ANNOTATED_006.png",
+        "bytes": 1549011
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_ISLAND_UTILITY_V2.png",
+        "bytes": 1465506
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_KITCHEN_COMPLETE_V2.png",
+        "bytes": 2055248
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_KITCHEN_TOP_V2.png",
+        "bytes": 1867031
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/SITE_PHOTO_CONTACT_SHEET.png",
+        "bytes": 2904645
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/USER_APPROVED_WINDOW_OVERLAY_CROP.png",
+        "bytes": 229528
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_01_overall_southwest.png",
+        "bytes": 2914765
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_02_overall_northeast.png",
+        "bytes": 2839781
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_03_fridge_columns.png",
+        "bytes": 2717665
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_04_cooking_run.png",
+        "bytes": 2581327
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_05_sink_corner.png",
+        "bytes": 2629169
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_06_island_interior.png",
+        "bytes": 2686700
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_07_island_drawers.png",
+        "bytes": 2575400
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_08_utility_and_ac.png",
+        "bytes": 2549931
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/FULL_09_top_layout.png",
+        "bytes": 2603391
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_01_overall_southwest.png",
+        "bytes": 2396791
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_02_overall_northeast.png",
+        "bytes": 2381675
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_03_fridge_columns.png",
+        "bytes": 2226844
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_04_cooking_run.png",
+        "bytes": 2063852
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_05_sink_corner.png",
+        "bytes": 2128021
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_06_island_interior.png",
+        "bytes": 2175643
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_07_island_drawers.png",
+        "bytes": 2052137
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_08_utility_and_ac.png",
+        "bytes": 2027094
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_09_top_layout.png",
+        "bytes": 2118351
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_MULTIVIEW_CONTACT_SHEET.png",
+        "bytes": 2659739
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/KITCHEN_REVIEW_CAMERA_MAP.png",
+        "bytes": 88754
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_01_overall_southwest.png",
+        "bytes": 748199
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_02_overall_northeast.png",
+        "bytes": 724527
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_03_fridge_columns.png",
+        "bytes": 660796
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_04_cooking_run.png",
+        "bytes": 625146
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_05_sink_corner.png",
+        "bytes": 636384
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_06_island_interior.png",
+        "bytes": 660258
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_07_island_drawers.png",
+        "bytes": 612940
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_08_utility_and_ac.png",
+        "bytes": 610620
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_09_top_layout.png",
+        "bytes": 613094
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v2/PREVIEW_CONTACT_SHEET.png",
+        "bytes": 3393580
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v3/FULL_03_fridge_columns_V3.png",
+        "bytes": 2719638
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_01_overall_southwest_V4.png",
+        "bytes": 2885760
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_02_overall_northeast_V4.png",
+        "bytes": 2842664
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_03_fridge_columns_V4.png",
+        "bytes": 2719662
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_04_cooking_run_V4.png",
+        "bytes": 2581330
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_05_sink_corner_V4.png",
+        "bytes": 2629467
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_06_island_interior_V4.png",
+        "bytes": 2697513
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_07_island_drawers_V4.png",
+        "bytes": 2576318
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_08_utility_and_ac_V4.png",
+        "bytes": 2560638
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_09_top_layout_V4.png",
+        "bytes": 2599145
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_10_photo5_buffet_front_V4.png",
+        "bytes": 2604562
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_11_photo5_buffet_oblique_V4.png",
+        "bytes": 2658253
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/originals/SITE_PHOTO_KITCHEN_001.jpg",
+        "bytes": 2941054
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/originals/SITE_PHOTO_KITCHEN_002.jpg",
+        "bytes": 2904210
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/originals/SITE_PHOTO_KITCHEN_003.jpg",
+        "bytes": 2794197
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/originals/SITE_PHOTO_KITCHEN_004.jpg",
+        "bytes": 3094762
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/originals/SITE_PHOTO_KITCHEN_005.jpg",
+        "bytes": 2466604
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/originals/SITE_PHOTO_KITCHEN_006.jpg",
+        "bytes": 2925693
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/originals/USER_APPROVED_WINDOW_OVERLAY_V04.png",
+        "bytes": 949291
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/GRID_001.png",
+        "bytes": 1618830
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/GRID_003.png",
+        "bytes": 1646786
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/GRID_005.png",
+        "bytes": 1461235
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/GRID_006.png",
+        "bytes": 1569600
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/SITE_PHOTO_KITCHEN_001.png",
+        "bytes": 1625355
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/SITE_PHOTO_KITCHEN_002.png",
+        "bytes": 1627186
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/SITE_PHOTO_KITCHEN_003.png",
+        "bytes": 1652245
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/SITE_PHOTO_KITCHEN_004.png",
+        "bytes": 1539599
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/SITE_PHOTO_KITCHEN_005.png",
+        "bytes": 1468004
+      },
+      {
+        "path": "projects/c_type_home/design/site_photos/previews/SITE_PHOTO_KITCHEN_006.png",
+        "bytes": 1553264
+      },
+      {
+        "path": "projects/c_type_home/design/wall_corners_v5/references/USER_RED_CIRCLE_JUNCTIONS.png",
+        "bytes": 1979928
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/references/all_bays_instruction.png",
+        "bytes": 2001169
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/references/all_missing_doors.png",
+        "bytes": 1622902
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/references/continuous_wall_site.jpg",
+        "bytes": 79541
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/references/guest_blocked_sliding_door.png",
+        "bytes": 1961984
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/references/leisure_sliding_missing_surround.png",
+        "bytes": 1687588
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/references/study_missing_door.png",
+        "bytes": 1174450
+      },
+      {
+        "path": "projects/c_type_home/design/wall_junctions_v4/references/wall_junction_marks.png",
+        "bytes": 2102669
+      }
+    ],
+    "MANUAL_REVIEW": [
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/.clawhubignore",
+        "bytes": 147
+      },
+      {
+        "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/.clawhubignore",
+        "bytes": 147
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/LATEST_FCSTD_UPDATE_AUDIT.pdf",
+        "bytes": 45768
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_HUMAN_REVIEW_PACK.pdf",
+        "bytes": 90019
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_LOCAL_DETAIL_REVIEW.pdf",
+        "bytes": 61608
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1.pdf",
+        "bytes": 96384
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2.pdf",
+        "bytes": 38891
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_1.pdf",
+        "bytes": 48279
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_2_AUDIT.pdf",
+        "bytes": 45874
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_REJECTED.pdf",
+        "bytes": 96384
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V1.pdf",
+        "bytes": 42918
+      },
+      {
+        "path": "projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V2.pdf",
+        "bytes": 45874
+      }
+    ]
+  },
+  "manual_review": [
+    {
+      "path": "projects/c_type_home/design/pascal_poc/.agents/skills/furniture-fit/.clawhubignore",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "IGNORE_GENERATED",
+      "question_for_human": "Should this local tool metadata be retained in the source baseline?"
+    },
+    {
+      "path": "projects/c_type_home/design/pascal_poc/.agents/skills/pascal-3d/.clawhubignore",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "IGNORE_GENERATED",
+      "question_for_human": "Should this local tool metadata be retained in the source baseline?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/LATEST_FCSTD_UPDATE_AUDIT.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_HUMAN_REVIEW_PACK.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/R2_2_LOCAL_DETAIL_REVIEW.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_1.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_2_AUDIT.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_REJECTED.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V1.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V2.pdf",
+      "current_classification_candidates": [
+        "REFERENCE_EXTERNAL",
+        "IGNORE_GENERATED"
+      ],
+      "why_ambiguous": "The file is a review/document payload whose source role cannot be established from shallow metadata alone.",
+      "default_recommendation": "REFERENCE_EXTERNAL",
+      "question_for_human": "Is this document an external reference to retain, or a derived review artifact to ignore?"
+    }
+  ],
+  "authority_hashes": {
+    "projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+    "projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb"
+  },
+  "authority_hashes_expected": {
+    "projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+    "projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb"
+  },
+  "authority_corrections": {
+    "projects/c_type_home/cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd": "PHYSICAL_GROUND_TRUTH",
+    "projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V2.FCStd": "HUMAN_DESIGN_GUIDE"
+  },
+  "lfs_candidates": [
+    {
+      "path": "projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+      "role": "R4 rendering authority",
+      "authority_level": "FROZEN",
+      "status": "CURRENT",
+      "lfs": "LFS_OPTIONAL",
+      "size": 1584568,
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "reason": "Advisory only: future binary version-history growth or repository policy, not current size alone."
+    },
+    {
+      "path": "projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend",
+      "role": "B0 existing-as-is authority",
+      "authority_level": "FROZEN",
+      "status": "CURRENT",
+      "lfs": "LFS_OPTIONAL",
+      "size": 374932,
+      "sha256": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+      "reason": "Advisory only: future binary version-history growth or repository policy, not current size alone."
+    },
+    {
+      "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_APPROVED_AS_IS_V1.blend",
+      "role": "frozen kitchen authority",
+      "authority_level": "FROZEN",
+      "status": "CURRENT",
+      "lfs": "LFS_OPTIONAL",
+      "size": 820968,
+      "sha256": "28b289a38dbabafbc312e18b3057f232c51c44c07735b1cfcbd39aea39fd0536",
+      "reason": "Advisory only: future binary version-history growth or repository policy, not current size alone."
+    },
+    {
+      "path": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2_FROZEN.blend",
+      "role": "frozen house-base geometry",
+      "authority_level": "FROZEN",
+      "status": "CURRENT",
+      "lfs": "LFS_OPTIONAL",
+      "size": 1263850,
+      "sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5",
+      "reason": "Advisory only: future binary version-history growth or repository policy, not current size alone."
+    },
+    {
+      "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+      "role": "current architectural CAD geometry source",
+      "authority_level": "PHYSICAL_GROUND_TRUTH",
+      "status": "CURRENT",
+      "lfs": "LFS_OPTIONAL",
+      "size": 213027,
+      "sha256": "0c30510bc3fe4862d5759c5402146987b6384558a063983b0cab66786de85469",
+      "reason": "Advisory only: future binary version-history growth or repository policy, not current size alone."
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V2.FCStd",
+      "role": "current FreeCAD design guide source",
+      "authority_level": "HUMAN_DESIGN_GUIDE",
+      "status": "CURRENT",
+      "lfs": "LFS_OPTIONAL",
+      "size": 407000,
+      "sha256": "17340e63f808f7563c64674ad4b43942765044d946b463cb2fb32d373a7817d1",
+      "reason": "Advisory only: future binary version-history growth or repository policy, not current size alone."
+    },
+    {
+      "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_1.dxf",
+      "role": "current DXF source derivative",
+      "authority_level": "DERIVED_DESIGN_MODEL",
+      "status": "CURRENT",
+      "lfs": "NORMAL_GIT_ACCEPTABLE",
+      "size": 105064,
+      "sha256": "9777b153e7379f123d0ab727cdbfb5eafaaba4260da2f57d71ba36d6e1e071b1",
+      "reason": "Advisory only: future binary version-history growth or repository policy, not current size alone."
+    }
+  ],
+  "proposed_ignore_rules": [
+    {
+      "pattern": "projects/c_type_home/design/**/drafts/**",
+      "why_safe": "named draft branches are superseded studies",
+      "false_positive_risk": "a future draft may be intentionally retained"
+    },
+    {
+      "pattern": "projects/c_type_home/design/**/proxies/**",
+      "why_safe": "proxy images are derived review outputs",
+      "false_positive_risk": "a future source proxy contract would need an explicit exception"
+    }
+  ]
+}
