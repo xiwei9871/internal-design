@@ -8,3 +8,54 @@ __pycache__/
 .venv/
 walkthrough_frames/
 .superpowers/
+
+# Codex workspace artifacts: generated image trees stay out of normal Git review.
+.playwright-cli/
+**/reports/proxies/
+**/reports/initial/
+**/reports/corrections/
+**/reports/rejected/
+**/contact_sheet/
+**/contact_sheets/
+**/raw/
+
+# Explicit generated render batches; manifests and source scripts remain visible.
+renders/**
+!renders/**/scripts/
+!renders/**/scripts/**
+!renders/**/*.py
+projects/c_type_home/renders/r3_option_a/living_batch_v1/exports/
+projects/c_type_home/renders/r3_option_a/living_batch_v2_door/exports/
+projects/c_type_home/renders/r3_option_a/living_a1_validation_v2/*/
+projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/*/
+projects/c_type_home/renders/r4_option_a/living_exploration_v1/*/
+projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/layoutA_swap/
+projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/layoutB_lightlounge/
+projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/layoutC_lsofa/
+projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/reference/
+projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2/contact_sheet/
+projects/c_type_home/renders/r4_option_a/living_light_seating_v3/images/
+projects/c_type_home/renders/r4_option_a/living_light_seating_v3/reference/
+projects/c_type_home/renders/r4_option_a/living_with_sideboard_v4/images/
+projects/c_type_home/renders/r4_option_a/living_with_sideboard_v4/reference/
+
+# Large material cache; keep asset manifests and shader/source code visible.
+projects/c_type_home/design/living_finalize_v1/materials/*/
+!projects/c_type_home/design/living_finalize_v1/materials/*/asset-manifest.json
+
+# Generated Blender/API/cache files.
+**/*.blend1
+**/*.blend2
+**/*.blend@
+**/*.blend~
+**/__pycache__/
+**/*.pyc
+**/*.log
+**/*.resp.json
+*_STATES.json
+*_mesh_dump.json
+*_DUMP.json
+
+# Source scripts inside otherwise-generated render worktrees remain reviewable.
+!projects/c_type_home/renders/r3_option_a/**/*.py
+!projects/c_type_home/renders/r4_option_a/**/*.py
