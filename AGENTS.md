@@ -26,6 +26,10 @@
 - Do not use git add .; stage explicit task-relevant paths only.
 - Never auto-merge. Stop at the requested Gate or HUMAN_REVIEW.
 
+## Portability
+
+The RTK include uses this machine's configured path. Keep it for local Codex execution; do not treat it as a portable GitHub-runner dependency.
+
 ## Git / GitHub Review Workflow
 
 Every substantial design task uses a task-scoped branch. Sync the approved base, read only named authority files, execute the task Gate, inspect status and diff, stage explicit task-relevant paths, commit, push, report branch/commit/PR, and stop at HUMAN_REVIEW.

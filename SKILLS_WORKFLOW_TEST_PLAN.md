@@ -19,9 +19,11 @@ Should not trigger:
 
 Should trigger:
 
-1. “Modify the current R4 model while preserving its frozen hash.”
+1. “Create a derived design branch/model from the current R4 authority without modifying the frozen R4 file or its hash.”
 2. “Compare this candidate against the approved kitchen manifest.”
 3. “Check whether generated geometry changed a registered door or window.”
+
+4. “If the user explicitly authorizes an R5 successor, preserve R4, create R5, update its manifest, and record the intentional hash transition.”
 
 Should not trigger:
 
