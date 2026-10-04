@@ -1,0 +1,141 @@
+{
+  "schema": "REPO_SOURCE_BOUNDARY_V1",
+  "generated_at": "2026-10-04T00:58:47.001510+00:00",
+  "git": {
+    "head": "f3ea1b0320518f0b082227acbf410a686e284893",
+    "branch": "feat/c-type-task03a-measured-concept",
+    "tracked_files": 1524,
+    "visible_untracked_files": 1471,
+    "visible_untracked_bytes": 772722364,
+    "ignored_files": 13546,
+    "ignored_bytes": 3119322469,
+    "lfs_configured": false
+  },
+  "authoritative_files": [
+    {
+      "path": "projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+      "exists": true,
+      "size_bytes": 1584568,
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb"
+    },
+    {
+      "path": "projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend",
+      "exists": true,
+      "size_bytes": 374932,
+      "sha256": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb"
+    },
+    {
+      "path": "projects/c_type_home/design/blender_b0/B0_FREEZE_MANIFEST.json",
+      "exists": true,
+      "size_bytes": 2728,
+      "sha256": "8add842df176b687206d422b08b10b96f08b33e4608029d33ecbb5877910ab8d"
+    },
+    {
+      "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_APPROVED_AS_IS_V1.blend",
+      "exists": true,
+      "size_bytes": 820968,
+      "sha256": "28b289a38dbabafbc312e18b3057f232c51c44c07735b1cfcbd39aea39fd0536"
+    },
+    {
+      "path": "projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_FREEZE_MANIFEST.json",
+      "exists": true,
+      "size_bytes": 19203,
+      "sha256": "25275a227e0ef9093727034f8802934c9d0d3b6b0351137fba6476ba181c72df"
+    },
+    {
+      "path": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2_FROZEN.blend",
+      "exists": true,
+      "size_bytes": 1263850,
+      "sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5"
+    },
+    {
+      "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_A.blend",
+      "exists": true,
+      "size_bytes": 1666900,
+      "sha256": "133391c1603121f38cd0d1192a7b04bd4f65053618f25fe01aee7abf87d4e25c"
+    },
+    {
+      "path": "projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_B.blend",
+      "exists": true,
+      "size_bytes": 1652614,
+      "sha256": "c988145089e478bec55fe896b2f0287969049b2723510a657b9717f4b9e9bd5b"
+    }
+  ],
+  "known_artifact_dirs": [
+    {
+      "path": "projects/c_type_home/renders/r4_option_a/whole_house_ai_v1",
+      "file_count": 1483,
+      "bytes": 1071927227
+    },
+    {
+      "path": "projects/c_type_home/design/living_finalize_v1/materials",
+      "file_count": 21,
+      "bytes": 427287069
+    },
+    {
+      "path": "projects/c_type_home/renders/r4_option_a/living_layout_exploration_v2",
+      "file_count": 158,
+      "bytes": 121445954
+    },
+    {
+      "path": "projects/c_type_home/design/leisure_compare_v1",
+      "file_count": 64,
+      "bytes": 46696008
+    },
+    {
+      "path": "projects/c_type_home/renders/r4_option_a/living_light_seating_v3",
+      "file_count": 41,
+      "bytes": 20850862
+    },
+    {
+      "path": "projects/c_type_home/renders/r4_option_a/living_with_sideboard_v4",
+      "file_count": 37,
+      "bytes": 20132628
+    }
+  ],
+  "classification": {
+    "SOURCE": [
+      "AGENTS.md",
+      ".gitignore",
+      "projects/c_type_home/design/**/*.py",
+      "projects/c_type_home/design/**/*.md",
+      "projects/c_type_home/workflow/**",
+      "projects/c_type_home/semantics/**"
+    ],
+    "AUTHORITATIVE_BINARY": [
+      "Named R4/B0/kitchen/frozen-base binaries above; do not auto-add"
+    ],
+    "REFERENCE": [
+      "Site photos, CAD/PDF source material, catalog references, and reference manifests"
+    ],
+    "GENERATED_ARTIFACT": [
+      "projects/c_type_home/renders/**",
+      "**/contact_sheet/**",
+      "**/proxies/**",
+      "**/raw/**",
+      "**/reports/initial/**",
+      "**/reports/corrections/**",
+      "**/reports/rejected/**",
+      "living_finalize_v1/materials/**"
+    ],
+    "CACHE/TEMP": [
+      ".playwright-cli/**",
+      "**/__pycache__/**",
+      "*.pyc",
+      "*.log",
+      "*.resp.json",
+      "*.blend1"
+    ],
+    "UNCERTAIN": [
+      "Remaining untracked source-looking files not named by an authority manifest; manual review before commit"
+    ]
+  },
+  "policy": {
+    "no_deletion": true,
+    "no_move": true,
+    "no_blender_run": true,
+    "no_rendering": true,
+    "no_auto_commit": true,
+    "no_push": true
+  }
+}

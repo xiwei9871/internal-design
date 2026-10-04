@@ -6,7 +6,7 @@
   "asset_library": "PASS",
   "design_rulebook": "PASS",
   "precedent_library": "PASS",
-  "design_brief": "NOT_STARTED",
+  "design_brief": "DRAFT_HUMAN_REVIEW",
   "functional_design": "NOT_APPROVED",
   "3d_blockout": "NOT_STARTED",
   "visual_spatial_review": "NOT_STARTED",
@@ -16,8 +16,8 @@
   "formal_cad_allowed": false,
   "stage_status": {
     "S0_EXISTING_FREEZE": "PASS",
-    "S1_BRIEF": "NOT_STARTED",
-    "S2_FUNCTIONAL_DESIGN": "NOT_APPROVED",
+    "S1_BRIEF": "DRAFT_HUMAN_REVIEW",
+    "S2_FUNCTIONAL_DESIGN": "NOT_STARTED",
     "S2_HUMAN_APPROVAL": "HOLD",
     "S3_3D_BLOCKOUT": "NOT_STARTED",
     "S4_SPATIAL_REVIEW": "NOT_STARTED",
@@ -54,5 +54,7 @@
     "only_human_can_set_human_approval_gates": true,
     "automatic_clearance_pass_does_not_approve_design": true,
     "formal_cad_requires_all_pipeline_prerequisites": true
-  }
+  },
+  "s1_brief_file": "design/brief_v01.json",
+  "s1_human_approval": "HOLD"
 }
