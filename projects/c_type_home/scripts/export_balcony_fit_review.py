@@ -8,6 +8,8 @@ from common import write_json
 ordinary=export_proxy.assign_flat_colors
 def presentation(mesh,entity,cache,owned,counts,mode,source):
     name=entity['native_object_id']
+    if name.startswith(('WAVE_WALL_HANDRAIL','WAVE_HANDRAIL_')):
+        return ordinary(mesh,entity,cache,owned,counts,'source-flat',source)
     if not name.startswith(('NORTH_BALCONY_GLASS_','NORTH_BALCONY_FRAME_')):
         return ordinary(mesh,entity,cache,owned,counts,mode,source)
     is_glass=name.startswith('NORTH_BALCONY_GLASS_')
