@@ -153,13 +153,13 @@ box('CHAIR_BACK',(15.38,8.60,.93),(15.46,9.10,1.34),green,bev=.025)]
 for x in [15.00,15.39]:
  for y in [8.64,9.02]:chairps.append(box('CHAIR_LEG',(x,y,.45),(x+.025,y+.025,.87),metal,bev=.003))
 chair=join('STUDY_V1_WORK_CHAIR',chairps,'chair')
-stool=box('STUDY_V1_MOVABLE_STOOL',(14.38,8.18,.45),(14.78,8.58,.88),cloth,'stool',.025)
+# Owner removed optional stool; retain only STUDY_V1_WORK_CHAIR.
 bpy.context.view_layer.update()
 # Fixed furniture adjacency/checks plusdoorleaf swept0..90deg againstactualgeometry.
 def tree(o,M=None):
  M=M or o.matrix_world
  return BVHTree.FromPolygons([tuple(M@v.co) for v in o.data.vertices],[list(p.vertices) for p in o.data.polygons],epsilon=1e-7)
-fixedcheck=[top,base,desk,chair,stool,lower]+[o for o,t in new if t in ['bookshelf','drawer','cabinet_door']]
+fixedcheck=[top,base,desk,chair,lower]+[o for o,t in new if t in ['bookshelf','drawer','cabinet_door']]
 collision=[]
 for o in fixedcheck:
  for n in arch:
@@ -170,7 +170,7 @@ leaf=bpy.data.objects['V4_D-STUDY_LEAF_0'];pivot=Vector((13.,6.7,.45))
 swing_hits=[]
 for angle in range(0,91,5):
  M=Matrix.Translation(pivot)@Matrix.Rotation(-math.radians(angle),4,'Z')@Matrix.Translation(-pivot)@leaf.matrix_world
- for o in [desk,chair,stool,base,lower]:
+ for o in [desk,chair,base,lower]:
   if tree(leaf,M).overlap(tree(o)):swing_hits.append([angle,o.name])
 assert not swing_hits,swing_hits
 # Protect every inherited object except exact furniture retirementlist.
@@ -196,21 +196,20 @@ def make_registry(rev,out):
  d.update(registry_revision=rev,source_resource_id='c_type_study_room_v1',source_revision=rev,source_locator=str(out),bindings=binds)
  bpy.ops.wm.save_as_mainfile(filepath=str(out));d['source_sha256']=sha(out)
  return d
-daily=R/'STUDY_ROOM_DAYBED_V1.blend';dreg=make_registry('study-room-daybed-v1-r4-daily',daily)
+daily=R/'STUDY_ROOM_DAYBED_V1.blend';dreg=make_registry('study-room-daybed-v1-r5-daily',daily)
 (R/'spatial-canvas.bindings.daily.json').write_text(json.dumps(dreg,ensure_ascii=False,indent=2)+'\n')
-# Same design, localdesk350mm south, chairparksunderdesk, stoolslipsunder inGuest.
+# Same design, localdesk350mm south, chairparksunderdesk, single mainchair parksunder inGuest.
 desk.location.y-=.35;chair.location.x-=.34;chair.location.y-=.35
-stool.location.y-=.35
 for o in cushions:visible(o,False)
 visible(topperpack,False);visible(guest,True)
 bpy.context.view_layer.update()
 guest_swing=[]
 for angle in range(0,91,5):
  M=Matrix.Translation(pivot)@Matrix.Rotation(-math.radians(angle),4,'Z')@Matrix.Translation(-pivot)@leaf.matrix_world
- for o in [desk,chair,stool,base,lower]:
+ for o in [desk,chair,base,lower]:
   if tree(leaf,M).overlap(tree(o)):guest_swing.append([angle,o.name])
 assert not guest_swing,guest_swing
-guestout=R/'STUDY_ROOM_DAYBED_V1_GUEST.blend';greg=make_registry('study-room-daybed-v1-r4-guest',guestout)
+guestout=R/'STUDY_ROOM_DAYBED_V1_GUEST.blend';greg=make_registry('study-room-daybed-v1-r5-guest',guestout)
 (R/'spatial-canvas.bindings.guest.json').write_text(json.dumps(greg,ensure_ascii=False,indent=2)+'\n')
 clearance={'daybed_1200_clearance_gate':'PASS','method':'model source-world AABB in explicitlynamed passage bands + actualmesh intersections + doorleaf5deg sweep; notcodecertification',
  'daily':{'daybed_to_desk_m':10.5-9.58,'desk_to_bookcase_front_m':15.76-15.01,'desk_to_chair_front_m':-.05,'south_counter_to_desk_m':7.58-7.106625,'north_host_entry_m':10.5-9.58,'foot_space_under_desk':True,'chair_footprint_m':[.50,.50],'chair_back_to_bookcase_m':15.76-15.46,'main_west_route_m':14.21-13.1001,
@@ -233,7 +232,7 @@ layout={'status':'HUMAN_REVIEW','authority':'DERIVED_DESIGN_MODEL','source':str(
  'new_total_wall_open_coverage_pct':100*(2.45*1.2)/(4.2998*2.8),
  'coverage_definition':'61.25% means horizontal occupancy ofnewupperband; whole-wallprojectedopenarea24.42%; compareold69.77%'},
  'desk':{'size_m':[2.0,.80,.75],'daily_bounds':[[14.21,7.58,.45],[15.01,9.58,1.20]],
- 'guest_translation_m':[0,-.35,0],'guest_counter_gap_m':7.23-7.106625,'main_chair_count':1,'movable_stool_count':1,'owner_steering':'tea/worktable2000x800;singlehostentersfromnorth920mm;southcountergap473mm;chair500x500,300mmbackgap,50mmfronttucksundertable,westpassage1110mm'},
+ 'guest_translation_m':[0,-.35,0],'guest_counter_gap_m':7.23-7.106625,'main_chair_count':1,'movable_stool_count':0,'owner_steering':'tea/worktable2000x800;singlehostentersfromnorth920mm;southcountergap473mm;chair500x500,300mmbackgap,50mmfronttucksundertable,westpassage1110mm'},
  'sofa_bed_added':False,'architecture_unchanged':True,'cycles_rendering_started':False}
 (R/'STUDY_ROOM_LAYOUT_V1.json').write_text(json.dumps(layout,ensure_ascii=False,indent=2)+'\n')
 (R/'STUDY_ROOM_CLEARANCE_V1.json').write_text(json.dumps(clearance,ensure_ascii=False,indent=2)+'\n')

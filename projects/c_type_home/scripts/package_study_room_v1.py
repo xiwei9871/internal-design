@@ -43,7 +43,7 @@ Upper300mmdeep,1200mmhigh,unequal500/900/1050mm niches across2450mm width. Centr
 these are distinct denominators and not contradictory. No fakefull-wallgrid. Fourbookproxiesonly.
 
 Tea/worktable2000×800×750mm,lightframe,independentmovable. Daily sourcebounds[14.21,7.58,.45]to[15.01,9.58,1.20].
-Guest deskshift[0,-.35,0]m;chairmoves[-.34,-.35,0]m andstoolparksunderdesk. One chair+one smallstool.
+Guest deskshift[0,-.35,0]m;chairmoves[-.34,-.35,0]m One mainchair only; optionalstool removedbyowner.
 Existingtea/servicecounterandplumbingremaininherited. Unrelatedhousefurnitureunchanged.
 Samewhole-house successor inDAILY/GUEST states, taskproxies onlyboundedstudycontext.
 
