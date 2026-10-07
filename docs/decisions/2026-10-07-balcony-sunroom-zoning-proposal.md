@@ -1,0 +1,15 @@
+# Enclosed balcony: laundry at southwest corner, shaded seating, north plant ledge
+
+PROPOSAL ONLY. Owner asks to optimize the enclosed balcony; no appliance/cabinet relocations or plumbing are modeled yet. Packet13f68ca9 identifies opaque south wall VIEW_WALL_W_wall_md_0054(ent_df57443faff255e09d9db342f9a46e2e),sourcehit9.12066,11.10010,2.25609. Existing wall index shows this spanX8.0001..9.7001,Y10.8999..11.1001. North parapet interior is aroundY13.40,so nominal balcony depth is about2.30m;all proposed units need actual fit checks and current finish allowances.
+
+RECOMMENDATION: southwest solid corner receives a stacked washer/dryer surround if it clears registered balcony door travel and actual utility/ventilation needs. Model study envelope would be650–700mm deep pending actual machines/manual;do not treat600mm appliance width as complete cabinet dimensions. Keep filters,drain,power,ventilation and pull-out access available.
+
+VACATED SOLID WALL: use a compact550–650mm-deep cushioned bench/day seat,approximately1200–1500mm long,with low movable side table. A deep outdoor sofa plus fixed full-size desk duplicates living functions and consumes narrow-balcony circulation. Seat length/placement cannot be confirmed until equipment and door clearances are resolved. Use washable sun-resistant upholstery,limited warm wood accents,avoid glass-edge high furniture.
+
+NORTH WINDOW:250–300mm-deep low plant/display ledge,prefer freestanding or solid-parapet-supported construction,not glass-mounted. Use waterproof removable trays;keep handles,opening arcs,drainage,sealing and glass maintenance accessible. Do not put heavy saturated planters on an unverified cantilever. Height based on actual parapet/window fittings,not a speculative fixed dimension. A movable/folding small table can serve reading/coffee without a second fixed desk.
+
+FRIDGE: a normal tall fridge cannot be placed inside an850–900mm-low parapet cabinet;requires its own tall/shaded equipment niche at a solid end with manufacturer clearance. A true under-counter fridge is a different appliance choice and must be explicitly selected. Enclosure does not guarantee shade/thermal suitability. If relocating current fridge,first confirm which real unit(the kitchen reference has a separate full-size fridge),model and opened-door clearances. No claim that a fridge exists in the selectedwall packet.
+
+CIRCULATION: with approximate2.30m depth,650mm seating plus300mm ledge leaves nominal1350mm central lane before hardware/projections;this is planning arithmetic,not measured final clear width. Aim to maintain at least1100mm principal route and avoid blocking balcony/bedroom doors or laundry operation. Avoid putting opposing650mm deep appliance and cabinet banks along this narrow dimension.
+
+NEXT: owner confirms sunroom program and supplies actual appliances/models or exact packet IDs,utility locations and opening directions. Show a dimensioned successor only after these conflicts can be tested. Current deliverable review10 affects living cabinet/chaise only.
