@@ -67,7 +67,7 @@ for n in ['spatial-canvas.project.json','spatial-canvas.spaces.json']:
   for s in d['sources']:
    if s['resource_id']==m['source_resource_id']:s['diagnostics']=['HUMAN_REVIEW bedrooms furniture successor; inherited candidate regions remain candidate. No architectural changes.']
  write(OUT/n,d)
-g=relink(json.loads((OLD/'spatial-canvas.relationships.json').read_text()));g['revision']='24-bedrooms-wood-v1-review-2'
+g=relink(json.loads((OLD/'spatial-canvas.relationships.json').read_text()));g['revision']='25-bedrooms-wood-v1-review-3'
 known={b['entity_id']:b for b in reg['bindings']}
 g['nodes']=[n for n in g['nodes'] if n['kind']!='entity' or n['node_id'] in known]
 ids={n['node_id'] for n in g['nodes']};g['edges']=[e for e in g['edges'] if e['from'] in ids and e['to'] in ids]
@@ -102,7 +102,7 @@ for name,eye,target,hides in views:
 viewsource=R/'REVIEW_CAMERA_SOURCE.json'
 if viewsource.exists():
  v=json.loads(viewsource.read_text());vp={k:x for k,x in preset.items() if k not in ['source_camera','preview_uri']};vp.update(v)
- vp['schema']='spatial-canvas.view-preset.v1';vp['preset_id']='bedrooms_guest_review_r2'
+ vp['schema']='spatial-canvas.view-preset.v1';vp['preset_id']='bedrooms_guest_review'
  vp['hidden_entity_ids']=[byname[n]['entity_id'] for n in ['VIEW_WALL_W_wall_md_0019','VIEW_WALL_W_wall_md_0055']]
  q=Quaternion((v['quaternion'][3],*v['quaternion'][:3]));sq=Quaternion((2**-.5,2**-.5,0,0))@q;p=v['position']
  vp['source_camera']={'position':[p[0],-p[2],p[1]],'quaternion':[sq.x,sq.y,sq.z,sq.w],'frame_id':'c_type_world','unit':'meter','up_axis':'Z'}
@@ -120,6 +120,9 @@ for n,w in [('B11_Rectangle012_CATALOG_00_00',1.8),('B11_Rectangle013_CATALOG_00
  o=entities[n];coords=[o.matrix_world@v.co for v in o.data.vertices]
  # Blender glTF importer restores the original Z-up source frame; bed width is Y.
  assert abs(max(v.y for v in coords)-min(v.y for v in coords)-w)<1e-4
+rest=entities['BW1_COUPLE_SOFT_HEADREST'];cs=[rest.matrix_world@v.co for v in rest.data.vertices]
+assert abs(max(v.y for v in cs)-min(v.y for v in cs)-1.8)<1e-4
+assert 'BW1_MOTHER_BEDSIDE' in entities and 'BW1_MOTHER_BEDSIDE_N' in entities
 assert sha(reg['source_locator'])==reg['source_sha256']
 assert all(sha(p)==h for p,h in layout['evidence']['frozen_hashes'].items())
 write(OUT/'EXPORT_EVIDENCE.json',{'status':'PASS','entities':len(entities),'stable_ids_match':True,

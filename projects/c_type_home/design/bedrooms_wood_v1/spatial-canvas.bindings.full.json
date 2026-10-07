@@ -1,12 +1,12 @@
 {
   "schema": "spatial-canvas.bindings.v1",
   "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
-  "registry_revision": "bedrooms-wood-v1-review-2",
+  "registry_revision": "bedrooms-wood-v1-review-3",
   "design_id": "c_type_home",
   "source_resource_id": "c_type_bedrooms_wood_v1",
-  "source_revision": "bedrooms-wood-v1-review-2",
-  "source_sha256": "2c62eb193522da71875ef27fa37a74e26ba59eebb96505c42142e0c853458b99",
-  "source_locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V2.blend",
+  "source_revision": "bedrooms-wood-v1-review-3",
+  "source_sha256": "93891e0b9c60a9d769e8e65ec4d04d592ea11dee4b9d713966d8b1033b9ebd31",
+  "source_locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V3.blend",
   "source_authority": "frozen",
   "source_frame": {
     "frame_id": "c_type_world",
@@ -7323,6 +7323,14 @@
       "entity_id": "ent_6f1a02d8646b51f1b0f089d4986eb57e",
       "adapter": "blender",
       "native_id": "BW1_MOTHER_BEDSIDE",
+      "semantic_type": "storage",
+      "room_id": "candidate_R-MASTER",
+      "authority_level": "HUMAN_DESIGN_GUIDE"
+    },
+    {
+      "entity_id": "ent_b341d68fd5b85783aa7e429bcf1b7001",
+      "adapter": "blender",
+      "native_id": "BW1_MOTHER_BEDSIDE_N",
       "semantic_type": "storage",
       "room_id": "candidate_R-MASTER",
       "authority_level": "HUMAN_DESIGN_GUIDE"

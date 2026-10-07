@@ -1,10 +1,10 @@
 {
   "status": "HUMAN_REVIEW",
-  "revision": "bedrooms-wood-v1-review-2",
+  "revision": "bedrooms-wood-v1-review-3",
   "parent_source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/study_room_v1/STUDY_ROOM_DAYBED_V1.blend",
   "parent_sha256": "3606aeb73b8bf845796346b46a6567877bca0f4cd4672678e82206a12e20236d",
-  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V2.blend",
-  "source_sha256": "2c62eb193522da71875ef27fa37a74e26ba59eebb96505c42142e0c853458b99",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V3.blend",
+  "source_sha256": "93891e0b9c60a9d769e8e65ec4d04d592ea11dee4b9d713966d8b1033b9ebd31",
   "retired_native_ids": [
     "B11_Rectangle011_PANEL",
     "B11_Rectangle011_RECESS_1",
@@ -54,9 +54,10 @@
       ],
       "bed_translation_m": [
         0.13,
-        0,
+        -0.2,
         0
       ],
+      "bedside_count": 2,
       "tv_cabinet_retained": true,
       "vanity_size_m": [
         0.9,
@@ -74,6 +75,7 @@
         -0.2,
         0
       ],
+      "soft_headrest_width_m": 1.8,
       "tv_cabinet_removed": true,
       "shallow_shelf_size_m": [
         0.9,
@@ -119,7 +121,7 @@
     }
   },
   "evidence": {
-    "new_furniture_triangles": 25876,
+    "new_furniture_triangles": 27816,
     "frozen_hashes": {
       "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
       "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
@@ -132,8 +134,9 @@
   },
   "clearances_m": {
     "couple_wardrobe_to_bed": 0.9209377765655518,
-    "mother_wardrobe_to_bed": 0.7014689445495605,
+    "mother_wardrobe_to_bed": 0.9014689922332764,
     "mother_tv_to_bedfoot": 0.9659996032714844,
+    "mother_wardrobe_to_north_bedside": 0.4569997787475586,
     "guest_central_route_chair_parked": 1.4218741989135744,
     "guest_central_route_chair_pulled250mm": 1.1718741989135744,
     "guest_entry_clear_width": 0.85,

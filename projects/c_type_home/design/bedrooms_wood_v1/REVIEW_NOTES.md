@@ -15,3 +15,9 @@ References (composition only, notgeometrytruth): https://www.mujiedesign.com/sto
 TASKSTATUS: HUMAN_REVIEW. Branch codex/c-type-bedrooms-wood-review. GeneratedBLEND/GLB/images localonly. CLI PRauthentication unavailable; nevermerge automatically.
 
 Final review2 verification:936 entities freshGLBimport; wardrobe3leaves bothY-endhinges swept0..90degrees independently (GUEST_WARDROBE_SWEEP_EVIDENCE.json), PASS. Projectsources do not contain spaces_c_type_r4; graphspacesreference updated to actual exportedhash. Code reviewed by bounded reviewer; no importantissues. Latestdesk/three-doorwardrobe checked onpage5176, exactownerhandoffcamera restored, viewunlocked; screenshotCODEX_GUEST_REVIEW_R2.jpg.
+
+Owner review3: couple softheadrest actuallymeasured1500mm, widened to1800mm, matching1800bed. Motherbed/headrest/southnightstand move200mmsouth; addnorthbedside350wide. Two bedsideunits; wardrobe-to-bedabout901mm, nearestnightstandedgeabout457mm; confirm0..90degbothhingesweepagainstnorthnightstand. Guestcontinuousdesktop andthree-doorwardrobe unchanged. LatestBEDROOMS_WOOD_V3.blend;review1/2 preserved.
+
+Review3 discoveredandfixedstaleBlenderbound_boxaftermeshedits. Bounds nowuseactualworldvertices, includingallheadrestplacementandbedrunners; buildandfreshGLBwidthassertions bothrequired. Earlier1740mmstatementwasbasedonparameters,notactualgeometry,andiswithdrawn.
+
+Final review3: actualsourceandfresh-importsoftheadrest1800mm gatesPASS.937stableentities; motherwardrobebothhingesweepsincludingnorthbedsidePASS; allscopedobjectfingerprintsandfrozenhashesPASS. Noautomaticmerge.

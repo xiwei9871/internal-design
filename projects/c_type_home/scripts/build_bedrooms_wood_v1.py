@@ -5,7 +5,7 @@ from mathutils import Vector, Matrix
 from mathutils.bvhtree import BVHTree
 ROOT=Path(__file__).resolve().parents[1];R=ROOT/'design/bedrooms_wood_v1'
 SRC=ROOT/'design/study_room_v1/STUDY_ROOM_DAYBED_V1.blend'
-REV='bedrooms-wood-v1-review-2'
+REV='bedrooms-wood-v1-review-3'
 TRUTHS={
  '/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend':'d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb',
  '/Users/xiwei/interior_design/projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend':'717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb',
@@ -26,7 +26,8 @@ def state(o):
   'properties':str(sorted(o.items())),'collections':sorted(c.name for c in o.users_collection)}
 before={o.name:state(o) for o in bpy.context.scene.objects}
 def bb(o):
- c=[o.matrix_world@Vector(v) for v in o.bound_box]
+ # Readcurrentvertices:bound_box canretainoldvaluesaftermesh editsuntildepsgraphevaluation.
+ c=[o.matrix_world@v.co for v in o.data.vertices] if o.type=='MESH' else [o.matrix_world@Vector(v) for v in o.bound_box]
  return [[min(v[i] for v in c) for i in range(3)],[max(v[i] for v in c) for i in range(3)]]
 retired=[b['native_id'] for b in base['bindings'] if b['native_id'].startswith((
  'B11_Rectangle011','B11_Rectangle014','B11_Rectangle023','B11_Rectangle051','B11_Rectangle052','B11_Circle009'))]
@@ -94,7 +95,7 @@ def transform_bounds(n,new_a,new_b):
  o.data.update();return o
 # Couple:1800 width measured over bedframe proxy;200mm south,100mm east.
 couple=transform_bounds('B11_Rectangle012_CATALOG_00_00',(9.166625,1.187156,.45),(11.266625,2.987156,1.0))
-mother=transform_bounds('B11_Rectangle013_CATALOG_00_00',(13.072875,1.645531,.45),(15.172875,3.145531,1.0))
+mother=transform_bounds('B11_Rectangle013_CATALOG_00_00',(13.072875,1.445531,.45),(15.172875,2.945531,1.0))
 # Guest maintains1800x1200,140mm east closes the removed thick headboard setback.
 guest=transform_bounds('B11_Rectangle017_CATALOG_00_00',(11.018375,8.019843,.45),(12.818375,9.219843,1.0))
 edited={couple.name,mother.name,guest.name}
@@ -110,10 +111,12 @@ for tag,bed,zone,headx,sidecolor in [('COUPLE',couple,'couple',11.34,cloth),('MO
  a,b=bb(bed);y0,y1=a[1],b[1]
  margin=0 if zone=='guest' else .025
  h=box(tag+'_THIN_HEADBOARD',(headx,y0-margin,.53),(headx+.024,y1+margin,1.47),wood,'headboard',zone)
- ps=[box(tag+'_SOFT_HEADREST',(headx-.030,y0+.03,.95),(headx,y1-.03,1.43),sidecolor,'soft_headrest',zone,.014)]
+ softmargin=0 if zone=='couple' else .03
+ ps=[box(tag+'_SOFT_HEADREST',(headx-.030,y0+softmargin,.95),(headx,y1-softmargin,1.43),sidecolor,'soft_headrest',zone,.014)]
  # Existing catalog bed already includes pillows; do not add a secondstack.
  box(tag+'_BED_RUNNER',(a[0]+.14,y0+.04,1.001),(a[0]+.58,y1-.04,1.016),sidecolor,'textile',zone,.007)
-parts['mother_bedside']=cabinet('MOTHER_BEDSIDE',(14.68,1.14,.45),(15.10,1.54,1.03),'mother')
+parts['mother_bedside']=cabinet('MOTHER_BEDSIDE',(14.68,.94,.45),(15.10,1.34,1.03),'mother')
+parts['mother_bedside_n']=cabinet('MOTHER_BEDSIDE_N',(14.68,3.04,.45),(15.10,3.39,1.03),'mother')
 parts['couple_bedside_n']=cabinet('COUPLE_BEDSIDE_N',(10.84,3.04,.45),(11.22,3.38,1.03),'couple')
 parts['couple_bedside_s']=cabinet('COUPLE_BEDSIDE_S',(10.84,.77,.45),(11.22,1.10,1.03),'couple')
 # MotherSW:900-long vanity along west wall,450deep. Existing TV cabinet untouched.
@@ -199,7 +202,7 @@ for o,typ,zone in new:
 assert not collision,collision
 # Wardrobe leaf sweeps computed from registered frontpanels, both hingechoices.
 sweeps=[]
-for pre,targets in [('R3_WARDROBE_FRONT_',[couple,parts['couple_bedside_n']]),('B11_Rectangle015_FRONT_',[mother]),
+for pre,targets in [('R3_WARDROBE_FRONT_',[couple,parts['couple_bedside_n']]),('B11_Rectangle015_FRONT_',[mother,parts['mother_bedside_n']]),
  ('B11_Rectangle045_FRONT_',[guest,parts['guest_desk'],parts['guest_chair']])]:
  for b in base['bindings']:
   if not b['native_id'].startswith(pre) or b['native_id'] in retired:continue
@@ -227,6 +230,7 @@ assert not entryhits,entryhits
 assert abs(bb(couple)[1][1]-bb(couple)[0][1]-1.8)<1e-5
 assert abs(bb(mother)[1][1]-bb(mother)[0][1]-1.5)<1e-5
 assert abs(bb(guest)[1][1]-bb(guest)[0][1]-1.2)<1e-5
+assert abs(bb(bpy.data.objects['BW1_COUPLE_SOFT_HEADREST'])[1][1]-bb(bpy.data.objects['BW1_COUPLE_SOFT_HEADREST'])[0][1]-1.8)<1e-5
 couplegap=3.9080936908721924-bb(couple)[1][1];mothergap=3.8469998836517334-bb(mother)[1][1]
 assert couplegap>=.50 and mothergap>=.50
 for n,s in before.items():
@@ -240,7 +244,7 @@ for o,typ,zone in new:
  o['global_id']='ent_'+uuid.uuid5(uuid.NAMESPACE_URL,'c_type_home:bedroomswoodv1:'+o.name).hex
 reg={k:v for k,v in base.items() if k!='bindings'}
 reg.update(source_resource_id='c_type_bedrooms_wood_v1',source_revision=REV,registry_revision=REV,
- source_locator=str(R/'BEDROOMS_WOOD_V2.blend'),source_authority='frozen')
+ source_locator=str(R/'BEDROOMS_WOOD_V3.blend'),source_authority='frozen')
 reg['bindings']=[b for b in base['bindings'] if b['native_id'] not in retired]
 roomkeys={'mother':'candidate_R-MASTER','couple':'candidate_R-BED-S','guest':'candidate_R-STUDY'}
 for o,typ,zone in new:reg['bindings'].append({'entity_id':o['global_id'],'adapter':'blender','native_id':o.name,
@@ -249,8 +253,8 @@ bpy.ops.wm.save_as_mainfile(filepath=reg['source_locator']);reg['source_sha256']
 (R/'spatial-canvas.bindings.full.json').write_text(json.dumps(reg,ensure_ascii=False,indent=2)+'\n')
 layout={'status':'HUMAN_REVIEW','revision':REV,'parent_source':str(SRC),'parent_sha256':TRUTHS[str(SRC)],
  'source':reg['source_locator'],'source_sha256':reg['source_sha256'],'retired_native_ids':retired,'edited_native_ids':sorted(edited),
- 'rooms':{'mother':{'bed_size_m':[2.1,1.5],'bed_translation_m':[.13,0,0],'tv_cabinet_retained':True,'vanity_size_m':[.9,.45,.75]},
- 'couple':{'bed_size_m':[2.1,1.8],'bed_translation_m':[.10,-.20,0],'tv_cabinet_removed':True,'shallow_shelf_size_m':[.9,.28,1.05]},
+ 'rooms':{'mother':{'bed_size_m':[2.1,1.5],'bed_translation_m':[.13,-.20,0],'bedside_count':2,'tv_cabinet_retained':True,'vanity_size_m':[.9,.45,.75]},
+ 'couple':{'bed_size_m':[2.1,1.8],'bed_translation_m':[.10,-.20,0],'soft_headrest_width_m':1.8,'tv_cabinet_removed':True,'shallow_shelf_size_m':[.9,.28,1.05]},
  'guest':{'bed_size_m':[1.8,1.2],'bed_translation_m':[.14,0,0],'desk_size_m':[1.64,.55,.75],'bunk_added':False,
  'wardrobe_size_m':[1.5,.5,2.2],'wardrobe_door_count':3,'wardrobe_south_end_retracted_m':.5,
  'desk_full_run':'bededge to northwall;20mminstallationgapsatends',
@@ -261,6 +265,7 @@ layout={'status':'HUMAN_REVIEW','revision':REV,'parent_source':str(SRC),'parent_
  'wall_door_intersections':collision,'wardrobe_frontpanel_0to90deg_sweeps_both_hinge_options':sweeps,'guest_entry_sweeps':entryhits},
  'clearances_m':{'couple_wardrobe_to_bed':couplegap,'mother_wardrobe_to_bed':mothergap,
  'mother_tv_to_bedfoot':bb(mother)[0][0]-12.1068754196167,
+ 'mother_wardrobe_to_north_bedside':3.8469998836517334-bb(parts['mother_bedside_n'])[1][1],
  'guest_central_route_chair_parked':bb(parts['guest_chair'])[0][0]-10.418125,
  'guest_central_route_chair_pulled250mm':bb(parts['guest_chair'])[0][0]-.25-10.418125,
  'guest_entry_clear_width':.85,'guest_desk_north_to_balcony_track':10.965-bb(parts['guest_desk'])[1][1]},
