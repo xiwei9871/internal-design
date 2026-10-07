@@ -14,10 +14,10 @@ Upper300mmdeep,1200mmhigh,unequal500/900/1050mm niches across2450mm width. Centr
 61.25% upperbandoccupied/38.75% breathing. Whole-wallopenprojection drops from69.8% to24.4%;
 these are distinct denominators and not contradictory. No fakefull-wallgrid. Fourbookproxiesonly.
 
-Desk1500×700×750mm,lightframe,independentmovable. Daily sourcebounds[14.26,8.08,.45]to[14.96,9.58,1.20].
+Tea/worktable2000×800×750mm,lightframe,independentmovable. Daily sourcebounds[14.21,7.58,.45]to[15.01,9.58,1.20].
 Guest deskshift[0,-.35,0]m;chairmoves[-.34,-.35,0]m andstoolparksunderdesk. One chair+one smallstool.
 Existingtea/servicecounterandplumbingremaininherited. Unrelatedhousefurnitureunchanged.
 Samewhole-house successor inDAILY/GUEST states, taskproxies onlyboundedstudycontext.
 
-Owner correction: deskedge-to-bookcasefront800mm;chair500×500mm;chairbackgap300mm;noextragapbetweenchairfrontanddesk for operation only. Mainroute is1160mm onthefront/westside ofdesk. Door850mm controlswhole-routeminimum.
+Owner correction: deskedge-to-bookcasefront750mm;chair500×500mm;chairbackgap300mm;chairfront50mmundertable for operation only. Mainroute is1110mm onthefront/westside ofdesk. Door850mm controlswhole-routeminimum.
 Decision: reviewroomtopology/daybeddepth/circulation/bookshelfmassing/deskposition beforeanylookdev.

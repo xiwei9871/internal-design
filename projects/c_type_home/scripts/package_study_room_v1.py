@@ -42,12 +42,12 @@ Upper300mmdeep,1200mmhigh,unequal500/900/1050mm niches across2450mm width. Centr
 61.25% upperbandoccupied/38.75% breathing. Whole-wallopenprojection drops from69.8% to24.4%;
 these are distinct denominators and not contradictory. No fakefull-wallgrid. Fourbookproxiesonly.
 
-Desk1500×700×750mm,lightframe,independentmovable. Daily sourcebounds[14.26,8.08,.45]to[14.96,9.58,1.20].
+Tea/worktable2000×800×750mm,lightframe,independentmovable. Daily sourcebounds[14.21,7.58,.45]to[15.01,9.58,1.20].
 Guest deskshift[0,-.35,0]m;chairmoves[-.34,-.35,0]m andstoolparksunderdesk. One chair+one smallstool.
 Existingtea/servicecounterandplumbingremaininherited. Unrelatedhousefurnitureunchanged.
 Samewhole-house successor inDAILY/GUEST states, taskproxies onlyboundedstudycontext.
 
-Owner correction: deskedge-to-bookcasefront800mm;chair500×500mm;chairbackgap300mm;noextragapbetweenchairfrontanddesk for operation only. Mainroute is1160mm onthefront/westside ofdesk. Door850mm controlswhole-routeminimum.
+Owner correction: deskedge-to-bookcasefront750mm;chair500×500mm;chairbackgap300mm;chairfront50mmundertable for operation only. Mainroute is1110mm onthefront/westside ofdesk. Door850mm controlswhole-routeminimum.
 Decision: reviewroomtopology/daybeddepth/circulation/bookshelfmassing/deskposition beforeanylookdev.
 """)
 write('STUDY_ROOM_CLEARANCE_V1.md',f"""
@@ -60,19 +60,19 @@ This is a model-basedstudy, not a code/installcertification.
 | Measurement | Daily | Guest |
 |---|---:|---:|
 | Daybed front to desk | 920mm | 1270mm |
-| Deskedge tobookcasefront | 800mm | 800mm |
+| Deskedge tobookcasefront | 750mm | 750mm |
 | Chair footprint/rear operationgap | 500×500mm /300mm | parkedunderdesk |
-| Mainroute infront/westofdesk | 1160mm | 1160mm |
+| Mainroute infront/westofdesk | 1110mm | 1110mm |
 | Entry clearwidth/inheriteddoor | 850mm | 850mm |
 | Minimum whole-route includingentry | 850mm | 850mm |
 | Open drawer to desk | 470mm | 820mm |
 
-Mainfront/westroute1160mm meets900mmdaily preference. 300mmbehindchair is NOT a through-route and is not used forclearanceGate.
+Mainfront/westroute1110mm meets900mmdaily preference. 300mmbehindchair is NOT a through-route and is not used forclearanceGate.
 Retrievingdrawersusestheoppositesidepassage;470mm isnotdescribed as a walkingaisle.
 Guestshift350mm south hasbeen includedindoorsweepcheck.
 DailybookcasefrontdooropeningandNASventilationinstallare notshop-drawingcertified.
 Topperstoragefold/comfortneedproductconfirmation; no assertion that an80mmthick mattress fitsdrawers.
-Room geometryisnotdistortedto obtainclearance.
+Tea/worktable2000x800mm replaces1500x700; singlehostentersfromnorth920mm; southcountergap473mm isnotthroughroute. Guestcountergap123mm afterlocalshift isalsoNOT a route; entryremainswest/north. Nochairsaddedforthispass; otherseatingsidepositions arefuturereview. Roomgeometrynotdistorted.
 
 R4 hash after: {clear['authority_hash_after']['R4']}
 B0 hash after: {clear['authority_hash_after']['B0']}
@@ -84,8 +84,8 @@ Stage: geometry+requiredWorkbenchpreviews+taskproxyexport;HUMAN_REVIEW.
 Branch study/c-type-study-room-daybed-v1, Gitbasebd22a84 origin/improve/design-output-v14.
 Model inherited currentreview14, studyunchangedfromR4 beforetask; nofullhousesemanticrediscovery.
 MeasuredDaybed1880×1200mm, extension550mm, realstorage390mmdeep becausewallremains.
-Owner revised deskposition:800mmcabinetgap/500mmchair/300mmbackoperationgap/nochairfrontgap;mainfront/westroute1160mm. Daily/Guestshiftanddoorclearance documented;thin30mmtopperpackingunverified.
-Bookcase61.25% upperbandopen,4000mmclosedbase;desk1500×700mm.
+Owner revised deskposition:750mmcabinetgap/500mmchair/300mmbackgap/50mmunder-tablefrontinset;mainfront/westroute1110mm. Daily/Guestshiftanddoorclearance documented;thin30mmtopperpackingunverified.
+Bookcase61.25% upperbandopen,4000mmclosedbase;tea/worktable2000×800mm. Singlehost approachesfromnorth920mm; southcountergap473mm isnotthroughroute.
 FrozenR4/B0 SHA unchanged; otherinheritedobjectstatesprotectedbyexactretirementallowlist.
 Generatedblend/png/glb/json/logs are localartifacts. Finalbeautyrendering notstarted. Noauto-merge.
 """)
@@ -110,15 +110,16 @@ for mode in ['daily','guest']:
  p=R/('STUDY_ROOM_TOP_'+mode.upper()+'.png');im=Image.open(p).convert('RGB');draw=ImageDraw.Draw(im)
  draw.rectangle((0,0,900,46),fill='#fffdf5');draw.text((18,10),'STUDY V1 | '+mode.upper()+' | HUMAN REVIEW',font=big,fill='#244b42')
  tag(draw,13.82,11.5,'1880 x 1200 Daybed')
- tag(draw,14.30,8.95 if mode=='daily' else 8.60,'1500 x 700 desk')
+ tag(draw,14.24,7.95 if mode=='daily' else 7.60,'2000 x 800 tea desk')
  tag(draw,15.89,8.50,'closed')
  tag(draw,15.89,8.30,'storage')
  dim(draw,(14.40,9.58 if mode=='daily' else 9.23),(14.40,10.50),'920 mm' if mode=='daily' else '1270 mm')
- dim(draw,(13.1001,8.20),(14.26,8.20),'1160 mm FRONT')
+ dim(draw,(13.1001,8.20),(14.21,8.20),'1110 mm FRONT')
  if mode=='daily':
-  dim(draw,(14.96,9.75),(15.76,9.75),'800 mm')
+  dim(draw,(15.01,9.75),(15.76,9.75),'750 mm')
   tag(draw,15.03,8.90,'500 chair')
-  tag(draw,15.47,8.45,'300 mm rear')
+  tag(draw,15.47,8.45,'Rear 300 mm')
+  tag(draw,13.22,7.36,'Counter gap 473 mm')
  draw.rectangle((0,1050,900,1100),fill='#fffdf5')
  draw.text((16,1057),'Door 850 mm | source Z-up | top slice below 1.4 m | geometry preview',font=font,fill='#244b42')
  im.save(R/('STUDY_ROOM_TOP_'+mode.upper()+'_DIMENSIONED.png'))

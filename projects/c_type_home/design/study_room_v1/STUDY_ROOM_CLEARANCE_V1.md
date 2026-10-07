@@ -7,19 +7,19 @@ This is a model-basedstudy, not a code/installcertification.
 | Measurement | Daily | Guest |
 |---|---:|---:|
 | Daybed front to desk | 920mm | 1270mm |
-| Deskedge tobookcasefront | 800mm | 800mm |
+| Deskedge tobookcasefront | 750mm | 750mm |
 | Chair footprint/rear operationgap | 500×500mm /300mm | parkedunderdesk |
-| Mainroute infront/westofdesk | 1160mm | 1160mm |
+| Mainroute infront/westofdesk | 1110mm | 1110mm |
 | Entry clearwidth/inheriteddoor | 850mm | 850mm |
 | Minimum whole-route includingentry | 850mm | 850mm |
 | Open drawer to desk | 470mm | 820mm |
 
-Mainfront/westroute1160mm meets900mmdaily preference. 300mmbehindchair is NOT a through-route and is not used forclearanceGate.
+Mainfront/westroute1110mm meets900mmdaily preference. 300mmbehindchair is NOT a through-route and is not used forclearanceGate.
 Retrievingdrawersusestheoppositesidepassage;470mm isnotdescribed as a walkingaisle.
 Guestshift350mm south hasbeen includedindoorsweepcheck.
 DailybookcasefrontdooropeningandNASventilationinstallare notshop-drawingcertified.
 Topperstoragefold/comfortneedproductconfirmation; no assertion that an80mmthick mattress fitsdrawers.
-Room geometryisnotdistortedto obtainclearance.
+Tea/worktable2000x800mm replaces1500x700; singlehostentersfromnorth920mm; southcountergap473mm isnotthroughroute. Guestcountergap123mm afterlocalshift isalsoNOT a route; entryremainswest/north. Nochairsaddedforthispass; otherseatingsidepositions arefuturereview. Roomgeometrynotdistorted.
 
 R4 hash after: d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb
 B0 hash after: 717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb

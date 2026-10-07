@@ -143,10 +143,10 @@ for gid,(a,b) in enumerate([(6.68,8.08),(9.63,10.68)]):
  join('STUDY_V1_OPEN_SHELF_GROUP_'+str(gid),ps,'bookshelf')
 # Four sparsebook proxies give scale rather than fillingthe shelves.
 for i in range(4):box('STUDY_V1_BOOK_'+str(i),(15.90,6.82+i*.06,1.368),(16.10,6.86+i*.06,1.64+(i%2)*.03),green,'book',.002)
-# Owner steering: desk-to-bookcase1m;500mm chair;300mm rear操作gap. Mainroutewest.
-deskps=[box('DESK_TOP',(14.26,8.08,1.176),(14.96,9.58,1.20),wood,bev=.012)]
-for x in [14.30,14.90]:
- for y in [8.14,9.49]:deskps.append(box('DESK_LEG',(x,y,.45),(x+.025,y+.025,1.176),metal,bev=.004))
+# Owner steering R4:2000x800 tea/worktable; single host enters from north; mainroute infrontwest.
+deskps=[box('DESK_TOP',(14.21,7.58,1.176),(15.01,9.58,1.20),wood,bev=.012)]
+for x in [14.25,14.95]:
+ for y in [7.64,9.49]:deskps.append(box('DESK_LEG',(x,y,.45),(x+.025,y+.025,1.176),metal,bev=.004))
 desk=join('STUDY_V1_MOVABLE_DESK',deskps,'desk')
 chairps=[box('CHAIR_SEAT',(14.96,8.60,.87),(15.46,9.10,.93),cloth,bev=.025),
 box('CHAIR_BACK',(15.38,8.60,.93),(15.46,9.10,1.34),green,bev=.025)]
@@ -196,7 +196,7 @@ def make_registry(rev,out):
  d.update(registry_revision=rev,source_resource_id='c_type_study_room_v1',source_revision=rev,source_locator=str(out),bindings=binds)
  bpy.ops.wm.save_as_mainfile(filepath=str(out));d['source_sha256']=sha(out)
  return d
-daily=R/'STUDY_ROOM_DAYBED_V1.blend';dreg=make_registry('study-room-daybed-v1-r3-daily',daily)
+daily=R/'STUDY_ROOM_DAYBED_V1.blend';dreg=make_registry('study-room-daybed-v1-r4-daily',daily)
 (R/'spatial-canvas.bindings.daily.json').write_text(json.dumps(dreg,ensure_ascii=False,indent=2)+'\n')
 # Same design, localdesk350mm south, chairparksunderdesk, stoolslipsunder inGuest.
 desk.location.y-=.35;chair.location.x-=.34;chair.location.y-=.35
@@ -210,15 +210,15 @@ for angle in range(0,91,5):
  for o in [desk,chair,stool,base,lower]:
   if tree(leaf,M).overlap(tree(o)):guest_swing.append([angle,o.name])
 assert not guest_swing,guest_swing
-guestout=R/'STUDY_ROOM_DAYBED_V1_GUEST.blend';greg=make_registry('study-room-daybed-v1-r3-guest',guestout)
+guestout=R/'STUDY_ROOM_DAYBED_V1_GUEST.blend';greg=make_registry('study-room-daybed-v1-r4-guest',guestout)
 (R/'spatial-canvas.bindings.guest.json').write_text(json.dumps(greg,ensure_ascii=False,indent=2)+'\n')
 clearance={'daybed_1200_clearance_gate':'PASS','method':'model source-world AABB in explicitlynamed passage bands + actualmesh intersections + doorleaf5deg sweep; notcodecertification',
- 'daily':{'daybed_to_desk_m':10.5-9.58,'desk_to_bookcase_front_m':15.76-14.96,'desk_to_chair_front_m':0,'foot_space_under_desk':True,'chair_footprint_m':[.50,.50],'chair_back_to_bookcase_m':15.76-15.46,'main_west_route_m':14.26-13.1001,
+ 'daily':{'daybed_to_desk_m':10.5-9.58,'desk_to_bookcase_front_m':15.76-15.01,'desk_to_chair_front_m':-.05,'south_counter_to_desk_m':7.58-7.106625,'north_host_entry_m':10.5-9.58,'foot_space_under_desk':True,'chair_footprint_m':[.50,.50],'chair_back_to_bookcase_m':15.76-15.46,'main_west_route_m':14.21-13.1001,
  'chair_operating_envelope_back_max_x':15.46,'rear_gap_is_not_through_route':True,'drawer_travel_m':.45,'open_drawer_to_desk_m':10.5-.45-9.58,
  'door_clear_width_m':.85,'door_sweep_hits':swing_hits},
  'guest':{'mattress_envelope_m':[1.88,1.20,.03],'daybed_to_desk_m':10.5-9.23,
- 'main_route_m':14.26-13.1001,'door_clear_width_m':.85,'minimum_route_including_entry_m':.85,'door_sweep_hits':guest_swing},
- 'door_bottleneck_note':'inherited850mm door controls whole-route minimum; mainwestpassage1160mm;300mm rearchairgap isoperationallowance notthroughroute',
+ 'main_route_m':14.21-13.1001,'door_clear_width_m':.85,'minimum_route_including_entry_m':.85,'door_sweep_hits':guest_swing},
+ 'door_bottleneck_note':'inherited850mm door controls whole-route minimum; mainwestpassage1110mm;300mm rearchairgap isoperationallowance notthroughroute',
  'drawer_opening_note':'450mm opening leaves470mm todeskfront; this is retrieval space, not the main route. Open-drawer standing ergonomics remains HUMAN_REVIEW.',
  'native_architecture_collision_pairs':collision,'authority_hash_after':{'R4':sha(R4),'B0':sha(B0)}}
 layout={'status':'HUMAN_REVIEW','authority':'DERIVED_DESIGN_MODEL','source':str(SRC),'source_sha256':sha(SRC),
@@ -232,8 +232,8 @@ layout={'status':'HUMAN_REVIEW','authority':'DERIVED_DESIGN_MODEL','source':str(
  'old_total_wall_open_coverage_pct':audit['bookcase']['wall_visual_coverage_pct'],
  'new_total_wall_open_coverage_pct':100*(2.45*1.2)/(4.2998*2.8),
  'coverage_definition':'61.25% means horizontal occupancy ofnewupperband; whole-wallprojectedopenarea24.42%; compareold69.77%'},
- 'desk':{'size_m':[1.5,.70,.75],'daily_bounds':[[14.26,8.08,.45],[14.96,9.58,1.20]],
- 'guest_translation_m':[0,-.35,0],'main_chair_count':1,'movable_stool_count':1,'owner_steering':'desk800mm fromcabinetfront,chair500x500,reargap300mm,noextrafrontgap,westpassage1160mm'},
+ 'desk':{'size_m':[2.0,.80,.75],'daily_bounds':[[14.21,7.58,.45],[15.01,9.58,1.20]],
+ 'guest_translation_m':[0,-.35,0],'guest_counter_gap_m':7.23-7.106625,'main_chair_count':1,'movable_stool_count':1,'owner_steering':'tea/worktable2000x800;singlehostentersfromnorth920mm;southcountergap473mm;chair500x500,300mmbackgap,50mmfronttucksundertable,westpassage1110mm'},
  'sofa_bed_added':False,'architecture_unchanged':True,'cycles_rendering_started':False}
 (R/'STUDY_ROOM_LAYOUT_V1.json').write_text(json.dumps(layout,ensure_ascii=False,indent=2)+'\n')
 (R/'STUDY_ROOM_CLEARANCE_V1.json').write_text(json.dumps(clearance,ensure_ascii=False,indent=2)+'\n')

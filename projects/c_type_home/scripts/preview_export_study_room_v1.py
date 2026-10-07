@@ -43,7 +43,7 @@ for name,eye,target,lens in views:
  scene.render.filepath=str(R/name);bpy.ops.render.render(write_still=True)
  if name=='STUDY_ROOM_ENTRY.png':
   sq=cam.rotation_euler.to_quaternion();pq=Quaternion((2**-.5,-2**-.5,0,0))@sq
-  preset={'schema':'spatial-canvas.view-preset.v1','preset_id':'study_v1_r3_entry',
+  preset={'schema':'spatial-canvas.view-preset.v1','preset_id':'study_v1_r4_entry',
    'projection':'perspective','fov_degrees':45,'near':.02,'far':1000,
    'position':[eye[0],eye[2],-eye[1]],'quaternion':[pq.x,pq.y,pq.z,pq.w],
    'orbit_target':[target[0],target[2],-target[1]],
@@ -54,7 +54,7 @@ for name,eye,target,lens in views:
    'source_locator':manifest['source_resource'],'bindings':manifest['extensions']['spatial_canvas.blender']['bindings'],
    'source_camera':{'position':eye,'quaternion':[sq.x,sq.y,sq.z,sq.w],'frame_id':'c_type_world','unit':'meter','up_axis':'Z'},
    'hidden_entity_ids':[],'ghost_entity_ids':[],'preview_uri':'STUDY_ROOM_ENTRY.png'}
-  (R/'study_v1_r3_entry.view-preset.json').write_text(json.dumps(preset,indent=2)+'\n')
+  (R/'study_v1_r4_entry.view-preset.json').write_text(json.dumps(preset,indent=2)+'\n')
 (R/('PREVIEW_'+mode.upper()+'_MANIFEST.json')).write_text(json.dumps({'source':str(source),
  'source_sha256':reg['source_sha256'],'engine':'BLENDER_WORKBENCH','mode':mode,'no_cycles':True,
  'views':[{'file':name,'eye':eye,'target':target,'lens_mm':lens} for name,eye,target,lens in views],
