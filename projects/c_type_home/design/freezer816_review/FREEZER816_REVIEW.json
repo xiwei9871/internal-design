@@ -1,0 +1,97 @@
+{
+  "status": "HUMAN_REVIEW",
+  "revision": "freezer816-cabinet-review-1",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/freezer816_review/FREEZER816_CABINET_REVIEW.blend",
+  "source_sha256": "3d1637cbc00b9f8a25e98b49c1997cd052a4e43fffca81dd4a2939bf7064e191",
+  "parent_source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V3.blend",
+  "parent_sha256": "93891e0b9c60a9d769e8e65ec4d04d592ea11dee4b9d713966d8b1033b9ebd31",
+  "manufacturer_reference": "owner image BD/BC-203KM(E),203L,top-opening;876mmwithhighadjustablefeet",
+  "freezer_size_mm": [
+    816,
+    550,
+    876
+  ],
+  "source_axis_size_m": [
+    0.55,
+    0.816,
+    0.876
+  ],
+  "freezer_long_axis": "Y/eastwallparallel",
+  "cabinet_body_length_mm": 984,
+  "cabinet_body_before_mm": 650,
+  "cabinet_gain_mm": 334,
+  "counter_length_mm": 1014,
+  "changed_native_ids": [
+    "B11_Rectangle039_BODY",
+    "B11_Rectangle039_LID_SEAM",
+    "SUNROOM_EAST_LOW_STORAGE",
+    "SUNROOM_EAST_STORAGE_COUNTER"
+  ],
+  "bounds": {
+    "B11_Rectangle039_BODY": [
+      [
+        12.249899864196777,
+        12.333999633789062,
+        0.0
+      ],
+      [
+        12.79990005493164,
+        13.149999618530273,
+        0.8759999871253967
+      ]
+    ],
+    "B11_Rectangle039_LID_SEAM": [
+      [
+        12.255399703979492,
+        12.338080406188965,
+        0.8296235203742981
+      ],
+      [
+        12.794400215148926,
+        13.145919799804688,
+        0.8327152729034424
+      ]
+    ],
+    "SUNROOM_EAST_LOW_STORAGE": [
+      [
+        12.140000343322754,
+        11.229999542236328,
+        0.07999999821186066
+      ],
+      [
+        12.739999771118164,
+        12.21399974822998,
+        0.8550000190734863
+      ]
+    ],
+    "SUNROOM_EAST_STORAGE_COUNTER": [
+      [
+        12.130000114440918,
+        11.220000267028809,
+        0.8550000190734863
+      ],
+      [
+        12.760000228881836,
+        12.234000205993652,
+        0.8899999856948853
+      ]
+    ]
+  },
+  "clearances": {
+    "rear_to_east_wall_m": 0.09999994506835996,
+    "north_to_north_wall_m": 0.24990038146972715,
+    "south_to_cabinet_counter_m": 0.09999942779541016,
+    "front_to_plant_ledge_m": 0.18989986419677685
+  },
+  "intersections": [],
+  "lid_sweep_hits": [],
+  "lid_sweep_assumption": "40mmthicklid,reareastYaxishinge0..90deg,notmanufacturercertification",
+  "no_extra_freezer_cover": true,
+  "unrelated_objects_fingerprint_equal": true,
+  "floor_support_checked": true,
+  "frozen_hashes": {
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V3.blend": "93891e0b9c60a9d769e8e65ec4d04d592ea11dee4b9d713966d8b1033b9ebd31",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb"
+  }
+}
