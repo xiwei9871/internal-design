@@ -1,0 +1,144 @@
+{
+  "schema": "c-type.whole-house-render-standard.v1",
+  "standard_id": "WHOLE_HOUSE_RENDER_STANDARD_V1",
+  "authority": "PRESENTATION_ONLY",
+  "source_revision": "console400-three-bath-mirrors-review-1",
+  "source_sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644",
+  "camera": {
+    "sensor_width_mm": 36,
+    "hero_height_above_floor_m": 1.55,
+    "hero_lens_mm": 28,
+    "ranges_mm": {
+      "living": [
+        28,
+        32
+      ],
+      "bedroom": [
+        28,
+        35
+      ],
+      "study": [
+        26,
+        32
+      ],
+      "kitchen": [
+        24,
+        28
+      ],
+      "bathroom": [
+        20,
+        24
+      ],
+      "detail": [
+        35,
+        50
+      ],
+      "other": [
+        24,
+        35
+      ]
+    },
+    "minimum_lens_mm": 20,
+    "vertical_tilt_deg": 0,
+    "composition_control": "lens shift; signed values depend on subject below/above camera",
+    "dof": false,
+    "aspect_ratio": "16:9",
+    "camera_gate": "room_by_room human review",
+    "same_view_same_matrix_all_styles": true,
+    "approved_camera_register": "CAMERA_REGISTER_REVIEW_V3.json",
+    "parameter_precedence": "Approved per-view records override suggested lens/height ranges; preserve all confirmed compositions."
+  },
+  "lighting": {
+    "time_logic": "soft neutral afternoon daylight + restrained warm practical fill",
+    "white_balance_kelvin": 5200,
+    "sun": {
+      "elevation_deg": 35,
+      "azimuth_deg_clockwise_from_north": 225,
+      "energy": 0.15,
+      "angular_diameter_deg": 5,
+      "color_temperature_kelvin": 5500
+    },
+    "world": {
+      "hdri": "courtyard_hdri_2k.hdr",
+      "strength": 0.45,
+      "rotation_z_deg": 0
+    },
+    "artificial_cct_kelvin": 2900,
+    "ambient_fraction": 1,
+    "daylight_area_fraction": 1,
+    "layers": "Daylight is key; ambient helpers at 35%; task/accent only at actual source fixture locations. No invented fixture geometry.",
+    "room_adjustments": "Local light power only; record every exception; no free changes to Sun/World/CCT.",
+    "window_fill_linear_rgb": [
+      0.86,
+      0.92,
+      1
+    ],
+    "lookdev_note": "Use visually verified source presentation fill levels; RGB-balanced warm fill and neutral daylight; directional Sun0.15 only, avoid orange cast. Applied consistently to all rooms.",
+    "ambient_linear_rgb": [
+      1,
+      0.8,
+      0.61
+    ]
+  },
+  "color_management": {
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure_ev": 0.5,
+    "per_room_ev_override_default": 0,
+    "maximum_room_override_ev": 0.3,
+    "gamma": 1,
+    "white_balance_tint": 0
+  },
+  "render": {
+    "preview": {
+      "engine": "BLENDER_WORKBENCH",
+      "resolution": [
+        960,
+        540
+      ],
+      "purpose": "camera/geometry gate; not lighting approval"
+    },
+    "look_preview": {
+      "engine": "CYCLES",
+      "samples": 32,
+      "resolution": [
+        960,
+        540
+      ]
+    },
+    "final": {
+      "engine": "CYCLES",
+      "samples": 256,
+      "adaptive_threshold": 0.01,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "denoise": "OPENIMAGEDENOISE",
+      "max_bounces": 8,
+      "diffuse_bounces": 4,
+      "transmission_bounces": 6,
+      "clamp_indirect": 3
+    }
+  },
+  "materials": {
+    "ash_roughness": [
+      0.45,
+      0.65
+    ],
+    "wall_roughness": 0.8,
+    "tile_roughness": 0.5,
+    "stone_roughness": 0.42,
+    "fabric_roughness": [
+      0.65,
+      0.85
+    ]
+  },
+  "image2": {
+    "model": "gpt-image-2",
+    "credentials": "Only Image2 launcher reads ~/.env. Never embed credentials in project/Blender/config.",
+    "role": "Same-camera faithful + geometry conditioned visual variants; geometry/camera numeric authority remains Blender; each output requires drift review."
+  },
+  "status": "CAMERAS_APPROVED_BY_USER_2026-10-07; lighting baseline frozen for production",
+  "older_images": "Existing 32-sample images and previous cameras retained as previews; not standard-compliant finals."
+}
