@@ -1,0 +1,15 @@
+# Approved bedroomconsole+threebathmirror review
+
+Sequentialscope: bedroomfirst,thenmasterbath,secondarybath,guestbath. Parentcurrentsecondarybath850 .blendSHA4e94f187a7a6c67697aa6c939ac6e88f58c8ca129830e628f7229522d4ce37bc. NoauthoritativeR4/B0orarchitecturemodification.
+
+Bedroom: retireBW1_COUPLE_SHALLOW_SHELF and3bookproxies; centred2000x400x400natural-edge lowconsole withasymmetricwoodsupports/smallhollowdrawer, restrainedbooks/vase; pale1200x600artframe wallcomposition. Bedtail~717mm,temporaryfurnitureenvelopeapprovedminimum400depth. Sourceworld wallX8.0001,consoleX8.05..8.45,Y1.087156..3.087156,topZ.85.
+
+Baths: preservecabinetfootprintheight/routing; unifyplainlightashbodyandwarmwhitecounter. Master:1200base,880x700roundedrectangle mirror with250mm shallowopenstorage. Secondary:existing1200vanity,650roundmirror centredonexistingbasin and220mmshallowopenstorage. Guest:1200base,900x700roundedrectangle mirror and220mmopenstorage. Mirrormountscome fromnamed wallfaces/cabinetbounds,notphotos. Picturesinformthinrim/shallowstorage/neutralpalette,notdoublebasin/layout/heavyvein/goldhardware.
+
+- [x] Auditspecificvanities/roomwallindexandhash/preflight.
+- [x] BuildbedroomandreviewWorkbench; preserveallother objects exceptretirednames.
+- [x] Masterbaththen secondaryandguestmirror/upperstorage; improvegenericcabinetproxieswithinexistingenvelopes, nofixturemoves. Checkwall/frameintersection andsupportedmaterials.
+- [x] ExportfullGLB/source/registry,relationalcandidateevidencerelink;freshimportcountanddimensions/frozenhashchecks.
+- [x] ShowfullhouseCodex5176withdecisionviews,explicitstage/commit/pushsourceonly. StopHUMAN_REVIEW, noCLIlogin,noauto-merge.
+
+Delivergeometry/Workbenchreview—notfinalCycles/procurement. Referenceimagesuserprovided;redrawgenericdesignforms,nocopyrighttexturecopies. Newmeshbudget<60000triangles;opaqueplaincolors/reflectionplaceholderinproxy.

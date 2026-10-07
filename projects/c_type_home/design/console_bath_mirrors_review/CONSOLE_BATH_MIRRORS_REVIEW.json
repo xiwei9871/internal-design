@@ -1,0 +1,141 @@
+{
+  "status": "HUMAN_REVIEW",
+  "revision": "console400-three-bath-mirrors-review-1",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console_bath_mirrors_review/CONSOLE400_THREE_BATH_MIRRORS.blend",
+  "source_sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644",
+  "parent_source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/secondary_bath850_review/SECONDARY_BATH_850_WARDROBE1200.blend",
+  "parent_sha256": "4e94f187a7a6c67697aa6c939ac6e88f58c8ca129830e628f7229522d4ce37bc",
+  "retired_native_ids": [
+    "BW1_COUPLE_SHALLOW_SHELF",
+    "BW1_COUPLE_BOOK_0",
+    "BW1_COUPLE_BOOK_1",
+    "BW1_COUPLE_BOOK_2"
+  ],
+  "edited_native_ids": [
+    "B11_Rectangle035_DIMENSIONAL_BODY",
+    "R3_VANITY_BACK",
+    "R3_VANITY_BASE",
+    "R3_VANITY_BASIN_REVIEW",
+    "R3_VANITY_FRONT_0",
+    "R3_VANITY_FRONT_1",
+    "R3_VANITY_L",
+    "R3_VANITY_PLINTH",
+    "R3_VANITY_PULL_0",
+    "R3_VANITY_PULL_1",
+    "R3_VANITY_R",
+    "R3_VANITY_SHELF",
+    "R3_VANITY_TOP",
+    "B11_Rectangle030_DIMENSIONAL_BODY"
+  ],
+  "frozen_hashes": {
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/secondary_bath850_review/SECONDARY_BATH_850_WARDROBE1200.blend": "4e94f187a7a6c67697aa6c939ac6e88f58c8ca129830e628f7229522d4ce37bc",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb"
+  },
+  "rooms": {
+    "couple": [
+      "CBM_COUPLE_CONSOLE_TOP",
+      "CBM_COUPLE_CONSOLE_PORTAL",
+      "CBM_COUPLE_CONSOLE_PEDESTAL",
+      "CBM_COUPLE_CONSOLE_DRAWER",
+      "CBM_CONSOLE_BOOK_0",
+      "CBM_CONSOLE_BOOK_1",
+      "CBM_CONSOLE_BOOK_2",
+      "CBM_CONSOLE_VASE_BODY",
+      "CBM_CONSOLE_VASE_NECK",
+      "CBM_COUPLE_ART_FRAME",
+      "CBM_COUPLE_ART_PAPER",
+      "CBM_COUPLE_ART_LOW_LANDSCAPE"
+    ],
+    "master": [
+      "CBM_master_COUNTERTOP",
+      "CBM_master_LOWER_DOOR_0",
+      "CBM_master_LOWER_DOOR_1",
+      "CBM_MASTER_BASIN",
+      "CBM_master_TAP_STEM",
+      "CBM_master_TAP_SPOUT",
+      "CBM_MASTER_MIRROR_FRAME",
+      "CBM_MASTER_MIRROR",
+      "CBM_MASTER_UPPER_STORAGE",
+      "CBM_master_BOTTLE_0",
+      "CBM_master_BOTTLE_1",
+      "CBM_master_MIRROR_LIGHT"
+    ],
+    "secondary": [
+      "CBM_secondary_TAP_STEM",
+      "CBM_secondary_TAP_SPOUT",
+      "CBM_SECONDARY_MIRROR_FRAME",
+      "CBM_SECONDARY_MIRROR",
+      "CBM_SECONDARY_UPPER_STORAGE",
+      "CBM_secondary_BOTTLE_0",
+      "CBM_secondary_BOTTLE_1"
+    ],
+    "guest": [
+      "CBM_guest_COUNTERTOP",
+      "CBM_guest_LOWER_DOOR_0",
+      "CBM_guest_LOWER_DOOR_1",
+      "CBM_GUEST_BASIN",
+      "CBM_guest_TAP_STEM",
+      "CBM_guest_TAP_SPOUT",
+      "CBM_GUEST_MIRROR_FRAME",
+      "CBM_GUEST_MIRROR",
+      "CBM_GUEST_UPPER_STORAGE",
+      "CBM_guest_BOTTLE_0",
+      "CBM_guest_BOTTLE_1",
+      "CBM_guest_MIRROR_LIGHT"
+    ]
+  },
+  "console_size_m": [
+    2,
+    0.4,
+    0.4
+  ],
+  "console_bedtail_clear_m": 0.7169303894042969,
+  "bath_configs": {
+    "master": {
+      "u0": 13.1385,
+      "u1": 14.3385,
+      "wall": 6.3999,
+      "normal": "south",
+      "cab": "B11_Rectangle035_DIMENSIONAL_BODY",
+      "mirror_center": 13.5985,
+      "mirror_width": 0.88,
+      "storage": [
+        14.0885,
+        14.3385
+      ]
+    },
+    "secondary": {
+      "u0": 9.228,
+      "u1": 10.428,
+      "wall": 6.4499,
+      "normal": "south",
+      "cab": null,
+      "mirror_center": 9.828,
+      "mirror_width": 0.65,
+      "storage": [
+        10.185,
+        10.405
+      ]
+    },
+    "guest": {
+      "u0": 8.0123,
+      "u1": 9.2123,
+      "wall": 8.0001,
+      "normal": "east",
+      "cab": "B11_Rectangle030_DIMENSIONAL_BODY",
+      "mirror_center": 8.5023,
+      "mirror_width": 0.9,
+      "storage": [
+        9.025,
+        9.245
+      ]
+    }
+  },
+  "native_architecture_collision_pairs": [],
+  "new_triangles": 14772,
+  "authority_note": "Derivedgeometry/style,noarchitectural/plumbingmoves;mirrorproxycolor notreflectionrender",
+  "unrelated_fingerprints_equal": true,
+  "textures": false,
+  "cycles": false
+}
