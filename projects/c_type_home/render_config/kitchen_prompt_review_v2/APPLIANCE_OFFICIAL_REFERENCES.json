@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-08",
+  "status": "OFFICIAL_REFERENCE_RESEARCH_ONLY",
+  "cooktop": {
+    "reference_model": "FOTILE JZT-01-HE1G-12T",
+    "page": "https://www.fotile.com/product/12386.html",
+    "top_image": "https://hsimage.fotile.com/202502190929356098285.jpg",
+    "oblique_image": "https://hsimage.fotile.com/202502190929358709336.jpg",
+    "manufacturer_size_mm": [
+      863,
+      455,
+      138
+    ],
+    "panel_material": "430 stainless steel",
+    "observed_visual_features": [
+      "two raised burner assemblies",
+      "black four-support pan stands",
+      "concentric stepped burner caps/rings",
+      "two physical rotary controls",
+      "recessed stainless panel / spill area"
+    ],
+    "role": "appearance and assembly reference; not confirmed owner SKU or installation fit"
+  },
+  "hood": {
+    "reference_model": "FOTILE CXW-258-EH52",
+    "page": "https://www.fotile.com/product/7915.html",
+    "front_image": "https://hsimage.fotile.com/202507181016458438494.png",
+    "manufacturer_size_mm": [
+      900,
+      515,
+      520
+    ],
+    "observed_visual_features": [
+      "T-shaped horizontal canopy",
+      "upper rectangular chimney/cover",
+      "black front fascia and control zone",
+      "oil collection cup below canopy"
+    ],
+    "role": "top-extraction structure reference; not confirmed owner SKU; source cabinetry determines install form"
+  },
+  "current_image_issues": [
+    "Gas burners interpreted as induction/electric discs; no pan supports or controls.",
+    "Extractor represented as an undetailed shallow metal rectangle."
+  ],
+  "authority": "Current frozen layout, appliance locations, existing countertop opening and cabinet envelopes stay authoritative. Product size is reference only; model identity/fit not determined."
+}
