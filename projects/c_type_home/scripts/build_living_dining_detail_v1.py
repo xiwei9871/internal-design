@@ -152,7 +152,20 @@ def cushion(n,lo,hi,material=fabric):
   for i in range(13):
    t=math.radians(start+i*90/12);pts.append((center.x+cx+rad*math.cos(t),center.y+cy+rad*math.sin(t),center.z+size.z*.25))
  line(n+'_piping',pts,.00085,closed=True);return o
-components=json.loads((OUT/'SOURCE_COMPONENTS.json').read_text())
+def connected_components(o):
+ me=o.data;adj=[[] for _ in me.vertices]
+ for edge in me.edges:a,b=edge.vertices;adj[a].append(b);adj[b].append(a)
+ seen=set();parts=[]
+ for start in range(len(adj)):
+  if start in seen:continue
+  queue=[start];seen.add(start);ids=[]
+  while queue:
+   a=queue.pop();ids.append(a)
+   for b in adj[a]:
+    if b not in seen:seen.add(b);queue.append(b)
+  points=[o.matrix_world@me.vertices[i].co for i in ids];parts.append({'bounds':[[min(v[i] for v in points) for i in range(3)],[max(v[i] for v in points) for i in range(3)]]})
+ return {'name':o.name,'parts':parts}
+components=[connected_components(bpy.data.objects['B11_Rectangle046_CATALOG_00_00'])]
 group=assembly('L_SOFA','B11_Rectangle046_CATALOG_00_00')
 sofa=next(o for o in components if 'Rectangle046' in o['name'])
 for i,p in enumerate(sofa['parts']):
