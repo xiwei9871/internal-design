@@ -11,6 +11,26 @@ STYLE = PARENT / 'kitchen_appliance_review_v3/A_gas_hood.png'
 ROOMS = json.loads((PARENT/'00_MANIFEST/WHOLE_HOUSE_ROOM_MANIFEST_V1.json').read_text())['rooms']
 CAMS = json.loads((M/'CAMERA_REGISTER.json').read_text())
 LEVELS = ['A_faithful', 'B_designer', 'C_creative']
+POLICY = ROOT / "render_config/photo_study_v2/GENERATION_POLICY.json"
+
+def select_levels(enabled, requested):
+    selected = [level for level in requested if level in enabled]
+    if not selected:
+        raise ValueError("Requested levels are deferred by owner policy")
+    return selected
+
+def input_preflight(images, prompt):
+    image_bytes = sum(Path(path).stat().st_size for path in images)
+    # Conservative allowance also covers possible base64 encoding and multipart headers.
+    estimated = (image_bytes * 4 + 2) // 3 + len(prompt.encode()) + 65536
+    if estimated > 24 * 1024 * 1024:
+        raise ValueError("Input exceeds conservative 24 MiB budget; preserve originals and inspect references")
+    return {"image_count": len(images), "image_bytes": image_bytes,
+            "estimated_encoded_bytes": estimated, "limit_bytes": 24 * 1024 * 1024}
+
+def retryable_failure(error, retry_count):
+    return retry_count < 1 and any(value in error for value in
+        ["HTTP 500", "HTTP 502", "HTTP 503", "HTTP 504", "HTTP 507", "HTTP 524", "timeout after"])
 SPECS = {
  'living': {
   'invariants': 'One L-shaped main sofa, one independent window chaise, one coffee table, existing low cabinets. Keep the open fitness reserve EMPTY: no equipment, chair or console there. No separate ottoman or second sofa. Existing coffee-table footprint stays. Chaise is a lounging chaise, not an upright chair. No TV or new ceiling cove.',
@@ -77,6 +97,12 @@ COMMON = '''Produce one credible high-end residential interior photograph, in th
 Image2 is the owner-liked corrected KITCHEN photo: transfer natural texture/lighting/material separation and workmanship ONLY, never kitchen furniture, hob, hood, cabinetry or camera into this room. Subsequent catalogue images are actual furniture construction references ONLY, adapted to source functional footprints, not copied layout or dimensions. Output no labels/collage/people/brand text.
 Photograph quality: neutral soft afternoon daylight from REAL source windows, believable shadow falloff and furniture contact shadows, visible real joinery at supports, crisp but natural wood grain at true scale, cloth seams/soft weight/cushion compression, gentle highlights on stone/metal, whites keep texture, dark elements retain detail. One direction of daylight, restrained warm practical fill, no orange/yellow wash, no uniformly bleached beige, no flat CGI or waxy/blurred microtexture. Normal dry rooms pale matte woodfloor; kitchen/bath/service/sunroom warmgreige matte tile. Rugs only within existing furniture area. Sparse purposeful ceramics/books; do not fill circulation. Lights cannot invent architecture. Camera foreground crops remain, do not shrink furniture to reveal everything.'''
 
+SPECS["kitchen"] = {
+    "invariants": "Preserve fixed kitchen cabinets, every seam, sink position, refrigerator, window and door. If visible the hob is a real two-burner GAS hob with raised metal pan supports, burner caps and controls, never electric discs. Existing hood stays under its cabinet with real intake, controls and lights. No new hood chimney, kitchen island, appliance, tap or opening.",
+    "references": [],
+    "variants": ["Match the accepted kitchen A: natural ash cabinets, quiet cream countertop, real metallic refrigerator and gas cooking equipment. Keep all functional locations and cabinet panel boundaries.", "Deferred wood/warmwhite finish within original seams.", "Deferred sage finish within original seams."]
+}
+
 def geometry(room, view):
     path = PARENT/'camera_review_v3'/f'{room}_{view}_preview.png'
     if room=='living' and view in ['VIEW_03','VIEW_05']:
@@ -88,40 +114,83 @@ def make_job(room, view, level):
     refpaths=[STYLE]+[OUT/'references'/(name+'.jpg') for name in spec['references'][:3]]
     if view!='VIEW_01': refpaths=[d/'VIEW_01.png', STYLE]
     text=COMMON+'\nROOM INVARIANTS: '+spec['invariants']+'\nSURFACE/FURNITURE DIRECTION: '+spec['variants'][idx]
+    if room == "kitchen":
+        text=text.replace("Image2 is the owner-liked corrected KITCHEN photo: transfer natural texture/lighting/material separation and workmanship ONLY, never kitchen furniture, hob, hood, cabinetry or camera into this room.", "The accepted kitchen A is this SAME ROOM appearance reference: retain its real gas hob, hood mechanism and materials only where this geometry view actually shows them; never transfer its viewpoint or occluded fixtures.")
+    if level == "A_faithful":
+        text += "\nFAITHFUL CONTRACT: Preserve the original furniture family, cabinet divisions, support construction and silhouette. Add realistic texture, fabric softness and workmanship without redesigning furniture. Preserve the existing Faithful hero material allocations across views. No new stone table, cane panel, sculptural support or statement color unless already present in this Faithful hero. Existing source geometry controls camera and architectural boundaries."
     if view!='VIEW_01':
         text+='\nREFERENCE ROLES OVERRIDE: image1 is THIS view geometry/camera. Image2 is the SAME ROOM/SAME VARIANT approved photo hero: retain its exact furniture family, table system, material allocations and styling density while looking from image1 camera; do NOT copy image2 crop. Image3 is kitchen photo character only. No cross-view furniture replacement. Hidden furniture stays hidden.'
+    if level != "A_faithful":
+        # Future targeted edits have their own appearance contract and no kitchen anchor.
+        refpaths=[OUT/room/"A_faithful"/(view+".png")]
+        if view != "VIEW_01":refpaths.append(d/"VIEW_01.png")
+        materials = ("B_designer: apply only the room-specific wood/stone, neutral upholstery and warmwhite finish allocations below; preserve unrelated surfaces. Use controlled neutral residential photography."
+                     if level == "B_designer" else
+                     "C_creative: apply only the room-specific sage/greige, weave or wood allocations below, where explicitly permitted. Use selective color blocks and directional editorial daylight through the same real openings; retain open divisions and unrelated surfaces.")
+        text="Image1 is exact current geometry and camera authority. Image2 is this room/view Faithful photo: preserve its untouched appearance, object count, positions and footprints. Do not copy another room. Flat ceiling, same openings/levels and all clearances. No camera, architecture or layout change. Photographic realism remains required.\nROOM INVARIANTS: "+spec["invariants"]
+        text+="\nCHANGE LEDGER: "+materials+"\nROOM TARGET: "+spec["variants"][idx]
+        text+="\nVisible differentiation must come from at least two named dominant surface regions, not a global warm tint or extra decoration. No wholesale beige recoloring. No people, lettering or extra furniture. Confirm eligible visible regions with the human before generating; hidden regions stay hidden."
+        if view != "VIEW_01":text+="\nImage3 is the approved SAME VARIANT hero; carry its material allocation and construction without copying its viewpoint."
     if room=='living':
         text+='\nVIEW: '+{'VIEW_01':'Look toward northbay, reclinedchaise,eastlowcabinet and sunroomdoor; stairs/dining behindcamera mustnot appear.', 'VIEW_02':'Reverse toward Lsofa,3wavesteps,diningslidingopening; northwindow behindcamera mustnot appear.', 'VIEW_03':'Near northwindow toward3steps/reading shelf/diningdepth. NO invented curvedceiling above stairs.', 'VIEW_04':'Northbay glazing, projectingwindowsill,sunroomdoor andpartialchaise; do not force wholeLsofa into crop.', 'VIEW_05':'Dining/stair approach towardcompleteLsofa/chaise/coffeetable/northbay/eastlowcabinet.'}[view]
-    pf=d/(view+'.prompt.txt');pf.write_text(text+'\n'); return {'room_id':room,'view_id':view,'level':level,'geometry':str(geometry(room,view)),'refs':[str(p) for p in refpaths],'prompt':str(pf),'output':str(d/(view+'.png'))}
+    pf=d/(view+'.prompt.txt')
+    if not (d/(view+'.png')).exists() and not (d/(view+'.json')).exists():
+        pf.write_text(text+'\n')
+    return {'room_id':room,'view_id':view,'level':level,'geometry':str(geometry(room,view)),'refs':[str(p) for p in refpaths],'prompt':str(pf),'output':str(d/(view+'.png'))}
 
 def run_job(job):
     output=Path(job['output']);meta=output.with_suffix('.json')
-    if output.exists() and meta.exists(): return json.loads(meta.read_text())
+    if output.exists():
+        return json.loads(meta.read_text()) if meta.exists() else {"job":job,"status":"CACHE_PRESERVED_PENDING_VISUAL_QA"}
     if meta.exists():return {**json.loads(meta.read_text()),'skipped_prior_attempt':True}
-    cmd=[sys.executable,str(CLI),'edit','--image',job['geometry']]
+    policy=json.loads(POLICY.read_text())
+    if job["level"] not in policy["enabled_levels"]:
+        raise ValueError("Generation of this level is deferred by owner")
+    preflight=input_preflight([job["geometry"],*job["refs"]],Path(job["prompt"]).read_text())
+    cmd=['rtk','proxy','python3',str(CLI),'edit','--image',job['geometry']]
     for ref in job['refs']:cmd+=['--image',ref]
     cmd+=['--prompt-file',job['prompt'],'--model','gpt-image-2','--quality','high','--size','1920x1080','--max-attempts','1','--timeout','240','--out',str(output)]
     started=time.time()
-    result=subprocess.run(cmd,capture_output=True,text=True,timeout=270)
+    try:
+        result=subprocess.run(cmd,capture_output=True,text=True,timeout=270)
+    except subprocess.TimeoutExpired:
+        result=subprocess.CompletedProcess(cmd,124,stdout="",stderr="Provider launcher timeout after 270 seconds")
     log=result.stdout+'\n'+result.stderr;output.with_suffix('.cli.log').write_text(log)
     record={'job':job,'status':'GENERATED_PENDING_VISUAL_QA' if result.returncode==0 and output.exists() else 'API_FAILED','seconds':time.time()-started,'returncode':result.returncode,'retry_count':0,'model':'gpt-image-2','quality':'high','requested_size':[1920,1080],'geometry_sha256':hashlib.sha256(Path(job['geometry']).read_bytes()).hexdigest()}
+    record["input_preflight"]=preflight
     if result.returncode:record['error']=result.stderr.strip()
+    if result.returncode and not output.exists() and retryable_failure(record.get("error", ""), 0):
+        output.with_suffix(".attempt0.json").write_text(json.dumps(record,ensure_ascii=False,indent=2))
+        time.sleep(10)
+        try:
+            retry=subprocess.run(cmd,capture_output=True,text=True,timeout=270)
+        except subprocess.TimeoutExpired:
+            retry=subprocess.CompletedProcess(cmd,124,stdout="",stderr="Provider launcher timeout after 270 seconds")
+        output.with_suffix(".retry1.cli.log").write_text(retry.stdout+"\n"+retry.stderr)
+        record.update({"retry_count":1,"returncode":retry.returncode,"seconds":time.time()-started,
+                       "status":"GENERATED_PENDING_VISUAL_QA" if retry.returncode==0 and output.exists() else "API_FAILED",
+                       "original_error":record.get("error"),"error":retry.stderr.strip() if retry.returncode else None})
     meta.write_text(json.dumps(record,ensure_ascii=False,indent=2));print('PHOTO_V2',job['room_id'],job['view_id'],job['level'],record['status'],round(record['seconds'],1),flush=True);return record
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--room',required=True,choices=list(SPECS));parser.add_argument('--phase',choices=['hero','followup','prepare'],default='hero');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--room',required=True,choices=list(SPECS));parser.add_argument('--phase',choices=['hero','followup','prepare'],default='hero');parser.add_argument('--levels',nargs='+',choices=LEVELS,default=None);args=parser.parse_args()
+    enabled=json.loads(POLICY.read_text())["enabled_levels"]
+    levels=select_levels(enabled,args.levels or enabled)
     views=['VIEW_01'] if args.phase in ['hero','prepare'] else [f'VIEW_{i:02d}' for i in range(2,6)]
     if args.phase=='followup':
-        qa=OUT/args.room/'HERO_QA.json';assert qa.exists() and json.loads(qa.read_text())['status']=='PASS_FOR_PROPAGATION','Review three heroes before followup'
-    jobs=[make_job(args.room,v,l) for v in views for l in LEVELS]
+        for level in levels:
+            qa=OUT/args.room/("HERO_QA_"+level+".json")
+            if not qa.exists():qa=OUT/args.room/'HERO_QA.json'
+            assert qa.exists() and json.loads(qa.read_text())['status']=='PASS_FOR_PROPAGATION','Review enabled hero before followup'
+    jobs=[make_job(args.room,v,l) for v in views for l in levels]
     if args.phase=='prepare':print('JOBS_PREPARED',len(jobs));return
-    # At most2 independent provider calls; no duplicate queue or agent delegation.
+    # One serial provider call; preserve prior attempts and stop on non-transient errors.
     results=[];failed=0
     with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
         for start in range(0,len(jobs),1):
             batch=list(pool.map(run_job,jobs[start:start+1]));results+=batch
             failures=[r for r in batch if r['status']=='API_FAILED'];failed+=len(failures)
-            if any('HTTP 401' in r.get('error','') or 'HTTP 403' in r.get('error','') for r in failures) or any('HTTP 429' in r.get('error','') for r in failures) or failed>=3:break
-    (OUT/args.room/(args.phase+'_RUN.json')).write_text(json.dumps(results,ensure_ascii=False,indent=2))
+            if failures:break
+    (OUT/args.room/(args.phase+'_'+'_'.join(levels)+'_RUN.json')).write_text(json.dumps(results,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':main()
