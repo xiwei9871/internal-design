@@ -17,7 +17,7 @@
 
 传感器/宽高比影响FOV。同机位增加焦距会更裁切；缺画面先换可行位置/方向，不盲拉长镜头。保持垂直线，水平相机配lens shift；高度应相对于实际地面/台阶，不能统一world-Z。已获批准的矩阵优先于建议。DOF默认不掩盖几何，只有专门摄影目的才使用。
 
-三风格同view共用矩阵/lens/crop。AI必须检查是否偷换视角。细节view用当前几何或当前Faithful作为主图；只裁对应物体表面作appearance参考，必要时不用完整roomhero。主图回流能提高材质一致，也可能诱发复制主构图。
+Faithful/Designer同view共用矩阵/lens/crop；Creative为概念探索，按用户授权可用参考空间的相似取景，不能把重新设计当作锁定模式的相机/家具失败。AI必须检查是否偷换视角。细节view用当前几何或当前Faithful作为主图；只裁对应物体表面作appearance参考，必要时不用完整roomhero。主图回流能提高材质一致，也可能诱发复制主构图。
 
 ## Look Development 分开诊断
 

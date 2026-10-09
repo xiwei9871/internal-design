@@ -1,6 +1,6 @@
 # Targeted style comparison after Faithful acceptance
 
-Status: proposals only. Designer and Creative generation is disabled by GENERATION_POLICY.json. No result is claimed visually distinct until an owner-reviewed single-view comparison proves it.
+Historical proposal superseded on 2026-10-09: Designer keeps main room/furniture and adds integrated soft furnishing; Creative explores new furniture/layout inside the simple pale-natural-wood aesthetic. See living_style_pilot_v4 and v5 contracts. V3 material-only pilot rejected. Status: proposals only. Designer and Creative generation is disabled by GENERATION_POLICY.json. No result is claimed visually distinct until an owner-reviewed single-view comparison proves it.
 
 The former variants used the same strong kitchen appearance anchor, pale wood palette, daylight and restrained styling. A few adjective and tabletop changes were easily absorbed into the common appearance. Shared structural constraints are necessary; shared appearance constraints must not dominate the intended design change.
 

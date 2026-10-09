@@ -1,0 +1,60 @@
+{
+  "chair_cane": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/references/chair_cane.jpg",
+    "sha256": "29acd49dc38b3a89777bde9bfeaf9a14648cfa2e417525026508aef01882e103",
+    "source": "Local MuJiaMuYi owner catalogs listed in 00_MANIFEST/FURNITURE_REFERENCE_INDEX.json",
+    "role": "real furniture workmanship, not scene/layout authority"
+  },
+  "sofa_round": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/references/sofa_round.jpg",
+    "sha256": "7a09054624d1238c527cd398c17dfd904037d668f08420afd4a567e5a031e3c8",
+    "source": "Local MuJiaMuYi owner catalogs listed in 00_MANIFEST/FURNITURE_REFERENCE_INDEX.json",
+    "role": "real furniture workmanship, not scene/layout authority"
+  },
+  "bed_soft": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/references/bed_soft.jpg",
+    "sha256": "4f0d4a3ae1501ebdda219a26a270174fe8497066c869060a19aec04eabfeaf73",
+    "source": "Local MuJiaMuYi owner catalogs listed in 00_MANIFEST/FURNITURE_REFERENCE_INDEX.json",
+    "role": "real furniture workmanship, not scene/layout authority"
+  },
+  "sofa_woodframe": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/references/sofa_woodframe.jpg",
+    "sha256": "898f37600713c3d51daf9a00687fd5f33cccca14aaabad953d16155a92056f9c",
+    "source": "Local MuJiaMuYi owner catalogs listed in 00_MANIFEST/FURNITURE_REFERENCE_INDEX.json",
+    "role": "real furniture workmanship, not scene/layout authority"
+  },
+  "bed_wood": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/references/bed_wood.jpg",
+    "sha256": "2a1cee0eaa1bb733236c2cab191eac8d633ba14f667f6d10e56bb60f00d37684",
+    "source": "Local MuJiaMuYi owner catalogs listed in 00_MANIFEST/FURNITURE_REFERENCE_INDEX.json",
+    "role": "real furniture workmanship, not scene/layout authority"
+  },
+  "console": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/references/console.jpg",
+    "sha256": "5e367229e8475ef451102cf1f74dfeb77407041df62d800e9b2f46b0be622fc6",
+    "source": "Local MuJiaMuYi owner catalogs listed in 00_MANIFEST/FURNITURE_REFERENCE_INDEX.json",
+    "role": "real furniture workmanship, not scene/layout authority"
+  },
+  "chair": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/references/chair.jpg",
+    "sha256": "66034cac66bb2b4b4df1a6d3f3ac1abb626825e246fdf62046aeb24eef9f2ecd",
+    "source": "Local MuJiaMuYi owner catalogs listed in 00_MANIFEST/FURNITURE_REFERENCE_INDEX.json",
+    "role": "real furniture workmanship, not scene/layout authority"
+  },
+  "shelf": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/references/shelf.jpg",
+    "sha256": "333cda685af0ea08c2a2b034e1035009c470870b650b4df02d1e542cb5b213bc",
+    "source": "Local MuJiaMuYi owner catalogs listed in 00_MANIFEST/FURNITURE_REFERENCE_INDEX.json",
+    "role": "real furniture workmanship, not scene/layout authority"
+  },
+  "sofa_platform": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/references/sofa_platform.jpg",
+    "sha256": "7ef8eca2a93c33b4a318176ecce24e473fb615e0a9ac0c0823a334140ebf5aff",
+    "source": "Local MuJiaMuYi owner catalogs listed in 00_MANIFEST/FURNITURE_REFERENCE_INDEX.json",
+    "role": "real furniture workmanship, not scene/layout authority"
+  },
+  "appliances": {
+    "source_manifest": "projects/c_type_home/render_config/kitchen_prompt_review_v2/APPLIANCE_OFFICIAL_REFERENCES.json",
+    "role": "actual gas/hood mechanism; appearance only, owner SKU unknown"
+  }
+}

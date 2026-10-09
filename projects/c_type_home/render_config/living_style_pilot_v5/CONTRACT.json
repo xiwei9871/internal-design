@@ -1,0 +1,21 @@
+{
+  "authorization": "2026-10-09 owner retains improved Designer V4 and rejects Creative V4 aesthetic drift; permits creative furniture/layout ideas within simple pale natural-wood overall style",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console_bath_mirrors_review/CONSOLE400_THREE_BATH_MIRRORS.blend",
+  "source_sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644",
+  "input": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/living/A_faithful/VIEW_01.png",
+  "input_sha256": "73c3252cbe8da0b56088f3fa9b713ca3f23e6106e8792b98ea50b30f7eb57e84",
+  "prompt": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/render_config/living_style_pilot_v5/CREATIVE.prompt.txt",
+  "prompt_sha256": "874cbb28a459a19ac5eed384984afdd37ad799746c92ee432d8e50bb87499af8",
+  "out": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/living_style_pilot_v5/CREATIVE.png",
+  "retained_designer": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/living_style_pilot_v4/DESIGNER.png",
+  "scope": "one Creative concept only",
+  "authority": "INSPIRATION_ONLY",
+  "quality": "high",
+  "model": "gpt-image-2",
+  "requested_size": [
+    1920,
+    1080
+  ],
+  "estimated_input_bytes": 3358225,
+  "source_writeback": false
+}

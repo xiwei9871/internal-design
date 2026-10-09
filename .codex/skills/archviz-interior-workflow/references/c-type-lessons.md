@@ -6,7 +6,7 @@
 
 **有效工程控制：** 单实例锁、成功缓存、仅A启用policy、小JPEG联系表、网页缩略图、原生尺寸记录、续接聊天迁移监控。52补图请求完成，厨房已认可A主图复用。
 
-**尚未验证：** 新Designer/Creative参考与change ledger规则。没有新B/C样张，所以不能宣称风格区分已解决。Faithful也有7个明显待修项，不是75张全部视觉通过。
+**历史未验证阶段：** 早期B/C材质change-ledger未成功；后续V3小样被用户认为区别不足。最新已认可的是Designer V4软装、Creative V5简洁浅木家具概念，见末尾新决定。Faithful仍有7个明确待修项，不能称75张全部几何通过。
 
 ## 踩坑与防复发
 
@@ -37,3 +37,15 @@
 - 本地产物 `projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/00_MANIFEST/FAITHFUL_COMPLETION_REVIEW.json` 和各房 `FAITHFUL_VISUAL_QA.json`
 
 原模型及worktree路径从当前registry解析，不从这里固定。此档案适用于C-Type；新项目另建经验档案。
+
+## 2026-10-09后续人工修正
+
+客厅V3仅灰褐石面与灰绿藤编/木面变化，用户仍认为没有本质区别，否定其设计定义。最新定义：Designer保留主体后设计软装（挂画、摆件、织物、装饰灯具等）；Creative可以脱离原家具与布局，让AI提出启发概念。V4按此执行，不能以“材质能辨认”宣称用户目标已达成。Creative图片不回写原模型，输出标为灵感概念。
+
+## Creative V4审美漂移与新边界
+
+用户认为Designer V4有改善，可保留；Creative V4的深石材、浓重配色和装饰墙不符合简洁浅原木住宅方向。自由重设计是家具、组合与空间想法的自由，不是整体风格无边界漂移。C-Type Creative继续以浅白蜡木/浅橡木、米白织物、明亮中性日光、留白和低装饰密度为锚点；只允许少量低饱和点色。V5只重做Creative，Designer V4不重跑，原模型不改。新小样仍待人审。
+
+## 全屋传播授权与主图检查点
+
+用户已认可客厅Faithful、Designer V4和Creative V5三模式，明确要求全屋15×3×5。新批whole_house_modes_v3复用75Faithful和2客厅主图，新增148张B/C；旧批与model不变。各房主图已逐张打开，8个需要改进的主图分别留原图并产生repair1，经agent候选检查后记录selected_derivative，不是自动人工接受。主图的装饰位置必须记录continuity：客厅反向view把原东柜上挂画移到沙发后墙，已标REJECT_DECOR_LOCATION_DRIFT，禁止用看起来同风格替代空间一致性。

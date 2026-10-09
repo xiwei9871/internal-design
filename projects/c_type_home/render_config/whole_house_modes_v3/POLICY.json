@@ -1,0 +1,19 @@
+{
+  "revision": "2026-10-09-owner-approved-three-modes",
+  "enabled_levels": [
+    "A_faithful",
+    "B_designer",
+    "C_creative"
+  ],
+  "scope": "15rooms,5views each",
+  "expected": 225,
+  "fresh_calls": 148,
+  "source_writeback": false,
+  "style": "simple pale naturalwood,ivory,bright neutral daylight,sparse decoration",
+  "stop": "HUMAN_REVIEW",
+  "hero_gate": "AGENT_CANDIDATE_PROPAGATION_REVIEW",
+  "max_retry": 1,
+  "input_budget_bytes": 25165824,
+  "creative_aesthetic": "owner accepted V5: simple paleash/ivory/bright/sparse, not darkstone or decorative hotel",
+  "owner_acceptance": "living current three modes accepted; otherroom style method propagation authorized"
+}
