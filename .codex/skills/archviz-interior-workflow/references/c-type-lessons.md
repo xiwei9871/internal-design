@@ -49,3 +49,7 @@
 ## 全屋传播授权与主图检查点
 
 用户已认可客厅Faithful、Designer V4和Creative V5三模式，明确要求全屋15×3×5。新批whole_house_modes_v3复用75Faithful和2客厅主图，新增148张B/C；旧批与model不变。各房主图已逐张打开，8个需要改进的主图分别留原图并产生repair1，经agent候选检查后记录selected_derivative，不是自动人工接受。主图的装饰位置必须记录continuity：客厅反向view把原东柜上挂画移到沙发后墙，已标REJECT_DECOR_LOCATION_DRIFT，禁止用看起来同风格替代空间一致性。
+
+## 全屋三模式V3完成记录
+
+225候选槽位完整、三方向各75；15房矩阵及41修正候选已打开，停止HUMAN_REVIEW。299旧图及源/R4/B0哈希保持。复用77张，新增148基础图+8主图修正+33视角/语义修正共189请求，无传输重试；38个选入derivative，原图未覆盖。主图输入改善了模式区分但跨view仍有陈设移墙和细节机位主图化；强geometry+局部appearance能恢复取景，却可能削弱Creative概念，不能包装为完全成功。Faithful三残留失败：厨房VIEW05气灶圆盘、母亲卧室VIEW05椅子/邻物、次主卫VIEW02门外结构；一次视觉修正后停止。家具/设备语义的局部ref应明确真实机制，不要仅用材质crop，后续改进需用户指定。详见docs/whole-house-three-modes-v3-final.md和本地FINAL_REVIEW.json。

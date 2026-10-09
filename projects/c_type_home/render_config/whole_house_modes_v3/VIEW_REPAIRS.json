@@ -89,5 +89,145 @@
     "level": "C_creative",
     "kind": "camera",
     "reason": "Restore the northwindow/existing workniche close crop, not the tallutility cabinet hero. Foldtable stays at hero physical wall, cannot relocate to another counter. Show only partial same-concept furniture where view includes it."
+  },
+  {
+    "room": "entry",
+    "view": "VIEW_05",
+    "level": "B_designer",
+    "kind": "camera",
+    "reason": "Restore dining/entry approach toward full livingwindow/seating based on THIS Blendercamera; do not copy entry shoeunit hero. Entry objects are behind/side, only appear if actualview includes them. Retain thismode lightwood/stylingfamily."
+  },
+  {
+    "room": "entry",
+    "view": "VIEW_05",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Restore dining/entry approach toward full livingwindow/seating based on THIS Blendercamera; do not copy entry shoeunit hero. Entry objects are behind/side, only appear if actualview includes them. Retain thismode lightwood/stylingfamily."
+  },
+  {
+    "room": "reading_transition",
+    "view": "VIEW_03",
+    "level": "B_designer",
+    "kind": "camera",
+    "reason": "Follow exact shelf/rail close camera, not sourcephoto stairhero. Keep3actual wave steps only where crop includes; same source shelf forDesigner, sameCreative openconsole/two-shelf family forCreative."
+  },
+  {
+    "room": "reading_transition",
+    "view": "VIEW_05",
+    "level": "B_designer",
+    "kind": "camera",
+    "reason": "Follow exact shelf/rail close camera, not sourcephoto stairhero. Keep3actual wave steps only where crop includes; same source shelf forDesigner, sameCreative openconsole/two-shelf family forCreative."
+  },
+  {
+    "room": "reading_transition",
+    "view": "VIEW_03",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Follow exact shelf/rail close camera, not sourcephoto stairhero. Keep3actual wave steps only where crop includes; same source shelf forDesigner, sameCreative openconsole/two-shelf family forCreative."
+  },
+  {
+    "room": "reading_transition",
+    "view": "VIEW_05",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Follow exact shelf/rail close camera, not sourcephoto stairhero. Keep3actual wave steps only where crop includes; same source shelf forDesigner, sameCreative openconsole/two-shelf family forCreative."
+  },
+  {
+    "room": "hallway",
+    "view": "VIEW_03",
+    "level": "B_designer",
+    "kind": "camera",
+    "reason": "Restore THIS source door-detail or living connection crop. No longhallway hero replacement. Localwallwash/woodtrim styling only if these physicalplanes in view."
+  },
+  {
+    "room": "hallway",
+    "view": "VIEW_04",
+    "level": "B_designer",
+    "kind": "camera",
+    "reason": "Restore THIS source door-detail or living connection crop. No longhallway hero replacement. Localwallwash/woodtrim styling only if these physicalplanes in view."
+  },
+  {
+    "room": "hallway",
+    "view": "VIEW_03",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Restore THIS source door-detail or living connection crop. No longhallway hero replacement. Localwallwash/woodtrim styling only if these physicalplanes in view."
+  },
+  {
+    "room": "hallway",
+    "view": "VIEW_04",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Restore THIS source door-detail or living connection crop. No longhallway hero replacement. Localwallwash/woodtrim styling only if these physicalplanes in view."
+  },
+  {
+    "room": "hallway",
+    "view": "VIEW_05",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Restore THIS source door-detail or living connection crop. No longhallway hero replacement. Localwallwash/woodtrim styling only if these physicalplanes in view."
+  },
+  {
+    "room": "mother_bedroom",
+    "view": "VIEW_05",
+    "level": "B_designer",
+    "kind": "semantic",
+    "reason": "Restore source backed vanity chair, not stool, current sourceviewcrop. Keep vanity/TVunit and only permitted modest accessories."
+  },
+  {
+    "room": "study",
+    "view": "VIEW_04",
+    "level": "B_designer",
+    "kind": "camera",
+    "reason": "Restore tight view of underwindowdaybed andpartialbookcase, desk only if currentcrop has it. Do not widen to full tea-tablehero; retain sameconceptlinen/wood."
+  },
+  {
+    "room": "study",
+    "view": "VIEW_04",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Restore tight view of underwindowdaybed andpartialbookcase, desk only if currentcrop has it. Do not widen to full tea-tablehero; retain sameconceptlinen/wood."
+  },
+  {
+    "room": "secondary_bath",
+    "view": "VIEW_02",
+    "level": "B_designer",
+    "kind": "semantic",
+    "reason": "Exact original bathdoor/shower/edgevanity camera: no additional vanity/mirror outside the room behind doorway. Retain only the source-visible fixture corners; no duplicated roundmirror."
+  },
+  {
+    "room": "secondary_bath",
+    "view": "VIEW_02",
+    "level": "C_creative",
+    "kind": "semantic",
+    "reason": "Exact original bathdoor/shower/edgevanity camera: no additional vanity/mirror outside the room behind doorway. Retain only the source-visible fixture corners; no duplicated roundmirror."
+  },
+  {
+    "room": "north_sunroom",
+    "view": "VIEW_04",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Restore actual longnorthplantledge/windowdetail, not sofa/laundryhero. Sourceequipment stays offcrop. Creative southbench is elsewhere, do notmove/duplicateonto northledge."
+  },
+  {
+    "room": "north_sunroom",
+    "view": "VIEW_05",
+    "level": "B_designer",
+    "kind": "semantic",
+    "reason": "Only the actual chestfreezer816 and adjacent storage in current detail view. Remove all baskets/plants/cushions/seat on freezerlid, leave independent TOP OPENING white lid completelyclear. Creative loungebench remains southwest behindcamera, never beside/on freezer. No tallfridge or countertop overlid."
+  },
+  {
+    "room": "north_sunroom",
+    "view": "VIEW_05",
+    "level": "C_creative",
+    "kind": "semantic",
+    "reason": "Only the actual chestfreezer816 and adjacent storage in current detail view. Remove all baskets/plants/cushions/seat on freezerlid, leave independent TOP OPENING white lid completelyclear. Creative loungebench remains southwest behindcamera, never beside/on freezer. No tallfridge or countertop overlid."
+  },
+  {
+    "room": "couple_bedroom",
+    "view": "VIEW_02",
+    "level": "B_designer",
+    "kind": "decor",
+    "reason": "Remove the duplicated landscape painting aboveconsole, restore original quietsmallart overconsole as inFaithful; landscape belongs abovebed onoppositewall, cannot be copiedhere. Keep styledconsolevessels/textiles,currentmain furniture/crop."
   }
 ]

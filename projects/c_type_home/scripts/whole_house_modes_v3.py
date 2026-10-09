@@ -144,7 +144,9 @@ def update_gallery():
      im.thumbnail((294,165));canvas.paste(im,(x,y+20));content=f'<a href="/{p.relative_to(PARENT)}" target="_blank"><img loading="lazy" src="/{thumb.relative_to(PARENT)}"></a>'
      records.append({"room_id":room,"level":level,"view_id":view,"path":str(p),"native_size":native,"status":status})
     else:content=f'<div class="missing">{html.escape(status)}</div>';draw.rectangle((x,y+20,x+294,y+185),fill="#e6e2d8")
-    draw.text((x+5,y+2),level+" "+view,fill="black");figs.append(f'<figure><small>{level} {view}</small>{content}<p>{html.escape(status)}</p></figure>')
+    origin=OUT/room/level/(view+".png")
+    origin_link=f'<a href="/{origin.relative_to(PARENT)}" target="_blank">原候选</a>' if r.get("selected_derivative") else ''
+    draw.text((x+5,y+2),level+" "+view,fill="black");figs.append(f'<figure><small>{level} {view}</small>{content}<p>{html.escape(status)}</p><small>{html.escape(" · ".join(r.get("visual_notes",[])))}</small>{origin_link}</figure>')
   canvas.save(review/"ROOM_3X5.jpg",quality=83)
   gates=[]
   for level in LEVELS[1:]:
@@ -158,6 +160,12 @@ def update_gallery():
  css='body{font:15px system-ui;margin:0;background:#f7f4ed;color:#333}header,section{padding:24px 3vw}nav{position:sticky;top:0;background:#f7f4ed;padding:15px;display:flex;flex-wrap:wrap;gap:12px}.matrix{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}figure{margin:0;background:white;padding:6px}img{width:100%}.missing{aspect-ratio:16/9;background:#e6e2d8;display:grid;place-content:center}figure p{font-size:10px}section{scroll-margin-top:90px}@media(max-width:850px){.matrix{grid-template-columns:repeat(2,1fr)}}'
  nav="".join(f'<a href="#{room}">{names[room]}</a>' for room in directions())
  page=f'<!doctype html><html lang="zh"><meta charset="utf-8"><meta http-equiv="refresh" content="90"><title>全屋三模式V3</title><style>{css}</style><header><h1>全屋三模式 V3</h1><p>{summary["generated"]}/225，Faithful {counts["A_faithful"]}/75 · Designer {counts["B_designer"]}/75 · Creative {counts["C_creative"]}/75</p><p>Faithful忠实模型；Designer保留主体深化软装；Creative在简洁浅原木风格内探索设计。Creative仅为灵感，不回写模型。旧图与已知Faithful问题均保留；数量不是验收通过。</p></header><nav>{nav}</nav>'+"".join(sections)+"</html>"
+ final=OUT/"00_MANIFEST/FINAL_REVIEW.json"
+ if final.exists():
+  f=json.loads(final.read_text());summary["status"]="HUMAN_REVIEW";atomic_json(OUT/"00_MANIFEST/PROGRESS.json",summary)
+  links=" · ".join(f'<a href="/{(OUT/(l+"_WHOLE_HOUSE_HERO.jpg")).relative_to(PARENT)}" target="_blank">{l} 全屋主图总览</a>' for l in LEVELS)
+  note=f'<p><b>候选生成完整，停止在人工评审。15房矩阵和41修正候选已检查；{len(f.get("residual_failures",[]))}张一次修正后仍未解决。逐张限制见下方。</b></p><p>{links}</p>'
+  page=page.replace('</header>',note+'</header>').replace('<meta http-equiv="refresh" content="90">','')
  (OUT/"review_gallery.html").write_text(page);return summary
 
 def coordinate():
