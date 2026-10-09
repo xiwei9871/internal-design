@@ -1,0 +1,40 @@
+{
+  "schema": "c-type.room-design-selection.v1",
+  "room": "dining",
+  "date": "2026-10-09",
+  "status": "OWNER_APPROVED_MODELING_DIRECTION",
+  "confirmed_requirements": {
+    "artwork": false,
+    "reason": "owner openkitchen cleaning/oil concern",
+    "whole_home_style": "confirmed pale naturalwood/ivory/simple"
+  },
+  "preferences": {
+    "table": "approved racetrack within 1600x800 mm source envelope",
+    "pendant": "C_creative pale rounded dome/oval-like lamp appearance, real shape/material unspecified"
+  },
+  "reference": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/whole_house_modes_v3/dining/C_creative/VIEW_01.png",
+    "sha256": "a1fd016efec998a5bff53c5be0eeb4c6ba2054dc2b696e27e60d2a2df8256e97",
+    "role": "appearance only, no dimensions/SKU authority"
+  },
+  "recommendation": "Owner accepted racetrack recommendation and authorized independent detailed Blender candidate on 2026-10-09",
+  "review_items": [
+    "actual table footprint and chairpullout/passage",
+    "4daily seats vs occasional endseats",
+    "pedestal knee/foot room, armchair tuck under top/apron",
+    "pendant wipeable surface and visible seam/dust traps",
+    "durable wipeable matte woodfinish",
+    "chair style not automatically selected"
+  ],
+  "source_writeback": false,
+  "table_approved": true,
+  "pendant_sku_approved": false,
+  "approved_table": {
+    "shape": "racetrack",
+    "length_mm": 1600,
+    "width_mm": 800,
+    "top_z_mm": 750,
+    "chairs": 4,
+    "source_footprint_locked": true
+  }
+}

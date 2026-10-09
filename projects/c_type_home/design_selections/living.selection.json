@@ -1,0 +1,63 @@
+{
+  "schema": "c-type.room-design-selection.v1",
+  "room": "living",
+  "decision_date": "2026-10-09",
+  "status": "DETAILED_BLENDER_CANDIDATE_IN_REVIEW",
+  "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
+  "appearance_references": {
+    "A_faithful": {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/whole_house_modes_v3/living/A_faithful/VIEW_01.png",
+      "sha256": "73c3252cbe8da0b56088f3fa9b713ca3f23e6106e8792b98ea50b30f7eb57e84",
+      "role": "APPEARANCE_ONLY_NO_DIMENSION_AUTHORITY"
+    },
+    "B_designer": {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/whole_house_modes_v3/living/B_designer/VIEW_01.png",
+      "sha256": "67dcf960c85a268e360120733754eb2783de779cf18ca3bf3e3dd4b485750745",
+      "role": "APPEARANCE_ONLY_NO_DIMENSION_AUTHORITY"
+    }
+  },
+  "selected": {
+    "primary_furniture": {
+      "from": "A_faithful",
+      "items": [
+        "Lsofa",
+        "windowchaise",
+        "singlewoodcoffee_table",
+        "longopenlowcabinet"
+      ],
+      "geometry": "approved source dimensions/layout"
+    },
+    "rug": {
+      "from": "B_designer VIEW_01",
+      "appearance": "cream/terracotta/inkblue geometricflatweave",
+      "fit": "dimensions based on source furniture and clear step/door passages"
+    },
+    "curtains": {
+      "from": "B_designer VIEW_01",
+      "appearance": "lightflax/ivorylinen",
+      "fit": "check rail,stack,windowhandle,sill andsunroomdoor"
+    },
+    "artwork": {
+      "from": "B_designer VIEW_01",
+      "appearance": "cream/terracotta/ink originalabstract,slimashframe",
+      "location": "eastwall above longlowcabinet; onefixedplace acrossviews",
+      "fit": "size/height/attachment based on actualwall elevation"
+    }
+  },
+  "excluded": [
+    "allCreativeelements"
+  ],
+  "not_selected_automatically": [
+    "Designerfloorlamp",
+    "additionalthrowcushions",
+    "throwblanket",
+    "extraDesignerprops/plants"
+  ],
+  "evaluation": {
+    "compatible": true,
+    "reason": "paleash/ivory base withlimitedtextile/art accent",
+    "balance": "patternedrug andart already focal; otherdecoration sparse"
+  },
+  "source_writeback": false,
+  "next": "Review independent living/dining detail model and actual Blender Cycles output"
+}
