@@ -13,6 +13,7 @@
 
 ## Workflow Skills
 
+- .codex/skills/archviz-interior-workflow/SKILL.md for interior effect-image planning, generation, resumption and review. Read the latest owner decision and relevant C-Type lessons first; Faithful-first is the current workflow, Designer/Creative require targeted visual validation.
 - .codex/skills/design-task-git-workflow/SKILL.md for substantial task branches, Gates, explicit staging, commits, pushes, PRs, and HUMAN_REVIEW.
 - .codex/skills/ground-truth-guard/SKILL.md whenever frozen geometry, contracts, manifests, or authority hashes are read or changed.
 - .codex/skills/blender-preview-first/SKILL.md for Blender studies and rendering; default Workbench/EEVEE preview, subagents=0, and no Cycles before approval.

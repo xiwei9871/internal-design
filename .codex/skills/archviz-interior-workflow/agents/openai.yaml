@@ -1,0 +1,6 @@
+interface:
+  display_name: "室内效果图工作流"
+  short_description: "核对机位与实物参考，先做Faithful，再验证局部设计与创意差异"
+  default_prompt: "使用 $archviz-interior-workflow，先读项目最新决定与历史踩坑记录，按已确认模型、机位和实物参考制作效果图。"
+policy:
+  allow_implicit_invocation: true
