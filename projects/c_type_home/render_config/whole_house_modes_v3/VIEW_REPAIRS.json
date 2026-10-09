@@ -1,0 +1,93 @@
+[
+  {
+    "room": "reading_transition",
+    "view": "VIEW_03",
+    "level": "A_faithful",
+    "kind": "camera",
+    "reason": "Known source-faithful view/semantic mismatch; current original Blender camera is authority."
+  },
+  {
+    "room": "reading_transition",
+    "view": "VIEW_05",
+    "level": "A_faithful",
+    "kind": "camera",
+    "reason": "Known source-faithful view/semantic mismatch; current original Blender camera is authority."
+  },
+  {
+    "room": "hallway",
+    "view": "VIEW_03",
+    "level": "A_faithful",
+    "kind": "camera",
+    "reason": "Known source-faithful view/semantic mismatch; current original Blender camera is authority."
+  },
+  {
+    "room": "mother_bedroom",
+    "view": "VIEW_05",
+    "level": "A_faithful",
+    "kind": "semantic",
+    "reason": "Known source-faithful view/semantic mismatch; current original Blender camera is authority."
+  },
+  {
+    "room": "study",
+    "view": "VIEW_04",
+    "level": "A_faithful",
+    "kind": "camera",
+    "reason": "Known source-faithful view/semantic mismatch; current original Blender camera is authority."
+  },
+  {
+    "room": "secondary_bath",
+    "view": "VIEW_02",
+    "level": "A_faithful",
+    "kind": "semantic",
+    "reason": "Known source-faithful view/semantic mismatch; current original Blender camera is authority."
+  },
+  {
+    "room": "kitchen",
+    "view": "VIEW_05",
+    "level": "A_faithful",
+    "kind": "camera",
+    "reason": "Known source-faithful view/semantic mismatch; current original Blender camera is authority."
+  },
+  {
+    "room": "living",
+    "view": "VIEW_02",
+    "level": "B_designer",
+    "kind": "decor",
+    "reason": "Remove relocated art above sofa and curtains on dining opening; these belong to north/east cabinet zone behind this camera. Retain styling of sofa textiles/rug and creative furniture identity."
+  },
+  {
+    "room": "kitchen",
+    "view": "VIEW_05",
+    "level": "B_designer",
+    "kind": "camera",
+    "reason": "Restore close gas-hob/tabletop detail from current approved geometry, not wide refrigerator/room hero."
+  },
+  {
+    "room": "living",
+    "view": "VIEW_02",
+    "level": "C_creative",
+    "kind": "decor",
+    "reason": "Remove relocated art above sofa and curtains on dining opening; these belong to north/east cabinet zone behind this camera. Retain styling of sofa textiles/rug and creative furniture identity."
+  },
+  {
+    "room": "kitchen",
+    "view": "VIEW_05",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Restore close gas-hob/tabletop detail from current approved geometry, not wide refrigerator/room hero."
+  },
+  {
+    "room": "dining",
+    "view": "VIEW_04",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Use the original near-window cropped view; do not widen to include full racetrack table. Hero table/pendant/chair family can remain partly cropped."
+  },
+  {
+    "room": "service_balcony",
+    "view": "VIEW_04",
+    "level": "C_creative",
+    "kind": "camera",
+    "reason": "Restore the northwindow/existing workniche close crop, not the tallutility cabinet hero. Foldtable stays at hero physical wall, cannot relocate to another counter. Show only partial same-concept furniture where view includes it."
+  }
+]

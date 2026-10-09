@@ -150,6 +150,8 @@ def update_gallery():
   for level in LEVELS[1:]:
    q=OUT/room/("HERO_QA_"+level+".json")
    if q.exists():gates+=json.loads(q.read_text()).get("notes",[])
+  qa=OUT/room/"VISUAL_QA.json"
+  if qa.exists():gates += [f"{f.get('level','')} {f.get('view_id','')} {f.get('status','')}: {f.get('reason','')}" for f in json.loads(qa.read_text()).get("flags",[])]
   sections.append(f'<section id="{room}"><h2>{names[room]}</h2><p>{html.escape(" · ".join(gates))}</p><div class="matrix">'+"".join(figs)+"</div></section>")
  summary={"expected":225,"generated":sum(counts.values()),"counts":counts,"source_writeback":False,"creative":"INSPIRATION_ONLY","visual_acceptance":"PENDING","updated":time.time()}
  atomic_json(OUT/"00_MANIFEST/PROGRESS.json",summary);atomic_json(OUT/"00_MANIFEST/RENDER_REGISTER.json",{"summary":summary,"images":records})
