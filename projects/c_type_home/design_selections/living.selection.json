@@ -2,7 +2,7 @@
   "schema": "c-type.room-design-selection.v1",
   "room": "living",
   "decision_date": "2026-10-09",
-  "status": "V5_WOOD_RETAIN_SOFT_FORM_REJECTED_RESEARCH_COMPLETE",
+  "status": "V6_SOFT_PAIR_PILOT_HUMAN_REVIEW_WOOD_RETAIN",
   "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
   "appearance_references": {
     "A_faithful": {
@@ -59,9 +59,9 @@
     "balance": "patternedrug andart already focal; otherdecoration sparse"
   },
   "source_writeback": false,
-  "next": "Readsofa-softnessresearch;subject-specificmacroformbeforefolds/material;nogenerationthisturn.",
+  "next": "ReviewV6pairmacroformandfabric;resolveheight/productfitbeforewhole-sofapropagation.",
   "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required.",
-  "latest_owner_feedback": "2026-10-11: woodcolorclearlyimproved;sofasoftpaddinglittletonoimprovement;firstresearchsimilarproblemsandprovenmethods.",
+  "latest_owner_feedback": "2026-10-11: approvedone seat/backpilotbasedonresearchedroute;notwholehousepropagation.",
   "latest_test": {
     "date": "2026-10-10",
     "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
@@ -93,5 +93,17 @@
       "status": "OWNER_NOT_ACCEPTED",
       "feedback": "softupholsterylittletonoimprovement"
     }
+  },
+  "sofa_pair_pilot": {
+    "date": "2026-10-11",
+    "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v6/SOFA_SEAT_BACK_DETAIL_V6.blend",
+    "sha256": "06150245b3fee8442a530aab9fd82766f152093159251bb8d849efb4372f367c",
+    "role": "isolatedseat/backtrial_notwholehouseinstalledmodel",
+    "registry": "render_config/sofa_soft_pilot_v6/CONTRACT.json",
+    "owner_accepted": false,
+    "totalheight_mm": 813.7471675872803,
+    "height_conflict_mm": 113.74716758728032,
+    "wood": "V5 retained",
+    "source_writeback": false
   }
 }
