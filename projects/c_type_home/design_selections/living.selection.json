@@ -2,7 +2,7 @@
   "schema": "c-type.room-design-selection.v1",
   "room": "living",
   "decision_date": "2026-10-09",
-  "status": "V3_SOFA_FORM_REJECTED_REAL_PRODUCT_FIRST",
+  "status": "V4_WHOLE_PRODUCT_CANDIDATE_HUMAN_REVIEW",
   "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
   "appearance_references": {
     "A_faithful": {
@@ -59,7 +59,15 @@
     "balance": "patternedrug andart already focal; otherdecoration sparse"
   },
   "source_writeback": false,
-  "next": "Bind owner-catalog real product or evidence-backed custom construction; establish complete sofa model rather than repair hybrid placeholder. Existing A/B appearance selection stays; catalog SKU not automatically selected.",
+  "next": "Owner review ofV4 whole furniture silhouette, ash/linen appearance and final light; no automatic propagation.",
   "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required.",
-  "latest_owner_feedback": "2026-10-10: old model is not an actual white-ash sofa; use desktop catalog, model every object from actual product and whole-object construction to avoid repeated patching"
+  "latest_owner_feedback": "2026-10-10: authorized test rebuild of living and dining using whole real-product workflow to match selected effect images as closely as possible.",
+  "latest_test": {
+    "date": "2026-10-10",
+    "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/LIVING_DINING_PRODUCT_REBUILD_V4.blend",
+    "sha256": "c3e1060afa1c98ec64d9e8e15fdfaa0fbf3fb5af39aaebc452b553a96b8f3f39",
+    "registry": "render_config/product_rebuild_v4/PRODUCT_REGISTER.json",
+    "human_appearance_accepted": false,
+    "catalog_sku_not_automatically_selected": true
+  }
 }

@@ -1,0 +1,264 @@
+{
+  "schema": "c-type.product-rebuild.v4",
+  "date": "2026-10-10",
+  "status": "HUMAN_REVIEW",
+  "scope": [
+    "living",
+    "dining"
+  ],
+  "input": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/LIVING_KITCHEN_LIBRARY_V3.blend",
+  "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/LIVING_DINING_PRODUCT_REBUILD_V4.blend",
+  "output_sha256": "c3e1060afa1c98ec64d9e8e15fdfaa0fbf3fb5af39aaebc452b553a96b8f3f39",
+  "owner_catalog": {
+    "path": "/Users/xiwei/Desktop/木甲木乙-白蜡木系列.pdf",
+    "sha256": "2430d251e7e7333d70867452923821eeacb070f028d8eed500086a04104bbaa3",
+    "pdf_pages": 32
+  },
+  "construction_status": "Evidence-backed whole custom design candidates; no exact original sofa SKU confirmed",
+  "search_scope": "Project/local assets and previous official supplier files; one catalog model query; no fitting complete product model obtained. Not an exhaustive search of all model libraries.",
+  "products": [
+    {
+      "group": "V4_LIVING_SOFA_COMPLETE",
+      "kind": "custom L sofa",
+      "evidence": "catalog PDF p4 whole timber frame; p8 802/1030 material specification + selected living A",
+      "dimensions_mm": [
+        1800,
+        3300,
+        700
+      ],
+      "dimension_role": "MAXIMUM_APPROVED_ENVELOPE_NOT_CATALOG_SKU",
+      "whole_structure": "Complete frame, legs, decks, arms, back support and tailored upholstery; no supplier Fly cushion reuse",
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_WINDOW_CHAISE_COMPLETE",
+      "kind": "custom reclining window chaise",
+      "evidence": "catalog timber frame family + selected living A",
+      "dimensions_mm": [
+        1700,
+        900,
+        800
+      ],
+      "dimension_role": "MAXIMUM_APPROVED_ENVELOPE",
+      "whole_structure": "Whole chassis, angled back support, legs, arms and sewn cushions",
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_COFFEE_TABLE_COMPLETE",
+      "kind": "custom two-tier ash coffee table",
+      "evidence": "catalog PDF p11 whole long-table construction + selected living A",
+      "dimensions_mm": [
+        1000,
+        550,
+        400
+      ],
+      "dimension_role": "CUSTOM_ACTUAL_DIMENSIONS",
+      "whole_structure": "Separate tabletop, lower shelf, apron, four supported legs",
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_EAST_CONSOLE_COMPLETE",
+      "kind": "custom open ash console",
+      "evidence": "catalog PDF p13 open-console construction + selected living A",
+      "dimensions_mm": [
+        298.875,
+        2888.907,
+        480
+      ],
+      "dimension_role": "APPROVED_MODEL_BOUNDS",
+      "whole_structure": "Whole open case, supports, rear closure and legs",
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_DINING_TABLE_COMPLETE",
+      "kind": "custom racetrack ash dining table",
+      "evidence": "selected dining C + catalog PDF p11 1119 dual-support structural language",
+      "dimensions_mm": [
+        1600,
+        800,
+        750
+      ],
+      "dimension_role": "OWNER_CONFIRMED_CUSTOM_DIMENSIONS",
+      "whole_structure": "Rounded full tabletop, supporting beams, two columns and planted foot bases; not scaled SKU1119",
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_DINING_PENDANT_COMPLETE",
+      "kind": "custom cleanable ivory enamel rounded pendant",
+      "evidence": "selected dining C silhouette + documented V1 double-wall open-shell construction",
+      "dimensions_mm": null,
+      "dimension_role": "SHAPE_MATERIAL_CANDIDATE_SKU_UNCONFIRMED",
+      "whole_structure": "Double-wall open shell, socket, bulb, suspension, canopy and actual light",
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_SELECTED_SOFT_FINISHES",
+      "kind": "selected art rug curtains",
+      "evidence": "living B artwork surface, rug palette and light linen curtains",
+      "dimensions_mm": null,
+      "dimension_role": "APPEARANCE_ONLY",
+      "whole_structure": "Art rectified from selected image; rug pattern reconstructed approximately; curtains use header gliders and stitched hems",
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_DINING_CHAIR_0_COMPLETE",
+      "kind": "6010A-size cane ash armchair trial",
+      "evidence": "owner catalog PDF p28 6010A photograph and560x560x850 dimensions + selected dining C",
+      "dimensions_mm": [
+        560,
+        560,
+        850
+      ],
+      "evaluated_dimensions_mm": [
+        559.0,
+        552.3,
+        849.8
+      ],
+      "dimension_role": "ACTUAL_PRODUCT_DIMENSIONS_NO_DISTORTION",
+      "whole_structure": "Whole ash rails, legs, rear posts, rebated cane mesh, arms and upholstered seat",
+      "chair_center_offset_mm": [
+        0,
+        180
+      ],
+      "center_xy_m": [
+        3.427625,
+        3.924406
+      ],
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_DINING_CHAIR_1_COMPLETE",
+      "kind": "6010A-size cane ash armchair trial",
+      "evidence": "owner catalog PDF p28 6010A photograph and560x560x850 dimensions + selected dining C",
+      "dimensions_mm": [
+        560,
+        560,
+        850
+      ],
+      "evaluated_dimensions_mm": [
+        559.0,
+        552.3,
+        849.8
+      ],
+      "dimension_role": "ACTUAL_PRODUCT_DIMENSIONS_NO_DISTORTION",
+      "whole_structure": "Whole ash rails, legs, rear posts, rebated cane mesh, arms and upholstered seat",
+      "chair_center_offset_mm": [
+        0,
+        180
+      ],
+      "center_xy_m": [
+        4.227625,
+        3.924406
+      ],
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_DINING_CHAIR_2_COMPLETE",
+      "kind": "6010A-size cane ash armchair trial",
+      "evidence": "owner catalog PDF p28 6010A photograph and560x560x850 dimensions + selected dining C",
+      "dimensions_mm": [
+        560,
+        560,
+        850
+      ],
+      "evaluated_dimensions_mm": [
+        559.0,
+        552.3,
+        849.8
+      ],
+      "dimension_role": "ACTUAL_PRODUCT_DIMENSIONS_NO_DISTORTION",
+      "whole_structure": "Whole ash rails, legs, rear posts, rebated cane mesh, arms and upholstered seat",
+      "chair_center_offset_mm": [
+        0,
+        -180
+      ],
+      "center_xy_m": [
+        3.427625,
+        3.004406
+      ],
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    },
+    {
+      "group": "V4_DINING_CHAIR_3_COMPLETE",
+      "kind": "6010A-size cane ash armchair trial",
+      "evidence": "owner catalog PDF p28 6010A photograph and560x560x850 dimensions + selected dining C",
+      "dimensions_mm": [
+        560,
+        560,
+        850
+      ],
+      "evaluated_dimensions_mm": [
+        559.0,
+        552.3,
+        849.8
+      ],
+      "dimension_role": "ACTUAL_PRODUCT_DIMENSIONS_NO_DISTORTION",
+      "whole_structure": "Whole ash rails, legs, rear posts, rebated cane mesh, arms and upholstered seat",
+      "chair_center_offset_mm": [
+        0,
+        -180
+      ],
+      "center_xy_m": [
+        4.227625,
+        3.004406
+      ],
+      "matching_complete_product_asset_found": false,
+      "owner_procurement_approved": false
+    }
+  ],
+  "materials": [
+    {
+      "provider": "Poly Haven",
+      "asset": "ash_veneer",
+      "source": "https://polyhaven.com/a/ash_veneer",
+      "license": "CC0",
+      "format": "native Blender material from V3",
+      "local_manifest": "design/asset_model_v3/assets/ash_native_1k/manifest.json",
+      "validation": "V4 Cycles test in current house; color adapted to owner pale ash, physical UV repeat"
+    },
+    {
+      "provider": "Poly Haven",
+      "asset": "rough_linen",
+      "source": "https://polyhaven.com/a/rough_linen",
+      "license": "CC0",
+      "format": "native Blender material with4K maps from V3",
+      "local_manifest": "design/asset_model_v3/assets/linen_4k_complete/complete-material-manifest.json",
+      "validation": "V4 Cycles fabric closeup; oatmeal color adaptation; not chosen manufacturer cloth SKU"
+    }
+  ],
+  "soft_form_method": {
+    "method": "Blender closed cloth pressure with pinned sewn perimeter, static evaluated form",
+    "official_documentation": "https://docs.blender.org/manual/en/5.2/physics/cloth/settings/physical_properties.html#pressure",
+    "setup": "design/product_rebuild_v4/PRESSURE_CUSHION_SETUP.blend",
+    "form": "design/product_rebuild_v4/PRESSURE_CUSHION_FORM.blend",
+    "evidence": "design/product_rebuild_v4/PRESSURE_FORM_REPORT.json",
+    "not_certified": "foam/feather mechanics or baked animation"
+  },
+  "presentation": {
+    "ceiling": "Restored existing03_EXISTING_CEILING collection and viewlayer visibility; original ceiling mesh unchanged; upward rays hitz2.8m",
+    "glass": "Derived bay/door glass roughness0.003; existing glazing geometry unchanged",
+    "hdri": "kiara_3_morning2k CC0; illustrative background, not surveyed exterior",
+    "render_config": "design/product_rebuild_v4/review_renders/render-manifest.json"
+  },
+  "unverified": [
+    "Exact original brand SKU resemblance",
+    "Manufacture/joints/load capacity",
+    "Dynamic chair pullout and circulation",
+    "Human knee and foot envelopes",
+    "Final textile specimen and wood finish sample",
+    "Final owner appearance acceptance"
+  ],
+  "image2_requests": 0,
+  "whole_house_queue_started": false,
+  "architecture_source_writeback": false
+}
