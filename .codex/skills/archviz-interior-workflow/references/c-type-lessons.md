@@ -53,3 +53,9 @@
 ## 全屋三模式V3完成记录
 
 225候选槽位完整、三方向各75；15房矩阵及41修正候选已打开，停止HUMAN_REVIEW。299旧图及源/R4/B0哈希保持。复用77张，新增148基础图+8主图修正+33视角/语义修正共189请求，无传输重试；38个选入derivative，原图未覆盖。主图输入改善了模式区分但跨view仍有陈设移墙和细节机位主图化；强geometry+局部appearance能恢复取景，却可能削弱Creative概念，不能包装为完全成功。Faithful三残留失败：厨房VIEW05气灶圆盘、母亲卧室VIEW05椅子/邻物、次主卫VIEW02门外结构；一次视觉修正后停止。家具/设备语义的局部ref应明确真实机制，不要仅用材质crop，后续改进需用户指定。详见docs/whole-house-three-modes-v3-final.md和本地FINAL_REVIEW.json。
+
+## 2026-10-10 资产复用模型试点
+
+业主认可 appearance_match_v2 的颜色 / 材质有较大进步，家具样式和质感仍需改善；要求永远先找可借鉴方法，再自研缺口。已授权制作客厅与厨房一版资产复用模型。asset_model_v3 实际下载 &Tradition Fly SC2 官方 OBJ 与 Poly Haven rough_linen / ash_veneer 原生 Blender 材质文件。先做隔离供应商测试，再按原包络复用八个软包分件，保留原木框 / 布局 / 数量，不加入额外抱枕。原生材质含反射强度、纤维方向、粗糙度和位移方案，不能再把只有三张图的手调 shader 称为完整供应商材质。
+
+终端 assets-library TLS / DNS 失败已通过正常浏览器下载解决；API files 元数据可定位原生 .blend 及完整 include 依赖，校验上游 MD5 并保存本地 SHA256。不是所有库里的预览资产都已本地验证。资产适配及材质代码、单件测试和五张实渲见 docs/c-type-asset-model-v3-review.md。977 个登记源对象不变，八个新软包包络校验通过。Kitchen 灶具只按官方参考补可见机制，SKU / 安装数据仍未确认。V3 当前为 HUMAN_REVIEW，不能自动推广其他房间或声称完整 1:1 已通过。

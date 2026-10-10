@@ -1,0 +1,91 @@
+{
+  "schema": "c-type.asset-model-implementation.v3",
+  "date": "2026-10-10",
+  "scope": [
+    "living",
+    "kitchen"
+  ],
+  "scope_note": "Literal open kitchen from owner request; optional dining clarification pending, no dining geometry changed.",
+  "base": "projects/c_type_home/design/appearance_match_v2/LIVING_DINING_APPEARANCE_V2.blend",
+  "sources": [
+    {
+      "id": "andtradition_fly_sc2",
+      "url": "https://www.andtradition.com/products/fly-sc2",
+      "download": "https://assetslibrary.com/asset/f7356e45-57ee-4277-a375-04fd01042bb6/ATD_2D-3D-Packages_Fly_SC2.zip",
+      "archive_sha256": "420578640e428da6144201e53c9bb1c881dc91722384b5aa88a56d118f329118",
+      "archive_bytes": 165374221,
+      "method": "browser download succeeded; no paid asset purchase",
+      "format": "OBJ medium",
+      "vertices": 34594,
+      "polygons": 33450,
+      "connected_components": 46,
+      "uv": "supplier UV exists, refit physical density for adapted components",
+      "adopted_components": [
+        41,
+        43
+      ],
+      "usage": "component geometry adapted to original soft pads, entire product not substituted",
+      "status": "FILES_INSPECTED_BLENDER_IMPORTED_ISOLATED_RENDER_CHECKED",
+      "license_note": "Manufacturer project-reference download; binary and derivative remain local, no asset redistribution in Git"
+    },
+    {
+      "id": "rough_linen_native",
+      "source": "https://polyhaven.com/a/rough_linen",
+      "native_download": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/1k/rough_linen/rough_linen_1k.blend",
+      "native_md5": "6be8d00f9d89a92c5dec498d49b87e0d",
+      "license": "CC0",
+      "scan_height_m": 0.3,
+      "native_ior": 1.5,
+      "native_sheen_weight": 0.2,
+      "native_displacement_scale_m": 0.0005,
+      "native_reflection_inputs": [
+        "Specular IOR Level",
+        "Anisotropic",
+        "Anisotropic Rotation",
+        "Roughness",
+        "Normal",
+        "Diffuse Roughness"
+      ],
+      "adaptation": "supplier node links preserved; owner oatmeal recolor only; 4K main texture replacement and true-scale UV",
+      "status": "NATIVE_FILE_AND_DEPENDENCIES_HASH_VERIFIED_ISOLATED_AND_ROOM_RENDER_CHECKED"
+    },
+    {
+      "id": "ash_veneer_native",
+      "source": "https://polyhaven.com/a/ash_veneer",
+      "native_download": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/1k/ash_veneer/ash_veneer_1k.blend",
+      "license": "CC0",
+      "scan_width_m": 1,
+      "native_ior": 1.45,
+      "adaptation": "supplier node links preserved; original ash2K main maps reused; UV along furniture and cabinet member",
+      "status": "NATIVE_FILE_AND_DEPENDENCIES_HASH_VERIFIED_ISOLATED_AND_ROOM_RENDER_CHECKED"
+    },
+    {
+      "id": "fotile_existing_references",
+      "registry": "projects/c_type_home/render_config/kitchen_prompt_review_v2/APPLIANCE_OFFICIAL_REFERENCES.json",
+      "role": "mechanism reference only",
+      "used_features": [
+        "two gas burners",
+        "raised pan supports",
+        "rotary knobs",
+        "stepped caps",
+        "hood filter and controls"
+      ],
+      "SKU_approved": false,
+      "dimensions": "source frozen footprint and center used; decorative functional height above schematic burner symbol documented"
+    }
+  ],
+  "custom_gaps": [
+    "selected MuJiaMuYi exact model not located; supplier upholstery components reused while retaining original woodframe design",
+    "no matching clean cream quartz found among searched CC0 stones; project stone recipe retained and locally adjusted",
+    "no matching two-gas-burner CC0 model in searched PolyHaven inventory; source preserved and FOTILE mechanism details authored"
+  ],
+  "exclusions": [
+    "no extra supplier throw pillows",
+    "no paid purchases",
+    "no plugin installations",
+    "no Image2 calls",
+    "no batch wholehouse rerender",
+    "no frozen model overwrite"
+  ],
+  "next_acceptance": "OWNER_REVIEW_OF_ACTUAL_V3_EVIDENCE"
+}

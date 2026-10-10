@@ -2,7 +2,7 @@
   "schema": "c-type.room-design-selection.v1",
   "room": "living",
   "decision_date": "2026-10-09",
-  "status": "V1_REJECTED_APPEARANCE_V2_REVIEW",
+  "status": "ASSET_REUSE_V3_OWNER_REVIEW",
   "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
   "appearance_references": {
     "A_faithful": {
@@ -59,6 +59,7 @@
     "balance": "patternedrug andart already focal; otherdecoration sparse"
   },
   "source_writeback": false,
-  "next": "Review V2 actual Blender ash-wood and sofa-fabric renders against selected references; do not promote V1 or batch other rooms.",
-  "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required."
+  "next": "Review asset_model_v3 candidate: manufacturer upholstery parts and native supplier PBR materials; no accepted-design promotion",
+  "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required.",
+  "latest_owner_feedback": "2026-10-10: V2 color/material made substantial progress; furniture style and texture still differ, research established methods first, then owner authorized a new model trial for kitchen and living"
 }
