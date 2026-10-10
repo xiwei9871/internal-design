@@ -2,7 +2,7 @@
   "schema": "c-type.room-design-selection.v1",
   "room": "dining",
   "date": "2026-10-09",
-  "status": "V4_WHOLE_PRODUCT_CANDIDATE_HUMAN_REVIEW",
+  "status": "V5_COLOR_FABRIC_CANDIDATE_HUMAN_REVIEW",
   "confirmed_requirements": {
     "artwork": false,
     "reason": "owner openkitchen cleaning/oil concern",
@@ -39,12 +39,24 @@
   },
   "latest_test": {
     "date": "2026-10-10",
-    "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/LIVING_DINING_PRODUCT_REBUILD_V4.blend",
-    "sha256": "c3e1060afa1c98ec64d9e8e15fdfaa0fbf3fb5af39aaebc452b553a96b8f3f39",
-    "registry": "render_config/product_rebuild_v4/PRODUCT_REGISTER.json",
+    "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
+    "sha256": "94661776fe34a45b73b540765ca6391a63e34a0940b5b84d461abd8b4657cd76",
+    "registry": "render_config/lookdev_v5/SOURCE_REGISTER.json",
     "human_appearance_accepted": false,
-    "catalog_sku_not_automatically_selected": true,
-    "chair_candidate": "catalog6010A-size trial;560x560x850mm; same four seats pulled180mm outward per side; procurement and final position pending owner review"
+    "soft_form_match": "stillpartial;loftnotdeclaredsolved",
+    "scope": "furniturematerialandsoftcoverrepair;layoutunchanged"
   },
-  "next": "Owner review ofV4 whole furniture silhouette, ash/linen appearance and final light; no automatic propagation."
+  "next": "OwnerreviewofV5woodtone/grainandfabric;donotpropagateunacceptedsoftprototype.",
+  "appearance_test_history": [
+    {
+      "date": "2026-10-10",
+      "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/LIVING_DINING_PRODUCT_REBUILD_V4.blend",
+      "sha256": "c3e1060afa1c98ec64d9e8e15fdfaa0fbf3fb5af39aaebc452b553a96b8f3f39",
+      "registry": "render_config/product_rebuild_v4/PRODUCT_REGISTER.json",
+      "human_appearance_accepted": false,
+      "catalog_sku_not_automatically_selected": true,
+      "chair_candidate": "catalog6010A-size trial;560x560x850mm; same four seats pulled180mm outward per side; procurement and final position pending owner review"
+    }
+  ],
+  "latest_owner_feedback": "2026-10-10: V4woodis toowhitecompared tonaturalwoodreference;grainandsoftupholstery still differ."
 }

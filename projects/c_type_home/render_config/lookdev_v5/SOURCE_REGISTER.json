@@ -1,0 +1,189 @@
+{
+  "schema": "c-type.lookdev.v5",
+  "date": "2026-10-10",
+  "status": "HUMAN_REVIEW",
+  "owner_feedback": "V4woodtoo paleandfine;reference naturalwoodtone;softupholsteryformandmaterialstill differ",
+  "source_model": "design/product_rebuild_v4/LIVING_DINING_PRODUCT_REBUILD_V4.blend",
+  "source_sha256": "c3e1060afa1c98ec64d9e8e15fdfaa0fbf3fb5af39aaebc452b553a96b8f3f39",
+  "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
+  "output_sha256": "94661776fe34a45b73b540765ca6391a63e34a0940b5b84d461abd8b4657cd76",
+  "scope": "177living/dining woodsurfaces;8softmeshesandmatchingchairfabric;noarchitecturegeometrychange",
+  "wood": {
+    "provider": "TextureCan",
+    "source": "https://www.texturecan.com/details/389/",
+    "license": "CC0",
+    "license_url": "https://www.texturecan.com/terms/",
+    "archive_sha256": "4a56b0e30322390b0dcd682f4d80bf1d180f2e0ba7789f82c0071e8ab524321e",
+    "kind": "publishedproceduralashmaterial;notmanufacturerscan",
+    "atlas": {
+      "source": "https://www.texturecan.com/details/389/",
+      "license": "CC0",
+      "kind": "published procedural ash PBR; not photogrammetric scan",
+      "crops_xyxy": [
+        [
+          0,
+          446,
+          4096,
+          786
+        ],
+        [
+          0,
+          1262,
+          4096,
+          1602
+        ],
+        [
+          0,
+          2090,
+          4096,
+          2430
+        ],
+        [
+          0,
+          2890,
+          4096,
+          3230
+        ]
+      ],
+      "target_mean_linear_rgb": [
+        0.31,
+        0.195,
+        0.102
+      ],
+      "source_variation_retained": 0.4,
+      "trial_repeat_m": [
+        2.4,
+        0.8
+      ],
+      "scale_status": "documented furniture lookdev assumption; vendor did not supply physical tile dimensions",
+      "files": {
+        "color": {
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/color.png",
+          "sha256": "e4b12ee5cac35581ba19f068ce369e965280dc36a9596d8a371fd02ec4508969",
+          "source": "wood_0038_color_4k.jpg",
+          "colorspace": "sRGB"
+        },
+        "roughness": {
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/roughness.png",
+          "sha256": "498b3a137d4feaaf9776737c7d18d9ece56857faf7dae9367deecd5e1b4f267b",
+          "source": "wood_0038_roughness_4k.jpg",
+          "colorspace": "Non-Color"
+        },
+        "normal": {
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/normal.png",
+          "sha256": "b5ce4a57b6385c79cb34f65d440619fe2efeb4f38e8f8f1097ebaac40da0e7a4",
+          "source": "wood_0038_normal_opengl_4k.png",
+          "colorspace": "Non-Color"
+        },
+        "height": {
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/height.png",
+          "sha256": "fe587530650490b8939a0054fff7d8084ed5be378377f9cc43369e96ef5685d0",
+          "source": "wood_0038_height_4k.png",
+          "colorspace": "Non-Color"
+        }
+      }
+    },
+    "original_scope": "onlyV4furniturewood",
+    "do_not_propagate": "cabinet,floorandotherrooms stayuntilowneracceptance"
+  },
+  "cloth": {
+    "source": "https://polyhaven.com/a/rough_linen",
+    "license": "CC0",
+    "method": "native4K PBR;flaxcoloradaptation;legacy0.1SSS/50mmscale removed",
+    "geometry_method": "Blender5.2Cottonpresetbasis;negative shrinking factor supplies2pct ease;supports/internal springs/pressure;staticresult",
+    "official_docs": [
+      "https://docs.blender.org/manual/en/5.2/physics/cloth/settings/physical_properties.html",
+      "https://docs.blender.org/manual/en/5.2/physics/cloth/settings/shape.html"
+    ],
+    "setup_evidence": "design/lookdev_v5/soft_form_v3/FORM_EVIDENCE.json",
+    "not_certified": "upholstery fillingmechanics or originalSKU"
+  },
+  "experiments": [
+    {
+      "candidate": "soft_form",
+      "decision": "reject",
+      "reason": "oversized restshape simplyrelaxed;almostnosubstantivefoldcontrol"
+    },
+    {
+      "candidate": "excess_grain_wrinkle_candidate",
+      "decision": "reject",
+      "reason": "rawashgrain tooheavy;5pctclothgrowthwrinkledwhole surface"
+    },
+    {
+      "candidate": "verification_rejected_gap_regression",
+      "decision": "reject",
+      "reason": "subdivisionwidenedseatgaps16.6/19.0mm"
+    },
+    {
+      "candidate": "final",
+      "decision": "retain_for_human_review",
+      "reason": "naturalwoodtone;moderatedgrain;2pctclothgrowth;size restoredaftersubdivision"
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "fresh_reopen": true,
+    "preserved_meshes": 2162,
+    "changed_soft_meshes": [
+      "V4_Sofa_chaise_upholstery",
+      "V4_Sofa_seat_middle",
+      "V4_Sofa_seat_north",
+      "V4_Sofa_back_0",
+      "V4_Sofa_back_1",
+      "V4_Sofa_back_2",
+      "V4_Chaise_full_seat",
+      "V4_Chaise_full_back"
+    ],
+    "room_camera_lights_color_unchanged": true,
+    "protected_hashes_pass": 8,
+    "envelopes": {
+      "V4_LIVING_SOFA_COMPLETE": [
+        [
+          3.4040000438690186,
+          7.951000213623047,
+          0.0
+        ],
+        [
+          5.200000286102295,
+          11.249000549316406,
+          0.6959999799728394
+        ]
+      ],
+      "V4_WINDOW_CHAISE_COMPLETE": [
+        [
+          4.709499835968018,
+          11.06350040435791,
+          -0.00014513637870550156
+        ],
+        [
+          6.3398823738098145,
+          11.946499824523926,
+          0.7813289165496826
+        ]
+      ]
+    },
+    "seat_gaps_mm": [
+      7.500648498535156,
+      10.000228881835938
+    ],
+    "seat_bottom_to_deck_top_mm": [
+      2.622604372559678e-05,
+      2.622604372559678e-05,
+      2.622604372559678e-05
+    ],
+    "missing_images": [],
+    "packed_images": 26,
+    "output_sha256": "94661776fe34a45b73b540765ca6391a63e34a0940b5b84d461abd8b4657cd76",
+    "visual_acceptance": "OWNER_REVIEW_REQUIRED",
+    "not_certified": "exactproductSKU,fillingmechanics,constructionorhumanergonomics"
+  },
+  "visual_limits": [
+    "woodgrainandphysicalfinishsamplesunconfirmed",
+    "backpadloftandwholecushionsilhouette stillshortofreference",
+    "exactwoodendgrain/joineryunverified",
+    "noautomaticowneracceptanceorassetlibrarypropagation"
+  ],
+  "room_light_camera_color": "V4unchanged",
+  "image2_requests": 0,
+  "whole_house_queue_started": false
+}
