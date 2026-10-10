@@ -58,5 +58,13 @@
       "chair_candidate": "catalog6010A-size trial;560x560x850mm; same four seats pulled180mm outward per side; procurement and final position pending owner review"
     }
   ],
-  "latest_owner_feedback": "2026-10-10: V4woodis toowhitecompared tonaturalwoodreference;grainandsoftupholstery still differ."
+  "latest_owner_feedback": "2026-10-10: V4woodis toowhitecompared tonaturalwoodreference;grainandsoftupholstery still differ.",
+  "component_feedback": {
+    "wood_v5": {
+      "date": "2026-10-11",
+      "status": "OWNER_POSITIVE_APPEARANCE_FEEDBACK_RETAIN",
+      "feedback": "woodcolorclearlyimproved",
+      "physical_finish_sample_approved": false
+    }
+  }
 }

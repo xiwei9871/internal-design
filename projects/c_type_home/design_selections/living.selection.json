@@ -2,7 +2,7 @@
   "schema": "c-type.room-design-selection.v1",
   "room": "living",
   "decision_date": "2026-10-09",
-  "status": "V5_COLOR_FABRIC_CANDIDATE_HUMAN_REVIEW",
+  "status": "V5_WOOD_RETAIN_SOFT_FORM_REJECTED_RESEARCH_COMPLETE",
   "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
   "appearance_references": {
     "A_faithful": {
@@ -59,9 +59,9 @@
     "balance": "patternedrug andart already focal; otherdecoration sparse"
   },
   "source_writeback": false,
-  "next": "OwnerreviewofV5woodtone/grainandfabric;donotpropagateunacceptedsoftprototype.",
+  "next": "Readsofa-softnessresearch;subject-specificmacroformbeforefolds/material;nogenerationthisturn.",
   "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required.",
-  "latest_owner_feedback": "2026-10-10: V4woodis toowhitecompared tonaturalwoodreference;grainandsoftupholstery still differ.",
+  "latest_owner_feedback": "2026-10-11: woodcolorclearlyimproved;sofasoftpaddinglittletonoimprovement;firstresearchsimilarproblemsandprovenmethods.",
   "latest_test": {
     "date": "2026-10-10",
     "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
@@ -80,5 +80,18 @@
       "human_appearance_accepted": false,
       "catalog_sku_not_automatically_selected": true
     }
-  ]
+  ],
+  "component_feedback": {
+    "wood_v5": {
+      "date": "2026-10-11",
+      "status": "OWNER_POSITIVE_APPEARANCE_FEEDBACK_RETAIN",
+      "feedback": "woodcolorclearlyimproved",
+      "physical_finish_sample_approved": false
+    },
+    "sofa_soft_v5": {
+      "date": "2026-10-11",
+      "status": "OWNER_NOT_ACCEPTED",
+      "feedback": "softupholsterylittletonoimprovement"
+    }
+  }
 }
