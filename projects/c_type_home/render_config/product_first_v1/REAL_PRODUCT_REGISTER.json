@@ -1,0 +1,206 @@
+{
+  "schema": "c-type.real-product-reference.v1",
+  "date": "2026-10-10",
+  "source": {
+    "path": "/Users/xiwei/Desktop/木甲木乙-白蜡木系列.pdf",
+    "sha256": "2430d251e7e7333d70867452923821eeacb070f028d8eed500086a04104bbaa3",
+    "pdf_pages": 32
+  },
+  "owner_appearance_selection": "Living A_faithful furniture; B_designer selected rug/curtains/eastwall art remain valid",
+  "status": "REAL_PRODUCT_PROTOTYPE_SELECTION_PENDING_NO_AUTOMATIC_SKU_CHANGE",
+  "workflow": "real product identity -> matching complete model or whole-object construction from same product evidence -> isolated product comparison -> true spatial fit",
+  "products": [
+    {
+      "family": "802",
+      "pdf_page": 8,
+      "region": "upper-left",
+      "items": [
+        {
+          "model": "802SF-2A",
+          "dimensions_mm": [
+            1450,
+            850,
+            850
+          ],
+          "description": "two-seater"
+        },
+        {
+          "model": "802SF-1A",
+          "dimensions_mm": [
+            650,
+            850,
+            850
+          ],
+          "description": "single-seat"
+        },
+        {
+          "model": "802GF-A",
+          "dimensions_mm": [
+            1750,
+            800,
+            850
+          ],
+          "description": "chaise module"
+        }
+      ],
+      "catalog_materials": [
+        "NorthAmerican white ash main frame",
+        "foam seat cushion",
+        "linen-cotton fabric",
+        "feather+silk-cotton soft upholstery",
+        "woodwax oil"
+      ],
+      "fabric_label": "A2007-3A",
+      "role": "actual white-ash sectional candidate",
+      "owner_selected": false,
+      "exact_model_file_found": false
+    },
+    {
+      "family": "1030",
+      "pdf_page": 8,
+      "region": "middle-left",
+      "items": [
+        {
+          "model": "1030-2",
+          "dimensions_mm": [
+            2100,
+            900,
+            900
+          ],
+          "description": "two-seater"
+        },
+        {
+          "model": "1030-5",
+          "dimensions_mm": [
+            1450,
+            800,
+            900
+          ],
+          "description": "chaise module"
+        },
+        {
+          "model": "1030-A",
+          "dimensions_mm": [
+            820,
+            220,
+            300
+          ],
+          "description": "arm cushion"
+        }
+      ],
+      "catalog_materials": [
+        "NorthAmerican white ash main frame",
+        "foam seat cushion",
+        "linen-cotton fabric",
+        "feather+silk-cotton soft upholstery",
+        "woodwax oil"
+      ],
+      "fabric_label": "QNO30-2 as extracted, typographic label requires manufacturer clarification if selecting",
+      "role": "actual platform-sectional candidate",
+      "owner_selected": false,
+      "exact_model_file_found": false
+    },
+    {
+      "family": "1020",
+      "pdf_page": 4,
+      "items": [
+        {
+          "model": "1020SF-4",
+          "dimensions_mm": [
+            2700,
+            800,
+            820
+          ]
+        },
+        {
+          "model": "1020SF-3A",
+          "dimensions_mm": [
+            2130,
+            800,
+            820
+          ]
+        },
+        {
+          "model": "1020SF-2A",
+          "dimensions_mm": [
+            1530,
+            800,
+            820
+          ]
+        },
+        {
+          "model": "1020SF-1A",
+          "dimensions_mm": [
+            930,
+            800,
+            820
+          ]
+        }
+      ],
+      "fabric_labels": [
+        "820-12",
+        "820-9"
+      ],
+      "role": "whole timber-frame seating family photo/construction reference",
+      "material_certification": "this page lists product sizes and fabrics but not full frame material specification; catalog title is not a per-product certification",
+      "owner_selected": false,
+      "exact_model_file_found": false
+    },
+    {
+      "family": "1028",
+      "pdf_page": 8,
+      "region": "bottom-left",
+      "items": [
+        {
+          "model": "1028 chaise",
+          "dimensions_mm": [
+            1800,
+            1190,
+            700
+          ]
+        },
+        {
+          "model": "1028 armless",
+          "dimensions_mm": [
+            920,
+            1100,
+            700
+          ]
+        },
+        {
+          "model": "1028 armed",
+          "dimensions_mm": [
+            1190,
+            1100,
+            700
+          ]
+        }
+      ],
+      "catalog_materials": [
+        "multilayer timber board plus pine",
+        "foam seat",
+        "technical fabric",
+        "feather+toy-cotton filling"
+      ],
+      "fabric_labels": [
+        "空气层-62",
+        "MH0859-5 grey"
+      ],
+      "role": "counterexample: not documented as white-ash frame despite series catalog title",
+      "owner_selected": false
+    }
+  ],
+  "dimension_policy": {
+    "architectural_ground_truth": "immutable",
+    "documented_furniture_layout": "preserve current approved scope, flag conflict with product specs",
+    "placeholder_internal_parts": "not metric authority without product/measurement evidence",
+    "product_dimensions": "use exact catalog specs once chosen; do not stretch to fit reserve without a construction decision"
+  },
+  "v3_sofa_status": "NOT_REAL_PRODUCT_MATCH_NOT_APPROVED_FOR_LIBRARY_PROPAGATION",
+  "v3_failure_causes": [
+    "old placeholder softpad gaps preserved 60-90mm",
+    "supplier component axis conversion ignored OBJ object rotation, swapping depth and thickness",
+    "whole-object frame/softpad relationship not validated against one actual product"
+  ],
+  "model_changes_this_turn": false
+}

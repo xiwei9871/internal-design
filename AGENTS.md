@@ -27,6 +27,12 @@
   For ArchViz, verify furniture shape, format, UV, material scale, renderer
   compatibility and license before claiming an external asset is usable.
   A library preview is not a successful local Cycles validation.
+- Establish real product identity or evidence-backed custom construction before
+  detailed modeling. Owner catalogs/photos determine whole-object form and
+  materials; schematic furniture placeholders only carry documented spatial
+  constraints. Do not freeze placeholder cushion gaps or mix unrelated product
+  parts as a shortcut to a finished asset. Report real-product fit conflicts
+  instead of distorting the item or altering frozen architecture.
 
 - Use exact task-named files; do not recursively scan renders/** or rediscover frozen Ground Truth.
 - Default subagents=0; delegate only genuinely independent work.
