@@ -21,6 +21,13 @@
 
 ## Default Performance Rules
 
+- Before implementation or refinement, search existing project/local work,
+  official product assets, compatible model/material libraries and established
+  methods. Adapt a suitable solution first; custom-build only unresolved gaps.
+  For ArchViz, verify furniture shape, format, UV, material scale, renderer
+  compatibility and license before claiming an external asset is usable.
+  A library preview is not a successful local Cycles validation.
+
 - Use exact task-named files; do not recursively scan renders/** or rediscover frozen Ground Truth.
 - Default subagents=0; delegate only genuinely independent work.
 - Preview first, render only requested decision views, and allow at most one automatic retry.
