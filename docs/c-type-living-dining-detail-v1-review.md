@@ -1,5 +1,7 @@
 # 客厅餐厅精细模型 V1 · 首轮评审
 
+**2026-10-10 业主复核：V1 外观不达标，已否定。** 以下为历史交付记录，不构成人工接受。新要求以已选图的颜色、材质、质感、光泽和光影 1:1 复现作为外观验收目标；不要求各机位逐像素一致。见 c-type-appearance-match-v2.md。
+
 TASK STATUS: HUMAN_REVIEW_PR_BLOCKED。已制作可编辑独立候选和五张实际 Cycles 渲染，不宣称选定参考已逐项精确复刻。
 
 BRANCH: codex/c-type-living-dining-detail-v1。PR 创建因本地 GitHub CLI 未登录而受阻；不改变认证设置。

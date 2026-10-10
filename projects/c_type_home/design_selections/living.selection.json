@@ -2,7 +2,7 @@
   "schema": "c-type.room-design-selection.v1",
   "room": "living",
   "decision_date": "2026-10-09",
-  "status": "DETAILED_BLENDER_CANDIDATE_IN_REVIEW",
+  "status": "V1_REJECTED_APPEARANCE_V2_REVIEW",
   "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
   "appearance_references": {
     "A_faithful": {
@@ -59,5 +59,6 @@
     "balance": "patternedrug andart already focal; otherdecoration sparse"
   },
   "source_writeback": false,
-  "next": "Review independent living/dining detail model and actual Blender Cycles output"
+  "next": "Review V2 actual Blender ash-wood and sofa-fabric renders against selected references; do not promote V1 or batch other rooms.",
+  "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required."
 }
