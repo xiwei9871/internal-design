@@ -2,7 +2,7 @@
   "schema": "c-type.room-design-selection.v1",
   "room": "living",
   "decision_date": "2026-10-09",
-  "status": "V9_MATERIAL_TEST_HUMAN_REVIEW_RETAIN_ORIGINAL_FABRIC",
+  "status": "V10_FILL_FORM_CANDIDATE_HUMAN_REVIEW",
   "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
   "appearance_references": {
     "A_faithful": {
@@ -59,9 +59,9 @@
     "balance": "patternedrug andart already focal; otherdecoration sparse"
   },
   "source_writeback": false,
-  "next": "人工评审填充资料与同模型同光照材质对照；保留原布艺。若继续，坐垫支撑/柔软包覆与靠包松填充的形态分别校准，暂不自动执行。",
+  "next": "评审同材质同灯光的 V7/V10 三视角与近景，判断填充大形是否更接近目标；保留原模型，不自动推广全屋。",
   "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required.",
-  "latest_owner_feedback": "2026-10-11：V7 灰模感觉有点太松，实渲紧绷；显出褶皱后松软感仍不足。要求先研究坐垫/靠包填充，验证修改布套材质是否优化，暂停继续松化网格。",
+  "latest_owner_feedback": "2026-10-11：已批准按建议区分坐垫支撑芯/柔软包覆和靠包松填充轮廓，并多次要求继续；尚未认可 V10 外观或尺寸。",
   "latest_test": {
     "date": "2026-10-10",
     "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
@@ -152,6 +152,19 @@
     "creator_result": "surface reflection brighter/softer, plushness not clearly improved; retain original material",
     "owner_accepted": false,
     "filling_mechanics_changed": false,
+    "whole_house_propagation": false
+  },
+  "sofa_fill_form_v10": {
+    "source": "design/sofa_fill_form_v10/delivery/SOFA_DIFFERENTIATED_FILL_V10.blend",
+    "sha256": "ad9960ad4991e1f2f524a052815ae5c469efcf50967539fa74d921a877c741b8",
+    "contract": "render_config/sofa_fill_form_v10/CONTRACT.json",
+    "owner_accepted": false,
+    "totalheight_mm": 805.998325,
+    "seat_crown_mm": 483.64076,
+    "creator_result": "back fullness/profile changed; surface cover remains regular; not yet reference-like relaxed appearance",
+    "material_light": "original V5 cloth/wood and V8 directional light retained; V9 sheen excluded",
+    "construction_guides": "illustrative seat core/jacket/back channels; no certified manufacturing section",
+    "source_writeback": false,
     "whole_house_propagation": false
   }
 }
