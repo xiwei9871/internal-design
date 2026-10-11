@@ -2,7 +2,7 @@
   "schema": "c-type.room-design-selection.v1",
   "room": "living",
   "decision_date": "2026-10-09",
-  "status": "V6_SOFT_PAIR_PILOT_HUMAN_REVIEW_WOOD_RETAIN",
+  "status": "V7_SOFT_PAIR_CANDIDATE_HUMAN_REVIEW_WOOD_AND_V6_VOLUME_RETAIN",
   "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
   "appearance_references": {
     "A_faithful": {
@@ -59,9 +59,9 @@
     "balance": "patternedrug andart already focal; otherdecoration sparse"
   },
   "source_writeback": false,
-  "next": "ReviewV6pairmacroformandfabric;resolveheight/productfitbeforewhole-sofapropagation.",
+  "next": "人工比较 V6/V7 松软感；外观认可后，再核对整件家具、坐高与空间适配，暂不推广全屋。",
   "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required.",
-  "latest_owner_feedback": "2026-10-11: approvedone seat/backpilotbasedonresearchedroute;notwholehousepropagation.",
+  "latest_owner_feedback": "2026-10-11：V6 体积变大、变厚、像沙发，有明显改善；蓬松感、松软感尚未达到要求。授权继续同一组试点。",
   "latest_test": {
     "date": "2026-10-10",
     "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
@@ -92,6 +92,17 @@
       "date": "2026-10-11",
       "status": "OWNER_NOT_ACCEPTED",
       "feedback": "softupholsterylittletonoimprovement"
+    },
+    "sofa_volume_v6": {
+      "date": "2026-10-11",
+      "status": "OWNER_POSITIVE_VOLUME_FEEDBACK",
+      "feedback": "体积变大、变厚，像沙发了",
+      "final_height_procurement_ergonomics_approved": false
+    },
+    "sofa_softness_v6": {
+      "date": "2026-10-11",
+      "status": "OWNER_NOT_ACCEPTED",
+      "feedback": "蓬松感、松软感还没做到"
     }
   },
   "sofa_pair_pilot": {
@@ -104,6 +115,20 @@
     "totalheight_mm": 813.7471675872803,
     "height_conflict_mm": 113.74716758728032,
     "wood": "V5 retained",
+    "source_writeback": false
+  },
+  "sofa_pair_pilot_v7": {
+    "date": "2026-10-11",
+    "model": "design/sofa_soft_pilot_v7/local_final/SOFA_RELAXED_COVER_V7.blend",
+    "sha256": "5bb0f004a9501bff61a017975cf65c8205f46e3af3a39d9a83c91096db46ec4f",
+    "registry": "render_config/sofa_soft_pilot_v7/CONTRACT.json",
+    "role": "isolated seat/back trial; not whole-house installed",
+    "owner_accepted": false,
+    "totalheight_mm": 809.931,
+    "seat_crown_mm": 482.528,
+    "old700mm_height_conflict_mm": 109.931,
+    "actual_simulation_used_for_final": false,
+    "wood_and_fabric": "V5 retained unchanged",
     "source_writeback": false
   }
 }
