@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-11",
+  "status": "RESEARCH_AND_RENDER_TEST_COMPLETE_RETAIN_ORIGINAL",
+  "scope": "one seat/back; surface material only, no additional geometry slack",
+  "sources": [
+    {
+      "url": "https://www.vanguardfurniture.com/CushionOptions",
+      "type": "MANUFACTURER_CONSTRUCTION",
+      "reviewed": "actual page: Spring Lux, Majestic, Feather Lux, Bliss Down and Relaxed Down seat/back descriptions",
+      "finding": "Seats combine polyurethane foam support with polyester wrapping and optional feather/down/fiber jackets; backs often use channelled polyester/microfiber or feather/down/fiber blends",
+      "limit": "manufacturer examples, not universal recipes or the owner's approved procurement specification"
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/5.2/render/shader_nodes/shader/principled.html#sheen",
+      "type": "OFFICIAL_RENDERER_DOC",
+      "reviewed": "Sheen, Diffuse Roughness, Subsurface, Specular and Coat definitions",
+      "finding": "Sheen simulates microscopic surface fibers; it does not define filling hardness, elasticity or mechanical deformation",
+      "limit": "documentation gives parameter semantics, not universal cotton/foam presets; trial values require actual rendering"
+    },
+    {
+      "path": "/Users/xiwei/Desktop/木甲木乙-白蜡木系列.pdf",
+      "page": 8,
+      "type": "OWNER_PRODUCT_CATALOG",
+      "finding": "foam seat, linen/cotton cloth, down + fiber back/padding entries",
+      "limit": "no exact selected SKU or full filling section; do not infer foam firmness from density alone"
+    },
+    {
+      "url": "https://polyhaven.com/a/rough_linen",
+      "type": "COMPLETE_COMPATIBLE_EXISTING_ASSET",
+      "license": "CC0",
+      "local_state": "native Blender shader and complete 4K image set already used/tested in this project",
+      "trial_use": "retain native maps, physical UV scale and color; copy material to add a controlled microfiber sheen test"
+    },
+    {
+      "url": "https://polyhaven.com/a/fabric_pattern_05",
+      "type": "ASSET_SUITABILITY_CHECK",
+      "license": "CC0",
+      "reviewed": "asset page description and 0.5m physical width",
+      "decision": "do not adopt: olive/khaki with dark-blue windowpane plaid conflicts with the chosen plain ivory/flax upholstery",
+      "downloaded": false
+    }
+  ],
+  "asset_search": {
+    "queries": [
+      "cotton fabric",
+      "linen"
+    ],
+    "candidate_ids": [
+      "book_pattern",
+      "cotton_jersey",
+      "fabric_pattern_05",
+      "fabric_pattern_07",
+      "gingham_check",
+      "jogging_melange",
+      "rough_linen"
+    ],
+    "new_asset_downloads": 0
+  },
+  "physical_material_distinction": {
+    "supportive_seat": "foam core + softer wrapping/jacket; foam density alone is not its firmness specification",
+    "softer_back": "loose fiber/feather/down fill and shape-retaining channels; optional softer foam in other products",
+    "visible_cover": "linen/cotton or other upholstery fabric; this is the part controlled by a surface shader",
+    "static_model_limit": "changing a surface shader does not make the inner fill deform or create sagging/contact compression"
+  },
+  "baseline": "design/sofa_soft_pilot_v8/render_diagnosis/V7_SAME_MESH_DIRECTIONAL_LIGHT_V8.blend",
+  "baseline_sha256": "cbed4cc4b34c9ebe5fc1bf8a388a860d620493b7f8bd609770499b967c37862f",
+  "trial": {
+    "A": "original native 4K linen; sheen weight0.2, sheen roughness0.5",
+    "B": "same material with sheen weight0.5 and sheen roughness0.8",
+    "parameter_status": "bounded renderer test, not measured material constants or a manufacturer-tested preset",
+    "SSS": 0,
+    "coat": 0,
+    "transmission": 0,
+    "physical_scale_unchanged": true
+  },
+  "owner_accepted": false,
+  "whole_house_propagation": false,
+  "visual_result": "broader sheen changes brightness/reflection; no clear plush filling improvement"
+}

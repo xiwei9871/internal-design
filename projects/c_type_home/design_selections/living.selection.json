@@ -2,7 +2,7 @@
   "schema": "c-type.room-design-selection.v1",
   "room": "living",
   "decision_date": "2026-10-09",
-  "status": "V7_SOFT_PAIR_CANDIDATE_HUMAN_REVIEW_WOOD_AND_V6_VOLUME_RETAIN",
+  "status": "V9_MATERIAL_TEST_HUMAN_REVIEW_RETAIN_ORIGINAL_FABRIC",
   "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
   "appearance_references": {
     "A_faithful": {
@@ -59,9 +59,9 @@
     "balance": "patternedrug andart already focal; otherdecoration sparse"
   },
   "source_writeback": false,
-  "next": "人工比较 V6/V7 松软感；外观认可后，再核对整件家具、坐高与空间适配，暂不推广全屋。",
+  "next": "人工评审填充资料与同模型同光照材质对照；保留原布艺。若继续，坐垫支撑/柔软包覆与靠包松填充的形态分别校准，暂不自动执行。",
   "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required.",
-  "latest_owner_feedback": "2026-10-11：V6 体积变大、变厚、像沙发，有明显改善；蓬松感、松软感尚未达到要求。授权继续同一组试点。",
+  "latest_owner_feedback": "2026-10-11：V7 灰模感觉有点太松，实渲紧绷；显出褶皱后松软感仍不足。要求先研究坐垫/靠包填充，验证修改布套材质是否优化，暂停继续松化网格。",
   "latest_test": {
     "date": "2026-10-10",
     "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
@@ -103,6 +103,12 @@
       "date": "2026-10-11",
       "status": "OWNER_NOT_ACCEPTED",
       "feedback": "蓬松感、松软感还没做到"
+    },
+    "sofa_softness_v7": {
+      "date": "2026-10-11",
+      "status": "OWNER_NOT_ACCEPTED_RENDER_AND_FILLING_REVIEW",
+      "feedback": "灰模偏松，实渲紧绷；有褶皱仍缺松软感",
+      "whole_form_approved": false
     }
   },
   "sofa_pair_pilot": {
@@ -130,5 +136,22 @@
     "actual_simulation_used_for_final": false,
     "wood_and_fabric": "V5 retained unchanged",
     "source_writeback": false
+  },
+  "sofa_render_diagnosis_v8": {
+    "source": "design/sofa_soft_pilot_v8/render_diagnosis/V7_SAME_MESH_DIRECTIONAL_LIGHT_V8.blend",
+    "sha256": "cbed4cc4b34c9ebe5fc1bf8a388a860d620493b7f8bd609770499b967c37862f",
+    "geometry_materials_unchanged": true,
+    "owner_accepted": false,
+    "site_illumination_calibrated": false
+  },
+  "sofa_material_test_v9": {
+    "source": "design/sofa_material_pilot_v9/surface_test/SOFA_SURFACE_FIBER_TEST_V9.blend",
+    "sha256": "06c26fdf852cb14bd3c3069d8fc4c354fde0c9096bdf840bd63192afa3500dd4",
+    "registry": "render_config/sofa_material_pilot_v9/SOURCE_REGISTER.json",
+    "source_geometry_light_unchanged": true,
+    "creator_result": "surface reflection brighter/softer, plushness not clearly improved; retain original material",
+    "owner_accepted": false,
+    "filling_mechanics_changed": false,
+    "whole_house_propagation": false
   }
 }

@@ -1,0 +1,19 @@
+{
+  "scope": "one seat/back; surface material test only",
+  "latest_owner_request": "褶皱已出现，松软感还没有；研究坐垫/靠包材料，先验证修改材质是否优化",
+  "baseline": "V8 directional light with unchanged V7 geometry and original V5 native linen",
+  "trial": "same shader/maps/color with broader microfiber sheen",
+  "evidence": ["design/sofa_material_pilot_v9/MATERIAL_COMPARE_CONTACT.jpg", "surface_test/A_original_V9_FABRIC_CLOSEUP.png", "surface_test/B_microfiber_V9_FABRIC_CLOSEUP.png"],
+  "requirement_ledger": [
+    {"requirement": "same geometry, light, camera and grading", "result": "pass_technical", "evidence": "surface_test/VERIFICATION.json"},
+    {"requirement": "surface fiber reflection changes visibly", "result": "pass_visible_change", "finding": "B becomes brighter and more softly reflecting; base-color input remains the same"},
+    {"requirement": "clear plush filling improvement", "result": "fail", "finding": "volume/sag/sidewall do not improve; shallow form contrast is partly softened away"},
+    {"requirement": "verify filling facts without claiming shader mechanics", "result": "pass_research", "evidence": "SOURCE_REGISTER.json; actual manufacturer and official renderer pages"}
+  ],
+  "decision": "retain_candidate",
+  "meaning": "retain original fabric; preserve B as test evidence only",
+  "conclusion_scope": "this particular microfiber-layer adjustment did not solve plushness; not a universal rejection of material look development",
+  "owner_accepted": false,
+  "next": "HUMAN_REVIEW; further filling-form work is a separate stage, no automatic geometry or house propagation",
+  "whole_house_propagation": false
+}
