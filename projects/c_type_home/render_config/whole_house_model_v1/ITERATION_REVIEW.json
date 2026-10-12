@@ -5,7 +5,7 @@
   "foundation": "design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
   "foundation_sha256": "94661776fe34a45b73b540765ca6391a63e34a0940b5b84d461abd8b4657cd76",
   "style_confirmed_rooms": 15,
-  "candidate_appearance_accepted_rooms": 0,
+  "candidate_appearance_accepted_rooms": 7,
   "actual_added_meshes": 140,
   "protected_files_unchanged": 16,
   "original_meshes_unchanged": 2938,
@@ -34,5 +34,7 @@
   "prior_contract_only_candidate": "Preserved as discarded contract snapshot; tag checks do not count as finished modeling",
   "image2_requests": 0,
   "generated_binaries_staged": false,
-  "next": "Review rooms separately, preserve source geometry and render only specific revised decisions"
+  "next": "Review rooms separately, preserve source geometry and render only specific revised decisions",
+  "latest_owner_review": "render_config/whole_house_model_v1/OWNER_REVIEW_2026_10_12.json",
+  "acceptance_level": "basic model appearance; global lighting not accepted; partial rooms and selected new bed reference need revision"
 }

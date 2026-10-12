@@ -6,7 +6,8 @@
       "implementation_cn": "保留已选白蜡木家具、Designer 地毯窗帘与挂画；安装V10分化坐包/靠包构造。",
       "review_flag_cn": "沙发最高约806mm、未受压坐面约484mm，较旧预留更高；舒适度和最终坐高待验收。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": true,
+      "owner_review_2026_10_12": "BASIC_MODEL_APPEARANCE_ACCEPTED"
     },
     "dining": {
       "mode": "confirmed_creative_mixed",
@@ -14,7 +15,8 @@
       "implementation_cn": "保留1600×800跑道形餐桌、椭圆吊灯和4张图册6010A餐椅；餐厅不挂画。",
       "review_flag_cn": "餐椅按真实560×560×850尺寸；摆位沿用原试点，拉椅及人体膝脚空间待核定。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": true,
+      "owner_review_2026_10_12": "BASIC_MODEL_APPEARANCE_ACCEPTED"
     },
     "kitchen": {
       "mode": "faithful",
@@ -26,7 +28,8 @@
       "implementation_cn": "保留VIEW03正确窗型和冻结设备/台面位置；延用V5木色与已有灶具功能细节。",
       "review_flag_cn": "窗外补光圆斑已修正；FOTILE官方资料用于外观参考，业主采购SKU与安装详图待定。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": true,
+      "owner_review_2026_10_12": "BASIC_MODEL_APPEARANCE_ACCEPTED"
     },
     "service_balcony": {
       "mode": "designer",
@@ -34,7 +37,8 @@
       "implementation_cn": "Designer方向保留原柜体设备，统一木纹材质，加入有承托的收纳与织物。",
       "review_flag_cn": "本轮是材质和陈设候选，洗烘设备没有新增或移位。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": true,
+      "owner_review_2026_10_12": "BASIC_MODEL_APPEARANCE_ACCEPTED"
     },
     "entry": {
       "mode": "designer",
@@ -46,7 +50,8 @@
       "implementation_cn": "Designer玄关柜和简洁陈设，台阶始终3阶；客厅沙发始终白蜡木布艺。",
       "review_flag_cn": "不采用VIEW05纯布艺沙发替换客厅。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": true,
+      "owner_review_2026_10_12": "BASIC_MODEL_APPEARANCE_ACCEPTED"
     },
     "reading_transition": {
       "mode": "designer",
@@ -59,7 +64,8 @@
       "implementation_cn": "书柜整体移到对面挂画墙，保留820×320mm原形，改墙挂底标高505mm；扶手木色，3阶不变。",
       "review_flag_cn": "底部距原矮柜顶25mm；挂墙基材、锚固、书籍荷载待施工核定，不作为承重认证。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": false,
+      "owner_review_2026_10_12": "PARTIAL_ACCEPTANCE_CORRECTIONS_REQUIRED"
     },
     "hallway": {
       "mode": "designer",
@@ -67,7 +73,8 @@
       "implementation_cn": "Designer简洁走廊，安静挂画与原有木作；没有新增地面障碍。",
       "review_flag_cn": "补充预览照明未改变门洞或通道；现场照度待照明设计。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": false,
+      "owner_review_2026_10_12": "MODEL_CORRECTION_REQUIRED"
     },
     "mother_bedroom": {
       "mode": "creative",
@@ -78,7 +85,8 @@
       "implementation_cn": "Creative浅木米白床组；梳妆台按Creative VIEW05的圆角U形定制，沿用900×450空间。",
       "review_flag_cn": "不采用Designer VIEW05；定制候选并非已选厂商SKU。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": false,
+      "owner_review_2026_10_12": "MODEL_CORRECTION_REQUIRED"
     },
     "couple_bedroom": {
       "mode": "creative",
@@ -86,7 +94,9 @@
       "implementation_cn": "Creative低矮浅木床台、布艺靠垫与圆形床边桌；保留1800床位和原房间几何。",
       "review_flag_cn": "床组为参考约束的定制候选，五金、床垫实物和终选材质仍待验收。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": false,
+      "owner_review_2026_10_12": "MODEL_CORRECTION_REQUIRED",
+      "bed_style_reference": "owner selected catalog2016 series page15; fit/SKU/model pending"
     },
     "study": {
       "mode": "reference_03_04",
@@ -94,7 +104,8 @@
       "implementation_cn": "保留实际书桌书柜和固定榻位；按图3补横向山水画，按图4采用鼠尾草绿靠垫与米白坐垫。",
       "review_flag_cn": "画与书柜为固定单一位置，不随镜头移墙；榻位尺寸沿用真实模型。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": true,
+      "owner_review_2026_10_12": "BASIC_MODEL_APPEARANCE_ACCEPTED"
     },
     "guest_bedroom": {
       "mode": "faithful",
@@ -102,7 +113,9 @@
       "implementation_cn": "Faithful保留1200单床及工作区，统一白蜡木和原生布艺材质。",
       "review_flag_cn": "原有简化家具继续保留；并非全屋每件家具都已成为厂家高精度资产。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": false,
+      "owner_review_2026_10_12": "MODEL_CORRECTION_REQUIRED",
+      "bed_style_reference": "owner selected catalog2016 series page15; fit/SKU/model pending"
     },
     "master_bath": {
       "mode": "creative",
@@ -110,7 +123,8 @@
       "implementation_cn": "Creative木纹竖肋抽屉面、悬浮柜与开放毛巾层；原台盆龙头马桶淋浴保持。",
       "review_flag_cn": "卫生洁具沿用源模型，采购产品、挂墙承重和防水节点待深化。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": false,
+      "owner_review_2026_10_12": "INSUFFICIENT_VIEW_TO_JUDGE"
     },
     "secondary_bath": {
       "mode": "designer",
@@ -118,7 +132,8 @@
       "implementation_cn": "Designer统一镜柜木作，保留原台盆与淋浴，少量实用配件。",
       "review_flag_cn": "设备位置不从AI图推测；采购型号待定。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": false,
+      "owner_review_2026_10_12": "PARTIAL_ACCEPTANCE_CORRECTIONS_REQUIRED"
     },
     "guest_bath": {
       "mode": "designer",
@@ -126,7 +141,8 @@
       "implementation_cn": "Designer统一木作和镜子，保留洁具与淋浴，功能性毛巾/皂具。",
       "review_flag_cn": "灯光是预览值，不代表已校准电气功率或照度。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": true,
+      "owner_review_2026_10_12": "BASIC_MODEL_APPEARANCE_ACCEPTED"
     },
     "north_sunroom": {
       "mode": "faithful",
@@ -138,7 +154,8 @@
       "implementation_cn": "Faithful继承已改阶梯柜：1800–2100浅开放层350深，2100–2600闭合层600深，宽1555。",
       "review_flag_cn": "非旧700深上柜；门板前缘约618深，人体后仰/起身动态及挂墙承重仍需现场检验。",
       "owner_style_confirmed": true,
-      "candidate_visual_accepted": false
+      "candidate_visual_accepted": false,
+      "owner_review_2026_10_12": "PARTIAL_ACCEPTANCE_CORRECTIONS_REQUIRED"
     }
   },
   "global_hard_constraints": [
@@ -146,5 +163,10 @@
     "pale_ash_ivory_simple",
     "real_product_or_evidence_backed_custom_reference",
     "visual_acceptance_separate_from_style_confirmation"
-  ]
+  ],
+  "global_lighting_review": {
+    "owner": "too dark; needs later correction",
+    "status": "CORRECTION_REQUIRED",
+    "acceptance_scope": "room modeling feedback does not accept lighting/final photorealistic fidelity"
+  }
 }
