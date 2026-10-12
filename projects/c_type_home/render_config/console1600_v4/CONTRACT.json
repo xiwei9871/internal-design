@@ -1,0 +1,11 @@
+{
+  "status": "OWNER_REQUESTED_LENGTH_CANDIDATE",
+  "length_mm": 1600,
+  "supersedes_length_mm": 1200,
+  "width_and_height": "keep319mm depth and existing height",
+  "source": "design/hunyuan_asset_v3/WHOLE_HOUSE_HUNYUAN_MATERIAL_REVIEW_V3.blend",
+  "scope": "singleconsolelength and rigiddecorrelocation only",
+  "other_rooms": "bed,sofa,guest frozen currentappearance",
+  "dimensions_role": "ownerdesigndimension,notrealSKU",
+  "image2_requests": 0
+}
