@@ -1,0 +1,60 @@
+{
+  "status": "HUMAN_REVIEW",
+  "candidate": "design/hunyuan_asset_v3/WHOLE_HOUSE_HUNYUAN_MATERIAL_REVIEW_V3.blend",
+  "candidate_sha256": "8ce341da085e6a3c29b8fdc4ca4b8aa84117f6df19e4686a1be043d94e4fd609",
+  "input_assets": [
+    {
+      "role": "COUPLE_BED",
+      "file": "cba8282db6ca59970f1311be3a1d44f2.glb",
+      "sha256": "48583f637a49adc5d033e2e674f48dfc42e0cc53fefb6dad4a967d7049a9b41a",
+      "final_dims_m": [
+        2.130000114440918,
+        1.9100000858306885,
+        1.070000171661377
+      ]
+    },
+    {
+      "role": "LIVING_L_SOFA",
+      "file": "c90be04e9228202bed9282d5bee6edc5.glb",
+      "sha256": "7d4cf50afd63e29ce075fc9eacf5a6e16c7be1cdb916fe8f81a1af4ea1c05c02",
+      "final_dims_m": [
+        1.4500000476837158,
+        2.8999996185302734,
+        0.8999999761581421
+      ]
+    },
+    {
+      "role": "COUPLE_TV_CONSOLE",
+      "file": "74cd759f5874c6ea17fef1dca9f82ef4.glb",
+      "sha256": "abe85548ad04687e440c975b94f7b53b504e5698781ce2ea301c2ebf2240523e",
+      "final_dims_m": [
+        0.3190116882324219,
+        1.2000000476837158,
+        0.488411545753479
+      ]
+    }
+  ],
+  "protected_hashes": 16,
+  "original_glb_hashes": 3,
+  "house_objects_preserved": 3455,
+  "registered_cameras": 75,
+  "guest_unchanged": true,
+  "guest_previous_issue": "entry collision retained by explicit owner instruction",
+  "technical": "PASS_SELECTED_TECHNICAL_GATES",
+  "actual_source_uv_preserved": true,
+  "temporary_analysis_weld": "rawUVseamboundaries→0 at1e-6, never applied to deliverable",
+  "bedfoot_console_front_mm": 797.9879379272461,
+  "checked_intersections": [],
+  "visual": "6 finalCyces1280x720 images and6originaltexture comparison plus4direction inputperasset opened",
+  "accepted_by_owner": false,
+  "material_partition_failure": "UVcolourthreshold wood patches rejected, structuralbottom287mm/linenupper chosen and rendered",
+  "appearance_remaining": [
+    "TVconsole body low after1200uniform, source includesdecor",
+    "generated cloth/wood sampling vs real specimen",
+    "sofa calibratedmoduleinsidegeometry approximate",
+    "bedmattressinternal dimensions not confirmed"
+  ],
+  "image2_requests": 0,
+  "binaries_staged": false,
+  "next": "owner appearance review; no automatic room propagation"
+}
