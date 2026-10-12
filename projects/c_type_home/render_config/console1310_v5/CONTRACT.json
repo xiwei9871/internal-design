@@ -1,0 +1,31 @@
+{
+  "product": "木甲木乙1310-2.0电视柜（自然边）",
+  "source": "owner catalog attachment supplied2026-10-12",
+  "dimensions_length_depth_body_height_mm": [
+    2000,
+    460,
+    400
+  ],
+  "body_height_excludes": "plants/books/ornaments",
+  "attachment_sha256": "385cb8aef26006f0d6c364ba3ae478534de38b21f1a82644e6032c117909f51c",
+  "reference_local": "design/console1600_v4/references/REAL_PRODUCT_1310_2_0.png",
+  "previous_candidate": {
+    "length_mm": 1600,
+    "depth_mm": 319.011688,
+    "height": "previous AIwholeobjectincludingdecor488mm; bodyheightnotcalibrated"
+  },
+  "status": "OWNER_CONFIRMED_REAL_PRODUCT_2000x460x400",
+  "required_correction": "depth460andbodyheight400 must govern actualcabinet separatefromprops; length2000catalog conflictsprevious1600choice",
+  "no_scene_change": false,
+  "preliminary_space_check": {
+    "wall_side_x_m": 8.02,
+    "cabinet_front_at460depth_x_m": 8.48,
+    "bedfoot_x_m": 9.13700008392334,
+    "bedfoot_to_cabinet_front_mm": 657.0,
+    "calculation": "same westwall stand-off and current bed pose; not full swept-door/human validation",
+    "2000_length_y_bounds_m": [
+      1.087,
+      3.087
+    ]
+  }
+}
