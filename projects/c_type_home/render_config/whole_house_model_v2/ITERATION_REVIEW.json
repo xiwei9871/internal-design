@@ -1,0 +1,27 @@
+{
+  "status": "HUMAN_REVIEW_GUEST_CLEARANCE_PENDING",
+  "candidate": "design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_SUPPORTED_V2.blend",
+  "candidate_sha256": "5a8bf58aaea0978147db40e1c7c68d57c27be6f9b254c9a6191ca7ef32c11801",
+  "owner_latest_guest_choice": "1.2x2m head east, supersedes1.5m",
+  "guest_clarification_pending": "north170mm microshift + north hinge for southmost wardrobe door; preserves head east; not executed",
+  "protected_sources_unchanged": 16,
+  "original_meshes_preserved": true,
+  "registered_cameras_unchanged": 75,
+  "material_assignments_changed": 63,
+  "new_meshes": 269,
+  "actual_new_visual_images": 12,
+  "visual_review": "all12 final previews opened; subjective refinement awaits owner",
+  "source_picture_versions": "nine first-stage images, unaffected by supplementalcamera and north-back contact correction; two supportednorth images and source-provenance recorded in delivery",
+  "technical_checks": "beds final covers and north seat/back have no checked intersections; north2mmrestgap;3wardrobe leaf sweeps0..90 pass against original1200candidate; entry gate remains failed",
+  "runtime_failure": "one render crashed after nine completed images on invalid noncamera ambiguity; no overwrite, fixed camera type selection, remaining3 rendered in freshdir; helperfinalization first failed same identity ambiguity, no source write",
+  "known_limits": [
+    "guest entry collision not resolved",
+    "door body-use clearance not certified",
+    "product hidden joints and mirror dimensions inferred",
+    "cloth duvet remains simplified compared with catalog photo",
+    "not factory SKU certified",
+    "lighting rendering parameters not site lux/electrical design"
+  ],
+  "image2_requests": 0,
+  "generated_assets_staged": false
+}

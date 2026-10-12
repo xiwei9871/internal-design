@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-12",
+  "latest_owner_decision": "1200x2000 standard bed, head east;1500x2000 superseded after wardrobe collision",
+  "catalog": "2016-1.2 2090x1330x980 outer,1200x2000mattress",
+  "sources": [
+    {
+      "url": "https://www.taobao.com/list/product/120x180床架.htm",
+      "observation": "category mostly180x200 results; one width120,length180 folding iron lunch bed; no verified matching ash finished bed SKU",
+      "status": "PAGE_VERIFIED_NO_SUITABLE_SKU"
+    },
+    {
+      "url": "https://www.ikea.cn/cn/zh/rooms/bedroom/jia-ge-shi-hui-de-da-chi-cun-dan-ren-chuang-pub984a2117",
+      "observation": "official120x200and150x200standard sizes",
+      "status": "PAGE_VERIFIED_STANDARD_SIZE"
+    }
+  ],
+  "no1200x1800claim": "No matching simple ash finished bed confirmed by this bounded search; not a claim that no manufacturer produces it. No prices/SKU inventories certified.",
+  "clearance": "Wardrobe and entry require combined gate; latest proposed north170mm shift and north hinge for southmostdoor pending owner answer"
+}
