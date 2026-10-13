@@ -53,3 +53,18 @@ Before concealing the wall, establish and repair the moisture source, inspect th
 - Source review: only this decision record, the two prompts, and the project-local .gitignore are in scope. Reference binaries, all previews, generated studies, provider metadata, and contact sheets are excluded from Git review.
 - User acceptance of generated images: pending.
 - Construction readiness: unresolved moisture cause and unselected panel system.
+
+## User-Requested Revision V2 - 2026-10-13
+
+- The user supplied the warm-white site image and requested removing the people and stacked construction materials, then adding a television to judge the appearance.
+- Archive that exact selected image at references/user_selected/warm_white_site_selected_20261013.png; use it as the only image input for V2.
+- Preserve warm-white panels, their boundaries, the adjacent gray wall, ceiling, passage, lower open gap, and camera. This explicit cleanup request supersedes V1's instruction to retain people and boxes for this image only.
+- Add a centered wall-mounted black 16:9 television at an indicative width of about 70 percent of the visible wall width. The television is a visualization placeholder, not a newly selected product, a measured installation, or an approved size.
+- For a coherent installation preview, remove temporary hanging cables and depict simple white faceplates at the existing lower socket position. Electrical topology is not changed or specified by the image.
+- Do not add a TV cabinet, fireplace, new opening, finished floor, furniture, or decorative element.
+- V2 generation: one successful gpt-image-2 edit, high quality, one transport attempt, no retry; requested 1600x1200, actual native 1448x1086.
+- V2 output: options/warm_white_tv_v2/site_warm_white_tv_v2.png. Comparison: options/warm_white_tv_v2/site_tv_review.jpg.
+- V2 visual review: both people and all stacked boxes are removed; a thin black wall-mounted television is centered within the warm-white face; temporary hanging wires are removed and lower faceplates shown. The left gray wall, ceiling/beam, panel joints, right passage, bottom wall elevation, and floor-protection context remain recognizable. No new furniture or opening was found.
+- V2 limitations: obscured passage/floor surfaces are AI reconstruction, and TV size, mounting height, electrical faceplates, and joints are indicative. Generative detail drift remains possible.
+- V2 source preservation: selected input passed SHA256 verification; local manifest at options/warm_white_tv_v2/input_preservation.json.
+- V2 user acceptance: pending. Stop at human visual review.
