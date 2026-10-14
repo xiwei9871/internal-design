@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-14",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/WHOLE_HOUSE_PALE_ASH_DELIVERY_V7.blend",
+  "source_sha256": "e325b355d94a7d6d7cb88ca06e18f0eeeab5a96493a33266cf1e57a73f0cecf5",
+  "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/WHOLE_HOUSE_GLASS_PRIVACY_DELIVERY_V8.blend",
+  "sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+  "decisions": {
+    "general_windows_and_nonprivate_doors": "colorless clear glass",
+    "all_shower_partitions": "colorless privacy frosted glass",
+    "master_bath_entry": "retain timber door",
+    "guest_bath_entry": "retain timber door",
+    "secondary_bath_slider": "frosted glass",
+    "guest_bedroom_north_balcony_double_slider": "frosted glass, owner clarified mistaken guest-bath label",
+    "appliance_glass_and_lamp_shades": "retain prior black hatch / opal lamp selections"
+  },
+  "materials": {
+    "base_color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "metallic": 0,
+    "transmission": 1,
+    "ior": 1.45,
+    "clear_roughness": 0.015,
+    "frosted_roughness": 0.68,
+    "no_volume_absorption": true
+  },
+  "counts": {
+    "clear": 31,
+    "frosted": 16
+  },
+  "geometry_changes": false,
+  "ceiling450mm_and_view_modes": "inherited unchanged",
+  "environment_color": "V7 environment kept for controlled comparison; dark brown reflections can persist on physical clear glass",
+  "status": "HUMAN_REVIEW",
+  "image2_requests": 0,
+  "render_transport": "V7-established white Transparent BSDF only for IsShadowRay; visible clear/frosted surface retained"
+}
