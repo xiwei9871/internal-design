@@ -1,0 +1,36 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/WHOLE_HOUSE_GLASS_PRIVACY_DELIVERY_V8.blend",
+  "source_sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+  "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_visibility_v9/WHOLE_HOUSE_GLASS_VISIBILITY_V9.blend",
+  "sha256": "42beee4cb51bce1487edbe0003b226951986ca073b2d2e3b4ffec9305c80f9cf",
+  "eevee": {
+    "raytracing": true,
+    "method": "SCREEN",
+    "material_refraction": true,
+    "thickness_mode": "SLAB",
+    "preview_thickness_m": 0.008
+  },
+  "world_before": {
+    "Background": 0.2199999988079071,
+    "Background.001": 0.6000000238418579,
+    "LD Neutral exterior presentation": 0.6000000238418579
+  },
+  "world_after": {
+    "Background": 0.2199999988079071,
+    "Background.001": 3.5999999046325684,
+    "LD Neutral exterior presentation": 3.5999999046325684
+  },
+  "glass_surface": "all V8 colorless, IOR1.45, clear roughness.015 / frosted.68 retained; only EEVEE preview flags/output thickness changed",
+  "privacy": "16 V8 privacy panes retained; wooden bathroom entries unchanged",
+  "diffuse_lighting": "world .22, individual lights and camera exposure unchanged",
+  "background_source": "existing Poly Haven kiara_3_morning CC0, illustrative exterior not site photography",
+  "official_docs": [
+    "https://docs.blender.org/manual/en/latest/render/eevee/render_settings/raytracing.html",
+    "https://docs.blender.org/manual/en/latest/render/eevee/material_settings.html"
+  ],
+  "image2_requests": 0,
+  "date": "2026-10-14",
+  "status": "HUMAN_REVIEW",
+  "diagnosis": "Two independently reproduced failures: Material Preview forest with EEVEE raytrace/refraction disabled appears opaque; Cycles underexposed exterior overwhelms normal transmission with interior reflection. Window mesh watertight8mm, no duplicate pane on tested center ray.",
+  "viewport_assessment": "Matched EEVEE off/on screenshots show room furniture/steps visible only when refraction enabled. Simulator reproduces saved material-preview world rather than a captured UI screen."
+}
