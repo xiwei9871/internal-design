@@ -1,0 +1,355 @@
+entity,handle,source_object_id,source,subelement,design_status,verification_status,evidence
+dim_anchor,,S-SPAN-W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,OBJECT_IDENTIFIED,fcstd:W_BALC_S.xmin
+dim_anchor,,S-SPAN-E,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[8],EXISTING,OBJECT_IDENTIFIED,fcstd:W_EXT_E1.xmax
+dim_anchor,,W-SPAN-S,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,OBJECT_IDENTIFIED,fcstd:W_BALC_S.ymin
+dim_anchor,,W-SPAN-N,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[2],EXISTING,OBJECT_IDENTIFIED,fcstd:W_EXT_N_BAL.ymax
+dim_anchor,,KIT-W-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,OBJECT_IDENTIFIED,fcstd:W_INT_X5800.xmin
+dim_anchor,,KIT-E-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,OBJECT_IDENTIFIED,fcstd:W_INT_X7900_L.xmin
+dim_anchor,,MBED-W-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[4],EXISTING,OBJECT_IDENTIFIED,fcstd:W_INT_X7900_L.xmax
+dim_anchor,,MBED-E-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,OBJECT_IDENTIFIED,fcstd:W_INT_X11500.xmin
+dim_anchor,,MOT-W-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[4],EXISTING,OBJECT_IDENTIFIED,fcstd:W_INT_X11500.xmax
+dim_anchor,,MOT-E-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,OBJECT_IDENTIFIED,fcstd:W_EXT_E1.xmin
+dim_anchor,,LWIN-W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,OBJECT_IDENTIFIED,fcstd:W_BAY_F.xmin
+dim_anchor,,LWIN-E,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[4],EXISTING,OBJECT_IDENTIFIED,fcstd:W_BAY_F.xmax
+dim_anchor,,BALC-N-W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,OBJECT_IDENTIFIED,fcstd:W_EXT_N_BAL.xmin
+dim_anchor,,BALC-N-E,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[4],EXISTING,OBJECT_IDENTIFIED,fcstd:W_EXT_N_BAL.xmax
+dim_anchor,,BATH2E-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,OBJECT_IDENTIFIED,fcstd:W_INT_X11500.xmin
+dim_anchor,,STAIR-W,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,mesh_extremum(W),PROPOSED,FIELD_VERIFY,blender:STEP_0 W-extremum — 台阶尺寸待现场复尺
+dim_anchor,,STAIR-E,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,mesh_extremum(E),PROPOSED,FIELD_VERIFY,blender:WAVE_STEP_3_ARRIVAL E-extremum — 台阶尺寸待现场复尺
+dim_anchor,,STAIR-S,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,mesh_extremum(S),PROPOSED,FIELD_VERIFY,blender:STEP_0 S-extremum — 台阶尺寸待现场复尺
+dim_anchor,,STAIR-N,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,mesh_extremum(N),PROPOSED,FIELD_VERIFY,blender:STEP_0 N-extremum — 台阶尺寸待现场复尺
+dim_anchor,,BATH2-W,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(WS),PROPOSED,OBJECT_IDENTIFIED,blender:R3_COMPLETE_PARTITION_WALLS bbox WS
+dim_anchor,,BATH2-E,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(ES),PROPOSED,OBJECT_IDENTIFIED,blender:R3_COMPLETE_PARTITION_WALLS bbox ES
+dim_anchor,,BATH2-S,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(WS),PROPOSED,OBJECT_IDENTIFIED,blender:R3_COMPLETE_PARTITION_WALLS bbox WS
+dim_anchor,,BATH2-N,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(WN),PROPOSED,OBJECT_IDENTIFIED,blender:R3_COMPLETE_PARTITION_WALLS bbox WN
+dim_anchor,,BATH2-NET-W,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(ES),PROPOSED,OBJECT_IDENTIFIED,blender:VIEW_WALL_R3_WEST_PARTITION bbox ES
+dim_anchor,,BATH2-NET-S,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(WN),PROPOSED,OBJECT_IDENTIFIED,blender:VIEW_WALL_R3_SOUTH_POCKET_PARTITION bbox WN
+dim_anchor,,KOPEN-S,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(WN),PROPOSED,FIELD_VERIFY,blender:KITCHEN_DIVIDER_PIER_SITE_REVIEW bbox WN
+dim_anchor,,KOPEN-N,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(WS),PROPOSED,FIELD_VERIFY,blender:W_wall_md_0010 bbox WS
+managed_wall,,W_EXT_W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_EXT_S,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_EXT_S_W1,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_EXT_S_W2,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_EXT_E1,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_EXT_E2,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_EXT_NE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_EXT_NE2,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_EXT_N_LV,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_BAY_F,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_BAY_JW,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_BAY_JE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_EXT_N_BAL,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_BALC_W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_BALC_S,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_BALC_N,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_X5800,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_X5800_STUB,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_X7900_L,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_X7900_U,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_X9800,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_X11500,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_X13000,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_Y4500_a,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_CLK_N,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_CLK_E,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_CLK_W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_COR_N_STUB,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_BEDN_S,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_WC_S,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_STD_S,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_Y10800,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_Y10800_EXT,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_SHAFT_K,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_DRY_STUB,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_NICHE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_Y4500_bc,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,W_INT_Y4500_b,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,COL_B1,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,COL_B2,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,COL_WS,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,outline,EXISTING,OBJECT_IDENTIFIED,fcstd
+managed_wall,,D107_V3_ADJACENT_RETURN_WALL_REMAINDER,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,D107_V3_RED_SIDE_50MM_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,DOOR_V2_D107_LEFT_RETURN_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,DOOR_V2_D107_RIGHT_RETURN_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,KITCHEN_DIVIDER_PIER_SITE_REVIEW,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,R3_COMPLETE_PARTITION_WALLS,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,R4_WEST_PARTITION_SOUTH_FLUSH_CONNECTION,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,STEP_0,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,STEP_1,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,STEP_2,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_B11_SITE_BALCONY_WINDOW_HEAD,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_B11_SITE_BALCONY_WINDOW_LEFT_RETURN,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_B11_SITE_BALCONY_WINDOW_RIGHT_RETURN,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_B11_SITE_KITCHEN_WINDOW_UNDER_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_DOOR_V2_NBALC_NORTH_FULL_WALL_PIER,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_DOOR_V2_NBALC_SOLID_ABOVE_DOOR,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_FRONT_HEAD,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_FRONT_UNDER_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_INNER_HEAD,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_INNER_UNDER_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_LEFT_HEAD,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_LEFT_UNDER_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_RIGHT_HEAD,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_RIGHT_UNDER_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_SOFFIT,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_BAY_SOLID_PLATFORM_CORE,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_GUEST_BATH_FULL_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_GUEST_BATH_NORTH_JUNCTION,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_LIVING_FIX_TV_NORTH_SOLID_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_R3_SOUTH_POCKET_PARTITION,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_R3_WEST_PARTITION,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_D-BATHM_COMPLETE_HOST_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_D-GUEST-BATH_COMPLETE_HOST_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_D-GUEST-ROOM_COMPLETE_HOST_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_G_DIN_LIV_LEFT_PIER,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_G_DIN_LIV_RIGHT_PIER,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_G_DIN_LIV_SOLID_HEAD,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-MB-S_INNER_HEAD,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-MB-S_INNER_LOWER,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-MB-S_SOFFIT,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-MB-S_SOLID_UNDER_PLATFORM,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-SMB-S_INNER_HEAD,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-SMB-S_INNER_LOWER,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-SMB-S_SOFFIT,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-SMB-S_SOLID_UNDER_PLATFORM,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-STUDY-NE_INNER_HEAD,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-STUDY-NE_INNER_LOWER,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-STUDY-NE_SOFFIT,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,VIEW_WALL_V4_W-STUDY-NE_SOLID_UNDER_PLATFORM,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0004,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0005,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0006,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0007,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0008,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0009,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0010,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0011,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0012,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0013,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0014,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0015,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0016,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0017,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0018,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0019,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0020,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0021,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0022,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0023,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0024,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0025,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0026,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0027,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0028,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0029,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0030,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0031,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0032,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0033,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0034,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0035,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0036,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0037,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0038,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0039,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0040,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0041,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0042,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0043,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0044,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0045,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0046,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0047,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0048,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0049,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0050,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0051,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0052,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0053,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0054,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0055,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0056,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0057,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0058,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0059,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0060,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0061,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0062,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0063,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0064,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,W_wall_md_0088,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,WAVE_STEP_3_ARRIVAL,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+managed_wall,,WAVE_WALL_HANDRAIL_900,/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend,outline,PROPOSED,OBJECT_IDENTIFIED,blender
+A-UNCERTAIN LWPOLYLINE,3D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,3F,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,45,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,47,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,4D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,4F,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,5B,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,69,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,6B,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,6D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,6F,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,75,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,79,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,7B,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,7D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,7F,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,85,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,86,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,87,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,88,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,89,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,8A,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,8B,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,8C,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,8D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,94,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,9A,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,A0,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,A4,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,AA,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,AC,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,B2,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,BA,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,BC,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,C0,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,C6,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,CC,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+A-UNCERTAIN LWPOLYLINE,D0,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,wall-diff candidate
+LEGACY LINE,D8,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,D9,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,DA,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,DB,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,DC,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,DD,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,DE,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,DF,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,E0,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,E1,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,E2,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,E3,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,E4,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,E5,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,E6,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,E7,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,E8,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,E9,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,EA,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,EB,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,EC,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,ED,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,EE,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,EF,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F0,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F1,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F2,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F3,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F4,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F5,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F6,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F7,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F8,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,F9,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,FA,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,FB,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,FC,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,FD,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,FE,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,FF,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,100,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,101,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,102,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,103,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,104,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,105,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,106,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,107,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,108,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,109,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,10A,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,10B,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,10C,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,10D,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,10E,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,10F,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,110,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,111,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,112,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,113,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,114,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,115,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,116,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,117,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,118,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,119,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,11A,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,11B,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,11C,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,11D,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,11E,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,11F,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,120,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,121,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,122,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,123,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,124,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,125,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,126,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,127,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,128,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,129,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,12A,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,12B,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,12C,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,12D,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,12E,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,12F,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,130,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,131,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,132,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,133,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,134,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,135,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,136,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,137,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,138,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,139,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,13A,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,13B,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,13C,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,13D,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,13E,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,13F,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY LINE,140,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,141,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,142,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,143,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,144,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,145,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,146,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,147,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,148,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,149,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,14A,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,14B,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,14C,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,14D,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,14E,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,14F,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+LEGACY TEXT,150,baseline A-DIMS,,,EXISTING,LEGACY_FROZEN,superseded
+INSERT SYM-DOOR-LEAF,330,dxf_handle:8E|EXISTING|swing:UNKNOWN_UNVERIFIED,,,PROPOSED,OBJECT_IDENTIFIED,block insert
+INSERT SYM-DOOR-LEAF,333,dxf_handle:90|EXISTING|swing:UNKNOWN_UNVERIFIED,,,PROPOSED,OBJECT_IDENTIFIED,block insert
+INSERT SYM-DOOR-LEAF,336,dxf_handle:92|EXISTING|swing:UNKNOWN_UNVERIFIED,,,PROPOSED,OBJECT_IDENTIFIED,block insert
+INSERT SYM-DOOR-LEAF,339,dxf_handle:96|EXISTING|swing:UNKNOWN_UNVERIFIED,,,PROPOSED,OBJECT_IDENTIFIED,block insert
+INSERT SYM-DOOR-LEAF,33C,dxf_handle:98|EXISTING|swing:UNKNOWN_UNVERIFIED,,,PROPOSED,OBJECT_IDENTIFIED,block insert
+INSERT SYM-DOOR-LEAF,33F,dxf_handle:9C|EXISTING|swing:UNKNOWN_UNVERIFIED,,,PROPOSED,OBJECT_IDENTIFIED,block insert
+INSERT SYM-DOOR-LEAF,342,dxf_handle:9E|EXISTING|swing:UNKNOWN_UNVERIFIED,,,PROPOSED,OBJECT_IDENTIFIED,block insert
+INSERT SYM-DOOR-LEAF,345,dxf_handle:A2|EXISTING|swing:UNKNOWN_UNVERIFIED,,,PROPOSED,OBJECT_IDENTIFIED,block insert
+INSERT SYM-DOOR-LEAF,348,dxf_handle:A6|EXISTING|swing:UNKNOWN_UNVERIFIED,,,PROPOSED,OBJECT_IDENTIFIED,block insert
+INSERT SYM-WIN-SPAN,352,fcstd:W_BAY_F,,,PROPOSED,OBJECT_IDENTIFIED,block insert

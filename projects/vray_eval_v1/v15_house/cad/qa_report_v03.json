@@ -1,0 +1,82 @@
+{
+ "sheet": "A103_CONSTRUCTION_POC_V3.dxf",
+ "generated_by": "qa_a103_v3.py",
+ "gates": {
+  "G1_source_fresh_live": {
+   "status": "PASS",
+   "stale": []
+  },
+  "G2_native_dims_layer": {
+   "status": "PASS",
+   "count": 12,
+   "expected": 12,
+   "off_layer": []
+  },
+  "G3_independent_recompute": {
+   "status": "PASS",
+   "deviations": {},
+   "unmapped_dims": []
+  },
+  "G4_object_exists_in_source": {
+   "status": "PASS",
+   "bad": []
+  },
+  "G5_legacy_dims_disposed": {
+   "status": "PASS",
+   "moved": 121
+  },
+  "G6_uncertain_registry": {
+   "status": "HOLD",
+   "entities": 38,
+   "note": "38 wall-diff candidates frozen & registered; human adjudication pending"
+  },
+  "G7_door_windows_traced": {
+   "status": "PASS",
+   "inserts": 10,
+   "width_mismatch": []
+  },
+  "G8_same_revision_real": {
+   "status": "PASS",
+   "anchor_revs": [
+    [
+     "bl",
+     "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50"
+    ],
+    [
+     "fc",
+     "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14"
+    ]
+   ],
+   "managed_revs": [
+    [
+     "bl",
+     "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50"
+    ],
+    [
+     "fc",
+     "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14"
+    ]
+   ]
+  },
+  "G9_geometry_sync": {
+   "status": "PASS",
+   "managed": 158,
+   "mismatch": [],
+   "untagged": []
+  },
+  "G10_opening_validity": {
+   "status": "PASS",
+   "x_overlap_mm": 200.0,
+   "note": "pier-top & stub-bottom share wall band"
+  },
+  "G11_editor_verify": {
+   "status": "PARTIAL",
+   "note": "FreeCAD importDXF reads file (prior check); interactive QCAD/LibreCAD select-edit NOT_RUN"
+  },
+  "G12_paper_pdf": {
+   "status": "PARTIAL",
+   "note": "Layout1 A1 frame added; PDF regen pending T5"
+  }
+ },
+ "verdict": "HOLD"
+}
