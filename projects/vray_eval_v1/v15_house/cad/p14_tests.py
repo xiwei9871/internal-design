@@ -83,15 +83,48 @@ check('T8 self_intersect_flagged',
       any('SELF_INTERSECT' in a['reason'] for a in e['anomalies']),
       '自交环被标记')
 
-# T9: 真实文件端到端 — W_EXT_N_BAL 拆除矩形内不得有结构覆盖
+# T9: HATCH 外环+内孔 — 孔洞区域不得覆盖
+d = doc_with(('HATCH', ([[(1000,1000),(1000,1400),(5000,1400),(5000,1000)],
+                        [(2000,1100),(2000,1300),(3000,1300),(3000,1100)]], True)))
+e = extract_structural(d.modelspace())
+check('T9a HATCH_hole_void', covered(e,1500,1200) and not covered(e,2500,1200),
+      '外环覆盖, 孔洞为空')
+check('T9b HATCH_hole_logged',
+      any(a.get('reason')=='HOLES_SUBTRACTED' for a in e['anomalies']),
+      '孔洞扣减被记录')
+
+# T10: 双嵌套孔洞
+d = doc_with(('HATCH', ([[(0,0),(0,400),(8000,400),(8000,0)],
+                        [(500,100),(500,300),(1000,300),(1000,100)],
+                        [(2500,100),(2500,300),(3000,300),(3000,100)]], True)))
+e = extract_structural(d.modelspace())
+check('T10 double_holes', not covered(e,750,200) and not covered(e,2750,200)
+      and covered(e,1500,200), '两孔均扣除')
+
+# T11: 不连续EdgePath(缺口>1mm) -> anomaly 不成面
+import ezdxf.entities
+d = ezdxf.new('R2010'); d.layers.add('S-S.WALL'); m = d.modelspace()
+h = m.add_hatch(dxfattribs={'layer':'S-S.WALL'})
+ep = h.paths.add_edge_path()
+ep.add_line((5000+AX,5000+AY),(5200+AX,5000+AY))
+ep.add_line((5200+AX,5100+AY),(5200+AX,7000+AY))   # 100mm缺口
+ep.add_line((5200+AX,7000+AY),(5000+AX,7000+AY))
+ep.add_line((5000+AX,7000+AY),(5000+AX,5000+AY))
+e = extract_structural(d.modelspace())
+check('T11 discont_edgepath', not covered(e,5100,6000) and
+      any(a['reason']=='OPEN_EDGEPATH' for a in e['anomalies']),
+      '不连续EdgePath被拒绝')
+
+# T12: 真实文件端到端 — W_EXT_N_BAL 拆除矩形内不得有结构覆盖
 import json
 from shapely.geometry import Polygon
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[4]   # v15_house/cad -> repo root
 ext_real = extract_structural(ezdxf.readfile(
-    '/Users/xiwei/interior_design/projects/c_type_home/cad/structure_only_source_sync.dxf'
-).modelspace())
+    ROOT/'projects/c_type_home/cad/structure_only_source_sync.dxf').modelspace())
 demo = Polygon([(7900,13400),(13000,13400),(13000,13600),(7900,13600)])
 r = demo.intersection(ext_real['union']).area / demo.area
-check('T9 N_BAL_demo_real_file', r < 0.05, f'实测结构覆盖={r:.3f}')
+check('T12 N_BAL_demo_real_file', r < 0.05, f'实测结构覆盖={r:.3f}')
 
 failed = [n for n,ok,_ in results if not ok]
 print(f'\n{len(results)-len(failed)}/{len(results)} PASS')

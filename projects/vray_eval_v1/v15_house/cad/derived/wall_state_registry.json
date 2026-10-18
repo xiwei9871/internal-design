@@ -1,0 +1,2706 @@
+{
+ "meta": {
+  "algorithm": "P1.4.2 — unified wall state registry (struct evidence + design status)",
+  "geometry_snapshot": {
+   "file": "derived/geometry_v05.json",
+   "sha256": "1eb00e93250e3de6d58af03cab69f349cbd8f4d76f911252499c7b51b092b694"
+  },
+  "mapping_snapshot": {
+   "file": "derived/three_source_mapping.json",
+   "sha256": "cd56365c31b6af8164da8469917cb6bba701100039bf51d478e8899e77566338"
+  },
+  "structural_source_sha256": "3dcb49bfd6e617817089dda4fdfadec49bcf7c09e92b0012e3779e1c5c7e72e2",
+  "holds": [
+   "W_EXT_N_BAL demolition (DEMOLITION_HOLD)",
+   "structural/legal verification",
+   "site re-measure",
+   "balcony glazing compliance"
+  ]
+ },
+ "entries": [
+  {
+   "object": "W_EXT_W#p0",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.41,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    2700,
+    6530,
+    2900,
+    13600
+   ],
+   "area": 1414000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_EXT_W#p1",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.774,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    2700,
+    2300,
+    2900,
+    5400
+   ],
+   "area": 620000,
+   "note": "",
+   "a102_role": "RETAINED_STRUCT",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_EXT_S",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    6050,
+    -200,
+    15400,
+    0
+   ],
+   "area": 1870000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_EXT_S_W1",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    4600,
+    -200,
+    5000,
+    0
+   ],
+   "area": 80000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_EXT_S_W2",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    5380,
+    -200,
+    6050,
+    0
+   ],
+   "area": 134000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_EXT_E1",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.289,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    15400,
+    0,
+    15600,
+    4500
+   ],
+   "area": 900000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_EXT_E2",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.138,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    16300,
+    4400,
+    16500,
+    10900
+   ],
+   "area": 1300000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_EXT_NE",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    13600,
+    11350,
+    15800,
+    11550
+   ],
+   "area": 440000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_EXT_NE2",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.222,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    15600,
+    10700,
+    16500,
+    10900
+   ],
+   "area": 180000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_EXT_N_LV#demol0",
+   "source": "fcstd",
+   "design_status": "EXISTING_DEMOLISHED",
+   "struct_ratio": 0.038,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    2700,
+    12750,
+    7900,
+    12950
+   ],
+   "area": 1040000,
+   "note": "",
+   "a102_role": "DEMOLISHED_CONFIRMED",
+   "a103_role": "SUPPRESS",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_BAY_F",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    3800,
+    13400,
+    6900,
+    13600
+   ],
+   "area": 620000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_BAY_JW",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.444,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    3700,
+    12950,
+    3800,
+    13400
+   ],
+   "area": 45000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_BAY_JE",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.444,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    6900,
+    12950,
+    7000,
+    13400
+   ],
+   "area": 45000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_EXT_N_BAL#demol0",
+   "source": "fcstd",
+   "design_status": "EXISTING_DEMOLISHED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    7900,
+    13400,
+    13000,
+    13600
+   ],
+   "area": 1020000,
+   "note": "修正后结构覆盖0%, 但开发商黑白语义未核实 -> 预防性HOLD, 不得发布为已批拆除",
+   "a102_role": "DEMOLITION_HOLD",
+   "a103_role": "SUPPRESS_HOLD",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_BALC_W",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.051,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    1300,
+    450,
+    1500,
+    2400
+   ],
+   "area": 390000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_BALC_S",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.067,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    1300,
+    450,
+    5800,
+    650
+   ],
+   "area": 900000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_BALC_N",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.673,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "STRUCT_MARKED",
+   "bbox": [
+    1300,
+    2400,
+    2900,
+    2560
+   ],
+   "area": 256000,
+   "note": "",
+   "a102_role": "RETAINED_STRUCT",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_BALC_N#demol0",
+   "source": "fcstd",
+   "design_status": "EXISTING_DEMOLISHED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    3300,
+    2400,
+    5800,
+    2560
+   ],
+   "area": 400000,
+   "note": "",
+   "a102_role": "DEMOLISHED_CONFIRMED",
+   "a103_role": "SUPPRESS",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_INT_X5800#p0",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.666,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    5700,
+    3800,
+    5900,
+    4700
+   ],
+   "area": 180000,
+   "note": "",
+   "a102_role": "RETAINED_STRUCT",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_INT_X5800#p1",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.451,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    5700,
+    -150,
+    5900,
+    1400
+   ],
+   "area": 310000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_INT_X5800#demol0",
+   "source": "fcstd",
+   "design_status": "EXISTING_DEMOLISHED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    5700,
+    1800,
+    5900,
+    3800
+   ],
+   "area": 400000,
+   "note": "",
+   "a102_role": "DEMOLISHED_CONFIRMED",
+   "a103_role": "SUPPRESS",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_INT_X5800_STUB",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "UNMARKED_INTERIOR",
+   "bbox": [
+    5650,
+    4700,
+    5750,
+    5950
+   ],
+   "area": 125000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_INT_X7900_L",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.305,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    7800,
+    -150,
+    8000,
+    4670
+   ],
+   "area": 964000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_INT_X7900_U#p0",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.4,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    7800,
+    12550,
+    7900,
+    13550
+   ],
+   "area": 100000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_INT_X7900_U#p1",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.564,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    7800,
+    7800,
+    7900,
+    11700
+   ],
+   "area": 390000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_INT_X7900_U#p2",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.092,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    7800,
+    4670,
+    7900,
+    5000
+   ],
+   "area": 33000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_INT_X7900_U#demol0",
+   "source": "fcstd",
+   "design_status": "EXISTING_DEMOLISHED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    7800,
+    5000,
+    7900,
+    7800
+   ],
+   "area": 280000,
+   "note": "",
+   "a102_role": "DEMOLISHED_CONFIRMED",
+   "a103_role": "SUPPRESS",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_INT_X9800",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "UNMARKED_INTERIOR",
+   "bbox": [
+    9700,
+    7700,
+    9900,
+    10900
+   ],
+   "area": 640000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_INT_X11500",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.418,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    11400,
+    -200,
+    11600,
+    6500
+   ],
+   "area": 1340000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_INT_X13000#p0",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.26,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    12900,
+    7450,
+    13100,
+    13600
+   ],
+   "area": 1230000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_INT_X13000#p1",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12900,
+    5500,
+    13100,
+    6300
+   ],
+   "area": 160000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_INT_X13000#p2",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12900,
+    4630,
+    13100,
+    4750
+   ],
+   "area": 24000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_INT_Y4500_a",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.819,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "STRUCT_MARKED",
+   "bbox": [
+    5700,
+    4450,
+    8236,
+    4700
+   ],
+   "area": 634000,
+   "note": "",
+   "a102_role": "RETAINED_STRUCT",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_INT_CLK_N",
+   "source": "fcstd",
+   "design_status": "DESIGN_REVIEW_PENDING",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "UNMARKED_INTERIOR",
+   "bbox": [
+    9050,
+    6300,
+    11400,
+    6500
+   ],
+   "area": 470000,
+   "note": "",
+   "a102_role": "PENDING_REVIEW",
+   "a103_role": "DRAW_REVIEW_LAYER",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_INT_CLK_E",
+   "source": "fcstd",
+   "design_status": "DESIGN_REVIEW_PENDING",
+   "struct_ratio": 0.111,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    11300,
+    4500,
+    11400,
+    6300
+   ],
+   "area": 180000,
+   "note": "",
+   "a102_role": "PENDING_REVIEW",
+   "a103_role": "DRAW_REVIEW_LAYER",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_INT_CLK_W",
+   "source": "fcstd",
+   "design_status": "DESIGN_REVIEW_PENDING",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "UNMARKED_INTERIOR",
+   "bbox": [
+    8950,
+    4500,
+    9050,
+    6300
+   ],
+   "area": 160000,
+   "note": "",
+   "a102_role": "PENDING_REVIEW",
+   "a103_role": "DRAW_REVIEW_LAYER",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_INT_COR_N_STUB",
+   "source": "fcstd",
+   "design_status": "UNVERIFIED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "UNMARKED_INTERIOR",
+   "bbox": [
+    11400,
+    6300,
+    12100,
+    6500
+   ],
+   "area": 140000,
+   "note": "",
+   "a102_role": "PENDING_REVIEW",
+   "a103_role": "DRAW_REVIEW_LAYER",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "W_INT_BEDN_S",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "UNMARKED_INTERIOR",
+   "bbox": [
+    13350,
+    6300,
+    16300,
+    6500
+   ],
+   "area": 590000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_INT_WC_S",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.777,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "STRUCT_MARKED",
+   "bbox": [
+    7900,
+    7800,
+    8800,
+    8000
+   ],
+   "area": 180000,
+   "note": "",
+   "a102_role": "RETAINED_STRUCT",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_INT_STD_S",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.219,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    9800,
+    7800,
+    13000,
+    8000
+   ],
+   "area": 640000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_INT_Y10800",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.039,
+   "struct_evidence": "NONE",
+   "protection": "UNMARKED_INTERIOR",
+   "bbox": [
+    7900,
+    10700,
+    13000,
+    10900
+   ],
+   "area": 1020000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_INT_Y10800_EXT",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.143,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    13000,
+    10700,
+    13700,
+    10900
+   ],
+   "area": 140000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_SHAFT_K",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "UNMARKED_INTERIOR",
+   "bbox": [
+    7150,
+    750,
+    7250,
+    3650
+   ],
+   "area": 290000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_INT_DRY_STUB",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.212,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    7150,
+    3870,
+    7250,
+    4670
+   ],
+   "area": 80000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_INT_NICHE",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "UNMARKED_INTERIOR",
+   "bbox": [
+    7150,
+    4700,
+    7400,
+    7800
+   ],
+   "area": 775000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_INT_Y4500_bc",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.222,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    12900,
+    4450,
+    16500,
+    4650
+   ],
+   "area": 720000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_INT_Y4500_b",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.187,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "STRUCT_PARTIAL",
+   "bbox": [
+    9000,
+    4450,
+    11400,
+    4650
+   ],
+   "area": 480000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "COL_B1",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    1500,
+    1650,
+    2050,
+    2200
+   ],
+   "area": 302500,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "COL_B2",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    1500,
+    750,
+    2050,
+    1300
+   ],
+   "area": 302500,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "COL_WS",
+   "source": "fcstd",
+   "design_status": "EXISTING_RETAINED",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "ENVELOPE_REVIEW",
+   "bbox": [
+    2700,
+    750,
+    2900,
+    1100
+   ],
+   "area": 70000,
+   "note": "",
+   "a102_role": "RETAINED",
+   "a103_role": "DRAW_RETAINED",
+   "classification": "CLASSIFICATION_UNVERIFIED"
+  },
+  {
+   "object": "D107_V3_ADJACENT_RETURN_WALL_REMAINDER",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    9050,
+    5230,
+    9200,
+    6450
+   ],
+   "area": 183000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "DOOR_V2_D107_LEFT_RETURN_WALL",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.922,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    7800,
+    4500,
+    8250,
+    4700
+   ],
+   "area": 83060,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "KITCHEN_DIVIDER_PIER_SITE_REVIEW",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    5572,
+    700,
+    5900,
+    1400
+   ],
+   "area": 229254,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "R3_COMPLETE_PARTITION_WALLS",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.308,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    9988,
+    4524,
+    11400,
+    4823
+   ],
+   "area": 343289,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "STEP_0",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    5660,
+    4716,
+    7350,
+    7800
+   ],
+   "area": 1079367,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "STEP_1",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    6010,
+    4716,
+    7700,
+    7800
+   ],
+   "area": 1079360,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "STEP_2",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    6360,
+    4716,
+    8050,
+    7800
+   ],
+   "area": 1079360,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_HEAD",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    2100,
+    500,
+    5100,
+    700
+   ],
+   "area": 600560,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    1500,
+    500,
+    2100,
+    700
+   ],
+   "area": 120160,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    5100,
+    500,
+    5500,
+    700
+   ],
+   "area": 80120,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    6100,
+    -200,
+    7100,
+    0
+   ],
+   "area": 200240,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.004,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    7750,
+    12650,
+    8000,
+    13002
+   ],
+   "area": 88009,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    7750,
+    12550,
+    8000,
+    12650
+   ],
+   "area": 24995,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_BAY_INNER_HEAD",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    3800,
+    13000,
+    6900,
+    13200
+   ],
+   "area": 620580,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_BAY_LEFT_HEAD",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    3600,
+    13200,
+    3700,
+    13800
+   ],
+   "area": 60119,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_BAY_RIGHT_HEAD",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    7000,
+    13200,
+    7100,
+    13800
+   ],
+   "area": 60119,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_BAY_SOFFIT",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    3600,
+    13200,
+    7100,
+    13900
+   ],
+   "area": 2329902,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_GUEST_BATH_FULL_WALL",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.33,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    7750,
+    8000,
+    8000,
+    10900
+   ],
+   "area": 725105,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.8,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    7750,
+    10898,
+    8000,
+    11100
+   ],
+   "area": 50565,
+   "note": "拟建墙与HATCH_FILL覆盖0.8: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_TV_NORTH_SOLID_WALL",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.799,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    7750,
+    11100,
+    8000,
+    11700
+   ],
+   "area": 150095,
+   "note": "拟建墙与HATCH_FILL覆盖0.799: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "VIEW_WALL_R3_WEST_PARTITION",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    9059,
+    4507,
+    9209,
+    6507
+   ],
+   "area": 300000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_D-BATHM_COMPLETE_HOST_WALL",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    11900,
+    6400,
+    12650,
+    6600
+   ],
+   "area": 150150,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_D-GUEST-ROOM_COMPLETE_HOST_WALL",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    9950,
+    7800,
+    10900,
+    8000
+   ],
+   "area": 190190,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12900,
+    5500,
+    13100,
+    5600
+   ],
+   "area": 20020,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL#p0",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.143,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    12900,
+    7450,
+    13100,
+    8000
+   ],
+   "area": 70080,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL#p1",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.751,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    12900,
+    7600,
+    13100,
+    8002
+   ],
+   "area": 40420,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    2700,
+    6530,
+    2900,
+    6610
+   ],
+   "area": 16016,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_G_DIN_LIV_RIGHT_PIER",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.745,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    5650,
+    4500,
+    5900,
+    4715
+   ],
+   "area": 53843,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "VIEW_WALL_V4_G_DIN_LIV_SOLID_HEAD",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    2950,
+    4530,
+    5650,
+    4715
+   ],
+   "area": 500021,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_W-MB-S_INNER_HEAD",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12100,
+    -200,
+    14800,
+    200
+   ],
+   "area": 1039267,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_W-MB-S_SOFFIT",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12050,
+    -673,
+    14850,
+    5
+   ],
+   "area": 1825844,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.042,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    8500,
+    -200,
+    10900,
+    200
+   ],
+   "area": 939940,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_W-SMB-S_SOFFIT",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    8450,
+    -673,
+    10950,
+    5
+   ],
+   "area": 1623944,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_W-STUDY-NE_INNER_HEAD",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.095,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    13600,
+    10900,
+    15700,
+    11100
+   ],
+   "area": 420460,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "VIEW_WALL_V4_W-STUDY-NE_SOFFIT",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    13550,
+    11100,
+    15750,
+    11773
+   ],
+   "area": 1420515,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0004",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    1300,
+    700,
+    1500,
+    2300
+   ],
+   "area": 320000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0005",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.759,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    2700,
+    2500,
+    2900,
+    5400
+   ],
+   "area": 579960,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_wall_md_0006",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.418,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    2700,
+    6540,
+    2900,
+    13000
+   ],
+   "area": 1292000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0007",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    2700,
+    13200,
+    2900,
+    14953
+   ],
+   "area": 350600,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0009",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    5500,
+    0,
+    5900,
+    700
+   ],
+   "area": 217393,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0010",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    5700,
+    4100,
+    5900,
+    4500
+   ],
+   "area": 80000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_wall_md_0012",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.143,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    7450,
+    150,
+    7800,
+    500
+   ],
+   "area": 122500,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0015",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.256,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    7800,
+    200,
+    8000,
+    4500
+   ],
+   "area": 860000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0016",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    7800,
+    13400,
+    8000,
+    13820
+   ],
+   "area": 84000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0017",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    8400,
+    -600,
+    8500,
+    0
+   ],
+   "area": 58995,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0019",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    9700,
+    8000,
+    9900,
+    10900
+   ],
+   "area": 579975,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0020",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    10900,
+    -600,
+    11000,
+    0
+   ],
+   "area": 58953,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0021",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.419,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    11400,
+    200,
+    11600,
+    4500
+   ],
+   "area": 860000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0022",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.353,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    11400,
+    4700,
+    11600,
+    6400
+   ],
+   "area": 340000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0023",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12000,
+    -600,
+    12100,
+    0
+   ],
+   "area": 58995,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0024",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12900,
+    5550,
+    13100,
+    6300
+   ],
+   "area": 149960,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0025",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.414,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    12900,
+    8000,
+    13100,
+    10900
+   ],
+   "area": 580000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0026",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12900,
+    11100,
+    13100,
+    13820
+   ],
+   "area": 544000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0027",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    13100,
+    11100,
+    13500,
+    11800
+   ],
+   "area": 280000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0028",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    13500,
+    11100,
+    13600,
+    11700
+   ],
+   "area": 59976,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0029",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    14800,
+    -600,
+    14900,
+    0
+   ],
+   "area": 58953,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0030",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.558,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    15300,
+    200,
+    15500,
+    4500
+   ],
+   "area": 860000,
+   "note": "拟建墙与HATCH_FILL覆盖0.558: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0031",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    15700,
+    11100,
+    15800,
+    11700
+   ],
+   "area": 59976,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0032",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.421,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    16200,
+    4500,
+    16400,
+    6400
+   ],
+   "area": 380000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0033",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.233,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    16200,
+    6600,
+    16400,
+    10900
+   ],
+   "area": 860000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0034",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    8500,
+    -700,
+    10900,
+    -600
+   ],
+   "area": 240000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0035",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12100,
+    -700,
+    14800,
+    -600
+   ],
+   "area": 270000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0036",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.893,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    5900,
+    0,
+    7800,
+    200
+   ],
+   "area": 375152,
+   "note": "拟建墙与BOUNDARY_RING覆盖0.893: 边界线重合-贴建或误差",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING",
+   "overlap_class": "BOUNDARY_OVERLAP_REVIEW"
+  },
+  {
+   "object": "W_wall_md_0037",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    8000,
+    0,
+    8600,
+    200
+   ],
+   "area": 119496,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0038",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    10800,
+    0,
+    11400,
+    200
+   ],
+   "area": 119496,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0039",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    11600,
+    0,
+    12200,
+    200
+   ],
+   "area": 119496,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0040",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    14700,
+    0,
+    15300,
+    200
+   ],
+   "area": 119496,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0043",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    1300,
+    2300,
+    2700,
+    2500
+   ],
+   "area": 280000,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0044",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    5900,
+    4500,
+    7800,
+    4700
+   ],
+   "area": 380000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_wall_md_0045",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    10800,
+    4500,
+    11400,
+    4700
+   ],
+   "area": 120000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_wall_md_0046",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.273,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    13100,
+    4500,
+    15300,
+    4700
+   ],
+   "area": 440000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0047",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    15500,
+    4500,
+    16200,
+    4700
+   ],
+   "area": 140000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0048",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    11600,
+    6400,
+    11950,
+    6600
+   ],
+   "area": 70000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0049",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    13350,
+    6400,
+    16200,
+    6600
+   ],
+   "area": 569980,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0050",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    9200,
+    6450,
+    11400,
+    6600
+   ],
+   "area": 330000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0051",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.75,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    8000,
+    7800,
+    8800,
+    8000
+   ],
+   "area": 160020,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL"
+  },
+  {
+   "object": "W_wall_md_0052",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    9700,
+    7800,
+    10000,
+    8000
+   ],
+   "area": 59980,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0053",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.293,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    10850,
+    7800,
+    12900,
+    8000
+   ],
+   "area": 410000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0054",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.529,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    8000,
+    10900,
+    9700,
+    11100
+   ],
+   "area": 340000,
+   "note": "拟建墙与HATCH_FILL覆盖0.529: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0055",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.169,
+   "struct_evidence": "BOUNDARY_RING",
+   "protection": "—",
+   "bbox": [
+    9900,
+    10900,
+    12900,
+    11100
+   ],
+   "area": 590352,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
+  },
+  {
+   "object": "W_wall_md_0056",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    13100,
+    10900,
+    13595,
+    11100
+   ],
+   "area": 99020,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0057",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    15705,
+    10900,
+    16200,
+    11100
+   ],
+   "area": 98980,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0058",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    13600,
+    11700,
+    15700,
+    11800
+   ],
+   "area": 210000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0059",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    2900,
+    13000,
+    3800,
+    13200
+   ],
+   "area": 180000,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0060",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    6900,
+    13000,
+    7800,
+    13200
+   ],
+   "area": 180000,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0061",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 1.0,
+   "struct_evidence": "HATCH_FILL",
+   "protection": "—",
+   "bbox": [
+    7800,
+    13000,
+    8200,
+    13400
+   ],
+   "area": 160000,
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "STRUCT_EVIDENCE_HATCH_FILL",
+   "overlap_class": "STRUCT_HATCH_CONFLICT"
+  },
+  {
+   "object": "W_wall_md_0062",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    7880,
+    13400,
+    13020,
+    13900
+   ],
+   "area": 2570000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "W_wall_md_0064",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    12900,
+    4500,
+    13100,
+    4750
+   ],
+   "area": 50000,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  },
+  {
+   "object": "WAVE_STEP_3_ARRIVAL",
+   "source": "blender",
+   "design_status": "PROPOSED_NEW",
+   "struct_ratio": 0.0,
+   "struct_evidence": "NONE",
+   "protection": "—",
+   "bbox": [
+    6710,
+    4716,
+    8400,
+    7800
+   ],
+   "area": 1079370,
+   "note": "",
+   "a102_role": "NEW",
+   "a103_role": "DRAW_NEW",
+   "classification": "NO_STRUCT_OVERLAP"
+  }
+ ],
+ "stats": {
+  "a102_roles": {
+   "RETAINED": 36,
+   "RETAINED_STRUCT": 5,
+   "DEMOLISHED_CONFIRMED": 4,
+   "DEMOLITION_HOLD": 1,
+   "PENDING_REVIEW": 4,
+   "NEW": 89
+  },
+  "a103_roles": {
+   "DRAW_RETAINED": 41,
+   "SUPPRESS": 4,
+   "SUPPRESS_HOLD": 1,
+   "DRAW_REVIEW_LAYER": 4,
+   "DRAW_NEW": 89
+  },
+  "classifications": {
+   "STRUCT_EVIDENCE_BOUNDARY_RING": 32,
+   "STRUCT_EVIDENCE_HATCH_FILL": 29,
+   "CLASSIFICATION_UNVERIFIED": 18,
+   "NO_STRUCT_OVERLAP": 60
+  },
+  "overlap_classes": {
+   "STRUCT_HATCH_CONFLICT": 15,
+   "BOUNDARY_OVERLAP_REVIEW": 1
+  }
+ }
+}

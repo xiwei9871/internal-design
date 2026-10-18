@@ -98,20 +98,27 @@ def extract_structural(msp, layer='S-S.WALL'):
                     else:   # hatch 未闭合路径 -> 边段入网
                         for i in range(len(pts)-1):
                             segs.append(LineString([pts[i],pts[i+1]]))
-                else:  # EdgePath: 仅处理 LineEdge, 其他类型记 anomaly
-                    ok, pts = True, []
+                else:  # EdgePath: 每条LineEdge进线网; 链连续且首尾闭合才成环
+                    chain, cont, linear = [], True, True
                     for ed in p.edges:
-                        if ed.EDGE_TYPE == 'LineEdge':
-                            if not pts: pts.append((ed.start[0]-AX,ed.start[1]-AY))
-                            pts.append((ed.end[0]-AX,ed.end[1]-AY))
-                        else:
-                            ok = False
-                    if ok and len(pts) >= 3 and \
-                       math.hypot(pts[0][0]-pts[-1][0],pts[0][1]-pts[-1][1]) < 1:
-                        rings.append(pts[:-1])
+                        if ed.EDGE_TYPE != 'LineEdge':
+                            linear = False; continue
+                        st = (ed.start[0]-AX, ed.start[1]-AY)
+                        en = (ed.end[0]-AX, ed.end[1]-AY)
+                        segs.append(LineString([st, en]))
+                        if chain and math.hypot(st[0]-chain[-1][0],
+                                                st[1]-chain[-1][1]) > 1:
+                            cont = False
+                        if not chain: chain.append(st)
+                        chain.append(en)
+                    if linear and cont and len(chain) >= 3 and \
+                       math.hypot(chain[0][0]-chain[-1][0],
+                                  chain[0][1]-chain[-1][1]) < 1:
+                        rings.append(chain[:-1])
                     else:
                         anomalies.append({'handle':e.dxf.handle,'kind':'HATCH_EDGE',
-                                          'reason':'NONLINEAR_OR_OPEN_EDGEPATH'})
+                            'reason':'NONLINEAR_EDGE' if not linear
+                                     else 'OPEN_EDGEPATH'})
             # 奇偶嵌套判定孔洞
             rpolys = []
             for r in rings:
@@ -119,11 +126,30 @@ def extract_structural(msp, layer='S-S.WALL'):
                 if an: anomalies.append(an)
                 if p is not None and p.geom_type=='Polygon': rpolys.append(p)
             rpolys.sort(key=lambda g: g.area, reverse=True)
+            holes_of = {}   # outer_idx -> [inner_rings]
             for i, g in enumerate(rpolys):
-                depth = sum(1 for j,h in enumerate(rpolys) if j!=i and h.contains(g))
-                if depth % 2 == 0:   # 偶数深度=实面
-                    fa = face_anomaly(g, e.dxf.handle, 'HATCH')
-                    (anomalies.append(fa) if fa else polys.append((g,e.dxf.handle,'HATCH')))
+                depth = sum(1 for h in rpolys if h is not g and h.contains(g))
+                if depth % 2 == 1:   # 奇数深度=孔, 找最小偶数深度容器
+                    for j in sorted(range(len(rpolys)),
+                                    key=lambda j: rpolys[j].area):
+                        h = rpolys[j]
+                        dj = sum(1 for k in rpolys if k is not h and k.contains(h))
+                        if dj % 2 == 0 and h.contains(g):
+                            holes_of.setdefault(j, []).append(g); break
+            for i, g in enumerate(rpolys):
+                depth = sum(1 for h in rpolys if h is not g and h.contains(g))
+                if depth % 2 == 0:
+                    hs = holes_of.get(i, [])
+                    face = Polygon(g.exterior.coords,
+                                   [h.exterior.coords for h in hs]) if hs else g
+                    if not face.is_valid: face = make_valid(face)
+                    if face.geom_type == 'MultiPolygon':
+                        face = max(face.geoms, key=lambda x: x.area)
+                    if hs:
+                        anomalies.append({'handle':e.dxf.handle,'kind':'HATCH',
+                            'reason':'HOLES_SUBTRACTED','n_holes':len(hs)})
+                    fa = face_anomaly(face, e.dxf.handle, 'HATCH')
+                    (anomalies.append(fa) if fa else polys.append((face,e.dxf.handle,'HATCH')))
     faces = [f for f in polygonize(segs)]
     n['line_faces_raw'] = len(faces)
     for f in faces:
