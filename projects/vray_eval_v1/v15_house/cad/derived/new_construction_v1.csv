@@ -1,4 +1,4 @@
-object,component_type,construction_class,total,retained_equiv,actual_new,uncovered_new,over_demol,over_pending,residual
+object,component_type,construction_class,total_plan_footprint,retained_plan_footprint,new_plan_footprint,uncovered_new,over_demol,over_pending,residual
 D107_V3_ADJACENT_RETURN_WALL_REMAINDER,COLUMN_PIER,ACTUAL_NEW_CONSTRUCTION,183000,0,183000,183000,0,22622,0
 DOOR_V2_D107_LEFT_RETURN_WALL,COLUMN_PIER,REMODELED_RETAINED,83060,81730,1330,1279,0,0,51
 KITCHEN_DIVIDER_PIER_SITE_REVIEW,COLUMN_PIER,SPLIT,229254,139960,89294,89294,0,0,0

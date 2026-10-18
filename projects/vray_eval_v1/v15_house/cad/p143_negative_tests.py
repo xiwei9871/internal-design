@@ -4,6 +4,7 @@
 import sys, shutil, json
 from pathlib import Path
 import ezdxf
+from shapely.geometry import Polygon
 sys.path.insert(0,'.')
 from joint_acceptance_v2 import parse, qa
 
@@ -55,12 +56,30 @@ def t_demo_to_approved(doc):
                     return
             except ezdxf.DXFValueError: pass
 
+def t_insert_phantom_wall(doc):
+    # A103插入一段模型中不存在的新隔墙 -> QJ9 extra 必须检出
+    e = doc.modelspace().add_lwpolyline(
+        [(6000,6000),(6400,6000),(6400,6200),(6000,6200)], close=True,
+        dxfattribs={'layer':'A-DESIGN'})
+    e.set_xdata('DEVINSRC',[(1000,'PHANTOM_INJECTED'),(1000,'ACTUAL_NEW_PART')])
+def t_delete_small_walls(doc):
+    # 删除多个小墙段(各<20000mm²): 单片都低于阈值, 必须靠累计检出
+    small = sorted(
+        [e for e in doc.modelspace()
+         if e.dxftype()=='LWPOLYLINE' and e.dxf.layer in
+            ('A-DESIGN','A-WALL','A-STAIR','A-SOFFIT','A-MISC-NEW')],
+        key=lambda e: Polygon([(p[0],p[1]) for p in e.get_points('xy')]).area
+                      if len(list(e.get_points('xy')))>=3 else 0)
+    for e in small[:6]: e.destroy()
+
 tests = [
     ('N1_A102_dim_xdata_removed', t_del_dim_xdata, '102', 'QJ5'),
     ('N2_A103_dim_value+100',    t_move_dim_value,'103', 'QJ5'),
     ('N3_A103_wall_moved_100mm', t_move_wall,     '103', 'QJ6'),
     ('N4_A103_conflict_deleted', t_del_conflict,  '103', 'QJ4'),
     ('N5_A102_hold_as_approved', t_demo_to_approved,'102','QJ2'),
+    ('N6_A103_phantom_wall',     t_insert_phantom_wall,'103','QJ9'),
+    ('N7_A103_small_walls_deleted', t_delete_small_walls,'103','QJ9'),
 ]
 base102, base103 = parse(A102), parse(A103)
 fails = []

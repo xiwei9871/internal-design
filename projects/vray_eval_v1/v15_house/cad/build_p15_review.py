@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""P1.5 审图包: 差异叠加 + 4处局部图 + 异常清单页 → review_packages/P1_5/."""
-import json
+"""P1.5.1-C 审图包: 全部从最终 DXF 直读生成(不再从JSON平行重绘).
+每张图标题含 DXF sha256 短码, 与生成文件一一对应.
+→ review_packages/P1_5_1/."""
+import json, hashlib
 from pathlib import Path
 import ezdxf, matplotlib
 matplotlib.use('Agg'); matplotlib.rcParams['font.family']='Heiti TC'
@@ -9,91 +11,118 @@ from matplotlib.patches import Polygon as MP
 from shapely.geometry import Polygon
 
 CAD = Path(__file__).resolve().parent
-OUT = CAD/'review_packages'/'P1_5'; OUT.mkdir(parents=True, exist_ok=True)
-GEO = json.loads((CAD/'derived'/'geometry_v05.json').read_text())
-NC  = json.loads((CAD/'derived'/'new_construction_v1.json').read_text())
-REG = json.loads((CAD/'derived'/'wall_state_registry.json').read_text())
+OUT = CAD/'review_packages'/'P1_5_1'; OUT.mkdir(parents=True, exist_ok=True)
+F102 = CAD/'A102_WALL_DIFF_POC_V3.dxf'
+F103 = CAD/'A103_CONSTRUCTION_POC_V7.dxf'
+SHA = {p.name: hashlib.sha256(p.read_bytes()).hexdigest()[:10] for p in (F102,F103)}
 
-def role(o):
-    for e in REG['entries']:
-        if e['object']==o: return e['a102_role']
-    return None
+ACI = {1:'#e22',2:'#cc0',3:'#0b0',4:'#0cc',5:'#24c',6:'#c0c',7:'#111',
+       8:'#888',9:'#bbb',30:'#f80',140:'#c00',250:'#666'}
 
-def draw_spec(ax, m, nc_row=None):
-    st = m['design_status']
-    col = {'EXISTING_RETAINED':'#111','EXISTING_DEMOLISHED':'#e22',
-           'PROPOSED_NEW':'#24c','UNVERIFIED':'#f90',
-           'DESIGN_REVIEW_PENDING':'#f90'}.get(st,'#888')
-    lw = 1.8 if m['source']=='fcstd' else 1.2
-    for p in m['parts']:
-        ax.add_patch(MP(p['exterior'],closed=True,fill=False,edgecolor=col,lw=lw))
-    for p in m.get('demolished_parts',[]):
-        ax.add_patch(MP(p,closed=True,facecolor='#e22',alpha=.25,edgecolor='#e22',lw=1.2))
+def ents(path):
+    doc = ezdxf.readfile(path)
+    frozen = {l.dxf.name for l in doc.layers if l.dxf.flags & 1}
+    rows = []
+    for e in doc.modelspace():
+        lay = e.dxf.layer
+        if lay in frozen: continue
+        if e.dxftype() == 'LWPOLYLINE':
+            pts = [(p[0],p[1]) for p in e.get_points('xy')]
+            if len(pts) < 2: continue
+            lc = doc.layers.get(lay).dxf.color if lay in doc.layers else 7
+            rows.append((lay, pts, ACI.get(lc,'#444')))
+        elif e.dxftype() in ('TEXT','MTEXT'):
+            try: txt = e.dxf.text[:14]
+            except Exception: txt = ''
+            try: ins = tuple(e.dxf.insert)[:2]
+            except Exception: ins = None
+            if ins and txt.strip(): rows.append((lay, ins, txt))
+    return rows
 
-# --- 叠加图: 现状(黑/红/橙) + 实际新建(蓝) ---
+def draw(ax, rows, title):
+    for lay, pts, c in rows:
+        if isinstance(pts, tuple):
+            ax.annotate(pts if False else '', pts); continue
+    for lay, item, extra in rows:
+        if isinstance(item, tuple) and isinstance(extra, str):   # TEXT
+            ax.annotate(extra, item, fontsize=7, color='#345')
+        else:
+            pts, c = item, extra
+            ax.add_patch(MP(pts, closed=True, fill=False, edgecolor=c,
+                            lw=0.9 if lay in ('A-FURN','A-FIXT','A-SOFFIT','A-STAIR') else 1.4))
+    ax.set_aspect('equal'); ax.autoscale(); ax.set_axis_off()
+    ax.set_title(title, fontsize=11)
+
+r102, r103 = ents(F102), ents(F103)
+
+# 1) 全图各一张
+for rows, name, tag in ((r102,'a102_full','A102 拆改图'),(r103,'a103_full','A103 平面图')):
+    fig,ax = plt.subplots(figsize=(17,17))
+    draw(ax, rows, f'{tag} | {name} sha:{SHA["A102_WALL_DIFF_POC_V3.dxf" if "102" in name else "A103_CONSTRUCTION_POC_V7.dxf"]}')
+    fig.savefig(OUT/f'{name}.png', dpi=150, bbox_inches='tight', facecolor='white')
+    plt.close(fig)
+
+# 2) 叠加: A103可见墙(黑/蓝按层) + A102拆除红/品红HOLD + 冻结不画
 fig,ax = plt.subplots(figsize=(17,17))
-for m in GEO['managed_entities']:
-    draw_spec(ax,m)
-# 实际新建差集段 (蓝, 粗)
-for r in NC['rows']:
-    for pts in r['new_geoms']:
-        ax.add_patch(MP(pts,closed=True,fill=False,edgecolor='#05c',lw=2.0))
+for lay, item, extra in r103:
+    if isinstance(item, tuple): continue
+    ax.add_patch(MP(item, closed=True, fill=False, edgecolor=extra, lw=1.1))
+for lay, item, extra in r102:
+    if isinstance(item, tuple): continue
+    if lay == 'A-WALL-DEMO-DESIGN':
+        ax.add_patch(MP(item, closed=True, fill=False, edgecolor='#e22', lw=2.0))
+    elif lay == 'A-WALL-HOLD':
+        ax.add_patch(MP(item, closed=True, fill=False, edgecolor='#c0c', lw=2.0))
 ax.set_aspect('equal'); ax.autoscale(); ax.set_axis_off()
-ax.set_title('P1.5 叠加: 黑=保留 红=拟拆(设计确认) 蓝=实际新建 橙=待裁 — N_BAL HOLD',fontsize=13)
-fig.savefig(OUT/'overlay_a102a103.png',dpi=150,bbox_inches='tight',facecolor='white')
+ax.set_title(f'P1.5.1叠加: A103全色底 + A102红=拟拆/品红=HOLD | sha102:{SHA[F102.name]} sha103:{SHA[F103.name]}',fontsize=11)
+fig.savefig(OUT/'overlay_a102a103.png', dpi=150, bbox_inches='tight', facecolor='white')
 plt.close(fig)
 
-# --- 4 局部图 ---
+# 3) 四局部 (A103为准, 叠加A102拆除/HOLD)
 CROPS = {
- 'crop1_kitchen':   (5200,7200,1400,4300,'厨房: X5800拆除段(红) + 门洞 + 残墙'),
- 'crop2_bath2':     (8500,12000,5400,8400,'次卫/旧衣帽间: CLK橙(待裁) + 新隔墙蓝'),
- 'crop3_nbalc':     (7400,13400,12400,14200,'北阳台: 品红=N_BAL HOLD 蓝=封窗新墙'),
- 'crop4_step':      (7000,9600,3600,6200,'错层台阶: 蓝波浪台阶 + 红拆段 + 周边'),
+ 'crop1_kitchen':   (5200,7200,1400,4300,'厨房: X5800拆除段+新隔墙+门洞'),
+ 'crop2_bath2':     (8500,12000,5400,8400,'次卫/衣帽间: 待裁墙+新隔墙+门洞'),
+ 'crop3_nbalc':     (7400,13400,12400,14200,'北阳台: 品红HOLD+封窗新墙+上部构件'),
+ 'crop4_step':      (7000,9600,3600,6200,'错层: 台阶+拆除段+周边墙'),
 }
 for name,(x0,x1,y0,y1,title) in CROPS.items():
     fig,ax=plt.subplots(figsize=(13,11))
-    for m in GEO['managed_entities']:
-        draw_spec(ax,m)
-    for r in NC['rows']:
-        for pts in r['new_geoms']:
-            ax.add_patch(MP(pts,closed=True,fill=False,edgecolor='#05c',lw=2.2))
-    # 标注该窗内对象
-    for m in GEO['managed_entities']:
-        for p in m['parts']:
-            g=Polygon(p['exterior']); bx=g.bounds
-            cx,cy=(bx[0]+bx[2])/2,(bx[1]+bx[3])/2
-            if x0<=cx<=x1 and y0<=cy<=y1:
-                st=m['design_status']
-                tag={'EXISTING_RETAINED':'保留','EXISTING_DEMOLISHED':'拟拆',
-                     'PROPOSED_NEW':'新建','UNVERIFIED':'待裁',
-                     'DESIGN_REVIEW_PENDING':'待裁'}.get(st,st)
-                ax.annotate(tag,(cx,cy),fontsize=8,color='#555',ha='center')
+    for lay, item, extra in r103:
+        if isinstance(item, tuple):
+            if x0<=item[0]<=x1 and y0<=item[1]<=y1:
+                ax.annotate(extra, item, fontsize=7, color='#345')
+            continue
+        ax.add_patch(MP(item, closed=True, fill=False, edgecolor=extra, lw=1.2))
+    for lay, item, extra in r102:
+        if isinstance(item, tuple): continue
+        if lay == 'A-WALL-DEMO-DESIGN':
+            ax.add_patch(MP(item, closed=True, fill=False, edgecolor='#e22', lw=2.0))
+        elif lay == 'A-WALL-HOLD':
+            ax.add_patch(MP(item, closed=True, fill=False, edgecolor='#c0c', lw=2.0))
     ax.set_xlim(x0,x1); ax.set_ylim(y0,y1); ax.set_aspect('equal')
-    ax.grid(alpha=.2); ax.set_title(title,fontsize=11)
-    fig.savefig(OUT/f'{name}.png',dpi=150,bbox_inches='tight',facecolor='white')
+    ax.grid(alpha=.2); ax.set_title(f'{title} | sha103:{SHA[F103.name]}', fontsize=10)
+    fig.savefig(OUT/f'{name}.png', dpi=150, bbox_inches='tight', facecolor='white')
     plt.close(fig)
 
-# --- 异常/待核实清单页 ---
+# 4) 异常清单(数据源标注)
 reg = json.loads((CAD/'derived'/'wall_state_registry.json').read_text())
-lines = ['P1.5 异常与专业待核实清单','='*40,'']
+lines = ['P1.5.1 异常与专业待核实清单','='*44,'']
 lines.append('■ DEMOLITION_HOLD (实施待批):')
 for e in reg['entries']:
     if e['a102_role']=='DEMOLITION_HOLD':
-        lines.append(f"  {e['object']}  bbox={e['bbox']}  {e['note']}")
-lines.append(''); lines.append('■ PENDING_REVIEW (设计待裁):')
+        lines.append(f"  {e['object']}  {e['note'][:60]}")
+lines += ['', '■ PENDING_REVIEW (设计待裁):']
 for e in reg['entries']:
-    if e['a102_role']=='PENDING_REVIEW':
-        lines.append(f"  {e['object']}  bbox={e['bbox']}")
-lines.append(''); lines.append('■ 拟建与结构层重叠待核实 (UNVERIFIED_STRUCT_OVERLAP):')
+    if e['a102_role']=='PENDING_REVIEW': lines.append(f"  {e['object']}")
+lines += ['', '■ UNVERIFIED_STRUCT_OVERLAP (拟建骑结构层):']
 for e in reg['entries']:
-    if e.get('overlap_class'):
-        lines.append(f"  {e['object']}  {e['overlap_class']} ratio={e['struct_ratio']}")
-lines.append(''); lines.append('■ CLASSIFICATION_UNVERIFIED (映射不到开发商黑白语义):')
+    if e.get('overlap_class'): lines.append(f"  {e['object']}  {e['overlap_class']}")
+lines += ['', '■ CLASSIFICATION_UNVERIFIED:']
 for e in reg['entries']:
-    if e['classification']=='CLASSIFICATION_UNVERIFIED':
-        lines.append(f"  {e['object']}  {e['a102_role']}")
-lines.append(''); lines.append('■ 专业HOLD(不变): 结构核验 / 现场复尺 / 封窗合规 / 专业编辑器打印')
+    if e['classification']=='CLASSIFICATION_UNVERIFIED': lines.append(f"  {e['object']}  {e['a102_role']}")
+lines += ['', '■ 专业HOLD(不变): 结构核验 / 现场复尺 / 封窗合规 / 专业CAD编辑器打印(NOT_RUN)',
+          '', f"sha102:{SHA[F102.name]}  sha103:{SHA[F103.name]}"]
 fig,ax=plt.subplots(figsize=(14,18)); ax.set_axis_off()
 ax.text(0.02,0.98,'\n'.join(lines),family='Heiti TC',fontsize=8.5,va='top')
 fig.savefig(OUT/'anomaly_list.png',dpi=140,bbox_inches='tight',facecolor='white')
-print('review pack ->', OUT)
+print('review pack ->',OUT,'| sha:',SHA)

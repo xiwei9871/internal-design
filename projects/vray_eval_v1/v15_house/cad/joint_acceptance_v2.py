@@ -158,33 +158,66 @@ def qa(p102, p103):
         if sym/max(gg.area,1) > 0.02: bad_geo[o] = f'GEOM_DIFF {sym:.0f}mm2'
     out['QJ6_wall_geom_parity'] = bad_geo
     out['QJ6_pass'] = not bad_geo
-    # QJ9 Blender目标建筑几何 vs A103可见墙几何并集覆盖 (P1.5.1 T2)
+    # QJ9 二维几何一致性Gate: missing+extra双向 + 分类型缺失 + 全差异明细
+    # (P1.5.1收尾A: 单向/阈值静默都不许; 小差异记录不判零)
     WALL_LAYERS = {'A-WALL','A-DESIGN','A-STRUCT-UNDERLAY','A-REVIEW',
                    'A-STAIR','A-SOFFIT','A-MISC-NEW','A-CONFLICT','A-COLUMN'}
-    target_polys = []
+    def _classify(n):
+        n = n.upper()
+        if 'STEP' in n or 'STAIR' in n: return 'STAIR_STEP'
+        if 'SOFFIT' in n or '_HEAD' in n or 'HEADER' in n or 'ABOVE_DOOR' in n:
+            return 'SOFFIT_HEADER'
+        if 'PIER' in n or 'RETURN' in n or 'JUNCTION' in n: return 'COLUMN_PIER'
+        if n.startswith('DOOR') or '_DOOR' in n: return 'DOOR_OPENING'
+        return 'WALL_PARTITION'
+    target_by_type = {}
     for m in GEO['managed_entities']:
-        if m['design_status'] in ('EXISTING_RETAINED','PROPOSED_NEW','UNVERIFIED',
-                                  'DESIGN_REVIEW_PENDING'):
-            for p in m['parts']:
-                target_polys.append(Polygon(p['exterior']))
-    target_u = unary_union(target_polys) if target_polys else Polygon()
+        if m['design_status'] not in ('EXISTING_RETAINED','PROPOSED_NEW',
+                                    'UNVERIFIED','DESIGN_REVIEW_PENDING'):
+            continue
+        ct = _classify(m['objects'][0]) if m['source'] == 'blender' else 'EXISTING'
+        for p in m['parts']:
+            target_by_type.setdefault(ct, []).append(Polygon(p['exterior']))
+    target_u = unary_union([g for gs in target_by_type.values() for g in gs]) \
+        if target_by_type else Polygon()
     vis_polys = []
     for lay, ents in p103['walls'].items():
         if lay not in WALL_LAYERS or p103['flags'].get(lay): continue
         for w in ents:
             if len(w['pts']) >= 3: vis_polys.append(Polygon(w['pts']))
     vis_u = unary_union(vis_polys) if vis_polys else Polygon()
-    def big_components(diff, tol=20000):
+    # 零容差基线: 当前生成器产出 missing/extra=0, 故可严格判定.
+    # 单片>1000mm²即失败(不再用20k静默); 累计>3000mm²失败防"多删小墙段"逃逸.
+    TOL_COMP, TOL_TOTAL = 1000, 3000
+    def diff_detail(diff, tol=100):
+        """全部>=tol差异片: 面积+质心, 不按阈值判零."""
         if diff.is_empty: return []
-        gs = diff.geoms if hasattr(diff,'geoms') else [diff]
-        return [round(g.area) for g in gs
-                if g.geom_type=='Polygon' and g.area > tol]
-    miss = big_components(target_u.difference(vis_u))
-    extra = big_components(vis_u.difference(target_u))
-    out['QJ9_missing_from_A103_mm2'] = miss
-    out['QJ9_extra_in_A103_mm2'] = extra
+        gs = diff.geoms if hasattr(diff, 'geoms') else [diff]
+        return sorted(
+            ({'area_mm2': round(g.area), 'cx': round(g.centroid.x),
+              'cy': round(g.centroid.y)} for g in gs
+             if g.geom_type == 'Polygon' and g.area > tol),
+            key=lambda d: -d['area_mm2'])
+    miss_detail = diff_detail(target_u.difference(vis_u))
+    extra_detail = diff_detail(vis_u.difference(target_u))
+    out['QJ9_missing_detail'] = miss_detail
+    out['QJ9_extra_detail'] = extra_detail
+    out['QJ9_missing_total_mm2'] = round(sum(d['area_mm2'] for d in miss_detail))
+    out['QJ9_extra_total_mm2'] = round(sum(d['area_mm2'] for d in extra_detail))
+    out['QJ9_max_local_dev_mm2'] = max(
+        [d['area_mm2'] for d in miss_detail + extra_detail] or [0])
+    # 分类型缺失 (extra无法按类型归因, 报告总体)
+    miss_by_type = {}
+    for ct, polys in target_by_type.items():
+        u = unary_union(polys)
+        miss_by_type[ct] = diff_detail(u.difference(vis_u))
+    out['QJ9_missing_by_type'] = miss_by_type
     out['QJ9_target_area_mm2'] = round(target_u.area)
-    out['QJ9_blender_target_covered'] = not miss
+    fail_missing = any(d['area_mm2'] > TOL_COMP for d in miss_detail) \
+        or out['QJ9_missing_total_mm2'] > TOL_TOTAL
+    fail_extra = any(d['area_mm2'] > TOL_COMP for d in extra_detail) \
+        or out['QJ9_extra_total_mm2'] > TOL_TOTAL
+    out['QJ9_geom_parity_2d'] = not (fail_missing or fail_extra)
     # QJ7 源文件FRESH + viewport存在
     srcs = json.loads((CAD/'derived'/'three_source_mapping.json').read_text())['summary']['sources']
     out['QJ7_sources_fresh'] = all(

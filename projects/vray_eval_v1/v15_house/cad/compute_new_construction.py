@@ -137,8 +137,8 @@ area_by_type = {}
 for ct, d in type_union.items():
     area_by_type[ct] = {
         'objects': d['objects'],
-        'new_union_mm2': round(unary_union(d['new']).area) if d['new'] else 0,
-        'retained_equiv_union_mm2': round(unary_union(d['retained']).area) if d['retained'] else 0}
+        'new_plan_footprint_mm2': round(unary_union(d['new']).area) if d['new'] else 0,
+        'retained_plan_footprint_mm2': round(unary_union(d['retained']).area) if d['retained'] else 0}
 
 stats = {}
 for r in rows:
@@ -150,7 +150,7 @@ out = {'meta': {
          'demolished_union_area': round(dem_u.area),
          'thresholds': {'retain_equiv':RETAIN_EQUIV_T,'new':NEW_T,'min_area_mm2':MIN_AREA,
                         'cover':COVER_T},
-         'rule': 'blender proposed − retained_union = actual_new; '
+         'rule': 'blender proposed − retained_union = actual_new (PLAN FOOTPRINT, 非砌筑工程量); '
                  'REMODELED残余须覆盖证据否则必须出图; 面积按component_type去重并集'},
        'area_by_component_type': area_by_type,
        'rows': rows, 'stats': stats}
@@ -159,8 +159,9 @@ out = {'meta': {
 import csv
 with open(CAD/'derived'/'new_construction_v1.csv','w',newline='') as f:
     w=csv.writer(f)
-    w.writerow(['object','component_type','construction_class','total','retained_equiv',
-                'actual_new','uncovered_new','over_demol','over_pending','residual'])
+    w.writerow(['object','component_type','construction_class','total_plan_footprint',
+                'retained_plan_footprint','new_plan_footprint','uncovered_new',
+                'over_demol','over_pending','residual'])
     for r in rows:
         w.writerow([r['object'],r['component_type'],r['construction_class'],
                     r['area_total'],r['area_retained_equiv'],r['area_actual_new'],

@@ -9,28 +9,28 @@
    "min_area_mm2": 1000,
    "cover": 0.8
   },
-  "rule": "blender proposed − retained_union = actual_new; REMODELED残余须覆盖证据否则必须出图; 面积按component_type去重并集"
+  "rule": "blender proposed − retained_union = actual_new (PLAN FOOTPRINT, 非砌筑工程量); REMODELED残余须覆盖证据否则必须出图; 面积按component_type去重并集"
  },
  "area_by_component_type": {
   "COLUMN_PIER": {
    "objects": 8,
-   "new_union_mm2": 418936,
-   "retained_equiv_union_mm2": 469025
+   "new_plan_footprint_mm2": 418936,
+   "retained_plan_footprint_mm2": 469025
   },
   "WALL_PARTITION": {
    "objects": 63,
-   "new_union_mm2": 9770289,
-   "retained_equiv_union_mm2": 10449607
+   "new_plan_footprint_mm2": 9770289,
+   "retained_plan_footprint_mm2": 10449607
   },
   "STAIR_STEP": {
    "objects": 4,
-   "new_union_mm2": 3728976,
-   "retained_equiv_union_mm2": 588481
+   "new_plan_footprint_mm2": 3728976,
+   "retained_plan_footprint_mm2": 588481
   },
   "SOFFIT_HEADER": {
    "objects": 14,
-   "new_union_mm2": 7904280,
-   "retained_equiv_union_mm2": 2762122
+   "new_plan_footprint_mm2": 7904280,
+   "retained_plan_footprint_mm2": 2762122
   }
  },
  "rows": [
