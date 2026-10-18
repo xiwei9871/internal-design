@@ -34,7 +34,10 @@ def parse(path):
                     dim_errs.append(f'{e.dxf.handle}: incomplete DEVINDIM {xd}')
                 else:
                     dims[tag] = {'a':anchors[0],'b':anchors[1],'axis':anchors[2],
-                                 'value':val,'handle':e.dxf.handle}
+                                 'value':val,'handle':e.dxf.handle,
+                                 'mtype':anchors[3] if len(anchors)>3 else None,
+                                 'ref':anchors[4] if len(anchors)>4 else None,
+                                 'resurvey':anchors[5] if len(anchors)>5 else None}
             except ezdxf.DXFValueError:
                 dim_errs.append(f'{e.dxf.handle}: missing DEVINDIM')
     flags = {l.dxf.name: bool(l.dxf.flags&1) for l in doc.layers}
@@ -97,12 +100,23 @@ def qa(p102, p103):
     A = {a['id']:(a['x'],a['y']) for a in GEO['anchors']}
     EXTRA = json.loads((CAD/'derived'/'dims_extra.json').read_text())['dims'] \
             if (CAD/'derived'/'dims_extra.json').exists() else []
+    MTYPES = {'DEMOLITION_SPAN','NEW_WALL_LOCATION','STAIR_SPAN','OPENING_WIDTH'}
     for spec in EXTRA:
         tag = spec['tag']
         d1, d2 = p102['dims'].get(tag), p103['dims'].get(tag)
         if not d1 or not d2: errs.append(f'{tag}: missing extra dim'); continue
         if (d1['a'],d1['b'],d1['axis'],d1['value']) != (d2['a'],d2['b'],d2['axis'],d2['value']):
             errs.append(f'{tag}: extra dim mismatch')
+        # 语义检查: measurement_type 必须在词表且与JSON一致; 定位尺寸必须有ref
+        for d,side in ((d1,'A102'),(d2,'A103')):
+            if d['mtype'] not in MTYPES:
+                errs.append(f'{tag}:{side} bad mtype {d["mtype"]}'); continue
+            if d['mtype'] != spec['measurement_type']:
+                errs.append(f'{tag}:{side} mtype {d["mtype"]} != json {spec["measurement_type"]}')
+            if d['mtype']=='NEW_WALL_LOCATION' and not d.get('ref'):
+                errs.append(f'{tag}:{side} NEW_WALL_LOCATION missing ref')
+            # 跨度类不得标称定位, 反之亦然
+            if d['mtype']!=spec['measurement_type']: continue
     for tag,spec in GEO['dims'].items():
         d1, d2 = p102['dims'].get(tag), p103['dims'].get(tag)
         if not d1 or not d2: errs.append(f'{tag}: missing in ' + ('A102' if not d1 else 'A103')); continue
@@ -144,6 +158,33 @@ def qa(p102, p103):
         if sym/max(gg.area,1) > 0.02: bad_geo[o] = f'GEOM_DIFF {sym:.0f}mm2'
     out['QJ6_wall_geom_parity'] = bad_geo
     out['QJ6_pass'] = not bad_geo
+    # QJ9 Blender目标建筑几何 vs A103可见墙几何并集覆盖 (P1.5.1 T2)
+    WALL_LAYERS = {'A-WALL','A-DESIGN','A-STRUCT-UNDERLAY','A-REVIEW',
+                   'A-STAIR','A-SOFFIT','A-MISC-NEW','A-CONFLICT','A-COLUMN'}
+    target_polys = []
+    for m in GEO['managed_entities']:
+        if m['design_status'] in ('EXISTING_RETAINED','PROPOSED_NEW','UNVERIFIED',
+                                  'DESIGN_REVIEW_PENDING'):
+            for p in m['parts']:
+                target_polys.append(Polygon(p['exterior']))
+    target_u = unary_union(target_polys) if target_polys else Polygon()
+    vis_polys = []
+    for lay, ents in p103['walls'].items():
+        if lay not in WALL_LAYERS or p103['flags'].get(lay): continue
+        for w in ents:
+            if len(w['pts']) >= 3: vis_polys.append(Polygon(w['pts']))
+    vis_u = unary_union(vis_polys) if vis_polys else Polygon()
+    def big_components(diff, tol=20000):
+        if diff.is_empty: return []
+        gs = diff.geoms if hasattr(diff,'geoms') else [diff]
+        return [round(g.area) for g in gs
+                if g.geom_type=='Polygon' and g.area > tol]
+    miss = big_components(target_u.difference(vis_u))
+    extra = big_components(vis_u.difference(target_u))
+    out['QJ9_missing_from_A103_mm2'] = miss
+    out['QJ9_extra_in_A103_mm2'] = extra
+    out['QJ9_target_area_mm2'] = round(target_u.area)
+    out['QJ9_blender_target_covered'] = not miss
     # QJ7 源文件FRESH + viewport存在
     srcs = json.loads((CAD/'derived'/'three_source_mapping.json').read_text())['summary']['sources']
     out['QJ7_sources_fresh'] = all(

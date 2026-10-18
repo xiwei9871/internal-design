@@ -78,6 +78,8 @@ def add(object_id, source, design_status, poly, note='', primary=None):
         cc = nc['construction_class'] if nc else 'UNMAPPED'
         entry['construction_class'] = cc
         if nc:
+            entry['component_type'] = nc.get('component_type')
+            entry['uncovered_new_area'] = nc.get('uncovered_new_area', 0)
             entry['area_total'] = nc['area_total']
             entry['area_actual_new'] = nc['area_actual_new']
             entry['area_retained_equiv'] = nc['area_retained_equiv']

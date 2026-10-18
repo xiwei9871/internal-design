@@ -60,8 +60,16 @@ doc = ezdxf.readfile(OUT); msp = doc.modelspace()
 doc.appids.new('DEVINSRC'); doc.appids.new('DEVINDIM')
 
 # --- 图层 ---
-for name, color in (('A-DIMS-LEGACY', 8), ('A-DIMS', 3)):
+for name, color in (('A-DIMS-LEGACY', 8), ('A-DIMS', 3),
+                    ('A-STAIR', 8), ('A-SOFFIT', 9), ('A-MISC-NEW', 30)):
     if name not in doc.layers: doc.layers.new(name, dxfattribs={'color': color})
+
+COMP_LAYER = {'WALL_PARTITION':'A-DESIGN','COLUMN_PIER':'A-DESIGN',
+              'DOOR_OPENING':'A-DESIGN','STAIR_STEP':'A-STAIR',
+              'SOFFIT_HEADER':'A-SOFFIT','OTHER':'A-MISC-NEW'}
+def comp_layer(obj):
+    r = NC_ROW.get(obj)
+    return COMP_LAYER.get(r['component_type'] if r else 'OTHER', 'A-MISC-NEW')
 for e in msp:
     if e.dxf.layer == 'A-DIMS' and e.dxftype() in ('LINE', 'TEXT', 'MTEXT', 'LWPOLYLINE'):
         e.dxf.layer = 'A-DIMS-LEGACY'
@@ -74,7 +82,7 @@ for _ln,_w in (('A-WALL',50),('A-DESIGN',30),('A-REVIEW',25),('A-CONFLICT',40),
         try: doc.layers.get(_ln).dxf.lineweight = _w
         except Exception: pass
 doc.layers.get('A-DIMS-LEGACY').dxf.flags = 1
-for lname in ('A-UNCERTAIN', 'A-SOURCE-REF', 'A-ROOM'):
+for lname in ('A-UNCERTAIN', 'A-SOURCE-REF', 'A-ROOM', 'A-DUP'):
     if lname in doc.layers: doc.layers.get(lname).dxf.flags = 1
 doc.layers.get('A-DIMS').dxf.flags = 0
 
@@ -133,7 +141,7 @@ for spec in GEO['managed_entities']:
         elif r in ('DRAW_NEW','DRAW_NEW_PART'):
             draw_layer = 'A-REVIEW' if any(
                 e['object']==k and e.get('overlap_class') for e in REG['entries']) \
-                else 'A-DESIGN'
+                else comp_layer(k)
         if conflict: draw_layer = 'A-CONFLICT'
         pts = [(float(x), float(y)) for x, y in part['exterior']]
         pbb = (min(p[0] for p in pts), min(p[1] for p in pts),
@@ -171,12 +179,28 @@ for spec in GEO['managed_entities']:
             he.set_xdata('DEVINSRC', [(1000, f'{xkey}h{hi}'), (1000, spec['design_status'])])
         bound_any = True
         # DRAW_NEW_PART: 仅重画NC差集新段(完整轮廓已被上面画了, 改为新建层差集段)
-        if r == 'DRAW_NEW_PART' and draw_layer in ('A-DESIGN','A-REVIEW') and k in NC_ROW:
+        if r == 'DRAW_NEW_PART' and draw_layer in ('A-DESIGN','A-REVIEW',
+                'A-STAIR','A-SOFFIT','A-MISC-NEW') and k in NC_ROW:
             target.dxf.layer = 'A-STRUCT-UNDERLAY'
             for npts in NC_ROW[k]['new_geoms']:
                 ne = msp.add_lwpolyline([(float(x),float(y)) for x,y in npts],
                     close=True, dxfattribs={'layer':draw_layer})
-                ne.set_xdata('DEVINSRC',[(1000,k+'#NEWSEG'),(1000,'SPLIT_PARTIAL_NEW')])
+                ne.set_xdata('DEVINSRC',[(1000,k+'#NEWSEG'),(1000,'SPLIT_PARTIAL_NEW'),
+                                         (1000,NC_ROW[k]['component_type'])])
+        # SUPPRESS_DUPLICATE: 整段重画副本→冻结A-DUP; 残余新增按覆盖证据处理
+        if r == 'SUPPRESS_DUPLICATE' and k in NC_ROW:
+            nc = NC_ROW[k]
+            for c in nc.get('covered_new_geoms', []):
+                ne = msp.add_lwpolyline([(float(x),float(y)) for x,y in c['geom']],
+                    close=True, dxfattribs={'layer':'A-DUP'})
+                ne.set_xdata('DEVINSRC',[(1000,k+'#COVNEW'),
+                    (1000,'covered_by:'+','.join(c['covered_by']))])
+            for npts in nc.get('uncovered_new_geoms', []):
+                ne = msp.add_lwpolyline([(float(x),float(y)) for x,y in npts],
+                    close=True, dxfattribs={'layer':comp_layer(k)})
+                ne.set_xdata('DEVINSRC',[(1000,k+'#RESNEW'),
+                    (1000,'RESIDUAL_NEW_UNCOVERED'),
+                    (1000,nc['component_type'])])
     # --- 拆除段实体: A-DEMO 冻结登记 ---
     for dp in spec.get('demolished_parts', []):
         e = msp.add_lwpolyline([(float(x), float(y)) for x, y in dp], close=True,
@@ -255,7 +279,10 @@ for _d in EXTRA_DIMS:
     _dd.render(); _dd.commit()
     _dd.dimension.set_xdata('DEVINDIM',[(1000,_d['tag']),
         (1000,f"geo:{p1[0]},{p1[1]}"),(1000,f"geo:{p2[0]},{p2[1]}"),
-        (1000,_d['axis']),(1040,round(_d['value'],1))])
+        (1000,_d['axis']),(1040,round(_d['value'],1)),
+        (1000,_d.get('measurement_type','UNSPEC')),
+        (1000,(_d.get('ref_object') or _d.get('src',''))[:200]),
+        (1000,_d.get('resurvey',''))])
 
 # --- 门/窗 INSERT (真实洞口, XDATA handle) ---
 def mk_door():

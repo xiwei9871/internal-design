@@ -8,13 +8,17 @@
  "QJ4_review_missing": [],
  "QJ4_all_conflicts_shown": true,
  "QJ5_dim_counts": {
-  "A102": 29,
-  "A103": 29,
-  "expected": 29
+  "A102": 34,
+  "A103": 34,
+  "expected": 34
  },
  "QJ5_dims_valid": true,
  "QJ6_wall_geom_parity": {},
  "QJ6_pass": true,
+ "QJ9_missing_from_A103_mm2": [],
+ "QJ9_extra_in_A103_mm2": [],
+ "QJ9_target_area_mm2": 42158386,
+ "QJ9_blender_target_covered": true,
  "QJ7_sources_fresh": true,
  "QJ8_viewports": {
   "A102": 1,

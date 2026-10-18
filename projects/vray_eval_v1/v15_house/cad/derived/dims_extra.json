@@ -1,11 +1,11 @@
 {
  "meta": {
   "sha_geometry": "1eb00e93250e3de6d58af03cab69f349cbd8f4d76f911252499c7b51b092b694",
-  "rule": "all values computed from model geometry, no manual input"
+  "rule": "geometry-derived; NEW_WALL_LOCATION refs nearest retained face; span vs location dims separated; resurvey states recorded"
  },
  "dims": [
   {
-   "tag": "demo_len_W_EXT_N_LV",
+   "tag": "demo_span_W_EXT_N_LV",
    "p1": [
     2700.0,
     13200.0
@@ -17,10 +17,12 @@
    "axis": "x",
    "lay": 13400.0,
    "value": 5200.0,
-   "src": "W_EXT_N_LV#demol0 bbox"
+   "measurement_type": "DEMOLITION_SPAN",
+   "src": "W_EXT_N_LV#demol0",
+   "resurvey": "DESIGN_CONFIRMED"
   },
   {
-   "tag": "demo_len_W_EXT_N_BAL",
+   "tag": "demo_span_W_EXT_N_BAL",
    "p1": [
     7900.0,
     13850.0
@@ -32,10 +34,12 @@
    "axis": "x",
    "lay": 14050.0,
    "value": 5100.0,
-   "src": "W_EXT_N_BAL#demol0 bbox"
+   "measurement_type": "DEMOLITION_SPAN",
+   "src": "W_EXT_N_BAL#demol0",
+   "resurvey": "DESIGN_CONFIRMED"
   },
   {
-   "tag": "demo_len_W_BALC_N",
+   "tag": "demo_span_W_BALC_N",
    "p1": [
     3300.0,
     2810.0
@@ -47,10 +51,12 @@
    "axis": "x",
    "lay": 3010.0,
    "value": 2500.0,
-   "src": "W_BALC_N#demol0 bbox"
+   "measurement_type": "DEMOLITION_SPAN",
+   "src": "W_BALC_N#demol0",
+   "resurvey": "DESIGN_CONFIRMED"
   },
   {
-   "tag": "demo_len_W_INT_X5800",
+   "tag": "demo_span_W_INT_X5800",
    "p1": [
     6150.0,
     1800.0
@@ -62,10 +68,12 @@
    "axis": "y",
    "lay": 6350.0,
    "value": 2000.0,
-   "src": "W_INT_X5800#demol0 bbox"
+   "measurement_type": "DEMOLITION_SPAN",
+   "src": "W_INT_X5800#demol0",
+   "resurvey": "DESIGN_CONFIRMED"
   },
   {
-   "tag": "demo_len_W_INT_X7900_U",
+   "tag": "demo_span_W_INT_X7900_U",
    "p1": [
     8150.0,
     5000.0
@@ -77,52 +85,149 @@
    "axis": "y",
    "lay": 8350.0,
    "value": 2800.0,
-   "src": "W_INT_X7900_U#demol0 bbox"
+   "measurement_type": "DEMOLITION_SPAN",
+   "src": "W_INT_X7900_U#demol0",
+   "resurvey": "DESIGN_CONFIRMED"
   },
   {
-   "tag": "new_pos_W_wall_md_0062",
+   "tag": "new_loc_1_W_wall_md_0062",
    "p1": [
-    7880,
-    13150
+    13419.9,
+    12550.0
    ],
    "p2": [
-    13020,
-    13150
+    13419.9,
+    13651.8
+   ],
+   "axis": "y",
+   "lay": 13619.9,
+   "value": 1101.8,
+   "measurement_type": "NEW_WALL_LOCATION",
+   "src": "W_wall_md_0062",
+   "resurvey": "SITE_VERIFY",
+   "ref_object": "W_INT_X7900_U south end→new wall centerline"
+  },
+  {
+   "tag": "new_loc_2_W_wall_md_0055",
+   "p1": [
+    13500.0,
+    7450.0
+   ],
+   "p2": [
+    13500.0,
+    11001.8
+   ],
+   "axis": "y",
+   "lay": 13700.0,
+   "value": 3551.8,
+   "measurement_type": "NEW_WALL_LOCATION",
+   "src": "W_wall_md_0055",
+   "resurvey": "SITE_VERIFY",
+   "ref_object": "W_INT_X13000 south end→new wall centerline"
+  },
+  {
+   "tag": "new_loc_3_W_wall_md_0036",
+   "p1": [
+    8199.9,
+    -150.0
+   ],
+   "p2": [
+    8199.9,
+    101.5
+   ],
+   "axis": "y",
+   "lay": 8399.9,
+   "value": 251.5,
+   "measurement_type": "NEW_WALL_LOCATION",
+   "src": "W_wall_md_0036",
+   "resurvey": "SITE_VERIFY",
+   "ref_object": "W_INT_X5800 south end→new wall centerline"
+  },
+  {
+   "tag": "new_loc_4_W_wall_md_0054",
+   "p1": [
+    7900.0,
+    11500.2
+   ],
+   "p2": [
+    8849.9,
+    11500.2
    ],
    "axis": "x",
-   "lay": 12950,
-   "value": 5140,
-   "src": "new_construction bbox W_wall_md_0062"
+   "lay": 11700.2,
+   "value": 949.9,
+   "measurement_type": "NEW_WALL_LOCATION",
+   "src": "W_wall_md_0054",
+   "resurvey": "SITE_VERIFY",
+   "ref_object": "W_INT_Y10800 west end→new wall centerline"
   },
   {
-   "tag": "new_pos_STEP_2",
+   "tag": "step_span_STEP_0",
    "p1": [
-    6110,
+    5460,
     4716
    ],
    "p2": [
-    6110,
+    5460,
     7800
    ],
    "axis": "y",
-   "lay": 5910,
+   "lay": 5260,
    "value": 3084,
-   "src": "new_construction bbox STEP_2"
+   "measurement_type": "STAIR_SPAN",
+   "src": "STEP_0",
+   "resurvey": "SITE_VERIFY"
   },
   {
-   "tag": "new_pos_WAVE_STEP_3_ARRIVAL",
+   "tag": "step_span_STEP_1",
    "p1": [
-    6460,
+    5810,
     4716
    ],
    "p2": [
-    6460,
+    5810,
     7800
    ],
    "axis": "y",
-   "lay": 6260,
+   "lay": 5610,
    "value": 3084,
-   "src": "new_construction bbox WAVE_STEP_3_ARRIVAL"
+   "measurement_type": "STAIR_SPAN",
+   "src": "STEP_1",
+   "resurvey": "SITE_VERIFY"
+  },
+  {
+   "tag": "step_span_STEP_2",
+   "p1": [
+    6160,
+    4716
+   ],
+   "p2": [
+    6160,
+    7800
+   ],
+   "axis": "y",
+   "lay": 5960,
+   "value": 3084,
+   "measurement_type": "STAIR_SPAN",
+   "src": "STEP_2",
+   "resurvey": "SITE_VERIFY"
+  },
+  {
+   "tag": "step_span_WAVE_STEP_3_ARRI",
+   "p1": [
+    6510,
+    4716
+   ],
+   "p2": [
+    6510,
+    7800
+   ],
+   "axis": "y",
+   "lay": 6310,
+   "value": 3084,
+   "measurement_type": "STAIR_SPAN",
+   "src": "WAVE_STEP_3_ARRIVAL",
+   "resurvey": "SITE_VERIFY"
   },
   {
    "tag": "door_w_01",
@@ -137,7 +242,9 @@
    "axis": "x",
    "lay": 6880.0,
    "value": 1130.0,
-   "src": "door rect 8E"
+   "measurement_type": "OPENING_WIDTH",
+   "src": "door rect 8E",
+   "resurvey": "SITE_VERIFY"
   },
   {
    "tag": "door_w_02",
@@ -152,7 +259,9 @@
    "axis": "x",
    "lay": 12900.0,
    "value": 850.0,
-   "src": "door rect 90"
+   "measurement_type": "OPENING_WIDTH",
+   "src": "door rect 90",
+   "resurvey": "SITE_VERIFY"
   },
   {
    "tag": "door_w_03",
@@ -167,7 +276,9 @@
    "axis": "y",
    "lay": 10050.0,
    "value": 900.0,
-   "src": "door rect 92"
+   "measurement_type": "OPENING_WIDTH",
+   "src": "door rect 92",
+   "resurvey": "SITE_VERIFY"
   },
   {
    "tag": "door_w_04",
@@ -182,7 +293,9 @@
    "axis": "x",
    "lay": 7800.0,
    "value": 1150.0,
-   "src": "door rect 96"
+   "measurement_type": "OPENING_WIDTH",
+   "src": "door rect 96",
+   "resurvey": "SITE_VERIFY"
   },
   {
    "tag": "door_w_05",
@@ -197,7 +310,9 @@
    "axis": "x",
    "lay": 5850.0,
    "value": 750.0,
-   "src": "door rect 98"
+   "measurement_type": "OPENING_WIDTH",
+   "src": "door rect 98",
+   "resurvey": "SITE_VERIFY"
   },
   {
    "tag": "door_w_06",
@@ -212,7 +327,9 @@
    "axis": "y",
    "lay": 9350.0,
    "value": 750.0,
-   "src": "door rect 9C"
+   "measurement_type": "OPENING_WIDTH",
+   "src": "door rect 9C",
+   "resurvey": "SITE_VERIFY"
   },
   {
    "tag": "door_w_07",
@@ -227,7 +344,9 @@
    "axis": "y",
    "lay": 13250.0,
    "value": 1300.0,
-   "src": "door rect 9E"
+   "measurement_type": "OPENING_WIDTH",
+   "src": "door rect 9E",
+   "resurvey": "SITE_VERIFY"
   },
   {
    "tag": "door_w_08",
@@ -242,7 +361,9 @@
    "axis": "x",
    "lay": 2650.0,
    "value": 900.0,
-   "src": "door rect A2"
+   "measurement_type": "OPENING_WIDTH",
+   "src": "door rect A2",
+   "resurvey": "SITE_VERIFY"
   },
   {
    "tag": "door_w_09",
@@ -257,7 +378,9 @@
    "axis": "y",
    "lay": 5180.0,
    "value": 1930.0,
-   "src": "door rect A6"
+   "measurement_type": "OPENING_WIDTH",
+   "src": "door rect A6",
+   "resurvey": "SITE_VERIFY"
   }
  ]
 }

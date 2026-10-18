@@ -44,7 +44,7 @@
     7000,
     13900
    ],
-   "coverage": 1.0,
+   "coverage": 0,
    "residual_mm2": 363000,
    "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
   },
@@ -56,7 +56,7 @@
     3700,
     13800
    ],
-   "coverage": 1.0,
+   "coverage": 0.0,
    "residual_mm2": 60000,
    "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
   },
@@ -68,7 +68,7 @@
     7100,
     13800
    ],
-   "coverage": 1.0,
+   "coverage": 0.0,
    "residual_mm2": 60000,
    "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
   },
@@ -730,7 +730,7 @@
      7000,
      13900
     ],
-    "coverage": 1.0,
+    "coverage": 0,
     "residual_mm2": 363000,
     "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
    },
@@ -742,7 +742,7 @@
      3700,
      13800
     ],
-    "coverage": 1.0,
+    "coverage": 0.0,
     "residual_mm2": 60000,
     "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
    },
@@ -754,7 +754,7 @@
      7100,
      13800
     ],
-    "coverage": 1.0,
+    "coverage": 0.0,
     "residual_mm2": 60000,
     "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
    },
