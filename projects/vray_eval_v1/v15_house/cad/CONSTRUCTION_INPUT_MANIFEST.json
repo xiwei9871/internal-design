@@ -1,0 +1,202 @@
+{
+ "generated": "2026-10-18",
+ "units": "mm",
+ "coordinate_system": "FreeCAD/Blender shared frame, verified zero-offset vs baseline (west wall x2700-2900, south wall y-200, north y13400-13600)",
+ "inputs": [
+  {
+   "id": "baseline_dxf",
+   "path": "projects/c_type_home/cad/C型_原始户型数字化基准图.dxf",
+   "nature": "as_built",
+   "status": "verified",
+   "note": "原户型数字化基准,墙体/门窗/房间/尺寸权威源",
+   "sha256": "7285527be00aaa39579e29b2467a60572830c78ca0ae05236e9dc0ab57bd6b57",
+   "size": 62722,
+   "entities": {
+    "LWPOLYLINE": 84,
+    "TEXT": 114,
+    "LINE": 82
+   },
+   "dxf_version": "AC1032"
+  },
+  {
+   "id": "baseline_fcstd",
+   "path": "projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "nature": "as_built",
+   "status": "verified",
+   "note": "FreeCAD 基准模型",
+   "sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "size": 77055
+  },
+  {
+   "id": "design_fcstd_r22",
+   "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_2_AUDIT.FCStd",
+   "nature": "design",
+   "status": "design_intent",
+   "note": "S2 设计修订 R2_2 审计版",
+   "sha256": "17340e63f808f7563c64674ad4b43942765044d946b463cb2fb32d373a7817d1",
+   "size": 407000
+  },
+  {
+   "id": "design_fcstd_working",
+   "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.FCStd",
+   "nature": "design",
+   "status": "design_intent",
+   "note": "工作版 FCStd",
+   "sha256": "d69004b9912eaa6021cb793bee180615d49ef25528bc351033ec450f5de68c8f",
+   "size": 406951
+  },
+  {
+   "id": "design_fcstd_window",
+   "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WINDOW_RESTORED.FCStd",
+   "nature": "design",
+   "status": "design_intent",
+   "note": "窗语义恢复版",
+   "sha256": "9c2aa9ba9bc8a26be7a3375b4e915c3d68680f20122370ed2c589500498de3e0",
+   "size": 212519
+  },
+  {
+   "id": "design_fcstd_premaster",
+   "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+   "nature": "design",
+   "status": "design_intent",
+   "note": "Blender 前主模型",
+   "sha256": "0c30510bc3fe4862d5759c5402146987b6384558a063983b0cab66786de85469",
+   "size": 213027
+  },
+  {
+   "id": "blender_work",
+   "path": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "nature": "design",
+   "status": "design_intent",
+   "note": "V15 工作模型(灯具已修)",
+   "sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "size": 480595956
+  },
+  {
+   "id": "blender_pbr",
+   "path": "projects/vray_eval_v1/v15_house/V15_PBR.blend",
+   "nature": "design",
+   "status": "design_intent",
+   "note": "PBR 材质资产",
+   "sha256": "9ded85742ae42321d2cb7f7b3ace3d52c563e955f65ae8e29b2424964005d11a",
+   "size": 78525945
+  },
+  {
+   "id": "brief",
+   "path": "projects/c_type_home/design/brief_v01.md",
+   "nature": "requirements",
+   "status": "verified",
+   "note": "S1 需求与冻结约束",
+   "sha256": "adcea8c80fe5c9ea2b2475e2e7f881bbc25fded273f4fa0e914cb318fa26bf99",
+   "size": 3135
+  },
+  {
+   "id": "window_register",
+   "path": "projects/c_type_home/design/s2_current_design_v1/FINAL_WINDOW_REGISTER_95ab90e.json",
+   "nature": "as_built",
+   "status": "verified",
+   "note": "窗户登记表",
+   "sha256": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a",
+   "size": 7165
+  },
+  {
+   "id": "furniture_audit",
+   "path": "projects/c_type_home/design/s2_current_design_v1/furniture_dimension_register_v03.json",
+   "nature": "design",
+   "status": "design_intent",
+   "note": "家具尺寸登记",
+   "sha256": "d4b3e111d4b52ebd5786d15eaf8f54571c453d043563a8e8bb5085ae6e7898a2",
+   "size": 46298
+  },
+  {
+   "id": "topmap_render",
+   "path": "projects/vray_eval_v1/v15_house/cad/topmap.png",
+   "nature": "visual_only",
+   "status": "visual_only",
+   "note": "材质编码俯视图-仅视觉辅助,不作施工依据",
+   "sha256": "4c726f4fbe27fc13292f54ec528f2a33ecdf214a7fd26ca2c3c62c7244b75d99",
+   "size": 3684514
+  },
+  {
+   "id": "plan_geom",
+   "path": "projects/vray_eval_v1/v15_house/cad/plan_geom.json",
+   "nature": "derived",
+   "status": "design_intent",
+   "note": "Blender 对象提取中间数据",
+   "sha256": "64ac96a30ed39a0b48aa6de9a3ed560ce6d0a1884294fbdc1d3700cf001a96db",
+   "size": 252790
+  }
+ ],
+ "outputs": [
+  {
+   "file": "cad/A102_墙体拆改图.dxf",
+   "sha256": "4534ecd7c86f9509e2c6d6d44d9843445011894607713016850bb57c89fcd93c",
+   "size": 75462,
+   "dxf_version": "AC1032",
+   "entities": {
+    "LWPOLYLINE": 129,
+    "TEXT": 134,
+    "LINE": 82
+   }
+  },
+  {
+   "file": "cad/A103_平面布置图.dxf",
+   "sha256": "a49dca51194d99785c17cbe0aee122d8e741b2a6267bb4f541236abbd2084ee7",
+   "size": 95737,
+   "dxf_version": "AC1032",
+   "entities": {
+    "LWPOLYLINE": 209,
+    "TEXT": 121,
+    "LINE": 88
+   }
+  },
+  {
+   "file": "cad/A201_天花布置图.dxf",
+   "sha256": "a2127c299e0f84227a6f94d47b07053dc65973c0e76b7d6a9120e1a1b8b2fdc3",
+   "size": 97100,
+   "dxf_version": "AC1024",
+   "entities": {
+    "LWPOLYLINE": 133,
+    "CIRCLE": 46,
+    "LINE": 160,
+    "TEXT": 97
+   }
+  },
+  {
+   "file": "cad/A202_地面铺装图.dxf",
+   "sha256": "592c28b780c92cb063d1d04ad7808b622ad700a5101db6a240effcc15bf52902",
+   "size": 140658,
+   "dxf_version": "AC1032",
+   "entities": {
+    "LWPOLYLINE": 205,
+    "TEXT": 137,
+    "LINE": 338,
+    "CIRCLE": 2
+   }
+  },
+  {
+   "file": "cad/A302_电气点位图.dxf",
+   "sha256": "53d0287eabb8fa7661cf276be39a9009bf2b723941194892c08cc957b35b7d9a",
+   "size": 110636,
+   "dxf_version": "AC1032",
+   "entities": {
+    "LWPOLYLINE": 198,
+    "TEXT": 225,
+    "LINE": 133,
+    "CIRCLE": 4
+   }
+  },
+  {
+   "file": "cad/A303_给排水点位图.dxf",
+   "sha256": "2ef714fa7c14570df9c11e584d99dbc18203e7d9d7418d8aa9ccaf7e2a98a866",
+   "size": 88306,
+   "dxf_version": "AC1032",
+   "entities": {
+    "LWPOLYLINE": 143,
+    "TEXT": 150,
+    "LINE": 114,
+    "CIRCLE": 29
+   }
+  }
+ ]
+}
