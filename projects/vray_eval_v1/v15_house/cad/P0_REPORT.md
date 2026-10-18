@@ -42,10 +42,10 @@
 - 客卫无台盆对象（图上已标"待确认"）；马桶坑距未知；配电/弱电箱按原位假设；台阶 450mm 在模型成立但 brief 标注"待实测"；家具全部包围盒。
 
 ### 3.4 现场复尺待确认（HOLD 类）
-- **⚠ 北阳台**：brief_v01 明写 `OPEN_NOT_ENCLOSED`（封闭是 future proposed work）——模型与图纸按"阳光房已封"处理，**需业主书面确认此差异**。
-- **⚠ 拆改墙体**：brief 写"existing walls and openings remain immutable for this phase"且"structural status of any wall modification = to verify"——我们按模型画了 5 处拆除（开放式厨房/楼梯敞开等），**业主已视觉确认拆除意图，但结构可行性未核实**。
-- **⚠ RAMP**：brief 称现有坡道为"provisional assisted-mobility provision，需现场核实"——业主指令已从图上移除；与 brief 冲突，需确认 brief 是否已更新。
-- 坑距/立管/坡度/门窗洞口现场尺寸/面层选型。
+- **北阳台**：brief_v01 `OPEN_NOT_ENCLOSED` vs 模型封闭——**OWNER_RESOLVED (D01)**：按封窗设计；构造/尺寸/合规 `to_verify`。详 `DESIGN_DECISIONS_V01.md`。
+- **拆改墙体**：brief"既有墙洞口不可变" vs 模型已拆 5 处——**OWNER_RESOLVED (D02)**：设计认可保留；结构属性 `HOLD`，A102 未经结构核实不得作施工依据。
+- **RAMP**：brief 临时适老坡道 vs 业主指令移除——**OWNER_RESOLVED (D03)**：本期不设，仅为未来预案；不因 brief 自动恢复。450mm 高差/踏步 `to_verify`。
+- 坑距/立管/坡度/门窗洞口现场尺寸/面层选型 → `to_verify`。
 
 ### 3.5 安全/合规高风险
 - 拆除段承重属性未核实 → A102 在结构审查前**不得作为施工依据**（图上已注明"承重构件严禁拆改"）。
@@ -64,4 +64,5 @@
 
 ## 5. 建议
 
-P0 → **PROCEED TO P1**（A103 原生标注 POC），但带三个 HOLD 前提写入台账：北阳台封闭确认、拆改结构核实、RAMP/brief 冲突确认。以上属业主/结构决策，不在工程出图管线职权内。
+P0 → **PROCEED TO P1**（A103 原生标注 POC）。
+设计冲突三项已于 2026-10-18 由业主决策：**OWNER_RESOLVED**（D01 北阳台封窗 / D02 五处拆改 / D03 缓坡不设），见 `DESIGN_DECISIONS_V01.md`。仍独立 HOLD：拆改段结构安全核实、450mm 高差/踏步现场复核、封窗构造合规——属业主/结构职权，不阻塞出图管线研发。
