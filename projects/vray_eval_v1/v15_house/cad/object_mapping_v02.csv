@@ -1,0 +1,196 @@
+sheet_entity,entity_handle,source_object_id,source,subelement,design_status,verification_status,evidence
+dim_anchor,,S-SPAN-W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,VERIFIED_OBJECT,fcstd:W_BALC_S.xmin
+dim_anchor,,S-SPAN-E,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[8],EXISTING,VERIFIED_OBJECT,fcstd:W_EXT_E1.xmax
+dim_anchor,,W-SPAN-S,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,VERIFIED_OBJECT,fcstd:W_BALC_S.ymin
+dim_anchor,,W-SPAN-N,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[2],EXISTING,VERIFIED_OBJECT,fcstd:W_EXT_N_BAL.ymax
+dim_anchor,,KIT-W-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,VERIFIED_OBJECT,fcstd:W_INT_X5800.xmin
+dim_anchor,,KIT-E-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,VERIFIED_OBJECT,fcstd:W_INT_X7900_L.xmin
+dim_anchor,,MBED-W-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[4],EXISTING,VERIFIED_OBJECT,fcstd:W_INT_X7900_L.xmax
+dim_anchor,,MBED-E-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,VERIFIED_OBJECT,fcstd:W_INT_X11500.xmin
+dim_anchor,,MOT-W-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[4],EXISTING,VERIFIED_OBJECT,fcstd:W_INT_X11500.xmax
+dim_anchor,,MOT-E-FACE,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,VERIFIED_OBJECT,fcstd:W_EXT_E1.xmin
+dim_anchor,,LWIN-W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,VERIFIED_OBJECT,fcstd:W_BAY_F.xmin
+dim_anchor,,LWIN-E,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[4],EXISTING,VERIFIED_OBJECT,fcstd:W_BAY_F.xmax
+dim_anchor,,BALC-N-W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,VERIFIED_OBJECT,fcstd:W_EXT_N_BAL.xmin
+dim_anchor,,BALC-N-E,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[4],EXISTING,VERIFIED_OBJECT,fcstd:W_EXT_N_BAL.xmax
+dim_anchor,,COR-S-W,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[0],EXISTING,VERIFIED_OBJECT,fcstd:W_INT_Y4500_a.xmin
+dim_anchor,,COR-S-E,/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd,Shape.Vertexes[8],EXISTING,VERIFIED_OBJECT,fcstd:W_INT_Y4500_b.xmax
+dim_anchor,,STAIR-W,projects/vray_eval_v1/v15_house/V15_WORK.blend,footprint.vertex[0],PROPOSED,VERIFIED_OBJECT,blender:STEP_0 extremum W
+dim_anchor,,STAIR-E,projects/vray_eval_v1/v15_house/V15_WORK.blend,footprint.vertex[13],PROPOSED,VERIFIED_OBJECT,blender:WAVE_STEP_3_ARRIVAL extremum E
+dim_anchor,,STAIR-S,projects/vray_eval_v1/v15_house/V15_WORK.blend,footprint.vertex[0],PROPOSED,VERIFIED_OBJECT,blender:WAVE_STEP_3_ARRIVAL extremum S
+dim_anchor,,STAIR-N,projects/vray_eval_v1/v15_house/V15_WORK.blend,footprint.vertex[12],PROPOSED,VERIFIED_OBJECT,blender:WAVE_STEP_3_ARRIVAL extremum N
+dim_anchor,,BATH2-W,projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(WS),PROPOSED,VERIFIED_OBJECT,blender:R3_COMPLETE_PARTITION_WALLS WS
+dim_anchor,,BATH2-E,projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(ES),PROPOSED,VERIFIED_OBJECT,blender:R3_COMPLETE_PARTITION_WALLS ES
+dim_anchor,,BATH2-S,projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(WS),PROPOSED,VERIFIED_OBJECT,blender:R3_COMPLETE_PARTITION_WALLS WS
+dim_anchor,,BATH2-N,projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(WN),PROPOSED,VERIFIED_OBJECT,blender:R3_COMPLETE_PARTITION_WALLS WN
+dim_anchor,,KOPEN-S,projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(NW-top),PROPOSED,VERIFIED_OBJECT,blender pier ymax
+dim_anchor,,KOPEN-N,projects/vray_eval_v1/v15_house/V15_WORK.blend,bbox.corner(SW),EXISTING,VERIFIED_OBJECT,blender stub ymin
+A-UNCERTAIN LWPOLYLINE,3D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,3F,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,45,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,47,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,4D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,4F,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,5B,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,69,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,6B,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,6D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,6F,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,75,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,79,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,7B,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,7D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,7F,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,85,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,86,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,87,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,88,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,89,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,8A,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,8B,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,8C,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,8D,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,94,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,9A,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,A0,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,A4,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,AA,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,AC,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,B2,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,BA,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,BC,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,C0,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,C6,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,CC,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+A-UNCERTAIN LWPOLYLINE,D0,UNADJUDICATED,,,UNKNOWN,UNADJUDICATED_FROZEN,"wall-diff candidate, needs human audit"
+INSERT SYM-DOOR-LEAF,220,dxf_handle:8E,,dxf_handle:8E,PROPOSED,VERIFIED_OBJECT,block insert
+INSERT SYM-DOOR-LEAF,223,dxf_handle:90,,dxf_handle:90,PROPOSED,VERIFIED_OBJECT,block insert
+INSERT SYM-DOOR-LEAF,226,dxf_handle:92,,dxf_handle:92,PROPOSED,VERIFIED_OBJECT,block insert
+INSERT SYM-DOOR-LEAF,229,dxf_handle:96,,dxf_handle:96,PROPOSED,VERIFIED_OBJECT,block insert
+INSERT SYM-DOOR-LEAF,22C,dxf_handle:98,,dxf_handle:98,PROPOSED,VERIFIED_OBJECT,block insert
+INSERT SYM-DOOR-LEAF,22F,dxf_handle:9C,,dxf_handle:9C,PROPOSED,VERIFIED_OBJECT,block insert
+INSERT SYM-DOOR-LEAF,232,dxf_handle:9E,,dxf_handle:9E,PROPOSED,VERIFIED_OBJECT,block insert
+INSERT SYM-DOOR-LEAF,235,dxf_handle:A2,,dxf_handle:A2,PROPOSED,VERIFIED_OBJECT,block insert
+INSERT SYM-DOOR-LEAF,238,dxf_handle:A6,,dxf_handle:A6,PROPOSED,VERIFIED_OBJECT,block insert
+INSERT SYM-WIN-SPAN,242,fcstd:W_BAY_F,,fcstd:W_BAY_F,PROPOSED,VERIFIED_OBJECT,block insert
+LEGACY LINE,D8,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,D9,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,DA,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,DB,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,DC,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,DD,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,DE,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,DF,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,E0,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,E1,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,E2,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,E3,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,E4,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,E5,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,E6,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,E7,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,E8,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,E9,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,EA,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,EB,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,EC,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,ED,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,EE,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,EF,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F0,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F1,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F2,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F3,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F4,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F5,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F6,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F7,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F8,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,F9,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,FA,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,FB,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,FC,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,FD,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,FE,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,FF,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,100,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,101,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,102,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,103,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,104,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,105,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,106,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,107,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,108,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,109,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,10A,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,10B,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,10C,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,10D,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,10E,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,10F,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,110,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,111,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,112,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,113,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,114,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,115,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,116,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,117,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,118,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,119,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,11A,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,11B,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,11C,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,11D,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,11E,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,11F,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,120,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,121,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,122,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,123,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,124,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,125,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,126,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,127,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,128,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,129,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,12A,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,12B,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,12C,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,12D,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,12E,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,12F,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,130,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,131,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,132,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,133,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,134,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,135,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,136,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,137,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,138,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,139,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,13A,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,13B,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,13C,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,13D,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,13E,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,13F,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY LINE,140,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,141,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,142,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,143,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,144,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,145,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,146,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,147,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,148,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,149,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,14A,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,14B,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,14C,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,14D,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,14E,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,14F,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION
+LEGACY TEXT,150,baseline A-DIMS,A103_平面布置图.dxf,,EXISTING,LEGACY_FROZEN,superseded by native DIMENSION

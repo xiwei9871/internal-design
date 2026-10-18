@@ -1,0 +1,8 @@
+{
+ "test": "change_propagation",
+ "object": "W_BALC_S",
+ "shift_mm": 100.0,
+ "dim_before": 14300.0,
+ "dim_after": 14200.0,
+ "status": "PASS"
+}
