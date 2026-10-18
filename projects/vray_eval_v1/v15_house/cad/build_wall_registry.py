@@ -47,26 +47,39 @@ def add(object_id, source, design_status, poly, note='', primary=None):
         'area': round(poly.area) if poly else 0,
         'note': note,
     }
-    # --- A102 角色 ---
+    # --- A102 角色: 设计意图 / 结构核验 / 施工批准 三层分离 ---
+    entry['design_intent'] = None
+    entry['structural_verification'] = None
+    entry['construction_authorization'] = None
     if design_status == 'EXISTING_DEMOLISHED':
+        entry['design_intent'] = 'OWNER_DESIGN_APPROVED'   # D02 业主确认设计
+        entry['structural_verification'] = 'VERIFIED_NO_STRUCT_FILL' if r <= 0.5                                            else 'BLOCKED_STRUCT_OVERLAP'
         if primary == 'W_EXT_N_BAL':
             entry['a102_role'] = 'DEMOLITION_HOLD'
+            entry['structural_verification'] = 'UNVERIFIED_DEVELOPER_PLAN'
+            entry['construction_authorization'] = 'HOLD'
             entry['note'] = (note+' | 修正后结构覆盖0%, 但开发商黑白语义未核实 -> '
                              '预防性HOLD, 不得发布为已批拆除').strip(' |')
         elif r <= 0.5:
-            entry['a102_role'] = 'DEMOLISHED_CONFIRMED'
+            entry['a102_role'] = 'DESIGN_APPROVED_DEMO'   # 设计确认拟拆, 非施工批准
+            entry['construction_authorization'] = 'PENDING_SITE_VERIFY'
         else:
             entry['a102_role'] = 'DEMOLITION_HOLD'
+            entry['construction_authorization'] = 'HOLD'
             entry['note'] = (note+' | 拆除段与结构面重叠>50%').strip(' |')
     elif design_status == 'EXISTING_RETAINED':
         entry['a102_role'] = 'RETAINED_STRUCT' if r > 0.6 else 'RETAINED'
+        entry['design_intent'] = 'RETAINED'
     elif design_status == 'PROPOSED_NEW':
         entry['a102_role'] = 'NEW'
+        entry['design_intent'] = 'OWNER_DESIGN_APPROVED'
+        entry['construction_authorization'] = 'PENDING_SITE_VERIFY'
     else:
         entry['a102_role'] = 'PENDING_REVIEW'
+        entry['design_intent'] = 'UNRESOLVED'
     # --- A103 角色 ---
     entry['a103_role'] = {'RETAINED_STRUCT':'DRAW_RETAINED','RETAINED':'DRAW_RETAINED',
-        'DEMOLISHED_CONFIRMED':'SUPPRESS','DEMOLITION_HOLD':'SUPPRESS_HOLD',
+        'DESIGN_APPROVED_DEMO':'SUPPRESS','DEMOLITION_HOLD':'SUPPRESS_HOLD',
         'NEW':'DRAW_NEW','PENDING_REVIEW':'DRAW_REVIEW_LAYER'}.get(entry['a102_role'],'SUPPRESS')
     # --- 开发商语义映射可信度 ---
     if kind == 'NONE' and design_status in ('EXISTING_DEMOLISHED','UNVERIFIED',
@@ -81,11 +94,11 @@ def add(object_id, source, design_status, poly, note='', primary=None):
     # --- 拟建重叠子分类 ---
     c = conf.get(object_id)
     if c and c['type'] == 'NEW_WALL_ON_PROTECTED':
-        entry['overlap_class'] = 'STRUCT_HATCH_CONFLICT' if kind=='HATCH_FILL' \
+        entry['overlap_class'] = 'UNVERIFIED_STRUCT_OVERLAP' if kind=='HATCH_FILL' \
                                  else 'BOUNDARY_OVERLAP_REVIEW'
         entry['note'] = (entry.get('note','') +
             f" | 拟建墙与{kind}覆盖{entry['struct_ratio']}: "
-            f"{'骑跨剪力墙/柱-真实冲突' if kind=='HATCH_FILL' else '边界线重合-贴建或误差'}").strip(' |')
+            f"{'骑跨HATCH填充-待核实重叠' if kind=='HATCH_FILL' else '边界线重合-贴建或误差'}").strip(' |')
     return entry
 
 for m in GEO['managed_entities']:

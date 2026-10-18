@@ -33,6 +33,9 @@
    ],
    "area": 1414000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -52,6 +55,9 @@
    ],
    "area": 620000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED_STRUCT",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -71,6 +77,9 @@
    ],
    "area": 1870000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -90,6 +99,9 @@
    ],
    "area": 80000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -109,6 +121,9 @@
    ],
    "area": 134000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -128,6 +143,9 @@
    ],
    "area": 900000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -147,6 +165,9 @@
    ],
    "area": 1300000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -166,6 +187,9 @@
    ],
    "area": 440000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -185,6 +209,9 @@
    ],
    "area": 180000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -204,7 +231,10 @@
    ],
    "area": 1040000,
    "note": "",
-   "a102_role": "DEMOLISHED_CONFIRMED",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": "VERIFIED_NO_STRUCT_FILL",
+   "construction_authorization": "PENDING_SITE_VERIFY",
+   "a102_role": "DESIGN_APPROVED_DEMO",
    "a103_role": "SUPPRESS",
    "classification": "CLASSIFICATION_UNVERIFIED"
   },
@@ -223,6 +253,9 @@
    ],
    "area": 620000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -242,6 +275,9 @@
    ],
    "area": 45000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -261,6 +297,9 @@
    ],
    "area": 45000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -280,6 +319,9 @@
    ],
    "area": 1020000,
    "note": "修正后结构覆盖0%, 但开发商黑白语义未核实 -> 预防性HOLD, 不得发布为已批拆除",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": "UNVERIFIED_DEVELOPER_PLAN",
+   "construction_authorization": "HOLD",
    "a102_role": "DEMOLITION_HOLD",
    "a103_role": "SUPPRESS_HOLD",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -299,6 +341,9 @@
    ],
    "area": 390000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -318,6 +363,9 @@
    ],
    "area": 900000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -337,6 +385,9 @@
    ],
    "area": 256000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED_STRUCT",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -356,7 +407,10 @@
    ],
    "area": 400000,
    "note": "",
-   "a102_role": "DEMOLISHED_CONFIRMED",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": "VERIFIED_NO_STRUCT_FILL",
+   "construction_authorization": "PENDING_SITE_VERIFY",
+   "a102_role": "DESIGN_APPROVED_DEMO",
    "a103_role": "SUPPRESS",
    "classification": "CLASSIFICATION_UNVERIFIED"
   },
@@ -375,6 +429,9 @@
    ],
    "area": 180000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED_STRUCT",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -394,6 +451,9 @@
    ],
    "area": 310000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -413,7 +473,10 @@
    ],
    "area": 400000,
    "note": "",
-   "a102_role": "DEMOLISHED_CONFIRMED",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": "VERIFIED_NO_STRUCT_FILL",
+   "construction_authorization": "PENDING_SITE_VERIFY",
+   "a102_role": "DESIGN_APPROVED_DEMO",
    "a103_role": "SUPPRESS",
    "classification": "CLASSIFICATION_UNVERIFIED"
   },
@@ -432,6 +495,9 @@
    ],
    "area": 125000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "NO_STRUCT_OVERLAP"
@@ -451,6 +517,9 @@
    ],
    "area": 964000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -470,6 +539,9 @@
    ],
    "area": 100000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -489,6 +561,9 @@
    ],
    "area": 390000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -508,6 +583,9 @@
    ],
    "area": 33000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "NO_STRUCT_OVERLAP"
@@ -527,7 +605,10 @@
    ],
    "area": 280000,
    "note": "",
-   "a102_role": "DEMOLISHED_CONFIRMED",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": "VERIFIED_NO_STRUCT_FILL",
+   "construction_authorization": "PENDING_SITE_VERIFY",
+   "a102_role": "DESIGN_APPROVED_DEMO",
    "a103_role": "SUPPRESS",
    "classification": "CLASSIFICATION_UNVERIFIED"
   },
@@ -546,6 +627,9 @@
    ],
    "area": 640000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "NO_STRUCT_OVERLAP"
@@ -565,6 +649,9 @@
    ],
    "area": 1340000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -584,6 +671,9 @@
    ],
    "area": 1230000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -603,6 +693,9 @@
    ],
    "area": 160000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "NO_STRUCT_OVERLAP"
@@ -622,6 +715,9 @@
    ],
    "area": 24000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "NO_STRUCT_OVERLAP"
@@ -641,6 +737,9 @@
    ],
    "area": 634000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED_STRUCT",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -660,6 +759,9 @@
    ],
    "area": 470000,
    "note": "",
+   "design_intent": "UNRESOLVED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "PENDING_REVIEW",
    "a103_role": "DRAW_REVIEW_LAYER",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -679,6 +781,9 @@
    ],
    "area": 180000,
    "note": "",
+   "design_intent": "UNRESOLVED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "PENDING_REVIEW",
    "a103_role": "DRAW_REVIEW_LAYER",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -698,6 +803,9 @@
    ],
    "area": 160000,
    "note": "",
+   "design_intent": "UNRESOLVED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "PENDING_REVIEW",
    "a103_role": "DRAW_REVIEW_LAYER",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -717,6 +825,9 @@
    ],
    "area": 140000,
    "note": "",
+   "design_intent": "UNRESOLVED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "PENDING_REVIEW",
    "a103_role": "DRAW_REVIEW_LAYER",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -736,6 +847,9 @@
    ],
    "area": 590000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "NO_STRUCT_OVERLAP"
@@ -755,6 +869,9 @@
    ],
    "area": 180000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED_STRUCT",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -774,6 +891,9 @@
    ],
    "area": 640000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -793,6 +913,9 @@
    ],
    "area": 1020000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "NO_STRUCT_OVERLAP"
@@ -812,6 +935,9 @@
    ],
    "area": 140000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -831,6 +957,9 @@
    ],
    "area": 290000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "NO_STRUCT_OVERLAP"
@@ -850,6 +979,9 @@
    ],
    "area": 80000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -869,6 +1001,9 @@
    ],
    "area": 775000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "NO_STRUCT_OVERLAP"
@@ -888,6 +1023,9 @@
    ],
    "area": 720000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -907,6 +1045,9 @@
    ],
    "area": 480000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -926,6 +1067,9 @@
    ],
    "area": 302500,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -945,6 +1089,9 @@
    ],
    "area": 302500,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -964,6 +1111,9 @@
    ],
    "area": 70000,
    "note": "",
+   "design_intent": "RETAINED",
+   "structural_verification": null,
+   "construction_authorization": null,
    "a102_role": "RETAINED",
    "a103_role": "DRAW_RETAINED",
    "classification": "CLASSIFICATION_UNVERIFIED"
@@ -983,6 +1133,9 @@
    ],
    "area": 183000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1002,6 +1155,9 @@
    ],
    "area": 83060,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -1021,6 +1177,9 @@
    ],
    "area": 229254,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1040,6 +1199,9 @@
    ],
    "area": 343289,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -1059,6 +1221,9 @@
    ],
    "area": 1079367,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1078,6 +1243,9 @@
    ],
    "area": 1079360,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1097,6 +1265,9 @@
    ],
    "area": 1079360,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1116,6 +1287,9 @@
    ],
    "area": 600560,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1135,6 +1309,9 @@
    ],
    "area": 120160,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1154,6 +1331,9 @@
    ],
    "area": 80120,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1173,6 +1353,9 @@
    ],
    "area": 200240,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1192,6 +1375,9 @@
    ],
    "area": 88009,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1211,6 +1397,9 @@
    ],
    "area": 24995,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1230,6 +1419,9 @@
    ],
    "area": 620580,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1249,6 +1441,9 @@
    ],
    "area": 60119,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1268,6 +1463,9 @@
    ],
    "area": 60119,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1287,6 +1485,9 @@
    ],
    "area": 2329902,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1306,6 +1507,9 @@
    ],
    "area": 725105,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -1324,11 +1528,14 @@
     11100
    ],
    "area": 50565,
-   "note": "拟建墙与HATCH_FILL覆盖0.8: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖0.8: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "VIEW_WALL_LIVING_FIX_TV_NORTH_SOLID_WALL",
@@ -1344,11 +1551,14 @@
     11700
    ],
    "area": 150095,
-   "note": "拟建墙与HATCH_FILL覆盖0.799: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖0.799: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "VIEW_WALL_R3_WEST_PARTITION",
@@ -1365,6 +1575,9 @@
    ],
    "area": 300000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1384,6 +1597,9 @@
    ],
    "area": 150150,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1403,6 +1619,9 @@
    ],
    "area": 190190,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1422,6 +1641,9 @@
    ],
    "area": 20020,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1441,6 +1663,9 @@
    ],
    "area": 70080,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -1460,6 +1685,9 @@
    ],
    "area": 40420,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -1479,6 +1707,9 @@
    ],
    "area": 16016,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1498,6 +1729,9 @@
    ],
    "area": 53843,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -1517,6 +1751,9 @@
    ],
    "area": 500021,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1536,6 +1773,9 @@
    ],
    "area": 1039267,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1555,6 +1795,9 @@
    ],
    "area": 1825844,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1574,6 +1817,9 @@
    ],
    "area": 939940,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1593,6 +1839,9 @@
    ],
    "area": 1623944,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1612,6 +1861,9 @@
    ],
    "area": 420460,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1631,6 +1883,9 @@
    ],
    "area": 1420515,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1650,6 +1905,9 @@
    ],
    "area": 320000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1669,6 +1927,9 @@
    ],
    "area": 579960,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -1688,6 +1949,9 @@
    ],
    "area": 1292000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -1707,6 +1971,9 @@
    ],
    "area": 350600,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1725,11 +1992,14 @@
     700
    ],
    "area": 217393,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0010",
@@ -1746,6 +2016,9 @@
    ],
    "area": 80000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -1765,6 +2038,9 @@
    ],
    "area": 122500,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -1784,6 +2060,9 @@
    ],
    "area": 860000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -1803,6 +2082,9 @@
    ],
    "area": 84000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1822,6 +2104,9 @@
    ],
    "area": 58995,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1841,6 +2126,9 @@
    ],
    "area": 579975,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1860,6 +2148,9 @@
    ],
    "area": 58953,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1879,6 +2170,9 @@
    ],
    "area": 860000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -1898,6 +2192,9 @@
    ],
    "area": 340000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -1917,6 +2214,9 @@
    ],
    "area": 58995,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1936,6 +2236,9 @@
    ],
    "area": 149960,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1955,6 +2258,9 @@
    ],
    "area": 580000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -1974,6 +2280,9 @@
    ],
    "area": 544000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -1993,6 +2302,9 @@
    ],
    "area": 280000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2012,6 +2324,9 @@
    ],
    "area": 59976,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2031,6 +2346,9 @@
    ],
    "area": 58953,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2049,11 +2367,14 @@
     4500
    ],
    "area": 860000,
-   "note": "拟建墙与HATCH_FILL覆盖0.558: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖0.558: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0031",
@@ -2070,6 +2391,9 @@
    ],
    "area": 59976,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2089,6 +2413,9 @@
    ],
    "area": 380000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -2108,6 +2435,9 @@
    ],
    "area": 860000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -2127,6 +2457,9 @@
    ],
    "area": 240000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2146,6 +2479,9 @@
    ],
    "area": 270000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2165,6 +2501,9 @@
    ],
    "area": 375152,
    "note": "拟建墙与BOUNDARY_RING覆盖0.893: 边界线重合-贴建或误差",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING",
@@ -2184,11 +2523,14 @@
     200
    ],
    "area": 119496,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0038",
@@ -2204,11 +2546,14 @@
     200
    ],
    "area": 119496,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0039",
@@ -2224,11 +2569,14 @@
     200
    ],
    "area": 119496,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0040",
@@ -2244,11 +2592,14 @@
     200
    ],
    "area": 119496,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0043",
@@ -2264,11 +2615,14 @@
     2500
    ],
    "area": 280000,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0044",
@@ -2285,6 +2639,9 @@
    ],
    "area": 380000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -2304,6 +2661,9 @@
    ],
    "area": 120000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -2323,6 +2683,9 @@
    ],
    "area": 440000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -2342,6 +2705,9 @@
    ],
    "area": 140000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2361,6 +2727,9 @@
    ],
    "area": 70000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2380,6 +2749,9 @@
    ],
    "area": 569980,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2399,6 +2771,9 @@
    ],
    "area": 330000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2418,6 +2793,9 @@
    ],
    "area": 160020,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL"
@@ -2437,6 +2815,9 @@
    ],
    "area": 59980,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2456,6 +2837,9 @@
    ],
    "area": 410000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -2474,11 +2858,14 @@
     11100
    ],
    "area": 340000,
-   "note": "拟建墙与HATCH_FILL覆盖0.529: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖0.529: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0055",
@@ -2495,6 +2882,9 @@
    ],
    "area": 590352,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_BOUNDARY_RING"
@@ -2513,11 +2903,14 @@
     11100
    ],
    "area": 99020,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0057",
@@ -2533,11 +2926,14 @@
     11100
    ],
    "area": 98980,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0058",
@@ -2554,6 +2950,9 @@
    ],
    "area": 210000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2572,11 +2971,14 @@
     13200
    ],
    "area": 180000,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0060",
@@ -2592,11 +2994,14 @@
     13200
    ],
    "area": 180000,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0061",
@@ -2612,11 +3017,14 @@
     13400
    ],
    "area": 160000,
-   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨剪力墙/柱-真实冲突",
+   "note": "拟建墙与HATCH_FILL覆盖1.0: 骑跨HATCH填充-待核实重叠",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "STRUCT_EVIDENCE_HATCH_FILL",
-   "overlap_class": "STRUCT_HATCH_CONFLICT"
+   "overlap_class": "UNVERIFIED_STRUCT_OVERLAP"
   },
   {
    "object": "W_wall_md_0062",
@@ -2633,6 +3041,9 @@
    ],
    "area": 2570000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2652,6 +3063,9 @@
    ],
    "area": 50000,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2671,6 +3085,9 @@
    ],
    "area": 1079370,
    "note": "",
+   "design_intent": "OWNER_DESIGN_APPROVED",
+   "structural_verification": null,
+   "construction_authorization": "PENDING_SITE_VERIFY",
    "a102_role": "NEW",
    "a103_role": "DRAW_NEW",
    "classification": "NO_STRUCT_OVERLAP"
@@ -2680,7 +3097,7 @@
   "a102_roles": {
    "RETAINED": 36,
    "RETAINED_STRUCT": 5,
-   "DEMOLISHED_CONFIRMED": 4,
+   "DESIGN_APPROVED_DEMO": 4,
    "DEMOLITION_HOLD": 1,
    "PENDING_REVIEW": 4,
    "NEW": 89
@@ -2699,7 +3116,7 @@
    "NO_STRUCT_OVERLAP": 60
   },
   "overlap_classes": {
-   "STRUCT_HATCH_CONFLICT": 15,
+   "UNVERIFIED_STRUCT_OVERLAP": 15,
    "BOUNDARY_OVERLAP_REVIEW": 1
   }
  }

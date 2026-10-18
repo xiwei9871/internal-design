@@ -1,0 +1,21 @@
+{
+ "QJ1_same_snapshot": true,
+ "QJ2_demo_set": true,
+ "QJ2_hold_set": true,
+ "QJ3_no_suppress_visible": true,
+ "QJ3_detail": [],
+ "QJ4_conflict_missing": [],
+ "QJ4_review_missing": [],
+ "QJ4_all_conflicts_shown": true,
+ "QJ5_dim_errs": [],
+ "QJ5_dims_valid": true,
+ "QJ6_wall_geom_parity": {},
+ "QJ6_pass": true,
+ "QJ7_sources_fresh": true,
+ "QJ8_viewports": {
+  "A102": 1,
+  "A103": 1
+ },
+ "QJ8_viewport_present": true,
+ "verdict": "PASS"
+}
