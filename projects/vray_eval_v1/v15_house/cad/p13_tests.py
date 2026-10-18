@@ -127,3 +127,27 @@ print(f'  fresh={fresh} prod_untouched={prod_ok} -> {RESULTS["T-E_fresh_outputs_
 
 (T/'p13_test_results.json').write_text(json.dumps(RESULTS,indent=1))
 print('\n', json.dumps(RESULTS,indent=1))
+
+# ============ T-F: 跨状态 100% 重合未批准 → 双保留, 不静默删 ============
+print('=== T-F: cross-status overlap -> both kept ===')
+g5 = json.loads((CAD/'derived'/'geometry_v05.json').read_text())
+names = {o for m in g5['managed_entities'] for o in m['objects']}
+# 真实案例: W_EXT_N_BAL(EXISTING_DEMOLISHED) vs W_wall_md_0062(PROPOSED_NEW) bbox 几乎重合
+nbal = [m for m in g5['managed_entities'] if 'W_EXT_N_BAL' in m['objects']]
+md62 = [m for m in g5['managed_entities'] if 'W_wall_md_0062' in m['objects']]
+both_kept = nbal and md62 and nbal[0]['design_status']=='EXISTING_DEMOLISHED' \
+            and md62[0]['design_status']=='PROPOSED_NEW' and md62[0]['parts']
+# DXF 中无未批准混状态绑定
+doc5 = ezdxf.readfile(CAD/'A103_CONSTRUCTION_POC_V5.dxf')
+STAT = {'EXISTING_RETAINED','EXISTING_DEMOLISHED','PROPOSED_NEW','UNVERIFIED','DESIGN_REVIEW_PENDING'}
+mix = 0
+for e in doc5.modelspace():
+    if e.dxftype() != 'LWPOLYLINE': continue
+    try: xd = [v for c,v in e.get_xdata('DEVINSRC')]
+    except ezdxf.DXFValueError: continue
+    if len({v for v in xd[1:] if v in STAT}) > 1: mix += 1
+ok = bool(both_kept) and mix == 0
+RESULTS['T-F_cross_status_no_silent_merge'] = 'PASS' if ok else 'FAIL'
+print(f'  W_EXT_N_BAL kept={bool(nbal)} md0062 kept={bool(md62)} mixed_bindings={mix} -> {RESULTS["T-F_cross_status_no_silent_merge"]}')
+(T/'p13_test_results.json').write_text(json.dumps(RESULTS,indent=1))
+print(json.dumps(RESULTS,indent=1))
