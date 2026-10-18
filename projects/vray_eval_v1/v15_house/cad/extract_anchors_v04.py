@@ -87,7 +87,8 @@ DEMO = {
     'W_EXT_N_LV':   [box(3900, 12750, 6700, 12950)],# 客厅北墙旧窗带(模型上移)
 }
 # 整对象存疑拆除 → UNVERIFIED (衣帽间原隔墙被 R3 次卫隔墙取代, 待核实)
-UNVERIFIED_OBJS = {'W_INT_CLK_N','W_INT_CLK_E','W_INT_CLK_W','W_INT_COR_N_STUB'}
+DEMOLISHED_OBJS = {'W_INT_CLK_N','W_INT_CLK_E','W_INT_CLK_W'}  # D02第5处: 衣帽间隔墙→次卫
+UNVERIFIED_OBJS = {'W_INT_COR_N_STUB'}
 
 def extract(fcstd_override=None, blend_override=None, out_name='geometry_v04.json',
             fc_dump=None, bl_dump=None):
@@ -177,25 +178,42 @@ def extract(fcstd_override=None, blend_override=None, out_name='geometry_v04.jso
             if h.geom_type!='Polygon' or h.area<1: continue
         except Exception: continue
         if not in_plan(o['bbox']): continue
-        status='UNVERIFIED' if n in UNVERIFIED_OBJS else 'EXISTING_RETAINED'
+        status=('UNVERIFIED' if n in UNVERIFIED_OBJS else
+                'EXISTING_DEMOLISHED' if n in DEMOLISHED_OBJS else 'EXISTING_RETAINED')
         geoms=[h]
-        demolished=[]
-        for rect in DEMO.get(n,[])+[r for r in OPEN_RECTS if h.intersects(r)]:
+        demolished=[]; opening_cuts=[]
+        for rect in DEMO.get(n,[]):
             new_geoms=[]
             for g0 in geoms:
                 if g0.intersects(rect):
-                    d=g0.difference(rect)
                     rem=g0.intersection(rect)
                     if rem.area>100: demolished.append(poly_pts(rem))
-                    new_geoms += [p for p in ([d] if isinstance(d,Polygon) else list(d.geoms)) if p.area>100]
-                else: new_geoms.append(g0)
+                    g0=g0.difference(rect)
+                new_geoms += [p for p in ([g0] if isinstance(g0,Polygon) else list(g0.geoms)) if p.area>100]
             geoms=new_geoms
+        for rect in [r for r in OPEN_RECTS if any(g0.intersects(r) for g0 in geoms)]:
+            new_geoms=[]
+            for g0 in geoms:
+                if g0.intersects(rect):
+                    rem=g0.intersection(rect)
+                    if rem.area>100: opening_cuts.append(poly_pts(rem))
+                    g0=g0.difference(rect)
+                new_geoms += [p for p in ([g0] if isinstance(g0,Polygon) else list(g0.geoms)) if p.area>100]
+            geoms=new_geoms
+        if status=='EXISTING_DEMOLISHED':
+            demolished += [poly_pts(p) for p in geoms]; geoms=[]
+            managed.append({'object':n,'source_file':str(fc_path),'source_file_sha256':fc_sha,
+                'source':'fcstd','design_status':status,'layer':'A-DEMO',
+                'parts':[],'demolished_parts':demolished,'opening_cuts':opening_cuts,
+                'bbox':o['bbox'],'outline_bbox':o['bbox']})
+            continue
         geoms=[g0 for g0 in geoms if not is_sliver(g0)]
         if not geoms: continue
         managed.append({'object':n,'source_file':str(fc_path),'source_file_sha256':fc_sha,
             'source':'fcstd','design_status':status,
             'layer':'A-UNCERTAIN' if status=='UNVERIFIED' else 'A-WALL',
             'parts':[part_dict(p) for p in geoms],'demolished_parts':demolished,
+            'opening_cuts':opening_cuts,'cut_height':'FC_SHELL',
             'bbox':o['bbox'],'outline_bbox':poly_bb(unary_union(geoms))})
     # ---------- Blender: 剖切线段→parts, 按 zmin 选标高 ----------
     WALLISH=('WALL','PARTITION','PIER','POCKET','DIVIDER','HOST_WALL','RETURN_WALL')
@@ -210,7 +228,7 @@ def extract(fcstd_override=None, blend_override=None, out_name='geometry_v04.jso
         parts=polys_from_segs(d['segs'].get(h,[]))
         cut=h if parts else None
         if not parts:
-            parts=union_polys(d['tris_xy']); cut='FOOTPRINT'
+            parts=union_polys(d['tris_xy']); cut='FOOTPRINT_FALLBACK' if wallish else 'FOOTPRINT'
         if not parts: continue
         if wallish:
             newp=[]
@@ -241,12 +259,18 @@ def extract(fcstd_override=None, blend_override=None, out_name='geometry_v04.jso
             if j<=i or j in used: continue
             if iou(m1['outline_bbox'],m2['outline_bbox'])>0.7:
                 used.add(j); names.append(m2['object'])
+                if m2['design_status']!=ds:
+                    m1.setdefault('merge_review',[]).append(
+                        {'with':m2['object'],'status':m2['design_status'],
+                         'rule':'cross_status_merge','iou':round(iou(m1['outline_bbox'],m2['outline_bbox']),3)})
                 if m2['source']=='fcstd' and m1['source']!='fcstd':   # FC 几何优先
                     parts=m2['parts']; f=m2['source_file']; sh=m2['source_file_sha256']
         used.add(i)
         merged.append({'objects':names,'source_file':f,'source_file_sha256':sh,'source':src,
             'design_status':ds,'layer':layer,'parts':parts,
             'demolished_parts':m1.get('demolished_parts',[]),
+            'opening_cuts':m1.get('opening_cuts',[]),
+            'merge_review':m1.get('merge_review',[]),
             'outline_bbox':m1['outline_bbox'],
             'cut_height':m1.get('cut_height'),'bbox':m1['bbox']})
     # part 级吸收: 某 spec 的 part >95% 被另一 spec 的 part 覆盖 → 移除并挂名
@@ -266,13 +290,16 @@ def extract(fcstd_override=None, blend_override=None, out_name='geometry_v04.jso
             if ov>0.95:
                 drop.add(keys[i])
                 alias.setdefault(keys[j],[]).extend(merged[keys[i][0]]['objects'])
+                si,sj=merged[keys[i][0]]['design_status'],merged[keys[j][0]]['design_status']
                 anomalies.append({'rule':'subsumed','dropped':merged[keys[i][0]]['objects'],
-                                  'into':merged[keys[j][0]]['objects'],'overlap':round(ov,3)})
+                                  'into':merged[keys[j][0]]['objects'],'overlap':round(ov,3),
+                                  'status_i':si,'status_j':sj,
+                                  'review':'REQUIRED' if si!=sj else 'auto'})
     for mi,m in enumerate(merged):
         m['parts']=[p for pi,p in enumerate(m['parts']) if (mi,pi) not in drop]
         extra=[n for (mj,pj),ns in alias.items() if mj==mi for n in ns]
         m['objects']+= [n for n in extra if n not in m['objects']]
-    merged=[m for m in merged if m['parts']]
+    merged=[m for m in merged if m['parts'] or m.get('demolished_parts')]
 
     out={'version':'v04','generated_by':'extract_anchors_v04.py','units':'mm',
          'sources':st,'derived_data':derived_reg,'anchors':AN,'door_openings':openings,'anomalies':anomalies,

@@ -43,7 +43,7 @@ def preflight():
 
 errs = preflight()
 if errs:
-    (CAD / 'qa_report_v04.json').write_text(json.dumps({'status': 'BLOCK', 'errors': errs}, indent=1))
+    (CAD/'derived'/('qa_block_'+GEO_NAME)).write_text(json.dumps({'status':'BLOCK','errors':errs},indent=1))
     print('BLOCK:', *errs, sep='\n  '); sys.exit(1)
 
 A = {a['id']: (a['x'], a['y']) for a in GEO['anchors']}
@@ -91,8 +91,9 @@ if DEMOL not in doc.layers:
 doc.layers.get(DEMOL).dxf.flags = 1          # 拆除段冻结记录: A103 只画装修后构件
 for spec in GEO['managed_entities']:
     names = spec['objects']
-    if not spec.get('parts'): managed_report['unmatched_source'].append(names[0]); continue
     primary = names[0]
+    if not spec.get('parts') and not spec.get('demolished_parts'):
+        managed_report['unmatched_source'].append(primary); continue
     # --- 每个 part 一个实体 (MultiPolygon 保留, 不再坍缩) ---
     bound_any = False
     for pi, part in enumerate(spec['parts']):
@@ -136,6 +137,36 @@ for spec in GEO['managed_entities']:
                                dxfattribs={'layer': DEMOL})
         e.set_xdata('DEVINSRC', [(1000, f'{primary}#DEMOLISHED'), (1000, 'EXISTING_DEMOLISHED')])
         managed_report['created'] += 1
+
+# --- 未绑定可见墙线处置: 全部被管理实体覆盖>50% → 删除(已替代); 否则→A-UNCERTAIN ---
+def ent_bbox_pts(e):
+    pts=[(float(p[0]),float(p[1])) for p in e.get_points('xy')]
+    return pts
+from shapely.geometry import Polygon as _P
+bound_polys=[]
+for e in msp:
+    if e.dxftype()=='LWPOLYLINE' and e.dxf.layer in ('A-WALL','A-DESIGN'):
+        try:
+            if e.get_xdata('DEVINSRC'):
+                bound_polys.append(_P(ent_bbox_pts(e)))
+        except ezdxf.DXFValueError: pass
+legacy_ledger=[]
+for lay in ('A-WALL','A-DESIGN'):
+    for e,b in candidates.get(lay,[]):
+        try:
+            if e.get_xdata('DEVINSRC'): continue
+        except ezdxf.DXFValueError: pass
+        ep=_P(ent_bbox_pts(e))
+        cover=max((bp.intersection(ep).area/max(ep.area,1) for bp in bound_polys if bp.intersects(ep)),default=0)
+        info={'handle':e.dxf.handle,'bbox':[round(v) for v in ep.bounds],'coverage':round(cover,3)}
+        if cover>0.5:
+            info['disposition']='DELETED_superseded_by_bound_entity'; e.destroy()
+        else:
+            e.dxf.layer='A-UNCERTAIN'
+            e.set_xdata('DEVINSRC',[(1000,'LEGACY_UNBOUND'),(1000,'UNVERIFIED')])
+            info['disposition']='MOVED_to_A-UNCERTAIN'
+        legacy_ledger.append(info)
+managed_report['legacy_unbound']=legacy_ledger
 
 # --- 原生标注 (XDATA 标记 dim→锚点对) ---
 DS = 'STD-ARCH'
@@ -197,6 +228,13 @@ tb2 = lay.add_text('源: geometry_v04.json (对象级溯源) | qa_report_v04.jso
 tb2.dxf.insert = (566, 35)
 
 doc.saveas(OUT)
+import json as _j
+(CAD/'derived'/'adjudication_ledger_v04.json').write_text(_j.dumps(
+    {'legacy_unbound':legacy_ledger,
+     'merge_review':[{'objects':s['objects'],'reviews':s['merge_review']}
+                     for s in GEO['managed_entities'] if s.get('merge_review')],
+     'anomalies':GEO.get('anomalies',[]),
+     'managed_report':managed_report}, ensure_ascii=False, indent=1))
 print('generated', OUT.name, '| entities:',
       managed_report['adopted'], '+', managed_report['created'],
       '| dims:', len(GEO['dims']), '| doors:', len(GEO['door_openings']))

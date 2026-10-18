@@ -53,11 +53,3 @@ ax.set_title('V3(淡) vs V4(实) 墙体叠差')
 fig.savefig('A103_V3_V4_overlay.png',dpi=140,bbox_inches='tight',facecolor='white')
 plt.close(fig); print('overlay ok')
 
-# 局部放大: 厨房门洞区 + 台阶区
-for name,lim in (('kitchen',(4500,7500,800,4300)),('stair',(7200,9600,4200,7600)):
-    fig,ax=plt.subplots(figsize=(12,12))
-    draw(ax,'A103_CONSTRUCTION_POC_V4.dxf')
-    ax.set_xlim(lim[0],lim[1]); ax.set_ylim(lim[2],lim[3])
-    ax.set_aspect('equal'); ax.set_axis_off()
-    fig.savefig(f'A103_V4_zoom_{name}.png',dpi=160,bbox_inches='tight',facecolor='white')
-    plt.close(fig); print('zoom',name,'ok')

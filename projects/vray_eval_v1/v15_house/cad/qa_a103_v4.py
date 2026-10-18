@@ -12,9 +12,15 @@ G = {}
 def rec(g, ok, detail): G[g] = {'status': 'PASS' if ok else 'FAIL', 'detail': detail}
 
 # G1 源新鲜 (live rehash 已由生成器执行, 这里复核 derived 登记)
+import hashlib
 dd = GEO.get('derived_data', {})
-rec('G1_source_fresh_live', all(v.get('sha256') for v in dd.values()),
-    f"{len(dd)} derived files registered with parent_sha256")
+live_src = {a.get('source_file_sha256') for a in GEO['anchors']+GEO['managed_entities']}
+g1bad=[]
+for did,d in dd.items():
+    if hashlib.sha256(open(d['file'],'rb').read()).hexdigest()!=d['sha256']:
+        g1bad.append(f'{did}: file changed')
+    if d.get('parent_sha256') not in live_src: g1bad.append(f'{did}: parent not live source')
+rec('G1_source_fresh_live', not g1bad, g1bad or f'{len(dd)} derived files verified live')
 
 # G2 原生标注在 A-DIMS
 dims = [e for e in msp if e.dxftype() == 'DIMENSION']
@@ -37,8 +43,12 @@ for tag, spec in GEO['dims'].items():
 rec('G3_independent_recompute', not errs, errs or '12 dims == anchor distances ±1mm')
 
 # G4 对象存在性: managed 对象的源文件都含该对象名 (fc dump/blender dump 已绑定)
-rec('G4_object_exists_in_source', True,
-    f"{len(GEO['managed_entities'])} managed groups carry live source sha + object names")
+fc_names={o['name'] for o in json.loads(open(CAD/'derived'/'fc_objects_raw.json').read())}
+bl_names=set(json.loads(open(CAD/'derived'/'blender_geom_raw.json').read()))
+g4miss=[o for m in GEO['managed_entities'] for o in m['objects']
+        if o not in fc_names and o not in bl_names]
+rec('G4_object_exists_in_source', not g4miss,
+    g4miss[:8] or f"all {sum(len(m['objects']) for m in GEO['managed_entities'])} object names found in live dumps")
 
 # G5 旧标注层处置
 leg = doc.layers.get('A-DIMS-LEGACY')
@@ -130,9 +140,38 @@ wall_geoms = [ent_poly(e) for e,_ in bound if e.dxf.layer == 'A-WALL']
 far = []
 for a in GEO['anchors']:
     pt = Point(a['x'], a['y'])
-    d = min((w.distance(pt) for w in wall_geoms), default=1e9)
+    d = min((w.boundary.distance(pt) for w in wall_geoms if w.is_valid), default=1e9)
     if d > 300: far.append(f"{a['id']} d={d:.0f}")
 rec('G12_anchor_on_wall', not far, far[:8] or 'all anchors ≤300mm from drawn wall boundary')
+
+# G15 可见未绑定墙线
+unb=[]
+for e in msp:
+    if e.dxftype()=='LWPOLYLINE' and e.dxf.layer in ('A-WALL','A-DESIGN') and e.dxf.layer not in {l.dxf.name for l in doc.layers if l.is_off()}:
+        try:
+            if not e.get_xdata('DEVINSRC'): unb.append(e.dxf.handle)
+        except ezdxf.DXFValueError: unb.append(e.dxf.handle)
+rec('G15_no_unbound_visible_walls', not unb,
+    unb or 'all visible wall entities carry DEVINSRC binding')
+
+# G16 跨状态合并 → 需人工审核台账
+led=json.loads((CAD/'derived'/'adjudication_ledger_v04.json').read_text())
+reviews=[a for a in led.get('anomalies',[]) if a.get('review')=='REQUIRED']
+reviews += [{'objects':x['objects'],'rule':'merge_review'} for x in led.get('merge_review',[])]
+G['G16_cross_status_adjudication']={'status':'HOLD',
+    'detail':f'{len(reviews)} cross-status merges/absorptions pending human adjudication (ledger: adjudication_ledger_v04.json)' if reviews else 'none'}
+
+# G17 DEMOL 分类: A-DEMO 实体 == 拆除台账, 门洞裁切不混入
+demo_ents=[e for e in msp if e.dxf.layer=='A-DEMO']
+demo_spec=sum(len(m.get('demolished_parts',[])) for m in GEO['managed_entities'])
+open_cuts=sum(len(m.get('opening_cuts',[])) for m in GEO['managed_entities'])
+rec('G17_demol_classification', len(demo_ents)==demo_spec,
+    f'A-DEMO entities={len(demo_ents)} == demolished_parts={demo_spec}; opening_cuts={open_cuts} kept separate (not registered as demolition)')
+
+# G18 关键墙静默回退
+fb=[m['objects'][0] for m in GEO['managed_entities'] if m.get('cut_height')=='FOOTPRINT_FALLBACK']
+G['G18_section_fallback']={'status':'HOLD' if fb else 'PASS',
+    'detail':f'{len(fb)} wall objects fell back to full XY projection (no valid section): {fb[:6]}...' if fb else 'all walls have real section cuts'}
 
 # G13 编辑器/纸空间 — 诚实保留
 G['G13_editor_verify'] = {'status': 'PARTIAL',

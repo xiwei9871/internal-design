@@ -1,6 +1,81 @@
 {
- "status": "BLOCK",
- "errors": [
-  "dim south_total: missing anchor S-SPAN-W/S-SPAN-E"
- ]
+ "verdict": "HOLD",
+ "gates": {
+  "G1_source_fresh_live": {
+   "status": "PASS",
+   "detail": "2 derived files verified live"
+  },
+  "G2_native_dims_layer": {
+   "status": "PASS",
+   "detail": "12 DIMENSION on A-DIMS, misplaced=[]"
+  },
+  "G3_independent_recompute": {
+   "status": "PASS",
+   "detail": "12 dims == anchor distances ±1mm"
+  },
+  "G4_object_exists_in_source": {
+   "status": "PASS",
+   "detail": "all 163 object names found in live dumps"
+  },
+  "G5_legacy_dims_disposed": {
+   "status": "PASS",
+   "detail": "A-DIMS-LEGACY frozen"
+  },
+  "G6_uncertain_registry": {
+   "status": "HOLD",
+   "detail": "39 uncertain entities frozen; 1 source objects UNVERIFIED ([['W_INT_COR_N_STUB']]) — adjudication pending"
+  },
+  "G7_door_windows_traced": {
+   "status": "PASS",
+   "detail": "10 INSERTs with SRC_ID/xdata"
+  },
+  "G8_same_revision_real": {
+   "status": "PASS",
+   "detail": "2 distinct live source revisions in geometry"
+  },
+  "G9_geometry_fidelity": {
+   "status": "PASS",
+   "detail": {
+    "missing": [],
+    "mismatch": [],
+    "max_symdiff_mm2": 0
+   }
+  },
+  "G10_no_duplicate_entities": {
+   "status": "PASS",
+   "detail": "no >95% overlapping drawn entities"
+  },
+  "G11_openings_unsealed": {
+   "status": "PASS",
+   "detail": "9 openings clear at center ±100mm"
+  },
+  "G12_anchor_on_wall": {
+   "status": "PASS",
+   "detail": "all anchors ≤300mm from drawn wall boundary"
+  },
+  "G15_no_unbound_visible_walls": {
+   "status": "PASS",
+   "detail": "all visible wall entities carry DEVINSRC binding"
+  },
+  "G16_cross_status_adjudication": {
+   "status": "HOLD",
+   "detail": "26 cross-status merges/absorptions pending human adjudication (ledger: adjudication_ledger_v04.json)"
+  },
+  "G17_demol_classification": {
+   "status": "PASS",
+   "detail": "A-DEMO entities=7 == demolished_parts=7; opening_cuts=10 kept separate (not registered as demolition)"
+  },
+  "G18_section_fallback": {
+   "status": "HOLD",
+   "detail": "22 wall objects fell back to full XY projection (no valid section): ['VIEW_WALL_B11_SITE_BALCONY_WINDOW_HEAD', 'VIEW_WALL_DOOR_V2_NBALC_NORTH_FULL_WALL_PIER', 'VIEW_WALL_DOOR_V2_NBALC_SOLID_ABOVE_DOOR', 'VIEW_WALL_LIVING_FIX_BAY_INNER_HEAD', 'VIEW_WALL_LIVING_FIX_BAY_LEFT_HEAD', 'VIEW_WALL_LIVING_FIX_BAY_RIGHT_HEAD']..."
+  },
+  "G13_editor_verify": {
+   "status": "PARTIAL",
+   "detail": "no QCAD/LibreCAD on this machine; FreeCAD import-only check, interactive edit NOT_RUN"
+  },
+  "G14_paper_pdf": {
+   "status": "PARTIAL",
+   "detail": "A1 frame on Layout1; no true VIEWPORT entity yet; physical print NOT_RUN"
+  }
+ }
 }
