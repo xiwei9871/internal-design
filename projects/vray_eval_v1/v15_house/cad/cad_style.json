@@ -1,0 +1,31 @@
+{
+  "version": "V01",
+  "dxf_version": "AC1032",
+  "units": "mm",
+  "layers": {
+    "A-EXIST": {"color": 8, "lineweight": 25, "role": "retained as-built"},
+    "A-DEMO": {"color": 1, "lineweight": 35, "linetype": "DASHED", "role": "demolished"},
+    "A-NEW": {"color": 7, "lineweight": 50, "role": "new construction"},
+    "A-WALL": {"color": 7, "lineweight": 50, "role": "current walls"},
+    "A-DOOR": {"color": 3, "lineweight": 25},
+    "A-WINDOW": {"color": 4, "lineweight": 25},
+    "A-FURN": {"color": 6, "lineweight": 18},
+    "A-FIXT": {"color": 4, "lineweight": 18},
+    "A-DESIGN": {"color": 1, "lineweight": 25},
+    "A-DIMS": {"color": 2, "lineweight": 18},
+    "A-TEXT": {"color": 7, "lineweight": 25},
+    "A-NOTE": {"color": 7, "lineweight": 25},
+    "A-SOURCE-REF": {"color": 9, "frozen": true},
+    "A-UNCERTAIN": {"color": 1, "frozen": true},
+    "A-ROOM": {"color": 9, "frozen": true}
+  },
+  "dimstyle": {
+    "name": "STD-ARCH",
+    "text_height": 180,
+    "arrow": "ARCHTICK", "arrow_size": 140,
+    "extline_offset": 300, "extline_extension": 200,
+    "dim_dec": 0, "text_style": "HZTXT"
+  },
+  "text": {"style": "HZTXT", "font_candidates": ["/System/Library/Fonts/STHeiti Medium.ttc", "STHeiti", "SimHei", "Noto Sans CJK SC"]},
+  "sheet": {"title_block": ["项目", "图名", "图号", "比例", "单位", "版本", "日期"], "scale": "1:50", "paper": "A1"}
+}

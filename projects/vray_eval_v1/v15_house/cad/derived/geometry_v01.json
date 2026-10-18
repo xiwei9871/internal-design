@@ -1,0 +1,443 @@
+{
+ "version": "geometry_v01",
+ "units": "mm",
+ "derived_from": {
+  "file": "cad/A103_平面布置图.dxf",
+  "sha256_16": "a49dca51194d9978"
+ },
+ "anchors": [
+  {
+   "id": "S-X00",
+   "x": 1300,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X01",
+   "x": 1500,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X02",
+   "x": 5700,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X03",
+   "x": 5800,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X04",
+   "x": 5900,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X05",
+   "x": 6050,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X06",
+   "x": 7400,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X07",
+   "x": 7450,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X08",
+   "x": 7800,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X09",
+   "x": 8000,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X10",
+   "x": 8400,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X11",
+   "x": 8500,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X12",
+   "x": 8600,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X13",
+   "x": 10800,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X14",
+   "x": 10900,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X15",
+   "x": 11000,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X16",
+   "x": 11400,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X17",
+   "x": 11600,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X18",
+   "x": 12000,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X19",
+   "x": 12100,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X20",
+   "x": 12200,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X21",
+   "x": 14700,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X22",
+   "x": 14900,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X23",
+   "x": 15300,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X24",
+   "x": 15400,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "S-X25",
+   "x": 15600,
+   "y": 0,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "south facade junction"
+  },
+  {
+   "id": "W-Y00",
+   "x": 2800,
+   "y": 450,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "west wall junction"
+  },
+  {
+   "id": "W-Y01",
+   "x": 2800,
+   "y": 650,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "west wall junction"
+  },
+  {
+   "id": "W-Y02",
+   "x": 2800,
+   "y": 2300,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "west wall junction"
+  },
+  {
+   "id": "W-Y03",
+   "x": 2800,
+   "y": 2400,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "west wall junction"
+  },
+  {
+   "id": "W-Y04",
+   "x": 2800,
+   "y": 2560,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "west wall junction"
+  },
+  {
+   "id": "W-Y05",
+   "x": 2800,
+   "y": 13000,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "west wall junction"
+  },
+  {
+   "id": "W-Y06",
+   "x": 2800,
+   "y": 13200,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "west wall junction"
+  },
+  {
+   "id": "W-Y07",
+   "x": 2800,
+   "y": 13600,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "west wall junction"
+  },
+  {
+   "id": "W-Y08",
+   "x": 2800,
+   "y": 14953,
+   "source": "A103/A-WALL",
+   "units": "mm",
+   "evidence": "west wall junction"
+  },
+  {
+   "id": "KIT-OPEN-S",
+   "x": 5700,
+   "y": 1800,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "KIT-OPEN-E",
+   "x": 5900,
+   "y": 1800,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "KIT-OPEN-SN",
+   "x": 5700,
+   "y": 3800,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "KIT-OPEN-EN",
+   "x": 5900,
+   "y": 3800,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "STAIR-SW",
+   "x": 5560,
+   "y": 4716,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "STAIR-SE",
+   "x": 8400,
+   "y": 4716,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "STAIR-NW",
+   "x": 5560,
+   "y": 7800,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "STAIR-NE",
+   "x": 8400,
+   "y": 7800,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "BATH2-SW",
+   "x": 9059,
+   "y": 4507,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "BATH2-SE",
+   "x": 11400,
+   "y": 4507,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "BATH2-NW",
+   "x": 9059,
+   "y": 6600,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "BATH2-NE",
+   "x": 11400,
+   "y": 6600,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "LIV-WIN-W",
+   "x": 3900,
+   "y": 13000,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  },
+  {
+   "id": "LIV-WIN-E",
+   "x": 6900,
+   "y": 13000,
+   "source": "model/A103 corrected walls",
+   "units": "mm",
+   "evidence": "key interior anchor"
+  }
+ ],
+ "chains": {
+  "SOUTH_X": [
+   "S-X00",
+   "S-X01",
+   "S-X02",
+   "S-X03",
+   "S-X04",
+   "S-X05",
+   "S-X06",
+   "S-X07",
+   "S-X08",
+   "S-X09",
+   "S-X10",
+   "S-X11",
+   "S-X12",
+   "S-X13",
+   "S-X14",
+   "S-X15",
+   "S-X16",
+   "S-X17",
+   "S-X18",
+   "S-X19",
+   "S-X20",
+   "S-X21",
+   "S-X22",
+   "S-X23",
+   "S-X24",
+   "S-X25"
+  ],
+  "WEST_Y": [
+   "W-Y00",
+   "W-Y01",
+   "W-Y02",
+   "W-Y03",
+   "W-Y04",
+   "W-Y05",
+   "W-Y06",
+   "W-Y07",
+   "W-Y08"
+  ]
+ }
+}
