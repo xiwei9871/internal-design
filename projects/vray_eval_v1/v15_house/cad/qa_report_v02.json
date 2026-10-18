@@ -1,0 +1,68 @@
+{
+ "sheet": "A103_CONSTRUCTION_POC_V2.dxf",
+ "generated_by": "qa_a103_poc.py",
+ "source_revisions": {
+  "baseline_dxf": "7285527be00a",
+  "baseline_fcstd": "2cdd31418604",
+  "design_fcstd_r22": "17340e63f808",
+  "design_fcstd_working": "d69004b9912e",
+  "design_fcstd_window": "9c2aa9ba9bc8",
+  "design_fcstd_premaster": "0c30510bc3fe",
+  "blender_work": "feaeed380c12",
+  "blender_pbr": "9ded85742ae4",
+  "brief": "adcea8c80fe5",
+  "window_register": "73dcee675d5e",
+  "furniture_audit": "d4b3e111d4b5",
+  "topmap_render": "4c726f4fbe27",
+  "plan_geom": "64ac96a30ed3"
+ },
+ "gates": {
+  "G1_source_fresh": {
+   "status": "PASS",
+   "stale": []
+  },
+  "G2_native_dims": {
+   "status": "PASS",
+   "count": 12,
+   "off_layer": []
+  },
+  "G3_anchor_consistency_1mm": {
+   "status": "PASS",
+   "deviations": {}
+  },
+  "G4_object_traceability": {
+   "status": "PASS",
+   "traced": 26,
+   "untraced": []
+  },
+  "G5_legacy_dims_disposed": {
+   "status": "PASS",
+   "entities_moved": 121,
+   "frozen": true
+  },
+  "G6_uncertain_registry": {
+   "status": "HOLD",
+   "entities": 38,
+   "frozen": true,
+   "note": "uncertain entities remain unadjudicated — audit required"
+  },
+  "G7_door_windows_traced": {
+   "status": "PASS",
+   "inserts": 10,
+   "width_mismatch": []
+  },
+  "G8_same_revision": {
+   "status": "PASS",
+   "geometry_rev": "2cdd31418604"
+  },
+  "G9_editor_verify": {
+   "status": "PARTIAL",
+   "note": "FreeCAD.app importDXF read OK: 12 DIMENSION + 10 INSERT + 2 BLOCK recognised; Draft importer does not materialise editable dimension objects (FreeCAD limitation). Interactive select/edit check in QCAD/LibreCAD still NOT_RUN"
+  },
+  "G10_paper_pdf": {
+   "status": "PARTIAL",
+   "note": "A103_CONSTRUCTION_POC_V2.pdf generated at true A1 1:50 via vector renderer; physical print/paper-space viewport check NOT_RUN"
+  }
+ },
+ "verdict": "HOLD"
+}

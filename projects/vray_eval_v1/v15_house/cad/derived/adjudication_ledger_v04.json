@@ -1,0 +1,696 @@
+{
+ "legacy_unbound": [
+  {
+   "handle": "1CD",
+   "bbox": [
+    7800,
+    4670,
+    7900,
+    5000
+   ],
+   "coverage": 1.0,
+   "disposition": "DELETED_superseded_by_bound_entity"
+  },
+  {
+   "handle": "1D4",
+   "bbox": [
+    9050,
+    4942,
+    9200,
+    5150
+   ],
+   "coverage": 0.94,
+   "disposition": "DELETED_superseded_by_bound_entity"
+  },
+  {
+   "handle": "1D5",
+   "bbox": [
+    9050,
+    5230,
+    9200,
+    6450
+   ],
+   "coverage": 0.999,
+   "disposition": "DELETED_superseded_by_bound_entity"
+  },
+  {
+   "handle": "1E4",
+   "bbox": [
+    3700,
+    13790,
+    7000,
+    13900
+   ],
+   "coverage": 1.0,
+   "disposition": "DELETED_superseded_by_bound_entity"
+  },
+  {
+   "handle": "1F3",
+   "bbox": [
+    7400,
+    200,
+    7800,
+    500
+   ],
+   "coverage": 0.875,
+   "disposition": "DELETED_superseded_by_bound_entity"
+  }
+ ],
+ "merge_review": [
+  {
+   "objects": [
+    "W_BALC_W",
+    "W_wall_md_0004"
+   ],
+   "reviews": [
+    {
+     "with": "W_wall_md_0004",
+     "status": "PROPOSED_NEW",
+     "rule": "cross_status_merge",
+     "iou": 0.82
+    }
+   ]
+  },
+  {
+   "objects": [
+    "W_INT_X7900_L",
+    "W_wall_md_0015"
+   ],
+   "reviews": [
+    {
+     "with": "W_wall_md_0015",
+     "status": "PROPOSED_NEW",
+     "rule": "cross_status_merge",
+     "iou": 0.891
+    }
+   ]
+  },
+  {
+   "objects": [
+    "W_INT_X9800",
+    "W_wall_md_0019",
+    "W_INT_WC_S"
+   ],
+   "reviews": [
+    {
+     "with": "W_wall_md_0019",
+     "status": "PROPOSED_NEW",
+     "rule": "cross_status_merge",
+     "iou": 0.905
+    }
+   ]
+  }
+ ],
+ "anomalies": [
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_EXT_NE"
+   ],
+   "into": [
+    "VIEW_WALL_V4_W-STUDY-NE_SOFFIT",
+    "VIEW_WALL_V4_W-STUDY-NE_SOLID_UNDER_PLATFORM",
+    "W_EXT_NE"
+   ],
+   "overlap": 0.954,
+   "status_i": "EXISTING_RETAINED",
+   "status_j": "PROPOSED_NEW",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_BAY_F"
+   ],
+   "into": [
+    "VIEW_WALL_LIVING_FIX_BAY_SOFFIT",
+    "VIEW_WALL_LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+    "W_BAY_F",
+    "VIEW_WALL_LIVING_FIX_BAY_FRONT_HEAD",
+    "VIEW_WALL_LIVING_FIX_BAY_FRONT_UNDER_WALL",
+    "W_wall_md_0063"
+   ],
+   "overlap": 1.0,
+   "status_i": "EXISTING_RETAINED",
+   "status_j": "PROPOSED_NEW",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_EXT_N_BAL"
+   ],
+   "into": [
+    "W_wall_md_0062",
+    "W_EXT_N_BAL"
+   ],
+   "overlap": 0.999,
+   "status_i": "EXISTING_RETAINED",
+   "status_j": "PROPOSED_NEW",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_INT_X13000",
+    "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+    "W_wall_md_0024",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "W_wall_md_0025"
+   ],
+   "into": [
+    "W_wall_md_0064",
+    "W_INT_X13000"
+   ],
+   "overlap": 1.0,
+   "status_i": "EXISTING_RETAINED",
+   "status_j": "PROPOSED_NEW",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_INT_WC_S",
+    "W_wall_md_0051"
+   ],
+   "into": [
+    "W_INT_X9800",
+    "W_wall_md_0019",
+    "W_INT_WC_S"
+   ],
+   "overlap": 1.0,
+   "status_i": "EXISTING_RETAINED",
+   "status_j": "EXISTING_RETAINED",
+   "review": "auto"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_INT_Y4500_bc"
+   ],
+   "into": [
+    "W_INT_X11500",
+    "W_INT_Y4500_bc",
+    "W_wall_md_0021",
+    "W_wall_md_0022"
+   ],
+   "overlap": 1.0,
+   "status_i": "EXISTING_RETAINED",
+   "status_j": "EXISTING_RETAINED",
+   "review": "auto"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "D107_V3_RED_SIDE_50MM_WALL",
+    "DOOR_V2_D107_RIGHT_RETURN_WALL"
+   ],
+   "into": [
+    "R3_COMPLETE_PARTITION_WALLS",
+    "D107_V3_RED_SIDE_50MM_WALL",
+    "DOOR_V2_D107_RIGHT_RETURN_WALL",
+    "VIEW_WALL_R3_SOUTH_POCKET_PARTITION"
+   ],
+   "overlap": 0.993,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "PROPOSED_NEW",
+   "review": "auto"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "DOOR_V2_D107_LEFT_RETURN_WALL"
+   ],
+   "into": [
+    "W_INT_Y4500_a",
+    "DOOR_V2_D107_LEFT_RETURN_WALL",
+    "W_wall_md_0044"
+   ],
+   "overlap": 0.984,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "R3_COMPLETE_PARTITION_WALLS",
+    "D107_V3_RED_SIDE_50MM_WALL",
+    "DOOR_V2_D107_RIGHT_RETURN_WALL",
+    "VIEW_WALL_R3_SOUTH_POCKET_PARTITION"
+   ],
+   "into": [
+    "VIEW_WALL_R3_WEST_PARTITION",
+    "R3_COMPLETE_PARTITION_WALLS"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "PROPOSED_NEW",
+   "review": "auto"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_UNDER_WALL"
+   ],
+   "into": [
+    "W_EXT_S",
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+    "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+    "VIEW_WALL_V4_W-SMB-S_INNER_LOWER",
+    "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+    "VIEW_WALL_V4_W-SMB-S_INNER_LOWER"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_LIVING_FIX_BAY_FRONT_HEAD",
+    "VIEW_WALL_LIVING_FIX_BAY_FRONT_UNDER_WALL",
+    "W_wall_md_0063"
+   ],
+   "into": [
+    "VIEW_WALL_LIVING_FIX_BAY_SOFFIT",
+    "VIEW_WALL_LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+    "W_BAY_F",
+    "VIEW_WALL_LIVING_FIX_BAY_FRONT_HEAD",
+    "VIEW_WALL_LIVING_FIX_BAY_FRONT_UNDER_WALL",
+    "W_wall_md_0063"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "PROPOSED_NEW",
+   "review": "auto"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_R3_SOUTH_POCKET_PARTITION"
+   ],
+   "into": [
+    "R3_COMPLETE_PARTITION_WALLS",
+    "D107_V3_RED_SIDE_50MM_WALL",
+    "DOOR_V2_D107_RIGHT_RETURN_WALL",
+    "VIEW_WALL_R3_SOUTH_POCKET_PARTITION"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "PROPOSED_NEW",
+   "review": "auto"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_V4_D-GUEST-ROOM_COMPLETE_HOST_WALL"
+   ],
+   "into": [
+    "W_INT_STD_S",
+    "VIEW_WALL_V4_D-GUEST-ROOM_COMPLETE_HOST_WALL",
+    "W_wall_md_0053"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL"
+   ],
+   "into": [
+    "W_INT_X13000",
+    "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+    "W_wall_md_0024",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "W_wall_md_0025"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL"
+   ],
+   "into": [
+    "W_INT_X13000",
+    "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+    "W_wall_md_0024",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "W_wall_md_0025"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL"
+   ],
+   "into": [
+    "W_INT_X13000",
+    "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+    "W_wall_md_0024",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "W_wall_md_0025"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL"
+   ],
+   "into": [
+    "W_EXT_W",
+    "VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL",
+    "W_wall_md_0006",
+    "W_wall_md_0005"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_V4_W-MB-S_SOLID_UNDER_PLATFORM"
+   ],
+   "into": [
+    "VIEW_WALL_V4_W-MB-S_SOFFIT",
+    "VIEW_WALL_V4_W-MB-S_SOLID_UNDER_PLATFORM"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "PROPOSED_NEW",
+   "review": "auto"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+    "VIEW_WALL_V4_W-SMB-S_INNER_LOWER"
+   ],
+   "into": [
+    "W_EXT_S",
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+    "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+    "VIEW_WALL_V4_W-SMB-S_INNER_LOWER",
+    "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+    "VIEW_WALL_V4_W-SMB-S_INNER_LOWER"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+    "VIEW_WALL_V4_W-SMB-S_INNER_LOWER"
+   ],
+   "into": [
+    "W_EXT_S",
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+    "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+    "VIEW_WALL_V4_W-SMB-S_INNER_LOWER",
+    "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+    "VIEW_WALL_V4_W-SMB-S_INNER_LOWER"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "VIEW_WALL_V4_W-SMB-S_SOLID_UNDER_PLATFORM"
+   ],
+   "into": [
+    "VIEW_WALL_V4_W-SMB-S_SOFFIT",
+    "VIEW_WALL_V4_W-SMB-S_SOLID_UNDER_PLATFORM"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "PROPOSED_NEW",
+   "review": "auto"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0005"
+   ],
+   "into": [
+    "W_EXT_W",
+    "VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL",
+    "W_wall_md_0006",
+    "W_wall_md_0005"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0006"
+   ],
+   "into": [
+    "W_EXT_W",
+    "VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL",
+    "W_wall_md_0006",
+    "W_wall_md_0005"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0010"
+   ],
+   "into": [
+    "W_INT_X5800",
+    "W_wall_md_0010"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0021"
+   ],
+   "into": [
+    "W_INT_X11500",
+    "W_INT_Y4500_bc",
+    "W_wall_md_0021",
+    "W_wall_md_0022"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0022"
+   ],
+   "into": [
+    "W_INT_X11500",
+    "W_INT_Y4500_bc",
+    "W_wall_md_0021",
+    "W_wall_md_0022"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0024"
+   ],
+   "into": [
+    "W_INT_X13000",
+    "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+    "W_wall_md_0024",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "W_wall_md_0025"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0025"
+   ],
+   "into": [
+    "W_INT_X13000",
+    "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+    "W_wall_md_0024",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+    "W_wall_md_0025"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0044"
+   ],
+   "into": [
+    "W_INT_Y4500_a",
+    "DOOR_V2_D107_LEFT_RETURN_WALL",
+    "W_wall_md_0044"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0051"
+   ],
+   "into": [
+    "W_INT_WC_S",
+    "W_wall_md_0051"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0053"
+   ],
+   "into": [
+    "W_INT_STD_S",
+    "VIEW_WALL_V4_D-GUEST-ROOM_COMPLETE_HOST_WALL",
+    "W_wall_md_0053"
+   ],
+   "overlap": 0.999,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "EXISTING_RETAINED",
+   "review": "REQUIRED"
+  },
+  {
+   "rule": "subsumed",
+   "dropped": [
+    "W_wall_md_0088"
+   ],
+   "into": [
+    "VIEW_WALL_V4_G_DIN_LIV_SOLID_HEAD",
+    "W_wall_md_0088"
+   ],
+   "overlap": 1.0,
+   "status_i": "PROPOSED_NEW",
+   "status_j": "PROPOSED_NEW",
+   "review": "auto"
+  }
+ ],
+ "managed_report": {
+  "adopted": 54,
+  "created": 63,
+  "unmatched_source": [],
+  "legacy_unbound": [
+   {
+    "handle": "1CD",
+    "bbox": [
+     7800,
+     4670,
+     7900,
+     5000
+    ],
+    "coverage": 1.0,
+    "disposition": "DELETED_superseded_by_bound_entity"
+   },
+   {
+    "handle": "1D4",
+    "bbox": [
+     9050,
+     4942,
+     9200,
+     5150
+    ],
+    "coverage": 0.94,
+    "disposition": "DELETED_superseded_by_bound_entity"
+   },
+   {
+    "handle": "1D5",
+    "bbox": [
+     9050,
+     5230,
+     9200,
+     6450
+    ],
+    "coverage": 0.999,
+    "disposition": "DELETED_superseded_by_bound_entity"
+   },
+   {
+    "handle": "1E4",
+    "bbox": [
+     3700,
+     13790,
+     7000,
+     13900
+    ],
+    "coverage": 1.0,
+    "disposition": "DELETED_superseded_by_bound_entity"
+   },
+   {
+    "handle": "1F3",
+    "bbox": [
+     7400,
+     200,
+     7800,
+     500
+    ],
+    "coverage": 0.875,
+    "disposition": "DELETED_superseded_by_bound_entity"
+   }
+  ]
+ }
+}

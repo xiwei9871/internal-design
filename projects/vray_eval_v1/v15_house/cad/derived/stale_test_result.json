@@ -1,0 +1,6 @@
+{
+ "test": "stale_source",
+ "extractor_state": "STALE_OR_MISSING",
+ "generator_blocked": true,
+ "status": "PASS"
+}

@@ -1,0 +1,623 @@
+{
+ "version": "v02",
+ "generated_by": "extract_anchors_v02.py",
+ "units": "mm",
+ "sources": {
+  "baseline_dxf": {
+   "path": "projects/c_type_home/cad/C型_原始户型数字化基准图.dxf",
+   "recorded": "7285527be00aaa39579e29b2467a60572830c78ca0ae05236e9dc0ab57bd6b57",
+   "current": "7285527be00aaa39579e29b2467a60572830c78ca0ae05236e9dc0ab57bd6b57",
+   "state": "FRESH"
+  },
+  "baseline_fcstd": {
+   "path": "projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "recorded": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "current": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "state": "FRESH"
+  },
+  "design_fcstd_r22": {
+   "path": "projects/c_type_home/design/s2_current_design_v1/S2_CURRENT_DESIGN_V1_R2_2_AUDIT.FCStd",
+   "recorded": "17340e63f808f7563c64674ad4b43942765044d946b463cb2fb32d373a7817d1",
+   "current": "17340e63f808f7563c64674ad4b43942765044d946b463cb2fb32d373a7817d1",
+   "state": "FRESH"
+  },
+  "design_fcstd_working": {
+   "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.FCStd",
+   "recorded": "d69004b9912eaa6021cb793bee180615d49ef25528bc351033ec450f5de68c8f",
+   "current": "d69004b9912eaa6021cb793bee180615d49ef25528bc351033ec450f5de68c8f",
+   "state": "FRESH"
+  },
+  "design_fcstd_window": {
+   "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WINDOW_RESTORED.FCStd",
+   "recorded": "9c2aa9ba9bc8a26be7a3375b4e915c3d68680f20122370ed2c589500498de3e0",
+   "current": "9c2aa9ba9bc8a26be7a3375b4e915c3d68680f20122370ed2c589500498de3e0",
+   "state": "FRESH"
+  },
+  "design_fcstd_premaster": {
+   "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+   "recorded": "0c30510bc3fe4862d5759c5402146987b6384558a063983b0cab66786de85469",
+   "current": "0c30510bc3fe4862d5759c5402146987b6384558a063983b0cab66786de85469",
+   "state": "FRESH"
+  },
+  "blender_work": {
+   "path": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "recorded": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "current": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "state": "FRESH"
+  },
+  "blender_pbr": {
+   "path": "projects/vray_eval_v1/v15_house/V15_PBR.blend",
+   "recorded": "9ded85742ae42321d2cb7f7b3ace3d52c563e955f65ae8e29b2424964005d11a",
+   "current": "9ded85742ae42321d2cb7f7b3ace3d52c563e955f65ae8e29b2424964005d11a",
+   "state": "FRESH"
+  },
+  "brief": {
+   "path": "projects/c_type_home/design/brief_v01.md",
+   "recorded": "adcea8c80fe5c9ea2b2475e2e7f881bbc25fded273f4fa0e914cb318fa26bf99",
+   "current": "adcea8c80fe5c9ea2b2475e2e7f881bbc25fded273f4fa0e914cb318fa26bf99",
+   "state": "FRESH"
+  },
+  "window_register": {
+   "path": "projects/c_type_home/design/s2_current_design_v1/FINAL_WINDOW_REGISTER_95ab90e.json",
+   "recorded": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a",
+   "current": "73dcee675d5ebfeaf786b54154f904c7e1356c2f26f4d60f3e4f68c8adc2e47a",
+   "state": "FRESH"
+  },
+  "furniture_audit": {
+   "path": "projects/c_type_home/design/s2_current_design_v1/furniture_dimension_register_v03.json",
+   "recorded": "d4b3e111d4b52ebd5786d15eaf8f54571c453d043563a8e8bb5085ae6e7898a2",
+   "current": "d4b3e111d4b52ebd5786d15eaf8f54571c453d043563a8e8bb5085ae6e7898a2",
+   "state": "FRESH"
+  },
+  "topmap_render": {
+   "path": "projects/vray_eval_v1/v15_house/cad/topmap.png",
+   "recorded": "4c726f4fbe27fc13292f54ec528f2a33ecdf214a7fd26ca2c3c62c7244b75d99",
+   "current": "4c726f4fbe27fc13292f54ec528f2a33ecdf214a7fd26ca2c3c62c7244b75d99",
+   "state": "FRESH"
+  },
+  "plan_geom": {
+   "path": "projects/vray_eval_v1/v15_house/cad/plan_geom.json",
+   "recorded": "64ac96a30ed39a0b48aa6de9a3ed560ce6d0a1884294fbdc1d3700cf001a96db",
+   "current": "64ac96a30ed39a0b48aa6de9a3ed560ce6d0a1884294fbdc1d3700cf001a96db",
+   "state": "FRESH"
+  }
+ },
+ "anchors": [
+  {
+   "id": "S-SPAN-W",
+   "x": 1300.0,
+   "y": 450.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_BALC_S",
+   "subelement_reference": "Shape.Vertexes[0]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_BALC_S.xmin"
+  },
+  {
+   "id": "S-SPAN-E",
+   "x": 15600.0,
+   "y": 0.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_EXT_E1",
+   "subelement_reference": "Shape.Vertexes[8]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_EXT_E1.xmax"
+  },
+  {
+   "id": "W-SPAN-S",
+   "x": 1300.0,
+   "y": 450.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_BALC_S",
+   "subelement_reference": "Shape.Vertexes[0]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_BALC_S.ymin"
+  },
+  {
+   "id": "W-SPAN-N",
+   "x": 7900.0,
+   "y": 13600.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_EXT_N_BAL",
+   "subelement_reference": "Shape.Vertexes[2]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_EXT_N_BAL.ymax"
+  },
+  {
+   "id": "KIT-W-FACE",
+   "x": 5700.0,
+   "y": 4700.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_INT_X5800",
+   "subelement_reference": "Shape.Vertexes[0]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_INT_X5800.xmin"
+  },
+  {
+   "id": "KIT-E-FACE",
+   "x": 7800.0,
+   "y": -150.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_INT_X7900_L",
+   "subelement_reference": "Shape.Vertexes[0]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_INT_X7900_L.xmin"
+  },
+  {
+   "id": "MBED-W-FACE",
+   "x": 8000.0,
+   "y": -150.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_INT_X7900_L",
+   "subelement_reference": "Shape.Vertexes[4]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_INT_X7900_L.xmax"
+  },
+  {
+   "id": "MBED-E-FACE",
+   "x": 11400.0,
+   "y": -200.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_INT_X11500",
+   "subelement_reference": "Shape.Vertexes[0]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_INT_X11500.xmin"
+  },
+  {
+   "id": "MOT-W-FACE",
+   "x": 11600.0,
+   "y": -200.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_INT_X11500",
+   "subelement_reference": "Shape.Vertexes[4]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_INT_X11500.xmax"
+  },
+  {
+   "id": "MOT-E-FACE",
+   "x": 15400.0,
+   "y": 0.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_EXT_E1",
+   "subelement_reference": "Shape.Vertexes[0]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_EXT_E1.xmin"
+  },
+  {
+   "id": "LWIN-W",
+   "x": 3800.0,
+   "y": 13400.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_BAY_F",
+   "subelement_reference": "Shape.Vertexes[0]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_BAY_F.xmin"
+  },
+  {
+   "id": "LWIN-E",
+   "x": 6900.0,
+   "y": 13400.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_BAY_F",
+   "subelement_reference": "Shape.Vertexes[4]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_BAY_F.xmax"
+  },
+  {
+   "id": "BALC-N-W",
+   "x": 7900.0,
+   "y": 13400.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_EXT_N_BAL",
+   "subelement_reference": "Shape.Vertexes[0]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_EXT_N_BAL.xmin"
+  },
+  {
+   "id": "BALC-N-E",
+   "x": 13000.0,
+   "y": 13400.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_EXT_N_BAL",
+   "subelement_reference": "Shape.Vertexes[4]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_EXT_N_BAL.xmax"
+  },
+  {
+   "id": "COR-S-W",
+   "x": 5700.0,
+   "y": 4450.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_INT_Y4500_a",
+   "subelement_reference": "Shape.Vertexes[0]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_INT_Y4500_a.xmin"
+  },
+  {
+   "id": "COR-S-E",
+   "x": 11400.0,
+   "y": 4450.0,
+   "source_file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+   "source_file_sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+   "source_revision": "2cdd31418604",
+   "source_object_id": "W_INT_Y4500_b",
+   "subelement_reference": "Shape.Vertexes[8]",
+   "geometry_role": "wall_face/envelope",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "fcstd:W_INT_Y4500_b.xmax"
+  },
+  {
+   "id": "STAIR-W",
+   "x": 5660,
+   "y": 4716,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "STEP_0",
+   "subelement_reference": "footprint.vertex[0]",
+   "geometry_role": "step_extremum",
+   "design_status": "PROPOSED",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender:STEP_0 extremum W"
+  },
+  {
+   "id": "STAIR-E",
+   "x": 8400,
+   "y": 7800,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "WAVE_STEP_3_ARRIVAL",
+   "subelement_reference": "footprint.vertex[13]",
+   "geometry_role": "step_extremum",
+   "design_status": "PROPOSED",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender:WAVE_STEP_3_ARRIVAL extremum E"
+  },
+  {
+   "id": "STAIR-S",
+   "x": 6710,
+   "y": 4716,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "WAVE_STEP_3_ARRIVAL",
+   "subelement_reference": "footprint.vertex[0]",
+   "geometry_role": "step_extremum",
+   "design_status": "PROPOSED",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender:WAVE_STEP_3_ARRIVAL extremum S"
+  },
+  {
+   "id": "STAIR-N",
+   "x": 8050,
+   "y": 7800,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "WAVE_STEP_3_ARRIVAL",
+   "subelement_reference": "footprint.vertex[12]",
+   "geometry_role": "step_extremum",
+   "design_status": "PROPOSED",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender:WAVE_STEP_3_ARRIVAL extremum N"
+  },
+  {
+   "id": "BATH2-W",
+   "x": 9059,
+   "y": 4507,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "R3_COMPLETE_PARTITION_WALLS",
+   "subelement_reference": "bbox.corner(WS)",
+   "geometry_role": "partition_face",
+   "design_status": "PROPOSED",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender:R3_COMPLETE_PARTITION_WALLS WS"
+  },
+  {
+   "id": "BATH2-E",
+   "x": 11400,
+   "y": 4507,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "R3_COMPLETE_PARTITION_WALLS",
+   "subelement_reference": "bbox.corner(ES)",
+   "geometry_role": "partition_face",
+   "design_status": "PROPOSED",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender:R3_COMPLETE_PARTITION_WALLS ES"
+  },
+  {
+   "id": "BATH2-S",
+   "x": 9059,
+   "y": 4507,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "R3_COMPLETE_PARTITION_WALLS",
+   "subelement_reference": "bbox.corner(WS)",
+   "geometry_role": "partition_face",
+   "design_status": "PROPOSED",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender:R3_COMPLETE_PARTITION_WALLS WS"
+  },
+  {
+   "id": "BATH2-N",
+   "x": 9059,
+   "y": 6507,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "R3_COMPLETE_PARTITION_WALLS",
+   "subelement_reference": "bbox.corner(WN)",
+   "geometry_role": "partition_face",
+   "design_status": "PROPOSED",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender:R3_COMPLETE_PARTITION_WALLS WN"
+  },
+  {
+   "id": "KOPEN-S",
+   "x": 5572,
+   "y": 1430,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "KITCHEN_DIVIDER_PIER_SITE_REVIEW",
+   "subelement_reference": "bbox.corner(NW-top)",
+   "geometry_role": "opening_edge",
+   "design_status": "PROPOSED",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender pier ymax"
+  },
+  {
+   "id": "KOPEN-N",
+   "x": 5700,
+   "y": 4100,
+   "source_file": "projects/vray_eval_v1/v15_house/V15_WORK.blend",
+   "source_file_sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+   "source_revision": "feaeed380c12",
+   "source_object_id": "W_wall_md_0010",
+   "subelement_reference": "bbox.corner(SW)",
+   "geometry_role": "opening_edge",
+   "design_status": "EXISTING",
+   "verification_status": "VERIFIED_OBJECT",
+   "evidence": "blender stub ymin"
+  }
+ ],
+ "door_openings": [
+  {
+   "handle": "8E",
+   "rect": [
+    2700.0,
+    5400.0,
+    2900.0,
+    6530.0
+   ],
+   "opening_len": 1130,
+   "wall_thk": 200,
+   "orient": "V"
+  },
+  {
+   "handle": "90",
+   "rect": [
+    7800.0,
+    11700.0,
+    7900.0,
+    12550.0
+   ],
+   "opening_len": 850,
+   "wall_thk": 100,
+   "orient": "V"
+  },
+  {
+   "handle": "92",
+   "rect": [
+    8800.0,
+    7800.0,
+    9700.0,
+    8000.0
+   ],
+   "opening_len": 900,
+   "wall_thk": 200,
+   "orient": "H"
+  },
+  {
+   "handle": "96",
+   "rect": [
+    12900.0,
+    6300.0,
+    13100.0,
+    7450.0
+   ],
+   "opening_len": 1150,
+   "wall_thk": 200,
+   "orient": "V"
+  },
+  {
+   "handle": "98",
+   "rect": [
+    12900.0,
+    4750.0,
+    13100.0,
+    5500.0
+   ],
+   "opening_len": 750,
+   "wall_thk": 200,
+   "orient": "V"
+  },
+  {
+   "handle": "9C",
+   "rect": [
+    8250.0,
+    4450.0,
+    9000.0,
+    4650.0
+   ],
+   "opening_len": 750,
+   "wall_thk": 200,
+   "orient": "H"
+  },
+  {
+   "handle": "9E",
+   "rect": [
+    11600.0,
+    4450.0,
+    12900.0,
+    4650.0
+   ],
+   "opening_len": 1300,
+   "wall_thk": 200,
+   "orient": "H"
+  },
+  {
+   "handle": "A2",
+   "rect": [
+    5700.0,
+    1400.0,
+    5900.0,
+    2300.0
+   ],
+   "opening_len": 900,
+   "wall_thk": 200,
+   "orient": "V"
+  },
+  {
+   "handle": "A6",
+   "rect": [
+    2900.0,
+    2400.0,
+    4830.0,
+    2560.0
+   ],
+   "opening_len": 1930,
+   "wall_thk": 160,
+   "orient": "H"
+  }
+ ],
+ "dims": {
+  "south_total": {
+   "a": "S-SPAN-W",
+   "b": "S-SPAN-E",
+   "axis": "x"
+  },
+  "west_total": {
+   "a": "W-SPAN-S",
+   "b": "W-SPAN-N",
+   "axis": "y"
+  },
+  "kitchen_face": {
+   "a": "KIT-W-FACE",
+   "b": "KIT-E-FACE",
+   "axis": "x"
+  },
+  "master_clear": {
+   "a": "MBED-W-FACE",
+   "b": "MBED-E-FACE",
+   "axis": "x"
+  },
+  "mother_clear": {
+   "a": "MOT-W-FACE",
+   "b": "MOT-E-FACE",
+   "axis": "x"
+  },
+  "living_window": {
+   "a": "LWIN-W",
+   "b": "LWIN-E",
+   "axis": "x"
+  },
+  "balcony_north": {
+   "a": "BALC-N-W",
+   "b": "BALC-N-E",
+   "axis": "x"
+  },
+  "stair_width": {
+   "a": "STAIR-W",
+   "b": "STAIR-E",
+   "axis": "x"
+  },
+  "stair_depth": {
+   "a": "STAIR-S",
+   "b": "STAIR-N",
+   "axis": "y"
+  },
+  "bath2_width": {
+   "a": "BATH2-W",
+   "b": "BATH2-E",
+   "axis": "x"
+  },
+  "bath2_depth": {
+   "a": "BATH2-S",
+   "b": "BATH2-N",
+   "axis": "y"
+  },
+  "kitchen_open": {
+   "a": "KOPEN-S",
+   "b": "KOPEN-N",
+   "axis": "y"
+  }
+ }
+}

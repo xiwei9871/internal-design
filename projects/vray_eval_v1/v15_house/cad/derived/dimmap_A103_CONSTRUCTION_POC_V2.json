@@ -1,0 +1,62 @@
+[
+ {
+  "tag": "south_total",
+  "handle": "20E",
+  "expected": 14300.0
+ },
+ {
+  "tag": "west_total",
+  "handle": "221",
+  "expected": 13150.0
+ },
+ {
+  "tag": "kitchen_face",
+  "handle": "230",
+  "expected": 2100.0
+ },
+ {
+  "tag": "master_clear",
+  "handle": "23F",
+  "expected": 3400.0
+ },
+ {
+  "tag": "mother_clear",
+  "handle": "24E",
+  "expected": 3800.0
+ },
+ {
+  "tag": "living_window",
+  "handle": "25D",
+  "expected": 3100.0
+ },
+ {
+  "tag": "balcony_north",
+  "handle": "26C",
+  "expected": 5100.0
+ },
+ {
+  "tag": "stair_width",
+  "handle": "27B",
+  "expected": 2740
+ },
+ {
+  "tag": "stair_depth",
+  "handle": "28A",
+  "expected": 3084
+ },
+ {
+  "tag": "bath2_width",
+  "handle": "299",
+  "expected": 2341
+ },
+ {
+  "tag": "bath2_depth",
+  "handle": "2A8",
+  "expected": 2000
+ },
+ {
+  "tag": "kitchen_open",
+  "handle": "2B7",
+  "expected": 2670
+ }
+]

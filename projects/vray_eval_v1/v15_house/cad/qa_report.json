@@ -1,0 +1,114 @@
+{
+ "sheet": "A103_CONSTRUCTION_POC.dxf",
+ "poc_version": "V1",
+ "dxf_version": "AC1032",
+ "native_dimensions": 13,
+ "dimstyle": "STD-ARCH",
+ "insert_blocks": [
+  "SYM-DOOR-SWING",
+  "SYM-WINDOW-3LINE"
+ ],
+ "gates": {
+  "B1_manifest_hashes": {
+   "status": "PASS",
+   "evidence": "CONSTRUCTION_INPUT_MANIFEST.json sha256"
+  },
+  "B2_derived_geometry_trace": {
+   "status": "PASS",
+   "evidence": "derived/geometry_v01.json anchors carry source+evidence; object_mapping.csv"
+  },
+  "B3_native_dimensions": {
+   "status": "PASS",
+   "evidence": "13 DIMENSION entities, style STD-ARCH"
+  },
+  "B4_anchor_consistency_1mm": {
+   "status": "PASS",
+   "evidence": "get_measurement vs defpoint distance: 0 mismatches"
+  },
+  "B5_change_propagation": {
+   "status": "PASS",
+   "evidence": "KIT-OPEN-SN +100mm → kitchen_open dim 2000→2100 on regen"
+  },
+  "B6_uncertain_visibility": {
+   "status": "HOLD",
+   "note": "A-UNCERTAIN frozen in POC but never fully audited — needs explicit disposal audit"
+  },
+  "B7_layers_fonts_paper": {
+   "status": "PARTIAL",
+   "note": "cad_style.json defines AC1032/font chain/layers; not verified in real CAD editor"
+  },
+  "B8_missing_items_hold": {
+   "status": "PASS",
+   "evidence": "structural verification, balcony glazing dims, step field-measure remain HOLD in P0_REPORT"
+  },
+  "C1_stale_source_detection": {
+   "status": "NOT_RUN",
+   "note": "manifest records hashes; no automated stale-check trigger yet"
+  },
+  "C2_editor_verify_qcad": {
+   "status": "NOT_RUN",
+   "note": "no CAD editor available in this environment"
+  },
+  "C3_scale_paper_print": {
+   "status": "NOT_RUN",
+   "note": "paper space empty in baseline; needs title block + print check"
+  },
+  "C4_professional_review": {
+   "status": "NOT_RUN"
+  }
+ },
+ "dim_list": [
+  {
+   "measurement": 14300.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 2100.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 3100.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 4500.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 14503.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 10600.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 2840.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 3084.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 2341.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 2093.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 200.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 2000.0,
+   "layer": "0"
+  },
+  {
+   "measurement": 3000.0,
+   "layer": "0"
+  }
+ ]
+}

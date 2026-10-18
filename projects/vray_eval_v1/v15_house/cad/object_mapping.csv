@@ -1,0 +1,58 @@
+sheet_entity,source_object_id,source,evidence
+dim_anchor,S-X00,A103/A-WALL,south facade junction
+dim_anchor,S-X01,A103/A-WALL,south facade junction
+dim_anchor,S-X02,A103/A-WALL,south facade junction
+dim_anchor,S-X03,A103/A-WALL,south facade junction
+dim_anchor,S-X04,A103/A-WALL,south facade junction
+dim_anchor,S-X05,A103/A-WALL,south facade junction
+dim_anchor,S-X06,A103/A-WALL,south facade junction
+dim_anchor,S-X07,A103/A-WALL,south facade junction
+dim_anchor,S-X08,A103/A-WALL,south facade junction
+dim_anchor,S-X09,A103/A-WALL,south facade junction
+dim_anchor,S-X10,A103/A-WALL,south facade junction
+dim_anchor,S-X11,A103/A-WALL,south facade junction
+dim_anchor,S-X12,A103/A-WALL,south facade junction
+dim_anchor,S-X13,A103/A-WALL,south facade junction
+dim_anchor,S-X14,A103/A-WALL,south facade junction
+dim_anchor,S-X15,A103/A-WALL,south facade junction
+dim_anchor,S-X16,A103/A-WALL,south facade junction
+dim_anchor,S-X17,A103/A-WALL,south facade junction
+dim_anchor,S-X18,A103/A-WALL,south facade junction
+dim_anchor,S-X19,A103/A-WALL,south facade junction
+dim_anchor,S-X20,A103/A-WALL,south facade junction
+dim_anchor,S-X21,A103/A-WALL,south facade junction
+dim_anchor,S-X22,A103/A-WALL,south facade junction
+dim_anchor,S-X23,A103/A-WALL,south facade junction
+dim_anchor,S-X24,A103/A-WALL,south facade junction
+dim_anchor,S-X25,A103/A-WALL,south facade junction
+dim_anchor,W-Y00,A103/A-WALL,west wall junction
+dim_anchor,W-Y01,A103/A-WALL,west wall junction
+dim_anchor,W-Y02,A103/A-WALL,west wall junction
+dim_anchor,W-Y03,A103/A-WALL,west wall junction
+dim_anchor,W-Y04,A103/A-WALL,west wall junction
+dim_anchor,W-Y05,A103/A-WALL,west wall junction
+dim_anchor,W-Y06,A103/A-WALL,west wall junction
+dim_anchor,W-Y07,A103/A-WALL,west wall junction
+dim_anchor,W-Y08,A103/A-WALL,west wall junction
+dim_anchor,KIT-OPEN-S,model/A103 corrected walls,key interior anchor
+dim_anchor,KIT-OPEN-E,model/A103 corrected walls,key interior anchor
+dim_anchor,KIT-OPEN-SN,model/A103 corrected walls,key interior anchor
+dim_anchor,KIT-OPEN-EN,model/A103 corrected walls,key interior anchor
+dim_anchor,STAIR-SW,model/A103 corrected walls,key interior anchor
+dim_anchor,STAIR-SE,model/A103 corrected walls,key interior anchor
+dim_anchor,STAIR-NW,model/A103 corrected walls,key interior anchor
+dim_anchor,STAIR-NE,model/A103 corrected walls,key interior anchor
+dim_anchor,BATH2-SW,model/A103 corrected walls,key interior anchor
+dim_anchor,BATH2-SE,model/A103 corrected walls,key interior anchor
+dim_anchor,BATH2-NW,model/A103 corrected walls,key interior anchor
+dim_anchor,BATH2-NE,model/A103 corrected walls,key interior anchor
+dim_anchor,LIV-WIN-W,model/A103 corrected walls,key interior anchor
+dim_anchor,LIV-WIN-E,model/A103 corrected walls,key interior anchor
+INSERT SYM-DOOR-SWING,D-107-主卧,model objects,door casing/leaf objects
+INSERT SYM-DOOR-SWING,D-客卫,model objects,door casing/leaf objects
+INSERT SYM-DOOR-SWING,D-客卧,model objects,door casing/leaf objects
+INSERT SYM-DOOR-SWING,D-次卫,model objects,door casing/leaf objects
+INSERT SYM-DOOR-SWING,D-主卫,model objects,door casing/leaf objects
+INSERT SYM-WINDOW-3LINE,WIN-客厅北,baseline/model,window band
+INSERT SYM-WINDOW-3LINE,WIN-南主卧,baseline/model,window band
+INSERT SYM-WINDOW-3LINE,WIN-南母卧,baseline/model,window band
