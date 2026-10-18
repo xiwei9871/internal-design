@@ -1,0 +1,408 @@
+{
+  "scope": "Structural preflight only; not a proof of construction correctness",
+  "summary": {
+    "sheets": 6,
+    "blocks": 7,
+    "warnings": 15
+  },
+  "shared_checks": [
+    {
+      "id": "INCONSISTENT_DXF_VERSION",
+      "severity": "WARN",
+      "message": "Files use mixed versions: ['AC1024', 'AC1032']"
+    }
+  ],
+  "sheets": [
+    {
+      "sheet": "A102",
+      "filename": "A102_σóÖΣ╜ôµïåµö╣σ¢╛.dxf",
+      "dxf_version": "AC1032",
+      "units_code": 4,
+      "modelspace_entity_count": 345,
+      "entities": {
+        "LWPOLYLINE": 129,
+        "TEXT": 134,
+        "LINE": 82
+      },
+      "layer_counts": {
+        "A-EXIST": 24,
+        "A-SOURCE-REF": 62,
+        "A-UNCERTAIN": 38,
+        "A-DOOR": 9,
+        "A-WINDOW": 6,
+        "A-ROOM": 9,
+        "A-TEXT": 13,
+        "A-DIMS": 121,
+        "A-DEMO": 10,
+        "A-NEW": 41,
+        "A-NOTE": 12
+      },
+      "layouts": {
+        "Model": 345,
+        "Layout1": 0
+      },
+      "audit_unrecoverable": 0,
+      "audit_fixes": 6,
+      "local_fonts": [
+        "/System/Library/Fonts/STHeiti Medium.ttc"
+      ],
+      "risky_layers": [
+        {
+          "layer": "A-UNCERTAIN",
+          "entities": 38,
+          "visible": true
+        },
+        {
+          "layer": "A-SOURCE-REF",
+          "entities": 62,
+          "visible": true
+        }
+      ],
+      "checks": [
+        {
+          "id": "DXF_REPAIRED",
+          "severity": "WARN",
+          "message": "6 fixes were required during loading; inspect details in CAD editor"
+        },
+        {
+          "id": "NO_NATIVE_DIMENSION",
+          "severity": "BLOCK",
+          "message": "No native DIMENSION objects; review drawn/text dimensions against geometry"
+        },
+        {
+          "id": "NO_PAPERSPACE_LAYOUT",
+          "severity": "WARN",
+          "message": "No populated paper-space layout; verify printing scale and title block externally"
+        },
+        {
+          "id": "UNCERTAIN_VISIBLE",
+          "severity": "BLOCK",
+          "message": "38 unverified reference elements are visible on A-UNCERTAIN"
+        },
+        {
+          "id": "SOURCE_REFERENCE_VISIBLE",
+          "severity": "WARN",
+          "message": "62 source-reference elements are visible"
+        },
+        {
+          "id": "LOCAL_FONT_PATH",
+          "severity": "WARN",
+          "message": "Font style refers to OS-specific absolute path(s)"
+        }
+      ]
+    },
+    {
+      "sheet": "A103",
+      "filename": "A103_σ╣│Θ¥óσ╕âτ╜«σ¢╛.dxf",
+      "dxf_version": "AC1032",
+      "units_code": 4,
+      "modelspace_entity_count": 418,
+      "entities": {
+        "LWPOLYLINE": 209,
+        "TEXT": 121,
+        "LINE": 88
+      },
+      "layer_counts": {
+        "A-WALL": 59,
+        "A-SOURCE-REF": 62,
+        "A-UNCERTAIN": 38,
+        "A-DOOR": 9,
+        "A-WINDOW": 9,
+        "A-ROOM": 9,
+        "A-TEXT": 6,
+        "A-DESIGN": 17,
+        "A-DIMS": 121,
+        "A-FURN": 66,
+        "A-FIXT": 22
+      },
+      "layouts": {
+        "Model": 418,
+        "Layout1": 0
+      },
+      "audit_unrecoverable": 0,
+      "audit_fixes": 0,
+      "local_fonts": [
+        "/System/Library/Fonts/STHeiti Medium.ttc"
+      ],
+      "risky_layers": [
+        {
+          "layer": "A-UNCERTAIN",
+          "entities": 38,
+          "visible": false
+        },
+        {
+          "layer": "A-SOURCE-REF",
+          "entities": 62,
+          "visible": false
+        }
+      ],
+      "checks": [
+        {
+          "id": "NO_NATIVE_DIMENSION",
+          "severity": "BLOCK",
+          "message": "No native DIMENSION objects; review drawn/text dimensions against geometry"
+        },
+        {
+          "id": "NO_PAPERSPACE_LAYOUT",
+          "severity": "WARN",
+          "message": "No populated paper-space layout; verify printing scale and title block externally"
+        },
+        {
+          "id": "LOCAL_FONT_PATH",
+          "severity": "WARN",
+          "message": "Font style refers to OS-specific absolute path(s)"
+        }
+      ]
+    },
+    {
+      "sheet": "A201",
+      "filename": "A201_σñ⌐Φè▒σ╕âτ╜«σ¢╛.dxf",
+      "dxf_version": "AC1024",
+      "units_code": 4,
+      "modelspace_entity_count": 436,
+      "entities": {
+        "LWPOLYLINE": 133,
+        "CIRCLE": 46,
+        "LINE": 160,
+        "TEXT": 97
+      },
+      "layer_counts": {
+        "A-WALL": 131,
+        "A-CEIL": 8,
+        "A-LIGHT": 116,
+        "A-COVE": 12,
+        "A-TEXT": 105,
+        "0": 61,
+        "A-WINDOW": 3
+      },
+      "layouts": {
+        "Model": 436,
+        "Layout1": 0
+      },
+      "audit_unrecoverable": 0,
+      "audit_fixes": 9,
+      "local_fonts": [
+        "/System/Library/Fonts/STHeiti Medium.ttc"
+      ],
+      "risky_layers": [],
+      "checks": [
+        {
+          "id": "DXF_REPAIRED",
+          "severity": "WARN",
+          "message": "9 fixes were required during loading; inspect details in CAD editor"
+        },
+        {
+          "id": "NO_NATIVE_DIMENSION",
+          "severity": "BLOCK",
+          "message": "No native DIMENSION objects; review drawn/text dimensions against geometry"
+        },
+        {
+          "id": "NO_PAPERSPACE_LAYOUT",
+          "severity": "WARN",
+          "message": "No populated paper-space layout; verify printing scale and title block externally"
+        },
+        {
+          "id": "LOCAL_FONT_PATH",
+          "severity": "WARN",
+          "message": "Font style refers to OS-specific absolute path(s)"
+        }
+      ]
+    },
+    {
+      "sheet": "A202",
+      "filename": "A202_σ£░Θ¥óΘô║Φúàσ¢╛.dxf",
+      "dxf_version": "AC1032",
+      "units_code": 4,
+      "modelspace_entity_count": 682,
+      "entities": {
+        "LWPOLYLINE": 205,
+        "TEXT": 137,
+        "LINE": 338,
+        "CIRCLE": 2
+      },
+      "layer_counts": {
+        "A-WALL": 146,
+        "A-SOURCE-REF": 62,
+        "A-UNCERTAIN": 38,
+        "A-DOOR": 9,
+        "A-WINDOW": 9,
+        "A-ROOM": 9,
+        "A-TEXT": 36,
+        "A-DIMS": 121,
+        "A-HATCH-WOOD": 204,
+        "A-HATCH-TILE": 48
+      },
+      "layouts": {
+        "Model": 682,
+        "Layout1": 0
+      },
+      "audit_unrecoverable": 0,
+      "audit_fixes": 0,
+      "local_fonts": [
+        "/System/Library/Fonts/STHeiti Medium.ttc"
+      ],
+      "risky_layers": [
+        {
+          "layer": "A-UNCERTAIN",
+          "entities": 38,
+          "visible": false
+        },
+        {
+          "layer": "A-SOURCE-REF",
+          "entities": 62,
+          "visible": false
+        }
+      ],
+      "checks": [
+        {
+          "id": "NO_NATIVE_DIMENSION",
+          "severity": "BLOCK",
+          "message": "No native DIMENSION objects; review drawn/text dimensions against geometry"
+        },
+        {
+          "id": "NO_PAPERSPACE_LAYOUT",
+          "severity": "WARN",
+          "message": "No populated paper-space layout; verify printing scale and title block externally"
+        },
+        {
+          "id": "LOCAL_FONT_PATH",
+          "severity": "WARN",
+          "message": "Font style refers to OS-specific absolute path(s)"
+        }
+      ]
+    },
+    {
+      "sheet": "A302",
+      "filename": "A302_τö╡µ░öτé╣Σ╜ìσ¢╛.dxf",
+      "dxf_version": "AC1032",
+      "units_code": 4,
+      "modelspace_entity_count": 560,
+      "entities": {
+        "LWPOLYLINE": 198,
+        "TEXT": 225,
+        "LINE": 133,
+        "CIRCLE": 4
+      },
+      "layer_counts": {
+        "A-WALL": 59,
+        "A-SOURCE-REF": 62,
+        "A-UNCERTAIN": 38,
+        "A-DOOR": 9,
+        "A-WINDOW": 9,
+        "A-ROOM": 9,
+        "A-TEXT": 13,
+        "A-DIMS": 121,
+        "A-ELEC-SOC": 97,
+        "A-NOTE": 109,
+        "A-ELEC-NET": 4,
+        "A-ELEC-SW": 28,
+        "A-DESIGN": 2
+      },
+      "layouts": {
+        "Model": 560,
+        "Layout1": 0
+      },
+      "audit_unrecoverable": 0,
+      "audit_fixes": 0,
+      "local_fonts": [
+        "/System/Library/Fonts/STHeiti Medium.ttc"
+      ],
+      "risky_layers": [
+        {
+          "layer": "A-UNCERTAIN",
+          "entities": 38,
+          "visible": false
+        },
+        {
+          "layer": "A-SOURCE-REF",
+          "entities": 62,
+          "visible": false
+        }
+      ],
+      "checks": [
+        {
+          "id": "NO_NATIVE_DIMENSION",
+          "severity": "BLOCK",
+          "message": "No native DIMENSION objects; review drawn/text dimensions against geometry"
+        },
+        {
+          "id": "NO_PAPERSPACE_LAYOUT",
+          "severity": "WARN",
+          "message": "No populated paper-space layout; verify printing scale and title block externally"
+        },
+        {
+          "id": "LOCAL_FONT_PATH",
+          "severity": "WARN",
+          "message": "Font style refers to OS-specific absolute path(s)"
+        }
+      ]
+    },
+    {
+      "sheet": "A303",
+      "filename": "A303_τ╗ÖµÄÆµ░┤τé╣Σ╜ìσ¢╛.dxf",
+      "dxf_version": "AC1032",
+      "units_code": 4,
+      "modelspace_entity_count": 436,
+      "entities": {
+        "LWPOLYLINE": 143,
+        "TEXT": 150,
+        "LINE": 114,
+        "CIRCLE": 29
+      },
+      "layer_counts": {
+        "A-WALL": 59,
+        "A-SOURCE-REF": 62,
+        "A-UNCERTAIN": 38,
+        "A-DOOR": 9,
+        "A-WINDOW": 9,
+        "A-ROOM": 9,
+        "A-TEXT": 13,
+        "A-DIMS": 121,
+        "A-FIXT": 10,
+        "A-NOTE": 34,
+        "A-PLUM-H": 16,
+        "A-PLUM-C": 26,
+        "A-PLUM-D": 28,
+        "A-DESIGN": 2
+      },
+      "layouts": {
+        "Model": 436,
+        "Layout1": 0
+      },
+      "audit_unrecoverable": 0,
+      "audit_fixes": 0,
+      "local_fonts": [
+        "/System/Library/Fonts/STHeiti Medium.ttc"
+      ],
+      "risky_layers": [
+        {
+          "layer": "A-UNCERTAIN",
+          "entities": 38,
+          "visible": false
+        },
+        {
+          "layer": "A-SOURCE-REF",
+          "entities": 62,
+          "visible": false
+        }
+      ],
+      "checks": [
+        {
+          "id": "NO_NATIVE_DIMENSION",
+          "severity": "BLOCK",
+          "message": "No native DIMENSION objects; review drawn/text dimensions against geometry"
+        },
+        {
+          "id": "NO_PAPERSPACE_LAYOUT",
+          "severity": "WARN",
+          "message": "No populated paper-space layout; verify printing scale and title block externally"
+        },
+        {
+          "id": "LOCAL_FONT_PATH",
+          "severity": "WARN",
+          "message": "Font style refers to OS-specific absolute path(s)"
+        }
+      ]
+    }
+  ]
+}
