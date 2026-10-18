@@ -17,9 +17,12 @@ msp = doc.modelspace()
 for appid in ('DEVINSRC','DEVINDIM'): doc.appids.new(appid)
 
 LAYERS = [('A-STRUCT-UNDERLAY',8),('A-WALL-RETAIN',7),('A-WALL-RETAIN-STRUCT',7),
+          ('A-WALL-RETAIN-EQUIV',8),
           ('A-WALL-DEMO-DESIGN',1),('A-WALL-HOLD',6),('A-WALL-NEW',5),
           ('A-WALL-REVIEW',30),('A-DOOR',2),('A-WINDOW',4),('A-DIMS',3),('A-TEXT',7)]
 for n,c in LAYERS: doc.layers.new(n, dxfattribs={'color':c})
+# Blender重画副本与实测保留墙重合 -> 冻结层留痕, 不重复可见绘制
+doc.layers.get('A-WALL-RETAIN-EQUIV').dxf.flags = 1
 
 ext = extract_structural(ezdxf.readfile(
     ROOT/'projects/c_type_home/cad/structure_only_source_sync.dxf').modelspace())
@@ -31,8 +34,12 @@ for g,_,k in ext['polys']:
                            dxfattribs={'layer':'A-STRUCT-UNDERLAY'})
 
 ROLE_LAYER = {'RETAINED':'A-WALL-RETAIN','RETAINED_STRUCT':'A-WALL-RETAIN-STRUCT',
-              'NEW':'A-WALL-NEW','PENDING_REVIEW':'A-WALL-REVIEW',
+              'NEW':'A-WALL-NEW','NEW_REPLACES_DEMO':'A-WALL-NEW',
+              'RETAINED_MODEL_EQUIV':'A-WALL-RETAIN-EQUIV',
+              'PENDING_REVIEW':'A-WALL-REVIEW',
               'DESIGN_APPROVED_DEMO':'A-WALL-DEMO-DESIGN','DEMOLITION_HOLD':'A-WALL-HOLD'}
+NC = {r['object']:r for r in
+      json.loads((CAD/'derived'/'new_construction_v1.json').read_text())['rows']}
 polys = {}
 for m in GEO['managed_entities']:
     polys[m['objects'][0]] = {'parts':[p['exterior'] for p in m['parts']],
@@ -47,6 +54,21 @@ for e in REG['entries']:
         i = int(suffix[1:]); pts_list=[polys[obj]['parts'][i]] if i<len(polys[obj]['parts']) else None
     else:
         pts_list = polys.get(obj,{}).get('parts')
+    if role == 'SPLIT_PARTIAL_NEW':
+        # 分段: 保留等价→浅灰底图, 实际新增段→新建层; 不整段重复画
+        nc = NC.get(obj)
+        if not nc: continue
+        for pts in nc.get('retained_geoms',[]):
+            ent = msp.add_lwpolyline([(float(x),float(y)) for x,y in pts],
+                close=True, dxfattribs={'layer':'A-STRUCT-UNDERLAY'})
+            ent.set_xdata('DEVINSRC',[(1000,e['object']),(1000,'RETAINED_EQUIV_PART'),
+                                      (1000,e['classification'])])
+        for pts in nc.get('new_geoms',[]):
+            ent = msp.add_lwpolyline([(float(x),float(y)) for x,y in pts],
+                close=True, dxfattribs={'layer':'A-WALL-NEW'})
+            ent.set_xdata('DEVINSRC',[(1000,e['object']),(1000,'ACTUAL_NEW_PART'),
+                                      (1000,e['classification'])])
+        continue
     if not pts_list: continue
     for pts in pts_list:
         ent = msp.add_lwpolyline([(float(x),float(y)) for x,y in pts], close=True,
@@ -91,6 +113,21 @@ for tag,spec in GEO['dims'].items():
     d.render(); d.commit()
     d.dimension.set_xdata('DEVINDIM',[(1000,tag),(1000,spec['a']),(1000,spec['b']),
                                     (1000,spec['axis']),(1040,round(val,1))])
+
+# --- 补充施工定位标注 (dims_extra, 坐标直算; 与 A103 共用同一份 JSON) ---
+EXTRA_DIMS = json.loads((CAD/'derived'/'dims_extra.json').read_text())['dims']
+for _d in EXTRA_DIMS:
+    p1,p2 = tuple(_d['p1']),tuple(_d['p2'])
+    if _d['axis']=='x':
+        base,ang=((p1[0]+p2[0])/2,_d['lay']),0
+    else:
+        base,ang=(_d['lay'],(p1[1]+p2[1])/2),90
+    _dd=msp.add_linear_dim(base=base,p1=p1,p2=p2,angle=ang,dimstyle=DS,
+                           dxfattribs={'layer':'A-DIMS'})
+    _dd.render(); _dd.commit()
+    _dd.dimension.set_xdata('DEVINDIM',[(1000,_d['tag']),
+        (1000,f"geo:{p1[0]},{p1[1]}"),(1000,f"geo:{p2[0]},{p2[1]}"),
+        (1000,_d['axis']),(1040,round(_d['value'],1))])
 
 msp.add_text('A102 墙体拆改图 POC V2 | registry驱动 | 红=设计确认拟拆(施工待批) 品红=HOLD',height=250,
              dxfattribs={'layer':'A-TEXT'}).set_placement((13500,14800))

@@ -9,8 +9,8 @@ from joint_acceptance_v2 import parse, qa
 
 CAD = Path(__file__).resolve().parent
 TD = CAD/'derived'/'p143_tests'; TD.mkdir(exist_ok=True)
-A102 = CAD/'A102_WALL_DIFF_POC_V2.dxf'
-A103 = CAD/'A103_CONSTRUCTION_POC_V6.dxf'
+A102 = CAD/'A102_WALL_DIFF_POC_V3.dxf'
+A103 = CAD/'A103_CONSTRUCTION_POC_V7.dxf'
 
 def tamper(src, dst, fn):
     shutil.copy(src, dst)

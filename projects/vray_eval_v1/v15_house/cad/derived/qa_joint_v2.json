@@ -7,7 +7,11 @@
  "QJ4_conflict_missing": [],
  "QJ4_review_missing": [],
  "QJ4_all_conflicts_shown": true,
- "QJ5_dim_errs": [],
+ "QJ5_dim_counts": {
+  "A102": 29,
+  "A103": 29,
+  "expected": 29
+ },
  "QJ5_dims_valid": true,
  "QJ6_wall_geom_parity": {},
  "QJ6_pass": true,

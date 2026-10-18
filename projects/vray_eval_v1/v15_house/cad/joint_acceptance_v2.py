@@ -95,6 +95,14 @@ def qa(p102, p103):
     # QJ5 尺寸: 完整DEVINDIM + 逐项一致 + 数值与锚点几何一致
     errs = p102['dim_errs'] + p103['dim_errs']
     A = {a['id']:(a['x'],a['y']) for a in GEO['anchors']}
+    EXTRA = json.loads((CAD/'derived'/'dims_extra.json').read_text())['dims'] \
+            if (CAD/'derived'/'dims_extra.json').exists() else []
+    for spec in EXTRA:
+        tag = spec['tag']
+        d1, d2 = p102['dims'].get(tag), p103['dims'].get(tag)
+        if not d1 or not d2: errs.append(f'{tag}: missing extra dim'); continue
+        if (d1['a'],d1['b'],d1['axis'],d1['value']) != (d2['a'],d2['b'],d2['axis'],d2['value']):
+            errs.append(f'{tag}: extra dim mismatch')
     for tag,spec in GEO['dims'].items():
         d1, d2 = p102['dims'].get(tag), p103['dims'].get(tag)
         if not d1 or not d2: errs.append(f'{tag}: missing in ' + ('A102' if not d1 else 'A103')); continue
@@ -104,8 +112,10 @@ def qa(p102, p103):
         want = abs(p2[0]-p1[0]) if spec['axis']=='x' else abs(p2[1]-p1[1])
         if abs(d1['value']-want) > 0.5:
             errs.append(f"{tag}: value {d1['value']} != anchor dist {want}")
-    out['QJ5_dim_errs'] = errs
-    out['QJ5_dims_valid'] = not errs and len(p102['dims'])==len(p103['dims'])==len(GEO['dims'])
+    out['QJ5_dim_counts'] = {'A102':len(p102['dims']),'A103':len(p103['dims']),
+        'expected':len(GEO['dims'])+len(EXTRA)}
+    out['QJ5_dims_valid'] = not errs and len(p102['dims'])==len(p103['dims']) \
+        == len(GEO['dims'])+len(EXTRA)
     # QJ6 保留墙几何一致: 同名对象多边形面积对称差<2%
     VOCAB = {'RETAINED','RETAINED_STRUCT','NEW','PENDING_REVIEW','DESIGN_APPROVED_DEMO',
              'DEMOLITION_HOLD','NO_STRUCT_OVERLAP','CLASSIFICATION_UNVERIFIED',
@@ -147,8 +157,8 @@ def qa(p102, p103):
     return out
 
 if __name__ == '__main__':
-    a102 = CAD/'A102_WALL_DIFF_POC_V2.dxf'
-    a103 = CAD/'A103_CONSTRUCTION_POC_V6.dxf'
+    a102 = CAD/(sys.argv[1] if len(sys.argv)>1 else 'A102_WALL_DIFF_POC_V3.dxf')
+    a103 = CAD/(sys.argv[2] if len(sys.argv)>2 else 'A103_CONSTRUCTION_POC_V7.dxf')
     res = qa(parse(a102), parse(a103))
     (CAD/'derived'/'qa_joint_v2.json').write_text(json.dumps(res,ensure_ascii=False,indent=1))
     print(json.dumps({k:v for k,v in res.items() if not isinstance(v,(list,dict))},

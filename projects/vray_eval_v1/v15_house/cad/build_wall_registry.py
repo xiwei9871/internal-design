@@ -13,6 +13,9 @@ CAD = Path(__file__).resolve().parent
 ROOT = CAD.parents[3]
 GEO = json.loads((CAD/'derived'/'geometry_v05.json').read_text())
 MAP = json.loads((CAD/'derived'/'three_source_mapping.json').read_text())
+NC_FILE = CAD/'derived'/'new_construction_v1.json'
+NC = json.loads(NC_FILE.read_text()) if NC_FILE.exists() else None
+NC_ROW = {r['object']: r for r in NC['rows']} if NC else {}
 
 # --- 结构面按证据等级拆分 ---
 ext = extract_structural(ezdxf.readfile(
@@ -71,7 +74,18 @@ def add(object_id, source, design_status, poly, note='', primary=None):
         entry['a102_role'] = 'RETAINED_STRUCT' if r > 0.6 else 'RETAINED'
         entry['design_intent'] = 'RETAINED'
     elif design_status == 'PROPOSED_NEW':
-        entry['a102_role'] = 'NEW'
+        nc = NC_ROW.get(object_id)
+        cc = nc['construction_class'] if nc else 'UNMAPPED'
+        entry['construction_class'] = cc
+        if nc:
+            entry['area_total'] = nc['area_total']
+            entry['area_actual_new'] = nc['area_actual_new']
+            entry['area_retained_equiv'] = nc['area_retained_equiv']
+            entry['area_over_demolished'] = nc['area_over_demolished']
+        entry['a102_role'] = {'ACTUAL_NEW_CONSTRUCTION':'NEW',
+                              'REPLACES_DEMOLISHED':'NEW_REPLACES_DEMO',
+                              'SPLIT':'SPLIT_PARTIAL_NEW',
+                              'REMODELED_RETAINED':'RETAINED_MODEL_EQUIV'}.get(cc,'PENDING_REVIEW')
         entry['design_intent'] = 'OWNER_DESIGN_APPROVED'
         entry['construction_authorization'] = 'PENDING_SITE_VERIFY'
     else:
@@ -80,7 +94,10 @@ def add(object_id, source, design_status, poly, note='', primary=None):
     # --- A103 角色 ---
     entry['a103_role'] = {'RETAINED_STRUCT':'DRAW_RETAINED','RETAINED':'DRAW_RETAINED',
         'DESIGN_APPROVED_DEMO':'SUPPRESS','DEMOLITION_HOLD':'SUPPRESS_HOLD',
-        'NEW':'DRAW_NEW','PENDING_REVIEW':'DRAW_REVIEW_LAYER'}.get(entry['a102_role'],'SUPPRESS')
+        'NEW':'DRAW_NEW','NEW_REPLACES_DEMO':'DRAW_NEW',
+        'SPLIT_PARTIAL_NEW':'DRAW_NEW_PART',
+        'RETAINED_MODEL_EQUIV':'SUPPRESS_DUPLICATE',
+        'PENDING_REVIEW':'DRAW_REVIEW_LAYER'}.get(entry['a102_role'],'SUPPRESS')
     # --- 开发商语义映射可信度 ---
     if kind == 'NONE' and design_status in ('EXISTING_DEMOLISHED','UNVERIFIED',
                                             'DESIGN_REVIEW_PENDING'):
