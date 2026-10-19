@@ -14,7 +14,7 @@ GEO = json.loads((CAD/'derived'/'geometry_v05.json').read_text())
 
 def parse(path):
     doc = ezdxf.readfile(path)
-    walls, dims = {}, {}
+    walls, dims, polys, arrows = {}, {}, {}, {}
     dim_errs = []
     for e in doc.modelspace():
         if e.dxftype() == 'LWPOLYLINE':
@@ -23,7 +23,19 @@ def parse(path):
             try:
                 objs = [v[1] for v in e.get_xdata('DEVINSRC') if v[0]==1000]
             except ezdxf.DXFValueError: pass
-            walls.setdefault(e.dxf.layer,[]).append({'handle':e.dxf.handle,'pts':pts,'objs':objs})
+            walls.setdefault(e.dxf.layer,[]).append(
+                {'handle':e.dxf.handle,'pts':pts,'objs':objs,'closed':e.closed})
+        elif e.dxftype() == 'POLYLINE':
+            pts = [(v.dxf.location.x,v.dxf.location.y) for v in e.vertices]
+            objs = []
+            try:
+                objs = [v[1] for v in e.get_xdata('DEVINSRC') if v[0]==1000]
+            except ezdxf.DXFValueError: pass
+            polys.setdefault(e.dxf.layer,[]).append(
+                {'handle':e.dxf.handle,'pts':pts,'objs':objs,'closed':e.is_closed})
+        elif e.dxftype() in ('LINE','ARC','TEXT','MTEXT'):
+            arrows.setdefault(e.dxf.layer,[]).append(
+                {'handle':e.dxf.handle,'type':e.dxftype()})
         elif e.dxftype() == 'DIMENSION':
             try:
                 xd = e.get_xdata('DEVINDIM')
@@ -42,8 +54,8 @@ def parse(path):
                 dim_errs.append(f'{e.dxf.handle}: missing DEVINDIM')
     flags = {l.dxf.name: bool(l.dxf.flags&1) for l in doc.layers}
     viewports = [e for l in doc.layouts for e in l if e.dxftype()=='VIEWPORT']
-    return {'walls':walls,'dims':dims,'dim_errs':dim_errs,
-            'flags':flags,'n_viewports':len(viewports)}
+    return {'walls':walls,'dims':dims,'polys':polys,'arrows':arrows,
+            'dim_errs':dim_errs,'flags':flags,'n_viewports':len(viewports)}
 
 def qa(p102, p103):
     out = {}
@@ -249,9 +261,47 @@ def qa(p102, p103):
     out['QJ10_a102_stair_layer_entities'] = len(stair102)
     out['QJ10_stair_semantics'] = (treads == {'STEP_0','STEP_1','STEP_2'}
         and not indep4 and bool(merged) and not stair_on_wallnew)
+    # QJ11 台阶可见线防复发 (P0.1):
+    #  - 面积校验(冻结A-STAIR-AREA闭合足迹,含东缘w4)与可见线校验分开
+    #  - w4 不可识别(面积足迹缺失/不闭合/东缘不在) 或可见层闭合/出现东缘 → BLOCK
+    #  - 可见层恰3条波线(1开放轮廓+2踢面,顶点>20为波线), 无独立第4条
+    #  - 方向箭头独立层且非波线; 不得靠隐藏正确构件满足断言
+    W4X = 8300
+    def stair_vis(p, vis_lay):
+        v = [w for w in p['walls'].get(vis_lay,[]) if not p['flags'].get(vis_lay)]
+        r = [w for w in p['polys'].get(vis_lay,[]) if not p['flags'].get(vis_lay)]
+        return v, r
+    qj11 = {}
+    for tag,(p,vis_lay) in {'A102':(p102,'A-STAIR-NEW'),'A103':(p103,'A-STAIR')}.items():
+        vis, ris = stair_vis(p, vis_lay)
+        area = p['walls'].get('A-STAIR-AREA',[])
+        allvis = vis + ris
+        wave = [w for w in allvis if len(w['pts'])>20]
+        qj11[f'{tag}_w4_in_frozen_area'] = bool(bool(area)
+            and all(w.get('closed') for w in area)
+            and max(max(x for x,_ in w['pts']) for w in area) >= W4X)
+        qj11[f'{tag}_vis_open'] = bool(all(not w.get('closed') for w in allvis))
+        qj11[f'{tag}_vis_no_w4'] = bool(all(max(x for x,_ in w['pts']) < W4X
+                                          for w in allvis))
+        qj11[f'{tag}_wave_lines'] = len(wave)
+        qj11[f'{tag}_arrow_entities'] = len(p['arrows'].get('A-STAIR-DIRECTION',[]))
+        qj11[f'{tag}_arrow_off_stair_layer'] = not any(
+            a['type'] in ('POLYLINE','LWPOLYLINE')
+            for a in p['arrows'].get('A-STAIR-DIRECTION',[]))
+    out['QJ11'] = qj11
+    qj11_ok = all(qj11[f'{t}_w4_in_frozen_area'] and qj11[f'{t}_vis_open']
+                  and qj11[f'{t}_vis_no_w4'] and qj11[f'{t}_wave_lines']==3
+                  and qj11[f'{t}_arrow_off_stair_layer'] for t in ('A102','A103'))
+    out['QJ11_stair_visible_lines'] = qj11_ok
+    block = not all(qj11[f'{t}_w4_in_frozen_area'] and qj11[f'{t}_vis_open']
+                    and qj11[f'{t}_vis_no_w4'] for t in ('A102','A103'))
     out['QJ8_viewports'] = {'A102':p102['n_viewports'],'A103':p103['n_viewports']}
     out['QJ8_viewport_present'] = p102['n_viewports']>0 and p103['n_viewports']>0
-    out['verdict'] = 'PASS' if all(v for k,v in out.items() if isinstance(v,bool)) else 'HOLD'
+    if block:
+        out['verdict'] = 'BLOCK'   # w4 不可识别/可见层闭合 → 硬阻断
+    else:
+        out['verdict'] = 'PASS' if all(
+            v for k,v in out.items() if isinstance(v,bool)) else 'HOLD'
     return out
 
 if __name__ == '__main__':

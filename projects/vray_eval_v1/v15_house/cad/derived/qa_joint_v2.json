@@ -133,6 +133,21 @@
  "QJ10_stair_on_new_wall_layer": [],
  "QJ10_a102_stair_layer_entities": 1,
  "QJ10_stair_semantics": true,
+ "QJ11": {
+  "A102_w4_in_frozen_area": true,
+  "A102_vis_open": true,
+  "A102_vis_no_w4": true,
+  "A102_wave_lines": 3,
+  "A102_arrow_entities": 0,
+  "A102_arrow_off_stair_layer": true,
+  "A103_w4_in_frozen_area": true,
+  "A103_vis_open": true,
+  "A103_vis_no_w4": true,
+  "A103_wave_lines": 3,
+  "A103_arrow_entities": 4,
+  "A103_arrow_off_stair_layer": true
+ },
+ "QJ11_stair_visible_lines": true,
  "QJ8_viewports": {
   "A102": 1,
   "A103": 1
