@@ -4,6 +4,7 @@ measurement_type:
   DEMOLITION_SPAN   拆改段跨度(沿主轴)
   NEW_WALL_LOCATION 新建隔墙定位: 从最近实测保留墙面到新墙最近面
   STAIR_SPAN        台阶构件跨度(独立类别, 不冒充隔墙定位)
+  ARRIVAL_PLATFORM_SPAN  +450到达平台跨度(平台语义, 非第4级踏步)
   OPENING_WIDTH     门洞净宽(模型注册洞口, 复尺状态 SITE_VERIFY)
 每条记录 measurement_type/src_object/两个真实测量边界/resurvey 状态."""
 import json, hashlib
@@ -79,16 +80,19 @@ for i,r in enumerate(cands):
             'NEW_WALL_LOCATION', r['object'], resurvey='SITE_VERIFY',
             ref=f'{ref_name} south end→new wall centerline')
 
-# 3) 台阶构件 STAIR_SPAN
+# 3) 台阶构件 STAIR_SPAN / +450到达平台 ARRIVAL_PLATFORM_SPAN
 for r in NC['rows']:
     if r['component_type'] != 'STAIR_STEP': continue
     x0,y0,x1,y1 = r['bbox']
+    arr = r['object'].startswith('WAVE_STEP_3_ARRIVAL')
+    tag = 'platform_arrival_span' if arr else f"step_span_{r['object'][:16]}"
+    mtype = 'ARRIVAL_PLATFORM_SPAN' if arr else 'STAIR_SPAN'
     if (x1-x0) >= (y1-y0):
-        add(f"step_span_{r['object'][:16]}", (x0,y0-200),(x1,y0-200),'x',y0-400,
-            'STAIR_SPAN', r['object'], resurvey='SITE_VERIFY')
+        add(tag, (x0,y0-200),(x1,y0-200),'x',y0-400,
+            mtype, r['object'], resurvey='SITE_VERIFY')
     else:
-        add(f"step_span_{r['object'][:16]}", (x0-200,y0),(x0-200,y1),'y',x0-400,
-            'STAIR_SPAN', r['object'], resurvey='SITE_VERIFY')
+        add(tag, (x0-200,y0),(x0-200,y1),'y',x0-400,
+            mtype, r['object'], resurvey='SITE_VERIFY')
 
 # 4) 门洞净宽 OPENING_WIDTH (模型注册洞口, 与最终设计一致)
 for i,op in enumerate(GEO['door_openings']):

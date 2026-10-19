@@ -100,7 +100,8 @@ def qa(p102, p103):
     A = {a['id']:(a['x'],a['y']) for a in GEO['anchors']}
     EXTRA = json.loads((CAD/'derived'/'dims_extra.json').read_text())['dims'] \
             if (CAD/'derived'/'dims_extra.json').exists() else []
-    MTYPES = {'DEMOLITION_SPAN','NEW_WALL_LOCATION','STAIR_SPAN','OPENING_WIDTH'}
+    MTYPES = {'DEMOLITION_SPAN','NEW_WALL_LOCATION','STAIR_SPAN','OPENING_WIDTH',
+              'ARRIVAL_PLATFORM_SPAN'}
     for spec in EXTRA:
         tag = spec['tag']
         d1, d2 = p102['dims'].get(tag), p103['dims'].get(tag)
@@ -225,6 +226,26 @@ def qa(p102, p103):
         for s in srcs.values()
         if s['file'].endswith(('.dxf','.FCStd','.blend','.json'))
         and Path(ROOT/s['file'].split('interior_design/')[-1]).exists())
+    # QJ10 台阶语义: 3级踢面 + +450到达平台并入第3踏 + 台阶构件不入新增墙层
+    vis103 = [(lay, w) for lay, ents in p103['walls'].items()
+              if not p103['flags'].get(lay) for w in ents]
+    treads = {o.split('#')[0] for lay, w in vis103 for o in w['objs']
+              if o.split('#')[0] in ('STEP_0', 'STEP_1', 'STEP_2')}
+    indep4 = [w['handle'] for lay, w in vis103
+              if any(o.split('#')[0] == 'WAVE_STEP_3_ARRIVAL' for o in w['objs'])]
+    merged = [w['handle'] for lay, w in vis103
+              if any('merged_arrival' in o for o in w['objs'])]
+    stair_on_wallnew = [w['handle'] for w in p102['walls'].get('A-WALL-NEW', [])
+              if any(o.split('#')[0].startswith('STEP') or 'WAVE_STEP' in o
+                     for o in w['objs'])]
+    stair102 = [w['handle'] for w in p102['walls'].get('A-STAIR-NEW', [])]
+    out['QJ10_stair_treads'] = sorted(treads)
+    out['QJ10_arrival_platform_merged'] = bool(merged)
+    out['QJ10_indep_4th_step_handles'] = indep4
+    out['QJ10_stair_on_new_wall_layer'] = stair_on_wallnew
+    out['QJ10_a102_stair_layer_entities'] = len(stair102)
+    out['QJ10_stair_semantics'] = (treads == {'STEP_0','STEP_1','STEP_2'}
+        and not indep4 and bool(merged) and not stair_on_wallnew)
     out['QJ8_viewports'] = {'A102':p102['n_viewports'],'A103':p103['n_viewports']}
     out['QJ8_viewport_present'] = p102['n_viewports']>0 and p103['n_viewports']>0
     out['verdict'] = 'PASS' if all(v for k,v in out.items() if isinstance(v,bool)) else 'HOLD'

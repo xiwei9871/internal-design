@@ -213,7 +213,7 @@
    "resurvey": "SITE_VERIFY"
   },
   {
-   "tag": "step_span_WAVE_STEP_3_ARRI",
+   "tag": "platform_arrival_span",
    "p1": [
     6510,
     4716
@@ -225,7 +225,7 @@
    "axis": "y",
    "lay": 6310,
    "value": 3084,
-   "measurement_type": "STAIR_SPAN",
+   "measurement_type": "ARRIVAL_PLATFORM_SPAN",
    "src": "WAVE_STEP_3_ARRIVAL",
    "resurvey": "SITE_VERIFY"
   },

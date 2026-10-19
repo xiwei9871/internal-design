@@ -12,7 +12,7 @@
   "A103": 34,
   "expected": 34
  },
- "QJ5_dims_valid": false,
+ "QJ5_dims_valid": true,
  "QJ6_wall_geom_parity": {},
  "QJ6_pass": true,
  "QJ9_missing_detail": [
@@ -123,10 +123,20 @@
  "QJ9_target_area_mm2": 42158386,
  "QJ9_geom_parity_2d": true,
  "QJ7_sources_fresh": true,
+ "QJ10_stair_treads": [
+  "STEP_0",
+  "STEP_1",
+  "STEP_2"
+ ],
+ "QJ10_arrival_platform_merged": true,
+ "QJ10_indep_4th_step_handles": [],
+ "QJ10_stair_on_new_wall_layer": [],
+ "QJ10_a102_stair_layer_entities": 4,
+ "QJ10_stair_semantics": true,
  "QJ8_viewports": {
   "A102": 1,
   "A103": 1
  },
  "QJ8_viewport_present": true,
- "verdict": "HOLD"
+ "verdict": "PASS"
 }

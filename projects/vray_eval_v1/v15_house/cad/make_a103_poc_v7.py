@@ -231,6 +231,22 @@ if _st2 and _arr:
                 (1000,'merged_arrival:WAVE_STEP_3_ARRIVAL')])
         for _e in _pool[len(_ups):]: _e.destroy()
 
+# --- 台阶上行标识: 底图箭头线段 1F9/1FA/1FB + '上'字 → 独立 A-STAIR-DIRECTION ---
+if 'A-STAIR-DIRECTION' not in doc.layers:
+    doc.layers.new('A-STAIR-DIRECTION', dxfattribs={'color':4})
+_mv = 0
+for _h in ('1F9','1FA','1FB'):
+    _e = doc.entitydb.get(_h)
+    if _e is not None and _e.dxf.layer == 'A-DESIGN':
+        _e.dxf.layer = 'A-STAIR-DIRECTION'; _mv += 1
+for _e in msp:
+    if _e.dxftype() in ('TEXT','MTEXT') and _e.dxf.layer == 'A-DESIGN':
+        _t = _e.dxf.text if _e.dxftype()=='TEXT' else _e.plain_text()
+        _ip = getattr(_e.dxf,'insert',None)
+        if _t.strip()=='上' and _ip and 7000<_ip.x<8500 and 6800<_ip.y<7700:
+            _e.dxf.layer = 'A-STAIR-DIRECTION'; _mv += 1
+managed_report['stair_direction_moved'] = _mv
+
 # --- 未绑定可见墙线处置: 全部被管理实体覆盖>50% → 删除(已替代); 否则→A-UNCERTAIN ---
 def ent_bbox_pts(e):
     pts=[(float(p[0]),float(p[1])) for p in e.get_points('xy')]

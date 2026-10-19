@@ -21,6 +21,7 @@ for appid in ('DEVINSRC','DEVINDIM'): doc.appids.new(appid)
 LAYERS = [('A-STRUCT-UNDERLAY',8),('A-WALL-RETAIN',7),('A-WALL-RETAIN-STRUCT',7),
           ('A-WALL-REMODELED',8),('A-WALL-DEMO-DESIGN',1),('A-WALL-HOLD',6),
           ('A-WALL-NEW',5),('A-WALL-REVIEW',30),('A-DOOR',2),('A-WINDOW',4),
+          ('A-STAIR-NEW',8),('A-SOFFIT-NEW',8),('A-MISC-NEW',30),
           ('A-DIMS',3),('A-TEXT',7)]
 for n,c in LAYERS: doc.layers.new(n, dxfattribs={'color':c})
 
@@ -55,6 +56,12 @@ if 'WAVE_STEP_3_ARRIVAL' in polys and 'STEP_2' in polys:
                                     for g in _ups]
         _MERGED_ARRIVAL = True
 counts = {}
+# 新建构件按类型分层: 台阶/上部构件不计入新增砌墙层
+COMP_102 = {'STAIR_STEP':'A-STAIR-NEW','SOFFIT_HEADER':'A-SOFFIT-NEW',
+            'OTHER':'A-MISC-NEW'}
+def new_layer(obj):
+    ct = NC_ROW.get(obj, {}).get('component_type')
+    return COMP_102.get(ct, 'A-WALL-NEW')
 for e in REG['entries']:
     role = e['a102_role']; counts[role] = counts.get(role,0)+1
     obj, _, suffix = e['object'].partition('#')
@@ -70,19 +77,23 @@ for e in REG['entries']:
     if role == 'SPLIT_PARTIAL_NEW' and e['object'] in NC_ROW:
         for pts in NC_ROW[e['object']]['new_geoms']:
             ent = msp.add_lwpolyline([(float(x),float(y)) for x,y in pts], close=True,
-                                   dxfattribs={'layer':'A-WALL-NEW'})
+                                   dxfattribs={'layer':new_layer(e['object'])})
             ent.set_xdata('DEVINSRC',[(1000,e['object']),(1000,'SPLIT_PARTIAL_NEW')])
         for pts in NC_ROW[e['object']]['retained_geoms']:
             msp.add_lwpolyline([(float(x),float(y)) for x,y in pts], close=True,
                                dxfattribs={'layer':'A-WALL-REMODELED'})
         continue
     for pts in pts_list:
+        dlay = new_layer(obj) if ROLE_LAYER[role]=='A-WALL-NEW' else ROLE_LAYER[role]
         ent = msp.add_lwpolyline([(float(x),float(y)) for x,y in pts], close=True,
-                               dxfattribs={'layer':ROLE_LAYER[role]})
-        ent.set_xdata('DEVINSRC',[(1000,e['object']),(1000,role),
-                                  (1000,e['classification']),
-                                  (1000,e.get('design_intent') or '-'),
-                                  (1000,e.get('construction_authorization') or '-')])
+                               dxfattribs={'layer':dlay})
+        _xd = [(1000,e['object']),(1000,role),
+               (1000,e['classification']),
+               (1000,e.get('design_intent') or '-'),
+               (1000,e.get('construction_authorization') or '-')]
+        if _MERGED_ARRIVAL and obj == 'STEP_2':
+            _xd.append((1000,'merged_arrival:WAVE_STEP_3_ARRIVAL'))
+        ent.set_xdata('DEVINSRC', _xd)
         if role in ('DESIGN_APPROVED_DEMO','DEMOLITION_HOLD'):
             xs=[p[0] for p in pts]; ys=[p[1] for p in pts]
             msp.add_line((min(xs),min(ys)),(max(xs),max(ys)),
@@ -135,7 +146,10 @@ for _d in EXTRA_DIMS:
     _dd.render(); _dd.commit()
     _dd.dimension.set_xdata('DEVINDIM',[(1000,_d['tag']),
         (1000,f"geo:{p1[0]},{p1[1]}"),(1000,f"geo:{p2[0]},{p2[1]}"),
-        (1000,_d['axis']),(1040,round(_d['value'],1))])
+        (1000,_d['axis']),(1040,round(_d['value'],1)),
+        (1000,_d.get('measurement_type','UNSPEC')),
+        (1000,(_d.get('ref_object') or _d.get('src',''))[:200]),
+        (1000,_d.get('resurvey',''))])
 
 msp.add_text('A102 墙体拆改图 POC V3 | 施工差集语义 | 黑=保留 灰=模型重画保留 红=设计确认拟拆(待批) 品红=HOLD 蓝=实际新建',height=250,
              dxfattribs={'layer':'A-TEXT'}).set_placement((13500,14800))
