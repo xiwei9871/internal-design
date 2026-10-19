@@ -208,6 +208,29 @@ for spec in GEO['managed_entities']:
         e.set_xdata('DEVINSRC', [(1000, f'{primary}#DEMOLISHED'), (1000, 'EXISTING_DEMOLISHED')])
         managed_report['created'] += 1
 
+# --- 平面语义: 3级台阶=3条踢面线. WAVE_STEP_3_ARRIVAL 是 +450 到达平台(与第3踏同层),
+#     并入 STEP_2 轮廓, 不再独立成线误读作第4级 ---
+def _xd0(e):
+    try: return e.get_xdata('DEVINSRC')[0][1]
+    except Exception: return ''
+from shapely.ops import unary_union as _UU
+_st2 = [e for e in msp if e.dxftype()=='LWPOLYLINE' and _xd0(e).startswith('STEP_2')]
+_arr = [e for e in msp if e.dxftype()=='LWPOLYLINE' and _xd0(e).startswith('WAVE_STEP_3_ARRIVAL')]
+if _st2 and _arr:
+    from shapely.geometry import Polygon as _P
+    _st2.sort(key=lambda e: -_P(list(e.get_points('xy'))).area)
+    _u = _UU([_P(list(e.get_points('xy'))) for e in _st2+_arr])
+    _ups = [_u] if _u.geom_type=='Polygon' else list(_u.geoms)
+    if all(not g.interiors for g in _ups):
+        _pool = _st2 + _arr
+        for _i, _g in enumerate(_ups):
+            _e = _pool[_i] if _i < len(_pool) else msp.add_lwpolyline(
+                [(0,0)], close=True, dxfattribs={'layer':'A-STAIR'})
+            _e.set_points(list(_g.exterior.coords[:-1]), format='xy')
+            _e.set_xdata('DEVINSRC',[(1000,_xd0(_pool[0]) if _i==0 else 'STEP_2#arrival_ext'),
+                (1000,'merged_arrival:WAVE_STEP_3_ARRIVAL')])
+        for _e in _pool[len(_ups):]: _e.destroy()
+
 # --- 未绑定可见墙线处置: 全部被管理实体覆盖>50% → 删除(已替代); 否则→A-UNCERTAIN ---
 def ent_bbox_pts(e):
     pts=[(float(p[0]),float(p[1])) for p in e.get_points('xy')]

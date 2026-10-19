@@ -12,7 +12,7 @@
   "A103": 34,
   "expected": 34
  },
- "QJ5_dims_valid": true,
+ "QJ5_dims_valid": false,
  "QJ6_wall_geom_parity": {},
  "QJ6_pass": true,
  "QJ9_missing_detail": [
@@ -128,5 +128,5 @@
   "A103": 1
  },
  "QJ8_viewport_present": true,
- "verdict": "PASS"
+ "verdict": "HOLD"
 }
