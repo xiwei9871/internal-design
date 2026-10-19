@@ -123,6 +123,9 @@ if 'A-DUP' not in doc.layers:
 doc.layers.get('A-DUP').dxf.flags = 1     # 重画保留墙的模型副本: 冻结避免重复线
 if 'A-STRUCT-UNDERLAY' not in doc.layers:
     doc.layers.new('A-STRUCT-UNDERLAY', dxfattribs={'color': 8})
+if 'A-STAIR-AREA' not in doc.layers:
+    doc.layers.new('A-STAIR-AREA', dxfattribs={'color': 8})
+doc.layers.get('A-STAIR-AREA').dxf.flags = 1   # 台阶闭合足迹仅作面积/语义载体
 
 # --- 台阶绘制: 相邻踏面带共享的波形边在每条带内重复采样 → 画闭合足迹出双线误读.
 #     改为: 总轮廓(闭合, 计QJ9面积) + 内部踢面线w1/w2(共享边, POLYLINE不占并集).
@@ -142,13 +145,35 @@ if _STP:
     _U = _SUU(list(_STP.values()))
     _gs = [_U] if _U.geom_type == 'Polygon' else \
           [g for g in _U.geoms if g.geom_type == 'Polygon']
+    # P0: +450到达平台东缘(w4)与同层上地坪相接 → 不画边线(误读作第4级).
+    # 闭合足迹移冻结层 A-STAIR-AREA; 可见轮廓=并集边界-w4 的开放链.
+    _w4 = None
+    if _ARR_MRG:
+        _mi = _LM(_a.boundary.intersection(_U.boundary))
+        _ch = [c for c in (list(_mi.geoms) if hasattr(_mi,'geoms') else [_mi])
+               if c.geom_type=='LineString']
+        if _ch: _w4 = max(_ch, key=lambda c: c.length)
     for _g in _gs:
+        _xd = [(1000,'STAIR_GROUP'),(1000,'STEP_0'),(1000,'STEP_1'),
+            (1000,'STEP_2'),(1000,'PROPOSED_NEW'),
+            (1000,'merged_arrival:WAVE_STEP_3_ARRIVAL' if _ARR_MRG else '-')]
         _e = msp.add_lwpolyline(
             [[round(x,2),round(y,2)] for x,y in _g.exterior.coords[:-1]],
-            close=True, dxfattribs={'layer':'A-STAIR'})
-        _e.set_xdata('DEVINSRC', [(1000,'STAIR_GROUP'),(1000,'STEP_0'),(1000,'STEP_1'),
-            (1000,'STEP_2'),(1000,'PROPOSED_NEW'),
-            (1000,'merged_arrival:WAVE_STEP_3_ARRIVAL' if _ARR_MRG else '-')])
+            close=True, dxfattribs={'layer':'A-STAIR-AREA'})
+        _e.set_xdata('DEVINSRC', _xd + [(1000,'area_only:frozen')])
+        if _w4 is None:
+            _o = msp.add_lwpolyline(
+                [[round(x,2),round(y,2)] for x,y in _g.exterior.coords[:-1]],
+                close=True, dxfattribs={'layer':'A-STAIR'})
+            _o.set_xdata('DEVINSRC', _xd)
+            continue
+        _rest = _LM(_g.exterior.difference(_w4.buffer(0.1)))
+        for _c in (list(_rest.geoms) if hasattr(_rest,'geoms') else [_rest]):
+            if _c.geom_type!='LineString' or _c.length<200: continue
+            _o = msp.add_lwpolyline(
+                [[round(x,2),round(y,2)] for x,y in _c.coords],
+                close=False, dxfattribs={'layer':'A-STAIR'})
+            _o.set_xdata('DEVINSRC', _xd + [(1000,'east_edge_open:meets_floor_450')])
     for _a,_b,_t in (('STEP_0','STEP_1','STAIR_RISER_L2'),
                      ('STEP_1','STEP_2','STAIR_RISER_L3')):
         if _a not in _STP or _b not in _STP: continue

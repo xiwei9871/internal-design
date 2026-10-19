@@ -162,7 +162,9 @@ def qa(p102, p103):
     # QJ9 二维几何一致性Gate: missing+extra双向 + 分类型缺失 + 全差异明细
     # (P1.5.1收尾A: 单向/阈值静默都不许; 小差异记录不判零)
     WALL_LAYERS = {'A-WALL','A-DESIGN','A-STRUCT-UNDERLAY','A-REVIEW',
-                   'A-STAIR','A-SOFFIT','A-MISC-NEW','A-CONFLICT','A-COLUMN'}
+                   'A-STAIR','A-STAIR-AREA','A-SOFFIT','A-MISC-NEW','A-CONFLICT','A-COLUMN'}
+    # A-STAIR-AREA: 冻结的面积/语义足迹, 不绘出但必须计入可见并集(P0台阶修复后
+    # 可见层为开放链, 闭合多边形仅存此层), 否则整段台阶误报 missing.
     def _classify(n):
         n = n.upper()
         if 'STEP' in n or 'STAIR' in n: return 'STAIR_STEP'
@@ -183,7 +185,8 @@ def qa(p102, p103):
         if target_by_type else Polygon()
     vis_polys = []
     for lay, ents in p103['walls'].items():
-        if lay not in WALL_LAYERS or p103['flags'].get(lay): continue
+        if lay not in WALL_LAYERS or \
+           (p103['flags'].get(lay) and lay != 'A-STAIR-AREA'): continue
         for w in ents:
             if len(w['pts']) >= 3: vis_polys.append(Polygon(w['pts']))
     vis_u = unary_union(vis_polys) if vis_polys else Polygon()

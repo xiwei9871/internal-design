@@ -5,8 +5,8 @@ HUMAN_CAD_REVIEW_V01 — 人工审图包
 组2 俯视 vs A103:  blender_ortho_top / g2_a103_full / g2_overlay / g2_*crop
 
 源 sha256(前10):
-  A102_WALL_DIFF_POC_V3.dxf  b6793e6361
-  A103_CONSTRUCTION_POC_V7.dxf  4fafc0480a
+  A102_WALL_DIFF_POC_V3.dxf  a3dc6631b5
+  A103_CONSTRUCTION_POC_V7.dxf  381eacb73e
   measured_working.dxf  3711c47c11
   V15_WORK.blend  feaeed380c (权威哈希未变)
 
