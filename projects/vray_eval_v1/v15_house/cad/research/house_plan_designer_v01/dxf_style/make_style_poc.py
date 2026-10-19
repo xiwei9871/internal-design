@@ -83,8 +83,12 @@ def apply_axis_basis(doc, msp, manifest, basis):
         manifest['added'].append(dict(layer='AXIS', type='control_axis_h', at=y,
                                       label=basis['labels']['h'][i], basis='axis_basis.json'))
 
-def _tag_label(text_ent, ref_handle):
-    text_ent.set_xdata('DEVINPOC', [(1000, 'ANNOTATION'), (1005, ref_handle)])
+def _semantic_id(kind, pos):
+    return f'OPENING_{kind}_{int(round(pos[0]))}_{int(round(pos[1]))}'
+
+def _tag_label(text_ent, ref_handle, semantic_id):
+    text_ent.set_xdata('DEVINPOC', [(1000, 'ANNOTATION'), (1000, semantic_id),
+                                    (1005, ref_handle)])
 
 def _cent(e):
     if e.dxftype() == 'LWPOLYLINE':
@@ -113,26 +117,30 @@ def number_openings(doc, msp, manifest, basis):
     manifest['unmatched'] = []
     for item in basis['doors']:
         e, d = _nearest(local_doors, item['at'])
+        sid = _semantic_id('DOOR', item['at'])
         if e is None:
-            manifest['unmatched'].append(item['label']); continue
+            manifest['unmatched'].append({'label': item['label'], 'semantic_object_id': sid}); continue
         c = _cent(e)
         t = msp.add_text(item['label'], dxfattribs={'layer': 'A-DOOR-NUM', 'height': 220})
         t.set_placement((c[0]+260, c[1]+260), align=ezdxf.enums.TextEntityAlignment.BOTTOM_LEFT)
-        _tag_label(t, e.dxf.handle)
+        _tag_label(t, e.dxf.handle, sid)
         manifest['added'].append(dict(layer='A-DOOR-NUM', type='door_num', label=item['label'],
+                                      semantic_object_id=sid,
                                       ref_handle=e.dxf.handle, basis_at=item['at'],
                                       match_dist=round(d, 1),
                                       at=[round(c[0], 1), round(c[1], 1)]))
         local_doors.remove(e)
     for item in basis['windows']:
         e, d = _nearest(local_wins, item['at'])
+        sid = _semantic_id('WIN', item['at'])
         if e is None:
-            manifest['unmatched'].append(item['label']); continue
+            manifest['unmatched'].append({'label': item['label'], 'semantic_object_id': sid}); continue
         c = _cent(e)
         t = msp.add_text(item['label'], dxfattribs={'layer': 'A-WIN-NUM', 'height': 220})
         t.set_placement((c[0], c[1]+260), align=ezdxf.enums.TextEntityAlignment.BOTTOM_CENTER)
-        _tag_label(t, e.dxf.handle)
+        _tag_label(t, e.dxf.handle, sid)
         manifest['added'].append(dict(layer='A-WIN-NUM', type='win_num', label=item['label'],
+                                      semantic_object_id=sid,
                                       ref_handle=e.dxf.handle, basis_at=item['at'],
                                       match_dist=round(d, 1),
                                       at=[round(c[0], 1), round(c[1], 1)]))

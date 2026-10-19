@@ -32,9 +32,12 @@
   },
   "opening_label_policy": {
     "rule": "编号绑定稳定对象 handle (DEVINPOC XDATA group1005), 跨图编号由共享 opening_basis 保持一致",
+    "semantic_object_id": "OPENING_{DOOR|WIN}_{x}_{y} — 由 opening_basis 规范位置生成, 与本地 handle/实体创建顺序无关",
     "door_source_preference": ["SYM-DOOR-LEAF insert", "A-DOOR polyline"],
     "window_source": "A-WINDOW polyline",
-    "nearest_match_tolerance_mm": 1200
+    "nearest_match_tolerance_mm": 1200,
+    "unmatched_policy": "无本地对应对象时如实记 unmatched, 不推测补充",
+    "verified": "双跑重生成编号无漂移; 1005 handle 全部可解析"
   },
   "dimstyle_gb": {"name": "GB", "dimtsz": 140, "dimtxt": 180, "dimexe": 200,
                   "dimexo": 300, "dimtad": 1, "dimdec": 0,

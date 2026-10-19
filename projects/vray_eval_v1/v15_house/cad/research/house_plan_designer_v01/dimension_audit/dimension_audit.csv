@@ -2,18 +2,18 @@ src,sha,handle,raw_text,label_mm,geom_mm,cadvec_mm,asbuilt_mm,residual_mm,cls,co
 measured_working.dxf,3711c47c1172,3080F1,(native),4500.0,4500.0,4500.0,4500.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,308110,(native),1900.0,1900.0,1900.0,1900.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,30811D,(native),4500.0,4500.0,4500.0,4500.0,0.0,CONSISTENT,high
-measured_working.dxf,3711c47c1172,30812A,(native),2800.0,3300.0,2800.0,2800.0,-500.0,UNRESOLVED,ordinate型DIMENSION：defpoint间距≠标注值(标注为轴坐标)，cadvec未将其纳入约束也未验证
-measured_working.dxf,3711c47c1172,308188,(native),900.0,4500.0,900.0,900.0,-3600.0,UNRESOLVED,ordinate型DIMENSION：defpoint间距≠标注值(标注为轴坐标)，cadvec未将其纳入约束也未验证
+measured_working.dxf,3711c47c1172,30812A,(native),2800.0,2800.0,2800.0,2800.0,+0.0,CONSISTENT,"linear(dimtype=32,angle=90.0) 投影法测量一致; 非ordinate"
+measured_working.dxf,3711c47c1172,308188,(native),900.0,900.0,900.0,900.0,+0.0,CONSISTENT,"linear(dimtype=32,angle=0) 投影法测量一致; 非ordinate"
 measured_working.dxf,3711c47c1172,30819E,(native),3900.0,3900.0,3900.0,3900.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,3081AB,(native),3600.0,3600.0,3600.0,3600.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,3081B8,(native),2100.0,2100.0,2100.0,2100.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,3081C5,(native),3000.0,3000.0,3000.0,3000.0,0.0,CONSISTENT,high
-measured_working.dxf,3711c47c1172,3081D2,(native),1400.0,1600.0,1400.0,1400.0,-200.0,UNRESOLVED,ordinate型DIMENSION：defpoint间距≠标注值(标注为轴坐标)，cadvec未将其纳入约束也未验证
+measured_working.dxf,3711c47c1172,3081D2,(native),1400.0,1400.0,1400.0,1400.0,+0.0,CONSISTENT,"linear(dimtype=32,angle=0) 投影法测量一致; 非ordinate"
 measured_working.dxf,3711c47c1172,308215,(native),3300.0,3300.0,3300.0,3300.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,30822B,(native),3200.0,3200.0,3200.0,3200.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,308238,(native),1900.0,1900.0,1900.0,1900.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,308245,(native),5100.0,5100.0,5100.0,5100.0,0.0,CONSISTENT,high
-measured_working.dxf,3711c47c1172,308276,(native),500.0,4200.0,500.0,500.0,-3700.0,UNRESOLVED,ordinate型DIMENSION：defpoint间距≠标注值(标注为轴坐标)，cadvec未将其纳入约束也未验证
+measured_working.dxf,3711c47c1172,308276,(native),500.0,500.0,500.0,500.0,+0.0,CONSISTENT,"linear(dimtype=32,angle=90.0) 投影法测量一致; 非ordinate"
 measured_working.dxf,3711c47c1172,308295,(native),1800.0,1800.0,1800.0,1800.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,3082A2,(native),2200.0,2200.0,2200.0,2200.0,0.0,CONSISTENT,high
 measured_working.dxf,3711c47c1172,3082AF,(native),8500.0,8500.0,8500.0,8500.0,0.0,CONSISTENT,high

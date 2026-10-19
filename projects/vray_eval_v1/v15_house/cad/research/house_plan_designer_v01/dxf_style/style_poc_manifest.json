@@ -35,6 +35,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M1",
+    "semantic_object_id": "OPENING_DOOR_7800_11700",
     "ref_handle": "266",
     "basis_at": [
      7800.0,
@@ -50,6 +51,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M2",
+    "semantic_object_id": "OPENING_DOOR_8800_8000",
     "ref_handle": "267",
     "basis_at": [
      8800.0,
@@ -65,6 +67,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M3",
+    "semantic_object_id": "OPENING_DOOR_12900_6300",
     "ref_handle": "268",
     "basis_at": [
      12900.0,
@@ -80,6 +83,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M4",
+    "semantic_object_id": "OPENING_DOOR_2700_5400",
     "ref_handle": "265",
     "basis_at": [
      2700.0,
@@ -95,6 +99,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M5",
+    "semantic_object_id": "OPENING_DOOR_12900_4750",
     "ref_handle": "269",
     "basis_at": [
      12900.0,
@@ -110,6 +115,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M6",
+    "semantic_object_id": "OPENING_DOOR_8250_4650",
     "ref_handle": "26A",
     "basis_at": [
      8250.0,
@@ -125,6 +131,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M7",
+    "semantic_object_id": "OPENING_DOOR_11600_4650",
     "ref_handle": "26B",
     "basis_at": [
      11600.0,
@@ -140,6 +147,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M8",
+    "semantic_object_id": "OPENING_DOOR_2900_2560",
     "ref_handle": "26D",
     "basis_at": [
      2900.0,
@@ -155,6 +163,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M9",
+    "semantic_object_id": "OPENING_DOOR_5700_1400",
     "ref_handle": "26C",
     "basis_at": [
      5700.0,
@@ -207,15 +216,33 @@
    "window_candidates": 0
   },
   "unmatched": [
-   "W1",
-   "W2",
-   "W3",
-   "W4",
-   "W5",
-   "W6"
+   {
+    "label": "W1",
+    "semantic_object_id": "OPENING_WIN_5350_12850"
+   },
+   {
+    "label": "W2",
+    "semantic_object_id": "OPENING_WIN_16400_9300"
+   },
+   {
+    "label": "W3",
+    "semantic_object_id": "OPENING_WIN_15500_1400"
+   },
+   {
+    "label": "W4",
+    "semantic_object_id": "OPENING_WIN_6500_-100"
+   },
+   {
+    "label": "W5",
+    "semantic_object_id": "OPENING_WIN_9700_-100"
+   },
+   {
+    "label": "W6",
+    "semantic_object_id": "OPENING_WIN_13450_-100"
+   }
   ],
   "dst": "A102_STYLE_POC.dxf",
-  "dst_sha": "086971dccb904033"
+  "dst_sha": "63d3e8485959f5a1"
  },
  {
   "src": "A103_CONSTRUCTION_POC_V7.dxf",
@@ -253,6 +280,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M1",
+    "semantic_object_id": "OPENING_DOOR_7800_11700",
     "ref_handle": "5A4",
     "basis_at": [
      7800.0,
@@ -268,6 +296,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M2",
+    "semantic_object_id": "OPENING_DOOR_8800_8000",
     "ref_handle": "5A7",
     "basis_at": [
      8800.0,
@@ -283,6 +312,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M3",
+    "semantic_object_id": "OPENING_DOOR_12900_6300",
     "ref_handle": "5AA",
     "basis_at": [
      12900.0,
@@ -298,6 +328,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M4",
+    "semantic_object_id": "OPENING_DOOR_2700_5400",
     "ref_handle": "5A1",
     "basis_at": [
      2700.0,
@@ -313,6 +344,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M5",
+    "semantic_object_id": "OPENING_DOOR_12900_4750",
     "ref_handle": "5AD",
     "basis_at": [
      12900.0,
@@ -328,6 +360,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M6",
+    "semantic_object_id": "OPENING_DOOR_8250_4650",
     "ref_handle": "5B0",
     "basis_at": [
      8250.0,
@@ -343,6 +376,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M7",
+    "semantic_object_id": "OPENING_DOOR_11600_4650",
     "ref_handle": "5B3",
     "basis_at": [
      11600.0,
@@ -358,6 +392,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M8",
+    "semantic_object_id": "OPENING_DOOR_2900_2560",
     "ref_handle": "5B9",
     "basis_at": [
      2900.0,
@@ -373,6 +408,7 @@
     "layer": "A-DOOR-NUM",
     "type": "door_num",
     "label": "M9",
+    "semantic_object_id": "OPENING_DOOR_5700_1400",
     "ref_handle": "5B6",
     "basis_at": [
      5700.0,
@@ -388,6 +424,7 @@
     "layer": "A-WIN-NUM",
     "type": "win_num",
     "label": "W1",
+    "semantic_object_id": "OPENING_WIN_5350_12850",
     "ref_handle": "A8",
     "basis_at": [
      5350.0,
@@ -403,6 +440,7 @@
     "layer": "A-WIN-NUM",
     "type": "win_num",
     "label": "W2",
+    "semantic_object_id": "OPENING_WIN_16400_9300",
     "ref_handle": "B0",
     "basis_at": [
      16400.0,
@@ -418,6 +456,7 @@
     "layer": "A-WIN-NUM",
     "type": "win_num",
     "label": "W3",
+    "semantic_object_id": "OPENING_WIN_15500_1400",
     "ref_handle": "AE",
     "basis_at": [
      15500.0,
@@ -433,6 +472,7 @@
     "layer": "A-WIN-NUM",
     "type": "win_num",
     "label": "W4",
+    "semantic_object_id": "OPENING_WIN_6500_-100",
     "ref_handle": "B8",
     "basis_at": [
      6500.0,
@@ -448,6 +488,7 @@
     "layer": "A-WIN-NUM",
     "type": "win_num",
     "label": "W5",
+    "semantic_object_id": "OPENING_WIN_9700_-100",
     "ref_handle": "B4",
     "basis_at": [
      9700.0,
@@ -463,6 +504,7 @@
     "layer": "A-WIN-NUM",
     "type": "win_num",
     "label": "W6",
+    "semantic_object_id": "OPENING_WIN_13450_-100",
     "ref_handle": "B6",
     "basis_at": [
      13450.0,
@@ -516,6 +558,6 @@
   },
   "unmatched": [],
   "dst": "A103_STYLE_POC.dxf",
-  "dst_sha": "2a54cd37c2434579"
+  "dst_sha": "b7f42368f006a449"
  }
 ]

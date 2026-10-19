@@ -1,0 +1,267 @@
+{
+ "method": "人工逐条核验: 界线刻度对→链段→标注文字偏置规律(≈200左偏,同链单调)",
+ "n_records": 15,
+ "source": "C型_原始户型数字化基准图.dxf",
+ "records": [
+  {
+   "text_handle": "119",
+   "label": 1400,
+   "text_at": [
+    498.3,
+    -2050.0
+   ],
+   "chain": "bottom_outer",
+   "dimline_handle": "112",
+   "measure_endpoints": [
+    0.0,
+    1396.6
+   ],
+   "measured_seg_len_mm": 1396.6,
+   "residual_mm": 3.4,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "11A",
+   "label": 1400,
+   "text_at": [
+    1894.9,
+    -2050.0
+   ],
+   "chain": "bottom_outer",
+   "dimline_handle": "113",
+   "measure_endpoints": [
+    1396.6,
+    2793.2
+   ],
+   "measured_seg_len_mm": 1396.6,
+   "residual_mm": 3.4,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "11B",
+   "label": 3000,
+   "text_at": [
+    4085.4,
+    -2050.0
+   ],
+   "chain": "bottom_outer",
+   "dimline_handle": "114",
+   "measure_endpoints": [
+    2793.2,
+    5777.7
+   ],
+   "measured_seg_len_mm": 2984.5,
+   "residual_mm": 15.5,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "11C",
+   "label": 2100,
+   "text_at": [
+    6620.4,
+    -2050.0
+   ],
+   "chain": "bottom_outer",
+   "dimline_handle": "115",
+   "measure_endpoints": [
+    5777.7,
+    7863.0
+   ],
+   "measured_seg_len_mm": 2085.3,
+   "residual_mm": 14.7,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "11D",
+   "label": 3600,
+   "text_at": [
+    9442.3,
+    -2050.0
+   ],
+   "chain": "bottom_outer",
+   "dimline_handle": "116",
+   "measure_endpoints": [
+    7863.0,
+    11421.5
+   ],
+   "measured_seg_len_mm": 3558.5,
+   "residual_mm": 41.5,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "11E",
+   "label": 3900,
+   "text_at": [
+    13192.0,
+    -2050.0
+   ],
+   "chain": "bottom_outer",
+   "dimline_handle": "117",
+   "measure_endpoints": [
+    11421.5,
+    15362.6
+   ],
+   "measured_seg_len_mm": 3941.1,
+   "residual_mm": -41.1,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "11F",
+   "label": 900,
+   "text_at": [
+    15631.3,
+    -2050.0
+   ],
+   "chain": "bottom_outer",
+   "dimline_handle": "118",
+   "measure_endpoints": [
+    15362.6,
+    16300.0
+   ],
+   "measured_seg_len_mm": 937.4,
+   "residual_mm": -37.4,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "141",
+   "label": 1000,
+   "text_at": [
+    699.2,
+    -2050.0
+   ],
+   "chain": "bottom_inner",
+   "dimline_handle": "131",
+   "measure_endpoints": [
+    401.8,
+    1396.6
+   ],
+   "measured_seg_len_mm": 994.8,
+   "residual_mm": 5.2,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "142",
+   "label": 1000,
+   "text_at": [
+    1694.0,
+    -2050.0
+   ],
+   "chain": "bottom_inner",
+   "dimline_handle": "132",
+   "measure_endpoints": [
+    1396.6,
+    2391.4
+   ],
+   "measured_seg_len_mm": 994.8,
+   "residual_mm": 5.2,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "143",
+   "label": 400,
+   "text_at": [
+    2392.3,
+    -2050.0
+   ],
+   "chain": "bottom_inner",
+   "dimline_handle": "133",
+   "measure_endpoints": [
+    2391.4,
+    2793.2
+   ],
+   "measured_seg_len_mm": 401.8,
+   "residual_mm": -1.8,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "144",
+   "label": 2100,
+   "text_at": [
+    3635.9,
+    -2050.0
+   ],
+   "chain": "bottom_inner",
+   "dimline_handle": "134",
+   "measure_endpoints": [
+    2793.2,
+    4878.5
+   ],
+   "measured_seg_len_mm": 2085.3,
+   "residual_mm": 14.7,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "145",
+   "label": 900,
+   "text_at": [
+    5128.1,
+    -2050.0
+   ],
+   "chain": "bottom_inner",
+   "dimline_handle": "135",
+   "measure_endpoints": [
+    4878.5,
+    5777.7
+   ],
+   "measured_seg_len_mm": 899.2,
+   "residual_mm": 0.8,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "146",
+   "label": 1400,
+   "text_at": [
+    6276.0,
+    -2050.0
+   ],
+   "chain": "bottom_inner",
+   "dimline_handle": "136",
+   "measure_endpoints": [
+    5777.7,
+    7174.3
+   ],
+   "measured_seg_len_mm": 1396.6,
+   "residual_mm": 3.4,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "149",
+   "label": 2200,
+   "text_at": [
+    9442.3,
+    -2050.0
+   ],
+   "chain": "bottom_inner",
+   "dimline_handle": "139",
+   "measure_endpoints": [
+    8551.8,
+    10732.7
+   ],
+   "measured_seg_len_mm": 2181.0,
+   "residual_mm": 19.0,
+   "label_mid_offset": 200.0
+  },
+  {
+   "text_handle": "14C",
+   "label": 2500,
+   "text_at": [
+    13192.0,
+    -2050.0
+   ],
+   "chain": "bottom_inner",
+   "dimline_handle": "13C",
+   "measure_endpoints": [
+    12129.3,
+    14654.7
+   ],
+   "measured_seg_len_mm": 2525.4,
+   "residual_mm": -25.4,
+   "label_mid_offset": 200.0
+  }
+ ],
+ "residual_summary": {
+  "min": -41.1,
+  "max": 41.5,
+  "note": "标注为权威值, 绘制几何为近似值"
+ }
+}

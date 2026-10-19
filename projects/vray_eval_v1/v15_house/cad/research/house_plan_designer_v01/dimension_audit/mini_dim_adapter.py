@@ -71,7 +71,36 @@ for t in texts:
                      cls='CONSISTENT' if abs(res) <= 12 else 'DIGITIZATION_MISMATCH',
                      note='' if abs(res) <= 12 else '标注值与绘制长度不一致'))
 
-# measured_working 原生 DIMENSION：ordinate 语义 + 覆写交叉校验
+# measured_working 原生 DIMENSION
+# dimtype 位: 低3位=基础类型(0线性旋转/1对齐/2角度/3直径/4半径/5三角度/6坐标/7默认坐标X),
+# bit4(16)=用户指定文字位, bit5(32)=块参照(非类型!), bit6(64)=默认文字位?, bit7(128)=纸空间。
+BASE_NAMES = {0: 'linear', 1: 'aligned', 2: 'angular', 3: 'diameter',
+              4: 'radius', 5: 'angular3pt', 6: 'ordinate', 7: 'ordinate_x'}
+
+def dim_base(dimtype):
+    return dimtype & 7
+
+def is_ordinate(dimtype):
+    return dim_base(dimtype) == 6
+
+def geometric_measure(e):
+    """按基础类型取正确的几何测量:
+    base0 线性/旋转: p2→p3 在 dim 角度方向上的投影(界线方向);
+    base1 对齐: |p2-p3| 直线距;
+    base6 ordinate: 返回 None(坐标值,不可当跨度)。"""
+    base = dim_base(e.dxf.get('dimtype', 0))
+    p2, p3 = e.dxf.get('defpoint2'), e.dxf.get('defpoint3')
+    if base == 6 or p2 is None or p3 is None:
+        return None, 'ordinate' if base == 6 else 'no-defpoints'
+    dx, dy = p3.x - p2.x, p3.y - p2.y
+    if base == 1:
+        return math.hypot(dx, dy), 'aligned:dist(p2,p3)'
+    if base == 0:
+        a = math.radians(e.dxf.get('angle', 0.0))
+        proj = abs(dx * math.cos(a) + dy * math.sin(a))
+        return proj, f'linear:proj@{e.dxf.get("angle", 0.0)}deg'
+    return math.hypot(dx, dy), f'base{base}:dist(p2,p3)'
+
 d2 = ezdxf.readfile(MEAS)
 for e in d2.modelspace().query('DIMENSION'):
     dimt = e.dxf.get('dimtype', 0)
@@ -79,26 +108,26 @@ for e in d2.modelspace().query('DIMENSION'):
     meas = e.get_measurement()
     txt = (e.dxf.get('text', '') or '').strip()
     overridden = txt if txt and txt != '<>' else ''
+    geom, method = geometric_measure(e)
+    base = dim_base(dimt)
     if overridden and meas is not None:
         try:
-            if abs(float(overridden) - meas) > 1:
-                cls, note = 'OVERRIDE_MISMATCH', f'覆写{overridden} vs 测量{meas:.0f}'
-            else:
-                cls, note = 'CONSISTENT', '覆写值与测量一致'
+            cls = 'OVERRIDE_MISMATCH' if abs(float(overridden) - meas) > 1 else 'CONSISTENT'
+            note = f'覆写{overridden} vs 测量{meas:.0f} ({BASE_NAMES[base]})'
         except ValueError:
             cls, note = 'UNRESOLVED', f'非数值覆写 {overridden!r}'
-    elif dimt & 32 and not (dimt & 7) == 2:
-        # dimtype 32 ordinate：测量值=距原点坐标，非跨度
-        span = math.dist((p2.x, p2.y), (p3.x, p3.y)) if p2 and p3 else 0
-        cls, note = 'ORDINATE', f'ordinate标注 值{meas:.0f}=轴坐标; defpoint距{span:.0f}非被量跨度'
+    elif base == 6:
+        cls, note = 'ORDINATE', f'ordinate标注 值{meas:.0f}=轴坐标,非跨度'
+    elif geom is not None:
+        res = (meas or 0) - geom
+        cls = 'CONSISTENT' if abs(res) <= 2 else 'GEOM_GT_LABEL'
+        note = f'dimtype={dimt}({BASE_NAMES[base]}+flag{dimt&~7}) {method} 残差{res:+.1f}'
     else:
-        span = math.dist((p2.x, p2.y), (p3.x, p3.y)) if p2 and p3 else 0
-        res = (meas or 0) - span
-        cls = 'CONSISTENT' if abs(res) < 1 else 'UNRESOLVED'
-        note = '' if cls == 'CONSISTENT' else f'defpoint距{span:.0f} vs 测量{meas:.0f}'
-    rows.append(dict(src='measured', th=e.dxf.handle, label=txt or f'{meas:.0f}' if meas else '',
+        cls, note = 'UNRESOLVED', f'dimtype={dimt} 无法确定几何测量'
+    rows.append(dict(src='measured', th=e.dxf.handle, label=txt or (f'{meas:.0f}' if meas else ''),
                      seg=f'{p2.x:.0f},{p2.y:.0f}->{p3.x:.0f},{p3.y:.0f}' if p2 and p3 else '',
-                     seg_len=round(span if p2 and p3 else 0), res='',
+                     seg_len=round(geom) if geom is not None else '',
+                     res=round((meas or 0)-geom, 1) if geom is not None else '',
                      cls=cls, note=note))
 
 with open(OUT, 'w', newline='') as fo:
