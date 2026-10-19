@@ -4,88 +4,167 @@
   "src_sha": "b6793e6361f76a8c",
   "added": [
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 2800.0,
-    "label": "1"
+    "layer": "AXIS",
+    "type": "control_axis_v",
+    "at": 1300.0,
+    "label": "1",
+    "basis": "axis_basis.json"
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 7275.0,
-    "label": "2"
+    "layer": "AXIS",
+    "type": "control_axis_v",
+    "at": 16500.0,
+    "label": "2",
+    "basis": "axis_basis.json"
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 7850.0,
-    "label": "3"
+    "layer": "AXIS",
+    "type": "control_axis_h",
+    "at": -200.0,
+    "label": "A",
+    "basis": "axis_basis.json"
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 9800.0,
-    "label": "4"
+    "layer": "AXIS",
+    "type": "control_axis_h",
+    "at": 13600.0,
+    "label": "B",
+    "basis": "axis_basis.json"
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 11500.0,
-    "label": "5"
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M1",
+    "ref_handle": "266",
+    "basis_at": [
+     7800.0,
+     11700.0
+    ],
+    "match_dist": 427.9,
+    "at": [
+     7850.0,
+     12125.0
+    ]
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 13000.0,
-    "label": "6"
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M2",
+    "ref_handle": "267",
+    "basis_at": [
+     8800.0,
+     8000.0
+    ],
+    "match_dist": 461.0,
+    "at": [
+     9250.0,
+     7900.0
+    ]
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 15350.0,
-    "label": "7"
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M3",
+    "ref_handle": "268",
+    "basis_at": [
+     12900.0,
+     6300.0
+    ],
+    "match_dist": 583.6,
+    "at": [
+     13000.0,
+     6875.0
+    ]
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 16250.0,
-    "label": "8"
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M4",
+    "ref_handle": "265",
+    "basis_at": [
+     2700.0,
+     5400.0
+    ],
+    "match_dist": 573.8,
+    "at": [
+     2800.0,
+     5965.0
+    ]
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": -100.0,
-    "label": "A"
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M5",
+    "ref_handle": "269",
+    "basis_at": [
+     12900.0,
+     4750.0
+    ],
+    "match_dist": 388.1,
+    "at": [
+     13000.0,
+     5125.0
+    ]
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 550.0,
-    "label": "B"
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M6",
+    "ref_handle": "26A",
+    "basis_at": [
+     8250.0,
+     4650.0
+    ],
+    "match_dist": 388.1,
+    "at": [
+     8625.0,
+     4550.0
+    ]
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 4550.0,
-    "label": "C"
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M7",
+    "ref_handle": "26B",
+    "basis_at": [
+     11600.0,
+     4650.0
+    ],
+    "match_dist": 657.6,
+    "at": [
+     12250.0,
+     4550.0
+    ]
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 7900.0,
-    "label": "D"
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M8",
+    "ref_handle": "26D",
+    "basis_at": [
+     2900.0,
+     2560.0
+    ],
+    "match_dist": 968.3,
+    "at": [
+     3865.0,
+     2480.0
+    ]
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 10800.0,
-    "label": "E"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 13500.0,
-    "label": "F"
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M9",
+    "ref_handle": "26C",
+    "basis_at": [
+     5700.0,
+     1400.0
+    ],
+    "match_dist": 461.0,
+    "at": [
+     5800.0,
+     1850.0
+    ]
    },
    {
     "layer": "0(pspace)",
@@ -123,114 +202,63 @@
     "label": "说    明: STYLE POC — 仅制图样式, 几何/XDATA/语义未变"
    }
   ],
+  "opening_count": {
+   "door_candidates": 9,
+   "window_candidates": 0
+  },
+  "unmatched": [
+   "W1",
+   "W2",
+   "W3",
+   "W4",
+   "W5",
+   "W6"
+  ],
   "dst": "A102_STYLE_POC.dxf",
-  "dst_sha": "68a642e224dc2460"
+  "dst_sha": "086971dccb904033"
  },
  {
   "src": "A103_CONSTRUCTION_POC_V7.dxf",
   "src_sha": "4fafc0480aa82842",
   "added": [
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 2800.0,
-    "label": "1"
+    "layer": "AXIS",
+    "type": "control_axis_v",
+    "at": 1300.0,
+    "label": "1",
+    "basis": "axis_basis.json"
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 7275.0,
-    "label": "2"
+    "layer": "AXIS",
+    "type": "control_axis_v",
+    "at": 16500.0,
+    "label": "2",
+    "basis": "axis_basis.json"
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 7850.0,
-    "label": "3"
+    "layer": "AXIS",
+    "type": "control_axis_h",
+    "at": -200.0,
+    "label": "A",
+    "basis": "axis_basis.json"
    },
    {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 9800.0,
-    "label": "4"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 11500.0,
-    "label": "5"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 13000.0,
-    "label": "6"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 15500.0,
-    "label": "7"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_v",
-    "at": 16400.0,
-    "label": "8"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": -100.0,
-    "label": "A"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 550.0,
-    "label": "B"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 4550.0,
-    "label": "C"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 7900.0,
-    "label": "D"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 10800.0,
-    "label": "E"
-   },
-   {
-    "layer": "AXIS-NUM",
-    "type": "axis_h",
-    "at": 13500.0,
-    "label": "F"
+    "layer": "AXIS",
+    "type": "control_axis_h",
+    "at": 13600.0,
+    "label": "B",
+    "basis": "axis_basis.json"
    },
    {
     "layer": "A-DOOR-NUM",
-    "type": "opening_num",
-    "ref": "SYM-DOOR-LEAF",
-    "handle": "5A1",
+    "type": "door_num",
     "label": "M1",
-    "at": [
-     2700.0,
-     5400.0
-    ]
-   },
-   {
-    "layer": "A-DOOR-NUM",
-    "type": "opening_num",
-    "ref": "SYM-DOOR-LEAF",
-    "handle": "5A4",
-    "label": "M2",
+    "ref_handle": "5A4",
+    "basis_at": [
+     7800.0,
+     11700.0
+    ],
+    "match_dist": 0.0,
     "at": [
      7800.0,
      11700.0
@@ -238,10 +266,14 @@
    },
    {
     "layer": "A-DOOR-NUM",
-    "type": "opening_num",
-    "ref": "SYM-DOOR-LEAF",
-    "handle": "5A7",
-    "label": "M3",
+    "type": "door_num",
+    "label": "M2",
+    "ref_handle": "5A7",
+    "basis_at": [
+     8800.0,
+     8000.0
+    ],
+    "match_dist": 0.0,
     "at": [
      8800.0,
      8000.0
@@ -249,10 +281,14 @@
    },
    {
     "layer": "A-DOOR-NUM",
-    "type": "opening_num",
-    "ref": "SYM-DOOR-LEAF",
-    "handle": "5AA",
-    "label": "M4",
+    "type": "door_num",
+    "label": "M3",
+    "ref_handle": "5AA",
+    "basis_at": [
+     12900.0,
+     6300.0
+    ],
+    "match_dist": 0.0,
     "at": [
      12900.0,
      6300.0
@@ -260,10 +296,29 @@
    },
    {
     "layer": "A-DOOR-NUM",
-    "type": "opening_num",
-    "ref": "SYM-DOOR-LEAF",
-    "handle": "5AD",
+    "type": "door_num",
+    "label": "M4",
+    "ref_handle": "5A1",
+    "basis_at": [
+     2700.0,
+     5400.0
+    ],
+    "match_dist": 0.0,
+    "at": [
+     2700.0,
+     5400.0
+    ]
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
     "label": "M5",
+    "ref_handle": "5AD",
+    "basis_at": [
+     12900.0,
+     4750.0
+    ],
+    "match_dist": 0.0,
     "at": [
      12900.0,
      4750.0
@@ -271,10 +326,14 @@
    },
    {
     "layer": "A-DOOR-NUM",
-    "type": "opening_num",
-    "ref": "SYM-DOOR-LEAF",
-    "handle": "5B0",
+    "type": "door_num",
     "label": "M6",
+    "ref_handle": "5B0",
+    "basis_at": [
+     8250.0,
+     4650.0
+    ],
+    "match_dist": 0.0,
     "at": [
      8250.0,
      4650.0
@@ -282,10 +341,14 @@
    },
    {
     "layer": "A-DOOR-NUM",
-    "type": "opening_num",
-    "ref": "SYM-DOOR-LEAF",
-    "handle": "5B3",
+    "type": "door_num",
     "label": "M7",
+    "ref_handle": "5B3",
+    "basis_at": [
+     11600.0,
+     4650.0
+    ],
+    "match_dist": 0.0,
     "at": [
      11600.0,
      4650.0
@@ -293,35 +356,122 @@
    },
    {
     "layer": "A-DOOR-NUM",
-    "type": "opening_num",
-    "ref": "SYM-DOOR-LEAF",
-    "handle": "5B6",
+    "type": "door_num",
     "label": "M8",
-    "at": [
-     5700.0,
-     1400.0
-    ]
-   },
-   {
-    "layer": "A-DOOR-NUM",
-    "type": "opening_num",
-    "ref": "SYM-DOOR-LEAF",
-    "handle": "5B9",
-    "label": "M9",
+    "ref_handle": "5B9",
+    "basis_at": [
+     2900.0,
+     2560.0
+    ],
+    "match_dist": 0.0,
     "at": [
      2900.0,
      2560.0
     ]
    },
    {
-    "layer": "A-WIN-NUM",
-    "type": "opening_num",
-    "ref": "SYM-WIN-SPAN",
-    "handle": "5C3",
-    "label": "W1",
+    "layer": "A-DOOR-NUM",
+    "type": "door_num",
+    "label": "M9",
+    "ref_handle": "5B6",
+    "basis_at": [
+     5700.0,
+     1400.0
+    ],
+    "match_dist": 0.0,
     "at": [
-     3800.0,
-     13500.0
+     5700.0,
+     1400.0
+    ]
+   },
+   {
+    "layer": "A-WIN-NUM",
+    "type": "win_num",
+    "label": "W1",
+    "ref_handle": "A8",
+    "basis_at": [
+     5350.0,
+     12850.0
+    ],
+    "match_dist": 0.0,
+    "at": [
+     5350.0,
+     12850.0
+    ]
+   },
+   {
+    "layer": "A-WIN-NUM",
+    "type": "win_num",
+    "label": "W2",
+    "ref_handle": "B0",
+    "basis_at": [
+     16400.0,
+     9300.0
+    ],
+    "match_dist": 0.0,
+    "at": [
+     16400.0,
+     9300.0
+    ]
+   },
+   {
+    "layer": "A-WIN-NUM",
+    "type": "win_num",
+    "label": "W3",
+    "ref_handle": "AE",
+    "basis_at": [
+     15500.0,
+     1400.0
+    ],
+    "match_dist": 0.0,
+    "at": [
+     15500.0,
+     1400.0
+    ]
+   },
+   {
+    "layer": "A-WIN-NUM",
+    "type": "win_num",
+    "label": "W4",
+    "ref_handle": "B8",
+    "basis_at": [
+     6500.0,
+     -100.0
+    ],
+    "match_dist": 0.0,
+    "at": [
+     6500.0,
+     -100.0
+    ]
+   },
+   {
+    "layer": "A-WIN-NUM",
+    "type": "win_num",
+    "label": "W5",
+    "ref_handle": "B4",
+    "basis_at": [
+     9700.0,
+     -100.0
+    ],
+    "match_dist": 0.0,
+    "at": [
+     9700.0,
+     -100.0
+    ]
+   },
+   {
+    "layer": "A-WIN-NUM",
+    "type": "win_num",
+    "label": "W6",
+    "ref_handle": "B6",
+    "basis_at": [
+     13450.0,
+     -100.0
+    ],
+    "match_dist": 0.0,
+    "at": [
+     13450.0,
+     -100.0
     ]
    },
    {
@@ -360,7 +510,12 @@
     "label": "说    明: STYLE POC — 仅制图样式, 几何/XDATA/语义未变"
    }
   ],
+  "opening_count": {
+   "door_candidates": 9,
+   "window_candidates": 6
+  },
+  "unmatched": [],
   "dst": "A103_STYLE_POC.dxf",
-  "dst_sha": "2fef1f26d963ca34"
+  "dst_sha": "2a54cd37c2434579"
  }
 ]

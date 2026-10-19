@@ -57,7 +57,7 @@ C型_原始户型数字化基准图.dxf,7285527be00a,14E,700,700,,,,,UNRESOLVED,
 C型_原始户型数字化基准图.dxf,7285527be00a,14F,200,200,,,,,UNRESOLVED,A-DIMS只有尺寸线+界线无45°起止符号，cadvec无法绑定标注到几何段
 C型_原始户型数字化基准图.dxf,7285527be00a,150,100,100,,,,,UNRESOLVED,A-DIMS只有尺寸线+界线无45°起止符号，cadvec无法绑定标注到几何段
 D1_measured_injected.dxf,e842e13f40,3083E6,4200,4200,3600.0,4200.0,3600,600,INJECTED_FAULT_ACCEPTED,文字覆写被采信，挤掉正确方程，墙位偏移27-443mm，无冲突记录
-D_conflict.dxf,43fd436396,(synthetic),3200,3200,3000.0,,3000,200,LABEL_VS_GEOM,标记为?未读出(dim_labels 3/5)，未入dim_conflicts
-D_conflict.dxf,43fd436396,(synthetic),5100,5100,5000.0,,5000,100,LABEL_VS_GEOM,同上 ?5100
+D_conflict.dxf,43fd436396,(synthetic),3200,3200,3000.0,,3000,200,DIGITIZATION_MISMATCH,标记为?未读出(dim_labels 3/5)，未入dim_conflicts
+D_conflict.dxf,43fd436396,(synthetic),5100,5100,5000.0,,5000,100,DIGITIZATION_MISMATCH,同上 ?5100
 D3_same_span_conflict.dxf,b54c05d30c,(synthetic),2990,2990,3000.0,3008.8,3000,-20 vs 3010,SOURCE_DRAWING_CONFLICT,"正确检出 dim_conflicts=[""D1#1 标 2990 实际 3008.8""]"
-baseline vs measured,,,outline 15200x13800 vs 15099x13902,15200x13800,,15099x13902,15099x13902,~101x/~102y,AS_BUILT_VARIATION,开发商数字化图 vs 实测外轮廓;内部隔墙体系差异显著
+baseline vs measured,,,outline 15200x13800 vs 15099x13902,15200x13800,,15099x13902,15099x13902,~101x/~102y,CROSS_SOURCE_DERIVED_DIFF,基准图与实测属同一路径派生(原始户型图→数字化)，差异只能证明两版本几何不一致，不能单独证明施工偏差;需独立现场复测佐证

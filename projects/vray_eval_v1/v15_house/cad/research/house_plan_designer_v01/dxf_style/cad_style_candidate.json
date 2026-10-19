@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "name": "cad_style_candidate",
+    "status": "CANDIDATE — 仅供评审, 不得直接并入生产 cad_style.json",
+    "basis": "CAD_RESEARCH_V02 Gate 复核后提取的安全样式配置",
+    "verified_by": "STYLE_POC 回读断言: 实体缺失0/变更0, DIMENSION值不变, DEVINSRC/DEVINDIM XDATA 完整",
+    "pro_cad_validation": "NOT_RUN"
+  },
+  "lineweights_mm_x100": {
+    "A-WALL": 50, "A-WALL-RETAIN": 50, "A-WALL-RETAIN-STRUCT": 50, "A-WALL-REMODELED": 50,
+    "A-WALL-NEW": 50, "A-STAIR-NEW": 35, "A-SOFFIT-NEW": 25, "A-MISC-NEW": 25,
+    "A-WALL-DEMO-DESIGN": 35, "A-DEMO": 35,
+    "A-WALL-HOLD": 35, "A-WALL-REVIEW": 25, "A-CONFLICT": 25, "A-REVIEW": 25,
+    "A-DOOR": 25, "A-WINDOW": 25, "A-COLUMN": 50, "A-SHAFT": 25,
+    "A-STAIR": 30, "A-STAIR-DIRECTION": 25,
+    "A-DIMS": 13, "A-DIMS-LEGACY": 13, "A-TEXT": 25, "A-NOTE": 18,
+    "A-FURN": 13, "A-FIXT": 18, "A-STRUCT-UNDERLAY": 9, "A-SOFFIT": 18, "A-DESIGN": 30
+  },
+  "annotation_layers": {
+    "AXIS": {"color": 8, "linetype": "CENTER", "lineweight": 13,
+             "note": "外包控制线, 只允许来自共享 axis_basis, 禁止逐图推导"},
+    "AXIS-NUM": {"color": 8, "linetype": "Continuous", "lineweight": 18},
+    "A-DOOR-NUM": {"color": 2, "linetype": "Continuous", "lineweight": 18, "text_height": 220},
+    "A-WIN-NUM": {"color": 4, "linetype": "Continuous", "lineweight": 18, "text_height": 220}
+  },
+  "axis_policy": {
+    "rule": "共享基准, 少量外包控制线; 无可靠基准时不生成正式编号轴网",
+    "basis_file": "axis_basis.json",
+    "source": "A103_CONSTRUCTION_POC_V7 墙系外包",
+    "bubble_radius": 350, "bubble_text_height": 300, "extension_mm": 1500,
+    "bubble_placement": "仅下端与左端"
+  },
+  "opening_label_policy": {
+    "rule": "编号绑定稳定对象 handle (DEVINPOC XDATA group1005), 跨图编号由共享 opening_basis 保持一致",
+    "door_source_preference": ["SYM-DOOR-LEAF insert", "A-DOOR polyline"],
+    "window_source": "A-WINDOW polyline",
+    "nearest_match_tolerance_mm": 1200
+  },
+  "dimstyle_gb": {"name": "GB", "dimtsz": 140, "dimtxt": 180, "dimexe": 200,
+                  "dimexo": 300, "dimtad": 1, "dimdec": 0,
+                  "note": "仅新增样式定义, 不得改写现有 DIMENSION 实体"},
+  "title_block": {"paperspace": "Layout1", "x_right": 795, "y_start": 75, "row_pitch": 9,
+                  "text_height": 5, "align": "RIGHT"},
+  "requires_pro_cad_check": [
+    "SHX/中文大字体替换后的打印效果",
+    "CENTER 线型在 AutoCAD/QCAD 中的比例",
+    "1:50 视口实际打印比例",
+    "图框边距与标题栏布局"
+  ]
+}

@@ -1,0 +1,58 @@
+src,th,label,seg,seg_len,res,cls,note
+baseline,E1,5100,DD/F3,,,UNRESOLVED,"同行多链重叠: DD(5051),F3(3080)"
+baseline,E2,1900,DE/F5,,,UNRESOLVED,"同行多链重叠: DE(1875),F5(976)"
+baseline,E3,3200,DF/F8,,,UNRESOLVED,"同行多链重叠: DF(3176),F8(1779)"
+baseline,E4,3300,E0,3310,-9.7,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,FE,1000,DD/F2,,,UNRESOLVED,"同行多链重叠: DD(5051),F2(976)"
+baseline,FF,3100,DD/F3,,,UNRESOLVED,"同行多链重叠: DD(5051),F3(3080)"
+baseline,100,1000,F4,995,5.2,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,101,1000,DE/F5,,,UNRESOLVED,"同行多链重叠: DE(1875),F5(976)"
+baseline,102,900,F6,899,0.8,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,103,700,F7,689,11.3,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,104,1800,DF/F8,,,UNRESOLVED,"同行多链重叠: DF(3176),F8(1779)"
+baseline,105,700,F9,708,-7.9,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,106,700,FA,708,-7.9,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,107,1900,FB,1913,-13.1,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,108,700,FC,689,11.3,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,109,100,E0/FC,,,UNRESOLVED,"同行多链重叠: E0(3310),FC(689)"
+baseline,119,1400,112,1397,3.4,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,11A,1400,113,1397,3.4,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,11B,3000,114/134,,,UNRESOLVED,"同行多链重叠: 114(2985),134(2085)"
+baseline,11C,2100,115,2085,14.7,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,11D,3600,116/139,,,UNRESOLVED,"同行多链重叠: 116(3558),139(2181)"
+baseline,11E,3900,117/13C,,,UNRESOLVED,"同行多链重叠: 117(3941),13C(2525)"
+baseline,11F,900,118/13E,,,UNRESOLVED,"同行多链重叠: 118(937),13E(727)"
+baseline,141,1000,131,995,5.2,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,142,1000,132,995,5.2,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,143,400,133,402,-1.8,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,144,2100,134,2085,14.7,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,145,900,135,899,0.8,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,146,1400,136,1397,3.4,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,147,700,137,689,11.3,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,148,700,138,689,11.3,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,149,2200,116/139,,,UNRESOLVED,"同行多链重叠: 116(3558),139(2181)"
+baseline,14A,700,13A,689,11.3,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,14B,700,13B,708,-7.9,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,14C,2500,117/13C,,,UNRESOLVED,"同行多链重叠: 117(3941),13C(2525)"
+baseline,14D,700,13D,708,-7.9,CONSISTENT_VALUE_ASSISTED,位置多义，按数值一致性归入该链（辅助绑定）
+baseline,14E,700,118/13E,,,UNRESOLVED,"同行多链重叠: 118(937),13E(727)"
+baseline,14F,200,118/13E,,,UNRESOLVED,"同行多链重叠: 118(937),13E(727)"
+baseline,150,100,118/13F,,,UNRESOLVED,"同行多链重叠: 118(937),13F(210)"
+measured,3080F1,4500,"1314572,-285458->1314372,-289958",4504,,ORDINATE,ordinate标注 值4500=轴坐标; defpoint距4504非被量跨度
+measured,308110,1900,"1314372,-289958->1314372,-291858",1900,,ORDINATE,ordinate标注 值1900=轴坐标; defpoint距1900非被量跨度
+measured,30811D,4500,"1314372,-291858->1313472,-296358",4589,,ORDINATE,ordinate标注 值4500=轴坐标; defpoint距4589非被量跨度
+measured,30812A,2800,"1311272,-282658->1314572,-285458",4328,,ORDINATE,ordinate标注 值2800=轴坐标; defpoint距4328非被量跨度
+measured,308188,900,"1314472,-291958->1313572,-296458",4589,,ORDINATE,ordinate标注 值900=轴坐标; defpoint距4589非被量跨度
+measured,30819E,3900,"1313572,-296458->1309672,-296258",3905,,ORDINATE,ordinate标注 值3900=轴坐标; defpoint距3905非被量跨度
+measured,3081AB,3600,"1309672,-296258->1306072,-296258",3600,,ORDINATE,ordinate标注 值3600=轴坐标; defpoint距3600非被量跨度
+measured,3081B8,2100,"1306072,-296258->1303972,-296258",2100,,ORDINATE,ordinate标注 值2100=轴坐标; defpoint距2100非被量跨度
+measured,3081C5,3000,"1303972,-296258->1300972,-294158",3662,,ORDINATE,ordinate标注 值3000=轴坐标; defpoint距3662非被量跨度
+measured,3081D2,1400,"1300972,-294158->1299572,-295758",2126,,ORDINATE,ordinate标注 值1400=轴坐标; defpoint距2126非被量跨度
+measured,308215,3300,"1314472,-285358->1311172,-285558",3306,,ORDINATE,ordinate标注 值3300=轴坐标; defpoint距3306非被量跨度
+measured,30822B,3200,"1311172,-285558->1307972,-285558",3200,,ORDINATE,ordinate标注 值3200=轴坐标; defpoint距3200非被量跨度
+measured,308238,1900,"1307972,-285558->1306072,-285558",1900,,ORDINATE,ordinate标注 值1900=轴坐标; defpoint距1900非被量跨度
+measured,308245,5100,"1306072,-285558->1300972,-285325",5105,,ORDINATE,ordinate标注 值5100=轴坐标; defpoint距5105非被量跨度
+measured,308276,500,"1303672,-296358->1299472,-295858",4230,,ORDINATE,ordinate标注 值500=轴坐标; defpoint距4230非被量跨度
+measured,308295,1800,"1299472,-295858->1299672,-294058",1811,,ORDINATE,ordinate标注 值1800=轴坐标; defpoint距1811非被量跨度
+measured,3082A2,2200,"1299672,-294058->1301072,-291858",2608,,ORDINATE,ordinate标注 值2200=轴坐标; defpoint距2608非被量跨度
+measured,3082AF,8500,"1301072,-291858->1301072,-283358",8500,,ORDINATE,ordinate标注 值8500=轴坐标; defpoint距8500非被量跨度
