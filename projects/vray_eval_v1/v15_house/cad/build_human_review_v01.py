@@ -37,13 +37,15 @@ def col_of(e, doc, default='#555'):
     except Exception:
         return default
 
-def each_geom(path, offset=(0.0,0.0)):
-    """yield (layer, kind, payload, color). 展开 DIMENSION/INSERT 虚拟实体."""
+def each_geom(path, offset=(0.0,0.0), dims=False):
+    """yield (layer, kind, payload, color). 展开 INSERT 块; dims=False 时跳过
+    DIMENSION(审图面洁净; 标注仍在DXF内, QA读DXF)."""
     doc = ezdxf.readfile(path)
     frozen = {l.dxf.name for l in doc.layers if l.dxf.flags & 1}
     ox, oy = offset
     for e in doc.modelspace():
         if e.dxf.layer in frozen: continue
+        if e.dxftype() == 'DIMENSION' and not dims: continue
         col = col_of(e, doc)
         def put(ee, cc):
             t = ee.dxftype()
@@ -53,6 +55,9 @@ def each_geom(path, offset=(0.0,0.0)):
             elif t == 'LWPOLYLINE':
                 yield (ee.dxf.layer,'poly',[(p[0]+ox,p[1]+oy) for p in
                        ee.get_points('xy')],cc)
+            elif t == 'POLYLINE':
+                yield (ee.dxf.layer,'line',[(v.dxf.location.x+ox,
+                       v.dxf.location.y+oy) for v in ee.vertices],cc)
             elif t == 'CIRCLE':
                 yield (ee.dxf.layer,'circle',
                        ((ee.dxf.center.x+ox,ee.dxf.center.y+oy),ee.dxf.radius),cc)
@@ -79,10 +84,14 @@ def each_geom(path, offset=(0.0,0.0)):
         else:
             yield from put(e, col)
 
+DIM_OFF = {'A-DIMS','A-DIMS-LEGACY','Defpoints'}   # 审图面不画标注(仍在DXF内)
+
 def draw_geoms(ax, geoms, alpha=1.0, scale_lw=1.0,
-               only_layers=None, force_color=None, text=True):
+               only_layers=None, force_color=None, text=True,
+               skip_layers=DIM_OFF):
     for lay, kind, pl, c in geoms:
         if only_layers and lay not in only_layers: continue
+        if skip_layers and lay in skip_layers: continue
         cc = force_color or c
         if kind in ('line','poly'):
             xs=[p[0] for p in pl]; ys=[p[1] for p in pl]
@@ -101,10 +110,13 @@ def draw_geoms(ax, geoms, alpha=1.0, scale_lw=1.0,
             ins,txt = pl
             if txt.strip(): ax.annotate(txt,ins,fontsize=5,color=cc,alpha=alpha)
 
+WIN = (400, 16000, -1400, 15400)   # 固定出图窗口(同坐标同尺度, 不受游离图元影响)
+
 def full_fig(path, geoms, title, name, facecolor='white'):
     fig,ax=plt.subplots(figsize=(18,18))
     draw_geoms(ax,geoms)
-    ax.set_aspect('equal'); ax.autoscale(); ax.set_axis_off()
+    ax.set_xlim(WIN[0],WIN[1]); ax.set_ylim(WIN[2],WIN[3])
+    ax.set_aspect('equal'); ax.set_axis_off()
     ax.set_title(title,fontsize=12)
     fig.savefig(OUT/name,dpi=170,bbox_inches='tight',facecolor=facecolor)
     plt.close(fig); print('wrote',name)
@@ -133,7 +145,8 @@ full_fig(None, g_102, f'A102拆改图 sha:{SHA[F102.name]}', 'g1_a102_full.png')
 fig,ax=plt.subplots(figsize=(18,18))
 draw_geoms(ax,g_mea,alpha=.55,force_color='#999')                    # 现状灰
 draw_geoms(ax,[g for g in g_102 if g[0] not in ('A-TEXT','Defpoints')],scale_lw=1.3)
-ax.set_aspect('equal'); ax.autoscale(); ax.set_axis_off()
+ax.set_xlim(WIN[0],WIN[1]); ax.set_ylim(WIN[2],WIN[3])
+ax.set_aspect('equal'); ax.set_axis_off()
 ax.set_title(f'G1叠加: 灰=现状测绘 | 黑=保留 红=拟拆(设计确认) 品红=HOLD 蓝=新建 橙=待裁 绿=尺寸 | sha102:{SHA[F102.name]}',fontsize=11)
 fig.savefig(OUT/'g1_overlay.png',dpi=170,bbox_inches='tight',facecolor='white')
 plt.close(fig); print('wrote g1_overlay.png')

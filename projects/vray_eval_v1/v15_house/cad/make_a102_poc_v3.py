@@ -46,7 +46,7 @@ for m in GEO['managed_entities']:
 # 平面语义: 3级台阶=3条踢面线. WAVE_STEP_3_ARRIVAL 是 +450 到达平台(与第3踏同层),
 # 与 STEP_2 并集为一个踏步带, 不再独立成线误读作第4级.
 from shapely.geometry import Polygon as _P
-from shapely.ops import unary_union as _UU
+from shapely.ops import unary_union as _UU, linemerge
 _MERGED_ARRIVAL = False
 if 'WAVE_STEP_3_ARRIVAL' in polys and 'STEP_2' in polys:
     _u = _UU([_P(p) for p in polys['STEP_2']['parts'] + polys['WAVE_STEP_3_ARRIVAL']['parts']])
@@ -55,6 +55,36 @@ if 'WAVE_STEP_3_ARRIVAL' in polys and 'STEP_2' in polys:
         polys['STEP_2']['parts'] = [[[round(x,2),round(y,2)] for x,y in g.exterior.coords[:-1]]
                                     for g in _ups]
         _MERGED_ARRIVAL = True
+# 台阶绘制: 相邻踏面带共享的波形边在每条带内重复采样 → 画闭合足迹会出双线误读.
+# 改为: 台阶总轮廓(闭合LWPOLYLINE, 计入QJ9面积) + 内部踢面线(B_k∩B_{k+1}共享边,
+# POLYLINE不占墙体并集). 3级=踢面w0(轮廓西缘)/w1/w2 + 平台缘w4.
+_STP = {n: _UU([_P(p) for p in polys[n]['parts']])
+        for n in ('STEP_0','STEP_1','STEP_2') if polys.get(n,{}).get('parts')}
+_STAIR_U = _UU(list(_STP.values())) if _STP else None
+_step_done = False
+def draw_stair(role, lay='A-STAIR-NEW'):
+    global _step_done
+    if _step_done or _STAIR_U is None: return
+    _step_done = True
+    _gs = [_STAIR_U] if _STAIR_U.geom_type == 'Polygon' else \
+          [g for g in _STAIR_U.geoms if g.geom_type == 'Polygon']
+    for _g in _gs:
+        ent = msp.add_lwpolyline(
+            [[round(x,2),round(y,2)] for x,y in _g.exterior.coords[:-1]],
+            close=True, dxfattribs={'layer': lay})
+        ent.set_xdata('DEVINSRC', [(1000,'STAIR_GROUP'),(1000,'STEP_0'),(1000,'STEP_1'),
+            (1000,'STEP_2'),(1000,role),
+            (1000,'merged_arrival:WAVE_STEP_3_ARRIVAL' if _MERGED_ARRIVAL else '-')])
+    for a,b,tag in (('STEP_0','STEP_1','STAIR_RISER_L2'),
+                    ('STEP_1','STEP_2','STAIR_RISER_L3')):
+        if a not in _STP or b not in _STP: continue
+        _r = _STP[a].boundary.intersection(_STP[b].boundary)
+        _m = linemerge(_r)                      # 共享边逐段相交→先合并成整链
+        for ln in (list(_m.geoms) if hasattr(_m,'geoms') else [_m]):
+            if ln.geom_type!='LineString' or ln.length<200: continue
+            e2 = msp.add_polyline3d([(round(x,2),round(y,2),0) for x,y in ln.coords],
+                                    dxfattribs={'layer': lay})
+            e2.set_xdata('DEVINSRC', [(1000,tag),(1000,a),(1000,b)])
 counts = {}
 # 新建构件按类型分层: 台阶/上部构件不计入新增砌墙层
 COMP_102 = {'STAIR_STEP':'A-STAIR-NEW','SOFFIT_HEADER':'A-SOFFIT-NEW',
@@ -67,6 +97,8 @@ for e in REG['entries']:
     obj, _, suffix = e['object'].partition('#')
     if _MERGED_ARRIVAL and obj == 'WAVE_STEP_3_ARRIVAL':
         continue
+    if obj in _STP:                        # 台阶: 总轮廓+踢面线, 一次画完
+        draw_stair(role); continue
     if suffix.startswith('demol'):
         i = int(suffix[5:]); pts_list=[polys[obj]['demol'][i]] if i<len(polys[obj]['demol']) else None
     elif suffix.startswith('p'):

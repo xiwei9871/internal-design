@@ -683,8 +683,19 @@
  ],
  "managed_report": {
   "adopted": 52,
-  "created": 87,
+  "created": 83,
   "unmatched_source": [],
+  "stair": {
+   "outline_parts": 1,
+   "bands_merged": true
+  },
+  "legacy_stair_bands_frozen": [
+   "7F",
+   "1FE",
+   "1FF",
+   "201",
+   "203"
+  ],
   "stair_direction_moved": 4,
   "legacy_unbound": [
    {

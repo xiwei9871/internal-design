@@ -123,15 +123,57 @@ if 'A-DUP' not in doc.layers:
 doc.layers.get('A-DUP').dxf.flags = 1     # 重画保留墙的模型副本: 冻结避免重复线
 if 'A-STRUCT-UNDERLAY' not in doc.layers:
     doc.layers.new('A-STRUCT-UNDERLAY', dxfattribs={'color': 8})
+
+# --- 台阶绘制: 相邻踏面带共享的波形边在每条带内重复采样 → 画闭合足迹出双线误读.
+#     改为: 总轮廓(闭合, 计QJ9面积) + 内部踢面线w1/w2(共享边, POLYLINE不占并集).
+#     +450到达平台并入第3踏(STAIR_GROUP). 3级=轮廓西缘w0/w1/w2 + 平台缘w4. ---
+from shapely.geometry import Polygon as _SP
+from shapely.ops import unary_union as _SUU, linemerge as _LM
+_STP = {}
+for _m in GEO['managed_entities']:
+    _o = _m['objects'][0]
+    if NC_ROW.get(_o, {}).get('component_type') == 'STAIR_STEP' and _m.get('parts'):
+        _STP[_o] = _SUU([_SP(p['exterior']) for p in _m['parts']])
+_ARR_MRG = 'WAVE_STEP_3_ARRIVAL' in _STP
+if _ARR_MRG:
+    _a = _STP.pop('WAVE_STEP_3_ARRIVAL')
+    _STP['STEP_2'] = _STP['STEP_2'].union(_a) if 'STEP_2' in _STP else _a
+if _STP:
+    _U = _SUU(list(_STP.values()))
+    _gs = [_U] if _U.geom_type == 'Polygon' else \
+          [g for g in _U.geoms if g.geom_type == 'Polygon']
+    for _g in _gs:
+        _e = msp.add_lwpolyline(
+            [[round(x,2),round(y,2)] for x,y in _g.exterior.coords[:-1]],
+            close=True, dxfattribs={'layer':'A-STAIR'})
+        _e.set_xdata('DEVINSRC', [(1000,'STAIR_GROUP'),(1000,'STEP_0'),(1000,'STEP_1'),
+            (1000,'STEP_2'),(1000,'PROPOSED_NEW'),
+            (1000,'merged_arrival:WAVE_STEP_3_ARRIVAL' if _ARR_MRG else '-')])
+    for _a,_b,_t in (('STEP_0','STEP_1','STAIR_RISER_L2'),
+                     ('STEP_1','STEP_2','STAIR_RISER_L3')):
+        if _a not in _STP or _b not in _STP: continue
+        _rr = _LM(_STP[_a].boundary.intersection(_STP[_b].boundary))  # 逐段相交→合并整链
+        for _ln in (list(_rr.geoms) if hasattr(_rr,'geoms') else [_rr]):
+            if _ln.geom_type!='LineString' or _ln.length<200: continue
+            _e2 = msp.add_polyline3d([(round(x,2),round(y,2),0) for x,y in _ln.coords],
+                                     dxfattribs={'layer':'A-STAIR'})
+            _e2.set_xdata('DEVINSRC',[(1000,_t),(1000,_a),(1000,_b)])
+    managed_report['stair'] = {'outline_parts': len(_gs),
+                               'bands_merged': _ARR_MRG}
+
 for spec in GEO['managed_entities']:
     names = spec['objects']
     primary = names[0]
+    if primary in _STP or primary == 'WAVE_STEP_3_ARRIVAL':
+        continue                                  # 台阶已由 STAIR_GROUP+踢面线绘制
     if not spec.get('parts') and not spec.get('demolished_parts'):
         managed_report['unmatched_source'].append(primary); continue
+    _is_step = False
+    _draw_parts = spec['parts']
     # --- 每个 part 一个实体 (MultiPolygon 保留, 不再坍缩) ---
     conflict = primary in CONFLICT_OBJS and spec['design_status'] != 'EXISTING_RETAINED'
     bound_any = False
-    for pi, part in enumerate(spec['parts']):
+    for pi, part in enumerate(_draw_parts):
         draw_layer = spec['layer']
         k = primary if len(spec['parts'])==1 else f'{primary}#p{pi}'
         r = REG103.get(k)
@@ -142,6 +184,7 @@ for spec in GEO['managed_entities']:
             draw_layer = 'A-REVIEW' if any(
                 e['object']==k and e.get('overlap_class') for e in REG['entries']) \
                 else comp_layer(k)
+        if _is_step: draw_layer = 'A-STAIR'
         if conflict: draw_layer = 'A-CONFLICT'
         pts = [(float(x), float(y)) for x, y in part['exterior']]
         pbb = (min(p[0] for p in pts), min(p[1] for p in pts),
@@ -172,6 +215,8 @@ for spec in GEO['managed_entities']:
             managed_report['created'] += 1
         target.set_xdata('DEVINSRC', [(1000, xkey)] + [(1000, n) for n in names]
                          + [(1000, spec['design_status'])]
+                         + ([(1000, 'merged_arrival:WAVE_STEP_3_ARRIVAL')]
+                            if primary == 'STEP_2' else [])
                          + ([(1000, f'cut:{spec["cut_height"]}')] if spec.get('cut_height') else []))
         for hi, hole in enumerate(part.get('holes', [])):
             he = msp.add_lwpolyline([(float(x), float(y)) for x, y in hole], close=True,
@@ -179,7 +224,7 @@ for spec in GEO['managed_entities']:
             he.set_xdata('DEVINSRC', [(1000, f'{xkey}h{hi}'), (1000, spec['design_status'])])
         bound_any = True
         # DRAW_NEW_PART: 仅重画NC差集新段(完整轮廓已被上面画了, 改为新建层差集段)
-        if r == 'DRAW_NEW_PART' and draw_layer in ('A-DESIGN','A-REVIEW',
+        if r == 'DRAW_NEW_PART' and not _is_step and draw_layer in ('A-DESIGN','A-REVIEW',
                 'A-STAIR','A-SOFFIT','A-MISC-NEW') and k in NC_ROW:
             target.dxf.layer = 'A-STRUCT-UNDERLAY'
             for npts in NC_ROW[k]['new_geoms']:
@@ -230,6 +275,25 @@ if _st2 and _arr:
             _e.set_xdata('DEVINSRC',[(1000,_xd0(_pool[0]) if _i==0 else 'STEP_2#arrival_ext'),
                 (1000,'merged_arrival:WAVE_STEP_3_ARRIVAL')])
         for _e in _pool[len(_ups):]: _e.destroy()
+
+# --- 底图遗留旧台阶带曲线 (A-FURN等层, 无XDATA, 与台阶总轮廓>60%重合) → 冻结A-DUP ---
+_legacy_stair = []
+if _STP:
+    _U_ALL = _SUU(list(_STP.values()))
+    for _e in msp:
+        if _e.dxftype() != 'LWPOLYLINE': continue
+        try:
+            if _e.get_xdata('DEVINSRC'): continue
+        except ezdxf.DXFValueError: pass
+        _pts = [(float(p[0]),float(p[1])) for p in _e.get_points('xy')]
+        if len(_pts) < 3: continue
+        _g = _SP(_pts)
+        if _g.area > 2e5 and _g.intersection(_U_ALL).area / _g.area > 0.6:
+            _e.dxf.layer = 'A-DUP'
+            _e.set_xdata('DEVINSRC', [(1000,'LEGACY_STAIR_BAND'),
+                                      (1000,'superseded_by:STAIR_GROUP')])
+            _legacy_stair.append(_e.dxf.handle)
+managed_report['legacy_stair_bands_frozen'] = _legacy_stair
 
 # --- 台阶上行标识: 底图箭头线段 1F9/1FA/1FB + '上'字 → 独立 A-STAIR-DIRECTION ---
 if 'A-STAIR-DIRECTION' not in doc.layers:
