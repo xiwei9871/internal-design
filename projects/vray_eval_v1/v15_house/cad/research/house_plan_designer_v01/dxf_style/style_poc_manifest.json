@@ -1,0 +1,366 @@
+[
+ {
+  "src": "A102_WALL_DIFF_POC_V3.dxf",
+  "src_sha": "b6793e6361f76a8c",
+  "added": [
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 2800.0,
+    "label": "1"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 7275.0,
+    "label": "2"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 7850.0,
+    "label": "3"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 9800.0,
+    "label": "4"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 11500.0,
+    "label": "5"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 13000.0,
+    "label": "6"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 15350.0,
+    "label": "7"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 16250.0,
+    "label": "8"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": -100.0,
+    "label": "A"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 550.0,
+    "label": "B"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 4550.0,
+    "label": "C"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 7900.0,
+    "label": "D"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 10800.0,
+    "label": "E"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 13500.0,
+    "label": "F"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "工程名称: V15 全屋改造"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "图    名: 墙体拆改图（样式POC）"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "比    例: 1:50"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "单    位: 毫米 mm"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "图    号: A102-POC"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "日    期: 2026-10-18"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "说    明: STYLE POC — 仅制图样式, 几何/XDATA/语义未变"
+   }
+  ],
+  "dst": "A102_STYLE_POC.dxf",
+  "dst_sha": "68a642e224dc2460"
+ },
+ {
+  "src": "A103_CONSTRUCTION_POC_V7.dxf",
+  "src_sha": "4fafc0480aa82842",
+  "added": [
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 2800.0,
+    "label": "1"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 7275.0,
+    "label": "2"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 7850.0,
+    "label": "3"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 9800.0,
+    "label": "4"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 11500.0,
+    "label": "5"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 13000.0,
+    "label": "6"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 15500.0,
+    "label": "7"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_v",
+    "at": 16400.0,
+    "label": "8"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": -100.0,
+    "label": "A"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 550.0,
+    "label": "B"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 4550.0,
+    "label": "C"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 7900.0,
+    "label": "D"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 10800.0,
+    "label": "E"
+   },
+   {
+    "layer": "AXIS-NUM",
+    "type": "axis_h",
+    "at": 13500.0,
+    "label": "F"
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "opening_num",
+    "ref": "SYM-DOOR-LEAF",
+    "handle": "5A1",
+    "label": "M1",
+    "at": [
+     2700.0,
+     5400.0
+    ]
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "opening_num",
+    "ref": "SYM-DOOR-LEAF",
+    "handle": "5A4",
+    "label": "M2",
+    "at": [
+     7800.0,
+     11700.0
+    ]
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "opening_num",
+    "ref": "SYM-DOOR-LEAF",
+    "handle": "5A7",
+    "label": "M3",
+    "at": [
+     8800.0,
+     8000.0
+    ]
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "opening_num",
+    "ref": "SYM-DOOR-LEAF",
+    "handle": "5AA",
+    "label": "M4",
+    "at": [
+     12900.0,
+     6300.0
+    ]
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "opening_num",
+    "ref": "SYM-DOOR-LEAF",
+    "handle": "5AD",
+    "label": "M5",
+    "at": [
+     12900.0,
+     4750.0
+    ]
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "opening_num",
+    "ref": "SYM-DOOR-LEAF",
+    "handle": "5B0",
+    "label": "M6",
+    "at": [
+     8250.0,
+     4650.0
+    ]
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "opening_num",
+    "ref": "SYM-DOOR-LEAF",
+    "handle": "5B3",
+    "label": "M7",
+    "at": [
+     11600.0,
+     4650.0
+    ]
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "opening_num",
+    "ref": "SYM-DOOR-LEAF",
+    "handle": "5B6",
+    "label": "M8",
+    "at": [
+     5700.0,
+     1400.0
+    ]
+   },
+   {
+    "layer": "A-DOOR-NUM",
+    "type": "opening_num",
+    "ref": "SYM-DOOR-LEAF",
+    "handle": "5B9",
+    "label": "M9",
+    "at": [
+     2900.0,
+     2560.0
+    ]
+   },
+   {
+    "layer": "A-WIN-NUM",
+    "type": "opening_num",
+    "ref": "SYM-WIN-SPAN",
+    "handle": "5C3",
+    "label": "W1",
+    "at": [
+     3800.0,
+     13500.0
+    ]
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "工程名称: V15 全屋改造"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "图    名: 平面布置图（样式POC）"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "比    例: 1:50"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "单    位: 毫米 mm"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "图    号: A103-POC"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "日    期: 2026-10-18"
+   },
+   {
+    "layer": "0(pspace)",
+    "type": "title_field",
+    "label": "说    明: STYLE POC — 仅制图样式, 几何/XDATA/语义未变"
+   }
+  ],
+  "dst": "A103_STYLE_POC.dxf",
+  "dst_sha": "2fef1f26d963ca34"
+ }
+]

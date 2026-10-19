@@ -1,0 +1,23 @@
+{
+ "upstream": {
+  "repo": "https://github.com/ZWD11/house-plan-designer",
+  "commit": "ab7bb1c52eeb0056bfff782ba71bb9f5faa1e1ab",
+  "license": "MIT (LICENSE file present, author ZWD11)",
+  "vendored_at": "projects/vray_eval_v1/v15_house/cad/research/_vendor/house-plan-designer",
+  "vendored_on": "2026-10-18",
+  "method": "git clone of full repo; no skill installation; no SKILL.md workflow executed"
+ },
+ "local_env": {
+  "venv": "projects/vray_eval_v1/v15_house/cad/research/cadvec_venv",
+  "python": "3.14",
+  "ezdxf": "1.4.5",
+  "numpy": "2.5.4",
+  "opencv-python-headless": "5.0.0",
+  "pymupdf": "installed (fitz API deprecation warning only)"
+ },
+ "isolation": {
+  "no_global_install": true,
+  "no_skill_activation": true,
+  "production_files_untouched": true
+ }
+}
