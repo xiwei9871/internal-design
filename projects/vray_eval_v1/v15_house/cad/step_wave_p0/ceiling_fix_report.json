@@ -1,0 +1,22 @@
+{
+ "TRANSITION_moved": 84,
+ "strip_verts": 98,
+ "V7_CEILING_LOW": {
+  "nonmanifold": 14,
+  "degenerate": 0,
+  "verts": 234,
+  "faces": 329
+ },
+ "V7_CEILING_HIGH": {
+  "nonmanifold": 14,
+  "degenerate": 0,
+  "verts": 66,
+  "faces": 81
+ },
+ "V7_CEILING_450MM_TRANSITION": {
+  "nonmanifold": 88,
+  "degenerate": 2,
+  "verts": 88,
+  "faces": 22
+ }
+}
