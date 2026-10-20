@@ -1,7 +1,7 @@
 {
- "method": "boolean EXACT: HIGH\u2229box(x>=8.0|y<4.5); LOW\u222a(HIGH\u2229x<8,y>=4.5 \u964d0.45m)\u222a\u5899\u5185\u53e3\u888b; TRANSITION\u9876\u70b9\u2192x8.0",
+ "method": "boolean EXACT: HIGH∩box(x>=8.0|y<4.5); LOW∪(HIGH∩x<8,y>=4.5 降0.45m)∪墙内口袋; TRANSITION顶点→x8.0",
  "junction_x_mm": 8000,
- "junction_note": "x7.8\u5357\u6bb5\u5dee\u503c=\u7535\u89c6\u5899200mm\u539a\u5ea6(\u4e1a\u4e3b\u51bb\u7ed3,\u6309\u5899\u4f53\u906e\u6321\u8282\u70b9\u5904\u7406,\u975e\u504f\u5dee)",
+ "junction_note": "x7.8南段差值=电视墙200mm厚度(业主冻结,按墙体遮挡节点处理,非偏差)",
  "V7_CEILING_LOW": {
   "nonmanifold": 0,
   "degenerate": 3,
@@ -40,6 +40,52 @@
    "6.0": 8.0,
    "6.5": 8.0,
    "8.0": 8.0
+  }
+ },
+ "p032_final": {
+  "candidate_sha256": "233fba0549baa5395c4e5ba3d8a61b45edd0ce67ed07397c7562e0b09c98889f",
+  "V7_CEILING_LOW": {
+   "nonmanifold": 0,
+   "degenerate": 0,
+   "verts": 222,
+   "faces": 315,
+   "valid": true,
+   "wire_edges": 0,
+   "hub_fix": "5个四顶点重合枢纽面→单点焊接+自环溶除: (8.0,10.9,2.92),(7.8,4.5,2.8),(7.8,4.5,2.92),(6.7,6.6,2.92),(5.7,5.6,2.92)"
+  },
+  "V7_CEILING_HIGH": {
+   "nonmanifold": 0,
+   "degenerate": 0,
+   "verts": 62,
+   "faces": 76,
+   "valid": true,
+   "wire_edges": 0
+  },
+  "V7_CEILING_450MM_TRANSITION": {
+   "nonmanifold": 6,
+   "degenerate": 0,
+   "verts": 6,
+   "faces": 2,
+   "valid": true,
+   "wire_edges": 0,
+   "note": "焊接竖板条带 路径(8.0,4.7)-(8.0,10.9)-(13.1,10.9) z2.8-3.25; 6边界边=顶2+底2+端2 设计开放"
+  },
+  "pocket_burial": {
+   "region_verts": 35,
+   "exposed": 0,
+   "walls": [
+    "W_wall_md_0015 x7.8-8.0 y0.2-4.5",
+    "W_wall_md_0044 x5.9-7.8 y4.5-4.7",
+    "R4_DOOR_WEST_CONNECTED_RETURN x7.8-8.15 y4.5-4.7"
+   ],
+   "footprint": "六边形切角 (7.80,4.49)(8.0,4.49)(8.0,4.69)(7.79,4.69)(7.79,4.50)(7.80,4.50)"
+  },
+  "junction_scanline": {
+   "LOW_east_x@y": {
+    "4.45": 7.8,
+    "4.55-10.9": 8.0
+   },
+   "HIGH_west_x@y4.75-10.9": 8.0
   }
  }
 }
