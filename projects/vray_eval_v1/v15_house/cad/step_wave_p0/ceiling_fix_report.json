@@ -1,22 +1,45 @@
 {
- "TRANSITION_moved": 84,
- "strip_verts": 98,
+ "method": "boolean EXACT: HIGH\u2229box(x>=8.0|y<4.5); LOW\u222a(HIGH\u2229x<8,y>=4.5 \u964d0.45m)\u222a\u5899\u5185\u53e3\u888b; TRANSITION\u9876\u70b9\u2192x8.0",
+ "junction_x_mm": 8000,
+ "junction_note": "x7.8\u5357\u6bb5\u5dee\u503c=\u7535\u89c6\u5899200mm\u539a\u5ea6(\u4e1a\u4e3b\u51bb\u7ed3,\u6309\u5899\u4f53\u906e\u6321\u8282\u70b9\u5904\u7406,\u975e\u504f\u5dee)",
  "V7_CEILING_LOW": {
-  "nonmanifold": 14,
-  "degenerate": 0,
-  "verts": 234,
-  "faces": 329
+  "nonmanifold": 0,
+  "degenerate": 3,
+  "verts": 241,
+  "faces": 331,
+  "valid": true,
+  "junction_min_x": {
+   "5.0": 8.0,
+   "5.5": 5.7,
+   "6.0": 5.712,
+   "6.5": 5.957,
+   "8.0": 2.9,
+   "10.5": 7.9
+  }
  },
  "V7_CEILING_HIGH": {
-  "nonmanifold": 14,
+  "nonmanifold": 0,
   "degenerate": 0,
-  "verts": 66,
-  "faces": 81
+  "verts": 62,
+  "faces": 76,
+  "valid": true,
+  "junction_min_x": {
+   "5.0": 8.0,
+   "8.0": 8.0,
+   "10.5": 8.0
+  }
  },
  "V7_CEILING_450MM_TRANSITION": {
-  "nonmanifold": 88,
-  "degenerate": 2,
-  "verts": 88,
-  "faces": 22
+  "nonmanifold": 82,
+  "degenerate": 0,
+  "verts": 84,
+  "faces": 20,
+  "valid": true,
+  "junction_min_x": {
+   "5.5": 8.0,
+   "6.0": 8.0,
+   "6.5": 8.0,
+   "8.0": 8.0
+  }
  }
 }
