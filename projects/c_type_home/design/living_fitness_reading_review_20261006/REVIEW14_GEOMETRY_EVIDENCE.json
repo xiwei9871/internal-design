@@ -1,0 +1,10 @@
+{
+  "native_collision_pairs": [],
+  "actual_floor_below": true,
+  "frozen_r4_unchanged": true,
+  "freezer_axis_source_xyz": "Y",
+  "no_extra_freezer_cover": true,
+  "source_sha256": "0d2dfc975b8aa25ff193362d6ca095df10dd8d65837a311381a14046730632e8",
+  "entity_count": 1068,
+  "functional_opening_sweeps_certified": false
+}

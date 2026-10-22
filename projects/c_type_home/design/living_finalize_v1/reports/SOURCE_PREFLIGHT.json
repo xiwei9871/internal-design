@@ -1,0 +1,216 @@
+{
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+  "source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "object_count": 1544,
+  "collection_count": 35,
+  "blender": "5.2.1 LTS",
+  "ceilings": [
+    {
+      "name": "CEILING_LOWER",
+      "hide_render": false,
+      "hide_viewport": false,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dims": [
+        11.599900245666504,
+        13.790200233459473,
+        0.12000012397766113
+      ],
+      "collections": [
+        "03_EXISTING_CEILING"
+      ]
+    },
+    {
+      "name": "CEILING_STAIRWELL",
+      "hide_render": false,
+      "hide_viewport": false,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dims": [
+        0.6000003814697266,
+        1.200000286102295,
+        0.11999988555908203
+      ],
+      "collections": [
+        "03_EXISTING_CEILING"
+      ]
+    },
+    {
+      "name": "CEILING_UPPER",
+      "hide_render": false,
+      "hide_viewport": false,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dims": [
+        10.59999942779541,
+        12.300000190734863,
+        0.11999988555908203
+      ],
+      "collections": [
+        "03_EXISTING_CEILING"
+      ]
+    },
+    {
+      "name": "CEILING_UPPER_SEAM_0",
+      "hide_render": false,
+      "hide_viewport": false,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dims": [
+        0.25,
+        0.09980010986328125,
+        0.11999988555908203
+      ],
+      "collections": [
+        "03_EXISTING_CEILING"
+      ]
+    },
+    {
+      "name": "CEILING_UPPER_SEAM_1",
+      "hide_render": false,
+      "hide_viewport": false,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dims": [
+        0.4520998001098633,
+        0.20000028610229492,
+        0.11999988555908203
+      ],
+      "collections": [
+        "03_EXISTING_CEILING"
+      ]
+    },
+    {
+      "name": "CEILING_UPPER_SEAM_2",
+      "hide_render": false,
+      "hide_viewport": false,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dims": [
+        0.19999980926513672,
+        0.08979988098144531,
+        0.11999988555908203
+      ],
+      "collections": [
+        "03_EXISTING_CEILING"
+      ]
+    },
+    {
+      "name": "CEILING_UPPER_SEAM_3",
+      "hide_render": false,
+      "hide_viewport": false,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dims": [
+        0.19990062713623047,
+        0.08979988098144531,
+        0.11999988555908203
+      ],
+      "collections": [
+        "03_EXISTING_CEILING"
+      ]
+    },
+    {
+      "name": "CEILING_UPPER_SEAM_4",
+      "hide_render": false,
+      "hide_viewport": false,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dims": [
+        0.19989967346191406,
+        0.09999990463256836,
+        0.11999988555908203
+      ],
+      "collections": [
+        "03_EXISTING_CEILING"
+      ]
+    },
+    {
+      "name": "FASCIA_CEILING_CURVE",
+      "hide_render": false,
+      "hide_viewport": false,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dims": [
+        1.5,
+        1.9000000953674316,
+        0.4500000476837158
+      ],
+      "collections": [
+        "03_EXISTING_CEILING"
+      ]
+    }
+  ],
+  "floor_objects": [
+    {
+      "name": "FLOOR_LOWER",
+      "collections": [
+        "02_EXISTING_SPLIT_LEVEL"
+      ]
+    },
+    {
+      "name": "FLOOR_UPPER_SEAM_2",
+      "collections": [
+        "02_EXISTING_SPLIT_LEVEL"
+      ]
+    },
+    {
+      "name": "FLOOR_UPPER_SEAM_3",
+      "collections": [
+        "02_EXISTING_SPLIT_LEVEL"
+      ]
+    },
+    {
+      "name": "R3_BATH_FLOOR",
+      "collections": [
+        "COL_SECONDARY_BATH_R3_A"
+      ]
+    },
+    {
+      "name": "R4_UPPER_FLOOR_CONTINUOUS_STRAIGHT_THRESHOLD",
+      "collections": [
+        "COL_R4_SECONDARY_BEDROOM_EW_INWARD_DOOR"
+      ]
+    }
+  ],
+  "device": {
+    "backend": "METAL",
+    "devices": [
+      {
+        "name": "Apple M4",
+        "type": "CPU"
+      },
+      {
+        "name": "Apple M4 (GPU - 10 cores)",
+        "type": "METAL"
+      }
+    ]
+  }
+}

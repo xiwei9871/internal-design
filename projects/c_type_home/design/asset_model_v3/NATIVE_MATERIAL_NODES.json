@@ -1,0 +1,1104 @@
+[
+  {
+    "asset": "linen",
+    "materials": [
+      {
+        "name": "rough_linen",
+        "nodes": [
+          {
+            "type": "OUTPUT_MATERIAL",
+            "name": "Material Output",
+            "inputs": {
+              "Displacement": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              },
+              "Thickness": {
+                "value": 0.0,
+                "linked": false
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "BSDF_PRINCIPLED",
+            "name": "Principled BSDF.001",
+            "inputs": {
+              "Base Color": {
+                "value": [
+                  0.800000011920929,
+                  0.800000011920929,
+                  0.800000011920929,
+                  1.0
+                ],
+                "linked": true
+              },
+              "Metallic": {
+                "value": 0.0,
+                "linked": true
+              },
+              "Roughness": {
+                "value": 0.5,
+                "linked": true
+              },
+              "IOR": {
+                "value": 1.5,
+                "linked": false
+              },
+              "Alpha": {
+                "value": 1.0,
+                "linked": true
+              },
+              "Thin Wall": {
+                "value": false,
+                "linked": false
+              },
+              "Normal": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              },
+              "Weight": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Diffuse Roughness": {
+                "value": 0.0,
+                "linked": true
+              },
+              "Subsurface Weight": {
+                "value": 0.10144927352666855,
+                "linked": false
+              },
+              "Subsurface Radius": {
+                "value": [
+                  0.10000000149011612,
+                  0.20000000298023224,
+                  0.5
+                ],
+                "linked": false
+              },
+              "Subsurface Scale": {
+                "value": 0.05000000074505806,
+                "linked": false
+              },
+              "Subsurface IOR": {
+                "value": 1.399999976158142,
+                "linked": false
+              },
+              "Subsurface Anisotropy": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Specular IOR Level": {
+                "value": 0.5,
+                "linked": true
+              },
+              "Specular Tint": {
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "linked": false
+              },
+              "Anisotropic": {
+                "value": 0.0,
+                "linked": true
+              },
+              "Anisotropic Rotation": {
+                "value": 0.0,
+                "linked": true
+              },
+              "Tangent": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              },
+              "Transmission Weight": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Coat Weight": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Coat Roughness": {
+                "value": 0.029999999329447746,
+                "linked": false
+              },
+              "Coat IOR": {
+                "value": 1.5,
+                "linked": false
+              },
+              "Coat Tint": {
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "linked": false
+              },
+              "Coat Normal": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": false
+              },
+              "Sheen Weight": {
+                "value": 0.20000000298023224,
+                "linked": false
+              },
+              "Sheen Roughness": {
+                "value": 0.5,
+                "linked": false
+              },
+              "Sheen Tint": {
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "linked": false
+              },
+              "Emission Color": {
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "linked": false
+              },
+              "Emission Strength": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Thin Film Thickness": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Thin Film IOR": {
+                "value": 1.3300000429153442,
+                "linked": false
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "MAPPING",
+            "name": "Mapping",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              },
+              "Location": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": false
+              },
+              "Rotation": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": false
+              },
+              "Scale": {
+                "value": [
+                  1.0021862983703613,
+                  1.0,
+                  1.0
+                ],
+                "linked": false
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "TEX_COORD",
+            "name": "Texture Coordinate.001",
+            "inputs": {},
+            "image": null
+          },
+          {
+            "type": "FRAME",
+            "name": "Frame.002",
+            "inputs": {},
+            "image": null
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "disp",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/rough_linen_disp_1k.png"
+          },
+          {
+            "type": "DISPLACEMENT",
+            "name": "Displacement.001",
+            "inputs": {
+              "Height": {
+                "value": 0.0,
+                "linked": true
+              },
+              "Midlevel": {
+                "value": 0.5,
+                "linked": false
+              },
+              "Scale": {
+                "value": 0.0005000000237487257,
+                "linked": false
+              },
+              "Normal": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": false
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "diff",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/rough_linen_diff_1k.jpg"
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "metal",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/rough_linen_metal_1k.exr"
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "spec_ior",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/rough_linen_spec_ior_1k.png"
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "rough",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/rough_linen_rough_1k.exr"
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "nor_gl",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/rough_linen_nor_gl_1k.exr"
+          },
+          {
+            "type": "NORMAL_MAP",
+            "name": "Normal Map.001",
+            "inputs": {
+              "Strength": {
+                "value": 1.0,
+                "linked": false
+              },
+              "Color": {
+                "value": [
+                  0.5,
+                  0.5,
+                  1.0,
+                  1.0
+                ],
+                "linked": true
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "REROUTE",
+            "name": "Reroute.001",
+            "inputs": {
+              "Input": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "FRAME",
+            "name": "Frame.004",
+            "inputs": {},
+            "image": null
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "anisotropy_strength",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/rough_linen_anisotropy_strength_1k.png"
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "anisotropy_rotation",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/rough_linen_anisotropy_rotation_1k.png"
+          },
+          {
+            "type": "TANGENT",
+            "name": "Tangent",
+            "inputs": {},
+            "image": null
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "metal.001",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/rough_linen_mask_1k.png"
+          }
+        ],
+        "links": [
+          [
+            "Texture Coordinate.001",
+            "UV",
+            "Mapping",
+            "Vector"
+          ],
+          [
+            "disp",
+            "Color",
+            "Displacement.001",
+            "Height"
+          ],
+          [
+            "Displacement.001",
+            "Displacement",
+            "Material Output",
+            "Displacement"
+          ],
+          [
+            "diff",
+            "Color",
+            "Principled BSDF.001",
+            "Base Color"
+          ],
+          [
+            "metal",
+            "Color",
+            "Principled BSDF.001",
+            "Metallic"
+          ],
+          [
+            "rough",
+            "Color",
+            "Principled BSDF.001",
+            "Roughness"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "diff",
+            "Vector"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "metal",
+            "Vector"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "spec_ior",
+            "Vector"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "rough",
+            "Vector"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "disp",
+            "Vector"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "nor_gl",
+            "Vector"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "anisotropy_strength",
+            "Vector"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "anisotropy_rotation",
+            "Vector"
+          ],
+          [
+            "anisotropy_strength",
+            "Color",
+            "Principled BSDF.001",
+            "Anisotropic"
+          ],
+          [
+            "anisotropy_rotation",
+            "Color",
+            "Principled BSDF.001",
+            "Anisotropic Rotation"
+          ],
+          [
+            "spec_ior",
+            "Color",
+            "Principled BSDF.001",
+            "Specular IOR Level"
+          ],
+          [
+            "Mapping",
+            "Vector",
+            "Reroute.001",
+            "Input"
+          ],
+          [
+            "nor_gl",
+            "Color",
+            "Normal Map.001",
+            "Color"
+          ],
+          [
+            "Normal Map.001",
+            "Normal",
+            "Principled BSDF.001",
+            "Normal"
+          ],
+          [
+            "Principled BSDF.001",
+            "BSDF",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "Tangent",
+            "Tangent",
+            "Principled BSDF.001",
+            "Tangent"
+          ],
+          [
+            "Reroute.001",
+            "Output",
+            "metal.001",
+            "Vector"
+          ],
+          [
+            "metal.001",
+            "Color",
+            "Principled BSDF.001",
+            "Alpha"
+          ],
+          [
+            "rough",
+            "Color",
+            "Principled BSDF.001",
+            "Diffuse Roughness"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "asset": "ash",
+    "materials": [
+      {
+        "name": "ash_veneer",
+        "nodes": [
+          {
+            "type": "OUTPUT_MATERIAL",
+            "name": "Material Output",
+            "inputs": {
+              "Displacement": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              },
+              "Thickness": {
+                "value": 0.0,
+                "linked": false
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "BSDF_PRINCIPLED",
+            "name": "Principled BSDF",
+            "inputs": {
+              "Base Color": {
+                "value": [
+                  0.800000011920929,
+                  0.800000011920929,
+                  0.800000011920929,
+                  1.0
+                ],
+                "linked": true
+              },
+              "Metallic": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Roughness": {
+                "value": 0.5,
+                "linked": true
+              },
+              "IOR": {
+                "value": 1.4500000476837158,
+                "linked": false
+              },
+              "Alpha": {
+                "value": 1.0,
+                "linked": false
+              },
+              "Thin Wall": {
+                "value": false,
+                "linked": false
+              },
+              "Normal": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              },
+              "Weight": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Diffuse Roughness": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Subsurface Weight": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Subsurface Radius": {
+                "value": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "linked": false
+              },
+              "Subsurface Scale": {
+                "value": 0.05000000074505806,
+                "linked": false
+              },
+              "Subsurface IOR": {
+                "value": 1.399999976158142,
+                "linked": false
+              },
+              "Subsurface Anisotropy": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Specular IOR Level": {
+                "value": 0.5,
+                "linked": false
+              },
+              "Specular Tint": {
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "linked": false
+              },
+              "Anisotropic": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Anisotropic Rotation": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Tangent": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": false
+              },
+              "Transmission Weight": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Coat Weight": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Coat Roughness": {
+                "value": 0.029999999329447746,
+                "linked": false
+              },
+              "Coat IOR": {
+                "value": 1.5,
+                "linked": false
+              },
+              "Coat Tint": {
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "linked": false
+              },
+              "Coat Normal": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": false
+              },
+              "Sheen Weight": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Sheen Roughness": {
+                "value": 0.5,
+                "linked": false
+              },
+              "Sheen Tint": {
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "linked": false
+              },
+              "Emission Color": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "linked": false
+              },
+              "Emission Strength": {
+                "value": 1.0,
+                "linked": false
+              },
+              "Thin Film Thickness": {
+                "value": 0.0,
+                "linked": false
+              },
+              "Thin Film IOR": {
+                "value": 1.3300000429153442,
+                "linked": false
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "Image Texture",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/ash_veneer_disp_1k.png"
+          },
+          {
+            "type": "DISPLACEMENT",
+            "name": "Displacement",
+            "inputs": {
+              "Height": {
+                "value": 0.0,
+                "linked": true
+              },
+              "Midlevel": {
+                "value": 0.5,
+                "linked": false
+              },
+              "Scale": {
+                "value": 0.004999999888241291,
+                "linked": false
+              },
+              "Normal": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": false
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "Image Texture.001",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/ash_veneer_diff_1k.jpg"
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "Image Texture.002",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/ash_veneer_rough_1k.exr"
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "Image Texture.003",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/ash_veneer_nor_gl_1k.exr"
+          },
+          {
+            "type": "NORMAL_MAP",
+            "name": "Normal Map",
+            "inputs": {
+              "Strength": {
+                "value": 1.0,
+                "linked": false
+              },
+              "Color": {
+                "value": [
+                  0.5,
+                  0.5,
+                  1.0,
+                  1.0
+                ],
+                "linked": true
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "TEX_IMAGE",
+            "name": "Image Texture.004",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": "//textures/ash_veneer_ao_1k.jpg"
+          },
+          {
+            "type": "MAPPING",
+            "name": "Mapping",
+            "inputs": {
+              "Vector": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              },
+              "Location": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": false
+              },
+              "Rotation": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": false
+              },
+              "Scale": {
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "linked": false
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "REROUTE",
+            "name": "Reroute",
+            "inputs": {
+              "Input": {
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "linked": true
+              }
+            },
+            "image": null
+          },
+          {
+            "type": "TEX_COORD",
+            "name": "Texture Coordinate",
+            "inputs": {},
+            "image": null
+          },
+          {
+            "type": "FRAME",
+            "name": "Frame",
+            "inputs": {},
+            "image": null
+          },
+          {
+            "type": "FRAME",
+            "name": "Frame.001",
+            "inputs": {},
+            "image": null
+          }
+        ],
+        "links": [
+          [
+            "Principled BSDF",
+            "BSDF",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Displacement",
+            "Height"
+          ],
+          [
+            "Displacement",
+            "Displacement",
+            "Material Output",
+            "Displacement"
+          ],
+          [
+            "Image Texture.001",
+            "Color",
+            "Principled BSDF",
+            "Base Color"
+          ],
+          [
+            "Image Texture.002",
+            "Color",
+            "Principled BSDF",
+            "Roughness"
+          ],
+          [
+            "Image Texture.003",
+            "Color",
+            "Normal Map",
+            "Color"
+          ],
+          [
+            "Normal Map",
+            "Normal",
+            "Principled BSDF",
+            "Normal"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Image Texture.004",
+            "Vector"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Image Texture.001",
+            "Vector"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Image Texture.002",
+            "Vector"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Reroute",
+            "Output",
+            "Image Texture.003",
+            "Vector"
+          ],
+          [
+            "Mapping",
+            "Vector",
+            "Reroute",
+            "Input"
+          ],
+          [
+            "Texture Coordinate",
+            "UV",
+            "Mapping",
+            "Vector"
+          ]
+        ]
+      }
+    ]
+  }
+]

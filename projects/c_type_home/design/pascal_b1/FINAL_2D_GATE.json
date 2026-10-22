@@ -1,0 +1,10 @@
+{
+ "missing_ground_truth_wall": 0,
+ "missing_detail": [],
+ "unexplained_unpaired": 0,
+ "verified_openings_present": 9,
+ "doors_out_of_host": 0,
+ "host_helper_count": 10,
+ "pascal_only_walls": [],
+ "coordinate_frame": "PASS (see COORDINATE_FRAME_SANITY.md)"
+}

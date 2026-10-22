@@ -1,0 +1,489 @@
+{
+  "schema": "spatial-canvas.project.v1",
+  "project_id": "c_type_home",
+  "design_id": "c_type_home",
+  "sources": [
+    {
+      "resource_id": "floorplan",
+      "revision": "task01-r1",
+      "sha256": "9d58ee8a75053e6e1a8c3984b154b068f94b8bbbac25ecd806c336d79caca1f3",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/data/geometry.json",
+      "type": "authored_json",
+      "semantic_capability": "candidate_regions",
+      "diagnostics": [
+        "Legacy polygons are candidates: confirm coordinate alignment, current boundaries, level and vertical range; import a reviewed Space Registry."
+      ]
+    },
+    {
+      "resource_id": "cad",
+      "revision": "current-existing-v1",
+      "sha256": "6a9abae7edd2b56585216b7763cbebc66159ee2f50da2490321618598b30537a",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/current_existing/current_existing_v1.dxf",
+      "type": "cad",
+      "semantic_capability": "candidate_regions",
+      "diagnostics": [
+        "CAD closed linear polylines are review candidates, not automatically rooms. Supply coordinate frame/units, match labels, exclude furniture outlines, and define level/height. Curved/legacy POLYLINE geometry requires native export."
+      ]
+    },
+    {
+      "resource_id": "c_type_r4",
+      "revision": "r4",
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+      "type": "blender",
+      "semantic_capability": "geometry_only",
+      "diagnostics": [
+        "No explicit spatial regions extracted. Supply structured IFC/FreeCAD/plan regions or authored boundary JSON; weak geometry does not imply room identity."
+      ]
+    },
+    {
+      "resource_id": "freecad",
+      "revision": "pre-blender-v2",
+      "sha256": "0c30510bc3fe4862d5759c5402146987b6384558a063983b0cab66786de85469",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+      "type": "freecad",
+      "semantic_capability": "geometry_only",
+      "diagnostics": [
+        "FreeCAD document inventoried read-only; export actual room footprints/placements via a native adapter or supplement normalized boundary JSON. Object names alone are insufficient."
+      ]
+    },
+    {
+      "resource_id": "semantic_schedule",
+      "revision": "task02",
+      "sha256": "04b9dd7a5beae05ef41d251a3f7545c3bf8b7a32dbde7bf149091e0fb8deeaa9",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/semantics/space_semantics.json",
+      "type": "authored_json",
+      "semantic_capability": "none",
+      "diagnostics": [
+        "Legacy polygons are candidates: confirm coordinate alignment, current boundaries, level and vertical range; import a reviewed Space Registry."
+      ]
+    },
+    {
+      "resource_id": "ifc",
+      "revision": "task02",
+      "sha256": "6a2a522f1533dadb4e4c9fa9974de74a4347a51c1fd030aa27602d12303d227e",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/ifc/C型_现状语义约束模型.ifc",
+      "type": "ifc",
+      "semantic_capability": "none",
+      "diagnostics": [
+        "IFC space records found; boundary geometry, placements, units and verification need a native IFC export to normalized regions. Names/placements without geometry cannot resolve points."
+      ]
+    },
+    {
+      "resource_id": "r4_floor_footprints",
+      "revision": "r4-read-only-audit",
+      "sha256": "a051934774586dca12ec41e42307171b4e6c5b93b18dea798a778742d8c2b237",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/reports/SOURCE_FLOOR_FOOTPRINTS.json",
+      "type": "floorplan",
+      "semantic_capability": "explicit_regions",
+      "diagnostics": [
+        "Read-only actual R4 floor footprint audit, matched frozen R4 SHA; room roles supplied by owner."
+      ]
+    },
+    {
+      "resource_id": "c_type_r4_pier_review",
+      "type": "blender",
+      "revision": "r4-pier-ac-review-4",
+      "sha256": "bffc60b456e81e30a29613e9b3ef07b6684a16700233c5a6673fab5bf49588ed",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_THINNER_AC_RAISED_REVIEW.blend",
+      "semantic_capability": "geometry_only",
+      "diagnostics": [
+        "HUMAN_REVIEW: wall thinner 50 mm; AC raised 300 mm with existing dimensions and yaw preserved; frozen R4 unchanged."
+      ]
+    }
+  ],
+  "frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "levels": [
+    {
+      "level_id": "upper",
+      "name": "Upper floor +450 mm — main component coverage scope",
+      "coverage": {
+        "type": "polygon_prism",
+        "polygon": [
+          [
+            5.748942852020264,
+            5.909017086029053
+          ],
+          [
+            5.766418933868408,
+            5.958367824554443
+          ],
+          [
+            5.786455154418945,
+            6.006737232208252
+          ],
+          [
+            5.808992862701416,
+            6.053989887237549
+          ],
+          [
+            5.8339738845825195,
+            6.099999904632568
+          ],
+          [
+            5.861330032348633,
+            6.144639015197754
+          ],
+          [
+            5.8909831047058105,
+            6.1877851486206055
+          ],
+          [
+            5.922853946685791,
+            6.229321002960205
+          ],
+          [
+            5.956854820251465,
+            6.269131183624268
+          ],
+          [
+            5.992893218994141,
+            6.307106971740723
+          ],
+          [
+            6.030869007110596,
+            6.34314489364624
+          ],
+          [
+            6.070680141448975,
+            6.377145767211914
+          ],
+          [
+            6.112215042114258,
+            6.409017086029053
+          ],
+          [
+            6.155361175537109,
+            6.438671112060547
+          ],
+          [
+            6.199999809265137,
+            6.466024875640869
+          ],
+          [
+            6.24600887298584,
+            6.491005897521973
+          ],
+          [
+            6.293262958526611,
+            6.513545989990234
+          ],
+          [
+            6.341631889343262,
+            6.5335798263549805
+          ],
+          [
+            6.3909831047058105,
+            6.551055908203125
+          ],
+          [
+            6.441181182861328,
+            6.5659260749816895
+          ],
+          [
+            6.4920878410339355,
+            6.578146934509277
+          ],
+          [
+            6.5435662269592285,
+            6.587687969207764
+          ],
+          [
+            6.595470905303955,
+            6.594521999359131
+          ],
+          [
+            6.6476640701293945,
+            6.598628997802734
+          ],
+          [
+            6.699999809265137,
+            6.599999904632568
+          ],
+          [
+            7.800000190734863,
+            6.599999904632568
+          ],
+          [
+            7.800000190734863,
+            7.800000190734863
+          ],
+          [
+            12.899999618530273,
+            7.800000190734863
+          ],
+          [
+            12.899999618530273,
+            8.0
+          ],
+          [
+            9.850000381469727,
+            8.0
+          ],
+          [
+            9.850000381469727,
+            10.699999809265137
+          ],
+          [
+            9.899900436401367,
+            10.699999809265137
+          ],
+          [
+            9.899900436401367,
+            10.900199890136719
+          ],
+          [
+            12.899900436401367,
+            10.900199890136719
+          ],
+          [
+            12.899900436401367,
+            10.699999809265137
+          ],
+          [
+            12.899999618530273,
+            10.699999809265137
+          ],
+          [
+            12.899999618530273,
+            8.000200271606445
+          ],
+          [
+            13.100000381469727,
+            8.000200271606445
+          ],
+          [
+            13.100000381469727,
+            11.350000381469727
+          ],
+          [
+            15.199999809265137,
+            11.350000381469727
+          ],
+          [
+            15.199999809265137,
+            11.700200080871582
+          ],
+          [
+            15.699899673461914,
+            11.700200080871582
+          ],
+          [
+            15.699899673461914,
+            11.350000381469727
+          ],
+          [
+            16.299999237060547,
+            11.350000381469727
+          ],
+          [
+            16.299999237060547,
+            6.5
+          ],
+          [
+            13.100000381469727,
+            6.5
+          ],
+          [
+            13.100000381469727,
+            7.550000190734863
+          ],
+          [
+            12.899999618530273,
+            7.550000190734863
+          ],
+          [
+            12.899999618530273,
+            6.5
+          ],
+          [
+            9.050000190734863,
+            6.5
+          ],
+          [
+            9.050000190734863,
+            6.300000190734863
+          ],
+          [
+            9.199899673461914,
+            6.300000190734863
+          ],
+          [
+            9.199899673461914,
+            6.450200080871582
+          ],
+          [
+            11.399900436401367,
+            6.450200080871582
+          ],
+          [
+            11.399900436401367,
+            4.700200080871582
+          ],
+          [
+            11.300000190734863,
+            4.700200080871582
+          ],
+          [
+            11.300000190734863,
+            4.650000095367432
+          ],
+          [
+            10.79990005493164,
+            4.650000095367432
+          ],
+          [
+            10.79990005493164,
+            4.500199794769287
+          ],
+          [
+            11.399900436401367,
+            4.500199794769287
+          ],
+          [
+            11.399900436401367,
+            4.449999809265137
+          ],
+          [
+            11.399999618530273,
+            4.449999809265137
+          ],
+          [
+            11.399999618530273,
+            0.0
+          ],
+          [
+            10.899900436401367,
+            0.0
+          ],
+          [
+            10.899900436401367,
+            -0.5997999906539917
+          ],
+          [
+            8.499899864196777,
+            -0.5997999906539917
+          ],
+          [
+            8.499899864196777,
+            0.0
+          ],
+          [
+            8.029999732971191,
+            0.0
+          ],
+          [
+            8.029999732971191,
+            4.449900150299072
+          ],
+          [
+            7.799900054931641,
+            4.449900150299072
+          ],
+          [
+            7.799900054931641,
+            4.500199794769287
+          ],
+          [
+            7.799900054931641,
+            4.699999809265137
+          ],
+          [
+            5.699999809265137,
+            4.699999809265137
+          ],
+          [
+            5.699999809265137,
+            5.599999904632568
+          ],
+          [
+            5.701369762420654,
+            5.652336120605469
+          ],
+          [
+            5.705478191375732,
+            5.704527854919434
+          ],
+          [
+            5.7123122215271,
+            5.756433963775635
+          ],
+          [
+            5.721851825714111,
+            5.8079118728637695
+          ],
+          [
+            5.734074115753174,
+            5.858819007873535
+          ]
+        ],
+        "z_min": 0.45,
+        "z_max": 3.2,
+        "coordinate_frame": "c_type_world",
+        "unit": "meter"
+      }
+    },
+    {
+      "level_id": "lower",
+      "name": "Lower floor — living coverage scope",
+      "coverage": {
+        "type": "polygon_prism",
+        "polygon": [
+          [
+            2.9,
+            7.9
+          ],
+          [
+            7.75,
+            7.9
+          ],
+          [
+            7.75,
+            12.75
+          ],
+          [
+            2.9,
+            12.75
+          ]
+        ],
+        "z_min": 0,
+        "z_max": 3.2,
+        "coordinate_frame": "c_type_world",
+        "unit": "meter"
+      }
+    },
+    {
+      "level_id": "transition",
+      "name": "Stair transition coverage scope (candidate)",
+      "coverage": {
+        "type": "polygon_prism",
+        "polygon": [
+          [
+            7.2,
+            6.6
+          ],
+          [
+            7.8,
+            6.6
+          ],
+          [
+            7.8,
+            7.8
+          ],
+          [
+            7.2,
+            7.8
+          ]
+        ],
+        "z_min": 0,
+        "z_max": 0.45,
+        "coordinate_frame": "c_type_world",
+        "unit": "meter"
+      }
+    }
+  ]
+}

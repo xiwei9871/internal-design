@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INTACT_BED_REPLACEMENT_AND_PRESERVATION",
+  "sha256": "da6e5a80dec49831e9d856d0bab90113e87a5ae19316c162d869d7b65a280fd6",
+  "original_meshes_and_materials_unchanged": 3477,
+  "unchanged_donor_bed": true,
+  "new_bed_same_complete_mesh_material_rotation_scale": true,
+  "new_bed_dimensions_mm": [
+    2130.0,
+    1910.0,
+    1070.0
+  ],
+  "old_bed_hidden_objects": 17,
+  "bedside_translations_only": [
+    {
+      "root": "HOUSE_V2_MOTHER_0_BEDSIDE_2110",
+      "delta_y_m": -0.07450002670288092,
+      "delta_z_m": 0.0032,
+      "target_center_y_m": 0.9654999732971191
+    },
+    {
+      "root": "HOUSE_V2_MOTHER_1_BEDSIDE_2110",
+      "delta_y_m": 0.23550005912780758,
+      "delta_z_m": 0.0032,
+      "target_center_y_m": 3.4255000591278075
+    }
+  ],
+  "unexpected_changes": [],
+  "V11_finishes_and_grounded_shelf_retained": true,
+  "protected_sources": 16,
+  "final_visual_acceptance": false
+}

@@ -1,0 +1,1012 @@
+{
+  "source_sha256": "c3e1060afa1c98ec64d9e8e15fdfaa0fbf3fb5af39aaebc452b553a96b8f3f39",
+  "materials": {
+    "V4_ASH_WAX_OIL_FROM_REAL_CATALOG": {
+      "nodes": [
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "label": ""
+        },
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "label": "",
+          "inputs": {
+            "Metallic": 0.0,
+            "IOR": 1.4500000476837158,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "Emission Strength": 1.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          },
+          "linked_inputs": {
+            "Base Color": "Image Texture.001.Color",
+            "Roughness": "Image Texture.002.Color",
+            "Normal": "Normal Map.Normal"
+          }
+        },
+        {
+          "name": "Image Texture",
+          "type": "TEX_IMAGE",
+          "label": "Displacement",
+          "image": "ash_veneer_disp.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_disp_1k.png",
+          "size": [
+            1024,
+            1024
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "Displacement",
+          "type": "DISPLACEMENT",
+          "label": ""
+        },
+        {
+          "name": "Image Texture.001",
+          "type": "TEX_IMAGE",
+          "label": "Base Color",
+          "image": "ash_veneer_diffuse_2k.jpg",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_diffuse_2k.jpg",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "sRGB"
+        },
+        {
+          "name": "Image Texture.002",
+          "type": "TEX_IMAGE",
+          "label": "Roughness",
+          "image": "ash_veneer_roughness_2k.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_roughness_2k.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "Image Texture.003",
+          "type": "TEX_IMAGE",
+          "label": "Normal",
+          "image": "ash_veneer_normal_2k.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_normal_2k.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "Normal Map",
+          "type": "NORMAL_MAP",
+          "label": "",
+          "inputs": {
+            "Strength": 1.0
+          },
+          "linked_inputs": {
+            "Color": "Image Texture.003.Color"
+          },
+          "uv_map": "ProductMeters"
+        },
+        {
+          "name": "Image Texture.004",
+          "type": "TEX_IMAGE",
+          "label": "Ambient Occlusion",
+          "image": "ash_veneer_ao.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_ao_1k.jpg",
+          "size": [
+            1024,
+            1024
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "Mapping",
+          "type": "MAPPING",
+          "label": "",
+          "inputs": {
+            "Location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "linked_inputs": {
+            "Vector": "Physical surface coordinates.UV"
+          }
+        },
+        {
+          "name": "Reroute",
+          "type": "REROUTE",
+          "label": ""
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "TEX_COORD",
+          "label": ""
+        },
+        {
+          "name": "Frame",
+          "type": "FRAME",
+          "label": "Mapping"
+        },
+        {
+          "name": "Frame.001",
+          "type": "FRAME",
+          "label": "Textures"
+        },
+        {
+          "name": "Physical surface coordinates",
+          "type": "UVMAP",
+          "label": "",
+          "inputs": {},
+          "linked_inputs": {},
+          "uv_map": "ProductMeters"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Displacement",
+          "Height"
+        ],
+        [
+          "Displacement",
+          "Displacement",
+          "Material Output",
+          "Displacement"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.003",
+          "Color",
+          "Normal Map",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Reroute",
+          "Output",
+          "Image Texture.004",
+          "Vector"
+        ],
+        [
+          "Reroute",
+          "Output",
+          "Image Texture.001",
+          "Vector"
+        ],
+        [
+          "Reroute",
+          "Output",
+          "Image Texture.002",
+          "Vector"
+        ],
+        [
+          "Reroute",
+          "Output",
+          "Image Texture",
+          "Vector"
+        ],
+        [
+          "Reroute",
+          "Output",
+          "Image Texture.003",
+          "Vector"
+        ],
+        [
+          "Mapping",
+          "Vector",
+          "Reroute",
+          "Input"
+        ],
+        [
+          "Physical surface coordinates",
+          "UV",
+          "Mapping",
+          "Vector"
+        ]
+      ]
+    },
+    "V4_OATMEAL_LINEN_NATIVE": {
+      "nodes": [
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "label": ""
+        },
+        {
+          "name": "Principled BSDF.001",
+          "type": "BSDF_PRINCIPLED",
+          "label": "",
+          "inputs": {
+            "IOR": 1.5,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Subsurface Weight": 0.10144927352666855,
+            "Subsurface Radius": [
+              0.10000000149011612,
+              0.20000000298023224,
+              0.5
+            ],
+            "Subsurface Scale": 0.05000000074505806,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.20000000298023224,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          },
+          "linked_inputs": {
+            "Base Color": "Mix (Legacy).Color",
+            "Metallic": "metal.Color",
+            "Roughness": "rough.Color",
+            "Alpha": "metal.001.Color",
+            "Normal": "Normal Map.001.Normal",
+            "Diffuse Roughness": "rough.Color",
+            "Specular IOR Level": "spec_ior.Color",
+            "Anisotropic": "anisotropy_strength.Color",
+            "Anisotropic Rotation": "anisotropy_rotation.Color",
+            "Tangent": "Tangent.Tangent"
+          }
+        },
+        {
+          "name": "Mapping",
+          "type": "MAPPING",
+          "label": "",
+          "inputs": {
+            "Location": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Scale": [
+              3.3333332538604736,
+              3.3333332538604736,
+              1.0
+            ]
+          },
+          "linked_inputs": {
+            "Vector": "Physical surface coordinates.UV"
+          }
+        },
+        {
+          "name": "Texture Coordinate.001",
+          "type": "TEX_COORD",
+          "label": ""
+        },
+        {
+          "name": "Frame.002",
+          "type": "FRAME",
+          "label": "Mapping"
+        },
+        {
+          "name": "disp",
+          "type": "TEX_IMAGE",
+          "label": "Displacement",
+          "image": "rough_linen_displacement_4k.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_displacement_4k.png",
+          "size": [
+            4096,
+            4105
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "Displacement.001",
+          "type": "DISPLACEMENT",
+          "label": ""
+        },
+        {
+          "name": "diff",
+          "type": "TEX_IMAGE",
+          "label": "Base Color",
+          "image": "rough_linen_diffuse_4k.jpg",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_diffuse_4k.jpg",
+          "size": [
+            4096,
+            4105
+          ],
+          "colorspace": "sRGB"
+        },
+        {
+          "name": "metal",
+          "type": "TEX_IMAGE",
+          "label": "Metallic",
+          "image": "rough_linen_metal.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_metal_1k.exr",
+          "size": [
+            1024,
+            1026
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "spec_ior",
+          "type": "TEX_IMAGE",
+          "label": "Specular IOR Level",
+          "image": "rough_linen_spec_ior_4k.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_spec_ior_4k.png",
+          "size": [
+            4096,
+            4105
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "rough",
+          "type": "TEX_IMAGE",
+          "label": "Roughness",
+          "image": "rough_linen_roughness_4k.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_roughness_4k.png",
+          "size": [
+            4096,
+            4105
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "nor_gl",
+          "type": "TEX_IMAGE",
+          "label": "Normal",
+          "image": "rough_linen_normal_4k.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_normal_4k.png",
+          "size": [
+            4096,
+            4105
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "Normal Map.001",
+          "type": "NORMAL_MAP",
+          "label": "",
+          "inputs": {
+            "Strength": 1.0
+          },
+          "linked_inputs": {
+            "Color": "nor_gl.Color"
+          },
+          "uv_map": "ProductMeters"
+        },
+        {
+          "name": "Reroute.001",
+          "type": "REROUTE",
+          "label": ""
+        },
+        {
+          "name": "Frame.004",
+          "type": "FRAME",
+          "label": "Textures"
+        },
+        {
+          "name": "anisotropy_strength",
+          "type": "TEX_IMAGE",
+          "label": "Anisotropy Strength",
+          "image": "rough_linen_anisotropy_strength_4k.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_strength_4k.png",
+          "size": [
+            4096,
+            4105
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "anisotropy_rotation",
+          "type": "TEX_IMAGE",
+          "label": "Anisotropy Rotation",
+          "image": "rough_linen_anisotropy_rotation_4k.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_rotation_4k.png",
+          "size": [
+            4096,
+            4105
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "Tangent",
+          "type": "TANGENT",
+          "label": "",
+          "uv_map": "ProductMeters"
+        },
+        {
+          "name": "metal.001",
+          "type": "TEX_IMAGE",
+          "label": "Metallic",
+          "image": "rough_linen_mask.png",
+          "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_mask_1k.png",
+          "size": [
+            1024,
+            1026
+          ],
+          "colorspace": "Non-Color"
+        },
+        {
+          "name": "Physical surface coordinates",
+          "type": "UVMAP",
+          "label": "",
+          "inputs": {},
+          "linked_inputs": {},
+          "uv_map": "ProductMeters"
+        },
+        {
+          "name": "RGB to BW",
+          "type": "RGBTOBW",
+          "label": "",
+          "inputs": {},
+          "linked_inputs": {
+            "Color": "diff.Color"
+          }
+        },
+        {
+          "name": "Math",
+          "type": "MATH",
+          "label": "",
+          "inputs": {
+            "Value": 0.5
+          },
+          "linked_inputs": {
+            "Value": "RGB to BW.Val"
+          }
+        },
+        {
+          "name": "Mix (Legacy)",
+          "type": "MIX_RGB",
+          "label": "",
+          "inputs": {
+            "Factor": 1.0,
+            "Color2": [
+              0.47999998927116394,
+              0.4180000126361847,
+              0.33399999141693115,
+              1.0
+            ]
+          },
+          "linked_inputs": {
+            "Color1": "Math.Value"
+          }
+        }
+      ],
+      "links": [
+        [
+          "disp",
+          "Color",
+          "Displacement.001",
+          "Height"
+        ],
+        [
+          "Displacement.001",
+          "Displacement",
+          "Material Output",
+          "Displacement"
+        ],
+        [
+          "metal",
+          "Color",
+          "Principled BSDF.001",
+          "Metallic"
+        ],
+        [
+          "rough",
+          "Color",
+          "Principled BSDF.001",
+          "Roughness"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "diff",
+          "Vector"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "metal",
+          "Vector"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "spec_ior",
+          "Vector"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "rough",
+          "Vector"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "disp",
+          "Vector"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "nor_gl",
+          "Vector"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "anisotropy_strength",
+          "Vector"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "anisotropy_rotation",
+          "Vector"
+        ],
+        [
+          "anisotropy_strength",
+          "Color",
+          "Principled BSDF.001",
+          "Anisotropic"
+        ],
+        [
+          "anisotropy_rotation",
+          "Color",
+          "Principled BSDF.001",
+          "Anisotropic Rotation"
+        ],
+        [
+          "spec_ior",
+          "Color",
+          "Principled BSDF.001",
+          "Specular IOR Level"
+        ],
+        [
+          "Mapping",
+          "Vector",
+          "Reroute.001",
+          "Input"
+        ],
+        [
+          "nor_gl",
+          "Color",
+          "Normal Map.001",
+          "Color"
+        ],
+        [
+          "Normal Map.001",
+          "Normal",
+          "Principled BSDF.001",
+          "Normal"
+        ],
+        [
+          "Principled BSDF.001",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Tangent",
+          "Tangent",
+          "Principled BSDF.001",
+          "Tangent"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "metal.001",
+          "Vector"
+        ],
+        [
+          "metal.001",
+          "Color",
+          "Principled BSDF.001",
+          "Alpha"
+        ],
+        [
+          "rough",
+          "Color",
+          "Principled BSDF.001",
+          "Diffuse Roughness"
+        ],
+        [
+          "Physical surface coordinates",
+          "UV",
+          "Mapping",
+          "Vector"
+        ],
+        [
+          "diff",
+          "Color",
+          "RGB to BW",
+          "Color"
+        ],
+        [
+          "RGB to BW",
+          "Val",
+          "Math",
+          "Value"
+        ],
+        [
+          "Math",
+          "Value",
+          "Mix (Legacy)",
+          "Color1"
+        ],
+        [
+          "Mix (Legacy)",
+          "Color",
+          "Principled BSDF.001",
+          "Base Color"
+        ]
+      ]
+    }
+  },
+  "objects": {
+    "V4_Coffee_solid_top": {
+      "local_bounds_m": [
+        [
+          -0.2750000059604645,
+          -0.5,
+          -0.014999999664723873
+        ],
+        [
+          0.2750000059604645,
+          0.5,
+          0.014999999664723873
+        ]
+      ],
+      "world_dimensions_m": [
+        0.550000011920929,
+        1.0,
+        0.029999999329447746
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertex_count": 8,
+      "uv_layers": [
+        "UVMap",
+        "ProductMeters"
+      ],
+      "largest_face_normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "largest_face_xyz_uv": [
+        {
+          "xyz": [
+            -0.2750000059604645,
+            0.5,
+            -0.014999999664723873
+          ],
+          "uv": [
+            0.6052631735801697,
+            -0.24657894670963287
+          ]
+        },
+        {
+          "xyz": [
+            0.2750000059604645,
+            0.5,
+            -0.014999999664723873
+          ],
+          "uv": [
+            0.6052631735801697,
+            0.3034210503101349
+          ]
+        },
+        {
+          "xyz": [
+            0.2750000059604645,
+            -0.5,
+            -0.014999999664723873
+          ],
+          "uv": [
+            -0.3947368562221527,
+            0.3034210503101349
+          ]
+        },
+        {
+          "xyz": [
+            -0.2750000059604645,
+            -0.5,
+            -0.014999999664723873
+          ],
+          "uv": [
+            -0.3947368562221527,
+            -0.24657894670963287
+          ]
+        }
+      ]
+    },
+    "V4_Sofa_seat_middle": {
+      "local_bounds_m": [
+        [
+          -0.445499986410141,
+          -0.512499988079071,
+          -0.07750000059604645
+        ],
+        [
+          0.445499986410141,
+          0.512499988079071,
+          0.07750000059604645
+        ]
+      ],
+      "world_dimensions_m": [
+        0.890999972820282,
+        1.024999976158142,
+        0.1550000011920929
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertex_count": 6722,
+      "uv_layers": [
+        "ProductMeters"
+      ],
+      "largest_face_normal": [
+        0.9813929796218872,
+        -2.102615781041095e-06,
+        -0.19201011955738068
+      ],
+      "largest_face_xyz_uv": [
+        {
+          "xyz": [
+            0.4415368437767029,
+            -0.018358271569013596,
+            -0.020256023854017258
+          ],
+          "uv": [
+            1.859911561012268,
+            0.528497576713562
+          ]
+        },
+        {
+          "xyz": [
+            0.4415368139743805,
+            8.061994405395012e-10,
+            -0.02025657705962658
+          ],
+          "uv": [
+            1.8599110841751099,
+            0.5099665522575378
+          ]
+        },
+        {
+          "xyz": [
+            0.445499986410141,
+            4.031164291262712e-11,
+            -2.8379229521924287e-10
+          ],
+          "uv": [
+            1.8804851770401,
+            0.5099665522575378
+          ]
+        },
+        {
+          "xyz": [
+            0.445499986410141,
+            -0.018357878550887108,
+            2.465479209678989e-11
+          ],
+          "uv": [
+            1.8804851770401,
+            0.5284971594810486
+          ]
+        }
+      ]
+    },
+    "V4_Sofa_back_1": {
+      "local_bounds_m": [
+        [
+          -0.5134999752044678,
+          -0.14800000190734863,
+          -0.11381974816322327
+        ],
+        [
+          0.5134999752044678,
+          0.14800000190734863,
+          0.11381974816322327
+        ]
+      ],
+      "world_dimensions_m": [
+        1.0269999504089355,
+        0.29600000381469727,
+        0.22763949632644653
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        -0.0,
+        1.5707963705062866
+      ],
+      "vertex_count": 6722,
+      "uv_layers": [
+        "ProductMeters"
+      ],
+      "largest_face_normal": [
+        -1.9854358015436446e-06,
+        -0.9989164471626282,
+        -0.04653845354914665
+      ],
+      "largest_face_xyz_uv": [
+        {
+          "xyz": [
+            -0.018394002690911293,
+            -0.1466856747865677,
+            0.011789641343057156
+          ],
+          "uv": [
+            0.7816286087036133,
+            0.5048673152923584
+          ]
+        },
+        {
+          "xyz": [
+            -1.573857710823745e-10,
+            -0.1466856747865677,
+            0.011789019219577312
+          ],
+          "uv": [
+            0.7816252112388611,
+            0.5238771438598633
+          ]
+        },
+        {
+          "xyz": [
+            1.4382939284018903e-11,
+            -0.14800000190734863,
+            0.03999999910593033
+          ],
+          "uv": [
+            0.7526468634605408,
+            0.5238710045814514
+          ]
+        },
+        {
+          "xyz": [
+            -0.018393749371170998,
+            -0.14799995720386505,
+            0.03999998793005943
+          ],
+          "uv": [
+            0.7526509761810303,
+            0.5048614144325256
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "stage": "B1.1",
+  "B1_1_DESIGN_MODEL": "HUMAN_REVIEW",
+  "generated_at": "2026-10-01T11:34:13.210593+08:00",
+  "B0_INTEGRITY": "PASS",
+  "frozen_sha256": [
+    {
+      "key": "baseline_blend",
+      "path": "design/blender_b0/B0_EXISTING_AS_IS.blend",
+      "expected": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+      "actual": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb"
+    },
+    {
+      "key": "cad_source_dxf",
+      "path": "cad/freecad_import/世纪欣园FF_freecad_WORKING_v2.dxf",
+      "expected": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0",
+      "actual": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0"
+    },
+    {
+      "key": "floor_regions",
+      "path": "design/blender_b0/B0_FLOOR_REGIONS.json",
+      "expected": "6bab694418c0ab28c92e7411b567794be807e3a6126aa24c0ccdba0334f0ba75",
+      "actual": "6bab694418c0ab28c92e7411b567794be807e3a6126aa24c0ccdba0334f0ba75"
+    },
+    {
+      "key": "z_datum_spec",
+      "path": "design/blender_b0/Z_DATUM_SPEC.json",
+      "expected": "18298132c706f80a998b8ac9e8ac50c4ca7ca4480cd6655d08fc3e37d15e8c5f",
+      "actual": "18298132c706f80a998b8ac9e8ac50c4ca7ca4480cd6655d08fc3e37d15e8c5f"
+    },
+    {
+      "key": "geometry_gate",
+      "path": "design/blender_b0/B0_GEOMETRY_GATE_V2.json",
+      "expected": "223be556688f8ef0c95617ed5b3cb8d8c4d61b22d729fedfbd7c8605d63c41d4",
+      "actual": "223be556688f8ef0c95617ed5b3cb8d8c4d61b22d729fedfbd7c8605d63c41d4"
+    },
+    {
+      "key": "level_field_50mm",
+      "path": "design/blender_b0/B0_LEVEL_FIELD.json",
+      "expected": "70c58dbbc10eabeb69989c0759bb8af2eff86d12bcc6bd78af6ce39720ec33eb",
+      "actual": "70c58dbbc10eabeb69989c0759bb8af2eff86d12bcc6bd78af6ce39720ec33eb"
+    },
+    {
+      "key": "level_zone_map_v8",
+      "path": "design/blender_b0/B0_LEVEL_ZONE_MAP_V8_CLEAN.png",
+      "expected": "b39738dc2d813bcae3cc6f6411d3bb24e500bc2909b672b1fc25bd59a6fe27e9",
+      "actual": "b39738dc2d813bcae3cc6f6411d3bb24e500bc2909b672b1fc25bd59a6fe27e9"
+    }
+  ],
+  "model_sha256": "31beb580133e81c64c92dc71d4bb1213f6b0b9151e013c1fa1d5fac2d33178bd",
+  "numeric_gates": {
+    "status": "PASS",
+    "inherited_objects_preserved": 176,
+    "measured_furniture_cabinet_envelopes": 48,
+    "max_envelope_error_mm": 0.17337608337397725,
+    "envelope_tolerance_mm": 1,
+    "front_vector_checks": 24,
+    "evaluated_new_triangles": 55229,
+    "finite_coordinates": true,
+    "inherited_openings": 9,
+    "D107_angle_deg": 26.3,
+    "review_bay_assemblies": 4,
+    "source_geometry_signatures": "MATCH",
+    "source_authored_transforms": "MATCH"
+  },
+  "technical_check_scope": "Declared integrity, envelope and authored-direction checks; does not approve products or unresolved designs.",
+  "visual_review": {
+    "status": "INSPECTED_WITH_KNOWN_DECISIONS",
+    "required_views": [
+      "TOP",
+      "AXON",
+      "LIVING",
+      "KITCHEN",
+      "LEISURE",
+      "OWNER_BED",
+      "MOTHER_BED",
+      "STUDY",
+      "GUEST_BED",
+      "BATH_OWNER",
+      "BATH_MOTHER",
+      "BATH_GUEST"
+    ],
+    "render_manifest": "B1_1_RENDER_MANIFEST.json",
+    "cutaway": true,
+    "glass_faces_hidden": true,
+    "ceiling_hidden": true,
+    "annotation": "Temporary presentation cuts only, never saved to blend",
+    "inspected_evidence": [
+      "B1_1_REVIEW_CONTACT_SHEET.png",
+      "B1_1_BATHROOMS_CONTACT_SHEET.png",
+      "B1_1_KITCHEN.png",
+      "B1_1_LEISURE.png",
+      "B1_1_STUDY.png"
+    ],
+    "method": "All twelve views inspected in the full contact sheet; kitchen/leisure/study and bathrooms additionally opened as individual/full-sheet evidence.",
+    "findings": [
+      {
+        "severity": "observation",
+        "view": "TOP/AXON",
+        "text": "Split-level color fields, retained curved leisure platform, stair tops and registered furniture relationships visible."
+      },
+      {
+        "severity": "observation",
+        "view": "LIVING/OWNER_BED/MOTHER_BED/GUEST_BED",
+        "text": "Core source candidate furniture readable; native product/style assumptions remain human review."
+      },
+      {
+        "severity": "observation",
+        "view": "KITCHEN",
+        "text": "Cabinet envelope, appliance niche, source-height hierarchy and open sink bowl visible; duplicate front faces repaired in B1-owned geometry."
+      },
+      {
+        "severity": "observation",
+        "view": "STUDY",
+        "text": "Tall/low bookcase openings, workstation supports, bench and stool visible; owner-chair nondirectional body is marked pending."
+      },
+      {
+        "severity": "warning",
+        "view": "BATHROOMS",
+        "text": "Two vanity orientations unresolved; screen glass faces suppressed for Workbench inspection; mounting/plumbing/SKU not cleared."
+      },
+      {
+        "severity": "warning",
+        "view": "BAY",
+        "text": "Four bay projections remain; inherited full-height front bands conflict with proposed front-glazing review. No frozen geometry changed."
+      },
+      {
+        "severity": "observation",
+        "view": "LEISURE",
+        "text": "Frozen D-107 lower-edge offset appearance and inherited fascia striping are report-only source observations; no new datum/pose decision."
+      }
+    ],
+    "claim_boundary": "Visual inspection confirms review readability, not all unresolved design choices or construction readiness."
+  },
+  "coverage": {
+    "kitchen": "PDF_DIMENSIONAL_REVIEW; module splits/install positions pending",
+    "bathrooms": "THREE_LAYOUTS; two vanity direction proxies; plumbing/SKU pending",
+    "shower": "THREE_2000mm_REVIEW_SCREENS; exact mechanism/SKU pending",
+    "storage": "EDITABLE_DIMENSIONAL_CARCASSES",
+    "core_furniture": "CALIBRATED_LOCAL_ASSETS",
+    "openings": "NINE_GLAZED_OPENING_FRAMES_AND_D107_HARDWARE",
+    "bay": "FOUR_ASSEMBLIES; frozen-front interference report-only",
+    "split_level": "INHERITED_DATUM_AND_CURVE; in-datum review finishing",
+    "ceiling": "EXACT_INHERITED_BLOCKOUT; coffers/light slots pending"
+  },
+  "decisions_required": [
+    {
+      "id": "INHERITED_MUTABLE_GUIDE_TRANSFORMS",
+      "items": [
+        "05_HUMAN_DESIGN_GUIDE"
+      ],
+      "status": "REPORT_ONLY_SOURCE_DEFECT",
+      "description": "Imported mutable guide assets have world-origin rotation and old Z-offset defects. Originals retained unchanged and hidden; B1 additions use source-register rectangles."
+    },
+    {
+      "id": "INHERITED_VISUAL_OBSERVATIONS",
+      "items": [
+        "LEAF_D107",
+        "FASCIA_PLATFORM_CURVE",
+        "FLOOR_UPPER"
+      ],
+      "status": "REPORT_ONLY_SOURCE_OBSERVATION",
+      "description": "LEISURE cutaway shows the confirmed D-107 leaf lower-edge offset relative to the adjacent lower-floor view, and surface striping on the inherited curved fascia/floor edge. Source geometry/pose remains unchanged; report the appearance only, do not re-decide the frozen datum or door."
+    },
+    {
+      "id": "THREE_FACING_CONFLICTS",
+      "items": [
+        "Rectangle032",
+        "Rectangle030",
+        "Rectangle035"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "V02 overrides are not human confirmed. Keep these three bodies nondirectional until their front orientation is approved."
+    },
+    {
+      "id": "MINI_WASHER_MOUNT_Z",
+      "items": [
+        "Rectangle041"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Wall mounting height and MEP not provided; physical review body hidden; XY helper shown."
+    },
+    {
+      "id": "DEVICE_SUPPORT_Z",
+      "items": [
+        "Rectangle043",
+        "Rectangle044"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Printer/NAS are intended on/in shelving; exact support level unprovided. Physical bodies hidden; XY helpers shown."
+    },
+    {
+      "id": "OWNER_CHAIR_FACING",
+      "items": [
+        "Circle007"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Owner study-chair facing unresolved; nondirectional envelope retained."
+    },
+    {
+      "id": "MEDIA_CANDIDATE_DISTORTION",
+      "items": [
+        "Rectangle004"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "V02 tv-stand candidate remains SIZE_DISTORTION; native front assumption and final floor-standing/floating solution need review."
+    },
+    {
+      "id": "GENERIC_REVIEW_DETAILS",
+      "items": [
+        "B1_ALL_NEW_ASSEMBLIES"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Panel, hardware, door trim and glass profiles are generic review details, not selected products or shop-drawing approval."
+    },
+    {
+      "id": "CEILING_COFFER_LIGHT_SLOT",
+      "items": [
+        "CEILING_LOWER",
+        "CEILING_UPPER"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Inherited exact ceiling blockout retained. No confirmed coffer, beam, soffit or light-slot dimensions; do not invent."
+    },
+    {
+      "id": "BATHROOM_MEP_AND_PRODUCT",
+      "items": [
+        "Rectangle008",
+        "Rectangle034",
+        "Rectangle038",
+        "Rectangle030",
+        "Rectangle035",
+        "Rectangle037"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Fixture envelopes and guide XY modeled; sanitary product SKUs, inlet/outlet/drain installation coordinates and mount heights need confirmation. No hidden plumbing routes inferred."
+    },
+    {
+      "id": "OTHER_INTERNAL_DOOR_DETAILS",
+      "items": [
+        "FINAL_OPENING_ACTIVE_REGISTER doors"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Nine verified glazed openings and D-107 receive review detailing. Other internal-door entries contain plan symbol bounds; leaf swing/clear widths/hardware need verified dimensions before detailed leaves are installed."
+    },
+    {
+      "id": "Rectangle007_SHOWER_DETAIL",
+      "items": [
+        "Rectangle007"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "2000 mm screen and generic glass hardware are review assumptions; exact enclosure/door mechanism and MEP require confirmation."
+    },
+    {
+      "id": "Rectangle033_SHOWER_DETAIL",
+      "items": [
+        "Rectangle033"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "2000 mm screen and generic glass hardware are review assumptions; exact enclosure/door mechanism and MEP require confirmation."
+    },
+    {
+      "id": "Rectangle036_SHOWER_DETAIL",
+      "items": [
+        "Rectangle036"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "2000 mm screen and generic glass hardware are review assumptions; exact enclosure/door mechanism and MEP require confirmation."
+    },
+    {
+      "id": "CHAISE_RECLINE_AXIS",
+      "items": [
+        "Rectangle048"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "V02 uses east-west recline axis, back at west and open entry north; retain as review candidate, no layout change."
+    },
+    {
+      "id": "K_TALL_INTERNAL_SPLIT",
+      "items": [
+        "K-TALL-L"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Registered XY retained. PDF shows appliance niche; the register full-height solid is replaced by lower/upper review bodies, while the internal lateral/corner split needs confirmation."
+    },
+    {
+      "id": "KITCHEN_PLACEMENT_AND_NICHE",
+      "items": [
+        "K-COOK",
+        "K-DISHW",
+        "K-BASKET",
+        "K-FRIDGE",
+        "K-RUN-S",
+        "K-SINK"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "XY remains as registered. Appliance/corner module positions and south-leg origin are TO_VERIFY in existing cabinet register. Internal fridge/tall splits conflict with PDF chains; no automatic topology change."
+    },
+    {
+      "id": "KITCHEN_TOP_AND_DEPTH",
+      "items": [
+        "K-WALL-E",
+        "K-FRIDGE-OVERHEAD"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "PDF p2 and p5 explicit vertical dimensions supersede temporary approximations. Overhead depth remains provisional 600; module splits/installation require review."
+    },
+    {
+      "id": "BAY_FRONT_SOURCE_INTERFERENCE",
+      "items": [
+        "W-LIV-N",
+        "W-MB-S",
+        "W-SMB-S",
+        "W-STUDY-NE"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Frozen bay outlines are retained. Existing front wall bands appear full height and overlap the new front glazing review assemblies. Existing flat host glazing also remains. Report only; no cut, movement or redesign of frozen walls/openings."
+    },
+    {
+      "id": "SPLIT_EDGE_PROFILE",
+      "items": [
+        "STEP_0",
+        "STEP_1",
+        "STEP_2",
+        "FASCIA_PLATFORM_CURVE"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Generic nosing and in-datum edge strip only. No railing, ramp or leisure demolition; finish product and railing intent require review."
+    }
+  ],
+  "not_checked": [
+    "commercial SKU fidelity",
+    "MEP routing/installation",
+    "unconfirmed fixture support heights",
+    "door swing/code or accessibility compliance",
+    "delivery path",
+    "final materials/lighting",
+    "construction certification",
+    "GLB/web export (outside requested scope)"
+  ],
+  "output_files": [
+    {
+      "path": "B1_1_DESIGN_MODEL_V1.blend",
+      "bytes": 813857,
+      "sha256": "31beb580133e81c64c92dc71d4bb1213f6b0b9151e013c1fa1d5fac2d33178bd"
+    },
+    {
+      "path": "B1_1_TOP.png",
+      "bytes": 1944161,
+      "sha256": "cde65e37cb1dae119ffde90352dc73ff1663a0cb88469f89438bdd286d5443cb"
+    },
+    {
+      "path": "B1_1_AXON.png",
+      "bytes": 2125007,
+      "sha256": "867722bf796c2c349499b7f7af532ced2f25b491688b83e7e91368af7ef1ac24"
+    },
+    {
+      "path": "B1_1_LIVING.png",
+      "bytes": 2190017,
+      "sha256": "c348417e4517ccc2b41ca3360112680549a8e4899199a23f2323ddfbaeb136e3"
+    },
+    {
+      "path": "B1_1_KITCHEN.png",
+      "bytes": 2067603,
+      "sha256": "34074a36c39184f9505306502db0d81ebc721b4ecd1aea3941c3f450b36bbb5e"
+    },
+    {
+      "path": "B1_1_LEISURE.png",
+      "bytes": 2032751,
+      "sha256": "64ff9077d347b6c6afee379c7a6cc621a4851fb0323bc5bb49f33e602648d5f9"
+    },
+    {
+      "path": "B1_1_OWNER_BED.png",
+      "bytes": 2152088,
+      "sha256": "df88dc51f52bb91cde292be6fa75e3de762e6ec327b030bf19508266a636596b"
+    },
+    {
+      "path": "B1_1_MOTHER_BED.png",
+      "bytes": 2135342,
+      "sha256": "24f347d43937080a713963e61121bb51f5d98c9923b4ab294c52933976f0ebe8"
+    },
+    {
+      "path": "B1_1_STUDY.png",
+      "bytes": 2368806,
+      "sha256": "fcefb9f004fb02549aaf747cc18b0ad14dceb5c33c4f231eeabf64c2ad49b46a"
+    },
+    {
+      "path": "B1_1_BATHROOMS_CONTACT_SHEET.png",
+      "bytes": 1256063,
+      "sha256": "fed43a8bd82d54b2d7743034cf05742c55725e341704ef16c706e81089d00df2"
+    },
+    {
+      "path": "B1_1_ASSET_REGISTER.json",
+      "bytes": 92964,
+      "sha256": "6f8c2fb71eea45299bdcfcd1f825d31cbb5d194f4dbb774315e95ef6ff428174"
+    },
+    {
+      "path": "KITCHEN_CABINET_3D_REGISTER_V01.json",
+      "bytes": 15364,
+      "sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3"
+    }
+  ],
+  "final_state": "B1_1_DESIGN_MODEL = HUMAN_REVIEW",
+  "final_verified_at": "2026-10-01T11:36:10.489534+08:00",
+  "unresolved_design_count": 18
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "graph_id": "relationships_c_type_r4",
+  "revision": "3-pier-oblique-ac-review",
+  "graph_sha256": "e9f48bda3a084dd51694453ad0078805ddb566053d0f4bf14a1fe69874139a51",
+  "source_bytes_verified": true,
+  "checked": [
+    {
+      "packet": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/proxy-angled-ac/pier.context.json",
+      "subject": "ent_b1bbaaf28737516b9c695b249f0d7ea5",
+      "native_id": "KITCHEN_DIVIDER_PIER_SITE_REVIEW",
+      "edges": 0,
+      "verified": 0,
+      "candidates": 0
+    }
+  ]
+}

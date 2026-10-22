@@ -1,0 +1,42 @@
+{
+  "status": "HUMAN_REVIEW",
+  "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/WHOLE_HOUSE_GLASS_PRIVACY_DELIVERY_V8.blend",
+  "sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+  "technical": {
+    "status": "PASS_MATERIAL_SELECTION_AND_PRESERVATION",
+    "sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+    "source_objects_unchanged": 3473,
+    "geometry_pose_visibility_changes": [],
+    "clear_glass_objects": 31,
+    "privacy_glass_objects": 16,
+    "unrelated_material_slots_unchanged": true,
+    "wood_bathroom_doors_unchanged": [
+      "V4_D-BATHM_LEAF_0",
+      "V4_D-GUEST-BATH_LEAF_0"
+    ],
+    "protected_sources": 16,
+    "saved_view": {
+      "active": "OVERVIEW_CEILING_HIDDEN",
+      "roof_hidden": true
+    },
+    "privacy_guarantee_certified": false,
+    "owner_visual_accepted": false
+  },
+  "opened_evidence": [
+    "PRIVACY_CONTACT.jpg",
+    "review_final/living.png"
+  ],
+  "visual_ledger": {
+    "clear_glass": "No tint nodes; existing environment reflections remain dark/brown. Room daylight retained compared to V7.",
+    "privacy_glass": "Opened five registered room renders; frosted shower and balcony panes visibly scatter background details. Door shadows/near silhouettes can remain.",
+    "privacy_approval": "No owner visual acceptance or nighttime sample certification"
+  },
+  "brightness_review": {
+    "same_camera": "CAM_living_VIEW_01",
+    "v7_mean_image_luma": 149.5101698634722,
+    "v8_mean_image_luma": 153.26622889833334,
+    "ratio": 1.0251224317268253,
+    "interpretation": "Image brightness regression check, not illuminance/colorimetry or material appearance certification"
+  },
+  "decision": "retain_final_candidate_for_owner_review"
+}

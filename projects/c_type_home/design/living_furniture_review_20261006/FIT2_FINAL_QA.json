@@ -1,0 +1,78 @@
+{
+  "revision": "r4-living-wave35-aluminum-review-2",
+  "source_sha256": "78d64077368b1a4952f44ed4877464e0cde51ffceeee40b2ae40727ebfc85d30",
+  "panes": [
+    {
+      "name": "NORTH_BALCONY_GLASS_EAST",
+      "bounds": [
+        [
+          12.968999862670898,
+          11.170000076293945,
+          1.100000023841858
+        ],
+        [
+          12.980999946594238,
+          13.579999923706055,
+          2.740000009536743
+        ]
+      ],
+      "clear_width_m": 2.41,
+      "clear_height_m": 1.64
+    },
+    {
+      "name": "NORTH_BALCONY_GLASS_NORTH_A",
+      "bounds": [
+        [
+          8.25,
+          13.64900016784668,
+          1.100000023841858
+        ],
+        [
+          10.479999542236328,
+          13.66100025177002,
+          2.740000009536743
+        ]
+      ],
+      "clear_width_m": 2.2300000000000004,
+      "clear_height_m": 1.64
+    },
+    {
+      "name": "NORTH_BALCONY_GLASS_NORTH_B",
+      "bounds": [
+        [
+          10.569999694824219,
+          13.64900016784668,
+          1.100000023841858
+        ],
+        [
+          12.84000015258789,
+          13.66100025177002,
+          2.740000009536743
+        ]
+      ],
+      "clear_width_m": 2.2699999999999996,
+      "clear_height_m": 1.64
+    }
+  ],
+  "no_wall_stair_surface_crossings": true,
+  "tread_m": 0.35,
+  "additional_retreat_m": 0.5,
+  "total_retreat_m": 1.0,
+  "step_topology": {
+    "STEP_0": {
+      "nonmanifold_edges": 0
+    },
+    "STEP_1": {
+      "nonmanifold_edges": 0
+    },
+    "STEP_2": {
+      "nonmanifold_edges": 0
+    },
+    "WAVE_STEP_3_ARRIVAL": {
+      "nonmanifold_edges": 0
+    }
+  },
+  "fresh_glb_entities": 987,
+  "glass_alpha": 0.32,
+  "frozen_r4_unchanged": true
+}

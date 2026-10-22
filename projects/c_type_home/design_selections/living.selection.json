@@ -1,0 +1,170 @@
+{
+  "schema": "c-type.room-design-selection.v1",
+  "room": "living",
+  "decision_date": "2026-10-09",
+  "status": "V10_FILL_FORM_CANDIDATE_HUMAN_REVIEW",
+  "whole_home_brief": "CONFIRMED pale naturalwood,ivory,simple; unify wood/wall/floor/hardware/light. Exactphysicalsamples atdetailstage.",
+  "appearance_references": {
+    "A_faithful": {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/whole_house_modes_v3/living/A_faithful/VIEW_01.png",
+      "sha256": "73c3252cbe8da0b56088f3fa9b713ca3f23e6106e8792b98ea50b30f7eb57e84",
+      "role": "APPEARANCE_ONLY_NO_DIMENSION_AUTHORITY"
+    },
+    "B_designer": {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/whole_house_modes_v3/living/B_designer/VIEW_01.png",
+      "sha256": "67dcf960c85a268e360120733754eb2783de779cf18ca3bf3e3dd4b485750745",
+      "role": "APPEARANCE_ONLY_NO_DIMENSION_AUTHORITY"
+    }
+  },
+  "selected": {
+    "primary_furniture": {
+      "from": "A_faithful",
+      "items": [
+        "Lsofa",
+        "windowchaise",
+        "singlewoodcoffee_table",
+        "longopenlowcabinet"
+      ],
+      "geometry": "approved source dimensions/layout"
+    },
+    "rug": {
+      "from": "B_designer VIEW_01",
+      "appearance": "cream/terracotta/inkblue geometricflatweave",
+      "fit": "dimensions based on source furniture and clear step/door passages"
+    },
+    "curtains": {
+      "from": "B_designer VIEW_01",
+      "appearance": "lightflax/ivorylinen",
+      "fit": "check rail,stack,windowhandle,sill andsunroomdoor"
+    },
+    "artwork": {
+      "from": "B_designer VIEW_01",
+      "appearance": "cream/terracotta/ink originalabstract,slimashframe",
+      "location": "eastwall above longlowcabinet; onefixedplace acrossviews",
+      "fit": "size/height/attachment based on actualwall elevation"
+    }
+  },
+  "excluded": [
+    "allCreativeelements"
+  ],
+  "not_selected_automatically": [
+    "Designerfloorlamp",
+    "additionalthrowcushions",
+    "throwblanket",
+    "extraDesignerprops/plants"
+  ],
+  "evaluation": {
+    "compatible": true,
+    "reason": "paleash/ivory base withlimitedtextile/art accent",
+    "balance": "patternedrug andart already focal; otherdecoration sparse"
+  },
+  "source_writeback": false,
+  "next": "评审同材质同灯光的 V7/V10 三视角与近景，判断填充大形是否更接近目标；保留原模型，不自动推广全屋。",
+  "appearance_acceptance_requirement": "1:1 reproduction of selected colors, materials, texture, sheen and illumination; true model controls dimensions. No pixel identity across views required.",
+  "latest_owner_feedback": "2026-10-11：已批准按建议区分坐垫支撑芯/柔软包覆和靠包松填充轮廓，并多次要求继续；尚未认可 V10 外观或尺寸。",
+  "latest_test": {
+    "date": "2026-10-10",
+    "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
+    "sha256": "94661776fe34a45b73b540765ca6391a63e34a0940b5b84d461abd8b4657cd76",
+    "registry": "render_config/lookdev_v5/SOURCE_REGISTER.json",
+    "human_appearance_accepted": false,
+    "soft_form_match": "stillpartial;loftnotdeclaredsolved",
+    "scope": "furniturematerialandsoftcoverrepair;layoutunchanged"
+  },
+  "appearance_test_history": [
+    {
+      "date": "2026-10-10",
+      "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/LIVING_DINING_PRODUCT_REBUILD_V4.blend",
+      "sha256": "c3e1060afa1c98ec64d9e8e15fdfaa0fbf3fb5af39aaebc452b553a96b8f3f39",
+      "registry": "render_config/product_rebuild_v4/PRODUCT_REGISTER.json",
+      "human_appearance_accepted": false,
+      "catalog_sku_not_automatically_selected": true
+    }
+  ],
+  "component_feedback": {
+    "wood_v5": {
+      "date": "2026-10-11",
+      "status": "OWNER_POSITIVE_APPEARANCE_FEEDBACK_RETAIN",
+      "feedback": "woodcolorclearlyimproved",
+      "physical_finish_sample_approved": false
+    },
+    "sofa_soft_v5": {
+      "date": "2026-10-11",
+      "status": "OWNER_NOT_ACCEPTED",
+      "feedback": "softupholsterylittletonoimprovement"
+    },
+    "sofa_volume_v6": {
+      "date": "2026-10-11",
+      "status": "OWNER_POSITIVE_VOLUME_FEEDBACK",
+      "feedback": "体积变大、变厚，像沙发了",
+      "final_height_procurement_ergonomics_approved": false
+    },
+    "sofa_softness_v6": {
+      "date": "2026-10-11",
+      "status": "OWNER_NOT_ACCEPTED",
+      "feedback": "蓬松感、松软感还没做到"
+    },
+    "sofa_softness_v7": {
+      "date": "2026-10-11",
+      "status": "OWNER_NOT_ACCEPTED_RENDER_AND_FILLING_REVIEW",
+      "feedback": "灰模偏松，实渲紧绷；有褶皱仍缺松软感",
+      "whole_form_approved": false
+    }
+  },
+  "sofa_pair_pilot": {
+    "date": "2026-10-11",
+    "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v6/SOFA_SEAT_BACK_DETAIL_V6.blend",
+    "sha256": "06150245b3fee8442a530aab9fd82766f152093159251bb8d849efb4372f367c",
+    "role": "isolatedseat/backtrial_notwholehouseinstalledmodel",
+    "registry": "render_config/sofa_soft_pilot_v6/CONTRACT.json",
+    "owner_accepted": false,
+    "totalheight_mm": 813.7471675872803,
+    "height_conflict_mm": 113.74716758728032,
+    "wood": "V5 retained",
+    "source_writeback": false
+  },
+  "sofa_pair_pilot_v7": {
+    "date": "2026-10-11",
+    "model": "design/sofa_soft_pilot_v7/local_final/SOFA_RELAXED_COVER_V7.blend",
+    "sha256": "5bb0f004a9501bff61a017975cf65c8205f46e3af3a39d9a83c91096db46ec4f",
+    "registry": "render_config/sofa_soft_pilot_v7/CONTRACT.json",
+    "role": "isolated seat/back trial; not whole-house installed",
+    "owner_accepted": false,
+    "totalheight_mm": 809.931,
+    "seat_crown_mm": 482.528,
+    "old700mm_height_conflict_mm": 109.931,
+    "actual_simulation_used_for_final": false,
+    "wood_and_fabric": "V5 retained unchanged",
+    "source_writeback": false
+  },
+  "sofa_render_diagnosis_v8": {
+    "source": "design/sofa_soft_pilot_v8/render_diagnosis/V7_SAME_MESH_DIRECTIONAL_LIGHT_V8.blend",
+    "sha256": "cbed4cc4b34c9ebe5fc1bf8a388a860d620493b7f8bd609770499b967c37862f",
+    "geometry_materials_unchanged": true,
+    "owner_accepted": false,
+    "site_illumination_calibrated": false
+  },
+  "sofa_material_test_v9": {
+    "source": "design/sofa_material_pilot_v9/surface_test/SOFA_SURFACE_FIBER_TEST_V9.blend",
+    "sha256": "06c26fdf852cb14bd3c3069d8fc4c354fde0c9096bdf840bd63192afa3500dd4",
+    "registry": "render_config/sofa_material_pilot_v9/SOURCE_REGISTER.json",
+    "source_geometry_light_unchanged": true,
+    "creator_result": "surface reflection brighter/softer, plushness not clearly improved; retain original material",
+    "owner_accepted": false,
+    "filling_mechanics_changed": false,
+    "whole_house_propagation": false
+  },
+  "sofa_fill_form_v10": {
+    "source": "design/sofa_fill_form_v10/delivery/SOFA_DIFFERENTIATED_FILL_V10.blend",
+    "sha256": "ad9960ad4991e1f2f524a052815ae5c469efcf50967539fa74d921a877c741b8",
+    "contract": "render_config/sofa_fill_form_v10/CONTRACT.json",
+    "owner_accepted": false,
+    "totalheight_mm": 805.998325,
+    "seat_crown_mm": 483.64076,
+    "creator_result": "back fullness/profile changed; surface cover remains regular; not yet reference-like relaxed appearance",
+    "material_light": "original V5 cloth/wood and V8 directional light retained; V9 sheen excluded",
+    "construction_guides": "illustrative seat core/jacket/back channels; no certified manufacturing section",
+    "source_writeback": false,
+    "whole_house_propagation": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "CONCEPT_ONLY_HUMAN_REVIEW",
+  "model_edits": false,
+  "source_revision": "r4-dining-chairs-review-1",
+  "selected_native_ids": [
+    "R4_UPPER_FLOOR_CONTINUOUS_STRAIGHT_THRESHOLD",
+    "STEP_1"
+  ],
+  "rise_m": 0.45,
+  "riser_count": 4,
+  "riser_height_m": 0.1125,
+  "tread_depth_m": 0.4,
+  "space_rule": "Recede into former upper leisure platform, preserve living-room usable area",
+  "reference_role": "User-provided prior concept, not verified R4 geometry",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "size": "1536x1152"
+}

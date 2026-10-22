@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "options": [
+    {
+      "option": "A",
+      "branch": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_A.blend",
+      "branch_sha256": "133391c1603121f38cd0d1192a7b04bd4f65053618f25fe01aee7abf87d4e25c",
+      "protected_count": 1497,
+      "unchanged_protected": true,
+      "nonmanifold_new_meshes": 0,
+      "ramp_disabled": true,
+      "local_top_z": [
+        0.15,
+        0.3,
+        0.45
+      ],
+      "model_status": "RESEARCH_ONLY_NOT_CONSTRUCTION",
+      "checks": [
+        {
+          "name": "A_PLATFORM450_RETAINED_0",
+          "nonmanifold": 0
+        },
+        {
+          "name": "A_PLATFORM450_RETAINED_1",
+          "nonmanifold": 0
+        },
+        {
+          "name": "A_PLATFORM450_RETAINED_2",
+          "nonmanifold": 0
+        },
+        {
+          "name": "A_PLATFORM450_RETAINED_3",
+          "nonmanifold": 0
+        },
+        {
+          "name": "A_CONTINUOUS_TREAD300_0",
+          "nonmanifold": 0
+        },
+        {
+          "name": "A_CONTINUOUS_TREAD150_0",
+          "nonmanifold": 0
+        }
+      ]
+    },
+    {
+      "option": "B",
+      "branch": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_B.blend",
+      "branch_sha256": "c988145089e478bec55fe896b2f0287969049b2723510a657b9717f4b9e9bd5b",
+      "protected_count": 1497,
+      "unchanged_protected": true,
+      "nonmanifold_new_meshes": 0,
+      "ramp_disabled": true,
+      "local_top_z": [
+        0.15,
+        0.3,
+        0.45
+      ],
+      "model_status": "RESEARCH_ONLY_NOT_CONSTRUCTION",
+      "checks": [
+        {
+          "name": "B_UPPER450_RETAINED_0",
+          "nonmanifold": 0
+        },
+        {
+          "name": "B_UPPER450_RETAINED_1",
+          "nonmanifold": 0
+        },
+        {
+          "name": "B_UPPER450_RETAINED_2",
+          "nonmanifold": 0
+        },
+        {
+          "name": "B_UPPER450_RETAINED_3",
+          "nonmanifold": 0
+        },
+        {
+          "name": "B_LOWER0_PLATFORM_REMOVAL_INFILL_0",
+          "nonmanifold": 0
+        },
+        {
+          "name": "B_LOWER0_PLATFORM_REMOVAL_INFILL_1",
+          "nonmanifold": 0
+        },
+        {
+          "name": "B_STAIR_1_RISE150_GOING300_0",
+          "nonmanifold": 0
+        },
+        {
+          "name": "B_STAIR_2_RISE150_GOING300_0",
+          "nonmanifold": 0
+        },
+        {
+          "name": "B_STAIR_3_RISE150_GOING300_0",
+          "nonmanifold": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "stage": "geometry",
+  "engine": "BLENDER_WORKBENCH",
+  "device": "Workbench",
+  "samples": 128,
+  "images": [
+    {
+      "camera": "CAM_living_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/geometry/CAM_living_VIEW_01.png",
+      "seconds": 2.69,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "camera": "V4_CAM_SOFA_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/geometry/V4_CAM_SOFA_COMPLETE.png",
+      "seconds": 0.9,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "camera": "V4_CAM_DINING_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/geometry/V4_CAM_DINING_COMPLETE.png",
+      "seconds": 1.05,
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "camera": "V4_CAM_CHAIR_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/geometry/V4_CAM_CHAIR_COMPLETE.png",
+      "seconds": 0.97,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "camera": "V4_CAM_DINING_DETAIL",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/geometry/V4_CAM_DINING_DETAIL.png",
+      "seconds": 0.87,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "camera": "CAM_living_VIEW_02",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/geometry/CAM_living_VIEW_02.png",
+      "seconds": 0.89,
+      "size": [
+        960,
+        540
+      ]
+    }
+  ],
+  "blender_version": "5.2.1 LTS",
+  "denoiser": "OIDN GPU High Accurate",
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": 0.15000000596046448
+}

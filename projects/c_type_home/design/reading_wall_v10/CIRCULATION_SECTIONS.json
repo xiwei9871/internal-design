@@ -1,0 +1,30 @@
+{
+  "sections": [
+    {
+      "y_m": 4.89,
+      "top_step_outer_x_m": 6.7128400802612305,
+      "cabinet_to_actual_step_horizontal_gap_mm": 1957.0589065551758
+    },
+    {
+      "y_m": 5.05,
+      "top_step_outer_x_m": 6.726166725158691,
+      "cabinet_to_actual_step_horizontal_gap_mm": 1943.7322616577148
+    },
+    {
+      "y_m": 5.3,
+      "top_step_outer_x_m": 6.781133651733398,
+      "cabinet_to_actual_step_horizontal_gap_mm": 1888.7653350830078
+    },
+    {
+      "y_m": 5.5,
+      "top_step_outer_x_m": 6.860352516174316,
+      "cabinet_to_actual_step_horizontal_gap_mm": 1809.5464706420898
+    },
+    {
+      "y_m": 5.71,
+      "top_step_outer_x_m": 6.976511001586914,
+      "cabinet_to_actual_step_horizontal_gap_mm": 1693.3879852294922
+    }
+  ],
+  "note": "Horizontal section of top step at z449mm; not a person-motion/safety certification"
+}

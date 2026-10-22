@@ -1,0 +1,7 @@
+{
+  "file": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_2000_ascii.dxf",
+  "status": "FAIL",
+  "import_module": "importDXF",
+  "error": "RuntimeError: <built-in function __lazy_import__> returned a result with an exception set",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/freecad_import_probe.py\", line 9, in <module>\n    doc=importDXF.open(str(path))\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Applications/FreeCAD.app/Contents/Resources/Mod/Draft/importDXF.py\", line 2910, in open\n    doc, stats, start_time, end_time = _import_dxf_file(filename, doc_name=None)\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Applications/FreeCAD.app/Contents/Resources/Mod/Draft/importDXF.py\", line 2871, in _import_dxf_file\n    stats = Import.readDXF(filename)\n            ^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: <built-in function __lazy_import__> returned a result with an exception set\n"
+}

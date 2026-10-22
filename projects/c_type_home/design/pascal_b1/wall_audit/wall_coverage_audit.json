@@ -1,0 +1,480 @@
+{
+  "metrics": {
+    "MASTER_EVIDENCE_SEGMENTS": 77,
+    "CANONICAL_WALL_SEGMENTS": 39,
+    "MISSING_SEGMENTS": 2,
+    "ALIGNMENT_VARIANTS": 29,
+    "MASTER_TOTAL_CENTERLINE_MM": 160375,
+    "CANONICAL_COVERED_MM": 134864,
+    "MISSING_TOTAL_MM": 2700,
+    "LARGEST_MISSING_MM": 4275,
+    "CANONICAL_COVERAGE_PCT": 84.1
+  },
+  "missing": [
+    {
+      "kind": "THIN_RECT",
+      "source": "Line259",
+      "type": "Part::FeaturePython",
+      "rect": [
+        7472.75,
+        5397.375,
+        7522.5,
+        7738.40625
+      ],
+      "length": 2341.03125,
+      "thickness": 49.75,
+      "nearest_canon_mm": 284,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "THIN_RECT",
+      "source": "Rectangle020",
+      "type": "Part::Part2DObjectPython",
+      "rect": [
+        9290.75,
+        4475.90625,
+        10790.75,
+        4675.90625
+      ],
+      "length": 1500.0,
+      "thickness": 200.0,
+      "nearest_canon_mm": 241,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line164/Line174/Line175",
+      "type": "Part::Line x2",
+      "rect": [
+        7099.9147805119865,
+        0.21190498437499627,
+        8599.914780512918,
+        200.211904984375
+      ],
+      "length": 1500.0000000009313,
+      "thickness": 200.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line055/Line159/Line160",
+      "type": "Part::Line x2",
+      "rect": [
+        10799.914780511986,
+        0.21190498437499627,
+        12199.914780511986,
+        200.211904984375
+      ],
+      "length": 1400.0,
+      "thickness": 200.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line135/Line136",
+      "type": "Part::Line x2",
+      "rect": [
+        14699.914780511986,
+        0.21190498437499627,
+        15499.914780511986,
+        200.211904984375
+      ],
+      "length": 800.0,
+      "thickness": 200.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line171/Line175",
+      "type": "Part::Line x2",
+      "rect": [
+        7099.9147805119865,
+        200.211904984375,
+        7799.9147805119865,
+        500.211904984375
+      ],
+      "length": 700.0,
+      "thickness": 300.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line053/Line054",
+      "type": "Part::Line x2",
+      "rect": [
+        1299.9147805119865,
+        2300.211904984346,
+        2899.9147805119865,
+        2500.211904984375
+      ],
+      "length": 1600.0,
+      "thickness": 200.0000000000291,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line211/Line214",
+      "type": "Part::Line x2",
+      "rect": [
+        5499.9147805119865,
+        3900.211904984375,
+        5899.9147805119865,
+        4000.211904984375
+      ],
+      "length": 400.0,
+      "thickness": 100.0,
+      "nearest_canon_mm": 450,
+      "classification": "EXTRACTOR_DROPPED"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line064/Line066",
+      "type": "Part::Line x2",
+      "rect": [
+        10799.914780511986,
+        4500.211904984375,
+        11399.914780511986,
+        4700.211904984375
+      ],
+      "length": 600.0,
+      "thickness": 200.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line127/Line128",
+      "type": "Part::Line x2",
+      "rect": [
+        15499.914780511986,
+        4640.211904984375,
+        16199.914780511986,
+        4700.211904984433
+      ],
+      "length": 700.0,
+      "thickness": 60.00000000005821,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line037/Line038",
+      "type": "Part::Line x2",
+      "rect": [
+        13099.914780511986,
+        6400.211904984375,
+        16199.914780511986,
+        6600.211904984375
+      ],
+      "length": 3100.0,
+      "thickness": 200.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line006/Line060",
+      "type": "Part::Line x2",
+      "rect": [
+        9049.914780511986,
+        6450.211904984375,
+        11949.914780512918,
+        6600.211904984375
+      ],
+      "length": 2900.0000000009313,
+      "thickness": 150.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line084/Line085/Line086/Line087",
+      "type": "Part::Line x2",
+      "rect": [
+        8899.914780511986,
+        10900.211904984375,
+        9699.914780511986,
+        11100.211904984375
+      ],
+      "length": 800.0,
+      "thickness": 200.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line092/Line093/Line094/Line095",
+      "type": "Part::Line x2",
+      "rect": [
+        10399.914780511986,
+        10900.211904984375,
+        12399.914780511986,
+        11100.211904984375
+      ],
+      "length": 2000.0,
+      "thickness": 200.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line002/Line003",
+      "type": "Part::Line x2",
+      "rect": [
+        7999.9147805119865,
+        10900.211904984375,
+        8899.914780511986,
+        11100.211904984375
+      ],
+      "length": 900.0,
+      "thickness": 200.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line081/Line082",
+      "type": "Part::Line x2",
+      "rect": [
+        9699.914780511986,
+        10900.211904984375,
+        10399.914780511986,
+        11100.211904984346
+      ],
+      "length": 700.0,
+      "thickness": 199.9999999999709,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line101/Line103",
+      "type": "Part::Line x2",
+      "rect": [
+        13499.914780511986,
+        11700.211904984317,
+        15799.914780511986,
+        11800.211904984317
+      ],
+      "length": 2300.0,
+      "thickness": 100.0,
+      "nearest_canon_mm": 400,
+      "classification": "EXTRACTOR_DROPPED"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line/Line001",
+      "type": "Part::Line x2",
+      "rect": [
+        2699.9147805119865,
+        13000.211904984375,
+        3799.9147805119865,
+        13200.211904984491
+      ],
+      "length": 1100.0,
+      "thickness": 200.00000000011642,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line026/Line027",
+      "type": "Part::Line x2",
+      "rect": [
+        6899.9147805119865,
+        13000.211904984375,
+        7799.9147805119865,
+        13200.211904984433
+      ],
+      "length": 900.0,
+      "thickness": 200.0000000000582,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line021/Line071",
+      "type": "Part::Line x2",
+      "rect": [
+        3599.9147805119865,
+        13800.211904984375,
+        7099.9147805119865,
+        13900.211904984375
+      ],
+      "length": 3500.0,
+      "thickness": 100.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line025/Line073",
+      "type": "Part::Line x2",
+      "rect": [
+        3599.9147805119865,
+        13200.211904984491,
+        3699.9147805119865,
+        13900.211904984375
+      ],
+      "length": 699.9999999998836,
+      "thickness": 100.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line050/Line210",
+      "type": "Part::Line x2",
+      "rect": [
+        5499.9147805119865,
+        3900.211904984375,
+        5699.914780512918,
+        4700.211904984375
+      ],
+      "length": 800.0,
+      "thickness": 200.00000000093132,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line050/Line235/Line236/Line237",
+      "type": "Part::Line x2",
+      "rect": [
+        5699.914780512918,
+        3847.330250111874,
+        5947.999726498965,
+        4700.211904984375
+      ],
+      "length": 852.8816548725008,
+      "thickness": 248.0849459860474,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line024/Line072",
+      "type": "Part::Line x2",
+      "rect": [
+        6999.9147805119865,
+        13200.211904984375,
+        7099.9147805119865,
+        13900.211904984375
+      ],
+      "length": 700.0,
+      "thickness": 100.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line255/Line256",
+      "type": "Part::Line x2",
+      "rect": [
+        7199.9147805119865,
+        6600.211904984375,
+        7499.9147805119865,
+        7800.211904984317
+      ],
+      "length": 1199.9999999999418,
+      "thickness": 300.0,
+      "nearest_canon_mm": 300,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line254/Line255",
+      "type": "Part::Line x2",
+      "rect": [
+        7499.9147805119865,
+        6600.211904984375,
+        7799.9147805119865,
+        7800.211904984317
+      ],
+      "length": 1199.9999999999418,
+      "thickness": 300.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line032/Line033/Line079",
+      "type": "Part::Line x2",
+      "rect": [
+        7750.1647805119865,
+        7775.305654984317,
+        7999.9147805119865,
+        12050.211904984317
+      ],
+      "length": 4274.90625,
+      "thickness": 249.75,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line061/Line065",
+      "type": "Part::Line x2",
+      "rect": [
+        9049.914780511986,
+        4971.246406186081,
+        9199.914780511986,
+        6600.211904984375
+      ],
+      "length": 1628.965498798294,
+      "thickness": 150.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line034/Line107",
+      "type": "Part::Line x2",
+      "rect": [
+        13099.914780511986,
+        11100.211904984375,
+        13499.914780511986,
+        13900.211904984375
+      ],
+      "length": 2800.0,
+      "thickness": 400.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line107/Line109",
+      "type": "Part::Line x2",
+      "rect": [
+        13499.914780511986,
+        11100.211904984375,
+        13599.914780511986,
+        11800.211904984317
+      ],
+      "length": 699.9999999999418,
+      "thickness": 100.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    },
+    {
+      "kind": "LINE_PAIR",
+      "source": "Line104/Line106",
+      "type": "Part::Line x2",
+      "rect": [
+        15699.914780511986,
+        11100.211904984317,
+        15799.914780511986,
+        11800.211904984317
+      ],
+      "length": 700.0,
+      "thickness": 100.0,
+      "nearest_canon_mm": 0,
+      "classification": "ALIGNMENT_VARIANT"
+    }
+  ]
+}

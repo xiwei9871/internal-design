@@ -1,0 +1,51 @@
+{
+  "status": "HOUSE_BASE_GEOMETRY_V1_FROZEN",
+  "frozen_at": "2026-10-02T00:00:00+08:00",
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V1.blend",
+  "model_sha256": "c48a9cda731a4517e785dc21a381dd27e39f24dde796355cfa6debe86f66e50b",
+  "source_candidate": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/B1_WALL_CORNERS_REPAIRED_V5.blend",
+  "source_candidate_sha256": "c48a9cda731a4517e785dc21a381dd27e39f24dde796355cfa6debe86f66e50b",
+  "v5_verification": {
+    "status": "PASS",
+    "fresh_open_objects": 1242,
+    "corners_completed": 26,
+    "height_patches": 34,
+    "void_before_solid_after_probes": 273,
+    "unchanged_outside_corner_surface_samples": 286,
+    "max_outside_corner_deviation_mm": 0.0,
+    "topology": {
+      "vertices": 6418,
+      "faces": 8666,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 60.600844832781604
+    },
+    "patch_objects": 34,
+    "all_nonwall_objects_preserved": true,
+    "current_study_opening_preserved": true,
+    "all_registered_openings_clear": true,
+    "black_wall_demolition_count": 0,
+    "source_and_kitchen_freeze_hashes": "PASS",
+    "model_sha256": "c48a9cda731a4517e785dc21a381dd27e39f24dde796355cfa6debe86f66e50b",
+    "blender_version": "5.2.1 LTS"
+  },
+  "scope": [
+    "B0 inherited architecture",
+    "kitchen frozen V1",
+    "living corrections V1-V3",
+    "continuous wall joins V4",
+    "26 corner repairs V5",
+    "registered doors/casings",
+    "four projecting bays",
+    "guest and leisure sliding doors"
+  ],
+  "explicit_exclusions": [
+    "current study south opening remains open",
+    "secondary bath renovation options are separate concepts",
+    "final materials/lighting",
+    "fabrication dimensions without site measure"
+  ],
+  "black_wall_policy": "preserved; no demolition",
+  "white_wall_policy": "modifiable only in separate renovation option",
+  "next_revision_policy": "preserve this file; options and future edits branch from it"
+}

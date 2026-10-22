@@ -1,0 +1,61 @@
+{
+  "project": {
+    "id": "c-type-home-pascal-poc",
+    "scene_id": "905df32d8105",
+    "editorUrl": "/editor/905df32d8105",
+    "level": "level_el9gsgrhhp5thb3q"
+  },
+  "zones": {
+    "R-LIVING": "zone_n7166s2lkk8nhulg",
+    "R-DINING": "zone_jv8vom8az6sx4h0l",
+    "R-BALC-N": "zone_zz0jo33q8pfh6bzd"
+  },
+  "walls": {
+    "W-EXT-W-S1": "wall_snz1gswevy5wqqsi",
+    "W-EXT-N-LV#W-LIV-N": "wall_p96ww2idw6pkotdw",
+    "W-INT-X7900-U-TV#G-LIV-NBALC": "wall_2t1dzrnhysogf99q",
+    "G-DIN-LIV-partition": "wall_qiygzesoj2v2z4qj",
+    "W-EXT-N-BAL-parapet": "wall_adzta1fkvrpz1tbh",
+    "W-NBALC-E-PAR-parapet": "wall_55m62bswk9ayspky",
+    "W-INT-Y10800.0": "wall_ju2alytej436os2p",
+    "W-INT-Y10800.1": "wall_mghyrubyx6l3fcxy",
+    "W-INT-Y10800#G-GB-BALC": "wall_lbwgkhthz3h411n3",
+    "W-BAY-JW": "wall_z0mwpvmddxx4l742",
+    "W-BAY-JE": "wall_7o708m915l4gm5l9",
+    "W-BAY-FRONT": "wall_a354nw7ygosoi09z"
+  },
+  "openings": {
+    "W-LIV-N": "window_mtrmmjt8ydipgw6t",
+    "W-LIV-N-BAY-FRONT": "window_xieokzd2ork6i9kp",
+    "G-LIV-NBALC": "door_dsugl0w8sn84jdk3",
+    "G-GB-BALC": "door_d214j0awbns20a6u",
+    "ENT-1": "door_p9cjkq0gjajfd83g",
+    "G-DIN-LIV": "window_yigiliu5gyb72gkl"
+  },
+  "items": {
+    "SOFA_3S(三人位/Rectangle046)": "item_nwek02kq25rvim7r",
+    "SOFA_2S(双人位/Rectangle047)": "item_ut0cnlz9yp6gr277",
+    "CHAISE_LIVING(贵妃椅/Rectangle048)": "item_ypxp1y2dmxnq3gil",
+    "COFFEE_TABLE(茶几/Rectangle049)": "item_2ecqkmbmyl739l6f",
+    "SIDE_TABLE(角几/Circle)": "item_h91ffhk8zlbea36y",
+    "DINING_TABLE(餐桌/Rectangle050)": "item_pjq6fimj7b5ppucc",
+    "DINING_CHAIR_1(Circle010)": "item_62046dpgpffsga6a",
+    "DINING_CHAIR_2(Circle011)": "item_2xrafxfhqgmyte1g",
+    "DINING_CHAIR_3(Circle012)": "item_j37qnhvcy12phjti",
+    "DINING_CHAIR_4(Circle013)": "item_gx8pqt373zyl2ogb",
+    "LAUNDRY_MAIN_STACK(洗烘叠放/Rectangle040)": "item_eamud5l0w5is2jk8",
+    "FREEZER_NORTH_BALCONY(冰柜/Rectangle039)": "item_eiw53ngtctu4z98d"
+  },
+  "catalog_mapping": {
+    "三人位": "sofa",
+    "双人位": "sofa",
+    "贵妃椅": "livingroom-chair",
+    "茶几": "coffee-table",
+    "角几": "bedside-table",
+    "餐桌": "dining-table",
+    "餐椅": "dining-chair",
+    "洗烘叠放": "washing-machine",
+    "冰柜": "fridge"
+  },
+  "catalog_dim_caveat": "catalog assets have fixed nominal dims != source footprints; positions exact, dims recorded in fidelity report"
+}

@@ -1,0 +1,178 @@
+{
+  "owner": "Tencent Hunyuan3D generation supplied by user",
+  "license": "owner-supplied candidate, no inferred third-party redistribution license",
+  "assets": [
+    {
+      "id": "cba8282db6ca59970f1311be3a1d44f2",
+      "original": "/Users/xiwei/Downloads/cba8282db6ca59970f1311be3a1d44f2.glb",
+      "copy": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/originals/cba8282db6ca59970f1311be3a1d44f2.glb",
+      "sha256": "48583f637a49adc5d033e2e674f48dfc42e0cc53fefb6dad4a967d7049a9b41a",
+      "bytes": 22925932,
+      "generator": {
+        "generator": "Khronos glTF Blender I/O v4.0.43",
+        "version": "2.0"
+      },
+      "meshes": 1,
+      "nodes": 1,
+      "materials": [
+        {
+          "doubleSided": true,
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            }
+          },
+          "name": "Material.001",
+          "normalTexture": {
+            "index": 0
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            },
+            "metallicRoughnessTexture": {
+              "index": 2
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "name": "texture_pbr_20250901_normal",
+          "embedded": true,
+          "mimeType": "image/png"
+        },
+        {
+          "name": "texture_pbr_20250901",
+          "embedded": true,
+          "mimeType": "image/png"
+        },
+        {
+          "name": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness",
+          "embedded": true,
+          "mimeType": "image/png"
+        }
+      ],
+      "animations": 0
+    },
+    {
+      "id": "74cd759f5874c6ea17fef1dca9f82ef4",
+      "original": "/Users/xiwei/Downloads/74cd759f5874c6ea17fef1dca9f82ef4.glb",
+      "copy": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/originals/74cd759f5874c6ea17fef1dca9f82ef4.glb",
+      "sha256": "abe85548ad04687e440c975b94f7b53b504e5698781ce2ea301c2ebf2240523e",
+      "bytes": 33364948,
+      "generator": {
+        "generator": "Khronos glTF Blender I/O v4.0.43",
+        "version": "2.0"
+      },
+      "meshes": 1,
+      "nodes": 1,
+      "materials": [
+        {
+          "doubleSided": true,
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            }
+          },
+          "name": "Material.001",
+          "normalTexture": {
+            "index": 0
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            },
+            "metallicRoughnessTexture": {
+              "index": 2
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "name": "texture_pbr_20250901_normal",
+          "embedded": true,
+          "mimeType": "image/png"
+        },
+        {
+          "name": "texture_pbr_20250901",
+          "embedded": true,
+          "mimeType": "image/png"
+        },
+        {
+          "name": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness",
+          "embedded": true,
+          "mimeType": "image/png"
+        }
+      ],
+      "animations": 0
+    },
+    {
+      "id": "c90be04e9228202bed9282d5bee6edc5",
+      "original": "/Users/xiwei/Downloads/c90be04e9228202bed9282d5bee6edc5.glb",
+      "copy": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/originals/c90be04e9228202bed9282d5bee6edc5.glb",
+      "sha256": "7d4cf50afd63e29ce075fc9eacf5a6e16c7be1cdb916fe8f81a1af4ea1c05c02",
+      "bytes": 25346784,
+      "generator": {
+        "generator": "Khronos glTF Blender I/O v4.0.43",
+        "version": "2.0"
+      },
+      "meshes": 1,
+      "nodes": 1,
+      "materials": [
+        {
+          "doubleSided": true,
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            }
+          },
+          "name": "Material.001",
+          "normalTexture": {
+            "index": 0
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            },
+            "metallicRoughnessTexture": {
+              "index": 2
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "name": "texture_pbr_20250901_normal",
+          "embedded": true,
+          "mimeType": "image/png"
+        },
+        {
+          "name": "texture_pbr_20250901",
+          "embedded": true,
+          "mimeType": "image/png"
+        },
+        {
+          "name": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness",
+          "embedded": true,
+          "mimeType": "image/png"
+        }
+      ],
+      "animations": 0
+    }
+  ],
+  "guest_room": "owner requested retain current model; no bed/door/hinge modification"
+}

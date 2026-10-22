@@ -1,0 +1,96 @@
+{
+  "authorization": "2026-10-09 owner redefines Designer as styling with main room/furniture retained; Creative as free ideation breaking original furniture/layout assumptions",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console_bath_mirrors_review/CONSOLE400_THREE_BATH_MIRRORS.blend",
+  "source_sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644",
+  "camera": {
+    "room_id": "living",
+    "view_id": "VIEW_01",
+    "kind": "HERO",
+    "eye": [
+      3.1,
+      7.25,
+      1.58
+    ],
+    "target": [
+      5.5,
+      10.7,
+      1.1
+    ],
+    "lens_mm": 25,
+    "camera_name": "CAM_living_VIEW_01",
+    "quaternion": [
+      0.6747045516967773,
+      0.6747046113014221,
+      -0.2115979641675949,
+      -0.2115979939699173
+    ],
+    "authority": "PRESENTATION",
+    "controlled_verticals": true,
+    "shift_y": -0.07931451224980553,
+    "preview_iteration": 2,
+    "matrix_world": [
+      [
+        0.8209052085876465,
+        2.875798621460035e-08,
+        -0.5710645318031311,
+        3.0999999046325684
+      ],
+      [
+        -0.5710645318031311,
+        -7.325335360519603e-08,
+        -0.8209052085876465,
+        7.25
+      ],
+      [
+        -6.543996988739309e-08,
+        1.0,
+        -4.371138828673793e-08,
+        1.5800000429153442
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "scope": "one living VIEW_01 pilot per mode; global batch stays paused",
+  "jobs": [
+    {
+      "level": "DESIGNER",
+      "images": [
+        "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/living/A_faithful/VIEW_01.png",
+        "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/living/00_camera_gate/VIEW_01_preview.png"
+      ],
+      "input_hashes": {
+        "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/living/A_faithful/VIEW_01.png": "73c3252cbe8da0b56088f3fa9b713ca3f23e6106e8792b98ea50b30f7eb57e84",
+        "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/living/00_camera_gate/VIEW_01_preview.png": "440294f039395cb9fd688fffe2999e47078d3c59d04de24ce15f8c7f8ee8faf0"
+      },
+      "prompt": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/render_config/living_style_pilot_v4/DESIGNER.prompt.txt",
+      "out": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/living_style_pilot_v4/DESIGNER.png",
+      "estimated_input_bytes": 4128464
+    },
+    {
+      "level": "CREATIVE",
+      "images": [
+        "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/living/A_faithful/VIEW_01.png"
+      ],
+      "input_hashes": {
+        "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/photo_study_v2/living/A_faithful/VIEW_01.png": "73c3252cbe8da0b56088f3fa9b713ca3f23e6106e8792b98ea50b30f7eb57e84"
+      },
+      "prompt": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/render_config/living_style_pilot_v4/CREATIVE.prompt.txt",
+      "out": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/living_style_pilot_v4/CREATIVE.png",
+      "estimated_input_bytes": 3357714
+    }
+  ],
+  "model": "gpt-image-2",
+  "quality": "high",
+  "requested_size": [
+    1920,
+    1080
+  ],
+  "source_writeback": false,
+  "creative_authority": "INSPIRATION_ONLY",
+  "previous_v3": "OWNER_REJECTED_DIFFERENCE_TOO_SMALL"
+}

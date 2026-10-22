@@ -1,0 +1,13 @@
+{
+  "revision": "r4-long-side-cabinet-chaise-south-review-10",
+  "fresh_glb_entities": 1012,
+  "all_stable_ids_retained": true,
+  "cabinet_and_chaise_bounds_match": true,
+  "chaise_shift_m": 0.9,
+  "cabinet_dimensions_m": [
+    1.2,
+    0.35,
+    0.45
+  ],
+  "review9_and_frozen_r4_unchanged": true
+}

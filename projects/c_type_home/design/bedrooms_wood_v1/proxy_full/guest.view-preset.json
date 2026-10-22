@@ -1,0 +1,83 @@
+{
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "bedrooms_wood_v1_guest",
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.02,
+  "far": 1000,
+  "position": [
+    10.45,
+    2.3,
+    -10.55
+  ],
+  "quaternion": [
+    -0.112025186419487,
+    -0.8612033724784851,
+    -0.21626490354537964,
+    0.4461037516593933
+  ],
+  "orbit_target": [
+    12.05,
+    1.25,
+    -9.42
+  ],
+  "viewport": {
+    "width": 1000,
+    "height": 780,
+    "pixel_ratio": 1
+  },
+  "projection_matrix": [
+    1.883086,
+    0,
+    0,
+    0,
+    0,
+    2.414214,
+    0,
+    0,
+    0,
+    0,
+    -1.00004,
+    -1,
+    0,
+    0,
+    -0.0400008,
+    0
+  ],
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_bedrooms_wood_v1",
+  "source_revision": "bedrooms-wood-v1-review-3",
+  "source_sha256": "93891e0b9c60a9d769e8e65ec4d04d592ea11dee4b9d713966d8b1033b9ebd31",
+  "source_locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V3.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "bedrooms-wood-v1-review-3",
+    "sha256": "354242d4d9d29684a9328a38280628198adecea68b28cb33356760cf73e447ca",
+    "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/spatial-canvas.bindings.full.json"
+  },
+  "source_camera": {
+    "position": [
+      10.45,
+      10.55,
+      2.3
+    ],
+    "quaternion": [
+      0.23622924089431763,
+      -0.4560403823852539,
+      -0.7618851661682129,
+      0.394656777381897
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [
+    "ent_b8a5af707b3e58f19007875b6be4bdb4",
+    "ent_73d1299613ad574c86e94b627ec78b12"
+  ],
+  "ghost_entity_ids": [],
+  "preview_uri": "BEDROOM_GUEST.png"
+}

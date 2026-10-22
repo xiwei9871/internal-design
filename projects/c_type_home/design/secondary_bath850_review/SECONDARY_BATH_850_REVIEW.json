@@ -1,0 +1,108 @@
+{
+  "status": "HUMAN_REVIEW",
+  "revision": "secondary-bath-850-wardrobe1200-review-1",
+  "parent_source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/freezer816_review/FREEZER816_CABINET_REVIEW.blend",
+  "parent_sha256": "3d1637cbc00b9f8a25e98b49c1997cd052a4e43fffca81dd4a2939bf7064e191",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/secondary_bath850_review/SECONDARY_BATH_850_WARDROBE1200.blend",
+  "changed_native_ids": [
+    "R3_CASING_N_EAST",
+    "R3_CASING_N_HEAD",
+    "R3_CASING_S_EAST",
+    "R3_CASING_S_HEAD",
+    "R3_FRAME_HEAD_N",
+    "R3_FRAME_HEAD_S",
+    "R3_FRAME_WEST",
+    "R3_SLIDER_CONTINUOUS_RAIL",
+    "R3_SLIDER_END_STOP",
+    "R3_SLIDER_HANGER_0",
+    "R3_SLIDER_HANGER_1",
+    "R3_SLIDER_MAINTENANCE_COVER",
+    "R3_SLIDING_LEAF",
+    "R3_SLIDING_RECESSED_PULL_N",
+    "R3_SLIDING_RECESSED_PULL_S",
+    "R3_SPLIT_JAMB_EAST_N",
+    "R3_SPLIT_JAMB_EAST_S",
+    "R3_WARDROBE_BACK",
+    "R3_WARDROBE_BASE",
+    "R3_WARDROBE_FRONT_0",
+    "R3_WARDROBE_FRONT_1",
+    "R3_WARDROBE_FRONT_2",
+    "R3_WARDROBE_L",
+    "R3_WARDROBE_PLINTH",
+    "R3_WARDROBE_PULL_0",
+    "R3_WARDROBE_PULL_1",
+    "R3_WARDROBE_PULL_2",
+    "R3_WARDROBE_R",
+    "R3_WARDROBE_SHELF",
+    "R3_WARDROBE_TOP",
+    "VIEW_WALL_R3_SOUTH_POCKET_PARTITION"
+  ],
+  "wardrobe": {
+    "width_m": 1.1999998092651367,
+    "depth_m": 0.6,
+    "height_m": 2.2,
+    "door_count": 3,
+    "west_retraction_m": 0.2
+  },
+  "door": {
+    "clear_width_m": 0.8500003814697266,
+    "clear_width_mm": 850.0003814697266,
+    "target_mm": 850,
+    "leaf_width_m": 0.8899993896484375,
+    "opening_frame_gap_to_wardrobe_m": 0.06324958801269531,
+    "trim_gap_to_wardrobe_m": 0.013249397277832031,
+    "rail_and_pocket_synchronized": true,
+    "door_sweep_certification": "not manufacturer certified"
+  },
+  "opening_grid_blocked": [],
+  "intersections_with_identity_walls": [
+    [
+      "R3_CASING_S_HEAD",
+      "VIEW_WALL_R3_WEST_PARTITION"
+    ],
+    [
+      "R3_FRAME_HEAD_S",
+      "VIEW_WALL_R3_WEST_PARTITION"
+    ],
+    [
+      "R3_SLIDER_CONTINUOUS_RAIL",
+      "VIEW_WALL_R3_SOUTH_POCKET_PARTITION"
+    ],
+    [
+      "R3_SLIDER_CONTINUOUS_RAIL",
+      "VIEW_WALL_R3_WEST_PARTITION"
+    ],
+    [
+      "R3_SPLIT_JAMB_EAST_N",
+      "VIEW_WALL_R3_SOUTH_POCKET_PARTITION"
+    ],
+    [
+      "R3_FRAME_WEST",
+      "VIEW_WALL_R3_WEST_PARTITION"
+    ],
+    [
+      "R3_CASING_N_HEAD",
+      "VIEW_WALL_R3_WEST_PARTITION"
+    ],
+    [
+      "R3_SLIDER_MAINTENANCE_COVER",
+      "VIEW_WALL_R3_WEST_PARTITION"
+    ],
+    [
+      "R3_FRAME_HEAD_N",
+      "VIEW_WALL_R3_SOUTH_POCKET_PARTITION"
+    ],
+    [
+      "R3_FRAME_HEAD_N",
+      "VIEW_WALL_R3_WEST_PARTITION"
+    ]
+  ],
+  "unrelated_fingerprints_equal": true,
+  "frozen_hashes": {
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/freezer816_review/FREEZER816_CABINET_REVIEW.blend": "3d1637cbc00b9f8a25e98b49c1997cd052a4e43fffca81dd4a2939bf7064e191",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb"
+  },
+  "source_sha256": "4e94f187a7a6c67697aa6c939ac6e88f58c8ca129830e628f7229522d4ce37bc",
+  "registry_sha256": "05f4874a01913ec12fedd68c406c258b15ef8decf987ea7f9981bd36b6e94502"
+}

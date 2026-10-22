@@ -1,0 +1,68 @@
+{
+ "schema": "DATA_AUTHORITY_REGISTER_V01",
+ "ground_truth_container": {
+  "file": "cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+  "sha256": "0c30510bc3fe4862d5759c5402146987b6384558a063983b0cab66786de85469"
+ },
+ "dwg_source": {
+  "file": "source/世纪欣园FF.dwg",
+  "sha256": "f01a9bb5de964e0362296d12ca510fd7dc99060ddd0e8f8c4b6ab1e63a6fc360"
+ },
+ "classes": {
+  "A_GROUND_TRUTH_ARCH": {
+   "definition": "CAD墙体/实际尺寸/门洞/阳台边界/飘窗XY轮廓/错层平面/拆改后最终墙体",
+   "mutable_by_ai": false,
+   "members": [
+    "FINAL_WALL_REGISTER_V01 (42 active + 9 removed provenance)",
+    "384 FCStd arch objects in ARCH_GROUND_TRUTH_FINGERPRINT",
+    "split_level zone [7200,6600,7800,7800] +350mm (XY ground truth; Z temp)"
+   ]
+  },
+  "B_GROUND_TRUTH_OPENING": {
+   "definition": "95ab90e FINAL_WINDOW_REGISTER: 9 verified openings + 1 semantic container (WINDOW_SEMANTIC_REFERENCES is a grouping node, NOT a 10th opening)",
+   "mutable_by_ai": false,
+   "members": [
+    "W-LIV-N",
+    "W-STUDY-NE",
+    "W-SMB-S",
+    "W-MB-S",
+    "G-LIV-NBALC",
+    "G-GB-BALC",
+    "G-DIN-LIV",
+    "W-LBALC-S",
+    "W-KIT-S",
+    "door semantics: B1_DOOR_SEMANTIC_RESOLUTION v002 (D-ENS-OWNER, D-CONN-MB-SMB, REMOVE_FALSE_SEED)"
+   ],
+   "verified_openings": 9,
+   "semantic_containers": 1
+  },
+  "C_HUMAN_DESIGN_GUIDE": {
+   "definition": "FreeCAD 家具/洁具/家电 guide objects — 人工确认但可调整;不得用于反推建筑",
+   "mutable_by_ai": true,
+   "requires": "human approval for semantic changes",
+   "members": [
+    "44 FCStd guide objects (see fingerprint class HUMAN_DESIGN_GUIDE)",
+    "furniture_3d_dimension_register_v01 (non-K entries)",
+    "kitchen_cabinet_register XY"
+   ]
+  },
+  "D_BLOCKOUT_TEMP": {
+   "definition": "为3D表达临时补的Z/厚度/高度",
+   "mutable_by_ai": true,
+   "members": [
+    "WALL_H=2.5 TEMP",
+    "PARAPET_H=1.05 TEMP",
+    "WIN sill/head TEMP",
+    "BAY sill 450 TEMP",
+    "bay cheek t=100 TO_VERIFY",
+    "KITCHEN cabinet base_z 1450/depth 600 TO_VERIFY",
+    "furniture heights = STANDARD_BLOCKOUT values"
+   ]
+  }
+ },
+ "forbidden": [
+  "furniture->wall inference",
+  "invented host walls for pascal",
+  "patching b1_model.json as arch source"
+ ]
+}

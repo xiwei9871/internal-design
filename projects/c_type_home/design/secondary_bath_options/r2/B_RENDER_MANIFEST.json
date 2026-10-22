@@ -1,0 +1,106 @@
+[
+  {
+    "option": "B",
+    "view": "ENTRY",
+    "frame": 1,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_ENTRY_001.png",
+    "sha256": "4d99bf0d123f99aacbb8d57610606480b95c1a8e2674c51e382e67cb92069b17",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [],
+    "glass_hidden": false,
+    "source_saved": false
+  },
+  {
+    "option": "B",
+    "view": "ENTRY",
+    "frame": 100,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_ENTRY_100.png",
+    "sha256": "14f4544048e4ad32b92106c6487485467db944fddbf52798413e9118dbf66ebc",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [],
+    "glass_hidden": false,
+    "source_saved": false
+  },
+  {
+    "option": "B",
+    "view": "INTERIOR",
+    "frame": 100,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_INTERIOR_100.png",
+    "sha256": "82369c42d245ea1393dffc30038b05a371a9b64bc2e932fc246f84c2aa9bc8f6",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [],
+    "glass_hidden": true,
+    "source_saved": false
+  },
+  {
+    "option": "B",
+    "view": "CONTEXT_AXON",
+    "frame": 100,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_CONTEXT_AXON_100.png",
+    "sha256": "c5797f294a896b9bead682f6ca66a02264eb8020ef5b4c50345e78613d004f5d",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [],
+    "glass_hidden": false,
+    "source_saved": false
+  },
+  {
+    "option": "B",
+    "view": "CUTAWAY_AXON",
+    "frame": 100,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_CUTAWAY_AXON_100.png",
+    "sha256": "bb9fb1e9738ad0ec88066b8d2bcce24e838220e128982e835bb6180032a8b8ea",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [
+      "R2_CASING_N_EAST",
+      "R2_CASING_N_HEAD",
+      "R2_CASING_N_WEST",
+      "R2_CASING_S_EAST",
+      "R2_CASING_S_HEAD",
+      "R2_CASING_S_WEST",
+      "R2_COMPLETE_PARTITION_WALLS",
+      "R2_FRAME_EAST",
+      "R2_FRAME_HEAD",
+      "R2_FRAME_WEST",
+      "R2_HINGED_LEAF",
+      "R2_WARDROBE_BACK",
+      "R2_WARDROBE_BASE",
+      "R2_WARDROBE_FRONT_0",
+      "R2_WARDROBE_FRONT_1",
+      "R2_WARDROBE_FRONT_2",
+      "R2_WARDROBE_L",
+      "R2_WARDROBE_PLINTH",
+      "R2_WARDROBE_PULL_0",
+      "R2_WARDROBE_PULL_1",
+      "R2_WARDROBE_PULL_2",
+      "R2_WARDROBE_R",
+      "R2_WARDROBE_SHELF",
+      "R2_WARDROBE_TOP",
+      "V5_CONTINUOUS_WALL_SHELL",
+      "V5_CORNER_PATCH_J10_1",
+      "V5_CORNER_PATCH_J14_1",
+      "V5_CORNER_PATCH_J15_1"
+    ],
+    "glass_hidden": true,
+    "source_saved": false
+  }
+]

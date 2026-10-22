@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "fresh_glb_import": true,
+  "entity_count": 1017,
+  "three_target_bounds_correct": true,
+  "frozen_sources_unchanged": true
+}

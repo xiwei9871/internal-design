@@ -1,0 +1,287 @@
+{
+  "historical_commit": "95ab90e",
+  "historical_registry_count": 9,
+  "historical_task03a_gates": "28/28 PASS",
+  "current_fcstd_sha256": "c2c66524ae1c5da1aec18a7ee7359198479625f433b04aabeaf5a3d4a1e66293",
+  "current_fcstd_structure_count": 363,
+  "comparison": [
+    {
+      "final_registry_id": "W-LIV-N",
+      "type": "BAY_WINDOW",
+      "host_wall": "W-EXT-N-LV",
+      "opening_rect_mm": [
+        3800,
+        12750,
+        6900,
+        12950
+      ],
+      "source_status": "EXISTING_CONFIRMED",
+      "current_fcstd_status": "PRESENT_UNNAMED_GEOMETRY",
+      "matched_current_objects": [
+        "Line071",
+        "Line072",
+        "Line073",
+        "Line074",
+        "Line075",
+        "Line076",
+        "Line077",
+        "Line",
+        "Line001",
+        "Line021",
+        "Line022",
+        "Line023",
+        "Line024",
+        "Line025",
+        "Line026",
+        "Line027"
+      ],
+      "geometry_region_checked_mm": [
+        3600,
+        12750,
+        7100,
+        13900
+      ]
+    },
+    {
+      "final_registry_id": "G-LIV-NBALC",
+      "type": "GLASS_DOOR",
+      "host_wall": "W-INT-X7900-U-TV",
+      "opening_rect_mm": [
+        7800,
+        11800,
+        7900,
+        12650
+      ],
+      "source_status": "EXISTING_CONFIRMED",
+      "current_fcstd_status": "PRESENT_UNNAMED_GEOMETRY",
+      "matched_current_objects": [
+        "Polyline013",
+        "Line083",
+        "Line199"
+      ],
+      "geometry_region_checked_mm": [
+        7800,
+        11800,
+        7900,
+        12650
+      ]
+    },
+    {
+      "final_registry_id": "G-GB-BALC",
+      "type": "GLASS_DOOR",
+      "host_wall": "W-INT-Y10800",
+      "opening_rect_mm": [
+        10400,
+        10700,
+        12400,
+        10900
+      ],
+      "source_status": "EXISTING_KEEP",
+      "current_fcstd_status": "PRESENT_UNNAMED_GEOMETRY",
+      "matched_current_objects": [
+        "Line081",
+        "Line088",
+        "Line089",
+        "Line090",
+        "Line094"
+      ],
+      "geometry_region_checked_mm": [
+        10400,
+        10700,
+        12400,
+        10900
+      ]
+    },
+    {
+      "final_registry_id": "W-STUDY-NE",
+      "type": "BAY_WINDOW",
+      "host_wall": null,
+      "opening_rect_mm": [
+        13600,
+        10900,
+        15700,
+        11100
+      ],
+      "source_status": "EXISTING_CONFIRMED",
+      "current_fcstd_status": "PRESENT_UNNAMED_GEOMETRY",
+      "matched_current_objects": [
+        "Line035",
+        "Line091",
+        "Line096",
+        "Line097",
+        "Line098",
+        "Line099",
+        "Line100",
+        "Line101",
+        "Line102",
+        "Line103",
+        "Line104",
+        "Line105",
+        "Line106",
+        "Line107",
+        "Line108",
+        "Line109"
+      ],
+      "geometry_region_checked_mm": [
+        13500,
+        10900,
+        15800,
+        11800
+      ]
+    },
+    {
+      "final_registry_id": "G-DIN-LIV",
+      "type": "GLASS_SLIDING_DOOR",
+      "host_wall": null,
+      "opening_rect_mm": [
+        2950,
+        4530,
+        5650,
+        4715
+      ],
+      "source_status": "EXISTING_KEEP",
+      "current_fcstd_status": "PRESENT_UNNAMED_GEOMETRY",
+      "matched_current_objects": [
+        "Polyline053",
+        "Polyline054",
+        "Line202",
+        "Polyline055",
+        "Polyline056",
+        "Polyline057",
+        "Polyline058",
+        "Polyline059"
+      ],
+      "geometry_region_checked_mm": [
+        2950,
+        4530,
+        5650,
+        4715
+      ]
+    },
+    {
+      "final_registry_id": "W-LBALC-S",
+      "type": "BALCONY_WINDOW",
+      "host_wall": null,
+      "opening_rect_mm": [
+        1300,
+        500,
+        5800,
+        700
+      ],
+      "source_status": "EXISTING_CONFIRMED",
+      "current_fcstd_status": "PRESENT_UNNAMED_GEOMETRY",
+      "matched_current_objects": [
+        "Line051",
+        "Line052",
+        "Polyline014",
+        "Line206",
+        "Line010",
+        "Line011"
+      ],
+      "geometry_region_checked_mm": [
+        1300,
+        500,
+        5800,
+        700
+      ]
+    },
+    {
+      "final_registry_id": "W-KIT-S",
+      "type": "STANDARD_WINDOW",
+      "host_wall": "W-EXT-S",
+      "opening_rect_mm": [
+        6100,
+        -200,
+        7100,
+        0
+      ],
+      "source_status": "EXISTING_CONFIRMED",
+      "current_fcstd_status": "PRESENT_UNNAMED_GEOMETRY",
+      "matched_current_objects": [
+        "Polyline016",
+        "Polyline017",
+        "Line174",
+        "Line178",
+        "Line013"
+      ],
+      "geometry_region_checked_mm": [
+        6100,
+        -200,
+        7100,
+        0
+      ]
+    },
+    {
+      "final_registry_id": "W-SMB-S",
+      "type": "BAY_WINDOW",
+      "host_wall": "W-EXT-S",
+      "opening_rect_mm": [
+        8500,
+        -200,
+        10900,
+        0
+      ],
+      "source_status": "EXISTING_CONFIRMED",
+      "current_fcstd_status": "PRESENT_UNNAMED_GEOMETRY",
+      "matched_current_objects": [
+        "Line148",
+        "Line149",
+        "Line150",
+        "Line151",
+        "Line152",
+        "Line153",
+        "Line154",
+        "Line155",
+        "Line156",
+        "Line157",
+        "Line158",
+        "Line160",
+        "Line174"
+      ],
+      "geometry_region_checked_mm": [
+        8400,
+        -700,
+        11000,
+        0
+      ]
+    },
+    {
+      "final_registry_id": "W-MB-S",
+      "type": "BAY_WINDOW",
+      "host_wall": "W-EXT-S",
+      "opening_rect_mm": [
+        12100,
+        -200,
+        14800,
+        0
+      ],
+      "source_status": "EXISTING_CONFIRMED",
+      "current_fcstd_status": "PRESENT_UNNAMED_GEOMETRY",
+      "matched_current_objects": [
+        "Line133",
+        "Line134",
+        "Line136",
+        "Line138",
+        "Line139",
+        "Line140",
+        "Line141",
+        "Line142",
+        "Line143",
+        "Line144",
+        "Line145",
+        "Line146",
+        "Line160"
+      ],
+      "geometry_region_checked_mm": [
+        12000,
+        -700,
+        14900,
+        0
+      ]
+    }
+  ],
+  "window_history_source": "VERIFIED",
+  "window_restore": "HUMAN_REVIEW",
+  "blender": "HOLD",
+  "formal_cad_allowed": false
+}

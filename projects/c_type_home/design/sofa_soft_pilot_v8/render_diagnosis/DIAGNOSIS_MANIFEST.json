@@ -1,0 +1,46 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v7/local_final/SOFA_RELAXED_COVER_V7.blend",
+  "source_sha256": "5bb0f004a9501bff61a017975cf65c8205f46e3af3a39d9a83c91096db46ec4f",
+  "candidate": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/render_diagnosis/V7_SAME_MESH_DIRECTIONAL_LIGHT_V8.blend",
+  "candidate_sha256": "cbed4cc4b34c9ebe5fc1bf8a388a860d620493b7f8bd609770499b967c37862f",
+  "original_fabric": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v7/local_final/fabric/V7_V6_THREE_QUARTER.png",
+  "original_workbench": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v7/local_final/clay/V7_V6_THREE_QUARTER.png",
+  "images": [
+    {
+      "case": "cycles_neutral",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/render_diagnosis/cycles_neutral_V6_THREE_QUARTER.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "seconds": 12.96
+    },
+    {
+      "case": "directional_fabric",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/render_diagnosis/directional_fabric_V6_THREE_QUARTER.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "seconds": 16.32
+    }
+  ],
+  "mesh_changes": 0,
+  "fabric_changes_in_directional_case": 0,
+  "camera_exposure_grade_changes": 0,
+  "lighting_changes": {
+    "key_location": [
+      -2.4,
+      -0.3,
+      1.65
+    ],
+    "key_power": 320,
+    "key_size": 1,
+    "fill_power": 55,
+    "rim_power": 80,
+    "world_strength": 0.18
+  },
+  "physical_site_light_claim": false
+}

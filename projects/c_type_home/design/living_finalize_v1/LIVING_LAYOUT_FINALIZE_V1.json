@@ -1,0 +1,297 @@
+{
+  "status": "DESIGN_IMPLEMENTATION_BRANCH",
+  "units": "meters",
+  "architecture_authority": "R4 ONLY",
+  "layout": {
+    "sofa_west": {
+      "bounds": [
+        3.4,
+        8.92,
+        4.31,
+        11.52
+      ],
+      "height": 0.85,
+      "seat_height": 0.44
+    },
+    "sofa_return": {
+      "bounds": [
+        4.31,
+        8.92,
+        5.85,
+        9.82
+      ],
+      "height": 0.85,
+      "seat_height": 0.44
+    },
+    "chaise": {
+      "bounds": [
+        4.275,
+        11.7,
+        6.025,
+        12.5
+      ],
+      "size": [
+        1.75,
+        0.8,
+        0.85
+      ],
+      "center": [
+        5.15,
+        12.1
+      ],
+      "head": "WEST"
+    },
+    "sideboard": {
+      "bounds": [
+        3.5,
+        7.6,
+        5.7,
+        8.0
+      ],
+      "size": [
+        2.2,
+        0.4,
+        0.7
+      ],
+      "center": [
+        4.6,
+        7.8
+      ],
+      "front": "SOUTH_TO_KITCHEN",
+      "leg_height": 0.2
+    },
+    "coffee_A": {
+      "bounds": [
+        4.74,
+        10.2,
+        5.44,
+        11.4
+      ],
+      "center": [
+        5.09,
+        10.8
+      ],
+      "size": [
+        1.2,
+        0.7,
+        0.31
+      ],
+      "long_axis": "Y",
+      "shape": "racetrack"
+    },
+    "coffee_B": {
+      "bounds": [
+        4.745,
+        10.245,
+        5.395,
+        11.395
+      ],
+      "center": [
+        5.07,
+        10.82
+      ],
+      "size": [
+        1.15,
+        0.65,
+        0.31
+      ],
+      "long_axis": "Y",
+      "shape": "oval"
+    },
+    "coffee_B_aux": {
+      "bounds": [
+        5.85,
+        9.98,
+        6.27,
+        10.4
+      ],
+      "center": [
+        6.06,
+        10.19
+      ],
+      "size": [
+        0.42,
+        0.42,
+        0.48
+      ],
+      "shape": "round_pale_timber"
+    },
+    "window_side": {
+      "bounds": [
+        3.82,
+        11.75,
+        4.18,
+        12.11
+      ],
+      "center": [
+        4.0,
+        11.93
+      ],
+      "size": [
+        0.36,
+        0.36,
+        0.5
+      ]
+    },
+    "floor_lamp": {
+      "bounds": [
+        3.88,
+        12.4,
+        4.12,
+        12.64
+      ],
+      "center": [
+        4.0,
+        12.52
+      ]
+    },
+    "rug": {
+      "bounds": [
+        4.2,
+        9.45,
+        6.38,
+        11.68
+      ],
+      "thickness": 0.009
+    },
+    "curtain": {
+      "front_y": 12.87,
+      "back_y": 12.93
+    },
+    "reserved_east_wall_x": 7.398,
+    "entry_route_points": [
+      [
+        3.25,
+        6.25
+      ],
+      [
+        4.9,
+        6.9
+      ],
+      [
+        6.6,
+        7.4
+      ],
+      [
+        6.7,
+        8.8
+      ],
+      [
+        6.75,
+        10.6
+      ],
+      [
+        6.8,
+        12.3
+      ]
+    ]
+  },
+  "cameras": {
+    "MAIN": {
+      "pos": [
+        7.1,
+        8.35,
+        1.55
+      ],
+      "target": [
+        4.75,
+        10.95,
+        1.06
+      ],
+      "lens": 28,
+      "file": "living_main_view_v1.png",
+      "variant": "A"
+    },
+    "REVERSE": {
+      "pos": [
+        3.58,
+        12.68,
+        1.55
+      ],
+      "target": [
+        6.25,
+        8.4,
+        1.04
+      ],
+      "lens": 27,
+      "file": "living_reverse_view_v1.png",
+      "variant": "A"
+    },
+    "CHAISE": {
+      "pos": [
+        6.65,
+        10.97,
+        1.45
+      ],
+      "target": [
+        5.11,
+        12.16,
+        0.86
+      ],
+      "lens": 36,
+      "file": "living_chaise_closeup_v1.png",
+      "variant": "A"
+    },
+    "SIDEBOARD": {
+      "pos": [
+        6.3,
+        6.72,
+        1.35
+      ],
+      "target": [
+        4.63,
+        7.83,
+        0.63
+      ],
+      "lens": 36,
+      "file": "living_sideboard_closeup_v1.png",
+      "variant": "A"
+    },
+    "WIDE": {
+      "pos": [
+        7.12,
+        12.6,
+        1.58
+      ],
+      "target": [
+        4.58,
+        9.4,
+        1.05
+      ],
+      "lens": 24,
+      "file": "living_wide_view_v1.png",
+      "variant": "A"
+    },
+    "COFFEE_A": {
+      "pos": [
+        6.84,
+        9.56,
+        1.44
+      ],
+      "target": [
+        5.0,
+        10.72,
+        0.65
+      ],
+      "lens": 34,
+      "file": "living_coffee_A_v1.png",
+      "variant": "A"
+    },
+    "COFFEE_B": {
+      "pos": [
+        6.84,
+        9.56,
+        1.44
+      ],
+      "target": [
+        5.0,
+        10.72,
+        0.65
+      ],
+      "lens": 34,
+      "file": "living_coffee_B_v1.png",
+      "variant": "B"
+    }
+  },
+  "source_dimension_policy": "Project adaptations informed by catalogue; site/SKU verification needed before purchase"
+}

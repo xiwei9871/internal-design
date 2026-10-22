@@ -1,0 +1,235 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_LONG_SIDE_CABINET_CHAISE_SOUTH_REVIEW_10.blend",
+  "source_sha256": "70a36381a3f0131154e01fa19b1bf5b7ab63a2589995387dbaa108075970150f",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_BALCONY_SUNROOM_REVIEW_11.blend",
+  "output_sha256": "1ef817c99f894501127cbaf1a74e2ede1d5166bb1b9129f7fbba5006914cf1b2",
+  "moved_native_ids": [
+    "B11_Rectangle039_BODY",
+    "B11_Rectangle039_LID_SEAM",
+    "B11_Rectangle040_BODY_0",
+    "B11_Rectangle040_DOOR_0",
+    "B11_Rectangle040_BODY_1",
+    "B11_Rectangle040_DOOR_1"
+  ],
+  "before": {
+    "B11_Rectangle039_BODY": [
+      [
+        8.53125,
+        11.150312423706055,
+        0.0
+      ],
+      [
+        9.731250762939453,
+        11.750312805175781,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Rectangle039_LID_SEAM": [
+      [
+        8.537250518798828,
+        11.156312942504883,
+        0.8050000071525574
+      ],
+      [
+        9.725250244140625,
+        11.744312286376953,
+        0.8080000281333923
+      ]
+    ],
+    "B11_Rectangle040_BODY_0": [
+      [
+        9.826250076293945,
+        11.150280952453613,
+        0.0
+      ],
+      [
+        10.426250457763672,
+        11.75028133392334,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Rectangle040_DOOR_0": [
+      [
+        9.940250396728516,
+        11.735280990600586,
+        0.23900000751018524
+      ],
+      [
+        10.312250137329102,
+        11.74928092956543,
+        0.6110000014305115
+      ]
+    ],
+    "B11_Rectangle040_BODY_1": [
+      [
+        9.826250076293945,
+        11.150280952453613,
+        0.8499999642372131
+      ],
+      [
+        10.426250457763672,
+        11.75028133392334,
+        1.7000000476837158
+      ]
+    ],
+    "B11_Rectangle040_DOOR_1": [
+      [
+        9.940250396728516,
+        11.735280990600586,
+        1.0889999866485596
+      ],
+      [
+        10.312250137329102,
+        11.74928092956543,
+        1.4609999656677246
+      ]
+    ]
+  },
+  "after": {
+    "B11_Rectangle039_BODY": [
+      [
+        12.15000057220459,
+        11.34999942779541,
+        0.0
+      ],
+      [
+        12.750000953674316,
+        12.550000190734863,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Rectangle039_LID_SEAM": [
+      [
+        12.156001091003418,
+        11.355999946594238,
+        0.8050000071525574
+      ],
+      [
+        12.744000434875488,
+        12.543999671936035,
+        0.8080000281333923
+      ]
+    ],
+    "B11_Rectangle040_BODY_0": [
+      [
+        8.09999942779541,
+        11.170000076293945,
+        0.0
+      ],
+      [
+        8.699999809265137,
+        11.770000457763672,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Rectangle040_DOOR_0": [
+      [
+        8.21399974822998,
+        11.755000114440918,
+        0.23900000751018524
+      ],
+      [
+        8.585999488830566,
+        11.769000053405762,
+        0.6110000014305115
+      ]
+    ],
+    "B11_Rectangle040_BODY_1": [
+      [
+        8.09999942779541,
+        11.170000076293945,
+        0.8499999642372131
+      ],
+      [
+        8.699999809265137,
+        11.770000457763672,
+        1.7000000476837158
+      ]
+    ],
+    "B11_Rectangle040_DOOR_1": [
+      [
+        8.21399974822998,
+        11.755000114440918,
+        1.0889999866485596
+      ],
+      [
+        8.585999488830566,
+        11.769000053405762,
+        1.4609999656677246
+      ]
+    ]
+  },
+  "existing_other_object_states_unchanged": true,
+  "freezer_size_m": [
+    1.2,
+    0.6,
+    0.85
+  ],
+  "freezer_back_gap_m": 0.14989948272705078,
+  "freezer_fixed_counter_above_lid": false,
+  "laundry_tower_original_meshes_retained": true,
+  "sun_seat_size_m": [
+    1.5,
+    0.62,
+    0.8
+  ],
+  "north_ledge_depth_m": 0.3,
+  "central_lane_seat_to_north_ledge_m": 1.295,
+  "west_balcony_door_unchanged": true,
+  "utilities_and_manufacturer_clearances_unverified": true,
+  "new_objects": [
+    "SUNROOM_LAUNDRY_WEST_PANEL",
+    "SUNROOM_LAUNDRY_EAST_PANEL",
+    "SUNROOM_LAUNDRY_OVERHEAD",
+    "SUNROOM_LAUNDRY_HEADER",
+    "SUNROOM_LAUNDRY_FOLDING_BASE",
+    "SUNROOM_LAUNDRY_FOLDING_COUNTER",
+    "SUNROOM_LAUNDRY_SHALLOW_UPPER",
+    "SUNROOM_EAST_LOW_STORAGE",
+    "SUNROOM_EAST_STORAGE_COUNTER",
+    "SUNROOM_FREEZER_SIDE_FINISH_SOUTH",
+    "SUNROOM_FREEZER_SIDE_FINISH_NORTH",
+    "SUNROOM_FREEZER_FRONT_PLINTH",
+    "SUNROOM_FREEZER_VENT_SLAT_0",
+    "SUNROOM_FREEZER_VENT_SLAT_1",
+    "SUNROOM_FREEZER_VENT_SLAT_2",
+    "SUNROOM_FREEZER_VENT_SLAT_3",
+    "SUNROOM_FREEZER_VENT_SLAT_4",
+    "SUNROOM_SUN_SEAT_BASE",
+    "SUNROOM_SUN_SEAT_CUSHION",
+    "SUNROOM_SUN_SEAT_BACK",
+    "SUNROOM_SUN_SEAT_BACK_PAD",
+    "SUNROOM_SUN_SEAT_BACK_PAD.001",
+    "SUNROOM_SUN_SEAT_BACK_PAD.002",
+    "SUNROOM_MOVABLE_COFFEE_TABLE",
+    "SUNROOM_NORTH_PLANT_LEDGE_BASE",
+    "SUNROOM_NORTH_PLANT_LEDGE_TOP",
+    "SUNROOM_PLANT_POT_0",
+    "SUNROOM_PLANT_SOIL_0",
+    "SUNROOM_PLANT_STEM_0",
+    "SUNROOM_PLANT_LEAF_0_0",
+    "SUNROOM_PLANT_LEAF_0_1",
+    "SUNROOM_PLANT_LEAF_0_2",
+    "SUNROOM_PLANT_LEAF_0_3",
+    "SUNROOM_PLANT_LEAF_0_4",
+    "SUNROOM_PLANT_POT_1",
+    "SUNROOM_PLANT_SOIL_1",
+    "SUNROOM_PLANT_STEM_1",
+    "SUNROOM_PLANT_LEAF_1_0",
+    "SUNROOM_PLANT_LEAF_1_1",
+    "SUNROOM_PLANT_LEAF_1_2",
+    "SUNROOM_PLANT_LEAF_1_3",
+    "SUNROOM_PLANT_LEAF_1_4",
+    "SUNROOM_PLANT_POT_2",
+    "SUNROOM_PLANT_SOIL_2",
+    "SUNROOM_PLANT_STEM_2",
+    "SUNROOM_PLANT_LEAF_2_0",
+    "SUNROOM_PLANT_LEAF_2_1",
+    "SUNROOM_PLANT_LEAF_2_2",
+    "SUNROOM_PLANT_LEAF_2_3",
+    "SUNROOM_PLANT_LEAF_2_4"
+  ],
+  "source_and_frozen_r4_unchanged": true,
+  "fresh_reopen_verified": true
+}

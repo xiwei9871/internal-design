@@ -1,0 +1,2062 @@
+{
+ "scene_sha": "6636075cc423f1a2",
+ "node_count": 158,
+ "map": [
+  {
+   "pascal_id": "wall_v1_0004",
+   "canonical_id": "W-EXT-S-W1",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     4.6,
+     0.1
+    ],
+    [
+     5.38,
+     0.1
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0005",
+   "canonical_id": "W-EXT-S+W-EXT-S+W-EXT-S+W-EXT-S-W2",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     5.38,
+     0.1
+    ],
+    [
+     15.4,
+     0.1
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "window_v1_0006",
+   "canonical_id": "W-KIT-S",
+   "fcstd": null,
+   "label": "",
+   "category": "window",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 1.0
+  },
+  {
+   "pascal_id": "window_v1_0007",
+   "canonical_id": "W-SMB-S",
+   "fcstd": null,
+   "label": "",
+   "category": "window",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 2.4
+  },
+  {
+   "pascal_id": "window_v1_0008",
+   "canonical_id": "W-MB-S",
+   "fcstd": null,
+   "label": "",
+   "category": "window",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 2.7
+  },
+  {
+   "pascal_id": "wall_v1_0009",
+   "canonical_id": "W-BALC-S",
+   "fcstd": null,
+   "label": "",
+   "category": "wall_parapet",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     1.3,
+     -0.55
+    ],
+    [
+     5.8,
+     -0.55
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "window_v1_0010",
+   "canonical_id": "W-LBALC-S",
+   "fcstd": null,
+   "label": "",
+   "category": "window",
+   "room": null,
+   "status": "REPRESENTATION_LIMITATION",
+   "width_m": 4.5
+  },
+  {
+   "pascal_id": "wall_v1_0011",
+   "canonical_id": "W-INT-Y4500-b-FOYER",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     8.236,
+     -4.55
+    ],
+    [
+     9.05,
+     -4.55
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "door_v1_0012",
+   "canonical_id": "D-SM",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 0.464
+  },
+  {
+   "pascal_id": "wall_v1_0013",
+   "canonical_id": "W-INT-Y4500-bc-MBATH",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     12.9,
+     -4.55
+    ],
+    [
+     16.5,
+     -4.55
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0014",
+   "canonical_id": "W-INT-Y4500-a",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     5.7,
+     -4.575
+    ],
+    [
+     8.236,
+     -4.575
+    ]
+   ],
+   "thickness_m": 0.25
+  },
+  {
+   "pascal_id": "wall_v1_0015",
+   "canonical_id": "W-INT-CLK-N",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     9.05,
+     -6.4
+    ],
+    [
+     11.4,
+     -6.4
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "door_v1_0016",
+   "canonical_id": "D-ENS-OWNER",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 0.7
+  },
+  {
+   "pascal_id": "wall_v1_0017",
+   "canonical_id": "W-INT-COR-N-STUB",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     11.4,
+     -6.4
+    ],
+    [
+     12.1,
+     -6.4
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0018",
+   "canonical_id": "W-INT-BEDN-S",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     13.1,
+     -6.4
+    ],
+    [
+     16.3,
+     -6.4
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0019",
+   "canonical_id": "W-INT-WC-S",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     7.9,
+     -7.9
+    ],
+    [
+     9.8,
+     -7.9
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0020",
+   "canonical_id": "W-INT-STD-S",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     9.8,
+     -7.9
+    ],
+    [
+     13.0,
+     -7.9
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "door_v1_0021",
+   "canonical_id": "D-GBATH",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 0.8
+  },
+  {
+   "pascal_id": "door_v1_0022",
+   "canonical_id": "D-GBED",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 0.8
+  },
+  {
+   "pascal_id": "wall_v1_0023",
+   "canonical_id": "W-INT-Y10800+W-INT-Y10800",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     7.9,
+     -10.8
+    ],
+    [
+     13.0,
+     -10.8
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "door_v1_0024",
+   "canonical_id": "G-GB-BALC",
+   "fcstd": null,
+   "label": "",
+   "category": "glass_door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 2.0
+  },
+  {
+   "pascal_id": "wall_v1_0025",
+   "canonical_id": "W-INT-Y10800-EXT",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     13.0,
+     -10.8
+    ],
+    [
+     13.7,
+     -10.8
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0026",
+   "canonical_id": "W-EXT-NE",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     13.0,
+     -11.0
+    ],
+    [
+     13.6,
+     -11.0
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0027",
+   "canonical_id": "W-EXT-NE2",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     15.7,
+     -11.0
+    ],
+    [
+     16.4,
+     -11.0
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0028",
+   "canonical_id": "W-BAY-STUDY-F",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     13.6,
+     -11.45
+    ],
+    [
+     15.8,
+     -11.45
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "window_v1_0029",
+   "canonical_id": "W-STUDY-NE",
+   "fcstd": null,
+   "label": "",
+   "category": "window",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 2.1
+  },
+  {
+   "pascal_id": "wall_v1_0030",
+   "canonical_id": "W-EXT-N-LV+W-EXT-N-LV",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     2.7,
+     -12.85
+    ],
+    [
+     7.9,
+     -12.85
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "window_v1_0031",
+   "canonical_id": "W-LIV-N",
+   "fcstd": null,
+   "label": "",
+   "category": "window",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 3.1
+  },
+  {
+   "pascal_id": "wall_v1_0032",
+   "canonical_id": "W-EXT-N-BAL",
+   "fcstd": null,
+   "label": "",
+   "category": "wall_parapet",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     7.9,
+     -13.5
+    ],
+    [
+     13.0,
+     -13.5
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0033",
+   "canonical_id": "W-BALC-W",
+   "fcstd": null,
+   "label": "",
+   "category": "wall_parapet",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     1.4,
+     -0.45
+    ],
+    [
+     1.4,
+     -2.4
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0034",
+   "canonical_id": "W-EXT-W-S0+W-EXT-W-S1",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     2.8,
+     -2.3
+    ],
+    [
+     2.8,
+     -13.6
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "door_v1_0035",
+   "canonical_id": "ENT-1",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 1.7
+  },
+  {
+   "pascal_id": "wall_v1_0036",
+   "canonical_id": "W-BAY-JW",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     3.725,
+     -12.95
+    ],
+    [
+     3.725,
+     -13.8
+    ]
+   ],
+   "thickness_m": 0.15
+  },
+  {
+   "pascal_id": "wall_v1_0037",
+   "canonical_id": "W-EXT-S",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     6.075,
+     0.2
+    ],
+    [
+     6.075,
+     0.0
+    ]
+   ],
+   "thickness_m": 0.05
+  },
+  {
+   "pascal_id": "wall_v1_0038",
+   "canonical_id": "W-BAY-JE",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     6.975,
+     -12.95
+    ],
+    [
+     6.975,
+     -13.8
+    ]
+   ],
+   "thickness_m": 0.15
+  },
+  {
+   "pascal_id": "wall_v1_0039",
+   "canonical_id": "W-INT-X7900-U-TV+W-INT-X7900-U-TV",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     7.85,
+     -7.8
+    ],
+    [
+     7.85,
+     -13.55
+    ]
+   ],
+   "thickness_m": 0.1
+  },
+  {
+   "pascal_id": "door_v1_0040",
+   "canonical_id": "G-LIV-NBALC",
+   "fcstd": null,
+   "label": "",
+   "category": "glass_door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 0.85
+  },
+  {
+   "pascal_id": "wall_v1_0041",
+   "canonical_id": "W-INT-X7900-L",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     7.9,
+     0.15
+    ],
+    [
+     7.9,
+     -4.67
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0042",
+   "canonical_id": "W-INT-CLK-W",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     9.0,
+     -4.5
+    ],
+    [
+     9.0,
+     -6.3
+    ]
+   ],
+   "thickness_m": 0.1
+  },
+  {
+   "pascal_id": "wall_v1_0043",
+   "canonical_id": "W-INT-X9800",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     9.8,
+     -7.7
+    ],
+    [
+     9.8,
+     -10.9
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0044",
+   "canonical_id": "W-INT-CLK-E",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     11.35,
+     -4.5
+    ],
+    [
+     11.35,
+     -6.3
+    ]
+   ],
+   "thickness_m": 0.1
+  },
+  {
+   "pascal_id": "wall_v1_0045",
+   "canonical_id": "W-INT-X11500",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     11.5,
+     0.2
+    ],
+    [
+     11.5,
+     -6.5
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "door_v1_0046",
+   "canonical_id": "D-CONN-MB-SMB",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 0.8
+  },
+  {
+   "pascal_id": "wall_v1_0047",
+   "canonical_id": "W-NBALC-E-PAR",
+   "fcstd": null,
+   "label": "",
+   "category": "wall_parapet",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     12.96,
+     -11.1
+    ],
+    [
+     12.96,
+     -13.82
+    ]
+   ],
+   "thickness_m": 0.12
+  },
+  {
+   "pascal_id": "wall_v1_0048",
+   "canonical_id": "W-INT-X13000",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     13.0,
+     -4.63
+    ],
+    [
+     13.0,
+     -13.6
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "door_v1_0049",
+   "canonical_id": "D-MB",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 0.434
+  },
+  {
+   "pascal_id": "door_v1_0050",
+   "canonical_id": "D-BATHM",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 0.4
+  },
+  {
+   "pascal_id": "door_v1_0051",
+   "canonical_id": "D-STUDY",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 0.4
+  },
+  {
+   "pascal_id": "wall_v1_0052",
+   "canonical_id": "W-BAY-STUDY-JW",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     13.55,
+     -11.1
+    ],
+    [
+     13.55,
+     -11.55
+    ]
+   ],
+   "thickness_m": 0.1
+  },
+  {
+   "pascal_id": "wall_v1_0053",
+   "canonical_id": "W-EXT-E1",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     15.5,
+     0.0
+    ],
+    [
+     15.5,
+     -4.5
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0054",
+   "canonical_id": "W-BAY-STUDY-JE",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     15.75,
+     -11.1
+    ],
+    [
+     15.75,
+     -11.55
+    ]
+   ],
+   "thickness_m": 0.1
+  },
+  {
+   "pascal_id": "wall_v1_0055",
+   "canonical_id": "W-EXT-E2",
+   "fcstd": null,
+   "label": "",
+   "category": "wall",
+   "room": null,
+   "status": "MAPPED",
+   "centerline": [
+    [
+     16.4,
+     -4.4
+    ],
+    [
+     16.4,
+     -10.9
+    ]
+   ],
+   "thickness_m": 0.2
+  },
+  {
+   "pascal_id": "wall_v1_0056",
+   "canonical_id": "G-DIN-LIV",
+   "fcstd": null,
+   "label": "",
+   "category": "wall_synthesized",
+   "room": null,
+   "status": "REPRESENTATION_LIMITATION",
+   "centerline": [
+    [
+     2.95,
+     -4.6225
+    ],
+    [
+     5.65,
+     -4.6225
+    ]
+   ],
+   "thickness_m": 0.185
+  },
+  {
+   "pascal_id": "door_v1_0057",
+   "canonical_id": "G-DIN-LIV",
+   "fcstd": null,
+   "label": "",
+   "category": "glass_door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 2.7
+  },
+  {
+   "pascal_id": "wall_v1_0058",
+   "canonical_id": "W-INT-NICHE",
+   "fcstd": null,
+   "label": "",
+   "category": "wall_reconstructed",
+   "room": null,
+   "status": "TOPOLOGY_RECONSTRUCTED_TO_VERIFY",
+   "centerline": [
+    [
+     7.275,
+     -4.7
+    ],
+    [
+     7.275,
+     -7.8
+    ]
+   ],
+   "thickness_m": 0.25
+  },
+  {
+   "pascal_id": "door_v1_0059",
+   "canonical_id": "OPEN-COR-LIV",
+   "fcstd": null,
+   "label": "",
+   "category": "door",
+   "room": null,
+   "status": "MAPPED",
+   "width_m": 3.1
+  },
+  {
+   "pascal_id": "wall_v1_0060",
+   "canonical_id": "W-LIV-N-BAY-FRONT",
+   "fcstd": null,
+   "label": "",
+   "category": "wall_bay_front",
+   "room": null,
+   "status": "REPRESENTATION_LIMITATION"
+  },
+  {
+   "pascal_id": "window_v1_0061",
+   "canonical_id": "W-LIV-N-BAY-FRONT",
+   "fcstd": null,
+   "label": "",
+   "category": "window",
+   "room": null,
+   "status": "REPRESENTATION_LIMITATION"
+  },
+  {
+   "pascal_id": "wall_v1_0062",
+   "canonical_id": "W-SMB-S-BAY-FRONT",
+   "fcstd": null,
+   "label": "",
+   "category": "wall_bay_front",
+   "room": null,
+   "status": "REPRESENTATION_LIMITATION"
+  },
+  {
+   "pascal_id": "window_v1_0063",
+   "canonical_id": "W-SMB-S-BAY-FRONT",
+   "fcstd": null,
+   "label": "",
+   "category": "window",
+   "room": null,
+   "status": "REPRESENTATION_LIMITATION"
+  },
+  {
+   "pascal_id": "wall_v1_0064",
+   "canonical_id": "W-MB-S-BAY-FRONT",
+   "fcstd": null,
+   "label": "",
+   "category": "wall_bay_front",
+   "room": null,
+   "status": "REPRESENTATION_LIMITATION"
+  },
+  {
+   "pascal_id": "window_v1_0065",
+   "canonical_id": "W-MB-S-BAY-FRONT",
+   "fcstd": null,
+   "label": "",
+   "category": "window",
+   "room": null,
+   "status": "REPRESENTATION_LIMITATION"
+  },
+  {
+   "pascal_id": "zone_v1_0066",
+   "canonical_id": "R-LIVING",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-LIVING",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0067",
+   "canonical_id": "R-DINING",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-DINING",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0068",
+   "canonical_id": "R-BALC-LIFE",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-BALC-LIFE",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0069",
+   "canonical_id": "R-KITCHEN",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-KITCHEN",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0070",
+   "canonical_id": "R-LEISURE-W",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-LEISURE-W",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0071",
+   "canonical_id": "R-LEISURE-E",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-LEISURE-E",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0072",
+   "canonical_id": "R-BED-S",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-BED-S",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0073",
+   "canonical_id": "R-MASTER",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-MASTER",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0074",
+   "canonical_id": "R-CLOAK",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-CLOAK",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0075",
+   "canonical_id": "R-BATH-M",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-BATH-M",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0076",
+   "canonical_id": "R-BED-N",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-BED-N",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0077",
+   "canonical_id": "R-STUDY",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-STUDY",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0078",
+   "canonical_id": "R-BATH-P",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-BATH-P",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0079",
+   "canonical_id": "R-BALC-N",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_room",
+   "room": "R-BALC-N",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0080",
+   "canonical_id": "north_balcony",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_balcony",
+   "room": null,
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0081",
+   "canonical_id": "life_balcony",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_balcony",
+   "room": null,
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "zone_v1_0082",
+   "canonical_id": "STEP-1",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_annotation",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "zone_v1_0083",
+   "canonical_id": "STEP-2",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_annotation",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "zone_v1_0084",
+   "canonical_id": "RAMP-FUTURE",
+   "fcstd": null,
+   "label": "",
+   "category": "zone_annotation",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "item_v1_0085",
+   "canonical_id": "电视柜（或者悬浮电视墙）",
+   "fcstd": "Rectangle004",
+   "label": "电视柜（或者悬浮电视墙）",
+   "category": "furniture",
+   "room": "R-LIVING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.2989,
+    2.8889
+   ],
+   "catalog": "tv-stand"
+  },
+  {
+   "pascal_id": "item_v1_0086",
+   "canonical_id": "客卫（湿区）",
+   "fcstd": "Rectangle007",
+   "label": "客卫（湿区）",
+   "category": "furniture_region",
+   "room": "R-BATH-P",
+   "status": "REGION_BOUNDARY",
+   "actual_size_m": [
+    1.6438,
+    0.8129
+   ],
+   "catalog": "shower-square"
+  },
+  {
+   "pascal_id": "item_v1_0087",
+   "canonical_id": "客卫马桶",
+   "fcstd": "Rectangle008",
+   "label": "客卫马桶",
+   "category": "furniture",
+   "room": "R-BATH-P",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.7471,
+    0.3237
+   ],
+   "catalog": "toilet"
+  },
+  {
+   "pascal_id": "item_v1_0088",
+   "canonical_id": "次主卧床头占位",
+   "fcstd": "Rectangle011",
+   "label": "次主卧床头占位",
+   "category": "furniture",
+   "room": "R-BED-S",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.1993,
+    2.6399
+   ],
+   "catalog": "double-bed"
+  },
+  {
+   "pascal_id": "item_v1_0089",
+   "canonical_id": "次主卧床",
+   "fcstd": "Rectangle012",
+   "label": "次主卧床",
+   "category": "furniture",
+   "room": "R-BED-S",
+   "status": "MAPPED",
+   "actual_size_m": [
+    2.1,
+    1.5
+   ],
+   "catalog": "double-bed"
+  },
+  {
+   "pascal_id": "item_v1_0090",
+   "canonical_id": "主卧床",
+   "fcstd": "Rectangle013",
+   "label": "主卧床",
+   "category": "furniture",
+   "room": "R-MASTER",
+   "status": "MAPPED",
+   "actual_size_m": [
+    2.1,
+    1.5
+   ],
+   "catalog": "double-bed"
+  },
+  {
+   "pascal_id": "item_v1_0091",
+   "canonical_id": "主卧床头柜占位",
+   "fcstd": "Rectangle014",
+   "label": "主卧床头柜占位",
+   "category": "furniture",
+   "room": "R-MASTER",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.15,
+    2.5
+   ],
+   "catalog": "double-bed"
+  },
+  {
+   "pascal_id": "item_v1_0092",
+   "canonical_id": "主卧衣柜",
+   "fcstd": "Rectangle015",
+   "label": "主卧衣柜",
+   "category": "furniture",
+   "room": "R-MASTER",
+   "status": "MAPPED",
+   "actual_size_m": [
+    2.1,
+    0.6
+   ],
+   "catalog": "closet"
+  },
+  {
+   "pascal_id": "item_v1_0093",
+   "canonical_id": "次卧小床1.2",
+   "fcstd": "Rectangle017",
+   "label": "次卧小床1.2",
+   "category": "furniture",
+   "room": "R-STUDY",
+   "status": "USER_MANUAL_CORRECTION",
+   "actual_size_m": [
+    1.8,
+    1.2
+   ],
+   "catalog": "double-bed"
+  },
+  {
+   "pascal_id": "item_v1_0094",
+   "canonical_id": "次主卧衣柜",
+   "fcstd": "Rectangle021",
+   "label": "次主卧衣柜",
+   "category": "furniture",
+   "room": "R-BED-S",
+   "status": "MAPPED",
+   "actual_size_m": [
+    1.5,
+    0.6
+   ],
+   "catalog": "closet"
+  },
+  {
+   "pascal_id": "item_v1_0095",
+   "canonical_id": "主卧电视柜",
+   "fcstd": "Rectangle022",
+   "label": "主卧电视柜",
+   "category": "furniture",
+   "room": "R-MASTER",
+   "status": "HUMAN_ACCEPTED_AS_DRAWN",
+   "actual_size_m": [
+    0.5,
+    2.0
+   ],
+   "catalog": "closet"
+  },
+  {
+   "pascal_id": "item_v1_0096",
+   "canonical_id": "次主卧电视柜",
+   "fcstd": "Rectangle023",
+   "label": "次主卧电视柜",
+   "category": "furniture",
+   "room": "R-BED-S",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.5,
+    2.0
+   ],
+   "catalog": "closet"
+  },
+  {
+   "pascal_id": "item_v1_0097",
+   "canonical_id": "书柜",
+   "fcstd": "Rectangle024",
+   "label": "书柜",
+   "category": "furniture",
+   "room": "R-BED-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.45,
+    4.2
+   ],
+   "catalog": "bookshelf"
+  },
+  {
+   "pascal_id": "item_v1_0098",
+   "canonical_id": "矮书柜",
+   "fcstd": "Rectangle025",
+   "label": "矮书柜",
+   "category": "furniture",
+   "room": "R-BED-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    1.6,
+    0.45
+   ],
+   "catalog": "bookshelf"
+  },
+  {
+   "pascal_id": "item_v1_0099",
+   "canonical_id": "茶台",
+   "fcstd": "Rectangle026",
+   "label": "茶台",
+   "category": "furniture",
+   "room": "R-BED-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.8,
+    2.2
+   ],
+   "catalog": "table"
+  },
+  {
+   "pascal_id": "item_v1_0100",
+   "canonical_id": "主人椅",
+   "fcstd": "Circle007",
+   "label": "主人椅",
+   "category": "furniture",
+   "room": "R-BED-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.4,
+    0.4
+   ],
+   "catalog": "stool"
+  },
+  {
+   "pascal_id": "item_v1_0101",
+   "canonical_id": "条凳",
+   "fcstd": "Rectangle027",
+   "label": "条凳",
+   "category": "furniture",
+   "room": "R-BED-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.3,
+    1.6
+   ],
+   "catalog": "stool"
+  },
+  {
+   "pascal_id": "item_v1_0102",
+   "canonical_id": "凳子",
+   "fcstd": "Circle008",
+   "label": "凳子",
+   "category": "furniture",
+   "room": "R-BED-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.4,
+    0.4
+   ],
+   "catalog": "stool"
+  },
+  {
+   "pascal_id": "item_v1_0103",
+   "canonical_id": "次卧凳子",
+   "fcstd": "Circle009",
+   "label": "次卧凳子",
+   "category": "furniture",
+   "room": "R-STUDY",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.4,
+    0.4
+   ],
+   "catalog": "stool"
+  },
+  {
+   "pascal_id": "item_v1_0104",
+   "canonical_id": "餐椅",
+   "fcstd": "Circle010",
+   "label": "餐椅",
+   "category": "furniture",
+   "room": "R-DINING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.4,
+    0.4
+   ],
+   "catalog": "dining-chair"
+  },
+  {
+   "pascal_id": "item_v1_0105",
+   "canonical_id": "餐椅003",
+   "fcstd": "Circle011",
+   "label": "餐椅003",
+   "category": "furniture",
+   "room": "R-DINING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.4,
+    0.4
+   ],
+   "catalog": "dining-chair"
+  },
+  {
+   "pascal_id": "item_v1_0106",
+   "canonical_id": "餐椅",
+   "fcstd": "Circle012",
+   "label": "餐椅",
+   "category": "furniture",
+   "room": "R-DINING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.4,
+    0.4
+   ],
+   "catalog": "dining-chair"
+  },
+  {
+   "pascal_id": "item_v1_0107",
+   "canonical_id": "餐椅004",
+   "fcstd": "Circle013",
+   "label": "餐椅004",
+   "category": "furniture",
+   "room": "R-DINING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.4,
+    0.4
+   ],
+   "catalog": "dining-chair"
+  },
+  {
+   "pascal_id": "item_v1_0108",
+   "canonical_id": "现有橱柜",
+   "fcstd": "Rectangle029",
+   "label": "现有橱柜",
+   "category": "furniture",
+   "room": "R-BALC-LIFE",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.5,
+    1.5
+   ],
+   "catalog": "closet"
+  },
+  {
+   "pascal_id": "item_v1_0109",
+   "canonical_id": "客卫洗手盆柜体",
+   "fcstd": "Rectangle030",
+   "label": "客卫洗手盆柜体",
+   "category": "furniture",
+   "room": "R-BATH-P",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.6,
+    1.2
+   ],
+   "catalog": "bathroom-sink"
+  },
+  {
+   "pascal_id": "item_v1_0110",
+   "canonical_id": "鞋柜",
+   "fcstd": "Rectangle031",
+   "label": "鞋柜",
+   "category": "furniture",
+   "room": "R-DINING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.3,
+    0.7223
+   ],
+   "catalog": "closet"
+  },
+  {
+   "pascal_id": "item_v1_0111",
+   "canonical_id": "橱柜",
+   "fcstd": "Rectangle032",
+   "label": "橱柜",
+   "category": "furniture",
+   "room": "R-BALC-LIFE",
+   "status": "MAPPED",
+   "actual_size_m": [
+    1.2,
+    0.5
+   ],
+   "catalog": "closet"
+  },
+  {
+   "pascal_id": "item_v1_0112",
+   "canonical_id": "主卫湿区",
+   "fcstd": "Rectangle033",
+   "label": "主卫湿区",
+   "category": "furniture_region",
+   "room": "R-BATH-M",
+   "status": "REGION_BOUNDARY",
+   "actual_size_m": [
+    1.0,
+    1.5223
+   ],
+   "catalog": "shower-square"
+  },
+  {
+   "pascal_id": "item_v1_0113",
+   "canonical_id": "主卫马桶",
+   "fcstd": "Rectangle034",
+   "label": "主卫马桶",
+   "category": "furniture",
+   "room": "R-BATH-M",
+   "status": "HUMAN_ACCEPTED_AS_DRAWN",
+   "actual_size_m": [
+    0.5,
+    0.65
+   ],
+   "catalog": "toilet"
+  },
+  {
+   "pascal_id": "item_v1_0114",
+   "canonical_id": "主卫洗手盆和柜体",
+   "fcstd": "Rectangle035",
+   "label": "主卫洗手盆和柜体",
+   "category": "furniture",
+   "room": "R-BATH-M",
+   "status": "MAPPED",
+   "actual_size_m": [
+    1.2,
+    0.5
+   ],
+   "catalog": "bathroom-sink"
+  },
+  {
+   "pascal_id": "item_v1_0115",
+   "canonical_id": "次主卫湿区",
+   "fcstd": "Rectangle036",
+   "label": "次主卫湿区",
+   "category": "furniture_region",
+   "room": "R-CLOAK",
+   "status": "REGION_BOUNDARY",
+   "actual_size_m": [
+    0.8233,
+    1.5471
+   ],
+   "catalog": "shower-square"
+  },
+  {
+   "pascal_id": "item_v1_0116",
+   "canonical_id": "次主卫台盆和柜体",
+   "fcstd": "Rectangle037",
+   "label": "次主卫台盆和柜体",
+   "category": "furniture",
+   "room": "R-CLOAK",
+   "status": "MAPPED",
+   "actual_size_m": [
+    1.0,
+    0.5
+   ],
+   "catalog": "bathroom-sink"
+  },
+  {
+   "pascal_id": "item_v1_0117",
+   "canonical_id": "次主卫马桶",
+   "fcstd": "Rectangle038",
+   "label": "次主卫马桶",
+   "category": "furniture",
+   "room": "R-CLOAK",
+   "status": "HUMAN_ACCEPTED_AS_DRAWN",
+   "actual_size_m": [
+    0.5,
+    0.6
+   ],
+   "catalog": "toilet"
+  },
+  {
+   "pascal_id": "item_v1_0118",
+   "canonical_id": "冰柜",
+   "fcstd": "Rectangle039",
+   "label": "冰柜",
+   "category": "furniture",
+   "room": "R-BALC-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    1.2,
+    0.6
+   ],
+   "catalog": "freezer"
+  },
+  {
+   "pascal_id": "item_v1_0119",
+   "canonical_id": "洗衣机+烘干机（叠放）",
+   "fcstd": "Rectangle040",
+   "label": "洗衣机+烘干机（叠放）",
+   "category": "furniture",
+   "room": "R-BALC-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.6,
+    0.6
+   ],
+   "catalog": "washing-machine"
+  },
+  {
+   "pascal_id": "item_v1_0120",
+   "canonical_id": "3kg洗衣机",
+   "fcstd": "Rectangle041",
+   "label": "3kg洗衣机",
+   "category": "furniture",
+   "room": "R-BATH-P",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.45,
+    0.45
+   ],
+   "catalog": "washing-machine"
+  },
+  {
+   "pascal_id": "item_v1_0121",
+   "canonical_id": "打印机",
+   "fcstd": "Rectangle043",
+   "label": "打印机",
+   "category": "furniture",
+   "room": "R-BED-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.4,
+    0.4
+   ],
+   "catalog": "computer"
+  },
+  {
+   "pascal_id": "item_v1_0122",
+   "canonical_id": "nas",
+   "fcstd": "Rectangle044",
+   "label": "nas",
+   "category": "furniture",
+   "room": "R-BED-N",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.4,
+    0.4
+   ],
+   "catalog": "computer"
+  },
+  {
+   "pascal_id": "item_v1_0123",
+   "canonical_id": "次卧衣柜",
+   "fcstd": "Rectangle045",
+   "label": "次卧衣柜",
+   "category": "furniture",
+   "room": "R-STUDY",
+   "status": "USER_MANUAL_CORRECTION",
+   "actual_size_m": [
+    0.5,
+    2.0
+   ],
+   "catalog": "closet"
+  },
+  {
+   "pascal_id": "item_v1_0124",
+   "canonical_id": "三人位",
+   "fcstd": "Rectangle046",
+   "label": "三人位",
+   "category": "furniture",
+   "room": "R-LIVING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.9,
+    2.3
+   ],
+   "catalog": "sofa"
+  },
+  {
+   "pascal_id": "item_v1_0125",
+   "canonical_id": "双人位",
+   "fcstd": "Rectangle047",
+   "label": "双人位",
+   "category": "furniture",
+   "room": "R-LIVING",
+   "status": "HUMAN_ACCEPTED_AS_DRAWN",
+   "actual_size_m": [
+    1.9,
+    0.85
+   ],
+   "catalog": "sofa"
+  },
+  {
+   "pascal_id": "item_v1_0126",
+   "canonical_id": "贵妃椅",
+   "fcstd": "Rectangle048",
+   "label": "贵妃椅",
+   "category": "furniture",
+   "room": "R-LIVING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    1.7,
+    0.9
+   ],
+   "catalog": "livingroom-chair"
+  },
+  {
+   "pascal_id": "item_v1_0127",
+   "canonical_id": "茶几",
+   "fcstd": "Rectangle049",
+   "label": "茶几",
+   "category": "furniture",
+   "room": "R-LIVING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.55,
+    1.0
+   ],
+   "catalog": "coffee-table"
+  },
+  {
+   "pascal_id": "item_v1_0128",
+   "canonical_id": "角几",
+   "fcstd": "Circle",
+   "label": "角几",
+   "category": "furniture",
+   "room": "R-LIVING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    0.5,
+    0.5
+   ],
+   "catalog": "bedside-table"
+  },
+  {
+   "pascal_id": "item_v1_0129",
+   "canonical_id": "餐桌",
+   "fcstd": "Rectangle050",
+   "label": "餐桌",
+   "category": "furniture",
+   "room": "R-DINING",
+   "status": "MAPPED",
+   "actual_size_m": [
+    1.6,
+    0.8
+   ],
+   "catalog": "dining-table"
+  },
+  {
+   "pascal_id": "item_v1_0130",
+   "canonical_id": "床背板",
+   "fcstd": "Rectangle051",
+   "label": "床背板",
+   "category": "furniture",
+   "room": "R-STUDY",
+   "status": "USER_MANUAL_CORRECTION",
+   "actual_size_m": [
+    0.2,
+    1.2
+   ],
+   "catalog": "bedside-table"
+  },
+  {
+   "pascal_id": "item_v1_0131",
+   "canonical_id": "窄书桌",
+   "fcstd": "Rectangle052",
+   "label": "窄书桌",
+   "category": "furniture",
+   "room": "R-STUDY",
+   "status": "USER_MANUAL_CORRECTION",
+   "actual_size_m": [
+    0.35,
+    1.65
+   ],
+   "catalog": "table"
+  },
+  {
+   "pascal_id": "item_v1_0132",
+   "canonical_id": "K-RUN-E",
+   "fcstd": null,
+   "label": "K-RUN-E",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_SHOP_DRAWING"
+  },
+  {
+   "pascal_id": "item_v1_0133",
+   "canonical_id": "K-RUN-S",
+   "fcstd": null,
+   "label": "K-RUN-S",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_SHOP_DRAWING"
+  },
+  {
+   "pascal_id": "item_v1_0134",
+   "canonical_id": "K-SINK",
+   "fcstd": null,
+   "label": "K-SINK",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_SHOP_DRAWING"
+  },
+  {
+   "pascal_id": "item_v1_0135",
+   "canonical_id": "K-COOK",
+   "fcstd": null,
+   "label": "K-COOK",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_SHOP_DRAWING"
+  },
+  {
+   "pascal_id": "item_v1_0136",
+   "canonical_id": "K-DISHW",
+   "fcstd": null,
+   "label": "K-DISHW",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_SHOP_DRAWING"
+  },
+  {
+   "pascal_id": "item_v1_0137",
+   "canonical_id": "K-BASKET",
+   "fcstd": null,
+   "label": "K-BASKET",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_TO_VERIFY"
+  },
+  {
+   "pascal_id": "item_v1_0138",
+   "canonical_id": "K-CORNER",
+   "fcstd": null,
+   "label": "K-CORNER",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_TO_VERIFY"
+  },
+  {
+   "pascal_id": "item_v1_0139",
+   "canonical_id": "K-WALL-E",
+   "fcstd": null,
+   "label": "K-WALL-E",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_TO_VERIFY"
+  },
+  {
+   "pascal_id": "item_v1_0140",
+   "canonical_id": "K-FRIDGE",
+   "fcstd": null,
+   "label": "K-FRIDGE",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_SHOP_DRAWING"
+  },
+  {
+   "pascal_id": "item_v1_0141",
+   "canonical_id": "K-FRIDGE-OVERHEAD",
+   "fcstd": null,
+   "label": "K-FRIDGE-OVERHEAD",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_TO_VERIFY"
+  },
+  {
+   "pascal_id": "item_v1_0142",
+   "canonical_id": "K-TALL-L",
+   "fcstd": null,
+   "label": "K-TALL-L",
+   "category": "kitchen_cabinet",
+   "room": null,
+   "status": "PDF_TO_VERIFY"
+  },
+  {
+   "pascal_id": "slab_v1_0143",
+   "canonical_id": "R-LIVING",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0144",
+   "canonical_id": "R-DINING",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0145",
+   "canonical_id": "R-BALC-LIFE",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0146",
+   "canonical_id": "R-KITCHEN",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0147",
+   "canonical_id": "R-LEISURE-W",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0148",
+   "canonical_id": "R-LEISURE-E",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0149",
+   "canonical_id": "R-BED-S",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0150",
+   "canonical_id": "R-MASTER",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0151",
+   "canonical_id": "R-CLOAK",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0152",
+   "canonical_id": "R-BATH-M",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0153",
+   "canonical_id": "R-BED-N",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0154",
+   "canonical_id": "R-STUDY",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0155",
+   "canonical_id": "R-BATH-P",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0156",
+   "canonical_id": "R-BALC-N",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0157",
+   "canonical_id": "north_balcony",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  },
+  {
+   "pascal_id": "slab_v1_0158",
+   "canonical_id": "life_balcony",
+   "fcstd": null,
+   "label": "",
+   "category": "slab_floor",
+   "room": null,
+   "status": "TEMP_GEOMETRY"
+  }
+ ]
+}

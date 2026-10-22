@@ -1,0 +1,633 @@
+{
+ "map": [
+  {
+   "pascal_id": "wall_v2_0004",
+   "canonical_id": "W-EXT-W-S0",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0005",
+   "canonical_id": "W-EXT-W-S1",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0006",
+   "canonical_id": "W-EXT-S#W-KIT-S.0",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 50,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0007",
+   "canonical_id": "W-EXT-S#W-SMB-S.0",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0008",
+   "canonical_id": "W-EXT-S#W-MB-S.0",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0009",
+   "canonical_id": "W-EXT-S#W-MB-S.1",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0010",
+   "canonical_id": "W-EXT-S-W1",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0011",
+   "canonical_id": "W-EXT-S-W2",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0012",
+   "canonical_id": "W-EXT-E1",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0013",
+   "canonical_id": "W-EXT-E2",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0014",
+   "canonical_id": "W-EXT-NE",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0015",
+   "canonical_id": "W-EXT-NE2",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0016",
+   "canonical_id": "W-EXT-N-LV#W-LIV-N.0",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0017",
+   "canonical_id": "W-EXT-N-LV#W-LIV-N.1",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0018",
+   "canonical_id": "W-BAY-JW",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 150,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0019",
+   "canonical_id": "W-BAY-JE",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 150,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0020",
+   "canonical_id": "W-INT-X7900-L",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0021",
+   "canonical_id": "W-INT-X7900-U-TV#G-LIV-NBALC.0",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 100,
+   "height_m": 1.05,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0022",
+   "canonical_id": "W-INT-X7900-U-TV#G-LIV-NBALC.1",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 100,
+   "height_m": 1.05,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0023",
+   "canonical_id": "W-INT-X9800",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0024",
+   "canonical_id": "W-INT-X11500",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0025",
+   "canonical_id": "W-INT-X13000",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0026",
+   "canonical_id": "W-INT-Y4500-a",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 250,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0027",
+   "canonical_id": "W-INT-CLK-N",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0028",
+   "canonical_id": "W-INT-CLK-E",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 100,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0029",
+   "canonical_id": "W-INT-CLK-W",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 100,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0030",
+   "canonical_id": "W-INT-COR-N-STUB",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0031",
+   "canonical_id": "W-INT-BEDN-S",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0032",
+   "canonical_id": "W-INT-WC-S",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0033",
+   "canonical_id": "W-INT-STD-S",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0034",
+   "canonical_id": "W-INT-Y10800#G-GB-BALC.0",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 1.05,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0035",
+   "canonical_id": "W-INT-Y10800#G-GB-BALC.1",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 1.05,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0036",
+   "canonical_id": "W-INT-Y10800-EXT",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0037",
+   "canonical_id": "W-INT-Y4500-bc-MBATH",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0038",
+   "canonical_id": "W-INT-Y4500-b-FOYER",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0039",
+   "canonical_id": "W-EXT-N-BAL",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 1.05,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0040",
+   "canonical_id": "W-BALC-W",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 1.05,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0041",
+   "canonical_id": "W-BALC-S",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 1.05,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0042",
+   "canonical_id": "W-NBALC-E-PAR",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 120,
+   "height_m": 1.05,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0043",
+   "canonical_id": "W-BAY-STUDY-F",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 200,
+   "height_m": 2.5,
+   "thickness_status": "CONFIRMED"
+  },
+  {
+   "pascal_id": "wall_v2_0044",
+   "canonical_id": "W-BAY-STUDY-JW",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 100,
+   "height_m": 2.5,
+   "thickness_status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "wall_v2_0045",
+   "canonical_id": "W-BAY-STUDY-JE",
+   "category": "wall",
+   "status": "MAPPED",
+   "thickness_mm": 100,
+   "height_m": 2.5,
+   "thickness_status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "wall_v2_0046",
+   "canonical_id": "HOSTBAND:ENT-1",
+   "category": "wall_host_band",
+   "status": "TOPOLOGY_RECONSTRUCTED_TO_VERIFY"
+  },
+  {
+   "pascal_id": "door_v2_0047",
+   "canonical_id": "ENT-1",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 1.7
+  },
+  {
+   "pascal_id": "door_v2_0048",
+   "canonical_id": "D-SM",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 0.7
+  },
+  {
+   "pascal_id": "door_v2_0049",
+   "canonical_id": "D-MB",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 0.5
+  },
+  {
+   "pascal_id": "door_v2_0050",
+   "canonical_id": "D-BATHM",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 0.4
+  },
+  {
+   "pascal_id": "door_v2_0051",
+   "canonical_id": "D-STUDY",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 0.4
+  },
+  {
+   "pascal_id": "door_v2_0052",
+   "canonical_id": "D-GBATH",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 0.8
+  },
+  {
+   "pascal_id": "door_v2_0053",
+   "canonical_id": "D-GBED",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 0.8
+  },
+  {
+   "pascal_id": "door_v2_0054",
+   "canonical_id": "D-ENS-OWNER",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 0.7
+  },
+  {
+   "pascal_id": "door_v2_0055",
+   "canonical_id": "D-CONN-MB-SMB",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 0.3
+  },
+  {
+   "pascal_id": "wall_v2_0056",
+   "canonical_id": "HOSTBAND:G-GB-BALC",
+   "category": "wall_host_band",
+   "status": "TOPOLOGY_RECONSTRUCTED_TO_VERIFY"
+  },
+  {
+   "pascal_id": "door_v2_0057",
+   "canonical_id": "G-GB-BALC",
+   "category": "glass_door",
+   "status": "MAPPED",
+   "width_m": 2.0
+  },
+  {
+   "pascal_id": "wall_v2_0058",
+   "canonical_id": "G-DIN-LIV",
+   "category": "glazed_screen",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "door_v2_0059",
+   "canonical_id": "G-DIN-LIV",
+   "category": "glass_sliding_door",
+   "status": "MAPPED"
+  },
+  {
+   "pascal_id": "wall_v2_0060",
+   "canonical_id": "HOSTBAND:G-LIV-NBALC",
+   "category": "wall_host_band",
+   "status": "TOPOLOGY_RECONSTRUCTED_TO_VERIFY"
+  },
+  {
+   "pascal_id": "door_v2_0061",
+   "canonical_id": "G-LIV-NBALC",
+   "category": "glass_door",
+   "status": "MAPPED",
+   "width_m": 0.85
+  },
+  {
+   "pascal_id": "wall_v2_0062",
+   "canonical_id": "REMOVED_HOST:W-INT-NICHE",
+   "category": "wall_reconstructed",
+   "status": "TOPOLOGY_RECONSTRUCTED_TO_VERIFY"
+  },
+  {
+   "pascal_id": "door_v2_0063",
+   "canonical_id": "OPEN-COR-LIV",
+   "category": "door",
+   "status": "MAPPED",
+   "width_m": 1.7
+  },
+  {
+   "pascal_id": "wall_v2_0064",
+   "canonical_id": "W-LIV-N-CHEEK-0",
+   "category": "bay_cheek",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "wall_v2_0065",
+   "canonical_id": "W-LIV-N-CHEEK-1",
+   "category": "bay_cheek",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "wall_v2_0066",
+   "canonical_id": "W-LIV-N-FRONT",
+   "category": "bay_front",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "window_v2_0067",
+   "canonical_id": "W-LIV-N",
+   "category": "bay_glazing",
+   "status": "MAPPED",
+   "projection_mm": 900
+  },
+  {
+   "pascal_id": "slab_v2_0068",
+   "canonical_id": "W-LIV-N-SILL",
+   "category": "bay_sill",
+   "status": "BLOCKOUT_TEMP_VALUE"
+  },
+  {
+   "pascal_id": "window_v2_0069",
+   "canonical_id": "W-STUDY-NE",
+   "category": "bay_glazing",
+   "status": "MAPPED",
+   "projection_mm": 700
+  },
+  {
+   "pascal_id": "slab_v2_0070",
+   "canonical_id": "W-STUDY-NE-SILL",
+   "category": "bay_sill",
+   "status": "BLOCKOUT_TEMP_VALUE"
+  },
+  {
+   "pascal_id": "window_v2_0071",
+   "canonical_id": "W-LBALC-S",
+   "category": "balcony_window",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "wall_v2_0072",
+   "canonical_id": "HOSTBAND:W-KIT-S",
+   "category": "wall_host_band",
+   "status": "TOPOLOGY_RECONSTRUCTED_TO_VERIFY"
+  },
+  {
+   "pascal_id": "window_v2_0073",
+   "canonical_id": "W-KIT-S",
+   "category": "window",
+   "status": "MAPPED",
+   "width_m": 1.0
+  },
+  {
+   "pascal_id": "wall_v2_0074",
+   "canonical_id": "W-SMB-S-CHEEK-0",
+   "category": "bay_cheek",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "wall_v2_0075",
+   "canonical_id": "W-SMB-S-CHEEK-1",
+   "category": "bay_cheek",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "wall_v2_0076",
+   "canonical_id": "W-SMB-S-FRONT",
+   "category": "bay_front",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "window_v2_0077",
+   "canonical_id": "W-SMB-S",
+   "category": "bay_glazing",
+   "status": "MAPPED",
+   "projection_mm": 700
+  },
+  {
+   "pascal_id": "slab_v2_0078",
+   "canonical_id": "W-SMB-S-SILL",
+   "category": "bay_sill",
+   "status": "BLOCKOUT_TEMP_VALUE"
+  },
+  {
+   "pascal_id": "wall_v2_0079",
+   "canonical_id": "W-MB-S-CHEEK-0",
+   "category": "bay_cheek",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "wall_v2_0080",
+   "canonical_id": "W-MB-S-CHEEK-1",
+   "category": "bay_cheek",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "wall_v2_0081",
+   "canonical_id": "W-MB-S-FRONT",
+   "category": "bay_front",
+   "status": "TO_VERIFY"
+  },
+  {
+   "pascal_id": "window_v2_0082",
+   "canonical_id": "W-MB-S",
+   "category": "bay_glazing",
+   "status": "MAPPED",
+   "projection_mm": 700
+  },
+  {
+   "pascal_id": "slab_v2_0083",
+   "canonical_id": "W-MB-S-SILL",
+   "category": "bay_sill",
+   "status": "BLOCKOUT_TEMP_VALUE"
+  },
+  {
+   "pascal_id": "slab_v2_0084",
+   "canonical_id": "SPLIT-LEVEL",
+   "category": "split_level",
+   "status": "BLOCKOUT_TEMP_VALUE"
+  }
+ ]
+}

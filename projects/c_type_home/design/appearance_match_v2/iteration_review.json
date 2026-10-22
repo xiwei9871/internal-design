@@ -1,0 +1,35 @@
+{
+  "contract": "owner requires faithful reproduction of selected color/material/texture/sheen/light; true model locks dimensions",
+  "baseline": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/living_dining_detail_v1/LIVING_DINING_DETAIL_V1.blend",
+    "sha256": "8fec1e2169f715c5901f3abacd6885834c6c5b7a4e3baa66bd4baae4417892ab",
+    "owner_visual_status": "FAIL"
+  },
+  "candidate": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/appearance_match_v2/LIVING_DINING_APPEARANCE_V2.blend",
+    "sha256": "1b16fea0ad5e4079bab73e1fec9dc10a877198ed5dd997860f41a55ef08e441b",
+    "visual_status": "HUMAN_REVIEW_REQUIRED"
+  },
+  "critical_requirement_ledger": {
+    "ash_color_texture_sheen": {
+      "baseline": "fail",
+      "candidate": "unclear",
+      "evidence": "review_renders/CAM_living_VIEW_01.png and LD_CAM_dining_DETAIL.png",
+      "observation": "restored honey wood color, grain along construction and matte reflection; exact reference acceptance pending"
+    },
+    "sofa_oatmeal_linen": {
+      "baseline": "fail",
+      "candidate": "unclear",
+      "evidence": "review_renders/AM2_CAM_SOFA_MATERIAL.png",
+      "observation": "visible woven threads, tailored seam and compression; compare texture/coarseness and color to accepted source"
+    },
+    "actual_dimensions_source": {
+      "baseline": "pass",
+      "candidate": "pass",
+      "evidence": "VERIFICATION.json"
+    }
+  },
+  "decision": "retain_candidate",
+  "decision_note": "Preserved V1 baseline remains unchanged for evidence. V2 is retained only as an unaccepted study; no accepted-design promotion or whole-house rollout.",
+  "comparison": "MATERIAL_COMPARISON.jpg"
+}

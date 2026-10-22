@@ -1,0 +1,36 @@
+"""R4-derived coverage semantics and camera constants. Historical names are evidence only."""
+from pathlib import Path
+import json
+OUT=Path(__file__).resolve().parent
+def c(id,pos,target,lens=28,note=''):return dict(id=id,pos=pos,target=target,lens=lens,note=note)
+ROOMS=[
+ dict(id='living',folder='01_living',name='客厅',ffl=0,evidence=['B11_Rectangle046','B11_Rectangle047','LIVING_FIX_BAY'],cameras=[],reuse='R4_VERIFIED_LIVING_EXPLORATION_V1'),
+ dict(id='dining',folder='02_dining',name='餐厅',ffl=0,evidence=['B11_Rectangle050','B11_Circle010'],cameras=[c('D1',[5.15,4.1,1.55],[3.8,3.45,1.05]),c('D2',[4.8,2.40,1.55],[4.0,4.7,1.25],26,'餐厨公共区联系，保留玻璃开口'),c('D3',[4.9,2.55,1.55],[3.8,3.5,.95],35)]),
+ dict(id='kitchen',folder='03_kitchen',name='厨房（冻结柜体）',ffl=0,evidence=['B11_K-RUN','B11_K-FRIDGE','B11_SITE_BUFFET'],cameras=[c('K1',[6.65,3.15,1.55],[6.65,.5,1.1],26),c('K2',[6.65,.90,1.55],[6.75,3.95,1.25],26),c('K3',[6.65,2.20,1.55],[6.61,4.02,1.25],26,'窄柜-冰箱-内侧高柜关系锁定'),c('K4',[3.65,1.70,1.55],[1.75,1.45,1.3],30,'独立展示柜与阳台窗，完整背墙保留')]),
+ dict(id='leisure',folder='04_leisure',name='错层扇形休闲厅',ffl=.45,evidence=['B11_LEISURE_CURVE','STAIR'],cameras=[c('LE1',[7.55,5.10,2.0],[6.05,6.45,.85],28,'完整扇形曲边+450，不能扩客厅'),c('LE2',[5.15,7.1,1.55],[7.10,5.35,1.15],26,'下层向上层，三阶150mm'),c('LE3',[8.15,6.05,2.0],[6.75,5.65,1.0],32)]),
+ dict(id='main_bedroom',folder='05_main_bedroom',name='主卧（R4主卧床区）',ffl=.45,evidence=['B11_Rectangle013','B11_Rectangle014','B11_Rectangle015'],cameras=[c('MB1',[12.45,4.12,2.0],[14.18,2.35,1.1],28),c('MB2',[14.0,.65,2.0],[13.35,3.9,1.3],28),c('MB3',[13.3,1.08,2.0],[15.15,2.45,1.1],35),c('MB4',[12.25,2.9,2.0],[13.5,.15,1.3],28)]),
+ dict(id='second_main_bedroom',folder='06_second_main_bedroom',name='次主卧（R4直门入口）',ffl=.45,evidence=['B11_Rectangle012','R3_WARDROBE','R4_BEDROOM_DOOR_LEAF'],cameras=[c('SM1',[8.55,4.04,2.0],[10.15,2.30,1.15],28),c('SM2',[10.55,.6,2.0],[9.35,4.08,1.3],28,'直门与衣柜之间通道保持'),c('SM3',[8.65,1.20,2.0],[10.15,.1,1.15],32)]),
+ dict(id='third_bedroom',folder='07_third_bedroom',name='客房/弹性次卧（历史R-STUDY区域）',ffl=.45,evidence=['B11_Rectangle017','B11_Rectangle045','B11_Rectangle052'],cameras=[c('GB1',[12.45,10.65,2.0],[11.74,8.60,1.15],26),c('GB2',[12.35,10.50,2.0],[10.4,9.10,1.25],28),c('GB3',[10.7,10.40,2.0],[12.70,10.0,1.1],32)]),
+ dict(id='study',folder='08_study',name='书房/长茶台与书柜区（历史R-BED-N）',ffl=.45,evidence=['R3_STUDY_B11_Rectangle024','R3_STUDY_B11_Rectangle026','R3_TEA_COUNTER'],cameras=[c('ST1',[13.4,10.25,2.0],[15.12,8.05,1.4],26),c('ST2',[13.35,8.30,2.0],[14.72,8.48,1.16],30,'2200x800主工作/茶台，不新增第二张大桌'),c('ST3',[13.65,9.7,2.0],[15.96,9.0,1.4],28),c('ST4',[14.00,7.9,2.0],[14.93,6.87,1.4],28,'现低柜为上下水煮茶台，不是矮书柜；设备不得放湿区')]),
+ dict(id='cloakroom',folder='09_cloakroom',name='衣柜储物专题（无独立现状衣帽间）',ffl=.45,evidence=['R3_WARDROBE','B11_Rectangle015'],actual_role='STORAGE_COVERAGE_NOT_SEPARATE_ROOM',cameras=[c('CL1',[9.20,3.20,2.0],[10.63,4.10,1.4],28,'次主卧衣柜，原R-CLOAK已是次主卫，禁止虚构独立房间'),c('CL2',[12.4,3.15,2.0],[14.2,4.2,1.4],30,'主卧固定衣柜表面和五金，不改固定宽深')]),
+ dict(id='main_bath',folder='10_main_bath',name='主卫',ffl=.45,evidence=['B11_Rectangle033','B11_Rectangle034','B11_Rectangle035'],cameras=[c('BA1',[13.22,4.85,2.0],[14.55,5.75,1.4],26),c('BA2',[14.45,4.85,2.0],[15.3,5.9,1.4],28),c('BA3',[14.65,5.05,2.0],[13.8,6.08,1.25],30)]),
+ dict(id='secondary_bath',folder='11_secondary_bath',name='次主卫（原衣帽间/书房改造区）',ffl=.45,evidence=['R3_VANITY','R3_WC','R3_SHOWER','R3_SLIDING_LEAF'],cameras=[c('SB1',[9.55,5.03,2.0],[10.63,5.61,1.42],24),c('SB2',[10.20,5.10,2.0],[10.62,6.03,1.4],28),c('SB3',[10.9,5.6,2.0],[9.58,4.75,1.4],28,'南侧西端门洞，推拉叶向东藏入墙后')]),
+ dict(id='public_bath',folder='12_public_bath',name='公卫',ffl=.45,evidence=['B11_Rectangle007','B11_Rectangle008','B11_Rectangle030','B11_Rectangle041_XY_ONLY_HELPER'],cameras=[c('PB1',[9.43,8.18,2.0],[8.58,9.65,1.4],24),c('PB2',[9.5,8.50,2.0],[8.70,10.10,1.35],24),c('PB3',[9.3,9.55,2.0],[9.43,10.55,1.15],28,'3kg洗衣设备只有位置helper/未安装体，不能冒充已确认壁挂')]),
+ dict(id='life_balcony',folder='13_life_balcony',name='生活阳台/厨房外储物段',ffl=0,evidence=['B11_SITE_BUFFET','B11_SITE_BALCONY_WINDOW','B11_K-UTILITY'],cameras=[c('BL1',[4.6,1.85,1.55],[2.6,.7,1.1],28),c('BL2',[3.20,1.80,1.55],[1.7,1.45,1.3],32,'当前洗烘在北阳台，不移来这里')]),
+ dict(id='other_balcony',folder='14_other_balcony',name='北阳台（现洗烘和冷柜）',ffl=0,evidence=['B11_Rectangle039','B11_Rectangle040','DOOR_V2_NBALC_SINGLE_GLASS'],cameras=[c('BN1',[9.65,13.20,1.55],[9.8,11.60,1.1],28),c('BN2',[9.8,12.80,1.55],[7.83,12.20,1.4],28,'阳台边界和客厅门保持，不吞室内')]),
+ dict(id='circulation',folder='15_circulation',name='入户、走廊和错层过渡',ffl=None,evidence=['B11_Rectangle031','R4_BEDROOM_DOOR_LEAF','V4_D-'],cameras=[c('CR1',[3.7,6.0,1.55],[3.0,5.3,1.05],28,'入户鞋柜/餐区过渡'),c('CR2',[8.00,7.12,2.0],[11.6,6.95,1.2],26,'上层走廊+450和现有多门，不新建门'),c('CR3',[11.9,6.95,2.0],[8.35,6.9,1.2],26,'走廊反向，保持门套/通道'),c('CR4',[6.90,8.10,1.55],[7.45,6.65,1.05],28,'低层至错层直门关系，3阶和连续门口地坪')]),
+]
+def write_inventory():
+ raw=json.loads((OUT/'00_manifest/R4_ACTUAL_OBJECT_INVENTORY.json').read_text());objs=raw['objects'];report=[]
+ for room in ROOMS:
+  ev=[o for o in objs if any(o['name'].startswith(e) for e in room['evidence'])]
+  room['actual_object_evidence']=[o['name'] for o in ev[:12]];room['expected_views']=5 if room['id']=='living' else len(room['cameras']);room['expected_images']=room['expected_views']*3
+  room['coverage_status']='DISCOVERED_R4';report.append({k:v for k,v in room.items() if k!='cameras'})
+ count=sum(r['expected_images'] for r in ROOMS)
+ out=dict(status='ROOM_COVERAGE_TARGET_ESTABLISHED',source_sha256=json.loads((OUT/'00_manifest/R4_WHOLE_HOUSE_PREFLIGHT.json').read_text())['sha256'],room_coverage_target=15,independent_physical_rooms=14,storage_topic_not_new_room=True,expected_images=count,expected_camera_views=count//3,rooms=report,semantic_notes=['R4 historical R-CLOAK now secondary bathroom; cloakroom covered as existing bedroom wardrobe detail, not invented room.','Main and secondary names follow actual R4 bed/wardrobe groups, not assumed mother/owner identity.','HistoricalR-STUDY now guest/flexible bedroom; historicalR-BED-N now long-tea-table study.','Printer/NAS/backup-sleep requirements are design discussion concepts, not confirmed activeR4 installations. No new second desk or fixed bed added.','Current washer/dryer and freezer in north balcony; life balcony has existing buffet/window/storage.','3kg public washer currently only pending/helper; stage as idea at registered zone, not a confirmed installed wall appliance.','AC niche plate is technical reserve, not an additional occupied room.','Entrance and upper corridor have4 views in circulation coverage.'])
+ (OUT/'00_manifest/R4_ROOM_INVENTORY.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+ md=['# R4 ROOM INVENTORY','',f'覆盖目标：15个可表现空间/专题，{count//3}机位，{count}张候选。含14个独立空间与1个既有衣柜储物专题；没有虚构独立衣帽间。','', '| ID | 实际语义 | 机位 | 候选 | R4对象证据 |','|---|---|---|---|---|']
+ for r in report:md.append('| '+r['id']+' | '+r['name']+' | '+str(r['expected_views'])+' | '+str(r['expected_images'])+' | '+', '.join(r['actual_object_evidence'][:4])+' |')
+ md+=['','## 命名/功能核对','']+['- '+n for n in out['semantic_notes']]
+ (OUT/'00_manifest/R4_ROOM_INVENTORY.md').write_text('\n'.join(md)+'\n');print(json.dumps(dict(inventory='PASS',coverage=15,views=count//3,images=count),ensure_ascii=False))
+if __name__=='__main__':write_inventory()

@@ -1,0 +1,42 @@
+{
+  "status": "LATEST_FREECAD_LAYOUT_READ_ONLY",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.FCStd",
+  "source_sha256": "d69004b9912eaa6021cb793bee180615d49ef25528bc351033ec450f5de68c8f",
+  "objects": [
+    {
+      "label": "次主卫推拉门",
+      "length_mm": 1200,
+      "height_mm": 100,
+      "placement_mm": [
+        1307368.5,
+        -291764.9375,
+        0
+      ],
+      "interpretation": "latest FreeCAD sliding-door plan symbol; use opening/parking relation, not 100mm physical door height"
+    },
+    {
+      "label": "次主卫西墙",
+      "length_mm": 150,
+      "height_mm": 2000,
+      "placement_mm": [
+        1307231.0,
+        -291950.75,
+        0
+      ],
+      "interpretation": "latest FreeCAD west-wall segment"
+    },
+    {
+      "label": "次主卫南侧补充墙体",
+      "length_mm": 750,
+      "height_mm": 150,
+      "placement_mm": [
+        1308160.125,
+        -291934.0625,
+        0
+      ],
+      "interpretation": "latest FreeCAD south supplemental wall segment"
+    }
+  ],
+  "old_option_status": "PAUSED; DO NOT USE 850mm SOUTH-DOOR ASSUMPTION",
+  "next_action": "Rebuild A/B from latest FreeCAD-derived south opening, west wall, supplemental south wall and relocated fixtures"
+}

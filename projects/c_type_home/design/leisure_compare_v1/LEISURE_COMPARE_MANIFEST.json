@@ -1,0 +1,57 @@
+{
+  "status": "HUMAN_REVIEW_RESEARCH_ONLY",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+  "source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "source_unchanged": true,
+  "branch_files": [
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_A.blend",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_B.blend"
+  ],
+  "metrics": {
+    "original_fan_area_m2": 2.635039788060249,
+    "original_stairs_area_m2": 0.72,
+    "A_added_transition_area_m2": 3.3157282194786992,
+    "A_upper_extension_m2": 0.6600001049041748,
+    "A_lower_tread_area_m2": 1.355676264783772,
+    "A_upper_tread_area_m2": 1.3000518497907534,
+    "B_new_stair_area_m2": 1.08,
+    "B_net_lower_recovered_area_m2": 2.2750397880602486,
+    "B_original_fan_recovery_before_stairs_m2": 2.635039788060249,
+    "original_total_transition_footprint_m2": 3.3550397880602487,
+    "A_total_transition_footprint_m2": 5.950768007538948,
+    "A_net_lower_area_loss_m2": 2.5957282194786995,
+    "B_total_transition_footprint_m2": 1.0800000000000005,
+    "A_vs_B_lower_area_difference_m2": 4.870768007538947
+  },
+  "recommendation": "B_CONDITIONAL_ON_STRUCTURAL_REMOVABILITY",
+  "ramp_status": "INFEASIBLE_LOCAL_FULL_RAMP_NOT_ADOPTED",
+  "construction_release": false,
+  "freecad_unchanged": true,
+  "required_images": 10,
+  "compare_sheet": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_COMPARE_SHEET.png",
+  "report": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_REPORT.md",
+  "all_output_paths": [
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_VIEW_02.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_PLAN.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_SECTION.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_VIEW_01.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_AXON.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_COMPARE_SHEET.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_VIEW_01.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_REPORT.md",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_SECTION.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_VIEW_02.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_RAMP_FEASIBILITY.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_B.blend",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_VIEW_INDEX.md",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_B_AXON.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_OPTION_A_PLAN.png",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_A.blend"
+  ],
+  "verification": {
+    "status": "PASS",
+    "checks": 52,
+    "errors": []
+  },
+  "previous_living_finalize_status": "PREPARATION_PRESERVED_WAITING_PLATFORM_DECISION"
+}

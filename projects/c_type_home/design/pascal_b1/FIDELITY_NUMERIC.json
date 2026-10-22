@@ -1,0 +1,222 @@
+{
+ "arch_wall_center_residual_mm_max": 0.0,
+ "furniture_center_residual_mm": {
+  "电视柜（或者悬浮电视墙）": 0.0,
+  "客卫（湿区）": 0.0,
+  "客卫马桶": 0.0,
+  "次主卧床头占位": 0.0,
+  "次主卧床": 0.1,
+  "主卧床": 0.0,
+  "主卧床头柜占位": 0.0,
+  "主卧衣柜": 0.0,
+  "次卧小床1.2": 0.1,
+  "次主卧衣柜": 0.0,
+  "主卧电视柜": 0.0,
+  "次主卧电视柜": 0.0,
+  "书柜": 0.0,
+  "矮书柜": 0.0,
+  "茶台": 0.0,
+  "主人椅": 0.1,
+  "条凳": 0.0,
+  "凳子": 0.0,
+  "次卧凳子": 0.0,
+  "餐椅": 0.0,
+  "餐椅003": 0.1,
+  "餐椅004": 0.0,
+  "现有橱柜": 0.0,
+  "客卫洗手盆柜体": 0.1,
+  "鞋柜": 0.0,
+  "橱柜": 0.1,
+  "主卫湿区": 0.0,
+  "主卫马桶": 0.1,
+  "主卫洗手盆和柜体": 0.0,
+  "次主卫湿区": 0.0,
+  "次主卫台盆和柜体": 0.0,
+  "次主卫马桶": 0.0,
+  "冰柜": 0.1,
+  "洗衣机+烘干机（叠放）": 0.1,
+  "3kg洗衣机": 0.0,
+  "打印机": 0.0,
+  "nas": 0.0,
+  "次卧衣柜": 0.0,
+  "三人位": 0.0,
+  "双人位": 0.0,
+  "贵妃椅": 0.0,
+  "茶几": 0.1,
+  "角几": 0.1,
+  "餐桌": 0.0,
+  "床背板": 0.0,
+  "窄书桌": 0.0
+ },
+ "furniture_center_residual_mm_max": 0.1,
+ "eight_object_bbox": [
+  {
+   "id": "SOFA_3S",
+   "label": "三人位",
+   "canonical_footprint_mm": [
+    900,
+    2300
+   ],
+   "metadata_mm": [
+    900,
+    2300
+   ],
+   "rendered_bbox_mm_blockout": [
+    900,
+    2300
+   ],
+   "rendered_bbox_mm_catalog": [
+    738,
+    1548
+   ],
+   "catalog_asset": "sofa"
+  },
+  {
+   "id": "SOFA_2S",
+   "label": "双人位",
+   "canonical_footprint_mm": [
+    1900,
+    850
+   ],
+   "metadata_mm": [
+    1900,
+    850
+   ],
+   "rendered_bbox_mm_blockout": [
+    1900,
+    850
+   ],
+   "rendered_bbox_mm_catalog": [
+    1558,
+    572
+   ],
+   "catalog_asset": "sofa"
+  },
+  {
+   "id": "CHAISE",
+   "label": "贵妃椅",
+   "canonical_footprint_mm": [
+    1700,
+    900
+   ],
+   "metadata_mm": [
+    1700,
+    900
+   ],
+   "rendered_bbox_mm_blockout": [
+    1700,
+    900
+   ],
+   "rendered_bbox_mm_catalog": [
+    1244,
+    642
+   ],
+   "catalog_asset": "livingroom-chair"
+  },
+  {
+   "id": "DINING_TABLE",
+   "label": "餐桌",
+   "canonical_footprint_mm": [
+    1600,
+    800
+   ],
+   "metadata_mm": [
+    1600,
+    800
+   ],
+   "rendered_bbox_mm_blockout": [
+    1600,
+    800
+   ],
+   "rendered_bbox_mm_catalog": [
+    1378,
+    753
+   ],
+   "catalog_asset": "dining-table"
+  },
+  {
+   "id": "GUEST_BED",
+   "label": "次卧小床1.2",
+   "canonical_footprint_mm": [
+    1800,
+    1200
+   ],
+   "metadata_mm": [
+    1800,
+    1200
+   ],
+   "rendered_bbox_mm_blockout": [
+    1800,
+    1200
+   ],
+   "rendered_bbox_mm_catalog": [
+    1364,
+    957
+   ],
+   "catalog_asset": "double-bed"
+  },
+  {
+   "id": "OWNER_BED",
+   "label": "主卧床",
+   "canonical_footprint_mm": [
+    2100,
+    1500
+   ],
+   "metadata_mm": [
+    2100,
+    1500
+   ],
+   "rendered_bbox_mm_blockout": [
+    2100,
+    1500
+   ],
+   "rendered_bbox_mm_catalog": [
+    1591,
+    1196
+   ],
+   "catalog_asset": "double-bed"
+  },
+  {
+   "id": "MOTHER_BED",
+   "label": "次主卧床",
+   "canonical_footprint_mm": [
+    2100,
+    1500
+   ],
+   "metadata_mm": [
+    2100,
+    1500
+   ],
+   "rendered_bbox_mm_blockout": [
+    2100,
+    1500
+   ],
+   "rendered_bbox_mm_catalog": [
+    1591,
+    1196
+   ],
+   "catalog_asset": "double-bed"
+  },
+  {
+   "id": "STUDY_WORKSTATION",
+   "label": "窄书桌",
+   "canonical_footprint_mm": [
+    350,
+    1650
+   ],
+   "metadata_mm": [
+    350,
+    1650
+   ],
+   "rendered_bbox_mm_blockout": [
+    350,
+    1650
+   ],
+   "rendered_bbox_mm_catalog": [
+    3,
+    17
+   ],
+   "catalog_asset": "table"
+  }
+ ]
+}

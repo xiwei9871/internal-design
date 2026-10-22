@@ -1,0 +1,42 @@
+{
+  "source": "https://polyhaven.com/a/ash_veneer",
+  "license": "CC0",
+  "files": [
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/ash_veneer_1k.blend",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/1k/ash_veneer/ash_veneer_1k.blend",
+      "bytes": 215634,
+      "sha256": "5ce8ebbf597e39a97bccfe80411b806a1c99dd49cd25d81948ae6946d8020200"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_ao_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/ash_veneer/ash_veneer_ao_1k.jpg",
+      "bytes": 640909,
+      "sha256": "1ba052deaf39dd16307ef5292904b4ff7a48a6a0a2d71291f4089a4c17d8851c"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/ash_veneer/ash_veneer_diff_1k.jpg",
+      "bytes": 592273,
+      "sha256": "13fd87c8b0a5cc1d4e408fb75b3eb629417ea6b1aaf1672b5adf993640486673"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_disp_1k.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/ash_veneer/ash_veneer_disp_1k.png",
+      "bytes": 1392018,
+      "sha256": "ccd59b70086af625ab6708fb098d5db50eb32f6d978933ffdb87c97c217f7f2a"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_nor_gl_1k.exr",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/ash_veneer/ash_veneer_nor_gl_1k.exr",
+      "bytes": 824530,
+      "sha256": "ff0581e16b853cb57e7b65d77445b4a0f398dbeecfbd5daa604dcbfd1788b555"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_rough_1k.exr",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/ash_veneer/ash_veneer_rough_1k.exr",
+      "bytes": 1199699,
+      "sha256": "fd9a48e76ed2f8cf95e8585ab91560a074e2b2b45adb61b1183cd3b3266b16c8"
+    }
+  ]
+}

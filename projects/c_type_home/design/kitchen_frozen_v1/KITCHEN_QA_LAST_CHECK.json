@@ -1,0 +1,23 @@
+{
+  "B0_INTEGRITY": "PASS",
+  "b0_files_match": 7,
+  "cabinet_order": "NARROW -> FRIDGE_AND_OVERHEAD -> INNER_NICHE",
+  "fridge_front_alignment_error_mm": 0.0,
+  "narrow_four_fronts": "PASS",
+  "windows": "PASS",
+  "balcony_model_span_mm": 3000.0,
+  "balcony_span_precision": "APPROX_DIAGRAM_AXIS_READ; NOT_SITE_SURVEY",
+  "full_window_under_wall": "PASS",
+  "buffet_structure": "4+4 doors; 2 drawers",
+  "island": "PASS",
+  "utility_and_ac": "PASS",
+  "approved_cameras": 11,
+  "status": "PASS",
+  "checked_at": "2026-10-01T19:04:04+08:00",
+  "blender_version": "5.2.1 LTS",
+  "fresh_open_object_states_match": 879,
+  "protected_objects": 272,
+  "source_files_and_renders_hashes": "PASS",
+  "master_sha256": "28b289a38dbabafbc312e18b3057f232c51c44c07735b1cfcbd39aea39fd0536",
+  "temporary_render_cuts_saved_to_master": false
+}

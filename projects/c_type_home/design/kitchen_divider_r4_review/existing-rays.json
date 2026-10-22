@@ -1,0 +1,30 @@
+[
+  {
+    "x": 5.75,
+    "y": 0.55,
+    "top_ray_hits_existing_shell": true,
+    "hit_world": [
+      5.75,
+      0.550000011920929,
+      2.799999952316284
+    ]
+  },
+  {
+    "x": 5.75,
+    "y": 0.85,
+    "top_ray_hits_existing_shell": false,
+    "hit_world": null
+  },
+  {
+    "x": 5.75,
+    "y": 1.1,
+    "top_ray_hits_existing_shell": false,
+    "hit_world": null
+  },
+  {
+    "x": 5.75,
+    "y": 1.2,
+    "top_ray_hits_existing_shell": false,
+    "hit_world": null
+  }
+]

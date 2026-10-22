@@ -1,0 +1,1522 @@
+{
+  "schema": "s2-guide-baseline-v2",
+  "status": "HUMAN_REVIEW",
+  "source_fcstd": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.FCStd",
+  "source_mtime": 1790591443.223991,
+  "source_sha256": "17340e63f808f7563c64674ad4b43942765044d946b463cb2fb32d373a7817d1",
+  "freecad_object_count": 424,
+  "named_guide_object_count": 52,
+  "human_layout_intent": "LOCKED",
+  "room_reassignment": 0,
+  "wall_reassignment": 0,
+  "max_dx_mm": 0.0,
+  "max_dy_mm": 0.0,
+  "max_rotation_delta_deg": 0.0,
+  "objects": [
+    {
+      "object_name": "Rectangle001",
+      "label": "双人位沙发",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "living",
+      "bbox_task01_mm": [
+        4285.0,
+        11872.53125,
+        6227.5,
+        12619.6875
+      ],
+      "center_task01_mm": [
+        5256.25,
+        12246.109375
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        4285.0,
+        11872.53125,
+        6227.5,
+        12619.6875
+      ],
+      "reconstructed_position": [
+        4285.0,
+        11872.53125,
+        6227.5,
+        12619.6875
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Circle",
+      "label": "角几",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "living",
+      "bbox_task01_mm": [
+        3387.3776402629446,
+        11896.440140262828,
+        4036.8723597370554,
+        12545.934859737172
+      ],
+      "center_task01_mm": [
+        3712.125,
+        12221.1875
+      ],
+      "orientation": "SQUARE_OR_RADIAL",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        3387.3776402629446,
+        11896.440140262828,
+        4036.8723597370554,
+        12545.934859737172
+      ],
+      "reconstructed_position": [
+        3387.3776402629446,
+        11896.440140262828,
+        4036.8723597370554,
+        12545.934859737172
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle002",
+      "label": "茶几",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "living",
+      "bbox_task01_mm": [
+        4932.5,
+        9481.71875,
+        5580.0,
+        10951.0625
+      ],
+      "center_task01_mm": [
+        5256.25,
+        10216.390625
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        4932.5,
+        9481.71875,
+        5580.0,
+        10951.0625
+      ],
+      "reconstructed_position": [
+        4932.5,
+        9481.71875,
+        5580.0,
+        10951.0625
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle003",
+      "label": "lounge",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "living",
+      "bbox_task01_mm": [
+        3562.75,
+        7588.9375,
+        5779.25,
+        8211.5625
+      ],
+      "center_task01_mm": [
+        4671.0,
+        7900.25
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        3562.75,
+        7588.9375,
+        5779.25,
+        8211.5625
+      ],
+      "reconstructed_position": [
+        3562.75,
+        7588.9375,
+        5779.25,
+        8211.5625
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle004",
+      "label": "电视柜（或者悬浮电视墙）",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "living",
+      "bbox_task01_mm": [
+        7398.0,
+        8634.9375,
+        7696.875,
+        11523.84375
+      ],
+      "center_task01_mm": [
+        7547.4375,
+        10079.390625
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        7398.0,
+        8634.9375,
+        7696.875,
+        11523.84375
+      ],
+      "reconstructed_position": [
+        7398.0,
+        8634.9375,
+        7696.875,
+        11523.84375
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle006",
+      "label": "斜坡（轮椅用",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "transition",
+      "bbox_task01_mm": [
+        5779.25,
+        4749.84375,
+        7846.25,
+        5422.28125
+      ],
+      "center_task01_mm": [
+        6812.75,
+        5086.0625
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        5779.25,
+        4749.84375,
+        7846.25,
+        5422.28125
+      ],
+      "reconstructed_position": [
+        5779.25,
+        4749.84375,
+        7846.25,
+        5422.28125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle007",
+      "label": "客卫（湿区）",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "guest_bath",
+      "bbox_task01_mm": [
+        8045.5,
+        9880.1875,
+        9689.25,
+        10876.34375
+      ],
+      "center_task01_mm": [
+        8867.375,
+        10378.265625
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        8045.5,
+        9880.1875,
+        9689.25,
+        10876.34375
+      ],
+      "reconstructed_position": [
+        8045.5,
+        9880.1875,
+        9689.25,
+        10876.34375
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle008",
+      "label": "客卫马桶",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "guest_bath",
+      "bbox_task01_mm": [
+        8020.625,
+        9332.28125,
+        8767.75,
+        9656.03125
+      ],
+      "center_task01_mm": [
+        8394.1875,
+        9494.15625
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        8020.625,
+        9332.28125,
+        8767.75,
+        9656.03125
+      ],
+      "reconstructed_position": [
+        8020.625,
+        9332.28125,
+        8767.75,
+        9656.03125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle011",
+      "label": "次主卧床头占位",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "owner_bedroom",
+      "bbox_task01_mm": [
+        11183.5,
+        889.65625,
+        11382.75,
+        3529.53125
+      ],
+      "center_task01_mm": [
+        11283.125,
+        2209.59375
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        11183.5,
+        889.65625,
+        11382.75,
+        3529.53125
+      ],
+      "reconstructed_position": [
+        11183.5,
+        889.65625,
+        11382.75,
+        3529.53125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle012",
+      "label": "次主卧床",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "owner_bedroom",
+      "bbox_task01_mm": [
+        9066.625,
+        1537.15625,
+        11166.625,
+        3037.15625
+      ],
+      "center_task01_mm": [
+        10116.625,
+        2287.15625
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        9066.625,
+        1537.15625,
+        11166.625,
+        3037.15625
+      ],
+      "reconstructed_position": [
+        9066.625,
+        1537.15625,
+        11166.625,
+        3037.15625
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle013",
+      "label": "主卧床",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "mother_bedroom",
+      "bbox_task01_mm": [
+        13026.375,
+        1562.0625,
+        15126.375,
+        3062.0625
+      ],
+      "center_task01_mm": [
+        14076.375,
+        2312.0625
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        13026.375,
+        1562.0625,
+        15126.375,
+        3062.0625
+      ],
+      "reconstructed_position": [
+        13026.375,
+        1562.0625,
+        15126.375,
+        3062.0625
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle014",
+      "label": "主卧床头柜占位",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "mother_bedroom",
+      "bbox_task01_mm": [
+        15093.375,
+        1113.78125,
+        15243.375,
+        3613.78125
+      ],
+      "center_task01_mm": [
+        15168.375,
+        2363.78125
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        15093.375,
+        1113.78125,
+        15243.375,
+        3613.78125
+      ],
+      "reconstructed_position": [
+        15093.375,
+        1113.78125,
+        15243.375,
+        3613.78125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle015",
+      "label": "主卧衣柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "mother_bedroom",
+      "bbox_task01_mm": [
+        13175.875,
+        3878.21875,
+        15275.875,
+        4478.21875
+      ],
+      "center_task01_mm": [
+        14225.875,
+        4178.21875
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        13175.875,
+        3878.21875,
+        15275.875,
+        4478.21875
+      ],
+      "reconstructed_position": [
+        13175.875,
+        3878.21875,
+        15275.875,
+        4478.21875
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle017",
+      "label": "次卧小床1.2",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "middle_guest_room",
+      "bbox_task01_mm": [
+        10884.625,
+        8062.15625,
+        12684.625,
+        9262.15625
+      ],
+      "center_task01_mm": [
+        11784.625,
+        8662.15625
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        10884.625,
+        8062.15625,
+        12684.625,
+        9262.15625
+      ],
+      "reconstructed_position": [
+        10884.625,
+        8062.15625,
+        12684.625,
+        9262.15625
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle018",
+      "label": "床背板+窄书桌占位",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "south_study",
+      "bbox_task01_mm": [
+        12652.875,
+        8012.34375,
+        12852.125,
+        10851.46875
+      ],
+      "center_task01_mm": [
+        12752.5,
+        9431.90625
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        12652.875,
+        8012.34375,
+        12852.125,
+        10851.46875
+      ],
+      "reconstructed_position": [
+        12652.875,
+        8012.34375,
+        12852.125,
+        10851.46875
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle019",
+      "label": "次卧衣柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "middle_guest_room",
+      "bbox_task01_mm": [
+        9938.375,
+        8859.09375,
+        10538.375,
+        10859.09375
+      ],
+      "center_task01_mm": [
+        10238.375,
+        9859.09375
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        9938.375,
+        8859.09375,
+        10538.375,
+        10859.09375
+      ],
+      "reconstructed_position": [
+        9938.375,
+        8859.09375,
+        10538.375,
+        10859.09375
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle021",
+      "label": "次主卧衣柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "owner_bedroom",
+      "bbox_task01_mm": [
+        9863.625,
+        3853.28125,
+        11363.625,
+        4453.28125
+      ],
+      "center_task01_mm": [
+        10613.625,
+        4153.28125
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        9863.625,
+        3853.28125,
+        11363.625,
+        4453.28125
+      ],
+      "reconstructed_position": [
+        9863.625,
+        3853.28125,
+        11363.625,
+        4453.28125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle022",
+      "label": "主卧电视柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "living",
+      "bbox_task01_mm": [
+        11606.875,
+        1337.9375,
+        12106.875,
+        3337.9375
+      ],
+      "center_task01_mm": [
+        11856.875,
+        2337.9375
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        11606.875,
+        1337.9375,
+        12106.875,
+        3337.9375
+      ],
+      "reconstructed_position": [
+        11606.875,
+        1337.9375,
+        12106.875,
+        3337.9375
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle023",
+      "label": "次主卧电视柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "living",
+      "bbox_task01_mm": [
+        8070.375,
+        1337.9375,
+        8570.375,
+        3337.9375
+      ],
+      "center_task01_mm": [
+        8320.375,
+        2337.9375
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        8070.375,
+        1337.9375,
+        8570.375,
+        3337.9375
+      ],
+      "reconstructed_position": [
+        8070.375,
+        1337.9375,
+        8570.375,
+        3337.9375
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle024",
+      "label": "书柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "south_study",
+      "bbox_task01_mm": [
+        15691.125,
+        6642.59375,
+        16141.125,
+        10842.59375
+      ],
+      "center_task01_mm": [
+        15916.125,
+        8742.59375
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        15691.125,
+        6642.59375,
+        16141.125,
+        10842.59375
+      ],
+      "reconstructed_position": [
+        15691.125,
+        6642.59375,
+        16141.125,
+        10842.59375
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle025",
+      "label": "书柜001",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "south_study",
+      "bbox_task01_mm": [
+        14097.375,
+        6642.625,
+        15697.375,
+        7092.625
+      ],
+      "center_task01_mm": [
+        14897.375,
+        6867.625
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        14097.375,
+        6642.625,
+        15697.375,
+        7092.625
+      ],
+      "reconstructed_position": [
+        14097.375,
+        6642.625,
+        15697.375,
+        7092.625
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle026",
+      "label": "茶台",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "south_study",
+      "bbox_task01_mm": [
+        14271.625,
+        7389.71875,
+        15071.625,
+        9589.71875
+      ],
+      "center_task01_mm": [
+        14671.625,
+        8489.71875
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        14271.625,
+        7389.71875,
+        15071.625,
+        9589.71875
+      ],
+      "reconstructed_position": [
+        14271.625,
+        7389.71875,
+        15071.625,
+        9589.71875
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Circle007",
+      "label": "主人椅",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "south_study",
+      "bbox_task01_mm": [
+        15217.25,
+        8260.59375,
+        15617.25,
+        8660.59375
+      ],
+      "center_task01_mm": [
+        15417.25,
+        8460.59375
+      ],
+      "orientation": "SQUARE_OR_RADIAL",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        15217.25,
+        8260.59375,
+        15617.25,
+        8660.59375
+      ],
+      "reconstructed_position": [
+        15217.25,
+        8260.59375,
+        15617.25,
+        8660.59375
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle027",
+      "label": "条凳",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "south_study",
+      "bbox_task01_mm": [
+        13798.5,
+        7564.03125,
+        14098.5,
+        9164.03125
+      ],
+      "center_task01_mm": [
+        13948.5,
+        8364.03125
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        13798.5,
+        7564.03125,
+        14098.5,
+        9164.03125
+      ],
+      "reconstructed_position": [
+        13798.5,
+        7564.03125,
+        14098.5,
+        9164.03125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Circle008",
+      "label": "凳子",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "south_study",
+      "bbox_task01_mm": [
+        14495.0,
+        9804.6875,
+        14895.0,
+        10204.6875
+      ],
+      "center_task01_mm": [
+        14695.0,
+        10004.6875
+      ],
+      "orientation": "SQUARE_OR_RADIAL",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        14495.0,
+        9804.6875,
+        14895.0,
+        10204.6875
+      ],
+      "reconstructed_position": [
+        14495.0,
+        9804.6875,
+        14895.0,
+        10204.6875
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Circle009",
+      "label": "次卧凳子",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "middle_guest_room",
+      "bbox_task01_mm": [
+        12054.375,
+        9979.03125,
+        12454.375,
+        10379.03125
+      ],
+      "center_task01_mm": [
+        12254.375,
+        10179.03125
+      ],
+      "orientation": "SQUARE_OR_RADIAL",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        12054.375,
+        9979.03125,
+        12454.375,
+        10379.03125
+      ],
+      "reconstructed_position": [
+        12054.375,
+        9979.03125,
+        12454.375,
+        10379.03125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Circle010",
+      "label": "餐椅",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "dining",
+      "bbox_task01_mm": [
+        3088.75,
+        3977.0625,
+        3488.75,
+        4377.0625
+      ],
+      "center_task01_mm": [
+        3288.75,
+        4177.0625
+      ],
+      "orientation": "SQUARE_OR_RADIAL",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        3088.75,
+        3977.0625,
+        3488.75,
+        4377.0625
+      ],
+      "reconstructed_position": [
+        3088.75,
+        3977.0625,
+        3488.75,
+        4377.0625
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Circle011",
+      "label": "餐椅003",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "dining",
+      "bbox_task01_mm": [
+        3885.75,
+        3977.0625,
+        4285.75,
+        4377.0625
+      ],
+      "center_task01_mm": [
+        4085.75,
+        4177.0625
+      ],
+      "orientation": "SQUARE_OR_RADIAL",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        3885.75,
+        3977.0625,
+        4285.75,
+        4377.0625
+      ],
+      "reconstructed_position": [
+        3885.75,
+        3977.0625,
+        4285.75,
+        4377.0625
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle028",
+      "label": "餐桌",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "dining",
+      "bbox_task01_mm": [
+        2940.125,
+        3155.96875,
+        4540.125,
+        3855.96875
+      ],
+      "center_task01_mm": [
+        3740.125,
+        3505.96875
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        2940.125,
+        3155.96875,
+        4540.125,
+        3855.96875
+      ],
+      "reconstructed_position": [
+        2940.125,
+        3155.96875,
+        4540.125,
+        3855.96875
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Circle013",
+      "label": "餐椅004",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "dining",
+      "bbox_task01_mm": [
+        3910.625,
+        2557.5,
+        4310.625,
+        2957.5
+      ],
+      "center_task01_mm": [
+        4110.625,
+        2757.5
+      ],
+      "orientation": "SQUARE_OR_RADIAL",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        3910.625,
+        2557.5,
+        4310.625,
+        2957.5
+      ],
+      "reconstructed_position": [
+        3910.625,
+        2557.5,
+        4310.625,
+        2957.5
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle029",
+      "label": "现有橱柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "kitchen",
+      "bbox_task01_mm": [
+        1520.5,
+        740.21875,
+        2020.5,
+        2240.21875
+      ],
+      "center_task01_mm": [
+        1770.5,
+        1490.21875
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        1520.5,
+        740.21875,
+        2020.5,
+        2240.21875
+      ],
+      "reconstructed_position": [
+        1520.5,
+        740.21875,
+        2020.5,
+        2240.21875
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Extrusion",
+      "label": "三人位沙发",
+      "type": "Part::Extrusion",
+      "room_role": "living",
+      "bbox_task01_mm": [
+        3338.5,
+        8485.53125,
+        4185.25,
+        11648.40625
+      ],
+      "center_task01_mm": [
+        3761.875,
+        10066.96875
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        3338.5,
+        8485.53125,
+        4185.25,
+        11648.40625
+      ],
+      "reconstructed_position": [
+        3338.5,
+        8485.53125,
+        4185.25,
+        11648.40625
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle030",
+      "label": "客卫洗手盆柜体",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "guest_bath",
+      "bbox_task01_mm": [
+        8008.25,
+        8012.34375,
+        8608.25,
+        9212.34375
+      ],
+      "center_task01_mm": [
+        8308.25,
+        8612.34375
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        8008.25,
+        8012.34375,
+        8608.25,
+        9212.34375
+      ],
+      "reconstructed_position": [
+        8008.25,
+        8012.34375,
+        8608.25,
+        9212.34375
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle031",
+      "label": "鞋柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "entry",
+      "bbox_task01_mm": [
+        2952.5,
+        4700.03125,
+        3252.5,
+        5422.28125
+      ],
+      "center_task01_mm": [
+        3102.5,
+        5061.15625
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        2952.5,
+        4700.03125,
+        3252.5,
+        5422.28125
+      ],
+      "reconstructed_position": [
+        2952.5,
+        4700.03125,
+        3252.5,
+        5422.28125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle032",
+      "label": "橱柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "kitchen",
+      "bbox_task01_mm": [
+        4322.375,
+        715.34375,
+        5522.375,
+        1215.34375
+      ],
+      "center_task01_mm": [
+        4922.375,
+        965.34375
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        4322.375,
+        715.34375,
+        5522.375,
+        1215.34375
+      ],
+      "reconstructed_position": [
+        4322.375,
+        715.34375,
+        5522.375,
+        1215.34375
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle033",
+      "label": "主卫湿区",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "mother_bathroom",
+      "bbox_task01_mm": [
+        15205.625,
+        4774.75,
+        16205.625,
+        6343.75
+      ],
+      "center_task01_mm": [
+        15705.625,
+        5559.25
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        15205.625,
+        4774.75,
+        16205.625,
+        6343.75
+      ],
+      "reconstructed_position": [
+        15205.625,
+        4774.75,
+        16205.625,
+        6343.75
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle034",
+      "label": "主卫马桶",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "mother_bathroom",
+      "bbox_task01_mm": [
+        14483.25,
+        5721.125,
+        14983.25,
+        6371.125
+      ],
+      "center_task01_mm": [
+        14733.25,
+        6046.125
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        14483.25,
+        5721.125,
+        14983.25,
+        6371.125
+      ],
+      "reconstructed_position": [
+        14483.25,
+        5721.125,
+        14983.25,
+        6371.125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle035",
+      "label": "主卫洗手盆和柜体",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "mother_bathroom",
+      "bbox_task01_mm": [
+        13138.5,
+        5845.6875,
+        14338.5,
+        6345.6875
+      ],
+      "center_task01_mm": [
+        13738.5,
+        6095.6875
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        13138.5,
+        5845.6875,
+        14338.5,
+        6345.6875
+      ],
+      "reconstructed_position": [
+        13138.5,
+        5845.6875,
+        14338.5,
+        6345.6875
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle036",
+      "label": "次主卫湿区",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "owner_ensuite",
+      "bbox_task01_mm": [
+        10473.75,
+        4749.875,
+        11373.75,
+        6349.875
+      ],
+      "center_task01_mm": [
+        10923.75,
+        5549.875
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        10473.75,
+        4749.875,
+        11373.75,
+        6349.875
+      ],
+      "reconstructed_position": [
+        10473.75,
+        4749.875,
+        11373.75,
+        6349.875
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle037",
+      "label": "次主卫台盆和柜体",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "owner_ensuite",
+      "bbox_task01_mm": [
+        9402.75,
+        4700.03125,
+        10402.75,
+        5200.03125
+      ],
+      "center_task01_mm": [
+        9902.75,
+        4950.03125
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        9402.75,
+        4700.03125,
+        10402.75,
+        5200.03125
+      ],
+      "reconstructed_position": [
+        9402.75,
+        4700.03125,
+        10402.75,
+        5200.03125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle038",
+      "label": "次主卫马桶",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "owner_ensuite",
+      "bbox_task01_mm": [
+        9676.75,
+        5820.78125,
+        10176.75,
+        6420.78125
+      ],
+      "center_task01_mm": [
+        9926.75,
+        6120.78125
+      ],
+      "orientation": "LONG_AXIS_Y",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        9676.75,
+        5820.78125,
+        10176.75,
+        6420.78125
+      ],
+      "reconstructed_position": [
+        9676.75,
+        5820.78125,
+        10176.75,
+        6420.78125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle039",
+      "label": "冰柜",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "north_balcony",
+      "bbox_task01_mm": [
+        8531.25,
+        11150.3125,
+        9731.25,
+        11750.3125
+      ],
+      "center_task01_mm": [
+        9131.25,
+        11450.3125
+      ],
+      "orientation": "LONG_AXIS_X",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        8531.25,
+        11150.3125,
+        9731.25,
+        11750.3125
+      ],
+      "reconstructed_position": [
+        8531.25,
+        11150.3125,
+        9731.25,
+        11750.3125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    },
+    {
+      "object_name": "Rectangle040",
+      "label": "洗衣机+烘干机（叠放）",
+      "type": "Part::Part2DObjectPython",
+      "room_role": "north_balcony",
+      "bbox_task01_mm": [
+        9826.25,
+        11150.28125,
+        10426.25,
+        11750.28125
+      ],
+      "center_task01_mm": [
+        10126.25,
+        11450.28125
+      ],
+      "orientation": "SQUARE_OR_RADIAL",
+      "layout_intent": "LOCKED",
+      "source_position": [
+        9826.25,
+        11150.28125,
+        10426.25,
+        11750.28125
+      ],
+      "reconstructed_position": [
+        9826.25,
+        11150.28125,
+        10426.25,
+        11750.28125
+      ],
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "rotation_delta_deg": 0.0,
+      "wall_anchor": "PRESERVED_LATEST_FCSTD",
+      "status": "PASS"
+    }
+  ]
+}

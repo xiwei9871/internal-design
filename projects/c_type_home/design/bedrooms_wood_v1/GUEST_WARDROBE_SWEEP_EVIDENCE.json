@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_revision": "bedrooms-wood-v1-review-2",
+  "source_sha256": "2c62eb193522da71875ef27fa37a74e26ba59eebb96505c42142e0c853458b99",
+  "leaf_count": 3,
+  "hinge_axis": "Z; both Y-ends of each east-facing leaf",
+  "sample_step_degrees": 5,
+  "hits": []
+}

@@ -1,0 +1,76 @@
+{
+  "status": "PASS_TECHNICAL_ONLY",
+  "errors": [],
+  "output_sha256": "0feb704e15b182143d183429ab1a2eb1a0b3c9810adbb0fa689a4d24dc0f21ab",
+  "protected_files": 13,
+  "baseline_objects_preserved": 70,
+  "frame_copies_preserved": 14,
+  "source_shaders_camera_light_world_grade_preserved": true,
+  "guides_hidden_by_default": true,
+  "shells": {
+    "V10_SEAT_COMPLETE_COVER": {
+      "vertices": 24578,
+      "faces": 24576,
+      "nonmanifold_edges": 0,
+      "zero_edges": 0,
+      "tiny_faces": 0,
+      "signed_volume_m3": 0.14998757011013458,
+      "bounds_m": [
+        [
+          -0.5166000127792358,
+          -0.4490639865398407,
+          0.2849999964237213
+        ],
+        [
+          0.5166000127792358,
+          0.4490639865398407,
+          0.48364436626434326
+        ]
+      ]
+    },
+    "V10_BACK_COMPLETE_COVER": {
+      "vertices": 24578,
+      "faces": 24576,
+      "nonmanifold_edges": 0,
+      "zero_edges": 0,
+      "tiny_faces": 0,
+      "signed_volume_m3": 0.06294873022195435,
+      "bounds_m": [
+        [
+          -0.5176079869270325,
+          0.3242693543434143,
+          0.40679147839546204
+        ],
+        [
+          0.5176079869270325,
+          0.5928465723991394,
+          0.8064681887626648
+        ]
+      ]
+    }
+  },
+  "seat_back_surface_intersection_pairs": 0,
+  "soft_timber_surface_intersections": [],
+  "declared_seat_deck_contacts": [
+    {
+      "timber": "V10_SEAT_ASH_DECK",
+      "coplanar_contact_pairs": 212,
+      "seat_below_deck_top": false
+    }
+  ],
+  "minimum_back_to_seat_vertex_gap_mm": 1.799553632736206,
+  "seat_bottom_to_deck_gap_mm": -3.576278662098531e-06,
+  "max_seam_attachment_error_m": 0.0,
+  "packed_images": 18,
+  "missing_images": [],
+  "seat_crown_mm": 483.64436626434326,
+  "total_height_mm": 806.4681887626648,
+  "old700mm_conflict_mm": 106.4681887626648,
+  "not_approved": [
+    "appearance",
+    "procurement SKU",
+    "final seat height",
+    "foam/down mechanics",
+    "house installation"
+  ]
+}

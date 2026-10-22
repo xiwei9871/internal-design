@@ -1,0 +1,74 @@
+{
+ "spec": "Z_DATUM — canonical vertical datum; SPLIT-LEVEL (same residence, not two storeys)",
+ "frozen": "PASCAL_LAYOUT APPROVED, BLENDER_STAGE AUTHORIZED",
+ "units": "mm",
+ "LOWER_LEVEL_FFL_Z": 0,
+ "UPPER_LEVEL_FFL_Z": 450,
+ "STAIR": {
+  "riser_count": 3,
+  "riser_height": 150,
+  "step_tops": [
+   150,
+   300,
+   450
+  ],
+  "zone": [
+   7200,
+   6600,
+   7800,
+   7800
+  ],
+  "direction": "ascends R-LEISURE-W(lower)->R-LEISURE-E(upper)"
+ },
+ "lower_spaces": [
+  "R-LIVING",
+  "R-DINING",
+  "R-BALC-LIFE",
+  "R-KITCHEN",
+  "R-BALC-N"
+ ],
+ "upper_spaces": [
+  "R-LEISURE-W",
+  "R-LEISURE-E",
+  "R-BED-S",
+  "R-MASTER",
+  "R-CLOAK",
+  "R-BATH-M",
+  "R-BED-N",
+  "R-STUDY",
+  "R-BATH-P"
+ ],
+ "status": {
+  "LEVEL_DELTA_450mm": "CONFIRMED",
+  "RISER_HEIGHT_150mm": "CONFIRMED",
+  "RISER_COUNT_3": "CONFIRMED",
+  "CEILING_LEVELS": "HUMAN_CONFIRMED_FROM_EXISTING_HOUSE (approx 2800/3250; exact site survey TO_VERIFY)",
+  "CEILING_DETAIL_GEOMETRY": "TO_VERIFY (beams/pipe enclosures/bulkheads not inferred from photo)"
+ },
+ "conversion_from_pascal": "pascal item/wall y minus 700mm old offset -> Z = (y - 0.7) + FFL(space level); XY unchanged",
+ "replaces": [
+  "floor 0.7/1.05",
+  "delta 350mm/2-riser",
+  "flat single ceiling at 2.5m"
+ ],
+ "naming": {
+  "lower": "LOWER_SPLIT_LEVEL",
+  "upper": "UPPER_SPLIT_LEVEL",
+  "note": "never model as stacked Floor1/Floor2; R-LEISURE-W(扇形休闲厅西侧)=UPPER per human ruling"
+ },
+ "LOWER_CEILING_Z": 2800,
+ "UPPER_CEILING_Z": 3250,
+ "clear_height": {
+  "lower": 2800,
+  "upper": 2800
+ },
+ "ceiling_transition": "450mm vertical fascia at split boundary where open (stair/room transitions); detail geometry TO_VERIFY",
+ "wall_span_rules": {
+  "lower_only": "0->2800",
+  "upper_only_partition": "450->3250",
+  "continuous_boundary_or_exterior_upper": "0->3250 when physically required"
+ },
+ "future_options": {
+  "RAMP-FUTURE": "91_ACCESSIBILITY_OPTIONS, hidden default, physical_ground_truth=false, not in B0 gate"
+ }
+}

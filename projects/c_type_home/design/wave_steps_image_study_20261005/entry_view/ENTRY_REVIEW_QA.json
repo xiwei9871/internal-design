@@ -1,0 +1,61 @@
+{
+  "status": "CONCEPT_HUMAN_REVIEW",
+  "camera": {
+    "status": "READ_ONLY_CAMERA_STUDY",
+    "source": "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/OPTION_A_R4_DINING_CHAIRS_ALIGNED_REVIEW.blend",
+    "source_sha256": "e2f3f107eb6619ae28a363e0e4e36019cdae94c89aabe9ac4b8c0c07b14b14ac",
+    "entry_evidence": "R4 V4_ENT-1_LEAF_0/1 and casing source bounds; jamb X2.9,Y5.44-6.54. Camera just inside opening.",
+    "position_m": [
+      3.0799999237060547,
+      5.989999771118164,
+      1.600000023841858
+    ],
+    "target_m": [
+      7.650000095367432,
+      6.699999809265137,
+      1.0
+    ],
+    "lens_mm": 21,
+    "frame": "c_type_world",
+    "up": "Z",
+    "source_models_unchanged": true,
+    "camera_only_scene_changes_not_saved": true,
+    "baseline_render": "ENTRY_BASE_MODEL.png"
+  },
+  "model": "gpt-image-2",
+  "quality": "high",
+  "actual_outputs": [
+    {
+      "option": "C",
+      "file": "/Users/xiwei/interior_design/projects/c_type_home/design/wave_steps_image_study_20261005/entry_view/ENTRY_OPTION_C_FINAL.png",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "option": "D",
+      "file": "/Users/xiwei/interior_design/projects/c_type_home/design/wave_steps_image_study_20261005/entry_view/ENTRY_OPTION_D_FOUR.png",
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "option": "E",
+      "file": "/Users/xiwei/interior_design/projects/c_type_home/design/wave_steps_image_study_20261005/entry_view/ENTRY_OPTION_E_FINAL.png",
+      "size": [
+        1448,
+        1086
+      ]
+    }
+  ],
+  "source_models_unchanged": true,
+  "four_visible_riser_faces_reviewed": true,
+  "limitations": [
+    "The three concepts use a common entrance-camera baseline. Image edits introduce small projection/finish differences.",
+    "Step wave shapes are perspective interpretations of C/D/E references, not surveyed 3D reproductions.",
+    "400mm retreat and tread depths remain prompt design targets and are not verified dimensions in raster images."
+  ],
+  "notes": "The initial three-riser attempts are retained but superseded. D resolved the four-riser count; C and E received local edge-shape edits starting from that four-riser baseline."
+}

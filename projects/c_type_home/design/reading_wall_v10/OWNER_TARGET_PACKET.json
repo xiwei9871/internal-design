@@ -1,0 +1,511 @@
+{
+  "schema": "spatial-canvas.context.v1",
+  "packet_id": "ctx_6b7ca8aa-a215-4b3d-9b47-2ab460dffbee",
+  "timestamp": "2026-10-14T05:54:55.566Z",
+  "selection": {
+    "schema": "spatial-canvas.selection.v1",
+    "design_id": "c_type_home",
+    "resource_id": "res_c_type_glass_visibility_v9_full",
+    "source_revision": "glass-visibility-v9-review-1",
+    "entity_ids": [
+      "ent_821c71e5f96f50229bb483a8ce558548"
+    ],
+    "mode": "replace",
+    "source": "pointer",
+    "timestamp": "2026-10-14T05:54:53.646Z",
+    "primary_entity_id": "ent_821c71e5f96f50229bb483a8ce558548"
+  },
+  "resource": {
+    "resource_id": "res_c_type_glass_visibility_v9_full",
+    "design_id": "c_type_home",
+    "type": "interaction_proxy",
+    "format": "glb",
+    "authority": "derived",
+    "extensions": {
+      "spatial_canvas.blender": {
+        "meters_per_scene_unit": 1,
+        "source_coordinate_frame": "c_type_world",
+        "source_up_axis": "Z",
+        "source_authority": "frozen",
+        "bindings": {
+          "registry_id": "bindings_5dacf8dd69fc4a1bb7005d911f945961",
+          "registry_revision": "v9-spatial-export-1",
+          "sha256": "1dcd5efc4968fe6f68ed3ec36bae94b0fb380300943c6ad89d8f84047b8d4fc0",
+          "locator": "/Users/xiwei/Documents/ChatGPT/Spatial-Canvas/task-output/c_type_v9/spatial-canvas.bindings.json"
+        }
+      },
+      "spatial_canvas.presentation": {
+        "color_mode": "source-flat",
+        "textures": false,
+        "opaque": false,
+        "roughness": 1,
+        "color_origins": {
+          "source_flat": 1601,
+          "proxy_clear_glass": 31,
+          "proxy_privacy_glass": 16
+        },
+        "flat_color_count": 38,
+        "profile": "V9 simplified source colors / alpha glass",
+        "note": "Interaction Proxy, not Cycles material fidelity; clear14pct / frost68pct opacity for selection readability"
+      },
+      "spatial_canvas.review": {
+        "status": "HUMAN_REVIEW",
+        "source_design_authority": "DERIVED_DESIGN_MODEL",
+        "source_version": "V9",
+        "default_ceiling_hidden": true,
+        "old_stable_ids_retained": 916
+      }
+    }
+  },
+  "source": {
+    "resource_id": "c_type_glass_visibility_v9",
+    "revision": "glass-visibility-v9-review-1",
+    "sha256": "42beee4cb51bce1487edbe0003b226951986ca073b2d2e3b4ffec9305c80f9cf",
+    "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_visibility_v9/WHOLE_HOUSE_GLASS_VISIBILITY_V9.blend",
+    "authority": "frozen",
+    "bindings": {
+      "registry_id": "bindings_5dacf8dd69fc4a1bb7005d911f945961",
+      "registry_revision": "v9-spatial-export-1",
+      "sha256": "1dcd5efc4968fe6f68ed3ec36bae94b0fb380300943c6ad89d8f84047b8d4fc0",
+      "locator": "/Users/xiwei/Documents/ChatGPT/Spatial-Canvas/task-output/c_type_v9/spatial-canvas.bindings.json"
+    }
+  },
+  "entities": [
+    {
+      "design_id": "c_type_home",
+      "global_id": "ent_821c71e5f96f50229bb483a8ce558548",
+      "native_object_id": "VIEW_WALL_R3_WEST_PARTITION",
+      "semantic_type": "wall",
+      "room_id": "unassigned",
+      "source_resource_id": "c_type_glass_visibility_v9",
+      "source_revision": "glass-visibility-v9-review-1",
+      "authority_level": "DERIVED_DESIGN_MODEL",
+      "mutable": false
+    }
+  ],
+  "view": {
+    "kind": "camera3d",
+    "data": {
+      "projection": "perspective",
+      "fov_degrees": 45,
+      "near": 0.02646425702777501,
+      "far": 2646.4257027775006,
+      "position": [
+        -3.9263767703790684,
+        10.999346580953812,
+        -9.040938886597377
+      ],
+      "quaternion": [
+        -0.16693505052172186,
+        -0.6810102802614592,
+        -0.16383070659697307,
+        0.6939143943322228
+      ],
+      "projection_matrix": [
+        2.4511281428375153,
+        0,
+        0,
+        0,
+        0,
+        2.4142135623730954,
+        0,
+        0,
+        0,
+        0,
+        -1.000020000200002,
+        -1,
+        0,
+        0,
+        -0.05292904334598348,
+        0
+      ],
+      "orbit_target": [
+        2.9680116802815935,
+        7.477788243633661,
+        -9.17036243082021
+      ],
+      "viewport": {
+        "width": 654,
+        "height": 664,
+        "pixel_ratio": 0.800000011920929
+      },
+      "frame_id": "blender_proxy_world",
+      "unit": "meter",
+      "up_axis": "Y"
+    }
+  },
+  "hit": {
+    "entity_id": "ent_821c71e5f96f50229bb483a8ce558548",
+    "xyz": [
+      9.059000015258787,
+      1.5226244364137074,
+      -5.108117921855653
+    ],
+    "frame_id": "blender_proxy_world",
+    "unit": "meter",
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "source": {
+      "xyz": [
+        9.059000015258787,
+        5.108117921855653,
+        1.5226244364137074
+      ],
+      "frame_id": "c_type_world",
+      "unit": "meter",
+      "normal": [
+        -1,
+        0,
+        0
+      ]
+    }
+  },
+  "spatial_context": {
+    "resolution": "unresolved",
+    "containing_spaces": [
+      {
+        "space_id": "candidate_R-CLOAK",
+        "name": "衣帽间",
+        "semantic_type": "walk_in_closet",
+        "level_id": "upper",
+        "verification": {
+          "state": "candidate"
+        },
+        "provenance": {
+          "method": "imported",
+          "source_resource_id": "floorplan",
+          "source_revision": "task01-r1",
+          "source_sha256": "9d58ee8a75053e6e1a8c3984b154b068f94b8bbbac25ecd806c336d79caca1f3",
+          "evidence": "Approximate task01 label polygon; current R4 boundary/alignment/level requires review, not accepted as room ground truth."
+        },
+        "confidence": 0.3
+      }
+    ],
+    "primary_space_id": null,
+    "point": [
+      9.059000015258787,
+      5.108117921855653,
+      1.5226244364137074
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z",
+    "readiness": "PARTIAL",
+    "diagnostics": [
+      "Candidate 休闲厅 / Lounge is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 客厅 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 餐厅 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 生活阳台 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 厨房 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 夫妻次主卧 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 母亲主卧 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 衣帽间 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 主卫 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 书房 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 客房 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 公卫 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 阳台 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 楼梯 / Stair transition is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 卧室门外通道 / Bedroom approach is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 下层梯口 / Lower landing is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Regions space_lounge and candidate_R-DINING have positive-volume overlap. Resolve overlapping boundaries or retain explicit ambiguous context.",
+      "Level upper has 150.279710 m³ without verified spatial coverage. Supply/approve missing region polygons and vertical ranges for upper.",
+      "Level lower has 75.272000 m³ without verified spatial coverage. Supply/approve missing region polygons and vertical ranges for lower.",
+      "Level transition has 0.324000 m³ without verified spatial coverage. Supply/approve missing region polygons and vertical ranges for transition.",
+      "candidate_region_requires_review"
+    ],
+    "registry": {
+      "registry_id": "spaces_c_type_r4",
+      "registry_revision": "16-three-step-reading-fitness-review-v9-snapshot",
+      "sha256": "7d32ff3a511bdf7eecd553d60dffe002d904b1bde06a624fb029b5c4aa4cd989",
+      "locator": "spatial-canvas.spaces.json"
+    },
+    "semantic_status": {
+      "relationship_status": {
+        "schema": "spatial-canvas.relationship-status.v1",
+        "component_hierarchy": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable component_hierarchy evidence. Import structured relationships or supplement authored graph."
+          ]
+        },
+        "physical_connectivity": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable physical_connectivity evidence. Import structured relationships or supplement authored graph."
+          ]
+        },
+        "space_adjacency": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable space_adjacency evidence. Import structured relationships or supplement authored graph."
+          ]
+        },
+        "transition_graph": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable transition_graph evidence. Import structured relationships or supplement authored graph."
+          ]
+        }
+      },
+      "schema": "spatial-canvas.semantic-status.v1",
+      "project_id": "c_type_home",
+      "design_id": "c_type_home",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "resource_id": "floorplan",
+          "type": "authored_json",
+          "revision": "task01-r1",
+          "sha256": "9d58ee8a75053e6e1a8c3984b154b068f94b8bbbac25ecd806c336d79caca1f3",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/data/geometry.json",
+          "semantic_capability": "candidate_regions",
+          "diagnostics": [
+            "Legacy polygons are candidates: confirm coordinate alignment, current boundaries, level and vertical range; import a reviewed Space Registry."
+          ]
+        },
+        {
+          "resource_id": "cad",
+          "type": "cad",
+          "revision": "current-existing-v1",
+          "sha256": "6a9abae7edd2b56585216b7763cbebc66159ee2f50da2490321618598b30537a",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/current_existing/current_existing_v1.dxf",
+          "semantic_capability": "candidate_regions",
+          "diagnostics": [
+            "CAD closed linear polylines are review candidates, not automatically rooms. Supply coordinate frame/units, match labels, exclude furniture outlines, and define level/height. Curved/legacy POLYLINE geometry requires native export."
+          ]
+        },
+        {
+          "resource_id": "c_type_r4",
+          "type": "blender",
+          "revision": "r4",
+          "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "No explicit spatial regions extracted. Supply structured IFC/FreeCAD/plan regions or authored boundary JSON; weak geometry does not imply room identity."
+          ]
+        },
+        {
+          "resource_id": "freecad",
+          "type": "freecad",
+          "revision": "pre-blender-v2",
+          "sha256": "0c30510bc3fe4862d5759c5402146987b6384558a063983b0cab66786de85469",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "FreeCAD document inventoried read-only; export actual room footprints/placements via a native adapter or supplement normalized boundary JSON. Object names alone are insufficient."
+          ]
+        },
+        {
+          "resource_id": "semantic_schedule",
+          "type": "authored_json",
+          "revision": "task02",
+          "sha256": "04b9dd7a5beae05ef41d251a3f7545c3bf8b7a32dbde7bf149091e0fb8deeaa9",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/semantics/space_semantics.json",
+          "semantic_capability": "none",
+          "diagnostics": [
+            "Legacy polygons are candidates: confirm coordinate alignment, current boundaries, level and vertical range; import a reviewed Space Registry."
+          ]
+        },
+        {
+          "resource_id": "ifc",
+          "type": "ifc",
+          "revision": "task02",
+          "sha256": "6a2a522f1533dadb4e4c9fa9974de74a4347a51c1fd030aa27602d12303d227e",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/ifc/C型_现状语义约束模型.ifc",
+          "semantic_capability": "none",
+          "diagnostics": [
+            "IFC space records found; boundary geometry, placements, units and verification need a native IFC export to normalized regions. Names/placements without geometry cannot resolve points."
+          ]
+        },
+        {
+          "resource_id": "r4_floor_footprints",
+          "type": "floorplan",
+          "revision": "r4-read-only-audit",
+          "sha256": "a051934774586dca12ec41e42307171b4e6c5b93b18dea798a778742d8c2b237",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/reports/SOURCE_FLOOR_FOOTPRINTS.json",
+          "semantic_capability": "explicit_regions",
+          "diagnostics": [
+            "Read-only actual R4 floor footprint audit, matched frozen R4 SHA; room roles supplied by owner."
+          ]
+        },
+        {
+          "resource_id": "c_type_glass_visibility_v9",
+          "type": "blender",
+          "revision": "glass-visibility-v9-review-1",
+          "sha256": "42beee4cb51bce1487edbe0003b226951986ca073b2d2e3b4ffec9305c80f9cf",
+          "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_visibility_v9/WHOLE_HOUSE_GLASS_VISIBILITY_V9.blend",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "V9 derived design snapshot; material/view changes only, inherited candidate spatial regions retained without upgrading verification."
+          ]
+        }
+      ],
+      "known_levels": [
+        "upper",
+        "lower",
+        "transition"
+      ],
+      "coverage": {
+        "covered_levels": [],
+        "uncovered_levels": [
+          "upper",
+          "lower",
+          "transition"
+        ],
+        "uncovered_volume": 225.87570984852826
+      },
+      "diagnostics": [
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 休闲厅 / Lounge is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 客厅 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 餐厅 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 生活阳台 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 厨房 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 夫妻次主卧 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 母亲主卧 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 衣帽间 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 主卫 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 书房 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 客房 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 公卫 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 阳台 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 楼梯 / Stair transition is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 卧室门外通道 / Bedroom approach is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 下层梯口 / Lower landing is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "overlap",
+          "message": "Regions space_lounge and candidate_R-DINING have positive-volume overlap.",
+          "action": "Resolve overlapping boundaries or retain explicit ambiguous context."
+        },
+        {
+          "code": "uncovered_level",
+          "message": "Level upper has 150.279710 m³ without verified spatial coverage.",
+          "action": "Supply/approve missing region polygons and vertical ranges for upper."
+        },
+        {
+          "code": "uncovered_level",
+          "message": "Level lower has 75.272000 m³ without verified spatial coverage.",
+          "action": "Supply/approve missing region polygons and vertical ranges for lower."
+        },
+        {
+          "code": "uncovered_level",
+          "message": "Level transition has 0.324000 m³ without verified spatial coverage.",
+          "action": "Supply/approve missing region polygons and vertical ranges for transition."
+        }
+      ],
+      "registry_id": "spaces_c_type_r4",
+      "registry_revision": "16-three-step-reading-fitness-review-v9-snapshot"
+    }
+  },
+  "relationships": {
+    "subject_id": "ent_821c71e5f96f50229bb483a8ce558548",
+    "primary_space_id": null,
+    "design_id": "c_type_home",
+    "status": "unavailable",
+    "graph_id": null,
+    "graph_revision": null,
+    "nodes": [],
+    "edges": [],
+    "sources": [],
+    "registry": null,
+    "truncated": false,
+    "diagnostics": [
+      "No relationship graph loaded. Import source-linked graph JSON; physical/functional connections are unknown."
+    ],
+    "readiness": {
+      "schema": "spatial-canvas.relationship-status.v1",
+      "component_hierarchy": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable component_hierarchy evidence. Import structured relationships or supplement authored graph."
+        ]
+      },
+      "physical_connectivity": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable physical_connectivity evidence. Import structured relationships or supplement authored graph."
+        ]
+      },
+      "space_adjacency": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable space_adjacency evidence. Import structured relationships or supplement authored graph."
+        ]
+      },
+      "transition_graph": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable transition_graph evidence. Import structured relationships or supplement authored graph."
+        ]
+      }
+    }
+  }
+}

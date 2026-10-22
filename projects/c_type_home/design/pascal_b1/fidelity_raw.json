@@ -1,0 +1,818 @@
+{
+ "furniture": [
+  {
+   "src": "Rectangle004",
+   "label": "电视柜（或者悬浮电视墙）",
+   "drift_mm": 0.04,
+   "dw_mm": 0.02,
+   "dd_mm": 0.01,
+   "zone_src": "R-LIVING",
+   "zone_pascal": "R-LIVING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle007",
+   "label": "客卫（湿区）",
+   "drift_mm": 0.03,
+   "dw_mm": 0.05,
+   "dd_mm": 0.04,
+   "zone_src": "R-BATH-P",
+   "zone_pascal": "R-BATH-P",
+   "status": "REGION_BOUNDARY"
+  },
+  {
+   "src": "Rectangle008",
+   "label": "客卫马桶",
+   "drift_mm": 0.05,
+   "dw_mm": 0.02,
+   "dd_mm": 0.05,
+   "zone_src": "R-BATH-P",
+   "zone_pascal": "R-BATH-P",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle011",
+   "label": "次主卧床头占位",
+   "drift_mm": 0.03,
+   "dw_mm": 0.05,
+   "dd_mm": 0.03,
+   "zone_src": "R-BED-S",
+   "zone_pascal": "R-BED-S",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle012",
+   "label": "次主卧床",
+   "drift_mm": 0.05,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-S",
+   "zone_pascal": "R-BED-S",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle013",
+   "label": "主卧床",
+   "drift_mm": 0.04,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-MASTER",
+   "zone_pascal": "R-MASTER",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle014",
+   "label": "主卧床头柜占位",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-MASTER",
+   "zone_pascal": "R-MASTER",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle015",
+   "label": "主卧衣柜",
+   "drift_mm": 0.02,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-MASTER",
+   "zone_pascal": "R-MASTER",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle017",
+   "label": "次卧小床1.2",
+   "drift_mm": 0.05,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-STUDY",
+   "zone_pascal": "R-STUDY",
+   "status": "USER_MANUAL_CORRECTION"
+  },
+  {
+   "src": "Rectangle021",
+   "label": "次主卧衣柜",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-S",
+   "zone_pascal": "R-BED-S",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle022",
+   "label": "主卧电视柜",
+   "drift_mm": 0.05,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-MASTER",
+   "zone_pascal": "R-MASTER",
+   "status": "HUMAN_ACCEPTED_AS_DRAWN"
+  },
+  {
+   "src": "Rectangle023",
+   "label": "次主卧电视柜",
+   "drift_mm": 0.05,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-S",
+   "zone_pascal": "R-BED-S",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle024",
+   "label": "书柜",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-N",
+   "zone_pascal": "R-BED-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle025",
+   "label": "矮书柜",
+   "drift_mm": 0.04,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-N",
+   "zone_pascal": "R-BED-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle026",
+   "label": "茶台",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-N",
+   "zone_pascal": "R-BED-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Circle007",
+   "label": "主人椅",
+   "drift_mm": 0.05,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-N",
+   "zone_pascal": "R-BED-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle027",
+   "label": "条凳",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-N",
+   "zone_pascal": "R-BED-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Circle008",
+   "label": "凳子",
+   "drift_mm": 0.01,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-N",
+   "zone_pascal": "R-BED-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Circle009",
+   "label": "次卧凳子",
+   "drift_mm": 0.04,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-STUDY",
+   "zone_pascal": "R-STUDY",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Circle010",
+   "label": "餐椅",
+   "drift_mm": 0.06,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-DINING",
+   "zone_pascal": "R-DINING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Circle011",
+   "label": "餐椅003",
+   "drift_mm": 0.06,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-DINING",
+   "zone_pascal": "R-DINING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Circle012",
+   "label": "餐椅",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-DINING",
+   "zone_pascal": "R-DINING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Circle013",
+   "label": "餐椅004",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-DINING",
+   "zone_pascal": "R-DINING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle029",
+   "label": "现有橱柜",
+   "drift_mm": 0.02,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BALC-LIFE",
+   "zone_pascal": "R-BALC-LIFE",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle030",
+   "label": "客卫洗手盆柜体",
+   "drift_mm": 0.07,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BATH-P",
+   "zone_pascal": "R-BATH-P",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle031",
+   "label": "鞋柜",
+   "drift_mm": 0.02,
+   "dw_mm": 0.0,
+   "dd_mm": 0.05,
+   "zone_src": "R-DINING",
+   "zone_pascal": "R-DINING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle032",
+   "label": "橱柜",
+   "drift_mm": 0.05,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BALC-LIFE",
+   "zone_pascal": "R-BALC-LIFE",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle033",
+   "label": "主卫湿区",
+   "drift_mm": 0.04,
+   "dw_mm": 0.0,
+   "dd_mm": 0.05,
+   "zone_src": "R-BATH-M",
+   "zone_pascal": "R-BATH-M",
+   "status": "REGION_BOUNDARY"
+  },
+  {
+   "src": "Rectangle034",
+   "label": "主卫马桶",
+   "drift_mm": 0.06,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BATH-M",
+   "zone_pascal": "R-BATH-M",
+   "status": "HUMAN_ACCEPTED_AS_DRAWN"
+  },
+  {
+   "src": "Rectangle035",
+   "label": "主卫洗手盆和柜体",
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BATH-M",
+   "zone_pascal": "R-BATH-M",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle036",
+   "label": "次主卫湿区",
+   "drift_mm": 0.05,
+   "dw_mm": 0.05,
+   "dd_mm": 0.03,
+   "zone_src": "R-CLOAK",
+   "zone_pascal": "R-CLOAK",
+   "status": "REGION_BOUNDARY"
+  },
+  {
+   "src": "Rectangle037",
+   "label": "次主卫台盆和柜体",
+   "drift_mm": 0.01,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-CLOAK",
+   "zone_pascal": "R-CLOAK",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle038",
+   "label": "次主卫马桶",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-CLOAK",
+   "zone_pascal": "R-CLOAK",
+   "status": "HUMAN_ACCEPTED_AS_DRAWN"
+  },
+  {
+   "src": "Rectangle039",
+   "label": "冰柜",
+   "drift_mm": 0.05,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BALC-N",
+   "zone_pascal": "R-BALC-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle040",
+   "label": "洗衣机+烘干机（叠放）",
+   "drift_mm": 0.05,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BALC-N",
+   "zone_pascal": "R-BALC-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle041",
+   "label": "3kg洗衣机",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BATH-P",
+   "zone_pascal": "R-BATH-P",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle043",
+   "label": "打印机",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-N",
+   "zone_pascal": "R-BED-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle044",
+   "label": "nas",
+   "drift_mm": 0.04,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-BED-N",
+   "zone_pascal": "R-BED-N",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle045",
+   "label": "次卧衣柜",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-STUDY",
+   "zone_pascal": "R-STUDY",
+   "status": "USER_MANUAL_CORRECTION"
+  },
+  {
+   "src": "Rectangle046",
+   "label": "三人位",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-LIVING",
+   "zone_pascal": "R-LIVING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle047",
+   "label": "双人位",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-LIVING",
+   "zone_pascal": "R-LIVING",
+   "status": "HUMAN_ACCEPTED_AS_DRAWN"
+  },
+  {
+   "src": "Rectangle048",
+   "label": "贵妃椅",
+   "drift_mm": 0.02,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-LIVING",
+   "zone_pascal": "R-LIVING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle049",
+   "label": "茶几",
+   "drift_mm": 0.05,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-LIVING",
+   "zone_pascal": "R-LIVING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Circle",
+   "label": "角几",
+   "drift_mm": 0.06,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-LIVING",
+   "zone_pascal": "R-LIVING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle050",
+   "label": "餐桌",
+   "drift_mm": 0.03,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-DINING",
+   "zone_pascal": "R-DINING",
+   "status": "MAPPED"
+  },
+  {
+   "src": "Rectangle051",
+   "label": "床背板",
+   "drift_mm": 0.04,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-STUDY",
+   "zone_pascal": "R-STUDY",
+   "status": "USER_MANUAL_CORRECTION"
+  },
+  {
+   "src": "Rectangle052",
+   "label": "窄书桌",
+   "drift_mm": 0.04,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": "R-STUDY",
+   "zone_pascal": "R-STUDY",
+   "status": "USER_MANUAL_CORRECTION"
+  },
+  {
+   "src": "K-RUN-E",
+   "label": null,
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": null,
+   "zone_pascal": "R-KITCHEN",
+   "status": "HUMAN_APPROVED"
+  },
+  {
+   "src": "K-COOK",
+   "label": null,
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": null,
+   "zone_pascal": "R-KITCHEN",
+   "status": "HUMAN_APPROVED"
+  },
+  {
+   "src": "K-DISHW",
+   "label": null,
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": null,
+   "zone_pascal": "R-KITCHEN",
+   "status": "HUMAN_APPROVED"
+  },
+  {
+   "src": "K-BASKET",
+   "label": null,
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": null,
+   "zone_pascal": "R-KITCHEN",
+   "status": "HUMAN_APPROVED"
+  },
+  {
+   "src": "K-FRIDGE-TALL",
+   "label": null,
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": null,
+   "zone_pascal": "R-KITCHEN",
+   "status": "HUMAN_APPROVED"
+  },
+  {
+   "src": "K-FRIDGE",
+   "label": null,
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": null,
+   "zone_pascal": "R-KITCHEN",
+   "status": "HUMAN_APPROVED"
+  },
+  {
+   "src": "K-RUN-S",
+   "label": null,
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": null,
+   "zone_pascal": "R-KITCHEN",
+   "status": "HUMAN_APPROVED"
+  },
+  {
+   "src": "K-SINK",
+   "label": null,
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": null,
+   "zone_pascal": "R-KITCHEN",
+   "status": "HUMAN_APPROVED"
+  },
+  {
+   "src": "K-WALL-E",
+   "label": null,
+   "drift_mm": 0.0,
+   "dw_mm": 0.0,
+   "dd_mm": 0.0,
+   "zone_src": null,
+   "zone_pascal": "R-KITCHEN",
+   "status": "HUMAN_APPROVED"
+  }
+ ],
+ "openings": [
+  {
+   "id": "ENT-1",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0032"
+  },
+  {
+   "id": "D-SM",
+   "along_drift_mm": 118.0,
+   "cross_offset_mm": 14.0,
+   "dw_mm": 236.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0011"
+  },
+  {
+   "id": "D-MB",
+   "along_drift_mm": 33.0,
+   "cross_offset_mm": 100.0,
+   "dw_mm": 66.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0045"
+  },
+  {
+   "id": "D-BATHM",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 200.0,
+   "dw_mm": 0.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0045"
+  },
+  {
+   "id": "D-STUDY",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 100.0,
+   "dw_mm": 0.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0045"
+  },
+  {
+   "id": "D-GBATH",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 100.0,
+   "dw_mm": 0.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0020"
+  },
+  {
+   "id": "D-GBED",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 100.0,
+   "dw_mm": 0.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0020"
+  },
+  {
+   "id": "D-ENS-OWNER",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0015"
+  },
+  {
+   "id": "D-CONN-MB-SMB",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0051"
+  },
+  {
+   "id": "G-GB-BALC",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "kind": "GLASS_DOOR",
+   "host": "wall_v1_0023"
+  },
+  {
+   "id": "G-DIN-LIV",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "kind": "GLASS_DOOR",
+   "host": "wall_v1_0053"
+  },
+  {
+   "id": "G-LIV-NBALC",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "kind": "GLASS_DOOR",
+   "host": "wall_v1_0037"
+  },
+  {
+   "id": "OPEN-COR-LIV",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "kind": "DOOR",
+   "host": "wall_v1_0055"
+  }
+ ],
+ "windows": [
+  {
+   "id": "W-LIV-N",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "host": "wall_v1_0028",
+   "status": "MAPPED"
+  },
+  {
+   "id": "G-LIV-NBALC",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "host": "wall_v1_0037",
+   "status": "MAPPED"
+  },
+  {
+   "id": "G-GB-BALC",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "host": "wall_v1_0023",
+   "status": "MAPPED"
+  },
+  {
+   "id": "W-STUDY-NE",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "host": "wall_v1_0026",
+   "status": "MAPPED"
+  },
+  {
+   "id": "G-DIN-LIV",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "host": "wall_v1_0053",
+   "status": "MAPPED"
+  },
+  {
+   "id": "W-LBALC-S",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 50.0,
+   "dw_mm": 0.0,
+   "host": "wall_v1_0009",
+   "status": "REPRESENTATION_LIMITATION"
+  },
+  {
+   "id": "W-KIT-S",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "host": "wall_v1_0057",
+   "status": "MAPPED"
+  },
+  {
+   "id": "W-SMB-S",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "host": "wall_v1_0006",
+   "status": "MAPPED"
+  },
+  {
+   "id": "W-MB-S",
+   "along_drift_mm": 0.0,
+   "cross_offset_mm": 0.0,
+   "dw_mm": 0.0,
+   "host": "wall_v1_0006",
+   "status": "MAPPED"
+  }
+ ],
+ "walls_uncovered": [],
+ "zones": [
+  {
+   "id": "R-LIVING",
+   "poly_match": true,
+   "name": "R-LIVING"
+  },
+  {
+   "id": "R-DINING",
+   "poly_match": true,
+   "name": "R-DINING"
+  },
+  {
+   "id": "R-BALC-LIFE",
+   "poly_match": true,
+   "name": "R-BALC-LIFE"
+  },
+  {
+   "id": "R-KITCHEN",
+   "poly_match": true,
+   "name": "R-KITCHEN"
+  },
+  {
+   "id": "R-LEISURE-W",
+   "poly_match": true,
+   "name": "R-LEISURE-W"
+  },
+  {
+   "id": "R-LEISURE-E",
+   "poly_match": true,
+   "name": "R-LEISURE-E"
+  },
+  {
+   "id": "R-BED-S",
+   "poly_match": true,
+   "name": "R-BED-S"
+  },
+  {
+   "id": "R-MASTER",
+   "poly_match": true,
+   "name": "R-MASTER"
+  },
+  {
+   "id": "R-CLOAK",
+   "poly_match": true,
+   "name": "R-CLOAK"
+  },
+  {
+   "id": "R-BATH-M",
+   "poly_match": true,
+   "name": "R-BATH-M"
+  },
+  {
+   "id": "R-BED-N",
+   "poly_match": true,
+   "name": "R-BED-N"
+  },
+  {
+   "id": "R-STUDY",
+   "poly_match": true,
+   "name": "R-STUDY"
+  },
+  {
+   "id": "R-BATH-P",
+   "poly_match": true,
+   "name": "R-BATH-P"
+  },
+  {
+   "id": "R-BALC-N",
+   "poly_match": true,
+   "name": "R-BALC-N"
+  }
+ ],
+ "missing": []
+}

@@ -1,0 +1,27 @@
+{
+  "source_revision": "r4-balcony-sunroom-review-11",
+  "cabinet": "SUNROOM_EAST_LOW_STORAGE",
+  "flower_top": "SUNROOM_NORTH_PLANT_LEDGE_TOP",
+  "leaf": "northernfrontleaf",
+  "door_hinge_not_authored_in_current_mesh": true,
+  "analysis": "Two plausible west-opening hinge arrangements both sweep through plant ledge top;do not assert safe operation from closed static surfaces.",
+  "sweep_cases": [
+    {
+      "hinge_assumption": "north_outer_hinge",
+      "first_sampled_collision_deg": 19,
+      "last_sampled_collision_deg": 90,
+      "leaf_width_m": 0.305,
+      "closed_gap_to_flower_top_m": 0.08,
+      "door_to_top_vertical_overlap_m": 0.025000000000000022
+    },
+    {
+      "hinge_assumption": "south_inner_hinge",
+      "first_sampled_collision_deg": 16,
+      "last_sampled_collision_deg": 81,
+      "leaf_width_m": 0.305,
+      "closed_gap_to_flower_top_m": 0.08,
+      "door_to_top_vertical_overlap_m": 0.025000000000000022
+    }
+  ],
+  "recommended_revision": "Sliding cabinet fronts or shortennorth plantledge;freezerplacementunchanged"
+}

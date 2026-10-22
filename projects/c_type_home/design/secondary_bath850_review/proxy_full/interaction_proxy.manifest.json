@@ -1,0 +1,76 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_secondary_bath850_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_secondary_bath850",
+  "source_resource": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/secondary_bath850_review/SECONDARY_BATH_850_WARDROBE1200.blend",
+  "source_sha256": "4e94f187a7a6c67697aa6c939ac6e88f58c8ca129830e628f7229522d4ce37bc",
+  "source_revision": "secondary-bath-850-wardrobe1200-review-1",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "secondary-bath-850-wardrobe1200-review-1",
+        "sha256": "05f4874a01913ec12fedd68c406c258b15ef8decf987ea7f9981bd36b6e94502",
+        "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/secondary_bath850_review/spatial-canvas.bindings.full.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": false,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 469,
+        "display_floor": 5,
+        "source_flat": 182,
+        "display_furniture": 300,
+        "balcony_glass": 3,
+        "balcony_aluminum": 9
+      },
+      "flat_color_count": 35,
+      "profile": "secondary-bath850-review",
+      "glass_alpha": 0.32
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "source_design_authority": "DERIVED_DESIGN_MODEL",
+      "inherits_bedroom_revision": "bedrooms-wood-v1-review-3",
+      "freezer_size_mm": [
+        816,
+        550,
+        876
+      ],
+      "cabinet_gain_mm": 334,
+      "wardrobe_width_mm": 1200,
+      "bath_door_clear_mm": 850,
+      "frozen_r4_unchanged": true,
+      "local_derived_partition_revised": true,
+      "bed_widths_m": {
+        "mother": 1.5,
+        "couple": 1.8,
+        "guest": 1.2
+      },
+      "guest_bunk": false,
+      "snapshot_note": "Bindings V1 frozen means a hash-locked exported snapshot; this is a derived furniture study, not new physical ground truth."
+    }
+  },
+  "entity_count": 937,
+  "scope": "full"
+}

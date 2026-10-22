@@ -1,0 +1,39 @@
+{
+  "before_total": 427,
+  "after_total": 437,
+  "new_semantic_objects": [
+    "WINDOW_REF_W_LIV_N",
+    "WINDOW_REF_G_LIV_NBALC",
+    "WINDOW_REF_G_GB_BALC",
+    "WINDOW_REF_W_STUDY_NE",
+    "WINDOW_REF_G_DIN_LIV",
+    "WINDOW_REF_W_LBALC_S",
+    "WINDOW_REF_W_KIT_S",
+    "WINDOW_REF_W_SMB_S",
+    "WINDOW_REF_W_MB_S"
+  ],
+  "new_groups": [
+    "WINDOW_SEMANTIC_REFERENCES"
+  ],
+  "unexpected_physical_objects": [],
+  "physical_geometry_object_count": {
+    "before": 415,
+    "after": 415
+  },
+  "wall_physical_geometry_count": {
+    "before": 209,
+    "after": 209
+  },
+  "door_physical_geometry_count": {
+    "before": 90,
+    "after": 90
+  },
+  "fixture_physical_geometry_count": {
+    "before": 16,
+    "after": 16
+  },
+  "furniture_physical_geometry_count": {
+    "before": 41,
+    "after": 41
+  }
+}

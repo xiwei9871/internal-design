@@ -1,0 +1,16 @@
+{
+  "status": "HUMAN_REVIEW",
+  "base": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2.blend",
+  "base_sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5",
+  "options": [
+    "A",
+    "B"
+  ],
+  "comparison": "projects/c_type_home/design/secondary_bath_options/OPTION_COMPARISON.json",
+  "option_files": [
+    "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/OPTION_A_SLIDING.blend",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/OPTION_B_INWARD_SWING.blend"
+  ],
+  "construction_release": false,
+  "user_choice_pending": true
+}

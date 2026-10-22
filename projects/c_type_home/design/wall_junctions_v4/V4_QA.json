@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "fresh_open_states": 1207,
+  "closed_wall_skin": {
+    "vertices": 6418,
+    "faces": 8666,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "volume_m3": 60.600844832781604
+  },
+  "external_wall_surface_samples": 335,
+  "old_internal_joint_samples_removed": [
+    279
+  ],
+  "max_surface_deviation_mm": 0.3004111349582672,
+  "missing_surfaces": [],
+  "kitchen_nonwall_protected_unchanged": 266,
+  "kitchen_wall_source_meshes_poses_preserved": 6,
+  "opening_centers_checked": [
+    "Living bay inner aperture",
+    "North balcony door"
+  ],
+  "D107_frame_and_leaf_preserved": true,
+  "one_wall_surface_material": true,
+  "ordinary_doors_width_height_checks": 6,
+  "remaining_bays_completed": 3,
+  "all_opening_void_rays_checked": 11,
+  "guest_slider_host_cut_through": true,
+  "source_and_frozen_hashes": "PASS",
+  "model_sha256": "d5b4f4fd2c3c0dc524f3f65c7453e6839c995320dd52ff061f5fbc0c7baeb1b2",
+  "blender_version": "5.2.1 LTS"
+}

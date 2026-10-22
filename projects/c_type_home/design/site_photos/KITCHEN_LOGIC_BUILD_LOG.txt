@@ -1,0 +1,17 @@
+00:00.509  blend            | Read blend: "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/B1_1_DESIGN_MODEL_V1.blend"
+Info: Saved as "B1_1_SITE_CORRECTED_V1.blend"
+{
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/B1_1_SITE_CORRECTED_V1.blend",
+  "order": [
+    "320 mm narrow cabinet",
+    "refrigerator plus overhead",
+    "inner high cabinet / open niche"
+  ],
+  "narrow_width_mm": 320,
+  "narrow_depth_mm": 765,
+  "rear_gap_mm": 55,
+  "B0_INTEGRITY": "PASS"
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

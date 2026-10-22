@@ -1,0 +1,218 @@
+{
+  "schema": "c-type.asset-method-research.v1",
+  "date": "2026-10-10",
+  "scope": "research only; no model edit, no render, no Image2, no purchase, no plugin installation",
+  "policy": "reuse suitable established methods before custom implementation",
+  "sources": [
+    {
+      "id": "local_owner_ash_catalog",
+      "subject": "owner-selected ash furniture",
+      "source_type": "owner_product_pdf",
+      "local_path": "/Users/xiwei/Desktop/木甲木乙-白蜡木系列.pdf",
+      "sha256": "2430d251e7e7333d70867452923821eeacb070f028d8eed500086a04104bbaa3",
+      "role": "primary product appearance/construction reference",
+      "status": "LOCAL_REFERENCE_VERIFIED",
+      "notes": "32pages; precise 3D counterpart not located",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "atd_fly_sc2_official",
+      "subject": "wood-frame upholstered sofa",
+      "source_type": "manufacturer",
+      "url": "https://www.andtradition.com/products/fly-sc2",
+      "status": "PAGE_VERIFIED",
+      "observed_features": [
+        "oiled oak frame and base",
+        "HR foam and feather pillows",
+        "loose back cushions",
+        "1620x800x700mm seat height400mm",
+        "official2D/3D ZIP download link"
+      ],
+      "role": "construction/reference and potential asset",
+      "applies_to": [
+        "living_sofa_soft_parts"
+      ],
+      "installation_fit_status": "NOT_OWNER_SELECTED_NOT_ADOPTED",
+      "license_or_usage_notes": "manufacturer download does not establish redistribution permission",
+      "file_inspection": "not inspected; terminal TLS/DNS download failures",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "atd_fly_sc2_package",
+      "subject": "official2D/3D package",
+      "source_type": "manufacturer_download_link",
+      "url": "https://assetslibrary.com/asset/f7356e45-57ee-4277-a375-04fd01042bb6/ATD_2D-3D-Packages_Fly_SC2.zip",
+      "status": "LINK_VERIFIED_FILE_UNAVAILABLE",
+      "observed_features": [
+        "link appeared in official product Downloads"
+      ],
+      "role": "potential geometry asset",
+      "notes": "no successful archive download, formats unknown, no execution",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "dc_fly_sc2",
+      "subject": "FlySC2 professional model",
+      "source_type": "model_library",
+      "url": "https://www.designconnected.com/de/Seating/Benches/fly-sc2_p6298",
+      "status": "PAGE_VERIFIED",
+      "observed_features": [
+        "photorealistic polygonal asset declaration",
+        "materials yes",
+        "textures yes",
+        "UVW mapped yes",
+        "adjustable no",
+        "purchase dialog EUR8 originalEUR24 at access"
+      ],
+      "role": "soft-upholstery quality reference and candidate",
+      "installation_fit_status": "NOT_ADOPTED",
+      "license_or_usage_notes": "paid, not purchased; exact deliverable format and license not confirmed",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "dc_ge290",
+      "subject": "GE2903seater wood-frame sofa",
+      "source_type": "model_library",
+      "url": "https://www.designconnected.com/Sofas/3-seater/ge-seater-sofa_p4395",
+      "status": "PAGE_VERIFIED",
+      "observed_features": [
+        "thin timber arms and reclined back",
+        "product render and wireframe preview",
+        "materials yes",
+        "textures yes",
+        "UVW mapped no",
+        "adjustable no"
+      ],
+      "role": "form/construction reference; higher integration cost",
+      "installation_fit_status": "NOT_ADOPTED",
+      "license_or_usage_notes": "not purchased, file not inspected",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "dc_ge290_family",
+      "subject": "sofa/loungechair family",
+      "source_type": "model_library",
+      "url": "https://www.designconnected.com/catalog/family/GE-290-Getama",
+      "status": "PAGE_VERIFIED",
+      "observed_features": [
+        "GE2903seater and HansWegnerPlankChair entries"
+      ],
+      "role": "family candidate discovery",
+      "notes": "chair individual page and file not yet examined",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "ph_ash_veneer",
+      "subject": "ashwood material",
+      "source_type": "scanned_material_library",
+      "url": "https://polyhaven.com/a/ash_veneer",
+      "status": "PAGE_AND_EXISTING_MAPS_VERIFIED",
+      "observed_features": [
+        "1m wide physical scale",
+        "diffuse/rough/normalGL/displacement/AO",
+        "light hardwood veneer",
+        "low-sheen fine grain"
+      ],
+      "role": "complete material baseline",
+      "license_or_usage_notes": "CC0",
+      "notes": "veneer scan does not reproduce solid timber endgrain or joinery",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "ph_rough_linen",
+      "subject": "woven linen material",
+      "source_type": "scanned_material_library",
+      "url": "https://polyhaven.com/a/rough_linen",
+      "status": "PAGE_AND_EXISTING_PARTIAL_MAPS_VERIFIED",
+      "observed_features": [
+        "0.3m tall physical scale",
+        "blue fabric scan",
+        "anisotropy rotation/strength maps",
+        "specIOR map",
+        "normalGL/roughness/diffuse/displacement"
+      ],
+      "role": "complete measured/scanned material baseline",
+      "license_or_usage_notes": "CC0",
+      "notes": "additional maps discovered; not downloaded/applied/tested this research turn",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "ph_blender_assetbrowser",
+      "subject": "official material import and scale setup",
+      "source_type": "vendor_workflow",
+      "url": "https://polyhaven.com/plugins/blender",
+      "status": "DOC_VERIFIED",
+      "observed_features": [
+        "dragdrop HDRIs/materials/models",
+        "known-size texture scale correction",
+        "oneclick displacement",
+        "assetsfree, paid convenienceaddon"
+      ],
+      "role": "established import method",
+      "notes": "not installed or purchased; listed USD49onetime or USD5monthly at access",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "poliigon_blender_docs",
+      "subject": "native material/model import",
+      "source_type": "vendor_workflow",
+      "url": "https://help.poliigon.com/en/articles/6342599-poliigon-blender-addon",
+      "status": "DOC_VERIFIED",
+      "observed_features": [
+        "Blender2.83+ including5.x",
+        "Cycles/Eevee support",
+        "nativeblend preference and materialreuse",
+        "Normal/Bump/Displacement modes",
+        "displacement strength measured inmeters",
+        "pathtracingAO disabled bydefault",
+        "currenteditable node setup"
+      ],
+      "role": "established compatible asset import method",
+      "notes": "not installed, no account login or purchase; no selected asset imported",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    },
+    {
+      "id": "blender_principled_5_2",
+      "subject": "current material parameter semantics",
+      "source_type": "renderer_official_manual",
+      "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html",
+      "status": "DOC_VERIFIED",
+      "observed_features": [
+        "OpenPBR based",
+        "Sheen models microfibers",
+        "separateCoat",
+        "IORLevel0.5 noadjustment",
+        "roughness andnormal have separate meanings"
+      ],
+      "role": "version-correct physical material baseline",
+      "notes": "no universal exact ash/linen parameter preset claimed",
+      "accessed_date": "2026-10-10",
+      "local_cycles_validation_this_turn": false
+    }
+  ],
+  "unverified_discoveries": [
+    {
+      "provider": "BlenderKit",
+      "status": "SECURITY_VERIFICATION_UNRESOLVED"
+    },
+    {
+      "provider": "CGTrader wooden-frame sofa",
+      "status": "SEARCH_RESULT_ONLY_DETAIL_UNREADABLE"
+    },
+    {
+      "provider": "3dsky",
+      "status": "DISCOVERY_ONLY_NO_SELECTED_ASSET"
+    }
+  ],
+  "next_gate": "inspect asset files and validate isolated furniture/material candidate before any wholehouse replacement"
+}

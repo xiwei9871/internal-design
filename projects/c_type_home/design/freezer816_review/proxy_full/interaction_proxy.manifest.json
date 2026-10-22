@@ -1,0 +1,74 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_freezer816_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_freezer816_review",
+  "source_resource": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/freezer816_review/FREEZER816_CABINET_REVIEW.blend",
+  "source_sha256": "3d1637cbc00b9f8a25e98b49c1997cd052a4e43fffca81dd4a2939bf7064e191",
+  "source_revision": "freezer816-cabinet-review-1",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "freezer816-cabinet-review-1",
+        "sha256": "c59f565bdf52e835ae936b0b660b0ee03e5d0ae9c43bc39da68b684c837d36bf",
+        "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/freezer816_review/spatial-canvas.bindings.full.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": false,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 468,
+        "display_floor": 5,
+        "source_flat": 182,
+        "display_furniture": 300,
+        "balcony_glass": 3,
+        "balcony_aluminum": 9
+      },
+      "flat_color_count": 35,
+      "profile": "freezer816-review",
+      "glass_alpha": 0.32
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "source_design_authority": "DERIVED_DESIGN_MODEL",
+      "inherits_bedroom_revision": "bedrooms-wood-v1-review-3",
+      "freezer_size_mm": [
+        816,
+        550,
+        876
+      ],
+      "cabinet_gain_mm": 334,
+      "frozen_r4_unchanged": true,
+      "architecture_unchanged": true,
+      "bed_widths_m": {
+        "mother": 1.5,
+        "couple": 1.8,
+        "guest": 1.2
+      },
+      "guest_bunk": false,
+      "snapshot_note": "Bindings V1 frozen means a hash-locked exported snapshot; this is a derived furniture study, not new physical ground truth."
+    }
+  },
+  "entity_count": 937,
+  "scope": "full"
+}

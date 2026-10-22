@@ -1,0 +1,64 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_living_wave35_aluminum_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_BOOKCASE_SHORT_RAIL_REVIEW_6.blend",
+  "source_sha256": "e428fbedc2aeaf6f35d530c4dd33bbb61057a70eaede4d99683f376883360e05",
+  "source_revision": "r4-bookcase-short-rail-review-6",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "16-bookcase-short-rail-review",
+        "sha256": "41adf4416fecca0b6010a5ae9f46084c88305156c68d9fce27a4cc65d15c3c63",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.review6.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": false,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 633,
+        "display_floor": 5,
+        "source_flat": 30,
+        "display_furniture": 332,
+        "balcony_glass": 3,
+        "balcony_aluminum": 9
+      },
+      "flat_color_count": 15,
+      "profile": "zoning-with-north-balcony-glass-and-aluminum",
+      "glass_alpha": 0.32,
+      "texture_free": true
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "correction": "Only existing bookshelf assembly moved to packet-selectedG-DIN-LIV glass partition;25cm freestanding offset to clear grip. Existing rail shortened to90cm projected span,10cm ends;other geometry/bench/fitness unchanged.",
+      "parent_source_resource_id": "c_type_r4",
+      "parent_source_revision": "r4",
+      "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "handrail_horizontal_span_m": 0.9,
+      "handrail_ends_m": 0.1
+    }
+  },
+  "entity_count": 1010,
+  "scope": "full"
+}

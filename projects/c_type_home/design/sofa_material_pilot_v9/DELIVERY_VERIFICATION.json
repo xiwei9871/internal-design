@@ -1,0 +1,16 @@
+{
+  "scripts_parse": 7,
+  "protected_hashes": 12,
+  "json_parse": "pass",
+  "gallery_http_checks": {
+    "sofa_render_diagnosis_v8": {
+      "images": 11,
+      "jpeg_bytes": 876561
+    },
+    "sofa_material_pilot_v9": {
+      "images": 5,
+      "jpeg_bytes": 850230
+    }
+  },
+  "visual_scope": "B test not adopted; retain original cloth"
+}

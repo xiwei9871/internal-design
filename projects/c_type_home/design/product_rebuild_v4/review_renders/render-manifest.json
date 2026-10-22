@@ -1,0 +1,67 @@
+{
+  "stage": "review_renders",
+  "engine": "CYCLES",
+  "device": "METAL",
+  "samples": 128,
+  "images": [
+    {
+      "camera": "CAM_living_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/review_renders/CAM_living_VIEW_01.png",
+      "seconds": 83.02,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "camera": "V4_CAM_SOFA_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/review_renders/V4_CAM_SOFA_COMPLETE.png",
+      "seconds": 95.77,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "camera": "V4_CAM_DINING_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/review_renders/V4_CAM_DINING_COMPLETE.png",
+      "seconds": 94.88,
+      "size": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "camera": "V4_CAM_CHAIR_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/review_renders/V4_CAM_CHAIR_COMPLETE.png",
+      "seconds": 74.68,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "camera": "V4_CAM_DINING_DETAIL",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/review_renders/V4_CAM_DINING_DETAIL.png",
+      "seconds": 77.97,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "camera": "CAM_living_VIEW_02",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/review_renders/CAM_living_VIEW_02.png",
+      "seconds": 88.28,
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "blender_version": "5.2.1 LTS",
+  "denoiser": "OIDN GPU High Accurate",
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": 0.15000000596046448
+}

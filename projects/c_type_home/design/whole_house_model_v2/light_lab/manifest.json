@@ -1,0 +1,61 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v1/assembly/WHOLE_HOUSE_REVIEW_SUPPORTED_V2.blend",
+  "images": [
+    {
+      "room": "living",
+      "mode": "baseline",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/light_lab/living_baseline.png",
+      "seconds": 10.49
+    },
+    {
+      "room": "hallway",
+      "mode": "baseline",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/light_lab/hallway_baseline.png",
+      "seconds": 7.91
+    },
+    {
+      "room": "secondary_bath",
+      "mode": "baseline",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/light_lab/secondary_bath_baseline.png",
+      "seconds": 6.62
+    },
+    {
+      "room": "living",
+      "mode": "contrast_only",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/light_lab/living_contrast_only.png",
+      "seconds": 7.68
+    },
+    {
+      "room": "hallway",
+      "mode": "contrast_only",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/light_lab/hallway_contrast_only.png",
+      "seconds": 7.31
+    },
+    {
+      "room": "secondary_bath",
+      "mode": "contrast_only",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/light_lab/secondary_bath_contrast_only.png",
+      "seconds": 6.64
+    },
+    {
+      "room": "living",
+      "mode": "soft_fill",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/light_lab/living_soft_fill.png",
+      "seconds": 8.53
+    },
+    {
+      "room": "hallway",
+      "mode": "soft_fill",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/light_lab/hallway_soft_fill.png",
+      "seconds": 7.03
+    },
+    {
+      "room": "secondary_bath",
+      "mode": "soft_fill",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/light_lab/secondary_bath_soft_fill.png",
+      "seconds": 7.12
+    }
+  ],
+  "source_exposure_unchanged": 0.15,
+  "fill": "existing practical max45/65 and existing daylight x1.3; rendering watts not electrical/lux calibration"
+}

@@ -1,0 +1,540 @@
+{
+  "audit": "B0_ZONE_COVERAGE_AUDIT",
+  "resolution_mm": 50,
+  "interior_cells": 87031,
+  "covered_cells": 56284,
+  "uncovered_components_total": 30,
+  "classification_rule": "anchor points from user review + adjacency-majority; TO_VERIFY if ambiguous",
+  "real_gaps": [
+    {
+      "id": "GAP-02",
+      "bbox_mm": [
+        8550,
+        -550,
+        10900,
+        0
+      ],
+      "area_m2": 1.292,
+      "n_cells": 517,
+      "adjacent_zones": [
+        "R-BED-S"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 517/517",
+      "cell_label_counts": {
+        "upper": 517
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-03",
+      "bbox_mm": [
+        12150,
+        -550,
+        14800,
+        0
+      ],
+      "area_m2": 1.458,
+      "n_cells": 583,
+      "adjacent_zones": [
+        "R-MASTER"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 583/583",
+      "cell_label_counts": {
+        "upper": 583
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-06",
+      "bbox_mm": [
+        5950,
+        550,
+        7800,
+        4500
+      ],
+      "area_m2": 0.287,
+      "n_cells": 115,
+      "adjacent_zones": [
+        "R-KITCHEN"
+      ],
+      "classification": "LOWER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority lower 115/115",
+      "cell_label_counts": {
+        "lower": 115
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-07",
+      "bbox_mm": [
+        2750,
+        750,
+        5900,
+        4100
+      ],
+      "area_m2": 1.103,
+      "n_cells": 441,
+      "adjacent_zones": [
+        "R-BALC-LIFE",
+        "R-DINING",
+        "R-KITCHEN"
+      ],
+      "classification": "LOWER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority lower 441/441",
+      "cell_label_counts": {
+        "lower": 441
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-08",
+      "bbox_mm": [
+        7850,
+        4450,
+        11400,
+        4700
+      ],
+      "area_m2": 0.5,
+      "n_cells": 200,
+      "adjacent_zones": [
+        "R-BED-S",
+        "R-CLOAK",
+        "R-LEISURE"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 200/200",
+      "cell_label_counts": {
+        "upper": 200
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-09",
+      "bbox_mm": [
+        11450,
+        4450,
+        13100,
+        6650
+      ],
+      "area_m2": 2.513,
+      "n_cells": 1005,
+      "adjacent_zones": [
+        "R-LEISURE",
+        "R-MASTER"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "anchor: user red circle",
+      "cell_label_counts": {
+        "upper": 1005
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-14",
+      "bbox_mm": [
+        9250,
+        4750,
+        11400,
+        6450
+      ],
+      "area_m2": 0.477,
+      "n_cells": 191,
+      "adjacent_zones": [
+        "R-CLOAK"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 191/191",
+      "cell_label_counts": {
+        "upper": 191
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-15",
+      "bbox_mm": [
+        5700,
+        5800,
+        8000,
+        8000
+      ],
+      "area_m2": 2.265,
+      "n_cells": 906,
+      "adjacent_zones": [
+        "R-DINING",
+        "R-LEISURE",
+        "R-LIVING",
+        "STAIRS"
+      ],
+      "classification": "LOWER_SPLIT_LEVEL",
+      "basis": "anchor: user blue circle",
+      "cell_label_counts": {
+        "upper": 253,
+        "lower": 473,
+        "stairs": 180
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-19",
+      "bbox_mm": [
+        8050,
+        8050,
+        9700,
+        10900
+      ],
+      "area_m2": 0.463,
+      "n_cells": 185,
+      "adjacent_zones": [
+        "R-BATH-P"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 185/185",
+      "cell_label_counts": {
+        "upper": 185
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-20",
+      "bbox_mm": [
+        9950,
+        10700,
+        12900,
+        10900
+      ],
+      "area_m2": 0.59,
+      "n_cells": 236,
+      "adjacent_zones": [
+        "R-STUDY"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 236/236",
+      "cell_label_counts": {
+        "upper": 236
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-23",
+      "bbox_mm": [
+        13650,
+        11350,
+        15700,
+        11700
+      ],
+      "area_m2": 0.718,
+      "n_cells": 287,
+      "adjacent_zones": [
+        "R-BED-N"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 287/287",
+      "cell_label_counts": {
+        "upper": 287
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-25",
+      "bbox_mm": [
+        13150,
+        11750,
+        15100,
+        13800
+      ],
+      "area_m2": 1.955,
+      "n_cells": 782,
+      "adjacent_zones": [],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 782/782",
+      "cell_label_counts": {
+        "upper": 782
+      },
+      "edge_tolerance_strip": false
+    },
+    {
+      "id": "GAP-27",
+      "bbox_mm": [
+        2950,
+        12650,
+        7900,
+        13750
+      ],
+      "area_m2": 3.64,
+      "n_cells": 1456,
+      "adjacent_zones": [
+        "R-BALC-N",
+        "R-LIVING"
+      ],
+      "classification": "LOWER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority lower 1456/1456",
+      "cell_label_counts": {
+        "lower": 1456
+      },
+      "edge_tolerance_strip": false
+    }
+  ],
+  "edge_tolerance_strips": [
+    {
+      "id": "GAP-01",
+      "bbox_mm": [
+        14850,
+        -650,
+        14900,
+        -600
+      ],
+      "area_m2": 0.003,
+      "n_cells": 1,
+      "adjacent_zones": [],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 1/1",
+      "cell_label_counts": {
+        "upper": 1
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-10",
+      "bbox_mm": [
+        13150,
+        4450,
+        15300,
+        4500
+      ],
+      "area_m2": 0.107,
+      "n_cells": 43,
+      "adjacent_zones": [
+        "R-MASTER"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 43/43",
+      "cell_label_counts": {
+        "upper": 43
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-11",
+      "bbox_mm": [
+        5700,
+        4550,
+        5900,
+        4700
+      ],
+      "area_m2": 0.03,
+      "n_cells": 12,
+      "adjacent_zones": [
+        "R-DINING",
+        "R-LEISURE"
+      ],
+      "classification": "TO_VERIFY",
+      "basis": "mixed labels {'lower': 6, 'upper': 6}",
+      "cell_label_counts": {
+        "lower": 6,
+        "upper": 6
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-12",
+      "bbox_mm": [
+        15350,
+        4550,
+        15500,
+        4650
+      ],
+      "area_m2": 0.015,
+      "n_cells": 6,
+      "adjacent_zones": [
+        "R-BATH-M"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 6/6",
+      "cell_label_counts": {
+        "upper": 6
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-13",
+      "bbox_mm": [
+        8800,
+        4750,
+        9050,
+        4900
+      ],
+      "area_m2": 0.022,
+      "n_cells": 9,
+      "adjacent_zones": [
+        "R-CLOAK",
+        "R-LEISURE"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 9/9",
+      "cell_label_counts": {
+        "upper": 9
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-16",
+      "bbox_mm": [
+        13150,
+        6300,
+        16200,
+        6400
+      ],
+      "area_m2": 0.305,
+      "n_cells": 122,
+      "adjacent_zones": [
+        "R-BATH-M"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 122/122",
+      "cell_label_counts": {
+        "upper": 122
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-17",
+      "bbox_mm": [
+        11450,
+        6450,
+        11600,
+        6500
+      ],
+      "area_m2": 0.007,
+      "n_cells": 3,
+      "adjacent_zones": [
+        "R-LEISURE"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 3/3",
+      "cell_label_counts": {
+        "upper": 3
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-18",
+      "bbox_mm": [
+        12900,
+        7550,
+        13100,
+        8000
+      ],
+      "area_m2": 0.08,
+      "n_cells": 32,
+      "adjacent_zones": [
+        "R-BED-N",
+        "R-LEISURE"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 32/32",
+      "cell_label_counts": {
+        "upper": 32
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-21",
+      "bbox_mm": [
+        7750,
+        10950,
+        7900,
+        11100
+      ],
+      "area_m2": 0.022,
+      "n_cells": 9,
+      "adjacent_zones": [
+        "R-BALC-N",
+        "R-LIVING"
+      ],
+      "classification": "LOWER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority lower 9/9",
+      "cell_label_counts": {
+        "lower": 9
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-22",
+      "bbox_mm": [
+        13000,
+        10950,
+        13100,
+        11100
+      ],
+      "area_m2": 0.015,
+      "n_cells": 6,
+      "adjacent_zones": [
+        "R-BALC-N"
+      ],
+      "classification": "LOWER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority lower 6/6",
+      "cell_label_counts": {
+        "lower": 6
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-24",
+      "bbox_mm": [
+        15850,
+        11350,
+        16200,
+        11700
+      ],
+      "area_m2": 0.07,
+      "n_cells": 28,
+      "adjacent_zones": [
+        "R-BED-N"
+      ],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 28/28",
+      "cell_label_counts": {
+        "upper": 28
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-26",
+      "bbox_mm": [
+        15750,
+        11750,
+        15800,
+        11800
+      ],
+      "area_m2": 0.003,
+      "n_cells": 1,
+      "adjacent_zones": [],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 1/1",
+      "cell_label_counts": {
+        "upper": 1
+      },
+      "edge_tolerance_strip": true
+    },
+    {
+      "id": "GAP-29",
+      "bbox_mm": [
+        13050,
+        13850,
+        13100,
+        13900
+      ],
+      "area_m2": 0.003,
+      "n_cells": 1,
+      "adjacent_zones": [],
+      "classification": "UPPER_SPLIT_LEVEL",
+      "basis": "nearest-zone majority upper 1/1",
+      "cell_label_counts": {
+        "upper": 1
+      },
+      "edge_tolerance_strip": true
+    }
+  ]
+}

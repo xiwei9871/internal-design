@@ -1,0 +1,40 @@
+{
+  "status": "OPTIONS_FOR_DISCUSSION_NOT_HEAD_CLEARANCE_APPROVAL",
+  "source_unchanged": true,
+  "current_sofa_upper_external_volume_m3": 0.8707999999999999,
+  "laundry_upper_external_volume_m3": 0.40880000000000005,
+  "options": [
+    {
+      "name": "shallow_raise",
+      "sofa_segment": {
+        "width_mm": 1555,
+        "depth_mm": 350,
+        "lowest_hard_edge_mm": 2050,
+        "top_mm": 2600
+      },
+      "external_volume_m3": 0.2993375,
+      "wholeupper_external_volume_retained_ratio": 0.5534053610503283
+    },
+    {
+      "name": "stepped_shallow_lower_deep_upper",
+      "sofa_segment": {
+        "width_mm": 1555,
+        "lower_depth_mm": 350,
+        "lower_hard_bottom_mm": 2100,
+        "lower_top_mm": 2300,
+        "upper_depth_mm": 700,
+        "upper_hard_bottom_mm": 2300,
+        "top_mm": 2600
+      },
+      "external_volume_m3": 0.43539999999999995,
+      "wholeupper_external_volume_retained_ratio": 0.6597374179431074
+    }
+  ],
+  "notes": [
+    "Gross outer rectangular volumes only, not net usable capacity. Board/shelves/hardware excluded.",
+    "All dimensions are review candidates; no guaranteed head clearance.",
+    "Keep laundrydeep cabinet separate; protect equipment ventilation/access and supporting structure.",
+    "Check seated/reclined/sitstand head envelope, tallest user, seat height/compression and cabinet door motion.",
+    "No source edit or rendering performed."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "evidence_settings_version": 2,
+  "studio": {
+    "presentation": "neutral",
+    "floor_color": [
+      0.025,
+      0.032,
+      0.045,
+      1.0
+    ],
+    "light_powers": [
+      272.4613232451759,
+      108.98452929807036,
+      408.69198486776384
+    ],
+    "camera_distance": 1.8982362866401672,
+    "ortho_scale": 1.1967141807079316,
+    "floor_size": 165.06402492523193,
+    "floor_offset": 0.004951920747756958,
+    "clip_start": 0.0008253201246261597,
+    "clip_end": 825.3201246261597
+  },
+  "requested_presentation": "neutral",
+  "subject_luminance_hint": null,
+  "render_engine": "BLENDER_EEVEE",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "input": "/Users/xiwei/Downloads/cba8282db6ca59970f1311be3a1d44f2.glb",
+  "blender_version": "5.2.1 LTS",
+  "resolution": 384,
+  "requested_views": [
+    "perspective",
+    "front",
+    "back",
+    "top"
+  ],
+  "evidence_scope": "partial_preview",
+  "focus_objects": [],
+  "geometry_hidden_for_focus": false,
+  "underside_floor_hidden": false,
+  "material_mode": "source",
+  "hidden_objects": [],
+  "head_texture": null,
+  "bounds": {
+    "min": [
+      -0.39389,
+      -0.487544,
+      -0.0
+    ],
+    "max": [
+      0.392326,
+      0.337776,
+      0.408752
+    ],
+    "dimensions": [
+      0.786216,
+      0.82532,
+      0.408752
+    ]
+  },
+  "views": [
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/evidence_asset1/perspective.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/evidence_asset1/front.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/evidence_asset1/back.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/evidence_asset1/top.png"
+  ],
+  "contact_sheet": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/evidence_asset1/contact_sheet.png",
+  "animation_frames": [],
+  "animation_contact_sheet": null
+}

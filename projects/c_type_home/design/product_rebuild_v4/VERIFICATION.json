@@ -1,0 +1,264 @@
+{
+  "status": "PASS",
+  "fresh_reopen": true,
+  "output_sha256": "c3e1060afa1c98ec64d9e8e15fdfaa0fbf3fb5af39aaebc452b553a96b8f3f39",
+  "original_meshes_and_matrices_preserved": 1946,
+  "envelopes": {
+    "V4_LIVING_SOFA_COMPLETE": {
+      "actual_bounds_m": [
+        [
+          3.4040000438690186,
+          7.951000213623047,
+          0.0
+        ],
+        [
+          5.200000286102295,
+          11.249000549316406,
+          0.6968997120857239
+        ]
+      ],
+      "constraint_bounds_m": [
+        [
+          3.4,
+          7.95,
+          0
+        ],
+        [
+          5.2,
+          11.25,
+          0.7
+        ]
+      ],
+      "within_3mm": true
+    },
+    "V4_WINDOW_CHAISE_COMPLETE": {
+      "actual_bounds_m": [
+        [
+          4.709499835968018,
+          11.06350040435791,
+          -0.00014513637870550156
+        ],
+        [
+          6.3398823738098145,
+          11.946499824523926,
+          0.7747443318367004
+        ]
+      ],
+      "constraint_bounds_m": [
+        [
+          4.671625,
+          11.05522,
+          0
+        ],
+        [
+          6.371625,
+          11.95522,
+          0.8
+        ]
+      ],
+      "within_3mm": true
+    },
+    "V4_COFFEE_TABLE_COMPLETE": {
+      "actual_bounds_m": [
+        [
+          5.025000095367432,
+          9.489999771118164,
+          0.0
+        ],
+        [
+          5.575000286102295,
+          10.489999771118164,
+          0.3999999761581421
+        ]
+      ],
+      "constraint_bounds_m": [
+        [
+          5.025,
+          9.49,
+          0
+        ],
+        [
+          5.575,
+          10.49,
+          0.4
+        ]
+      ],
+      "within_3mm": true
+    },
+    "V4_EAST_CONSOLE_COMPLETE": {
+      "actual_bounds_m": [
+        [
+          7.398000240325928,
+          8.634937286376953,
+          0.0
+        ],
+        [
+          7.696875095367432,
+          11.523843765258789,
+          0.47999998927116394
+        ]
+      ],
+      "constraint_bounds_m": [
+        [
+          7.398,
+          8.634937,
+          0
+        ],
+        [
+          7.696875,
+          11.523844,
+          0.48
+        ]
+      ],
+      "within_3mm": true
+    },
+    "V4_DINING_TABLE_COMPLETE": {
+      "actual_bounds_m": [
+        [
+          3.02762508392334,
+          3.064405918121338,
+          0.0
+        ],
+        [
+          4.627624988555908,
+          3.864406108856201,
+          0.75
+        ]
+      ],
+      "constraint_bounds_m": [
+        [
+          3.027625,
+          3.064406,
+          0
+        ],
+        [
+          4.627625,
+          3.864406,
+          0.75
+        ]
+      ],
+      "within_3mm": true
+    }
+  },
+  "closed_ceiling_actual_rays": [
+    {
+      "origin_m": [
+        5.3,
+        9.5,
+        2.6
+      ],
+      "hit": "CEILING_LOWER",
+      "hit_z_m": 2.799999952316284
+    },
+    {
+      "origin_m": [
+        4.0,
+        9.0,
+        2.6
+      ],
+      "hit": "CEILING_LOWER",
+      "hit_z_m": 2.799999952316284
+    }
+  ],
+  "chair_actual_size_and_fit": [
+    {
+      "group": "V4_DINING_CHAIR_0_COMPLETE",
+      "bounds_m": [
+        [
+          3.1481192111968994,
+          3.646108627319336,
+          0.00019414120470173657
+        ],
+        [
+          3.7071309089660645,
+          4.198406219482422,
+          0.8500000238418579
+        ]
+      ],
+      "dimensions_mm": [
+        559.0,
+        552.3,
+        849.8
+      ]
+    },
+    {
+      "group": "V4_DINING_CHAIR_1_COMPLETE",
+      "bounds_m": [
+        [
+          3.9481191635131836,
+          3.646108627319336,
+          0.0001941300870385021
+        ],
+        [
+          4.507131099700928,
+          4.198406219482422,
+          0.8500000238418579
+        ]
+      ],
+      "dimensions_mm": [
+        559.0,
+        552.3,
+        849.8
+      ]
+    },
+    {
+      "group": "V4_DINING_CHAIR_2_COMPLETE",
+      "bounds_m": [
+        [
+          3.1481192111968994,
+          2.7304060459136963,
+          0.00019414951384533197
+        ],
+        [
+          3.7071309089660645,
+          3.282703399658203,
+          0.8500000238418579
+        ]
+      ],
+      "dimensions_mm": [
+        559.0,
+        552.3,
+        849.8
+      ]
+    },
+    {
+      "group": "V4_DINING_CHAIR_3_COMPLETE",
+      "bounds_m": [
+        [
+          3.9481191635131836,
+          2.7304060459136963,
+          0.00019413467089179903
+        ],
+        [
+          4.507131099700928,
+          3.282703399658203,
+          0.8500000238418579
+        ]
+      ],
+      "dimensions_mm": [
+        559.0,
+        552.3,
+        849.8
+      ]
+    }
+  ],
+  "chair_table_triangle_intersections": [],
+  "armrest_top_mm": 657.4999690055847,
+  "table_underside_mm": 712.0,
+  "arm_table_vertical_clearance_mm": 54.50003099441525,
+  "cushion_y_minimum_gaps_mm": {
+    "seat": [
+      7.500648498535156,
+      10.000228881835938
+    ],
+    "back": [
+      7.999420166015625,
+      8.000373840332031
+    ]
+  },
+  "missing_images": [],
+  "packed_images": 23,
+  "protected_file_hashes_pass": true,
+  "protected_file_count": 7,
+  "not_certified": "SKU exact geometry, manufacture, dynamic pullout/access, human knee/foot envelope or installation safety"
+}

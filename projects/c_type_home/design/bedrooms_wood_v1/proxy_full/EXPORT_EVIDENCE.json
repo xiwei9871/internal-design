@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "entities": 937,
+  "stable_ids_match": true,
+  "bed_widths_verified_after_glb_import": true,
+  "retired_objects_absent": true,
+  "frozen_source_hashes_unchanged": true,
+  "inherited_semantic_candidate_states_preserved": true,
+  "source_revision": "bedrooms-wood-v1-review-3"
+}

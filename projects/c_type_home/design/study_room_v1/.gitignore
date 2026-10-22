@@ -1,0 +1,9 @@
+*.blend
+*.blend1
+*.png
+*.jpg
+*.glb
+*.json
+*.log
+proxy_*/
+iterations/

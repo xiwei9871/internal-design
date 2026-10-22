@@ -1,0 +1,40 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v7/local_final/SOFA_RELAXED_COVER_V7.blend",
+  "source_sha256": "5bb0f004a9501bff61a017975cf65c8205f46e3af3a39d9a83c91096db46ec4f",
+  "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/form1/SOFA_LOOSE_COVER_V8.blend",
+  "output_sha256": "97c40b0f6de6c8314f1f3f61af8920da5ae028723dd86ab47e7c197ce95efb75",
+  "variant": "form1",
+  "method": "new complete panel/curved boxing construction; ridge-valley folds and tangent gather; static reference-led exterior",
+  "seat_bounds_m": [
+    [
+      -0.5166011452674866,
+      -0.4490664005279541,
+      0.2849999964237213
+    ],
+    [
+      0.5166003704071045,
+      0.4490639567375183,
+      0.4885488748550415
+    ]
+  ],
+  "back_bounds_m": [
+    [
+      -0.5175623297691345,
+      0.3363170921802521,
+      0.40142378211021423
+    ],
+    [
+      0.5176917314529419,
+      0.5942714214324951,
+      0.773915708065033
+    ]
+  ],
+  "seat_nominal_boxing_mm": 74,
+  "v6_nominal_boxing_mm": 142,
+  "back_support_shift_mm": -36.24503517150879,
+  "same_timber_materials_studio": true,
+  "actual_simulation": false,
+  "owner_accepted": false,
+  "whole_house_propagation": false,
+  "image2_requests": 0
+}

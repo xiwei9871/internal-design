@@ -1,0 +1,126 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/WHOLE_HOUSE_HUNYUAN_MATERIAL_REVIEW_V3.blend",
+  "source_sha256": "8ce341da085e6a3c29b8fdc4ca4b8aa84117f6df19e4686a1be043d94e4fd609",
+  "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console1600_v4/WHOLE_HOUSE_CONSOLE1600_V4.blend",
+  "sha256": "7ff55a69723783bf6a59af837a1afe53e42e8532a4e7d03bd922d1b1a855d2ac",
+  "length_mm": 1600,
+  "depth_mm": 319.0116882324219,
+  "total_height_with_props_mm": 488.411545753479,
+  "bounds_m": [
+    [
+      8.020000457763672,
+      1.2869999408721924,
+      0.44999998807907104
+    ],
+    [
+      8.339012145996094,
+      2.88700008392334,
+      0.93841153383255
+    ]
+  ],
+  "bedfoot_clearance_mm": 797.9879379272461,
+  "bed_console_intersections": 0,
+  "prop_groups": [
+    {
+      "vertices": 241,
+      "original_y_center": 2.5622987747192383,
+      "translation_y_m": 0.1584329249064127
+    },
+    {
+      "vertices": 566,
+      "original_y_center": 2.4693819284439087,
+      "translation_y_m": 0.12746064281463618
+    },
+    {
+      "vertices": 483,
+      "original_y_center": 2.575623631477356,
+      "translation_y_m": 0.16287454382578526
+    },
+    {
+      "vertices": 235,
+      "original_y_center": 2.562732696533203,
+      "translation_y_m": 0.15857756551106764
+    },
+    {
+      "vertices": 1861,
+      "original_y_center": 1.60434091091156,
+      "translation_y_m": -0.16088636302948003
+    },
+    {
+      "vertices": 309,
+      "original_y_center": 2.3803600072860718,
+      "translation_y_m": 0.0977866690953572
+    },
+    {
+      "vertices": 2541,
+      "original_y_center": 2.503940463066101,
+      "translation_y_m": 0.13898015435536695
+    },
+    {
+      "vertices": 963,
+      "original_y_center": 2.2103642225265503,
+      "translation_y_m": 0.04112140750885004
+    },
+    {
+      "vertices": 1299,
+      "original_y_center": 2.1031200885772705,
+      "translation_y_m": 0.005373362859090107
+    },
+    {
+      "vertices": 2739,
+      "original_y_center": 1.605161428451538,
+      "translation_y_m": -0.1606128571828207
+    },
+    {
+      "vertices": 1589,
+      "original_y_center": 1.725521445274353,
+      "translation_y_m": -0.12049285157521572
+    },
+    {
+      "vertices": 1240,
+      "original_y_center": 1.8024105429649353,
+      "translation_y_m": -0.09486315234502163
+    },
+    {
+      "vertices": 1758,
+      "original_y_center": 1.9387998580932617,
+      "translation_y_m": -0.049400047302246154
+    },
+    {
+      "vertices": 1084,
+      "original_y_center": 1.7253687381744385,
+      "translation_y_m": -0.1205437539418539
+    },
+    {
+      "vertices": 660,
+      "original_y_center": 2.5003541707992554,
+      "translation_y_m": 0.13778472359975172
+    },
+    {
+      "vertices": 333,
+      "original_y_center": 2.4540791511535645,
+      "translation_y_m": 0.12235971705118809
+    },
+    {
+      "vertices": 397,
+      "original_y_center": 2.5267138481140137,
+      "translation_y_m": 0.14657128270467115
+    },
+    {
+      "vertices": 296,
+      "original_y_center": 2.450276732444763,
+      "translation_y_m": 0.12109224414825433
+    },
+    {
+      "vertices": 329,
+      "original_y_center": 2.606616973876953,
+      "translation_y_m": 0.17320565795898432
+    }
+  ],
+  "method": "lengthwise tableextension and above-table connected decorativegroups rigidtranslation, UVunchanged; hiddengeneratedconstruction not manufacturerexact",
+  "other_meshes_unchanged": 2583,
+  "protected_files": 16,
+  "guest_unchanged": true,
+  "image2_requests": 0,
+  "status": "HUMAN_REVIEW"
+}

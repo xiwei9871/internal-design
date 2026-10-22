@@ -1,0 +1,70 @@
+{
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v1/B1_LIVING_CORRECTED_V1.blend",
+  "status": "MISSING_ENCLOSURES_REPRODUCED",
+  "checks": [
+    {
+      "test": "D107 above opening u0.1 z2.75",
+      "pass_gate": false,
+      "hit": false,
+      "object": null,
+      "point": null,
+      "distance": null
+    },
+    {
+      "test": "D107 above opening u0.1 z3.2",
+      "pass_gate": false,
+      "hit": false,
+      "object": null,
+      "point": null,
+      "distance": null
+    },
+    {
+      "test": "D107 above opening u0.425 z2.75",
+      "pass_gate": false,
+      "hit": false,
+      "object": null,
+      "point": null,
+      "distance": null
+    },
+    {
+      "test": "D107 above opening u0.425 z3.2",
+      "pass_gate": false,
+      "hit": false,
+      "object": null,
+      "point": null,
+      "distance": null
+    },
+    {
+      "test": "D107 above opening u0.75 z2.75",
+      "pass_gate": false,
+      "hit": false,
+      "object": null,
+      "point": null,
+      "distance": null
+    },
+    {
+      "test": "D107 above opening u0.75 z3.2",
+      "pass_gate": false,
+      "hit": false,
+      "object": null,
+      "point": null,
+      "distance": null
+    },
+    {
+      "test": "BALCONY north pier",
+      "pass_gate": false,
+      "hit": false,
+      "object": null,
+      "point": null,
+      "distance": null
+    },
+    {
+      "test": "BALCONY north pier upper",
+      "pass_gate": false,
+      "hit": false,
+      "object": null,
+      "point": null,
+      "distance": null
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_identity_r4_review/OPTION_A_R4_NATIVE_WALL_PARTS_REVIEW.blend",
+  "source_sha256": "564ae8b36caea702d4ea556619f153bbe84e1ee04398f123a38f047bca2cedd6",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_LIVING_FURNITURE_REVIEW.blend",
+  "output_sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b",
+  "selected_native_ids": [
+    "B11_Circle_CATALOG_00_00",
+    "B11_Rectangle047_CATALOG_00_00",
+    "B11_Rectangle048_CATALOG_00_00"
+  ],
+  "before": {
+    "B11_Circle_CATALOG_00_00": [
+      [
+        3.6742498874664307,
+        12.029062271118164,
+        0.0
+      ],
+      [
+        4.174249649047852,
+        12.529062271118164,
+        0.5
+      ]
+    ],
+    "B11_Rectangle047_CATALOG_00_00": [
+      [
+        4.571625232696533,
+        11.980218887329102,
+        0.0
+      ],
+      [
+        6.471624851226807,
+        12.830219268798828,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Rectangle048_CATALOG_00_00": [
+      [
+        3.9739997386932373,
+        7.796281814575195,
+        0.0
+      ],
+      [
+        5.673999786376953,
+        8.696281433105469,
+        0.800000011920929
+      ]
+    ]
+  },
+  "after": {
+    "B11_Circle_CATALOG_00_00": [
+      [
+        3.6842498779296875,
+        12.0390625,
+        0.0
+      ],
+      [
+        4.164249897003174,
+        12.519062042236328,
+        0.47999998927116394
+      ]
+    ],
+    "B11_Rectangle047_CATALOG_00_00": [
+      [
+        3.8739991188049316,
+        7.821281909942627,
+        0.0
+      ],
+      [
+        5.773998737335205,
+        8.671282768249512,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Rectangle048_CATALOG_00_00": [
+      [
+        4.671625137329102,
+        11.955219268798828,
+        0.0
+      ],
+      [
+        6.371624946594238,
+        12.855218887329102,
+        0.800000011920929
+      ]
+    ]
+  },
+  "table_dimensions_m": [
+    0.48,
+    0.48,
+    0.48
+  ],
+  "table_top_thickness_m": 0.018,
+  "table_leg_count": 3,
+  "sofa_yaw_change_degrees": 180,
+  "chaise_north_window_station": [
+    5.52162504196167,
+    12.405219078063965,
+    0.42500001192092896
+  ],
+  "other_objects_unchanged": true,
+  "seat_meshes_scale_floor_height_unchanged": true,
+  "living_furniture_aabb_intersections": false,
+  "fresh_reopen_verified": true,
+  "frozen_files_unchanged": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": {
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "size": 1584568,
+      "mtime_ns": "1790946023854530466"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_APPROVED_AS_IS_V1.blend": {
+      "sha256": "28b289a38dbabafbc312e18b3057f232c51c44c07735b1cfcbd39aea39fd0536",
+      "size": 820968,
+      "mtime_ns": "1790851920866005988"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_DELIVERY_MANIFEST.json": {
+      "sha256": "913dde0a9723567917ce109c9d305e282f4bec38b601713853682596d7a86824",
+      "size": 1528,
+      "mtime_ns": "1790946877342285248"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_FREEZE_MANIFEST.json": {
+      "sha256": "25275a227e0ef9093727034f8802934c9d0d3b6b0351137fba6476ba181c72df",
+      "size": 19203,
+      "mtime_ns": "1790852612374550735"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/OPTION_A_R4_DINING_CHAIRS_ALIGNED_REVIEW.blend": {
+      "sha256": "e2f3f107eb6619ae28a363e0e4e36019cdae94c89aabe9ac4b8c0c07b14b14ac",
+      "size": 1585136,
+      "mtime_ns": "1791190919628201693"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_identity_r4_review/OPTION_A_R4_NATIVE_WALL_PARTS_REVIEW.blend": {
+      "sha256": "564ae8b36caea702d4ea556619f153bbe84e1ee04398f123a38f047bca2cedd6",
+      "size": 1817723,
+      "mtime_ns": "1791212985134137460"
+    }
+  },
+  "stair_scope": "pending explicit clarification;current3-step/stair/floor geometry unchanged"
+}

@@ -1,0 +1,168 @@
+{
+  "status": "HUMAN_REVIEW",
+  "base_model": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2.blend",
+  "base_sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5",
+  "comparison": [
+    {
+      "option": "A",
+      "title": "南侧推拉门",
+      "model": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/OPTION_A_SLIDING.blend",
+      "model_sha256": "938d5f07aae25597a4943d964eb385e6e336bcceed71664b7b8412d348162605",
+      "base_sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5",
+      "door": {
+        "type": "SLIDING",
+        "leaf_bounds": [
+          [
+            9.2,
+            4.34,
+            0.45
+          ],
+          [
+            10.05,
+            4.39,
+            2.55
+          ]
+        ],
+        "parking": [
+          9.2,
+          10.05,
+          4.34,
+          4.39
+        ],
+        "track_bounds": [
+          [
+            10.1,
+            4.36,
+            2.58
+          ],
+          [
+            10.95,
+            4.42,
+            2.64
+          ]
+        ],
+        "clearance_conflict": false
+      },
+      "renders": [
+        {
+          "option": "A",
+          "view": "ENTRY",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/renders/OPTION_A_ENTRY.png",
+          "sha256": "83eba8be2c6839fb8effdb9d7eb4290d7c22ab11d1ec42cfff0961f20a64375f",
+          "resolution": [
+            1600,
+            1200
+          ],
+          "source_saved": false,
+          "local_review_view": true
+        },
+        {
+          "option": "A",
+          "view": "INTERIOR",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/renders/OPTION_A_INTERIOR.png",
+          "sha256": "3a0e03dea5dd74a5d27418c21095287279dc9865668b5f966c7c98a77c365932",
+          "resolution": [
+            1600,
+            1200
+          ],
+          "source_saved": false,
+          "local_review_view": true
+        },
+        {
+          "option": "A",
+          "view": "TOP",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/renders/OPTION_A_TOP.png",
+          "sha256": "065bd9af718a9d73fc3ecc71fd675f0bc9d7d50488afdf2394f5b969caf76676",
+          "resolution": [
+            1600,
+            1200
+          ],
+          "source_saved": false,
+          "local_review_view": true
+        }
+      ],
+      "verification": "PASS"
+    },
+    {
+      "option": "B",
+      "title": "南侧内开平开门",
+      "model": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/OPTION_B_INWARD_SWING.blend",
+      "model_sha256": "defba14db2d603296c708e8e73bb1fd5b780cfdb1112d2c16c28fe78a0de8f10",
+      "base_sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5",
+      "door": {
+        "type": "INWARD_HINGED",
+        "leaf_bounds": [
+          [
+            10.925,
+            4.45,
+            0.45
+          ],
+          [
+            10.975,
+            5.3,
+            2.55
+          ]
+        ],
+        "hinge": [
+          10.95,
+          4.45,
+          0.45
+        ],
+        "sweep": [
+          10.925,
+          4.45,
+          10.975,
+          5.3
+        ],
+        "clearance_conflict": true,
+        "conflicting_fixtures": [
+          "wet"
+        ]
+      },
+      "renders": [
+        {
+          "option": "B",
+          "view": "ENTRY",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/renders/OPTION_B_ENTRY.png",
+          "sha256": "10396cd4e41f1887278719497239c06f5d33d07bbc019d203be301ec74dc6bfd",
+          "resolution": [
+            1600,
+            1200
+          ],
+          "source_saved": false,
+          "local_review_view": true
+        },
+        {
+          "option": "B",
+          "view": "INTERIOR",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/renders/OPTION_B_INTERIOR.png",
+          "sha256": "4733d6017276ef8a5a1733fa46ab9368e567553cca1cf8ec6bf2c804dee9c2bf",
+          "resolution": [
+            1600,
+            1200
+          ],
+          "source_saved": false,
+          "local_review_view": true
+        },
+        {
+          "option": "B",
+          "view": "TOP",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/renders/OPTION_B_TOP.png",
+          "sha256": "7289db49889b9b1de68c12571d2b0e9818d04f7199868643076694c7a7ff6a2f",
+          "resolution": [
+            1600,
+            1200
+          ],
+          "source_saved": false,
+          "local_review_view": true
+        }
+      ],
+      "verification": "PASS"
+    }
+  ],
+  "recommendation": "A",
+  "recommendation_reason": "Small R-CLOAK room: sliding preserves internal floor and avoids the swing conflict recorded for B.",
+  "B_clearance_note": "Option B inward leaf sweep intersects the wet-zone envelope; resolve fixture or hinge layout before any construction use.",
+  "construction_release": false,
+  "user_choice_pending": true
+}

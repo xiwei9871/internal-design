@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "entities": 976,
+  "source_revision": "console400-three-bath-mirrors-review-1",
+  "stable_ids_match": true,
+  "door850_and_wardrobe1200_preserved": true,
+  "console_and_three_mirrors_present": true,
+  "other_room_features_preserved": true,
+  "frozen_hashes_unchanged": true
+}

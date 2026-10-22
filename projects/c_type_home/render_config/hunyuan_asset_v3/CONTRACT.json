@@ -1,0 +1,89 @@
+{
+  "status": "OWNER_AUTHORIZED_CANDIDATE",
+  "source_house": "design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_SUPPORTED_V2.blend",
+  "source_sha256": "5a8bf58aaea0978147db40e1c7c68d57c27be6f9b254c9a6191ca7ef32c11801",
+  "assets": [
+    {
+      "id": "cba8282db6ca59970f1311be3a1d44f2",
+      "original": "/Users/xiwei/Downloads/cba8282db6ca59970f1311be3a1d44f2.glb",
+      "sha256": "48583f637a49adc5d033e2e674f48dfc42e0cc53fefb6dad4a967d7049a9b41a",
+      "role": "bed"
+    },
+    {
+      "id": "74cd759f5874c6ea17fef1dca9f82ef4",
+      "original": "/Users/xiwei/Downloads/74cd759f5874c6ea17fef1dca9f82ef4.glb",
+      "sha256": "abe85548ad04687e440c975b94f7b53b504e5698781ce2ea301c2ebf2240523e",
+      "role": "couple_tv_console"
+    },
+    {
+      "id": "c90be04e9228202bed9282d5bee6edc5",
+      "original": "/Users/xiwei/Downloads/c90be04e9228202bed9282d5bee6edc5.glb",
+      "sha256": "7d4cf50afd63e29ce075fc9eacf5a6e16c7be1cdb916fe8f81a1af4ea1c05c02",
+      "role": "L_sofa"
+    }
+  ],
+  "placement": {
+    "bed": "catalog2011outer2130x1910x1070 calibrated in derivedcandidate,head east",
+    "sofa": "1030catalog module dimensions calibration via piecewise boundaries, wholeform/UV retained; generatedsource notrealSKU",
+    "console": "1200long uniformsource,319deep,488totalheightincludingdecor",
+    "guest": "keep V2 model/bed placement and unresolved gate; no hinge correction"
+  },
+  "material_policy": "retain embedded basecolor/ORM/normal and original UV, compare imported finish against approved V5; no claim native generated maps are measured PBR",
+  "technical_limit": "50k triangles each,one mesh,one material,high boundary component counts mostly potential UV seams; inspect weldable seams in temporaryanalysis without blanket weld",
+  "license": "owner-supplied Hunyuan generated candidates; no assumed redistribution license, binaries local",
+  "deliverable": "isolated whole-house .blend and before/after room plus multiangle asset preview, stopHUMAN_REVIEW",
+  "image2_requests": 0,
+  "latest_owner_dimensions": {
+    "sofa": {
+      "model": "1030-2+1030-5",
+      "double_module_mm": [
+        2100,
+        900,
+        900
+      ],
+      "chaise_module_mm": [
+        1450,
+        800,
+        900
+      ],
+      "assembled_long_depth_height_mm": [
+        2900,
+        1450,
+        900
+      ],
+      "axis_interpretation": "chaise1450depth800width, beside2100long double",
+      "materials": "NorthAmerican ash, foam seat, flaxcottoncloth, feather+silkcottonback,woodwaxoil QNO30-2"
+    },
+    "bed": {
+      "model": "2011-1.8",
+      "outer_l_w_h_mm": [
+        2130,
+        1910,
+        1070
+      ],
+      "mattress_w_l_mm": [
+        1800,
+        2000
+      ],
+      "cloth": "820-12",
+      "supersedes": "2016 style for couplebed; Hunyuan generated from2011reference"
+    },
+    "console": {
+      "length_mm": 1200,
+      "depth_height": "preserve supplied GLB aspect at1200long unless source use conflict"
+    },
+    "source_role": "catalog physical-size authority; owner-generated GLB is shape/appearance candidate; no architectural changes"
+  },
+  "dimension_reference_sha256": {
+    "SOFA_1030_DIMENSIONS.png": "9531487d685a739efa46cceac026c8f568e74d6bf5bb6eb139e56f5da6d2d147",
+    "BED_2011_DIMENSIONS.png": "af324a836952f4135512fd4f7511aacf38260bb135c5ee25f098571aec936b7f"
+  },
+  "guest": "owner retain current model; no movedbed/northhinge executed",
+  "material_selected": {
+    "sofa": "validatedV5wood below287mm structuralboundary,linen upper; singlemesh subdivisioncandidate",
+    "bed": "originalbedcolour/normal retained,metal0/specular.5/roughness.65",
+    "console": "originaldecorcolour/normal retained,metal0/specular.5/roughness.55",
+    "failed_heuristic": "UVcolourthreshold woodpartition rejected afterwoodpatchesappeared on cloth",
+    "technical_status": "no measuredPBRcertificate"
+  }
+}

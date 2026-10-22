@@ -1,0 +1,67 @@
+{
+  "stage": "look",
+  "engine": "CYCLES",
+  "device": "METAL",
+  "samples": 32,
+  "images": [
+    {
+      "camera": "CAM_living_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/look/CAM_living_VIEW_01.png",
+      "seconds": 15.39,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "camera": "V4_CAM_SOFA_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/look/V4_CAM_SOFA_COMPLETE.png",
+      "seconds": 12.72,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "camera": "V4_CAM_DINING_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/look/V4_CAM_DINING_COMPLETE.png",
+      "seconds": 11.51,
+      "size": [
+        720,
+        960
+      ]
+    },
+    {
+      "camera": "V4_CAM_CHAIR_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/look/V4_CAM_CHAIR_COMPLETE.png",
+      "seconds": 11.6,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "camera": "V4_CAM_DINING_DETAIL",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/look/V4_CAM_DINING_DETAIL.png",
+      "seconds": 14.29,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "camera": "CAM_living_VIEW_02",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/look/CAM_living_VIEW_02.png",
+      "seconds": 11.47,
+      "size": [
+        960,
+        540
+      ]
+    }
+  ],
+  "blender_version": "5.2.1 LTS",
+  "denoiser": "OIDN GPU High Accurate",
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": 0.15000000596046448
+}

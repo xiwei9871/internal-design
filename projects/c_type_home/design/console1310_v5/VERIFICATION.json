@@ -1,0 +1,15 @@
+{
+  "status": "PASS_REAL_PRODUCT_BODY_DIMENSIONS",
+  "candidate_sha256": "3d75cbabe06a0bbace8fb95fb395bcc7f645ed5d26d6fed2d1fb094f0881f63a",
+  "console_length_mm": 2000.000238418579,
+  "unchanged_other_objects": 3460,
+  "unexpected_changes": [],
+  "protected_source_hashes": 16,
+  "guest_unchanged": true,
+  "body_depth_height_mm": [
+    460,
+    400
+  ],
+  "bedfoot_clearance_mm": 656.9995880126953,
+  "owner_visual_accepted": false
+}

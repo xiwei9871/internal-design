@@ -1,0 +1,81 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v1/B1_LIVING_CORRECTED_V1.blend",
+  "source_sha256": "5f78c8950fdacf20b43b604b0d03748af3f2221e1db3eb8f28cc058093e08cc3",
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/B1_LIVING_CORRECTED_V2.blend",
+  "model_sha256": "32aea798288be682ee0dbd717d8e5bc3f0d9d0cedf0b0d843c6e9e4dd30b7cbd",
+  "inherited_objects": 928,
+  "kitchen_protected_objects_unchanged": 272,
+  "prior_proxies_disabled": [
+    "GLZ_G-LIV-NBALC",
+    "B11_OPENING_G-LIV-NBALC",
+    "B11_G-LIV-NBALC_HOST_GLASS0",
+    "B11_G-LIV-NBALC_HOST_GLASS1",
+    "B11_G-LIV-NBALC_HOST_JAMB",
+    "B11_G-LIV-NBALC_HOST_JAMB.001",
+    "B11_G-LIV-NBALC_HOST_RAIL",
+    "B11_G-LIV-NBALC_HOST_RAIL.001",
+    "LIVING_FIX_BALCONY_DOOR_HEAD"
+  ],
+  "door_leaf_pose_preserved": true,
+  "corrections": [
+    "D107 side returns, frame, solid above opening and top connection",
+    "North balcony full north pier and header; single glazed door/frame/hardware"
+  ],
+  "review_dimensions": {
+    "D107_frame_width_mm": 50,
+    "D107_wall_thickness_mm": 200,
+    "D107_beam_band_mm": 200,
+    "north_door_frame_mm": 55
+  },
+  "measurement_policy": "PHOTO_RELATIONSHIPS_ONLY; FRAME_BEAM_SECTIONS_TO_VERIFY",
+  "references": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/secondary_door_v1_render.png": "0afb8457dc17ecfaa95f741713f21b2ace81c3faa25f9d8dd1d0b557c4a98810",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/north_balcony_door_site.jpg": "535941956a29e14532680db209622139bc7451fc7464e09dcc9e8d9b3fb00310",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/secondary_door_site.jpg": "2faa6cc4a6b347be491c3739ceb997925920d7a5c6773ac03441534bdbe0c491",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/v1_viewport_front.png": "97c6b9ecfd4a3abc0698106d6832b3ded6bb10e20fbee698a55f45c09123481e",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/north_door_v1_viewport.png": "53088c53c11c771a01508b5279a17310a5714cdfc7a1af7613061ecce126c3b2"
+  },
+  "B0_INTEGRITY": "PASS",
+  "verification_status": "PASS",
+  "visual_review": {
+    "status": "INSPECTED",
+    "views": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05"
+    ],
+    "inspection": "512px filesystem proxies opened individually",
+    "findings": [
+      "D107 complete side joins, frame, solid above-door wall and upper band visible",
+      "North balcony complete frame, side piers and solid header visible from both sides",
+      "No wall clipping or floating header in axial view"
+    ],
+    "delivery": "IMAGE_PATHS_ONLY"
+  },
+  "files_sha256": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/B1_LIVING_CORRECTED_V2.blend": "32aea798288be682ee0dbd717d8e5bc3f0d9d0cedf0b0d843c6e9e4dd30b7cbd",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/correct_door_enclosures.py": "6930e2d06ca83d0e27ca6f9a179b3fe47945b86ed6a7d9e94acc1f6f13bfe493",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/V2_QA.json": "0555b2a9ba073fcdb7e8b825cfd4f33c063ab4993ff7fd5ad7a4f20f1f13c0d3",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/V2_OBJECT_STATES.json": "73102e718ff98d7bcc62cc27a60ef45f5da22563cb832fd77c09b1d563b79a32",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/V1_OBJECT_STATES.json": "4985163ffd4ada4bc0e8fda0bbc896407d45de351baccda75723350703956712",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/V2_CAMERA_REGISTER.json": "d08b14b88a891e498d99631213fcd8e1358a53faa70f6f3fcca187c59a0eb110",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/V2_RENDER_MANIFEST.json": "bea5971062de13e984c031323b194b1fd96ac34a5128be032f9ef6f6b37e560b",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/V1_DOOR_ENCLOSURE_FAILURE.json": "a31440253d05a2b2cdf3f5330811c3a35399ea9ada6045fad9cc0bed0b488665",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/V2_REVIEW.md": "6a7cb1f68c4d88f8da44b822a2cb4b2f8d1709f0823b628d7e8f85075202c01d",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/reference_notes.md": "6855e12cf3a48fcad96bed52bec9fbc823496ba2d5500eb4e24f725e4ce8ee95",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/V2_VISUAL_REVIEW.json": "83b165f5d9b86d6460d01ce99427d616b094355cdf7cc2fbf544f8ff6bef89e2",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_01.png": "53caf02e4b9442a79018084848d1a773b9ecdbb1904a9b886d63afdf2337c369",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_02.png": "9e4149bf516397b1ad0cdb2c58326370aeb0fd60e870e0f63aa892f0d2200358",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_03.png": "8323ccea627331d17216a08ac0e7cc1da224b57c6a453a227823ebe1ad0b4521",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_04.png": "ea669a7265492104f1661b93677a7f70dbf58c49a2b9c3d1bcbf8a1cf5344330",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/renders/DOOR_ENCLOSURE_05.png": "20417815a2df08862e9ea80a3795814b6b247d9aa286563907a3c33b9f642bad",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/secondary_door_v1_render.png": "0afb8457dc17ecfaa95f741713f21b2ace81c3faa25f9d8dd1d0b557c4a98810",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/north_balcony_door_site.jpg": "535941956a29e14532680db209622139bc7451fc7464e09dcc9e8d9b3fb00310",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/secondary_door_site.jpg": "2faa6cc4a6b347be491c3739ceb997925920d7a5c6773ac03441534bdbe0c491",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/v1_viewport_front.png": "97c6b9ecfd4a3abc0698106d6832b3ded6bb10e20fbee698a55f45c09123481e",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/references/north_door_v1_viewport.png": "53088c53c11c771a01508b5279a17310a5714cdfc7a1af7613061ecce126c3b2"
+  }
+}

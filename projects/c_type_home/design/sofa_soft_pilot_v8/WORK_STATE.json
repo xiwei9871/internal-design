@@ -1,0 +1,15 @@
+{
+  "status": "HUMAN_REVIEW_PR_BLOCKED",
+  "active_blender_jobs": 0,
+  "latest_owner_request": "先研究坐垫/靠包填充并验证材质是否优化",
+  "geometry_work": "paused; V7 mesh unchanged in material test",
+  "material_result": "B brighter/softer reflecting but not plush; retain original",
+  "image2_requests": 0,
+  "whole_house_jobs": 0,
+  "next": "owner review, no automatic geometry changes",
+  "branch": "codex/c-type-sofa-material-test-v9",
+  "commit": "54ed0bb",
+  "pushed_remote_ref": "origin/codex/c-type-sofa-material-test-v9",
+  "pr": null,
+  "pr_blocker": "You are not logged into any GitHub hosts"
+}

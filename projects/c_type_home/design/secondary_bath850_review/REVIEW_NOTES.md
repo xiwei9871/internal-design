@@ -1,0 +1,13 @@
+# Secondarybath850 /wardrobe1200 — HUMAN_REVIEW
+
+Owneraccepted1200mmthree-doorwardrobe as the coupled850mmnet-openingproposal. Derivedsuccessor retains freezer816,bedroomsreview3,study-r5and other acceptedgeometry. Wardrobe1200x600x2200mm;three fronts roughly397mm actualeach/400mmnominal;eastedge fixed,westretreat200mm. Dooractualnet850mm,leaf890mm,pockettravel900mm,21positionschecked. Doorframe/head/casing/rail/stop/leaf/handle/hangers revised consistently;localderivedbathroompocketwall opening and cavityendextendedwhile outerroomedgefixed. Westreceiverhas a modeled rebate. Originalwhitewalls/frozenR4/B0 remainimmutable.
+
+BuildPASSfull-scopedfingerprints;actual850mmopeningraygrid105samplesclear. MotionPASS21poses,noleaf-vs-pocket/frame/wardrobebackcollision,threewardrobehingesbothsides0..90deg clearbedandnightstand. Sharedframe/header/rail contactsurface intersections are documented; these denote installedjunctiongeometry ratherthanfurniture/doorpenetration.
+
+Notfabricationapproval. Doorframe casing-to-wardrobehorizontalgap13.25mm is tight; site tolerance and chosenhardware need finalshopdrawing. Existingmaintenancecover remains largelybehindwardrobetop/rear andhardware serviceaccessmustbedetailedatfabricationstage. Noheightreductionorunrequestedaccesshole added. Doorleaf/frame netheightunchanged.
+
+GeneratedBLEND/GLB/previews remainlocal. StableentityIDs retained;candidate spatialboundaries notpromoted. Sourceauthority=frozen meanshash-lockedsnapshot inbindingsV1; actualdesignauthorityDERIVED_DESIGN_MODEL.
+
+Branch codex/c-type-secondary-bath-850. Neverautomaticmerge; noCLIlogin.
+
+Finalgates: PASS actual850mmnetopening/1200wardrobe,937stableIDs freshGLB,21slideposes,wardrobesweeps; fullpage5176newrevision loaded,matchingcandidate-semantic/relationshipfiles imported,viewunlocked. ScreenshotCODEX_BATH850_REVIEW.jpg. NoCLIlogin;PRauthunavailable.

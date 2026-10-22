@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "source_hashes": "PASS",
+  "B0_INTEGRITY": "PASS",
+  "frozen_kitchen_objects_preserved": 272,
+  "fresh_open_object_states_match": 928,
+  "three_bay_glazing_rays": {
+    "forward_through_inner_portal": {
+      "object": "LIVING_FIX_BAY_FRONT_GLASS_1",
+      "point": [
+        5.349999904632568,
+        13.84119987487793,
+        1.350000023841858
+      ]
+    },
+    "left_side_return": {
+      "object": "LIVING_FIX_BAY_LEFT_RETURN_GLASS_0",
+      "point": [
+        3.653899908065796,
+        13.479999542236328,
+        1.350000023841858
+      ]
+    },
+    "right_side_return": {
+      "object": "LIVING_FIX_BAY_RIGHT_RETURN_GLASS_0",
+      "point": [
+        7.045900344848633,
+        13.479999542236328,
+        1.350000023841858
+      ]
+    }
+  },
+  "duplicate_inner_window": "INACTIVE",
+  "guest_bath_partition_top_mm": 3250.0,
+  "guest_bath_partition_XY": "EXACT_SOURCE_BOUNDS",
+  "D107_centroid_error_mm": 0.001066240299940009,
+  "D107_no_longer_in_living": true,
+  "D107_angle_deg": 26.300003691612815,
+  "blender_version": "5.2.1 LTS",
+  "model_sha256": "5f78c8950fdacf20b43b604b0d03748af3f2221e1db3eb8f28cc058093e08cc3"
+}

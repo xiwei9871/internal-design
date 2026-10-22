@@ -1,0 +1,133 @@
+{
+  "dimensions_source": "actual saved FreeCAD Shape bounds/vertices; actual fresh-open Blender mesh exports",
+  "options": {
+    "A": {
+      "west_full_rectangle_no_notch": true,
+      "entry_solid_wall_overlap_mm2": 0.0,
+      "wardrobe_entry_overlap_mm2": 0.0,
+      "yellow_south_wall_complete": true,
+      "full_header": true,
+      "fixtures_match": true,
+      "fixture_bounds": {
+        "vanity": {
+          "actual_bounds_mm": [
+            9228.0,
+            5925.219,
+            10427.999,
+            6425.219
+          ],
+          "max_error_mm": 0.0005035400398867296
+        },
+        "wardrobe": {
+          "actual_bounds_mm": [
+            9972.25,
+            3908.094,
+            11372.25,
+            4508.094
+          ],
+          "max_error_mm": 0.0003967285149286681
+        },
+        "wc": {
+          "actual_bounds_mm": [
+            10763.75,
+            4935.531,
+            11363.75,
+            5435.531
+          ],
+          "max_error_mm": 0.00045776367230132564
+        }
+      },
+      "parked_leaf_inside_pocket": true,
+      "full_travel_rail_connected": true,
+      "wall_motion_overlap_mm2": 0.0,
+      "fixture_motion_overlap_mm2": {
+        "vanity": 0.0,
+        "wc": 0.0,
+        "wardrobe": 0.0,
+        "shower": 0.0
+      },
+      "indoor_swing_area_m2": 0,
+      "parked_leaf_bounds_mm": [
+        9993.125,
+        4723.063,
+        10762.25,
+        4763.062
+      ],
+      "wc_800deep_600wide_front_zone_door_overlap_mm2": 0.0,
+      "wc_800deep_600wide_front_zone_wall_overlap_mm2": 0.0,
+      "wc_800deep_800wide_comfort_zone_outside_room_mm2": 30024.99999999986,
+      "geometry_gates_pass": true
+    },
+    "B": {
+      "west_full_rectangle_no_notch": true,
+      "entry_solid_wall_overlap_mm2": 0.0,
+      "wardrobe_entry_overlap_mm2": 0.0,
+      "yellow_south_wall_complete": true,
+      "full_header": true,
+      "fixtures_match": true,
+      "fixture_bounds": {
+        "vanity": {
+          "actual_bounds_mm": [
+            9228.0,
+            5925.219,
+            10427.999,
+            6425.219
+          ],
+          "max_error_mm": 0.0005035400398867296
+        },
+        "wardrobe": {
+          "actual_bounds_mm": [
+            9972.25,
+            3908.094,
+            11372.25,
+            4508.094
+          ],
+          "max_error_mm": 0.0003967285149286681
+        },
+        "wc": {
+          "actual_bounds_mm": [
+            10763.75,
+            4935.531,
+            11363.75,
+            5435.531
+          ],
+          "max_error_mm": 0.00045776367230132564
+        }
+      },
+      "angle_degrees": 85,
+      "angular_samples": 721,
+      "wall_motion_overlap_mm2": 0.0,
+      "fixture_motion_overlap_mm2": {
+        "vanity": 0.0,
+        "wc": 0.0,
+        "wardrobe": 0.0,
+        "shower": 0.0
+      },
+      "indoor_swing_area_m2": 0.422568641839097,
+      "fully_open_leaf_to_vanity_mm": 357.5436363220215,
+      "open_pose_geometry_error_mm2": 0.24744469531750404,
+      "wc_800deep_600wide_front_zone_door_overlap_mm2": 0.0,
+      "wc_800deep_600wide_front_zone_wall_overlap_mm2": 0.0,
+      "wc_800deep_800wide_comfort_zone_outside_room_mm2": 30024.99999999986,
+      "geometry_gates_pass": true
+    }
+  },
+  "shared_fixtures_equal_AB": true,
+  "shower_enclosure_bounds_mm": [
+    10557.875,
+    5665.375,
+    11399.9,
+    6450.2
+  ],
+  "shower_net_plan_area_m2": 0.6187500928906258,
+  "shower_chamfer_segment_mm": 417.8810024714725,
+  "limitations": [
+    "Approx729mm clear entrance is compact; confirm actual frame system before buying.",
+    "Shower overall footprint is about842x785mm with a chamfer; it is smaller than the usual900x900 target and needs site/SKU confirmation.",
+    "Saved WC footprint600x500mm is a layout envelope, not approval of a product or drain connection.",
+    "Chamfer screen segment is only about418mm; the saved wire is a screen outline, not a confirmed shower clear opening. Shower entry mechanism remains to be designed.",
+    "The800mm-deep x600mm-wide WC front zone is clear in both options. An optional800mm-wide comfort envelope clips the room south boundary by about38mm; product/site clearance remains to be checked.",
+    "Pocket closure/maintenance/partition profiles, waterproofing and drainage are schematic.",
+    "Old angled bedroom door retained from frozen base; latest photos establish separate wall placement, no inferred avoidance notch is made."
+  ]
+}

@@ -1,0 +1,855 @@
+{
+  "register": "PHOTO_REGISTRATION_REPORT",
+  "stage": "REGISTRATION_HUMAN_REVIEW",
+  "confirmed_current_reference_dimensions": {
+    "countertop_height_mm": 820,
+    "countertop_depth_mm": 600,
+    "fridge_width_mm": 905,
+    "fridge_depth_mm": 710,
+    "fridge_height_mm": 1700,
+    "authority": "HUMAN_CONFIRMED_CURRENT_SAME_AS_INITIAL_PDF"
+  },
+  "method": "Bounded pinhole least-squares pose/focal fitting; no B0 or B1 geometry moved",
+  "interpretation": "Numeric convergence is not registration acceptance. Fridge fit fails architectural holdout; other fits lack verified correspondences.",
+  "photos": [
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_001",
+      "camera_name": "SITE_CAM_KITCHEN_001",
+      "resolution_original": [
+        3000,
+        4000
+      ],
+      "preview_size": [
+        1050,
+        1400
+      ],
+      "camera_parameters": {
+        "position_m": [
+          5.557411023617425,
+          1.9589124105057931,
+          1.46832451753797
+        ],
+        "yaw_rad": 0.872968714600488,
+        "pitch_rad": -0.10236668370453123,
+        "roll_rad": 0.011073197522880687,
+        "focal_preview_px": 1167.2010167908436,
+        "focal_fullres_px": 3334.860047973839,
+        "camera_cv_rotation_rows": [
+          [
+            0.7654658295852204,
+            -0.643382260707969,
+            -0.011015005388716774
+          ],
+          [
+            -0.0741418963307134,
+            -0.07118072684520106,
+            -0.9947041184866356
+          ],
+          [
+            0.6391909283976863,
+            0.7622286866368202,
+            -0.10218799499947105
+          ]
+        ],
+        "principal_point": "IMAGE_CENTER_ASSUMPTION",
+        "lens_distortion": "ZERO_ASSUMPTION_NO_EXIF"
+      },
+      "anchor_count": 6,
+      "verified_reference_anchor_count": 6,
+      "verified_B0_XY_anchor_count": 0,
+      "model_reference_object": "B11_K-FRIDGE",
+      "basis": "HUMAN_CONFIRMED_RIGID_FRIDGE_FRONT + FROZEN_LOWER_FLOOR_Z",
+      "anchor_geometry_rank": 2,
+      "fit_success": true,
+      "mean_reprojection_error_px": 17.414997650933557,
+      "max_reprojection_error_px": 31.218348082919434,
+      "confidence": "LOW",
+      "classification": "LOCAL_RIGID_SCALE_FIT; GLOBAL_ARCHITECTURAL_REGISTRATION_FAILED",
+      "parameter_bound_hit": false,
+      "usable_for_dimension_estimation": false,
+      "local_reference_confidence": "MEDIUM",
+      "anchors": [
+        {
+          "name": "fridge_front_top_left",
+          "world_m": [
+            6.835,
+            3.75,
+            1.7
+          ],
+          "observed_preview_px": [
+            430,
+            454
+          ],
+          "projected_preview_px": [
+            429.2973719734003,
+            455.18673749211786
+          ],
+          "error_fullres_px": 3.940405054245457,
+          "model_correspondence_verified": true
+        },
+        {
+          "name": "fridge_front_top_mid",
+          "world_m": [
+            7.2875,
+            3.75,
+            1.7
+          ],
+          "observed_preview_px": [
+            600,
+            466
+          ],
+          "projected_preview_px": [
+            605.7979478356856,
+            468.1186692950501
+          ],
+          "error_fullres_px": 17.636918303427905,
+          "model_correspondence_verified": true
+        },
+        {
+          "name": "fridge_front_top_right",
+          "world_m": [
+            7.74,
+            3.75,
+            1.7
+          ],
+          "observed_preview_px": [
+            750,
+            482
+          ],
+          "projected_preview_px": [
+            744.9899679340228,
+            478.31705931519673
+          ],
+          "error_fullres_px": 17.76593240455601,
+          "model_correspondence_verified": true
+        },
+        {
+          "name": "fridge_front_bottom_left",
+          "world_m": [
+            6.835,
+            3.75,
+            0.0
+          ],
+          "observed_preview_px": [
+            452,
+            1318
+          ],
+          "projected_preview_px": [
+            445.799826287673,
+            1319.8351891591963
+          ],
+          "error_fullres_px": 18.47448838054676,
+          "model_correspondence_verified": true
+        },
+        {
+          "name": "fridge_front_bottom_mid",
+          "world_m": [
+            7.2875,
+            3.75,
+            0.0
+          ],
+          "observed_preview_px": [
+            600,
+            1243
+          ],
+          "projected_preview_px": [
+            608.7814987131227,
+            1236.4983098861028
+          ],
+          "error_fullres_px": 31.218348082919434,
+          "model_correspondence_verified": true
+        },
+        {
+          "name": "fridge_front_bottom_right",
+          "world_m": [
+            7.74,
+            3.75,
+            0.0
+          ],
+          "observed_preview_px": [
+            742,
+            1165
+          ],
+          "projected_preview_px": [
+            739.3686136523303,
+            1169.7256325024648
+          ],
+          "error_fullres_px": 15.453893679905768,
+          "model_correspondence_verified": true
+        }
+      ],
+      "architectural_holdouts": [
+        {
+          "name": "sliding_partition_right_head",
+          "world_m": [
+            5.65,
+            4.6225,
+            2.4
+          ],
+          "observed_preview_px": [
+            92,
+            298
+          ],
+          "projected_preview_px": [
+            -442.53338450576973,
+            42.604914187673785
+          ],
+          "error_preview_px": 592.4125159112344,
+          "correspondence_status": "TENTATIVE_ARCHITECTURAL_MATCH_NEEDS_REVIEW"
+        },
+        {
+          "name": "sliding_partition_right_foot",
+          "world_m": [
+            5.65,
+            4.6225,
+            0.0
+          ],
+          "observed_preview_px": [
+            150,
+            1280
+          ],
+          "projected_preview_px": [
+            -322.7986019938936,
+            1358.8305059506795
+          ],
+          "error_preview_px": 479.3253245091692,
+          "correspondence_status": "TENTATIVE_ARCHITECTURAL_MATCH_NEEDS_REVIEW"
+        }
+      ],
+      "warnings": [
+        "Six points are coplanar; X/Y placement of the remodeled fridge run is not independently surveyed.",
+        "Cabinet fronts may be offset from refrigerator door plane; estimate uncertainty must include this offset."
+      ]
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_002",
+      "camera_name": "SITE_CAM_KITCHEN_002",
+      "resolution_original": [
+        3000,
+        4000
+      ],
+      "preview_size": [
+        1050,
+        1400
+      ],
+      "camera_parameters": {
+        "position_m": [
+          6.45,
+          2.45,
+          1.48
+        ],
+        "yaw_rad": 1.12,
+        "pitch_rad": -0.1,
+        "roll_rad": 0.035,
+        "focal_preview_px": 1800.0,
+        "focal_fullres_px": 5142.857142857143,
+        "camera_cv_rotation_rows": [
+          [
+            0.8980271493753734,
+            -0.4385600795191405,
+            -0.03481803608628286
+          ],
+          [
+            -0.0749661127105836,
+            -0.07455929627718434,
+            -0.9943947874379246
+          ],
+          [
+            0.43350584878384824,
+            0.8956036891342154,
+            -0.09983341664682815
+          ]
+        ],
+        "principal_point": "IMAGE_CENTER_ASSUMPTION",
+        "lens_distortion": "ZERO_ASSUMPTION_NO_EXIF"
+      },
+      "anchor_count": 3,
+      "verified_reference_anchor_count": 0,
+      "verified_B0_XY_anchor_count": 0,
+      "model_reference_object": "B11_K-FRIDGE",
+      "basis": "PARTIAL_FRIDGE_FRONT; INSUFFICIENT_KNOWN_CORNERS",
+      "anchor_geometry_rank": 2,
+      "fit_success": false,
+      "mean_reprojection_error_px": null,
+      "max_reprojection_error_px": null,
+      "confidence": "FAILED",
+      "classification": "DIRECTION_PREVIEW_ONLY_INSUFFICIENT_ANCHORS",
+      "parameter_bound_hit": false,
+      "usable_for_dimension_estimation": false,
+      "local_reference_confidence": "NOT_ACCEPTED",
+      "anchors": [
+        {
+          "name": "fridge_top_mid",
+          "world_m": [
+            7.2875,
+            3.75,
+            1.7
+          ],
+          "observed_preview_px": [
+            129,
+            447
+          ],
+          "projected_preview_px": null,
+          "error_fullres_px": null,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "fridge_top_right",
+          "world_m": [
+            7.74,
+            3.75,
+            1.7
+          ],
+          "observed_preview_px": [
+            316,
+            477
+          ],
+          "projected_preview_px": null,
+          "error_fullres_px": null,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "fridge_bottom_right",
+          "world_m": [
+            7.74,
+            3.75,
+            0.0
+          ],
+          "observed_preview_px": [
+            354,
+            1312
+          ],
+          "projected_preview_px": null,
+          "error_fullres_px": null,
+          "model_correspondence_verified": false
+        }
+      ],
+      "architectural_holdouts": [],
+      "warnings": [
+        "Top/left/bottom portions are cropped; only three candidate rigid points."
+      ]
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_003",
+      "camera_name": "SITE_CAM_KITCHEN_003",
+      "resolution_original": [
+        4000,
+        3000
+      ],
+      "preview_size": [
+        1400,
+        1050
+      ],
+      "camera_parameters": {
+        "position_m": [
+          5.102751729251606,
+          3.2771420675819045,
+          1.899999995216672
+        ],
+        "yaw_rad": -0.2800344297963736,
+        "pitch_rad": -0.1414734004557158,
+        "roll_rad": 0.05195985959485256,
+        "focal_preview_px": 850.0000005241221,
+        "focal_fullres_px": 2428.5714300689206,
+        "camera_cv_rotation_rows": [
+          [
+            -0.2830535991727497,
+            -0.957724851016828,
+            -0.05141760146240743
+          ],
+          [
+            -0.120971803103301,
+            0.08883209864809695,
+            -0.9886731922651242
+          ],
+          [
+            0.9514444192118048,
+            -0.273627425516101,
+            -0.1410019473487586
+          ]
+        ],
+        "principal_point": "IMAGE_CENTER_ASSUMPTION",
+        "lens_distortion": "ZERO_ASSUMPTION_NO_EXIF"
+      },
+      "anchor_count": 8,
+      "verified_reference_anchor_count": 0,
+      "verified_B0_XY_anchor_count": 0,
+      "model_reference_object": "B11_K-COOK",
+      "basis": "INITIAL_CABINET_PDF_REFERENCE_HYPOTHESIS; MODULE_LOCATIONS_UNCONFIRMED",
+      "anchor_geometry_rank": 3,
+      "fit_success": true,
+      "mean_reprojection_error_px": 143.62284321743755,
+      "max_reprojection_error_px": 278.22329841632023,
+      "confidence": "FAILED",
+      "classification": "FIT_REJECTED_BOUND_OR_RESIDUAL_OR_CORRESPONDENCE",
+      "parameter_bound_hit": true,
+      "usable_for_dimension_estimation": false,
+      "local_reference_confidence": "NOT_ACCEPTED",
+      "anchors": [
+        {
+          "name": "cook_counter_front_north",
+          "world_m": [
+            7.2,
+            3.3,
+            0.82
+          ],
+          "observed_preview_px": [
+            449,
+            822
+          ],
+          "projected_preview_px": [
+            477.7222198560607,
+            848.9293797193496
+          ],
+          "error_fullres_px": 112.49153820435603,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "cook_counter_front_south",
+          "world_m": [
+            7.2,
+            2.4,
+            0.82
+          ],
+          "observed_preview_px": [
+            802,
+            790
+          ],
+          "projected_preview_px": [
+            807.4940677220781,
+            787.0587660688429
+          ],
+          "error_fullres_px": 17.80521298867263,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "hood_front_north_low",
+          "world_m": [
+            7.42,
+            3.3,
+            1.6
+          ],
+          "observed_preview_px": [
+            447,
+            611
+          ],
+          "projected_preview_px": [
+            448.74093606355177,
+            531.9458676462842
+          ],
+          "error_fullres_px": 225.92371297926255,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "hood_front_south_low",
+          "world_m": [
+            7.42,
+            2.4,
+            1.6
+          ],
+          "observed_preview_px": [
+            776,
+            601
+          ],
+          "projected_preview_px": [
+            768.2109007272418,
+            503.9338632901666
+          ],
+          "error_fullres_px": 278.22329841632023,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "upper_front_north_low",
+          "world_m": [
+            7.42,
+            3.3,
+            1.67
+          ],
+          "observed_preview_px": [
+            452,
+            426
+          ],
+          "projected_preview_px": [
+            446.2579531474666,
+            505.60794757836015
+          ],
+          "error_fullres_px": 228.04218048235722,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "upper_front_south_low",
+          "world_m": [
+            7.42,
+            2.4,
+            1.67
+          ],
+          "observed_preview_px": [
+            812,
+            440
+          ],
+          "projected_preview_px": [
+            767.2476672707321,
+            480.10267810120934
+          ],
+          "error_fullres_px": 171.69018313372604,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "upper_south_low",
+          "world_m": [
+            7.42,
+            0.535,
+            1.67
+          ],
+          "observed_preview_px": [
+            1260,
+            441
+          ],
+          "projected_preview_px": [
+            1263.9577767359262,
+            440.6349798027216
+          ],
+          "error_fullres_px": 11.355924979034986,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "upper_south_high",
+          "world_m": [
+            7.42,
+            0.535,
+            2.41
+          ],
+          "observed_preview_px": [
+            1256,
+            190
+          ],
+          "projected_preview_px": [
+            1273.149987118213,
+            221.88853401841908
+          ],
+          "error_fullres_px": 103.45069455577065,
+          "model_correspondence_verified": false
+        }
+      ],
+      "architectural_holdouts": [],
+      "warnings": [
+        "Cooktop/hood and cabinet module origins in initial PDF may have changed.",
+        "The hood body is generic in B1; its edges are not surveyed anchors."
+      ]
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_004",
+      "camera_name": "SITE_CAM_KITCHEN_004",
+      "resolution_original": [
+        4000,
+        3000
+      ],
+      "preview_size": [
+        1400,
+        1050
+      ],
+      "camera_parameters": {
+        "position_m": [
+          6.4,
+          2.8,
+          1.48
+        ],
+        "yaw_rad": -1.68,
+        "pitch_rad": -0.15,
+        "roll_rad": 0.06,
+        "focal_preview_px": 1500.0,
+        "focal_fullres_px": 4285.714285714286,
+        "camera_cv_rotation_rows": [
+          [
+            -0.991277840768326,
+            0.11769816575165493,
+            -0.05929067532404425
+          ],
+          [
+            0.07586428233225223,
+            0.14174537129582235,
+            -0.9869918238680713
+          ],
+          [
+            -0.10776294849296573,
+            -0.9828811685523867,
+            -0.14943813247359922
+          ]
+        ],
+        "principal_point": "IMAGE_CENTER_ASSUMPTION",
+        "lens_distortion": "ZERO_ASSUMPTION_NO_EXIF"
+      },
+      "anchor_count": 3,
+      "verified_reference_anchor_count": 0,
+      "verified_B0_XY_anchor_count": 0,
+      "model_reference_object": "GLZ_W-KIT-S",
+      "basis": "PARTIALLY_OCCLUDED_WINDOW; CURRENT_COLUMN/RETURN NOT REGISTERED",
+      "anchor_geometry_rank": 2,
+      "fit_success": false,
+      "mean_reprojection_error_px": null,
+      "max_reprojection_error_px": null,
+      "confidence": "FAILED",
+      "classification": "DIRECTION_PREVIEW_ONLY_INSUFFICIENT_ANCHORS",
+      "parameter_bound_hit": false,
+      "usable_for_dimension_estimation": false,
+      "local_reference_confidence": "NOT_ACCEPTED",
+      "anchors": [
+        {
+          "name": "window_image_left_head",
+          "world_m": [
+            7.1,
+            -0.1,
+            2.4
+          ],
+          "observed_preview_px": [
+            518,
+            105
+          ],
+          "projected_preview_px": null,
+          "error_fullres_px": null,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "window_image_right_head",
+          "world_m": [
+            6.1,
+            -0.1,
+            2.4
+          ],
+          "observed_preview_px": [
+            661,
+            70
+          ],
+          "projected_preview_px": null,
+          "error_fullres_px": null,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "window_image_right_sill",
+          "world_m": [
+            6.1,
+            -0.1,
+            0.45
+          ],
+          "observed_preview_px": [
+            660,
+            489
+          ],
+          "projected_preview_px": null,
+          "error_fullres_px": null,
+          "model_correspondence_verified": false
+        }
+      ],
+      "architectural_holdouts": [],
+      "warnings": [
+        "Boiler/person/cabinet obstruct window frame corners. Initial sill/head assumptions require independent checking."
+      ]
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_005",
+      "camera_name": "SITE_CAM_KITCHEN_005",
+      "resolution_original": [
+        3000,
+        4000
+      ],
+      "preview_size": [
+        1050,
+        1400
+      ],
+      "camera_parameters": {
+        "position_m": [
+          6.411408134737149,
+          3.599999999999709,
+          1.0500000015660236
+        ],
+        "yaw_rad": -1.7351244825136936,
+        "pitch_rad": -0.250579381043185,
+        "roll_rad": -0.0361200188310291,
+        "focal_preview_px": 1004.1620469482508,
+        "focal_fullres_px": 2869.034419852145,
+        "camera_cv_rotation_rows": [
+          [
+            -0.9873498878563024,
+            0.1546489400969218,
+            0.03498434331305522
+          ],
+          [
+            0.004912397581826586,
+            0.25037283454353315,
+            -0.9681370316606192
+          ],
+          [
+            -0.1584804950148285,
+            -0.955718132636153,
+            -0.24796528718818617
+          ]
+        ],
+        "principal_point": "IMAGE_CENTER_ASSUMPTION",
+        "lens_distortion": "ZERO_ASSUMPTION_NO_EXIF"
+      },
+      "anchor_count": 4,
+      "verified_reference_anchor_count": 0,
+      "verified_B0_XY_anchor_count": 0,
+      "model_reference_object": "GLZ_W-KIT-S",
+      "basis": "FROZEN_WINDOW_REFERENCE_HYPOTHESIS; SILL OCCLUDED",
+      "anchor_geometry_rank": 2,
+      "fit_success": true,
+      "mean_reprojection_error_px": 163.38607673586426,
+      "max_reprojection_error_px": 184.8416741937474,
+      "confidence": "FAILED",
+      "classification": "FIT_REJECTED_BOUND_OR_RESIDUAL_OR_CORRESPONDENCE",
+      "parameter_bound_hit": true,
+      "usable_for_dimension_estimation": false,
+      "local_reference_confidence": "NOT_ACCEPTED",
+      "anchors": [
+        {
+          "name": "window_image_left_head",
+          "world_m": [
+            7.1,
+            -0.1,
+            2.4
+          ],
+          "observed_preview_px": [
+            93,
+            10
+          ],
+          "projected_preview_px": [
+            133.74509949347623,
+            -24.147339952238553
+          ],
+          "error_fullres_px": 151.89158213289127,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "window_image_right_head",
+          "world_m": [
+            6.1,
+            -0.1,
+            2.4
+          ],
+          "observed_preview_px": [
+            503,
+            24
+          ],
+          "projected_preview_px": [
+            457.8129570819726,
+            9.638764992032065
+          ],
+          "error_fullres_px": 135.46937054611672,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "window_image_left_sill",
+          "world_m": [
+            7.1,
+            -0.1,
+            0.45
+          ],
+          "observed_preview_px": [
+            111,
+            575
+          ],
+          "projected_preview_px": [
+            167.4943913107171,
+            603.9270177250006
+          ],
+          "error_fullres_px": 181.34168007070167,
+          "model_correspondence_verified": false
+        },
+        {
+          "name": "window_image_right_sill",
+          "world_m": [
+            6.1,
+            -0.1,
+            0.45
+          ],
+          "observed_preview_px": [
+            504,
+            574
+          ],
+          "projected_preview_px": [
+            448.1682022113398,
+            606.6833261653817
+          ],
+          "error_fullres_px": 184.8416741937474,
+          "model_correspondence_verified": false
+        }
+      ],
+      "architectural_holdouts": [],
+      "warnings": [
+        "Window head partly cropped; sill-left/right hidden or partly obscured.",
+        "A four-corner candidate fit is not independent validation of frozen window Z against the renovated finish."
+      ]
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_006",
+      "camera_name": "SITE_CAM_KITCHEN_006",
+      "resolution_original": [
+        3000,
+        4000
+      ],
+      "preview_size": [
+        1050,
+        1400
+      ],
+      "camera_parameters": {
+        "position_m": [
+          4.15,
+          2.9,
+          1.45
+        ],
+        "yaw_rad": -1.38,
+        "pitch_rad": 0.0,
+        "roll_rad": -0.04,
+        "focal_preview_px": 1500.0,
+        "focal_fullres_px": 4285.714285714286,
+        "camera_cv_rotation_rows": [
+          [
+            -0.9810681522735195,
+            -0.1894891388600727,
+            0.03998933418663416
+          ],
+          [
+            -0.03926366894838684,
+            -0.007583610578200214,
+            -0.9992001066609779
+          ],
+          [
+            0.18964083129783446,
+            -0.9818535303723597,
+            0.0
+          ]
+        ],
+        "principal_point": "IMAGE_CENTER_ASSUMPTION",
+        "lens_distortion": "ZERO_ASSUMPTION_NO_EXIF"
+      },
+      "anchor_count": 0,
+      "verified_reference_anchor_count": 0,
+      "verified_B0_XY_anchor_count": 0,
+      "model_reference_object": "GLZ_W-LBALC-S",
+      "basis": "ADJACENT_CABINET_IDENTITY_UNRESOLVED; NO_FIT",
+      "anchor_geometry_rank": 0,
+      "fit_success": false,
+      "mean_reprojection_error_px": null,
+      "max_reprojection_error_px": null,
+      "confidence": "FAILED",
+      "classification": "DIRECTION_PREVIEW_ONLY_INSUFFICIENT_ANCHORS",
+      "parameter_bound_hit": false,
+      "usable_for_dimension_estimation": false,
+      "local_reference_confidence": "NOT_ACCEPTED",
+      "anchors": [],
+      "architectural_holdouts": [],
+      "warnings": [
+        "Window is cropped and cabinet cannot yet be tied to R029/R032 or a new position. Pose is a direction preview only."
+      ]
+    }
+  ],
+  "metric_gate": "NOT_PASSED",
+  "missing_evidence": [
+    "six independently verified architectural correspondences per useful view",
+    "current cabinet placement tied to B0 wall/door coordinates",
+    "unoccluded window/corner matches and current finish Z where needed"
+  ],
+  "current_use": "HISTORICAL_DIAGNOSTIC_NOT_METRIC_ACCEPTED",
+  "not_blocking": "Human-confirmed logic and dimensions now authorize limited B1 correction"
+}

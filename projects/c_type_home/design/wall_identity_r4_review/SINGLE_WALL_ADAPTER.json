@@ -1,0 +1,14 @@
+{
+  "status": "view_applied_read_only",
+  "preset_id": "native_wall_parts_current_view",
+  "camera_object": "SC_VIEW_native_wall_parts_current_view",
+  "source_sha256": "564ae8b36caea702d4ea556619f153bbe84e1ee04398f123a38f047bca2cedd6",
+  "resolution": [
+    873,
+    664
+  ],
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": [
+    "ent_d09db1cf51ae51b3b7be413068dcc191"
+  ]
+}

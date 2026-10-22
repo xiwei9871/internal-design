@@ -1,0 +1,1532 @@
+{
+  "wall_meshes": 83,
+  "adjacent_pairs_within1mm": 101,
+  "positive_microgap_pairs": [
+    {
+      "a": "B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.199996,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.199996,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_HEAD",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.099897,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_UNDER_WALL",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.099897,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    }
+  ],
+  "overlap_pairs": 16,
+  "edge_or_point_contacts": [
+    {
+      "a": "B11_SITE_BALCONY_WINDOW_HEAD",
+      "b": "B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "B11_SITE_BALCONY_WINDOW_HEAD",
+      "b": "B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.199996,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.199996,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "D107_V3_ADJACENT_RETURN_WALL_REMAINDER",
+      "b": "D107_V3_RED_RETURN_JOIN",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 150.0
+    },
+    {
+      "a": "D107_V3_ADJACENT_RETURN_WALL_REMAINDER",
+      "b": "W_wall_md_0050",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "D107_V3_BLUE_RETURN_FLUSH_WITH_CASING",
+      "b": "W_wall_md_0015",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.023
+    },
+    {
+      "a": "D107_V3_BLUE_RETURN_FLUSH_WITH_CASING",
+      "b": "W_wall_md_0044",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "b": "DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.238,
+      "contact_length_mm": 500.002
+    },
+    {
+      "a": "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.048,
+      "contact_length_mm": 99.801
+    },
+    {
+      "a": "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "b": "W_wall_md_0061",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.1
+    },
+    {
+      "a": "DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+      "b": "LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 250.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_FRONT_HEAD",
+      "b": "LIVING_FIX_BAY_LEFT_HEAD",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.002,
+      "contact_length_mm": 20.003
+    },
+    {
+      "a": "LIVING_FIX_BAY_FRONT_HEAD",
+      "b": "LIVING_FIX_BAY_RIGHT_HEAD",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 10.001
+    },
+    {
+      "a": "LIVING_FIX_BAY_FRONT_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_LEFT_UNDER_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.002,
+      "contact_length_mm": 20.003
+    },
+    {
+      "a": "LIVING_FIX_BAY_FRONT_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 10.001
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_HEAD",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.099897,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 3100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_UNDER_WALL",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.099897,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_LEFT_HEAD",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_LEFT_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.141,
+      "contact_length_mm": 1180.001
+    },
+    {
+      "a": "LIVING_FIX_BAY_LEFT_UNDER_WALL",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_RIGHT_HEAD",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 590.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "b": "LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 250.0
+    },
+    {
+      "a": "LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "b": "W_wall_md_0051",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.1
+    },
+    {
+      "a": "LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "b": "W_wall_md_0054",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.1
+    },
+    {
+      "a": "LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+      "b": "LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.238,
+      "contact_length_mm": 500.002
+    },
+    {
+      "a": "LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "b": "W_wall_md_0054",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.201
+    },
+    {
+      "a": "W_wall_md_0004",
+      "b": "W_wall_md_0042",
+      "xy_distance_mm": 0.000119,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0004",
+      "b": "W_wall_md_0043",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "W_wall_md_0005",
+      "b": "W_wall_md_0043",
+      "xy_distance_mm": 0.000337,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0006",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0007",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0009",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "W_wall_md_0009",
+      "b": "W_wall_md_0042",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0010",
+      "b": "W_wall_md_0044",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0012",
+      "b": "W_wall_md_0015",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 300.0
+    },
+    {
+      "a": "W_wall_md_0015",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0015",
+      "b": "W_wall_md_0037",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0015",
+      "b": "W_wall_md_0041",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0015",
+      "b": "W_wall_md_0044",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0016",
+      "b": "W_wall_md_0061",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "W_wall_md_0017",
+      "b": "W_wall_md_0034",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0017",
+      "b": "W_wall_md_0037",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.001,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0019",
+      "b": "W_wall_md_0052",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0019",
+      "b": "W_wall_md_0054",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0019",
+      "b": "W_wall_md_0055",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0020",
+      "b": "W_wall_md_0034",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0020",
+      "b": "W_wall_md_0038",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.001,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0021",
+      "b": "W_wall_md_0038",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.002
+    },
+    {
+      "a": "W_wall_md_0021",
+      "b": "W_wall_md_0039",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0021",
+      "b": "W_wall_md_0045",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0022",
+      "b": "W_wall_md_0045",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0022",
+      "b": "W_wall_md_0048",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0023",
+      "b": "W_wall_md_0035",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0023",
+      "b": "W_wall_md_0039",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.001,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0024",
+      "b": "W_wall_md_0049",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0025",
+      "b": "W_wall_md_0053",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0025",
+      "b": "W_wall_md_0055",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0025",
+      "b": "W_wall_md_0056",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0026",
+      "b": "W_wall_md_0027",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 700.0
+    },
+    {
+      "a": "W_wall_md_0026",
+      "b": "W_wall_md_0055",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0026",
+      "b": "W_wall_md_0056",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0027",
+      "b": "W_wall_md_0028",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 600.0
+    },
+    {
+      "a": "W_wall_md_0027",
+      "b": "W_wall_md_0056",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.381,
+      "contact_length_mm": 800.001
+    },
+    {
+      "a": "W_wall_md_0028",
+      "b": "W_wall_md_0056",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.095,
+      "contact_length_mm": 200.003
+    },
+    {
+      "a": "W_wall_md_0028",
+      "b": "W_wall_md_0058",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0029",
+      "b": "W_wall_md_0035",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0029",
+      "b": "W_wall_md_0040",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.001,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0030",
+      "b": "W_wall_md_0040",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0030",
+      "b": "W_wall_md_0046",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0030",
+      "b": "W_wall_md_0047",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0031",
+      "b": "W_wall_md_0057",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.095,
+      "contact_length_mm": 200.003
+    },
+    {
+      "a": "W_wall_md_0031",
+      "b": "W_wall_md_0058",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0032",
+      "b": "W_wall_md_0047",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "W_wall_md_0032",
+      "b": "W_wall_md_0049",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0033",
+      "b": "W_wall_md_0049",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0033",
+      "b": "W_wall_md_0057",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0036",
+      "b": "W_wall_md_0041",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 400.0
+    },
+    {
+      "a": "W_wall_md_0060",
+      "b": "W_wall_md_0061",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0061",
+      "b": "W_wall_md_0062",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 320.0
+    }
+  ],
+  "wall_material_variants": 57,
+  "pairs": [
+    {
+      "a": "B11_SITE_BALCONY_WINDOW_HEAD",
+      "b": "B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "B11_SITE_BALCONY_WINDOW_HEAD",
+      "b": "B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+      "b": "W_wall_md_0009",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 19.932,
+      "contact_length_mm": 400.199
+    },
+    {
+      "a": "B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.199996,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.199996,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "D107_V3_ADJACENT_RETURN_WALL_REMAINDER",
+      "b": "D107_V3_RED_RETURN_JOIN",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 150.0
+    },
+    {
+      "a": "D107_V3_ADJACENT_RETURN_WALL_REMAINDER",
+      "b": "W_wall_md_0050",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "D107_V3_BLUE_RETURN_FLUSH_WITH_CASING",
+      "b": "D107_V3_FULL_ABOVE_DOOR",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 1911.432,
+      "contact_length_mm": 414.016
+    },
+    {
+      "a": "D107_V3_BLUE_RETURN_FLUSH_WITH_CASING",
+      "b": "D107_V3_TOP_CONNECTION",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 1911.378,
+      "contact_length_mm": 414.007
+    },
+    {
+      "a": "D107_V3_BLUE_RETURN_FLUSH_WITH_CASING",
+      "b": "W_wall_md_0015",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.023
+    },
+    {
+      "a": "D107_V3_BLUE_RETURN_FLUSH_WITH_CASING",
+      "b": "W_wall_md_0044",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "D107_V3_FULL_ABOVE_DOOR",
+      "b": "D107_V3_RED_RETURN_JOIN",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 1472.129,
+      "contact_length_mm": 415.263
+    },
+    {
+      "a": "D107_V3_FULL_ABOVE_DOOR",
+      "b": "D107_V3_RED_SIDE_50MM_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 13999.941,
+      "contact_length_mm": 540.0
+    },
+    {
+      "a": "D107_V3_RED_RETURN_JOIN",
+      "b": "D107_V3_RED_SIDE_50MM_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 1472.128,
+      "contact_length_mm": 415.263
+    },
+    {
+      "a": "D107_V3_RED_RETURN_JOIN",
+      "b": "D107_V3_TOP_CONNECTION",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 2300.27,
+      "contact_length_mm": 519.078
+    },
+    {
+      "a": "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "b": "DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.238,
+      "contact_length_mm": 500.002
+    },
+    {
+      "a": "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.048,
+      "contact_length_mm": 99.801
+    },
+    {
+      "a": "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "b": "W_wall_md_0061",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.1
+    },
+    {
+      "a": "DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+      "b": "LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 250.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_FRONT_HEAD",
+      "b": "LIVING_FIX_BAY_LEFT_HEAD",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.002,
+      "contact_length_mm": 20.003
+    },
+    {
+      "a": "LIVING_FIX_BAY_FRONT_HEAD",
+      "b": "LIVING_FIX_BAY_RIGHT_HEAD",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 10.001
+    },
+    {
+      "a": "LIVING_FIX_BAY_FRONT_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_LEFT_UNDER_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.002,
+      "contact_length_mm": 20.003
+    },
+    {
+      "a": "LIVING_FIX_BAY_FRONT_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 10.001
+    },
+    {
+      "a": "LIVING_FIX_BAY_FRONT_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 3.147,
+      "contact_length_mm": 6600.002
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_HEAD",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.099897,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_HEAD",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 19.932,
+      "contact_length_mm": 400.201
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 3100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_UNDER_WALL",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.099897,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_INNER_UNDER_WALL",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 19.932,
+      "contact_length_mm": 400.201
+    },
+    {
+      "a": "LIVING_FIX_BAY_LEFT_HEAD",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_LEFT_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.141,
+      "contact_length_mm": 1180.001
+    },
+    {
+      "a": "LIVING_FIX_BAY_LEFT_UNDER_WALL",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_RIGHT_HEAD",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+      "b": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 590.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "b": "W_wall_md_0060",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 100.0
+    },
+    {
+      "a": "LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "b": "LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 250.0
+    },
+    {
+      "a": "LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "b": "W_wall_md_0051",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.1
+    },
+    {
+      "a": "LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "b": "W_wall_md_0054",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.1
+    },
+    {
+      "a": "LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+      "b": "LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.238,
+      "contact_length_mm": 500.002
+    },
+    {
+      "a": "LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+      "b": "W_wall_md_0054",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 19.932,
+      "contact_length_mm": 400.201
+    },
+    {
+      "a": "LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "b": "W_wall_md_0054",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.201
+    },
+    {
+      "a": "W_wall_md_0004",
+      "b": "W_wall_md_0042",
+      "xy_distance_mm": 0.000119,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0004",
+      "b": "W_wall_md_0043",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "W_wall_md_0005",
+      "b": "W_wall_md_0043",
+      "xy_distance_mm": 0.000337,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0006",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0007",
+      "b": "W_wall_md_0059",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0009",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "W_wall_md_0009",
+      "b": "W_wall_md_0042",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0010",
+      "b": "W_wall_md_0044",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0012",
+      "b": "W_wall_md_0015",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 300.0
+    },
+    {
+      "a": "W_wall_md_0012",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 17499.994,
+      "contact_length_mm": 800.0
+    },
+    {
+      "a": "W_wall_md_0012",
+      "b": "W_wall_md_0041",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 104999.965,
+      "contact_length_mm": 1300.0
+    },
+    {
+      "a": "W_wall_md_0015",
+      "b": "W_wall_md_0036",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0015",
+      "b": "W_wall_md_0037",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0015",
+      "b": "W_wall_md_0041",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0015",
+      "b": "W_wall_md_0044",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0016",
+      "b": "W_wall_md_0061",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "W_wall_md_0016",
+      "b": "W_wall_md_0062",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 50399.961,
+      "contact_length_mm": 1080.0
+    },
+    {
+      "a": "W_wall_md_0017",
+      "b": "W_wall_md_0034",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0017",
+      "b": "W_wall_md_0037",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.001,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0019",
+      "b": "W_wall_md_0052",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0019",
+      "b": "W_wall_md_0054",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0019",
+      "b": "W_wall_md_0055",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0020",
+      "b": "W_wall_md_0034",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0020",
+      "b": "W_wall_md_0038",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.001,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0021",
+      "b": "W_wall_md_0038",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.002
+    },
+    {
+      "a": "W_wall_md_0021",
+      "b": "W_wall_md_0039",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0021",
+      "b": "W_wall_md_0045",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0022",
+      "b": "W_wall_md_0045",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0022",
+      "b": "W_wall_md_0048",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0023",
+      "b": "W_wall_md_0035",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0023",
+      "b": "W_wall_md_0039",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.001,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0024",
+      "b": "W_wall_md_0049",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0025",
+      "b": "W_wall_md_0053",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0025",
+      "b": "W_wall_md_0055",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0025",
+      "b": "W_wall_md_0056",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0026",
+      "b": "W_wall_md_0027",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 700.0
+    },
+    {
+      "a": "W_wall_md_0026",
+      "b": "W_wall_md_0055",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0026",
+      "b": "W_wall_md_0056",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0026",
+      "b": "W_wall_md_0062",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 50399.961,
+      "contact_length_mm": 1080.0
+    },
+    {
+      "a": "W_wall_md_0027",
+      "b": "W_wall_md_0028",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 600.0
+    },
+    {
+      "a": "W_wall_md_0027",
+      "b": "W_wall_md_0056",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.381,
+      "contact_length_mm": 800.001
+    },
+    {
+      "a": "W_wall_md_0028",
+      "b": "W_wall_md_0056",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.095,
+      "contact_length_mm": 200.003
+    },
+    {
+      "a": "W_wall_md_0028",
+      "b": "W_wall_md_0058",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0029",
+      "b": "W_wall_md_0035",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0029",
+      "b": "W_wall_md_0040",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.001,
+      "contact_length_mm": 200.001
+    },
+    {
+      "a": "W_wall_md_0030",
+      "b": "W_wall_md_0040",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0030",
+      "b": "W_wall_md_0046",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0030",
+      "b": "W_wall_md_0047",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0031",
+      "b": "W_wall_md_0057",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.095,
+      "contact_length_mm": 200.003
+    },
+    {
+      "a": "W_wall_md_0031",
+      "b": "W_wall_md_0058",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.001
+    },
+    {
+      "a": "W_wall_md_0032",
+      "b": "W_wall_md_0047",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 200.0
+    },
+    {
+      "a": "W_wall_md_0032",
+      "b": "W_wall_md_0049",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0033",
+      "b": "W_wall_md_0049",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0033",
+      "b": "W_wall_md_0057",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Point",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0036",
+      "b": "W_wall_md_0041",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 400.0
+    },
+    {
+      "a": "W_wall_md_0046",
+      "b": "W_wall_md_0064",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "Polygon",
+      "area_mm2": 20.218,
+      "contact_length_mm": 400.202
+    },
+    {
+      "a": "W_wall_md_0060",
+      "b": "W_wall_md_0061",
+      "xy_distance_mm": 0.000477,
+      "intersection_type": "Polygon",
+      "area_mm2": 0.0,
+      "contact_length_mm": 0.0
+    },
+    {
+      "a": "W_wall_md_0061",
+      "b": "W_wall_md_0062",
+      "xy_distance_mm": 0.0,
+      "intersection_type": "LineString",
+      "area_mm2": 0.0,
+      "contact_length_mm": 320.0
+    }
+  ]
+}

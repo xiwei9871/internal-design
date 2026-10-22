@@ -1,0 +1,27 @@
+{
+  "status": "HOUSE_BASE_GEOMETRY_V2_FROZEN",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V1.blend",
+  "source_sha256": "c48a9cda731a4517e785dc21a381dd27e39f24dde796355cfa6debe86f66e50b",
+  "model": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2_FROZEN.blend",
+  "model_sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5",
+  "wall_bounds_mm": [
+    [
+      1300,
+      700,
+      1050
+    ],
+    [
+      1520,
+      2300,
+      2800
+    ]
+  ],
+  "display_cabinet": "B11_SITE_PHOTO5_BUFFET_R029",
+  "existing_parapet": "W_wall_md_0004",
+  "source_meshes_poses_preserved": true,
+  "kitchen_layout_preserved": true,
+  "black_wall_demolition_count": 0,
+  "scope": "UPPER_REAR_WALL_BEHIND_INDEPENDENT_DISPLAY_CABINET",
+  "frozen_from": "projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2.blend",
+  "frozen_from_sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5"
+}

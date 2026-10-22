@@ -1,0 +1,1779 @@
+{
+ "model": "master_direct_arch_v1",
+ "physical_source": "世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd (S-S.WALL + F-DOOR linework)",
+ "semantic_source": "FINAL_WINDOW_REGISTER_95ab90e (9 verified openings)",
+ "units": "mm",
+ "walls": [
+  {
+   "band_id": "WB-000",
+   "rect_mm": [
+    1299.9,
+    700.2,
+    1499.9,
+    2300.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     1399.9,
+     700.2
+    ],
+    [
+     1399.9,
+     2300.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-001",
+   "rect_mm": [
+    2699.9,
+    2500.2,
+    2899.9,
+    5440.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     2799.9,
+     2500.2
+    ],
+    [
+     2799.9,
+     5440.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-002",
+   "rect_mm": [
+    2699.9,
+    6540.2,
+    2899.9,
+    13000.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     2799.9,
+     6540.2
+    ],
+    [
+     2799.9,
+     13000.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-003",
+   "rect_mm": [
+    2699.9,
+    13200.2,
+    2899.9,
+    14953.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     2799.9,
+     13200.2
+    ],
+    [
+     2799.9,
+     14953.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-004",
+   "rect_mm": [
+    3599.9,
+    13200.2,
+    3699.9,
+    13800.2
+   ],
+   "axis": "x",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     3649.9,
+     13200.2
+    ],
+    [
+     3649.9,
+     13800.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-005",
+   "rect_mm": [
+    5499.9,
+    0.2,
+    5899.9,
+    700.2
+   ],
+   "axis": "x",
+   "thickness_mm": 400,
+   "centerline_mm": [
+    [
+     5699.9,
+     0.2
+    ],
+    [
+     5699.9,
+     700.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-006",
+   "rect_mm": [
+    5699.9,
+    4100.2,
+    5899.9,
+    4500.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     5799.9,
+     4100.2
+    ],
+    [
+     5799.9,
+     4500.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-007",
+   "rect_mm": [
+    6999.9,
+    13200.2,
+    7099.9,
+    13800.2
+   ],
+   "axis": "x",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     7049.9,
+     13200.2
+    ],
+    [
+     7049.9,
+     13800.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-008",
+   "rect_mm": [
+    7449.9,
+    200.2,
+    7799.9,
+    450.2
+   ],
+   "axis": "x",
+   "thickness_mm": 350,
+   "centerline_mm": [
+    [
+     7624.9,
+     200.2
+    ],
+    [
+     7624.9,
+     450.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-009",
+   "rect_mm": [
+    7750.2,
+    8000.2,
+    7999.9,
+    10900.2
+   ],
+   "axis": "x",
+   "thickness_mm": 250,
+   "centerline_mm": [
+    [
+     7875.0,
+     8000.2
+    ],
+    [
+     7875.0,
+     10900.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-010",
+   "rect_mm": [
+    7750.2,
+    11100.2,
+    7999.9,
+    12025.3
+   ],
+   "axis": "x",
+   "thickness_mm": 250,
+   "centerline_mm": [
+    [
+     7875.0,
+     11100.2
+    ],
+    [
+     7875.0,
+     12025.3
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-011",
+   "rect_mm": [
+    7799.9,
+    200.2,
+    7999.9,
+    4500.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     7899.9,
+     200.2
+    ],
+    [
+     7899.9,
+     4500.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-012",
+   "rect_mm": [
+    7799.9,
+    13400.2,
+    7999.9,
+    13820.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     7899.9,
+     13400.2
+    ],
+    [
+     7899.9,
+     13820.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-013",
+   "rect_mm": [
+    8399.9,
+    -599.8,
+    8499.9,
+    0.2
+   ],
+   "axis": "x",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     8449.9,
+     -599.8
+    ],
+    [
+     8449.9,
+     0.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-014",
+   "rect_mm": [
+    9049.9,
+    5120.2,
+    9199.9,
+    6450.2
+   ],
+   "axis": "x",
+   "thickness_mm": 150,
+   "centerline_mm": [
+    [
+     9124.9,
+     5120.2
+    ],
+    [
+     9124.9,
+     6450.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-015",
+   "rect_mm": [
+    9699.9,
+    8000.2,
+    9899.9,
+    10900.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     9799.9,
+     8000.2
+    ],
+    [
+     9799.9,
+     10900.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-016",
+   "rect_mm": [
+    10899.9,
+    -599.8,
+    10999.9,
+    0.2
+   ],
+   "axis": "x",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     10949.9,
+     -599.8
+    ],
+    [
+     10949.9,
+     0.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-017",
+   "rect_mm": [
+    11399.9,
+    200.2,
+    11599.9,
+    4500.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     11499.9,
+     200.2
+    ],
+    [
+     11499.9,
+     4500.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-018",
+   "rect_mm": [
+    11399.9,
+    4700.2,
+    11599.9,
+    6400.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     11499.9,
+     4700.2
+    ],
+    [
+     11499.9,
+     6400.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-019",
+   "rect_mm": [
+    11999.9,
+    -599.8,
+    12099.9,
+    0.2
+   ],
+   "axis": "x",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     12049.9,
+     -599.8
+    ],
+    [
+     12049.9,
+     0.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-020",
+   "rect_mm": [
+    12899.9,
+    5550.2,
+    13099.9,
+    6400.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     12999.9,
+     5550.2
+    ],
+    [
+     12999.9,
+     6400.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-021",
+   "rect_mm": [
+    12899.9,
+    8000.2,
+    13099.9,
+    10900.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     12999.9,
+     8000.2
+    ],
+    [
+     12999.9,
+     10900.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-022",
+   "rect_mm": [
+    12899.9,
+    11100.2,
+    13099.9,
+    13820.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     12999.9,
+     11100.2
+    ],
+    [
+     12999.9,
+     13820.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-023",
+   "rect_mm": [
+    13099.9,
+    11100.2,
+    13499.9,
+    11800.2
+   ],
+   "axis": "x",
+   "thickness_mm": 400,
+   "centerline_mm": [
+    [
+     13299.9,
+     11100.2
+    ],
+    [
+     13299.9,
+     11800.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-024",
+   "rect_mm": [
+    13499.9,
+    11100.2,
+    13599.9,
+    11700.2
+   ],
+   "axis": "x",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     13549.9,
+     11100.2
+    ],
+    [
+     13549.9,
+     11700.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-025",
+   "rect_mm": [
+    14799.9,
+    -599.8,
+    14899.9,
+    0.2
+   ],
+   "axis": "x",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     14849.9,
+     -599.8
+    ],
+    [
+     14849.9,
+     0.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-026",
+   "rect_mm": [
+    15299.9,
+    200.2,
+    15499.9,
+    4500.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     15399.9,
+     200.2
+    ],
+    [
+     15399.9,
+     4500.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-027",
+   "rect_mm": [
+    15699.9,
+    11100.2,
+    15799.9,
+    11700.2
+   ],
+   "axis": "x",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     15749.9,
+     11100.2
+    ],
+    [
+     15749.9,
+     11700.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-028",
+   "rect_mm": [
+    16199.9,
+    4500.2,
+    16399.9,
+    6400.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     16299.9,
+     4500.2
+    ],
+    [
+     16299.9,
+     6400.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-029",
+   "rect_mm": [
+    16199.9,
+    6600.2,
+    16399.9,
+    10900.2
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     16299.9,
+     6600.2
+    ],
+    [
+     16299.9,
+     10900.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-030",
+   "rect_mm": [
+    8499.9,
+    -699.8,
+    10899.9,
+    -599.8
+   ],
+   "axis": "y",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     8499.9,
+     -649.8
+    ],
+    [
+     10899.9,
+     -649.8
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-031",
+   "rect_mm": [
+    12099.9,
+    -699.8,
+    14799.9,
+    -599.8
+   ],
+   "axis": "y",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     12099.9,
+     -649.8
+    ],
+    [
+     14799.9,
+     -649.8
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-032",
+   "rect_mm": [
+    5899.9,
+    0.2,
+    7799.9,
+    200.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     5899.9,
+     100.2
+    ],
+    [
+     7799.9,
+     100.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-033",
+   "rect_mm": [
+    7999.9,
+    0.2,
+    8599.9,
+    200.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     7999.9,
+     100.2
+    ],
+    [
+     8599.9,
+     100.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-034",
+   "rect_mm": [
+    10799.9,
+    0.2,
+    11399.9,
+    200.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     10799.9,
+     100.2
+    ],
+    [
+     11399.9,
+     100.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-035",
+   "rect_mm": [
+    11599.9,
+    0.2,
+    12199.9,
+    200.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     11599.9,
+     100.2
+    ],
+    [
+     12199.9,
+     100.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-036",
+   "rect_mm": [
+    14699.9,
+    0.2,
+    15299.9,
+    200.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     14699.9,
+     100.2
+    ],
+    [
+     15299.9,
+     100.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-037",
+   "rect_mm": [
+    7399.9,
+    200.2,
+    7799.9,
+    500.2
+   ],
+   "axis": "y",
+   "thickness_mm": 300,
+   "centerline_mm": [
+    [
+     7399.9,
+     350.2
+    ],
+    [
+     7799.9,
+     350.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-038",
+   "rect_mm": [
+    1499.9,
+    500.2,
+    5499.9,
+    700.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     1499.9,
+     600.2
+    ],
+    [
+     5499.9,
+     600.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-039",
+   "rect_mm": [
+    1299.9,
+    2300.2,
+    2699.9,
+    2500.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     1299.9,
+     2400.2
+    ],
+    [
+     2699.9,
+     2400.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-040",
+   "rect_mm": [
+    5899.9,
+    4500.2,
+    7799.9,
+    4700.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     5899.9,
+     4600.2
+    ],
+    [
+     7799.9,
+     4600.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-041",
+   "rect_mm": [
+    10799.9,
+    4500.2,
+    11399.9,
+    4700.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     10799.9,
+     4600.2
+    ],
+    [
+     11399.9,
+     4600.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-042",
+   "rect_mm": [
+    13099.9,
+    4500.2,
+    15299.9,
+    4700.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     13099.9,
+     4600.2
+    ],
+    [
+     15299.9,
+     4600.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-043",
+   "rect_mm": [
+    15499.9,
+    4500.2,
+    16199.9,
+    4700.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     15499.9,
+     4600.2
+    ],
+    [
+     16199.9,
+     4600.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-044",
+   "rect_mm": [
+    11599.9,
+    6400.2,
+    11949.9,
+    6600.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     11599.9,
+     6500.2
+    ],
+    [
+     11949.9,
+     6500.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-045",
+   "rect_mm": [
+    13099.9,
+    6400.2,
+    16199.9,
+    6600.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     13099.9,
+     6500.2
+    ],
+    [
+     16199.9,
+     6500.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-046",
+   "rect_mm": [
+    9199.9,
+    6450.2,
+    11399.9,
+    6600.2
+   ],
+   "axis": "y",
+   "thickness_mm": 150,
+   "centerline_mm": [
+    [
+     9199.9,
+     6525.2
+    ],
+    [
+     11399.9,
+     6525.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-047",
+   "rect_mm": [
+    7999.9,
+    7800.2,
+    8849.9,
+    8000.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     7999.9,
+     7900.2
+    ],
+    [
+     8849.9,
+     7900.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-048",
+   "rect_mm": [
+    9599.9,
+    7800.2,
+    9999.9,
+    8000.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     9599.9,
+     7900.2
+    ],
+    [
+     9999.9,
+     7900.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-049",
+   "rect_mm": [
+    10849.9,
+    7800.2,
+    12899.9,
+    8000.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     10849.9,
+     7900.2
+    ],
+    [
+     12899.9,
+     7900.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-050",
+   "rect_mm": [
+    7999.9,
+    10900.2,
+    9699.9,
+    11100.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     7999.9,
+     11000.2
+    ],
+    [
+     9699.9,
+     11000.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-051",
+   "rect_mm": [
+    9899.9,
+    10900.2,
+    12899.9,
+    11100.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     9899.9,
+     11000.2
+    ],
+    [
+     12899.9,
+     11000.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-052",
+   "rect_mm": [
+    13099.9,
+    10900.2,
+    13699.9,
+    11100.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     13099.9,
+     11000.2
+    ],
+    [
+     13699.9,
+     11000.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-053",
+   "rect_mm": [
+    15599.9,
+    10900.2,
+    16199.9,
+    11100.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     15599.9,
+     11000.2
+    ],
+    [
+     16199.9,
+     11000.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-054",
+   "rect_mm": [
+    13599.9,
+    11700.2,
+    15699.9,
+    11800.2
+   ],
+   "axis": "y",
+   "thickness_mm": 100,
+   "centerline_mm": [
+    [
+     13599.9,
+     11750.2
+    ],
+    [
+     15699.9,
+     11750.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-055",
+   "rect_mm": [
+    2899.9,
+    13000.2,
+    3799.9,
+    13200.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     2899.9,
+     13100.2
+    ],
+    [
+     3799.9,
+     13100.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-056",
+   "rect_mm": [
+    6899.9,
+    13000.2,
+    7799.9,
+    13200.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "centerline_mm": [
+    [
+     6899.9,
+     13100.2
+    ],
+    [
+     7799.9,
+     13100.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-057",
+   "rect_mm": [
+    7799.9,
+    13000.2,
+    8199.9,
+    13400.2
+   ],
+   "axis": "y",
+   "thickness_mm": 400,
+   "centerline_mm": [
+    [
+     7799.9,
+     13200.2
+    ],
+    [
+     8199.9,
+     13200.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-058",
+   "rect_mm": [
+    7879.9,
+    13400.2,
+    13019.9,
+    13900.2
+   ],
+   "axis": "y",
+   "thickness_mm": 500,
+   "centerline_mm": [
+    [
+     7879.9,
+     13650.2
+    ],
+    [
+     13019.9,
+     13650.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "WB-059",
+   "rect_mm": [
+    3699.9,
+    13790.2,
+    6999.9,
+    13900.2
+   ],
+   "axis": "y",
+   "thickness_mm": 110,
+   "centerline_mm": [
+    [
+     3699.9,
+     13845.2
+    ],
+    [
+     6999.9,
+     13845.2
+    ]
+   ],
+   "register_state": "S-S.WALL_FACE_PAIR"
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    12899.9,
+    6700,
+    13099.9,
+    7550
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    11950,
+    6400.2,
+    12800,
+    6600.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    12899.9,
+    4800,
+    13099.9,
+    5550
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    8850,
+    7800.2,
+    9600,
+    8000.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    10000,
+    7800.2,
+    10850,
+    8000.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    8332,
+    4500.2,
+    9095,
+    4700.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    2699.9,
+    5440,
+    2899.9,
+    5790
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    2699.9,
+    5790,
+    2899.9,
+    6540
+   ],
+   "axis": "x",
+   "thickness_mm": 200,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    7750.2,
+    11800,
+    7999.9,
+    12650
+   ],
+   "axis": "x",
+   "thickness_mm": 250,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "HOSTBAND",
+   "rect_mm": [
+    1300,
+    500.2,
+    5800,
+    700.2
+   ],
+   "axis": "y",
+   "thickness_mm": 200,
+   "register_state": "HOST_BAND_RECONSTRUCTED",
+   "role": "PASCAL_OPENING_HOST_HELPER",
+   "physical_ground_truth": false
+  },
+  {
+   "band_id": "PIER-00",
+   "rect_mm": [
+    12900,
+    4500,
+    13100,
+    4800
+   ],
+   "axis": "pier",
+   "thickness_mm": 200,
+   "register_state": "S-S.WALL_JUNCTION_PIER",
+   "evidence": "Line043"
+  }
+ ],
+ "doors": [
+  {
+   "sem_id": "D-STUDY",
+   "span_mm": [
+    6700,
+    7550
+   ],
+   "band_axis": "x",
+   "band_coord_mm": 13100,
+   "width_mm": 850,
+   "hinge_mm": [
+    13100,
+    6700
+   ],
+   "kind": "door",
+   "source": "F-DOOR swing arc"
+  },
+  {
+   "sem_id": "D-BATHM",
+   "span_mm": [
+    11950,
+    12800
+   ],
+   "band_axis": "y",
+   "band_coord_mm": 6400,
+   "width_mm": 850,
+   "hinge_mm": [
+    12800,
+    6400
+   ],
+   "kind": "door",
+   "source": "F-DOOR swing arc"
+  },
+  {
+   "sem_id": "D-MB",
+   "span_mm": [
+    4800,
+    5550
+   ],
+   "band_axis": "x",
+   "band_coord_mm": 13100,
+   "width_mm": 750,
+   "hinge_mm": [
+    13100,
+    4800
+   ],
+   "kind": "door",
+   "source": "F-DOOR swing arc"
+  },
+  {
+   "sem_id": null,
+   "span_mm": [
+    8850,
+    9600
+   ],
+   "band_axis": "y",
+   "band_coord_mm": 8000,
+   "width_mm": 750,
+   "hinge_mm": [
+    9600,
+    8000
+   ],
+   "kind": "door_unmatched",
+   "source": "F-DOOR swing arc"
+  },
+  {
+   "sem_id": "D-GBATH",
+   "span_mm": [
+    10000,
+    10850
+   ],
+   "band_axis": "y",
+   "band_coord_mm": 8000,
+   "width_mm": 850,
+   "hinge_mm": [
+    10000,
+    8000
+   ],
+   "kind": "door",
+   "source": "F-DOOR swing arc"
+  },
+  {
+   "sem_id": "D-SM",
+   "span_mm": [
+    8332,
+    9095
+   ],
+   "band_axis": "y",
+   "band_coord_mm": 4543,
+   "width_mm": 850,
+   "hinge_mm": [
+    8332,
+    4543
+   ],
+   "kind": "door",
+   "source": "F-DOOR swing arc"
+  },
+  {
+   "sem_id": "G-LIV-NBALC",
+   "span_mm": [
+    12050,
+    12900
+   ],
+   "band_axis": "x",
+   "band_coord_mm": 8000,
+   "width_mm": 850,
+   "hinge_mm": [
+    8000,
+    12900
+   ],
+   "kind": "glazing_door",
+   "source": "F-DOOR swing arc"
+  },
+  {
+   "sem_id": "ENT-1",
+   "span_mm": [
+    5440,
+    5790
+   ],
+   "band_axis": "x",
+   "band_coord_mm": 2700,
+   "width_mm": 350,
+   "hinge_mm": [
+    2700,
+    5440
+   ],
+   "kind": "entry_double_leaf",
+   "source": "F-DOOR swing arc"
+  },
+  {
+   "sem_id": "ENT-1",
+   "span_mm": [
+    5790,
+    6540
+   ],
+   "band_axis": "x",
+   "band_coord_mm": 2700,
+   "width_mm": 750,
+   "hinge_mm": [
+    2700,
+    6540
+   ],
+   "kind": "entry_double_leaf",
+   "source": "F-DOOR swing arc"
+  }
+ ],
+ "openings": [
+  {
+   "window_id": "W-LIV-N",
+   "type": "BAY_WINDOW",
+   "opening_rect_mm": [
+    3800,
+    12750,
+    6900,
+    12950
+   ],
+   "host_wall_id": "W-EXT-N-LV",
+   "bay_assembly": null
+  },
+  {
+   "window_id": "G-LIV-NBALC",
+   "type": "GLASS_DOOR",
+   "opening_rect_mm": [
+    7800,
+    11800,
+    7900,
+    12650
+   ],
+   "host_wall_id": "W-INT-X7900-U-TV",
+   "bay_assembly": null
+  },
+  {
+   "window_id": "G-GB-BALC",
+   "type": "GLASS_DOOR",
+   "opening_rect_mm": [
+    10400,
+    10700,
+    12400,
+    10900
+   ],
+   "host_wall_id": "W-INT-Y10800",
+   "bay_assembly": null
+  },
+  {
+   "window_id": "W-STUDY-NE",
+   "type": "BAY_WINDOW",
+   "opening_rect_mm": [
+    13600,
+    10900,
+    15700,
+    11100
+   ],
+   "host_wall_id": null,
+   "bay_assembly": null
+  },
+  {
+   "window_id": "G-DIN-LIV",
+   "type": "GLASS_SLIDING_DOOR",
+   "opening_rect_mm": [
+    2950,
+    4530,
+    5650,
+    4715
+   ],
+   "host_wall_id": null,
+   "bay_assembly": null
+  },
+  {
+   "window_id": "W-LBALC-S",
+   "type": "BALCONY_WINDOW",
+   "opening_rect_mm": [
+    1300,
+    500,
+    5800,
+    700
+   ],
+   "host_wall_id": null,
+   "bay_assembly": null
+  },
+  {
+   "window_id": "W-KIT-S",
+   "type": "STANDARD_WINDOW",
+   "opening_rect_mm": [
+    6100,
+    -200,
+    7100,
+    0
+   ],
+   "host_wall_id": "W-EXT-S",
+   "bay_assembly": null
+  },
+  {
+   "window_id": "W-SMB-S",
+   "type": "BAY_WINDOW",
+   "opening_rect_mm": [
+    8500,
+    -200,
+    10900,
+    0
+   ],
+   "host_wall_id": "W-EXT-S",
+   "bay_assembly": null
+  },
+  {
+   "window_id": "W-MB-S",
+   "type": "BAY_WINDOW",
+   "opening_rect_mm": [
+    12100,
+    -200,
+    14800,
+    0
+   ],
+   "host_wall_id": "W-EXT-S",
+   "bay_assembly": null
+  }
+ ],
+ "bays": {
+  "W-LIV-N": {
+   "projection_mm": 900,
+   "front_band": "WB-059",
+   "front_band_rect": [
+    3699.9,
+    13790.2,
+    6999.9,
+    13900.2
+   ]
+  },
+  "W-STUDY-NE": {
+   "projection_mm": 700,
+   "front_band": "WB-054",
+   "front_band_rect": [
+    13599.9,
+    11700.2,
+    15699.9,
+    11800.2
+   ]
+  },
+  "W-SMB-S": {
+   "projection_mm": 700,
+   "front_band": "WB-030",
+   "front_band_rect": [
+    8499.9,
+    -699.8,
+    10899.9,
+    -599.8
+   ]
+  },
+  "W-MB-S": {
+   "projection_mm": 700,
+   "front_band": "WB-031",
+   "front_band_rect": [
+    12099.9,
+    -699.8,
+    14799.9,
+    -599.8
+   ]
+  }
+ }
+}

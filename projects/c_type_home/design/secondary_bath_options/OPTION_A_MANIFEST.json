@@ -1,0 +1,131 @@
+{
+  "status": "HUMAN_REVIEW",
+  "option": "A",
+  "title": "南侧推拉门",
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/OPTION_A_SLIDING.blend",
+  "model_sha256": "938d5f07aae25597a4943d964eb385e6e336bcceed71664b7b8412d348162605",
+  "base_model": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2.blend",
+  "base_sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5",
+  "room_bounds_mm": [
+    9050,
+    4650,
+    11300,
+    6300
+  ],
+  "south_door_width_mm": 850,
+  "south_door_head_mm": 2550,
+  "shared_fixture_bounds": {
+    "basin": [
+      9.4195,
+      4.7501,
+      10.4195,
+      5.2501
+    ],
+    "wc": [
+      9.6934,
+      5.7707,
+      10.1934,
+      6.3707
+    ],
+    "wet": [
+      10.4738,
+      4.7499,
+      11.297,
+      6.297
+    ]
+  },
+  "door": {
+    "type": "SLIDING",
+    "leaf_bounds": [
+      [
+        9.2,
+        4.34,
+        0.45
+      ],
+      [
+        10.05,
+        4.39,
+        2.55
+      ]
+    ],
+    "parking": [
+      9.2,
+      10.05,
+      4.34,
+      4.39
+    ],
+    "track_bounds": [
+      [
+        10.1,
+        4.36,
+        2.58
+      ],
+      [
+        10.95,
+        4.42,
+        2.64
+      ]
+    ],
+    "clearance_conflict": false
+  },
+  "views": [
+    {
+      "id": "ENTRY",
+      "name": "南侧入口",
+      "camera": "A_ENTRY_CAM",
+      "pos": [
+        10.55,
+        3.2,
+        1.6
+      ],
+      "target": [
+        10.55,
+        5.55,
+        1.55
+      ],
+      "lens": 28
+    },
+    {
+      "id": "INTERIOR",
+      "name": "卫生间内部",
+      "camera": "A_INTERIOR_CAM",
+      "pos": [
+        9.25,
+        5.45,
+        1.5
+      ],
+      "target": [
+        10.45,
+        5.2,
+        1.45
+      ],
+      "lens": 26
+    },
+    {
+      "id": "TOP",
+      "name": "洁具与门型俯视",
+      "camera": "A_TOP_CAM",
+      "pos": [
+        10.2,
+        5.45,
+        8
+      ],
+      "target": [
+        10.2,
+        5.45,
+        0.45
+      ],
+      "projection": "ORTHO",
+      "scale": 3.2
+    }
+  ],
+  "base_source_unchanged": true,
+  "black_walls_changed": 0,
+  "white_wall_option_partition": true,
+  "site_measurements_required": [
+    "southern corridor width",
+    "actual wall thickness",
+    "door parking/hinge clearance",
+    "drain and sanitary SKU"
+  ]
+}

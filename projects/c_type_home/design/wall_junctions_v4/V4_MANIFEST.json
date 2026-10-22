@@ -1,0 +1,392 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/B1_LIVING_CORRECTED_V3.blend",
+  "source_sha256": "4c0587e59d75198348bda9c45b4c447ae566ca6b862369517c993ea977734405",
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/B1_WALL_JUNCTIONS_CORRECTED_V4.blend",
+  "model_sha256": "d5b4f4fd2c3c0dc524f3f65c7453e6839c995320dd52ff061f5fbc0c7baeb1b2",
+  "wall_sources": [
+    "B11_SITE_BALCONY_WINDOW_HEAD",
+    "B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+    "B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+    "B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+    "B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+    "D107_V3_ADJACENT_RETURN_WALL_REMAINDER",
+    "D107_V3_BLUE_RETURN_FLUSH_WITH_CASING",
+    "D107_V3_FULL_ABOVE_DOOR",
+    "D107_V3_PLATFORM_BASE_CLOSURE",
+    "D107_V3_RED_RETURN_JOIN",
+    "D107_V3_RED_SIDE_50MM_WALL",
+    "D107_V3_TOP_CONNECTION",
+    "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+    "DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+    "LIVING_FIX_BAY_FRONT_HEAD",
+    "LIVING_FIX_BAY_FRONT_UNDER_WALL",
+    "LIVING_FIX_BAY_INNER_HEAD",
+    "LIVING_FIX_BAY_INNER_UNDER_WALL",
+    "LIVING_FIX_BAY_LEFT_HEAD",
+    "LIVING_FIX_BAY_LEFT_UNDER_WALL",
+    "LIVING_FIX_BAY_RIGHT_HEAD",
+    "LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+    "LIVING_FIX_BAY_SOFFIT",
+    "LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+    "LIVING_FIX_GUEST_BATH_FULL_WALL",
+    "LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+    "LIVING_FIX_TV_NORTH_SOLID_WALL",
+    "W_wall_md_0004",
+    "W_wall_md_0005",
+    "W_wall_md_0006",
+    "W_wall_md_0007",
+    "W_wall_md_0009",
+    "W_wall_md_0010",
+    "W_wall_md_0012",
+    "W_wall_md_0015",
+    "W_wall_md_0016",
+    "W_wall_md_0017",
+    "W_wall_md_0019",
+    "W_wall_md_0020",
+    "W_wall_md_0021",
+    "W_wall_md_0022",
+    "W_wall_md_0023",
+    "W_wall_md_0024",
+    "W_wall_md_0025",
+    "W_wall_md_0026",
+    "W_wall_md_0027",
+    "W_wall_md_0028",
+    "W_wall_md_0029",
+    "W_wall_md_0030",
+    "W_wall_md_0031",
+    "W_wall_md_0032",
+    "W_wall_md_0033",
+    "W_wall_md_0034",
+    "W_wall_md_0035",
+    "W_wall_md_0036",
+    "W_wall_md_0037",
+    "W_wall_md_0038",
+    "W_wall_md_0039",
+    "W_wall_md_0040",
+    "W_wall_md_0041",
+    "W_wall_md_0042",
+    "W_wall_md_0043",
+    "W_wall_md_0044",
+    "W_wall_md_0045",
+    "W_wall_md_0046",
+    "W_wall_md_0047",
+    "W_wall_md_0048",
+    "W_wall_md_0049",
+    "W_wall_md_0050",
+    "W_wall_md_0051",
+    "W_wall_md_0052",
+    "W_wall_md_0053",
+    "W_wall_md_0054",
+    "W_wall_md_0055",
+    "W_wall_md_0056",
+    "W_wall_md_0057",
+    "W_wall_md_0058",
+    "W_wall_md_0059",
+    "W_wall_md_0060",
+    "W_wall_md_0061",
+    "W_wall_md_0062",
+    "W_wall_md_0064",
+    "W_wall_md_0088"
+  ],
+  "wall_source_count": 83,
+  "wall_material_variants_before": 57,
+  "wall_material_variants_after": 1,
+  "source_original_meshes_poses_preserved": true,
+  "micro_snap_max_mm": 0.20647382736205255,
+  "micro_snap_coordinate_count": 2160,
+  "kitchen_finish_walls_in_unified_skin": [
+    "B11_SITE_BALCONY_WINDOW_HEAD",
+    "B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+    "B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+    "B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+    "B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+    "W_wall_md_0042"
+  ],
+  "kitchen_other_protected_objects": 266,
+  "kitchen_dimensions_layout_preserved": true,
+  "exterior_sample_count": 336,
+  "topology": {
+    "vertices": 6418,
+    "faces": 8666,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "volume_m3": 60.600844832781604
+  },
+  "prepared_wall_input_count": 113,
+  "normal_doors_completed": 6,
+  "remaining_bays_completed": 3,
+  "opening_cuts": [
+    {
+      "id": "D-STUDY",
+      "lo": [
+        12.88,
+        6.65,
+        0.45
+      ],
+      "hi": [
+        13.12,
+        7.6,
+        2.6
+      ]
+    },
+    {
+      "id": "D-BATHM",
+      "lo": [
+        11.899999999999999,
+        6.380000000000001,
+        0.45
+      ],
+      "hi": [
+        12.850000000000001,
+        6.619999999999999,
+        2.6
+      ]
+    },
+    {
+      "id": "D-MB",
+      "lo": [
+        12.88,
+        4.75,
+        0.45
+      ],
+      "hi": [
+        13.12,
+        5.6,
+        2.6
+      ]
+    },
+    {
+      "id": "D-GUEST-BATH",
+      "lo": [
+        8.799999999999999,
+        7.78,
+        0.45
+      ],
+      "hi": [
+        9.65,
+        8.02,
+        2.6
+      ]
+    },
+    {
+      "id": "D-GUEST-ROOM",
+      "lo": [
+        9.95,
+        7.78,
+        0.45
+      ],
+      "hi": [
+        10.9,
+        8.02,
+        2.6
+      ]
+    },
+    {
+      "id": "ENT-1",
+      "lo": [
+        2.68,
+        5.390000000000001,
+        0
+      ],
+      "hi": [
+        2.92,
+        6.59,
+        2.15
+      ]
+    },
+    {
+      "id": "G-GB-BALC",
+      "lo": [
+        10.4,
+        10.88,
+        0.45
+      ],
+      "hi": [
+        12.4,
+        11.12,
+        2.85
+      ]
+    },
+    {
+      "id": "G-DIN-LIV",
+      "lo": [
+        2.95,
+        4.49,
+        0
+      ],
+      "hi": [
+        5.65,
+        4.755,
+        2.4
+      ]
+    },
+    {
+      "id": "W-SMB-S_INNER_PORTAL",
+      "lo": [
+        8.5,
+        -0.22,
+        0.9
+      ],
+      "hi": [
+        10.9,
+        0.22,
+        2.85
+      ]
+    },
+    {
+      "id": "W-MB-S_INNER_PORTAL",
+      "lo": [
+        12.1,
+        -0.22,
+        0.9
+      ],
+      "hi": [
+        14.8,
+        0.22,
+        2.85
+      ]
+    },
+    {
+      "id": "W-STUDY-NE_INNER_PORTAL",
+      "lo": [
+        13.6,
+        10.88,
+        0.9
+      ],
+      "hi": [
+        15.7,
+        11.12,
+        2.85
+      ]
+    }
+  ],
+  "source_samples_before_feature_changes": 481,
+  "contact_overlap_mm": 0.05,
+  "rule": "ALL_REGISTERED_DOORS_COMPLETE; ALL_FOUR_BAYS_PROJECTING; UNCHANGED_FURNITURE_LEVELS_AND_KITCHEN",
+  "camera_refinements": {
+    "03": {
+      "pos": [
+        9.75,
+        7.1,
+        1.85
+      ],
+      "target": [
+        12.6,
+        7.1,
+        1.85
+      ],
+      "lens": 26
+    },
+    "DOOR_D-MB": {
+      "pos": [
+        12.2,
+        5.175,
+        1.85
+      ],
+      "target": [
+        13.0,
+        5.175,
+        1.85
+      ],
+      "scale": 3.9
+    },
+    "DOOR_D-GUEST-BATH": {
+      "pos": [
+        9.225,
+        7.2,
+        1.85
+      ],
+      "target": [
+        9.225,
+        7.9,
+        1.85
+      ],
+      "scale": 3.9
+    },
+    "DOOR_D-GUEST-ROOM": {
+      "pos": [
+        10.425,
+        7.2,
+        1.85
+      ],
+      "target": [
+        10.425,
+        7.9,
+        1.85
+      ],
+      "scale": 3.9
+    }
+  },
+  "verification_status": "PASS",
+  "visual_review": {
+    "status": "INSPECTED",
+    "views": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "DOOR_D-STUDY",
+      "DOOR_D-BATHM",
+      "DOOR_D-MB",
+      "DOOR_D-GUEST-BATH",
+      "DOOR_D-GUEST-ROOM",
+      "DOOR_ENT-1",
+      "GUEST_GLASS",
+      "LEISURE_GLASS",
+      "BAY_W-SMB-S",
+      "BAY_W-MB-S",
+      "BAY_W-STUDY-NE"
+    ],
+    "inspection": "Individual512px proxies; occluded cameras refined and rechecked",
+    "findings": [
+      "Continuous wall faces with no old plate-style seams",
+      "All registered ordinary doors show casing and enclosing side/header walls",
+      "Guest slider void penetrates actual host band",
+      "Three-track slider perimeter joined",
+      "All three remaining bays show platform and front/return windows"
+    ],
+    "images_inline_delivery": false
+  },
+  "final_scope": "FULL_HOUSE_WALL_JUNCTIONS_ALL_DOORS_AND_ALL_BAYS",
+  "files_sha256": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/B1_WALL_JUNCTIONS_CORRECTED_V4.blend": "d5b4f4fd2c3c0dc524f3f65c7453e6839c995320dd52ff061f5fbc0c7baeb1b2",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/build_continuous_walls.py": "897a12d98acdfd3b60adeef5c41438b9bc91e8ff6086c372c05650b50845adba",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/prepare_all_openings.py": "98b0f7a0179c23c0b626f6ae4b2b219fe67291a7c997c82c6e0cadbd76f9bc6f",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/solid_wall_backend.py": "5ce3a06007f46901d714d870994e17417c43422da97b656bac0d409015af6ad1",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/V4_QA.json": "76413d5c384679b688f9bc712031518902f0b188595f827e60757588038eb27f",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/V4_TOPOLOGY.json": "db06debcf0e36cb1187cd89ec1de493814a8ab9768282ff9732a62d2dfa397ea",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/V4_OBJECT_STATES.json": "d2b900c7314975b2e70438c839813150e21647c1bc754e7241e59f6ec4a0344a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/V3_SOURCE_STATES.json": "887c1f95b9305bc44dfb322e41f699c2266cb1b577ecd18e2e7ec46ec2b12523",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/V4_REVIEW.md": "c2b78f5e6a30c495bb894fe052de76643d017aa83e82b97b2f859ef77ab4d36e",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/V4_VIEW_INDEX.md": "caf8e9fd1817e68bd4c7a5eb0339812c510762e16e3b509001427fac77620a9a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/V4_RENDER_MANIFEST.json": "136c4315900c5b976c70f67afcd8b3133eecf4c727cd615ce4adc67a10fba628",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/V4_VISUAL_REVIEW.json": "54995f73f56c4528958eaabd50aa321c35c2e8a1efe67a8be313d536bf3a1f57",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/OPENING_AND_BAY_REGISTER.json": "34c63fc2cd679df279c7180802a51188437a1d573dccb4b9bd0c44005363f0d6",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/reference_notes.md": "dfe04127d7a8605083ca182dfd90e990e63da5dded8f307471cfd7ed14eb8c1a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/ACTIVE_WALL_INVENTORY.json": "a3834021057fad34986086214f1ff536e123c5cf005567269d2c46d0ac67a42e",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/SOURCE_EXTERIOR_SAMPLES.json": "12e2a5c0e399e7c0586064b90e349b82779ad634eb920d33ce1adb588d829ed1",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_01.png": "173406344344f4bfbd5ee8e7d96fa7fef9e97be4f667d3da17e98d8b5d906750",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_02.png": "a4985fbed42e8ec21f4ab05f87480a395bd3b9b9f767598caf2db2509e74375b",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_03.png": "e9dd3e7ca0a42563d89bed15184eeb943c95a133e09876cb4d2df5762cd1dd0a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_04.png": "1eaed7b60fcc25160bb8a070270d778fd358321c1f17f62d2f5fa739cbd6591a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-STUDY.png": "a5f41d6038f4f910926b1d2caf3f3b97226bb5da2fa73b284c060df4874ab1e3",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-BATHM.png": "545d19fd43a2f9101973b07ee0d9052f2c2a159af375ef3787a7b681b56b664b",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-MB.png": "279498504cdae8cb0bdde690a8648b6413696973d7b369fcc49fe96b6b925172",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-GUEST-BATH.png": "153bea035a3adc3c41d80e29d64c318970ec30c6bd0e340c832c19d9c652d2f9",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-GUEST-ROOM.png": "653041314aaa788706beff8275885e9e47b8a5ed65ad9e4331eea5f30b7e6a7f",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_ENT-1.png": "aa7255acccba2424c300440122c8f41f3a21e307a12ea7223f32d09acb3a3501",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_GUEST_GLASS.png": "3ec7d72f6240d73abba2fc5ad3aaea5fd45db8a222ac1be7facad3de536842d5",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_LEISURE_GLASS.png": "0d961674872b54b218dc853fd99bfa18a69a534cc4b793273a7ae23c8a2f324d",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_BAY_W-SMB-S.png": "e668680bd3bf3eb0e0f4c5bce52a184c87b336aeeffe24ee0794087f84468f87",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_BAY_W-MB-S.png": "f81db0e756744d8fe77116e24acb64821bfcdfc8d77633740bf7b8e1d626974d",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_BAY_W-STUDY-NE.png": "27fb67f12dda40564145a51c86f3210525a785273817c0a0d32a848579e10363",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/references/leisure_sliding_missing_surround.png": "5ab453f5439efaf82f549f80ffb430cb1362fcdf5f3b9eaf55e001829451191b",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/references/all_bays_instruction.png": "becba53ceb336e7d5dedaee0ca063a055f6104856877bf2c513202f3ebfa640c",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/references/guest_blocked_sliding_door.png": "a097953d57d35131df292a49060f0bc50942791b9f4633112a1765926c01362a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/references/continuous_wall_site.jpg": "e04dcfafa1192b41e17aa6c4fff042bc6258ba762785b8259ab5b81ea4ba1a6c",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/references/wall_junction_marks.png": "ffeb7871e2767f6c7c16917efb2ef753c0ae2414fb8781fc6040f2c74e8e904e",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/references/all_missing_doors.png": "20f320767cf1e9c304bafb6a703488ff11e34ed5875b74e94da2a3aae69a84e9",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/references/study_missing_door.png": "90280a921333f5b47088405a0004016643b5f508b031872f9f1534f6472e2b31"
+  }
+}

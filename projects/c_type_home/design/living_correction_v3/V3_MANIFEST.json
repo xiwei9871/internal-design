@@ -1,0 +1,63 @@
+{
+  "status": "HUMAN_REVIEW",
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/B1_LIVING_CORRECTED_V3.blend",
+  "model_sha256": "4c0587e59d75198348bda9c45b4c447ae566ca6b862369517c993ea977734405",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v2/B1_LIVING_CORRECTED_V2.blend",
+  "source_sha256": "32aea798288be682ee0dbd717d8e5bc3f0d9d0cedf0b0d843c6e9e4dd30b7cbd",
+  "old_enclosure_parts_inactive": [
+    "DOOR_V2_D107_LEFT_RETURN_WALL",
+    "DOOR_V2_D107_RIGHT_RETURN_WALL",
+    "DOOR_V2_D107_SOLID_ABOVE_OPENING",
+    "DOOR_V2_D107_TOP_BEAM_CONNECTION",
+    "DOOR_V2_D107_PLATFORM_BASE_CLOSURE",
+    "W_wall_md_0018"
+  ],
+  "red_visible_wall_mm": 50,
+  "blue_visible_wall_mm": 0,
+  "withdrawn_value_mm": 200,
+  "measurement_origin": "OUTER_CASING_TO_TURN_CORNER_IN_USER_MARKED_CAMERA",
+  "side_axis": {
+    "red": "+U, screen left",
+    "blue": "-U, screen right"
+  },
+  "casing_local_limits_m": [
+    -0.07,
+    0.92
+  ],
+  "turn_corner_limits_m": [
+    -0.07,
+    0.97
+  ],
+  "door_leaf_dimensions_mm": [
+    850,
+    40,
+    2100
+  ],
+  "door_leaf_pose_preserved": true,
+  "door_dimensions_basis": "INHERITED_REGISTER_NOT_NEW_SITE_MEASUREMENT",
+  "verification_status": "PASS",
+  "visual_review": {
+    "status": "INSPECTED",
+    "views": [
+      "01",
+      "02"
+    ],
+    "proxy_size": [
+      512,
+      384
+    ],
+    "images_inline_delivery": false
+  },
+  "files_sha256": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/B1_LIVING_CORRECTED_V3.blend": "4c0587e59d75198348bda9c45b4c447ae566ca6b862369517c993ea977734405",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/correct_d107_sides.py": "934095f928480d7e5a607c44dd3cee2e12d24434e98b7f6126a0f4f7580284e5",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/V3_REVIEW.md": "20608add1f63b1c46b9c9d2e40032e457e04ea68ad90987007c7b30adb6eaece",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/V3_QA.json": "7e200ac80d5ebf92baeb6c06f0939a20583217bfe8b35ae3788e892fd54e1bdc",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/V3_OBJECT_STATES.json": "3dea16efebda09abaa755728dda77a8054fde5cfc5a1764f20c1d5472c5fae0b",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/V2_SOURCE_STATES.json": "fd4afba96d8fc2c605e23af1d046c06f40da8c8cd3f2fe51e124101c1d5bf08c",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/V3_RENDER_MANIFEST.json": "f888b7c2e7cc868d3b9c2bb25abaf696eb57a913211c263b51d0194354f97784",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/references/USER_FINAL_RED_BLUE_MARKUP.png": "7223ad49835174c06d6feb42715c619b8d2f627e14fd57a50dd6ad733700644b",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/renders/D107_SIDES_01.png": "f908fd317fed109a5bc7b5c9a6174cba90e587d03ee5a5a635390e4940f724b7",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/renders/D107_SIDES_02.png": "5686728740937e3b43515a5b4f760d07ae0b7847cc68617b66a782cc0812e97c"
+  }
+}

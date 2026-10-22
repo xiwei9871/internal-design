@@ -1,0 +1,11 @@
+{
+  "fresh_import_entity_count": 1000,
+  "stable_sofa_id_retained": true,
+  "two_seat_retired_from_proxy": true,
+  "ottoman_added": false,
+  "unrelated_objects_unchanged": true,
+  "sofa_manifold": true,
+  "no_sofa_wall_or_furniture_surface_collisions": true,
+  "both_tables_on_lower_floor": true,
+  "frozen_r4_and_review3_unchanged": true
+}

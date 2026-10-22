@@ -1,0 +1,29 @@
+{
+  "status": "INSPECTED",
+  "views": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "DOOR_D-STUDY",
+    "DOOR_D-BATHM",
+    "DOOR_D-MB",
+    "DOOR_D-GUEST-BATH",
+    "DOOR_D-GUEST-ROOM",
+    "DOOR_ENT-1",
+    "GUEST_GLASS",
+    "LEISURE_GLASS",
+    "BAY_W-SMB-S",
+    "BAY_W-MB-S",
+    "BAY_W-STUDY-NE"
+  ],
+  "inspection": "Individual512px proxies; occluded cameras refined and rechecked",
+  "findings": [
+    "Continuous wall faces with no old plate-style seams",
+    "All registered ordinary doors show casing and enclosing side/header walls",
+    "Guest slider void penetrates actual host band",
+    "Three-track slider perimeter joined",
+    "All three remaining bays show platform and front/return windows"
+  ],
+  "images_inline_delivery": false
+}

@@ -1,0 +1,28 @@
+{
+  "revision": "sunroom-stepped-storage-review-1",
+  "source_bindings": "design/console_bath_mirrors_review/spatial-canvas.bindings.full.json",
+  "source_sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644",
+  "user_max_height_mm": 1750,
+  "floor_datum_mm": 0,
+  "lower_open": {
+    "bottom_hard_edge_mm": 1800,
+    "top_mm": 2100,
+    "depth_mm": 350,
+    "width_mm": 1555,
+    "bays": 3,
+    "doors": false
+  },
+  "upper_closed": {
+    "bottom_hard_edge_mm": 2100,
+    "top_mm": 2600,
+    "depth_mm": 600,
+    "width_mm": 1555,
+    "doors": 3
+  },
+  "board_mm": 18,
+  "back_mm": 12,
+  "laundry_upper": "unchanged700deep1800to2600",
+  "source_writeback": false,
+  "status": "HUMAN_REVIEW",
+  "head_clearance": "not certified; static50mm difference is not dynamic/safety approval"
+}

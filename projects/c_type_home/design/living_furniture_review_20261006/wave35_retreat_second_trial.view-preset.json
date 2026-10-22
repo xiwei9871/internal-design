@@ -1,0 +1,62 @@
+{
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "wave35_retreat_second_trial",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_revision": "r4-living-wave35-aluminum-review-2",
+  "source_sha256": "78d64077368b1a4952f44ed4877464e0cde51ffceeee40b2ae40727ebfc85d30",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_LIVING_WAVE35_ALUMINUM_FIT_REVIEW_2.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "12-living-wave35-aluminum-fit-review",
+    "sha256": "3e8a0a167b9418a341686098add373d6a829e802acb909f7a9632cc63e354436",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/spatial-canvas.bindings.aluminum-fit-2.json"
+  },
+  "preview_uri": "wave35_retreat_second_trial.png",
+  "near": 0.026464257027775006,
+  "far": 2646.4257027775006,
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "position": [
+    4.350653420746109,
+    7.0102932747151785,
+    -6.896219532948789
+  ],
+  "quaternion": [
+    0.3037119008083158,
+    0.6962688009595419,
+    0.46297014797834113,
+    -0.45675757267797373
+  ],
+  "orbit_target": [
+    6.750808875179196,
+    0.7727101560364987,
+    -5.854113757018172
+  ],
+  "viewport": {
+    "width": 673,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_camera": {
+    "position": [
+      4.350653420746109,
+      6.896219532948789,
+      7.0102932747151785
+    ],
+    "quaternion": [
+      0.10821963241028634,
+      -0.16496705956469424,
+      -0.819705721809543,
+      0.5377331215875187
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": []
+}

@@ -1,0 +1,529 @@
+[
+  {
+    "id": "01",
+    "name": "整体_西南轴测",
+    "slug": "overall_southwest",
+    "camera": "KITCHEN_REVIEW_CAM_01",
+    "pos": [
+      2.0,
+      -3.6,
+      5.3
+    ],
+    "target": [
+      6.4,
+      2.15,
+      1.1
+    ],
+    "projection": "ORTHO",
+    "scale": 7.4,
+    "cut": 0.45,
+    "roi": [
+      4.65,
+      -0.3,
+      8.1,
+      4.75
+    ],
+    "path": "FULL_01_overall_southwest_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.63,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_01_overall_southwest_V4.png",
+    "original_render_sha256": "06f23548f9fe471c6c129f5fdc3cb7a6dd87b69b3d4cdee444609b45cf912bb5"
+  },
+  {
+    "id": "02",
+    "name": "整体_东北轴测",
+    "slug": "overall_northeast",
+    "camera": "KITCHEN_REVIEW_CAM_02",
+    "pos": [
+      9.0,
+      6.0,
+      5.7
+    ],
+    "target": [
+      6.2,
+      2.2,
+      1.0
+    ],
+    "projection": "ORTHO",
+    "scale": 7.0,
+    "cut": 0.45,
+    "roi": [
+      4.65,
+      -0.3,
+      8.1,
+      4.75
+    ],
+    "path": "FULL_02_overall_northeast_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.358,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_02_overall_northeast_V4.png",
+    "original_render_sha256": "f8f4e9770071a749ee7201ad13fcd42d33ecdc562f6eb467bfeca8d6d4b01128"
+  },
+  {
+    "id": "03",
+    "name": "冰箱与两侧柜列",
+    "slug": "fridge_columns",
+    "camera": "KITCHEN_REVIEW_CAM_03",
+    "pos": [
+      6.6,
+      0.85,
+      1.6
+    ],
+    "target": [
+      6.66,
+      4.05,
+      1.205
+    ],
+    "projection": "PERSP",
+    "lens": 28,
+    "cut": 0.45,
+    "roi": [
+      4.65,
+      -0.3,
+      8.1,
+      4.75
+    ],
+    "path": "FULL_03_fridge_columns_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.344,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_03_fridge_columns_V4.png",
+    "original_render_sha256": "0ac3ff6afe4c5e6ae1cbb3232b304dcffa84f1cec7878c1429256fa83e1f5123"
+  },
+  {
+    "id": "04",
+    "name": "灶台与长边柜体",
+    "slug": "cooking_run",
+    "camera": "KITCHEN_REVIEW_CAM_04",
+    "pos": [
+      5.1,
+      2.2,
+      1.6
+    ],
+    "target": [
+      7.5,
+      2.1,
+      1.2
+    ],
+    "projection": "PERSP",
+    "lens": 22,
+    "cut": 0.45,
+    "roi": [
+      4.65,
+      -0.3,
+      8.1,
+      4.75
+    ],
+    "path": "FULL_04_cooking_run_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.343,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_04_cooking_run_V4.png",
+    "original_render_sha256": "88f1903f1ec6fd0797162a58378cba140fc46a07489c76349e4f13fde821536b"
+  },
+  {
+    "id": "05",
+    "name": "水槽与转角",
+    "slug": "sink_corner",
+    "camera": "KITCHEN_REVIEW_CAM_05",
+    "pos": [
+      6.75,
+      2.6,
+      1.6
+    ],
+    "target": [
+      6.7,
+      0.22,
+      1.2
+    ],
+    "projection": "PERSP",
+    "lens": 24,
+    "cut": 0.45,
+    "roi": [
+      4.65,
+      -0.3,
+      8.1,
+      4.75
+    ],
+    "path": "FULL_05_sink_corner_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.331,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_05_sink_corner_V4.png",
+    "original_render_sha256": "01ad036097fe705a6e0bf99666b213c29984cf9566dc98b435463c4d0cc0335e"
+  },
+  {
+    "id": "06",
+    "name": "岛台与旁柜_室内视点",
+    "slug": "island_interior",
+    "camera": "KITCHEN_REVIEW_CAM_06",
+    "pos": [
+      6.75,
+      3.2,
+      1.6
+    ],
+    "target": [
+      5.25,
+      1.3,
+      1.2
+    ],
+    "projection": "PERSP",
+    "lens": 24,
+    "cut": 0.45,
+    "roi": [
+      4.65,
+      -0.3,
+      8.1,
+      4.75
+    ],
+    "path": "FULL_06_island_interior_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.331,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_06_island_interior_V4.png",
+    "original_render_sha256": "f27d27a7e096591933d4168cd8546e7c5e9650d61a990b4cc677f039e73b5c40"
+  },
+  {
+    "id": "07",
+    "name": "岛台抽屉与圆角",
+    "slug": "island_drawers",
+    "camera": "KITCHEN_REVIEW_CAM_07",
+    "pos": [
+      7.15,
+      1.9,
+      1.1
+    ],
+    "target": [
+      5.95,
+      1.85,
+      0.5
+    ],
+    "projection": "PERSP",
+    "lens": 28,
+    "cut": 0.45,
+    "roi": [
+      4.65,
+      -0.3,
+      8.1,
+      4.75
+    ],
+    "path": "FULL_07_island_drawers_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.445,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_07_island_drawers_V4.png",
+    "original_render_sha256": "8a830652fa95207626e467246a267dd9c9dce87a74d618570ecbfb7ab0b9b8c9"
+  },
+  {
+    "id": "08",
+    "name": "600高柜与上方挂机",
+    "slug": "utility_and_ac",
+    "camera": "KITCHEN_REVIEW_CAM_08",
+    "pos": [
+      5.2,
+      3.8,
+      1.6
+    ],
+    "target": [
+      5.2,
+      1.0,
+      1.25
+    ],
+    "projection": "PERSP",
+    "lens": 27,
+    "cut": 0.45,
+    "roi": [
+      4.65,
+      -0.3,
+      8.1,
+      4.75
+    ],
+    "path": "FULL_08_utility_and_ac_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.315,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_08_utility_and_ac_V4.png",
+    "original_render_sha256": "04cc7a7f67a0875cba157898e032847022acaea08bf142b3585424a39b050b81"
+  },
+  {
+    "id": "09",
+    "name": "厨房俯视布局",
+    "slug": "top_layout",
+    "camera": "KITCHEN_REVIEW_CAM_09",
+    "pos": [
+      6.15,
+      2.3,
+      10.0
+    ],
+    "target": [
+      6.15,
+      2.3,
+      0
+    ],
+    "projection": "ORTHO",
+    "scale": 7.0,
+    "cut": 1.2,
+    "roi": [
+      4.65,
+      -0.3,
+      8.1,
+      4.75
+    ],
+    "path": "FULL_09_top_layout_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.335,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_09_top_layout_V4.png",
+    "original_render_sha256": "6a1dcc62d45de8f89da00b9525e3cc5b76bb6b189929783cf83d304b37a31451"
+  },
+  {
+    "id": "10",
+    "name": "图5窗边储物柜_正面",
+    "slug": "photo5_buffet_front",
+    "camera": "KITCHEN_REVIEW_CAM_10",
+    "pos": [
+      4.4,
+      1.6,
+      1.6
+    ],
+    "target": [
+      1.78,
+      1.5,
+      1.35
+    ],
+    "projection": "PERSP",
+    "lens": 22,
+    "cut": 0.45,
+    "roi": [
+      1.25,
+      -0.3,
+      5.8,
+      3.2
+    ],
+    "path": "FULL_10_photo5_buffet_front_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.298,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0005",
+      "W_wall_md_0009",
+      "W_wall_md_0043"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_10_photo5_buffet_front_V4.png",
+    "original_render_sha256": "9bb95ecf511a667e3e5e511ca7a66a128432e6161bb2827a45d3f32d96fd24e3"
+  },
+  {
+    "id": "11",
+    "name": "图5窗边储物柜_侧面",
+    "slug": "photo5_buffet_oblique",
+    "camera": "KITCHEN_REVIEW_CAM_11",
+    "pos": [
+      3.8,
+      2.9,
+      1.6
+    ],
+    "target": [
+      1.78,
+      1.5,
+      1.35
+    ],
+    "projection": "PERSP",
+    "lens": 22,
+    "cut": 0.45,
+    "roi": [
+      1.25,
+      -0.3,
+      5.8,
+      3.2
+    ],
+    "path": "FULL_11_photo5_buffet_oblique_V4.png",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.299,
+    "window_under_wall_unclipped": true,
+    "temporary_cuts": [
+      "W_wall_md_0005",
+      "W_wall_md_0009",
+      "W_wall_md_0043"
+    ],
+    "source_saved": false,
+    "source_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+    "original_render_path": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_11_photo5_buffet_oblique_V4.png",
+    "original_render_sha256": "fbfbe9d920fd3946d31e8b69c8ea6ecef1e19d07dd84d1215dbad848d1ac9db6"
+  }
+]

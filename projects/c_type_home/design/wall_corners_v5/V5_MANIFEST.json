@@ -1,0 +1,291 @@
+{
+  "status": "HUMAN_REVIEW",
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/B1_WALL_CORNERS_REPAIRED_V5.blend",
+  "model_sha256": "c48a9cda731a4517e785dc21a381dd27e39f24dde796355cfa6debe86f66e50b",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/B1_WALL_JUNCTIONS_CORRECTED_V4.blend",
+  "source_sha256": "d5b4f4fd2c3c0dc524f3f65c7453e6839c995320dd52ff061f5fbc0c7baeb1b2",
+  "missing_corner_sites": 26,
+  "height_specific_corner_patches": 34,
+  "only_wall_skin_changed": true,
+  "all_other_objects_preserved": true,
+  "current_study_south_opening_preserved": true,
+  "patch_objects": 34,
+  "topology": {
+    "vertices": 6418,
+    "faces": 8666,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "volume": 60.600844832781604
+  },
+  "patch_topology": {
+    "V5_CORNER_PATCH_J01_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.04199999934434885
+    },
+    "V5_CORNER_PATCH_J02_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.11200000143051145
+    },
+    "V5_CORNER_PATCH_J03_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.11200000143051145
+    },
+    "V5_CORNER_PATCH_J04_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004675000175461173
+    },
+    "V5_CORNER_PATCH_J04_2": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004125000039115548
+    },
+    "V5_CORNER_PATCH_J05_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004675000175461173
+    },
+    "V5_CORNER_PATCH_J05_2": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004125000039115548
+    },
+    "V5_CORNER_PATCH_J06_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.16250000242143867
+    },
+    "V5_CORNER_PATCH_J07_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.1300000038743019
+    },
+    "V5_CORNER_PATCH_J08_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.018000000059604632
+    },
+    "V5_CORNER_PATCH_J09_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.008750000260770323
+    },
+    "V5_CORNER_PATCH_J09_2": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004000000178813937
+    },
+    "V5_CORNER_PATCH_J10_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.06300000393390658
+    },
+    "V5_CORNER_PATCH_J11_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.1300000038743019
+    },
+    "V5_CORNER_PATCH_J12_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.008750000260770323
+    },
+    "V5_CORNER_PATCH_J12_2": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004000000178813937
+    },
+    "V5_CORNER_PATCH_J13_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.1300000038743019
+    },
+    "V5_CORNER_PATCH_J14_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.11200000143051145
+    },
+    "V5_CORNER_PATCH_J15_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.11200000143051145
+    },
+    "V5_CORNER_PATCH_J16_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.008750000260770323
+    },
+    "V5_CORNER_PATCH_J16_2": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004000000178813937
+    },
+    "V5_CORNER_PATCH_J17_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.1300000038743019
+    },
+    "V5_CORNER_PATCH_J18_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.009000000029802316
+    },
+    "V5_CORNER_PATCH_J19_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.008750000260770323
+    },
+    "V5_CORNER_PATCH_J19_2": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004000000178813937
+    },
+    "V5_CORNER_PATCH_J20_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.008750000260770323
+    },
+    "V5_CORNER_PATCH_J20_2": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004000000178813937
+    },
+    "V5_CORNER_PATCH_J21_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.1300000038743019
+    },
+    "V5_CORNER_PATCH_J22_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.1300000038743019
+    },
+    "V5_CORNER_PATCH_J23_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.009000000029802316
+    },
+    "V5_CORNER_PATCH_J24_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.008750000260770323
+    },
+    "V5_CORNER_PATCH_J24_2": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.004000000178813937
+    },
+    "V5_CORNER_PATCH_J25_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.1300000038743019
+    },
+    "V5_CORNER_PATCH_J26_1": {
+      "vertices": 8,
+      "faces": 6,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "volume": 0.1300000038743019
+    }
+  },
+  "verification_status": "PASS",
+  "visual_review": {
+    "status": "INSPECTED",
+    "views": [
+      "BEFORE_WALL_V4_CAM_01",
+      "BEFORE_WALL_V4_CAM_02",
+      "AFTER_WALL_V4_CAM_01",
+      "AFTER_WALL_V4_CAM_02"
+    ],
+    "images_inline_delivery": false,
+    "finding": "After corner patches remove red-circle grooves; current-study south opening remains open by explicit authority."
+  },
+  "freeze_candidate": "HOUSE_BASE_GEOMETRY_V1_PENDING_USER_REVIEW",
+  "base_scope": "V5_WALL_CORNERS_REPAIRED_OVER_V4",
+  "files_sha256": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/B1_WALL_CORNERS_REPAIRED_V5.blend": "c48a9cda731a4517e785dc21a381dd27e39f24dde796355cfa6debe86f66e50b",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/build_corner_repair.py": "e889848717d5c3d164cc07c7fb9c8c51f30150315e763eb2a3d2160e6836e73b",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/CORNER_REPAIR_REGISTER.json": "d262b0615d11e26e8049d60d196fe153742ca2b94855377dcfa492522fd02b30",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/V5_QA.json": "4226eae0b4e27f087816b1332a7293047b162c1e6150d1ff0bdb07d34b60b5fc",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/V5_MANIFEST.json": "89ca9ba85d7735719990365181a17be4dac616e991c46b2a427481996ee7764d",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/V5_RENDER_MANIFEST.json": "31bcdeb42b7af6937d2093356f73727b11d28040635646045249a0130d1d6844",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/V5_VISUAL_REVIEW.json": "b27a5f0c71c529bbf0797aaef0528ecf0220c1123cf048cb3c5888d73b997b88",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/V5_OBJECT_STATES.json": "261436c93fc54c8727364d153ab1e5ea8be99239df4699c202e4f8137f5d8945",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/V4_SOURCE_STATES.json": "d2b900c7314975b2e70438c839813150e21647c1bc754e7241e59f6ec4a0344a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/reference_notes.md": "b56e1f765de57ad44c3cd7aa1ee5478ac74bc9850d1094ac95bcb4f480cef03a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/references/USER_RED_CIRCLE_JUNCTIONS.png": "da2ca3535bf3c54b35e73d4d02a52784313f7bd3b52e7cc254517a451f74933a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_BEFORE_01.png": "062050e57b7fd8feb356466b3e6c84709e8bc320207840b605ab924f8f3a61a5",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_BEFORE_02.png": "cff538fa0807d01a9154158b2c4d25dc30b53fd9b5b50a9f43030d9404ac5f78",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_AFTER_01.png": "42d44295ea669edc5d6ef70eae9114d876e055efc5bc8bc0dbf6408289c89db2",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_AFTER_02.png": "2b80ccf8c7f794bea1e6bc2402dc278b7085f855ca5bcff19d82c753ed1c77a7"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "bedrooms_guest_review",
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.02,
+  "far": 1000,
+  "position": [
+    10.029650775479855,
+    6.728136617997939,
+    -9.707417150599374
+  ],
+  "quaternion": [
+    -0.37391214875448364,
+    -0.62030037487038,
+    -0.4308700183196245,
+    0.5383011956727546
+  ],
+  "orbit_target": [
+    12.049999999999999,
+    1.2499999999999998,
+    -9.419999999999995
+  ],
+  "viewport": {
+    "width": 673,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "projection_matrix": [
+    2.3819283884334848,
+    0,
+    0,
+    0,
+    0,
+    2.414213562373095,
+    0,
+    0,
+    0,
+    0,
+    -1.0000400008000159,
+    -1,
+    0,
+    0,
+    -0.04000080001600032,
+    0
+  ],
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_bedrooms_wood_v1",
+  "source_revision": "bedrooms-wood-v1-review-3",
+  "source_sha256": "93891e0b9c60a9d769e8e65ec4d04d592ea11dee4b9d713966d8b1033b9ebd31",
+  "source_locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V3.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "bedrooms-wood-v1-review-3",
+    "sha256": "354242d4d9d29684a9328a38280628198adecea68b28cb33356760cf73e447ca",
+    "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/spatial-canvas.bindings.full.json"
+  },
+  "hidden_entity_ids": [
+    "ent_b8a5af707b3e58f19007875b6be4bdb4",
+    "ent_73d1299613ad574c86e94b627ec78b12"
+  ],
+  "ghost_entity_ids": [],
+  "source_camera": {
+    "position": [
+      10.029650775479855,
+      9.707417150599374,
+      6.728136617997939
+    ],
+    "quaternion": [
+      0.11624059081077576,
+      -0.1339474618434906,
+      -0.7432897090911865,
+      0.6450321674346924
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  }
+}

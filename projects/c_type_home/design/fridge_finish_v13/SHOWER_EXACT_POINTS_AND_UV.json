@@ -1,0 +1,313 @@
+{
+  "R3_SHOWER_TRAY": {
+    "points": [
+      [
+        10.557875,
+        5.918656,
+        0.452
+      ],
+      [
+        10.557875,
+        5.918656,
+        0.47
+      ],
+      [
+        10.557875,
+        6.4502,
+        0.452
+      ],
+      [
+        10.557875,
+        6.4502,
+        0.47
+      ],
+      [
+        10.89025,
+        5.665375,
+        0.452
+      ],
+      [
+        10.89025,
+        5.665375,
+        0.47
+      ],
+      [
+        11.3999,
+        5.665375,
+        0.452
+      ],
+      [
+        11.3999,
+        5.665375,
+        0.47
+      ],
+      [
+        11.3999,
+        6.4502,
+        0.452
+      ],
+      [
+        11.3999,
+        6.4502,
+        0.47
+      ]
+    ],
+    "uvs": [
+      [
+        "RenderMeters",
+        true
+      ]
+    ],
+    "parent": null,
+    "constraints": [],
+    "dimensions": [
+      0.8420257568359375,
+      0.7848248481750488,
+      0.018000006675720215
+    ]
+  },
+  "R3_SHOWER_GLASS_1": {
+    "points": [
+      [
+        10.55545,
+        5.915475,
+        0.47
+      ],
+      [
+        10.55545,
+        5.915475,
+        2.45
+      ],
+      [
+        10.5603,
+        5.921838,
+        0.47
+      ],
+      [
+        10.5603,
+        5.921838,
+        2.45
+      ],
+      [
+        10.887826,
+        5.662193,
+        0.47
+      ],
+      [
+        10.887826,
+        5.662193,
+        2.45
+      ],
+      [
+        10.892674,
+        5.668557,
+        0.47
+      ],
+      [
+        10.892674,
+        5.668557,
+        2.45
+      ]
+    ],
+    "uvs": [
+      [
+        "RenderMeters",
+        false
+      ],
+      [
+        "ProductMeters",
+        true
+      ]
+    ],
+    "parent": null,
+    "constraints": [],
+    "dimensions": [
+      0.33722400665283203,
+      0.2596445083618164,
+      1.9800000190734863
+    ]
+  },
+  "R3_SHOWER_POST_1": {
+    "points": [
+      [
+        10.548875,
+        5.909656,
+        0.47
+      ],
+      [
+        10.548875,
+        5.909656,
+        2.45
+      ],
+      [
+        10.548875,
+        5.927656,
+        0.47
+      ],
+      [
+        10.548875,
+        5.927656,
+        2.45
+      ],
+      [
+        10.566875,
+        5.909656,
+        0.47
+      ],
+      [
+        10.566875,
+        5.909656,
+        2.45
+      ],
+      [
+        10.566875,
+        5.927656,
+        0.47
+      ],
+      [
+        10.566875,
+        5.927656,
+        2.45
+      ]
+    ],
+    "uvs": [
+      [
+        "RenderMeters",
+        true
+      ]
+    ],
+    "parent": null,
+    "constraints": [],
+    "dimensions": [
+      0.01800060272216797,
+      0.018000125885009766,
+      1.9800000190734863
+    ]
+  },
+  "R3_SHOWER_POST_2": {
+    "points": [
+      [
+        10.88125,
+        5.656375,
+        0.47
+      ],
+      [
+        10.88125,
+        5.656375,
+        2.45
+      ],
+      [
+        10.88125,
+        5.674375,
+        0.47
+      ],
+      [
+        10.88125,
+        5.674375,
+        2.45
+      ],
+      [
+        10.89925,
+        5.656375,
+        0.47
+      ],
+      [
+        10.89925,
+        5.656375,
+        2.45
+      ],
+      [
+        10.89925,
+        5.674375,
+        0.47
+      ],
+      [
+        10.89925,
+        5.674375,
+        2.45
+      ]
+    ],
+    "uvs": [
+      [
+        "RenderMeters",
+        true
+      ]
+    ],
+    "parent": null,
+    "constraints": [],
+    "dimensions": [
+      0.017999649047851562,
+      0.018000125885009766,
+      1.9800000190734863
+    ]
+  },
+  "B11_K-FRIDGE-OVERHEAD_TOP": {
+    "points": [],
+    "uvs": [
+      [
+        "UVMap",
+        false
+      ],
+      [
+        "RenderMeters",
+        true
+      ]
+    ],
+    "parent": "B11_K-FRIDGE-OVERHEAD",
+    "constraints": [],
+    "dimensions": [
+      0.9049997329711914,
+      0.6999998092651367,
+      0.017999887466430664
+    ]
+  },
+  "B11_K-TALL-L_UPPER_FRONT_0": {
+    "points": [],
+    "uvs": [
+      [
+        "UVMap",
+        false
+      ],
+      [
+        "RenderMeters",
+        false
+      ],
+      [
+        "AM2_SurfaceMeters",
+        false
+      ],
+      [
+        "V3_SurfaceMeters",
+        false
+      ],
+      [
+        "ProductMeters",
+        true
+      ]
+    ],
+    "parent": "B11_K-TALL-L_UPPER",
+    "constraints": [],
+    "dimensions": [
+      0.4635000228881836,
+      0.017999887466430664,
+      0.6460000276565552
+    ]
+  },
+  "shader_uv_maps": [
+    {
+      "name": "Physical surface coordinates",
+      "uv_map": "ProductMeters"
+    }
+  ],
+  "shader_images": [
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_disp_1k.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_diffuse_2k.jpg",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_roughness_2k.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_normal_2k.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_ao_1k.jpg",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/color.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/roughness.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/normal.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/height.png"
+  ]
+}

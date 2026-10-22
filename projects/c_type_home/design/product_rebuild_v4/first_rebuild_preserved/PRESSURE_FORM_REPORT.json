@@ -1,0 +1,30 @@
+{
+  "method": "Blender official closed cloth pressure, pinned sewn perimeter",
+  "frames_evaluated": [
+    1,
+    21,
+    42
+  ],
+  "duration_seconds": 0.67,
+  "pressure": 0.45,
+  "mass": 0.3,
+  "sheet_size_m": [
+    0.92,
+    0.76,
+    0.035
+  ],
+  "vertices": 1682,
+  "static_bounds": [
+    [
+      -0.46000000834465027,
+      -0.3799999952316284,
+      -0.030006440356373787
+    ],
+    [
+      0.46000000834465027,
+      0.3799999952316284,
+      0.030006442219018936
+    ]
+  ],
+  "deliverable": "static model shaping prototype; not physical foam simulation or persistent animated-cache certification"
+}

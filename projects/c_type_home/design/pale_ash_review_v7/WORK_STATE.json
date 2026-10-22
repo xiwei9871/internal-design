@@ -1,0 +1,13 @@
+{
+  "candidate": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/WHOLE_HOUSE_PALE_ASH_DELIVERY_V7.blend",
+  "sha256": "e325b355d94a7d6d7cb88ca06e18f0eeeab5a96493a33266cf1e57a73f0cecf5",
+  "status": "HUMAN_REVIEW",
+  "pending_jobs": [],
+  "opened_evidence": [
+    "APPEARANCE_COMPARE.jpg",
+    "CEILING_COMPARE.jpg",
+    "review_final/slider_isolated.png",
+    "review_final/after_console.png"
+  ],
+  "gallery": "http://127.0.0.1:5188/pale_ash_review_v7/review_gallery.html"
+}

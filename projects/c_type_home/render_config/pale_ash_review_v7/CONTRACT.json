@@ -1,0 +1,61 @@
+{
+  "task": "Owner pale ash materials, correct door substances, unobstructed model review, ceiling seams and 450mm step",
+  "date": "2026-10-14",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console1310_v5/WHOLE_HOUSE_CONSOLE1310_REAL_V5.blend",
+  "source_sha256": "3d75cbabe06a0bbace8fb95fb395bcc7f645ed5d26d6fed2d1fb094f0881f63a",
+  "candidate": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/WHOLE_HOUSE_PALE_ASH_DELIVERY_V7.blend",
+  "candidate_sha256": "e325b355d94a7d6d7cb88ca06e18f0eeeab5a96493a33266cf1e57a73f0cecf5",
+  "palette": "light natural ash / ivory flax / simple whole-home direction",
+  "material_source": "Existing project-tested ash atlas TextureCan wood_0038 (CC0) + Poly Haven rough_linen complete native maps; desktop ash catalog page17 reviewed",
+  "catalog_path": "/Users/xiwei/Desktop/木甲木乙-白蜡木系列.pdf",
+  "catalog_sha256": "2430d251e7e7333d70867452923821eeacb070f028d8eed500086a04104bbaa3",
+  "references": [
+    "design_selections/review/LIVING_SELECTION_REFERENCES.jpg"
+  ],
+  "ceiling_authorization": "Owner clarified these are ceilings, lounge soffit 450mm higher. Original 2800/3250mm soffit levels kept. Presentation seam filling inferred, not structural fabrication specifications.",
+  "doors": {
+    "entry": "V4_ENT-1_LEAF_0/1 satin metal",
+    "interior_swing": "six existing leaves pale ash, fittings remain metal",
+    "slider": {
+      "outer_bounds_m": [
+        [
+          10.11400032043457,
+          4.723062515258789,
+          0.46000000834465027
+        ],
+        [
+          11.003999710083008,
+          4.763062477111816,
+          2.5250000953674316
+        ]
+      ],
+      "glass_thickness_mm": 10,
+      "frame_face_width_mm": 25,
+      "frame_depth_mm": 39.999961853027344,
+      "construction": "project-established framed glazing; custom inferred assembly, no purchased SKU or safety certification"
+    },
+    "slider_mounts": "Four surface stand-offs connect retained pull plates to thin glass; inferred custom clamps, supplier drilling details not procurement data"
+  },
+  "dimensions": "No furniture pose, mesh or original architecture mesh writeback; guest remains current model",
+  "saved_render_settings": {
+    "engine": "Cycles",
+    "device": "Metal",
+    "resolution": [
+      2560,
+      1440
+    ],
+    "samples": 256,
+    "denoising": "OIDN High Accurate GPU"
+  },
+  "review_render_settings": {
+    "resolution": [
+      1600,
+      900
+    ],
+    "samples": 128,
+    "comparison": "matching cameras before/after, original lighting/color management retained"
+  },
+  "new_geometry": "presentation-only triangulated ceiling coverage repair and 450mm risers",
+  "image2_requests": 0,
+  "status": "HUMAN_REVIEW"
+}

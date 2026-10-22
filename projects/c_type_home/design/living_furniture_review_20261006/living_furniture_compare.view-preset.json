@@ -1,0 +1,80 @@
+{
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.006979502693215595,
+  "far": 697.9502693215594,
+  "position": [
+    0.8680956701720217,
+    13.104943843027216,
+    -8.119204178491234
+  ],
+  "quaternion": [
+    -0.48023079950406533,
+    -0.44018575632046925,
+    -0.3041293981025123,
+    0.6950684774538881
+  ],
+  "projection_matrix": [
+    1.8362403269366956,
+    0,
+    0,
+    0,
+    0,
+    2.4142135623730954,
+    0,
+    0,
+    0,
+    0,
+    -1.000020000200002,
+    -1,
+    0,
+    0,
+    -0.013959144977880969,
+    0
+  ],
+  "orbit_target": [
+    4.176020444229681,
+    3.4305273747649188,
+    -9.683416043672453
+  ],
+  "viewport": {
+    "width": 873,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "living_furniture_compare",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_living_review",
+  "source_revision": "r4-living-furniture-review-1",
+  "source_sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_LIVING_FURNITURE_REVIEW.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "9-living-furniture-review",
+    "sha256": "773a10f81b65c7ebfc07454971f80286918a6b7056ae325822c6d293c50e983a",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/spatial-canvas.bindings.json"
+  },
+  "source_camera": {
+    "position": [
+      0.8680956701720217,
+      8.119204178491234,
+      13.104943843027216
+    ],
+    "quaternion": [
+      0.15191317893269135,
+      -0.09620637351946337,
+      -0.5263102930324025,
+      0.8310620886606152
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": [],
+  "preview_uri": "living_furniture_compare.png"
+}

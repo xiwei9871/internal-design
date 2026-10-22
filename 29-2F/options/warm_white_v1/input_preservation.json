@@ -1,0 +1,20 @@
+{
+  "schema": "archviz.preservation.v1",
+  "files": [
+    {
+      "path": "/Users/xiwei/interior_design/29-2F/references/site_photos/Weixin Image_20261011143608_11_572.jpg",
+      "bytes": 1892981,
+      "sha256": "37bd029e5892a10a570d727af9b3de1c1d206c71bccb8b2a4485dd0256809c8a"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/29-2F/references/original_design/62aa6f9c26b459cb20c1570f47317888.jpg",
+      "bytes": 1699417,
+      "sha256": "f37abe00e59abd4b5aa500acd98eec667bbec02f95b553fafed3ef8c3015de76"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/29-2F/references/plan/29-2F平面图.pdf",
+      "bytes": 1496312,
+      "sha256": "6d758bc1b59b359f59cd01fc287ac89362bc523cfaf254c731f63099ee982bb0"
+    }
+  ]
+}

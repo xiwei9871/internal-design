@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "matches": [
+    {
+      "view_id": "05",
+      "render": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/verification_renders/VERIFIED_05_sink_corner.png",
+      "reference": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_05_sink_corner_V4.png",
+      "rgb_pixels_identical": true,
+      "max_rgb_difference": 0
+    },
+    {
+      "view_id": "10",
+      "render": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/verification_renders/VERIFIED_10_photo5_buffet_front.png",
+      "reference": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_10_photo5_buffet_front_V4.png",
+      "rgb_pixels_identical": true,
+      "max_rgb_difference": 0
+    }
+  ],
+  "approved_attachment_to_v4": "2/2 PIXEL_IDENTICAL",
+  "frozen_master_to_v4": "2/2 PIXEL_IDENTICAL",
+  "generated_images_in_chat": false
+}

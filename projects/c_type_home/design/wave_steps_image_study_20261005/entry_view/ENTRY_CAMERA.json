@@ -1,0 +1,22 @@
+{
+  "status": "READ_ONLY_CAMERA_STUDY",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/OPTION_A_R4_DINING_CHAIRS_ALIGNED_REVIEW.blend",
+  "source_sha256": "e2f3f107eb6619ae28a363e0e4e36019cdae94c89aabe9ac4b8c0c07b14b14ac",
+  "entry_evidence": "R4 V4_ENT-1_LEAF_0/1 and casing source bounds; jamb X2.9,Y5.44-6.54. Camera just inside opening.",
+  "position_m": [
+    3.0799999237060547,
+    5.989999771118164,
+    1.600000023841858
+  ],
+  "target_m": [
+    7.650000095367432,
+    6.699999809265137,
+    1.0
+  ],
+  "lens_mm": 21,
+  "frame": "c_type_world",
+  "up": "Z",
+  "source_models_unchanged": true,
+  "camera_only_scene_changes_not_saved": true,
+  "baseline_render": "ENTRY_BASE_MODEL.png"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "provider": "Poly Haven",
+  "credit": "Powered by Poly Haven",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "source": "https://polyhaven.com/a/kiara_3_morning",
+  "assetId": "kiara_3_morning",
+  "assetType": "hdris",
+  "resolution": "2k",
+  "status": "complete",
+  "files": [
+    {
+      "map": "hdri",
+      "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kiara_3_morning_2k.hdr",
+      "size": 6671007,
+      "md5": "f43fdb89331ab813948ddfd6dbd80bfa",
+      "file": "kiara_3_morning_hdri_2k.hdr",
+      "colorSpace": "Linear",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/assets/garden_hdri/kiara_3_morning_hdri_2k.hdr",
+      "sha256": "3b652f67521d2e7e38f171625ba5bc3db318ebf3410a1671fe60b1ef4c945928"
+    }
+  ]
+}

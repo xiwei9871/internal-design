@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "provider": "Poly Haven",
+  "credit": "Powered by Poly Haven",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "source": "https://polyhaven.com/a/washed_grey_oak_veneer",
+  "assetId": "washed_grey_oak_veneer",
+  "assetType": "textures",
+  "resolution": "4k",
+  "status": "complete",
+  "files": [
+    {
+      "map": "diffuse",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/washed_grey_oak_veneer/washed_grey_oak_veneer_diff_4k.jpg",
+      "size": 8281169,
+      "md5": "d4eb2e92e264065b9815c51f1e1d675b",
+      "file": "washed_grey_oak_veneer_diffuse_4k.jpg",
+      "colorSpace": "sRGB",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/washed_grey_oak_veneer/washed_grey_oak_veneer_diffuse_4k.jpg",
+      "sha256": "53fb910c5246b8182679cee807383c2c2ffc86a223ca87821866ae7fdf7138b4"
+    },
+    {
+      "map": "roughness",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/washed_grey_oak_veneer/washed_grey_oak_veneer_rough_4k.png",
+      "size": 29864991,
+      "md5": "93a206f2e284907d33931a964446a176",
+      "file": "washed_grey_oak_veneer_roughness_4k.png",
+      "colorSpace": "Non-Color",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/washed_grey_oak_veneer/washed_grey_oak_veneer_roughness_4k.png",
+      "sha256": "62df6909a6efe4b019214be15e73f090b7362e72a24cdcb8e8a50a18b1785bc1"
+    },
+    {
+      "map": "normal",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/washed_grey_oak_veneer/washed_grey_oak_veneer_nor_gl_4k.png",
+      "size": 74522588,
+      "md5": "6b7a59ee5d22be7cafc2b1762e0cb69f",
+      "file": "washed_grey_oak_veneer_normal_4k.png",
+      "colorSpace": "Non-Color",
+      "normalConvention": "OpenGL",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/washed_grey_oak_veneer/washed_grey_oak_veneer_normal_4k.png",
+      "sha256": "dbbc6620d595c5eb4d25d5e09a95991411cabe0750f0f73293b3cd5c37b4e752"
+    }
+  ]
+}

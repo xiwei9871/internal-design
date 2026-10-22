@@ -1,0 +1,57 @@
+source_name,label,semantic_type,room,length,depth,height,base_z,dimension_source,confidence,notes
+Rectangle004,电视柜（或者悬浮电视墙）,MEDIA_CABINET,R-LIVING/客厅,299,2889,480,0,STANDARD_BLOCKOUT,high,B1_REPRESENTATION=FLOOR_STANDING; FINAL_MEDIA_SOLUTION=TO_VERIFY; FLOATING_MOUNT_Z=TO_VERIFY; DO NOT use room height
+Rectangle007,客卫（湿区）,SHOWER_ZONE,R-BATH-P/公卫,1644,813,2000,350,HUMAN_CONFIRMED,medium,not solid furniture — glass screen blockout only
+Rectangle008,客卫马桶,WC,R-BATH-P/公卫,747,324,780,350,HUMAN_CONFIRMED,high,overall blockout height
+Rectangle011,次主卧床头占位,HEADBOARD,R-BED-S/卧室,199,2640,1050,350,STANDARD_BLOCKOUT,medium,separate block behind bed
+Rectangle012,次主卧床,BED_BASE,R-BED-S/卧室,2100,1500,550,350,HUMAN_CONFIRMED,high,mattress/base envelope only; separate HEADBOARD block
+Rectangle013,主卧床,BED_BASE,R-MASTER/主卧,2100,1500,550,350,HUMAN_CONFIRMED,high,mattress/base envelope only; separate HEADBOARD block
+Rectangle014,主卧床头柜占位,HEADBOARD,R-MASTER/主卧,150,2500,1050,350,SOURCE_LABEL_SEMANTIC_CORRECTION,high,source_label kept for traceability; geometry is a backboard panel — never reclassify as nightstand
+Rectangle015,主卧衣柜,WARDROBE,R-MASTER/主卧,2100,600,2200,350,STANDARD_BLOCKOUT,high,
+Rectangle017,次卧小床1.2,BED_BASE,R-STUDY/书房,1800,1200,550,350,HUMAN_CONFIRMED,high,mattress/base envelope only; separate HEADBOARD block
+Rectangle021,次主卧衣柜,WARDROBE,R-BED-S/卧室,1500,600,2200,350,STANDARD_BLOCKOUT,high,
+Rectangle022,主卧电视柜,TV_CABINET,R-MASTER/主卧,500,2000,480,350,STANDARD_BLOCKOUT,high,was stretched to ~level height — fixed
+Rectangle023,次主卧电视柜,TV_CABINET,R-BED-S/卧室,500,2000,480,350,STANDARD_BLOCKOUT,high,was stretched to ~level height — fixed
+Rectangle024,书柜,TALL_BOOKCASE,R-BED-N/卧室,450,4200,2000,350,HUMAN_CONFIRMED,high,
+Rectangle025,矮书柜,LOW_BOOKCASE,R-BED-N/卧室,1600,450,900,350,HUMAN_CONFIRMED,high,
+Rectangle026,茶台,STUDY_WORKSTATION,R-BED-N/卧室,800,2200,750,350,HUMAN_CONFIRMED,high,2200×800 workstation/tea table — footprint human confirmed
+Circle007,主人椅,STUDY_ARMCHAIR,R-BED-N/卧室,400,400,850,350,STANDARD_BLOCKOUT,medium,OWNER_CHAIR; seat_height=430; do not classify as DINING_CHAIR
+Rectangle027,条凳,BENCH,R-BED-N/卧室,300,1600,450,350,STANDARD_BLOCKOUT,medium,seat-height bench
+Circle008,凳子,STOOL,R-BED-N/卧室,400,400,450,350,STANDARD_BLOCKOUT,medium,
+Circle009,次卧凳子,STOOL,R-STUDY/书房,400,400,450,350,STANDARD_BLOCKOUT,medium,
+Circle010,餐椅,DINING_CHAIR,R-DINING/餐厅,400,400,850,0,HUMAN_CONFIRMED,high,seat_height=450
+Circle011,餐椅003,DINING_CHAIR,R-DINING/餐厅,400,400,850,0,HUMAN_CONFIRMED,high,seat_height=450
+Circle012,餐椅,DINING_CHAIR,R-DINING/餐厅,400,400,850,0,HUMAN_CONFIRMED,high,seat_height=450
+Circle013,餐椅004,DINING_CHAIR,R-DINING/餐厅,400,400,850,0,HUMAN_CONFIRMED,high,seat_height=450
+Rectangle029,现有橱柜,CABINET,R-BALC-LIFE/生活阳台,500,1500,850,0,STANDARD_BLOCKOUT,medium,life-balcony counter
+Rectangle030,客卫洗手盆柜体,VANITY,R-BATH-P/公卫,600,1200,850,350,HUMAN_CONFIRMED,high,countertop height
+Rectangle031,鞋柜,SHOE_CABINET,R-DINING/餐厅,300,722,1000,0,HUMAN_CONFIRMED,medium,
+Rectangle032,橱柜,CABINET,R-BALC-LIFE/生活阳台,1200,500,850,0,STANDARD_BLOCKOUT,medium,life-balcony counter
+Rectangle033,主卫湿区,SHOWER_ZONE,R-BATH-M/主卫,1000,1522,2000,350,HUMAN_CONFIRMED,medium,not solid furniture — glass screen blockout only
+Rectangle034,主卫马桶,WC,R-BATH-M/主卫,500,650,780,350,HUMAN_CONFIRMED,high,overall blockout height
+Rectangle035,主卫洗手盆和柜体,VANITY,R-BATH-M/主卫,1200,500,850,350,HUMAN_CONFIRMED,high,countertop height
+Rectangle036,次主卫湿区,SHOWER_ZONE,R-CLOAK/衣帽间,823,1547,2000,350,HUMAN_CONFIRMED,medium,not solid furniture — glass screen blockout only
+Rectangle037,次主卫台盆和柜体,VANITY,R-CLOAK/衣帽间,1000,500,850,350,HUMAN_CONFIRMED,high,countertop height
+Rectangle038,次主卫马桶,WC,R-CLOAK/衣帽间,500,600,780,350,HUMAN_CONFIRMED,high,overall blockout height
+Rectangle039,冰柜,FREEZER,R-BALC-N/阳台,1200,600,850,0,SKU_TO_VERIFY,low,temporary B1 value; SKU TO_VERIFY
+Rectangle040,洗衣机+烘干机（叠放）,STACKED_WASHER_DRYER,R-BALC-N/阳台,600,600,1700,0,HUMAN_CONFIRMED,high,two units stacked 850+850
+Rectangle041,3kg洗衣机,3KG_WASHER,R-BATH-P/公卫,450,450,550,TO_VERIFY,SKU_TO_VERIFY,low,wall-mounted candidate; physical body ~500–600; mount/base_z TO_VERIFY
+Rectangle043,打印机,PRINTER,R-BED-N/卧室,400,400,300,350,STANDARD_BLOCKOUT,medium,generic blockout
+Rectangle044,nas,NAS,R-BED-N/卧室,400,400,400,350,STANDARD_BLOCKOUT,medium,generic blockout
+Rectangle045,次卧衣柜,GUEST_WARDROBE,R-STUDY/书房,500,2000,2200,350,STANDARD_BLOCKOUT,high,depth 500 = HUMAN_CONFIRMED
+Rectangle046,三人位,SOFA_3S,R-LIVING/客厅,900,2300,850,0,HUMAN_CONFIRMED,high,seat_height=430; compound: seat+back+arms envelope ok for B1
+Rectangle047,双人位,SOFA_2S,R-LIVING/客厅,1900,850,850,0,HUMAN_CONFIRMED,high,seat_height=430
+Rectangle048,贵妃椅,CHAISE,R-LIVING/客厅,1700,900,800,0,HUMAN_CONFIRMED,high,seat_height=430
+Rectangle049,茶几,COFFEE_TABLE,R-LIVING/客厅,550,1000,400,0,HUMAN_CONFIRMED,high,
+Circle,角几,SIDE_TABLE,R-LIVING/客厅,500,500,500,0,HUMAN_CONFIRMED,high,Ø500 nominal
+Rectangle050,餐桌,DINING_TABLE,R-DINING/餐厅,1600,800,750,0,HUMAN_CONFIRMED,high,1600×800
+Rectangle051,床背板,HEADBOARD,R-STUDY/书房,200,1200,1050,350,STANDARD_BLOCKOUT,medium,separate block behind study bed
+Rectangle052,窄书桌,NARROW_DESK,R-STUDY/书房,350,1650,750,350,HUMAN_CONFIRMED,high,350×1650
+K-RUN-E,K-RUN-E,BASE_CABINET,R-KITCHEN/厨房,600,3215,900,0,STANDARD_BLOCKOUT,medium,east run; contains K-COOK/K-DISHW/K-BASKET
+K-COOK,K-COOK,BASE_CABINET_MODULE,R-KITCHEN/厨房,600,900,900,0,STANDARD_BLOCKOUT,medium,nested in K-RUN-E — hob module
+K-DISHW,K-DISHW,BASE_CABINET_MODULE,R-KITCHEN/厨房,600,600,900,0,STANDARD_BLOCKOUT,medium,nested in K-RUN-E — dishwasher
+K-BASKET,K-BASKET,BASE_CABINET_MODULE,R-KITCHEN/厨房,600,450,900,0,STANDARD_BLOCKOUT,medium,nested in K-RUN-E — pull basket
+K-FRIDGE-TALL,K-FRIDGE-TALL,TALL_CABINET,R-KITCHEN/厨房,1840,700,2000,0,STANDARD_BLOCKOUT,medium,tall unit housing fridge cavity
+K-FRIDGE,K-FRIDGE,TALL_CABINET_MODULE,R-KITCHEN/厨房,905,700,2000,0,ARCHITECTURAL_TO_VERIFY,medium,nested cavity inside K-FRIDGE-TALL; exact appliance recess TO_VERIFY
+K-RUN-S,K-RUN-S,BASE_CABINET,R-KITCHEN/厨房,1210,600,900,0,STANDARD_BLOCKOUT,medium,south run; contains K-SINK
+K-SINK,K-SINK,BASE_CABINET_MODULE,R-KITCHEN/厨房,990,600,900,0,STANDARD_BLOCKOUT,medium,nested in K-RUN-S — sink module
+K-WALL-E,K-WALL-E,WALL_CABINET,R-KITCHEN/厨房,380,3215,700,1400,STANDARD_BLOCKOUT,medium,"wall-hung cabinet; bottom z=1400, top=2100"

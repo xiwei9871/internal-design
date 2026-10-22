@@ -1,0 +1,45 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_L_SOFA_REVIEW_4.blend",
+  "source_sha256": "6775691eaaac0d57261eb2e00929bbb753f54687bfa5bf3ff44cc8955ba0ca8c",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_LIVING_WAVE3_READING_GYM_REVIEW_5.blend",
+  "output_sha256": "0292c2be6de112178a495de81176f86078d0692354abaf5d0984cc474baef233",
+  "stair": {
+    "risers": 4,
+    "rise_m": 0.15,
+    "tread_run_m": 0.35,
+    "overall_retraction_m": 1.0,
+    "lower_edge_retraction_m": 1.54,
+    "reclaimed_lower_floor_m2": 0.34762921175423184,
+    "arrival_full_height": true
+  },
+  "north_balcony_glass": {
+    "objects": [
+      "NORTH_BALCONY_GLASS_NORTH_A",
+      "NORTH_BALCONY_GLASS_NORTH_B",
+      "NORTH_BALCONY_GLASS_EAST"
+    ],
+    "aluminum_frame_objects": [
+      "NORTH_BALCONY_FRAME_NORTH_SILL",
+      "NORTH_BALCONY_FRAME_NORTH_HEAD",
+      "NORTH_BALCONY_FRAME_NORTH_LEFT_POST",
+      "NORTH_BALCONY_FRAME_NORTH_MULLION",
+      "NORTH_BALCONY_FRAME_NORTH_RIGHT_POST",
+      "NORTH_BALCONY_FRAME_EAST_SILL",
+      "NORTH_BALCONY_FRAME_EAST_HEAD",
+      "NORTH_BALCONY_FRAME_EAST_POST_SOUTH",
+      "NORTH_BALCONY_FRAME_EAST_CORNER_POST"
+    ],
+    "base_wall_native_ids": [
+      "VIEW_WALL_DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+      "VIEW_WALL_W_wall_md_0026",
+      "VIEW_WALL_W_wall_md_0055",
+      "VIEW_WALL_W_wall_md_0061",
+      "VIEW_WALL_W_wall_md_0062"
+    ],
+    "opaque_walls_unchanged": true,
+    "glass_and_frame_are_derived_review_only": true
+  },
+  "frozen_source_unchanged": true,
+  "fresh_reopen_verified": true
+}

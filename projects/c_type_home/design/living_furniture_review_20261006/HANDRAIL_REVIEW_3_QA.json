@@ -1,0 +1,53 @@
+{
+  "revision": "r4-living-wave35-aluminum-review-3",
+  "source_sha256": "fd0f603b433bde0cdf14d9b3f17357c07ff2ab8a6575e89c77dc0f2e148cffe2",
+  "native_wall_id": "VIEW_WALL_W_wall_md_0044",
+  "diameter_m": 0.04,
+  "wall_clearance_m": 0.05,
+  "height_above_nosings_m": 0.9,
+  "slope_degrees": 17.81888891452278,
+  "horizontal_extensions_m": 0.3,
+  "down_returns_m": 0.1,
+  "lower_floor_post_required": true,
+  "curve_points_source_xyz": [
+    [
+      5.0101578384494685,
+      4.770099945068359,
+      0.8809594287742948
+    ],
+    [
+      5.310157838449468,
+      4.770099945068359,
+      0.8809594287742948
+    ],
+    [
+      6.710157838449468,
+      4.770099945068359,
+      1.3309594287742947
+    ],
+    [
+      7.010157838449468,
+      4.770099945068359,
+      1.3309594287742947
+    ]
+  ],
+  "unchanged_existing_objects": true,
+  "new_objects": [
+    "WAVE_WALL_HANDRAIL_900",
+    "WAVE_HANDRAIL_LOWER_RETURN",
+    "WAVE_HANDRAIL_UPPER_RETURN",
+    "WAVE_HANDRAIL_LOWER_POST",
+    "WAVE_HANDRAIL_LOWER_BASE",
+    "WAVE_HANDRAIL_WALL_PLATE_0",
+    "WAVE_HANDRAIL_BRACKET_ARM_0",
+    "WAVE_HANDRAIL_BRACKET_UP_0",
+    "WAVE_HANDRAIL_WALL_PLATE_1",
+    "WAVE_HANDRAIL_BRACKET_ARM_1",
+    "WAVE_HANDRAIL_BRACKET_UP_1",
+    "WAVE_HANDRAIL_WALL_PLATE_2",
+    "WAVE_HANDRAIL_BRACKET_ARM_2",
+    "WAVE_HANDRAIL_BRACKET_UP_2"
+  ],
+  "standards_reference": "GB55019-2021 sections2.8.1,2.8.3,2.8.4;domestic single-side design reference,not certification of an accessible stair",
+  "standard_url": "https://cl.huaian.gov.cn/col/8349_118464/content/17144928/1715582990210UdXHUSlL.html"
+}

@@ -1,0 +1,1123 @@
+{
+ "register": "FURNITURE_ORIENTATION_REGISTER_V01",
+ "units": "deg CCW from +X (east), y=north",
+ "convention": {
+  "geometry_axis_deg": "[0,180) long axis",
+  "semantic_facing_deg": "[0,360) front direction; null=N/A"
+ },
+ "items": [
+  {
+   "source_name": "Rectangle004",
+   "label": "电视柜（或者悬浮电视墙）",
+   "semantic_type": "MEDIA_CABINET",
+   "room": "R-LIVING/客厅",
+   "zone": "R-LIVING",
+   "rect": [
+    7398.0,
+    8634.9375,
+    7696.875,
+    11523.84375
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "MEDIA_CABINET: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle007",
+   "label": "客卫（湿区）",
+   "semantic_type": "SHOWER_ZONE",
+   "room": "R-BATH-P/公卫",
+   "zone": "R-BATH-P",
+   "rect": [
+    8033.625,
+    9884.0625,
+    9677.375,
+    10697
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 270,
+   "inference_source": "shower->room",
+   "confidence": "MEDIUM",
+   "reason": "SHOWER_ZONE glass screen: opens toward bathroom interior"
+  },
+  {
+   "source_name": "Rectangle008",
+   "label": "客卫马桶",
+   "semantic_type": "WC",
+   "room": "R-BATH-P/公卫",
+   "zone": "R-BATH-P",
+   "rect": [
+    8020.625,
+    9332.28125,
+    8767.75,
+    9656.03125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 0,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "WC: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle011",
+   "label": "次主卧床头占位",
+   "semantic_type": "HEADBOARD",
+   "room": "R-BED-S/卧室",
+   "zone": "R-BED-S",
+   "rect": [
+    11183.5,
+    889.65625,
+    11382.75,
+    3529.53125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "headboard->bed",
+   "confidence": "HIGH",
+   "reason": "HEADBOARD panel: front faces the bed"
+  },
+  {
+   "source_name": "Rectangle012",
+   "label": "次主卧床",
+   "semantic_type": "BED_BASE",
+   "room": "R-BED-S/卧室",
+   "zone": "R-BED-S",
+   "rect": [
+    9066.625,
+    1537.15625,
+    11166.625,
+    3037.15625
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "headboard->bed",
+   "confidence": "HIGH",
+   "reason": "BED: facing = headboard→foot direction (headboard found in zone)"
+  },
+  {
+   "source_name": "Rectangle013",
+   "label": "主卧床",
+   "semantic_type": "BED_BASE",
+   "room": "R-MASTER/主卧",
+   "zone": "R-MASTER",
+   "rect": [
+    12942.875,
+    1645.53125,
+    15042.875,
+    3145.53125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "headboard->bed",
+   "confidence": "HIGH",
+   "reason": "BED: facing = headboard→foot direction (headboard found in zone)"
+  },
+  {
+   "source_name": "Rectangle014",
+   "label": "主卧床头柜占位",
+   "semantic_type": "HEADBOARD",
+   "room": "R-MASTER/主卧",
+   "zone": "R-MASTER",
+   "rect": [
+    15093.375,
+    1113.78125,
+    15243.375,
+    3613.78125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "headboard->bed",
+   "confidence": "HIGH",
+   "reason": "HEADBOARD panel: front faces the bed"
+  },
+  {
+   "source_name": "Rectangle015",
+   "label": "主卧衣柜",
+   "semantic_type": "WARDROBE",
+   "room": "R-MASTER/主卧",
+   "zone": "R-MASTER",
+   "rect": [
+    13175.875,
+    3847.0,
+    15275.875,
+    4447.0
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 270,
+   "inference_source": "interior_facing(2 walled sides)",
+   "confidence": "MEDIUM",
+   "reason": "WARDROBE: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle017",
+   "label": "次卧小床1.2",
+   "semantic_type": "BED_BASE",
+   "room": "R-STUDY/书房",
+   "zone": "R-STUDY",
+   "rect": [
+    10878.375,
+    8019.84375,
+    12678.375,
+    9219.84375
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "headboard->bed",
+   "confidence": "HIGH",
+   "reason": "BED: facing = headboard→foot direction (headboard found in zone)"
+  },
+  {
+   "source_name": "Rectangle021",
+   "label": "次主卧衣柜",
+   "semantic_type": "WARDROBE",
+   "room": "R-BED-S/卧室",
+   "zone": "R-BED-S",
+   "rect": [
+    9863.625,
+    3853.28125,
+    11363.625,
+    4453.28125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 270,
+   "inference_source": "interior_facing(2 walled sides)",
+   "confidence": "MEDIUM",
+   "reason": "WARDROBE: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle022",
+   "label": "主卧电视柜",
+   "semantic_type": "TV_CABINET",
+   "room": "R-MASTER/主卧",
+   "zone": "R-MASTER",
+   "rect": [
+    11606.875,
+    1337.9375,
+    12106.875,
+    3337.9375
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 0,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "TV_CABINET: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle023",
+   "label": "次主卧电视柜",
+   "semantic_type": "TV_CABINET",
+   "room": "R-BED-S/卧室",
+   "zone": "R-BED-S",
+   "rect": [
+    8070.375,
+    1337.9375,
+    8570.375,
+    3337.9375
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 0,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "TV_CABINET: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle024",
+   "label": "书柜",
+   "semantic_type": "TALL_BOOKCASE",
+   "room": "R-BED-N/卧室",
+   "zone": "R-BED-N",
+   "rect": [
+    15735.875,
+    6642.59375,
+    16185.875,
+    10842.59375
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "interior_facing(3 walled sides)",
+   "confidence": "MEDIUM",
+   "reason": "TALL_BOOKCASE: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle025",
+   "label": "矮书柜",
+   "semantic_type": "LOW_BOOKCASE",
+   "room": "R-BED-N/卧室",
+   "zone": "R-BED-N",
+   "rect": [
+    14097.375,
+    6642.625,
+    15697.375,
+    7092.625
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 90,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "LOW_BOOKCASE: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle026",
+   "label": "茶台",
+   "semantic_type": "STUDY_WORKSTATION",
+   "room": "R-BED-N/卧室",
+   "zone": "R-BED-N",
+   "rect": [
+    14271.625,
+    7389.71875,
+    15071.625,
+    9589.71875
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 0,
+   "inference_source": "desk->seat",
+   "confidence": "MEDIUM",
+   "reason": "DESK: front faces the seat side (chair/stool found)"
+  },
+  {
+   "source_name": "Circle007",
+   "label": "主人椅",
+   "semantic_type": "STUDY_ARMCHAIR",
+   "room": "R-BED-N/卧室",
+   "zone": "R-BED-N",
+   "rect": [
+    15217.25,
+    8260.59375,
+    15617.25,
+    8660.59375
+   ],
+   "level": "upper",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": null,
+   "inference_source": "NONE",
+   "confidence": "LOW",
+   "reason": "STUDY_ARMCHAIR: no rule — REVIEW"
+  },
+  {
+   "source_name": "Rectangle027",
+   "label": "条凳",
+   "semantic_type": "BENCH",
+   "room": "R-BED-N/卧室",
+   "zone": "R-BED-N",
+   "rect": [
+    13798.5,
+    7564.03125,
+    14098.5,
+    9164.03125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": null,
+   "inference_source": "RULE:not_applicable",
+   "confidence": "HIGH",
+   "reason": "BENCH: facing semantically N/A (axis only)"
+  },
+  {
+   "source_name": "Circle008",
+   "label": "凳子",
+   "semantic_type": "STOOL",
+   "room": "R-BED-N/卧室",
+   "zone": "R-BED-N",
+   "rect": [
+    14495.0,
+    9804.6875,
+    14895.0,
+    10204.6875
+   ],
+   "level": "upper",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": null,
+   "inference_source": "RULE:not_applicable",
+   "confidence": "HIGH",
+   "reason": "STOOL: facing semantically N/A (axis only)"
+  },
+  {
+   "source_name": "Circle009",
+   "label": "次卧凳子",
+   "semantic_type": "STOOL",
+   "room": "R-STUDY/书房",
+   "zone": "R-STUDY",
+   "rect": [
+    12054.375,
+    9979.03125,
+    12454.375,
+    10379.03125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": null,
+   "inference_source": "RULE:not_applicable",
+   "confidence": "HIGH",
+   "reason": "STOOL: facing semantically N/A (axis only)"
+  },
+  {
+   "source_name": "Circle010",
+   "label": "餐椅",
+   "semantic_type": "DINING_CHAIR",
+   "room": "R-DINING/餐厅",
+   "zone": "R-DINING",
+   "rect": [
+    3088.75,
+    3977.0625,
+    3488.75,
+    4377.0625
+   ],
+   "level": "lower",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": 270,
+   "inference_source": "chair->table",
+   "confidence": "MEDIUM",
+   "reason": "DINING_CHAIR: faces table center"
+  },
+  {
+   "source_name": "Circle011",
+   "label": "餐椅003",
+   "semantic_type": "DINING_CHAIR",
+   "room": "R-DINING/餐厅",
+   "zone": "R-DINING",
+   "rect": [
+    3885.75,
+    3977.0625,
+    4285.75,
+    4377.0625
+   ],
+   "level": "lower",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": 270,
+   "inference_source": "chair->table",
+   "confidence": "MEDIUM",
+   "reason": "DINING_CHAIR: faces table center"
+  },
+  {
+   "source_name": "Circle012",
+   "label": "餐椅",
+   "semantic_type": "DINING_CHAIR",
+   "room": "R-DINING/餐厅",
+   "zone": "R-DINING",
+   "rect": [
+    3113.625,
+    2482.8125,
+    3513.625,
+    2882.8125
+   ],
+   "level": "lower",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": 90,
+   "inference_source": "chair->table",
+   "confidence": "MEDIUM",
+   "reason": "DINING_CHAIR: faces table center"
+  },
+  {
+   "source_name": "Circle013",
+   "label": "餐椅004",
+   "semantic_type": "DINING_CHAIR",
+   "room": "R-DINING/餐厅",
+   "zone": "R-DINING",
+   "rect": [
+    3910.625,
+    2557.5,
+    4310.625,
+    2957.5
+   ],
+   "level": "lower",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": 90,
+   "inference_source": "chair->table",
+   "confidence": "MEDIUM",
+   "reason": "DINING_CHAIR: faces table center"
+  },
+  {
+   "source_name": "Rectangle029",
+   "label": "现有橱柜",
+   "semantic_type": "CABINET",
+   "room": "R-BALC-LIFE/生活阳台",
+   "zone": "R-BALC-LIFE",
+   "rect": [
+    1520.5,
+    740.21875,
+    2020.5,
+    2240.21875
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 0,
+   "inference_source": "interior_facing(3 walled sides)",
+   "confidence": "MEDIUM",
+   "reason": "CABINET: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle030",
+   "label": "客卫洗手盆柜体",
+   "semantic_type": "VANITY",
+   "room": "R-BATH-P/公卫",
+   "zone": "R-BATH-P",
+   "rect": [
+    8008.25,
+    8012.34375,
+    8608.25,
+    9212.34375
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 90,
+   "inference_source": "interior_facing(2 walled sides)",
+   "confidence": "MEDIUM",
+   "reason": "VANITY: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle031",
+   "label": "鞋柜",
+   "semantic_type": "SHOE_CABINET",
+   "room": "R-DINING/餐厅",
+   "zone": "R-DINING",
+   "rect": [
+    2952.5,
+    4718.0,
+    3252.5,
+    5440.25
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 0,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "SHOE_CABINET: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle032",
+   "label": "橱柜",
+   "semantic_type": "CABINET",
+   "room": "R-BALC-LIFE/生活阳台",
+   "zone": "R-BALC-LIFE",
+   "rect": [
+    4322.375,
+    715.34375,
+    5522.375,
+    1215.34375
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "CABINET: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle033",
+   "label": "主卫湿区",
+   "semantic_type": "SHOWER_ZONE",
+   "room": "R-BATH-M/主卫",
+   "zone": "R-BATH-M",
+   "rect": [
+    15205.625,
+    4774.75,
+    16205.625,
+    6297
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "shower->room",
+   "confidence": "MEDIUM",
+   "reason": "SHOWER_ZONE glass screen: opens toward bathroom interior"
+  },
+  {
+   "source_name": "Rectangle034",
+   "label": "主卫马桶",
+   "semantic_type": "WC",
+   "room": "R-BATH-M/主卫",
+   "zone": "R-BATH-M",
+   "rect": [
+    14483.25,
+    5721.125,
+    14983.25,
+    6371.125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 270,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "WC: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle035",
+   "label": "主卫洗手盆和柜体",
+   "semantic_type": "VANITY",
+   "room": "R-BATH-M/主卫",
+   "zone": "R-BATH-M",
+   "rect": [
+    13138.5,
+    5797.0,
+    14338.5,
+    6297.0
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 0,
+   "inference_source": "interior_facing(2 walled sides)",
+   "confidence": "MEDIUM",
+   "reason": "VANITY: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle036",
+   "label": "次主卫湿区",
+   "semantic_type": "SHOWER_ZONE",
+   "room": "R-CLOAK/衣帽间",
+   "zone": "R-CLOAK",
+   "rect": [
+    10473.75,
+    4749.875,
+    11297,
+    6297
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "shower->room",
+   "confidence": "MEDIUM",
+   "reason": "SHOWER_ZONE glass screen: opens toward bathroom interior"
+  },
+  {
+   "source_name": "Rectangle037",
+   "label": "次主卫台盆和柜体",
+   "semantic_type": "VANITY",
+   "room": "R-CLOAK/衣帽间",
+   "zone": "R-CLOAK",
+   "rect": [
+    9419.5,
+    4750.09375,
+    10419.5,
+    5250.09375
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 90,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "VANITY: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle038",
+   "label": "次主卫马桶",
+   "semantic_type": "WC",
+   "room": "R-CLOAK/衣帽间",
+   "zone": "R-CLOAK",
+   "rect": [
+    9693.375,
+    5770.71875,
+    10193.375,
+    6370.71875
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 270,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "WC: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle039",
+   "label": "冰柜",
+   "semantic_type": "FREEZER",
+   "room": "R-BALC-N/阳台",
+   "zone": "R-BALC-N",
+   "rect": [
+    8531.25,
+    11150.3125,
+    9731.25,
+    11750.3125
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 0,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "FREEZER: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle040",
+   "label": "洗衣机+烘干机（叠放）",
+   "semantic_type": "STACKED_WASHER_DRYER",
+   "room": "R-BALC-N/阳台",
+   "zone": "R-BALC-N",
+   "rect": [
+    9826.25,
+    11150.28125,
+    10426.25,
+    11750.28125
+   ],
+   "level": "lower",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": 90,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "STACKED_WASHER_DRYER: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle041",
+   "label": "3kg洗衣机",
+   "semantic_type": "3KG_WASHER",
+   "room": "R-BATH-P/公卫",
+   "zone": "R-BATH-P",
+   "rect": [
+    9188.125,
+    10386.40625,
+    9638.125,
+    10836.40625
+   ],
+   "level": "upper",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": 270,
+   "inference_source": "interior_facing(2 walled sides)",
+   "confidence": "MEDIUM",
+   "reason": "3KG_WASHER: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle043",
+   "label": "打印机",
+   "semantic_type": "PRINTER",
+   "room": "R-BED-N/卧室",
+   "zone": "R-BED-N",
+   "rect": [
+    15277.0,
+    6664.125,
+    15677.0,
+    7064.125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": 90,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "PRINTER: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle044",
+   "label": "nas",
+   "semantic_type": "NAS",
+   "room": "R-BED-N/卧室",
+   "zone": "R-BED-N",
+   "rect": [
+    14792.875,
+    6664.125,
+    15192.875,
+    7064.125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": 90,
+   "inference_source": "interior_facing(1 walled sides)",
+   "confidence": "HIGH",
+   "reason": "NAS: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle045",
+   "label": "次卧衣柜",
+   "semantic_type": "GUEST_WARDROBE",
+   "room": "R-STUDY/书房",
+   "zone": "R-STUDY",
+   "rect": [
+    9918.125,
+    8884.40625,
+    10418.125,
+    10884.40625
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 0,
+   "inference_source": "interior_facing(2 walled sides)",
+   "confidence": "MEDIUM",
+   "reason": "GUEST_WARDROBE: back against wall, front toward room (free side matches room-center)"
+  },
+  {
+   "source_name": "Rectangle046",
+   "label": "三人位",
+   "semantic_type": "SOFA_3S",
+   "room": "R-LIVING/客厅",
+   "zone": "R-LIVING",
+   "rect": [
+    3401.125,
+    9215.8125,
+    4301.125,
+    11515.8125
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 0.0,
+   "inference_source": "sofa->coffee_table/tv",
+   "confidence": "HIGH",
+   "reason": "SOFA: faces coffee table / media wall"
+  },
+  {
+   "source_name": "Rectangle047",
+   "label": "双人位",
+   "semantic_type": "SOFA_2S",
+   "room": "R-LIVING/客厅",
+   "zone": "R-LIVING",
+   "rect": [
+    4571.625,
+    11980.21875,
+    6471.625,
+    12830.21875
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 270.0,
+   "inference_source": "sofa->coffee_table/tv",
+   "confidence": "HIGH",
+   "reason": "SOFA: faces coffee table / media wall"
+  },
+  {
+   "source_name": "Rectangle048",
+   "label": "贵妃椅",
+   "semantic_type": "CHAISE",
+   "room": "R-LIVING/客厅",
+   "zone": "R-LIVING",
+   "rect": [
+    3974.0,
+    7796.28125,
+    5674.0,
+    8696.28125
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 90.0,
+   "inference_source": "sofa->coffee_table/tv",
+   "confidence": "HIGH",
+   "reason": "SOFA: faces coffee table / media wall"
+  },
+  {
+   "source_name": "Rectangle049",
+   "label": "茶几",
+   "semantic_type": "COFFEE_TABLE",
+   "room": "R-LIVING/客厅",
+   "zone": "R-LIVING",
+   "rect": [
+    5069.875,
+    9863.34375,
+    5619.875,
+    10863.34375
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": null,
+   "inference_source": "RULE:not_applicable",
+   "confidence": "HIGH",
+   "reason": "COFFEE_TABLE: facing semantically N/A (axis only)"
+  },
+  {
+   "source_name": "Circle",
+   "label": "角几",
+   "semantic_type": "SIDE_TABLE",
+   "room": "R-LIVING/客厅",
+   "zone": "R-LIVING",
+   "rect": [
+    3674.25,
+    12029.0625,
+    4174.25,
+    12529.0625
+   ],
+   "level": "lower",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": null,
+   "inference_source": "RULE:not_applicable",
+   "confidence": "HIGH",
+   "reason": "SIDE_TABLE: facing semantically N/A (axis only)"
+  },
+  {
+   "source_name": "Rectangle050",
+   "label": "餐桌",
+   "semantic_type": "DINING_TABLE",
+   "room": "R-DINING/餐厅",
+   "zone": "R-DINING",
+   "rect": [
+    3027.625,
+    3064.40625,
+    4627.625,
+    3864.40625
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": null,
+   "inference_source": "RULE:not_applicable",
+   "confidence": "HIGH",
+   "reason": "DINING_TABLE: facing semantically N/A (axis only)"
+  },
+  {
+   "source_name": "Rectangle051",
+   "label": "床背板",
+   "semantic_type": "HEADBOARD",
+   "room": "R-STUDY/书房",
+   "zone": "R-STUDY",
+   "rect": [
+    12688.125,
+    8019.53125,
+    12888.125,
+    9219.53125
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "headboard->bed",
+   "confidence": "HIGH",
+   "reason": "HEADBOARD panel: front faces the bed"
+  },
+  {
+   "source_name": "Rectangle052",
+   "label": "窄书桌",
+   "semantic_type": "NARROW_DESK",
+   "room": "R-STUDY/书房",
+   "zone": "R-STUDY",
+   "rect": [
+    12531.625,
+    9235.625,
+    12881.625,
+    10885.625
+   ],
+   "level": "upper",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "desk->seat",
+   "confidence": "MEDIUM",
+   "reason": "DESK: front faces the seat side (chair/stool found)"
+  },
+  {
+   "source_name": "K-RUN-E",
+   "label": "BASE_CABINET",
+   "semantic_type": "BASE_CABINET",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    7200,
+    535,
+    7800,
+    3750
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "interior_facing(2 walled)+pdf",
+   "confidence": "MEDIUM",
+   "reason": "BASE_CABINET: front toward kitchen interior (free side matches room-center; PDF K-RUN-E)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-RUN-S",
+   "label": "BASE_CABINET",
+   "semantic_type": "BASE_CABINET",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    6100,
+    0,
+    7310,
+    600
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 90,
+   "inference_source": "interior_facing(3 walled)+pdf",
+   "confidence": "MEDIUM",
+   "reason": "BASE_CABINET: front toward kitchen interior (free side matches room-center; PDF K-RUN-S)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-SINK",
+   "label": "SINK_BASE",
+   "semantic_type": "SINK_BASE",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    6100,
+    0,
+    7090,
+    600
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 90,
+   "inference_source": "interior_facing(3 walled)+pdf",
+   "confidence": "MEDIUM",
+   "reason": "SINK_BASE: front toward kitchen interior (free side matches room-center; PDF K-SINK)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-COOK",
+   "label": "COOKTOP_BASE",
+   "semantic_type": "COOKTOP_BASE",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    7200,
+    2400,
+    7800,
+    3300
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "interior_facing(1 walled)+pdf",
+   "confidence": "HIGH",
+   "reason": "COOKTOP_BASE: front toward kitchen interior (free side matches room-center; PDF K-COOK)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-DISHW",
+   "label": "DISHWASHER_BAY",
+   "semantic_type": "DISHWASHER_BAY",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    7200,
+    1800,
+    7800,
+    2400
+   ],
+   "level": "lower",
+   "geometry_axis_deg": null,
+   "semantic_facing_deg": 180,
+   "inference_source": "interior_facing(1 walled)+pdf",
+   "confidence": "HIGH",
+   "reason": "DISHWASHER_BAY: front toward kitchen interior (free side matches room-center; PDF K-DISHW)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-BASKET",
+   "label": "BASE_CABINET_MODULE",
+   "semantic_type": "BASE_CABINET_MODULE",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    7200,
+    3300,
+    7800,
+    3750
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 270,
+   "inference_source": "interior_facing(1 walled)+pdf",
+   "confidence": "MEDIUM",
+   "reason": "BASE_CABINET_MODULE: front toward kitchen interior (free side matches room-center; PDF K-BASKET)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-CORNER",
+   "label": "CORNER_CABINET",
+   "semantic_type": "CORNER_CABINET",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    7200,
+    0,
+    7800,
+    535
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 180.0,
+   "inference_source": "interior_facing(3 walled)+pdf",
+   "confidence": "MEDIUM",
+   "reason": "CORNER_CABINET: front toward kitchen interior (nearest free side to room-center (pref=90); PDF K-CORNER)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-WALL-E",
+   "label": "WALL_CABINET",
+   "semantic_type": "WALL_CABINET",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    7420,
+    535,
+    7800,
+    3750
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 90.0,
+   "semantic_facing_deg": 180,
+   "inference_source": "interior_facing(2 walled)+pdf",
+   "confidence": "MEDIUM",
+   "reason": "WALL_CABINET: front toward kitchen interior (free side matches room-center; PDF K-WALL-E)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-FRIDGE",
+   "label": "FRIDGE",
+   "semantic_type": "FRIDGE",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    6835,
+    3750,
+    7740,
+    4450
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 270,
+   "inference_source": "interior_facing(2 walled)+pdf",
+   "confidence": "MEDIUM",
+   "reason": "FRIDGE: front toward kitchen interior (free side matches room-center; PDF K-FRIDGE)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-FRIDGE-OVERHEAD",
+   "label": "FRIDGE_OVERHEAD_CABINET",
+   "semantic_type": "FRIDGE_OVERHEAD_CABINET",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    6835,
+    3750,
+    7740,
+    4450
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 270,
+   "inference_source": "interior_facing(2 walled)+pdf",
+   "confidence": "MEDIUM",
+   "reason": "FRIDGE_OVERHEAD_CABINET: front toward kitchen interior (free side matches room-center; PDF K-FRIDGE-OVERHEAD)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  },
+  {
+   "source_name": "K-TALL-L",
+   "label": "TALL_CABINET",
+   "semantic_type": "TALL_CABINET",
+   "room": "R-KITCHEN/厨房",
+   "zone": "R-KITCHEN",
+   "rect": [
+    5900,
+    3750,
+    6835,
+    4450
+   ],
+   "level": "lower",
+   "geometry_axis_deg": 0.0,
+   "semantic_facing_deg": 270,
+   "inference_source": "interior_facing(2 walled)+pdf",
+   "confidence": "MEDIUM",
+   "reason": "TALL_CABINET: front toward kitchen interior (free side matches room-center; PDF K-TALL-L)",
+   "authority": "KITCHEN_CABINET_3D_REGISTER_V01 (cabinet_plan.pdf)"
+  }
+ ]
+}

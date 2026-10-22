@@ -1,0 +1,168 @@
+{
+  "status": "HUMAN_REVIEW",
+  "base": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_THINNER_AC_RAISED_REVIEW.blend",
+  "base_sha256": "bffc60b456e81e30a29613e9b3ef07b6684a16700233c5a6673fab5bf49588ed",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/OPTION_A_R4_DINING_CHAIRS_ALIGNED_REVIEW.blend",
+  "output_sha256": "e2f3f107eb6619ae28a363e0e4e36019cdae94c89aabe9ac4b8c0c07b14b14ac",
+  "table": "B11_Rectangle050_CATALOG_00_00",
+  "table_bounds_m": [
+    [
+      3.02762508392334,
+      3.064406156539917,
+      0.0
+    ],
+    [
+      4.627624988555908,
+      3.8644063472747803,
+      0.75
+    ]
+  ],
+  "before": {
+    "B11_Circle010_CATALOG_00_00": [
+      [
+        3.088749885559082,
+        3.977062463760376,
+        0.0
+      ],
+      [
+        3.4887499809265137,
+        4.3770623207092285,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Circle011_CATALOG_00_00": [
+      [
+        3.8857500553131104,
+        3.977062463760376,
+        0.0
+      ],
+      [
+        4.285749912261963,
+        4.3770623207092285,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Circle012_CATALOG_00_00": [
+      [
+        3.1136250495910645,
+        2.4828124046325684,
+        0.0
+      ],
+      [
+        3.513625144958496,
+        2.8828125,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Circle013_CATALOG_00_00": [
+      [
+        3.9106247425079346,
+        2.557499885559082,
+        0.0
+      ],
+      [
+        4.310624599456787,
+        2.9574999809265137,
+        0.8500000238418579
+      ]
+    ]
+  },
+  "after": {
+    "B11_Circle010_CATALOG_00_00": [
+      [
+        3.2276251316070557,
+        3.5444064140319824,
+        0.0
+      ],
+      [
+        3.6276252269744873,
+        3.944406270980835,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Circle011_CATALOG_00_00": [
+      [
+        4.02762508392334,
+        3.5444064140319824,
+        0.0
+      ],
+      [
+        4.427624702453613,
+        3.944406270980835,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Circle012_CATALOG_00_00": [
+      [
+        3.2276251316070557,
+        2.984405994415283,
+        0.0
+      ],
+      [
+        3.6276252269744873,
+        3.384406089782715,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Circle013_CATALOG_00_00": [
+      [
+        4.02762508392334,
+        2.984405994415283,
+        0.0
+      ],
+      [
+        4.427624702453613,
+        3.384406089782715,
+        0.8500000238418579
+      ]
+    ]
+  },
+  "chairs": [
+    "B11_Circle010_CATALOG_00_00",
+    "B11_Circle011_CATALOG_00_00",
+    "B11_Circle012_CATALOG_00_00",
+    "B11_Circle013_CATALOG_00_00"
+  ],
+  "allowed_objects": [
+    "B11_Circle010",
+    "B11_Circle010_CATALOG_00_00",
+    "B11_Circle011",
+    "B11_Circle011_CATALOG_00_00",
+    "B11_Circle012",
+    "B11_Circle012_CATALOG_00_00",
+    "B11_Circle013",
+    "B11_Circle013_CATALOG_00_00"
+  ],
+  "station_x_m": [
+    3.427625060081482,
+    4.227625012397766
+  ],
+  "center_inset_from_table_edge_m": 0.12,
+  "table_chair_surface_intersections": false,
+  "chair_chair_surface_intersections": false,
+  "chairs_geometry_scale_yaw_floor_height_preserved": true,
+  "all_other_objects_unchanged": true,
+  "fresh_reopen_verified": true,
+  "frozen_files_unchanged": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": {
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "size": 1584568,
+      "mtime_ns": "1790946023854530466"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_APPROVED_AS_IS_V1.blend": {
+      "sha256": "28b289a38dbabafbc312e18b3057f232c51c44c07735b1cfcbd39aea39fd0536",
+      "size": 820968,
+      "mtime_ns": "1790851920866005988"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_DELIVERY_MANIFEST.json": {
+      "sha256": "913dde0a9723567917ce109c9d305e282f4bec38b601713853682596d7a86824",
+      "size": 1528,
+      "mtime_ns": "1790946877342285248"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_FREEZE_MANIFEST.json": {
+      "sha256": "25275a227e0ef9093727034f8802934c9d0d3b6b0351137fba6476ba181c72df",
+      "size": 19203,
+      "mtime_ns": "1790852612374550735"
+    }
+  }
+}

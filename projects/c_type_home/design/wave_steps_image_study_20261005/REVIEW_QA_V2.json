@@ -1,0 +1,36 @@
+{
+  "status": "CONCEPT_HUMAN_REVIEW",
+  "selected_candidate": "OPTION_E_RETRACTED_FULL_WAVE.png",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "requested_size": "1536x1152",
+  "actual_size": [
+    1448,
+    1086
+  ],
+  "requirements": {
+    "minimum_retraction_m": 0.4,
+    "riser_count": 4,
+    "tread_depth_m": 0.4,
+    "wave_shape": "low-amplitude asymmetrical S / contour wave",
+    "model_modified": false
+  },
+  "visual_qc": {
+    "retraction_direction": "toward upper floor / former leisure footprint",
+    "living_room_floor_reclaimed": "visible",
+    "full_wave_edges": "continuous with broad center pocket and right counter-sweep",
+    "left_end": "full width, no pointed taper",
+    "furniture_camera_architecture_preserved": "visually retained"
+  },
+  "limitations": [
+    "Raster concept cannot metrically prove 400mm tread depth or 400mm retraction.",
+    "Image2 plan is used only as directional sketch; R4 geometry and room boundaries were not edited.",
+    "Final stair count/geometry requires modeled review after user chooses a direction."
+  ],
+  "source_models_unchanged": true,
+  "alternatives": [
+    "OPTION_C_RETRACTED_WAVE.png",
+    "OPTION_D_ASYMMETRIC_WAVE.png",
+    "OPTION_A_FOUR_LEVEL_CURVE.png"
+  ]
+}

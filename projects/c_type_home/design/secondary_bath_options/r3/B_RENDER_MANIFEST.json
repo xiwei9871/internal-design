@@ -1,0 +1,133 @@
+[
+  {
+    "option": "B",
+    "view": "ENTRY",
+    "frame": 1,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/renders/B_ENTRY_001.png",
+    "sha256": "aceca5c97f0f8e1bd3b39054dd5a9c6c8aa370013096be5ae5b09a01de59425d",
+    "source": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/OPTION_B_INWARD_R3.blend",
+    "source_sha256": "a2a7c2d08c740c0e7c0747a50dd5c8c176d6c67d3d56065168f783a7d64e596e",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [],
+    "glass_hidden": false,
+    "source_saved": false
+  },
+  {
+    "option": "B",
+    "view": "ENTRY",
+    "frame": 100,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/renders/B_ENTRY_100.png",
+    "sha256": "edee72c102312571b1c3906146ba2c2e79395a6395c957ec2d6605f624abc6c8",
+    "source": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/OPTION_B_INWARD_R3.blend",
+    "source_sha256": "a2a7c2d08c740c0e7c0747a50dd5c8c176d6c67d3d56065168f783a7d64e596e",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [],
+    "glass_hidden": false,
+    "source_saved": false
+  },
+  {
+    "option": "B",
+    "view": "INTERIOR",
+    "frame": 100,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/renders/B_INTERIOR_100.png",
+    "sha256": "faef28ba38f79afe5a10374d8d7794b3e8dbdb31dcd5d4b4dfb5ba4728f11d44",
+    "source": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/OPTION_B_INWARD_R3.blend",
+    "source_sha256": "a2a7c2d08c740c0e7c0747a50dd5c8c176d6c67d3d56065168f783a7d64e596e",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [],
+    "glass_hidden": true,
+    "source_saved": false
+  },
+  {
+    "option": "B",
+    "view": "CONTEXT_AXON",
+    "frame": 100,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/renders/B_CONTEXT_AXON_100.png",
+    "sha256": "6e8bf1ad064d25720b9f108886f451d9dabc1fbcb44b4d565ad508a6d687b7d5",
+    "source": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/OPTION_B_INWARD_R3.blend",
+    "source_sha256": "a2a7c2d08c740c0e7c0747a50dd5c8c176d6c67d3d56065168f783a7d64e596e",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [],
+    "glass_hidden": false,
+    "source_saved": false
+  },
+  {
+    "option": "B",
+    "view": "CUTAWAY_AXON",
+    "frame": 100,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/renders/B_CUTAWAY_AXON_100.png",
+    "sha256": "cab3ce946f48942109e594abe6adc321400b80989b3e9bb559120a40554e7694",
+    "source": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/OPTION_B_INWARD_R3.blend",
+    "source_sha256": "a2a7c2d08c740c0e7c0747a50dd5c8c176d6c67d3d56065168f783a7d64e596e",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [
+      "R3_CASING_N_EAST",
+      "R3_CASING_N_HEAD",
+      "R3_CASING_N_WEST",
+      "R3_CASING_S_EAST",
+      "R3_CASING_S_HEAD",
+      "R3_CASING_S_WEST",
+      "R3_COMPLETE_PARTITION_WALLS",
+      "R3_FRAME_EAST",
+      "R3_FRAME_HEAD",
+      "R3_FRAME_WEST",
+      "R3_HINGED_LEAF",
+      "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "R3_WARDROBE_BACK",
+      "R3_WARDROBE_BASE",
+      "R3_WARDROBE_FRONT_0",
+      "R3_WARDROBE_FRONT_1",
+      "R3_WARDROBE_FRONT_2",
+      "R3_WARDROBE_L",
+      "R3_WARDROBE_PLINTH",
+      "R3_WARDROBE_PULL_0",
+      "R3_WARDROBE_PULL_1",
+      "R3_WARDROBE_PULL_2",
+      "R3_WARDROBE_R",
+      "R3_WARDROBE_SHELF",
+      "R3_WARDROBE_TOP",
+      "V5_CORNER_PATCH_J10_1",
+      "V5_CORNER_PATCH_J14_1",
+      "V5_CORNER_PATCH_J15_1"
+    ],
+    "glass_hidden": true,
+    "source_saved": false
+  },
+  {
+    "option": "B",
+    "view": "RESTORED_AREA",
+    "frame": 100,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/renders/B_RESTORED_AREA_100.png",
+    "sha256": "f143c21ec7fd7c5d557e2be0e2d390380a929a6460f9b9bb1f1af0feab74daae",
+    "source": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/OPTION_B_INWARD_R3.blend",
+    "source_sha256": "a2a7c2d08c740c0e7c0747a50dd5c8c176d6c67d3d56065168f783a7d64e596e",
+    "resolution": [
+      1800,
+      1400
+    ],
+    "engine": "Workbench",
+    "temporary_section_objects": [],
+    "glass_hidden": false,
+    "source_saved": false
+  }
+]

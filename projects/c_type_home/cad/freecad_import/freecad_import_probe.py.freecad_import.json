@@ -1,0 +1,11 @@
+{
+  "file": "projects/c_type_home/cad/freecad_import/freecad_import_probe.py",
+  "status": "PASS",
+  "import_module": "importDXF",
+  "document": "freecad_import_probe",
+  "object_count": 0,
+  "types": {},
+  "labels": [],
+  "shape_object_count": 0,
+  "shape_extents_mm": null
+}

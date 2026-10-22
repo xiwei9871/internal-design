@@ -1,0 +1,49 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_living_wave_glass_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_living_wave_glass_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_LIVING_WAVE_GLASS_REVIEW.blend",
+  "source_sha256": "29358124b3d1eee78ca44ea1a7d240a8b2f1fc6a9b06175c533604898722befb",
+  "source_revision": "r4-living-wave-glass-review-1",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "10-living-wave-steps-north-glass-review",
+        "sha256": "2bab74912220a5f20f19d5c2b35276f85abfb2ac46d944f049cf952eff7095f5",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/spatial-canvas.bindings.wave-glass.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": true,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 639,
+        "display_floor": 5,
+        "display_furniture": 333
+      },
+      "flat_color_count": 3
+    }
+  },
+  "entity_count": 977,
+  "scope": "full"
+}

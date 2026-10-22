@@ -1,0 +1,54 @@
+00:02.282  blend            | Read blend: "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/B1_1_SITE_CORRECTED_V3.blend"
+/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/correct_windows_and_buffet_v4.py:29: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  M_WALL.use_nodes=True;bsdf=M_WALL.node_tree.nodes.get('Principled BSDF')
+Info: Saved as "B1_1_SITE_CORRECTED_V4.blend"
+{
+  "status": "HUMAN_REVIEW",
+  "source_v3_sha256": "d95f113217226d40c18c5cc5791703b34649ead60cf165150fbaccf936186ebf",
+  "model_sha256": "c4ea632f5a8a906f602fd56afc3a6d0d001d6eef6402fdc2a16f83d54fab6a34",
+  "B0_INTEGRITY": "PASS",
+  "all_previous_objects_geometry_and_pose_preserved": 824,
+  "kitchen_window": {
+    "span_mm": 1000,
+    "sill_mm": 1020,
+    "head_mm": 2400,
+    "height_mm": 1380,
+    "countertop_mm": 820,
+    "wall_above_counter_mm": 200
+  },
+  "balcony_window": {
+    "span_mm": 3000,
+    "x_mm": [
+      2100,
+      5100
+    ],
+    "sill_mm": 1050,
+    "head_mm": 2400,
+    "height_unchanged": true,
+    "authority": "USER_CONFIRMED_OVERLAY; APPROX_DIAGRAM_AXIS_READ_NOT_WALL_SPAN"
+  },
+  "red_region": {
+    "object": "W_wall_md_0042",
+    "cause": "450mm review cut made 1050mm window wall appear as a low cabinet",
+    "correction": "retain full window-under-wall height in renders; continuous wall material; no cabinet there"
+  },
+  "photo5_cabinet": {
+    "object": "B11_SITE_PHOTO5_BUFFET_R029",
+    "footprint_unchanged_mm": [
+      1500,
+      500
+    ],
+    "upper_doors": 4,
+    "lower_doors": 4,
+    "drawers": 2,
+    "counter_top_mm": 1100,
+    "open_middle_height_mm": 450,
+    "overall_review_height_mm": 2710,
+    "authority": "photo presence/order; PDF page6 dimension chain; guide footprint retained"
+  },
+  "narrow_four_panel_refinement": "RETAINED_FROM_V3",
+  "review_state": "HUMAN_REVIEW"
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

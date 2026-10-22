@@ -1,0 +1,351 @@
+[
+  {
+    "id": "01",
+    "name": "全屋墙体接口_北侧轴测",
+    "camera": "WALL_V4_CAM_01",
+    "pos": [
+      2,
+      17,
+      12
+    ],
+    "target": [
+      9,
+      7.1,
+      1.35
+    ],
+    "scale": 22,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_01.png",
+    "sha256": "173406344344f4bfbd5ee8e7d96fa7fef9e97be4f667d3da17e98d8b5d906750",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "02",
+    "name": "全屋墙体接口_南侧轴测",
+    "camera": "WALL_V4_CAM_02",
+    "pos": [
+      18,
+      -4,
+      12
+    ],
+    "target": [
+      8.8,
+      7.0,
+      1.35
+    ],
+    "scale": 22,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_02.png",
+    "sha256": "a4985fbed42e8ec21f4ab05f87480a395bd3b9b9f767598caf2db2509e74375b",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "03",
+    "name": "走廊墙体交接近景",
+    "camera": "WALL_V4_CAM_03",
+    "pos": [
+      9.75,
+      7.1,
+      1.85
+    ],
+    "target": [
+      12.6,
+      7.1,
+      1.85
+    ],
+    "lens": 26,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_03.png",
+    "sha256": "e9dd3e7ca0a42563d89bed15184eeb943c95a133e09876cb4d2df5762cd1dd0a",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "04",
+    "name": "D107标注边界保留检查",
+    "camera": "DOOR_V2_CAM_02",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_04.png",
+    "sha256": "1eaed7b60fcc25160bb8a070270d778fd358321c1f17f62d2f5fa739cbd6591a",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "DOOR_D-STUDY",
+    "name": "现书房门完整门洞",
+    "camera": "V4_CAM_D-STUDY",
+    "pos": [
+      10.100000000000001,
+      7.125,
+      1.8499999999999999
+    ],
+    "target": [
+      13.0,
+      7.125,
+      1.8499999999999999
+    ],
+    "lens": 24,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-STUDY.png",
+    "sha256": "a5f41d6038f4f910926b1d2caf3f3b97226bb5da2fa73b284c060df4874ab1e3",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "DOOR_D-BATHM",
+    "name": "内侧卫生间门完整门洞",
+    "camera": "V4_CAM_D-BATHM",
+    "pos": [
+      12.375,
+      3.6000000000000005,
+      1.8499999999999999
+    ],
+    "target": [
+      12.375,
+      6.5,
+      1.8499999999999999
+    ],
+    "lens": 24,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-BATHM.png",
+    "sha256": "545d19fd43a2f9101973b07ee0d9052f2c2a159af375ef3787a7b681b56b664b",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "DOOR_D-MB",
+    "name": "主卫门完整门洞",
+    "camera": "V4_CAM_D-MB",
+    "pos": [
+      12.2,
+      5.175,
+      1.85
+    ],
+    "target": [
+      13.0,
+      5.175,
+      1.85
+    ],
+    "scale": 3.9,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-MB.png",
+    "sha256": "279498504cdae8cb0bdde690a8648b6413696973d7b369fcc49fe96b6b925172",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "DOOR_D-GUEST-BATH",
+    "name": "客卫门完整门洞",
+    "camera": "V4_CAM_D-GUEST-BATH",
+    "pos": [
+      9.225,
+      7.2,
+      1.85
+    ],
+    "target": [
+      9.225,
+      7.9,
+      1.85
+    ],
+    "scale": 3.9,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-GUEST-BATH.png",
+    "sha256": "153bea035a3adc3c41d80e29d64c318970ec30c6bd0e340c832c19d9c652d2f9",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "DOOR_D-GUEST-ROOM",
+    "name": "客房普通门完整门洞",
+    "camera": "V4_CAM_D-GUEST-ROOM",
+    "pos": [
+      10.425,
+      7.2,
+      1.85
+    ],
+    "target": [
+      10.425,
+      7.9,
+      1.85
+    ],
+    "scale": 3.9,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_D-GUEST-ROOM.png",
+    "sha256": "653041314aaa788706beff8275885e9e47b8a5ed65ad9e4331eea5f30b7e6a7f",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "DOOR_ENT-1",
+    "name": "入户子母门完整门洞",
+    "camera": "V4_CAM_ENT-1",
+    "pos": [
+      -0.09999999999999964,
+      5.99,
+      1.4
+    ],
+    "target": [
+      2.8,
+      5.99,
+      1.4
+    ],
+    "lens": 24,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_DOOR_ENT-1.png",
+    "sha256": "aa7255acccba2424c300440122c8f41f3a21e307a12ea7223f32d09acb3a3501",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "GUEST_GLASS",
+    "name": "客房移门贯穿门洞",
+    "camera": "V4_CAM_GUEST_GLASS",
+    "pos": [
+      11.4,
+      8.35,
+      1.9
+    ],
+    "target": [
+      11.4,
+      11,
+      1.85
+    ],
+    "lens": 24,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_GUEST_GLASS.png",
+    "sha256": "3ec7d72f6240d73abba2fc5ad3aaea5fd45db8a222ac1be7facad3de536842d5",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "LEISURE_GLASS",
+    "name": "休闲平台旁移门完整围合",
+    "camera": "V4_CAM_LEISURE_GLASS",
+    "pos": [
+      4.3,
+      7.35,
+      1.65
+    ],
+    "target": [
+      4.3,
+      4.62,
+      1.4
+    ],
+    "lens": 24,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_LEISURE_GLASS.png",
+    "sha256": "0d961674872b54b218dc853fd99bfa18a69a534cc4b793273a7ae23c8a2f324d",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "BAY_W-SMB-S",
+    "name": "次主卧飘窗外挑平台与外窗",
+    "camera": "V4_CAM_BAY_W-SMB-S",
+    "pos": [
+      9.7,
+      2.3,
+      1.85
+    ],
+    "target": [
+      9.7,
+      -0.4,
+      1.85
+    ],
+    "lens": 24,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_BAY_W-SMB-S.png",
+    "sha256": "e668680bd3bf3eb0e0f4c5bce52a184c87b336aeeffe24ee0794087f84468f87",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "BAY_W-MB-S",
+    "name": "主卧飘窗外挑平台与外窗",
+    "camera": "V4_CAM_BAY_W-MB-S",
+    "pos": [
+      13.45,
+      2.3,
+      1.85
+    ],
+    "target": [
+      13.45,
+      -0.4,
+      1.85
+    ],
+    "lens": 24,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_BAY_W-MB-S.png",
+    "sha256": "f81db0e756744d8fe77116e24acb64821bfcdfc8d77633740bf7b8e1d626974d",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  },
+  {
+    "id": "BAY_W-STUDY-NE",
+    "name": "现书房飘窗外挑平台与外窗",
+    "camera": "V4_CAM_BAY_W-STUDY-NE",
+    "pos": [
+      14.65,
+      8.6,
+      1.9
+    ],
+    "target": [
+      14.65,
+      11.55,
+      1.8
+    ],
+    "lens": 24,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/renders/WALL_JUNCTIONS_BAY_W-STUDY-NE.png",
+    "sha256": "27fb67f12dda40564145a51c86f3210525a785273817c0a0d32a848579e10363",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "wall_cuts": [],
+    "source_saved": false
+  }
+]

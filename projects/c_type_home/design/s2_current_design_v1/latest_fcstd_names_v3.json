@@ -1,0 +1,2140 @@
+{
+  "source_sha256": "c2c66524ae1c5da1aec18a7ee7359198479625f433b04aabeaf5a3d4a1e66293",
+  "labels": [
+    {
+      "name": "Layer",
+      "label": "0",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "LayerContainer",
+      "label": "Layers",
+      "type": "App::DocumentObjectGroupPython"
+    },
+    {
+      "name": "Layer001",
+      "label": "Defpoints",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Layer002",
+      "label": "S-S.WALL",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Layer003",
+      "label": "F-DOOR",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Layer004",
+      "label": "S-\\U+697c\\U+68af",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Layer005",
+      "label": "F-SAN FIT",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Layer006",
+      "label": "F-FURN",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Layer007",
+      "label": "USER_GUIDE_FURNITURE",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Polyline",
+      "label": "Polyline",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline022",
+      "label": "Polyline022",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line029",
+      "label": "Line029",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc008",
+      "label": "Arc008",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line030",
+      "label": "Line030",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc009",
+      "label": "Arc009",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line031",
+      "label": "Line031",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc010",
+      "label": "Arc010",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line032",
+      "label": "Line032",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc011",
+      "label": "Arc011",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line033",
+      "label": "Line033",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline023",
+      "label": "Polyline023",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline024",
+      "label": "Polyline024",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line034",
+      "label": "Line034",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline025",
+      "label": "Polyline025",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline026",
+      "label": "Polyline026",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line035",
+      "label": "Line035",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline027",
+      "label": "Polyline027",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Arc012",
+      "label": "Arc012",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Arc013",
+      "label": "Arc013",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line037",
+      "label": "Line037",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc014",
+      "label": "Arc014",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line038",
+      "label": "Line038",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc015",
+      "label": "Arc015",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line039",
+      "label": "Line039",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline028",
+      "label": "Polyline028",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line040",
+      "label": "Line040",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline029",
+      "label": "Polyline029",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline030",
+      "label": "Polyline030",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line041",
+      "label": "Line041",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline031",
+      "label": "Polyline031",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline032",
+      "label": "Polyline032",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line042",
+      "label": "Line042",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc016",
+      "label": "Arc016",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line043",
+      "label": "Line043",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc017",
+      "label": "Arc017",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Arc018",
+      "label": "Arc018",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line044",
+      "label": "Line044",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line045",
+      "label": "Line045",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc019",
+      "label": "Arc019",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line046",
+      "label": "Line046",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline033",
+      "label": "Polyline033",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline034",
+      "label": "Polyline034",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line047",
+      "label": "Line047",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline035",
+      "label": "Polyline035",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline036",
+      "label": "Polyline036",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line048",
+      "label": "Line048",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline037",
+      "label": "Polyline037",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Arc020",
+      "label": "Arc020",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line049",
+      "label": "Line049",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc021",
+      "label": "Arc021",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line050",
+      "label": "Line050",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc022",
+      "label": "Arc022",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line051",
+      "label": "Line051",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc023",
+      "label": "Arc023",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line052",
+      "label": "Line052",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline038",
+      "label": "Polyline038",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line053",
+      "label": "Line053",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline039",
+      "label": "Polyline039",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline040",
+      "label": "Polyline040",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line054",
+      "label": "Line054",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline041",
+      "label": "Polyline041",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline042",
+      "label": "Polyline042",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line055",
+      "label": "Line055",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc024",
+      "label": "Arc024",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line056",
+      "label": "Line056",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc025",
+      "label": "Arc025",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line057",
+      "label": "Line057",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc026",
+      "label": "Arc026",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line058",
+      "label": "Line058",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc027",
+      "label": "Arc027",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line059",
+      "label": "Line059",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline043",
+      "label": "Polyline043",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline044",
+      "label": "Polyline044",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line060",
+      "label": "Line060",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline045",
+      "label": "Polyline045",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline046",
+      "label": "Polyline046",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line061",
+      "label": "Line061",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline047",
+      "label": "Polyline047",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Arc028",
+      "label": "Arc028",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line062",
+      "label": "Line062",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc029",
+      "label": "Arc029",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line063",
+      "label": "Line063",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc030",
+      "label": "Arc030",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line064",
+      "label": "Line064",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc031",
+      "label": "Arc031",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line065",
+      "label": "Line065",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline048",
+      "label": "Polyline048",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line066",
+      "label": "Line066",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline049",
+      "label": "Polyline049",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline050",
+      "label": "Polyline050",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line067",
+      "label": "Line067",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline051",
+      "label": "Polyline051",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline052",
+      "label": "Polyline052",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line068",
+      "label": "Line068",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc032",
+      "label": "Arc032",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line069",
+      "label": "Line069",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc033",
+      "label": "Arc033",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line070",
+      "label": "Line070",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc034",
+      "label": "Arc034",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line071",
+      "label": "Line071",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc035",
+      "label": "Arc035",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line072",
+      "label": "Line072",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line201",
+      "label": "Line201",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line073",
+      "label": "Line073",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline053",
+      "label": "Polyline053",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline054",
+      "label": "Polyline054",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line074",
+      "label": "Line074",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line202",
+      "label": "Line202",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line075",
+      "label": "Line075",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline055",
+      "label": "Polyline055",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline056",
+      "label": "Polyline056",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line076",
+      "label": "Line076",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline057",
+      "label": "Polyline057",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline058",
+      "label": "Polyline058",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline011",
+      "label": "Polyline011",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline059",
+      "label": "Polyline059",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline012",
+      "label": "Polyline012",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline013",
+      "label": "Polyline013",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line077",
+      "label": "Line077",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line078",
+      "label": "Line078",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line079",
+      "label": "Line079",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line080",
+      "label": "Line080",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line081",
+      "label": "Line081",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line082",
+      "label": "Line082",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line083",
+      "label": "Line083",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line084",
+      "label": "Line084",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line085",
+      "label": "Line085",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line086",
+      "label": "Line086",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line087",
+      "label": "Line087",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line088",
+      "label": "Line088",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line089",
+      "label": "Line089",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line090",
+      "label": "Line090",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line091",
+      "label": "Line091",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line092",
+      "label": "Line092",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line093",
+      "label": "Line093",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line094",
+      "label": "Line094",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line095",
+      "label": "Line095",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line096",
+      "label": "Line096",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line097",
+      "label": "Line097",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line098",
+      "label": "Line098",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line099",
+      "label": "Line099",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line100",
+      "label": "Line100",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line101",
+      "label": "Line101",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line102",
+      "label": "Line102",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line103",
+      "label": "Line103",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line104",
+      "label": "Line104",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line105",
+      "label": "Line105",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line106",
+      "label": "Line106",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line107",
+      "label": "Line107",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line108",
+      "label": "Line108",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line109",
+      "label": "Line109",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line110",
+      "label": "Line110",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line111",
+      "label": "Line111",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line112",
+      "label": "Line112",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line113",
+      "label": "Line113",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line114",
+      "label": "Line114",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line115",
+      "label": "Line115",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line116",
+      "label": "Line116",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line117",
+      "label": "Line117",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line118",
+      "label": "Line118",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line119",
+      "label": "Line119",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line120",
+      "label": "Line120",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line121",
+      "label": "Line121",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line122",
+      "label": "Line122",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line123",
+      "label": "Line123",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line124",
+      "label": "Line124",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line125",
+      "label": "Line125",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line126",
+      "label": "Line126",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line127",
+      "label": "Line127",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line128",
+      "label": "Line128",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line129",
+      "label": "Line129",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line130",
+      "label": "Line130",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line131",
+      "label": "Line131",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line132",
+      "label": "Line132",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line133",
+      "label": "Line133",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line134",
+      "label": "Line134",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line135",
+      "label": "Line135",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line136",
+      "label": "Line136",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line137",
+      "label": "Line137",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line138",
+      "label": "Line138",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line139",
+      "label": "Line139",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line140",
+      "label": "Line140",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line217",
+      "label": "Line217",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line141",
+      "label": "Line141",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line218",
+      "label": "Line218",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line142",
+      "label": "Line142",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line219",
+      "label": "Line219",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line143",
+      "label": "Line143",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line220",
+      "label": "Line220",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line144",
+      "label": "Line144",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc038",
+      "label": "Arc038",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line145",
+      "label": "Line145",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line221",
+      "label": "Line221",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line146",
+      "label": "Line146",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc039",
+      "label": "Arc039",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line147",
+      "label": "Line147",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line222",
+      "label": "Line222",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line148",
+      "label": "Line148",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line223",
+      "label": "Line223",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line149",
+      "label": "Line149",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line224",
+      "label": "Line224",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line150",
+      "label": "Line150",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line225",
+      "label": "Line225",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line151",
+      "label": "Line151",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line226",
+      "label": "Line226",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line152",
+      "label": "Line152",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line227",
+      "label": "Line227",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line252",
+      "label": "Line252",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line153",
+      "label": "Line153",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc040",
+      "label": "Arc040",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line253",
+      "label": "Line253",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc044",
+      "label": "Arc044",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Arc041",
+      "label": "Arc041",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line154",
+      "label": "Line154",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line155",
+      "label": "Line155",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line228",
+      "label": "Line228",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line254",
+      "label": "Line254",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line156",
+      "label": "Line156",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline021",
+      "label": "Polyline021",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Arc042",
+      "label": "Arc042",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line255",
+      "label": "Line255",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline020",
+      "label": "Polyline020",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line157",
+      "label": "Line157",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc043",
+      "label": "Arc043",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line256",
+      "label": "Line256",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line158",
+      "label": "Line158",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line229",
+      "label": "Line229",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line257",
+      "label": "Line257",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line159",
+      "label": "Line159",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line230",
+      "label": "Line230",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line160",
+      "label": "Line160",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line231",
+      "label": "Line231",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line161",
+      "label": "Line161",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line232",
+      "label": "Line232",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line162",
+      "label": "Line162",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line233",
+      "label": "Line233",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line163",
+      "label": "Line163",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line234",
+      "label": "Line234",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line164",
+      "label": "Line164",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line235",
+      "label": "Line235",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline014",
+      "label": "Polyline014",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line236",
+      "label": "Line236",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line165",
+      "label": "Line165",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line237",
+      "label": "Line237",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line166",
+      "label": "Line166",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line238",
+      "label": "Line238",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line167",
+      "label": "Line167",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line239",
+      "label": "Line239",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line168",
+      "label": "Line168",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line240",
+      "label": "Line240",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line169",
+      "label": "Line169",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line241",
+      "label": "Line241",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line170",
+      "label": "Line170",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line242",
+      "label": "Line242",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line171",
+      "label": "Line171",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line243",
+      "label": "Line243",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line172",
+      "label": "Line172",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line244",
+      "label": "Line244",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line173",
+      "label": "Line173",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line245",
+      "label": "Line245",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline015",
+      "label": "Polyline015",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline016",
+      "label": "Polyline016",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line246",
+      "label": "Line246",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline017",
+      "label": "Polyline017",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line174",
+      "label": "Line174",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line247",
+      "label": "Line247",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line175",
+      "label": "Line175",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line248",
+      "label": "Line248",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line176",
+      "label": "Line176",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line249",
+      "label": "Line249",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line177",
+      "label": "Line177",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line250",
+      "label": "Line250",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line178",
+      "label": "Line178",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line251",
+      "label": "Line251",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line179",
+      "label": "Line179",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line180",
+      "label": "Line180",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line181",
+      "label": "Line181",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line182",
+      "label": "Line182",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line183",
+      "label": "Line183",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line184",
+      "label": "Line184",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line185",
+      "label": "Line185",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line186",
+      "label": "Line186",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line187",
+      "label": "Line187",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line188",
+      "label": "Line188",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line028",
+      "label": "Line028",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line189",
+      "label": "Line189",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line190",
+      "label": "Line190",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line191",
+      "label": "Line191",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line192",
+      "label": "Line192",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line193",
+      "label": "Line193",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line194",
+      "label": "Line194",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line195",
+      "label": "Line195",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line196",
+      "label": "Line196",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line197",
+      "label": "Line197",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line198",
+      "label": "Line198",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line199",
+      "label": "Line199",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line200",
+      "label": "Line200",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line203",
+      "label": "Line203",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line204",
+      "label": "Line204",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line205",
+      "label": "Line205",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line206",
+      "label": "Line206",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line207",
+      "label": "Line207",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line208",
+      "label": "Line208",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line209",
+      "label": "Line209",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc036",
+      "label": "Arc036",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Arc037",
+      "label": "Arc037",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line210",
+      "label": "Line210",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line211",
+      "label": "Line211",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line212",
+      "label": "Line212",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line213",
+      "label": "Line213",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line214",
+      "label": "Line214",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line215",
+      "label": "Line215",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line216",
+      "label": "Line216",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line",
+      "label": "Line",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line001",
+      "label": "Line001",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line002",
+      "label": "Line002",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line003",
+      "label": "Line003",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line004",
+      "label": "Line004",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line005",
+      "label": "Line005",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line006",
+      "label": "Line006",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line007",
+      "label": "Line007",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line008",
+      "label": "Line008",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line009",
+      "label": "Line009",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line010",
+      "label": "Line010",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line011",
+      "label": "Line011",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line012",
+      "label": "Line012",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line013",
+      "label": "Line013",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line014",
+      "label": "Line014",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Line015",
+      "label": "Line015",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline001",
+      "label": "Polyline001",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline002",
+      "label": "Polyline002",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line016",
+      "label": "Line016",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline003",
+      "label": "Polyline003",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline004",
+      "label": "Polyline004",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line017",
+      "label": "Line017",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline005",
+      "label": "Polyline005",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Arc",
+      "label": "Arc",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line018",
+      "label": "Line018",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc001",
+      "label": "Arc001",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line019",
+      "label": "Line019",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc002",
+      "label": "Arc002",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line020",
+      "label": "Line020",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc003",
+      "label": "Arc003",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line021",
+      "label": "Line021",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline006",
+      "label": "Polyline006",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line022",
+      "label": "Line022",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline007",
+      "label": "Polyline007",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline008",
+      "label": "Polyline008",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line023",
+      "label": "Line023",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Polyline009",
+      "label": "Polyline009",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline010",
+      "label": "Polyline010",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Line024",
+      "label": "Line024",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc004",
+      "label": "Arc004",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line025",
+      "label": "Line025",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc005",
+      "label": "Arc005",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line026",
+      "label": "Line026",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc006",
+      "label": "Arc006",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Line027",
+      "label": "Line027",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Arc007",
+      "label": "Arc007",
+      "type": "Part::Circle"
+    },
+    {
+      "name": "Polyline018",
+      "label": "Polyline018",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Polyline019",
+      "label": "Polyline019",
+      "type": "Part::Feature"
+    },
+    {
+      "name": "Rectangle",
+      "label": "Rectangle",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle004",
+      "label": "电视柜（或者悬浮电视墙）",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Line258",
+      "label": "Line517",
+      "type": "Part::FeaturePython"
+    },
+    {
+      "name": "Line259",
+      "label": "Line518",
+      "type": "Part::FeaturePython"
+    },
+    {
+      "name": "Line260",
+      "label": "Line519",
+      "type": "Part::FeaturePython"
+    },
+    {
+      "name": "Rectangle007",
+      "label": "客卫（湿区）",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle008",
+      "label": "客卫马桶",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle011",
+      "label": "次主卧床头占位",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle012",
+      "label": "次主卧床",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle013",
+      "label": "主卧床",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle014",
+      "label": "主卧床头柜占位",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle015",
+      "label": "主卧衣柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle017",
+      "label": "次卧小床1.2",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Line036",
+      "label": "Line036",
+      "type": "Part::Line"
+    },
+    {
+      "name": "Rectangle018",
+      "label": "床背板+窄书桌占位",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle020",
+      "label": "Rectangle033",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle021",
+      "label": "次主卧衣柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle022",
+      "label": "主卧电视柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle023",
+      "label": "次主卧电视柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle024",
+      "label": "书柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle025",
+      "label": "矮书柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle026",
+      "label": "茶台",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Circle007",
+      "label": "主人椅",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle027",
+      "label": "条凳",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Circle008",
+      "label": "凳子",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Circle009",
+      "label": "次卧凳子",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Circle010",
+      "label": "餐椅",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Circle011",
+      "label": "餐椅003",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Circle012",
+      "label": "Circle013",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Circle013",
+      "label": "餐椅004",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle029",
+      "label": "现有橱柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Text",
+      "label": "Text",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Text001",
+      "label": "Text001",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Text002",
+      "label": "Text002",
+      "type": "App::FeaturePython"
+    },
+    {
+      "name": "Rectangle030",
+      "label": "客卫洗手盆柜体",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle031",
+      "label": "鞋柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle032",
+      "label": "橱柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle033",
+      "label": "主卫湿区",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle034",
+      "label": "主卫马桶",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle035",
+      "label": "主卫洗手盆和柜体",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle036",
+      "label": "次主卫湿区",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle037",
+      "label": "次主卫台盆和柜体",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle038",
+      "label": "次主卫马桶",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle039",
+      "label": "冰柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle040",
+      "label": "洗衣机+烘干机（叠放）",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle041",
+      "label": "3kg洗衣机",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle042",
+      "label": "斜坡给未来轮椅使用预留",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle043",
+      "label": "打印机",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle044",
+      "label": "nas",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle045",
+      "label": "次卧衣柜",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle046",
+      "label": "三人位",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle047",
+      "label": "双人位",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle048",
+      "label": "贵妃椅",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle049",
+      "label": "茶几",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Circle",
+      "label": "角几",
+      "type": "Part::Part2DObjectPython"
+    },
+    {
+      "name": "Rectangle050",
+      "label": "Rectangle073",
+      "type": "Part::Part2DObjectPython"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS_FRESH_OPEN_PRESERVATION",
+  "output_sha256": "cfabc7215452f4c2e9ddba3b7ab7c2f063c14c460ba773b1fc340ee0745f31c7",
+  "original_geometry_transforms_visibility_unchanged": 3478,
+  "changed_wood_panels": [
+    "B11_K-FRIDGE-OVERHEAD_L",
+    "B11_K-FRIDGE-OVERHEAD_R",
+    "B11_K-FRIDGE-OVERHEAD_TOP",
+    "B11_K-FRIDGE-OVERHEAD_BASE",
+    "B11_K-FRIDGE-OVERHEAD_BACK",
+    "B11_K-FRIDGE-OVERHEAD_PLINTH",
+    "B11_K-FRIDGE-OVERHEAD_FRONT_0",
+    "B11_K-FRIDGE-OVERHEAD_FRONT_1",
+    "B11_K-FRIDGE-OVERHEAD_SHELF"
+  ],
+  "matching_material_and_metric_UV": true,
+  "shower_layout_unchanged": true,
+  "shower_audit": {
+    "outer_envelope_mm": [
+      842.0,
+      784.8
+    ],
+    "shape": "five-sided chamfered corner; outer envelope is not a full rectangular clear area",
+    "rectangular_region_behind_chamfer_mm": [
+      842.0,
+      531.5
+    ],
+    "glass_thickness_mm": 8,
+    "post_width_mm": 18,
+    "door_panel_width_mm": 417.9,
+    "max_nominal_clear_between_posts_mm": 399.9,
+    "door_hinges_or_slide_track_registered": false,
+    "threshold_height_above_FFL_mm": 20,
+    "verdict": "Entry about400mm before hardware is too narrow for reliable basic daily use. Interior is also tight. Do not approve current shower as adequate; revise door/front geometry from an actual enclosure product before construction.",
+    "layout_changed": false
+  },
+  "protected_sources": 16
+}

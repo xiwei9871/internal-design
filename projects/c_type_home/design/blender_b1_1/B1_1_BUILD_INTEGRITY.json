@@ -1,0 +1,104 @@
+{
+  "before": [
+    {
+      "key": "baseline_blend",
+      "path": "design/blender_b0/B0_EXISTING_AS_IS.blend",
+      "actual": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+      "expected": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+      "match": true
+    },
+    {
+      "key": "cad_source_dxf",
+      "path": "cad/freecad_import/\u4e16\u7eaa\u6b23\u56edFF_freecad_WORKING_v2.dxf",
+      "actual": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0",
+      "expected": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0",
+      "match": true
+    },
+    {
+      "key": "floor_regions",
+      "path": "design/blender_b0/B0_FLOOR_REGIONS.json",
+      "actual": "6bab694418c0ab28c92e7411b567794be807e3a6126aa24c0ccdba0334f0ba75",
+      "expected": "6bab694418c0ab28c92e7411b567794be807e3a6126aa24c0ccdba0334f0ba75",
+      "match": true
+    },
+    {
+      "key": "z_datum_spec",
+      "path": "design/blender_b0/Z_DATUM_SPEC.json",
+      "actual": "18298132c706f80a998b8ac9e8ac50c4ca7ca4480cd6655d08fc3e37d15e8c5f",
+      "expected": "18298132c706f80a998b8ac9e8ac50c4ca7ca4480cd6655d08fc3e37d15e8c5f",
+      "match": true
+    },
+    {
+      "key": "geometry_gate",
+      "path": "design/blender_b0/B0_GEOMETRY_GATE_V2.json",
+      "actual": "223be556688f8ef0c95617ed5b3cb8d8c4d61b22d729fedfbd7c8605d63c41d4",
+      "expected": "223be556688f8ef0c95617ed5b3cb8d8c4d61b22d729fedfbd7c8605d63c41d4",
+      "match": true
+    },
+    {
+      "key": "level_field_50mm",
+      "path": "design/blender_b0/B0_LEVEL_FIELD.json",
+      "actual": "70c58dbbc10eabeb69989c0759bb8af2eff86d12bcc6bd78af6ce39720ec33eb",
+      "expected": "70c58dbbc10eabeb69989c0759bb8af2eff86d12bcc6bd78af6ce39720ec33eb",
+      "match": true
+    },
+    {
+      "key": "level_zone_map_v8",
+      "path": "design/blender_b0/B0_LEVEL_ZONE_MAP_V8_CLEAN.png",
+      "actual": "b39738dc2d813bcae3cc6f6411d3bb24e500bc2909b672b1fc25bd59a6fe27e9",
+      "expected": "b39738dc2d813bcae3cc6f6411d3bb24e500bc2909b672b1fc25bd59a6fe27e9",
+      "match": true
+    }
+  ],
+  "after": [
+    {
+      "key": "baseline_blend",
+      "path": "design/blender_b0/B0_EXISTING_AS_IS.blend",
+      "actual": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+      "expected": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+      "match": true
+    },
+    {
+      "key": "cad_source_dxf",
+      "path": "cad/freecad_import/\u4e16\u7eaa\u6b23\u56edFF_freecad_WORKING_v2.dxf",
+      "actual": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0",
+      "expected": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0",
+      "match": true
+    },
+    {
+      "key": "floor_regions",
+      "path": "design/blender_b0/B0_FLOOR_REGIONS.json",
+      "actual": "6bab694418c0ab28c92e7411b567794be807e3a6126aa24c0ccdba0334f0ba75",
+      "expected": "6bab694418c0ab28c92e7411b567794be807e3a6126aa24c0ccdba0334f0ba75",
+      "match": true
+    },
+    {
+      "key": "z_datum_spec",
+      "path": "design/blender_b0/Z_DATUM_SPEC.json",
+      "actual": "18298132c706f80a998b8ac9e8ac50c4ca7ca4480cd6655d08fc3e37d15e8c5f",
+      "expected": "18298132c706f80a998b8ac9e8ac50c4ca7ca4480cd6655d08fc3e37d15e8c5f",
+      "match": true
+    },
+    {
+      "key": "geometry_gate",
+      "path": "design/blender_b0/B0_GEOMETRY_GATE_V2.json",
+      "actual": "223be556688f8ef0c95617ed5b3cb8d8c4d61b22d729fedfbd7c8605d63c41d4",
+      "expected": "223be556688f8ef0c95617ed5b3cb8d8c4d61b22d729fedfbd7c8605d63c41d4",
+      "match": true
+    },
+    {
+      "key": "level_field_50mm",
+      "path": "design/blender_b0/B0_LEVEL_FIELD.json",
+      "actual": "70c58dbbc10eabeb69989c0759bb8af2eff86d12bcc6bd78af6ce39720ec33eb",
+      "expected": "70c58dbbc10eabeb69989c0759bb8af2eff86d12bcc6bd78af6ce39720ec33eb",
+      "match": true
+    },
+    {
+      "key": "level_zone_map_v8",
+      "path": "design/blender_b0/B0_LEVEL_ZONE_MAP_V8_CLEAN.png",
+      "actual": "b39738dc2d813bcae3cc6f6411d3bb24e500bc2909b672b1fc25bd59a6fe27e9",
+      "expected": "b39738dc2d813bcae3cc6f6411d3bb24e500bc2909b672b1fc25bd59a6fe27e9",
+      "match": true
+    }
+  ]
+}

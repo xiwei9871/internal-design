@@ -1,0 +1,78 @@
+{
+  "status": "HUMAN_REVIEW",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_LONG_SIDE_CABINET_CHAISE_SOUTH_REVIEW_10.blend",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_UPPER_BOOKCASE_SIDE_CABINET_CHAISE_REVIEW_9.blend",
+  "output_sha256": "70a36381a3f0131154e01fa19b1bf5b7ab63a2589995387dbaa108075970150f",
+  "before": {
+    "B11_Rectangle048_CATALOG_00_00": [
+      [
+        4.671625137329102,
+        11.955219268798828,
+        0.0
+      ],
+      [
+        6.371624946594238,
+        12.855218887329102,
+        0.800000011920929
+      ]
+    ],
+    "L_SOFA_5015_SHALLOW_SIDE_CABINET": [
+      [
+        4.25,
+        7.5799994468688965,
+        3.725290298461914e-09
+      ],
+      [
+        5.069999694824219,
+        7.900000095367432,
+        0.3400000035762787
+      ]
+    ]
+  },
+  "after": {
+    "B11_Rectangle048_CATALOG_00_00": [
+      [
+        4.671625137329102,
+        11.055219650268555,
+        0.0
+      ],
+      [
+        6.371624946594238,
+        11.955219268798828,
+        0.800000011920929
+      ]
+    ],
+    "L_SOFA_5015_SHALLOW_SIDE_CABINET": [
+      [
+        4.0,
+        7.549999713897705,
+        0.0
+      ],
+      [
+        5.199999809265137,
+        7.90000057220459,
+        0.44999998807907104
+      ]
+    ]
+  },
+  "cabinet_size_m": [
+    1.2,
+    0.35,
+    0.45
+  ],
+  "cabinet_is_custom_study_not_catalog5015_SKU": true,
+  "chaise_source_translation_m": [
+    0,
+    -0.9,
+    0
+  ],
+  "cabinet_to_sofa_gap_m": 0.05,
+  "chaise_to_coffee_north_south_gap_m": 0.5652198791503906,
+  "north_space_gain_m": 0.9,
+  "no_surface_intersections": true,
+  "all_other_object_states_unchanged": true,
+  "balcony_geometry_and_appliances_unchanged": true,
+  "actual_floor_below_both_furniture": true,
+  "fresh_reopen_verified": true,
+  "review9_and_frozen_r4_unchanged": true
+}

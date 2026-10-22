@@ -1,0 +1,127 @@
+[
+  {
+    "option": "B",
+    "view": "PLAN",
+    "raw": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/renders/raw/LEISURE_OPTION_B_PLAN.png",
+    "camera": {
+      "id": "PLAN",
+      "camera": "LEISURE_PLAN",
+      "pos": [
+        5.4,
+        7.45,
+        20
+      ],
+      "target": [
+        5.4,
+        7.45,
+        0
+      ],
+      "lens": 35,
+      "ortho": 13.5,
+      "cut": "roof_hidden"
+    },
+    "seconds": 1.2,
+    "cut_render_only": "roof_hidden",
+    "saved_back": false
+  },
+  {
+    "option": "B",
+    "view": "AXON",
+    "raw": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/renders/raw/LEISURE_OPTION_B_AXON.png",
+    "camera": {
+      "id": "AXON",
+      "camera": "LEISURE_AXON",
+      "pos": [
+        -3.0,
+        18.0,
+        15
+      ],
+      "target": [
+        5.5,
+        7.3,
+        0.25
+      ],
+      "lens": 35,
+      "ortho": 13.0,
+      "cut": "roof_hidden_wall_height1150"
+    },
+    "seconds": 0.58,
+    "cut_render_only": "roof_hidden_wall_height1150",
+    "saved_back": false
+  },
+  {
+    "option": "B",
+    "view": "VIEW_01",
+    "raw": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/renders/raw/LEISURE_OPTION_B_VIEW_01.png",
+    "camera": {
+      "id": "VIEW_01",
+      "camera": "LEISURE_FROM_LIVING",
+      "pos": [
+        5.5,
+        10.25,
+        1.55
+      ],
+      "target": [
+        6.65,
+        5.85,
+        0.7
+      ],
+      "lens": 28,
+      "ortho": null,
+      "cut": "NONE"
+    },
+    "seconds": 0.57,
+    "cut_render_only": "NONE",
+    "saved_back": false
+  },
+  {
+    "option": "B",
+    "view": "VIEW_02",
+    "raw": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/renders/raw/LEISURE_OPTION_B_VIEW_02.png",
+    "camera": {
+      "id": "VIEW_02",
+      "camera": "LEISURE_TO_LIVING",
+      "pos": [
+        7.55,
+        5.95,
+        2.0
+      ],
+      "target": [
+        4.8,
+        10.6,
+        0.92
+      ],
+      "lens": 28,
+      "ortho": null,
+      "cut": "NONE"
+    },
+    "seconds": 0.5,
+    "cut_render_only": "NONE",
+    "saved_back": false
+  },
+  {
+    "option": "B",
+    "view": "SECTION",
+    "raw": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/renders/raw/LEISURE_OPTION_B_SECTION.png",
+    "camera": {
+      "id": "SECTION",
+      "camera": "LEISURE_SECTION",
+      "pos": [
+        6.8,
+        3.0,
+        1.0
+      ],
+      "target": [
+        6.8,
+        6.0,
+        1.0
+      ],
+      "lens": 35,
+      "ortho": 4.7,
+      "cut": "section_y5.55"
+    },
+    "seconds": 0.4,
+    "cut_render_only": "section_y5.55",
+    "saved_back": false
+  }
+]

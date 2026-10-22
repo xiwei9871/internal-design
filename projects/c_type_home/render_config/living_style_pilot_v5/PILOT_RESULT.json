@@ -1,0 +1,19 @@
+{
+  "status": "HUMAN_REVIEW",
+  "request_count": 1,
+  "retry_count": 0,
+  "native_size": [
+    1672,
+    941
+  ],
+  "source_unchanged": true,
+  "faithful_unchanged": true,
+  "designer_feedback": "HAS_IMPROVEMENT_NOT_FINAL_APPROVAL",
+  "creative_v4_feedback": "REJECT_STYLE_DRIFT",
+  "creative_v5_review": [
+    "Pale wood/ivory dominant; no dark marble/slatwall.",
+    "New sofa, circular tables, window seat and chair give alternative furniture ideas.",
+    "Added cabinetry/seat are conceptual; feasibility unverified."
+  ],
+  "owner_approval": "PENDING"
+}

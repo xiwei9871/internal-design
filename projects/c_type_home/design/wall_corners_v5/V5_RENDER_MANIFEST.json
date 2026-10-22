@@ -1,0 +1,46 @@
+[
+  {
+    "phase": "BEFORE",
+    "camera": "WALL_V4_CAM_01",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_BEFORE_01.png",
+    "sha256": "062050e57b7fd8feb356466b3e6c84709e8bc320207840b605ab924f8f3a61a5",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "source_saved": false
+  },
+  {
+    "phase": "BEFORE",
+    "camera": "WALL_V4_CAM_02",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_BEFORE_02.png",
+    "sha256": "cff538fa0807d01a9154158b2c4d25dc30b53fd9b5b50a9f43030d9404ac5f78",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "source_saved": false
+  },
+  {
+    "phase": "AFTER",
+    "camera": "WALL_V4_CAM_01",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_AFTER_01.png",
+    "sha256": "42d44295ea669edc5d6ef70eae9114d876e055efc5bc8bc0dbf6408289c89db2",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "source_saved": false
+  },
+  {
+    "phase": "AFTER",
+    "camera": "WALL_V4_CAM_02",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/renders/WALL_CORNERS_AFTER_02.png",
+    "sha256": "2b80ccf8c7f794bea1e6bc2402dc278b7085f855ca5bcff19d82c753ed1c77a7",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "source_saved": false
+  }
+]

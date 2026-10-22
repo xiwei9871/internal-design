@@ -1,0 +1,52 @@
+{
+  "url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/1k/rough_linen/rough_linen_1k.blend",
+  "md5": "6be8d00f9d89a92c5dec498d49b87e0d",
+  "size": 220808,
+  "include": {
+    "textures/rough_linen_anisotropy_rotation_1k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_anisotropy_rotation_1k.png",
+      "md5": "449bf7d937cf3958d8938056de7907e8",
+      "size": 2069061
+    },
+    "textures/rough_linen_anisotropy_strength_1k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_anisotropy_strength_1k.png",
+      "md5": "83500e96dbe14ea01bc6e2abd6359991",
+      "size": 2054797
+    },
+    "textures/rough_linen_diff_1k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rough_linen/rough_linen_diff_1k.jpg",
+      "md5": "663db789fb075462b685c1f740e58930",
+      "size": 835801
+    },
+    "textures/rough_linen_disp_1k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_disp_1k.png",
+      "md5": "f14e9d5ba191b0bc6f6a56c1c37811f5",
+      "size": 1983815
+    },
+    "textures/rough_linen_mask_1k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_mask_1k.png",
+      "md5": "14740a81057e24442723eb1e3c6899ee",
+      "size": 1681156
+    },
+    "textures/rough_linen_metal_1k.exr": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rough_linen/rough_linen_metal_1k.exr",
+      "md5": "70e85c606331ff9bfff107b13c089b89",
+      "size": 958638
+    },
+    "textures/rough_linen_nor_gl_1k.exr": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rough_linen/rough_linen_nor_gl_1k.exr",
+      "md5": "f475459efb266ac99c896416dacb0a54",
+      "size": 2079186
+    },
+    "textures/rough_linen_rough_1k.exr": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rough_linen/rough_linen_rough_1k.exr",
+      "md5": "0a778df91b08ef4f15c3992c83739f31",
+      "size": 954386
+    },
+    "textures/rough_linen_spec_ior_1k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_spec_ior_1k.png",
+      "md5": "ca537196c8d1cd99307a6c64678b68e2",
+      "size": 2062241
+    }
+  }
+}

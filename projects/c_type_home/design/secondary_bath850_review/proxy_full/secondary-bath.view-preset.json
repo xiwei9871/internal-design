@@ -1,0 +1,82 @@
+{
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "secondary_bath850_secondary-bath",
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.02,
+  "far": 1000,
+  "position": [
+    8.4,
+    3.65,
+    -2.0
+  ],
+  "quaternion": [
+    -0.30950403213500977,
+    -0.2823501229286194,
+    -0.09679305553436279,
+    0.9028381109237671
+  ],
+  "orbit_target": [
+    10.05,
+    1.4,
+    -4.38
+  ],
+  "viewport": {
+    "width": 1000,
+    "height": 780,
+    "pixel_ratio": 1
+  },
+  "projection_matrix": [
+    1.883086,
+    0,
+    0,
+    0,
+    0,
+    2.414214,
+    0,
+    0,
+    0,
+    0,
+    -1.00004,
+    -1,
+    0,
+    0,
+    -0.0400008,
+    0
+  ],
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_secondary_bath850",
+  "source_revision": "secondary-bath-850-wardrobe1200-review-1",
+  "source_sha256": "4e94f187a7a6c67697aa6c939ac6e88f58c8ca129830e628f7229522d4ce37bc",
+  "source_locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/secondary_bath850_review/SECONDARY_BATH_850_WARDROBE1200.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "secondary-bath-850-wardrobe1200-review-1",
+    "sha256": "05f4874a01913ec12fedd68c406c258b15ef8decf987ea7f9981bd36b6e94502",
+    "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/secondary_bath850_review/spatial-canvas.bindings.full.json"
+  },
+  "source_camera": {
+    "position": [
+      8.4,
+      2.0,
+      3.65
+    ],
+    "quaternion": [
+      0.4195505678653717,
+      -0.1312086582183838,
+      -0.2680947184562683,
+      0.8572553992271423
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [
+    "ent_be0a4d8c756c5dcc8e7231e5a2a700fd"
+  ],
+  "ghost_entity_ids": [],
+  "preview_uri": "BATH850_ENTRY.png"
+}

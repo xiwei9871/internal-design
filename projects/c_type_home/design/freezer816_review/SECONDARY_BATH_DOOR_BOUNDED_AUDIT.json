@@ -1,0 +1,803 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V3.blend",
+  "source_sha256": "93891e0b9c60a9d769e8e65ec4d04d592ea11dee4b9d713966d8b1033b9ebd31",
+  "coordinate_frame": "c_type_world",
+  "axes": "X east/Y north/Z up",
+  "rows": [
+    {
+      "name": "R3_WARDROBE_BACK",
+      "entity_id": "ent_370949339f614dba97aa728e1f85d778",
+      "min": [
+        9.972249984741211,
+        4.49009370803833,
+        0.5300000309944153
+      ],
+      "max": [
+        11.372249603271484,
+        4.50809383392334,
+        2.632000207901001
+      ],
+      "size": [
+        1.3999996185302734,
+        0.018000125885009766,
+        2.1020001769065857
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_BASE",
+      "entity_id": "ent_8aa338bf1353499d99a1d764e680a3b3",
+      "min": [
+        9.972249984741211,
+        3.9080936908721924,
+        0.5299999713897705
+      ],
+      "max": [
+        11.372249603271484,
+        4.50809383392334,
+        0.5479999780654907
+      ],
+      "size": [
+        1.3999996185302734,
+        0.6000001430511475,
+        0.018000006675720215
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_FRONT_0",
+      "entity_id": "ent_ef005eb1c3124ce28fcaad8e2df6af9b",
+      "min": [
+        9.974116325378418,
+        3.9080936908721924,
+        0.5320000052452087
+      ],
+      "max": [
+        10.437049865722656,
+        3.926093578338623,
+        2.631999969482422
+      ],
+      "size": [
+        0.4629335403442383,
+        0.017999887466430664,
+        2.099999964237213
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_FRONT_1",
+      "entity_id": "ent_30f39c0a7c1f4f998ec22c6e83ae0e8a",
+      "min": [
+        10.440783500671387,
+        3.9080936908721924,
+        0.5320000052452087
+      ],
+      "max": [
+        10.903717041015625,
+        3.926093578338623,
+        2.631999969482422
+      ],
+      "size": [
+        0.4629335403442383,
+        0.017999887466430664,
+        2.099999964237213
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_FRONT_2",
+      "entity_id": "ent_bc7e3f4e277144aa8630008f1ecca4b2",
+      "min": [
+        10.907449722290039,
+        3.9080936908721924,
+        0.5320000052452087
+      ],
+      "max": [
+        11.370383262634277,
+        3.926093578338623,
+        2.631999969482422
+      ],
+      "size": [
+        0.4629335403442383,
+        0.017999887466430664,
+        2.099999964237213
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_L",
+      "entity_id": "ent_82dc3e4900bc4223b5fc9273c777493f",
+      "min": [
+        9.972249984741211,
+        3.9080936908721924,
+        0.5300000309944153
+      ],
+      "max": [
+        9.989049911499023,
+        4.50809383392334,
+        2.6499998569488525
+      ],
+      "size": [
+        0.0167999267578125,
+        0.6000001430511475,
+        2.1199998259544373
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_PLINTH",
+      "entity_id": "ent_22556e608c644d6ab1f197bc57bd57ad",
+      "min": [
+        9.972249984741211,
+        3.9480936527252197,
+        0.44999998807907104
+      ],
+      "max": [
+        11.372249603271484,
+        4.47809362411499,
+        0.5299999713897705
+      ],
+      "size": [
+        1.3999996185302734,
+        0.5299999713897705,
+        0.07999998331069946
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_PULL_0",
+      "entity_id": "ent_619d82cfc2614ee4b5b0172cf2bc7300",
+      "min": [
+        10.387582778930664,
+        3.9090936183929443,
+        1.5550000667572021
+      ],
+      "max": [
+        10.396916389465332,
+        3.929093599319458,
+        1.6449999809265137
+      ],
+      "size": [
+        0.009333610534667969,
+        0.019999980926513672,
+        0.08999991416931152
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_PULL_1",
+      "entity_id": "ent_77c972c5a8904377a81cb2d4e8b1e7df",
+      "min": [
+        10.854249954223633,
+        3.9090936183929443,
+        1.5550000667572021
+      ],
+      "max": [
+        10.8635835647583,
+        3.929093599319458,
+        1.6449999809265137
+      ],
+      "size": [
+        0.009333610534667969,
+        0.019999980926513672,
+        0.08999991416931152
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_PULL_2",
+      "entity_id": "ent_956f6118b68f4eef82b2f983ba629652",
+      "min": [
+        11.320916175842285,
+        3.9090936183929443,
+        1.5550000667572021
+      ],
+      "max": [
+        11.330249786376953,
+        3.929093599319458,
+        1.6449999809265137
+      ],
+      "size": [
+        0.009333610534667969,
+        0.019999980926513672,
+        0.08999991416931152
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_R",
+      "entity_id": "ent_277fec96ce804739988107e3be281339",
+      "min": [
+        11.355450630187988,
+        3.9080936908721924,
+        0.5300000309944153
+      ],
+      "max": [
+        11.372249603271484,
+        4.50809383392334,
+        2.6499998569488525
+      ],
+      "size": [
+        0.016798973083496094,
+        0.6000001430511475,
+        2.1199998259544373
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_SHELF",
+      "entity_id": "ent_c7f4e238f43442d59e764d8d87fab62f",
+      "min": [
+        9.989049911499023,
+        3.926093578338623,
+        1.5499999523162842
+      ],
+      "max": [
+        11.355450630187988,
+        4.49009370803833,
+        1.5679998397827148
+      ],
+      "size": [
+        1.3664007186889648,
+        0.564000129699707,
+        0.017999887466430664
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_WARDROBE_TOP",
+      "entity_id": "ent_8462fdd904c744609445b175c30806d4",
+      "min": [
+        9.972249984741211,
+        3.9080936908721924,
+        2.631999969482422
+      ],
+      "max": [
+        11.372249603271484,
+        4.50809383392334,
+        2.6500000953674316
+      ],
+      "size": [
+        1.3999996185302734,
+        0.6000001430511475,
+        0.018000125885009766
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "fitted_to_latest_freecad": "True"
+      }
+    },
+    {
+      "name": "R3_FRAME_WEST",
+      "entity_id": "ent_5fe15d3b3ee54b708a01816b58f5d26c",
+      "min": [
+        9.208999633789062,
+        4.523937702178955,
+        0.44999998807907104
+      ],
+      "max": [
+        9.234000205993652,
+        4.823062419891357,
+        2.549999952316284
+      ],
+      "size": [
+        0.025000572204589844,
+        0.29912471771240234,
+        2.099999964237213
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_SPLIT_JAMB_EAST_S",
+      "entity_id": "ent_f90874399d5f463ca85d9c0d95ebee6f",
+      "min": [
+        9.963125228881836,
+        4.523937702178955,
+        0.44999998807907104
+      ],
+      "max": [
+        9.98812484741211,
+        4.6930623054504395,
+        2.549999952316284
+      ],
+      "size": [
+        0.024999618530273438,
+        0.16912460327148438,
+        2.099999964237213
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_SPLIT_JAMB_EAST_N",
+      "entity_id": "ent_a6c6222fd9f84db7acb52db40d23c0bd",
+      "min": [
+        9.963125228881836,
+        4.793062686920166,
+        0.44999998807907104
+      ],
+      "max": [
+        9.98812484741211,
+        4.823062419891357,
+        2.549999952316284
+      ],
+      "size": [
+        0.024999618530273438,
+        0.029999732971191406,
+        2.099999964237213
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_FRAME_HEAD_S",
+      "entity_id": "ent_10a8524856f74602a215165848040ea6",
+      "min": [
+        9.208999633789062,
+        4.523937702178955,
+        2.5250000953674316
+      ],
+      "max": [
+        9.98812484741211,
+        4.6930623054504395,
+        2.549999952316284
+      ],
+      "size": [
+        0.7791252136230469,
+        0.16912460327148438,
+        0.02499985694885254
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_FRAME_HEAD_N",
+      "entity_id": "ent_067213997bcc48749d006b1cbe412383",
+      "min": [
+        9.208999633789062,
+        4.793062686920166,
+        2.5250000953674316
+      ],
+      "max": [
+        9.98812484741211,
+        4.823062419891357,
+        2.549999952316284
+      ],
+      "size": [
+        0.7791252136230469,
+        0.029999732971191406,
+        0.02499985694885254
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_CASING_S_WEST",
+      "entity_id": "ent_2d54e05b64e24f2f9ff2441305b80875",
+      "min": [
+        9.159000396728516,
+        4.507937431335449,
+        0.44999998807907104
+      ],
+      "max": [
+        9.234000205993652,
+        4.523937702178955,
+        2.615000009536743
+      ],
+      "size": [
+        0.07499980926513672,
+        0.01600027084350586,
+        2.165000021457672
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_CASING_S_EAST",
+      "entity_id": "ent_85b0d5ebbc0e4bc082ff4606917cbacf",
+      "min": [
+        9.963125228881836,
+        4.507937431335449,
+        0.44999998807907104
+      ],
+      "max": [
+        10.038125038146973,
+        4.523937702178955,
+        2.615000009536743
+      ],
+      "size": [
+        0.07499980926513672,
+        0.01600027084350586,
+        2.165000021457672
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_CASING_S_HEAD",
+      "entity_id": "ent_562d1b00fff94e509df7be69b9ff2057",
+      "min": [
+        9.159000396728516,
+        4.507937431335449,
+        2.5250000953674316
+      ],
+      "max": [
+        10.038125038146973,
+        4.523937702178955,
+        2.615000009536743
+      ],
+      "size": [
+        0.879124641418457,
+        0.01600027084350586,
+        0.08999991416931152
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_CASING_N_WEST",
+      "entity_id": "ent_0af8cf4733724b21b09226fd7363ec74",
+      "min": [
+        9.159000396728516,
+        4.823062419891357,
+        0.44999998807907104
+      ],
+      "max": [
+        9.234000205993652,
+        4.839062690734863,
+        2.615000009536743
+      ],
+      "size": [
+        0.07499980926513672,
+        0.01600027084350586,
+        2.165000021457672
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_CASING_N_EAST",
+      "entity_id": "ent_d6d568734fcd4eee9bdf5784fa98d0ac",
+      "min": [
+        9.963125228881836,
+        4.823062419891357,
+        0.44999998807907104
+      ],
+      "max": [
+        10.038125038146973,
+        4.839062690734863,
+        2.615000009536743
+      ],
+      "size": [
+        0.07499980926513672,
+        0.01600027084350586,
+        2.165000021457672
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_CASING_N_HEAD",
+      "entity_id": "ent_5174d0d963de45689b8fe0953a8f7039",
+      "min": [
+        9.159000396728516,
+        4.823062419891357,
+        2.5250000953674316
+      ],
+      "max": [
+        10.038125038146973,
+        4.839062690734863,
+        2.615000009536743
+      ],
+      "size": [
+        0.879124641418457,
+        0.01600027084350586,
+        0.08999991416931152
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_SLIDER_CONTINUOUS_RAIL",
+      "entity_id": "ent_e033642d46b04560b1fc12b8b0c2b415",
+      "min": [
+        9.20199966430664,
+        4.722062587738037,
+        2.549999952316284
+      ],
+      "max": [
+        10.774250030517578,
+        4.764062404632568,
+        2.569999933242798
+      ],
+      "size": [
+        1.5722503662109375,
+        0.04199981689453125,
+        0.019999980926513672
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_SLIDER_END_STOP",
+      "entity_id": "ent_1aa9eaff127a4de98e256d81a70589d1",
+      "min": [
+        10.765999794006348,
+        4.718062400817871,
+        0.46000000834465027
+      ],
+      "max": [
+        10.777899742126465,
+        4.768062591552734,
+        2.5299999713897705
+      ],
+      "size": [
+        0.011899948120117188,
+        0.05000019073486328,
+        2.0699999630451202
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_SLIDER_MAINTENANCE_COVER",
+      "entity_id": "ent_47eb47cbaaf24826944066b4b1a7a83d",
+      "min": [
+        9.208999633789062,
+        4.503937721252441,
+        2.5399999618530273
+      ],
+      "max": [
+        10.809900283813477,
+        4.507937431335449,
+        2.5999999046325684
+      ],
+      "size": [
+        1.600900650024414,
+        0.0039997100830078125,
+        0.059999942779541016
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_SLIDING_LEAF",
+      "entity_id": "ent_143951e473b24b26a1045c66b91d4bac",
+      "min": [
+        9.993124961853027,
+        4.723062515258789,
+        0.46000000834465027
+      ],
+      "max": [
+        10.762249946594238,
+        4.763062477111816,
+        2.5250000953674316
+      ],
+      "size": [
+        0.7691249847412109,
+        0.039999961853027344,
+        2.0650000870227814
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_SLIDING_RECESSED_PULL_S",
+      "entity_id": "ent_92af2ec459c04fb98cf45b88593c147b",
+      "min": [
+        10.029125213623047,
+        4.723062515258789,
+        1.3700000047683716
+      ],
+      "max": [
+        10.046125411987305,
+        4.725062370300293,
+        1.5299999713897705
+      ],
+      "size": [
+        0.017000198364257812,
+        0.0019998550415039062,
+        0.15999996662139893
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_SLIDING_RECESSED_PULL_N",
+      "entity_id": "ent_f06eeec61da34d0983cc6fb28d0e22e9",
+      "min": [
+        10.029125213623047,
+        4.7610626220703125,
+        1.3700000047683716
+      ],
+      "max": [
+        10.046125411987305,
+        4.763062477111816,
+        1.5299999713897705
+      ],
+      "size": [
+        0.017000198364257812,
+        0.0019998550415039062,
+        0.15999996662139893
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "R3_SLIDER_HANGER_0",
+      "entity_id": "ent_62c9e8b2bac849db93dfd41252a213c8",
+      "min": [
+        10.070124626159668,
+        4.735062599182129,
+        2.5220000743865967
+      ],
+      "max": [
+        10.086125373840332,
+        4.751062393188477,
+        2.557999849319458
+      ],
+      "size": [
+        0.016000747680664062,
+        0.015999794006347656,
+        0.03599977493286133
+      ],
+      "properties": {}
+    },
+    {
+      "name": "R3_SLIDER_HANGER_1",
+      "entity_id": "ent_360f103af9f545f399538d1ce00ed5e2",
+      "min": [
+        10.669249534606934,
+        4.735062599182129,
+        2.5220000743865967
+      ],
+      "max": [
+        10.685250282287598,
+        4.751062393188477,
+        2.557999849319458
+      ],
+      "size": [
+        0.016000747680664062,
+        0.015999794006347656,
+        0.03599977493286133
+      ],
+      "properties": {}
+    },
+    {
+      "name": "VIEW_WALL_R3_SOUTH_POCKET_PARTITION",
+      "entity_id": "ent_75748873dd4a571faa9e87690b1af3e5",
+      "min": [
+        9.208999633789062,
+        4.523950099945068,
+        0.44999998807907104
+      ],
+      "max": [
+        11.399900436401367,
+        4.823050022125244,
+        3.25
+      ],
+      "size": [
+        2.1909008026123047,
+        0.2990999221801758,
+        2.800000011920929
+      ],
+      "properties": {
+        "source_render_wall": "R3_COMPLETE_PARTITION_WALLS",
+        "source_parent_entity_id": "ent_4446040d5ca84b14bb410ef7df0ba2e7",
+        "original_blender_wall_inputs": "[\"ENTRY_HEADER_ABOVE_RAIL_CHANNEL\", \"ENTRY_HEADER_FRONT_LIP\", \"ENTRY_HEADER_NORTH_LIP\", \"FC_SOUTH_WALL_AND_YELLOW_CLOSURE\", \"POCKET_EAST_CLOSURE_FLUSH_TO_ROOM_EAST_WALL\", \"POCKET_HEADER\", \"POCKET_NORTH_SKIN\"]",
+        "review_status": "HUMAN_REVIEW_VIEW_IDENTITY_ONLY",
+        "surface_partition_not_new_construction_solid": "True"
+      }
+    },
+    {
+      "name": "VIEW_WALL_R3_WEST_PARTITION",
+      "entity_id": "ent_821c71e5f96f50229bb483a8ce558548",
+      "min": [
+        9.059000015258789,
+        4.50724983215332,
+        0.44999998807907104
+      ],
+      "max": [
+        9.208999633789062,
+        6.50724983215332,
+        3.25
+      ],
+      "size": [
+        0.14999961853027344,
+        2.0,
+        2.800000011920929
+      ],
+      "properties": {
+        "source_render_wall": "R3_COMPLETE_PARTITION_WALLS",
+        "source_parent_entity_id": "ent_4446040d5ca84b14bb410ef7df0ba2e7",
+        "original_blender_wall_inputs": "[\"NEW_FC_WEST_PARTITION\"]",
+        "review_status": "HUMAN_REVIEW_VIEW_IDENTITY_ONLY",
+        "surface_partition_not_new_construction_solid": "True"
+      }
+    }
+  ]
+}

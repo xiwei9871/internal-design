@@ -1,0 +1,850 @@
+{
+  "disabled_source_names": [
+    "GLZ_G-GB-BALC",
+    "B11_OPENING_G-GB-BALC",
+    "B11_G-GB-BALC_HOST_GLASS0",
+    "B11_G-GB-BALC_HOST_GLASS1",
+    "B11_G-GB-BALC_HOST_JAMB",
+    "B11_G-GB-BALC_HOST_JAMB.001",
+    "B11_G-GB-BALC_HOST_MULLION",
+    "B11_G-GB-BALC_HOST_RAIL",
+    "B11_G-GB-BALC_HOST_RAIL.001",
+    "GLZ_G-DIN-LIV",
+    "W_wall_md_0017",
+    "W_wall_md_0020",
+    "W_wall_md_0034",
+    "GLZ_W-SMB-S",
+    "B11_OPENING_W-SMB-S",
+    "B11_W-SMB-S_HOST_GLASS0",
+    "B11_W-SMB-S_HOST_GLASS1",
+    "B11_W-SMB-S_HOST_JAMB",
+    "B11_W-SMB-S_HOST_JAMB.001",
+    "B11_W-SMB-S_HOST_MULLION",
+    "B11_W-SMB-S_HOST_RAIL",
+    "B11_W-SMB-S_HOST_RAIL.001",
+    "B11_BAY_W-SMB-S",
+    "B11_BAY_W-SMB-S_FRONT_GLASS0",
+    "B11_BAY_W-SMB-S_FRONT_GLASS1",
+    "B11_BAY_W-SMB-S_FRONT_GLASS2",
+    "B11_BAY_W-SMB-S_FRONT_JAMB",
+    "B11_BAY_W-SMB-S_FRONT_JAMB.001",
+    "B11_BAY_W-SMB-S_FRONT_MULLION",
+    "B11_BAY_W-SMB-S_FRONT_MULLION.001",
+    "B11_BAY_W-SMB-S_FRONT_RAIL",
+    "B11_BAY_W-SMB-S_FRONT_RAIL.001",
+    "B11_BAY_W-SMB-S_SILL_PLATFORM",
+    "W_wall_md_0023",
+    "W_wall_md_0029",
+    "W_wall_md_0035",
+    "GLZ_W-MB-S",
+    "B11_OPENING_W-MB-S",
+    "B11_W-MB-S_HOST_GLASS0",
+    "B11_W-MB-S_HOST_GLASS1",
+    "B11_W-MB-S_HOST_JAMB",
+    "B11_W-MB-S_HOST_JAMB.001",
+    "B11_W-MB-S_HOST_MULLION",
+    "B11_W-MB-S_HOST_RAIL",
+    "B11_W-MB-S_HOST_RAIL.001",
+    "B11_BAY_W-MB-S",
+    "B11_BAY_W-MB-S_FRONT_GLASS0",
+    "B11_BAY_W-MB-S_FRONT_GLASS1",
+    "B11_BAY_W-MB-S_FRONT_GLASS2",
+    "B11_BAY_W-MB-S_FRONT_JAMB",
+    "B11_BAY_W-MB-S_FRONT_JAMB.001",
+    "B11_BAY_W-MB-S_FRONT_MULLION",
+    "B11_BAY_W-MB-S_FRONT_MULLION.001",
+    "B11_BAY_W-MB-S_FRONT_RAIL",
+    "B11_BAY_W-MB-S_FRONT_RAIL.001",
+    "B11_BAY_W-MB-S_SILL_PLATFORM",
+    "W_wall_md_0028",
+    "W_wall_md_0031",
+    "W_wall_md_0058",
+    "GLZ_W-STUDY-NE",
+    "B11_OPENING_W-STUDY-NE",
+    "B11_W-STUDY-NE_HOST_GLASS0",
+    "B11_W-STUDY-NE_HOST_GLASS1",
+    "B11_W-STUDY-NE_HOST_JAMB",
+    "B11_W-STUDY-NE_HOST_JAMB.001",
+    "B11_W-STUDY-NE_HOST_MULLION",
+    "B11_W-STUDY-NE_HOST_RAIL",
+    "B11_W-STUDY-NE_HOST_RAIL.001",
+    "B11_BAY_W-STUDY-NE",
+    "B11_BAY_W-STUDY-NE_FRONT_GLASS0",
+    "B11_BAY_W-STUDY-NE_FRONT_GLASS1",
+    "B11_BAY_W-STUDY-NE_FRONT_GLASS2",
+    "B11_BAY_W-STUDY-NE_FRONT_JAMB",
+    "B11_BAY_W-STUDY-NE_FRONT_JAMB.001",
+    "B11_BAY_W-STUDY-NE_FRONT_MULLION",
+    "B11_BAY_W-STUDY-NE_FRONT_MULLION.001",
+    "B11_BAY_W-STUDY-NE_FRONT_RAIL",
+    "B11_BAY_W-STUDY-NE_FRONT_RAIL.001",
+    "B11_BAY_W-STUDY-NE_SILL_PLATFORM"
+  ],
+  "cuts": [
+    {
+      "id": "D-STUDY",
+      "lo": [
+        12.88,
+        6.65,
+        0.45
+      ],
+      "hi": [
+        13.12,
+        7.6,
+        2.6
+      ]
+    },
+    {
+      "id": "D-BATHM",
+      "lo": [
+        11.899999999999999,
+        6.380000000000001,
+        0.45
+      ],
+      "hi": [
+        12.850000000000001,
+        6.619999999999999,
+        2.6
+      ]
+    },
+    {
+      "id": "D-MB",
+      "lo": [
+        12.88,
+        4.75,
+        0.45
+      ],
+      "hi": [
+        13.12,
+        5.6,
+        2.6
+      ]
+    },
+    {
+      "id": "D-GUEST-BATH",
+      "lo": [
+        8.799999999999999,
+        7.78,
+        0.45
+      ],
+      "hi": [
+        9.65,
+        8.02,
+        2.6
+      ]
+    },
+    {
+      "id": "D-GUEST-ROOM",
+      "lo": [
+        9.95,
+        7.78,
+        0.45
+      ],
+      "hi": [
+        10.9,
+        8.02,
+        2.6
+      ]
+    },
+    {
+      "id": "ENT-1",
+      "lo": [
+        2.68,
+        5.390000000000001,
+        0
+      ],
+      "hi": [
+        2.92,
+        6.59,
+        2.15
+      ]
+    },
+    {
+      "id": "G-GB-BALC",
+      "lo": [
+        10.4,
+        10.88,
+        0.45
+      ],
+      "hi": [
+        12.4,
+        11.12,
+        2.85
+      ]
+    },
+    {
+      "id": "G-DIN-LIV",
+      "lo": [
+        2.95,
+        4.49,
+        0
+      ],
+      "hi": [
+        5.65,
+        4.755,
+        2.4
+      ]
+    },
+    {
+      "id": "W-SMB-S_INNER_PORTAL",
+      "lo": [
+        8.5,
+        -0.22,
+        0.9
+      ],
+      "hi": [
+        10.9,
+        0.22,
+        2.85
+      ]
+    },
+    {
+      "id": "W-MB-S_INNER_PORTAL",
+      "lo": [
+        12.1,
+        -0.22,
+        0.9
+      ],
+      "hi": [
+        14.8,
+        0.22,
+        2.85
+      ]
+    },
+    {
+      "id": "W-STUDY-NE_INNER_PORTAL",
+      "lo": [
+        13.6,
+        10.88,
+        0.9
+      ],
+      "hi": [
+        15.7,
+        11.12,
+        2.85
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "D-STUDY",
+      "label": "现书房门",
+      "axis": "x",
+      "band": [
+        12.9,
+        6.4,
+        13.1,
+        8.0
+      ],
+      "span": [
+        6.7,
+        7.55
+      ],
+      "ffl": 0.45,
+      "ceiling": 3.25,
+      "hinge_high": false,
+      "root": "V4_DOOR_D-STUDY",
+      "leaves": [
+        "V4_D-STUDY_LEAF_0"
+      ],
+      "width_mm": 850,
+      "height_mm": 2100,
+      "clear_opening_cut": {
+        "id": "D-STUDY",
+        "lo": [
+          12.88,
+          6.65,
+          0.45
+        ],
+        "hi": [
+          13.12,
+          7.6,
+          2.6
+        ]
+      }
+    },
+    {
+      "id": "D-BATHM",
+      "label": "内侧卫生间门",
+      "axis": "y",
+      "band": [
+        11.6,
+        6.4,
+        13.1,
+        6.6
+      ],
+      "span": [
+        11.95,
+        12.8
+      ],
+      "ffl": 0.45,
+      "ceiling": 3.25,
+      "hinge_high": true,
+      "root": "V4_DOOR_D-BATHM",
+      "leaves": [
+        "V4_D-BATHM_LEAF_0"
+      ],
+      "width_mm": 850,
+      "height_mm": 2100,
+      "clear_opening_cut": {
+        "id": "D-BATHM",
+        "lo": [
+          11.899999999999999,
+          6.380000000000001,
+          0.45
+        ],
+        "hi": [
+          12.850000000000001,
+          6.619999999999999,
+          2.6
+        ]
+      }
+    },
+    {
+      "id": "D-MB",
+      "label": "主卫门",
+      "axis": "x",
+      "band": [
+        12.9,
+        4.5,
+        13.1,
+        6.4
+      ],
+      "span": [
+        4.8,
+        5.55
+      ],
+      "ffl": 0.45,
+      "ceiling": 3.25,
+      "hinge_high": false,
+      "root": "V4_DOOR_D-MB",
+      "leaves": [
+        "V4_D-MB_LEAF_0"
+      ],
+      "width_mm": 750,
+      "height_mm": 2100,
+      "clear_opening_cut": {
+        "id": "D-MB",
+        "lo": [
+          12.88,
+          4.75,
+          0.45
+        ],
+        "hi": [
+          13.12,
+          5.6,
+          2.6
+        ]
+      }
+    },
+    {
+      "id": "D-GUEST-BATH",
+      "label": "客卫门",
+      "axis": "y",
+      "band": [
+        8.0,
+        7.8,
+        10.0,
+        8.0
+      ],
+      "span": [
+        8.85,
+        9.6
+      ],
+      "ffl": 0.45,
+      "ceiling": 3.25,
+      "hinge_high": true,
+      "root": "V4_DOOR_D-GUEST-BATH",
+      "leaves": [
+        "V4_D-GUEST-BATH_LEAF_0"
+      ],
+      "width_mm": 750,
+      "height_mm": 2100,
+      "clear_opening_cut": {
+        "id": "D-GUEST-BATH",
+        "lo": [
+          8.799999999999999,
+          7.78,
+          0.45
+        ],
+        "hi": [
+          9.65,
+          8.02,
+          2.6
+        ]
+      }
+    },
+    {
+      "id": "D-GUEST-ROOM",
+      "label": "客房普通门",
+      "axis": "y",
+      "band": [
+        9.85,
+        7.8,
+        12.9,
+        8.0
+      ],
+      "span": [
+        10.0,
+        10.85
+      ],
+      "ffl": 0.45,
+      "ceiling": 3.25,
+      "hinge_high": false,
+      "root": "V4_DOOR_D-GUEST-ROOM",
+      "leaves": [
+        "V4_D-GUEST-ROOM_LEAF_0"
+      ],
+      "width_mm": 850,
+      "height_mm": 2100,
+      "clear_opening_cut": {
+        "id": "D-GUEST-ROOM",
+        "lo": [
+          9.95,
+          7.78,
+          0.45
+        ],
+        "hi": [
+          10.9,
+          8.02,
+          2.6
+        ]
+      }
+    },
+    {
+      "id": "ENT-1",
+      "label": "入户子母门",
+      "axis": "x",
+      "band": [
+        2.7,
+        5.2,
+        2.9,
+        6.8
+      ],
+      "span": [
+        5.44,
+        6.54
+      ],
+      "ffl": 0,
+      "ceiling": 2.8,
+      "hinge_high": true,
+      "double": [
+        0.35,
+        0.75
+      ],
+      "root": "V4_DOOR_ENT-1",
+      "leaves": [
+        "V4_ENT-1_LEAF_0",
+        "V4_ENT-1_LEAF_1"
+      ],
+      "width_mm": 1100,
+      "height_mm": 2100,
+      "clear_opening_cut": {
+        "id": "ENT-1",
+        "lo": [
+          2.68,
+          5.390000000000001,
+          0
+        ],
+        "hi": [
+          2.92,
+          6.59,
+          2.15
+        ]
+      }
+    }
+  ],
+  "bays": [
+    {
+      "id": "W-SMB-S",
+      "root": "V4_BAY_W-SMB-S",
+      "old_wall_sources": [
+        "W_wall_md_0017",
+        "W_wall_md_0020",
+        "W_wall_md_0034"
+      ],
+      "sill_mm": 900,
+      "head_mm": 2850,
+      "ceiling_mm": 3250,
+      "projection_mm": 700,
+      "platform": [
+        8.4499,
+        -0.673,
+        10.9499,
+        0.05
+      ]
+    },
+    {
+      "id": "W-MB-S",
+      "root": "V4_BAY_W-MB-S",
+      "old_wall_sources": [
+        "W_wall_md_0023",
+        "W_wall_md_0029",
+        "W_wall_md_0035"
+      ],
+      "sill_mm": 900,
+      "head_mm": 2850,
+      "ceiling_mm": 3250,
+      "projection_mm": 700,
+      "platform": [
+        12.0499,
+        -0.673,
+        14.8499,
+        0.05
+      ]
+    },
+    {
+      "id": "W-STUDY-NE",
+      "root": "V4_BAY_W-STUDY-NE",
+      "old_wall_sources": [
+        "W_wall_md_0028",
+        "W_wall_md_0031",
+        "W_wall_md_0058"
+      ],
+      "sill_mm": 900,
+      "head_mm": 2850,
+      "ceiling_mm": 3250,
+      "projection_mm": 700,
+      "platform": [
+        13.5499,
+        11.05,
+        15.7499,
+        11.773
+      ]
+    }
+  ],
+  "rays": [
+    {
+      "label": "D-STUDY clear wall aperture",
+      "origin": [
+        12.4,
+        7.125,
+        1.45
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 0.8999999999999992
+    },
+    {
+      "label": "D-BATHM clear wall aperture",
+      "origin": [
+        12.375,
+        5.9,
+        1.45
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distance": 0.8999999999999992
+    },
+    {
+      "label": "D-MB clear wall aperture",
+      "origin": [
+        12.4,
+        5.175,
+        1.45
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 0.8999999999999992
+    },
+    {
+      "label": "D-GUEST-BATH clear wall aperture",
+      "origin": [
+        9.225,
+        7.3,
+        1.45
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distance": 0.9000000000000001
+    },
+    {
+      "label": "D-GUEST-ROOM clear wall aperture",
+      "origin": [
+        10.425,
+        7.3,
+        1.45
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distance": 0.9000000000000001
+    },
+    {
+      "label": "ENT-1 clear wall aperture",
+      "origin": [
+        2.2,
+        5.99,
+        1.0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distance": 0.8999999999999997
+    },
+    {
+      "label": "Guest sliding through actual host",
+      "origin": [
+        11.4,
+        10.5,
+        1.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distance": 0.9
+    },
+    {
+      "label": "Existing three-track slider clear aperture",
+      "origin": [
+        4.3,
+        4.15,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distance": 0.9
+    },
+    {
+      "label": "W-SMB-S open inner portal",
+      "origin": [
+        9.7,
+        0.35,
+        1.8
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distance": 0.5
+    },
+    {
+      "label": "W-MB-S open inner portal",
+      "origin": [
+        13.45,
+        0.35,
+        1.8
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distance": 0.5
+    },
+    {
+      "label": "W-STUDY-NE open inner portal",
+      "origin": [
+        14.649999999999999,
+        10.65,
+        1.8
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distance": 0.6
+    }
+  ],
+  "views": [
+    {
+      "id": "DOOR_D-STUDY",
+      "name": "现书房门完整门洞",
+      "camera": "V4_CAM_D-STUDY",
+      "pos": [
+        10.100000000000001,
+        7.125,
+        1.8499999999999999
+      ],
+      "target": [
+        13.0,
+        7.125,
+        1.8499999999999999
+      ],
+      "lens": 24
+    },
+    {
+      "id": "DOOR_D-BATHM",
+      "name": "内侧卫生间门完整门洞",
+      "camera": "V4_CAM_D-BATHM",
+      "pos": [
+        12.375,
+        3.6000000000000005,
+        1.8499999999999999
+      ],
+      "target": [
+        12.375,
+        6.5,
+        1.8499999999999999
+      ],
+      "lens": 24
+    },
+    {
+      "id": "DOOR_D-MB",
+      "name": "主卫门完整门洞",
+      "camera": "V4_CAM_D-MB",
+      "pos": [
+        12.2,
+        5.175,
+        1.85
+      ],
+      "target": [
+        13.0,
+        5.175,
+        1.85
+      ],
+      "scale": 3.9
+    },
+    {
+      "id": "DOOR_D-GUEST-BATH",
+      "name": "客卫门完整门洞",
+      "camera": "V4_CAM_D-GUEST-BATH",
+      "pos": [
+        9.225,
+        7.2,
+        1.85
+      ],
+      "target": [
+        9.225,
+        7.9,
+        1.85
+      ],
+      "scale": 3.9
+    },
+    {
+      "id": "DOOR_D-GUEST-ROOM",
+      "name": "客房普通门完整门洞",
+      "camera": "V4_CAM_D-GUEST-ROOM",
+      "pos": [
+        10.425,
+        7.2,
+        1.85
+      ],
+      "target": [
+        10.425,
+        7.9,
+        1.85
+      ],
+      "scale": 3.9
+    },
+    {
+      "id": "DOOR_ENT-1",
+      "name": "入户子母门完整门洞",
+      "camera": "V4_CAM_ENT-1",
+      "pos": [
+        -0.09999999999999964,
+        5.99,
+        1.4
+      ],
+      "target": [
+        2.8,
+        5.99,
+        1.4
+      ],
+      "lens": 24
+    },
+    {
+      "id": "GUEST_GLASS",
+      "name": "客房移门贯穿门洞",
+      "camera": "V4_CAM_GUEST_GLASS",
+      "pos": [
+        11.4,
+        8.35,
+        1.9
+      ],
+      "target": [
+        11.4,
+        11,
+        1.85
+      ],
+      "lens": 24
+    },
+    {
+      "id": "LEISURE_GLASS",
+      "name": "休闲平台旁移门完整围合",
+      "camera": "V4_CAM_LEISURE_GLASS",
+      "pos": [
+        4.3,
+        7.35,
+        1.65
+      ],
+      "target": [
+        4.3,
+        4.62,
+        1.4
+      ],
+      "lens": 24
+    },
+    {
+      "id": "BAY_W-SMB-S",
+      "name": "次主卧飘窗外挑平台与外窗",
+      "camera": "V4_CAM_BAY_W-SMB-S",
+      "pos": [
+        9.7,
+        2.3,
+        1.85
+      ],
+      "target": [
+        9.7,
+        -0.4,
+        1.85
+      ],
+      "lens": 24
+    },
+    {
+      "id": "BAY_W-MB-S",
+      "name": "主卧飘窗外挑平台与外窗",
+      "camera": "V4_CAM_BAY_W-MB-S",
+      "pos": [
+        13.45,
+        2.3,
+        1.85
+      ],
+      "target": [
+        13.45,
+        -0.4,
+        1.85
+      ],
+      "lens": 24
+    },
+    {
+      "id": "BAY_W-STUDY-NE",
+      "name": "现书房飘窗外挑平台与外窗",
+      "camera": "V4_CAM_BAY_W-STUDY-NE",
+      "pos": [
+        14.65,
+        8.6,
+        1.9
+      ],
+      "target": [
+        14.65,
+        11.55,
+        1.8
+      ],
+      "lens": 24
+    }
+  ]
+}

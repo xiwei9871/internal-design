@@ -1,0 +1,17 @@
+{
+  "status": "INSPECTED",
+  "views": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "inspection": "512px filesystem proxies opened individually",
+  "findings": [
+    "D107 complete side joins, frame, solid above-door wall and upper band visible",
+    "North balcony complete frame, side piers and solid header visible from both sides",
+    "No wall clipping or floating header in axial view"
+  ],
+  "delivery": "IMAGE_PATHS_ONLY"
+}

@@ -1,0 +1,59 @@
+{
+  "status": "HUMAN_REVIEW",
+  "revision": "r4-sunroom-cabinet-freezer-swap-review-13",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_SUNROOM_DOOR_CLEAR_SOFA_REVIEW_12.blend",
+  "source_sha256": "d73835d9b0c3ab0b7edab5469a8421d1e65ef65d79ddf168bede725d48ffc78f",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_SUNROOM_CABINET_FREEZER_SWAP_REVIEW_13.blend",
+  "output_sha256": "ac9532d3a39ccd8dd6dd22d7a7b829f0113f2736c921a42637f5a27c506fa7f2",
+  "removed_worktop_native_ids": [
+    "SUNROOM_FREEZER_FLIP_WORKTOP_0",
+    "SUNROOM_FREEZER_FLIP_WORKTOP_1",
+    "SUNROOM_FREEZER_WORKTOP_HINGE_0",
+    "SUNROOM_FREEZER_WORKTOP_HINGE_1"
+  ],
+  "freezer_bounds_m": [
+    [
+      11.399999618530273,
+      12.64999771118164,
+      0.0
+    ],
+    [
+      12.600000381469727,
+      13.249998092651367,
+      0.8500000238418579
+    ]
+  ],
+  "cabinet_bounds_m": [
+    [
+      12.139999389648438,
+      11.350000381469727,
+      0.07999999821186066
+    ],
+    [
+      12.739999771118164,
+      12.0,
+      0.8550000190734863
+    ]
+  ],
+  "high_cabinet_bounds_m": [
+    [
+      8.949999809265137,
+      11.114999771118164,
+      0.05000007152557373
+    ],
+    [
+      9.65000057220459,
+      11.315000534057617,
+      2.3499999046325684
+    ]
+  ],
+  "freezer_top_clear": true,
+  "fixed_countertop_over_freezer": false,
+  "freezer_and_low_cabinet_swapped": true,
+  "sofa_north_shift_m": 0.2,
+  "provisional_central_lane_m": 0.9649998474121091,
+  "north_plant_ledge_shortened_for_freezer_clearance": true,
+  "manufacturer_lid_sweep_verified": false,
+  "utilities_verified": false,
+  "frozen_r4_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb"
+}

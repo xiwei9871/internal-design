@@ -1,0 +1,62 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_living_wave35_aluminum_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_WAVE35_HANDRAIL_REVIEW_3.blend",
+  "source_sha256": "fd0f603b433bde0cdf14d9b3f17357c07ff2ab8a6575e89c77dc0f2e148cffe2",
+  "source_revision": "r4-living-wave35-aluminum-review-3",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "13-wave-wall-handrail-review",
+        "sha256": "c13b1dfe836c886c9da9cc7e98dbc7c570b8361659ba003857c66e657200bd23",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/spatial-canvas.bindings.handrail-3.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": false,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 637,
+        "display_floor": 5,
+        "display_furniture": 333,
+        "balcony_glass": 3,
+        "balcony_aluminum": 9,
+        "source_flat": 14
+      },
+      "flat_color_count": 7,
+      "profile": "zoning-with-north-balcony-glass-and-aluminum",
+      "glass_alpha": 0.32,
+      "texture_free": true
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "correction": "Frame-derived glazing bounds; east bay meets corner post. Stair350mm run; second500mm living shift,total1000mm. Upper planar landing restored; south pier clearance.",
+      "parent_source_resource_id": "c_type_r4",
+      "parent_source_revision": "r4",
+      "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb"
+    }
+  },
+  "entity_count": 1001,
+  "scope": "full"
+}

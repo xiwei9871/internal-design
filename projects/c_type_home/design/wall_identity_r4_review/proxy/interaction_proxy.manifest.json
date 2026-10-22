@@ -1,0 +1,79 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_walls_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_walls_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_identity_r4_review/OPTION_A_R4_NATIVE_WALL_PARTS_REVIEW.blend",
+  "source_sha256": "564ae8b36caea702d4ea556619f153bbe84e1ee04398f123a38f047bca2cedd6",
+  "source_revision": "r4-walls-view-review-1",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "8-native-wall-view-parts",
+        "sha256": "c257c053384cba650fbe738e134c00b8e16af1a6c340cf8cbe5309079327bd56",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_identity_r4_review/spatial-canvas.bindings.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": true,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 678,
+        "display_floor": 6,
+        "display_furniture": 333
+      },
+      "flat_color_count": 3
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "parent_source_resource_id": "c_type_r4",
+      "parent_source_revision": "r4",
+      "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "correction": "Original Blender wall operand grouping restored as independent derived surface parts. No wall, opening, corner, furniture or door geometry redesigned.",
+      "width_rule": "CABINET_BOUNDARY_TO_ISLAND_CONNECTOR",
+      "depth_rule": "ISLAND_NOTCH_NOT_CABINET_FRONT",
+      "ac_yaw_degrees_review": 60,
+      "frozen_authority_preserved": true,
+      "wall_thickness_reduction_m": 0.05,
+      "ac_upward_translation_m": 0.3,
+      "ac_size_reduced": false,
+      "parent_review_resource_id": "c_type_r4_dining_review",
+      "parent_review_revision": "r4-dining-chairs-review-1",
+      "parent_review_sha256": "e2f3f107eb6619ae28a363e0e4e36019cdae94c89aabe9ac4b8c0c07b14b14ac",
+      "chairs_tucked": true,
+      "wall_geometry_preserved": true
+    },
+    "spatial_canvas.wall_identity": {
+      "mode": "source-operand-surface-parts",
+      "index_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_identity_r4_review/WALL_PART_INDEX.json",
+      "index_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+      "part_count": 98,
+      "legacy_wall_parent_ids": [
+        "ent_75ed699dcc2442a29ab2dbdabae702f9",
+        "ent_4446040d5ca84b14bb410ef7df0ba2e7"
+      ],
+      "all_other_entity_ids_retained": 919
+    }
+  },
+  "entity_count": 1017,
+  "scope": "full"
+}

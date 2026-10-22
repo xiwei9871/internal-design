@@ -1,0 +1,36 @@
+{
+  "status": "HUMAN_REVIEW",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_UPPER_BOOKCASE_SIDE_CABINET_CHAISE_REVIEW_9.blend",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_BOOKCASE_UPPER_WALL_REVIEW_8.blend",
+  "output_sha256": "804e38e122995bc2aa1793ba5071fa2a7202e24d7f921747fe5ee40e543cc34d",
+  "chaise_restored_native_id": "B11_Rectangle048_CATALOG_00_00",
+  "chaise_restored_global_id": "ent_311cfcbe5e124d8cb67059ade476d139",
+  "chaise_geometry_and_station_unchanged": true,
+  "side_cabinet_native_id": "L_SOFA_5015_SHALLOW_SIDE_CABINET",
+  "side_cabinet_global_id": "ent_75bb7f35c8d251fc9f077f25086e4ca7",
+  "side_cabinet_bounds": [
+    [
+      4.25,
+      7.58,
+      0
+    ],
+    [
+      5.07,
+      7.9,
+      0.34
+    ]
+  ],
+  "side_cabinet_size_m": [
+    0.82,
+    0.32,
+    0.34
+  ],
+  "side_cabinet_to_sofa_gap_m": 0.05,
+  "bookshelf_retained_on_upper_wall": true,
+  "all_other_existing_object_states_unchanged": true,
+  "no_intersections_with_named_furniture_or_steps": true,
+  "fitness_outline_overlaps_restored_chaise_by_design": true,
+  "fitness_equipment_fit_verified": false,
+  "source_and_frozen_r4_unchanged": true,
+  "fresh_reopen_verified": true
+}

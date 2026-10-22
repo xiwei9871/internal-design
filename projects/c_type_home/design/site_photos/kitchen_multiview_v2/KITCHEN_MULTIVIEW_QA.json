@@ -1,0 +1,125 @@
+{
+  "status": "DELIVERED_FOR_HUMAN_REVIEW",
+  "view_count": 9,
+  "raw_resolution": [
+    2000,
+    1500
+  ],
+  "source_V2_sha256": "d28c3245f36e6ddb7b8aaeb943cb45d81fbfb2964660c7f4ef8f40c0ae863948",
+  "source_V2_unchanged": true,
+  "renderer": "BLENDER_WORKBENCH",
+  "blender_version": "5.2.1 LTS",
+  "total_render_seconds": 3.258,
+  "material_stage": "REVIEW",
+  "source_geometry_modified": false,
+  "visual_inspection": "All nine final views opened in contact sheet; fridge/sink/island/utility detail previews individually inspected.",
+  "images": [
+    {
+      "id": "01",
+      "name": "整体_西南轴测",
+      "file": "KITCHEN_01_overall_southwest.png",
+      "raw_file": "FULL_01_overall_southwest.png",
+      "image_size": [
+        2000,
+        1670
+      ],
+      "sha256": "c3f43e00d5231ee0d1ccb4297ebd7322faf0d035cd4330b97a83b19eb70dcf4e"
+    },
+    {
+      "id": "02",
+      "name": "整体_东北轴测",
+      "file": "KITCHEN_02_overall_northeast.png",
+      "raw_file": "FULL_02_overall_northeast.png",
+      "image_size": [
+        2000,
+        1670
+      ],
+      "sha256": "74b051c2d50af2bff8b8890b3b3e8cabbb4f8dfd5ae63ccd0eacd715e2027619"
+    },
+    {
+      "id": "03",
+      "name": "冰箱与两侧柜列",
+      "file": "KITCHEN_03_fridge_columns.png",
+      "raw_file": "FULL_03_fridge_columns.png",
+      "image_size": [
+        2000,
+        1670
+      ],
+      "sha256": "9fcdf342138f95655a1216e6fcd8b202f58a4761e2ad655fedb4313377ff7775"
+    },
+    {
+      "id": "04",
+      "name": "灶台与长边柜体",
+      "file": "KITCHEN_04_cooking_run.png",
+      "raw_file": "FULL_04_cooking_run.png",
+      "image_size": [
+        2000,
+        1670
+      ],
+      "sha256": "974f21d2531ebc90b4cc53ca8f7df3c24b6994fd1fa692c5ad4360ebb882030f"
+    },
+    {
+      "id": "05",
+      "name": "水槽与转角",
+      "file": "KITCHEN_05_sink_corner.png",
+      "raw_file": "FULL_05_sink_corner.png",
+      "image_size": [
+        2000,
+        1670
+      ],
+      "sha256": "25be83d8922d046e93c9fcfe5f1454d24a0898036fb55883cb1287e0e06ec653"
+    },
+    {
+      "id": "06",
+      "name": "岛台与旁柜_室内视点",
+      "file": "KITCHEN_06_island_interior.png",
+      "raw_file": "FULL_06_island_interior.png",
+      "image_size": [
+        2000,
+        1670
+      ],
+      "sha256": "ae8aa4f33b7df972260b52c5ce6a0029aaa077e5e88e83d342aed8714f362266"
+    },
+    {
+      "id": "07",
+      "name": "岛台抽屉与圆角",
+      "file": "KITCHEN_07_island_drawers.png",
+      "raw_file": "FULL_07_island_drawers.png",
+      "image_size": [
+        2000,
+        1670
+      ],
+      "sha256": "e1c3c00618e4ca0d4a0bffee78f5b7cf620837bba9de3a2bb59441e837c51cdb"
+    },
+    {
+      "id": "08",
+      "name": "600高柜与上方挂机",
+      "file": "KITCHEN_08_utility_and_ac.png",
+      "raw_file": "FULL_08_utility_and_ac.png",
+      "image_size": [
+        2000,
+        1670
+      ],
+      "sha256": "4cb1256c0c078069f1300ae0c668695c01338425e9dc10d5bcf20e9648bc0887"
+    },
+    {
+      "id": "09",
+      "name": "厨房俯视布局",
+      "file": "KITCHEN_09_top_layout.png",
+      "raw_file": "FULL_09_top_layout.png",
+      "image_size": [
+        2000,
+        1670
+      ],
+      "sha256": "b5ca81cf97d4560ca6f5c19530b43cc9e1e6d987f20326cd0db2ba943363979c"
+    }
+  ],
+  "generated_at": "2026-10-01T14:40:36.232891+08:00",
+  "B0_INTEGRITY": "PASS",
+  "camera_file_geometry_preservation": {
+    "source_objects_preserved": 821,
+    "geometry_preserved": true,
+    "new_review_cameras": 9
+  },
+  "final_verified_at": "2026-10-01T14:51:56.582573+08:00"
+}

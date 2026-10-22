@@ -1,0 +1,47 @@
+{
+  "status": "PASS_MATERIAL_ONLY",
+  "source_sha256": "cbed4cc4b34c9ebe5fc1bf8a388a860d620493b7f8bd609770499b967c37862f",
+  "candidate_sha256": "06c26fdf852cb14bd3c3069d8fc4c354fde0c9096bdf840bd63192afa3500dd4",
+  "protected_files": 12,
+  "source_objects_unchanged": 70,
+  "meshes_unchanged": 54,
+  "mesh_uv_shape_key_transforms_light_world_camera_grade_changes": 0,
+  "new_camera": "V9_FABRIC_CLOSEUP, same definition for A/B",
+  "changed_slots": [
+    "V7_SEAT_COMPLETE_COVER",
+    "V7_BACK_COMPLETE_COVER"
+  ],
+  "changed_shader_inputs": [
+    "Sheen Weight:0.2->0.5",
+    "Sheen Roughness:0.5->0.8"
+  ],
+  "same_color_maps_physical_scale": true,
+  "packed_images": 18,
+  "missing_images": [],
+  "seat_bounds_m": [
+    [
+      -0.5166000127792358,
+      -0.4490639865398407,
+      0.2849999964237213
+    ],
+    [
+      0.5166000127792358,
+      0.4490639865398407,
+      0.48252761363983154
+    ]
+  ],
+  "back_bounds_m": [
+    [
+      -0.5176079869270325,
+      0.3350144624710083,
+      0.4384995698928833
+    ],
+    [
+      0.5176079869270325,
+      0.5979605317115784,
+      0.8099308013916016
+    ]
+  ],
+  "filling_mechanics_changed": false,
+  "owner_accepted": false
+}

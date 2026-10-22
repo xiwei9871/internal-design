@@ -1,0 +1,26 @@
+{
+  "scope": "one complete custom seat/back pair, no house installation",
+  "owner_authorization": "execute differentiated seat-core/soft-wrap and loose-back filling form trial, then continue",
+  "baseline": "V7 geometry in V8 directional-light scene with original linen",
+  "candidate": "V10 delivery SOFA_DIFFERENTIATED_FILL_V10.blend",
+  "candidate_sha256": "ad9960ad4991e1f2f524a052815ae5c469efcf50967539fa74d921a877c741b8",
+  "evidence": ["design/sofa_fill_form_v10/FINAL_REVIEW_CONTACT.jpg", "design/sofa_fill_form_v10/delivery/V10_NATIVE_CROP.jpg", "design/sofa_fill_form_v10/delivery/VERIFICATION.json"],
+  "visible_ledger": [
+    {"requirement": "differentiate supportive seat and fuller yielding back masses", "result": "pass_visible_difference", "finding": "seat top stays broad and stable; back is rounder and more bulged, lower form meets seat; obvious profile difference in fixed side/front/three-quarter images"},
+    {"requirement": "match owner's relaxed yet full upholstered reference", "result": "unclear_not_accepted", "finding": "greater back fullness is visible but cover remains regular, few localized dents do not yet prove reference-like broad relaxed drape"},
+    {"requirement": "keep existing cloth/wood/light/camera and restrained seam count", "result": "pass", "finding": "original native shaders/studio retained; four crease families for each cover, no added pillows, increased sheen or changed exposure"},
+    {"requirement": "preserve height and seat footprint without hidden rescaling", "result": "pass_local_trial_only", "finding": "crown483.64mm; pair top806mm; foot width/depth differ by less0.1mm after smooth finish; lower back bound407.08mm is explicitly changed and not dimension authority"},
+    {"requirement": "closed shells, support and no penetrating contacts", "result": "pass_technical", "evidence": "delivery/VERIFICATION.json"}
+  ],
+  "failures_preserved": [
+    {"version": "form1", "finding": "241 seat/back overlap pairs despite1.2mm vertex gap; lower boxing too coarse for convex contact"},
+    {"version": "unpolished form2", "finding": "contact gates passed but seam turn looked too hard; retained original images, finished surface subdivision and sewing transfer applied"},
+    {"version": "first delivery build", "finding": "seam transfer assertion rejected presumed subdivided vertex index correspondence; no final file saved; one repair to nearest-surface transfer passed"}
+  ],
+  "decision": "retain_candidate",
+  "meaning": "keep old model as baseline; V10 is a reviewable filling-form experiment, not an automatically adopted repair",
+  "owner_accepted": false,
+  "whole_house_propagation": false,
+  "mechanical_model_limit": "static reference-constrained shape, no certified foam/down or real comfort test",
+  "stop": "HUMAN_REVIEW"
+}

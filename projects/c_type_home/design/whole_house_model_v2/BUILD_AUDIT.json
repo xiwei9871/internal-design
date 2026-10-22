@@ -1,0 +1,571 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v1/assembly/WHOLE_HOUSE_REVIEW_SUPPORTED_V2.blend",
+  "source_sha256": "7e07cad0852ef3347fb24f8f37280e214355e30b1021d4c2e85c81b05dea9eac",
+  "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_SUPPORTED_V2.blend",
+  "output_sha256": "5a8bf58aaea0978147db40e1c7c68d57c27be6f9b254c9a6191ca7ef32c11801",
+  "hidden_replaced": [
+    "HOUSE_V1_BW1_COUPLE_BEDSIDE_N_round_top",
+    "HOUSE_V1_BW1_COUPLE_BEDSIDE_N_leg",
+    "HOUSE_V1_BW1_COUPLE_BEDSIDE_N_leg.001",
+    "HOUSE_V1_BW1_COUPLE_BEDSIDE_N_leg.002",
+    "HOUSE_V1_BW1_COUPLE_BEDSIDE_S_round_top",
+    "HOUSE_V1_BW1_COUPLE_BEDSIDE_S_leg",
+    "HOUSE_V1_BW1_COUPLE_BEDSIDE_S_leg.001",
+    "HOUSE_V1_BW1_COUPLE_BEDSIDE_S_leg.002",
+    "HOUSE_V1_BW1_MOTHER_BEDSIDE_shelf",
+    "HOUSE_V1_BW1_MOTHER_BEDSIDE_rear_attachment",
+    "HOUSE_V1_BW1_MOTHER_BEDSIDE_N_shelf",
+    "HOUSE_V1_BW1_MOTHER_BEDSIDE_N_rear_attachment",
+    "HOUSE_V1_Mother_vanity_top",
+    "HOUSE_V1_Mother_vanity_support",
+    "HOUSE_V1_Mother_vanity_support.001",
+    "HOUSE_V1_Mother_vanity_drawer",
+    "HOUSE_V1_Mother_vanity_underbeam",
+    "HOUSE_V1_Mother_vanity_ceramic_body",
+    "HOUSE_V1_Mother_vanity_ceramic_neck",
+    "BW1_MOTHER_MIRROR_FRAME",
+    "BW1_MOTHER_MIRROR",
+    "HOUSE_V1_COUPLE_BED_SYSTEM",
+    "HOUSE_V1_COUPLE_platform",
+    "HOUSE_V1_COUPLE_grounded_leg",
+    "HOUSE_V1_COUPLE_grounded_leg.001",
+    "HOUSE_V1_COUPLE_grounded_leg.002",
+    "HOUSE_V1_COUPLE_grounded_leg.003",
+    "HOUSE_V1_COUPLE_mattress",
+    "HOUSE_V1_COUPLE_bedcover",
+    "HOUSE_V1_COUPLE_headrail",
+    "HOUSE_V1_COUPLE_linen_head_pad",
+    "HOUSE_V1_COUPLE_linen_head_pad.001",
+    "HOUSE_V1_COUPLE_pillow",
+    "HOUSE_V1_COUPLE_pillow.001",
+    "HOUSE_V1_COUPLE_sage_runner",
+    "HOUSE_V1_COUPLE_ROUND_BEDSIDE",
+    "B11_Rectangle017_CATALOG_00_00",
+    "BW1_GUEST_THIN_HEADBOARD",
+    "BW1_GUEST_SOFT_HEADREST",
+    "BW1_GUEST_BED_RUNNER",
+    "BW1_GUEST_CLOUD_WALL_LIGHT",
+    "BW1_GUEST_DESK",
+    "BW1_GUEST_ART_BLOCK_0",
+    "BW1_GUEST_ART_BLOCK_1",
+    "BW1_GUEST_ART_BLOCK_2",
+    "READING_BOOK_0",
+    "READING_BOOK_1",
+    "READING_BOOK_2",
+    "READING_BOOK_3",
+    "SUNROOM_COMPACT_TWO_SEAT_SOFA"
+  ],
+  "material_changes": [
+    {
+      "object": "R3_SHOWER_GLASS_0",
+      "material": "HOUSE_V2_SECONDARY_FROSTED_GLASS"
+    },
+    {
+      "object": "R3_SHOWER_GLASS_1",
+      "material": "HOUSE_V2_SECONDARY_FROSTED_GLASS"
+    },
+    {
+      "object": "R3_SHOWER_GLASS_2",
+      "material": "HOUSE_V2_SECONDARY_FROSTED_GLASS"
+    },
+    {
+      "object": "V4_D-STUDY_JAMB_A",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-STUDY_JAMB_B",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-STUDY_FRAME_HEAD",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-STUDY_CASING_A_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-STUDY_CASING_B_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-STUDY_CASING_HEAD_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-STUDY_CASING_A_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-STUDY_CASING_B_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-STUDY_CASING_HEAD_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-BATHM_JAMB_A",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-BATHM_JAMB_B",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-BATHM_FRAME_HEAD",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-BATHM_CASING_A_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-BATHM_CASING_B_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-BATHM_CASING_HEAD_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-BATHM_CASING_A_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-BATHM_CASING_B_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-BATHM_CASING_HEAD_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-MB_JAMB_A",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-MB_JAMB_B",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-MB_FRAME_HEAD",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-MB_CASING_A_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-MB_CASING_B_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-MB_CASING_HEAD_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-MB_CASING_A_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-MB_CASING_B_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-MB_CASING_HEAD_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-BATH_JAMB_A",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-BATH_JAMB_B",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-BATH_FRAME_HEAD",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-BATH_CASING_A_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-BATH_CASING_B_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-BATH_CASING_HEAD_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-BATH_CASING_A_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-BATH_CASING_B_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-BATH_CASING_HEAD_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-ROOM_JAMB_A",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-ROOM_JAMB_B",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-ROOM_FRAME_HEAD",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-ROOM_CASING_A_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-ROOM_CASING_B_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-ROOM_CASING_HEAD_FRONT",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-ROOM_CASING_A_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-ROOM_CASING_B_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "V4_D-GUEST-ROOM_CASING_HEAD_BACK",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "R4_DOOR_FRAME_WEST",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "R4_DOOR_FRAME_EAST",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "R4_DOOR_FRAME_HEAD",
+      "material": "V5_NATURAL_ASH_PLANKS_OIL"
+    },
+    {
+      "object": "B11_Rectangle040_BODY_0",
+      "material": "HOUSE_V2_WHITE_ENAMEL"
+    },
+    {
+      "object": "SUNROOM_LAUNDRY_CONTROL_0",
+      "material": "HOUSE_V2_WHITE_ENAMEL"
+    },
+    {
+      "object": "B11_Rectangle040_DOOR_0",
+      "material": "HOUSE_V2_BLACK_GLAZED_DOOR"
+    },
+    {
+      "object": "SUNROOM_LAUNDRY_DOOR_BEZEL_0",
+      "material": "HOUSE_V2_BLACK_GLAZED_DOOR"
+    },
+    {
+      "object": "SUNROOM_LAUNDRY_DOOR_WINDOW_0",
+      "material": "HOUSE_V2_BLACK_GLAZED_DOOR"
+    },
+    {
+      "object": "SUNROOM_LAUNDRY_DISPLAY_0",
+      "material": "HOUSE_V2_BLACK_GLAZED_DOOR"
+    },
+    {
+      "object": "B11_Rectangle040_BODY_1",
+      "material": "HOUSE_V2_WHITE_ENAMEL"
+    },
+    {
+      "object": "SUNROOM_LAUNDRY_CONTROL_1",
+      "material": "HOUSE_V2_WHITE_ENAMEL"
+    },
+    {
+      "object": "B11_Rectangle040_DOOR_1",
+      "material": "HOUSE_V2_BLACK_GLAZED_DOOR"
+    },
+    {
+      "object": "SUNROOM_LAUNDRY_DOOR_BEZEL_1",
+      "material": "HOUSE_V2_BLACK_GLAZED_DOOR"
+    },
+    {
+      "object": "SUNROOM_LAUNDRY_DOOR_WINDOW_1",
+      "material": "HOUSE_V2_BLACK_GLAZED_DOOR"
+    },
+    {
+      "object": "SUNROOM_LAUNDRY_DISPLAY_1",
+      "material": "HOUSE_V2_BLACK_GLAZED_DOOR"
+    }
+  ],
+  "catalog_products": [
+    {
+      "kind": "bedside",
+      "room": "MOTHER_0",
+      "model": "2110",
+      "dimensions_w_d_h_mm": [
+        450.0,
+        400.0,
+        480.0
+      ],
+      "center_xy": [
+        14.9,
+        1.04
+      ]
+    },
+    {
+      "kind": "bedside",
+      "room": "MOTHER_1",
+      "model": "2110",
+      "dimensions_w_d_h_mm": [
+        450.0,
+        400.0,
+        480.0
+      ],
+      "center_xy": [
+        14.9,
+        3.19
+      ]
+    },
+    {
+      "kind": "bedside",
+      "room": "COUPLE_0",
+      "model": "2116",
+      "dimensions_w_d_h_mm": [
+        420.0,
+        400.0,
+        460.0
+      ],
+      "center_xy": [
+        11.02,
+        0.83
+      ]
+    },
+    {
+      "kind": "bedside",
+      "room": "COUPLE_1",
+      "model": "2116",
+      "dimensions_w_d_h_mm": [
+        420.0,
+        400.0,
+        460.0
+      ],
+      "center_xy": [
+        11.02,
+        3.34
+      ]
+    },
+    {
+      "kind": "vanity",
+      "model": "2206-0.8",
+      "body_dimensions_mm": [
+        800,
+        413,
+        813
+      ],
+      "mirror_height_above_table_mm": 470,
+      "mirror_dimensions_status": "photo inferred",
+      "floor_m": 0.45
+    },
+    {
+      "kind": "bed",
+      "room": "COUPLE",
+      "model": "2016",
+      "outer_l_w_h_mm": [
+        2090,
+        1930,
+        980
+      ],
+      "mattress_w_l_mm": [
+        1800,
+        2000
+      ],
+      "bounds_plan_m": [
+        [
+          9.177,
+          1.122
+        ],
+        [
+          11.267,
+          3.0520000000000005
+        ]
+      ],
+      "slat_top_m": 0.7415
+    },
+    {
+      "kind": "bed",
+      "room": "GUEST",
+      "model": "2016",
+      "outer_l_w_h_mm": [
+        2090,
+        1330,
+        980
+      ],
+      "mattress_w_l_mm": [
+        1200,
+        2000
+      ],
+      "bounds_plan_m": [
+        [
+          10.73,
+          8.030000000000001
+        ],
+        [
+          12.82,
+          9.36
+        ]
+      ],
+      "slat_top_m": 0.7415
+    },
+    {
+      "kind": "desk",
+      "model": "2201",
+      "dimensions_mm": [
+        1200,
+        450,
+        760
+      ],
+      "bounds_plan_m": [
+        [
+          12.37,
+          9.58
+        ],
+        [
+          12.82,
+          10.78
+        ]
+      ],
+      "source": "owner catalogp17"
+    }
+  ],
+  "light_changes": [
+    {
+      "name": "LIGHT_study_2900K",
+      "before": 11.879999160766602,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_service_balcony_2900K",
+      "before": 7.019999980926514,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_secondary_bath_2900K",
+      "before": 55.0,
+      "after": 65.0
+    },
+    {
+      "name": "LIGHT_reading_transition_2900K",
+      "before": 5.939999580383301,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_north_sunroom_2900K",
+      "before": 7.019999980926514,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_mother_bedroom_2900K",
+      "before": 11.879999160766602,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_master_bath_2900K",
+      "before": 65.0,
+      "after": 65.0
+    },
+    {
+      "name": "LIGHT_living_2900K",
+      "before": 11.879999160766602,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_kitchen_2900K",
+      "before": 7.019999980926514,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_hallway_2900K",
+      "before": 55.0,
+      "after": 65.0
+    },
+    {
+      "name": "LIGHT_guest_bedroom_2900K",
+      "before": 5.939999580383301,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_guest_bath_2900K",
+      "before": 55.0,
+      "after": 65.0
+    },
+    {
+      "name": "LIGHT_entry_2900K",
+      "before": 5.939999580383301,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_dining_2900K",
+      "before": 5.939999580383301,
+      "after": 45.0
+    },
+    {
+      "name": "LIGHT_couple_bedroom_2900K",
+      "before": 11.879999160766602,
+      "after": 45.0
+    },
+    {
+      "name": "DAYLIGHT_northliving",
+      "before": 428.3999938964844,
+      "after": 556.9199829101562
+    },
+    {
+      "name": "DAYLIGHT_northstudy",
+      "before": 302.3999938964844,
+      "after": 393.1199951171875
+    },
+    {
+      "name": "DAYLIGHT_northsunroom",
+      "before": 277.20001220703125,
+      "after": 360.3600158691406
+    },
+    {
+      "name": "DAYLIGHT_southbed",
+      "before": 453.6000061035156,
+      "after": 589.6799926757812
+    }
+  ],
+  "guest_status": "1200x2000 east head; door fit to be verified against finalgeometry",
+  "native_materials": [
+    "V5_NATURAL_ASH_PLANKS_OIL",
+    "V5_NATURAL_FLAX_COTTON"
+  ],
+  "image2_requests": 0,
+  "source_writeback": false,
+  "structural_inference": "hidden joints, mirror dimensions and custom north frame inferred from catalog/source; not certified exact factory replica",
+  "pre_contact_candidate": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_V2.blend",
+    "sha256": "941b0132db0e4fc4de664195616c4c0362005add5d08d5e047b698f9e29058ba"
+  },
+  "contact_fix": "project actual final mattress surface; preserve drop outside supporting footprint",
+  "pre_camera_review": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_CONTACT_V2.blend",
+    "sha256": "335484d33336196e75afd3fdf2ba99fce98cda8bc518fcb52c4cee3ea1850851"
+  },
+  "pre_north_contact": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_REVIEW_V2.blend",
+    "sha256": "ca4618434b6715e1923a39e6eb1b65508b7e0c2ed42af0fdce0e4d5746c05f6c"
+  },
+  "north_back_contact_correction_mm": -36
+}

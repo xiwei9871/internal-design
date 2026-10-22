@@ -1,0 +1,30 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_SUPPORTED_V2.blend",
+  "source_sha256": "5a8bf58aaea0978147db40e1c7c68d57c27be6f9b254c9a6191ca7ef32c11801",
+  "images": [
+    {
+      "id": "north",
+      "title": "北阳台全景",
+      "camera": "CAM_north_sunroom_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/north_supported/north.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 12.79,
+      "source_sha256": "5a8bf58aaea0978147db40e1c7c68d57c27be6f9b254c9a6191ca7ef32c11801"
+    },
+    {
+      "id": "north_sofa",
+      "title": "北阳台软包",
+      "camera": "HOUSE_V2_NORTH_SOFA.001",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/north_supported/north_sofa.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 12.77,
+      "source_sha256": "5a8bf58aaea0978147db40e1c7c68d57c27be6f9b254c9a6191ca7ef32c11801"
+    }
+  ]
+}

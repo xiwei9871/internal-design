@@ -1,0 +1,379 @@
+{
+  "generated_by": "devin",
+  "generated_at": "2026-09-29",
+  "method": "physical_fingerprint_diff",
+  "inputs": {
+    "working": {
+      "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.FCStd",
+      "sha256": "cac4df3f2d800604bb41f587d6c302bc963342d6fcd875920ca3dec70880dabe",
+      "mtime": "2026-09-28T23:34",
+      "total_objects": 428,
+      "physical_objects": 416
+    },
+    "restored": {
+      "path": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WINDOW_RESTORED.FCStd",
+      "sha256": "9c2aa9ba9bc8a26be7a3375b4e915c3d68680f20122370ed2c589500498de3e0",
+      "mtime": "2026-09-28T22:54",
+      "total_objects": 437,
+      "physical_objects": 415
+    }
+  },
+  "fingerprint_fields": [
+    "name",
+    "label",
+    "typeid",
+    "placement_base",
+    "placement_rotation",
+    "bounding_box",
+    "shape_topology_metrics"
+  ],
+  "diff": {
+    "objects_only_in_working": [
+      {
+        "name": "Bspline",
+        "label": "Bspline",
+        "typeid": "Part::Feature",
+        "placement": "Pos=(0,0,0) Rot=(0,0,0,1)",
+        "bbox": "empty/invalid",
+        "shape": {
+          "edges": 0,
+          "vertexes": 0,
+          "is_null": true,
+          "length": "throws on null shape"
+        },
+        "classification": "NULL_SHAPE_REMNANT",
+        "design_content": "none"
+      }
+    ],
+    "objects_only_in_restored": [],
+    "objects_changed_in_common": [],
+    "common_objects_compared": 415,
+    "identical": 415
+  },
+  "semantic_objects_excluded_from_diff": [
+    "WINDOW_REF_W_LIV_N",
+    "WINDOW_REF_G_LIV_NBALC",
+    "WINDOW_REF_G_GB_BALC",
+    "WINDOW_REF_W_STUDY_NE",
+    "WINDOW_REF_G_DIN_LIV",
+    "WINDOW_REF_W_LBALC_S",
+    "WINDOW_REF_W_KIT_S",
+    "WINDOW_REF_W_SMB_S",
+    "WINDOW_REF_W_MB_S"
+  ],
+  "semantic_link_verification_in_restored": {
+    "window_refs": "9/9",
+    "resolved_links": "9/9 to physical geometry",
+    "broken_links": 0,
+    "physical_geometry_drift": 0
+  },
+  "human_furniture_presence_check_in_restored": {
+    "主卧床": {
+      "obj": "Rectangle013",
+      "dims_xy": [
+        2100,
+        1500
+      ],
+      "status": "MATCH 1500x2100"
+    },
+    "次主卧床": {
+      "obj": "Rectangle012",
+      "dims_xy": [
+        2100,
+        1500
+      ],
+      "status": "MATCH 1500x2100"
+    },
+    "次卧小床1.2": {
+      "obj": "Rectangle017",
+      "dims_xy": [
+        1800,
+        1200
+      ],
+      "status": "MATCH 1200x1800"
+    },
+    "次卧衣柜": {
+      "obj": "Rectangle045",
+      "dims_xy": [
+        500,
+        2000
+      ],
+      "status": "MATCH depth=500 HUMAN_CONFIRMED"
+    },
+    "主卧衣柜": {
+      "obj": "Rectangle015",
+      "dims_xy": [
+        2100,
+        600
+      ]
+    },
+    "次主卧衣柜": {
+      "obj": "Rectangle021",
+      "dims_xy": [
+        1500,
+        600
+      ]
+    },
+    "三人位": {
+      "obj": "Rectangle046",
+      "dims_xy": [
+        900,
+        2300
+      ],
+      "status": "MATCH ~2300x900"
+    },
+    "双人位": {
+      "obj": "Rectangle047",
+      "dims_xy": [
+        1900,
+        850
+      ],
+      "status": "MATCH 1900x850"
+    },
+    "贵妃椅": {
+      "obj": "Rectangle048",
+      "dims_xy": [
+        1700,
+        900
+      ],
+      "status": "MATCH chaise 1700x900"
+    },
+    "茶几": {
+      "obj": "Rectangle049",
+      "dims_xy": [
+        550,
+        1000
+      ],
+      "status": "MATCH ~1000x550"
+    },
+    "角几": {
+      "obj": "Circle",
+      "dims_xy": [
+        500,
+        500
+      ],
+      "status": "MATCH ~500x500"
+    },
+    "茶台": {
+      "obj": "Rectangle026",
+      "dims_xy": [
+        800,
+        2200
+      ],
+      "status": "MATCH — owner correction 2026-09-29: 茶台 IS the study computer desk/workstation, 2200x800 HUMAN_CONFIRMED, separate desk NOT_REQUIRED"
+    },
+    "餐桌": {
+      "obj": "Rectangle050 (label 'Rectangle073')",
+      "dims_xy": [
+        1600,
+        800
+      ],
+      "status": "MATCH ~1600x800, unlabeled — in dining zone beside 餐椅"
+    },
+    "餐椅": {
+      "objs": [
+        "Circle010",
+        "Circle011",
+        "Circle013",
+        "Circle012(unlabeled)"
+      ],
+      "dims_xy": [
+        400,
+        400
+      ],
+      "status": "reproduce as drawn, non-blocking"
+    },
+    "正式电脑桌": {
+      "obj": "Rectangle026 (茶台)",
+      "dims_xy": [
+        800,
+        2200
+      ],
+      "status": "RESOLVED — STUDY_DESK=茶台, HUMAN_CONFIRMED"
+    },
+    "书柜": {
+      "obj": "Rectangle024",
+      "dims_xy": [
+        450,
+        4200
+      ]
+    },
+    "矮书柜": {
+      "obj": "Rectangle025",
+      "dims_xy": [
+        1600,
+        450
+      ]
+    },
+    "主人椅": {
+      "obj": "Circle007",
+      "dims_xy": [
+        400,
+        400
+      ]
+    },
+    "条凳": {
+      "obj": "Rectangle027",
+      "dims_xy": [
+        300,
+        1600
+      ]
+    },
+    "3kg洗衣机": {
+      "obj": "Rectangle041",
+      "dims_xy": [
+        450,
+        450
+      ],
+      "status": "MATCH — latest human addition present"
+    },
+    "打印机": {
+      "obj": "Rectangle043",
+      "dims_xy": [
+        400,
+        400
+      ],
+      "status": "MATCH — latest human addition present"
+    },
+    "nas": {
+      "obj": "Rectangle044",
+      "dims_xy": [
+        400,
+        400
+      ],
+      "status": "MATCH — latest human addition present"
+    },
+    "洗衣机+烘干机（叠放）": {
+      "obj": "Rectangle040",
+      "dims_xy": [
+        600,
+        600
+      ],
+      "status": "MATCH stacked"
+    },
+    "冰柜": {
+      "obj": "Rectangle039",
+      "dims_xy": [
+        1200,
+        600
+      ]
+    },
+    "鞋柜": {
+      "obj": "Rectangle031",
+      "dims_xy": [
+        300,
+        722
+      ]
+    },
+    "橱柜": {
+      "obj": "Rectangle032",
+      "dims_xy": [
+        1200,
+        500
+      ]
+    },
+    "现有橱柜": {
+      "obj": "Rectangle029",
+      "dims_xy": [
+        500,
+        1500
+      ]
+    },
+    "主卫马桶": {
+      "obj": "Rectangle034",
+      "dims_xy": [
+        500,
+        650
+      ]
+    },
+    "主卫洗手盆和柜体": {
+      "obj": "Rectangle035",
+      "dims_xy": [
+        1200,
+        500
+      ]
+    },
+    "主卫湿区": {
+      "obj": "Rectangle033",
+      "dims_xy": [
+        1000,
+        1569
+      ]
+    },
+    "次主卫马桶": {
+      "obj": "Rectangle038",
+      "dims_xy": [
+        500,
+        600
+      ]
+    },
+    "次主卫台盆和柜体": {
+      "obj": "Rectangle037",
+      "dims_xy": [
+        1000,
+        500
+      ]
+    },
+    "次主卫湿区": {
+      "obj": "Rectangle036",
+      "dims_xy": [
+        900,
+        1600
+      ]
+    },
+    "客卫马桶": {
+      "obj": "Rectangle008",
+      "dims_xy": [
+        747,
+        324
+      ]
+    },
+    "客卫洗手盆柜体": {
+      "obj": "Rectangle030",
+      "dims_xy": [
+        600,
+        1200
+      ]
+    },
+    "客卫（湿区）": {
+      "obj": "Rectangle007",
+      "dims_xy": [
+        1644,
+        996
+      ]
+    },
+    "斜坡给未来轮椅使用预留": {
+      "obj": "Rectangle042",
+      "dims_xy": [
+        2100,
+        1100
+      ]
+    }
+  },
+  "verdict": {
+    "case": "A",
+    "reason": "All 415 shared physical objects have identical fingerprints (name/label/typeid/placement/bbox/shape topology). WORKING's single extra object is a null-shape Bspline remnant (0 edges, 0 vertexes) carrying zero design content. The later mtime of WORKING reflects a no-op save or the remnant's creation — not newer human furniture edits.",
+    "b1_master_source": "projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WINDOW_RESTORED.FCStd",
+    "new_master_file_needed": false
+  },
+  "v2_post_freeze": {
+    "working_sha256": "2eddf2b76779f0456078ccb8d81397c1d07d5f743b5b4667021d3806d52ffd10",
+    "changed": {
+      "Rectangle007": "客卫（湿区） +45.3/-20.6",
+      "Rectangle017": "次卧小床1.2 -27.3/-13.7",
+      "Rectangle041": "3kg洗衣机 +12.4/-32.9"
+    },
+    "removed": {
+      "Rectangle018": "床背板+窄书桌占位"
+    },
+    "added": {
+      "Rectangle051": "床背板 200x1200",
+      "Rectangle052": "窄书桌 350x1650"
+    },
+    "case": "B",
+    "master": "世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+    "master_objects": 438,
+    "link_targets_resolved": "85/85",
+    "physical_diffs_vs_working": 0
+  }
+}

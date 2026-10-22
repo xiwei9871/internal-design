@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "fresh_open_objects": 1242,
+  "corners_completed": 26,
+  "height_patches": 34,
+  "void_before_solid_after_probes": 273,
+  "unchanged_outside_corner_surface_samples": 286,
+  "max_outside_corner_deviation_mm": 0.0,
+  "topology": {
+    "vertices": 6418,
+    "faces": 8666,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "volume": 60.600844832781604
+  },
+  "patch_objects": 34,
+  "all_nonwall_objects_preserved": true,
+  "current_study_opening_preserved": true,
+  "all_registered_openings_clear": true,
+  "black_wall_demolition_count": 0,
+  "source_and_kitchen_freeze_hashes": "PASS",
+  "model_sha256": "c48a9cda731a4517e785dc21a381dd27e39f24dde796355cfa6debe86f66e50b",
+  "blender_version": "5.2.1 LTS"
+}

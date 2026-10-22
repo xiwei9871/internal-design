@@ -1,0 +1,24 @@
+[
+  {
+    "view": "after_slider",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/review/after_slider.png",
+    "camera": "V7_SLIDER_DETAIL",
+    "resolution": [
+      1600,
+      900
+    ],
+    "samples": 128,
+    "seconds": 35.14
+  },
+  {
+    "view": "after_console",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/review/after_console.png",
+    "camera": "HUNYUAN_V3_CONSOLE",
+    "resolution": [
+      1600,
+      900
+    ],
+    "samples": 128,
+    "seconds": 32.44
+  }
+]

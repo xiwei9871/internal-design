@@ -1,0 +1,2378 @@
+{
+  "status": "DERIVED_VIEW_PARTS",
+  "parent_source": "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/OPTION_A_R4_DINING_CHAIRS_ALIGNED_REVIEW.blend",
+  "parent_source_sha256": "e2f3f107eb6619ae28a363e0e4e36019cdae94c89aabe9ac4b8c0c07b14b14ac",
+  "parts": [
+    {
+      "entity_id": "ent_6fe11a4811895893b219f803238e3926",
+      "native_id": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_HEAD",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "B11_SITE_BALCONY_WINDOW_HEAD"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          2.100100040435791,
+          0.4999000132083893,
+          2.4000000953674316
+        ],
+        [
+          5.099899768829346,
+          0.7001000046730042,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 3.6009587049484253
+    },
+    {
+      "entity_id": "ent_0944f3ed920e5cb6be34a21bb3234302",
+      "native_id": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "B11_SITE_BALCONY_WINDOW_LEFT_RETURN"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          1.499899983406067,
+          0.4999000132083893,
+          1.0499999523162842
+        ],
+        [
+          2.100100040435791,
+          0.7001000046730042,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 2.8414802126513052
+    },
+    {
+      "entity_id": "ent_78b94e30ef8d53eaab25cddaf9905818",
+      "native_id": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "B11_SITE_BALCONY_WINDOW_RIGHT_RETURN"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          5.099899768829346,
+          0.4999000132083893,
+          1.0499999523162842
+        ],
+        [
+          5.500100135803223,
+          0.7001000046730042,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 2.0212813387952338
+    },
+    {
+      "entity_id": "ent_14ce823c67e653caba5689c6877e4e13",
+      "native_id": "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "B11_SITE_KITCHEN_WINDOW_HEAD_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          6.099899768829346,
+          -0.20010000467300415,
+          2.4000000953674316
+        ],
+        [
+          7.100100040435791,
+          9.999999747378752e-05,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 0.9605601017829031
+    },
+    {
+      "entity_id": "ent_28ddec26e6535a97893302934cca21f3",
+      "native_id": "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "B11_SITE_KITCHEN_WINDOW_UNDER_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          6.099899768829346,
+          -0.20010000467300415,
+          0.0
+        ],
+        [
+          7.100100040435791,
+          9.999999747378752e-05,
+          1.0199999809265137
+        ]
+      ],
+      "surface_area_m2": 2.399026607048654
+    },
+    {
+      "entity_id": "ent_70eba3c86bb252f4986f0b849d933c81",
+      "native_id": "VIEW_WALL_DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.749899864196777,
+          12.649900436401367,
+          0.0
+        ],
+        [
+          8.000100135803223,
+          13.002049446105957,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 2.736515893212072
+    },
+    {
+      "entity_id": "ent_cbbaf1ca2d6e5c90b2f0d858fd940cc0",
+      "native_id": "VIEW_WALL_DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "DOOR_V2_NBALC_SOLID_ABOVE_DOOR"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.749899864196777,
+          11.800100326538086,
+          2.4000000953674316
+        ],
+        [
+          8.000100135803223,
+          12.649900436401367,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 1.1050802851095796
+    },
+    {
+      "entity_id": "ent_ad9b8192fc4d5bea976e2ef4ffbcdf5c",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_FRONT_HEAD",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_FRONT_HEAD"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          3.699899911880493,
+          13.789899826049805,
+          2.4000000953674316
+        ],
+        [
+          7.000100135803223,
+          13.900099754333496,
+          2.7750000953674316
+        ]
+      ],
+      "surface_area_m2": 2.91367943957448
+    },
+    {
+      "entity_id": "ent_7669d3af61fc5446a0feff423457eced",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_FRONT_UNDER_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_FRONT_UNDER_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          3.699899911880493,
+          13.789899826049805,
+          0.0
+        ],
+        [
+          7.000100135803223,
+          13.900099754333496,
+          0.42500001192092896
+        ]
+      ],
+      "surface_area_m2": 2.2149442727677524
+    },
+    {
+      "entity_id": "ent_533de1b798df5c40847797476c0e4a32",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_INNER_HEAD",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_INNER_HEAD"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          3.800100088119507,
+          12.999899864196777,
+          2.4000000953674316
+        ],
+        [
+          6.899899959564209,
+          13.20009994506836,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 3.6435047909617424
+    },
+    {
+      "entity_id": "ent_8054f94abf8d55eeaa7b8b0159ce2459",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_INNER_UNDER_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_INNER_UNDER_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          3.800100088119507,
+          12.999899864196777,
+          0.0
+        ],
+        [
+          6.899899959564209,
+          13.20009994506836,
+          0.42500001192092896
+        ]
+      ],
+      "surface_area_m2": 2.558575429022312
+    },
+    {
+      "entity_id": "ent_73d96c81f66956d09d9b7c25b8d74378",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_LEFT_HEAD",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_LEFT_HEAD"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          3.599900007247925,
+          13.20009994506836,
+          2.4000000953674316
+        ],
+        [
+          3.7000999450683594,
+          13.800100326538086,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 0.61891294864472
+    },
+    {
+      "entity_id": "ent_028c1081dcc9565b9c80967edfc3b434",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_LEFT_UNDER_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_LEFT_UNDER_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          3.599900007247925,
+          13.20009994506836,
+          0.0
+        ],
+        [
+          3.7000999450683594,
+          13.800100326538086,
+          0.42500001192092896
+        ]
+      ],
+      "surface_area_m2": 0.4177380941109732
+    },
+    {
+      "entity_id": "ent_8d941b85808e5cff93b5886ff1f32999",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_RIGHT_HEAD",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_RIGHT_HEAD"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          6.999899864196777,
+          13.20009994506836,
+          2.4000000953674316
+        ],
+        [
+          7.100100040435791,
+          13.800100326538086,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 0.6189132317667827
+    },
+    {
+      "entity_id": "ent_edd1e8192c4e565bb0588455c4d26057",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_RIGHT_UNDER_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          6.999899864196777,
+          13.20009994506836,
+          0.0
+        ],
+        [
+          7.100100040435791,
+          13.800100326538086,
+          0.42500001192092896
+        ]
+      ],
+      "surface_area_m2": 0.41773837723303586
+    },
+    {
+      "entity_id": "ent_5d9ff13ed4715a8a83f246b6d4dfae34",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_SOFFIT",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_SOFFIT"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          3.599900007247925,
+          13.20009994506836,
+          2.7750000953674316
+        ],
+        [
+          7.100100040435791,
+          13.900099754333496,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 4.388627291657031
+    },
+    {
+      "entity_id": "ent_3ebcabb21e955577aed17b50c2fb90a2",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_BAY_SOLID_PLATFORM_CORE"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          3.7000999450683594,
+          13.20009994506836,
+          0.0
+        ],
+        [
+          6.999899864196777,
+          13.789899826049805,
+          0.42500001192092896
+        ]
+      ],
+      "surface_area_m2": 3.8924433290958405
+    },
+    {
+      "entity_id": "ent_b766d1eb792a59f4958ed1fb140a2160",
+      "native_id": "VIEW_WALL_LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_GUEST_BATH_FULL_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.749899864196777,
+          7.999899864196777,
+          0.0
+        ],
+        [
+          8.000100135803223,
+          10.899900436401367,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 21.105880976515436
+    },
+    {
+      "entity_id": "ent_6c5d5d7e36545f2da60efffc573685bd",
+      "native_id": "VIEW_WALL_LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_GUEST_BATH_NORTH_JUNCTION"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.749899864196777,
+          10.897950172424316,
+          0.0
+        ],
+        [
+          8.000100135803223,
+          11.100099563598633,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 0.8707315435312921
+    },
+    {
+      "entity_id": "ent_636c6979286a5929a570b17698f36760",
+      "native_id": "VIEW_WALL_LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "LIVING_FIX_TV_NORTH_SOLID_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.749899864196777,
+          11.100099563598633,
+          0.0
+        ],
+        [
+          8.000100135803223,
+          11.800100326538086,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 4.870765634695999
+    },
+    {
+      "entity_id": "ent_305b89ce4f245959b74fe081bfa48ae5",
+      "native_id": "VIEW_WALL_V4_D-BATHM_COMPLETE_HOST_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_D-BATHM_COMPLETE_HOST_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          11.899999618530273,
+          6.399899959564209,
+          0.44999998807907104
+        ],
+        [
+          13.100099563598633,
+          6.600100040435791,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 2.4253918442409486
+    },
+    {
+      "entity_id": "ent_fcf6c9615f5452a4933e41e4ab587f82",
+      "native_id": "VIEW_WALL_V4_D-GUEST-BATH_COMPLETE_HOST_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_D-GUEST-BATH_COMPLETE_HOST_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          8.800000190734863,
+          7.799900054931641,
+          2.5999999046325684
+        ],
+        [
+          9.649999618530273,
+          8.000100135803223,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.4453393369913101
+    },
+    {
+      "entity_id": "ent_dbd6a94aefc554f7863789edf331fee3",
+      "native_id": "VIEW_WALL_V4_D-GUEST-ROOM_COMPLETE_HOST_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_D-GUEST-ROOM_COMPLETE_HOST_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          9.949999809265137,
+          7.799900054931641,
+          2.5999999046325684
+        ],
+        [
+          10.899999618530273,
+          8.000100135803223,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.6153800077736378
+    },
+    {
+      "entity_id": "ent_6ae8918d8f5a562fb47be0495cdad81b",
+      "native_id": "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_D-MB_COMPLETE_HOST_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.899900436401367,
+          4.75,
+          2.5999999046325684
+        ],
+        [
+          13.100099563598633,
+          5.599999904632568,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.445338498800993
+    },
+    {
+      "entity_id": "ent_df7e0c5442eb5efeb0048fc7d6581b3f",
+      "native_id": "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_D-STUDY_COMPLETE_HOST_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.899900436401367,
+          6.600100040435791,
+          0.44999998807907104
+        ],
+        [
+          13.100099563598633,
+          8.002049446105957,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 4.62209334957879
+    },
+    {
+      "entity_id": "ent_393be8fef2e85c0fa911e90bc57853ff",
+      "native_id": "VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_ENT-1_COMPLETE_HOST_WALL"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          2.699899911880493,
+          5.389999866485596,
+          0.0
+        ],
+        [
+          2.900099992752075,
+          6.610000133514404,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 3.0213486121610913
+    },
+    {
+      "entity_id": "ent_a39511b980015621a099a6fd8575e93e",
+      "native_id": "VIEW_WALL_V4_G_DIN_LIV_LEFT_PIER",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_G_DIN_LIV_LEFT_PIER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          2.900099992752075,
+          4.529900074005127,
+          0.0
+        ],
+        [
+          2.950000047683716,
+          4.715099811553955,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 0.7424026397056878
+    },
+    {
+      "entity_id": "ent_1b14db75a35a5fbd8162aca7cba1dc07",
+      "native_id": "VIEW_WALL_V4_G_DIN_LIV_RIGHT_PIER",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_G_DIN_LIV_RIGHT_PIER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          5.649899959564209,
+          4.499899864196777,
+          0.0
+        ],
+        [
+          5.900100231170654,
+          4.715099811553955,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.8470165856842868
+    },
+    {
+      "entity_id": "ent_c03f26822a655ccc83cb5c1fafac28f3",
+      "native_id": "VIEW_WALL_V4_G_DIN_LIV_SOLID_HEAD",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_G_DIN_LIV_SOLID_HEAD"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          2.950000047683716,
+          4.529900074005127,
+          2.4000000953674316
+        ],
+        [
+          5.649899959564209,
+          4.715099811553955,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 3.1599606424570084
+    },
+    {
+      "entity_id": "ent_674f9289a3b35a64937c5150ac173114",
+      "native_id": "VIEW_WALL_V4_W-MB-S_INNER_HEAD",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-MB-S_INNER_HEAD"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.100099563598633,
+          -0.20010000467300415,
+          2.8499999046325684
+        ],
+        [
+          14.79990005493164,
+          0.20010000467300415,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 3.5520724589005113
+    },
+    {
+      "entity_id": "ent_e2a91183020c57cca3f371df75a2e297",
+      "native_id": "VIEW_WALL_V4_W-MB-S_INNER_LOWER",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-MB-S_INNER_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.100099563598633,
+          -0.20010000467300415,
+          0.0
+        ],
+        [
+          14.79990005493164,
+          0.20010000467300415,
+          0.875
+        ]
+      ],
+      "surface_area_m2": 4.265859248116612
+    },
+    {
+      "entity_id": "ent_83368c6b4b655542b913cad03c3698a2",
+      "native_id": "VIEW_WALL_V4_W-MB-S_SOFFIT",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-MB-S_SOFFIT"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.04990005493164,
+          -0.6730999946594238,
+          3.2249999046325684
+        ],
+        [
+          14.850099563598633,
+          0.004900000058114529,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 2.918674605706201
+    },
+    {
+      "entity_id": "ent_43e9aeeacefe5276b58e64c52689703d",
+      "native_id": "VIEW_WALL_V4_W-MB-S_SOLID_UNDER_PLATFORM",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-MB-S_SOLID_UNDER_PLATFORM"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.100099563598633,
+          -0.5999000072479248,
+          0.0
+        ],
+        [
+          14.79990005493164,
+          -0.20010000467300415,
+          0.875
+        ]
+      ],
+      "surface_area_m2": 2.1587605476379395
+    },
+    {
+      "entity_id": "ent_d686dfb6102757f982bd1d7832cbe699",
+      "native_id": "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-SMB-S_INNER_HEAD"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          8.5,
+          -0.20010000467300415,
+          2.8499999046325684
+        ],
+        [
+          10.899999618530273,
+          0.20010000467300415,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 3.299071812070906
+    },
+    {
+      "entity_id": "ent_c9917948cc855a3f9537c74da2e6c4d8",
+      "native_id": "VIEW_WALL_V4_W-SMB-S_INNER_LOWER",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-SMB-S_INNER_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          8.500100135803223,
+          -0.20010000467300415,
+          0.0
+        ],
+        [
+          10.899900436401367,
+          0.20010000467300415,
+          0.875
+        ]
+      ],
+      "surface_area_m2": 3.763240186497569
+    },
+    {
+      "entity_id": "ent_8cf91f40c9265dc3925e7af9be867f94",
+      "native_id": "VIEW_WALL_V4_W-SMB-S_SOFFIT",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-SMB-S_SOFFIT"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          8.449899673461914,
+          -0.6730999946594238,
+          3.2249999046325684
+        ],
+        [
+          10.95009994506836,
+          0.004900000058114529,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 2.596834494132054
+    },
+    {
+      "entity_id": "ent_e1701a36f6ab55ba96957d896493c929",
+      "native_id": "VIEW_WALL_V4_W-SMB-S_SOLID_UNDER_PLATFORM",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-SMB-S_SOLID_UNDER_PLATFORM"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          8.500100135803223,
+          -0.5999000072479248,
+          0.0
+        ],
+        [
+          10.899900436401367,
+          -0.20010000467300415,
+          0.875
+        ]
+      ],
+      "surface_area_m2": 1.9188803434371948
+    },
+    {
+      "entity_id": "ent_b1579e8573695bad908877a8c63ab790",
+      "native_id": "VIEW_WALL_V4_W-STUDY-NE_INNER_HEAD",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-STUDY-NE_INNER_HEAD"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.599900245666504,
+          10.899900436401367,
+          2.8499999046325684
+        ],
+        [
+          15.70009994506836,
+          11.100099563598633,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 2.4684014251270128
+    },
+    {
+      "entity_id": "ent_99a2eee752e95fb695e3c462ef7951d8",
+      "native_id": "VIEW_WALL_V4_W-STUDY-NE_INNER_LOWER",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-STUDY-NE_INNER_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.599900245666504,
+          10.899900436401367,
+          0.0
+        ],
+        [
+          15.70009994506836,
+          11.100099563598633,
+          0.875
+        ]
+      ],
+      "surface_area_m2": 2.733301266636772
+    },
+    {
+      "entity_id": "ent_d0b18af09b89550294c9272dd272916a",
+      "native_id": "VIEW_WALL_V4_W-STUDY-NE_SOFFIT",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-STUDY-NE_SOFFIT"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.54990005493164,
+          11.099900245666504,
+          3.2249999046325684
+        ],
+        [
+          15.750100135803223,
+          11.773099899291992,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 2.693425670605393
+    },
+    {
+      "entity_id": "ent_5916a3ad0cec528a92f7d576baaa479d",
+      "native_id": "VIEW_WALL_V4_W-STUDY-NE_SOLID_UNDER_PLATFORM",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-STUDY-NE_SOLID_UNDER_PLATFORM"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.600099563598633,
+          11.100099563598633,
+          0.0
+        ],
+        [
+          15.699899673461914,
+          11.699899673461914,
+          0.875
+        ]
+      ],
+      "surface_area_m2": 2.5189206153154373
+    },
+    {
+      "entity_id": "ent_78ff03dfeac756529082ce65d171f1a9",
+      "native_id": "VIEW_WALL_W_wall_md_0004",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0004"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          1.2999000549316406,
+          0.6998999714851379,
+          0.0
+        ],
+        [
+          1.500100016593933,
+          2.2999000549316406,
+          1.0499999523162842
+        ]
+      ],
+      "surface_area_m2": 4.210429888903974
+    },
+    {
+      "entity_id": "ent_9e718d30968e5e65ae02bd49065a90e9",
+      "native_id": "VIEW_WALL_W_wall_md_0005",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0005"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          2.699899911880493,
+          2.4999001026153564,
+          0.0
+        ],
+        [
+          2.900099992752075,
+          5.389999866485596,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 17.382635966248927
+    },
+    {
+      "entity_id": "ent_d09db1cf51ae51b3b7be413068dcc191",
+      "native_id": "VIEW_WALL_W_wall_md_0006",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0006"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          2.699899911880493,
+          6.610000133514404,
+          0.0
+        ],
+        [
+          2.900099992752075,
+          13.000100135803223,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 38.9025961556581
+    },
+    {
+      "entity_id": "ent_40ca2450bfce5f2a93a25cd2ec513fc6",
+      "native_id": "VIEW_WALL_W_wall_md_0007",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0007"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          2.699899911880493,
+          13.199899673461914,
+          0.0
+        ],
+        [
+          2.900099992752075,
+          14.953100204467773,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 11.63990413677675
+    },
+    {
+      "entity_id": "ent_c2dbad24c0845db18d161680c1878184",
+      "native_id": "VIEW_WALL_W_wall_md_0009",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0009"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          5.499899864196777,
+          -9.999999747378752e-05,
+          0.0
+        ],
+        [
+          5.902050018310547,
+          0.7001000046730042,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 6.0027292181900975
+    },
+    {
+      "entity_id": "ent_7c24679577ce55559d9569201c876f61",
+      "native_id": "VIEW_WALL_W_wall_md_0010",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0010"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          5.699900150299072,
+          4.099899768829346,
+          0.0
+        ],
+        [
+          5.900100231170654,
+          4.499899864196777,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 2.960720853356179
+    },
+    {
+      "entity_id": "ent_be0a4d8c756c5dcc8e7231e5a2a700fd",
+      "native_id": "VIEW_WALL_W_wall_md_0015",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0015"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.799900054931641,
+          0.19990000128746033,
+          0.0
+        ],
+        [
+          8.000100135803223,
+          4.500100135803223,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 30.130651329664943
+    },
+    {
+      "entity_id": "ent_d78583fec301548c88d4c4c9b66757c9",
+      "native_id": "VIEW_WALL_W_wall_md_0016",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0016"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.799900054931641,
+          13.400099754333496,
+          0.0
+        ],
+        [
+          8.002049446105957,
+          13.820099830627441,
+          1.0499999523162842
+        ]
+      ],
+      "surface_area_m2": 0.6752346749417484
+    },
+    {
+      "entity_id": "ent_e7bd452023455f22885e285ecdddae52",
+      "native_id": "VIEW_WALL_W_wall_md_0017",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-SMB-S_W_wall_md_0017_HEAD",
+        "V4_W-SMB-S_W_wall_md_0017_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          8.399900436401367,
+          -0.6000999808311462,
+          0.0
+        ],
+        [
+          8.502049446105957,
+          -9.999999747378752e-05,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.282311649836629
+    },
+    {
+      "entity_id": "ent_5c6a3a35faab5bf2904631cdfddbff2a",
+      "native_id": "VIEW_WALL_W_wall_md_0018",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "RESTORED_PRE_D107_W_wall_md_0018"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          9.04990005493164,
+          5.119900226593018,
+          0.44999998807907104
+        ],
+        [
+          9.20009994506836,
+          6.450099945068359,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 8.68870932666323
+    },
+    {
+      "entity_id": "ent_b8a5af707b3e58f19007875b6be4bdb4",
+      "native_id": "VIEW_WALL_W_wall_md_0019",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0019"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          9.699899673461914,
+          8.000100135803223,
+          0.44999998807907104
+        ],
+        [
+          9.900099754333496,
+          10.900099754333496,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 17.959483319501032
+    },
+    {
+      "entity_id": "ent_0075c1e3f1dc5b11936776383bcb824c",
+      "native_id": "VIEW_WALL_W_wall_md_0020",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-SMB-S_W_wall_md_0020_HEAD",
+        "V4_W-SMB-S_W_wall_md_0020_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          10.897950172424316,
+          -0.6000999808311462,
+          0.0
+        ],
+        [
+          11.000100135803223,
+          -9.999999747378752e-05,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.2823135275575623
+    },
+    {
+      "entity_id": "ent_cc4261295d475073b7aa0f93fe9c6bc1",
+      "native_id": "VIEW_WALL_W_wall_md_0021",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0021"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          11.399900436401367,
+          0.19990000128746033,
+          0.44999998807907104
+        ],
+        [
+          11.600099563598633,
+          4.500100135803223,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 26.920673280091933
+    },
+    {
+      "entity_id": "ent_c4bfcd37bcd85d3286346238ab748f00",
+      "native_id": "VIEW_WALL_W_wall_md_0022",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0022"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          11.399900436401367,
+          4.699900150299072,
+          0.44999998807907104
+        ],
+        [
+          11.600099563598633,
+          6.400100231170654,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 11.32075632784472
+    },
+    {
+      "entity_id": "ent_4300a551f0305897944ae59bef2cea3c",
+      "native_id": "VIEW_WALL_W_wall_md_0023",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-MB-S_W_wall_md_0023_HEAD",
+        "V4_W-MB-S_W_wall_md_0023_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          11.999899864196777,
+          -0.6000999808311462,
+          0.0
+        ],
+        [
+          12.102049827575684,
+          -9.999999747378752e-05,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.282313523832272
+    },
+    {
+      "entity_id": "ent_c8dc5015ab3650d782508fdf6cecf648",
+      "native_id": "VIEW_WALL_W_wall_md_0024",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0024"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.899900436401367,
+          5.599999904632568,
+          0.44999998807907104
+        ],
+        [
+          13.100099563598633,
+          6.399899959564209,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 5.230147099588066
+    },
+    {
+      "entity_id": "ent_8bfbb8456e6f5c6caa5af84eb62760d5",
+      "native_id": "VIEW_WALL_W_wall_md_0025",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0025"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.899900436401367,
+          8.000100135803223,
+          0.44999998807907104
+        ],
+        [
+          13.100099563598633,
+          10.900099754333496,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 17.947778674472374
+    },
+    {
+      "entity_id": "ent_82ae35e1f049534db7a2c7d47c11a0a1",
+      "native_id": "VIEW_WALL_W_wall_md_0026",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0026"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.899900436401367,
+          11.099900245666504,
+          0.0
+        ],
+        [
+          13.102049827575684,
+          13.820099830627441,
+          1.0499999523162842
+        ]
+      ],
+      "surface_area_m2": 5.868989623049288
+    },
+    {
+      "entity_id": "ent_ffed7f61dbec55ab80fe73475f6a9ccd",
+      "native_id": "VIEW_WALL_W_wall_md_0027",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0027"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.099900245666504,
+          11.099900245666504,
+          0.0
+        ],
+        [
+          13.500100135803223,
+          11.800100326538086,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 4.5178873802015005
+    },
+    {
+      "entity_id": "ent_e342369a32b45ce0b36561e4632f4fe7",
+      "native_id": "VIEW_WALL_W_wall_md_0028",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-STUDY-NE_W_wall_md_0028_HEAD",
+        "V4_W-STUDY-NE_W_wall_md_0028_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.497950553894043,
+          11.099900245666504,
+          0.0
+        ],
+        [
+          13.600099563598633,
+          11.70009994506836,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 0.8772690113105455
+    },
+    {
+      "entity_id": "ent_7c8925c4851a549fbbd322006803d147",
+      "native_id": "VIEW_WALL_W_wall_md_0029",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-MB-S_W_wall_md_0029_HEAD",
+        "V4_W-MB-S_W_wall_md_0029_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          14.797950744628906,
+          -0.6000999808311462,
+          0.0
+        ],
+        [
+          14.900099754333496,
+          -9.999999747378752e-05,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.2823116808285704
+    },
+    {
+      "entity_id": "ent_c2810e7e201c569c84bca1a5fd17f1e9",
+      "native_id": "VIEW_WALL_W_wall_md_0030",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0030"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          15.29990005493164,
+          0.19990000128746033,
+          0.0
+        ],
+        [
+          15.500100135803223,
+          4.500100135803223,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 30.970677266989696
+    },
+    {
+      "entity_id": "ent_228a7eab47e05356ae3d288207b2e8ca",
+      "native_id": "VIEW_WALL_W_wall_md_0031",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-STUDY-NE_W_wall_md_0031_HEAD",
+        "V4_W-STUDY-NE_W_wall_md_0031_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          15.699899673461914,
+          11.099900245666504,
+          0.0
+        ],
+        [
+          15.800100326538086,
+          11.70009994506836,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.4017884654981572
+    },
+    {
+      "entity_id": "ent_4c569d61dca15938af89fef542bbfb15",
+      "native_id": "VIEW_WALL_W_wall_md_0032",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0032"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          16.199899673461914,
+          4.499899864196777,
+          0.0
+        ],
+        [
+          16.400100708007812,
+          6.400100231170654,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 13.753833758096334
+    },
+    {
+      "entity_id": "ent_79d4e120cf5a52a49e034e22dfc8cc4a",
+      "native_id": "VIEW_WALL_W_wall_md_0033",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0033"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          16.199899673461914,
+          6.599899768829346,
+          0.0
+        ],
+        [
+          16.400100708007812,
+          10.900099754333496,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 30.972175292943575
+    },
+    {
+      "entity_id": "ent_4dddd0bcf7905fc086bc5a33c8fee413",
+      "native_id": "VIEW_WALL_W_wall_md_0034",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-SMB-S_W_wall_md_0034_HEAD",
+        "V4_W-SMB-S_W_wall_md_0034_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          8.499899864196777,
+          -0.7001000046730042,
+          0.0
+        ],
+        [
+          10.900099754333496,
+          -0.5999000072479248,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 4.997835637201206
+    },
+    {
+      "entity_id": "ent_b843ba7e196d5bd8a572c5b3aee9045a",
+      "native_id": "VIEW_WALL_W_wall_md_0035",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-MB-S_W_wall_md_0035_HEAD",
+        "V4_W-MB-S_W_wall_md_0035_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.099900245666504,
+          -0.7001000046730042,
+          0.0
+        ],
+        [
+          14.800100326538086,
+          -0.5999000072479248,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 5.59111598519803
+    },
+    {
+      "entity_id": "ent_bc33521101e5577781ec87e7a9ddf48e",
+      "native_id": "VIEW_WALL_W_wall_md_0036",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0036"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          5.900100231170654,
+          -9.999999747378752e-05,
+          0.0
+        ],
+        [
+          7.800099849700928,
+          0.20010000467300415,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 10.012511522103978
+    },
+    {
+      "entity_id": "ent_968dec4279c5540dae9b5cf20ec590a4",
+      "native_id": "VIEW_WALL_W_wall_md_0037",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0037"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.999899864196777,
+          -0.002050000010058284,
+          0.0
+        ],
+        [
+          8.600099563598633,
+          0.20010000467300415,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 4.501335323055173
+    },
+    {
+      "entity_id": "ent_f8101ee0ab5857f0a583f4ef503c9d77",
+      "native_id": "VIEW_WALL_W_wall_md_0038",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0038"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          10.79990005493164,
+          -0.002050000010058284,
+          0.0
+        ],
+        [
+          11.400099754333496,
+          0.20010000467300415,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 4.501516967952938
+    },
+    {
+      "entity_id": "ent_2eb815b01f4c544eb114bda181513064",
+      "native_id": "VIEW_WALL_W_wall_md_0039",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0039"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          11.599900245666504,
+          -0.002050000010058284,
+          0.0
+        ],
+        [
+          12.20009994506836,
+          0.20010000467300415,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 4.58132642142229
+    },
+    {
+      "entity_id": "ent_77b1b8dc191f50368da36fd94506d947",
+      "native_id": "VIEW_WALL_W_wall_md_0040",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0040"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          14.699899673461914,
+          -0.002050000010058284,
+          0.0
+        ],
+        [
+          15.300100326538086,
+          0.20010000467300415,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 4.581146804610398
+    },
+    {
+      "entity_id": "ent_b22a1e661747586c8c127751c699bb31",
+      "native_id": "VIEW_WALL_W_wall_md_0041",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0041"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.399899959564209,
+          0.19990000128746033,
+          0.0
+        ],
+        [
+          7.800099849700928,
+          0.5001000165939331,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 2.2001103014317778
+    },
+    {
+      "entity_id": "ent_4299f0bc3dce5af7b4008c703d67c2ad",
+      "native_id": "VIEW_WALL_W_wall_md_0042",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0042"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          1.499899983406067,
+          0.4999000132083893,
+          0.0
+        ],
+        [
+          5.500100135803223,
+          0.7001000046730042,
+          1.0499999523162842
+        ]
+      ],
+      "surface_area_m2": 10.01137940343142
+    },
+    {
+      "entity_id": "ent_a2331139c35f514da6e3110412808714",
+      "native_id": "VIEW_WALL_W_wall_md_0043",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0043"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          1.2999000549316406,
+          2.2999000549316406,
+          0.0
+        ],
+        [
+          2.7000999450683594,
+          2.5000998973846436,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 9.311548449386464
+    },
+    {
+      "entity_id": "ent_292295d05e83519f93bf6c9fed39d766",
+      "native_id": "VIEW_WALL_W_wall_md_0044",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0044"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          5.900100231170654,
+          4.499899864196777,
+          0.0
+        ],
+        [
+          7.800099849700928,
+          4.700099945068359,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 13.760107887137565
+    },
+    {
+      "entity_id": "ent_1a2f1ebd2eaf52f6ba8c84f07e969320",
+      "native_id": "VIEW_WALL_W_wall_md_0045",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0045"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          10.79990005493164,
+          4.499899864196777,
+          0.44999998807907104
+        ],
+        [
+          11.400099754333496,
+          4.700099945068359,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 4.7203223983924545
+    },
+    {
+      "entity_id": "ent_c40b1005b56057c48f4fca22b10d2a9f",
+      "native_id": "VIEW_WALL_W_wall_md_0046",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0046"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.100099563598633,
+          4.499899864196777,
+          0.44999998807907104
+        ],
+        [
+          15.300100326538086,
+          4.700099945068359,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 13.754082660185304
+    },
+    {
+      "entity_id": "ent_f18228926e58506ab0b7f8032c52e69f",
+      "native_id": "VIEW_WALL_W_wall_md_0047",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0047"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          15.499899864196777,
+          4.499899864196777,
+          0.0
+        ],
+        [
+          16.202051162719727,
+          4.700099945068359,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 5.4874775921525725
+    },
+    {
+      "entity_id": "ent_386b09b5fa1250f9b37a860507ed26fa",
+      "native_id": "VIEW_WALL_W_wall_md_0048",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0048"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          11.599900245666504,
+          6.399899959564209,
+          0.44999998807907104
+        ],
+        [
+          11.899999618530273,
+          6.600100040435791,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 2.7905878370220307
+    },
+    {
+      "entity_id": "ent_ed3d277e0d545d948b37c0039de36cca",
+      "native_id": "VIEW_WALL_W_wall_md_0049",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0049"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.100099563598633,
+          6.399899959564209,
+          0.44999998807907104
+        ],
+        [
+          16.20009994506836,
+          6.600100040435791,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 19.159559856927444
+    },
+    {
+      "entity_id": "ent_d2e1fe9aaa2e521386a86672fa43b6f4",
+      "native_id": "VIEW_WALL_W_wall_md_0050",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0050"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          9.199899673461914,
+          6.449900150299072,
+          0.44999998807907104
+        ],
+        [
+          11.400099754333496,
+          6.600100040435791,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 13.822059091858137
+    },
+    {
+      "entity_id": "ent_f0a5adc189f25299a7b25463b38e0e8d",
+      "native_id": "VIEW_WALL_W_wall_md_0051",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0051"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.999899864196777,
+          7.799900054931641,
+          0.44999998807907104
+        ],
+        [
+          8.800000190734863,
+          8.000100135803223,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 5.790791037021336
+    },
+    {
+      "entity_id": "ent_e017466360075c39af49529127690a4e",
+      "native_id": "VIEW_WALL_W_wall_md_0052",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0052"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          9.649999618530273,
+          7.799900054931641,
+          0.44999998807907104
+        ],
+        [
+          9.949999809265137,
+          8.000100135803223,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 2.100421286886558
+    },
+    {
+      "entity_id": "ent_7caa039d539a5469aa02c77c214e009b",
+      "native_id": "VIEW_WALL_W_wall_md_0053",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0053"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          10.899999618530273,
+          7.799900054931641,
+          0.44999998807907104
+        ],
+        [
+          12.899900436401367,
+          8.000100135803223,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 12.430635220371187
+    },
+    {
+      "entity_id": "ent_df57443faff255e09d9db342f9a46e2e",
+      "native_id": "VIEW_WALL_W_wall_md_0054",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0054"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          8.000100135803223,
+          10.899900436401367,
+          0.0
+        ],
+        [
+          9.70009994506836,
+          11.100099563598633,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 12.380204190512814
+    },
+    {
+      "entity_id": "ent_73d1299613ad574c86e94b627ec78b12",
+      "native_id": "VIEW_WALL_W_wall_md_0055",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0055"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          9.899900436401367,
+          10.899900436401367,
+          0.0
+        ],
+        [
+          12.900099754333496,
+          11.100099563598633,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 14.163066116858772
+    },
+    {
+      "entity_id": "ent_b6e0974db5f25ce5bb1ffa73b9837b41",
+      "native_id": "VIEW_WALL_W_wall_md_0056",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0056"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.099900245666504,
+          10.897950172424316,
+          0.4479999840259552
+        ],
+        [
+          13.70009994506836,
+          11.100099563598633,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 2.9890324779594835
+    },
+    {
+      "entity_id": "ent_c2720dab7fc05b9f86a0701c4b5db5a4",
+      "native_id": "VIEW_WALL_W_wall_md_0057",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0057"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          15.599900245666504,
+          10.899900436401367,
+          0.44999998807907104
+        ],
+        [
+          16.20009994506836,
+          11.100099563598633,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 3.923347089293202
+    },
+    {
+      "entity_id": "ent_3ed894802f2859f18b72aff3c210f432",
+      "native_id": "VIEW_WALL_W_wall_md_0058",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "V4_W-STUDY-NE_W_wall_md_0058_HEAD",
+        "V4_W-STUDY-NE_W_wall_md_0058_LOWER"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          13.599900245666504,
+          11.699899673461914,
+          0.0
+        ],
+        [
+          15.70009994506836,
+          11.800100326538086,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 4.404561170355919
+    },
+    {
+      "entity_id": "ent_7f4a582d1d565a82a182a54de57f4e71",
+      "native_id": "VIEW_WALL_W_wall_md_0059",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0059"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          2.899899959564209,
+          12.999899864196777,
+          0.0
+        ],
+        [
+          3.800100088119507,
+          13.20009994506836,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 6.227609534063959
+    },
+    {
+      "entity_id": "ent_fab02a4a90a35b4e855e64eb363488d5",
+      "native_id": "VIEW_WALL_W_wall_md_0060",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0060"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          6.899899959564209,
+          12.999899864196777,
+          0.0
+        ],
+        [
+          7.799900054931641,
+          13.20009994506836,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 5.527321483736159
+    },
+    {
+      "entity_id": "ent_26f1d1454b795eb186faba9d7d1b9f26",
+      "native_id": "VIEW_WALL_W_wall_md_0061",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0061"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.797950267791748,
+          12.999899864196777,
+          0.0
+        ],
+        [
+          8.20009994506836,
+          13.40204906463623,
+          2.799999952316284
+        ]
+      ],
+      "surface_area_m2": 3.261658260760669
+    },
+    {
+      "entity_id": "ent_5a6dd606884d5a88b69ffd7a2c53f8a3",
+      "native_id": "VIEW_WALL_W_wall_md_0062",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0062"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          7.879899978637695,
+          13.399900436401367,
+          0.0
+        ],
+        [
+          13.020099639892578,
+          13.900099754333496,
+          1.0499999523162842
+        ]
+      ],
+      "surface_area_m2": 15.507809102629835
+    },
+    {
+      "entity_id": "ent_43ace5aebdeb505d8c54a6b4a27c9377",
+      "native_id": "VIEW_WALL_W_wall_md_0064",
+      "parent_entity_id": "ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "parent_native_id": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_inputs": [
+        "W_wall_md_0064"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/HOUSE_ROLLBACK_WALL_INPUT.json",
+      "source_input_sha256": "6f8862c7e09cbfab4cd5634c22e880cabfea408efc7c9d79b9042e4639e71de9",
+      "world_bounds": [
+        [
+          12.899900436401367,
+          4.499899864196777,
+          0.44999998807907104
+        ],
+        [
+          13.102049827575684,
+          4.75,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 1.9373670669592684
+    },
+    {
+      "entity_id": "ent_75748873dd4a571faa9e87690b1af3e5",
+      "native_id": "VIEW_WALL_R3_SOUTH_POCKET_PARTITION",
+      "parent_entity_id": "ent_4446040d5ca84b14bb410ef7df0ba2e7",
+      "parent_native_id": "R3_COMPLETE_PARTITION_WALLS",
+      "source_inputs": [
+        "ENTRY_HEADER_ABOVE_RAIL_CHANNEL",
+        "ENTRY_HEADER_FRONT_LIP",
+        "ENTRY_HEADER_NORTH_LIP",
+        "FC_SOUTH_WALL_AND_YELLOW_CLOSURE",
+        "POCKET_EAST_CLOSURE_FLUSH_TO_ROOM_EAST_WALL",
+        "POCKET_HEADER",
+        "POCKET_NORTH_SKIN"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/A_WALL_INPUT.json",
+      "source_input_sha256": "7ec442dfcf2cdd8c7684eb44fdfb058458c5f78bd74d7b77e8eb91b663f410c7",
+      "world_bounds": [
+        [
+          9.208999633789062,
+          4.523950099945068,
+          0.44999998807907104
+        ],
+        [
+          11.399900436401367,
+          4.823050022125244,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 15.154506852908526
+    },
+    {
+      "entity_id": "ent_821c71e5f96f50229bb483a8ce558548",
+      "native_id": "VIEW_WALL_R3_WEST_PARTITION",
+      "parent_entity_id": "ent_4446040d5ca84b14bb410ef7df0ba2e7",
+      "parent_native_id": "R3_COMPLETE_PARTITION_WALLS",
+      "source_inputs": [
+        "NEW_FC_WEST_PARTITION"
+      ],
+      "source_input_file": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/A_WALL_INPUT.json",
+      "source_input_sha256": "7ec442dfcf2cdd8c7684eb44fdfb058458c5f78bd74d7b77e8eb91b663f410c7",
+      "world_bounds": [
+        [
+          9.059000015258789,
+          4.50724983215332,
+          0.44999998807907104
+        ],
+        [
+          9.208999633789062,
+          6.50724983215332,
+          3.25
+        ]
+      ],
+      "surface_area_m2": 12.43262626620708
+    }
+  ],
+  "legacy_wall_parent_ids": [
+    "ent_75ed699dcc2442a29ab2dbdabae702f9",
+    "ent_4446040d5ca84b14bb410ef7df0ba2e7"
+  ]
+}

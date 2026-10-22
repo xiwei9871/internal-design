@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "fresh_open_states": 974,
+  "kitchen_objects_preserved": 272,
+  "red_visible_wall_mm": 50,
+  "blue_visible_wall_mm": 0,
+  "side_projection": "RED_LEFT_BLUE_RIGHT_IN_SUPPLIED_AXON",
+  "actual_vertices_and_casing_checked": true,
+  "red_pier_ray_checked": true,
+  "door_leaf_pose_and_dimensions_unchanged": true,
+  "north_balcony_door_unchanged": true,
+  "source_B0_and_frozen_hashes": "PASS",
+  "model_sha256": "4c0587e59d75198348bda9c45b4c447ae566ca6b862369517c993ea977734405",
+  "blender_version": "5.2.1 LTS"
+}

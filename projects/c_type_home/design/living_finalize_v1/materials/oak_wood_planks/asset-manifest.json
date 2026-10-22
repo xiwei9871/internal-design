@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "provider": "Poly Haven",
+  "credit": "Powered by Poly Haven",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "source": "https://polyhaven.com/a/oak_wood_planks",
+  "assetId": "oak_wood_planks",
+  "assetType": "textures",
+  "resolution": "4k",
+  "status": "complete",
+  "files": [
+    {
+      "map": "diffuse",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/oak_wood_planks/oak_wood_planks_diff_4k.jpg",
+      "size": 10094919,
+      "md5": "afdebae04b31a4f77ca878d9c8292daa",
+      "file": "oak_wood_planks_diffuse_4k.jpg",
+      "colorSpace": "sRGB",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/oak_wood_planks/oak_wood_planks_diffuse_4k.jpg",
+      "sha256": "aadbd93033fdfd15d875e85ce7da3558a8375ea282e55d6c3a3dd4ce5272f483"
+    },
+    {
+      "map": "roughness",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/oak_wood_planks/oak_wood_planks_rough_4k.png",
+      "size": 30403741,
+      "md5": "6880ad0738cbfbad4ff89e58135a8012",
+      "file": "oak_wood_planks_roughness_4k.png",
+      "colorSpace": "Non-Color",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/oak_wood_planks/oak_wood_planks_roughness_4k.png",
+      "sha256": "9edc7ab1e7a5291fa337b4fd3d116d08076c7d11e87b8af7a615b37b64b3ec5c"
+    },
+    {
+      "map": "normal",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/oak_wood_planks/oak_wood_planks_nor_gl_4k.png",
+      "size": 83894995,
+      "md5": "a939583b1c515aaf95beb32d8d6664c1",
+      "file": "oak_wood_planks_normal_4k.png",
+      "colorSpace": "Non-Color",
+      "normalConvention": "OpenGL",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/oak_wood_planks/oak_wood_planks_normal_4k.png",
+      "sha256": "47db014a66523e3db33aea13bf1c4514bed09686351e479f6beb99917758fb09"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "method": "isolated full product front/back/side geometry inspection",
+  "views": [
+    {
+      "product": "SOFA",
+      "view": "front",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/whole_product_views_v2/SOFA_front.png"
+    },
+    {
+      "product": "SOFA",
+      "view": "back",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/whole_product_views_v2/SOFA_back.png"
+    },
+    {
+      "product": "SOFA",
+      "view": "side",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/whole_product_views_v2/SOFA_side.png"
+    },
+    {
+      "product": "CHAIR",
+      "view": "front",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/whole_product_views_v2/CHAIR_front.png"
+    },
+    {
+      "product": "CHAIR",
+      "view": "back",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/whole_product_views_v2/CHAIR_back.png"
+    },
+    {
+      "product": "CHAIR",
+      "view": "side",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/whole_product_views_v2/CHAIR_side.png"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "files": [
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/appearance_match_v2/LIVING_DINING_APPEARANCE_V2.blend",
+      "sha256": "1b16fea0ad5e4079bab73e1fec9dc10a877198ed5dd997860f41a55ef08e441b"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/living_dining_detail_v1/LIVING_DINING_DETAIL_V1.blend",
+      "sha256": "8fec1e2169f715c5901f3abacd6885834c6c5b7a4e3baa66bd4baae4417892ab"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sunroom_stepped_storage_v1/SUNROOM_STEPPED_STORAGE_V1.blend",
+      "sha256": "cde068f138c74abdc158012377579882399a48866fdc0acc261d23ff5f98cc68"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console_bath_mirrors_review/CONSOLE400_THREE_BATH_MIRRORS.blend",
+      "sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend",
+      "sha256": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_APPROVED_AS_IS_V1.blend",
+      "sha256": "28b289a38dbabafbc312e18b3057f232c51c44c07735b1cfcbd39aea39fd0536"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/APPROVED_OBJECT_SNAPSHOT.json",
+      "sha256": "7b24b541e5d6d4c88d1876cd0dd429ee01f8c68a09de27f3e5c828ff4ab9a6d0"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_MODEL_REGISTER.json",
+      "sha256": "ab205ee6ac373059bbd6b0d839082f5401c08ee768d04adb8c93c83d47908090"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/CAMERA_REGISTER.json",
+      "sha256": "3679e870b4041e7c0546a3a14a0e3216356fc9dcceac406f5e3bdf2d60047e1c"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/FREEZE_CONTRACT.md",
+      "sha256": "e79ad18b0048f2ba6d43b7b233a128eb1bb0f367a78a54ef0df7ce85a31b1d19"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/freeze_kitchen.py",
+      "sha256": "d2ea43eabba1b660fc1b4bb1d798fd2c59e173c787ad5ac746bde79c4f8349bf"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_DIMENSION_SCHEDULE.csv",
+      "sha256": "1aa407ef9dfd857247c2fad719e37e613ead8779f5ef7e505d4c98342efc4257"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_DIMENSION_SCHEDULE.json",
+      "sha256": "72483916ddb1082e465c770328395c9ff33999a58746c138153e3c371afcbf75"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/APPROVAL_EVIDENCE.json",
+      "sha256": "3c9dc29939560b34a81fe10ec41bb0426616f9aa06840b18ff6b8896a6f9cee0"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_VIEW_INDEX.md",
+      "sha256": "cc2856afe3bbbdc9211a406d55e8f8d27ca8d4aaea269c73c2b9080f75538bf2"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_CONTACT_SHEET.png",
+      "sha256": "a2f4690cb7fd9bb10295673495c10741c864da80e48201b6e6af3f0a26a862a9"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/package_kitchen.py",
+      "sha256": "f9aa6755bca2e6f6c583da2ffe189b6efa86cc20190441ec47908591bb12e5d7"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/approval_evidence/USER_APPROVED_BUFFET.png",
+      "sha256": "15bcf73fbc29979a9edb4df83f07b4148c45cabfaab67c2cf2f69e058c2033e3"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/approval_evidence/USER_APPROVED_SINK.png",
+      "sha256": "dd4a3a69347a29ae954574f7a609d533da0e3f25667eee12bd0a10623681121c"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_FREEZE_REPORT.md",
+      "sha256": "dba24101355ddbb0a63e0e746a580592dc35020abc75d46bd7a207ac1e14edd8"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_QA.json",
+      "sha256": "345f19d6bd59f27a2a314bdca1e5a6fb6c408105a894cfd5d20d771009996533"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/PIXEL_EQUIVALENCE_QA.json",
+      "sha256": "b296cdbb30d6a3ee2cca112b3abb6a4a8f2cf3c156204ef11ec25f23a76a532a"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/RENDER_VERIFICATION_MANIFEST.json",
+      "sha256": "73836c88991a412e3a22390d22757fab3cb356f4e9dc13079e7b5a32411bf966"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/verification_renders/VERIFIED_05_sink_corner.png",
+      "sha256": "38b1d83f105ccd8e9e723b63c016c59e24ca219c5edc7c357809b42f1d6fbf4f"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/verification_renders/VERIFIED_10_photo5_buffet_front.png",
+      "sha256": "0e42db87a66e7250207748706ea24fedc5d4937196279ef810cc6b1d52e4c685"
+    }
+  ]
+}

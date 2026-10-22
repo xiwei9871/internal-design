@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "fresh_open_object_states": 965,
+  "kitchen_objects_preserved": 272,
+  "V1_door_leaf_bay_and_partition_preserved": true,
+  "source_and_B0_hashes": "PASS",
+  "enclosure_checks": [
+    {
+      "test": "D107 above opening u0.1 z2.75",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_D107_SOLID_ABOVE_OPENING",
+      "point": [
+        8.333033561706543,
+        4.766603946685791,
+        2.75
+      ],
+      "distance": 0.5000008307390464
+    },
+    {
+      "test": "D107 above opening u0.1 z3.2",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_D107_TOP_BEAM_CONNECTION",
+      "point": [
+        8.310880661010742,
+        4.811429023742676,
+        3.200000047683716
+      ],
+      "distance": 0.4500004435576796
+    },
+    {
+      "test": "D107 above opening u0.425 z2.75",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_D107_SOLID_ABOVE_OPENING",
+      "point": [
+        8.62439250946045,
+        4.910602569580078,
+        2.75
+      ],
+      "distance": 0.5000003986059031
+    },
+    {
+      "test": "D107 above opening u0.425 z3.2",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_D107_TOP_BEAM_CONNECTION",
+      "point": [
+        8.602238655090332,
+        4.955427169799805,
+        3.200000047683716
+      ],
+      "distance": 0.45000002135833056
+    },
+    {
+      "test": "D107 above opening u0.75 z2.75",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_D107_SOLID_ABOVE_OPENING",
+      "point": [
+        8.915750503540039,
+        5.054600715637207,
+        2.75
+      ],
+      "distance": 0.5000003986059031
+    },
+    {
+      "test": "D107 above opening u0.75 z3.2",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_D107_TOP_BEAM_CONNECTION",
+      "point": [
+        8.893596649169922,
+        5.099425315856934,
+        3.200000047683716
+      ],
+      "distance": 0.45000002135833056
+    },
+    {
+      "test": "D107 left jamb",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_D107_ARCHITRAVE_LEFT",
+      "point": [
+        8.2098970413208,
+        4.733633041381836,
+        1.5
+      ],
+      "distance": 0.4749999891770512
+    },
+    {
+      "test": "D107 right jamb",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_D107_ARCHITRAVE_RIGHT",
+      "point": [
+        9.01673412322998,
+        5.132397174835205,
+        1.5
+      ],
+      "distance": 0.47499978134501597
+    },
+    {
+      "test": "BALCONY north pier",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "point": [
+        7.75,
+        12.699999809265137,
+        1.5
+      ],
+      "distance": 0.449999801980081
+    },
+    {
+      "test": "BALCONY north pier upper",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "point": [
+        7.75,
+        12.850000381469727,
+        2.6500000953674316
+      ],
+      "distance": 0.449999801980081
+    },
+    {
+      "test": "BALCONY door head",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+      "point": [
+        7.75,
+        12.225000381469727,
+        2.6500000953674316
+      ],
+      "distance": 0.449999801980081
+    },
+    {
+      "test": "BALCONY south pier",
+      "pass_gate": true,
+      "hit": true,
+      "object": "LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "point": [
+        7.75,
+        11.770000457763672,
+        1.5
+      ],
+      "distance": 0.449999801980081
+    },
+    {
+      "test": "BALCONY frame north jamb",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_NBALC_ROOM_TRIM_NORTH",
+      "point": [
+        7.735000133514404,
+        12.619999885559082,
+        1.5
+      ],
+      "distance": 0.4349999350788901
+    },
+    {
+      "test": "BALCONY frame south jamb",
+      "pass_gate": true,
+      "hit": true,
+      "object": "DOOR_V2_NBALC_ROOM_TRIM_SOUTH",
+      "point": [
+        7.735000133514404,
+        11.829999923706055,
+        1.5
+      ],
+      "distance": 0.4349999350788901
+    }
+  ],
+  "old_missing_enclosures_reproduced": true,
+  "D107_top_connection_mm": 3250,
+  "north_balcony_top_connection_mm": 2800,
+  "north_door": "SINGLE_GLAZED_LEAF",
+  "model_sha256": "32aea798288be682ee0dbd717d8e5bc3f0d9d0cedf0b0d843c6e9e4dd30b7cbd",
+  "blender_version": "5.2.1 LTS"
+}

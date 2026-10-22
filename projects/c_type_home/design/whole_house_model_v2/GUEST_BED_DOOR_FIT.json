@@ -1,0 +1,261 @@
+{
+  "status": "PRELIMINARY_CONSERVATIVE_BED_ENVELOPE_SWEEPS",
+  "leaves": 3,
+  "angle_step_degrees": 1,
+  "assumed_both_hinges": true,
+  "options": [
+    {
+      "option": "head12.86_south8.12",
+      "bed_frame_bounds_m": [
+        [
+          10.77,
+          8.12,
+          0.45
+        ],
+        [
+          12.86,
+          9.45,
+          1.43
+        ]
+      ],
+      "collisions": [
+        {
+          "entry": 14
+        }
+      ],
+      "closed_cabinet_to_bed_foot_or_side_mm": 351.8748474121089,
+      "full_open_remaining_width_mm": -144.12544250488324
+    },
+    {
+      "option": "head12.86_south8.16",
+      "bed_frame_bounds_m": [
+        [
+          10.77,
+          8.16,
+          0.45
+        ],
+        [
+          12.86,
+          9.49,
+          1.43
+        ]
+      ],
+      "collisions": [
+        {
+          "entry": 17
+        }
+      ],
+      "closed_cabinet_to_bed_foot_or_side_mm": 351.8748474121089,
+      "full_open_remaining_width_mm": -144.12544250488324
+    },
+    {
+      "option": "head12.86_south8.18",
+      "bed_frame_bounds_m": [
+        [
+          10.77,
+          8.18,
+          0.45
+        ],
+        [
+          12.86,
+          9.51,
+          1.43
+        ]
+      ],
+      "collisions": [
+        {
+          "entry": 18
+        }
+      ],
+      "closed_cabinet_to_bed_foot_or_side_mm": 351.8748474121089,
+      "full_open_remaining_width_mm": -144.12544250488324
+    },
+    {
+      "option": "head12.86_south8.2",
+      "bed_frame_bounds_m": [
+        [
+          10.77,
+          8.2,
+          0.45
+        ],
+        [
+          12.86,
+          9.53,
+          1.43
+        ]
+      ],
+      "collisions": [
+        {
+          "entry": 20
+        }
+      ],
+      "closed_cabinet_to_bed_foot_or_side_mm": 351.8748474121089,
+      "full_open_remaining_width_mm": -144.12544250488324
+    },
+    {
+      "option": "head12.88_south8.12",
+      "bed_frame_bounds_m": [
+        [
+          10.790000000000001,
+          8.12,
+          0.45
+        ],
+        [
+          12.88,
+          9.45,
+          1.43
+        ]
+      ],
+      "collisions": [
+        {
+          "entry": 14
+        }
+      ],
+      "closed_cabinet_to_bed_foot_or_side_mm": 371.8748474121103,
+      "full_open_remaining_width_mm": -124.12544250488189
+    },
+    {
+      "option": "head12.88_south8.16",
+      "bed_frame_bounds_m": [
+        [
+          10.790000000000001,
+          8.16,
+          0.45
+        ],
+        [
+          12.88,
+          9.49,
+          1.43
+        ]
+      ],
+      "collisions": [
+        {
+          "entry": 17
+        }
+      ],
+      "closed_cabinet_to_bed_foot_or_side_mm": 371.8748474121103,
+      "full_open_remaining_width_mm": -124.12544250488189
+    },
+    {
+      "option": "head12.88_south8.18",
+      "bed_frame_bounds_m": [
+        [
+          10.790000000000001,
+          8.18,
+          0.45
+        ],
+        [
+          12.88,
+          9.51,
+          1.43
+        ]
+      ],
+      "collisions": [
+        {
+          "entry": 18
+        }
+      ],
+      "closed_cabinet_to_bed_foot_or_side_mm": 371.8748474121103,
+      "full_open_remaining_width_mm": -124.12544250488189
+    },
+    {
+      "option": "head12.88_south8.2",
+      "bed_frame_bounds_m": [
+        [
+          10.790000000000001,
+          8.2,
+          0.45
+        ],
+        [
+          12.88,
+          9.53,
+          1.43
+        ]
+      ],
+      "collisions": [],
+      "closed_cabinet_to_bed_foot_or_side_mm": 371.8748474121103,
+      "full_open_remaining_width_mm": -124.12544250488189
+    },
+    {
+      "option": "head12.89_south8.12",
+      "bed_frame_bounds_m": [
+        [
+          10.8,
+          8.12,
+          0.45
+        ],
+        [
+          12.89,
+          9.45,
+          1.43
+        ]
+      ],
+      "collisions": [
+        {
+          "entry": 14
+        }
+      ],
+      "closed_cabinet_to_bed_foot_or_side_mm": 381.87484741211006,
+      "full_open_remaining_width_mm": -114.1254425048821
+    },
+    {
+      "option": "head12.89_south8.16",
+      "bed_frame_bounds_m": [
+        [
+          10.8,
+          8.16,
+          0.45
+        ],
+        [
+          12.89,
+          9.49,
+          1.43
+        ]
+      ],
+      "collisions": [
+        {
+          "entry": 17
+        }
+      ],
+      "closed_cabinet_to_bed_foot_or_side_mm": 381.87484741211006,
+      "full_open_remaining_width_mm": -114.1254425048821
+    },
+    {
+      "option": "head12.89_south8.18",
+      "bed_frame_bounds_m": [
+        [
+          10.8,
+          8.18,
+          0.45
+        ],
+        [
+          12.89,
+          9.51,
+          1.43
+        ]
+      ],
+      "collisions": [],
+      "closed_cabinet_to_bed_foot_or_side_mm": 381.87484741211006,
+      "full_open_remaining_width_mm": -114.1254425048821
+    },
+    {
+      "option": "head12.89_south8.2",
+      "bed_frame_bounds_m": [
+        [
+          10.8,
+          8.2,
+          0.45
+        ],
+        [
+          12.89,
+          9.53,
+          1.43
+        ]
+      ],
+      "collisions": [],
+      "closed_cabinet_to_bed_foot_or_side_mm": 381.87484741211006,
+      "full_open_remaining_width_mm": -114.1254425048821
+    }
+  ],
+  "limits": "closed whole frame/bed envelope, not final separated geometry; actual hinge choices and bedside operating body space pending"
+}

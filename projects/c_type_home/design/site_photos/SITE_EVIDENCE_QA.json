@@ -1,0 +1,50 @@
+{
+  "state": "B1_SITE_CORRECTION = HUMAN_REVIEW",
+  "photo_count": 6,
+  "site_camera_count": 6,
+  "B0_INTEGRITY": "PASS",
+  "frozen_checks": [
+    {
+      "key": "baseline_blend",
+      "path": "design/blender_b0/B0_EXISTING_AS_IS.blend",
+      "match": true
+    },
+    {
+      "key": "cad_source_dxf",
+      "path": "cad/freecad_import/世纪欣园FF_freecad_WORKING_v2.dxf",
+      "match": true
+    },
+    {
+      "key": "floor_regions",
+      "path": "design/blender_b0/B0_FLOOR_REGIONS.json",
+      "match": true
+    },
+    {
+      "key": "z_datum_spec",
+      "path": "design/blender_b0/Z_DATUM_SPEC.json",
+      "match": true
+    },
+    {
+      "key": "geometry_gate",
+      "path": "design/blender_b0/B0_GEOMETRY_GATE_V2.json",
+      "match": true
+    },
+    {
+      "key": "level_field_50mm",
+      "path": "design/blender_b0/B0_LEVEL_FIELD.json",
+      "match": true
+    },
+    {
+      "key": "level_zone_map_v8",
+      "path": "design/blender_b0/B0_LEVEL_ZONE_MAP_V8_CLEAN.png",
+      "match": true
+    }
+  ],
+  "metric_gate": "NOT_PASSED",
+  "geometry_correction_applied": false,
+  "accepted_photo_estimate_count": 0,
+  "photo_confirmed_relationship_count": 16,
+  "original_b1_sha256": "31beb580133e81c64c92dc71d4bb1213f6b0b9151e013c1fa1d5fac2d33178bd",
+  "registered_scene_sha256": "7388ce4b6799fe08f9a4319482d616360e177d2afe2db18c7f911af96e080d80",
+  "generated_at": "2026-10-01T12:43:06.260013+08:00"
+}

@@ -1,0 +1,29 @@
+{
+ "checks": [
+  {
+   "bay": "W-LIV-N",
+   "facade_glass": 0,
+   "front_glazing": 1,
+   "duplicate": 0
+  },
+  {
+   "bay": "W-STUDY-NE",
+   "facade_glass": 0,
+   "front_glazing": 1,
+   "duplicate": 0
+  },
+  {
+   "bay": "W-SMB-S",
+   "facade_glass": 0,
+   "front_glazing": 1,
+   "duplicate": 0
+  },
+  {
+   "bay": "W-MB-S",
+   "facade_glass": 0,
+   "front_glazing": 1,
+   "duplicate": 0
+  }
+ ],
+ "duplicate_bay_glazing": 0
+}

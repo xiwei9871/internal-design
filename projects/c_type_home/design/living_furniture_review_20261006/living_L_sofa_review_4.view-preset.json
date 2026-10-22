@@ -1,0 +1,80 @@
+{
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.026464257027775006,
+  "far": 2646.4257027775006,
+  "position": [
+    1.2637679732898013,
+    9.411676956671288,
+    -9.559957115478088
+  ],
+  "quaternion": [
+    -0.34940261421875757,
+    -0.6230313687498734,
+    -0.3643285104010052,
+    0.5975068729644386
+  ],
+  "projection_matrix": [
+    2.381928388433485,
+    0,
+    0,
+    0,
+    0,
+    2.4142135623730954,
+    0,
+    0,
+    0,
+    0,
+    -1.000020000200002,
+    -1,
+    0,
+    0,
+    -0.05292904334598348,
+    0
+  ],
+  "orbit_target": [
+    5.916553065763939,
+    1.1351293120008175,
+    -9.36526931344355
+  ],
+  "viewport": {
+    "width": 673,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "living_L_sofa_review_4",
+  "preview_uri": "living_L_sofa_review_4.png",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_revision": "r4-living-l-sofa-review-4",
+  "source_sha256": "6775691eaaac0d57261eb2e00929bbb753f54687bfa5bf3ff44cc8955ba0ca8c",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_L_SOFA_REVIEW_4.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "14-l-sofa-no-ottoman-review",
+    "sha256": "cd873dafbd4da53fcce30284388c9278ce7da1c84fdff0b18aa518e21e9846a1",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/spatial-canvas.bindings.l-sofa-4.json"
+  },
+  "source_camera": {
+    "position": [
+      1.2637679732898013,
+      9.559957115478088,
+      9.411676956671288
+    ],
+    "quaternion": [
+      0.17543620380033287,
+      -0.18293054545082754,
+      -0.6981688660191164,
+      0.6695661195571143
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": []
+}

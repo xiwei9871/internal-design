@@ -1,0 +1,80 @@
+{
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.026464257027775006,
+  "far": 2646.4257027775006,
+  "position": [
+    1.327237237981337,
+    11.773662311570098,
+    -9.695374657367577
+  ],
+  "quaternion": [
+    -0.374089569279951,
+    -0.6117980324536577,
+    -0.40196397713371945,
+    0.5693725693503479
+  ],
+  "projection_matrix": [
+    2.381928388433485,
+    0,
+    0,
+    0,
+    0,
+    2.4142135623730954,
+    0,
+    0,
+    0,
+    0,
+    -1.000020000200002,
+    -1,
+    0,
+    0,
+    -0.05292904334598348,
+    0
+  ],
+  "orbit_target": [
+    5.916553065763939,
+    1.1351293120008175,
+    -9.36526931344355
+  ],
+  "viewport": {
+    "width": 673,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "seating_south_1m_review_7",
+  "preview_uri": "seating_south_1m_review_7.png",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_revision": "r4-seating-south-1m-review-7",
+  "source_sha256": "eec08addcab7a805756a201a1ec61d7ac6508dfcd27cdb61c5d3e1c2f8dbd354",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_SEATING_SOUTH_1M_REVIEW_7.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "17-seating-south-1m-review",
+    "sha256": "f7dbfe4c31b892f84f20ba13dc58f09868774003fbbeff0a71858d8902624b8d",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.review7.json"
+  },
+  "source_camera": {
+    "position": [
+      1.327237237981337,
+      9.695374657367577,
+      11.773662311570098
+    ],
+    "quaternion": [
+      0.13808593360023066,
+      -0.1483750834406015,
+      -0.7168379914885362,
+      0.6671284760182469
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": []
+}

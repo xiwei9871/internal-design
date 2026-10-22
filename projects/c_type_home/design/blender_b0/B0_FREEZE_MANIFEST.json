@@ -1,0 +1,74 @@
+{
+ "spec": "B0 FREEZE MANIFEST — AS-IS existing-state baseline lock",
+ "baseline": "design/blender_b0/B0_EXISTING_AS_IS.blend",
+ "status": "PASS",
+ "frozen": [
+  "ARCH_XY",
+  "Z_DATUM",
+  "LEVEL_SEMANTICS",
+  "OPENINGS"
+ ],
+ "existing_future": "SEPARATED",
+ "datum": {
+  "lower_ffl": 0,
+  "upper_ffl": 450,
+  "stair_risers": [
+   150,
+   300,
+   450
+  ],
+  "lower_ceiling": 2800,
+  "upper_ceiling": 3250
+ },
+ "geometry_source_audit": {
+  "floors_ceilings": "CAD_EXACT_POLYGON + CAD_SNAPPED_CONTOUR (see B0_FLOOR_REGIONS.json)",
+  "fascia": "CAD_EXACT — S-楼梯 r1000 arc, 3deg tessellation chord err 0.39mm",
+  "level_field_50mm": {
+   "role": "SEMANTIC_HELPER_ONLY",
+   "geometry_authority": false,
+   "physical_ground_truth": false
+  }
+ },
+ "overlay_gate": {
+  "straight_max_dev_mm": 0.0,
+  "curved_max_chord_dev_mm": 0.39,
+  "limits_mm": {
+   "straight": 1.0,
+   "curved": 2.0
+  },
+  "staircase_artifacts": "none",
+  "uncovered_interior_cells": 0,
+  "self_intersections": 0
+ },
+ "sha256": {
+  "baseline_blend": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+  "cad_source_dxf": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0",
+  "floor_regions": "6bab694418c0ab28c92e7411b567794be807e3a6126aa24c0ccdba0334f0ba75",
+  "z_datum_spec": "18298132c706f80a998b8ac9e8ac50c4ca7ca4480cd6655d08fc3e37d15e8c5f",
+  "geometry_gate": "223be556688f8ef0c95617ed5b3cb8d8c4d61b22d729fedfbd7c8605d63c41d4",
+  "level_field_50mm": "70c58dbbc10eabeb69989c0759bb8af2eff86d12bcc6bd78af6ce39720ec33eb",
+  "level_zone_map_v8": "b39738dc2d813bcae3cc6f6411d3bb24e500bc2909b672b1fc25bd59a6fe27e9"
+ },
+ "files": {
+  "baseline_blend": "design/blender_b0/B0_EXISTING_AS_IS.blend",
+  "cad_source_dxf": "cad/freecad_import/世纪欣园FF_freecad_WORKING_v2.dxf",
+  "floor_regions": "design/blender_b0/B0_FLOOR_REGIONS.json",
+  "z_datum_spec": "design/blender_b0/Z_DATUM_SPEC.json",
+  "geometry_gate": "design/blender_b0/B0_GEOMETRY_GATE_V2.json",
+  "level_field_50mm": "design/blender_b0/B0_LEVEL_FIELD.json",
+  "level_zone_map_v8": "design/blender_b0/B0_LEVEL_ZONE_MAP_V8_CLEAN.png"
+ },
+ "remaining_to_verify": [
+  "GAP-20 north balcony recess — isolated, no floor/ceiling",
+  "AC equipment niche exact detail (EXTERIOR_AC_EQUIPMENT_ZONE)",
+  "stairwell ceiling exact local treatment (assumed 3250)",
+  "beam / pipe enclosure / soffit dims — never guessed from photos"
+ ],
+ "future_not_existing": [
+  "ramp (91_ACCESSIBILITY_OPTIONS, hidden, physical_ground_truth=false)",
+  "leisure-area demolition",
+  "living-room expansion"
+ ],
+ "b1_branch": "design/blender_b0/B1_RENOVATION_DESIGN.blend — copy of this baseline; ALL renovation work happens there, never write back",
+ "frozen_at": "2026-10-01T10:20:44"
+}

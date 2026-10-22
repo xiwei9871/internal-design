@@ -1,0 +1,39 @@
+{
+  "status": "HUMAN_REVIEW",
+  "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_visibility_v9/WHOLE_HOUSE_GLASS_VISIBILITY_V9.blend",
+  "sha256": "42beee4cb51bce1487edbe0003b226951986ca073b2d2e3b4ffec9305c80f9cf",
+  "technical": {
+    "status": "PASS_PRESERVATION_AND_VIEW_RENDER_SETTINGS",
+    "sha256": "42beee4cb51bce1487edbe0003b226951986ca073b2d2e3b4ffec9305c80f9cf",
+    "source_objects_geometry_pose_slots_unchanged": 3473,
+    "lights_unchanged": true,
+    "eevee_raytrace_and_material_refraction": true,
+    "privacy_frost_surface_unchanged": true,
+    "world_strengths": {
+      "Background": 0.2199999988079071,
+      "Background.001": 3.5999999046325684,
+      "LD Neutral exterior presentation": 3.5999999046325684
+    },
+    "view": {
+      "active": "OVERVIEW_CEILING_HIDDEN",
+      "ceiling_hidden": true
+    },
+    "protected_sources": 16,
+    "final_visual_acceptance": false
+  },
+  "opened_evidence": [
+    "CONTROL_COMPARE.jpg",
+    "PRESENTATION_COMPARE.jpg",
+    "FINAL_COMPARE.jpg",
+    "review/bedroom.png",
+    "review/privacy.png"
+  ],
+  "visual_ledger": {
+    "viewport_simulation": "Matched EEVEE forest world before/after: dark probe-only appearance replaced by visible indoor furniture/steps through retained glass",
+    "living": "Outdoor detail clearer and interior reflection less dominant after isolated visible/transmission exposure calibration; room material/color lighting preserved",
+    "privacy": "Guest-bedroom north-balcony panes remain frosted in actual final Cycles render"
+  },
+  "limitation": "No live user UI screen capture or site exterior/photometric calibration; EEVEE simulated from saved scene and studio settings",
+  "decision": "retain_repair_for_owner_review",
+  "owner_accepted": false
+}

@@ -1,0 +1,174 @@
+{
+  "status": "HUMAN_REVIEW_NOT_CONSTRUCTION_RELEASED",
+  "option": "A",
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/OPTION_A_SLIDING_R2.blend",
+  "model_sha256": "d5a05b265dec242e95f7b97c9e048f1e190de4a6f0e23b70ee5774e0a7813633",
+  "base": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_corners_v5/HOUSE_BASE_GEOMETRY_V2_FROZEN.blend",
+  "base_sha256": "f2d57433a9984f3a5b214dd4a1afad2e16e0ee913d525ccdc983005baf44c6b5",
+  "freecad": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.FCStd",
+  "freecad_sha256": "d69004b9912eaa6021cb793bee180615d49ef25528bc351033ec450f5de68c8f",
+  "layout_contract": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/LAYOUT_CONTRACT.json",
+  "fixture_groups": {
+    "vanity": [
+      "R2_VANITY_BACK",
+      "R2_VANITY_BASE",
+      "R2_VANITY_BASIN_REVIEW",
+      "R2_VANITY_FRONT_0",
+      "R2_VANITY_FRONT_1",
+      "R2_VANITY_L",
+      "R2_VANITY_PLINTH",
+      "R2_VANITY_PULL_0",
+      "R2_VANITY_PULL_1",
+      "R2_VANITY_R",
+      "R2_VANITY_SHELF",
+      "R2_VANITY_TOP"
+    ],
+    "wardrobe": [
+      "R2_WARDROBE_BACK",
+      "R2_WARDROBE_BASE",
+      "R2_WARDROBE_FRONT_0",
+      "R2_WARDROBE_FRONT_1",
+      "R2_WARDROBE_FRONT_2",
+      "R2_WARDROBE_L",
+      "R2_WARDROBE_PLINTH",
+      "R2_WARDROBE_PULL_0",
+      "R2_WARDROBE_PULL_1",
+      "R2_WARDROBE_PULL_2",
+      "R2_WARDROBE_R",
+      "R2_WARDROBE_SHELF",
+      "R2_WARDROBE_TOP"
+    ],
+    "wc": [
+      "R2_WC_LATEST"
+    ],
+    "shower": [
+      "R2_SHOWER_TRAY"
+    ]
+  },
+  "views": [
+    {
+      "name": "ENTRY",
+      "camera": "R2_CAM_ENTRY",
+      "pos": [
+        9.6,
+        2.8,
+        1.86
+      ],
+      "target": [
+        9.95,
+        4.8,
+        1.67
+      ],
+      "lens": 24,
+      "ortho_scale": null
+    },
+    {
+      "name": "INTERIOR",
+      "camera": "R2_CAM_INTERIOR",
+      "pos": [
+        9.55,
+        5.03,
+        1.85
+      ],
+      "target": [
+        10.63,
+        5.61,
+        1.42
+      ],
+      "lens": 18,
+      "ortho_scale": null
+    },
+    {
+      "name": "CONTEXT_AXON",
+      "camera": "R2_CAM_CONTEXT_AXON",
+      "pos": [
+        7.4,
+        1.3,
+        7.8
+      ],
+      "target": [
+        10.05,
+        5.15,
+        1.35
+      ],
+      "lens": null,
+      "ortho_scale": 5.9
+    },
+    {
+      "name": "CUTAWAY_AXON",
+      "camera": "R2_CAM_CUTAWAY_AXON",
+      "pos": [
+        12.8,
+        2.4,
+        9.2
+      ],
+      "target": [
+        10.12,
+        5.22,
+        0.95
+      ],
+      "lens": null,
+      "ortho_scale": 4.7
+    }
+  ],
+  "inactive_legacy_objects": [
+    "B11_Rectangle021",
+    "B11_Rectangle021_BACK",
+    "B11_Rectangle021_BASE",
+    "B11_Rectangle021_FRONT_0",
+    "B11_Rectangle021_FRONT_1",
+    "B11_Rectangle021_FRONT_2",
+    "B11_Rectangle021_L",
+    "B11_Rectangle021_PLINTH",
+    "B11_Rectangle021_PULL_0",
+    "B11_Rectangle021_PULL_1",
+    "B11_Rectangle021_PULL_2",
+    "B11_Rectangle021_R",
+    "B11_Rectangle021_SHELF",
+    "B11_Rectangle021_TOP",
+    "B11_Rectangle036",
+    "B11_Rectangle036_GLASS_0",
+    "B11_Rectangle036_GLASS_1",
+    "B11_Rectangle036_GLASS_2",
+    "B11_Rectangle036_HANDLE",
+    "B11_Rectangle036_JAMB_0",
+    "B11_Rectangle036_JAMB_1",
+    "B11_Rectangle036_TRACK",
+    "B11_Rectangle036_TRACK.001",
+    "B11_Rectangle037",
+    "B11_Rectangle037_BACK",
+    "B11_Rectangle037_BASE",
+    "B11_Rectangle037_BASIN_REVIEW",
+    "B11_Rectangle037_FRONT_0",
+    "B11_Rectangle037_FRONT_1",
+    "B11_Rectangle037_L",
+    "B11_Rectangle037_PLINTH",
+    "B11_Rectangle037_PULL_0",
+    "B11_Rectangle037_PULL_1",
+    "B11_Rectangle037_R",
+    "B11_Rectangle037_SHELF",
+    "B11_Rectangle037_TOP",
+    "B11_Rectangle038",
+    "B11_Rectangle038_CATALOG_00_00",
+    "FN_次主卧衣柜",
+    "FN_次主卫台盆和柜体",
+    "FN_次主卫湿区-上轨",
+    "FN_次主卫湿区-下轨",
+    "FN_次主卫湿区-边框0",
+    "FN_次主卫湿区-边框1",
+    "FN_次主卫马桶",
+    "G_wall_gf_0036",
+    "G_wall_gs_0036"
+  ],
+  "motion_root": "R2_SLIDING_MOTION_ROOT",
+  "topology": {
+    "vertices": 72,
+    "faces": 90,
+    "boundary": 0,
+    "nonmanifold": 0
+  },
+  "black_wall_demolition_count": 0,
+  "base_wall_geometry_and_visibility_unchanged": true,
+  "kitchen_preserved": true,
+  "clear_width_mm": 729.1249999999998
+}

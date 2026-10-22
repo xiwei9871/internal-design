@@ -1,0 +1,85 @@
+{
+  "schema": "c-type.sofa-softness-pilot.v7",
+  "date": "2026-10-11",
+  "status": "HUMAN_REVIEW",
+  "scope": "one isolated seat cushion and back cushion with the same timber support",
+  "owner_feedback": {
+    "wood_v5": "木色已经明显改善，保留",
+    "volume_v6": "体积变大、变厚，像沙发了",
+    "softness_v6": "蓬松感、松软感还没做到",
+    "final_height_approved": false,
+    "whole_house_propagation_approved": false
+  },
+  "source": {
+    "path": "design/sofa_soft_pilot_v6/SOFA_SEAT_BACK_DETAIL_V6.blend",
+    "sha256": "06150245b3fee8442a530aab9fd82766f152093159251bb8d849efb4372f367c"
+  },
+  "candidate": {
+    "path": "design/sofa_soft_pilot_v7/local_final/SOFA_RELAXED_COVER_V7.blend",
+    "sha256": "5bb0f004a9501bff61a017975cf65c8205f46e3af3a39d9a83c91096db46ec4f",
+    "method": "reference-guided local fill settling, seam restraint and convex boxing; editable shape keys",
+    "actual_simulation_used_for_final": false,
+    "owner_appearance_accepted": false,
+    "exact_sku": false,
+    "physical_certification": false
+  },
+  "references": {
+    "owner_catalog": "木甲木乙-白蜡木系列.pdf p4 / p8",
+    "catalog_authority": "whole-object structure and materials; not an automatically selected procurement SKU",
+    "selected_A": "living A Faithful VIEW_01; appearance only, no dimension authority",
+    "researched_method_register": "render_config/sofa_softness_research_v1/SOURCE_REGISTER.json",
+    "local_contact": "design/sofa_soft_pilot_v6/references/REFERENCE_SHAPE_CONTACT.jpg"
+  },
+  "invariants": {
+    "protected_source_files": 10,
+    "v6_comparison_mesh_uv_transform": "preserved",
+    "timber_mesh_transform_materials": "preserved",
+    "wood_and_fabric_shaders": "V5 retained unchanged",
+    "camera_lights_world_color_management": "preserved",
+    "seat_width_depth": "preserved",
+    "local_bounds_change_tolerance_mm": 12,
+    "note": "12 mm is a local trial gate, not a fabrication tolerance or approved whole-house change"
+  },
+  "actual_candidate_dimensions": {
+    "seat_width_depth_mm": [1033.2, 898.128],
+    "seat_bottom_elevation_mm": 285,
+    "seat_crown_elevation_mm": 482.528,
+    "total_height_mm": 809.931,
+    "v6_seat_crown_difference_mm": -8.018,
+    "v6_total_height_difference_mm": -3.816,
+    "old_700mm_envelope_conflict_mm": 109.931,
+    "procurement_ergonomics_house_fit_approved": false
+  },
+  "rejected_cloth_trials": {
+    "versions": ["solve1", "solve2"],
+    "blender": "5.2.1 LTS",
+    "timeline": [1, 55],
+    "checkpoint_frames": [1, 18, 35, 55],
+    "cache_files_each_trial": 110,
+    "native_cloth_disk_bakes_each_trial": 2,
+    "pressure": false,
+    "self_collision": false,
+    "outer_collision_distance_mm": 1,
+    "inner_fill_colliders": "V6-shaped supported foam/wrap and filled back envelope; timber deck/top rail",
+    "solve1": {"quality": 8, "mass": 0.05, "bending": 0.08, "compression": 1.5, "effective_gravity_m_s2": 2.1582, "ease": [-0.003, -0.018]},
+    "solve2": {"quality": 10, "mass": 0.05, "bending": 0.65, "compression": 6, "effective_gravity_m_s2": 1.4715, "ease": [0, -0.006]},
+    "decision": "both rejected visually: distributed fine wrinkles read as loose slipcover rather than plush filling",
+    "fresh_open_cache_check": "both baked; all four checkpoint bounds and deformation reproduced",
+    "cache_root": "design/sofa_soft_pilot_v7/{solve1,solve2}/blendcache_*",
+    "no_foam_down_mechanics_claim": true
+  },
+  "render_contract": {
+    "cameras": ["V6_FRONT", "V6_SIDE", "V6_THREE_QUARTER"],
+    "clay": {"engine": "WORKBENCH", "size": [1000, 800]},
+    "fabric": {"engine": "CYCLES", "device": "METAL", "samples": 64, "size": [1500, 1200], "denoising": "OIDN GPU High Accurate"},
+    "review_images": "JPEG contact sheets 1500px; originals on disk",
+    "image2_requests": 0,
+    "whole_house_jobs": 0
+  },
+  "review_url": "http://127.0.0.1:5188/sofa_soft_pilot_v7/review_gallery.html",
+  "technical_gate": "PASS_TECHNICAL_ONLY",
+  "visual_gate": "creator review: insufficient visible plushness in fabric renders; retain V6 baseline, V7 for owner review only",
+  "source_writeback": false,
+  "whole_house_propagation": false,
+  "user_live_blender_modified": false
+}

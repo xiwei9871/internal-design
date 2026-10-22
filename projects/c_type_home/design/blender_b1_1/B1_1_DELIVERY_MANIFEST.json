@@ -1,0 +1,95 @@
+{
+  "B1_1_DESIGN_MODEL": "HUMAN_REVIEW",
+  "B0_INTEGRITY": "PASS",
+  "verified_at": "2026-10-01T11:36:10.489534+08:00",
+  "required_artifacts": [
+    {
+      "path": "B1_1_DESIGN_MODEL_V1.blend",
+      "bytes": 813857,
+      "sha256": "31beb580133e81c64c92dc71d4bb1213f6b0b9151e013c1fa1d5fac2d33178bd"
+    },
+    {
+      "path": "B1_1_TOP.png",
+      "bytes": 1944161,
+      "sha256": "cde65e37cb1dae119ffde90352dc73ff1663a0cb88469f89438bdd286d5443cb"
+    },
+    {
+      "path": "B1_1_AXON.png",
+      "bytes": 2125007,
+      "sha256": "867722bf796c2c349499b7f7af532ced2f25b491688b83e7e91368af7ef1ac24"
+    },
+    {
+      "path": "B1_1_LIVING.png",
+      "bytes": 2190017,
+      "sha256": "c348417e4517ccc2b41ca3360112680549a8e4899199a23f2323ddfbaeb136e3"
+    },
+    {
+      "path": "B1_1_KITCHEN.png",
+      "bytes": 2067603,
+      "sha256": "34074a36c39184f9505306502db0d81ebc721b4ecd1aea3941c3f450b36bbb5e"
+    },
+    {
+      "path": "B1_1_LEISURE.png",
+      "bytes": 2032751,
+      "sha256": "64ff9077d347b6c6afee379c7a6cc621a4851fb0323bc5bb49f33e602648d5f9"
+    },
+    {
+      "path": "B1_1_OWNER_BED.png",
+      "bytes": 2152088,
+      "sha256": "df88dc51f52bb91cde292be6fa75e3de762e6ec327b030bf19508266a636596b"
+    },
+    {
+      "path": "B1_1_MOTHER_BED.png",
+      "bytes": 2135342,
+      "sha256": "24f347d43937080a713963e61121bb51f5d98c9923b4ab294c52933976f0ebe8"
+    },
+    {
+      "path": "B1_1_STUDY.png",
+      "bytes": 2368806,
+      "sha256": "fcefb9f004fb02549aaf747cc18b0ad14dceb5c33c4f231eeabf64c2ad49b46a"
+    },
+    {
+      "path": "B1_1_BATHROOMS_CONTACT_SHEET.png",
+      "bytes": 1256063,
+      "sha256": "fed43a8bd82d54b2d7743034cf05742c55725e341704ef16c706e81089d00df2"
+    },
+    {
+      "path": "B1_1_ASSET_REGISTER.json",
+      "bytes": 92964,
+      "sha256": "6f8c2fb71eea45299bdcfcd1f825d31cbb5d194f4dbb774315e95ef6ff428174"
+    },
+    {
+      "path": "KITCHEN_CABINET_3D_REGISTER_V01.json",
+      "bytes": 15364,
+      "sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3"
+    },
+    {
+      "path": "B1_1_QA_REPORT.json",
+      "bytes": 15416,
+      "sha256": "48ecd66c496364aefbaae435d8253a2c870aee11ed8243a534bddb617b4f6f71"
+    },
+    {
+      "path": "B1_1_HUMAN_REVIEW.md",
+      "bytes": 5282,
+      "sha256": "353038b2dbfc4ff061398ab54a03a1eddd588684d8df79d9b413a6a199692246"
+    }
+  ],
+  "required_count": 14,
+  "visual_review": "INSPECTED_WITH_KNOWN_DECISIONS",
+  "numeric_gates": {
+    "status": "PASS",
+    "inherited_objects_preserved": 176,
+    "measured_furniture_cabinet_envelopes": 48,
+    "max_envelope_error_mm": 0.17337608337397725,
+    "envelope_tolerance_mm": 1,
+    "front_vector_checks": 24,
+    "evaluated_new_triangles": 55229,
+    "finite_coordinates": true,
+    "inherited_openings": 9,
+    "D107_angle_deg": 26.3,
+    "review_bay_assemblies": 4,
+    "source_geometry_signatures": "MATCH",
+    "source_authored_transforms": "MATCH"
+  },
+  "pending_design_count": 18
+}

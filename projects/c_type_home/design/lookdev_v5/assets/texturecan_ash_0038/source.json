@@ -1,0 +1,27 @@
+{
+  "provider": "TextureCan",
+  "name": "Long Dark Ash Wood Planks Wood0038",
+  "source": "https://www.texturecan.com/details/389/",
+  "license": "CC0",
+  "license_url": "https://www.texturecan.com/terms/",
+  "download_url": "https://www.texturecan.com/downloads/wood_0038/wood_0038_4k_6TXufc.zip",
+  "archive_sha256": "4a56b0e30322390b0dcd682f4d80bf1d180f2e0ba7789f82c0071e8ab524321e",
+  "files": [
+    "wood_0038_ao_4k.jpg",
+    "__MACOSX/._wood_0038_ao_4k.jpg",
+    "wood_0038_color_4k.jpg",
+    "__MACOSX/._wood_0038_color_4k.jpg",
+    "wood_0038_height_4k.png",
+    "__MACOSX/._wood_0038_height_4k.png",
+    "wood_0038_normal_directx_4k.png",
+    "__MACOSX/._wood_0038_normal_directx_4k.png",
+    "wood_0038_normal_opengl_4k.png",
+    "__MACOSX/._wood_0038_normal_opengl_4k.png",
+    "wood_0038_roughness_4k.jpg",
+    "__MACOSX/._wood_0038_roughness_4k.jpg"
+  ],
+  "method": "published procedural PBR, not a claimed photogrammetric scan",
+  "status": "FILES_DOWNLOADED_PENDING_TEST",
+  "physical_dimensions": "not stated on vendor page; furniture-scale trial must be documented",
+  "transport": "urllib406; normal browser download succeeded"
+}

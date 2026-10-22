@@ -1,0 +1,66 @@
+{
+  "source": "https://polyhaven.com/a/rough_linen",
+  "license": "CC0",
+  "files": [
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/rough_linen_1k.blend",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/1k/rough_linen/rough_linen_1k.blend",
+      "bytes": 220808,
+      "sha256": "a5b33b8e580d5716f9c8d773dff6baccea4df16cdd6cb7015c98bb341876464a"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_anisotropy_rotation_1k.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_anisotropy_rotation_1k.png",
+      "bytes": 2069061,
+      "sha256": "95855a93919f0b14eda8d28e84d76a57978ff7c6c13863c93d3da36c8b392aa9"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_anisotropy_strength_1k.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_anisotropy_strength_1k.png",
+      "bytes": 2054797,
+      "sha256": "6c6640d962eab14e950ccfbe1b951d31ac0326c7dfd6f17bb6036adb79958354"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rough_linen/rough_linen_diff_1k.jpg",
+      "bytes": 835801,
+      "sha256": "04897d7611d7390ddf5b2c6f7273f448dfc48341fdbd1f4f207fa30b331d7f57"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_disp_1k.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_disp_1k.png",
+      "bytes": 1983815,
+      "sha256": "78b56241190055fce94238d587bc71504b155c5785ace241b455b256166c24a2"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_mask_1k.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_mask_1k.png",
+      "bytes": 1681156,
+      "sha256": "8ce3f6144e18d5ad757e7f9f22ea5efa46173a71c0aaffab8e56c855c16ec418"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_metal_1k.exr",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rough_linen/rough_linen_metal_1k.exr",
+      "bytes": 958638,
+      "sha256": "edd7fcb0711e6273ab599238f69e8f4cc89723155b2b1f163712082ff9c88bef"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_nor_gl_1k.exr",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rough_linen/rough_linen_nor_gl_1k.exr",
+      "bytes": 2079186,
+      "sha256": "5ad1a3f25f655aea1d5f354483c31297e195394e54c9e4eee42831068e0f875b"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_rough_1k.exr",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rough_linen/rough_linen_rough_1k.exr",
+      "bytes": 954386,
+      "sha256": "6d8eb97776726ed1becb7a4c87e11f0a4918349a9b3a26cc030b819b89e8271e"
+    },
+    {
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_spec_ior_1k.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rough_linen/rough_linen_spec_ior_1k.png",
+      "bytes": 2062241,
+      "sha256": "51fbc4dbb11bd6fbf63afd62ba4da1361640901e7e1125bbcbc9121a5ea20744"
+    }
+  ]
+}

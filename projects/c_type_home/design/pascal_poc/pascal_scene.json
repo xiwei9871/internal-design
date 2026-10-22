@@ -1,0 +1,1582 @@
+{
+  "nodes": {
+    "site_ngmmofooz35rdzww": {
+      "object": "node",
+      "id": "site_ngmmofooz35rdzww",
+      "type": "site",
+      "parentId": null,
+      "visible": true,
+      "metadata": {},
+      "polygon": {
+        "type": "polygon",
+        "points": [
+          [
+            -15,
+            -15
+          ],
+          [
+            15,
+            -15
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            -15,
+            15
+          ]
+        ]
+      },
+      "children": [
+        "building_qr3izkl3n2i0kp5p"
+      ]
+    },
+    "building_qr3izkl3n2i0kp5p": {
+      "object": "node",
+      "id": "building_qr3izkl3n2i0kp5p",
+      "type": "building",
+      "parentId": "site_ngmmofooz35rdzww",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "level_el9gsgrhhp5thb3q"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "level_el9gsgrhhp5thb3q": {
+      "object": "node",
+      "id": "level_el9gsgrhhp5thb3q",
+      "type": "level",
+      "parentId": "building_qr3izkl3n2i0kp5p",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "wall_snz1gswevy5wqqsi",
+        "wall_p96ww2idw6pkotdw",
+        "wall_2t1dzrnhysogf99q",
+        "wall_qiygzesoj2v2z4qj",
+        "wall_adzta1fkvrpz1tbh",
+        "wall_55m62bswk9ayspky",
+        "wall_ju2alytej436os2p",
+        "wall_mghyrubyx6l3fcxy",
+        "wall_z0mwpvmddxx4l742",
+        "wall_7o708m915l4gm5l9",
+        "wall_a354nw7ygosoi09z",
+        "wall_lbwgkhthz3h411n3",
+        "zone_n7166s2lkk8nhulg",
+        "zone_jv8vom8az6sx4h0l",
+        "zone_zz0jo33q8pfh6bzd",
+        "item_nwek02kq25rvim7r",
+        "item_ut0cnlz9yp6gr277",
+        "item_ypxp1y2dmxnq3gil",
+        "item_2ecqkmbmyl739l6f",
+        "item_h91ffhk8zlbea36y",
+        "item_pjq6fimj7b5ppucc",
+        "item_62046dpgpffsga6a",
+        "item_2xrafxfhqgmyte1g",
+        "item_j37qnhvcy12phjti",
+        "item_gx8pqt373zyl2ogb",
+        "item_eamud5l0w5is2jk8",
+        "item_eiw53ngtctu4z98d"
+      ],
+      "level": 0,
+      "baseElevation": 0,
+      "height": 2.5
+    },
+    "wall_snz1gswevy5wqqsi": {
+      "object": "node",
+      "id": "wall_snz1gswevy5wqqsi",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_p9cjkq0gjajfd83g"
+      ],
+      "thickness": 0.2,
+      "height": 2.5,
+      "start": [
+        2.8,
+        2.5
+      ],
+      "end": [
+        2.8,
+        13.6
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_p96ww2idw6pkotdw": {
+      "object": "node",
+      "id": "wall_p96ww2idw6pkotdw",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "window_mtrmmjt8ydipgw6t"
+      ],
+      "thickness": 0.2,
+      "height": 2.5,
+      "start": [
+        2.7,
+        12.85
+      ],
+      "end": [
+        7.9,
+        12.85
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_2t1dzrnhysogf99q": {
+      "object": "node",
+      "id": "wall_2t1dzrnhysogf99q",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_dsugl0w8sn84jdk3"
+      ],
+      "thickness": 0.2,
+      "height": 2.5,
+      "start": [
+        7.85,
+        7.85
+      ],
+      "end": [
+        7.85,
+        13.5
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_qiygzesoj2v2z4qj": {
+      "object": "node",
+      "id": "wall_qiygzesoj2v2z4qj",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "window_yigiliu5gyb72gkl"
+      ],
+      "thickness": 0.1,
+      "height": 2.5,
+      "start": [
+        2.95,
+        4.62
+      ],
+      "end": [
+        5.65,
+        4.62
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_adzta1fkvrpz1tbh": {
+      "object": "node",
+      "id": "wall_adzta1fkvrpz1tbh",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.12,
+      "height": 1.05,
+      "start": [
+        7.9,
+        13.5
+      ],
+      "end": [
+        13,
+        13.5
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_55m62bswk9ayspky": {
+      "object": "node",
+      "id": "wall_55m62bswk9ayspky",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.12,
+      "height": 1.05,
+      "start": [
+        12.96,
+        11.1
+      ],
+      "end": [
+        12.96,
+        13.8
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_ju2alytej436os2p": {
+      "object": "node",
+      "id": "wall_ju2alytej436os2p",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.2,
+      "height": 2.5,
+      "start": [
+        7.9,
+        10.8
+      ],
+      "end": [
+        10.4,
+        10.8
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_mghyrubyx6l3fcxy": {
+      "object": "node",
+      "id": "wall_mghyrubyx6l3fcxy",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.2,
+      "height": 2.5,
+      "start": [
+        12.4,
+        10.8
+      ],
+      "end": [
+        13,
+        10.8
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_z0mwpvmddxx4l742": {
+      "object": "node",
+      "id": "wall_z0mwpvmddxx4l742",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.12,
+      "height": 2.5,
+      "start": [
+        3.65,
+        12.95
+      ],
+      "end": [
+        3.8,
+        13.8
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_7o708m915l4gm5l9": {
+      "object": "node",
+      "id": "wall_7o708m915l4gm5l9",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.12,
+      "height": 2.5,
+      "start": [
+        7.05,
+        12.95
+      ],
+      "end": [
+        6.9,
+        13.8
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "wall_a354nw7ygosoi09z": {
+      "object": "node",
+      "id": "wall_a354nw7ygosoi09z",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "window_xieokzd2ork6i9kp"
+      ],
+      "thickness": 0.12,
+      "height": 2.5,
+      "start": [
+        3.8,
+        13.8
+      ],
+      "end": [
+        6.9,
+        13.8
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "window_mtrmmjt8ydipgw6t": {
+      "object": "node",
+      "id": "window_mtrmmjt8ydipgw6t",
+      "type": "window",
+      "parentId": "wall_p96ww2idw6pkotdw",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        2.652,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_p96ww2idw6pkotdw",
+      "width": 3.1,
+      "height": 1.8,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "fixed",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "window_xieokzd2ork6i9kp": {
+      "object": "node",
+      "id": "window_xieokzd2ork6i9kp",
+      "type": "window",
+      "parentId": "wall_a354nw7ygosoi09z",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.5500000000000003,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_a354nw7ygosoi09z",
+      "width": 3.1,
+      "height": 1.8,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "fixed",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "door_dsugl0w8sn84jdk3": {
+      "object": "node",
+      "id": "door_dsugl0w8sn84jdk3",
+      "type": "door",
+      "parentId": "wall_2t1dzrnhysogf99q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        4.3731,
+        1.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_2t1dzrnhysogf99q",
+      "width": 0.85,
+      "height": 2.4,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "door_p9cjkq0gjajfd83g": {
+      "object": "node",
+      "id": "door_p9cjkq0gjajfd83g",
+      "type": "door",
+      "parentId": "wall_snz1gswevy5wqqsi",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        3.4076999999999997,
+        1.1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_snz1gswevy5wqqsi",
+      "width": 1.7,
+      "height": 2.2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "wall_lbwgkhthz3h411n3": {
+      "object": "node",
+      "id": "wall_lbwgkhthz3h411n3",
+      "type": "wall",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_d214j0awbns20a6u"
+      ],
+      "thickness": 0.2,
+      "height": 2.5,
+      "start": [
+        10.4,
+        10.8
+      ],
+      "end": [
+        12.4,
+        10.8
+      ],
+      "frontSide": "unknown",
+      "backSide": "unknown"
+    },
+    "door_d214j0awbns20a6u": {
+      "object": "node",
+      "id": "door_d214j0awbns20a6u",
+      "type": "door",
+      "parentId": "wall_lbwgkhthz3h411n3",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1,
+        1.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_lbwgkhthz3h411n3",
+      "width": 2,
+      "height": 2.4,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.04,
+        0.04
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarHeight": 1
+    },
+    "window_yigiliu5gyb72gkl": {
+      "object": "node",
+      "id": "window_yigiliu5gyb72gkl",
+      "type": "window",
+      "parentId": "wall_qiygzesoj2v2z4qj",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.35,
+        1.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "wallId": "wall_qiygzesoj2v2z4qj",
+      "width": 2.6,
+      "height": 2.4,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "fixed",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.05,
+      "frameDepth": 0.07,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03
+    },
+    "zone_n7166s2lkk8nhulg": {
+      "object": "node",
+      "id": "zone_n7166s2lkk8nhulg",
+      "type": "zone",
+      "name": "ROOM_LIVING",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {
+        "canonical_id": "R-LIVING",
+        "source": "PRE_BLENDER_MASTER_V2"
+      },
+      "polygon": [
+        [
+          2.9,
+          7.9
+        ],
+        [
+          7.75,
+          7.9
+        ],
+        [
+          7.75,
+          12.75
+        ],
+        [
+          2.9,
+          12.75
+        ]
+      ],
+      "autoFromWalls": false,
+      "boundaryWallIds": [],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "zone_jv8vom8az6sx4h0l": {
+      "object": "node",
+      "id": "zone_jv8vom8az6sx4h0l",
+      "type": "zone",
+      "name": "ROOM_DINING",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {
+        "source": "PRE_BLENDER_MASTER_V2",
+        "canonical_id": "R-DINING"
+      },
+      "polygon": [
+        [
+          2.9,
+          2.56
+        ],
+        [
+          5.7,
+          2.56
+        ],
+        [
+          5.7,
+          7.9
+        ],
+        [
+          2.9,
+          7.9
+        ]
+      ],
+      "autoFromWalls": false,
+      "boundaryWallIds": [],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "zone_zz0jo33q8pfh6bzd": {
+      "object": "node",
+      "id": "zone_zz0jo33q8pfh6bzd",
+      "type": "zone",
+      "name": "ROOM_NORTH_BALCONY",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {
+        "open": true,
+        "canonical_id": "R-BALC-N",
+        "source": "PRE_BLENDER_MASTER_V2"
+      },
+      "polygon": [
+        [
+          7.9,
+          10.9
+        ],
+        [
+          13,
+          10.9
+        ],
+        [
+          13,
+          13.4
+        ],
+        [
+          7.9,
+          13.4
+        ]
+      ],
+      "autoFromWalls": false,
+      "boundaryWallIds": [],
+      "spaceRole": "generic",
+      "roomNumber": "",
+      "enclosureStatus": "auto",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#3b82f6"
+    },
+    "item_nwek02kq25rvim7r": {
+      "object": "node",
+      "id": "item_nwek02kq25rvim7r",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        3.851,
+        0,
+        10.366
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "sofa",
+        "category": "furniture",
+        "name": "Sofa",
+        "thumbnail": "/items/sofa/thumbnail.webp",
+        "source": "library",
+        "src": "/items/sofa/model.glb",
+        "dimensions": [
+          2.5,
+          0.8,
+          1.5
+        ],
+        "tags": [
+          "floor",
+          "seating",
+          "living"
+        ],
+        "offset": [
+          0,
+          0,
+          0.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "item_ut0cnlz9yp6gr277": {
+      "object": "node",
+      "id": "item_ut0cnlz9yp6gr277",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        5.522,
+        0,
+        12.405
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "sofa",
+        "category": "furniture",
+        "name": "Sofa",
+        "thumbnail": "/items/sofa/thumbnail.webp",
+        "source": "library",
+        "src": "/items/sofa/model.glb",
+        "dimensions": [
+          2.5,
+          0.8,
+          1.5
+        ],
+        "tags": [
+          "floor",
+          "seating",
+          "living"
+        ],
+        "offset": [
+          0,
+          0,
+          0.04
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "item_ypxp1y2dmxnq3gil": {
+      "object": "node",
+      "id": "item_ypxp1y2dmxnq3gil",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        4.824,
+        0,
+        8.246
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "livingroom-chair",
+        "category": "furniture",
+        "name": "Livingroom Chair",
+        "thumbnail": "/items/livingroom-chair/thumbnail.webp",
+        "source": "library",
+        "src": "/items/livingroom-chair/model.glb",
+        "dimensions": [
+          1.5,
+          0.8,
+          1.5
+        ],
+        "tags": [
+          "floor",
+          "seating",
+          "living"
+        ],
+        "offset": [
+          0.01,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "item_2ecqkmbmyl739l6f": {
+      "object": "node",
+      "id": "item_2ecqkmbmyl739l6f",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        5.345,
+        0,
+        10.363
+      ],
+      "rotation": [
+        0,
+        1.5708,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "coffee-table",
+        "category": "furniture",
+        "name": "Coffee Table",
+        "thumbnail": "/items/coffee-table/thumbnail.webp",
+        "source": "library",
+        "src": "/items/coffee-table/model.glb",
+        "dimensions": [
+          2,
+          0.4,
+          1.5
+        ],
+        "tags": [
+          "floor",
+          "table",
+          "living"
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "surface": {
+          "height": 0.3
+        }
+      }
+    },
+    "item_h91ffhk8zlbea36y": {
+      "object": "node",
+      "id": "item_h91ffhk8zlbea36y",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        3.924,
+        0,
+        12.279
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "bedside-table",
+        "category": "furniture",
+        "name": "Bedside Table",
+        "thumbnail": "/items/bedside-table/thumbnail.webp",
+        "source": "library",
+        "src": "/items/bedside-table/model.glb",
+        "dimensions": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "tags": [
+          "floor",
+          "bedroom"
+        ],
+        "offset": [
+          0,
+          0,
+          -0.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "surface": {
+          "height": 0.5
+        }
+      }
+    },
+    "item_pjq6fimj7b5ppucc": {
+      "object": "node",
+      "id": "item_pjq6fimj7b5ppucc",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        3.828,
+        0,
+        3.464
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "dining-table",
+        "category": "furniture",
+        "name": "Dining Table",
+        "thumbnail": "/items/dining-table/thumbnail.webp",
+        "source": "library",
+        "src": "/items/dining-table/model.glb",
+        "dimensions": [
+          2.5,
+          0.8,
+          1
+        ],
+        "tags": [
+          "floor",
+          "table",
+          "dining"
+        ],
+        "offset": [
+          0,
+          0,
+          -0.01
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "surface": {
+          "height": 0.8
+        }
+      }
+    },
+    "item_62046dpgpffsga6a": {
+      "object": "node",
+      "id": "item_62046dpgpffsga6a",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        3.289,
+        0,
+        4.177
+      ],
+      "rotation": [
+        0,
+        3.1416,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "dining-chair",
+        "category": "furniture",
+        "name": "Dining Chair",
+        "thumbnail": "/items/dining-chair/thumbnail.webp",
+        "source": "library",
+        "src": "/items/dining-chair/model.glb",
+        "dimensions": [
+          0.5,
+          1,
+          0.5
+        ],
+        "tags": [
+          "floor",
+          "seating",
+          "dining"
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "item_2xrafxfhqgmyte1g": {
+      "object": "node",
+      "id": "item_2xrafxfhqgmyte1g",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        4.086,
+        0,
+        4.177
+      ],
+      "rotation": [
+        0,
+        3.1416,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "dining-chair",
+        "category": "furniture",
+        "name": "Dining Chair",
+        "thumbnail": "/items/dining-chair/thumbnail.webp",
+        "source": "library",
+        "src": "/items/dining-chair/model.glb",
+        "dimensions": [
+          0.5,
+          1,
+          0.5
+        ],
+        "tags": [
+          "floor",
+          "seating",
+          "dining"
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "item_j37qnhvcy12phjti": {
+      "object": "node",
+      "id": "item_j37qnhvcy12phjti",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        3.314,
+        0,
+        2.683
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "dining-chair",
+        "category": "furniture",
+        "name": "Dining Chair",
+        "thumbnail": "/items/dining-chair/thumbnail.webp",
+        "source": "library",
+        "src": "/items/dining-chair/model.glb",
+        "dimensions": [
+          0.5,
+          1,
+          0.5
+        ],
+        "tags": [
+          "floor",
+          "seating",
+          "dining"
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "item_gx8pqt373zyl2ogb": {
+      "object": "node",
+      "id": "item_gx8pqt373zyl2ogb",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        4.111,
+        0,
+        2.757
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "dining-chair",
+        "category": "furniture",
+        "name": "Dining Chair",
+        "thumbnail": "/items/dining-chair/thumbnail.webp",
+        "source": "library",
+        "src": "/items/dining-chair/model.glb",
+        "dimensions": [
+          0.5,
+          1,
+          0.5
+        ],
+        "tags": [
+          "floor",
+          "seating",
+          "dining"
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "item_eamud5l0w5is2jk8": {
+      "object": "node",
+      "id": "item_eamud5l0w5is2jk8",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        10.126,
+        0,
+        11.45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "washing-machine",
+        "category": "bathroom",
+        "name": "Washing Machine",
+        "thumbnail": "/items/washing-machine/thumbnail.webp",
+        "source": "library",
+        "src": "/items/washing-machine/model.glb",
+        "dimensions": [
+          1,
+          1,
+          1
+        ],
+        "tags": [
+          "floor",
+          "large",
+          "electronics",
+          "laundry"
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "item_eiw53ngtctu4z98d": {
+      "object": "node",
+      "id": "item_eiw53ngtctu4z98d",
+      "type": "item",
+      "parentId": "level_el9gsgrhhp5thb3q",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        9.131,
+        0,
+        11.45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "children": [],
+      "asset": {
+        "id": "fridge",
+        "category": "kitchen",
+        "name": "Fridge",
+        "thumbnail": "/items/fridge/thumbnail.webp",
+        "source": "library",
+        "src": "/items/fridge/model.glb",
+        "dimensions": [
+          1,
+          2,
+          1
+        ],
+        "tags": [
+          "floor",
+          "large",
+          "kitchen"
+        ],
+        "offset": [
+          0.01,
+          0,
+          -0.05
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "rootNodeIds": [
+    "site_ngmmofooz35rdzww"
+  ],
+  "collections": {},
+  "materials": {}
+}

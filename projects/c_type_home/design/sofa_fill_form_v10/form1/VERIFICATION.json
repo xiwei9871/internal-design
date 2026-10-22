@@ -1,0 +1,77 @@
+{
+  "status": "FAIL",
+  "errors": [
+    "seat/back surface intersections: 241",
+    "soft/timber surface intersections: [{'soft': 'seat', 'timber': 'V10_SEAT_ASH_DECK'}]"
+  ],
+  "output_sha256": "ade599c80ae63825b3264c96bad25ff345849f524a9a15ca3ea00c6f22e8877d",
+  "protected_files": 13,
+  "baseline_objects_preserved": 70,
+  "frame_copies_preserved": 14,
+  "source_shaders_camera_light_world_grade_preserved": true,
+  "guides_hidden_by_default": true,
+  "shells": {
+    "V10_SEAT_COMPLETE_COVER": {
+      "vertices": 20738,
+      "faces": 20736,
+      "nonmanifold_edges": 0,
+      "zero_edges": 0,
+      "tiny_faces": 0,
+      "signed_volume_m3": 0.1499088542564731,
+      "bounds_m": [
+        [
+          -0.5166000127792358,
+          -0.4490639865398407,
+          0.2849999964237213
+        ],
+        [
+          0.5166000127792358,
+          0.4490639865398407,
+          0.48364436626434326
+        ]
+      ]
+    },
+    "V10_BACK_COMPLETE_COVER": {
+      "vertices": 20738,
+      "faces": 20736,
+      "nonmanifold_edges": 0,
+      "zero_edges": 0,
+      "tiny_faces": 0,
+      "signed_volume_m3": 0.061316234670095386,
+      "bounds_m": [
+        [
+          -0.5176079869270325,
+          0.3242693543434143,
+          0.3993992209434509
+        ],
+        [
+          0.5176079869270325,
+          0.5928465723991394,
+          0.8064681887626648
+        ]
+      ]
+    }
+  },
+  "seat_back_surface_intersection_pairs": 241,
+  "soft_timber_surface_intersections": [
+    {
+      "soft": "seat",
+      "timber": "V10_SEAT_ASH_DECK"
+    }
+  ],
+  "minimum_back_to_seat_vertex_gap_mm": 1.1995136737823486,
+  "seat_bottom_to_deck_gap_mm": -3.576278662098531e-06,
+  "max_seam_attachment_error_m": 0.0,
+  "packed_images": 18,
+  "missing_images": [],
+  "seat_crown_mm": 483.64436626434326,
+  "total_height_mm": 806.4681887626648,
+  "old700mm_conflict_mm": 106.4681887626648,
+  "not_approved": [
+    "appearance",
+    "procurement SKU",
+    "final seat height",
+    "foam/down mechanics",
+    "house installation"
+  ]
+}
