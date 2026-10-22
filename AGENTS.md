@@ -13,12 +13,26 @@
 
 ## Workflow Skills
 
+- .codex/skills/archviz-interior-workflow/SKILL.md for interior effect-image planning, generation, resumption and review. Read the latest owner decision and relevant C-Type lessons first; Faithful-first is the current workflow, Designer/Creative require targeted visual validation.
 - .codex/skills/design-task-git-workflow/SKILL.md for substantial task branches, Gates, explicit staging, commits, pushes, PRs, and HUMAN_REVIEW.
 - .codex/skills/ground-truth-guard/SKILL.md whenever frozen geometry, contracts, manifests, or authority hashes are read or changed.
 - .codex/skills/blender-preview-first/SKILL.md for Blender studies and rendering; default Workbench/EEVEE preview, subagents=0, and no Cycles before approval.
 - .codex/skills/repo-artifact-boundary/SKILL.md for Git status, source classification, generated-artifact review, and context-size audits.
 
 ## Default Performance Rules
+
+- Before implementation or refinement, search existing project/local work,
+  official product assets, compatible model/material libraries and established
+  methods. Adapt a suitable solution first; custom-build only unresolved gaps.
+  For ArchViz, verify furniture shape, format, UV, material scale, renderer
+  compatibility and license before claiming an external asset is usable.
+  A library preview is not a successful local Cycles validation.
+- Establish real product identity or evidence-backed custom construction before
+  detailed modeling. Owner catalogs/photos determine whole-object form and
+  materials; schematic furniture placeholders only carry documented spatial
+  constraints. Do not freeze placeholder cushion gaps or mix unrelated product
+  parts as a shortcut to a finished asset. Report real-product fit conflicts
+  instead of distorting the item or altering frozen architecture.
 
 - Use exact task-named files; do not recursively scan renders/** or rediscover frozen Ground Truth.
 - Default subagents=0; delegate only genuinely independent work.
