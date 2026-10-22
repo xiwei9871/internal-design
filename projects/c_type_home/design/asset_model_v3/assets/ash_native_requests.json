@@ -1,0 +1,32 @@
+{
+  "url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/1k/ash_veneer/ash_veneer_1k.blend",
+  "md5": "daa9d4753795ac3e8c87fbb647d628de",
+  "size": 215634,
+  "include": {
+    "textures/ash_veneer_ao_1k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/ash_veneer/ash_veneer_ao_1k.jpg",
+      "md5": "a50af9ba03cb5c1018951c3ca471f85a",
+      "size": 640909
+    },
+    "textures/ash_veneer_diff_1k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/ash_veneer/ash_veneer_diff_1k.jpg",
+      "md5": "5be48b4be87620998cfaee5a4281169d",
+      "size": 592273
+    },
+    "textures/ash_veneer_disp_1k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/ash_veneer/ash_veneer_disp_1k.png",
+      "md5": "ef0cca439761148469fe814d4705ffdf",
+      "size": 1392018
+    },
+    "textures/ash_veneer_nor_gl_1k.exr": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/ash_veneer/ash_veneer_nor_gl_1k.exr",
+      "md5": "b9252e3f9d423ab73a79013703ad163a",
+      "size": 824530
+    },
+    "textures/ash_veneer_rough_1k.exr": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/ash_veneer/ash_veneer_rough_1k.exr",
+      "md5": "1b4a9e853896a01ffa28d166617ce1c6",
+      "size": 1199699
+    }
+  }
+}

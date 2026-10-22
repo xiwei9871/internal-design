@@ -1,0 +1,882 @@
+{
+ "zones": {
+  "R-LIVING": {
+   "label": "living",
+   "items": 6,
+   "contained": 4,
+   "not_contained": [
+    "双人位",
+    "贵妃椅"
+   ],
+   "with_collisions": [],
+   "rows": [
+    {
+     "id": "item_v1_0086",
+     "label": "电视柜（或者悬浮电视墙）",
+     "zone": "R-LIVING",
+     "size": [
+      0.2989,
+      2.8889
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0125",
+     "label": "三人位",
+     "zone": "R-LIVING",
+     "size": [
+      0.9,
+      2.3
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0126",
+     "label": "双人位",
+     "zone": "R-LIVING",
+     "size": [
+      1.9,
+      0.85
+     ],
+     "rot": 0,
+     "status": "HUMAN_ACCEPTED_AS_DRAWN",
+     "contained": false,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0127",
+     "label": "贵妃椅",
+     "zone": "R-LIVING",
+     "size": [
+      1.7,
+      0.9
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": false,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0128",
+     "label": "茶几",
+     "zone": "R-LIVING",
+     "size": [
+      0.55,
+      1.0
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0129",
+     "label": "角几",
+     "zone": "R-LIVING",
+     "size": [
+      0.5,
+      0.5
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    }
+   ]
+  },
+  "R-BATH-P": {
+   "label": "R-BATH-P",
+   "items": 4,
+   "contained": 2,
+   "not_contained": [
+    "客卫（湿区）",
+    "3kg洗衣机"
+   ],
+   "with_collisions": [
+    "客卫（湿区）",
+    "3kg洗衣机"
+   ],
+   "rows": [
+    {
+     "id": "item_v1_0087",
+     "label": "客卫（湿区）",
+     "zone": "R-BATH-P",
+     "size": [
+      1.6438,
+      0.8129
+     ],
+     "rot": 0,
+     "status": "REGION_BOUNDARY",
+     "contained": false,
+     "collisions": 1
+    },
+    {
+     "id": "item_v1_0088",
+     "label": "客卫马桶",
+     "zone": "R-BATH-P",
+     "size": [
+      0.7471,
+      0.3237
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0110",
+     "label": "客卫洗手盆柜体",
+     "zone": "R-BATH-P",
+     "size": [
+      0.6,
+      1.2
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0121",
+     "label": "3kg洗衣机",
+     "zone": "R-BATH-P",
+     "size": [
+      0.45,
+      0.45
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": false,
+     "collisions": 1
+    }
+   ]
+  },
+  "R-BED-S": {
+   "label": "R-BED-S",
+   "items": 4,
+   "contained": 3,
+   "not_contained": [
+    "次主卧衣柜"
+   ],
+   "with_collisions": [],
+   "rows": [
+    {
+     "id": "item_v1_0089",
+     "label": "次主卧床头占位",
+     "zone": "R-BED-S",
+     "size": [
+      0.1993,
+      2.6399
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0090",
+     "label": "次主卧床",
+     "zone": "R-BED-S",
+     "size": [
+      2.1,
+      1.5
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0095",
+     "label": "次主卧衣柜",
+     "zone": "R-BED-S",
+     "size": [
+      1.5,
+      0.6
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": false,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0097",
+     "label": "次主卧电视柜",
+     "zone": "R-BED-S",
+     "size": [
+      0.5,
+      2.0
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    }
+   ]
+  },
+  "R-MASTER": {
+   "label": "R-MASTER",
+   "items": 4,
+   "contained": 4,
+   "not_contained": [],
+   "with_collisions": [],
+   "rows": [
+    {
+     "id": "item_v1_0091",
+     "label": "主卧床",
+     "zone": "R-MASTER",
+     "size": [
+      2.1,
+      1.5
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0092",
+     "label": "主卧床头柜占位",
+     "zone": "R-MASTER",
+     "size": [
+      0.15,
+      2.5
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0093",
+     "label": "主卧衣柜",
+     "zone": "R-MASTER",
+     "size": [
+      2.1,
+      0.6
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0096",
+     "label": "主卧电视柜",
+     "zone": "R-MASTER",
+     "size": [
+      0.5,
+      2.0
+     ],
+     "rot": 0,
+     "status": "HUMAN_ACCEPTED_AS_DRAWN",
+     "contained": true,
+     "collisions": 0
+    }
+   ]
+  },
+  "R-STUDY": {
+   "label": "R-STUDY",
+   "items": 5,
+   "contained": 3,
+   "not_contained": [
+    "次卧衣柜",
+    "窄书桌"
+   ],
+   "with_collisions": [],
+   "rows": [
+    {
+     "id": "item_v1_0094",
+     "label": "次卧小床1.2",
+     "zone": "R-STUDY",
+     "size": [
+      1.8,
+      1.2
+     ],
+     "rot": 0,
+     "status": "USER_MANUAL_CORRECTION",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0104",
+     "label": "次卧凳子",
+     "zone": "R-STUDY",
+     "size": [
+      0.4,
+      0.4
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0124",
+     "label": "次卧衣柜",
+     "zone": "R-STUDY",
+     "size": [
+      0.5,
+      2.0
+     ],
+     "rot": 0,
+     "status": "USER_MANUAL_CORRECTION",
+     "contained": false,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0131",
+     "label": "床背板",
+     "zone": "R-STUDY",
+     "size": [
+      0.2,
+      1.2
+     ],
+     "rot": 0,
+     "status": "USER_MANUAL_CORRECTION",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0132",
+     "label": "窄书桌",
+     "zone": "R-STUDY",
+     "size": [
+      0.35,
+      1.65
+     ],
+     "rot": 0,
+     "status": "USER_MANUAL_CORRECTION",
+     "contained": false,
+     "collisions": 0
+    }
+   ]
+  },
+  "R-BED-N": {
+   "label": "R-BED-N",
+   "items": 8,
+   "contained": 8,
+   "not_contained": [],
+   "with_collisions": [
+    "矮书柜",
+    "打印机",
+    "nas"
+   ],
+   "rows": [
+    {
+     "id": "item_v1_0098",
+     "label": "书柜",
+     "zone": "R-BED-N",
+     "size": [
+      0.45,
+      4.2
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0099",
+     "label": "矮书柜",
+     "zone": "R-BED-N",
+     "size": [
+      1.6,
+      0.45
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 2
+    },
+    {
+     "id": "item_v1_0100",
+     "label": "茶台",
+     "zone": "R-BED-N",
+     "size": [
+      0.8,
+      2.2
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0101",
+     "label": "主人椅",
+     "zone": "R-BED-N",
+     "size": [
+      0.4,
+      0.4
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0102",
+     "label": "条凳",
+     "zone": "R-BED-N",
+     "size": [
+      0.3,
+      1.6
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0103",
+     "label": "凳子",
+     "zone": "R-BED-N",
+     "size": [
+      0.4,
+      0.4
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0122",
+     "label": "打印机",
+     "zone": "R-BED-N",
+     "size": [
+      0.4,
+      0.4
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 1
+    },
+    {
+     "id": "item_v1_0123",
+     "label": "nas",
+     "zone": "R-BED-N",
+     "size": [
+      0.4,
+      0.4
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 1
+    }
+   ]
+  },
+  "R-DINING": {
+   "label": "dining",
+   "items": 6,
+   "contained": 4,
+   "not_contained": [
+    "餐椅",
+    "餐椅004"
+   ],
+   "with_collisions": [],
+   "rows": [
+    {
+     "id": "item_v1_0105",
+     "label": "餐椅",
+     "zone": "R-DINING",
+     "size": [
+      0.4,
+      0.4
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0106",
+     "label": "餐椅003",
+     "zone": "R-DINING",
+     "size": [
+      0.4,
+      0.4
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0107",
+     "label": "餐椅",
+     "zone": "R-DINING",
+     "size": [
+      0.4,
+      0.4
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": false,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0108",
+     "label": "餐椅004",
+     "zone": "R-DINING",
+     "size": [
+      0.4,
+      0.4
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": false,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0111",
+     "label": "鞋柜",
+     "zone": "R-DINING",
+     "size": [
+      0.3,
+      0.7223
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0130",
+     "label": "餐桌",
+     "zone": "R-DINING",
+     "size": [
+      1.6,
+      0.8
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    }
+   ]
+  },
+  "R-BALC-LIFE": {
+   "label": "R-BALC-LIFE",
+   "items": 2,
+   "contained": 2,
+   "not_contained": [],
+   "with_collisions": [],
+   "rows": [
+    {
+     "id": "item_v1_0109",
+     "label": "现有橱柜",
+     "zone": "R-BALC-LIFE",
+     "size": [
+      0.5,
+      1.5
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0112",
+     "label": "橱柜",
+     "zone": "R-BALC-LIFE",
+     "size": [
+      1.2,
+      0.5
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    }
+   ]
+  },
+  "R-BATH-M": {
+   "label": "mother bath",
+   "items": 3,
+   "contained": 2,
+   "not_contained": [
+    "主卫马桶"
+   ],
+   "with_collisions": [],
+   "rows": [
+    {
+     "id": "item_v1_0113",
+     "label": "主卫湿区",
+     "zone": "R-BATH-M",
+     "size": [
+      1.0,
+      1.5223
+     ],
+     "rot": 0,
+     "status": "REGION_BOUNDARY",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0114",
+     "label": "主卫马桶",
+     "zone": "R-BATH-M",
+     "size": [
+      0.5,
+      0.65
+     ],
+     "rot": 0,
+     "status": "HUMAN_ACCEPTED_AS_DRAWN",
+     "contained": false,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0115",
+     "label": "主卫洗手盆和柜体",
+     "zone": "R-BATH-M",
+     "size": [
+      1.2,
+      0.5
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    }
+   ]
+  },
+  "R-CLOAK": {
+   "label": "R-CLOAK",
+   "items": 3,
+   "contained": 2,
+   "not_contained": [
+    "次主卫马桶"
+   ],
+   "with_collisions": [],
+   "rows": [
+    {
+     "id": "item_v1_0116",
+     "label": "次主卫湿区",
+     "zone": "R-CLOAK",
+     "size": [
+      0.8233,
+      1.5471
+     ],
+     "rot": 0,
+     "status": "REGION_BOUNDARY",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0117",
+     "label": "次主卫台盆和柜体",
+     "zone": "R-CLOAK",
+     "size": [
+      1.0,
+      0.5
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0118",
+     "label": "次主卫马桶",
+     "zone": "R-CLOAK",
+     "size": [
+      0.5,
+      0.6
+     ],
+     "rot": 0,
+     "status": "HUMAN_ACCEPTED_AS_DRAWN",
+     "contained": false,
+     "collisions": 0
+    }
+   ]
+  },
+  "R-BALC-N": {
+   "label": "north balcony",
+   "items": 2,
+   "contained": 2,
+   "not_contained": [],
+   "with_collisions": [],
+   "rows": [
+    {
+     "id": "item_v1_0119",
+     "label": "冰柜",
+     "zone": "R-BALC-N",
+     "size": [
+      1.2,
+      0.6
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    },
+    {
+     "id": "item_v1_0120",
+     "label": "洗衣机+烘干机（叠放）",
+     "zone": "R-BALC-N",
+     "size": [
+      0.6,
+      0.6
+     ],
+     "rot": 0,
+     "status": "MAPPED",
+     "contained": true,
+     "collisions": 0
+    }
+   ]
+  },
+  "R-KITCHEN": {
+   "label": "R-KITCHEN",
+   "items": 9,
+   "contained": 4,
+   "not_contained": [
+    "K-RUN-E",
+    "K-COOK",
+    "K-DISHW",
+    "K-BASKET",
+    "K-WALL-E"
+   ],
+   "with_collisions": [
+    "K-RUN-E",
+    "K-COOK",
+    "K-DISHW",
+    "K-BASKET",
+    "K-FRIDGE-TALL",
+    "K-FRIDGE",
+    "K-RUN-S",
+    "K-SINK",
+    "K-WALL-E"
+   ],
+   "rows": [
+    {
+     "id": "item_v1_0133",
+     "label": "K-RUN-E",
+     "zone": "R-KITCHEN",
+     "size": [
+      0.6,
+      3.215
+     ],
+     "rot": 0,
+     "status": "HUMAN_APPROVED",
+     "contained": false,
+     "collisions": 7
+    },
+    {
+     "id": "item_v1_0134",
+     "label": "K-COOK",
+     "zone": "R-KITCHEN",
+     "size": [
+      0.6,
+      0.9
+     ],
+     "rot": 0,
+     "status": "HUMAN_APPROVED",
+     "contained": false,
+     "collisions": 2
+    },
+    {
+     "id": "item_v1_0135",
+     "label": "K-DISHW",
+     "zone": "R-KITCHEN",
+     "size": [
+      0.6,
+      0.6
+     ],
+     "rot": 0,
+     "status": "HUMAN_APPROVED",
+     "contained": false,
+     "collisions": 2
+    },
+    {
+     "id": "item_v1_0136",
+     "label": "K-BASKET",
+     "zone": "R-KITCHEN",
+     "size": [
+      0.6,
+      0.45
+     ],
+     "rot": 0,
+     "status": "HUMAN_APPROVED",
+     "contained": false,
+     "collisions": 4
+    },
+    {
+     "id": "item_v1_0137",
+     "label": "K-FRIDGE-TALL",
+     "zone": "R-KITCHEN",
+     "size": [
+      1.84,
+      0.7
+     ],
+     "rot": 0,
+     "status": "HUMAN_APPROVED",
+     "contained": true,
+     "collisions": 4
+    },
+    {
+     "id": "item_v1_0138",
+     "label": "K-FRIDGE",
+     "zone": "R-KITCHEN",
+     "size": [
+      0.905,
+      0.7
+     ],
+     "rot": 0,
+     "status": "HUMAN_APPROVED",
+     "contained": true,
+     "collisions": 4
+    },
+    {
+     "id": "item_v1_0139",
+     "label": "K-RUN-S",
+     "zone": "R-KITCHEN",
+     "size": [
+      1.21,
+      0.6
+     ],
+     "rot": 0,
+     "status": "HUMAN_APPROVED",
+     "contained": true,
+     "collisions": 2
+    },
+    {
+     "id": "item_v1_0140",
+     "label": "K-SINK",
+     "zone": "R-KITCHEN",
+     "size": [
+      0.99,
+      0.6
+     ],
+     "rot": 0,
+     "status": "HUMAN_APPROVED",
+     "contained": true,
+     "collisions": 1
+    },
+    {
+     "id": "item_v1_0141",
+     "label": "K-WALL-E",
+     "zone": "R-KITCHEN",
+     "size": [
+      0.38,
+      3.215
+     ],
+     "rot": 0,
+     "status": "HUMAN_APPROVED",
+     "contained": false,
+     "collisions": 6
+    }
+   ]
+  }
+ },
+ "collision_pairs": 19
+}

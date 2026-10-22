@@ -1,0 +1,135 @@
+{
+  "status": "USER_REQUESTED_DOOR_AND_THRESHOLD_CORRECTION_HUMAN_REVIEW",
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_B_INWARD_R4.blend",
+  "model_sha256": "76ff55ad0fb4cac95b567bc62355ddca7010f62ac095b7dcb780aeb011ce008d",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r3/OPTION_B_INWARD_R3.blend",
+  "source_sha256": "a2a7c2d08c740c0e7c0747a50dd5c8c176d6c67d3d56065168f783a7d64e596e",
+  "source_objects_preserved": 1518,
+  "door": {
+    "orientation": "EAST_WEST",
+    "inward": "SOUTH",
+    "hinge_m": [
+      8.179,
+      4.480200000000001
+    ],
+    "leaf_width_mm": 850,
+    "leaf_height_mm": 2090,
+    "nominal_door_height_mm": 2100,
+    "gross_width_mm": 910,
+    "frame_clear_width_mm": 860,
+    "frame_each_side_mm": 25,
+    "host_y_mm": [
+      4500.200000000001,
+      4700.2
+    ],
+    "rough_opening_height_mm": 2125,
+    "review_sections": true
+  },
+  "floor_repair": {
+    "topology": {
+      "vertices": 222,
+      "faces": 317,
+      "boundary": 0,
+      "nonmanifold": 0
+    },
+    "source_objects_hidden": [
+      "FLOOR_UPPER",
+      "FLOOR_UPPER_SEAM_0",
+      "FLOOR_UPPER_SEAM_1",
+      "FLOOR_UPPER_SEAM_4"
+    ],
+    "local_rect": [
+      7.7999,
+      4.4499,
+      9.209,
+      5.1502
+    ],
+    "top_m": 0.45,
+    "nonlocal_plan_delta_m2": 0.0,
+    "old_invalid_top_faces": [
+      {
+        "index": 91,
+        "reason": "Self-intersection[12.8999996185303 6.5]"
+      }
+    ]
+  },
+  "added_objects": [
+    "R4_DOOR_WEST_CONNECTED_RETURN",
+    "R4_DOOR_COMPLETE_HEADER",
+    "R4_WEST_PARTITION_SOUTH_FLUSH_CONNECTION",
+    "R4_UPPER_FLOOR_CONTINUOUS_STRAIGHT_THRESHOLD",
+    "R4_DOOR_FRAME_WEST",
+    "R4_DOOR_FRAME_EAST",
+    "R4_DOOR_FRAME_HEAD",
+    "R4_DOOR_CASING_ROOM_SOUTH_WEST",
+    "R4_DOOR_CASING_ROOM_SOUTH_EAST",
+    "R4_DOOR_CASING_ROOM_SOUTH_HEAD",
+    "R4_DOOR_CASING_PUBLIC_NORTH_WEST",
+    "R4_DOOR_CASING_PUBLIC_NORTH_EAST",
+    "R4_DOOR_CASING_PUBLIC_NORTH_HEAD",
+    "R4_BEDROOM_INWARD_HINGE_ROOT",
+    "R4_BEDROOM_DOOR_LEAF",
+    "R4_BEDROOM_HANDLE_-1",
+    "R4_BEDROOM_HANDLE_STEM_-1",
+    "R4_BEDROOM_HANDLE_1",
+    "R4_BEDROOM_HANDLE_STEM_1",
+    "R4_BEDROOM_HINGE_0",
+    "R4_BEDROOM_HINGE_1",
+    "R4_BEDROOM_HINGE_2",
+    "R4_DOOR_CONTEXT",
+    "R4_DOOR_FRONT",
+    "R4_DOOR_AXON"
+  ],
+  "views": [
+    {
+      "id": "DOOR_CONTEXT",
+      "pos": [
+        6.9,
+        7.1,
+        2.0
+      ],
+      "target": [
+        8.59,
+        4.61,
+        1.58
+      ],
+      "lens": 28,
+      "eye_ffl": 0.45,
+      "camera": "R4_DOOR_CONTEXT"
+    },
+    {
+      "id": "DOOR_FRONT",
+      "pos": [
+        8.59,
+        6.5,
+        1.98
+      ],
+      "target": [
+        8.59,
+        4.52,
+        1.58
+      ],
+      "lens": 32,
+      "eye_ffl": 0.45,
+      "camera": "R4_DOOR_FRONT"
+    },
+    {
+      "id": "DOOR_AXON",
+      "pos": [
+        6.5,
+        7.5,
+        8
+      ],
+      "target": [
+        8.5,
+        4.6,
+        1.15
+      ],
+      "scale": 5.5,
+      "eye_ffl": 0.45,
+      "camera": "R4_DOOR_AXON"
+    }
+  ],
+  "black_wall_demolition_count": 0,
+  "old_angled_door_stays_inactive": true
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "05",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/verification_renders/VERIFIED_05_sink_corner.png",
+    "reference": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_05_sink_corner_V4.png",
+    "sha256": "38b1d83f105ccd8e9e723b63c016c59e24ca219c5edc7c357809b42f1d6fbf4f",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "antialias_samples": 32,
+    "view_transform": "Standard",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.73,
+    "temporary_cuts": [
+      "W_wall_md_0009",
+      "W_wall_md_0010",
+      "W_wall_md_0012",
+      "W_wall_md_0015",
+      "W_wall_md_0036",
+      "W_wall_md_0037",
+      "W_wall_md_0041",
+      "W_wall_md_0044",
+      "W_wall_md_0088"
+    ],
+    "source_saved": false
+  },
+  {
+    "id": "10",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/verification_renders/VERIFIED_10_photo5_buffet_front.png",
+    "reference": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_10_photo5_buffet_front_V4.png",
+    "sha256": "0e42db87a66e7250207748706ea24fedc5d4937196279ef810cc6b1d52e4c685",
+    "resolution": [
+      2000,
+      1500
+    ],
+    "engine": "WORKBENCH",
+    "antialias_samples": 32,
+    "view_transform": "Standard",
+    "blender_version": "5.2.1 LTS",
+    "duration_seconds": 0.346,
+    "temporary_cuts": [
+      "W_wall_md_0005",
+      "W_wall_md_0009",
+      "W_wall_md_0043"
+    ],
+    "source_saved": false
+  }
+]

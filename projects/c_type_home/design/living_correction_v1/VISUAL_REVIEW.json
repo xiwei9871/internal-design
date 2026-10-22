@@ -1,0 +1,23 @@
+{
+  "status": "INSPECTED",
+  "views": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07"
+  ],
+  "inspection": "Small individual filesystem proxies; no high-resolution batch",
+  "findings": [
+    "Inner portal open to projecting sill and outer front/return frames",
+    "Guest-bath partition fully visible",
+    "D107 restored to original angled doorway, absent beside chaise",
+    "Overall view contains full house",
+    "Dedicated bay view exposes platform without furniture occlusion"
+  ],
+  "material_stage": "SIMPLE_REVIEW",
+  "user_approval": "PENDING",
+  "new_image_chat_delivery": "PATHS_ONLY"
+}

@@ -1,0 +1,41 @@
+{
+  "state": "HUMAN_REVIEW",
+  "verified_at": "2026-10-01T13:42:42.272978+08:00",
+  "files": [
+    {
+      "file": "B1_1_SITE_CORRECTED_V2.blend",
+      "sha256": "d28c3245f36e6ddb7b8aaeb943cb45d81fbfb2964660c7f4ef8f40c0ae863948",
+      "bytes": 798426
+    },
+    {
+      "file": "SITE_KITCHEN_COMPLETE_V2.png",
+      "sha256": "2f54a1a16720a209a4b612fe20e50c56241f6311edc5ff9f1dbd51fff9c7e9ec",
+      "bytes": 2055248
+    },
+    {
+      "file": "SITE_ISLAND_UTILITY_V2.png",
+      "sha256": "f5124450ff0c85861328e9c944febf7acdd0d487eb24817ec69786b6d2d51845",
+      "bytes": 1465506
+    },
+    {
+      "file": "SITE_KITCHEN_TOP_V2.png",
+      "sha256": "3b807a8a5010209122679affe87570ce25b188c571a0f98901ebc2472055e02f",
+      "bytes": 1867031
+    },
+    {
+      "file": "KITCHEN_COMPLETION_QA.json",
+      "sha256": "8a3981fa07cd9aab80341f66aa83c35eb88bafcafad4bba0ef12c2e25661b1bc",
+      "bytes": 1278
+    },
+    {
+      "file": "KITCHEN_ISLAND_AND_UTILITY_REGISTER_V01.json",
+      "sha256": "142bfb42d0652ff22e1bcdd9ca6781500169cf90e8a96f4a8ad2d4f5fa02f68f",
+      "bytes": 4892
+    },
+    {
+      "file": "SITE_CORRECTION_REPORT.md",
+      "sha256": "be8a6f35b7e2485e5f6d27d325f6b975e7e396aff7ec197268ee478c27929ea0",
+      "bytes": 2068
+    }
+  ]
+}

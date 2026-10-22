@@ -1,0 +1,32 @@
+{
+  "status": "CONCEPT_HUMAN_REVIEW",
+  "selected_image": "/Users/xiwei/interior_design/projects/c_type_home/design/wave_steps_image_study_20261005/OPTION_A_FOUR_LEVEL_CURVE.png",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "requested_size": "1536x1152",
+  "actual_size": [
+    1448,
+    1086
+  ],
+  "visible_risers": 4,
+  "shape": "restrained shallow continuous curve",
+  "reference_camera_and_furniture_visually_retained": true,
+  "source_models_unchanged": true,
+  "tread_depth_400mm": "prompt design target; not metrically verified in raster",
+  "riser_height_112_5mm": "prompt design target based on packet 450mm rise; not metrically verified",
+  "project_geometry_fidelity": "User reference-image concept; not a surveyed R4 model rendering",
+  "alternatives": [
+    {
+      "image": "OPTION_A_SHALLOW_ARC.png",
+      "status": "superseded_three_visible_risers"
+    },
+    {
+      "image": "OPTION_B_GENTLE_S_WAVE.png",
+      "status": "not_selected_protruding_wave"
+    },
+    {
+      "image": "OPTION_B_RECESSED_WAVE.png",
+      "status": "not_selected_three_visible_risers"
+    }
+  ]
+}

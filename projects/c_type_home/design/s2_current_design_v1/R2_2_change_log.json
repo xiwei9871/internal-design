@@ -1,0 +1,19 @@
+{
+  "schema": "r2-2-change-log-v1",
+  "status": "MEASUREMENT_ONLY",
+  "changes": [
+    {
+      "type": "MEASUREMENT_ADDED"
+    },
+    {
+      "type": "SEMANTIC_MAPPING_UPDATED"
+    },
+    {
+      "type": "ANNOTATION_ADDED"
+    }
+  ],
+  "object_moved": 0,
+  "object_rotated": 0,
+  "room_reassignment": 0,
+  "wall_reassignment": 0
+}

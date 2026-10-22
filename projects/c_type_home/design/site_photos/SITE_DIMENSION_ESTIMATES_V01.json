@@ -1,0 +1,172 @@
+{
+  "register": "SITE_DIMENSION_ESTIMATES_V01",
+  "metric_gate": "NOT_PASSED",
+  "current_human_confirmed_reference": {
+    "countertop_height_mm": 820,
+    "countertop_depth_mm": 600,
+    "fridge_width_mm": 905,
+    "fridge_depth_mm": 710,
+    "fridge_height_mm": 1700,
+    "authority": "HUMAN_CONFIRMED_CURRENT_SAME_AS_INITIAL_PDF"
+  },
+  "accepted_photo_estimates": [],
+  "items": [
+    {
+      "detail_id": "K-SITE-01",
+      "requested_dimension": "窄高柜宽度、深度、顶面标高及其相对北墙/门框位置",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_001"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-02",
+      "requested_dimension": "冰箱上柜底标高、柜深、左右分隔",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_001",
+        "SITE_PHOTO_KITCHEN_002"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-03",
+      "requested_dimension": "微波炉架宽/深及承台标高",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_001",
+        "SITE_PHOTO_KITCHEN_002"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-04",
+      "requested_dimension": "吊柜门分缝、柜底/顶收口标高",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_002",
+        "SITE_PHOTO_KITCHEN_003"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-05",
+      "requested_dimension": "烟机实际外轮廓尺寸和安装标高",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_002",
+        "SITE_PHOTO_KITCHEN_003"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-08",
+      "requested_dimension": "开放展示凹格宽/深/高及其左右位置",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_003",
+        "SITE_PHOTO_KITCHEN_004"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-09",
+      "requested_dimension": "玻璃板宽/深和标高",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_003",
+        "SITE_PHOTO_KITCHEN_004"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-12",
+      "requested_dimension": "水槽侧开放架宽/深/高",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_005"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-13",
+      "requested_dimension": "回转矮柜沿柱的长度、深度、外伸边界和圆角半径",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-14",
+      "requested_dimension": "邻窗高门/抽屉柜尺寸与 CAD 对应关系",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-15",
+      "requested_dimension": "窗边餐边柜尺寸与 CAD 对应关系",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_006"
+      ]
+    },
+    {
+      "detail_id": "K-SITE-16",
+      "requested_dimension": "斜顶高点/低点/坡向和横向构件尺寸",
+      "estimated_mm": null,
+      "uncertainty_mm": null,
+      "confidence": "NOT_METRIC_ACCEPTED",
+      "authority": "TO_VERIFY",
+      "reason": "Global camera registration is LOW/FAILED; no millimetre output is authorized.",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_001",
+        "SITE_PHOTO_KITCHEN_002",
+        "SITE_PHOTO_KITCHEN_003",
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005",
+        "SITE_PHOTO_KITCHEN_006"
+      ]
+    }
+  ]
+}

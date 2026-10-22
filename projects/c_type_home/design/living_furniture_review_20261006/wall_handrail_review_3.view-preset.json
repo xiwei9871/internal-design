@@ -1,0 +1,80 @@
+{
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.026464257027775006,
+  "far": 2646.4257027775006,
+  "position": [
+    2.4755924100286713,
+    4.9919749228031245,
+    -10.011726677936787
+  ],
+  "quaternion": [
+    0.11791587272460657,
+    0.8778738898722818,
+    0.2791528272569838,
+    -0.3708193353569036
+  ],
+  "projection_matrix": [
+    2.381928388433485,
+    0,
+    0,
+    0,
+    0,
+    2.4142135623730954,
+    0,
+    0,
+    0,
+    0,
+    -1.000020000200002,
+    -1,
+    0,
+    0,
+    -0.05292904334598348,
+    0
+  ],
+  "orbit_target": [
+    6.750808875179196,
+    0.7727101560364987,
+    -5.854113757018172
+  ],
+  "viewport": {
+    "width": 673,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "wall_handrail_review_3",
+  "preview_uri": "wall_handrail_review_3.png",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_revision": "r4-living-wave35-aluminum-review-3",
+  "source_sha256": "fd0f603b433bde0cdf14d9b3f17357c07ff2ab8a6575e89c77dc0f2e148cffe2",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_WAVE35_HANDRAIL_REVIEW_3.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "13-wave-wall-handrail-review",
+    "sha256": "c13b1dfe836c886c9da9cc7e98dbc7c570b8361659ba003857c66e657200bd23",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/spatial-canvas.bindings.handrail-3.json"
+  },
+  "source_camera": {
+    "position": [
+      2.4755924100286713,
+      10.011726677936787,
+      4.9919749228031245
+    ],
+    "quaternion": [
+      -0.17882975341285587,
+      0.4233597234144927,
+      0.8181414376961131,
+      -0.3455879798390542
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": []
+}

@@ -1,0 +1,286 @@
+{
+  "schema": "spatial-canvas.context.v1",
+  "packet_id": "ctx_47d74362-33e5-4a07-8b9a-8cb016c69687",
+  "timestamp": "2026-10-05T07:57:29.640Z",
+  "selection": {
+    "schema": "spatial-canvas.selection.v1",
+    "design_id": "c_type_home",
+    "resource_id": "res_c_type_r4_full",
+    "source_revision": "r4",
+    "entity_ids": [
+      "ent_6bdf6778082342f78521def1ff6d8084"
+    ],
+    "mode": "replace",
+    "source": "pointer",
+    "timestamp": "2026-10-05T07:39:45.328Z",
+    "primary_entity_id": "ent_6bdf6778082342f78521def1ff6d8084"
+  },
+  "resource": {
+    "resource_id": "res_c_type_r4_full",
+    "design_id": "c_type_home",
+    "type": "interaction_proxy",
+    "format": "glb",
+    "authority": "derived",
+    "extensions": {
+      "spatial_canvas.blender": {
+        "meters_per_scene_unit": 1,
+        "source_coordinate_frame": "c_type_world",
+        "source_up_axis": "Z",
+        "source_authority": "frozen",
+        "bindings": {
+          "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+          "registry_revision": "3-open-ceiling-1",
+          "sha256": "531bc2816011539808caaf993735746eb73d4654a68a311b4d3dfe2aacb83b54",
+          "locator": "/Users/xiwei/Documents/ChatGPT/Spatial-Canvas/task-output/v03-c-type/open-ceiling/spatial-canvas.bindings.json"
+        }
+      },
+      "spatial_canvas.presentation": {
+        "color_mode": "source-flat",
+        "textures": false,
+        "opaque": true,
+        "roughness": 1,
+        "color_origins": {
+          "source_flat": 978
+        },
+        "flat_color_count": 33,
+        "profile": "open_ceiling_color_inspection"
+      }
+    }
+  },
+  "source": {
+    "resource_id": "c_type_r4",
+    "revision": "r4",
+    "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+    "authority": "frozen",
+    "bindings": {
+      "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+      "registry_revision": "3-open-ceiling-1",
+      "sha256": "531bc2816011539808caaf993735746eb73d4654a68a311b4d3dfe2aacb83b54",
+      "locator": "/Users/xiwei/Documents/ChatGPT/Spatial-Canvas/task-output/v03-c-type/open-ceiling/spatial-canvas.bindings.json"
+    }
+  },
+  "entities": [
+    {
+      "design_id": "c_type_home",
+      "global_id": "ent_6bdf6778082342f78521def1ff6d8084",
+      "native_object_id": "B11_K-UTILITY_UPPER_DOOR_1",
+      "semantic_type": "unassigned",
+      "room_id": "unassigned",
+      "source_resource_id": "c_type_r4",
+      "source_revision": "r4",
+      "authority_level": "HUMAN_DESIGN_GUIDE",
+      "mutable": false
+    }
+  ],
+  "view": {
+    "kind": "camera3d",
+    "data": {
+      "projection": "perspective",
+      "fov_degrees": 45,
+      "near": 0.026544349688336712,
+      "far": 2654.434968833671,
+      "position": [
+        4.17324298507692,
+        7.047605367755551,
+        -11.503935828178383
+      ],
+      "quaternion": [
+        0.02620264987772378,
+        0.9674582837416535,
+        0.22505675620405957,
+        -0.1126381234127502
+      ],
+      "projection_matrix": [
+        1.8362403269366956,
+        0,
+        0,
+        0,
+        0,
+        2.414213562373095,
+        0,
+        0,
+        0,
+        0,
+        -1.000020000200002,
+        -1,
+        0,
+        0,
+        -0.053089230268976106,
+        0
+      ],
+      "orbit_target": [
+        6.491546965195174,
+        2.084126079148615,
+        -1.6828386394823038
+      ],
+      "viewport": {
+        "width": 873,
+        "height": 664,
+        "pixel_ratio": 0.800000011920929
+      },
+      "frame_id": "blender_proxy_world",
+      "unit": "meter",
+      "up_axis": "Y"
+    }
+  },
+  "hit": {
+    "entity_id": "ent_6bdf6778082342f78521def1ff6d8084",
+    "xyz": [
+      5.359210435045675,
+      1.4221080421511942,
+      -1.2153437696397305
+    ],
+    "frame_id": "blender_proxy_world",
+    "unit": "meter",
+    "normal": [
+      0,
+      0,
+      -1
+    ],
+    "source": {
+      "xyz": [
+        5.359210435045675,
+        1.2153437696397305,
+        1.4221080421511942
+      ],
+      "frame_id": "c_type_world",
+      "unit": "meter",
+      "normal": [
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  "spatial_context": {
+    "resolution": "unavailable",
+    "containing_spaces": [],
+    "primary_space_id": null,
+    "point": null,
+    "frame_id": null,
+    "unit": null,
+    "up_axis": null,
+    "readiness": "BLOCKED_FOR_SPATIAL_CONTEXT",
+    "diagnostics": [
+      "No Space Registry is loaded. Object identity does not establish room boundaries. import authored Space Registry JSON with source provenance, level domains and reviewed boundaries.",
+      "No levels or coverage domains were supplied. import level IDs and coverage polygons with vertical ranges.",
+      "Space Registry with artifact SHA/locator must be loaded before spatial lookup."
+    ],
+    "registry": null,
+    "semantic_status": {
+      "relationship_status": {
+        "schema": "spatial-canvas.relationship-status.v1",
+        "component_hierarchy": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable component_hierarchy evidence. Import structured relationships or supplement authored graph."
+          ]
+        },
+        "physical_connectivity": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable physical_connectivity evidence. Import structured relationships or supplement authored graph."
+          ]
+        },
+        "space_adjacency": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable space_adjacency evidence. Import structured relationships or supplement authored graph."
+          ]
+        },
+        "transition_graph": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable transition_graph evidence. Import structured relationships or supplement authored graph."
+          ]
+        }
+      },
+      "schema": "spatial-canvas.semantic-status.v1",
+      "project_id": "c_type_home",
+      "design_id": "c_type_home",
+      "status": "BLOCKED_FOR_SPATIAL_CONTEXT",
+      "sources": [
+        {
+          "resource_id": "c_type_r4",
+          "type": "blender",
+          "revision": "r4",
+          "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "Spatial evidence has not been supplied."
+          ]
+        }
+      ],
+      "known_levels": [],
+      "coverage": {
+        "covered_levels": [],
+        "uncovered_levels": [],
+        "uncovered_volume": 0
+      },
+      "diagnostics": [
+        {
+          "code": "missing_regions",
+          "message": "No Space Registry is loaded. Object identity does not establish room boundaries.",
+          "action": "import authored Space Registry JSON with source provenance, level domains and reviewed boundaries."
+        },
+        {
+          "code": "missing_levels",
+          "message": "No levels or coverage domains were supplied.",
+          "action": "import level IDs and coverage polygons with vertical ranges."
+        },
+        {
+          "code": "proxy_semantics_unavailable",
+          "message": "Space Registry with artifact SHA/locator must be loaded before spatial lookup.",
+          "action": "Import current-design project and exact model-linked registry with artifact SHA/locator."
+        }
+      ],
+      "registry_id": null,
+      "registry_revision": null
+    }
+  },
+  "relationships": {
+    "subject_id": "ent_6bdf6778082342f78521def1ff6d8084",
+    "primary_space_id": null,
+    "design_id": "c_type_home",
+    "status": "unavailable",
+    "graph_id": null,
+    "graph_revision": null,
+    "nodes": [],
+    "edges": [],
+    "sources": [],
+    "registry": null,
+    "truncated": false,
+    "diagnostics": [
+      "No relationship graph loaded. Import source-linked graph JSON; physical/functional connections are unknown."
+    ],
+    "readiness": {
+      "schema": "spatial-canvas.relationship-status.v1",
+      "component_hierarchy": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable component_hierarchy evidence. Import structured relationships or supplement authored graph."
+        ]
+      },
+      "physical_connectivity": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable physical_connectivity evidence. Import structured relationships or supplement authored graph."
+        ]
+      },
+      "space_adjacency": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable space_adjacency evidence. Import structured relationships or supplement authored graph."
+        ]
+      },
+      "transition_graph": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable transition_graph evidence. Import structured relationships or supplement authored graph."
+        ]
+      }
+    }
+  }
+}

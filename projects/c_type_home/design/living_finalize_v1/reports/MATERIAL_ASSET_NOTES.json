@@ -1,0 +1,489 @@
+{
+  "status": "SHADER_BUILD_VERIFIED__VISUAL_INTEGRATION_PENDING",
+  "library_path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/scripts/materials_library.py",
+  "validation_path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/SHADER_VALIDATION.json",
+  "blender": "5.2.1 LTS",
+  "credit": "Powered by Poly Haven",
+  "license": "CC0",
+  "assets": [
+    {
+      "schemaVersion": 1,
+      "provider": "Poly Haven",
+      "credit": "Powered by Poly Haven",
+      "license": "CC0",
+      "licenseUrl": "https://polyhaven.com/license",
+      "source": "https://polyhaven.com/a/beige_wall_001",
+      "assetId": "beige_wall_001",
+      "assetType": "textures",
+      "resolution": "2k",
+      "status": "complete",
+      "files": [
+        {
+          "map": "diffuse",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/beige_wall_001/beige_wall_001_diff_2k.jpg",
+          "size": 235868,
+          "md5": "c927ac1136767f1df758ae064f50a2d1",
+          "file": "beige_wall_001_diffuse_2k.jpg",
+          "colorSpace": "sRGB",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/beige_wall_001/beige_wall_001_diffuse_2k.jpg",
+          "sha256": "222d4d2e7d5c425c97e5a66790852388cec7706714d773f769fba6bfe08cea4e",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "roughness",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/beige_wall_001/beige_wall_001_rough_2k.png",
+          "size": 9843268,
+          "md5": "d8d5524c86895d85be159a4b85be2ef7",
+          "file": "beige_wall_001_roughness_2k.png",
+          "colorSpace": "Non-Color",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/beige_wall_001/beige_wall_001_roughness_2k.png",
+          "sha256": "6c764ac8a0c458024ec6c3af768f79e7a38c4c8490bb5baabbb75e38c4011258",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "normal",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/beige_wall_001/beige_wall_001_nor_gl_2k.png",
+          "size": 22083339,
+          "md5": "f6668431f5204a8ccbc609eb7825a95a",
+          "file": "beige_wall_001_normal_2k.png",
+          "colorSpace": "Non-Color",
+          "normalConvention": "OpenGL",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/beige_wall_001/beige_wall_001_normal_2k.png",
+          "sha256": "b3af77bc736141eefe095f2720b85a6fbcae73302a2af70baf6da07699d083d8",
+          "local_checksum_verified": true
+        }
+      ],
+      "manifest_path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/beige_wall_001/asset-manifest.json"
+    },
+    {
+      "schemaVersion": 1,
+      "provider": "Poly Haven",
+      "credit": "Powered by Poly Haven",
+      "license": "CC0",
+      "licenseUrl": "https://polyhaven.com/license",
+      "source": "https://polyhaven.com/a/marble_01",
+      "assetId": "marble_01",
+      "assetType": "textures",
+      "resolution": "4k",
+      "status": "complete",
+      "files": [
+        {
+          "map": "diffuse",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/marble_01/marble_01_diff_4k.jpg",
+          "size": 5013465,
+          "md5": "f908003ccca4c746aa3e5564c6940a35",
+          "file": "marble_01_diffuse_4k.jpg",
+          "colorSpace": "sRGB",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/marble_01/marble_01_diffuse_4k.jpg",
+          "sha256": "3c7805a8988323b46d45d747530b659b4aa46e5bfa0b57c3d21083a403de229d",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "roughness",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/marble_01/marble_01_rough_4k.png",
+          "size": 25040422,
+          "md5": "5618670b1295cc252be4bece9b001476",
+          "file": "marble_01_roughness_4k.png",
+          "colorSpace": "Non-Color",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/marble_01/marble_01_roughness_4k.png",
+          "sha256": "fe6b25c7550d33880287ce99985c73d441bb286e9f94003ba130d7f0a37e55b4",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "normal",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/marble_01/marble_01_nor_gl_4k.png",
+          "size": 4794715,
+          "md5": "59bf77f68fb318f8eb680e0785b13dce",
+          "file": "marble_01_normal_4k.png",
+          "colorSpace": "Non-Color",
+          "normalConvention": "OpenGL",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/marble_01/marble_01_normal_4k.png",
+          "sha256": "a18d48a8172db8403e2c710ef95a72244f9d0dc05469a7fdab86066e64f5b92d",
+          "local_checksum_verified": true
+        }
+      ],
+      "manifest_path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/marble_01/asset-manifest.json"
+    },
+    {
+      "schemaVersion": 1,
+      "provider": "Poly Haven",
+      "credit": "Powered by Poly Haven",
+      "license": "CC0",
+      "licenseUrl": "https://polyhaven.com/license",
+      "source": "https://polyhaven.com/a/oak_wood_planks",
+      "assetId": "oak_wood_planks",
+      "assetType": "textures",
+      "resolution": "4k",
+      "status": "complete",
+      "files": [
+        {
+          "map": "diffuse",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/oak_wood_planks/oak_wood_planks_diff_4k.jpg",
+          "size": 10094919,
+          "md5": "afdebae04b31a4f77ca878d9c8292daa",
+          "file": "oak_wood_planks_diffuse_4k.jpg",
+          "colorSpace": "sRGB",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/oak_wood_planks/oak_wood_planks_diffuse_4k.jpg",
+          "sha256": "aadbd93033fdfd15d875e85ce7da3558a8375ea282e55d6c3a3dd4ce5272f483",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "roughness",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/oak_wood_planks/oak_wood_planks_rough_4k.png",
+          "size": 30403741,
+          "md5": "6880ad0738cbfbad4ff89e58135a8012",
+          "file": "oak_wood_planks_roughness_4k.png",
+          "colorSpace": "Non-Color",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/oak_wood_planks/oak_wood_planks_roughness_4k.png",
+          "sha256": "9edc7ab1e7a5291fa337b4fd3d116d08076c7d11e87b8af7a615b37b64b3ec5c",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "normal",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/oak_wood_planks/oak_wood_planks_nor_gl_4k.png",
+          "size": 83894995,
+          "md5": "a939583b1c515aaf95beb32d8d6664c1",
+          "file": "oak_wood_planks_normal_4k.png",
+          "colorSpace": "Non-Color",
+          "normalConvention": "OpenGL",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/oak_wood_planks/oak_wood_planks_normal_4k.png",
+          "sha256": "47db014a66523e3db33aea13bf1c4514bed09686351e479f6beb99917758fb09",
+          "local_checksum_verified": true
+        }
+      ],
+      "manifest_path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/oak_wood_planks/asset-manifest.json"
+    },
+    {
+      "schemaVersion": 1,
+      "provider": "Poly Haven",
+      "credit": "Powered by Poly Haven",
+      "license": "CC0",
+      "licenseUrl": "https://polyhaven.com/license",
+      "source": "https://polyhaven.com/a/rough_linen",
+      "assetId": "rough_linen",
+      "assetType": "textures",
+      "resolution": "4k",
+      "status": "complete",
+      "files": [
+        {
+          "map": "diffuse",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rough_linen/rough_linen_diff_4k.jpg",
+          "size": 13064750,
+          "md5": "8baff705eca1ecca5eefce25563b4b78",
+          "file": "rough_linen_diffuse_4k.jpg",
+          "colorSpace": "sRGB",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/rough_linen/rough_linen_diffuse_4k.jpg",
+          "sha256": "dca61aacd6cf3194681070cede3c16a3b61a32cb3eef5bf4c52db698b2286d3d",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "roughness",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rough_linen/rough_linen_rough_4k.png",
+          "size": 32593387,
+          "md5": "7c67ec955b4d4a33df97eea02c162862",
+          "file": "rough_linen_roughness_4k.png",
+          "colorSpace": "Non-Color",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/rough_linen/rough_linen_roughness_4k.png",
+          "sha256": "93722b447198431fe173e59180d9fec3d80fc57055eee882fe3fb7ff69f4f89c",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "normal",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rough_linen/rough_linen_nor_gl_4k.png",
+          "size": 77542996,
+          "md5": "43180ccade92ad31707b3e643feafd10",
+          "file": "rough_linen_normal_4k.png",
+          "colorSpace": "Non-Color",
+          "normalConvention": "OpenGL",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/rough_linen/rough_linen_normal_4k.png",
+          "sha256": "398b22ca7b753f5ac35f391f56b83a6045e4c3dfe479e0dcf4b8c4d8f2636b85",
+          "local_checksum_verified": true
+        }
+      ],
+      "manifest_path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/rough_linen/asset-manifest.json"
+    },
+    {
+      "schemaVersion": 1,
+      "provider": "Poly Haven",
+      "credit": "Powered by Poly Haven",
+      "license": "CC0",
+      "licenseUrl": "https://polyhaven.com/license",
+      "source": "https://polyhaven.com/a/washed_grey_oak_veneer",
+      "assetId": "washed_grey_oak_veneer",
+      "assetType": "textures",
+      "resolution": "4k",
+      "status": "complete",
+      "files": [
+        {
+          "map": "diffuse",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/washed_grey_oak_veneer/washed_grey_oak_veneer_diff_4k.jpg",
+          "size": 8281169,
+          "md5": "d4eb2e92e264065b9815c51f1e1d675b",
+          "file": "washed_grey_oak_veneer_diffuse_4k.jpg",
+          "colorSpace": "sRGB",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/washed_grey_oak_veneer/washed_grey_oak_veneer_diffuse_4k.jpg",
+          "sha256": "53fb910c5246b8182679cee807383c2c2ffc86a223ca87821866ae7fdf7138b4",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "roughness",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/washed_grey_oak_veneer/washed_grey_oak_veneer_rough_4k.png",
+          "size": 29864991,
+          "md5": "93a206f2e284907d33931a964446a176",
+          "file": "washed_grey_oak_veneer_roughness_4k.png",
+          "colorSpace": "Non-Color",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/washed_grey_oak_veneer/washed_grey_oak_veneer_roughness_4k.png",
+          "sha256": "62df6909a6efe4b019214be15e73f090b7362e72a24cdcb8e8a50a18b1785bc1",
+          "local_checksum_verified": true
+        },
+        {
+          "map": "normal",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/washed_grey_oak_veneer/washed_grey_oak_veneer_nor_gl_4k.png",
+          "size": 74522588,
+          "md5": "6b7a59ee5d22be7cafc2b1762e0cb69f",
+          "file": "washed_grey_oak_veneer_normal_4k.png",
+          "colorSpace": "Non-Color",
+          "normalConvention": "OpenGL",
+          "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/washed_grey_oak_veneer/washed_grey_oak_veneer_normal_4k.png",
+          "sha256": "dbbc6620d595c5eb4d25d5e09a95991411cabe0750f0f73293b3cd5c37b4e752",
+          "local_checksum_verified": true
+        }
+      ],
+      "manifest_path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/washed_grey_oak_veneer/asset-manifest.json"
+    }
+  ],
+  "total_file_bytes": 427274613,
+  "surface_roles": {
+    "WOOD": "Oak veneer scan adapted to pale ash color; not botanical ash scan",
+    "FLOOR": "Scanned oak boards, pale neutral wood-wax finish",
+    "FABRIC": "CC0 rough linen rescaled to fine upholstery weave, ivory/oatmeal palette",
+    "FABRIC_DARK": "Same scanned linen with muted gray-sage palette",
+    "RUG": "Same scan at denser flatwoven rug scale",
+    "STONE": "Color-adapted honed marble scan, restrained pale warm stone; not certified limestone",
+    "WALL": "Scanned plaster, warm white and restrained normal amplitude",
+    "CEILING": "Scanned plaster, warm white flatter finish",
+    "GLASS": "Neutral thin-wall IOR1.46 transmission with transparent shadow-ray passage",
+    "METAL": "Muted champagne microfacet metal, anisotropy .25, roughness .32",
+    "CERAMIC": "Warm ivory glaze, clear coat .14",
+    "LEAF": "Muted foliage dielectric with slight subsurface"
+  },
+  "uv": {
+    "name": "LF_PhysicalUV",
+    "units": "metres",
+    "grain_direction": "U texture axis follows requested LOCAL grain_axis; V is cross-grain",
+    "mapping": "Box projection, with correct geometric handedness and actual object/parent scales; scene unit conversion; stable per-object offsets",
+    "tile_metres": {
+      "WOOD": [
+        1.8,
+        0.6
+      ],
+      "FLOOR": [
+        2.2,
+        1.1
+      ],
+      "FABRIC": [
+        0.16,
+        0.16
+      ],
+      "FABRIC_DARK": [
+        0.16,
+        0.16
+      ],
+      "STONE": [
+        1.35,
+        1.35
+      ],
+      "WALL": [
+        1,
+        1
+      ],
+      "CEILING": [
+        1,
+        1
+      ],
+      "RUG": [
+        0.26,
+        0.26
+      ]
+    },
+    "warning": "Retain a proper curved-cloth unwrap by copying/scaling it to LF_PhysicalUV rather than projecting it. assign_uv copies shared mesh data to avoid changing UVs of other instances."
+  },
+  "scan_measurements": {
+    "method": "1024px grayscale gradient and FFT estimates; no image assets in chat",
+    "wood_scan_direction": "U horizontal grain on both wood scans",
+    "veneer_mean_abs_gradient_x_y": [
+      1.622,
+      6.624
+    ],
+    "floor_mean_abs_gradient_x_y": [
+      2.444,
+      6.505
+    ],
+    "linen_dominant_frequency_candidates": [
+      245,
+      368
+    ],
+    "approx_linen_weave_spacing_mm": [
+      0.65,
+      0.43
+    ],
+    "calibration": "Authored appearance scale, not certified original capture scale"
+  },
+  "color_spaces": {
+    "diffuse": "sRGB",
+    "normal": "Non-Color",
+    "roughness": "Non-Color"
+  },
+  "normal_wiring": "OpenGL +Y normal maps -> tangent Normal Map node using LF_PhysicalUV",
+  "transport": "GLASS transparent shadow pass is a stated efficient architectural approximation, not exact absorptive multilayer pane simulation. Camera/reflection rays retain IOR transmission. No blue tint, opacity or volume absorption.",
+  "packing": "Call materials_library.pack_material_images() before saving the separate finalization blend. Download source maps remain immutable.",
+  "render_validation": "No scene or lighting was authored here. Full-scene glass transport, material scale and rendered appearance await parent integration render.",
+  "source_protection": "Factory-startup check only; no R4 mother blend, FreeCAD file or root geometry/build script was opened or modified.",
+  "technical_validation": {
+    "blender": "5.2.1 LTS",
+    "keys": [
+      "WOOD",
+      "FLOOR",
+      "FABRIC",
+      "FABRIC_DARK",
+      "RUG",
+      "STONE",
+      "WALL",
+      "CEILING",
+      "GLASS",
+      "METAL",
+      "CERAMIC",
+      "LEAF"
+    ],
+    "maps": [
+      {
+        "name": "beige_wall_001_diffuse_2k.jpg",
+        "size": [
+          2048,
+          2048
+        ],
+        "color_space": "sRGB"
+      },
+      {
+        "name": "beige_wall_001_normal_2k.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "color_space": "Non-Color"
+      },
+      {
+        "name": "beige_wall_001_roughness_2k.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "color_space": "Non-Color"
+      },
+      {
+        "name": "marble_01_diffuse_4k.jpg",
+        "size": [
+          4096,
+          4096
+        ],
+        "color_space": "sRGB"
+      },
+      {
+        "name": "marble_01_normal_4k.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "color_space": "Non-Color"
+      },
+      {
+        "name": "marble_01_roughness_4k.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "color_space": "Non-Color"
+      },
+      {
+        "name": "oak_wood_planks_diffuse_4k.jpg",
+        "size": [
+          4096,
+          4096
+        ],
+        "color_space": "sRGB"
+      },
+      {
+        "name": "oak_wood_planks_normal_4k.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "color_space": "Non-Color"
+      },
+      {
+        "name": "oak_wood_planks_roughness_4k.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "color_space": "Non-Color"
+      },
+      {
+        "name": "rough_linen_diffuse_4k.jpg",
+        "size": [
+          4096,
+          4105
+        ],
+        "color_space": "sRGB"
+      },
+      {
+        "name": "rough_linen_normal_4k.png",
+        "size": [
+          4096,
+          4105
+        ],
+        "color_space": "Non-Color"
+      },
+      {
+        "name": "rough_linen_roughness_4k.png",
+        "size": [
+          4096,
+          4105
+        ],
+        "color_space": "Non-Color"
+      },
+      {
+        "name": "washed_grey_oak_veneer_diffuse_4k.jpg",
+        "size": [
+          4096,
+          4096
+        ],
+        "color_space": "sRGB"
+      },
+      {
+        "name": "washed_grey_oak_veneer_normal_4k.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "color_space": "Non-Color"
+      },
+      {
+        "name": "washed_grey_oak_veneer_roughness_4k.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "color_space": "Non-Color"
+      }
+    ],
+    "uv_count": 24,
+    "test_top_UV_metres": [
+      1.7999999523162842,
+      0.6000000238418579
+    ],
+    "node_shader_build": "PASS",
+    "physical_uv_scale": "PASS",
+    "source_scene_opened": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "reference": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/references/OWNER_RELAXED_COVER.png",
+  "sha256": "6833697847dbf30d78e154d7a5f0bc1f02a1be12f3c2b21a8bed7c956801b6e6",
+  "role": "appearance only; no dimensions or real product certification",
+  "owner_statement": "你关注这张图，松弛感是不是明显？",
+  "observations": [
+    "back cover has multiple broad shallow irregular transverse folds",
+    "top and sewing edge are gently wavy rather than geometrically straight",
+    "seat broad surface retains loft with slower shallow undulations",
+    "cover is relaxed while inner filling stays full; avoid rigid vertical boxing"
+  ],
+  "methods_reused": "owner catalog p4/p8; prior researched Blender Guru stages and localized alpha creasing; no exact matching licensed product asset found in prior bounded search",
+  "target": "one seat/back trial; no house writeback; same wood/material/studio",
+  "latest_owner_feedback": "V7 灰模感觉有点太松，但实渲仍紧绷；优先解释渲染差异，暂停继续松化模型。",
+  "gray_screenshot_sha256": "43b5aa991bc5bc73ef550455c2e37df2b79c8e0cd21db54b1a6f62b063889cc0",
+  "current_scope": "same V7 mesh, renderer/material/light diagnosis; no further geometry changes"
+}

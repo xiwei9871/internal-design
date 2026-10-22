@@ -1,0 +1,10 @@
+{
+  "revision": "r4-bookcase-short-rail-review-6",
+  "fresh_glb_entities": 1010,
+  "all_stable_ids_retained": true,
+  "bookcase_bounds_match_blender": true,
+  "rail_span_m": 0.9000000000000001,
+  "rail_extensions_m": 0.1,
+  "three_existing_steps_unchanged": true,
+  "frozen_r4_unchanged": true
+}

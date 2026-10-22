@@ -1,0 +1,46 @@
+{
+  "stage": "preview",
+  "engine": "CYCLES",
+  "device": "METAL",
+  "samples": 24,
+  "denoise": "OIDN GPU High Accurate",
+  "room_light_camera_color": "V4 unchanged",
+  "images": [
+    {
+      "camera": "V4_CAM_SOFA_COMPLETE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/preview/V4_CAM_SOFA_COMPLETE.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 13.71
+    },
+    {
+      "camera": "V4_CAM_DINING_DETAIL",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/preview/V4_CAM_DINING_DETAIL.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 8.05
+    },
+    {
+      "camera": "CAM_living_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/preview/CAM_living_VIEW_01.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 8.29
+    },
+    {
+      "camera": "V5_MATERIAL_CONTROL",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/preview/WOOD_FIXED_LIGHT_COMPARE.png",
+      "size": [
+        1400,
+        700
+      ],
+      "seconds": 2.78
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schema": "c-type.sofa-softness-research.v1",
+  "date": "2026-10-11",
+  "status": "RESEARCH_COMPLETE_MODEL_UNCHANGED",
+  "sources": [
+    {
+      "id": "community_folds",
+      "url": "https://blender.stackexchange.com/questions/338581/best-workflow-to-create-creases-folds-on-chair",
+      "type": "USER_CASE",
+      "reviewed": "fullquestion,selfanswer,criticalcommentsandbeforeafterimages",
+      "finding": "Wrinklealphas/Drawsculptagainstreference;inwardversusoutwardfoldmatters",
+      "limit": "authorreportedimprovement;notlocalvalidation",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    },
+    {
+      "id": "blenderguru_workflow",
+      "url": "https://www.blenderguru.com/posts/couch-william",
+      "type": "AUTHOR_TUTORIAL",
+      "reviewed": "completewrittenoverviewandchapterbreakdown",
+      "finding": "pressurebase,ClothBrush/FaceSets,upholsterymaps,stitches",
+      "limit": "fullvideosnotwatched;notlocalvalidation",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    },
+    {
+      "id": "community_long_cushion",
+      "url": "https://blender.stackexchange.com/questions/326298/long-cushion-for-lounge-chair-or-sofa",
+      "type": "USER_CASE",
+      "reviewed": "questionandanswer",
+      "finding": "subjectspecificbendandpingroup,pressure,appliedseamloop,subdivision",
+      "limit": "demoPressure1notportablepreset",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    },
+    {
+      "id": "md_archviz",
+      "url": "https://www.learnarchviz.com/single-post/2019/05/05/model-perfect-wrinkled-cushions-furniture-with-marvelous-designer-and-3ds-max",
+      "type": "AUTHOR_WORKFLOW",
+      "reviewed": "fulltext",
+      "finding": "unwrappedbase/avatar/garment,sewing/simulation,conformretopology",
+      "limit": "historicMD8/Maxroute;Blendertransferuntested",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    },
+    {
+      "id": "md_pillow",
+      "url": "https://support.marvelousdesigner.com/hc/en-us/articles/47358258513177-Pillow",
+      "type": "OFFICIAL_TUTORIAL",
+      "reviewed": "lessonoverview",
+      "finding": "pillowandpillowcase,pressureandwrinkles",
+      "limit": "noinstallationorvideoexecution",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    },
+    {
+      "id": "physical_fill",
+      "url": "https://www.vanguardfurniture.com/CushionOptions",
+      "type": "MANUFACTURER_CONSTRUCTION",
+      "reviewed": "seatandbackconstructiondescriptions",
+      "finding": "foamcorewithsoftwrap,crown;channelledfiber/featherbackfill",
+      "limit": "brandconstructionevidence,notownerproductspecification",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    },
+    {
+      "id": "cloth_pressure",
+      "url": "https://docs.blender.org/manual/en/5.2/physics/cloth/settings/physical_properties.html#pressure",
+      "type": "OFFICIAL_TOOL_DOC",
+      "reviewed": "pressure/internal-springssections",
+      "finding": "gasmodel;shapeapproximationnotfoam/featherconstitutivemodel",
+      "limit": "notphysicalvalidationofourprototype",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    },
+    {
+      "id": "cloth_brush",
+      "url": "https://docs.blender.org/manual/en/5.2/sculpt_paint/sculpting/brushes/cloth.html",
+      "type": "OFFICIAL_TOOL_DOC",
+      "reviewed": "fullbrushsettings",
+      "finding": "localarea,pinnedboundary,persistentbase,plasticity",
+      "limit": "requiresreferenceguidedsculpting",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    },
+    {
+      "id": "upholstery_material",
+      "url": "https://www.poliigon.com/texture/moss-plain-weave-upholstery-fabric-texture-green/4314",
+      "type": "ASSET_PAGE",
+      "reviewed": "description,size,formats,compatibility",
+      "finding": "50x50cmspecificplainweavematerial,JPG/TIF,12files",
+      "limit": "Premiumlicenseunacquired;notmatchingownerfabric",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    },
+    {
+      "id": "complete_learning_model",
+      "url": "https://blenderguru.gumroad.com/l/WilliamSofa",
+      "type": "ASSET_LICENSE_PAGE",
+      "reviewed": "contentsandlicenseterms",
+      "finding": "nativecouch.blendwithcompleteexample",
+      "limit": "CCBYmodelplusbrandeditorialrestriction;texturesmodel-only;notdownloadedortransplanted",
+      "state": "PAGE_VERIFIED_EXTERNAL_EXAMPLE"
+    }
+  ],
+  "owner_feedback": {
+    "wood": "V5appearanceclearlyimproved;retain",
+    "soft": "V5littletonoimprovement;notaccepted"
+  },
+  "next_trial": "subject-specificseat/backmacroformfromsameproduct;localizedsculpt/materialaftershape;noautomaticproductionauthorizationfromresearch",
+  "blender_started": false,
+  "model_writes": 0,
+  "renders": 0,
+  "image2_requests": 0,
+  "downloads": 0,
+  "purchases": 0,
+  "software_installations": 0
+}

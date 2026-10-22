@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-12",
+  "scope": "discussion, read-only material audit and real-product reference study; no scene edit/render/Image2",
+  "model": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v1/assembly/WHOLE_HOUSE_REVIEW_SUPPORTED_V2.blend",
+  "accepted_basic_model_rooms": [
+    "living",
+    "dining",
+    "kitchen",
+    "service_balcony",
+    "entry",
+    "study",
+    "guest_bath"
+  ],
+  "partial_rooms": [
+    "reading_transition",
+    "secondary_bath",
+    "north_sunroom"
+  ],
+  "needs_rework": [
+    "hallway",
+    "mother_bedroom",
+    "couple_bedroom",
+    "guest_bedroom"
+  ],
+  "cannot_judge": [
+    "master_bath"
+  ],
+  "global_lighting": "too dark; same-camera controlled diagnosis required",
+  "findings": {
+    "hallway": "R4_DOOR_FRAME_EAST/HEAD/WEST use RENDER_BRUSHED_NICKEL, Metallic0.8 Roughness0.3; casings use V5 wood. Inner frame finish inconsistent with user wood frames.",
+    "secondary_bath": "R3_SHOWER_GLASS_0..2 clear transmissive shader, Metallic0 Roughness0.07 Transmission1; not assigned mirror shader, but insufficient frosting and reflective lighting cause mirror-like perception.",
+    "north_sunroom": "SUNROOM_COMPACT_TWO_SEAT_SOFA has two V5 wood slots; laundry display/bezel/window0..1 also wood. Wrong inherited material semantics; V10 upholstery was installed in living only.",
+    "couple_bedside": "custom round top with three legs is side-table construction, lacks real bedside cabinet storage/volume.",
+    "lighting": "AgX Medium High Contrast, exposure+0.15, gamma1; actual source settings alone do not establish dark-scene root cause."
+  },
+  "catalog_references": [
+    {
+      "page": 15,
+      "products": [
+        "2016 series timber bed, includes1200x2000 mattress family",
+        "2029 upholstered-headboard wood bed"
+      ],
+      "role": "guest/couple bed prototypes, not selected SKU, check true exterior dimensions"
+    },
+    {
+      "page": 16,
+      "products": [
+        "2105 bedside500x400x460 or420x400x460",
+        "2106 bedside500x400x490",
+        "2110 bedside450x400x480"
+      ],
+      "role": "real enclosed/drawer bedside cabinet alternatives"
+    },
+    {
+      "page": 17,
+      "products": [
+        "2116 bedside420x400x460",
+        "2117 bedside450x350x500",
+        "2206 vanity800x413x813 or1000x413x813",
+        "2208 vanity800x400x780 or1000x400x780"
+      ],
+      "role": "real references; current vanity reserve900x450 cannot be distorted into1000 product"
+    },
+    {
+      "page": 20,
+      "products": [
+        "5009 cabinet900x380x1800",
+        "5011 narrow ladder shelf500x350x1800"
+      ],
+      "role": "joinery detail/whole-product reference; current820x320 space conflicts with5009 dimensions, not automatic replacement"
+    }
+  ],
+  "next_order": [
+    "controlled hallway/living light diagnostic with unchanged geometry/materials",
+    "wood-frame and frosted-shower material corrections",
+    "real product/model assets for vanity/couple bed/bedside/guest furniture",
+    "reading books/joinery and complete north upholstery/laundry finishes",
+    "master bath wider+detail review views"
+  ],
+  "hunyuan": "User may later provide GLB; not yet requested generation. Validate scale, shape, UV/materials/topology and actual fit before use.",
+  "owner_selected_bed_style": {
+    "family": "木甲木乙2016系列",
+    "catalog": "木甲木乙-白蜡木系列.pdf page15",
+    "owner_attachment": "design/whole_house_model_v1/owner_review_2026_10_12/OWNER_SELECTED_BED_2016.png",
+    "attachment_sha256": "6693fd39076fd8d33cae715f32158bcb697bee0012f69c777d723dbef2c9d42e",
+    "status": "OWNER_STYLE_ACCEPTED_NOT_DIMENSION_OR_PROCUREMENT_APPROVAL",
+    "application_priority": [
+      "couple_bedroom",
+      "guest_bedroom"
+    ],
+    "other_bedrooms": "no automatic replacement of mother bedroom until scope is resolved",
+    "visible_features": [
+      "simple solid wood headboard/frame",
+      "slender rail instead of oversize platform",
+      "real planted feet",
+      "separate mattress and naturally draped linen bedding"
+    ],
+    "catalog_dimensions_mm": {
+      "2016-1.8": {
+        "outer_as_printed": [
+          2090,
+          1930,
+          980
+        ],
+        "mattress": [
+          1800,
+          2000
+        ]
+      },
+      "2016-1.2": {
+        "outer_as_printed": [
+          2090,
+          1330,
+          980
+        ],
+        "mattress": [
+          1200,
+          2000
+        ]
+      }
+    },
+    "dimension_policy": "Check product exterior, axis and installation clearance against current bed footprint; never squeeze product to fit or derive architecture dimensions from photograph. Fit conflicts must be reported.",
+    "asset_workflow": "seek complete matching asset first; if absent use same product evidence for complete construction, do not reuse rejected generic bed shape",
+    "measured_fit_conflict": {
+      "couple_existing_placeholder_mm": [
+        2100,
+        1800,
+        550
+      ],
+      "2016_1_8_outer_plan_mm": [
+        2090,
+        1930
+      ],
+      "width_increase_mm": 130,
+      "status": "reported; preserve actual product proportions and verify bedroom circulation before insertion"
+    }
+  }
+}

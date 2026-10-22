@@ -1,0 +1,67 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_sunroom_stepped_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_sunroom_stepped",
+  "source_resource": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sunroom_stepped_storage_v1/SUNROOM_STEPPED_STORAGE_V1.blend",
+  "source_sha256": "cde068f138c74abdc158012377579882399a48866fdc0acc261d23ff5f98cc68",
+  "source_revision": "sunroom-stepped-storage-review-1",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "sunroom-stepped-storage-review-1",
+        "sha256": "5b15424ea16e0876454d477609d339af1856c8e5bec209c468e5c97d8f8c903c",
+        "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sunroom_stepped_storage_v1/spatial-canvas.bindings.full.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": true,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 480,
+        "display_floor": 5,
+        "source_flat": 222,
+        "display_furniture": 302,
+        "balconyglass": 3,
+        "display_palette": 2
+      },
+      "flat_color_count": 41
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "source_design_authority": "DERIVED_DESIGN_MODEL",
+      "lower_open_mm": [
+        1800,
+        2100,
+        350
+      ],
+      "upper_closed_mm": [
+        2100,
+        2600,
+        600
+      ],
+      "dynamic_head_clearance_verified": false
+    }
+  },
+  "entity_count": 977,
+  "scope": "full"
+}

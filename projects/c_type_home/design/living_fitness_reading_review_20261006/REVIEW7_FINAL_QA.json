@@ -1,0 +1,13 @@
+{
+  "revision": "r4-seating-south-1m-review-7",
+  "fresh_glb_entities": 1010,
+  "all_stable_ids_retained": true,
+  "three_moved_bounds_match_blender": true,
+  "source_delta_m": [
+    0,
+    -1,
+    0
+  ],
+  "only_selected_source_transforms_changed": true,
+  "frozen_r4_unchanged": true
+}

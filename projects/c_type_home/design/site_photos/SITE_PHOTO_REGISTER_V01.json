@@ -1,0 +1,173 @@
+{
+  "register": "SITE_PHOTO_REGISTER_V01",
+  "scope": "KITCHEN_AND_PHOTOGRAPHED_ADJACENT_CABINETRY_ONLY",
+  "authority": "USER_SUPPLIED_CURRENT_SITE_PHOTOS",
+  "photos": [
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_001",
+      "filename": "design/site_photos/originals/SITE_PHOTO_KITCHEN_001.jpg",
+      "original_upload": "/private/var/folders/ch/yf284jsj7f7_b0tgqkpxhwq00000gn/T/codex-clipboard-03c642c5-c2ea-45ab-a67f-377f20eef07f.jpg",
+      "sha256": "236215ac4ffbb67f11148ca9e9c988ca85c1963ec10ba8505384b2bc38cfe931",
+      "room": "KITCHEN",
+      "approx_direction": "approx north fridge run",
+      "image_size": [
+        3000,
+        4000
+      ],
+      "exif_focal_length": null,
+      "exif_focal_length_35mm": null,
+      "exif_camera_model": null,
+      "description": "冰箱、侧高柜与冰箱上柜",
+      "status": "REGISTRATION_LOW",
+      "visible_architectural_anchors": [
+        "wall/cabinet verticals",
+        "counter edges",
+        "window/column edges where visible"
+      ],
+      "dimension_authority": "PHOTO_RELATIONSHIPS_ONLY_UNTIL_REGISTRATION_AND_SCALE_GATE",
+      "source_context": "User states old cabinet PDF was initial installation; photos show subsequent alterations",
+      "camera_name": "SITE_CAM_KITCHEN_001",
+      "registration_report": "PHOTO_REGISTRATION_REPORT.json"
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_002",
+      "filename": "design/site_photos/originals/SITE_PHOTO_KITCHEN_002.jpg",
+      "original_upload": "/private/var/folders/ch/yf284jsj7f7_b0tgqkpxhwq00000gn/T/codex-clipboard-51ffddad-4c85-4cd4-a744-904652aba989.jpg",
+      "sha256": "782514c1385148abac27b8b4fb5c748457176971b06a5f4a5c074c2f5fd82224",
+      "room": "KITCHEN",
+      "approx_direction": "approx north/east corner",
+      "image_size": [
+        3000,
+        4000
+      ],
+      "exif_focal_length": null,
+      "exif_focal_length_35mm": null,
+      "exif_camera_model": null,
+      "description": "冰箱转角、微波炉架与台面",
+      "status": "REGISTRATION_FAILED",
+      "visible_architectural_anchors": [
+        "wall/cabinet verticals",
+        "counter edges",
+        "window/column edges where visible"
+      ],
+      "dimension_authority": "PHOTO_RELATIONSHIPS_ONLY_UNTIL_REGISTRATION_AND_SCALE_GATE",
+      "source_context": "User states old cabinet PDF was initial installation; photos show subsequent alterations",
+      "camera_name": "SITE_CAM_KITCHEN_002",
+      "registration_report": "PHOTO_REGISTRATION_REPORT.json"
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_003",
+      "filename": "design/site_photos/originals/SITE_PHOTO_KITCHEN_003.jpg",
+      "original_upload": "/private/var/folders/ch/yf284jsj7f7_b0tgqkpxhwq00000gn/T/codex-clipboard-842dcee4-8a04-4596-b455-650e594f4466.jpg",
+      "sha256": "11c15158f9db0ac5b5f1364c696b14dffca4aaa3b0f2ea334fc92ef6c7a1f1d8",
+      "room": "KITCHEN",
+      "approx_direction": "approx east cabinet run",
+      "image_size": [
+        4000,
+        3000
+      ],
+      "exif_focal_length": null,
+      "exif_focal_length_35mm": null,
+      "exif_camera_model": null,
+      "description": "长柜、灶台、抽屉、洗碗机与开放格",
+      "status": "REGISTRATION_FAILED",
+      "visible_architectural_anchors": [
+        "wall/cabinet verticals",
+        "counter edges",
+        "window/column edges where visible"
+      ],
+      "dimension_authority": "PHOTO_RELATIONSHIPS_ONLY_UNTIL_REGISTRATION_AND_SCALE_GATE",
+      "source_context": "User states old cabinet PDF was initial installation; photos show subsequent alterations",
+      "camera_name": "SITE_CAM_KITCHEN_003",
+      "registration_report": "PHOTO_REGISTRATION_REPORT.json"
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_004",
+      "filename": "design/site_photos/originals/SITE_PHOTO_KITCHEN_004.jpg",
+      "original_upload": "/private/var/folders/ch/yf284jsj7f7_b0tgqkpxhwq00000gn/T/codex-clipboard-fddd0fe3-3391-499c-be80-61c321ab869c.jpg",
+      "sha256": "1cd7628350e43f4946743c0c5ee1e84692aaaa3f3d762bbf082e8280fb9ba85c",
+      "room": "KITCHEN_ADJACENT",
+      "approx_direction": "approx sink/west return; exact new-cabinet placement unconfirmed",
+      "image_size": [
+        4000,
+        3000
+      ],
+      "exif_focal_length": null,
+      "exif_focal_length_35mm": null,
+      "exif_camera_model": null,
+      "description": "水槽端、台面旁矮柜、柱侧与高储物柜",
+      "status": "REGISTRATION_FAILED",
+      "visible_architectural_anchors": [
+        "wall/cabinet verticals",
+        "counter edges",
+        "window/column edges where visible"
+      ],
+      "dimension_authority": "PHOTO_RELATIONSHIPS_ONLY_UNTIL_REGISTRATION_AND_SCALE_GATE",
+      "source_context": "User states old cabinet PDF was initial installation; photos show subsequent alterations",
+      "camera_name": "SITE_CAM_KITCHEN_004",
+      "registration_report": "PHOTO_REGISTRATION_REPORT.json"
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_005",
+      "filename": "design/site_photos/originals/SITE_PHOTO_KITCHEN_005.jpg",
+      "original_upload": "/private/var/folders/ch/yf284jsj7f7_b0tgqkpxhwq00000gn/T/codex-clipboard-67f7a546-d678-4571-8b09-50c490b066ab.jpg",
+      "sha256": "f5ace6d21a65c8ba6aa0b2f276b0242899e8b57fd4276585ba2079abab3d5810",
+      "room": "KITCHEN",
+      "approx_direction": "approx south sink and west return",
+      "image_size": [
+        3000,
+        4000
+      ],
+      "exif_focal_length": null,
+      "exif_focal_length_35mm": null,
+      "exif_camera_model": null,
+      "description": "水槽、窗前设备、侧开放架与回转矮柜",
+      "status": "REGISTRATION_FAILED",
+      "visible_architectural_anchors": [
+        "wall/cabinet verticals",
+        "counter edges",
+        "window/column edges where visible"
+      ],
+      "dimension_authority": "PHOTO_RELATIONSHIPS_ONLY_UNTIL_REGISTRATION_AND_SCALE_GATE",
+      "source_context": "User states old cabinet PDF was initial installation; photos show subsequent alterations",
+      "camera_name": "SITE_CAM_KITCHEN_005",
+      "registration_report": "PHOTO_REGISTRATION_REPORT.json"
+    },
+    {
+      "photo_id": "SITE_PHOTO_KITCHEN_006",
+      "filename": "design/site_photos/originals/SITE_PHOTO_KITCHEN_006.jpg",
+      "original_upload": "/private/var/folders/ch/yf284jsj7f7_b0tgqkpxhwq00000gn/T/codex-clipboard-b0d38a6a-862b-4ae8-971a-48a1b0e2b767.jpg",
+      "sha256": "55e4fd4c423c33c18396ba0be629722e5243d3510d09f719687468040d259e46",
+      "room": "ADJACENT_BALCONY",
+      "approx_direction": "adjacent balcony cabinet; R029/R032 identity pending",
+      "image_size": [
+        3000,
+        4000
+      ],
+      "exif_focal_length": null,
+      "exif_focal_length_35mm": null,
+      "exif_camera_model": null,
+      "description": "窗边餐边／储物柜与木质斜顶",
+      "status": "REGISTRATION_FAILED",
+      "visible_architectural_anchors": [
+        "wall/cabinet verticals",
+        "counter edges",
+        "window/column edges where visible"
+      ],
+      "dimension_authority": "PHOTO_RELATIONSHIPS_ONLY_UNTIL_REGISTRATION_AND_SCALE_GATE",
+      "source_context": "User states old cabinet PDF was initial installation; photos show subsequent alterations",
+      "camera_name": "SITE_CAM_KITCHEN_006",
+      "registration_report": "PHOTO_REGISTRATION_REPORT.json"
+    }
+  ],
+  "photo_count": 6,
+  "focal_length_source": "NO_USABLE_FOCAL_EXIF_IN_CLIPBOARD_IMAGES",
+  "human_confirmed_current_dimensions": {
+    "countertop_height_mm": 820,
+    "countertop_depth_mm": 600,
+    "fridge_width_mm": 905,
+    "fridge_depth_mm": 710,
+    "fridge_height_mm": 1700,
+    "authority": "HUMAN_CONFIRMED_CURRENT_SAME_AS_INITIAL_PDF"
+  }
+}

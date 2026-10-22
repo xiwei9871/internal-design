@@ -1,0 +1,170 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console1310_v5/WHOLE_HOUSE_CONSOLE1310_REAL_V5.blend",
+  "object": "HUNYUAN_V3_COUPLE_BED",
+  "rotation_euler": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "bounds_m": [
+    [
+      9.13700008392334,
+      1.1319999694824219,
+      0.44999998807907104
+    ],
+    [
+      11.267000198364258,
+      3.0420000553131104,
+      1.5200001001358032
+    ]
+  ],
+  "dominant_planar_checks": [
+    {
+      "z_peak_m": 0.741,
+      "area_m2": 3.391616736002884,
+      "point_count": 1420,
+      "xy_bounds_m": [
+        [
+          9.152994155883789,
+          1.1647040843963623
+        ],
+        [
+          11.145678520202637,
+          3.006019115447998
+        ]
+      ],
+      "fitted_tilt_deg": 0.002157556462770152,
+      "height_spread_mm": 0.5916357040405273
+    },
+    {
+      "z_peak_m": 0.757,
+      "area_m2": 3.361020184283352,
+      "point_count": 2031,
+      "xy_bounds_m": [
+        [
+          9.204777717590332,
+          1.2065715789794922
+        ],
+        [
+          11.13599681854248,
+          2.9613747596740723
+        ]
+      ],
+      "fitted_tilt_deg": 0.002292452041712596,
+      "height_spread_mm": 0.8769631385803223
+    },
+    {
+      "z_peak_m": 0.706,
+      "area_m2": 3.278120722878376,
+      "point_count": 2155,
+      "xy_bounds_m": [
+        [
+          9.206865310668945,
+          1.207159399986267
+        ],
+        [
+          11.152042388916016,
+          2.9606311321258545
+        ]
+      ],
+      "fitted_tilt_deg": 0.0030428714419904485,
+      "height_spread_mm": 0.5002021789550781
+    }
+  ],
+  "planar_bands": [
+    {
+      "z_band_m": [
+        0.64,
+        0.68
+      ],
+      "triangle_count": 828,
+      "horizontal_area_m2": 0.4244039306026831,
+      "area_weighted_normal": [
+        -4.0627734891636446e-05,
+        0.0003983563024404215,
+        0.9992510374232407
+      ],
+      "tilt_deg": 0.02295972675717836
+    },
+    {
+      "z_band_m": [
+        0.69,
+        0.72
+      ],
+      "triangle_count": 3973,
+      "horizontal_area_m2": 3.320907956250501,
+      "area_weighted_normal": [
+        -8.785306513309162e-05,
+        3.845079147068606e-05,
+        0.9999645049873527
+      ],
+      "tilt_deg": 0.0054948048380504735
+    },
+    {
+      "z_band_m": [
+        0.73,
+        0.78
+      ],
+      "triangle_count": 6937,
+      "horizontal_area_m2": 6.780737579604173,
+      "area_weighted_normal": [
+        0.0003048622017642596,
+        -6.774362501643106e-05,
+        0.9999475514278215
+      ],
+      "tilt_deg": 0.01789430630648589
+    },
+    {
+      "z_band_m": [
+        0.78,
+        0.84
+      ],
+      "triangle_count": 238,
+      "horizontal_area_m2": 0.08993817948835238,
+      "area_weighted_normal": [
+        -0.0047876546013640355,
+        0.00012052597954854124,
+        0.9987217720791923
+      ],
+      "tilt_deg": 0.27474839878932295
+    },
+    {
+      "z_band_m": [
+        0.84,
+        0.92
+      ],
+      "triangle_count": 2,
+      "horizontal_area_m2": 6.350813991572133e-05,
+      "area_weighted_normal": [
+        0.061162981727641626,
+        0.09642181162477138,
+        0.9930903724564067
+      ],
+      "tilt_deg": 6.55900075951682
+    },
+    {
+      "z_band_m": [
+        0.92,
+        1.03
+      ],
+      "triangle_count": 4349,
+      "horizontal_area_m2": 2.6708206828089915,
+      "area_weighted_normal": [
+        0.004757552059793565,
+        1.1912760348760357e-05,
+        0.9969018099172631
+      ],
+      "tilt_deg": 0.2734335882082494
+    }
+  ],
+  "images": [
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bed_alignment_v6/diagnosis/top.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bed_alignment_v6/diagnosis/side.png",
+    "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bed_alignment_v6/diagnosis/foot.png"
+  ],
+  "source_saved": false,
+  "decision": "retain_candidate_no_significant_bedboard_tilt",
+  "source_sha256": "3d75cbabe06a0bbace8fb95fb395bcc7f645ed5d26d6fed2d1fb094f0881f63a",
+  "limitations": "Saved V5 checked; live unsaved edits not inspected. Horizontal generated panels measured; mattress and decorative runner are nonplanar textiles.",
+  "initial_invalid_top_image_excluded": true
+}

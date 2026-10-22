@@ -1,0 +1,7 @@
+{
+  "same_camera": "CAM_living_VIEW_01",
+  "v7_mean_image_luma": 149.5101698634722,
+  "v8_mean_image_luma": 153.26622889833334,
+  "ratio": 1.0251224317268253,
+  "interpretation": "Image brightness regression check, not illuminance/colorimetry or material appearance certification"
+}

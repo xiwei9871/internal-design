@@ -1,0 +1,49 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_living_wave35_aluminum_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_LIVING_WAVE35_ALUMINUM_REVIEW.blend",
+  "source_sha256": "dd6e951c9d1da4539373caf9f0ab753bded05d8c0e52dfd40515cd0570765c82",
+  "source_revision": "r4-living-wave35-aluminum-review-1",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "11-living-wave35-aluminum-review",
+        "sha256": "0655a6c90b98dc5fa0e2152453e7ee1f548d74e4e0174e1c81e61c25288dca5e",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/spatial-canvas.bindings.wave-glass.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": true,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 649,
+        "display_floor": 5,
+        "display_furniture": 333
+      },
+      "flat_color_count": 3
+    }
+  },
+  "entity_count": 987,
+  "scope": "full"
+}

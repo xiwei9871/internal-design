@@ -1,0 +1,80 @@
+{
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.026464257027775006,
+  "far": 2646.4257027775006,
+  "position": [
+    11.010805903297696,
+    10.195608287075464,
+    -20.30733322379301
+  ],
+  "quaternion": [
+    -0.012042333528728431,
+    0.8777872782731035,
+    0.4783892056369109,
+    0.022096249346107478
+  ],
+  "projection_matrix": [
+    2.381928388433485,
+    0,
+    0,
+    0,
+    0,
+    2.4142135623730954,
+    0,
+    0,
+    0,
+    0,
+    -1.000020000200002,
+    -1,
+    0,
+    0,
+    -0.05292904334598348,
+    0
+  ],
+  "orbit_target": [
+    10.694724496621483,
+    0.45483896040364413,
+    -14.033046080453467
+  ],
+  "viewport": {
+    "width": 673,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "sunroom_integrated_laundry_review_14",
+  "preview_uri": "SUNROOM_REVIEW14_FRONT.png",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_revision": "r4-sunroom-integrated-laundry-review-14",
+  "source_sha256": "0d2dfc975b8aa25ff193362d6ca095df10dd8d65837a311381a14046730632e8",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_SUNROOM_INTEGRATED_LAUNDRY_REVIEW_14.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "24-integrated-laundry-east-freezer",
+    "sha256": "22ad92381625192f4d45bd1403b85cccaa32f5058bb4ffdc329b1663f731fac5",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.review14.json"
+  },
+  "source_camera": {
+    "position": [
+      11.010805903297696,
+      20.30733322379301,
+      10.195608287075464
+    ],
+    "quaternion": [
+      0.007109192051947415,
+      0.2824170855538891,
+      0.9589615882585,
+      0.024139623450895417
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": []
+}

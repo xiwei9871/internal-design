@@ -1,0 +1,17 @@
+{
+  "schema": "c-type.room-material-trial.v3",
+  "room": "kitchen",
+  "date": "2026-10-10",
+  "status": "OWNER_AUTHORIZED_TRIAL_NOT_FINAL_ACCEPTANCE",
+  "scope": "open kitchen literal owner request; cabinet/layout/openings/datum remain frozen",
+  "appearance_reference": {
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/whole_house_modes_v3/kitchen/A_faithful/VIEW_01.png",
+    "sha256": "00ba5016931f1a5969130accd8031d9ef57258e3be5abd67a5e0d3a69cc0d95e",
+    "role": "existing Faithful appearance reference; no dimension authority"
+  },
+  "geometry_authority": "preserved current model and kitchen frozen V1",
+  "materials": "native PolyHaven ash; existing quiet quartz baseline; refined stainless/black metal",
+  "equipment_SKU_approved": false,
+  "source_writeback": false,
+  "candidate": "projects/c_type_home/design/asset_model_v3/LIVING_KITCHEN_LIBRARY_V3.blend"
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "furniture-fit": {
+      "source": "pascalorg/editor",
+      "sourceType": "github",
+      "skillPath": "skills/furniture-fit/SKILL.md",
+      "computedHash": "137f425dd49b990024e068d0a5231929b077476ac44d35b099d8fa8456d0d537"
+    },
+    "pascal-3d": {
+      "source": "pascalorg/editor",
+      "sourceType": "github",
+      "skillPath": "skills/pascal-3d/SKILL.md",
+      "computedHash": "78efb65488d05e016a37f7fdd780e15062f2d2fde15b6171c80bffb02be3d9f0"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "s1-requirement-coverage-v1",
+  "status": "S1_REQUIREMENT_COMPLETENESS_GATE_FAIL",
+  "rows": [
+    {
+      "requirement": "2 ensuites + 1 public bath",
+      "status": "PARTIAL",
+      "evidence": [
+        "mother bath existing guide",
+        "owner ensuite candidate R-CLOAK",
+        "public guest bath retained"
+      ],
+      "notes": [
+        "owner ensuite candidate is undersized; human decision required"
+      ]
+    },
+    {
+      "requirement": "guest bath shower + WC + vanity + 3kg washer",
+      "status": "PARTIAL",
+      "evidence": [
+        "existing guest bath fixtures",
+        "3kg washer candidate outline"
+      ],
+      "notes": [
+        "washer is unanchored; exact four-function fit is unresolved"
+      ]
+    },
+    {
+      "requirement": "main 10kg washer + 10kg dryer",
+      "status": "TO_VERIFY",
+      "evidence": [
+        "north balcony candidate footprints"
+      ],
+      "notes": [
+        "OPEN_NOT_ENCLOSED; SKU, stacking, ventilation and access remain TO_VERIFY"
+      ]
+    },
+    {
+      "requirement": "formal high-frequency study",
+      "status": "PARTIAL",
+      "evidence": [
+        "locked guide desk/bookcase/tea table",
+        "study operating zone and printer/NAS provision"
+      ],
+      "notes": [
+        "chair pull-back and equipment placement need review"
+      ]
+    },
+    {
+      "requirement": "middle guest room",
+      "status": "IMPLEMENTED",
+      "evidence": [
+        "locked guide bed/wardrobe/stool role mapping"
+      ],
+      "notes": []
+    },
+    {
+      "requirement": "south study / backup sleeping",
+      "status": "IMPLEMENTED",
+      "evidence": [
+        "locked guide desk/bookcase/tea-table topology"
+      ],
+      "notes": []
+    },
+    {
+      "requirement": "kitchen KEEP",
+      "status": "IMPLEMENTED",
+      "evidence": [
+        "existing kitchen register and R2 geometry"
+      ],
+      "notes": []
+    }
+  ]
+}

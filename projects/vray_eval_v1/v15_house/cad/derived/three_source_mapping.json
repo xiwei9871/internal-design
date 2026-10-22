@@ -1,0 +1,2185 @@
+{
+ "walls": [
+  {
+   "object": "W_EXT_W",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.41,
+   "prot_ratio_legacy": 0.41,
+   "area": 1414000,
+   "bbox": [
+    2700,
+    6530,
+    2900,
+    13600
+   ]
+  },
+  {
+   "object": "W_EXT_W",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_MARKED",
+   "prot_ratio": 0.774,
+   "prot_ratio_legacy": 0.774,
+   "area": 620000,
+   "bbox": [
+    2700,
+    2300,
+    2900,
+    5400
+   ]
+  },
+  {
+   "object": "W_EXT_S",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 1870000,
+   "bbox": [
+    6050,
+    -200,
+    15400,
+    0
+   ]
+  },
+  {
+   "object": "W_EXT_S_W1",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 80000,
+   "bbox": [
+    4600,
+    -200,
+    5000,
+    0
+   ]
+  },
+  {
+   "object": "W_EXT_S_W2",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 134000,
+   "bbox": [
+    5380,
+    -200,
+    6050,
+    0
+   ]
+  },
+  {
+   "object": "W_EXT_E1",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.289,
+   "prot_ratio_legacy": 0.289,
+   "area": 900000,
+   "bbox": [
+    15400,
+    0,
+    15600,
+    4500
+   ]
+  },
+  {
+   "object": "W_EXT_E2",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.138,
+   "prot_ratio_legacy": 0.138,
+   "area": 1300000,
+   "bbox": [
+    16300,
+    4400,
+    16500,
+    10900
+   ]
+  },
+  {
+   "object": "W_EXT_NE",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 440000,
+   "bbox": [
+    13600,
+    11350,
+    15800,
+    11550
+   ]
+  },
+  {
+   "object": "W_EXT_NE2",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.222,
+   "prot_ratio_legacy": 0.222,
+   "area": 180000,
+   "bbox": [
+    15600,
+    10700,
+    16500,
+    10900
+   ]
+  },
+  {
+   "object": "W_EXT_N_LV",
+   "status": "EXISTING_DEMOLISHED",
+   "protection": "DEMOL_PART",
+   "prot_ratio": 0.038,
+   "prot_ratio_legacy": 0.038,
+   "area": 1040000,
+   "bbox": [
+    2700,
+    12750,
+    7900,
+    12950
+   ]
+  },
+  {
+   "object": "W_BAY_F",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 620000,
+   "bbox": [
+    3800,
+    13400,
+    6900,
+    13600
+   ]
+  },
+  {
+   "object": "W_BAY_JW",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.444,
+   "prot_ratio_legacy": 0.444,
+   "area": 45000,
+   "bbox": [
+    3700,
+    12950,
+    3800,
+    13400
+   ]
+  },
+  {
+   "object": "W_BAY_JE",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.444,
+   "prot_ratio_legacy": 0.444,
+   "area": 45000,
+   "bbox": [
+    6900,
+    12950,
+    7000,
+    13400
+   ]
+  },
+  {
+   "object": "W_EXT_N_BAL",
+   "status": "EXISTING_DEMOLISHED",
+   "protection": "DEMOL_PART",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 1.0,
+   "area": 1020000,
+   "bbox": [
+    7900,
+    13400,
+    13000,
+    13600
+   ]
+  },
+  {
+   "object": "W_BALC_W",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.051,
+   "prot_ratio_legacy": 0.051,
+   "area": 390000,
+   "bbox": [
+    1300,
+    450,
+    1500,
+    2400
+   ]
+  },
+  {
+   "object": "W_BALC_S",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.067,
+   "prot_ratio_legacy": 0.067,
+   "area": 900000,
+   "bbox": [
+    1300,
+    450,
+    5800,
+    650
+   ]
+  },
+  {
+   "object": "W_BALC_N",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_MARKED",
+   "prot_ratio": 0.673,
+   "prot_ratio_legacy": 0.673,
+   "area": 256000,
+   "bbox": [
+    1300,
+    2400,
+    2900,
+    2560
+   ]
+  },
+  {
+   "object": "W_INT_X5800",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_MARKED",
+   "prot_ratio": 0.666,
+   "prot_ratio_legacy": 0.666,
+   "area": 180000,
+   "bbox": [
+    5700,
+    3800,
+    5900,
+    4700
+   ]
+  },
+  {
+   "object": "W_INT_X5800",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.451,
+   "prot_ratio_legacy": 0.451,
+   "area": 310000,
+   "bbox": [
+    5700,
+    -150,
+    5900,
+    1400
+   ]
+  },
+  {
+   "object": "W_INT_X5800_STUB",
+   "status": "EXISTING_RETAINED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 125000,
+   "bbox": [
+    5650,
+    4700,
+    5750,
+    5950
+   ]
+  },
+  {
+   "object": "W_INT_X7900_L",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.305,
+   "prot_ratio_legacy": 0.305,
+   "area": 964000,
+   "bbox": [
+    7800,
+    -150,
+    8000,
+    4670
+   ]
+  },
+  {
+   "object": "W_INT_X7900_U",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.4,
+   "prot_ratio_legacy": 0.43,
+   "area": 100000,
+   "bbox": [
+    7800,
+    12550,
+    7900,
+    13550
+   ]
+  },
+  {
+   "object": "W_INT_X7900_U",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.564,
+   "prot_ratio_legacy": 0.205,
+   "area": 390000,
+   "bbox": [
+    7800,
+    7800,
+    7900,
+    11700
+   ]
+  },
+  {
+   "object": "W_INT_X7900_U",
+   "status": "EXISTING_RETAINED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.092,
+   "prot_ratio_legacy": 0.092,
+   "area": 33000,
+   "bbox": [
+    7800,
+    4670,
+    7900,
+    5000
+   ]
+  },
+  {
+   "object": "W_INT_X9800",
+   "status": "EXISTING_RETAINED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 640000,
+   "bbox": [
+    9700,
+    7700,
+    9900,
+    10900
+   ]
+  },
+  {
+   "object": "W_INT_X11500",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.418,
+   "prot_ratio_legacy": 0.418,
+   "area": 1340000,
+   "bbox": [
+    11400,
+    -200,
+    11600,
+    6500
+   ]
+  },
+  {
+   "object": "W_INT_X13000",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.26,
+   "prot_ratio_legacy": 0.502,
+   "area": 1230000,
+   "bbox": [
+    12900,
+    7450,
+    13100,
+    13600
+   ]
+  },
+  {
+   "object": "W_INT_X13000",
+   "status": "EXISTING_RETAINED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 160000,
+   "bbox": [
+    12900,
+    5500,
+    13100,
+    6300
+   ]
+  },
+  {
+   "object": "W_INT_X13000",
+   "status": "EXISTING_RETAINED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 24000,
+   "bbox": [
+    12900,
+    4630,
+    13100,
+    4750
+   ]
+  },
+  {
+   "object": "W_INT_Y4500_a",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_MARKED",
+   "prot_ratio": 0.819,
+   "prot_ratio_legacy": 0.819,
+   "area": 634000,
+   "bbox": [
+    5700,
+    4450,
+    8236,
+    4700
+   ]
+  },
+  {
+   "object": "W_INT_CLK_N",
+   "status": "DESIGN_REVIEW_PENDING",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 470000,
+   "bbox": [
+    9050,
+    6300,
+    11400,
+    6500
+   ]
+  },
+  {
+   "object": "W_INT_CLK_E",
+   "status": "DESIGN_REVIEW_PENDING",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.111,
+   "prot_ratio_legacy": 0.111,
+   "area": 180000,
+   "bbox": [
+    11300,
+    4500,
+    11400,
+    6300
+   ]
+  },
+  {
+   "object": "W_INT_CLK_W",
+   "status": "DESIGN_REVIEW_PENDING",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 160000,
+   "bbox": [
+    8950,
+    4500,
+    9050,
+    6300
+   ]
+  },
+  {
+   "object": "W_INT_COR_N_STUB",
+   "status": "UNVERIFIED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 140000,
+   "bbox": [
+    11400,
+    6300,
+    12100,
+    6500
+   ]
+  },
+  {
+   "object": "W_INT_BEDN_S",
+   "status": "EXISTING_RETAINED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 590000,
+   "bbox": [
+    13350,
+    6300,
+    16300,
+    6500
+   ]
+  },
+  {
+   "object": "W_INT_WC_S",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_MARKED",
+   "prot_ratio": 0.777,
+   "prot_ratio_legacy": 0.777,
+   "area": 180000,
+   "bbox": [
+    7900,
+    7800,
+    8800,
+    8000
+   ]
+  },
+  {
+   "object": "W_INT_STD_S",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.219,
+   "prot_ratio_legacy": 0.219,
+   "area": 640000,
+   "bbox": [
+    9800,
+    7800,
+    13000,
+    8000
+   ]
+  },
+  {
+   "object": "W_INT_Y10800",
+   "status": "EXISTING_RETAINED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.039,
+   "prot_ratio_legacy": 0.02,
+   "area": 1020000,
+   "bbox": [
+    7900,
+    10700,
+    13000,
+    10900
+   ]
+  },
+  {
+   "object": "W_INT_Y10800_EXT",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.143,
+   "prot_ratio_legacy": 0.143,
+   "area": 140000,
+   "bbox": [
+    13000,
+    10700,
+    13700,
+    10900
+   ]
+  },
+  {
+   "object": "W_SHAFT_K",
+   "status": "EXISTING_RETAINED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 290000,
+   "bbox": [
+    7150,
+    750,
+    7250,
+    3650
+   ]
+  },
+  {
+   "object": "W_INT_DRY_STUB",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.212,
+   "prot_ratio_legacy": 0.212,
+   "area": 80000,
+   "bbox": [
+    7150,
+    3870,
+    7250,
+    4670
+   ]
+  },
+  {
+   "object": "W_INT_NICHE",
+   "status": "EXISTING_RETAINED",
+   "protection": "UNMARKED_INTERIOR",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 775000,
+   "bbox": [
+    7150,
+    4700,
+    7400,
+    7800
+   ]
+  },
+  {
+   "object": "W_INT_Y4500_bc",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.222,
+   "prot_ratio_legacy": 0.222,
+   "area": 720000,
+   "bbox": [
+    12900,
+    4450,
+    16500,
+    4650
+   ]
+  },
+  {
+   "object": "W_INT_Y4500_b",
+   "status": "EXISTING_RETAINED",
+   "protection": "STRUCT_PARTIAL",
+   "prot_ratio": 0.187,
+   "prot_ratio_legacy": 0.187,
+   "area": 480000,
+   "bbox": [
+    9000,
+    4450,
+    11400,
+    4650
+   ]
+  },
+  {
+   "object": "COL_B1",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 302500,
+   "bbox": [
+    1500,
+    1650,
+    2050,
+    2200
+   ]
+  },
+  {
+   "object": "COL_B2",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 302500,
+   "bbox": [
+    1500,
+    750,
+    2050,
+    1300
+   ]
+  },
+  {
+   "object": "COL_WS",
+   "status": "EXISTING_RETAINED",
+   "protection": "ENVELOPE_REVIEW",
+   "prot_ratio": 0.0,
+   "prot_ratio_legacy": 0.0,
+   "area": 70000,
+   "bbox": [
+    2700,
+    750,
+    2900,
+    1100
+   ]
+  }
+ ],
+ "design": [
+  {
+   "object": "D107_V3_ADJACENT_RETURN_WALL_REMAINDER",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.123,
+   "matched_existing": "W_INT_CLK_N",
+   "bbox": [
+    9050,
+    5230,
+    9200,
+    6450
+   ]
+  },
+  {
+   "object": "DOOR_V2_D107_LEFT_RETURN_WALL",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.984,
+   "matched_existing": "W_INT_Y4500_a",
+   "bbox": [
+    7800,
+    4500,
+    8250,
+    4700
+   ]
+  },
+  {
+   "object": "KITCHEN_DIVIDER_PIER_SITE_REVIEW",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.611,
+   "matched_existing": "W_INT_X5800",
+   "bbox": [
+    5572,
+    700,
+    5900,
+    1400
+   ]
+  },
+  {
+   "object": "R3_COMPLETE_PARTITION_WALLS",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.518,
+   "matched_existing": "W_INT_Y4500_b",
+   "bbox": [
+    9988,
+    4524,
+    11400,
+    4823
+   ]
+  },
+  {
+   "object": "STEP_0",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.12,
+   "matched_existing": "W_INT_NICHE",
+   "bbox": [
+    5660,
+    4716,
+    7350,
+    7800
+   ]
+  },
+  {
+   "object": "STEP_1",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.167,
+   "matched_existing": "W_INT_NICHE",
+   "bbox": [
+    6010,
+    4716,
+    7700,
+    7800
+   ]
+  },
+  {
+   "object": "STEP_2",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.103,
+   "matched_existing": "W_INT_NICHE",
+   "bbox": [
+    6360,
+    4716,
+    8050,
+    7800
+   ]
+  },
+  {
+   "object": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_HEAD",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.75,
+   "matched_existing": "W_BALC_S",
+   "bbox": [
+    2100,
+    500,
+    5100,
+    700
+   ]
+  },
+  {
+   "object": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.75,
+   "matched_existing": "W_BALC_S",
+   "bbox": [
+    1500,
+    500,
+    2100,
+    700
+   ]
+  },
+  {
+   "object": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.75,
+   "matched_existing": "W_BALC_S",
+   "bbox": [
+    5100,
+    500,
+    5500,
+    700
+   ]
+  },
+  {
+   "object": "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_EXT_S",
+   "bbox": [
+    6100,
+    -200,
+    7100,
+    0
+   ]
+  },
+  {
+   "object": "VIEW_WALL_DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.4,
+   "matched_existing": "W_INT_X7900_U",
+   "bbox": [
+    7750,
+    12650,
+    8000,
+    13002
+   ]
+  },
+  {
+   "object": "VIEW_WALL_DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.4,
+   "matched_existing": "W_INT_X7900_U",
+   "bbox": [
+    7750,
+    12550,
+    8000,
+    12650
+   ]
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_BAY_INNER_HEAD",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    3800,
+    13000,
+    6900,
+    13200
+   ]
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_BAY_LEFT_HEAD",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.0,
+   "matched_existing": "W_BAY_JW",
+   "bbox": [
+    3600,
+    13200,
+    3700,
+    13800
+   ]
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_BAY_RIGHT_HEAD",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.0,
+   "matched_existing": "W_BAY_JE",
+   "bbox": [
+    7000,
+    13200,
+    7100,
+    13800
+   ]
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_BAY_SOFFIT",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.266,
+   "matched_existing": "W_BAY_F",
+   "bbox": [
+    3600,
+    13200,
+    7100,
+    13900
+   ]
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_GUEST_BATH_FULL_WALL",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.4,
+   "matched_existing": "W_INT_X7900_U",
+   "bbox": [
+    7750,
+    8000,
+    8000,
+    10900
+   ]
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.4,
+   "matched_existing": "W_INT_X7900_U",
+   "bbox": [
+    7750,
+    10898,
+    8000,
+    11100
+   ]
+  },
+  {
+   "object": "VIEW_WALL_LIVING_FIX_TV_NORTH_SOLID_WALL",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.4,
+   "matched_existing": "W_INT_X7900_U",
+   "bbox": [
+    7750,
+    11100,
+    8000,
+    11700
+   ]
+  },
+  {
+   "object": "VIEW_WALL_R3_WEST_PARTITION",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.1,
+   "matched_existing": "W_INT_CLK_N",
+   "bbox": [
+    9059,
+    4507,
+    9209,
+    6507
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_D-BATHM_COMPLETE_HOST_WALL",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.133,
+   "matched_existing": "W_INT_COR_N_STUB",
+   "bbox": [
+    11900,
+    6400,
+    12650,
+    6600
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_D-GUEST-ROOM_COMPLETE_HOST_WALL",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_STD_S",
+   "bbox": [
+    9950,
+    7800,
+    10900,
+    8000
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_X13000",
+   "bbox": [
+    12900,
+    5500,
+    13100,
+    5600
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_X13000",
+   "bbox": [
+    12900,
+    7450,
+    13100,
+    8000
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_EXT_W",
+   "bbox": [
+    2700,
+    6530,
+    2900,
+    6610
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_G_DIN_LIV_RIGHT_PIER",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.744,
+   "matched_existing": "W_INT_Y4500_a",
+   "bbox": [
+    5650,
+    4500,
+    5900,
+    4715
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_G_DIN_LIV_SOLID_HEAD",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    2950,
+    4530,
+    5650,
+    4715
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_W-MB-S_INNER_HEAD",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.518,
+   "matched_existing": "W_EXT_S",
+   "bbox": [
+    12100,
+    -200,
+    14800,
+    200
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_W-MB-S_SOFFIT",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.296,
+   "matched_existing": "W_EXT_S",
+   "bbox": [
+    12050,
+    -673,
+    14850,
+    5
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.489,
+   "matched_existing": "W_EXT_S",
+   "bbox": [
+    8500,
+    -200,
+    10900,
+    200
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_W-SMB-S_SOFFIT",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.296,
+   "matched_existing": "W_EXT_S",
+   "bbox": [
+    8450,
+    -673,
+    10950,
+    5
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_W-STUDY-NE_INNER_HEAD",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.0,
+   "matched_existing": "W_EXT_NE2",
+   "bbox": [
+    13600,
+    10900,
+    15700,
+    11100
+   ]
+  },
+  {
+   "object": "VIEW_WALL_V4_W-STUDY-NE_SOFFIT",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.296,
+   "matched_existing": "W_EXT_NE",
+   "bbox": [
+    13550,
+    11100,
+    15750,
+    11773
+   ]
+  },
+  {
+   "object": "W_wall_md_0004",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 1.0,
+   "matched_existing": "W_BALC_W",
+   "bbox": [
+    1300,
+    700,
+    1500,
+    2300
+   ]
+  },
+  {
+   "object": "W_wall_md_0005",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 1.0,
+   "matched_existing": "W_EXT_W",
+   "bbox": [
+    2700,
+    2500,
+    2900,
+    5400
+   ]
+  },
+  {
+   "object": "W_wall_md_0006",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 1.0,
+   "matched_existing": "W_EXT_W",
+   "bbox": [
+    2700,
+    6540,
+    2900,
+    13000
+   ]
+  },
+  {
+   "object": "W_wall_md_0007",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.228,
+   "matched_existing": "W_EXT_W",
+   "bbox": [
+    2700,
+    13200,
+    2900,
+    14953
+   ]
+  },
+  {
+   "object": "W_wall_md_0009",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.545,
+   "matched_existing": "W_INT_X5800",
+   "bbox": [
+    5500,
+    0,
+    5900,
+    700
+   ]
+  },
+  {
+   "object": "W_wall_md_0010",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_X5800",
+   "bbox": [
+    5700,
+    4100,
+    5900,
+    4500
+   ]
+  },
+  {
+   "object": "W_wall_md_0012",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    7450,
+    150,
+    7800,
+    500
+   ]
+  },
+  {
+   "object": "W_wall_md_0015",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_X7900_L",
+   "bbox": [
+    7800,
+    200,
+    8000,
+    4500
+   ]
+  },
+  {
+   "object": "W_wall_md_0016",
+   "relation": "REPLACES_DEMOLISHED",
+   "overlap": 0.238,
+   "matched_existing": "W_EXT_N_BAL",
+   "bbox": [
+    7800,
+    13400,
+    8000,
+    13820
+   ]
+  },
+  {
+   "object": "W_wall_md_0017",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.322,
+   "matched_existing": "W_EXT_S",
+   "bbox": [
+    8400,
+    -600,
+    8500,
+    0
+   ]
+  },
+  {
+   "object": "W_wall_md_0019",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_X9800",
+   "bbox": [
+    9700,
+    8000,
+    9900,
+    10900
+   ]
+  },
+  {
+   "object": "W_wall_md_0020",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.322,
+   "matched_existing": "W_EXT_S",
+   "bbox": [
+    10900,
+    -600,
+    11000,
+    0
+   ]
+  },
+  {
+   "object": "W_wall_md_0021",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_X11500",
+   "bbox": [
+    11400,
+    200,
+    11600,
+    4500
+   ]
+  },
+  {
+   "object": "W_wall_md_0022",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_X11500",
+   "bbox": [
+    11400,
+    4700,
+    11600,
+    6400
+   ]
+  },
+  {
+   "object": "W_wall_md_0023",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.322,
+   "matched_existing": "W_EXT_S",
+   "bbox": [
+    12000,
+    -600,
+    12100,
+    0
+   ]
+  },
+  {
+   "object": "W_wall_md_0024",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_X13000",
+   "bbox": [
+    12900,
+    5550,
+    13100,
+    6300
+   ]
+  },
+  {
+   "object": "W_wall_md_0025",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_X13000",
+   "bbox": [
+    12900,
+    8000,
+    13100,
+    10900
+   ]
+  },
+  {
+   "object": "W_wall_md_0026",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.919,
+   "matched_existing": "W_INT_X13000",
+   "bbox": [
+    12900,
+    11100,
+    13100,
+    13820
+   ]
+  },
+  {
+   "object": "W_wall_md_0027",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.0,
+   "matched_existing": "W_INT_X13000",
+   "bbox": [
+    13100,
+    11100,
+    13500,
+    11800
+   ]
+  },
+  {
+   "object": "W_wall_md_0028",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    13500,
+    11100,
+    13600,
+    11700
+   ]
+  },
+  {
+   "object": "W_wall_md_0029",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.322,
+   "matched_existing": "W_EXT_S",
+   "bbox": [
+    14800,
+    -600,
+    14900,
+    0
+   ]
+  },
+  {
+   "object": "W_wall_md_0030",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.499,
+   "matched_existing": "W_EXT_E1",
+   "bbox": [
+    15300,
+    200,
+    15500,
+    4500
+   ]
+  },
+  {
+   "object": "W_wall_md_0031",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.333,
+   "matched_existing": "W_EXT_NE",
+   "bbox": [
+    15700,
+    11100,
+    15800,
+    11700
+   ]
+  },
+  {
+   "object": "W_wall_md_0032",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.5,
+   "matched_existing": "W_EXT_E2",
+   "bbox": [
+    16200,
+    4500,
+    16400,
+    6400
+   ]
+  },
+  {
+   "object": "W_wall_md_0033",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.499,
+   "matched_existing": "W_EXT_E2",
+   "bbox": [
+    16200,
+    6600,
+    16400,
+    10900
+   ]
+  },
+  {
+   "object": "W_wall_md_0034",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    8500,
+    -700,
+    10900,
+    -600
+   ]
+  },
+  {
+   "object": "W_wall_md_0035",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    12100,
+    -700,
+    14800,
+    -600
+   ]
+  },
+  {
+   "object": "W_wall_md_0036",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.0,
+   "matched_existing": "W_INT_X5800",
+   "bbox": [
+    5900,
+    0,
+    7800,
+    200
+   ]
+  },
+  {
+   "object": "W_wall_md_0037",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.0,
+   "matched_existing": "W_INT_X7900_L",
+   "bbox": [
+    8000,
+    0,
+    8600,
+    200
+   ]
+  },
+  {
+   "object": "W_wall_md_0038",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    10800,
+    0,
+    11400,
+    200
+   ]
+  },
+  {
+   "object": "W_wall_md_0039",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.0,
+   "matched_existing": "W_INT_X11500",
+   "bbox": [
+    11600,
+    0,
+    12200,
+    200
+   ]
+  },
+  {
+   "object": "W_wall_md_0040",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    14700,
+    0,
+    15300,
+    200
+   ]
+  },
+  {
+   "object": "W_wall_md_0043",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.501,
+   "matched_existing": "W_BALC_N",
+   "bbox": [
+    1300,
+    2300,
+    2700,
+    2500
+   ]
+  },
+  {
+   "object": "W_wall_md_0044",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_Y4500_a",
+   "bbox": [
+    5900,
+    4500,
+    7800,
+    4700
+   ]
+  },
+  {
+   "object": "W_wall_md_0045",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.749,
+   "matched_existing": "W_INT_Y4500_b",
+   "bbox": [
+    10800,
+    4500,
+    11400,
+    4700
+   ]
+  },
+  {
+   "object": "W_wall_md_0046",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.749,
+   "matched_existing": "W_INT_Y4500_bc",
+   "bbox": [
+    13100,
+    4500,
+    15300,
+    4700
+   ]
+  },
+  {
+   "object": "W_wall_md_0047",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.749,
+   "matched_existing": "W_INT_Y4500_bc",
+   "bbox": [
+    15500,
+    4500,
+    16200,
+    4700
+   ]
+  },
+  {
+   "object": "W_wall_md_0048",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.499,
+   "matched_existing": "W_INT_COR_N_STUB",
+   "bbox": [
+    11600,
+    6400,
+    11950,
+    6600
+   ]
+  },
+  {
+   "object": "W_wall_md_0049",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.499,
+   "matched_existing": "W_INT_BEDN_S",
+   "bbox": [
+    13350,
+    6400,
+    16200,
+    6600
+   ]
+  },
+  {
+   "object": "W_wall_md_0050",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.332,
+   "matched_existing": "W_INT_CLK_N",
+   "bbox": [
+    9200,
+    6450,
+    11400,
+    6600
+   ]
+  },
+  {
+   "object": "W_wall_md_0051",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_WC_S",
+   "bbox": [
+    8000,
+    7800,
+    8800,
+    8000
+   ]
+  },
+  {
+   "object": "W_wall_md_0052",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.667,
+   "matched_existing": "W_INT_X9800",
+   "bbox": [
+    9700,
+    7800,
+    10000,
+    8000
+   ]
+  },
+  {
+   "object": "W_wall_md_0053",
+   "relation": "OVERLAPS_RETAINED",
+   "overlap": 0.999,
+   "matched_existing": "W_INT_STD_S",
+   "bbox": [
+    10850,
+    7800,
+    12900,
+    8000
+   ]
+  },
+  {
+   "object": "W_wall_md_0054",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    8000,
+    10900,
+    9700,
+    11100
+   ]
+  },
+  {
+   "object": "W_wall_md_0055",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    9900,
+    10900,
+    12900,
+    11100
+   ]
+  },
+  {
+   "object": "W_wall_md_0056",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.0,
+   "matched_existing": "W_INT_X13000",
+   "bbox": [
+    13100,
+    10900,
+    13595,
+    11100
+   ]
+  },
+  {
+   "object": "W_wall_md_0057",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    15705,
+    10900,
+    16200,
+    11100
+   ]
+  },
+  {
+   "object": "W_wall_md_0058",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0,
+   "matched_existing": null,
+   "bbox": [
+    13600,
+    11700,
+    15700,
+    11800
+   ]
+  },
+  {
+   "object": "W_wall_md_0059",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.111,
+   "matched_existing": "W_BAY_JW",
+   "bbox": [
+    2900,
+    13000,
+    3800,
+    13200
+   ]
+  },
+  {
+   "object": "W_wall_md_0060",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.111,
+   "matched_existing": "W_BAY_JE",
+   "bbox": [
+    6900,
+    13000,
+    7800,
+    13200
+   ]
+  },
+  {
+   "object": "W_wall_md_0061",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.25,
+   "matched_existing": "W_INT_X7900_U",
+   "bbox": [
+    7800,
+    13000,
+    8200,
+    13400
+   ]
+  },
+  {
+   "object": "W_wall_md_0062",
+   "relation": "REPLACES_DEMOLISHED",
+   "overlap": 0.396,
+   "matched_existing": "W_EXT_N_BAL",
+   "bbox": [
+    7880,
+    13400,
+    13020,
+    13900
+   ]
+  },
+  {
+   "object": "W_wall_md_0064",
+   "relation": "PARTIAL_OVERLAP",
+   "overlap": 0.6,
+   "matched_existing": "W_INT_Y4500_bc",
+   "bbox": [
+    12900,
+    4500,
+    13100,
+    4750
+   ]
+  },
+  {
+   "object": "WAVE_STEP_3_ARRIVAL",
+   "relation": "NEW_NO_OVERLAP",
+   "overlap": 0.117,
+   "matched_existing": "W_INT_NICHE",
+   "bbox": [
+    6710,
+    4716,
+    8400,
+    7800
+   ]
+  }
+ ],
+ "summary": {
+  "algorithm": "P1.4.1 — closed-boundary-only structural extraction",
+  "sources": {
+   "developer_plan_dxf": {
+    "file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准图.dxf",
+    "sha256": "7285527be00aaa39579e29b2467a60572830c78ca0ae05236e9dc0ab57bd6b57",
+    "role": "原始基准图(A-WALL/A-UNCERTAIN层, 无黑白墙分类字段)"
+   },
+   "developer_plan_fcstd": {
+    "file": "/Users/xiwei/interior_design/projects/c_type_home/cad/C型_原始户型数字化基准模型.FCStd",
+    "sha256": "2cdd31418604730bd723cd29774fa112ac954f50faf40ddbc4968b8792735c14",
+    "role": "现状对象几何权威(managed fcstd 来源)"
+   },
+   "measured_dxf": {
+    "file": "/Users/xiwei/interior_design/projects/c_type_home/cad/measured_working.dxf",
+    "sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
+    "role": "现状测绘底图(structure_only_source_sync 的父源)"
+   },
+   "structural_layer_dxf": {
+    "file": "/Users/xiwei/interior_design/projects/c_type_home/cad/structure_only_source_sync.dxf",
+    "sha256": "3dcb49bfd6e617817089dda4fdfadec49bcf7c09e92b0012e3779e1c5c7e72e2",
+    "offset": [
+     1298172.0,
+     -296458.0
+    ],
+    "structural_parts": 16,
+    "role": "S-S.WALL 结构层(HATCH填充=最强证据)"
+   },
+   "design_blend": {
+    "file": "/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/V15_WORK.blend",
+    "sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+    "role": "业主确认的最终设计目标(managed blender 来源)"
+   },
+   "geometry_snapshot": {
+    "file": "derived/geometry_v05.json",
+    "sha256": "1eb00e93250e3de6d58af03cab69f349cbd8f4d76f911252499c7b51b092b694",
+    "role": "本次映射消费的几何提取快照"
+   }
+  },
+  "extraction": {
+   "stats": {
+    "line": 201,
+    "lw_closed": 1,
+    "lw_open": 7,
+    "hatch": 6,
+    "hatch_rings": 16,
+    "line_faces_raw": 1
+   },
+   "anomalies": [],
+   "open_polylines": [
+    {
+     "handle": "307B44",
+     "n_pts": 5,
+     "gap_mm": 200,
+     "bbox": [
+      7800,
+      13000,
+      8200,
+      13400
+     ]
+    },
+    {
+     "handle": "307C3E",
+     "n_pts": 4,
+     "gap_mm": 5413,
+     "bbox": [
+      8000,
+      11100,
+      12900,
+      13700
+     ]
+    },
+    {
+     "handle": "307C3F",
+     "n_pts": 4,
+     "gap_mm": 5558,
+     "bbox": [
+      7920,
+      11100,
+      12980,
+      13780
+     ]
+    },
+    {
+     "handle": "307C40",
+     "n_pts": 4,
+     "gap_mm": 5631,
+     "bbox": [
+      7880,
+      11100,
+      13020,
+      13820
+     ]
+    },
+    {
+     "handle": "307CC0",
+     "n_pts": 3,
+     "gap_mm": 430,
+     "bbox": [
+      7450,
+      200,
+      7800,
+      450
+     ]
+    },
+    {
+     "handle": "307CC1",
+     "n_pts": 2,
+     "gap_mm": 200,
+     "bbox": [
+      6100,
+      0,
+      6100,
+      200
+     ]
+    },
+    {
+     "handle": "307CC3",
+     "n_pts": 2,
+     "gap_mm": 200,
+     "bbox": [
+      7100,
+      0,
+      7100,
+      200
+     ]
+    }
+   ]
+  },
+  "fc_wall_protection": {
+   "STRUCT_MARKED": 5,
+   "STRUCT_PARTIAL": 18,
+   "UNMARKED_INTERIOR": 12,
+   "ENVELOPE_REVIEW": 10,
+   "DEMOL_PART": 2
+  },
+  "demolition_segments": [
+   {
+    "object": "W_EXT_N_LV",
+    "decision": "",
+    "demo_area": 1040000,
+    "prot_ratio": 0.038,
+    "prot_ratio_legacy": 0.038,
+    "bbox": [
+     2700,
+     12750,
+     7900,
+     12950
+    ]
+   },
+   {
+    "object": "W_EXT_N_BAL",
+    "decision": "",
+    "demo_area": 1020000,
+    "prot_ratio": 0.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     7900,
+     13400,
+     13000,
+     13600
+    ]
+   },
+   {
+    "object": "W_BALC_N",
+    "decision": "",
+    "demo_area": 400000,
+    "prot_ratio": 0.0,
+    "prot_ratio_legacy": 0.0,
+    "bbox": [
+     3300,
+     2400,
+     5800,
+     2560
+    ]
+   },
+   {
+    "object": "W_INT_X5800",
+    "decision": "",
+    "demo_area": 400000,
+    "prot_ratio": 0.0,
+    "prot_ratio_legacy": 0.0,
+    "bbox": [
+     5700,
+     1800,
+     5900,
+     3800
+    ]
+   },
+   {
+    "object": "W_INT_X7900_U",
+    "decision": "",
+    "demo_area": 280000,
+    "prot_ratio": 0.0,
+    "prot_ratio_legacy": 0.0,
+    "bbox": [
+     7800,
+     5000,
+     7900,
+     7800
+    ]
+   }
+  ],
+  "conflicts": [
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "VIEW_WALL_LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+    "prot_ratio": 0.8,
+    "prot_ratio_legacy": 0.0,
+    "bbox": [
+     7750,
+     10898,
+     8000,
+     11100
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "VIEW_WALL_LIVING_FIX_TV_NORTH_SOLID_WALL",
+    "prot_ratio": 0.799,
+    "prot_ratio_legacy": 0.0,
+    "bbox": [
+     7750,
+     11100,
+     8000,
+     11700
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0009",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     5500,
+     0,
+     5900,
+     700
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0030",
+    "prot_ratio": 0.558,
+    "prot_ratio_legacy": 0.558,
+    "bbox": [
+     15300,
+     200,
+     15500,
+     4500
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0036",
+    "prot_ratio": 0.893,
+    "prot_ratio_legacy": 0.893,
+    "bbox": [
+     5900,
+     0,
+     7800,
+     200
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0037",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     8000,
+     0,
+     8600,
+     200
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0038",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     10800,
+     0,
+     11400,
+     200
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0039",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     11600,
+     0,
+     12200,
+     200
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0040",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     14700,
+     0,
+     15300,
+     200
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0043",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     1300,
+     2300,
+     2700,
+     2500
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0054",
+    "prot_ratio": 0.529,
+    "prot_ratio_legacy": 0.0,
+    "bbox": [
+     8000,
+     10900,
+     9700,
+     11100
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0056",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     13100,
+     10900,
+     13595,
+     11100
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0057",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     15705,
+     10900,
+     16200,
+     11100
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0059",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     2900,
+     13000,
+     3800,
+     13200
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0060",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     6900,
+     13000,
+     7800,
+     13200
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   },
+   {
+    "type": "NEW_WALL_ON_PROTECTED",
+    "object": "W_wall_md_0061",
+    "prot_ratio": 1.0,
+    "prot_ratio_legacy": 1.0,
+    "bbox": [
+     7800,
+     13000,
+     8200,
+     13400
+    ],
+    "evidence": "genuinely-new wall covers >50% of VALIDATED structural fill",
+    "recommendation": "verify: 是替换/饰面还是覆盖误差"
+   }
+  ],
+  "design_relations": {
+   "NEW_NO_OVERLAP": 29,
+   "REPLACES_DEMOLISHED": 2,
+   "OVERLAPS_RETAINED": 27,
+   "PARTIAL_OVERLAP": 30
+  },
+  "coverage_anomalies": [
+   {
+    "object": "W_EXT_S",
+    "note": "large wall with 0% structural coverage — coordinate or semantic gap",
+    "bbox": [
+     6050,
+     -200,
+     15400,
+     0
+    ]
+   },
+   {
+    "object": "W_EXT_N_BAL",
+    "note": "large wall with 0% structural coverage — coordinate or semantic gap",
+    "bbox": [
+     7900,
+     13400,
+     13000,
+     13600
+    ]
+   }
+  ],
+  "semantic_limits": [
+   "S-S.WALL 来源于现状测绘同步件, 非开发商原图黑白墙字段的直接载体",
+   "基准DXF仅有A-WALL/A-UNCERTAIN层, 无受保护/可改造分类数据",
+   "未覆盖结构层 -> ENVELOPE_REVIEW(外墙/柱)或UNMARKED_INTERIOR(内墙), 不自动等于可拆",
+   "HATCH填充=最强结构证据, LINE/LWP环=次级证据, 开放折线仅贡献边段"
+  ],
+  "verdict": "HOLD_PENDING_STRUCTURE_VERIFY"
+ }
+}

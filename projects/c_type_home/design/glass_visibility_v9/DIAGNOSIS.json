@@ -1,0 +1,588 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/WHOLE_HOUSE_GLASS_PRIVACY_DELIVERY_V8.blend",
+  "source_sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+  "world": {
+    "name": "V4_PHYSICAL_WINDOW_DAYLIGHT_ILLUSTRATIVE_GARDEN",
+    "nodes": [
+      {
+        "name": "Background",
+        "type": "BACKGROUND",
+        "image": null,
+        "inputs": {
+          "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+          "Strength": "0.2199999988079071",
+          "Weight": "0.0"
+        }
+      },
+      {
+        "name": "World Output",
+        "type": "OUTPUT_WORLD",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Environment Texture",
+        "type": "TEX_ENVIRONMENT",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/product_rebuild_v4/assets/garden_hdri/kiara_3_morning_hdri_2k.hdr",
+        "inputs": {
+          "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+        }
+      },
+      {
+        "name": "Light Path",
+        "type": "LIGHT_PATH",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Background.001",
+        "type": "BACKGROUND",
+        "image": null,
+        "inputs": {
+          "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+          "Strength": "0.6000000238418579",
+          "Weight": "0.0"
+        }
+      },
+      {
+        "name": "Mix Shader",
+        "type": "MIX_SHADER",
+        "image": null,
+        "inputs": {
+          "Factor": "0.5"
+        }
+      },
+      {
+        "name": "LD Neutral exterior presentation",
+        "type": "BACKGROUND",
+        "image": null,
+        "inputs": {
+          "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+          "Strength": "0.6000000238418579",
+          "Weight": "0.0"
+        }
+      },
+      {
+        "name": "Math",
+        "type": "MATH",
+        "image": null,
+        "inputs": {
+          "Value": "0.5"
+        }
+      },
+      {
+        "name": "Mix Shader.001",
+        "type": "MIX_SHADER",
+        "image": null,
+        "inputs": {
+          "Factor": "0.5"
+        }
+      },
+      {
+        "name": "Texture Coordinate",
+        "type": "TEX_COORD",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Mapping",
+        "type": "MAPPING",
+        "image": null,
+        "inputs": {
+          "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+          "Location": "<Vector (0.0000, 0.0000, 0.0000)>",
+          "Rotation": "<Euler (x=0.0000, y=0.0000, z=2.0944), order='XYZ'>",
+          "Scale": "<Vector (1.0000, 1.0000, 1.0000)>"
+        }
+      }
+    ],
+    "links": [
+      [
+        "Environment Texture",
+        "Color",
+        "Background",
+        "Color"
+      ],
+      [
+        "Light Path",
+        "Is Camera Ray",
+        "Mix Shader",
+        "Factor"
+      ],
+      [
+        "Background",
+        "Background",
+        "Mix Shader",
+        "Shader"
+      ],
+      [
+        "Background.001",
+        "Background",
+        "Mix Shader",
+        "Shader"
+      ],
+      [
+        "Light Path",
+        "Is Camera Ray",
+        "Math",
+        "Value"
+      ],
+      [
+        "Light Path",
+        "Is Transmission Ray",
+        "Math",
+        "Value"
+      ],
+      [
+        "Math",
+        "Value",
+        "Mix Shader.001",
+        "Factor"
+      ],
+      [
+        "Mix Shader",
+        "Shader",
+        "Mix Shader.001",
+        "Shader"
+      ],
+      [
+        "LD Neutral exterior presentation",
+        "Background",
+        "Mix Shader.001",
+        "Shader"
+      ],
+      [
+        "Mix Shader.001",
+        "Shader",
+        "World Output",
+        "Surface"
+      ],
+      [
+        "Texture Coordinate",
+        "Generated",
+        "Mapping",
+        "Vector"
+      ],
+      [
+        "Mapping",
+        "Vector",
+        "Environment Texture",
+        "Vector"
+      ],
+      [
+        "Environment Texture",
+        "Color",
+        "Background.001",
+        "Color"
+      ],
+      [
+        "Environment Texture",
+        "Color",
+        "LD Neutral exterior presentation",
+        "Color"
+      ]
+    ]
+  },
+  "cycles": {
+    "max_bounces": 10,
+    "transmission_bounces": 8,
+    "glossy_bounces": 4,
+    "transparent_max_bounces": 8,
+    "use_fast_gi": false,
+    "caustics_reflective": true,
+    "caustics_refractive": true
+  },
+  "eevee": {
+    "use_raytracing": false,
+    "ray_tracing_method": "SCREEN",
+    "use_fast_gi": true
+  },
+  "viewport": [
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    },
+    {
+      "type": "MATERIAL",
+      "studio_light": "forest.exr",
+      "use_scene_world": false,
+      "use_scene_lights": false,
+      "use_scene_world_render": true,
+      "use_scene_lights_render": true
+    }
+  ],
+  "front_glass": [
+    {
+      "name": "LIVING_FIX_BAY_FRONT_GLASS_0",
+      "bounds_m": [
+        [
+          3.6349000930786133,
+          13.84119987487793,
+          0.48499995470046997
+        ],
+        [
+          4.194900035858154,
+          13.849199295043945,
+          2.365000009536743
+        ]
+      ],
+      "triangles": 6,
+      "materials": [
+        "V8_COLORLESS_CLEAR_ARCHITECTURAL_GLASS"
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "boundary_edges": 0,
+      "normal_sample": [
+        [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "LIVING_FIX_BAY_FRONT_GLASS_1",
+      "bounds_m": [
+        [
+          4.264899730682373,
+          13.84119987487793,
+          0.48499995470046997
+        ],
+        [
+          6.434899806976318,
+          13.849199295043945,
+          2.365000009536743
+        ]
+      ],
+      "triangles": 6,
+      "materials": [
+        "V8_COLORLESS_CLEAR_ARCHITECTURAL_GLASS"
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "boundary_edges": 0,
+      "normal_sample": [
+        [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "LIVING_FIX_BAY_FRONT_GLASS_2",
+      "bounds_m": [
+        [
+          6.504899978637695,
+          13.84119987487793,
+          0.48499995470046997
+        ],
+        [
+          7.064899444580078,
+          13.849199295043945,
+          2.365000009536743
+        ]
+      ],
+      "triangles": 6,
+      "materials": [
+        "V8_COLORLESS_CLEAR_ARCHITECTURAL_GLASS"
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "boundary_edges": 0,
+      "normal_sample": [
+        [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "LIVING_FIX_BAY_LEFT_RETURN_GLASS_0",
+      "bounds_m": [
+        [
+          3.645900011062622,
+          13.235199928283691,
+          0.48499995470046997
+        ],
+        [
+          3.653899908065796,
+          13.810198783874512,
+          2.365000009536743
+        ]
+      ],
+      "triangles": 6,
+      "materials": [
+        "V8_COLORLESS_CLEAR_ARCHITECTURAL_GLASS"
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "boundary_edges": 0,
+      "normal_sample": [
+        [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "LIVING_FIX_BAY_RIGHT_RETURN_GLASS_0",
+      "bounds_m": [
+        [
+          7.045899868011475,
+          13.235199928283691,
+          0.48499995470046997
+        ],
+        [
+          7.053900241851807,
+          13.810198783874512,
+          2.365000009536743
+        ]
+      ],
+      "triangles": 6,
+      "materials": [
+        "V8_COLORLESS_CLEAR_ARCHITECTURAL_GLASS"
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "boundary_edges": 0,
+      "normal_sample": [
+        [
+          -1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "window_center_ray": [
+    {
+      "name": "LIVING_FIX_BAY_FRONT_GLASS_1",
+      "distance_m": 1.2411994934082031,
+      "location_m": [
+        5.349999904632568,
+        13.84119987487793,
+        1.5
+      ]
+    }
+  ]
+}

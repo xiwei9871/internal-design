@@ -1,0 +1,31 @@
+"""Meter-based approved direction, architecture immutable. Both coffee variants are real collections."""
+from pathlib import Path
+OUT=Path(__file__).resolve().parents[1]
+ROOT=OUT.parents[1]
+SOURCE=ROOT/'design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend'
+SOURCE_SHA='d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb'
+MODEL=OUT/'LIVING_FINALIZE_V1.blend'
+LAYOUT={
+ 'sofa_west':dict(bounds=[3.40,8.92,4.31,11.52],height=.85,seat_height=.44),
+ 'sofa_return':dict(bounds=[4.31,8.92,5.85,9.82],height=.85,seat_height=.44),
+ 'chaise':dict(bounds=[4.275,11.70,6.025,12.50],size=[1.75,.80,.85],center=[5.15,12.10],head='WEST'),
+ 'sideboard':dict(bounds=[3.50,7.60,5.70,8.00],size=[2.20,.40,.70],center=[4.60,7.80],front='SOUTH_TO_KITCHEN',leg_height=.20),
+ 'coffee_A':dict(bounds=[4.74,10.20,5.44,11.40],center=[5.09,10.80],size=[1.20,.70,.31],long_axis='Y',shape='racetrack'),
+ 'coffee_B':dict(bounds=[4.745,10.245,5.395,11.395],center=[5.07,10.82],size=[1.15,.65,.31],long_axis='Y',shape='oval'),
+ 'coffee_B_aux':dict(bounds=[5.85,9.98,6.27,10.40],center=[6.06,10.19],size=[.42,.42,.48],shape='round_pale_timber'),
+ 'window_side':dict(bounds=[3.82,11.75,4.18,12.11],center=[4.00,11.93],size=[.36,.36,.50]),
+ 'floor_lamp':dict(bounds=[3.88,12.40,4.12,12.64],center=[4.00,12.52]),
+ 'rug':dict(bounds=[4.20,9.45,6.38,11.68],thickness=.009),
+ 'curtain':dict(front_y=12.87,back_y=12.93),
+ 'reserved_east_wall_x':7.398,
+ 'entry_route_points':[[3.25,6.25],[4.9,6.9],[6.6,7.4],[6.70,8.8],[6.75,10.6],[6.8,12.3]],
+}
+CAMERAS={
+ 'MAIN':dict(pos=[7.10,8.35,1.55],target=[4.75,10.95,1.06],lens=28,file='living_main_view_v1.png',variant='A'),
+ 'REVERSE':dict(pos=[3.58,12.68,1.55],target=[6.25,8.40,1.04],lens=27,file='living_reverse_view_v1.png',variant='A'),
+ 'CHAISE':dict(pos=[6.65,10.97,1.45],target=[5.11,12.16,.86],lens=36,file='living_chaise_closeup_v1.png',variant='A'),
+ 'SIDEBOARD':dict(pos=[6.30,6.72,1.35],target=[4.63,7.83,.63],lens=36,file='living_sideboard_closeup_v1.png',variant='A'),
+ 'WIDE':dict(pos=[7.12,12.60,1.58],target=[4.58,9.40,1.05],lens=24,file='living_wide_view_v1.png',variant='A'),
+ 'COFFEE_A':dict(pos=[6.84,9.56,1.44],target=[5.00,10.72,.65],lens=34,file='living_coffee_A_v1.png',variant='A'),
+ 'COFFEE_B':dict(pos=[6.84,9.56,1.44],target=[5.00,10.72,.65],lens=34,file='living_coffee_B_v1.png',variant='B'),
+}

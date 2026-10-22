@@ -1,0 +1,70 @@
+{
+  "status": "PASS_TECHNICAL_ONLY",
+  "errors": [],
+  "output_sha256": "ad9960ad4991e1f2f524a052815ae5c469efcf50967539fa74d921a877c741b8",
+  "protected_files": 13,
+  "baseline_objects_preserved": 70,
+  "frame_copies_preserved": 14,
+  "source_shaders_camera_light_world_grade_preserved": true,
+  "guides_hidden_by_default": true,
+  "shells": {
+    "V10_SEAT_COMPLETE_COVER": {
+      "vertices": 98306,
+      "faces": 98304,
+      "nonmanifold_edges": 0,
+      "zero_edges": 0,
+      "tiny_faces": 0,
+      "signed_volume_m3": 0.1498894163362073,
+      "bounds_m": [
+        [
+          -0.516566276550293,
+          -0.44903457164764404,
+          0.2850000262260437
+        ],
+        [
+          0.516566276550293,
+          0.44903457164764404,
+          0.48364076018333435
+        ]
+      ]
+    },
+    "V10_BACK_COMPLETE_COVER": {
+      "vertices": 98306,
+      "faces": 98304,
+      "nonmanifold_edges": 0,
+      "zero_edges": 0,
+      "tiny_faces": 0,
+      "signed_volume_m3": 0.0629056827336317,
+      "bounds_m": [
+        [
+          -0.5175707936286926,
+          0.32429057359695435,
+          0.4070829153060913
+        ],
+        [
+          0.5175707936286926,
+          0.5928338170051575,
+          0.8059983253479004
+        ]
+      ]
+    }
+  },
+  "seat_back_surface_intersection_pairs": 0,
+  "soft_timber_surface_intersections": [],
+  "declared_seat_deck_contacts": [],
+  "minimum_back_to_seat_vertex_gap_mm": 1.4542341232299805,
+  "seat_bottom_to_deck_gap_mm": 2.622604372559678e-05,
+  "max_seam_attachment_error_m": 8.429369557916289e-08,
+  "packed_images": 18,
+  "missing_images": [],
+  "seat_crown_mm": 483.64076018333435,
+  "total_height_mm": 805.9983253479004,
+  "old700mm_conflict_mm": 105.99832534790039,
+  "not_approved": [
+    "appearance",
+    "procurement SKU",
+    "final seat height",
+    "foam/down mechanics",
+    "house installation"
+  ]
+}

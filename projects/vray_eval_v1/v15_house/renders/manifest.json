@@ -1,0 +1,452 @@
+[
+ {
+  "cam": "CAM_couple_bedroom_VIEW_01",
+  "file": "couple_bedroom_view01.png",
+  "seconds": 850.9,
+  "exists": true
+ },
+ {
+  "cam": "CAM_dining_VIEW_01",
+  "file": "dining_view01.png",
+  "seconds": 855.5,
+  "exists": true
+ },
+ {
+  "cam": "CAM_entry_VIEW_01",
+  "file": "entry_view01.png",
+  "seconds": 849.0,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bath_VIEW_01",
+  "file": "guest_bath_view01.png",
+  "seconds": 855.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bedroom_VIEW_01",
+  "file": "guest_bedroom_view01.png",
+  "seconds": 850.2,
+  "exists": true
+ },
+ {
+  "cam": "CAM_hallway_VIEW_01",
+  "file": "hallway_view01.png",
+  "seconds": 254.9,
+  "exists": true
+ },
+ {
+  "cam": "CAM_kitchen_VIEW_01",
+  "file": "kitchen_view01.png",
+  "seconds": 795.4,
+  "exists": true
+ },
+ {
+  "cam": "CAM_living_VIEW_01",
+  "file": "living_view01.png",
+  "seconds": 858.7,
+  "exists": true
+ },
+ {
+  "cam": "CAM_master_bath_VIEW_01",
+  "file": "master_bath_view01.png",
+  "seconds": 862.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_mother_bedroom_VIEW_01",
+  "file": "mother_bedroom_view01.png",
+  "seconds": 848.0,
+  "exists": true
+ },
+ {
+  "cam": "CAM_north_sunroom_VIEW_01",
+  "file": "north_sunroom_view01.png",
+  "seconds": 845.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_reading_transition_VIEW_01",
+  "file": "reading_transition_view01.png",
+  "seconds": 748.7,
+  "exists": true
+ },
+ {
+  "cam": "CAM_secondary_bath_VIEW_01",
+  "file": "secondary_bath_view01.png",
+  "seconds": 853.4,
+  "exists": true
+ },
+ {
+  "cam": "CAM_service_balcony_VIEW_01",
+  "file": "service_balcony_view01.png",
+  "seconds": 845.3,
+  "exists": true
+ },
+ {
+  "cam": "CAM_study_VIEW_01",
+  "file": "study_view01.png",
+  "seconds": 847.4,
+  "exists": true
+ },
+ {
+  "cam": "CAM_couple_bedroom_VIEW_02",
+  "file": "couple_bedroom_view02.png",
+  "seconds": 849.9,
+  "exists": true
+ },
+ {
+  "cam": "CAM_dining_VIEW_02",
+  "file": "dining_view02.png",
+  "seconds": 849.4,
+  "exists": true
+ },
+ {
+  "cam": "CAM_entry_VIEW_02",
+  "file": "entry_view02.png",
+  "seconds": 850.0,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bath_VIEW_02",
+  "file": "guest_bath_view02.png",
+  "seconds": 846.3,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bedroom_VIEW_02",
+  "file": "guest_bedroom_view02.png",
+  "seconds": 847.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_hallway_VIEW_02",
+  "file": "hallway_view02.png",
+  "seconds": 403.3,
+  "exists": true
+ },
+ {
+  "cam": "CAM_kitchen_VIEW_02",
+  "file": "kitchen_view02.png",
+  "seconds": 846.0,
+  "exists": true
+ },
+ {
+  "cam": "CAM_living_VIEW_02",
+  "file": "living_view02.png",
+  "seconds": 848.7,
+  "exists": true
+ },
+ {
+  "cam": "CAM_master_bath_VIEW_02",
+  "file": "master_bath_view02.png",
+  "seconds": 855.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_mother_bedroom_VIEW_02",
+  "file": "mother_bedroom_view02.png",
+  "seconds": 845.6,
+  "exists": true
+ },
+ {
+  "cam": "CAM_north_sunroom_VIEW_02",
+  "file": "north_sunroom_view02.png",
+  "seconds": 846.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_reading_transition_VIEW_02",
+  "file": "reading_transition_view02.png",
+  "seconds": 853.6,
+  "exists": true
+ },
+ {
+  "cam": "CAM_secondary_bath_VIEW_02",
+  "file": "secondary_bath_view02.png",
+  "seconds": 847.5,
+  "exists": true
+ },
+ {
+  "cam": "CAM_service_balcony_VIEW_02",
+  "file": "service_balcony_view02.png",
+  "seconds": 844.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_study_VIEW_02",
+  "file": "study_view02.png",
+  "seconds": 846.4,
+  "exists": true
+ },
+ {
+  "cam": "CAM_couple_bedroom_VIEW_03",
+  "file": "couple_bedroom_view03.png",
+  "seconds": 846.6,
+  "exists": true
+ },
+ {
+  "cam": "CAM_dining_VIEW_03",
+  "file": "dining_view03.png",
+  "seconds": 844.9,
+  "exists": true
+ },
+ {
+  "cam": "CAM_entry_VIEW_03",
+  "file": "entry_view03.png",
+  "seconds": 845.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bath_VIEW_03",
+  "file": "guest_bath_view03.png",
+  "seconds": 848.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bedroom_VIEW_03",
+  "file": "guest_bedroom_view03.png",
+  "seconds": 846.4,
+  "exists": true
+ },
+ {
+  "cam": "CAM_hallway_VIEW_03",
+  "file": "hallway_view03.png",
+  "seconds": 206.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_kitchen_VIEW_03",
+  "file": "kitchen_view03.png",
+  "seconds": 844.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_living_VIEW_03",
+  "file": "living_view03.png",
+  "seconds": 850.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_master_bath_VIEW_03",
+  "file": "master_bath_view03.png",
+  "seconds": 832.6,
+  "exists": true
+ },
+ {
+  "cam": "CAM_mother_bedroom_VIEW_03",
+  "file": "mother_bedroom_view03.png",
+  "seconds": 845.7,
+  "exists": true
+ },
+ {
+  "cam": "CAM_north_sunroom_VIEW_03",
+  "file": "north_sunroom_view03.png",
+  "seconds": 847.3,
+  "exists": true
+ },
+ {
+  "cam": "CAM_reading_transition_VIEW_03",
+  "file": "reading_transition_view03.png",
+  "seconds": 844.3,
+  "exists": true
+ },
+ {
+  "cam": "CAM_secondary_bath_VIEW_03",
+  "file": "secondary_bath_view03.png",
+  "seconds": 848.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_service_balcony_VIEW_03",
+  "file": "service_balcony_view03.png",
+  "seconds": 846.3,
+  "exists": true
+ },
+ {
+  "cam": "CAM_study_VIEW_03",
+  "file": "study_view03.png",
+  "seconds": 846.7,
+  "exists": true
+ },
+ {
+  "cam": "CAM_couple_bedroom_VIEW_04",
+  "file": "couple_bedroom_view04.png",
+  "seconds": 847.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_dining_VIEW_04",
+  "file": "dining_view04.png",
+  "seconds": 844.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_entry_VIEW_04",
+  "file": "entry_view04.png",
+  "seconds": 848.6,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bath_VIEW_04",
+  "file": "guest_bath_view04.png",
+  "seconds": 854.6,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bedroom_VIEW_04",
+  "file": "guest_bedroom_view04.png",
+  "seconds": 849.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_hallway_VIEW_04",
+  "file": "hallway_view04.png",
+  "seconds": 856.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_kitchen_VIEW_04",
+  "file": "kitchen_view04.png",
+  "seconds": 849.2,
+  "exists": true
+ },
+ {
+  "cam": "CAM_living_VIEW_04",
+  "file": "living_view04.png",
+  "seconds": 864.5,
+  "exists": true
+ },
+ {
+  "cam": "CAM_master_bath_VIEW_04",
+  "file": "master_bath_view04.png",
+  "seconds": 862.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_mother_bedroom_VIEW_04",
+  "file": "mother_bedroom_view04.png",
+  "seconds": 847.5,
+  "exists": true
+ },
+ {
+  "cam": "CAM_north_sunroom_VIEW_04",
+  "file": "north_sunroom_view04.png",
+  "seconds": 858.2,
+  "exists": true
+ },
+ {
+  "cam": "CAM_reading_transition_VIEW_04",
+  "file": "reading_transition_view04.png",
+  "seconds": 850.3,
+  "exists": true
+ },
+ {
+  "cam": "CAM_secondary_bath_VIEW_04",
+  "file": "secondary_bath_view04.png",
+  "seconds": 848.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_service_balcony_VIEW_04",
+  "file": "service_balcony_view04.png",
+  "seconds": 848.4,
+  "exists": true
+ },
+ {
+  "cam": "CAM_study_VIEW_04",
+  "file": "study_view04.png",
+  "seconds": 846.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_couple_bedroom_VIEW_05",
+  "file": "couple_bedroom_view05.png",
+  "seconds": 849.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_dining_VIEW_05",
+  "file": "dining_view05.png",
+  "seconds": 853.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_entry_VIEW_05",
+  "file": "entry_view05.png",
+  "seconds": 847.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bath_VIEW_05",
+  "file": "guest_bath_view05.png",
+  "seconds": 847.5,
+  "exists": true
+ },
+ {
+  "cam": "CAM_guest_bedroom_VIEW_05",
+  "file": "guest_bedroom_view05.png",
+  "seconds": 861.1,
+  "exists": true
+ },
+ {
+  "cam": "CAM_hallway_VIEW_05",
+  "file": "hallway_view05.png",
+  "seconds": 855.9,
+  "exists": true
+ },
+ {
+  "cam": "CAM_kitchen_VIEW_05",
+  "file": "kitchen_view05.png",
+  "seconds": 856.2,
+  "exists": true
+ },
+ {
+  "cam": "CAM_living_VIEW_05",
+  "file": "living_view05.png",
+  "seconds": 848.0,
+  "exists": true
+ },
+ {
+  "cam": "CAM_master_bath_VIEW_05",
+  "file": "master_bath_view05.png",
+  "seconds": 852.8,
+  "exists": true
+ },
+ {
+  "cam": "CAM_mother_bedroom_VIEW_05",
+  "file": "mother_bedroom_view05.png",
+  "seconds": 845.5,
+  "exists": true
+ },
+ {
+  "cam": "CAM_north_sunroom_VIEW_05",
+  "file": "north_sunroom_view05.png",
+  "seconds": 855.0,
+  "exists": true
+ },
+ {
+  "cam": "CAM_reading_transition_VIEW_05",
+  "file": "reading_transition_view05.png",
+  "seconds": 850.3,
+  "exists": true
+ },
+ {
+  "cam": "CAM_secondary_bath_VIEW_05",
+  "file": "secondary_bath_view05.png",
+  "seconds": 860.2,
+  "exists": true
+ },
+ {
+  "cam": "CAM_service_balcony_VIEW_05",
+  "file": "service_balcony_view05.png",
+  "seconds": 849.6,
+  "exists": true
+ },
+ {
+  "cam": "CAM_study_VIEW_05",
+  "file": "study_view05.png",
+  "seconds": 850.1,
+  "exists": true
+ }
+]

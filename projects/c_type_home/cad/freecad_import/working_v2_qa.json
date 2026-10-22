@@ -1,0 +1,49 @@
+{
+  "source": "世纪欣园FF_freecad_2000_ascii.dxf",
+  "output": "世纪欣园FF_freecad_WORKING.dxf",
+  "source_sha256": "9a103a204c9ada13f4090f64f43190497a9792e0d32d3b73af671ec84697359c",
+  "output_sha256": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0",
+  "dxf_version": "AC1015",
+  "insunits": 4,
+  "codepage": "ANSI_1252",
+  "entity_count": 363,
+  "entity_types": {
+    "LINE": 258,
+    "LWPOLYLINE": 60,
+    "ARC": 45
+  },
+  "layers": [
+    "0",
+    "Defpoints",
+    "F-DOOR",
+    "F-FURN",
+    "F-SAN FIT",
+    "S-S.WALL",
+    "S-\\U+697c\\U+68af",
+    "USER_GUIDE_FURNITURE"
+  ],
+  "extents": [
+    1299471.914780512,
+    -297157.7880950155,
+    1314571.914780512,
+    -281504.7759819373
+  ],
+  "width_mm": 15100.0,
+  "height_mm": 15653.012113078206,
+  "source_types": {
+    "TEXT": 40,
+    "CIRCLE": 18,
+    "INSERT": 13,
+    "LINE": 223,
+    "LWPOLYLINE": 15,
+    "HATCH": 6,
+    "ARC": 3,
+    "DIMENSION": 18,
+    "MTEXT": 6
+  },
+  "notes": [
+    "pure LINE/ARC/LWPOLYLINE/CIRCLE geometry; no INSERT/HATCH/TEXT/DIMENSION",
+    "all source model-space INSERTs except off-origin RC-GRILL are expanded in WCS",
+    "no translation/rotation/scale applied to source coordinates"
+  ]
+}

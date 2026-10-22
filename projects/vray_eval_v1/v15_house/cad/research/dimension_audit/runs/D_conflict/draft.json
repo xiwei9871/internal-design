@@ -1,0 +1,64 @@
+{
+ "name": "D_conflict",
+ "height": 2800,
+ "phase": "renovate",
+ "walls": [
+  {
+   "a": [
+    100,
+    3900
+   ],
+   "b": [
+    4900,
+    3900
+   ],
+   "t": 200,
+   "bearing": true
+  },
+  {
+   "a": [
+    100,
+    100
+   ],
+   "b": [
+    100,
+    3900
+   ],
+   "t": 200,
+   "bearing": true
+  },
+  {
+   "a": [
+    4900,
+    100
+   ],
+   "b": [
+    4900,
+    3900
+   ],
+   "t": 200,
+   "bearing": true
+  },
+  {
+   "a": [
+    100,
+    100
+   ],
+   "b": [
+    4900,
+    100
+   ],
+   "t": 200,
+   "bearing": true
+  }
+ ],
+ "rooms": [],
+ "structs": [],
+ "autoElec": true,
+ "underlay": {
+  "image": "/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/cad/research/dimension_audit/runs/D_conflict/underlay.png",
+  "mmPerPx": 8,
+  "x": -1440,
+  "y": -640
+ }
+}

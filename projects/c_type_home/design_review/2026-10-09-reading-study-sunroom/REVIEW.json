@@ -1,0 +1,43 @@
+{
+  "status": "DESIGN_REVIEW_REQUIRED",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console_bath_mirrors_review/CONSOLE400_THREE_BATH_MIRRORS.blend",
+  "source_sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644",
+  "source_unchanged": true,
+  "basis": "source-hash-matched model world mesh inventory, not image measurement",
+  "reading_shelf_mm": [
+    820,
+    320
+  ],
+  "reading_same_wall_as_handrail": true,
+  "reading_shelf_rail_end_AABB_gap_mm": 439.9423599243164,
+  "upper_lowest_hard_edge_mm": 1774.999976158142,
+  "upper_depth_mm": 700.0007629394531,
+  "sofa_bounds_m": [
+    [
+      8.889999389648438,
+      11.139999389648438,
+      0.0
+    ],
+    [
+      10.34000015258789,
+      11.890000343322754,
+      0.800000011920929
+    ]
+  ],
+  "plan_overlap_mm": [
+    1430.0003051757812,
+    695.0006484985352
+  ],
+  "head_motion_verified": false,
+  "actual_seat_height_verified": false,
+  "standing_height_scenarios_not_standards": {
+    "1700": 74.99997615814209,
+    "1750": 24.99997615814209,
+    "1800": -25.00002384185791
+  },
+  "owner_direction": [
+    "Move reading shelf to opposite wall and keep handrail route clear.",
+    "Add one quiet artwork to study blank wall."
+  ],
+  "sunroom_recommendation": "Remove deep overhead storage above sofa or make shallow recessed higher storage; retain laundryoverhead separately; require actual seat/head-motion/door operation review."
+}

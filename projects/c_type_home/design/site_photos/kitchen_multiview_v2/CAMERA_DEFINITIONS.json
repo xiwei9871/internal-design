@@ -1,0 +1,173 @@
+[
+  {
+    "id": "01",
+    "name": "整体_西南轴测",
+    "slug": "overall_southwest",
+    "camera": "KITCHEN_REVIEW_CAM_01",
+    "pos": [
+      2.0,
+      -3.6,
+      5.3
+    ],
+    "target": [
+      6.4,
+      2.15,
+      1.1
+    ],
+    "projection": "ORTHO",
+    "scale": 7.4,
+    "cut": 0.45
+  },
+  {
+    "id": "02",
+    "name": "整体_东北轴测",
+    "slug": "overall_northeast",
+    "camera": "KITCHEN_REVIEW_CAM_02",
+    "pos": [
+      9.0,
+      6.0,
+      5.7
+    ],
+    "target": [
+      6.2,
+      2.2,
+      1.0
+    ],
+    "projection": "ORTHO",
+    "scale": 7.0,
+    "cut": 0.45
+  },
+  {
+    "id": "03",
+    "name": "冰箱与两侧柜列",
+    "slug": "fridge_columns",
+    "camera": "KITCHEN_REVIEW_CAM_03",
+    "pos": [
+      6.6,
+      0.85,
+      1.6
+    ],
+    "target": [
+      6.66,
+      4.05,
+      1.205
+    ],
+    "projection": "PERSP",
+    "lens": 28,
+    "cut": 0.45
+  },
+  {
+    "id": "04",
+    "name": "灶台与长边柜体",
+    "slug": "cooking_run",
+    "camera": "KITCHEN_REVIEW_CAM_04",
+    "pos": [
+      5.1,
+      2.2,
+      1.6
+    ],
+    "target": [
+      7.5,
+      2.1,
+      1.2
+    ],
+    "projection": "PERSP",
+    "lens": 22,
+    "cut": 0.45
+  },
+  {
+    "id": "05",
+    "name": "水槽与转角",
+    "slug": "sink_corner",
+    "camera": "KITCHEN_REVIEW_CAM_05",
+    "pos": [
+      6.75,
+      2.6,
+      1.6
+    ],
+    "target": [
+      6.7,
+      0.22,
+      1.2
+    ],
+    "projection": "PERSP",
+    "lens": 24,
+    "cut": 0.45
+  },
+  {
+    "id": "06",
+    "name": "岛台与旁柜_室内视点",
+    "slug": "island_interior",
+    "camera": "KITCHEN_REVIEW_CAM_06",
+    "pos": [
+      6.75,
+      3.2,
+      1.6
+    ],
+    "target": [
+      5.25,
+      1.3,
+      1.2
+    ],
+    "projection": "PERSP",
+    "lens": 24,
+    "cut": 0.45
+  },
+  {
+    "id": "07",
+    "name": "岛台抽屉与圆角",
+    "slug": "island_drawers",
+    "camera": "KITCHEN_REVIEW_CAM_07",
+    "pos": [
+      7.15,
+      1.9,
+      1.1
+    ],
+    "target": [
+      5.95,
+      1.85,
+      0.5
+    ],
+    "projection": "PERSP",
+    "lens": 28,
+    "cut": 0.45
+  },
+  {
+    "id": "08",
+    "name": "600高柜与上方挂机",
+    "slug": "utility_and_ac",
+    "camera": "KITCHEN_REVIEW_CAM_08",
+    "pos": [
+      5.2,
+      3.8,
+      1.6
+    ],
+    "target": [
+      5.2,
+      1.0,
+      1.25
+    ],
+    "projection": "PERSP",
+    "lens": 27,
+    "cut": 0.45
+  },
+  {
+    "id": "09",
+    "name": "厨房俯视布局",
+    "slug": "top_layout",
+    "camera": "KITCHEN_REVIEW_CAM_09",
+    "pos": [
+      6.15,
+      2.3,
+      10.0
+    ],
+    "target": [
+      6.15,
+      2.3,
+      0
+    ],
+    "projection": "ORTHO",
+    "scale": 7.0,
+    "cut": 1.2
+  }
+]

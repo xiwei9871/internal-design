@@ -1,0 +1,171 @@
+{
+  "status": "PASS_TECHNICAL_LOCAL_CHANGE_CHECKS_WITH_FIT_LIMITATIONS",
+  "sha256": "f935507a911a9b2b4f9784f141172871cc32f18bf3a40d46e40f45aa8b7d6e31",
+  "original_objects": 3478,
+  "unexpected_geometry_pose_visibility_material_changes": [],
+  "source_protection_count": 16,
+  "source_view": {
+    "layer": "OVERVIEW_CEILING_HIDDEN",
+    "ceilings_hidden": true
+  },
+  "art_bottom_above_FFL_mm": 1329.9999713897705,
+  "art_center_above_FFL_mm": 1650,
+  "art_back_to_wall_mm": 2,
+  "vanity_width_mm": 1000,
+  "shower_outer_mm": [
+    950,
+    950
+  ],
+  "shower_door_panel_mm": 636.3961030678928,
+  "nominal_post_clear_opening_mm": 618.3961030678928,
+  "door_swing_samples": [
+    {
+      "degrees": 0,
+      "hits": []
+    },
+    {
+      "degrees": 15,
+      "hits": []
+    },
+    {
+      "degrees": 30,
+      "hits": []
+    },
+    {
+      "degrees": 45,
+      "hits": []
+    },
+    {
+      "degrees": 60,
+      "hits": []
+    },
+    {
+      "degrees": 75,
+      "hits": []
+    },
+    {
+      "degrees": 90,
+      "hits": []
+    }
+  ],
+  "rower_body_no_obstacle_intersections": true,
+  "rower_manufacturer_use_zone_fit": "FAIL_WITH_CURRENT_FURNITURE",
+  "rower_use_zone_overlaps": [
+    {
+      "object": "B11_Circle_CATALOG_00_00",
+      "use_zone_plan_overlap_xy_mm": [
+        480.0,
+        30.0
+      ]
+    },
+    {
+      "object": "LIVING_FIX_BAY_SILL_PLATFORM",
+      "use_zone_plan_overlap_xy_mm": [
+        2040.1,
+        69.8
+      ]
+    },
+    {
+      "object": "V4_Chaise_reclined_side.001",
+      "use_zone_plan_overlap_xy_mm": [
+        476.4,
+        36.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_seat_side.001",
+      "use_zone_plan_overlap_xy_mm": [
+        500.0,
+        36.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_ash_arm.001",
+      "use_zone_plan_overlap_xy_mm": [
+        460.0,
+        38.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_arm_connection.002",
+      "use_zone_plan_overlap_xy_mm": [
+        25.0,
+        24.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_rear_splayed_leg.001",
+      "use_zone_plan_overlap_xy_mm": [
+        283.1,
+        43.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_underseat_slat",
+      "use_zone_plan_overlap_xy_mm": [
+        55.0,
+        110.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_underseat_slat.001",
+      "use_zone_plan_overlap_xy_mm": [
+        55.0,
+        110.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_underback_slat",
+      "use_zone_plan_overlap_xy_mm": [
+        55.0,
+        110.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_underback_slat.001",
+      "use_zone_plan_overlap_xy_mm": [
+        55.0,
+        110.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_underback_slat.002",
+      "use_zone_plan_overlap_xy_mm": [
+        55.0,
+        110.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_underback_slat.003",
+      "use_zone_plan_overlap_xy_mm": [
+        55.0,
+        110.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_underback_slat.004",
+      "use_zone_plan_overlap_xy_mm": [
+        55.0,
+        110.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_full_seat",
+      "use_zone_plan_overlap_xy_mm": [
+        507.5,
+        97.0
+      ]
+    },
+    {
+      "object": "V4_Chaise_full_back",
+      "use_zone_plan_overlap_xy_mm": [
+        467.9,
+        97.0
+      ]
+    }
+  ],
+  "handrail_extension_mm": 350,
+  "local_building_code_certification": false,
+  "construction_product_selection_and_waterproofing_pending": true,
+  "owner_visual_acceptance": false
+}

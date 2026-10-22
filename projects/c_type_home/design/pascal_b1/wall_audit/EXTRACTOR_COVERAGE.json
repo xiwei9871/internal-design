@@ -1,0 +1,2858 @@
+{
+ "Polyline": {
+  "layer": "S-S.WALL",
+  "label": "Polyline",
+  "type": "Part::Feature",
+  "pts": 35,
+  "covered_frac": 0.63
+ },
+ "Polyline022": {
+  "layer": "F-DOOR",
+  "label": "Polyline022",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.13
+ },
+ "Line029": {
+  "layer": "S-S.WALL",
+  "label": "Line029",
+  "type": "Part::Line",
+  "pts": 12,
+  "covered_frac": 0.5
+ },
+ "Arc008": {
+  "layer": "F-DOOR",
+  "label": "Arc008",
+  "type": "Part::Circle",
+  "pts": 30,
+  "covered_frac": 0.1
+ },
+ "Line030": {
+  "layer": "S-S.WALL",
+  "label": "Line030",
+  "type": "Part::Line",
+  "pts": 72,
+  "covered_frac": 1.0
+ },
+ "Arc009": {
+  "layer": "F-DOOR",
+  "label": "Arc009",
+  "type": "Part::Circle",
+  "pts": 21,
+  "covered_frac": 0.14
+ },
+ "Line031": {
+  "layer": "S-S.WALL",
+  "label": "Line031",
+  "type": "Part::Line",
+  "pts": 77,
+  "covered_frac": 0.96
+ },
+ "Arc010": {
+  "layer": "F-DOOR",
+  "label": "Arc010",
+  "type": "Part::Circle",
+  "pts": 16,
+  "covered_frac": 0.12
+ },
+ "Line032": {
+  "layer": "S-S.WALL",
+  "label": "Line032",
+  "type": "Part::Line",
+  "pts": 72,
+  "covered_frac": 0.12
+ },
+ "Arc011": {
+  "layer": "F-DOOR",
+  "label": "Arc011",
+  "type": "Part::Circle",
+  "pts": 10,
+  "covered_frac": 0.2
+ },
+ "Line033": {
+  "layer": "S-S.WALL",
+  "label": "Line033",
+  "type": "Part::Line",
+  "pts": 106,
+  "covered_frac": 1.0
+ },
+ "Polyline023": {
+  "layer": "F-DOOR",
+  "label": "Polyline023",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.3
+ },
+ "Polyline024": {
+  "layer": "F-DOOR",
+  "label": "Polyline024",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.0
+ },
+ "Line034": {
+  "layer": "S-S.WALL",
+  "label": "Line034",
+  "type": "Part::Line",
+  "pts": 70,
+  "covered_frac": 0.99
+ },
+ "Polyline025": {
+  "layer": "F-DOOR",
+  "label": "Polyline025",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.0
+ },
+ "Polyline026": {
+  "layer": "F-DOOR",
+  "label": "Polyline026",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.0
+ },
+ "Line035": {
+  "layer": "S-S.WALL",
+  "label": "Line035",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 1.0
+ },
+ "Polyline027": {
+  "layer": "F-DOOR",
+  "label": "Polyline027",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.0
+ },
+ "Arc012": {
+  "layer": "F-DOOR",
+  "label": "Arc012",
+  "type": "Part::Circle",
+  "pts": 30,
+  "covered_frac": 0.23
+ },
+ "Arc013": {
+  "layer": "F-DOOR",
+  "label": "Arc013",
+  "type": "Part::Circle",
+  "pts": 21,
+  "covered_frac": 0.24
+ },
+ "Line037": {
+  "layer": "S-S.WALL",
+  "label": "Line037",
+  "type": "Part::Line",
+  "pts": 77,
+  "covered_frac": 0.03
+ },
+ "Arc014": {
+  "layer": "F-DOOR",
+  "label": "Arc014",
+  "type": "Part::Circle",
+  "pts": 16,
+  "covered_frac": 0.31
+ },
+ "Line038": {
+  "layer": "S-S.WALL",
+  "label": "Line038",
+  "type": "Part::Line",
+  "pts": 77,
+  "covered_frac": 1.0
+ },
+ "Arc015": {
+  "layer": "F-DOOR",
+  "label": "Arc015",
+  "type": "Part::Circle",
+  "pts": 10,
+  "covered_frac": 0.4
+ },
+ "Line039": {
+  "layer": "S-S.WALL",
+  "label": "Line039",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 1.0
+ },
+ "Polyline028": {
+  "layer": "F-DOOR",
+  "label": "Polyline028",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 1.0
+ },
+ "Line040": {
+  "layer": "S-S.WALL",
+  "label": "Line040",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 1.0
+ },
+ "Polyline029": {
+  "layer": "F-DOOR",
+  "label": "Polyline029",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.3
+ },
+ "Polyline030": {
+  "layer": "F-DOOR",
+  "label": "Polyline030",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.23
+ },
+ "Line041": {
+  "layer": "S-S.WALL",
+  "label": "Line041",
+  "type": "Part::Line",
+  "pts": 107,
+  "covered_frac": 0.02
+ },
+ "Polyline031": {
+  "layer": "F-DOOR",
+  "label": "Polyline031",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.2
+ },
+ "Polyline032": {
+  "layer": "F-DOOR",
+  "label": "Polyline032",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.15
+ },
+ "Line042": {
+  "layer": "S-S.WALL",
+  "label": "Line042",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 1.0
+ },
+ "Arc016": {
+  "layer": "F-DOOR",
+  "label": "Arc016",
+  "type": "Part::Circle",
+  "pts": 26,
+  "covered_frac": 0.12
+ },
+ "Line043": {
+  "layer": "S-S.WALL",
+  "label": "Line043",
+  "type": "Part::Line",
+  "pts": 7,
+  "covered_frac": 1.0
+ },
+ "Arc017": {
+  "layer": "F-DOOR",
+  "label": "Arc017",
+  "type": "Part::Circle",
+  "pts": 18,
+  "covered_frac": 0.17
+ },
+ "Arc018": {
+  "layer": "F-DOOR",
+  "label": "Arc018",
+  "type": "Part::Circle",
+  "pts": 14,
+  "covered_frac": 0.14
+ },
+ "Line044": {
+  "layer": "S-S.WALL",
+  "label": "Line044",
+  "type": "Part::Line",
+  "pts": 60,
+  "covered_frac": 1.0
+ },
+ "Line045": {
+  "layer": "S-S.WALL",
+  "label": "Line045",
+  "type": "Part::Line",
+  "pts": 60,
+  "covered_frac": 1.0
+ },
+ "Arc019": {
+  "layer": "F-DOOR",
+  "label": "Arc019",
+  "type": "Part::Circle",
+  "pts": 9,
+  "covered_frac": 0.22
+ },
+ "Line046": {
+  "layer": "S-S.WALL",
+  "label": "Line046",
+  "type": "Part::Line",
+  "pts": 107,
+  "covered_frac": 1.0
+ },
+ "Polyline033": {
+  "layer": "F-DOOR",
+  "label": "Polyline033",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 1.0
+ },
+ "Polyline034": {
+  "layer": "F-DOOR",
+  "label": "Polyline034",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.3
+ },
+ "Line047": {
+  "layer": "S-S.WALL",
+  "label": "Line047",
+  "type": "Part::Line",
+  "pts": 155,
+  "covered_frac": 1.0
+ },
+ "Polyline035": {
+  "layer": "F-DOOR",
+  "label": "Polyline035",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.23
+ },
+ "Polyline036": {
+  "layer": "F-DOOR",
+  "label": "Polyline036",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.2
+ },
+ "Line048": {
+  "layer": "S-S.WALL",
+  "label": "Line048",
+  "type": "Part::Line",
+  "pts": 107,
+  "covered_frac": 1.0
+ },
+ "Polyline037": {
+  "layer": "F-DOOR",
+  "label": "Polyline037",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.15
+ },
+ "Arc020": {
+  "layer": "F-DOOR",
+  "label": "Arc020",
+  "type": "Part::Circle",
+  "pts": 26,
+  "covered_frac": 0.12
+ },
+ "Line049": {
+  "layer": "S-S.WALL",
+  "label": "Line049",
+  "type": "Part::Line",
+  "pts": 107,
+  "covered_frac": 1.0
+ },
+ "Arc021": {
+  "layer": "F-DOOR",
+  "label": "Arc021",
+  "type": "Part::Circle",
+  "pts": 18,
+  "covered_frac": 0.17
+ },
+ "Line050": {
+  "layer": "S-S.WALL",
+  "label": "Line050",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.53
+ },
+ "Arc022": {
+  "layer": "F-DOOR",
+  "label": "Arc022",
+  "type": "Part::Circle",
+  "pts": 14,
+  "covered_frac": 0.14
+ },
+ "Line051": {
+  "layer": "S-S.WALL",
+  "label": "Line051",
+  "type": "Part::Line",
+  "pts": 50,
+  "covered_frac": 0.98
+ },
+ "Arc023": {
+  "layer": "F-DOOR",
+  "label": "Arc023",
+  "type": "Part::Circle",
+  "pts": 9,
+  "covered_frac": 0.22
+ },
+ "Line052": {
+  "layer": "S-S.WALL",
+  "label": "Line052",
+  "type": "Part::Line",
+  "pts": 39,
+  "covered_frac": 1.0
+ },
+ "Polyline038": {
+  "layer": "F-DOOR",
+  "label": "Polyline038",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 1.0
+ },
+ "Line053": {
+  "layer": "S-S.WALL",
+  "label": "Line053",
+  "type": "Part::Line",
+  "pts": 35,
+  "covered_frac": 0.06
+ },
+ "Polyline039": {
+  "layer": "F-DOOR",
+  "label": "Polyline039",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.26
+ },
+ "Polyline040": {
+  "layer": "F-DOOR",
+  "label": "Polyline040",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.2
+ },
+ "Line054": {
+  "layer": "S-S.WALL",
+  "label": "Line054",
+  "type": "Part::Line",
+  "pts": 40,
+  "covered_frac": 0.35
+ },
+ "Polyline041": {
+  "layer": "F-DOOR",
+  "label": "Polyline041",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.17
+ },
+ "Polyline042": {
+  "layer": "F-DOOR",
+  "label": "Polyline042",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.13
+ },
+ "Line055": {
+  "layer": "S-S.WALL",
+  "label": "Line055",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.13
+ },
+ "Arc024": {
+  "layer": "F-DOOR",
+  "label": "Arc024",
+  "type": "Part::Circle",
+  "pts": 30,
+  "covered_frac": 0.1
+ },
+ "Line056": {
+  "layer": "S-S.WALL",
+  "label": "Line056",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Arc025": {
+  "layer": "F-DOOR",
+  "label": "Arc025",
+  "type": "Part::Circle",
+  "pts": 21,
+  "covered_frac": 0.14
+ },
+ "Line057": {
+  "layer": "S-S.WALL",
+  "label": "Line057",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Arc026": {
+  "layer": "F-DOOR",
+  "label": "Arc026",
+  "type": "Part::Circle",
+  "pts": 16,
+  "covered_frac": 0.12
+ },
+ "Line058": {
+  "layer": "S-S.WALL",
+  "label": "Line058",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Arc027": {
+  "layer": "F-DOOR",
+  "label": "Arc027",
+  "type": "Part::Circle",
+  "pts": 10,
+  "covered_frac": 0.2
+ },
+ "Line059": {
+  "layer": "S-S.WALL",
+  "label": "Line059",
+  "type": "Part::Line",
+  "pts": 47,
+  "covered_frac": 0.98
+ },
+ "Polyline043": {
+  "layer": "F-DOOR",
+  "label": "Polyline043",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.74
+ },
+ "Polyline044": {
+  "layer": "F-DOOR",
+  "label": "Polyline044",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.87
+ },
+ "Line060": {
+  "layer": "S-S.WALL",
+  "label": "Line060",
+  "type": "Part::Line",
+  "pts": 55,
+  "covered_frac": 1.0
+ },
+ "Polyline045": {
+  "layer": "F-DOOR",
+  "label": "Polyline045",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.67
+ },
+ "Polyline046": {
+  "layer": "F-DOOR",
+  "label": "Polyline046",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.41
+ },
+ "Line061": {
+  "layer": "S-S.WALL",
+  "label": "Line061",
+  "type": "Part::Line",
+  "pts": 36,
+  "covered_frac": 0.17
+ },
+ "Polyline047": {
+  "layer": "F-DOOR",
+  "label": "Polyline047",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.28
+ },
+ "Arc028": {
+  "layer": "F-DOOR",
+  "label": "Arc028",
+  "type": "Part::Circle",
+  "pts": 30,
+  "covered_frac": 0.47
+ },
+ "Line062": {
+  "layer": "S-S.WALL",
+  "label": "Line062",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 1.0
+ },
+ "Arc029": {
+  "layer": "F-DOOR",
+  "label": "Arc029",
+  "type": "Part::Circle",
+  "pts": 21,
+  "covered_frac": 0.62
+ },
+ "Line063": {
+  "layer": "S-S.WALL",
+  "label": "Line063",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 1.0
+ },
+ "Arc030": {
+  "layer": "F-DOOR",
+  "label": "Arc030",
+  "type": "Part::Circle",
+  "pts": 16,
+  "covered_frac": 0.81
+ },
+ "Line064": {
+  "layer": "S-S.WALL",
+  "label": "Line064",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.33
+ },
+ "Arc031": {
+  "layer": "F-DOOR",
+  "label": "Arc031",
+  "type": "Part::Circle",
+  "pts": 10,
+  "covered_frac": 0.4
+ },
+ "Line065": {
+  "layer": "S-S.WALL",
+  "label": "Line065",
+  "type": "Part::Line",
+  "pts": 37,
+  "covered_frac": 0.97
+ },
+ "Polyline048": {
+  "layer": "F-DOOR",
+  "label": "Polyline048",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.5
+ },
+ "Line066": {
+  "layer": "S-S.WALL",
+  "label": "Line066",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.33
+ },
+ "Polyline049": {
+  "layer": "F-DOOR",
+  "label": "Polyline049",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.04
+ },
+ "Polyline050": {
+  "layer": "F-DOOR",
+  "label": "Polyline050",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.04
+ },
+ "Line067": {
+  "layer": "S-S.WALL",
+  "label": "Line067",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Polyline051": {
+  "layer": "F-DOOR",
+  "label": "Polyline051",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.04
+ },
+ "Polyline052": {
+  "layer": "F-DOOR",
+  "label": "Polyline052",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.0
+ },
+ "Line068": {
+  "layer": "S-S.WALL",
+  "label": "Line068",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Arc032": {
+  "layer": "F-DOOR",
+  "label": "Arc032",
+  "type": "Part::Circle",
+  "pts": 30,
+  "covered_frac": 0.0
+ },
+ "Line069": {
+  "layer": "S-S.WALL",
+  "label": "Line069",
+  "type": "Part::Line",
+  "pts": 161,
+  "covered_frac": 1.0
+ },
+ "Arc033": {
+  "layer": "F-DOOR",
+  "label": "Arc033",
+  "type": "Part::Circle",
+  "pts": 21,
+  "covered_frac": 0.0
+ },
+ "Line070": {
+  "layer": "S-S.WALL",
+  "label": "Line070",
+  "type": "Part::Line",
+  "pts": 210,
+  "covered_frac": 0.85
+ },
+ "Arc034": {
+  "layer": "F-DOOR",
+  "label": "Arc034",
+  "type": "Part::Circle",
+  "pts": 16,
+  "covered_frac": 0.0
+ },
+ "Line071": {
+  "layer": "S-S.WALL",
+  "label": "Line071",
+  "type": "Part::Line",
+  "pts": 82,
+  "covered_frac": 1.0
+ },
+ "Arc035": {
+  "layer": "F-DOOR",
+  "label": "Arc035",
+  "type": "Part::Circle",
+  "pts": 10,
+  "covered_frac": 0.0
+ },
+ "Line072": {
+  "layer": "S-S.WALL",
+  "label": "Line072",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 1.0
+ },
+ "Line201": {
+  "layer": "F-DOOR",
+  "label": "Line201",
+  "type": "Part::Line",
+  "pts": 67,
+  "covered_frac": 0.03
+ },
+ "Line073": {
+  "layer": "S-S.WALL",
+  "label": "Line073",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 1.0
+ },
+ "Polyline053": {
+  "layer": "F-DOOR",
+  "label": "Polyline053",
+  "type": "Part::Feature",
+  "pts": 13,
+  "covered_frac": 1.0
+ },
+ "Polyline054": {
+  "layer": "F-DOOR",
+  "label": "Polyline054",
+  "type": "Part::Feature",
+  "pts": 13,
+  "covered_frac": 1.0
+ },
+ "Line074": {
+  "layer": "S-S.WALL",
+  "label": "Line074",
+  "type": "Part::Line",
+  "pts": 85,
+  "covered_frac": 1.0
+ },
+ "Line202": {
+  "layer": "F-DOOR",
+  "label": "Line202",
+  "type": "Part::Line",
+  "pts": 67,
+  "covered_frac": 1.0
+ },
+ "Line075": {
+  "layer": "S-S.WALL",
+  "label": "Line075",
+  "type": "Part::Line",
+  "pts": 16,
+  "covered_frac": 1.0
+ },
+ "Polyline055": {
+  "layer": "F-DOOR",
+  "label": "Polyline055",
+  "type": "Part::Feature",
+  "pts": 48,
+  "covered_frac": 1.0
+ },
+ "Polyline056": {
+  "layer": "F-DOOR",
+  "label": "Polyline056",
+  "type": "Part::Feature",
+  "pts": 48,
+  "covered_frac": 1.0
+ },
+ "Line076": {
+  "layer": "S-S.WALL",
+  "label": "Line076",
+  "type": "Part::Line",
+  "pts": 16,
+  "covered_frac": 1.0
+ },
+ "Polyline057": {
+  "layer": "F-DOOR",
+  "label": "Polyline057",
+  "type": "Part::Feature",
+  "pts": 48,
+  "covered_frac": 1.0
+ },
+ "Polyline058": {
+  "layer": "F-DOOR",
+  "label": "Polyline058",
+  "type": "Part::Feature",
+  "pts": 48,
+  "covered_frac": 1.0
+ },
+ "Polyline011": {
+  "layer": "S-S.WALL",
+  "label": "Polyline011",
+  "type": "Part::Feature",
+  "pts": 194,
+  "covered_frac": 0.38
+ },
+ "Polyline059": {
+  "layer": "F-DOOR",
+  "label": "Polyline059",
+  "type": "Part::Feature",
+  "pts": 48,
+  "covered_frac": 1.0
+ },
+ "Polyline012": {
+  "layer": "S-S.WALL",
+  "label": "Polyline012",
+  "type": "Part::Feature",
+  "pts": 202,
+  "covered_frac": 0.38
+ },
+ "Polyline013": {
+  "layer": "S-S.WALL",
+  "label": "Polyline013",
+  "type": "Part::Feature",
+  "pts": 206,
+  "covered_frac": 0.38
+ },
+ "Line077": {
+  "layer": "S-S.WALL",
+  "label": "Line077",
+  "type": "Part::Line",
+  "pts": 77,
+  "covered_frac": 0.05
+ },
+ "Line078": {
+  "layer": "S-S.WALL",
+  "label": "Line078",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.8
+ },
+ "Line079": {
+  "layer": "S-S.WALL",
+  "label": "Line079",
+  "type": "Part::Line",
+  "pts": 23,
+  "covered_frac": 0.0
+ },
+ "Line080": {
+  "layer": "S-S.WALL",
+  "label": "Line080",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.4
+ },
+ "Line081": {
+  "layer": "S-S.WALL",
+  "label": "Line081",
+  "type": "Part::Line",
+  "pts": 12,
+  "covered_frac": 1.0
+ },
+ "Line082": {
+  "layer": "S-S.WALL",
+  "label": "Line082",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 0.12
+ },
+ "Line083": {
+  "layer": "S-S.WALL",
+  "label": "Line083",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.8
+ },
+ "Line084": {
+  "layer": "S-S.WALL",
+  "label": "Line084",
+  "type": "Part::Line",
+  "pts": 20,
+  "covered_frac": 0.0
+ },
+ "Line085": {
+  "layer": "S-S.WALL",
+  "label": "Line085",
+  "type": "Part::Line",
+  "pts": 20,
+  "covered_frac": 1.0
+ },
+ "Line086": {
+  "layer": "S-S.WALL",
+  "label": "Line086",
+  "type": "Part::Line",
+  "pts": 20,
+  "covered_frac": 1.0
+ },
+ "Line087": {
+  "layer": "S-S.WALL",
+  "label": "Line087",
+  "type": "Part::Line",
+  "pts": 20,
+  "covered_frac": 0.0
+ },
+ "Line088": {
+  "layer": "S-S.WALL",
+  "label": "Line088",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 1.0
+ },
+ "Line089": {
+  "layer": "S-S.WALL",
+  "label": "Line089",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 1.0
+ },
+ "Line090": {
+  "layer": "S-S.WALL",
+  "label": "Line090",
+  "type": "Part::Line",
+  "pts": 12,
+  "covered_frac": 1.0
+ },
+ "Line091": {
+  "layer": "S-S.WALL",
+  "label": "Line091",
+  "type": "Part::Line",
+  "pts": 32,
+  "covered_frac": 0.69
+ },
+ "Line092": {
+  "layer": "S-S.WALL",
+  "label": "Line092",
+  "type": "Part::Line",
+  "pts": 50,
+  "covered_frac": 1.0
+ },
+ "Line093": {
+  "layer": "S-S.WALL",
+  "label": "Line093",
+  "type": "Part::Line",
+  "pts": 50,
+  "covered_frac": 1.0
+ },
+ "Line094": {
+  "layer": "S-S.WALL",
+  "label": "Line094",
+  "type": "Part::Line",
+  "pts": 49,
+  "covered_frac": 1.0
+ },
+ "Line095": {
+  "layer": "S-S.WALL",
+  "label": "Line095",
+  "type": "Part::Line",
+  "pts": 49,
+  "covered_frac": 1.0
+ },
+ "Line096": {
+  "layer": "S-S.WALL",
+  "label": "Line096",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.4
+ },
+ "Line097": {
+  "layer": "S-S.WALL",
+  "label": "Line097",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line098": {
+  "layer": "S-S.WALL",
+  "label": "Line098",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.93
+ },
+ "Line099": {
+  "layer": "S-S.WALL",
+  "label": "Line099",
+  "type": "Part::Line",
+  "pts": 20,
+  "covered_frac": 0.95
+ },
+ "Line100": {
+  "layer": "S-S.WALL",
+  "label": "Line100",
+  "type": "Part::Line",
+  "pts": 47,
+  "covered_frac": 0.04
+ },
+ "Line101": {
+  "layer": "S-S.WALL",
+  "label": "Line101",
+  "type": "Part::Line",
+  "pts": 57,
+  "covered_frac": 0.0
+ },
+ "Line102": {
+  "layer": "S-S.WALL",
+  "label": "Line102",
+  "type": "Part::Line",
+  "pts": 55,
+  "covered_frac": 0.0
+ },
+ "Line103": {
+  "layer": "S-S.WALL",
+  "label": "Line103",
+  "type": "Part::Line",
+  "pts": 52,
+  "covered_frac": 0.0
+ },
+ "Line104": {
+  "layer": "S-S.WALL",
+  "label": "Line104",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 0.76
+ },
+ "Line105": {
+  "layer": "S-S.WALL",
+  "label": "Line105",
+  "type": "Part::Line",
+  "pts": 16,
+  "covered_frac": 0.81
+ },
+ "Line106": {
+  "layer": "S-S.WALL",
+  "label": "Line106",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 0.86
+ },
+ "Line107": {
+  "layer": "S-S.WALL",
+  "label": "Line107",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 0.76
+ },
+ "Line108": {
+  "layer": "S-S.WALL",
+  "label": "Line108",
+  "type": "Part::Line",
+  "pts": 16,
+  "covered_frac": 0.81
+ },
+ "Line109": {
+  "layer": "S-S.WALL",
+  "label": "Line109",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 0.86
+ },
+ "Line110": {
+  "layer": "S-S.WALL",
+  "label": "Line110",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line111": {
+  "layer": "S-S.WALL",
+  "label": "Line111",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line112": {
+  "layer": "S-S.WALL",
+  "label": "Line112",
+  "type": "Part::Line",
+  "pts": 83,
+  "covered_frac": 1.0
+ },
+ "Line113": {
+  "layer": "S-S.WALL",
+  "label": "Line113",
+  "type": "Part::Line",
+  "pts": 6,
+  "covered_frac": 1.0
+ },
+ "Line114": {
+  "layer": "S-S.WALL",
+  "label": "Line114",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 0.75
+ },
+ "Line115": {
+  "layer": "S-S.WALL",
+  "label": "Line115",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 0.0
+ },
+ "Line116": {
+  "layer": "S-S.WALL",
+  "label": "Line116",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.5
+ },
+ "Line117": {
+  "layer": "S-S.WALL",
+  "label": "Line117",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.5
+ },
+ "Line118": {
+  "layer": "S-S.WALL",
+  "label": "Line118",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line119": {
+  "layer": "S-S.WALL",
+  "label": "Line119",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line120": {
+  "layer": "S-S.WALL",
+  "label": "Line120",
+  "type": "Part::Line",
+  "pts": 21,
+  "covered_frac": 1.0
+ },
+ "Line121": {
+  "layer": "S-S.WALL",
+  "label": "Line121",
+  "type": "Part::Line",
+  "pts": 21,
+  "covered_frac": 1.0
+ },
+ "Line122": {
+  "layer": "S-S.WALL",
+  "label": "Line122",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line123": {
+  "layer": "S-S.WALL",
+  "label": "Line123",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line124": {
+  "layer": "S-S.WALL",
+  "label": "Line124",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line125": {
+  "layer": "S-S.WALL",
+  "label": "Line125",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.8
+ },
+ "Line126": {
+  "layer": "S-S.WALL",
+  "label": "Line126",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line127": {
+  "layer": "S-S.WALL",
+  "label": "Line127",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Line128": {
+  "layer": "S-S.WALL",
+  "label": "Line128",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Line129": {
+  "layer": "S-S.WALL",
+  "label": "Line129",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Line130": {
+  "layer": "S-S.WALL",
+  "label": "Line130",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Line131": {
+  "layer": "S-S.WALL",
+  "label": "Line131",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.8
+ },
+ "Line132": {
+  "layer": "S-S.WALL",
+  "label": "Line132",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line133": {
+  "layer": "S-S.WALL",
+  "label": "Line133",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line134": {
+  "layer": "S-S.WALL",
+  "label": "Line134",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line135": {
+  "layer": "S-S.WALL",
+  "label": "Line135",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.0
+ },
+ "Line136": {
+  "layer": "S-S.WALL",
+  "label": "Line136",
+  "type": "Part::Line",
+  "pts": 20,
+  "covered_frac": 0.95
+ },
+ "Line137": {
+  "layer": "S-S.WALL",
+  "label": "Line137",
+  "type": "Part::Line",
+  "pts": 62,
+  "covered_frac": 0.0
+ },
+ "Line138": {
+  "layer": "S-S.WALL",
+  "label": "Line138",
+  "type": "Part::Line",
+  "pts": 72,
+  "covered_frac": 1.0
+ },
+ "Line139": {
+  "layer": "S-S.WALL",
+  "label": "Line139",
+  "type": "Part::Line",
+  "pts": 70,
+  "covered_frac": 1.0
+ },
+ "Line140": {
+  "layer": "S-S.WALL",
+  "label": "Line140",
+  "type": "Part::Line",
+  "pts": 67,
+  "covered_frac": 1.0
+ },
+ "Line217": {
+  "layer": "F-FURN",
+  "label": "Line217",
+  "type": "Part::Line",
+  "pts": 12,
+  "covered_frac": 0.0
+ },
+ "Line141": {
+  "layer": "S-S.WALL",
+  "label": "Line141",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Line218": {
+  "layer": "F-FURN",
+  "label": "Line218",
+  "type": "Part::Line",
+  "pts": 11,
+  "covered_frac": 0.0
+ },
+ "Line142": {
+  "layer": "S-S.WALL",
+  "label": "Line142",
+  "type": "Part::Line",
+  "pts": 16,
+  "covered_frac": 1.0
+ },
+ "Line219": {
+  "layer": "F-FURN",
+  "label": "Line219",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line143": {
+  "layer": "S-S.WALL",
+  "label": "Line143",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 1.0
+ },
+ "Line220": {
+  "layer": "F-FURN",
+  "label": "Line220",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line144": {
+  "layer": "S-S.WALL",
+  "label": "Line144",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Arc038": {
+  "layer": "F-FURN",
+  "label": "Arc038",
+  "type": "Part::Circle",
+  "pts": 14,
+  "covered_frac": 0.0
+ },
+ "Line145": {
+  "layer": "S-S.WALL",
+  "label": "Line145",
+  "type": "Part::Line",
+  "pts": 16,
+  "covered_frac": 1.0
+ },
+ "Line221": {
+  "layer": "F-FURN",
+  "label": "Line221",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 0.0
+ },
+ "Line146": {
+  "layer": "S-S.WALL",
+  "label": "Line146",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 1.0
+ },
+ "Arc039": {
+  "layer": "F-FURN",
+  "label": "Arc039",
+  "type": "Part::Circle",
+  "pts": 7,
+  "covered_frac": 0.0
+ },
+ "Line147": {
+  "layer": "S-S.WALL",
+  "label": "Line147",
+  "type": "Part::Line",
+  "pts": 54,
+  "covered_frac": 0.0
+ },
+ "Line222": {
+  "layer": "F-FURN",
+  "label": "Line222",
+  "type": "Part::Line",
+  "pts": 7,
+  "covered_frac": 0.0
+ },
+ "Line148": {
+  "layer": "S-S.WALL",
+  "label": "Line148",
+  "type": "Part::Line",
+  "pts": 65,
+  "covered_frac": 1.0
+ },
+ "Line223": {
+  "layer": "F-FURN",
+  "label": "Line223",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line149": {
+  "layer": "S-S.WALL",
+  "label": "Line149",
+  "type": "Part::Line",
+  "pts": 62,
+  "covered_frac": 1.0
+ },
+ "Line224": {
+  "layer": "F-FURN",
+  "label": "Line224",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line150": {
+  "layer": "S-S.WALL",
+  "label": "Line150",
+  "type": "Part::Line",
+  "pts": 60,
+  "covered_frac": 1.0
+ },
+ "Line225": {
+  "layer": "F-FURN",
+  "label": "Line225",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line151": {
+  "layer": "S-S.WALL",
+  "label": "Line151",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Line226": {
+  "layer": "F-FURN",
+  "label": "Line226",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line152": {
+  "layer": "S-S.WALL",
+  "label": "Line152",
+  "type": "Part::Line",
+  "pts": 16,
+  "covered_frac": 1.0
+ },
+ "Line227": {
+  "layer": "F-FURN",
+  "label": "Line227",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line252": {
+  "layer": "S-\\U+697c\\U+68af",
+  "label": "Line252",
+  "type": "Part::Line",
+  "pts": 22,
+  "covered_frac": 0.09
+ },
+ "Line153": {
+  "layer": "S-S.WALL",
+  "label": "Line153",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 1.0
+ },
+ "Arc040": {
+  "layer": "F-FURN",
+  "label": "Arc040",
+  "type": "Part::Circle",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line253": {
+  "layer": "S-\\U+697c\\U+68af",
+  "label": "Line253",
+  "type": "Part::Line",
+  "pts": 27,
+  "covered_frac": 0.37
+ },
+ "Arc044": {
+  "layer": "S-\\U+697c\\U+68af",
+  "label": "Arc044",
+  "type": "Part::Circle",
+  "pts": 35,
+  "covered_frac": 0.0
+ },
+ "Arc041": {
+  "layer": "F-FURN",
+  "label": "Arc041",
+  "type": "Part::Circle",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line154": {
+  "layer": "S-S.WALL",
+  "label": "Line154",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Line155": {
+  "layer": "S-S.WALL",
+  "label": "Line155",
+  "type": "Part::Line",
+  "pts": 16,
+  "covered_frac": 1.0
+ },
+ "Line228": {
+  "layer": "F-FURN",
+  "label": "Line228",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line254": {
+  "layer": "S-\\U+697c\\U+68af",
+  "label": "Line254",
+  "type": "Part::Line",
+  "pts": 29,
+  "covered_frac": 0.07
+ },
+ "Line156": {
+  "layer": "S-S.WALL",
+  "label": "Line156",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 1.0
+ },
+ "Polyline021": {
+  "layer": "F-DOOR",
+  "label": "Polyline021",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.17
+ },
+ "Arc042": {
+  "layer": "F-FURN",
+  "label": "Arc042",
+  "type": "Part::Circle",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line255": {
+  "layer": "S-\\U+697c\\U+68af",
+  "label": "Line255",
+  "type": "Part::Line",
+  "pts": 29,
+  "covered_frac": 0.0
+ },
+ "Polyline020": {
+  "layer": "F-DOOR",
+  "label": "Polyline020",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.2
+ },
+ "Line157": {
+  "layer": "S-S.WALL",
+  "label": "Line157",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Arc043": {
+  "layer": "F-FURN",
+  "label": "Arc043",
+  "type": "Part::Circle",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line256": {
+  "layer": "S-\\U+697c\\U+68af",
+  "label": "Line256",
+  "type": "Part::Line",
+  "pts": 29,
+  "covered_frac": 1.0
+ },
+ "Line158": {
+  "layer": "S-S.WALL",
+  "label": "Line158",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line229": {
+  "layer": "F-FURN",
+  "label": "Line229",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 1.0
+ },
+ "Line257": {
+  "layer": "S-\\U+697c\\U+68af",
+  "label": "Line257",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.6
+ },
+ "Line159": {
+  "layer": "S-S.WALL",
+  "label": "Line159",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.13
+ },
+ "Line230": {
+  "layer": "F-FURN",
+  "label": "Line230",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line160": {
+  "layer": "S-S.WALL",
+  "label": "Line160",
+  "type": "Part::Line",
+  "pts": 35,
+  "covered_frac": 0.94
+ },
+ "Line231": {
+  "layer": "F-FURN",
+  "label": "Line231",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line161": {
+  "layer": "S-S.WALL",
+  "label": "Line161",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.8
+ },
+ "Line232": {
+  "layer": "F-FURN",
+  "label": "Line232",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 0.0
+ },
+ "Line162": {
+  "layer": "S-S.WALL",
+  "label": "Line162",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.8
+ },
+ "Line233": {
+  "layer": "F-FURN",
+  "label": "Line233",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line163": {
+  "layer": "S-S.WALL",
+  "label": "Line163",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line234": {
+  "layer": "F-FURN",
+  "label": "Line234",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line164": {
+  "layer": "S-S.WALL",
+  "label": "Line164",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.13
+ },
+ "Line235": {
+  "layer": "F-FURN",
+  "label": "Line235",
+  "type": "Part::Line",
+  "pts": 12,
+  "covered_frac": 0.08
+ },
+ "Polyline014": {
+  "layer": "S-S.WALL",
+  "label": "Polyline014",
+  "type": "Part::Feature",
+  "pts": 54,
+  "covered_frac": 0.57
+ },
+ "Line236": {
+  "layer": "F-FURN",
+  "label": "Line236",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.2
+ },
+ "Line165": {
+  "layer": "S-S.WALL",
+  "label": "Line165",
+  "type": "Part::Line",
+  "pts": 62,
+  "covered_frac": 1.0
+ },
+ "Line237": {
+  "layer": "F-FURN",
+  "label": "Line237",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.2
+ },
+ "Line166": {
+  "layer": "S-S.WALL",
+  "label": "Line166",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 0.0
+ },
+ "Line238": {
+  "layer": "F-FURN",
+  "label": "Line238",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 1.0
+ },
+ "Line167": {
+  "layer": "S-S.WALL",
+  "label": "Line167",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 1.0
+ },
+ "Line239": {
+  "layer": "F-FURN",
+  "label": "Line239",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line168": {
+  "layer": "S-S.WALL",
+  "label": "Line168",
+  "type": "Part::Line",
+  "pts": 6,
+  "covered_frac": 1.0
+ },
+ "Line240": {
+  "layer": "F-FURN",
+  "label": "Line240",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line169": {
+  "layer": "S-S.WALL",
+  "label": "Line169",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line241": {
+  "layer": "F-FURN",
+  "label": "Line241",
+  "type": "Part::Line",
+  "pts": 12,
+  "covered_frac": 0.08
+ },
+ "Line170": {
+  "layer": "S-S.WALL",
+  "label": "Line170",
+  "type": "Part::Line",
+  "pts": 7,
+  "covered_frac": 0.0
+ },
+ "Line242": {
+  "layer": "F-FURN",
+  "label": "Line242",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.2
+ },
+ "Line171": {
+  "layer": "S-S.WALL",
+  "label": "Line171",
+  "type": "Part::Line",
+  "pts": 10,
+  "covered_frac": 0.2
+ },
+ "Line243": {
+  "layer": "F-FURN",
+  "label": "Line243",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.2
+ },
+ "Line172": {
+  "layer": "S-S.WALL",
+  "label": "Line172",
+  "type": "Part::Line",
+  "pts": 8,
+  "covered_frac": 0.25
+ },
+ "Line244": {
+  "layer": "F-FURN",
+  "label": "Line244",
+  "type": "Part::Line",
+  "pts": 11,
+  "covered_frac": 0.09
+ },
+ "Line173": {
+  "layer": "S-S.WALL",
+  "label": "Line173",
+  "type": "Part::Line",
+  "pts": 6,
+  "covered_frac": 0.0
+ },
+ "Line245": {
+  "layer": "F-FURN",
+  "label": "Line245",
+  "type": "Part::Line",
+  "pts": 22,
+  "covered_frac": 1.0
+ },
+ "Polyline015": {
+  "layer": "S-S.WALL",
+  "label": "Polyline015",
+  "type": "Part::Feature",
+  "pts": 11,
+  "covered_frac": 0.18
+ },
+ "Polyline016": {
+  "layer": "S-S.WALL",
+  "label": "Polyline016",
+  "type": "Part::Feature",
+  "pts": 5,
+  "covered_frac": 0.4
+ },
+ "Line246": {
+  "layer": "F-FURN",
+  "label": "Line246",
+  "type": "Part::Line",
+  "pts": 21,
+  "covered_frac": 1.0
+ },
+ "Polyline017": {
+  "layer": "S-S.WALL",
+  "label": "Polyline017",
+  "type": "Part::Feature",
+  "pts": 5,
+  "covered_frac": 0.4
+ },
+ "Line174": {
+  "layer": "S-S.WALL",
+  "label": "Line174",
+  "type": "Part::Line",
+  "pts": 37,
+  "covered_frac": 0.97
+ },
+ "Line247": {
+  "layer": "F-FURN",
+  "label": "Line247",
+  "type": "Part::Line",
+  "pts": 21,
+  "covered_frac": 1.0
+ },
+ "Line175": {
+  "layer": "S-S.WALL",
+  "label": "Line175",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 0.12
+ },
+ "Line248": {
+  "layer": "F-FURN",
+  "label": "Line248",
+  "type": "Part::Line",
+  "pts": 18,
+  "covered_frac": 1.0
+ },
+ "Line176": {
+  "layer": "S-S.WALL",
+  "label": "Line176",
+  "type": "Part::Line",
+  "pts": 25,
+  "covered_frac": 0.0
+ },
+ "Line249": {
+  "layer": "F-FURN",
+  "label": "Line249",
+  "type": "Part::Line",
+  "pts": 21,
+  "covered_frac": 0.0
+ },
+ "Line177": {
+  "layer": "S-S.WALL",
+  "label": "Line177",
+  "type": "Part::Line",
+  "pts": 25,
+  "covered_frac": 0.0
+ },
+ "Line250": {
+  "layer": "F-FURN",
+  "label": "Line250",
+  "type": "Part::Line",
+  "pts": 22,
+  "covered_frac": 0.0
+ },
+ "Line178": {
+  "layer": "S-S.WALL",
+  "label": "Line178",
+  "type": "Part::Line",
+  "pts": 25,
+  "covered_frac": 1.0
+ },
+ "Line251": {
+  "layer": "F-FURN",
+  "label": "Line251",
+  "type": "Part::Line",
+  "pts": 21,
+  "covered_frac": 1.0
+ },
+ "Line179": {
+  "layer": "S-S.WALL",
+  "label": "Line179",
+  "type": "Part::Line",
+  "pts": 25,
+  "covered_frac": 1.0
+ },
+ "Line180": {
+  "layer": "S-S.WALL",
+  "label": "Line180",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line181": {
+  "layer": "S-S.WALL",
+  "label": "Line181",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line182": {
+  "layer": "S-S.WALL",
+  "label": "Line182",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line183": {
+  "layer": "S-S.WALL",
+  "label": "Line183",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line184": {
+  "layer": "S-S.WALL",
+  "label": "Line184",
+  "type": "Part::Line",
+  "pts": 10,
+  "covered_frac": 1.0
+ },
+ "Line185": {
+  "layer": "S-S.WALL",
+  "label": "Line185",
+  "type": "Part::Line",
+  "pts": 10,
+  "covered_frac": 1.0
+ },
+ "Line186": {
+  "layer": "S-S.WALL",
+  "label": "Line186",
+  "type": "Part::Line",
+  "pts": 56,
+  "covered_frac": 1.0
+ },
+ "Line187": {
+  "layer": "S-S.WALL",
+  "label": "Line187",
+  "type": "Part::Line",
+  "pts": 51,
+  "covered_frac": 1.0
+ },
+ "Line188": {
+  "layer": "S-S.WALL",
+  "label": "Line188",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 1.0
+ },
+ "Line028": {
+  "layer": "S-S.WALL",
+  "label": "Line028",
+  "type": "Part::Line",
+  "pts": 43,
+  "covered_frac": 0.28
+ },
+ "Line189": {
+  "layer": "S-S.WALL",
+  "label": "Line189",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 1.0
+ },
+ "Line190": {
+  "layer": "S-S.WALL",
+  "label": "Line190",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.5
+ },
+ "Line191": {
+  "layer": "S-S.WALL",
+  "label": "Line191",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 1.0
+ },
+ "Line192": {
+  "layer": "S-S.WALL",
+  "label": "Line192",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line193": {
+  "layer": "S-S.WALL",
+  "label": "Line193",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line194": {
+  "layer": "S-S.WALL",
+  "label": "Line194",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line195": {
+  "layer": "S-S.WALL",
+  "label": "Line195",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.8
+ },
+ "Line196": {
+  "layer": "S-S.WALL",
+  "label": "Line196",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.8
+ },
+ "Line197": {
+  "layer": "S-S.WALL",
+  "label": "Line197",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 0.0
+ },
+ "Line198": {
+  "layer": "S-S.WALL",
+  "label": "Line198",
+  "type": "Part::Line",
+  "pts": 2,
+  "covered_frac": 1.0
+ },
+ "Line199": {
+  "layer": "S-S.WALL",
+  "label": "Line199",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.8
+ },
+ "Line200": {
+  "layer": "S-S.WALL",
+  "label": "Line200",
+  "type": "Part::Line",
+  "pts": 9,
+  "covered_frac": 0.33
+ },
+ "Line203": {
+  "layer": "F-SAN FIT",
+  "label": "Line203",
+  "type": "Part::Line",
+  "pts": 8,
+  "covered_frac": 0.0
+ },
+ "Line204": {
+  "layer": "F-SAN FIT",
+  "label": "Line204",
+  "type": "Part::Line",
+  "pts": 77,
+  "covered_frac": 0.0
+ },
+ "Line205": {
+  "layer": "F-SAN FIT",
+  "label": "Line205",
+  "type": "Part::Line",
+  "pts": 27,
+  "covered_frac": 0.0
+ },
+ "Line206": {
+  "layer": "F-SAN FIT",
+  "label": "Line206",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 0.06
+ },
+ "Line207": {
+  "layer": "F-SAN FIT",
+  "label": "Line207",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line208": {
+  "layer": "F-SAN FIT",
+  "label": "Line208",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 0.0
+ },
+ "Line209": {
+  "layer": "F-SAN FIT",
+  "label": "Line209",
+  "type": "Part::Line",
+  "pts": 15,
+  "covered_frac": 0.27
+ },
+ "Arc036": {
+  "layer": "F-SAN FIT",
+  "label": "Arc036",
+  "type": "Part::Circle",
+  "pts": 7,
+  "covered_frac": 0.0
+ },
+ "Arc037": {
+  "layer": "F-SAN FIT",
+  "label": "Arc037",
+  "type": "Part::Circle",
+  "pts": 7,
+  "covered_frac": 0.0
+ },
+ "Line210": {
+  "layer": "F-SAN FIT",
+  "label": "Line210",
+  "type": "Part::Line",
+  "pts": 14,
+  "covered_frac": 0.0
+ },
+ "Line211": {
+  "layer": "F-SAN FIT",
+  "label": "Line211",
+  "type": "Part::Line",
+  "pts": 10,
+  "covered_frac": 0.0
+ },
+ "Line212": {
+  "layer": "F-SAN FIT",
+  "label": "Line212",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line213": {
+  "layer": "F-SAN FIT",
+  "label": "Line213",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line214": {
+  "layer": "F-SAN FIT",
+  "label": "Line214",
+  "type": "Part::Line",
+  "pts": 11,
+  "covered_frac": 0.0
+ },
+ "Line215": {
+  "layer": "F-SAN FIT",
+  "label": "Line215",
+  "type": "Part::Line",
+  "pts": 10,
+  "covered_frac": 0.3
+ },
+ "Line216": {
+  "layer": "F-SAN FIT",
+  "label": "Line216",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.4
+ },
+ "Line": {
+  "layer": "S-S.WALL",
+  "label": "Line",
+  "type": "Part::Line",
+  "pts": 22,
+  "covered_frac": 1.0
+ },
+ "Line001": {
+  "layer": "S-S.WALL",
+  "label": "Line001",
+  "type": "Part::Line",
+  "pts": 27,
+  "covered_frac": 0.48
+ },
+ "Line002": {
+  "layer": "S-S.WALL",
+  "label": "Line002",
+  "type": "Part::Line",
+  "pts": 22,
+  "covered_frac": 0.0
+ },
+ "Line003": {
+  "layer": "S-S.WALL",
+  "label": "Line003",
+  "type": "Part::Line",
+  "pts": 22,
+  "covered_frac": 1.0
+ },
+ "Line004": {
+  "layer": "S-S.WALL",
+  "label": "Line004",
+  "type": "Part::Line",
+  "pts": 21,
+  "covered_frac": 1.0
+ },
+ "Line005": {
+  "layer": "S-S.WALL",
+  "label": "Line005",
+  "type": "Part::Line",
+  "pts": 26,
+  "covered_frac": 1.0
+ },
+ "Line006": {
+  "layer": "S-S.WALL",
+  "label": "Line006",
+  "type": "Part::Line",
+  "pts": 72,
+  "covered_frac": 0.0
+ },
+ "Line007": {
+  "layer": "S-S.WALL",
+  "label": "Line007",
+  "type": "Part::Line",
+  "pts": 8,
+  "covered_frac": 1.0
+ },
+ "Line008": {
+  "layer": "S-S.WALL",
+  "label": "Line008",
+  "type": "Part::Line",
+  "pts": 4,
+  "covered_frac": 1.0
+ },
+ "Line009": {
+  "layer": "S-S.WALL",
+  "label": "Line009",
+  "type": "Part::Line",
+  "pts": 47,
+  "covered_frac": 1.0
+ },
+ "Line010": {
+  "layer": "S-S.WALL",
+  "label": "Line010",
+  "type": "Part::Line",
+  "pts": 105,
+  "covered_frac": 1.0
+ },
+ "Line011": {
+  "layer": "S-S.WALL",
+  "label": "Line011",
+  "type": "Part::Line",
+  "pts": 105,
+  "covered_frac": 1.0
+ },
+ "Line012": {
+  "layer": "S-S.WALL",
+  "label": "Line012",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 0.0
+ },
+ "Line013": {
+  "layer": "S-S.WALL",
+  "label": "Line013",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Line014": {
+  "layer": "S-S.WALL",
+  "label": "Line014",
+  "type": "Part::Line",
+  "pts": 47,
+  "covered_frac": 0.23
+ },
+ "Line015": {
+  "layer": "S-S.WALL",
+  "label": "Line015",
+  "type": "Part::Line",
+  "pts": 165,
+  "covered_frac": 1.0
+ },
+ "Polyline001": {
+  "layer": "F-DOOR",
+  "label": "Polyline001",
+  "type": "Part::Feature",
+  "pts": 20,
+  "covered_frac": 1.0
+ },
+ "Polyline002": {
+  "layer": "F-DOOR",
+  "label": "Polyline002",
+  "type": "Part::Feature",
+  "pts": 20,
+  "covered_frac": 0.55
+ },
+ "Line016": {
+  "layer": "S-S.WALL",
+  "label": "Line016",
+  "type": "Part::Line",
+  "pts": 107,
+  "covered_frac": 0.04
+ },
+ "Polyline003": {
+  "layer": "F-DOOR",
+  "label": "Polyline003",
+  "type": "Part::Feature",
+  "pts": 20,
+  "covered_frac": 0.45
+ },
+ "Polyline004": {
+  "layer": "F-DOOR",
+  "label": "Polyline004",
+  "type": "Part::Feature",
+  "pts": 20,
+  "covered_frac": 0.35
+ },
+ "Line017": {
+  "layer": "S-S.WALL",
+  "label": "Line017",
+  "type": "Part::Line",
+  "pts": 117,
+  "covered_frac": 1.0
+ },
+ "Polyline005": {
+  "layer": "F-DOOR",
+  "label": "Polyline005",
+  "type": "Part::Feature",
+  "pts": 20,
+  "covered_frac": 0.3
+ },
+ "Arc": {
+  "layer": "F-DOOR",
+  "label": "Arc",
+  "type": "Part::Circle",
+  "pts": 12,
+  "covered_frac": 0.25
+ },
+ "Line018": {
+  "layer": "S-S.WALL",
+  "label": "Line018",
+  "type": "Part::Line",
+  "pts": 73,
+  "covered_frac": 1.0
+ },
+ "Arc001": {
+  "layer": "F-DOOR",
+  "label": "Arc001",
+  "type": "Part::Circle",
+  "pts": 8,
+  "covered_frac": 0.25
+ },
+ "Line019": {
+  "layer": "S-S.WALL",
+  "label": "Line019",
+  "type": "Part::Line",
+  "pts": 78,
+  "covered_frac": 1.0
+ },
+ "Arc002": {
+  "layer": "F-DOOR",
+  "label": "Arc002",
+  "type": "Part::Circle",
+  "pts": 6,
+  "covered_frac": 0.33
+ },
+ "Line020": {
+  "layer": "S-S.WALL",
+  "label": "Line020",
+  "type": "Part::Line",
+  "pts": 132,
+  "covered_frac": 0.0
+ },
+ "Arc003": {
+  "layer": "F-DOOR",
+  "label": "Arc003",
+  "type": "Part::Circle",
+  "pts": 4,
+  "covered_frac": 0.5
+ },
+ "Line021": {
+  "layer": "S-S.WALL",
+  "label": "Line021",
+  "type": "Part::Line",
+  "pts": 87,
+  "covered_frac": 1.0
+ },
+ "Polyline006": {
+  "layer": "F-DOOR",
+  "label": "Polyline006",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 1.0
+ },
+ "Line022": {
+  "layer": "S-S.WALL",
+  "label": "Line022",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Polyline007": {
+  "layer": "F-DOOR",
+  "label": "Polyline007",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.3
+ },
+ "Polyline008": {
+  "layer": "F-DOOR",
+  "label": "Polyline008",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.23
+ },
+ "Line023": {
+  "layer": "S-S.WALL",
+  "label": "Line023",
+  "type": "Part::Line",
+  "pts": 5,
+  "covered_frac": 1.0
+ },
+ "Polyline009": {
+  "layer": "F-DOOR",
+  "label": "Polyline009",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.2
+ },
+ "Polyline010": {
+  "layer": "F-DOOR",
+  "label": "Polyline010",
+  "type": "Part::Feature",
+  "pts": 40,
+  "covered_frac": 0.15
+ },
+ "Line024": {
+  "layer": "S-S.WALL",
+  "label": "Line024",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Arc004": {
+  "layer": "F-DOOR",
+  "label": "Arc004",
+  "type": "Part::Circle",
+  "pts": 26,
+  "covered_frac": 0.12
+ },
+ "Line025": {
+  "layer": "S-S.WALL",
+  "label": "Line025",
+  "type": "Part::Line",
+  "pts": 17,
+  "covered_frac": 1.0
+ },
+ "Arc005": {
+  "layer": "F-DOOR",
+  "label": "Arc005",
+  "type": "Part::Circle",
+  "pts": 18,
+  "covered_frac": 0.17
+ },
+ "Line026": {
+  "layer": "S-S.WALL",
+  "label": "Line026",
+  "type": "Part::Line",
+  "pts": 22,
+  "covered_frac": 1.0
+ },
+ "Arc006": {
+  "layer": "F-DOOR",
+  "label": "Arc006",
+  "type": "Part::Circle",
+  "pts": 14,
+  "covered_frac": 0.14
+ },
+ "Line027": {
+  "layer": "S-S.WALL",
+  "label": "Line027",
+  "type": "Part::Line",
+  "pts": 22,
+  "covered_frac": 0.36
+ },
+ "Arc007": {
+  "layer": "F-DOOR",
+  "label": "Arc007",
+  "type": "Part::Circle",
+  "pts": 9,
+  "covered_frac": 0.22
+ },
+ "Polyline018": {
+  "layer": "F-DOOR",
+  "label": "Polyline018",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 1.0
+ },
+ "Polyline019": {
+  "layer": "F-DOOR",
+  "label": "Polyline019",
+  "type": "Part::Feature",
+  "pts": 46,
+  "covered_frac": 0.26
+ },
+ "Rectangle": {
+  "layer": "NO_LAYER",
+  "label": "Rectangle",
+  "type": "Part::Part2DObjectPython",
+  "pts": 200,
+  "covered_frac": 0.0
+ },
+ "Rectangle004": {
+  "layer": "NO_LAYER",
+  "label": "电视柜（或者悬浮电视墙）",
+  "type": "Part::Part2DObjectPython",
+  "pts": 158,
+  "covered_frac": 0.0
+ },
+ "Line258": {
+  "layer": "NO_LAYER",
+  "label": "Line517",
+  "type": "Part::FeaturePython",
+  "pts": 54,
+  "covered_frac": 0.0
+ },
+ "Line259": {
+  "layer": "NO_LAYER",
+  "label": "Line518",
+  "type": "Part::FeaturePython",
+  "pts": 58,
+  "covered_frac": 0.16
+ },
+ "Line260": {
+  "layer": "NO_LAYER",
+  "label": "Line519",
+  "type": "Part::FeaturePython",
+  "pts": 58,
+  "covered_frac": 1.0
+ },
+ "Rectangle007": {
+  "layer": "NO_LAYER",
+  "label": "客卫（湿区）",
+  "type": "Part::Part2DObjectPython",
+  "pts": 130,
+  "covered_frac": 0.57
+ },
+ "Rectangle008": {
+  "layer": "NO_LAYER",
+  "label": "客卫马桶",
+  "type": "Part::Part2DObjectPython",
+  "pts": 52,
+  "covered_frac": 0.0
+ },
+ "Rectangle011": {
+  "layer": "NO_LAYER",
+  "label": "次主卧床头占位",
+  "type": "Part::Part2DObjectPython",
+  "pts": 138,
+  "covered_frac": 0.49
+ },
+ "Rectangle012": {
+  "layer": "NO_LAYER",
+  "label": "次主卧床",
+  "type": "Part::Part2DObjectPython",
+  "pts": 178,
+  "covered_frac": 0.0
+ },
+ "Rectangle013": {
+  "layer": "NO_LAYER",
+  "label": "主卧床",
+  "type": "Part::Part2DObjectPython",
+  "pts": 178,
+  "covered_frac": 0.0
+ },
+ "Rectangle014": {
+  "layer": "NO_LAYER",
+  "label": "主卧床头柜占位",
+  "type": "Part::Part2DObjectPython",
+  "pts": 130,
+  "covered_frac": 0.0
+ },
+ "Rectangle015": {
+  "layer": "NO_LAYER",
+  "label": "主卧衣柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 134,
+  "covered_frac": 0.43
+ },
+ "Rectangle017": {
+  "layer": "NO_LAYER",
+  "label": "次卧小床1.2",
+  "type": "Part::Part2DObjectPython",
+  "pts": 150,
+  "covered_frac": 0.33
+ },
+ "Line036": {
+  "layer": "S-S.WALL",
+  "label": "Line036",
+  "type": "Part::Line",
+  "pts": 72,
+  "covered_frac": 1.0
+ },
+ "Rectangle020": {
+  "layer": "NO_LAYER",
+  "label": "Rectangle033",
+  "type": "Part::Part2DObjectPython",
+  "pts": 84,
+  "covered_frac": 0.0
+ },
+ "Rectangle021": {
+  "layer": "NO_LAYER",
+  "label": "次主卧衣柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 104,
+  "covered_frac": 0.2
+ },
+ "Rectangle022": {
+  "layer": "NO_LAYER",
+  "label": "主卧电视柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 124,
+  "covered_frac": 0.44
+ },
+ "Rectangle023": {
+  "layer": "NO_LAYER",
+  "label": "次主卧电视柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 124,
+  "covered_frac": 0.42
+ },
+ "Rectangle024": {
+  "layer": "NO_LAYER",
+  "label": "书柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 232,
+  "covered_frac": 0.06
+ },
+ "Rectangle025": {
+  "layer": "NO_LAYER",
+  "label": "矮书柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 102,
+  "covered_frac": 0.0
+ },
+ "Rectangle026": {
+  "layer": "NO_LAYER",
+  "label": "茶台",
+  "type": "Part::Part2DObjectPython",
+  "pts": 150,
+  "covered_frac": 0.0
+ },
+ "Rectangle027": {
+  "layer": "NO_LAYER",
+  "label": "条凳",
+  "type": "Part::Part2DObjectPython",
+  "pts": 94,
+  "covered_frac": 0.0
+ },
+ "Rectangle029": {
+  "layer": "NO_LAYER",
+  "label": "现有橱柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 98,
+  "covered_frac": 0.42
+ },
+ "Rectangle030": {
+  "layer": "NO_LAYER",
+  "label": "客卫洗手盆柜体",
+  "type": "Part::Part2DObjectPython",
+  "pts": 90,
+  "covered_frac": 0.21
+ },
+ "Rectangle031": {
+  "layer": "NO_LAYER",
+  "label": "鞋柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 50,
+  "covered_frac": 0.54
+ },
+ "Rectangle032": {
+  "layer": "NO_LAYER",
+  "label": "橱柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 84,
+  "covered_frac": 0.38
+ },
+ "Rectangle033": {
+  "layer": "NO_LAYER",
+  "label": "主卫湿区",
+  "type": "Part::Part2DObjectPython",
+  "pts": 128,
+  "covered_frac": 0.24
+ },
+ "Rectangle034": {
+  "layer": "NO_LAYER",
+  "label": "主卫马桶",
+  "type": "Part::Part2DObjectPython",
+  "pts": 56,
+  "covered_frac": 0.36
+ },
+ "Rectangle035": {
+  "layer": "NO_LAYER",
+  "label": "主卫洗手盆和柜体",
+  "type": "Part::Part2DObjectPython",
+  "pts": 84,
+  "covered_frac": 0.56
+ },
+ "Rectangle036": {
+  "layer": "NO_LAYER",
+  "label": "次主卫湿区",
+  "type": "Part::Part2DObjectPython",
+  "pts": 124,
+  "covered_frac": 0.56
+ },
+ "Rectangle037": {
+  "layer": "NO_LAYER",
+  "label": "次主卫台盆和柜体",
+  "type": "Part::Part2DObjectPython",
+  "pts": 74,
+  "covered_frac": 0.0
+ },
+ "Rectangle038": {
+  "layer": "NO_LAYER",
+  "label": "次主卫马桶",
+  "type": "Part::Part2DObjectPython",
+  "pts": 54,
+  "covered_frac": 0.37
+ },
+ "Rectangle039": {
+  "layer": "NO_LAYER",
+  "label": "冰柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 90,
+  "covered_frac": 0.0
+ },
+ "Rectangle040": {
+  "layer": "NO_LAYER",
+  "label": "洗衣机+烘干机（叠放）",
+  "type": "Part::Part2DObjectPython",
+  "pts": 60,
+  "covered_frac": 0.07
+ },
+ "Rectangle041": {
+  "layer": "NO_LAYER",
+  "label": "3kg洗衣机",
+  "type": "Part::Part2DObjectPython",
+  "pts": 44,
+  "covered_frac": 0.64
+ },
+ "Rectangle042": {
+  "layer": "NO_LAYER",
+  "label": "斜坡给未来轮椅使用预留",
+  "type": "Part::Part2DObjectPython",
+  "pts": 158,
+  "covered_frac": 0.42
+ },
+ "Rectangle043": {
+  "layer": "NO_LAYER",
+  "label": "打印机",
+  "type": "Part::Part2DObjectPython",
+  "pts": 40,
+  "covered_frac": 0.0
+ },
+ "Rectangle044": {
+  "layer": "NO_LAYER",
+  "label": "nas",
+  "type": "Part::Part2DObjectPython",
+  "pts": 40,
+  "covered_frac": 0.0
+ },
+ "Rectangle045": {
+  "layer": "NO_LAYER",
+  "label": "次卧衣柜",
+  "type": "Part::Part2DObjectPython",
+  "pts": 124,
+  "covered_frac": 0.57
+ },
+ "Rectangle046": {
+  "layer": "NO_LAYER",
+  "label": "三人位",
+  "type": "Part::Part2DObjectPython",
+  "pts": 158,
+  "covered_frac": 0.0
+ },
+ "Rectangle047": {
+  "layer": "NO_LAYER",
+  "label": "双人位",
+  "type": "Part::Part2DObjectPython",
+  "pts": 136,
+  "covered_frac": 0.0
+ },
+ "Rectangle048": {
+  "layer": "NO_LAYER",
+  "label": "贵妃椅",
+  "type": "Part::Part2DObjectPython",
+  "pts": 128,
+  "covered_frac": 0.0
+ },
+ "Rectangle049": {
+  "layer": "NO_LAYER",
+  "label": "茶几",
+  "type": "Part::Part2DObjectPython",
+  "pts": 76,
+  "covered_frac": 0.0
+ },
+ "Rectangle050": {
+  "layer": "NO_LAYER",
+  "label": "Rectangle073",
+  "type": "Part::Part2DObjectPython",
+  "pts": 120,
+  "covered_frac": 0.0
+ },
+ "Rectangle051": {
+  "layer": "NO_LAYER",
+  "label": "Rectangle075",
+  "type": "Part::Part2DObjectPython",
+  "pts": 70,
+  "covered_frac": 0.56
+ },
+ "Rectangle052": {
+  "layer": "NO_LAYER",
+  "label": "Rectangle077",
+  "type": "Part::Part2DObjectPython",
+  "pts": 98,
+  "covered_frac": 0.59
+ }
+}

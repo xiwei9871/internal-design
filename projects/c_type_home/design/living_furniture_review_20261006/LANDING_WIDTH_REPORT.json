@@ -1,0 +1,22 @@
+{
+  "source_revision": "r4-living-wave35-aluminum-review-2",
+  "measurement_scope": "Local upper landing beside last stair,leading toward guest bathroom,around packet source hit8.62835,6.70418,.45",
+  "wall_face_to_wall_face_m": 1.1998000144958496,
+  "minimum_door_approach_clear_depth_m": 1.1749000549316406,
+  "flat_landing_excluding_arrival_tread_throat_m": 0.9442916329929202,
+  "same_level_area_including_arrival_tread_throat_m": 1.259089221377005,
+  "flat_throat_endpoints_source_xy": [
+    [
+      8.222217031912704,
+      6.944835168885324
+    ],
+    [
+      9.059000015258789,
+      6.50724983215332
+    ]
+  ],
+  "width_definition": "Shortest diagonal clearance between fourth-band rear edge and west-partition corner; including fourth tread uses exposed last-riser edge. The pointed stair/wall terminal itself is not a traversable route and is excluded.",
+  "door_state": "Current door mesh behind wall plane; opening sweep is not validated.",
+  "design_assessment": "1175mm door approach is usable for one-person circulation but below1200mm accessibility reference and offers little margin;944mm independent flat landing is constrained and below project1100mm preferred route target. Do not certify compliance or claim door swing clearance.",
+  "standard_reference": "GB55019-2021 2.2.2 only as accessibility comparison, not automatically governing this internal private stair."
+}

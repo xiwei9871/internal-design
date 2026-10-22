@@ -1,0 +1,11 @@
+{
+  "status": "PASS_LOCAL_DELIVERY",
+  "scripts_parse": 4,
+  "protected_hashes": 13,
+  "web_jpeg_images": 15,
+  "web_jpeg_total_bytes": 1007837,
+  "source_sha256": "ad9960ad4991e1f2f524a052815ae5c469efcf50967539fa74d921a877c741b8",
+  "web_http_status": 200,
+  "browser_automation": "unavailable: unsupported Codex auth method apikey; native app opener attempted",
+  "final_fabric_manifest": "projects/c_type_home/design/sofa_fill_form_v10/delivery/fabric/render-manifest.json"
+}

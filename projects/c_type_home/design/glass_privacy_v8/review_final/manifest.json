@@ -1,0 +1,62 @@
+[
+  {
+    "view": "living",
+    "camera": "CAM_living_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review_final/living.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+    "seconds": 34.06
+  },
+  {
+    "view": "master_bath",
+    "camera": "CAM_master_bath_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review_final/master_bath.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+    "seconds": 30.86
+  },
+  {
+    "view": "secondary_bath",
+    "camera": "CAM_secondary_bath_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review_final/secondary_bath.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+    "seconds": 27.97
+  },
+  {
+    "view": "guest_bath",
+    "camera": "CAM_guest_bath_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review_final/guest_bath.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+    "seconds": 30.57
+  },
+  {
+    "view": "guest_balcony",
+    "camera": "CAM_guest_bedroom_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review_final/guest_balcony.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "e9b3e3d4766f161e2b7f6450475c8d0f8af4c59469709747356ad7f744e58928",
+    "seconds": 29.95
+  }
+]

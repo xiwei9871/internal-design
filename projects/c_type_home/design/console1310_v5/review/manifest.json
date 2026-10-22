@@ -1,0 +1,35 @@
+{
+  "source_sha256": "3d75cbabe06a0bbace8fb95fb395bcc7f645ed5d26d6fed2d1fb094f0881f63a",
+  "images": [
+    {
+      "id": "console",
+      "camera": "HUNYUAN_V3_CONSOLE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console1310_v5/review/console.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 15.79
+    },
+    {
+      "id": "bed_reverse",
+      "camera": "HUNYUAN_V3_BED_REVERSE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console1310_v5/review/bed_reverse.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 13.28
+    },
+    {
+      "id": "console_front",
+      "camera": "V5_CONSOLE_FRONT",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console1310_v5/review/console_front.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 13.12
+    }
+  ]
+}

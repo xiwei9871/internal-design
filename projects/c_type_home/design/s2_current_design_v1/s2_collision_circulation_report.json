@@ -1,0 +1,357 @@
+{
+  "schema": "s2-current-design-v1-collision-circulation-report",
+  "status": "DRAFT_HUMAN_REVIEW",
+  "formal_cad_allowed": false,
+  "collision_count": 0,
+  "collisions": [],
+  "room_containment_checks": [
+    {
+      "id": "LIV-SOFA-3S",
+      "room": "R-LIVING",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "LIV-SOFA-2S",
+      "room": "R-LIVING",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "LIV-LOUNGE",
+      "room": "R-LIVING",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "LIV-MEDIA",
+      "room": "R-LIVING",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "LIV-SIDE-TABLE",
+      "room": "R-LIVING",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "LIV-COFFEE-OPTIONAL",
+      "room": "R-LIVING",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "DIN-TABLE",
+      "room": "R-DINING",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "DIN-CHAIR-N",
+      "room": "R-DINING",
+      "inside_ratio": 0.978,
+      "status": "WARN"
+    },
+    {
+      "id": "DIN-CHAIR-S",
+      "room": "R-DINING",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "DIN-CHAIR-W",
+      "room": "R-DINING",
+      "inside_ratio": 0.333,
+      "status": "WARN"
+    },
+    {
+      "id": "DIN-CHAIR-E",
+      "room": "R-DINING",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "OWNER-BED",
+      "room": "R-BED-S",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "OWNER-WARDROBE",
+      "room": "R-BED-S",
+      "inside_ratio": 0.775,
+      "status": "WARN"
+    },
+    {
+      "id": "OWNER-NIGHTSTAND",
+      "room": "R-BED-S",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "OWNER-MEDIA",
+      "room": "R-BED-S",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "MOTHER-BED",
+      "room": "R-MASTER",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "MOTHER-WARDROBE",
+      "room": "R-MASTER",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "MOTHER-NIGHTSTAND",
+      "room": "R-MASTER",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "MOTHER-MEDIA",
+      "room": "R-MASTER",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "GUEST-BED",
+      "room": "R-STUDY",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "GUEST-WARDROBE",
+      "room": "R-STUDY",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "GUEST-STOOL",
+      "room": "R-STUDY",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "STUDY-DESK",
+      "room": "R-BED-N",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "STUDY-BOOKCASE-TALL",
+      "room": "R-BED-N",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "STUDY-BOOKCASE-LOW",
+      "room": "R-BED-N",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "STUDY-TEA",
+      "room": "R-BED-N",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "STUDY-CHAIR",
+      "room": "R-BED-N",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "STUDY-BENCH",
+      "room": "R-BED-N",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "STUDY-STOOL",
+      "room": "R-BED-N",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "GUEST-BATH-SHOWER",
+      "room": "R-BATH-P",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "GUEST-BATH-WC",
+      "room": "R-BATH-P",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "GUEST-BATH-VANITY",
+      "room": "R-BATH-P",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "GUEST-BATH-WASHER",
+      "room": "R-BATH-P",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "MOTHER-BATH-SHOWER",
+      "room": "R-BATH-M",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "MOTHER-BATH-WC",
+      "room": "R-BATH-M",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "MOTHER-BATH-VANITY",
+      "room": "R-BATH-M",
+      "inside_ratio": 1.0,
+      "status": "PASS"
+    }
+  ],
+  "door_swing_conflicts": [],
+  "kitchen_keep_conflicts": [],
+  "route_checks": [
+    {
+      "id": "entry_to_living",
+      "reference_target_mm": 1100,
+      "screening_envelope_mm": [
+        2900,
+        6500,
+        4200,
+        7900
+      ],
+      "proxy_measured_clear_width_mm": 1300,
+      "blocking_items": [],
+      "status": "PASS",
+      "measurement_method": "axis-aligned schematic envelope screening; not construction clearance verification",
+      "existing_limitation": null
+    },
+    {
+      "id": "living_to_stair",
+      "reference_target_mm": 1100,
+      "screening_envelope_mm": [
+        5600,
+        6500,
+        7200,
+        7900
+      ],
+      "proxy_measured_clear_width_mm": 1400,
+      "blocking_items": [],
+      "status": "PASS",
+      "measurement_method": "axis-aligned schematic envelope screening; not construction clearance verification",
+      "existing_limitation": null
+    },
+    {
+      "id": "living_to_north_balcony",
+      "reference_target_mm": 850,
+      "screening_envelope_mm": [
+        7200,
+        11400,
+        7900,
+        12750
+      ],
+      "proxy_measured_clear_width_mm": 1350,
+      "blocking_items": [],
+      "status": "PASS",
+      "measurement_method": "axis-aligned schematic envelope screening; not construction clearance verification",
+      "existing_limitation": "G-LIV-NBALC confirmed clear width 850 mm; no-worsening rule"
+    },
+    {
+      "id": "dining_to_keep_kitchen",
+      "reference_target_mm": 1000,
+      "screening_envelope_mm": [
+        5000,
+        2500,
+        5900,
+        4300
+      ],
+      "proxy_measured_clear_width_mm": 1800,
+      "blocking_items": [],
+      "status": "PASS",
+      "measurement_method": "axis-aligned schematic envelope screening; not construction clearance verification",
+      "existing_limitation": null
+    },
+    {
+      "id": "dining_to_glass_transition",
+      "reference_target_mm": 900,
+      "screening_envelope_mm": [
+        2900,
+        4050,
+        5650,
+        4530
+      ],
+      "proxy_measured_clear_width_mm": 2750,
+      "blocking_items": [],
+      "status": "PASS",
+      "measurement_method": "axis-aligned schematic envelope screening; not construction clearance verification",
+      "existing_limitation": "G-DIN-LIV confirmed sliding-glass transition"
+    },
+    {
+      "id": "guest_room_to_balcony",
+      "reference_target_mm": 900,
+      "screening_envelope_mm": [
+        12000,
+        10500,
+        13000,
+        10900
+      ],
+      "proxy_measured_clear_width_mm": 400,
+      "blocking_items": [],
+      "status": "WARN",
+      "measurement_method": "axis-aligned schematic envelope screening; not construction clearance verification",
+      "existing_limitation": null
+    }
+  ],
+  "bathroom_checks": [
+    {
+      "room": "R-BATH-P",
+      "fixture_ids": [
+        "GUEST-BATH-SHOWER",
+        "GUEST-BATH-WC",
+        "GUEST-BATH-VANITY",
+        "GUEST-BATH-WASHER"
+      ],
+      "boundary_preserved": true,
+      "fixture_collision_count": 0,
+      "aging_in_place": false,
+      "status": "WARN_REVIEW_REQUIRED",
+      "notes": [
+        "door swing, service routing, and final clearances require human review and field verification"
+      ]
+    },
+    {
+      "room": "R-BATH-M",
+      "fixture_ids": [
+        "MOTHER-BATH-SHOWER",
+        "MOTHER-BATH-WC",
+        "MOTHER-BATH-VANITY"
+      ],
+      "boundary_preserved": true,
+      "fixture_collision_count": 0,
+      "aging_in_place": true,
+      "status": "WARN_REVIEW_REQUIRED",
+      "notes": [
+        "door swing, service routing, and final clearances require human review and field verification"
+      ]
+    }
+  ],
+  "interpretation": [
+    "These are schematic screening results, not construction or accessibility certification.",
+    "A clearance warning is a design issue to review, not an automatic formal-CAD gate.",
+    "The current guest bathroom boundary and kitchen keep geometry were not enlarged or redrawn."
+  ]
+}

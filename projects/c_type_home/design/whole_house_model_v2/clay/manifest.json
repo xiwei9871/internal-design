@@ -1,0 +1,142 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_CONTACT_V2.blend",
+  "source_sha256": "335484d33336196e75afd3fdf2ba99fce98cda8bc518fcb52c4cee3ea1850851",
+  "mode": "clay",
+  "images": [
+    {
+      "id": "reading",
+      "title": "阅读架与书本",
+      "camera": "HOUSE_V1_READING_OPPOSITE_WALL",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/reading.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 2.75
+    },
+    {
+      "id": "hallway",
+      "title": "木门框走廊",
+      "camera": "CAM_hallway_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/hallway.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 2.54
+    },
+    {
+      "id": "vanity",
+      "title": "母亲梳妆台",
+      "camera": "HOUSE_V2_VANITY_WHOLE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/vanity.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 1.5
+    },
+    {
+      "id": "mother",
+      "title": "母亲床头柜",
+      "camera": "HOUSE_V1_MOTHER_CREATIVE_BED",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/mother.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 1.49
+    },
+    {
+      "id": "couple",
+      "title": "夫妻床与床头柜",
+      "camera": "CAM_couple_bedroom_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/couple.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 1.38
+    },
+    {
+      "id": "guest",
+      "title": "客房1.2×2m床",
+      "camera": "CAM_guest_bedroom_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/guest.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 1.37
+    },
+    {
+      "id": "master_bath",
+      "title": "主卫全景",
+      "camera": "HOUSE_V2_MASTER_WHOLE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/master_bath.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 2.05
+    },
+    {
+      "id": "secondary_bath",
+      "title": "次主卫磨砂玻璃",
+      "camera": "CAM_secondary_bath_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/secondary_bath.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 1.55
+    },
+    {
+      "id": "north",
+      "title": "北阳台全景",
+      "camera": "CAM_north_sunroom_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/north.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 2.39
+    },
+    {
+      "id": "north_sofa",
+      "title": "北阳台软包",
+      "camera": "HOUSE_V2_NORTH_SOFA",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/north_sofa.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 1.56
+    },
+    {
+      "id": "living",
+      "title": "客厅灯光",
+      "camera": "CAM_living_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/living.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 2.1
+    },
+    {
+      "id": "dining",
+      "title": "餐厅灯光",
+      "camera": "HOUSE_V1_DINING_WHOLE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/whole_house_model_v2/clay/dining.png",
+      "size": [
+        960,
+        540
+      ],
+      "seconds": 1.43
+    }
+  ],
+  "engine": "BLENDER_WORKBENCH",
+  "samples": 0,
+  "image2_requests": 0
+}

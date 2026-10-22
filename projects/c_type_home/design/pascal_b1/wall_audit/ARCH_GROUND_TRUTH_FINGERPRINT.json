@@ -1,0 +1,7665 @@
+{
+ "source": "cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+ "note": "fingerprints extracted from b1_fcstd_objects.json (FreeCAD dump); GROUND_TRUTH_ARCH = wall/opening/balcony/bay linework; HUMAN_DESIGN_GUIDE = furniture/appliance/sanitary guides; WINDOW_REF_* = semantic links to physical linework (9 resolved)",
+ "counts": {
+  "GROUND_TRUTH_ARCH": 384,
+  "HUMAN_DESIGN_GUIDE": 44,
+  "GROUND_TRUTH_OPENING": 10
+ },
+ "objects": {
+  "Layer": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "0",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "LayerContainer": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Layers",
+   "type": "App::DocumentObjectGroupPython",
+   "bbox": null,
+   "pos": []
+  },
+  "Layer001": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Defpoints",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "Layer002": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "S-S.WALL",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "Layer003": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "F-DOOR",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "Layer004": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "S-\\U+697c\\U+68af",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "Layer005": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "F-SAN FIT",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "Layer006": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "F-FURN",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "Layer007": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "USER_GUIDE_FURNITURE",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "Polyline": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline",
+   "type": "Part::Feature",
+   "bbox": [
+    1305971.9,
+    -283457.8,
+    0.0,
+    1306371.9,
+    -283057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline022": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline022",
+   "type": "Part::Feature",
+   "bbox": [
+    1311271.9,
+    -289757.8,
+    0.0,
+    1312121.9,
+    -289707.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line029": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line029",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -283057.8,
+    0.0,
+    1305971.9,
+    -282557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc008": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc008",
+   "type": "Part::Circle",
+   "bbox": [
+    1311271.9,
+    -289757.8,
+    0.0,
+    1312121.9,
+    -288907.8,
+    0.0
+   ],
+   "pos": [
+    1311271.9,
+    -289757.8,
+    0.0
+   ]
+  },
+  "Line030": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line030",
+   "type": "Part::Line",
+   "bbox": [
+    1308071.9,
+    -288457.8,
+    0.0,
+    1308071.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc009": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc009",
+   "type": "Part::Circle",
+   "bbox": [
+    1311271.9,
+    -289332.8,
+    0.0,
+    1312008.0,
+    -288907.8,
+    0.0
+   ],
+   "pos": [
+    1311271.9,
+    -289757.8,
+    0.0
+   ]
+  },
+  "Line031": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line031",
+   "type": "Part::Line",
+   "bbox": [
+    1307871.9,
+    -288457.8,
+    0.0,
+    1307871.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc010": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc010",
+   "type": "Part::Circle",
+   "bbox": [
+    1311271.9,
+    -289156.7,
+    0.0,
+    1311873.0,
+    -288907.8,
+    0.0
+   ],
+   "pos": [
+    1311271.9,
+    -289757.8,
+    0.0
+   ]
+  },
+  "Line032": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line032",
+   "type": "Part::Line",
+   "bbox": [
+    1306171.9,
+    -288457.8,
+    0.0,
+    1306171.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc011": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc011",
+   "type": "Part::Circle",
+   "bbox": [
+    1311271.9,
+    -289021.7,
+    0.0,
+    1311696.9,
+    -288907.8,
+    0.0
+   ],
+   "pos": [
+    1311271.9,
+    -289757.8,
+    0.0
+   ]
+  },
+  "Line033": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line033",
+   "type": "Part::Line",
+   "bbox": [
+    1305922.2,
+    -288682.7,
+    0.0,
+    1305922.2,
+    -284432.7,
+    0.0
+   ],
+   "pos": [
+    -49.8,
+    -24.9,
+    0.0
+   ]
+  },
+  "Polyline023": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline023",
+   "type": "Part::Feature",
+   "bbox": [
+    1310121.9,
+    -290057.8,
+    0.0,
+    1310971.9,
+    -290014.0,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline024": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline024",
+   "type": "Part::Feature",
+   "bbox": [
+    1310213.9,
+    -290482.8,
+    0.0,
+    1310971.9,
+    -290019.9,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line034": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line034",
+   "type": "Part::Line",
+   "bbox": [
+    1311271.9,
+    -285357.8,
+    0.0,
+    1311271.9,
+    -282557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline025": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline025",
+   "type": "Part::Feature",
+   "bbox": [
+    1310339.9,
+    -290658.8,
+    0.0,
+    1310971.9,
+    -290026.9,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline026": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline026",
+   "type": "Part::Feature",
+   "bbox": [
+    1310509.0,
+    -290793.9,
+    0.0,
+    1310971.9,
+    -290035.9,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line035": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line035",
+   "type": "Part::Line",
+   "bbox": [
+    1311271.9,
+    -285557.8,
+    0.0,
+    1311871.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline027": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline027",
+   "type": "Part::Feature",
+   "bbox": [
+    1310921.9,
+    -290907.8,
+    0.0,
+    1310971.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc012": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc012",
+   "type": "Part::Circle",
+   "bbox": [
+    1310121.9,
+    -290907.8,
+    0.0,
+    1310971.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    1310971.9,
+    -290057.8,
+    0.0
+   ]
+  },
+  "Arc013": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc013",
+   "type": "Part::Circle",
+   "bbox": [
+    1310121.9,
+    -290793.9,
+    0.0,
+    1310546.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    1310971.9,
+    -290057.8,
+    0.0
+   ]
+  },
+  "Line037": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line037",
+   "type": "Part::Line",
+   "bbox": [
+    1311271.9,
+    -289857.8,
+    0.0,
+    1314371.9,
+    -289857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc014": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc014",
+   "type": "Part::Circle",
+   "bbox": [
+    1310121.9,
+    -290658.8,
+    0.0,
+    1310370.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    1310971.9,
+    -290057.8,
+    0.0
+   ]
+  },
+  "Line038": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line038",
+   "type": "Part::Line",
+   "bbox": [
+    1311271.9,
+    -290057.8,
+    0.0,
+    1314371.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc015": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc015",
+   "type": "Part::Circle",
+   "bbox": [
+    1310121.9,
+    -290482.8,
+    0.0,
+    1310235.8,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    1310971.9,
+    -290057.8,
+    0.0
+   ]
+  },
+  "Line039": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line039",
+   "type": "Part::Line",
+   "bbox": [
+    1311271.9,
+    -289857.8,
+    0.0,
+    1311271.9,
+    -289757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline028": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline028",
+   "type": "Part::Feature",
+   "bbox": [
+    1311228.2,
+    -291657.8,
+    0.0,
+    1311271.9,
+    -290907.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line040": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line040",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -289857.8,
+    0.0,
+    1311071.9,
+    -289757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline029": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline029",
+   "type": "Part::Feature",
+   "bbox": [
+    1311234.0,
+    -291657.8,
+    0.0,
+    1311646.9,
+    -290986.4,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline030": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline030",
+   "type": "Part::Feature",
+   "bbox": [
+    1311241.0,
+    -291657.8,
+    0.0,
+    1311802.2,
+    -291096.5,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line041": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line041",
+   "type": "Part::Line",
+   "bbox": [
+    1314371.9,
+    -289857.8,
+    0.0,
+    1314371.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline031": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline031",
+   "type": "Part::Feature",
+   "bbox": [
+    1311250.0,
+    -291657.8,
+    0.0,
+    1311921.4,
+    -291244.9,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline032": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline032",
+   "type": "Part::Feature",
+   "bbox": [
+    1311271.9,
+    -291657.8,
+    0.0,
+    1312021.9,
+    -291607.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line042": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line042",
+   "type": "Part::Line",
+   "bbox": [
+    1311271.9,
+    -291757.8,
+    0.0,
+    1311271.9,
+    -291657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc016": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc016",
+   "type": "Part::Circle",
+   "bbox": [
+    1311271.9,
+    -291657.8,
+    0.0,
+    1312021.9,
+    -290907.8,
+    0.0
+   ],
+   "pos": [
+    1311271.9,
+    -291657.8,
+    0.0
+   ]
+  },
+  "Line043": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line043",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -291957.8,
+    0.0,
+    1311071.9,
+    -291657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc017": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc017",
+   "type": "Part::Circle",
+   "bbox": [
+    1311271.9,
+    -291282.8,
+    0.0,
+    1311921.4,
+    -290907.8,
+    0.0
+   ],
+   "pos": [
+    1311271.9,
+    -291657.8,
+    0.0
+   ]
+  },
+  "Arc018": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc018",
+   "type": "Part::Circle",
+   "bbox": [
+    1311271.9,
+    -291127.5,
+    0.0,
+    1311802.2,
+    -290907.8,
+    0.0
+   ],
+   "pos": [
+    1311271.9,
+    -291657.8,
+    0.0
+   ]
+  },
+  "Line044": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line044",
+   "type": "Part::Line",
+   "bbox": [
+    1311271.9,
+    -291757.8,
+    0.0,
+    1313671.9,
+    -291757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line045": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line045",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -291957.8,
+    0.0,
+    1313471.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc019": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc019",
+   "type": "Part::Circle",
+   "bbox": [
+    1311271.9,
+    -291008.3,
+    0.0,
+    1311646.9,
+    -290907.8,
+    0.0
+   ],
+   "pos": [
+    1311271.9,
+    -291657.8,
+    0.0
+   ]
+  },
+  "Line046": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line046",
+   "type": "Part::Line",
+   "bbox": [
+    1309571.9,
+    -296257.8,
+    0.0,
+    1309571.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline033": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline033",
+   "type": "Part::Feature",
+   "bbox": [
+    1307021.9,
+    -288501.5,
+    0.0,
+    1307771.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline034": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline034",
+   "type": "Part::Feature",
+   "bbox": [
+    1307100.5,
+    -288495.7,
+    0.0,
+    1307771.9,
+    -288082.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line047": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line047",
+   "type": "Part::Line",
+   "bbox": [
+    1309771.9,
+    -296257.8,
+    0.0,
+    1309771.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline035": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline035",
+   "type": "Part::Feature",
+   "bbox": [
+    1307210.6,
+    -288488.7,
+    0.0,
+    1307771.9,
+    -287927.5,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline036": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline036",
+   "type": "Part::Feature",
+   "bbox": [
+    1307359.0,
+    -288479.7,
+    0.0,
+    1307771.9,
+    -287808.3,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line048": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line048",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -296257.8,
+    0.0,
+    1305971.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline037": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline037",
+   "type": "Part::Feature",
+   "bbox": [
+    1307721.9,
+    -288457.8,
+    0.0,
+    1307771.9,
+    -287707.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc020": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc020",
+   "type": "Part::Circle",
+   "bbox": [
+    1307021.9,
+    -288457.8,
+    0.0,
+    1307771.9,
+    -287707.8,
+    0.0
+   ],
+   "pos": [
+    1307771.9,
+    -288457.8,
+    0.0
+   ]
+  },
+  "Line049": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line049",
+   "type": "Part::Line",
+   "bbox": [
+    1306171.9,
+    -296257.8,
+    0.0,
+    1306171.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc021": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc021",
+   "type": "Part::Circle",
+   "bbox": [
+    1307021.9,
+    -288457.8,
+    0.0,
+    1307396.9,
+    -287808.3,
+    0.0
+   ],
+   "pos": [
+    1307771.9,
+    -288457.8,
+    0.0
+   ]
+  },
+  "Line050": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line050",
+   "type": "Part::Line",
+   "bbox": [
+    1303871.9,
+    -292357.8,
+    0.0,
+    1303871.9,
+    -291757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc022": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc022",
+   "type": "Part::Circle",
+   "bbox": [
+    1307021.9,
+    -288457.8,
+    0.0,
+    1307241.6,
+    -287927.5,
+    0.0
+   ],
+   "pos": [
+    1307771.9,
+    -288457.8,
+    0.0
+   ]
+  },
+  "Line051": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line051",
+   "type": "Part::Line",
+   "bbox": [
+    1299471.9,
+    -295957.8,
+    0.0,
+    1299471.9,
+    -293957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc023": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc023",
+   "type": "Part::Circle",
+   "bbox": [
+    1307021.9,
+    -288457.8,
+    0.0,
+    1307122.4,
+    -288082.8,
+    0.0
+   ],
+   "pos": [
+    1307771.9,
+    -288457.8,
+    0.0
+   ]
+  },
+  "Line052": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line052",
+   "type": "Part::Line",
+   "bbox": [
+    1299671.9,
+    -295757.8,
+    0.0,
+    1299671.9,
+    -294157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline038": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline038",
+   "type": "Part::Feature",
+   "bbox": [
+    1308171.9,
+    -288501.5,
+    0.0,
+    1309021.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line053": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line053",
+   "type": "Part::Line",
+   "bbox": [
+    1299471.9,
+    -293957.8,
+    0.0,
+    1300871.9,
+    -293957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline039": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline039",
+   "type": "Part::Feature",
+   "bbox": [
+    1308171.9,
+    -288495.7,
+    0.0,
+    1308929.9,
+    -288032.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline040": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline040",
+   "type": "Part::Feature",
+   "bbox": [
+    1308171.9,
+    -288488.7,
+    0.0,
+    1308803.9,
+    -287856.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line054": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line054",
+   "type": "Part::Line",
+   "bbox": [
+    1299471.9,
+    -294157.8,
+    0.0,
+    1301071.9,
+    -294157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline041": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline041",
+   "type": "Part::Feature",
+   "bbox": [
+    1308171.9,
+    -288479.7,
+    0.0,
+    1308634.8,
+    -287721.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline042": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline042",
+   "type": "Part::Feature",
+   "bbox": [
+    1308171.9,
+    -288457.8,
+    0.0,
+    1308221.9,
+    -287607.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line055": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line055",
+   "type": "Part::Line",
+   "bbox": [
+    1309771.9,
+    -296257.8,
+    0.0,
+    1310371.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc024": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc024",
+   "type": "Part::Circle",
+   "bbox": [
+    1308171.9,
+    -288457.8,
+    0.0,
+    1309021.9,
+    -287607.8,
+    0.0
+   ],
+   "pos": [
+    1308171.9,
+    -288457.8,
+    0.0
+   ]
+  },
+  "Line056": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line056",
+   "type": "Part::Line",
+   "bbox": [
+    1308897.3,
+    -291932.9,
+    0.0,
+    1308897.3,
+    -291732.9,
+    0.0
+   ],
+   "pos": [
+    -74.6,
+    24.9,
+    0.0
+   ]
+  },
+  "Arc025": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc025",
+   "type": "Part::Circle",
+   "bbox": [
+    1308596.9,
+    -288457.8,
+    0.0,
+    1309021.9,
+    -287721.7,
+    0.0
+   ],
+   "pos": [
+    1308171.9,
+    -288457.8,
+    0.0
+   ]
+  },
+  "Line057": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line057",
+   "type": "Part::Line",
+   "bbox": [
+    1309571.9,
+    -291157.8,
+    0.0,
+    1309771.9,
+    -291157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc026": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc026",
+   "type": "Part::Circle",
+   "bbox": [
+    1308773.0,
+    -288457.8,
+    0.0,
+    1309021.9,
+    -287856.7,
+    0.0
+   ],
+   "pos": [
+    1308171.9,
+    -288457.8,
+    0.0
+   ]
+  },
+  "Line058": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line058",
+   "type": "Part::Line",
+   "bbox": [
+    1309571.9,
+    -292557.8,
+    0.0,
+    1309771.9,
+    -292557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc027": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc027",
+   "type": "Part::Circle",
+   "bbox": [
+    1308908.0,
+    -288457.8,
+    0.0,
+    1309021.9,
+    -288032.8,
+    0.0
+   ],
+   "pos": [
+    1308171.9,
+    -288457.8,
+    0.0
+   ]
+  },
+  "Line059": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line059",
+   "type": "Part::Line",
+   "bbox": [
+    1309571.9,
+    -291757.8,
+    0.0,
+    1309571.9,
+    -289857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline043": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline043",
+   "type": "Part::Feature",
+   "bbox": [
+    1306485.1,
+    -291915.4,
+    0.0,
+    1307266.5,
+    -291499.6,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline044": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline044",
+   "type": "Part::Feature",
+   "bbox": [
+    1306504.5,
+    -291970.3,
+    0.0,
+    1307355.5,
+    -291871.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line060": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line060",
+   "type": "Part::Line",
+   "bbox": [
+    1307371.9,
+    -290007.8,
+    0.0,
+    1309571.9,
+    -290007.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline045": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline045",
+   "type": "Part::Feature",
+   "bbox": [
+    1306504.5,
+    -292188.0,
+    0.0,
+    1307323.6,
+    -291873.9,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline046": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline046",
+   "type": "Part::Feature",
+   "bbox": [
+    1306504.5,
+    -292387.0,
+    0.0,
+    1307235.9,
+    -291879.0,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line061": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line061",
+   "type": "Part::Line",
+   "bbox": [
+    1307371.9,
+    -291486.8,
+    0.0,
+    1307371.9,
+    -290007.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline047": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline047",
+   "type": "Part::Feature",
+   "bbox": [
+    1306504.5,
+    -292677.4,
+    0.0,
+    1306925.9,
+    -291893.2,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc028": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc028",
+   "type": "Part::Circle",
+   "bbox": [
+    1306881.0,
+    -292677.4,
+    0.0,
+    1307354.5,
+    -291538.8,
+    0.0
+   ],
+   "pos": [
+    1306504.5,
+    -291915.4,
+    0.0
+   ]
+  },
+  "Line062": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line062",
+   "type": "Part::Line",
+   "bbox": [
+    1306371.9,
+    -291757.8,
+    0.0,
+    1306415.9,
+    -291736.1,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc029": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc029",
+   "type": "Part::Circle",
+   "bbox": [
+    1307211.6,
+    -292387.0,
+    0.0,
+    1307354.5,
+    -291538.8,
+    0.0
+   ],
+   "pos": [
+    1306504.5,
+    -291915.4,
+    0.0
+   ]
+  },
+  "Line063": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line063",
+   "type": "Part::Line",
+   "bbox": [
+    1306418.6,
+    -291957.8,
+    0.0,
+    1306504.5,
+    -291915.4,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc030": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc030",
+   "type": "Part::Circle",
+   "bbox": [
+    1307266.5,
+    -292188.0,
+    0.0,
+    1307354.5,
+    -291538.8,
+    0.0
+   ],
+   "pos": [
+    1306504.5,
+    -291915.4,
+    0.0
+   ]
+  },
+  "Line064": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line064",
+   "type": "Part::Line",
+   "bbox": [
+    1308971.9,
+    -291757.8,
+    0.0,
+    1309571.9,
+    -291757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc031": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc031",
+   "type": "Part::Circle",
+   "bbox": [
+    1307266.5,
+    -291970.3,
+    0.0,
+    1307354.5,
+    -291538.8,
+    0.0
+   ],
+   "pos": [
+    1306504.5,
+    -291915.4,
+    0.0
+   ]
+  },
+  "Line065": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line065",
+   "type": "Part::Line",
+   "bbox": [
+    1307221.9,
+    -291337.8,
+    0.0,
+    1307221.9,
+    -289857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline048": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline048",
+   "type": "Part::Feature",
+   "bbox": [
+    1306128.2,
+    -284407.8,
+    0.0,
+    1306171.9,
+    -283557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line066": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line066",
+   "type": "Part::Line",
+   "bbox": [
+    1308971.9,
+    -291957.8,
+    0.0,
+    1309571.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline049": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline049",
+   "type": "Part::Feature",
+   "bbox": [
+    1306134.0,
+    -284315.8,
+    0.0,
+    1306596.9,
+    -283557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline050": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline050",
+   "type": "Part::Feature",
+   "bbox": [
+    1306141.0,
+    -284189.8,
+    0.0,
+    1306773.0,
+    -283557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line067": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line067",
+   "type": "Part::Line",
+   "bbox": [
+    1300871.9,
+    -291017.8,
+    0.0,
+    1301071.9,
+    -291017.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline051": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline051",
+   "type": "Part::Feature",
+   "bbox": [
+    1306150.0,
+    -284020.7,
+    0.0,
+    1306908.0,
+    -283557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline052": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline052",
+   "type": "Part::Feature",
+   "bbox": [
+    1306171.9,
+    -283607.8,
+    0.0,
+    1307021.9,
+    -283557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line068": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line068",
+   "type": "Part::Line",
+   "bbox": [
+    1300871.9,
+    -289917.8,
+    0.0,
+    1301071.9,
+    -289917.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc032": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc032",
+   "type": "Part::Circle",
+   "bbox": [
+    1306171.9,
+    -284407.8,
+    0.0,
+    1307021.9,
+    -283557.8,
+    0.0
+   ],
+   "pos": [
+    1306171.9,
+    -283557.8,
+    0.0
+   ]
+  },
+  "Line069": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line069",
+   "type": "Part::Line",
+   "bbox": [
+    1301071.9,
+    -289917.8,
+    0.0,
+    1301071.9,
+    -283457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc033": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc033",
+   "type": "Part::Circle",
+   "bbox": [
+    1306171.9,
+    -284407.8,
+    0.0,
+    1306908.0,
+    -283982.8,
+    0.0
+   ],
+   "pos": [
+    1306171.9,
+    -283557.8,
+    0.0
+   ]
+  },
+  "Line070": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line070",
+   "type": "Part::Line",
+   "bbox": [
+    1300871.9,
+    -289917.8,
+    0.0,
+    1300871.9,
+    -281504.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc034": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc034",
+   "type": "Part::Circle",
+   "bbox": [
+    1306171.9,
+    -284407.8,
+    0.0,
+    1306773.0,
+    -284158.8,
+    0.0
+   ],
+   "pos": [
+    1306171.9,
+    -283557.8,
+    0.0
+   ]
+  },
+  "Line071": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line071",
+   "type": "Part::Line",
+   "bbox": [
+    1301871.9,
+    -282657.8,
+    0.0,
+    1305171.9,
+    -282657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc035": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc035",
+   "type": "Part::Circle",
+   "bbox": [
+    1306171.9,
+    -284407.8,
+    0.0,
+    1306596.9,
+    -284293.9,
+    0.0
+   ],
+   "pos": [
+    1306171.9,
+    -283557.8,
+    0.0
+   ]
+  },
+  "Line072": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line072",
+   "type": "Part::Line",
+   "bbox": [
+    1305171.9,
+    -283257.8,
+    0.0,
+    1305171.9,
+    -282657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line201": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line201",
+   "type": "Part::Line",
+   "bbox": [
+    1301121.9,
+    -291972.8,
+    0.0,
+    1303821.9,
+    -291972.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line073": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line073",
+   "type": "Part::Line",
+   "bbox": [
+    1301871.9,
+    -283257.8,
+    0.0,
+    1301871.9,
+    -282657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline053": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline053",
+   "type": "Part::Feature",
+   "bbox": [
+    1303821.9,
+    -291972.8,
+    0.0,
+    1303871.9,
+    -291742.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline054": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline054",
+   "type": "Part::Feature",
+   "bbox": [
+    1301071.9,
+    -291972.8,
+    0.0,
+    1301121.9,
+    -291742.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line074": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line074",
+   "type": "Part::Line",
+   "bbox": [
+    1301821.9,
+    -282607.8,
+    0.0,
+    1305221.9,
+    -282607.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line202": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line202",
+   "type": "Part::Line",
+   "bbox": [
+    1301121.9,
+    -291742.8,
+    0.0,
+    1303821.9,
+    -291742.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line075": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line075",
+   "type": "Part::Line",
+   "bbox": [
+    1305221.9,
+    -283257.8,
+    0.0,
+    1305221.9,
+    -282607.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline055": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline055",
+   "type": "Part::Feature",
+   "bbox": [
+    1301121.9,
+    -291877.8,
+    0.0,
+    1302021.9,
+    -291837.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline056": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline056",
+   "type": "Part::Feature",
+   "bbox": [
+    1301121.9,
+    -291827.8,
+    0.0,
+    1302021.9,
+    -291787.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line076": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line076",
+   "type": "Part::Line",
+   "bbox": [
+    1301821.9,
+    -283257.8,
+    0.0,
+    1301821.9,
+    -282607.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline057": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline057",
+   "type": "Part::Feature",
+   "bbox": [
+    1301121.9,
+    -291927.8,
+    0.0,
+    1302021.9,
+    -291887.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline058": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline058",
+   "type": "Part::Feature",
+   "bbox": [
+    1302021.9,
+    -291877.8,
+    0.0,
+    1302921.9,
+    -291837.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline011": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline011",
+   "type": "Part::Feature",
+   "bbox": [
+    1306171.9,
+    -285357.8,
+    0.0,
+    1311071.9,
+    -282757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline059": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline059",
+   "type": "Part::Feature",
+   "bbox": [
+    1302921.9,
+    -291827.8,
+    0.0,
+    1303821.9,
+    -291787.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline012": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline012",
+   "type": "Part::Feature",
+   "bbox": [
+    1306091.9,
+    -285357.8,
+    0.0,
+    1311151.9,
+    -282677.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline013": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline013",
+   "type": "Part::Feature",
+   "bbox": [
+    1306051.9,
+    -285357.8,
+    0.0,
+    1311191.9,
+    -282637.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line077": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line077",
+   "type": "Part::Line",
+   "bbox": [
+    1301971.9,
+    -283457.8,
+    0.0,
+    1305071.9,
+    -283457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line078": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line078",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -286157.8,
+    0.0,
+    1306171.9,
+    -286157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line079": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line079",
+   "type": "Part::Line",
+   "bbox": [
+    1306171.9,
+    -285357.8,
+    0.0,
+    1306171.9,
+    -284407.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line080": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line080",
+   "type": "Part::Line",
+   "bbox": [
+    1307071.9,
+    -285557.8,
+    0.0,
+    1307071.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line081": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line081",
+   "type": "Part::Line",
+   "bbox": [
+    1308071.9,
+    -285557.8,
+    0.0,
+    1308571.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line082": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line082",
+   "type": "Part::Line",
+   "bbox": [
+    1307871.9,
+    -285357.8,
+    0.0,
+    1308571.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line083": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line083",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -284557.8,
+    0.0,
+    1306171.9,
+    -284557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line084": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line084",
+   "type": "Part::Line",
+   "bbox": [
+    1307071.9,
+    -285357.8,
+    0.0,
+    1307871.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line085": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line085",
+   "type": "Part::Line",
+   "bbox": [
+    1307071.9,
+    -285557.8,
+    0.0,
+    1307871.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line086": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line086",
+   "type": "Part::Line",
+   "bbox": [
+    1307071.9,
+    -285497.8,
+    0.0,
+    1307871.9,
+    -285497.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line087": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line087",
+   "type": "Part::Line",
+   "bbox": [
+    1307071.9,
+    -285417.8,
+    0.0,
+    1307871.9,
+    -285417.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line088": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line088",
+   "type": "Part::Line",
+   "bbox": [
+    1308571.9,
+    -285557.8,
+    0.0,
+    1308571.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line089": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line089",
+   "type": "Part::Line",
+   "bbox": [
+    1310571.9,
+    -285557.8,
+    0.0,
+    1310571.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line090": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line090",
+   "type": "Part::Line",
+   "bbox": [
+    1310571.9,
+    -285557.8,
+    0.0,
+    1311071.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line091": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line091",
+   "type": "Part::Line",
+   "bbox": [
+    1310571.9,
+    -285357.8,
+    0.0,
+    1311871.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line092": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line092",
+   "type": "Part::Line",
+   "bbox": [
+    1308571.9,
+    -285357.8,
+    0.0,
+    1310571.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line093": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line093",
+   "type": "Part::Line",
+   "bbox": [
+    1308571.9,
+    -285417.8,
+    0.0,
+    1310571.9,
+    -285417.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line094": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line094",
+   "type": "Part::Line",
+   "bbox": [
+    1308571.9,
+    -285557.8,
+    0.0,
+    1310571.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line095": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line095",
+   "type": "Part::Line",
+   "bbox": [
+    1308571.9,
+    -285497.8,
+    0.0,
+    1310571.9,
+    -285497.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line096": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line096",
+   "type": "Part::Line",
+   "bbox": [
+    1311871.9,
+    -285557.8,
+    0.0,
+    1311871.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line097": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line097",
+   "type": "Part::Line",
+   "bbox": [
+    1313771.9,
+    -285557.8,
+    0.0,
+    1313771.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line098": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line098",
+   "type": "Part::Line",
+   "bbox": [
+    1313771.9,
+    -285557.8,
+    0.0,
+    1314371.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line099": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line099",
+   "type": "Part::Line",
+   "bbox": [
+    1313771.9,
+    -285357.8,
+    0.0,
+    1314571.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line100": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line100",
+   "type": "Part::Line",
+   "bbox": [
+    1311871.9,
+    -285557.8,
+    0.0,
+    1313771.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line101": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line101",
+   "type": "Part::Line",
+   "bbox": [
+    1311671.9,
+    -284657.8,
+    0.0,
+    1313971.9,
+    -284657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line102": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line102",
+   "type": "Part::Line",
+   "bbox": [
+    1311721.9,
+    -284707.8,
+    0.0,
+    1313921.9,
+    -284707.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line103": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line103",
+   "type": "Part::Line",
+   "bbox": [
+    1311771.9,
+    -284757.8,
+    0.0,
+    1313871.9,
+    -284757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line104": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line104",
+   "type": "Part::Line",
+   "bbox": [
+    1313971.9,
+    -285357.8,
+    0.0,
+    1313971.9,
+    -284657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line105": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line105",
+   "type": "Part::Line",
+   "bbox": [
+    1313921.9,
+    -285357.8,
+    0.0,
+    1313921.9,
+    -284707.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line106": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line106",
+   "type": "Part::Line",
+   "bbox": [
+    1313871.9,
+    -285357.8,
+    0.0,
+    1313871.9,
+    -284757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line107": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line107",
+   "type": "Part::Line",
+   "bbox": [
+    1311671.9,
+    -285357.8,
+    0.0,
+    1311671.9,
+    -284657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line108": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line108",
+   "type": "Part::Line",
+   "bbox": [
+    1311721.9,
+    -285357.8,
+    0.0,
+    1311721.9,
+    -284707.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line109": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line109",
+   "type": "Part::Line",
+   "bbox": [
+    1311771.9,
+    -285357.8,
+    0.0,
+    1311771.9,
+    -284757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line110": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line110",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -289757.8,
+    0.0,
+    1311271.9,
+    -289757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line111": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line111",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -288907.8,
+    0.0,
+    1311271.9,
+    -288907.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line112": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line112",
+   "type": "Part::Line",
+   "bbox": [
+    1311271.9,
+    -288907.8,
+    0.0,
+    1311271.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line113": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line113",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -288907.8,
+    0.0,
+    1311071.9,
+    -288657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line114": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line114",
+   "type": "Part::Line",
+   "bbox": [
+    1310121.9,
+    -290057.8,
+    0.0,
+    1310121.9,
+    -289857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line115": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line115",
+   "type": "Part::Line",
+   "bbox": [
+    1310971.9,
+    -290057.8,
+    0.0,
+    1310971.9,
+    -289857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line116": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line116",
+   "type": "Part::Line",
+   "bbox": [
+    1310971.9,
+    -290057.8,
+    0.0,
+    1311071.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line117": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line117",
+   "type": "Part::Line",
+   "bbox": [
+    1310971.9,
+    -289857.8,
+    0.0,
+    1311071.9,
+    -289857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line118": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line118",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -291657.8,
+    0.0,
+    1311271.9,
+    -291657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line119": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line119",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -290907.8,
+    0.0,
+    1311271.9,
+    -290907.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line120": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line120",
+   "type": "Part::Line",
+   "bbox": [
+    1311271.9,
+    -290907.8,
+    0.0,
+    1311271.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line121": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line121",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -290907.8,
+    0.0,
+    1311071.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line122": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line122",
+   "type": "Part::Line",
+   "bbox": [
+    1310471.9,
+    -288657.8,
+    0.0,
+    1310471.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line123": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line123",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -287857.8,
+    0.0,
+    1311271.9,
+    -287857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line124": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line124",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -286157.8,
+    0.0,
+    1311271.9,
+    -286157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line125": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line125",
+   "type": "Part::Line",
+   "bbox": [
+    1314371.9,
+    -286557.8,
+    0.0,
+    1314571.9,
+    -286557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line126": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line126",
+   "type": "Part::Line",
+   "bbox": [
+    1314371.9,
+    -291957.8,
+    0.0,
+    1314571.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line127": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line127",
+   "type": "Part::Line",
+   "bbox": [
+    1313671.9,
+    -291757.8,
+    0.0,
+    1314371.9,
+    -291757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line128": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line128",
+   "type": "Part::Line",
+   "bbox": [
+    1313671.9,
+    -291817.8,
+    0.0,
+    1314371.9,
+    -291817.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line129": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line129",
+   "type": "Part::Line",
+   "bbox": [
+    1313671.9,
+    -291957.8,
+    0.0,
+    1314371.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line130": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line130",
+   "type": "Part::Line",
+   "bbox": [
+    1313671.9,
+    -291897.8,
+    0.0,
+    1314371.9,
+    -291897.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line131": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line131",
+   "type": "Part::Line",
+   "bbox": [
+    1314371.9,
+    -291157.8,
+    0.0,
+    1314571.9,
+    -291157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line132": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line132",
+   "type": "Part::Line",
+   "bbox": [
+    1312871.9,
+    -291957.8,
+    0.0,
+    1312871.9,
+    -291757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line133": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line133",
+   "type": "Part::Line",
+   "bbox": [
+    1312871.9,
+    -296457.8,
+    0.0,
+    1312871.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line134": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line134",
+   "type": "Part::Line",
+   "bbox": [
+    1310371.9,
+    -296457.8,
+    0.0,
+    1310371.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line135": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line135",
+   "type": "Part::Line",
+   "bbox": [
+    1312871.9,
+    -296257.8,
+    0.0,
+    1313471.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line136": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line136",
+   "type": "Part::Line",
+   "bbox": [
+    1312871.9,
+    -296457.8,
+    0.0,
+    1313671.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line137": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line137",
+   "type": "Part::Line",
+   "bbox": [
+    1310371.9,
+    -296257.8,
+    0.0,
+    1312871.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line138": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line138",
+   "type": "Part::Line",
+   "bbox": [
+    1310171.9,
+    -297157.8,
+    0.0,
+    1313071.9,
+    -297157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line139": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line139",
+   "type": "Part::Line",
+   "bbox": [
+    1310221.9,
+    -297107.8,
+    0.0,
+    1313021.9,
+    -297107.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line140": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line140",
+   "type": "Part::Line",
+   "bbox": [
+    1310271.9,
+    -297057.8,
+    0.0,
+    1312971.9,
+    -297057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line217": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line217",
+   "type": "Part::Line",
+   "bbox": [
+    1304118.7,
+    -292750.1,
+    0.0,
+    1304621.0,
+    -292615.5,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line141": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line141",
+   "type": "Part::Line",
+   "bbox": [
+    1313071.9,
+    -297157.8,
+    0.0,
+    1313071.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line218": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line218",
+   "type": "Part::Line",
+   "bbox": [
+    1304197.3,
+    -292725.9,
+    0.0,
+    1304627.5,
+    -292610.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line142": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line142",
+   "type": "Part::Line",
+   "bbox": [
+    1313021.9,
+    -297107.8,
+    0.0,
+    1313021.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line219": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line219",
+   "type": "Part::Line",
+   "bbox": [
+    1304627.5,
+    -292725.9,
+    0.0,
+    1304633.2,
+    -292656.0,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line143": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line143",
+   "type": "Part::Line",
+   "bbox": [
+    1312971.9,
+    -297057.8,
+    0.0,
+    1312971.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line220": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line220",
+   "type": "Part::Line",
+   "bbox": [
+    1304619.9,
+    -292723.9,
+    0.0,
+    1304623.7,
+    -292663.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line144": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line144",
+   "type": "Part::Line",
+   "bbox": [
+    1310171.9,
+    -297157.8,
+    0.0,
+    1310171.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc038": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc038",
+   "type": "Part::Circle",
+   "bbox": [
+    1304095.4,
+    -292781.2,
+    0.0,
+    1304655.6,
+    -292631.0,
+    0.0
+   ],
+   "pos": [
+    1304661.5,
+    -291638.9,
+    0.0
+   ]
+  },
+  "Line145": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line145",
+   "type": "Part::Line",
+   "bbox": [
+    1310221.9,
+    -297107.8,
+    0.0,
+    1310221.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line221": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line221",
+   "type": "Part::Line",
+   "bbox": [
+    1304099.3,
+    -292766.7,
+    0.0,
+    1304659.5,
+    -292616.6,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line146": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line146",
+   "type": "Part::Line",
+   "bbox": [
+    1310271.9,
+    -297057.8,
+    0.0,
+    1310271.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc039": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc039",
+   "type": "Part::Circle",
+   "bbox": [
+    1304744.3,
+    -292781.2,
+    0.0,
+    1304982.7,
+    -292631.0,
+    0.0
+   ],
+   "pos": [
+    1304732.3,
+    -292497.7,
+    0.0
+   ]
+  },
+  "Line147": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line147",
+   "type": "Part::Line",
+   "bbox": [
+    1306771.9,
+    -296257.8,
+    0.0,
+    1308971.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line222": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line222",
+   "type": "Part::Line",
+   "bbox": [
+    1304740.5,
+    -292766.7,
+    0.0,
+    1304978.8,
+    -292616.6,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line148": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line148",
+   "type": "Part::Line",
+   "bbox": [
+    1306571.9,
+    -297157.8,
+    0.0,
+    1309171.9,
+    -297157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line223": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line223",
+   "type": "Part::Line",
+   "bbox": [
+    1304769.9,
+    -292745.6,
+    0.0,
+    1304959.6,
+    -292624.5,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line149": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line149",
+   "type": "Part::Line",
+   "bbox": [
+    1306621.9,
+    -297107.8,
+    0.0,
+    1309121.9,
+    -297107.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line224": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line224",
+   "type": "Part::Line",
+   "bbox": [
+    1304765.2,
+    -292721.0,
+    0.0,
+    1304938.0,
+    -292610.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line150": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line150",
+   "type": "Part::Line",
+   "bbox": [
+    1306671.9,
+    -297057.8,
+    0.0,
+    1309071.9,
+    -297057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line225": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line225",
+   "type": "Part::Line",
+   "bbox": [
+    1304740.5,
+    -292781.2,
+    0.0,
+    1304744.3,
+    -292766.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line151": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line151",
+   "type": "Part::Line",
+   "bbox": [
+    1309171.9,
+    -297157.8,
+    0.0,
+    1309171.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line226": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line226",
+   "type": "Part::Line",
+   "bbox": [
+    1304765.2,
+    -292745.6,
+    0.0,
+    1304769.9,
+    -292721.0,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line152": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line152",
+   "type": "Part::Line",
+   "bbox": [
+    1309121.9,
+    -297107.8,
+    0.0,
+    1309121.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line227": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line227",
+   "type": "Part::Line",
+   "bbox": [
+    1304621.0,
+    -292750.1,
+    0.0,
+    1304627.5,
+    -292725.9,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line252": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line252",
+   "type": "Part::Line",
+   "bbox": [
+    1303871.9,
+    -291757.8,
+    0.0,
+    1303871.9,
+    -290857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line153": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line153",
+   "type": "Part::Line",
+   "bbox": [
+    1309071.9,
+    -297057.8,
+    0.0,
+    1309071.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc040": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc040",
+   "type": "Part::Circle",
+   "bbox": [
+    1304560.6,
+    -292788.4,
+    0.0,
+    1304637.9,
+    -292776.1,
+    0.0
+   ],
+   "pos": [
+    1304602.8,
+    -292710.0,
+    0.0
+   ]
+  },
+  "Line253": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line253",
+   "type": "Part::Line",
+   "bbox": [
+    1304871.9,
+    -289857.8,
+    0.0,
+    1305971.9,
+    -289857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc044": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc044",
+   "type": "Part::Circle",
+   "bbox": [
+    1303871.9,
+    -290857.8,
+    0.0,
+    1304871.9,
+    -289857.8,
+    0.0
+   ],
+   "pos": [
+    1304871.9,
+    -290857.8,
+    0.0
+   ]
+  },
+  "Arc041": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc041",
+   "type": "Part::Circle",
+   "bbox": [
+    1304551.3,
+    -292793.4,
+    0.0,
+    1304647.2,
+    -292775.6,
+    0.0
+   ],
+   "pos": [
+    1304602.8,
+    -292710.0,
+    0.0
+   ]
+  },
+  "Line154": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line154",
+   "type": "Part::Line",
+   "bbox": [
+    1306571.9,
+    -297157.8,
+    0.0,
+    1306571.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line155": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line155",
+   "type": "Part::Line",
+   "bbox": [
+    1306621.9,
+    -297107.8,
+    0.0,
+    1306621.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line228": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line228",
+   "type": "Part::Line",
+   "bbox": [
+    1304655.6,
+    -292781.2,
+    0.0,
+    1304659.5,
+    -292766.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line254": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line254",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -289857.8,
+    0.0,
+    1305971.9,
+    -288657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line156": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line156",
+   "type": "Part::Line",
+   "bbox": [
+    1306671.9,
+    -297057.8,
+    0.0,
+    1306671.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline021": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline021",
+   "type": "Part::Feature",
+   "bbox": [
+    1311250.0,
+    -289757.8,
+    0.0,
+    1312008.0,
+    -289294.9,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc042": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc042",
+   "type": "Part::Circle",
+   "bbox": [
+    1304765.5,
+    -292781.2,
+    0.0,
+    1304840.5,
+    -292759.5,
+    0.0
+   ],
+   "pos": [
+    1304786.3,
+    -292702.7,
+    0.0
+   ]
+  },
+  "Line255": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line255",
+   "type": "Part::Line",
+   "bbox": [
+    1305671.9,
+    -289857.8,
+    0.0,
+    1305671.9,
+    -288657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline020": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline020",
+   "type": "Part::Feature",
+   "bbox": [
+    1311241.0,
+    -289757.8,
+    0.0,
+    1311873.0,
+    -289125.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line157": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line157",
+   "type": "Part::Line",
+   "bbox": [
+    1306771.9,
+    -296457.8,
+    0.0,
+    1306771.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc043": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc043",
+   "type": "Part::Circle",
+   "bbox": [
+    1304756.5,
+    -292786.2,
+    0.0,
+    1304849.6,
+    -292757.2,
+    0.0
+   ],
+   "pos": [
+    1304786.3,
+    -292702.7,
+    0.0
+   ]
+  },
+  "Line256": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line256",
+   "type": "Part::Line",
+   "bbox": [
+    1305371.9,
+    -289857.8,
+    0.0,
+    1305371.9,
+    -288657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line158": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line158",
+   "type": "Part::Line",
+   "bbox": [
+    1308971.9,
+    -296457.8,
+    0.0,
+    1308971.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line229": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line229",
+   "type": "Part::Line",
+   "bbox": [
+    1304169.5,
+    -292067.4,
+    0.0,
+    1304169.5,
+    -292037.1,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line257": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line257",
+   "type": "Part::Line",
+   "bbox": [
+    1305371.9,
+    -288657.8,
+    0.0,
+    1305971.9,
+    -288657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line159": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line159",
+   "type": "Part::Line",
+   "bbox": [
+    1308971.9,
+    -296257.8,
+    0.0,
+    1309571.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line230": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line230",
+   "type": "Part::Line",
+   "bbox": [
+    1304095.4,
+    -292631.0,
+    0.0,
+    1304099.3,
+    -292616.6,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line160": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line160",
+   "type": "Part::Line",
+   "bbox": [
+    1308971.9,
+    -296457.8,
+    0.0,
+    1310371.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line231": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line231",
+   "type": "Part::Line",
+   "bbox": [
+    1304409.2,
+    -292663.8,
+    0.0,
+    1304623.7,
+    -292610.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line161": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line161",
+   "type": "Part::Line",
+   "bbox": [
+    1313471.9,
+    -293157.8,
+    0.0,
+    1313671.9,
+    -293157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line232": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line232",
+   "type": "Part::Line",
+   "bbox": [
+    1304446.6,
+    -292656.0,
+    0.0,
+    1304633.2,
+    -292610.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line162": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line162",
+   "type": "Part::Line",
+   "bbox": [
+    1313471.9,
+    -295057.8,
+    0.0,
+    1313671.9,
+    -295057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line233": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line233",
+   "type": "Part::Line",
+   "bbox": [
+    1304118.7,
+    -292615.5,
+    0.0,
+    1304120.0,
+    -292610.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line163": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line163",
+   "type": "Part::Line",
+   "bbox": [
+    1309571.9,
+    -295057.8,
+    0.0,
+    1309771.9,
+    -295057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line234": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line234",
+   "type": "Part::Line",
+   "bbox": [
+    1304118.7,
+    -292615.5,
+    0.0,
+    1304120.0,
+    -292610.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line164": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line164",
+   "type": "Part::Line",
+   "bbox": [
+    1306171.9,
+    -296257.8,
+    0.0,
+    1306771.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line235": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line235",
+   "type": "Part::Line",
+   "bbox": [
+    1304119.5,
+    -292566.3,
+    0.0,
+    1304119.5,
+    -292067.4,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline014": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline014",
+   "type": "Part::Feature",
+   "bbox": [
+    1303671.9,
+    -296457.8,
+    0.0,
+    1304071.9,
+    -295757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line236": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line236",
+   "type": "Part::Line",
+   "bbox": [
+    1304120.0,
+    -292610.7,
+    0.0,
+    1304120.0,
+    -291980.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line165": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line165",
+   "type": "Part::Line",
+   "bbox": [
+    1303871.9,
+    -291757.8,
+    0.0,
+    1306371.9,
+    -291757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line237": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line237",
+   "type": "Part::Line",
+   "bbox": [
+    1304100.0,
+    -292610.7,
+    0.0,
+    1304100.0,
+    -291980.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line166": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line166",
+   "type": "Part::Line",
+   "bbox": [
+    1303871.9,
+    -292357.8,
+    0.0,
+    1304071.9,
+    -292357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line238": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line238",
+   "type": "Part::Line",
+   "bbox": [
+    1304923.8,
+    -292067.4,
+    0.0,
+    1304923.8,
+    -292037.1,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line167": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line167",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -292557.8,
+    0.0,
+    1306171.9,
+    -292557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line239": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line239",
+   "type": "Part::Line",
+   "bbox": [
+    1304978.8,
+    -292631.0,
+    0.0,
+    1304982.7,
+    -292616.6,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line168": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line168",
+   "type": "Part::Line",
+   "bbox": [
+    1306171.9,
+    -291957.8,
+    0.0,
+    1306418.6,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line240": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line240",
+   "type": "Part::Line",
+   "bbox": [
+    1304956.9,
+    -292624.5,
+    0.0,
+    1304959.6,
+    -292610.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line169": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line169",
+   "type": "Part::Line",
+   "bbox": [
+    1306371.9,
+    -291957.8,
+    0.0,
+    1306371.9,
+    -291757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line241": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line241",
+   "type": "Part::Line",
+   "bbox": [
+    1304973.8,
+    -292566.3,
+    0.0,
+    1304973.8,
+    -292067.4,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line170": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line170",
+   "type": "Part::Line",
+   "bbox": [
+    1305571.9,
+    -296257.8,
+    0.0,
+    1305571.9,
+    -295957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line242": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line242",
+   "type": "Part::Line",
+   "bbox": [
+    1304974.3,
+    -292610.7,
+    0.0,
+    1304974.3,
+    -291980.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line171": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line171",
+   "type": "Part::Line",
+   "bbox": [
+    1305571.9,
+    -295957.8,
+    0.0,
+    1305971.9,
+    -295957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line243": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line243",
+   "type": "Part::Line",
+   "bbox": [
+    1305000.0,
+    -292610.7,
+    0.0,
+    1305000.0,
+    -291980.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line172": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line172",
+   "type": "Part::Line",
+   "bbox": [
+    1305621.9,
+    -296007.8,
+    0.0,
+    1305971.9,
+    -296007.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line244": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line244",
+   "type": "Part::Line",
+   "bbox": [
+    1304973.8,
+    -292538.8,
+    0.0,
+    1304973.8,
+    -292074.9,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line173": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line173",
+   "type": "Part::Line",
+   "bbox": [
+    1305621.9,
+    -296257.8,
+    0.0,
+    1305621.9,
+    -296007.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line245": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line245",
+   "type": "Part::Line",
+   "bbox": [
+    1304100.0,
+    -291980.7,
+    0.0,
+    1305000.0,
+    -291980.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline015": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline015",
+   "type": "Part::Feature",
+   "bbox": [
+    1305621.9,
+    -296257.8,
+    0.0,
+    1305971.9,
+    -296007.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline016": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline016",
+   "type": "Part::Feature",
+   "bbox": [
+    1304271.9,
+    -296457.8,
+    0.0,
+    1304271.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line246": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line246",
+   "type": "Part::Line",
+   "bbox": [
+    1304120.0,
+    -292000.7,
+    0.0,
+    1304974.3,
+    -292000.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline017": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline017",
+   "type": "Part::Feature",
+   "bbox": [
+    1305271.9,
+    -296457.8,
+    0.0,
+    1305271.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line174": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line174",
+   "type": "Part::Line",
+   "bbox": [
+    1305271.9,
+    -296457.8,
+    0.0,
+    1306771.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line247": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line247",
+   "type": "Part::Line",
+   "bbox": [
+    1304120.0,
+    -291990.7,
+    0.0,
+    1304974.3,
+    -291990.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line175": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line175",
+   "type": "Part::Line",
+   "bbox": [
+    1305271.9,
+    -296257.8,
+    0.0,
+    1305971.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line248": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line248",
+   "type": "Part::Line",
+   "bbox": [
+    1304169.5,
+    -292037.1,
+    0.0,
+    1304923.8,
+    -292037.1,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line176": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line176",
+   "type": "Part::Line",
+   "bbox": [
+    1304271.9,
+    -296257.8,
+    0.0,
+    1305271.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line249": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line249",
+   "type": "Part::Line",
+   "bbox": [
+    1304119.5,
+    -292566.3,
+    0.0,
+    1304973.8,
+    -292566.3,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line177": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line177",
+   "type": "Part::Line",
+   "bbox": [
+    1304271.9,
+    -296317.8,
+    0.0,
+    1305271.9,
+    -296317.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line250": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line250",
+   "type": "Part::Line",
+   "bbox": [
+    1304100.0,
+    -292610.7,
+    0.0,
+    1305000.0,
+    -292610.7,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line178": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line178",
+   "type": "Part::Line",
+   "bbox": [
+    1304271.9,
+    -296457.8,
+    0.0,
+    1305271.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line251": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line251",
+   "type": "Part::Line",
+   "bbox": [
+    1304119.5,
+    -292067.4,
+    0.0,
+    1304973.8,
+    -292067.4,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line179": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line179",
+   "type": "Part::Line",
+   "bbox": [
+    1304271.9,
+    -296397.8,
+    0.0,
+    1305271.9,
+    -296397.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line180": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line180",
+   "type": "Part::Line",
+   "bbox": [
+    1308171.9,
+    -288657.8,
+    0.0,
+    1308171.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line181": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line181",
+   "type": "Part::Line",
+   "bbox": [
+    1309021.9,
+    -288657.8,
+    0.0,
+    1309021.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line182": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line182",
+   "type": "Part::Line",
+   "bbox": [
+    1307771.9,
+    -288657.8,
+    0.0,
+    1307771.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line183": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line183",
+   "type": "Part::Line",
+   "bbox": [
+    1307021.9,
+    -288657.8,
+    0.0,
+    1307021.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line184": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line184",
+   "type": "Part::Line",
+   "bbox": [
+    1307771.9,
+    -288657.8,
+    0.0,
+    1308171.9,
+    -288657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line185": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line185",
+   "type": "Part::Line",
+   "bbox": [
+    1307771.9,
+    -288457.8,
+    0.0,
+    1308171.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line186": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line186",
+   "type": "Part::Line",
+   "bbox": [
+    1309021.9,
+    -288657.8,
+    0.0,
+    1311271.9,
+    -288657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line187": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line187",
+   "type": "Part::Line",
+   "bbox": [
+    1309021.9,
+    -288457.8,
+    0.0,
+    1311071.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line188": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line188",
+   "type": "Part::Line",
+   "bbox": [
+    1306415.9,
+    -291915.4,
+    0.0,
+    1306504.5,
+    -291736.1,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line028": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line028",
+   "type": "Part::Line",
+   "bbox": [
+    1301071.9,
+    -283257.8,
+    0.0,
+    1301071.9,
+    -281504.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line189": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line189",
+   "type": "Part::Line",
+   "bbox": [
+    1307177.9,
+    -291538.8,
+    0.0,
+    1307266.5,
+    -291359.5,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line190": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line190",
+   "type": "Part::Line",
+   "bbox": [
+    1307266.5,
+    -291538.8,
+    0.0,
+    1307371.9,
+    -291486.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line191": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line191",
+   "type": "Part::Line",
+   "bbox": [
+    1307177.9,
+    -291359.5,
+    0.0,
+    1307221.9,
+    -291337.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line192": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line192",
+   "type": "Part::Line",
+   "bbox": [
+    1300871.9,
+    -286157.8,
+    0.0,
+    1301071.9,
+    -286157.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line193": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line193",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -295757.8,
+    0.0,
+    1306171.9,
+    -295757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line194": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line194",
+   "type": "Part::Line",
+   "bbox": [
+    1306771.9,
+    -288657.8,
+    0.0,
+    1306771.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line195": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line195",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -287857.8,
+    0.0,
+    1306171.9,
+    -287857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line196": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line196",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -283557.8,
+    0.0,
+    1306171.9,
+    -283557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line197": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line197",
+   "type": "Part::Line",
+   "bbox": [
+    1306171.9,
+    -283557.8,
+    0.0,
+    1306171.9,
+    -283457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line198": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line198",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -283557.8,
+    0.0,
+    1305971.9,
+    -283457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line199": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line199",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -284407.8,
+    0.0,
+    1306171.9,
+    -284407.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line200": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line200",
+   "type": "Part::Line",
+   "bbox": [
+    1304071.9,
+    -292357.8,
+    0.0,
+    1304071.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line203": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line203",
+   "type": "Part::Line",
+   "bbox": [
+    1305021.9,
+    -292557.8,
+    0.0,
+    1305371.9,
+    -292557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line204": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line204",
+   "type": "Part::Line",
+   "bbox": [
+    1305371.9,
+    -295657.8,
+    0.0,
+    1305371.9,
+    -292557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line205": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line205",
+   "type": "Part::Line",
+   "bbox": [
+    1304271.9,
+    -295657.8,
+    0.0,
+    1305371.9,
+    -295657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line206": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line206",
+   "type": "Part::Line",
+   "bbox": [
+    1303671.9,
+    -295757.8,
+    0.0,
+    1303671.9,
+    -295057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line207": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line207",
+   "type": "Part::Line",
+   "bbox": [
+    1303871.9,
+    -294857.8,
+    0.0,
+    1304071.9,
+    -294857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line208": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line208",
+   "type": "Part::Line",
+   "bbox": [
+    1304271.9,
+    -295657.8,
+    0.0,
+    1304271.9,
+    -295057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line209": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line209",
+   "type": "Part::Line",
+   "bbox": [
+    1305021.9,
+    -292557.8,
+    0.0,
+    1305021.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc036": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc036",
+   "type": "Part::Circle",
+   "bbox": [
+    1304071.9,
+    -295057.8,
+    0.0,
+    1304271.9,
+    -294857.8,
+    0.0
+   ],
+   "pos": [
+    1304071.9,
+    -295057.8,
+    0.0
+   ]
+  },
+  "Arc037": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc037",
+   "type": "Part::Circle",
+   "bbox": [
+    1303671.9,
+    -295057.8,
+    0.0,
+    1303871.9,
+    -294857.8,
+    0.0
+   ],
+   "pos": [
+    1303871.9,
+    -295057.8,
+    0.0
+   ]
+  },
+  "Line210": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line210",
+   "type": "Part::Line",
+   "bbox": [
+    1303671.9,
+    -292557.8,
+    0.0,
+    1303671.9,
+    -291972.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line211": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line211",
+   "type": "Part::Line",
+   "bbox": [
+    1303671.9,
+    -292557.8,
+    0.0,
+    1304071.9,
+    -292557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line212": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line212",
+   "type": "Part::Line",
+   "bbox": [
+    1304071.9,
+    -292557.8,
+    0.0,
+    1304071.9,
+    -292357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line213": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line213",
+   "type": "Part::Line",
+   "bbox": [
+    1303671.9,
+    -292357.8,
+    0.0,
+    1303871.9,
+    -292357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line214": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line214",
+   "type": "Part::Line",
+   "bbox": [
+    1303671.9,
+    -292557.8,
+    0.0,
+    1304071.9,
+    -292357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line215": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line215",
+   "type": "Part::Line",
+   "bbox": [
+    1303671.9,
+    -292357.8,
+    0.0,
+    1303871.9,
+    -291972.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line216": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line216",
+   "type": "Part::Line",
+   "bbox": [
+    1303671.9,
+    -291972.8,
+    0.0,
+    1303871.9,
+    -291972.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line",
+   "type": "Part::Line",
+   "bbox": [
+    1301071.9,
+    -283457.8,
+    0.0,
+    1301971.9,
+    -283457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line001": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line001",
+   "type": "Part::Line",
+   "bbox": [
+    1300871.9,
+    -283257.8,
+    0.0,
+    1301971.9,
+    -283257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line002": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line002",
+   "type": "Part::Line",
+   "bbox": [
+    1306171.9,
+    -285357.8,
+    0.0,
+    1307071.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line003": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line003",
+   "type": "Part::Line",
+   "bbox": [
+    1306171.9,
+    -285557.8,
+    0.0,
+    1307071.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line004": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line004",
+   "type": "Part::Line",
+   "bbox": [
+    1306171.9,
+    -288457.8,
+    0.0,
+    1307021.9,
+    -288457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line005": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line005",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -288657.8,
+    0.0,
+    1307021.9,
+    -288657.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line006": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line006",
+   "type": "Part::Line",
+   "bbox": [
+    1307221.9,
+    -289857.8,
+    0.0,
+    1310121.9,
+    -289857.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line007": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line007",
+   "type": "Part::Line",
+   "bbox": [
+    1309771.9,
+    -290057.8,
+    0.0,
+    1310121.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line008": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line008",
+   "type": "Part::Line",
+   "bbox": [
+    1300871.9,
+    -291757.8,
+    0.0,
+    1301071.9,
+    -291757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line009": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line009",
+   "type": "Part::Line",
+   "bbox": [
+    1304071.9,
+    -291957.8,
+    0.0,
+    1305971.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line010": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line010",
+   "type": "Part::Line",
+   "bbox": [
+    1299671.9,
+    -295757.8,
+    0.0,
+    1303871.9,
+    -295757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line011": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line011",
+   "type": "Part::Line",
+   "bbox": [
+    1299471.9,
+    -295957.8,
+    0.0,
+    1303671.9,
+    -295957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line012": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line012",
+   "type": "Part::Line",
+   "bbox": [
+    1304071.9,
+    -296257.8,
+    0.0,
+    1304271.9,
+    -296257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line013": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line013",
+   "type": "Part::Line",
+   "bbox": [
+    1304071.9,
+    -296457.8,
+    0.0,
+    1304271.9,
+    -296457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line014": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line014",
+   "type": "Part::Line",
+   "bbox": [
+    1314371.9,
+    -291957.8,
+    0.0,
+    1314371.9,
+    -290057.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line015": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line015",
+   "type": "Part::Line",
+   "bbox": [
+    1314571.9,
+    -291957.8,
+    0.0,
+    1314571.9,
+    -285357.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline001": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline001",
+   "type": "Part::Feature",
+   "bbox": [
+    1300871.9,
+    -291017.8,
+    0.0,
+    1300915.7,
+    -290667.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline002": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline002",
+   "type": "Part::Feature",
+   "bbox": [
+    1300696.9,
+    -291017.8,
+    0.0,
+    1300909.8,
+    -290692.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line016": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line016",
+   "type": "Part::Line",
+   "bbox": [
+    1313471.9,
+    -296257.8,
+    0.0,
+    1313471.9,
+    -291957.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline003": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline003",
+   "type": "Part::Feature",
+   "bbox": [
+    1300624.4,
+    -291017.8,
+    0.0,
+    1300902.9,
+    -290739.4,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline004": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline004",
+   "type": "Part::Feature",
+   "bbox": [
+    1300568.8,
+    -291017.8,
+    0.0,
+    1300893.8,
+    -290804.9,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line017": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line017",
+   "type": "Part::Line",
+   "bbox": [
+    1313671.9,
+    -296457.8,
+    0.0,
+    1313671.9,
+    -291757.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline005": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline005",
+   "type": "Part::Feature",
+   "bbox": [
+    1300521.9,
+    -291017.8,
+    0.0,
+    1300871.9,
+    -290967.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc",
+   "type": "Part::Circle",
+   "bbox": [
+    1300521.9,
+    -291017.8,
+    0.0,
+    1300871.9,
+    -290667.8,
+    0.0
+   ],
+   "pos": [
+    1300871.9,
+    -291017.8,
+    0.0
+   ]
+  },
+  "Line018": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line018",
+   "type": "Part::Line",
+   "bbox": [
+    1300871.9,
+    -293957.8,
+    0.0,
+    1300871.9,
+    -291017.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc001": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc001",
+   "type": "Part::Circle",
+   "bbox": [
+    1300568.8,
+    -290842.8,
+    0.0,
+    1300871.9,
+    -290667.8,
+    0.0
+   ],
+   "pos": [
+    1300871.9,
+    -291017.8,
+    0.0
+   ]
+  },
+  "Line019": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line019",
+   "type": "Part::Line",
+   "bbox": [
+    1301071.9,
+    -294157.8,
+    0.0,
+    1301071.9,
+    -291017.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc002": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc002",
+   "type": "Part::Circle",
+   "bbox": [
+    1300624.4,
+    -290770.3,
+    0.0,
+    1300871.9,
+    -290667.8,
+    0.0
+   ],
+   "pos": [
+    1300871.9,
+    -291017.8,
+    0.0
+   ]
+  },
+  "Line020": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line020",
+   "type": "Part::Line",
+   "bbox": [
+    1305971.9,
+    -282557.8,
+    0.0,
+    1311271.9,
+    -282557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc003": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc003",
+   "type": "Part::Circle",
+   "bbox": [
+    1300696.9,
+    -290714.7,
+    0.0,
+    1300871.9,
+    -290667.8,
+    0.0
+   ],
+   "pos": [
+    1300871.9,
+    -291017.8,
+    0.0
+   ]
+  },
+  "Line021": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line021",
+   "type": "Part::Line",
+   "bbox": [
+    1301771.9,
+    -282557.8,
+    0.0,
+    1305271.9,
+    -282557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline006": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline006",
+   "type": "Part::Feature",
+   "bbox": [
+    1300871.9,
+    -290667.8,
+    0.0,
+    1300915.7,
+    -289917.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line022": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line022",
+   "type": "Part::Line",
+   "bbox": [
+    1301971.9,
+    -283457.8,
+    0.0,
+    1301971.9,
+    -283257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline007": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline007",
+   "type": "Part::Feature",
+   "bbox": [
+    1300496.9,
+    -290589.2,
+    0.0,
+    1300909.8,
+    -289917.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline008": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline008",
+   "type": "Part::Feature",
+   "bbox": [
+    1300341.6,
+    -290479.1,
+    0.0,
+    1300902.9,
+    -289917.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line023": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line023",
+   "type": "Part::Line",
+   "bbox": [
+    1305071.9,
+    -283457.8,
+    0.0,
+    1305071.9,
+    -283257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline009": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline009",
+   "type": "Part::Feature",
+   "bbox": [
+    1300222.4,
+    -290330.7,
+    0.0,
+    1300893.8,
+    -289917.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline010": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline010",
+   "type": "Part::Feature",
+   "bbox": [
+    1300121.9,
+    -289967.8,
+    0.0,
+    1300871.9,
+    -289917.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Line024": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line024",
+   "type": "Part::Line",
+   "bbox": [
+    1305271.9,
+    -283257.8,
+    0.0,
+    1305271.9,
+    -282557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc004": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc004",
+   "type": "Part::Circle",
+   "bbox": [
+    1300121.9,
+    -290667.8,
+    0.0,
+    1300871.9,
+    -289917.8,
+    0.0
+   ],
+   "pos": [
+    1300871.9,
+    -289917.8,
+    0.0
+   ]
+  },
+  "Line025": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line025",
+   "type": "Part::Line",
+   "bbox": [
+    1301771.9,
+    -283257.8,
+    0.0,
+    1301771.9,
+    -282557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc005": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc005",
+   "type": "Part::Circle",
+   "bbox": [
+    1300222.4,
+    -290667.8,
+    0.0,
+    1300871.9,
+    -290292.8,
+    0.0
+   ],
+   "pos": [
+    1300871.9,
+    -289917.8,
+    0.0
+   ]
+  },
+  "Line026": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line026",
+   "type": "Part::Line",
+   "bbox": [
+    1305071.9,
+    -283457.8,
+    0.0,
+    1305971.9,
+    -283457.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc006": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc006",
+   "type": "Part::Circle",
+   "bbox": [
+    1300341.6,
+    -290667.8,
+    0.0,
+    1300871.9,
+    -290448.1,
+    0.0
+   ],
+   "pos": [
+    1300871.9,
+    -289917.8,
+    0.0
+   ]
+  },
+  "Line027": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line027",
+   "type": "Part::Line",
+   "bbox": [
+    1305071.9,
+    -283257.8,
+    0.0,
+    1305971.9,
+    -283257.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Arc007": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Arc007",
+   "type": "Part::Circle",
+   "bbox": [
+    1300496.9,
+    -290667.8,
+    0.0,
+    1300871.9,
+    -290567.3,
+    0.0
+   ],
+   "pos": [
+    1300871.9,
+    -289917.8,
+    0.0
+   ]
+  },
+  "Polyline018": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline018",
+   "type": "Part::Feature",
+   "bbox": [
+    1311228.2,
+    -289757.8,
+    0.0,
+    1311271.9,
+    -288907.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Polyline019": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Polyline019",
+   "type": "Part::Feature",
+   "bbox": [
+    1311234.0,
+    -289757.8,
+    0.0,
+    1311696.9,
+    -288999.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Rectangle": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Rectangle",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1301510.5,
+    -287972.5,
+    0.0,
+    1302357.2,
+    -284809.6,
+    0.0
+   ],
+   "pos": [
+    1301510.5,
+    -287972.5,
+    0.0
+   ]
+  },
+  "Rectangle004": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "电视柜（或者悬浮电视墙）",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1305570.0,
+    -287823.1,
+    0.0,
+    1305868.9,
+    -284934.2,
+    0.0
+   ],
+   "pos": [
+    1305570.0,
+    -287823.1,
+    0.0
+   ]
+  },
+  "Line258": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line517",
+   "type": "Part::FeaturePython",
+   "bbox": [
+    1306018.2,
+    -290961.0,
+    0.0,
+    1306043.2,
+    -288769.4,
+    0.0
+   ],
+   "pos": [
+    1306018.2,
+    -288769.4,
+    0.0
+   ]
+  },
+  "Line259": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line518",
+   "type": "Part::FeaturePython",
+   "bbox": [
+    1305644.8,
+    -291060.6,
+    0.0,
+    1305694.5,
+    -288719.6,
+    0.0
+   ],
+   "pos": [
+    1305694.5,
+    -288719.6,
+    0.0
+   ]
+  },
+  "Line260": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line519",
+   "type": "Part::FeaturePython",
+   "bbox": [
+    1305395.6,
+    -291085.5,
+    0.0,
+    1305395.6,
+    -288744.5,
+    0.0
+   ],
+   "pos": [
+    1305395.6,
+    -288744.5,
+    0.0
+   ]
+  },
+  "Rectangle007": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "客卫（湿区）",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1306205.6,
+    -286573.9,
+    0.0,
+    1307849.4,
+    -285577.8,
+    0.0
+   ],
+   "pos": [
+    1306205.6,
+    -286573.9,
+    0.0
+   ]
+  },
+  "Rectangle008": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "客卫马桶",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1306192.6,
+    -287125.7,
+    0.0,
+    1306939.8,
+    -286802.0,
+    0.0
+   ],
+   "pos": [
+    1306192.6,
+    -287125.7,
+    0.0
+   ]
+  },
+  "Rectangle011": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次主卧床头占位",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1309355.5,
+    -295568.3,
+    0.0,
+    1309554.8,
+    -292928.5,
+    0.0
+   ],
+   "pos": [
+    1309355.5,
+    -295568.3,
+    0.0
+   ]
+  },
+  "Rectangle012": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次主卧床",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1307238.6,
+    -294920.8,
+    0.0,
+    1309338.6,
+    -293420.8,
+    0.0
+   ],
+   "pos": [
+    1307238.6,
+    -294920.8,
+    0.0
+   ]
+  },
+  "Rectangle013": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "主卧床",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1311114.9,
+    -294812.5,
+    0.0,
+    1313214.9,
+    -293312.5,
+    0.0
+   ],
+   "pos": [
+    1311114.9,
+    -294812.5,
+    0.0
+   ]
+  },
+  "Rectangle014": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "主卧床头柜占位",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1313265.4,
+    -295344.2,
+    0.0,
+    1313415.4,
+    -292844.2,
+    0.0
+   ],
+   "pos": [
+    1313265.4,
+    -295344.2,
+    0.0
+   ]
+  },
+  "Rectangle015": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "主卧衣柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1311347.9,
+    -292579.8,
+    0.0,
+    1313447.9,
+    -291979.8,
+    0.0
+   ],
+   "pos": [
+    1311347.9,
+    -292579.8,
+    0.0
+   ]
+  },
+  "Rectangle017": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次卧小床1.2",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1309050.4,
+    -288438.2,
+    0.0,
+    1310850.4,
+    -287238.2,
+    0.0
+   ],
+   "pos": [
+    1309050.4,
+    -288438.2,
+    0.0
+   ]
+  },
+  "Line036": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Line036",
+   "type": "Part::Line",
+   "bbox": [
+    1311071.9,
+    -288457.8,
+    0.0,
+    1311071.9,
+    -285557.8,
+    0.0
+   ],
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Rectangle020": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Rectangle033",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1307462.8,
+    -291982.1,
+    0.0,
+    1308962.8,
+    -291782.1,
+    0.0
+   ],
+   "pos": [
+    1307462.8,
+    -291982.1,
+    0.0
+   ]
+  },
+  "Rectangle021": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次主卧衣柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1308035.6,
+    -292604.7,
+    0.0,
+    1309535.6,
+    -292004.7,
+    0.0
+   ],
+   "pos": [
+    1308035.6,
+    -292604.7,
+    0.0
+   ]
+  },
+  "Rectangle022": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "主卧电视柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1309778.9,
+    -295120.1,
+    0.0,
+    1310278.9,
+    -293120.1,
+    0.0
+   ],
+   "pos": [
+    1309778.9,
+    -295120.1,
+    0.0
+   ]
+  },
+  "Rectangle023": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次主卧电视柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1306242.4,
+    -295120.1,
+    0.0,
+    1306742.4,
+    -293120.1,
+    0.0
+   ],
+   "pos": [
+    1306242.4,
+    -295120.1,
+    0.0
+   ]
+  },
+  "Rectangle024": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "书柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1313907.9,
+    -289815.4,
+    0.0,
+    1314357.9,
+    -285615.4,
+    0.0
+   ],
+   "pos": [
+    1313907.9,
+    -289815.4,
+    0.0
+   ]
+  },
+  "Rectangle025": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "矮书柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1312269.4,
+    -289815.4,
+    0.0,
+    1313869.4,
+    -289365.4,
+    0.0
+   ],
+   "pos": [
+    1312269.4,
+    -289815.4,
+    0.0
+   ]
+  },
+  "Rectangle026": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "茶台",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1312443.6,
+    -289068.3,
+    0.0,
+    1313243.6,
+    -286868.3,
+    0.0
+   ],
+   "pos": [
+    1312443.6,
+    -289068.3,
+    0.0
+   ]
+  },
+  "Circle007": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "主人椅",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1313389.2,
+    -288197.4,
+    0.0,
+    1313789.2,
+    -287797.4,
+    0.0
+   ],
+   "pos": [
+    1313589.2,
+    -287997.4,
+    0.0
+   ]
+  },
+  "Rectangle027": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "条凳",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1311970.5,
+    -288894.0,
+    0.0,
+    1312270.5,
+    -287294.0,
+    0.0
+   ],
+   "pos": [
+    1311970.5,
+    -288894.0,
+    0.0
+   ]
+  },
+  "Circle008": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "凳子",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1312667.0,
+    -286653.3,
+    0.0,
+    1313067.0,
+    -286253.3,
+    0.0
+   ],
+   "pos": [
+    1312867.0,
+    -286453.3,
+    0.0
+   ]
+  },
+  "Circle009": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次卧凳子",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1310226.4,
+    -286479.0,
+    0.0,
+    1310626.4,
+    -286079.0,
+    0.0
+   ],
+   "pos": [
+    1310426.4,
+    -286279.0,
+    0.0
+   ]
+  },
+  "Circle010": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "餐椅",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1301260.8,
+    -292480.9,
+    0.0,
+    1301660.8,
+    -292080.9,
+    0.0
+   ],
+   "pos": [
+    1301460.8,
+    -292280.9,
+    0.0
+   ]
+  },
+  "Circle011": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "餐椅003",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1302057.8,
+    -292480.9,
+    0.0,
+    1302457.8,
+    -292080.9,
+    0.0
+   ],
+   "pos": [
+    1302257.8,
+    -292280.9,
+    0.0
+   ]
+  },
+  "Circle012": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Circle013",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1301285.6,
+    -293975.2,
+    0.0,
+    1301685.6,
+    -293575.2,
+    0.0
+   ],
+   "pos": [
+    1301485.6,
+    -293775.2,
+    0.0
+   ]
+  },
+  "Circle013": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "餐椅004",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1302082.6,
+    -293900.5,
+    0.0,
+    1302482.6,
+    -293500.5,
+    0.0
+   ],
+   "pos": [
+    1302282.6,
+    -293700.5,
+    0.0
+   ]
+  },
+  "Rectangle029": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "现有橱柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1299692.5,
+    -295717.8,
+    0.0,
+    1300192.5,
+    -294217.8,
+    0.0
+   ],
+   "pos": [
+    1299692.5,
+    -295717.8,
+    0.0
+   ]
+  },
+  "Text": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Text",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": [
+    1301858.9,
+    -285697.4,
+    0.0
+   ]
+  },
+  "Text001": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Text001",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": [
+    1299315.0,
+    -285747.8,
+    0.0
+   ]
+  },
+  "Text002": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Text002",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": [
+    100.0,
+    100.0,
+    0.0
+   ]
+  },
+  "Rectangle030": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "客卫洗手盆柜体",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1306180.2,
+    -288445.7,
+    0.0,
+    1306780.2,
+    -287245.7,
+    0.0
+   ],
+   "pos": [
+    1306180.2,
+    -288445.7,
+    0.0
+   ]
+  },
+  "Rectangle031": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "鞋柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1301124.5,
+    -291758.0,
+    0.0,
+    1301424.5,
+    -291035.7,
+    0.0
+   ],
+   "pos": [
+    1301124.5,
+    -291758.0,
+    0.0
+   ]
+  },
+  "Rectangle032": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "橱柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1302494.4,
+    -295742.7,
+    0.0,
+    1303694.4,
+    -295242.7,
+    0.0
+   ],
+   "pos": [
+    1302494.4,
+    -295742.7,
+    0.0
+   ]
+  },
+  "Rectangle033": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "主卫湿区",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1313377.6,
+    -291683.2,
+    0.0,
+    1314377.6,
+    -290114.2,
+    0.0
+   ],
+   "pos": [
+    1313377.6,
+    -291683.2,
+    0.0
+   ]
+  },
+  "Rectangle034": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "主卫马桶",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1312655.2,
+    -290736.9,
+    0.0,
+    1313155.2,
+    -290086.9,
+    0.0
+   ],
+   "pos": [
+    1312655.2,
+    -290736.9,
+    0.0
+   ]
+  },
+  "Rectangle035": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "主卫洗手盆和柜体",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1311310.5,
+    -290612.3,
+    0.0,
+    1312510.5,
+    -290112.3,
+    0.0
+   ],
+   "pos": [
+    1311310.5,
+    -290612.3,
+    0.0
+   ]
+  },
+  "Rectangle036": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次主卫湿区",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1308645.8,
+    -291708.1,
+    0.0,
+    1309545.8,
+    -290108.1,
+    0.0
+   ],
+   "pos": [
+    1308645.8,
+    -291708.1,
+    0.0
+   ]
+  },
+  "Rectangle037": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次主卫台盆和柜体",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1307591.5,
+    -291707.9,
+    0.0,
+    1308591.5,
+    -291207.9,
+    0.0
+   ],
+   "pos": [
+    1307591.5,
+    -291707.9,
+    0.0
+   ]
+  },
+  "Rectangle038": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次主卫马桶",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1307865.4,
+    -290687.3,
+    0.0,
+    1308365.4,
+    -290087.3,
+    0.0
+   ],
+   "pos": [
+    1307865.4,
+    -290687.3,
+    0.0
+   ]
+  },
+  "Rectangle039": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "冰柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1306703.2,
+    -285307.7,
+    0.0,
+    1307903.2,
+    -284707.7,
+    0.0
+   ],
+   "pos": [
+    1306703.2,
+    -285307.7,
+    0.0
+   ]
+  },
+  "Rectangle040": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "洗衣机+烘干机（叠放）",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1307998.2,
+    -285307.7,
+    0.0,
+    1308598.2,
+    -284707.7,
+    0.0
+   ],
+   "pos": [
+    1307998.2,
+    -285307.7,
+    0.0
+   ]
+  },
+  "Rectangle041": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "3kg洗衣机",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1307360.1,
+    -286071.6,
+    0.0,
+    1307810.1,
+    -285621.6,
+    0.0
+   ],
+   "pos": [
+    1307360.1,
+    -286071.6,
+    0.0
+   ]
+  },
+  "Rectangle042": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "斜坡给未来轮椅使用预留",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1303899.9,
+    -291730.4,
+    0.0,
+    1305999.9,
+    -290630.4,
+    0.0
+   ],
+   "pos": [
+    1303899.9,
+    -291730.4,
+    0.0
+   ]
+  },
+  "Rectangle043": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "打印机",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1313449.0,
+    -289793.9,
+    0.0,
+    1313849.0,
+    -289393.9,
+    0.0
+   ],
+   "pos": [
+    1313449.0,
+    -289793.9,
+    0.0
+   ]
+  },
+  "Rectangle044": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "nas",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1312964.9,
+    -289793.9,
+    0.0,
+    1313364.9,
+    -289393.9,
+    0.0
+   ],
+   "pos": [
+    1312964.9,
+    -289793.9,
+    0.0
+   ]
+  },
+  "Rectangle045": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "次卧衣柜",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1308090.1,
+    -287573.6,
+    0.0,
+    1308590.1,
+    -285573.6,
+    0.0
+   ],
+   "pos": [
+    1308090.1,
+    -287573.6,
+    0.0
+   ]
+  },
+  "Rectangle046": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "三人位",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1301573.1,
+    -287242.2,
+    0.0,
+    1302473.1,
+    -284942.2,
+    0.0
+   ],
+   "pos": [
+    1301573.1,
+    -287242.2,
+    0.0
+   ]
+  },
+  "Rectangle047": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "双人位",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1302743.6,
+    -284477.8,
+    0.0,
+    1304643.6,
+    -283627.8,
+    0.0
+   ],
+   "pos": [
+    1302743.6,
+    -284477.8,
+    0.0
+   ]
+  },
+  "Rectangle048": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "贵妃椅",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1302146.0,
+    -288661.7,
+    0.0,
+    1303846.0,
+    -287761.7,
+    0.0
+   ],
+   "pos": [
+    1302146.0,
+    -288661.7,
+    0.0
+   ]
+  },
+  "Rectangle049": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "茶几",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1303241.9,
+    -286594.7,
+    0.0,
+    1303791.9,
+    -285594.7,
+    0.0
+   ],
+   "pos": [
+    1303241.9,
+    -286594.7,
+    0.0
+   ]
+  },
+  "Circle": {
+   "class": "HUMAN_DESIGN_GUIDE",
+   "label": "角几",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1301846.2,
+    -284428.9,
+    0.0,
+    1302346.2,
+    -283928.9,
+    0.0
+   ],
+   "pos": [
+    1302096.2,
+    -284178.9,
+    0.0
+   ]
+  },
+  "Rectangle050": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Rectangle073",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1301199.6,
+    -293393.6,
+    0.0,
+    1302799.6,
+    -292593.6,
+    0.0
+   ],
+   "pos": [
+    1301199.6,
+    -293393.6,
+    0.0
+   ]
+  },
+  "Rectangle051": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Rectangle075",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1310860.1,
+    -288438.5,
+    0.0,
+    1311060.1,
+    -287238.5,
+    0.0
+   ],
+   "pos": [
+    1310860.1,
+    -288438.5,
+    0.0
+   ]
+  },
+  "Rectangle052": {
+   "class": "GROUND_TRUTH_ARCH",
+   "label": "Rectangle077",
+   "type": "Part::Part2DObjectPython",
+   "bbox": [
+    1310703.6,
+    -287222.4,
+    0.0,
+    1311053.6,
+    -285572.4,
+    0.0
+   ],
+   "pos": [
+    1310703.6,
+    -287222.4,
+    0.0
+   ]
+  },
+  "WINDOW_REF_W_LIV_N": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "WINDOW_REF W-LIV-N",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "WINDOW_REF_G_LIV_NBALC": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "WINDOW_REF G-LIV-NBALC",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "WINDOW_REF_G_GB_BALC": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "WINDOW_REF G-GB-BALC",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "WINDOW_REF_W_STUDY_NE": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "WINDOW_REF W-STUDY-NE",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "WINDOW_REF_G_DIN_LIV": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "WINDOW_REF G-DIN-LIV",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "WINDOW_REF_W_LBALC_S": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "WINDOW_REF W-LBALC-S",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "WINDOW_REF_W_KIT_S": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "WINDOW_REF W-KIT-S",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "WINDOW_REF_W_SMB_S": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "WINDOW_REF W-SMB-S",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "WINDOW_REF_W_MB_S": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "WINDOW_REF W-MB-S",
+   "type": "App::FeaturePython",
+   "bbox": null,
+   "pos": []
+  },
+  "WINDOW_SEMANTIC_REFERENCES": {
+   "class": "GROUND_TRUTH_OPENING",
+   "label": "Final Window / Glass Opening Semantic References (95ab90e)",
+   "type": "App::DocumentObjectGroup",
+   "bbox": null,
+   "pos": []
+  }
+ }
+}

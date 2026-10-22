@@ -1,0 +1,163 @@
+00:00.597  blend            | Read blend: "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b0/B1_RENOVATION_DESIGN.blend"
+/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/build_design_model.py:47: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('B11_REVIEW_'+name);m.diffuse_color=rgba;m.use_nodes=True
+11:31:07 | INFO: Data are loaded, start creating Blender stuff
+11:31:07 | INFO: Blender create Mesh node Mesh.601
+11:31:07 | INFO: Draco Decoder: Decode primitive Mesh.601
+11:31:07 | INFO: glTF import finished in 0.11s
+11:31:07 | INFO: Data are loaded, start creating Blender stuff
+11:31:07 | INFO: Blender create Mesh node Mesh.579
+11:31:07 | INFO: Draco Decoder: Decode primitive Mesh.579
+11:31:07 | INFO: Draco Decoder: Decode primitive Mesh.579
+11:31:07 | INFO: glTF import finished in 0.01s
+11:31:07 | INFO: Data are loaded, start creating Blender stuff
+11:31:07 | INFO: Blender create Mesh node Mesh.6473
+11:31:07 | INFO: glTF import finished in 0.01s
+11:31:07 | INFO: Data are loaded, start creating Blender stuff
+11:31:07 | INFO: Blender create Mesh node Mesh.6473
+11:31:07 | INFO: glTF import finished in 0.01s
+11:31:07 | INFO: Data are loaded, start creating Blender stuff
+11:31:07 | INFO: Blender create Mesh node Mesh.262
+11:31:07 | INFO: Draco Decoder: Decode primitive Mesh.262
+11:31:07 | INFO: Draco Decoder: Decode primitive Mesh.262
+11:31:07 | INFO: Draco Decoder: Decode primitive Mesh.262
+11:31:07 | INFO: Draco Decoder: Decode primitive Mesh.262
+11:31:07 | INFO: glTF import finished in 0.01s
+11:31:08 | INFO: Data are loaded, start creating Blender stuff
+11:31:08 | INFO: Blender create Mesh node Mesh.601
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.601
+11:31:08 | INFO: glTF import finished in 0.01s
+11:31:08 | INFO: Data are loaded, start creating Blender stuff
+11:31:08 | INFO: Blender create Mesh node Mesh.601
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.601
+11:31:08 | INFO: glTF import finished in 0.01s
+11:31:08 | INFO: Data are loaded, start creating Blender stuff
+11:31:08 | INFO: Blender create Mesh node Mesh.011
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.011
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.011
+11:31:08 | INFO: glTF import finished in 0.01s
+11:31:08 | INFO: Data are loaded, start creating Blender stuff
+11:31:08 | INFO: Blender create Mesh node Mesh.6482
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:08 | INFO: glTF import finished in 0.01s
+11:31:08 | INFO: Data are loaded, start creating Blender stuff
+11:31:08 | INFO: Blender create Mesh node Mesh.6482
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:08 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:08 | INFO: glTF import finished in 0.01s
+11:31:09 | INFO: Data are loaded, start creating Blender stuff
+11:31:09 | INFO: Blender create Mesh node Mesh.6482
+11:31:09 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:09 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:09 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:09 | INFO: glTF import finished in 0.01s
+11:31:09 | INFO: Data are loaded, start creating Blender stuff
+11:31:09 | INFO: Blender create Mesh node Mesh.6482
+11:31:09 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:09 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:09 | INFO: Draco Decoder: Decode primitive Mesh.6482
+11:31:09 | INFO: glTF import finished in 0.02s
+11:31:09 | INFO: Data are loaded, start creating Blender stuff
+11:31:09 | INFO: Blender create Mesh node Mesh.579
+11:31:09 | INFO: Draco Decoder: Decode primitive Mesh.579
+11:31:09 | INFO: Draco Decoder: Decode primitive Mesh.579
+11:31:09 | INFO: glTF import finished in 0.02s
+11:31:10 | INFO: Data are loaded, start creating Blender stuff
+11:31:10 | INFO: Blender create Mesh node Mesh.579
+11:31:10 | INFO: Draco Decoder: Decode primitive Mesh.579
+11:31:10 | INFO: Draco Decoder: Decode primitive Mesh.579
+11:31:10 | INFO: glTF import finished in 0.02s
+11:31:11 | INFO: Data are loaded, start creating Blender stuff
+11:31:11 | INFO: Blender create Mesh node Mesh.154
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.154
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.154
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.154
+11:31:11 | INFO: glTF import finished in 0.02s
+11:31:11 | INFO: Data are loaded, start creating Blender stuff
+11:31:11 | INFO: Blender create Mesh node Mesh.154
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.154
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.154
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.154
+11:31:11 | INFO: glTF import finished in 0.02s
+11:31:11 | INFO: Data are loaded, start creating Blender stuff
+11:31:11 | INFO: Blender create Mesh node Mesh.517
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.517
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.517
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.517
+11:31:11 | INFO: glTF import finished in 0.02s
+11:31:11 | INFO: Data are loaded, start creating Blender stuff
+11:31:11 | INFO: Blender create Mesh node Mesh.256
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.256
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.256
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.256
+11:31:11 | INFO: glTF import finished in 0.02s
+11:31:11 | INFO: Data are loaded, start creating Blender stuff
+11:31:11 | INFO: Blender create Mesh node Mesh.626
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.626
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.626
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.626
+11:31:11 | INFO: glTF import finished in 0.02s
+11:31:11 | INFO: Data are loaded, start creating Blender stuff
+11:31:11 | INFO: Blender create Mesh node Mesh.011
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.011
+11:31:11 | INFO: Draco Decoder: Decode primitive Mesh.011
+11:31:11 | INFO: glTF import finished in 0.02s
+Info: Saved as "B1_1_DESIGN_MODEL_V1.blend"
+B1_1_DESIGN_MODEL = HUMAN_REVIEW
+{
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/B1_1_DESIGN_MODEL_V1.blend",
+  "assemblies": 58,
+  "bays": 4,
+  "pending_decisions": 20,
+  "total_objects": 755
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+DracoDecoder | Decoded 52 vertices, 102 indices
+DracoDecoder | Decoded 205 vertices, 399 indices
+DracoDecoder | Decoded 16 vertices, 42 indices
+DracoDecoder | Decoded 94 vertices, 300 indices
+DracoDecoder | Decoded 45 vertices, 114 indices
+DracoDecoder | Decoded 56 vertices, 150 indices
+DracoDecoder | Decoded 60 vertices, 156 indices
+DracoDecoder | Decoded 52 vertices, 102 indices
+DracoDecoder | Decoded 52 vertices, 102 indices
+DracoDecoder | Decoded 112 vertices, 168 indices
+DracoDecoder | Decoded 120 vertices, 180 indices
+DracoDecoder | Decoded 59 vertices, 162 indices
+DracoDecoder | Decoded 158 vertices, 324 indices
+DracoDecoder | Decoded 48 vertices, 108 indices
+DracoDecoder | Decoded 59 vertices, 162 indices
+DracoDecoder | Decoded 158 vertices, 324 indices
+DracoDecoder | Decoded 48 vertices, 108 indices
+DracoDecoder | Decoded 59 vertices, 162 indices
+DracoDecoder | Decoded 158 vertices, 324 indices
+DracoDecoder | Decoded 48 vertices, 108 indices
+DracoDecoder | Decoded 59 vertices, 162 indices
+DracoDecoder | Decoded 158 vertices, 324 indices
+DracoDecoder | Decoded 48 vertices, 108 indices
+DracoDecoder | Decoded 205 vertices, 399 indices
+DracoDecoder | Decoded 16 vertices, 42 indices
+DracoDecoder | Decoded 205 vertices, 399 indices
+DracoDecoder | Decoded 16 vertices, 42 indices
+DracoDecoder | Decoded 462 vertices, 1416 indices
+DracoDecoder | Decoded 70 vertices, 156 indices
+DracoDecoder | Decoded 148 vertices, 336 indices
+DracoDecoder | Decoded 462 vertices, 1416 indices
+DracoDecoder | Decoded 70 vertices, 156 indices
+DracoDecoder | Decoded 148 vertices, 336 indices
+DracoDecoder | Decoded 112 vertices, 324 indices
+DracoDecoder | Decoded 88 vertices, 132 indices
+DracoDecoder | Decoded 120 vertices, 288 indices
+DracoDecoder | Decoded 80 vertices, 120 indices
+DracoDecoder | Decoded 48 vertices, 96 indices
+DracoDecoder | Decoded 56 vertices, 84 indices
+DracoDecoder | Decoded 80 vertices, 120 indices
+DracoDecoder | Decoded 120 vertices, 180 indices
+DracoDecoder | Decoded 60 vertices, 90 indices
+DracoDecoder | Decoded 112 vertices, 168 indices
+DracoDecoder | Decoded 120 vertices, 180 indices
+
+Blender quit

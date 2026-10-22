@@ -1,0 +1,208 @@
+{
+  "register": "KITCHEN_ISLAND_AND_UTILITY_REGISTER_V01",
+  "original_island_pdf": {
+    "source": "source/世纪欣园3-1-901_cabinet_plan.pdf",
+    "pages": [
+      1,
+      4
+    ],
+    "countertop": [
+      800,
+      467,
+      960
+    ],
+    "drawer_width": 700,
+    "counter_thickness": 40,
+    "overall_return_span": 1690,
+    "connector": 890
+  },
+  "current_user_confirmed": {
+    "utility_width": 600,
+    "utility_height": 2000,
+    "AC_above_utility": true
+  },
+  "review_assumptions": {
+    "utility_depth": 500,
+    "AC_dimensions": [
+      780,
+      220,
+      280
+    ],
+    "AC_base": 2150,
+    "counter_round_radius": 40
+  },
+  "accepted_fridge_area": "PRESERVED_WITH_IDENTICAL_WORLD_BOUNDS",
+  "protected_fridge_bounds": {
+    "B11_K-FRIDGE": [
+      [
+        5.900000095367432,
+        3.734999895095825,
+        0.0
+      ],
+      [
+        6.804999828338623,
+        4.445000171661377,
+        1.7000000476837158
+      ]
+    ],
+    "B11_K-FRIDGE-OVERHEAD": [
+      [
+        5.900000095367432,
+        3.734999895095825,
+        1.9299999475479126
+      ],
+      [
+        6.804999828338623,
+        4.434999942779541,
+        2.4099998474121094
+      ]
+    ],
+    "B11_K-TALL-L": [
+      [
+        6.804999351501465,
+        3.75,
+        0.0
+      ],
+      [
+        7.740000247955322,
+        4.449999809265137,
+        2.4099998474121094
+      ]
+    ],
+    "B11_K-NARROW-OUTER-320": [
+      [
+        5.579999923706055,
+        3.734999895095825,
+        0.0
+      ],
+      [
+        5.899999618530273,
+        4.5,
+        2.4100000858306885
+      ]
+    ]
+  },
+  "replaced_proxy": "B11_Rectangle032 kept hidden, identity not silently reassigned",
+  "items": [
+    {
+      "id": "K-ISLAND-PDF-C",
+      "assembly": "B11_K-ISLAND-PDF-C",
+      "authority": "ORIGINAL_PDF + HUMAN_EXISTING_ISLAND_CONFIRMATION",
+      "body_objects": [
+        "B11_K-ISLAND_BACK",
+        "B11_K-ISLAND_BASE",
+        "B11_K-ISLAND_DRAWER_0",
+        "B11_K-ISLAND_DRAWER_1",
+        "B11_K-ISLAND_DRAWER_2",
+        "B11_K-ISLAND_DRAWER_PULL_0",
+        "B11_K-ISLAND_DRAWER_PULL_1",
+        "B11_K-ISLAND_DRAWER_PULL_2",
+        "B11_K-ISLAND_L",
+        "B11_K-ISLAND_PLINTH",
+        "B11_K-ISLAND_R",
+        "B11_K-ISLAND_ROUNDED_COUNTER",
+        "B11_K-ISLAND_TOP_SUPPORT"
+      ],
+      "bounds_m": [
+        [
+          5.699999809265137,
+          1.4299999475479126,
+          0.0
+        ],
+        [
+          6.166999816894531,
+          2.2300000190734863,
+          0.9599999785423279
+        ]
+      ],
+      "review_status": "HUMAN_REVIEW"
+    },
+    {
+      "id": "K-ISLAND-CONNECTOR",
+      "assembly": "B11_K-ISLAND-CONNECTOR",
+      "authority": "ORIGINAL_PDF_C",
+      "body_objects": [
+        "B11_K-ISLAND_CONNECTOR_BOTTOM",
+        "B11_K-ISLAND_CONNECTOR_COUNTER",
+        "B11_K-ISLAND_CONNECTOR_FRONT",
+        "B11_K-ISLAND_CONNECTOR_PLINTH",
+        "B11_K-ISLAND_CONNECTOR_SIDE_N",
+        "B11_K-ISLAND_CONNECTOR_SIDE_S"
+      ],
+      "bounds_m": [
+        [
+          5.899999618530273,
+          0.5400000214576721,
+          0.0
+        ],
+        [
+          6.170000076293945,
+          1.4300000667572021,
+          0.9599999785423279
+        ]
+      ],
+      "review_status": "HUMAN_REVIEW"
+    },
+    {
+      "id": "K-UTILITY-TALL-600",
+      "assembly": "B11_K-UTILITY-TALL-600",
+      "authority": "HUMAN_CONFIRMED_WIDTH_HEIGHT_AND_ADJACENCY",
+      "body_objects": [
+        "B11_K-UTILITY_BACK",
+        "B11_K-UTILITY_BASE",
+        "B11_K-UTILITY_DRAWER_0",
+        "B11_K-UTILITY_DRAWER_1",
+        "B11_K-UTILITY_DRAWER_2",
+        "B11_K-UTILITY_DRAWER_3",
+        "B11_K-UTILITY_DRAWER_PULL_0",
+        "B11_K-UTILITY_DRAWER_PULL_1",
+        "B11_K-UTILITY_DRAWER_PULL_2",
+        "B11_K-UTILITY_DRAWER_PULL_3",
+        "B11_K-UTILITY_L",
+        "B11_K-UTILITY_PLINTH",
+        "B11_K-UTILITY_R",
+        "B11_K-UTILITY_TOP",
+        "B11_K-UTILITY_UPPER_DOOR_0",
+        "B11_K-UTILITY_UPPER_DOOR_1"
+      ],
+      "bounds_m": [
+        [
+          4.922374725341797,
+          0.7153437733650208,
+          0.0
+        ],
+        [
+          5.522375106811523,
+          1.2163437604904175,
+          2.0
+        ]
+      ],
+      "review_status": "HUMAN_REVIEW"
+    },
+    {
+      "id": "K-UTILITY-WALL-AC",
+      "assembly": "B11_K-UTILITY-WALL-AC",
+      "authority": "HUMAN_CONFIRMED_PRESENCE_AND_ABOVE_RELATIONSHIP",
+      "body_objects": [
+        "B11_K-UTILITY_AC_BODY",
+        "B11_K-UTILITY_AC_FACE",
+        "B11_K-UTILITY_AC_LOUVER_0",
+        "B11_K-UTILITY_AC_LOUVER_1",
+        "B11_K-UTILITY_AC_LOUVER_2"
+      ],
+      "bounds_m": [
+        [
+          4.8323750495910645,
+          0.715343713760376,
+          2.1499998569488525
+        ],
+        [
+          5.612374782562256,
+          0.9393437504768372,
+          2.430000066757202
+        ]
+      ],
+      "review_status": "HUMAN_REVIEW"
+    }
+  ]
+}

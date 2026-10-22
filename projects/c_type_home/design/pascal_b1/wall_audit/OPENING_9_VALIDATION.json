@@ -1,0 +1,182 @@
+[
+ {
+  "id": "W-LIV-N",
+  "type": "BAY_WINDOW",
+  "register_rect": [
+   3800,
+   12750,
+   6900,
+   12950
+  ],
+  "span_mm": 3100,
+  "projection_mm": 900,
+  "pascal_nodes": [
+   {
+    "id": "window_v2_0067",
+    "cat": "bay_glazing",
+    "width_m": null
+   }
+  ],
+  "present": true
+ },
+ {
+  "id": "G-LIV-NBALC",
+  "type": "GLASS_DOOR",
+  "register_rect": [
+   7800,
+   11800,
+   7900,
+   12650
+  ],
+  "span_mm": 850,
+  "projection_mm": 0,
+  "pascal_nodes": [
+   {
+    "id": "door_v2_0061",
+    "cat": "glass_door",
+    "width_m": null
+   }
+  ],
+  "present": true
+ },
+ {
+  "id": "G-GB-BALC",
+  "type": "GLASS_DOOR",
+  "register_rect": [
+   10400,
+   10700,
+   12400,
+   10900
+  ],
+  "span_mm": 2000,
+  "projection_mm": 0,
+  "pascal_nodes": [
+   {
+    "id": "door_v2_0057",
+    "cat": "glass_door",
+    "width_m": null
+   }
+  ],
+  "present": true
+ },
+ {
+  "id": "W-STUDY-NE",
+  "type": "BAY_WINDOW",
+  "register_rect": [
+   13600,
+   10900,
+   15700,
+   11100
+  ],
+  "span_mm": 2100,
+  "projection_mm": 700,
+  "pascal_nodes": [
+   {
+    "id": "window_v2_0069",
+    "cat": "bay_glazing",
+    "width_m": null
+   }
+  ],
+  "present": true
+ },
+ {
+  "id": "G-DIN-LIV",
+  "type": "GLASS_SLIDING_DOOR",
+  "register_rect": [
+   2950,
+   4530,
+   5650,
+   4715
+  ],
+  "span_mm": 2700,
+  "projection_mm": 0,
+  "pascal_nodes": [
+   {
+    "id": "door_v2_0059",
+    "cat": "glass_sliding_door",
+    "width_m": null
+   }
+  ],
+  "present": true
+ },
+ {
+  "id": "W-LBALC-S",
+  "type": "BALCONY_WINDOW",
+  "register_rect": [
+   1300,
+   500,
+   5800,
+   700
+  ],
+  "span_mm": 4500,
+  "projection_mm": 0,
+  "pascal_nodes": [
+   {
+    "id": "window_v2_0071",
+    "cat": "balcony_window",
+    "width_m": null
+   }
+  ],
+  "present": true
+ },
+ {
+  "id": "W-KIT-S",
+  "type": "STANDARD_WINDOW",
+  "register_rect": [
+   6100,
+   -200,
+   7100,
+   0
+  ],
+  "span_mm": 1000,
+  "projection_mm": 0,
+  "pascal_nodes": [
+   {
+    "id": "window_v2_0073",
+    "cat": "window",
+    "width_m": null
+   }
+  ],
+  "present": true
+ },
+ {
+  "id": "W-SMB-S",
+  "type": "BAY_WINDOW",
+  "register_rect": [
+   8500,
+   -200,
+   10900,
+   0
+  ],
+  "span_mm": 2400,
+  "projection_mm": 700,
+  "pascal_nodes": [
+   {
+    "id": "window_v2_0077",
+    "cat": "bay_glazing",
+    "width_m": null
+   }
+  ],
+  "present": true
+ },
+ {
+  "id": "W-MB-S",
+  "type": "BAY_WINDOW",
+  "register_rect": [
+   12100,
+   -200,
+   14800,
+   0
+  ],
+  "span_mm": 2700,
+  "projection_mm": 700,
+  "pascal_nodes": [
+   {
+    "id": "window_v2_0082",
+    "cat": "bay_glazing",
+    "width_m": null
+   }
+  ],
+  "present": true
+ }
+]

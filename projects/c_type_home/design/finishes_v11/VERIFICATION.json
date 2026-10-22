@@ -1,0 +1,58 @@
+{
+  "status": "PASS_TECHNICAL_AND_POLICY_CHECKS",
+  "source_sha256": "222fdb8ac11230319052c9f9a1974bbce54564981ba427c45607a410854af613",
+  "original_objects_geometry_unchanged": 3473,
+  "only_whole_reading_assembly_moved": 99,
+  "unexpected_changes": [],
+  "protected_source_count": 16,
+  "floor_materials": {
+    "service_balcony": "V11_UNIFIED_PALE_ASH_FLOOR",
+    "north_sunroom": "V11_OWNER_WHITE_SUBTLE_MARBLE_600x1200",
+    "kitchen": "V11_OWNER_WHITE_SUBTLE_MARBLE_600x1200",
+    "study": "V11_UNIFIED_PALE_ASH_FLOOR",
+    "secondary_bath": "V11_OWNER_WHITE_SUBTLE_MARBLE_600x1200",
+    "mother_bedroom": "V11_UNIFIED_PALE_ASH_FLOOR",
+    "master_bath": "V11_OWNER_WHITE_SUBTLE_MARBLE_600x1200",
+    "hallway": "V11_UNIFIED_PALE_ASH_FLOOR",
+    "guest_bedroom": "V11_UNIFIED_PALE_ASH_FLOOR",
+    "guest_bath": "V11_OWNER_WHITE_SUBTLE_MARBLE_600x1200",
+    "couple_bedroom": "V11_UNIFIED_PALE_ASH_FLOOR"
+  },
+  "cabinet_bottom_FFL_offset_mm": 0.5,
+  "cabinet_to_south_trim_mm": 424.093714031982,
+  "door_leaf_samples": [
+    {
+      "angle_degrees": 0,
+      "intersections": 0
+    },
+    {
+      "angle_degrees": 30,
+      "intersections": 0
+    },
+    {
+      "angle_degrees": 60,
+      "intersections": 0
+    },
+    {
+      "angle_degrees": 90,
+      "intersections": 0
+    }
+  ],
+  "obstacle_intersections": [],
+  "actual_stair_sections": [
+    {
+      "y_m": 5.263156414031982,
+      "cabinet_to_step_horizontal_mm": 1899.8022079467773
+    },
+    {
+      "y_m": 5.673156261444092,
+      "cabinet_to_step_horizontal_mm": 1716.0329818725586
+    },
+    {
+      "y_m": 6.083156108856201,
+      "cabinet_to_step_horizontal_mm": 1424.0670204162598
+    }
+  ],
+  "glass_settings_preserved": true,
+  "final_visual_acceptance": false
+}

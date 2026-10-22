@@ -1,0 +1,2255 @@
+[
+  {
+    "name": "B11_Rectangle021_BACK",
+    "lo": [
+      9.863624572753906,
+      4.435281276702881,
+      0.5300000309944153
+    ],
+    "hi": [
+      11.363624572753906,
+      4.453281402587891,
+      2.632000207901001
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_BASE",
+    "lo": [
+      9.863624572753906,
+      3.853281259536743,
+      0.5299999713897705
+    ],
+    "hi": [
+      11.363624572753906,
+      4.453281402587891,
+      0.5479999780654907
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_FRONT_0",
+    "lo": [
+      9.86562442779541,
+      3.853281259536743,
+      0.5320000052452087
+    ],
+    "hi": [
+      10.361624717712402,
+      3.871281147003174,
+      2.631999969482422
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_FRONT"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_FRONT_1",
+    "lo": [
+      10.36562442779541,
+      3.853281259536743,
+      0.5320000052452087
+    ],
+    "hi": [
+      10.861624717712402,
+      3.871281147003174,
+      2.631999969482422
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_FRONT"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_FRONT_2",
+    "lo": [
+      10.86562442779541,
+      3.853281259536743,
+      0.5320000052452087
+    ],
+    "hi": [
+      11.361624717712402,
+      3.871281147003174,
+      2.631999969482422
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_FRONT"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_L",
+    "lo": [
+      9.863624572753906,
+      3.853281259536743,
+      0.5300000309944153
+    ],
+    "hi": [
+      9.881624221801758,
+      4.453281402587891,
+      2.6499998569488525
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_PLINTH",
+    "lo": [
+      9.863624572753906,
+      3.8932812213897705,
+      0.44999998807907104
+    ],
+    "hi": [
+      11.363624572753906,
+      4.423281192779541,
+      0.5299999713897705
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_PULL_0",
+    "lo": [
+      10.308624267578125,
+      3.854281187057495,
+      1.5550000667572021
+    ],
+    "hi": [
+      10.318624496459961,
+      3.874281167984009,
+      1.6449999809265137
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_PULL_1",
+    "lo": [
+      10.808624267578125,
+      3.854281187057495,
+      1.5550000667572021
+    ],
+    "hi": [
+      10.818624496459961,
+      3.874281167984009,
+      1.6449999809265137
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_PULL_2",
+    "lo": [
+      11.308624267578125,
+      3.854281187057495,
+      1.5550000667572021
+    ],
+    "hi": [
+      11.318624496459961,
+      3.874281167984009,
+      1.6449999809265137
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_R",
+    "lo": [
+      11.345624923706055,
+      3.853281259536743,
+      0.5300000309944153
+    ],
+    "hi": [
+      11.363624572753906,
+      4.453281402587891,
+      2.6499998569488525
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_SHELF",
+    "lo": [
+      9.881624221801758,
+      3.871281147003174,
+      1.5499999523162842
+    ],
+    "hi": [
+      11.345624923706055,
+      4.435281276702881,
+      1.5679998397827148
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle021_TOP",
+    "lo": [
+      9.863624572753906,
+      3.853281259536743,
+      2.631999969482422
+    ],
+    "hi": [
+      11.363624572753906,
+      4.453281402587891,
+      2.6500000953674316
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_STORAGE"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle036_GLASS_0",
+    "lo": [
+      10.473750114440918,
+      4.749875068664551,
+      0.4750000238418579
+    ],
+    "hi": [
+      10.481749534606934,
+      5.2655839920043945,
+      2.4250001907348633
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_GLASS"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle036_GLASS_1",
+    "lo": [
+      10.473750114440918,
+      5.265583038330078,
+      0.4750000238418579
+    ],
+    "hi": [
+      10.481749534606934,
+      5.781291961669922,
+      2.4250001907348633
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_GLASS"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle036_GLASS_2",
+    "lo": [
+      10.473750114440918,
+      5.781291961669922,
+      0.4750000238418579
+    ],
+    "hi": [
+      10.481749534606934,
+      6.296999931335449,
+      2.4250001907348633
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_GLASS"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle036_HANDLE",
+    "lo": [
+      10.467750549316406,
+      5.51743745803833,
+      1.3700001239776611
+    ],
+    "hi": [
+      10.47974967956543,
+      5.52943754196167,
+      1.5499999523162842
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle036_JAMB_0",
+    "lo": [
+      10.473750114440918,
+      4.749875068664551,
+      0.4500000476837158
+    ],
+    "hi": [
+      10.49174976348877,
+      4.767874717712402,
+      2.450000047683716
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle036_JAMB_1",
+    "lo": [
+      10.473750114440918,
+      6.297000408172607,
+      0.4500000476837158
+    ],
+    "hi": [
+      10.49174976348877,
+      6.315000057220459,
+      2.450000047683716
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle036_TRACK",
+    "lo": [
+      10.465749740600586,
+      4.749875068664551,
+      0.4519999623298645
+    ],
+    "hi": [
+      10.48175048828125,
+      6.296999931335449,
+      0.46800005435943604
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle036_TRACK.001",
+    "lo": [
+      10.465749740600586,
+      4.749875068664551,
+      2.429999828338623
+    ],
+    "hi": [
+      10.48175048828125,
+      6.296999931335449,
+      2.446000099182129
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_BACK",
+    "lo": [
+      9.419500350952148,
+      4.750093936920166,
+      0.5299999713897705
+    ],
+    "hi": [
+      10.419500350952148,
+      4.768094062805176,
+      1.2820000648498535
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_BASE",
+    "lo": [
+      9.419500350952148,
+      4.750093936920166,
+      0.5299999713897705
+    ],
+    "hi": [
+      10.419500350952148,
+      5.250093936920166,
+      0.5479999780654907
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_BASIN_REVIEW",
+    "lo": [
+      9.719500541687012,
+      4.86009407043457,
+      1.2879999876022339
+    ],
+    "hi": [
+      10.119500160217285,
+      5.140093803405762,
+      1.3000000715255737
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_CERAMIC"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_FRONT_0",
+    "lo": [
+      9.921500205993652,
+      5.232093811035156,
+      0.531999945640564
+    ],
+    "hi": [
+      10.417500495910645,
+      5.250093936920166,
+      1.2820000648498535
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_FRONT"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_FRONT_1",
+    "lo": [
+      9.421500205993652,
+      5.232093811035156,
+      0.531999945640564
+    ],
+    "hi": [
+      9.917500495910645,
+      5.250093936920166,
+      1.2820000648498535
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_FRONT"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_L",
+    "lo": [
+      10.401500701904297,
+      4.750093936920166,
+      0.5299999713897705
+    ],
+    "hi": [
+      10.419500350952148,
+      5.250093936920166,
+      1.2999999523162842
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_PLINTH",
+    "lo": [
+      9.419500350952148,
+      4.780093669891357,
+      0.44999998807907104
+    ],
+    "hi": [
+      10.419500350952148,
+      5.210093975067139,
+      0.5299999713897705
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_PULL_0",
+    "lo": [
+      9.964500427246094,
+      5.2290940284729,
+      1.1349999904632568
+    ],
+    "hi": [
+      9.97450065612793,
+      5.249094009399414,
+      1.225000023841858
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_PULL_1",
+    "lo": [
+      9.464500427246094,
+      5.2290940284729,
+      1.1349999904632568
+    ],
+    "hi": [
+      9.47450065612793,
+      5.249094009399414,
+      1.225000023841858
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_R",
+    "lo": [
+      9.419500350952148,
+      4.750093936920166,
+      0.5299999713897705
+    ],
+    "hi": [
+      9.4375,
+      5.250093936920166,
+      1.2999999523162842
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_SHELF",
+    "lo": [
+      9.4375,
+      4.768094062805176,
+      0.875
+    ],
+    "hi": [
+      10.401500701904297,
+      5.232093811035156,
+      0.8930000066757202
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle037_TOP",
+    "lo": [
+      9.419500350952148,
+      4.750093936920166,
+      1.2820000648498535
+    ],
+    "hi": [
+      10.419500350952148,
+      5.250093936920166,
+      1.2999999523162842
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_BODY"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "B11_Rectangle038_CATALOG_00_00",
+    "lo": [
+      9.693374633789062,
+      5.770718574523926,
+      0.44999998807907104
+    ],
+    "hi": [
+      10.193374633789062,
+      6.370718955993652,
+      1.2300000190734863
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_CERAMIC"
+    ],
+    "collections": [
+      "COL_B11_BATHROOMS"
+    ],
+    "props": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/toilet/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": "False"
+    },
+    "verts": 221
+  },
+  {
+    "name": "CEILING_LOWER",
+    "lo": [
+      1.5,
+      0.0,
+      2.799999952316284
+    ],
+    "hi": [
+      13.099900245666504,
+      13.790200233459473,
+      2.9200000762939453
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "CEILING_LOWER_m"
+    ],
+    "collections": [
+      "03_EXISTING_CEILING"
+    ],
+    "props": {
+      "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR"
+    },
+    "verts": 192
+  },
+  {
+    "name": "CEILING_UPPER",
+    "lo": [
+      5.699999809265137,
+      -0.5997999906539917,
+      3.25
+    ],
+    "hi": [
+      16.299999237060547,
+      11.700200080871582,
+      3.369999885559082
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "CEILING_UPPER_m"
+    ],
+    "collections": [
+      "03_EXISTING_CEILING"
+    ],
+    "props": {
+      "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR"
+    },
+    "verts": 288
+  },
+  {
+    "name": "CEILING_UPPER_SEAM_0",
+    "lo": [
+      8.79990005493164,
+      4.700200080871582,
+      3.249000072479248
+    ],
+    "hi": [
+      9.04990005493164,
+      4.800000190734863,
+      3.36899995803833
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "CEILING_UPPER_SEAM_0_m"
+    ],
+    "collections": [
+      "03_EXISTING_CEILING"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "CEILING_UPPER_SEAM_3",
+    "lo": [
+      11.399999618530273,
+      6.450200080871582,
+      3.249000072479248
+    ],
+    "hi": [
+      11.599900245666504,
+      6.539999961853027,
+      3.36899995803833
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "CEILING_UPPER_SEAM_3_m"
+    ],
+    "collections": [
+      "03_EXISTING_CEILING"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "CEILING_UPPER_SEAM_4",
+    "lo": [
+      8.850000381469727,
+      4.80019998550415,
+      3.249000072479248
+    ],
+    "hi": [
+      9.04990005493164,
+      4.900199890136719,
+      3.36899995803833
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "CEILING_UPPER_SEAM_4_m"
+    ],
+    "collections": [
+      "03_EXISTING_CEILING"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "D107_V3_ADJACENT_RETURN_WALL_REMAINDER",
+    "lo": [
+      9.04990005493164,
+      5.230199813842773,
+      0.44999998807907104
+    ],
+    "hi": [
+      9.199899673461914,
+      6.450200080871582,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "LIVING_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_D107_FINAL_SIDE_CORRECTION_V3"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "D107_V3_FULL_ABOVE_DOOR",
+    "lo": [
+      8.180631637573242,
+      4.5119853019714355,
+      2.5999999046325684
+    ],
+    "hi": [
+      9.201591491699219,
+      5.152076721191406,
+      3.049999952316284
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "LIVING_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_D107_FINAL_SIDE_CORRECTION_V3"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "D107_V3_PLATFORM_BASE_CLOSURE",
+    "lo": [
+      8.180631637573242,
+      4.5119853019714355,
+      0.4000000059604645
+    ],
+    "hi": [
+      9.201591491699219,
+      5.152076721191406,
+      0.44999998807907104
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "LIVING_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_D107_FINAL_SIDE_CORRECTION_V3"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "D107_V3_RED_RETURN_JOIN",
+    "lo": [
+      9.04990005493164,
+      4.972779273986816,
+      0.44999998807907104
+    ],
+    "hi": [
+      9.201591491699219,
+      5.230199813842773,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "LIVING_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_D107_FINAL_SIDE_CORRECTION_V3"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "D107_V3_RED_SIDE_50MM_WALL",
+    "lo": [
+      9.050223350524902,
+      4.9417643547058105,
+      0.44999998807907104
+    ],
+    "hi": [
+      9.201591491699219,
+      5.152076721191406,
+      3.049999952316284
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "LIVING_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_D107_FINAL_SIDE_CORRECTION_V3"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "visible_from_casing_edge_mm": "50",
+      "marked_side": "RED",
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "D107_V3_TOP_CONNECTION",
+    "lo": [
+      8.158478736877441,
+      4.489573001861572,
+      3.049999952316284
+    ],
+    "hi": [
+      9.212668418884277,
+      5.196900844573975,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "LIVING_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_D107_FINAL_SIDE_CORRECTION_V3"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "DOOR_V2_D107_ARCHITRAVE_HEAD",
+    "lo": [
+      8.169554710388184,
+      4.689489364624023,
+      2.569999933242798
+    ],
+    "hi": [
+      9.069039344787598,
+      5.152335166931152,
+      2.640000104904175
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "DOOR_V2_REVIEW_TIMBER_FRAME"
+    ],
+    "collections": [
+      "COL_LIVING_DOOR_ENCLOSURES_V2"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "authority": "USER_DOOR_ENCLOSURE_PHOTOS; REGISTERED_XY_Z; REVIEW_FRAME_SECTIONS"
+    },
+    "verts": 8
+  },
+  {
+    "name": "DOOR_V2_D107_ARCHITRAVE_RIGHT",
+    "lo": [
+      9.007768630981445,
+      5.103760719299316,
+      0.4500000476837158
+    ],
+    "hi": [
+      9.069038391113281,
+      5.152335166931152,
+      2.625
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "DOOR_V2_REVIEW_TIMBER_FRAME"
+    ],
+    "collections": [
+      "COL_LIVING_DOOR_ENCLOSURES_V2"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "authority": "USER_DOOR_ENCLOSURE_PHOTOS; REGISTERED_XY_Z; REVIEW_FRAME_SECTIONS"
+    },
+    "verts": 8
+  },
+  {
+    "name": "DOOR_V2_D107_FRAME_HEAD",
+    "lo": [
+      8.198561668395996,
+      4.520846843719482,
+      2.549999952316284
+    ],
+    "hi": [
+      9.138838768005371,
+      5.1210618019104,
+      2.6000001430511475
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "DOOR_V2_REVIEW_TIMBER_FRAME"
+    ],
+    "collections": [
+      "COL_LIVING_DOOR_ENCLOSURES_V2"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "authority": "USER_DOOR_ENCLOSURE_PHOTOS; REGISTERED_XY_Z; REVIEW_FRAME_SECTIONS"
+    },
+    "verts": 8
+  },
+  {
+    "name": "DOOR_V2_D107_FRAME_RIGHT",
+    "lo": [
+      9.005399703979492,
+      4.919610500335693,
+      0.4500000476837158
+    ],
+    "hi": [
+      9.138837814331055,
+      5.1210618019104,
+      2.549999952316284
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "DOOR_V2_REVIEW_TIMBER_FRAME"
+    ],
+    "collections": [
+      "COL_LIVING_DOOR_ENCLOSURES_V2"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False",
+      "authority": "USER_DOOR_ENCLOSURE_PHOTOS; REGISTERED_XY_Z; REVIEW_FRAME_SECTIONS"
+    },
+    "verts": 8
+  },
+  {
+    "name": "DOOR_V2_D107_RIGHT_RETURN_WALL",
+    "lo": [
+      9.04990005493164,
+      4.9417643547058105,
+      0.44999998807907104
+    ],
+    "hi": [
+      9.199899673461914,
+      5.150199890136719,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "LIVING_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_LIVING_DOOR_ENCLOSURES_V2"
+    ],
+    "props": {
+      "physical_ground_truth": "False",
+      "review_status": "HUMAN_REVIEW"
+    },
+    "verts": 10
+  },
+  {
+    "name": "FLOOR_LOWER",
+    "lo": [
+      1.5,
+      0.0,
+      -0.10000000149011612
+    ],
+    "hi": [
+      13.099900245666504,
+      13.790200233459473,
+      0.0
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FLOOR_LOWER_m"
+    ],
+    "collections": [
+      "02_EXISTING_SPLIT_LEVEL"
+    ],
+    "props": {
+      "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR"
+    },
+    "verts": 192
+  },
+  {
+    "name": "FLOOR_UPPER",
+    "lo": [
+      5.699999809265137,
+      -0.5997999906539917,
+      0.0
+    ],
+    "hi": [
+      16.299999237060547,
+      11.700200080871582,
+      0.44999998807907104
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FLOOR_UPPER_m"
+    ],
+    "collections": [
+      "02_EXISTING_SPLIT_LEVEL"
+    ],
+    "props": {
+      "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR"
+    },
+    "verts": 288
+  },
+  {
+    "name": "FLOOR_UPPER_SEAM_0",
+    "lo": [
+      8.79990005493164,
+      4.700200080871582,
+      -0.0010000000474974513
+    ],
+    "hi": [
+      9.04990005493164,
+      4.800000190734863,
+      0.4490000009536743
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FLOOR_UPPER_SEAM_0_m"
+    ],
+    "collections": [
+      "02_EXISTING_SPLIT_LEVEL"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "FLOOR_UPPER_SEAM_3",
+    "lo": [
+      11.399999618530273,
+      6.450200080871582,
+      -0.0010000000474974513
+    ],
+    "hi": [
+      11.599900245666504,
+      6.539999961853027,
+      0.4490000009536743
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FLOOR_UPPER_SEAM_3_m"
+    ],
+    "collections": [
+      "02_EXISTING_SPLIT_LEVEL"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "FLOOR_UPPER_SEAM_4",
+    "lo": [
+      8.850000381469727,
+      4.80019998550415,
+      -0.0010000000474974513
+    ],
+    "hi": [
+      9.04990005493164,
+      4.900199890136719,
+      0.4490000009536743
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FLOOR_UPPER_SEAM_4_m"
+    ],
+    "collections": [
+      "02_EXISTING_SPLIT_LEVEL"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "FN_次主卧衣柜",
+    "lo": [
+      9.863611221313477,
+      3.863290786743164,
+      0.44999992847442627
+    ],
+    "hi": [
+      11.363588333129883,
+      4.463309288024902,
+      2.649898052215576
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FN_次主卧衣柜_m"
+    ],
+    "collections": [
+      "05_HUMAN_DESIGN_GUIDE"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "FN_次主卫台盆和柜体",
+    "lo": [
+      9.41948413848877,
+      4.773688793182373,
+      0.8222000598907471
+    ],
+    "hi": [
+      10.419516563415527,
+      5.273711681365967,
+      1.672199010848999
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FN_次主卫台盆和柜体_m"
+    ],
+    "collections": [
+      "05_HUMAN_DESIGN_GUIDE"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "FN_次主卫湿区-上轨",
+    "lo": [
+      10.413800239562988,
+      4.729899883270264,
+      2.3999998569488525
+    ],
+    "hi": [
+      10.493800163269043,
+      6.31689977645874,
+      2.450000047683716
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FN_次主卫湿区-上轨_m"
+    ],
+    "collections": [
+      "05_HUMAN_DESIGN_GUIDE"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "FN_次主卫湿区-下轨",
+    "lo": [
+      10.413800239562988,
+      4.729899883270264,
+      0.45000001788139343
+    ],
+    "hi": [
+      10.493800163269043,
+      6.31689977645874,
+      0.47999998927116394
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FN_次主卫湿区-下轨_m"
+    ],
+    "collections": [
+      "05_HUMAN_DESIGN_GUIDE"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "FN_次主卫湿区-边框0",
+    "lo": [
+      10.40880012512207,
+      6.291899681091309,
+      0.4500000476837158
+    ],
+    "hi": [
+      10.498800277709961,
+      6.341899871826172,
+      2.450000047683716
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FN_次主卫湿区-边框0_m"
+    ],
+    "collections": [
+      "05_HUMAN_DESIGN_GUIDE"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "FN_次主卫湿区-边框1",
+    "lo": [
+      10.40880012512207,
+      4.704899787902832,
+      0.4500000476837158
+    ],
+    "hi": [
+      10.498800277709961,
+      4.754899978637695,
+      2.450000047683716
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FN_次主卫湿区-边框1_m"
+    ],
+    "collections": [
+      "05_HUMAN_DESIGN_GUIDE"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "FN_次主卫马桶",
+    "lo": [
+      9.693408966064453,
+      5.968993663787842,
+      0.44999998807907104
+    ],
+    "hi": [
+      10.193391799926758,
+      6.569006443023682,
+      1.2299747467041016
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "FN_次主卫马桶_m"
+    ],
+    "collections": [
+      "05_HUMAN_DESIGN_GUIDE"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "G_wall_gf_0036",
+    "lo": [
+      10.466300010681152,
+      5.4934000968933105,
+      0.4500000476837158
+    ],
+    "hi": [
+      10.48129940032959,
+      6.296900272369385,
+      2.450000047683716
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "G_wall_gf_0036_m"
+    ],
+    "collections": [
+      "00_EXISTING_ARCH_GROUND_TRUTH"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "G_wall_gs_0036",
+    "lo": [
+      10.426300048828125,
+      4.749899864196777,
+      0.4500000476837158
+    ],
+    "hi": [
+      10.441299438476562,
+      5.553400039672852,
+      2.450000047683716
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "G_wall_gs_0036_m"
+    ],
+    "collections": [
+      "00_EXISTING_ARCH_GROUND_TRUTH"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "LEAF_D107",
+    "lo": [
+      8.288006782531738,
+      4.711305141448975,
+      0.4500000476837158
+    ],
+    "hi": [
+      9.138007164001465,
+      4.751305103302002,
+      2.549999952316284
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "LEAF_D107_m"
+    ],
+    "collections": [
+      "01_EXISTING_OPENINGS"
+    ],
+    "props": {
+      "living_site_status": "INACTIVE_PRIOR_PROXY; B1_SITE_DETAIL_OVERRIDE"
+    },
+    "verts": 8
+  },
+  {
+    "name": "LIVING_FIX_B11_D107_HANDLE",
+    "lo": [
+      8.939292907714844,
+      4.817445755004883,
+      1.3950001001358032
+    ],
+    "hi": [
+      9.024406433105469,
+      4.8662872314453125,
+      1.40500009059906
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "B11_REVIEW_METAL"
+    ],
+    "collections": [
+      "COL_B1_LIVING_SITE_CORRECTION_V1"
+    ],
+    "props": {
+      "bas_role": "review_part",
+      "physical_ground_truth": "False",
+      "review_status": "HUMAN_REVIEW",
+      "source_object": "B11_D107_HANDLE",
+      "correction": "ORIGIN_ROTATION_TRANSLATION_BUG_REPAIRED_WITH_ORIGINAL_HINGE_AND_ANGLE"
+    },
+    "verts": 8
+  },
+  {
+    "name": "LIVING_FIX_LEAF_D107",
+    "lo": [
+      8.323137283325195,
+      4.525070667266846,
+      0.4500000476837158
+    ],
+    "hi": [
+      9.102874755859375,
+      4.937540531158447,
+      2.549999952316284
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "LIVING_REVIEW_SOLID_DOOR"
+    ],
+    "collections": [
+      "COL_B1_LIVING_SITE_CORRECTION_V1"
+    ],
+    "props": {
+      "review_status": "HUMAN_REVIEW",
+      "source_object": "LEAF_D107",
+      "correction": "ORIGIN_ROTATION_TRANSLATION_BUG_REPAIRED_WITH_ORIGINAL_HINGE_AND_ANGLE"
+    },
+    "verts": 8
+  },
+  {
+    "name": "SITE_GROUND",
+    "lo": [
+      -1.5,
+      -1.6999998092651367,
+      -0.12000000476837158
+    ],
+    "hi": [
+      18.5,
+      15.300000190734863,
+      -0.019999999552965164
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "SITE_GROUND_m"
+    ],
+    "collections": [
+      "00_EXISTING_ARCH_GROUND_TRUTH"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "V4_CONTINUOUS_WALL_SHELL",
+    "lo": [
+      1.2999000549316406,
+      -0.7001000046730042,
+      0.0
+    ],
+    "hi": [
+      16.400100708007812,
+      14.953100204467773,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "V4_CONTINUOUS_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_CONTINUOUS_WALLS_V4"
+    ],
+    "props": {
+      "source_objects": "[\"B11_SITE_BALCONY_WINDOW_HEAD\", \"B11_SITE_BALCONY_WINDOW_LEFT_RETURN\", \"B11_SITE_BALCONY_WINDOW_RIGHT_RETURN\", \"B11_SITE_KITCHEN_WINDOW_HEAD_WALL\", \"B11_SITE_KITCHEN_WINDOW_UNDER_WALL\", \"D107_V3_ADJACENT_RETURN_WALL_REMAINDER\", \"D107_V3_BLUE_RETURN_FLUSH_WITH_CASING\", \"D107_V3_FULL_ABOVE_DOOR\", \"D107_V3_PLATFORM_BASE_CLOSURE\", \"D107_V3_RED_RETURN_JOIN\", \"D107_V3_RED_SIDE_50MM_WALL\", \"D107_V3_TOP_CONNECTION\", \"DOOR_V2_NBALC_NORTH_FULL_WALL_PIER\", \"DOOR_V2_NBALC_SOLID_ABOVE_DOOR\", \"LIVING_FIX_BAY_FRONT_HEAD\", \"LIVING_FIX_BAY_FRONT_UNDER_WALL\", \"LIVING_FIX_BAY_INNER_HEAD\", \"LIVING_FIX_BAY_INNER_UNDER_WALL\", \"LIVING_FIX_BAY_LEFT_HEAD\", \"LIVING_FIX_BAY_LEFT_UNDER_WALL\", \"LIVING_FIX_BAY_RIGHT_HEAD\", \"LIVING_FIX_BAY_RIGHT_UNDER_WALL\", \"LIVING_FIX_BAY_SOFFIT\", \"LIVING_FIX_BAY_SOLID_PLATFORM_CORE\", \"LIVING_FIX_GUEST_BATH_FULL_WALL\", \"LIVING_FIX_GUEST_BATH_NORTH_JUNCTION\", \"LIVING_FIX_TV_NORTH_SOLID_WALL\", \"W_wall_md_0004\", \"W_wall_md_0005\", \"W_wall_md_0006\", \"W_wall_md_0007\", \"W_wall_md_0009\", \"W_wall_md_0010\", \"W_wall_md_0012\", \"W_wall_md_0015\", \"W_wall_md_0016\", \"W_wall_md_0017\", \"W_wall_md_0019\", \"W_wall_md_0020\", \"W_wall_md_0021\", \"W_wall_md_0022\", \"W_wall_md_0023\", \"W_wall_md_0024\", \"W_wall_md_0025\", \"W_wall_md_0026\", \"W_wall_md_0027\", \"W_wall_md_0028\", \"W_wall_md_0029\", \"W_wall_md_0030\", \"W_wall_md_0031\", \"W_wall_md_0032\", \"W_wall_md_0033\", \"W_wall_md_0034\", \"W_wall_md_0035\", \"W_wall_md_0036\", \"W_wall_md_0037\", \"W_wall_md_0038\", \"W_wall_md_0039\", \"W_wall_md_0040\", \"W_wall_md_0041\", \"W_wall_md_0042\", \"W_wall_md_0043\", \"W_wall_md_0044\", \"W_wall_md_0045\", \"W_wall_md_0046\", \"W_wall_md_0047\", \"W_wall_md_0048\", \"W_wall_md_0049\", \"W_wall_md_0050\", \"W_wall_md_0051\", \"W_wall_md_0052\", \"W_wall_md_0053\", \"W_wall_md_0054\", \"W_wall_md_0055\", \"W_wall_md_0056\", \"W_wall_md_0057\", \"W_wall_md_0058\", \"W_wall_md_0059\", \"W_wall_md_0060\", \"W_wall_md_0061\", \"W_wall_md_0062\", \"W_wall_md_0064\", \"W_wall_md_0088\"]",
+      "geometry_policy": "SHARED_PLANAR_CELL_SOLID_UNION; MICROGAP_NORMALIZATION_ONLY",
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False"
+    },
+    "verts": 6418
+  },
+  {
+    "name": "V5_CONTINUOUS_WALL_SHELL",
+    "lo": [
+      1.2999000549316406,
+      -0.7001000046730042,
+      0.0
+    ],
+    "hi": [
+      16.400100708007812,
+      14.953100204467773,
+      3.25
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "V4_CONTINUOUS_REVIEW_WALL",
+      "V4_CONTINUOUS_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_V5_COMPLETE_WALL_CORNERS"
+    ],
+    "props": {
+      "repair_scope": "MISSING_OUTER_QUADRANTS_AT_L_T_WALL_JUNCTIONS",
+      "source_model": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/B1_WALL_JUNCTIONS_CORRECTED_V4.blend"
+    },
+    "verts": 6418
+  },
+  {
+    "name": "V5_CORNER_PATCH_J10_1",
+    "lo": [
+      9.050000190734863,
+      6.450000286102295,
+      0.4500000476837158
+    ],
+    "hi": [
+      9.199999809265137,
+      6.599999904632568,
+      3.25
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "V4_CONTINUOUS_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_V5_COMPLETE_WALL_CORNERS"
+    ],
+    "props": {
+      "repair_patch_id": "J10_1",
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "V5_CORNER_PATCH_J14_1",
+    "lo": [
+      11.399999618530273,
+      4.5,
+      0.4500000476837158
+    ],
+    "hi": [
+      11.600000381469727,
+      4.699999809265137,
+      3.25
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "V4_CONTINUOUS_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_V5_COMPLETE_WALL_CORNERS"
+    ],
+    "props": {
+      "repair_patch_id": "J14_1",
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "V5_CORNER_PATCH_J15_1",
+    "lo": [
+      11.399999618530273,
+      6.400000095367432,
+      0.4500000476837158
+    ],
+    "hi": [
+      11.600000381469727,
+      6.599999904632568,
+      3.25
+    ],
+    "hidden": [
+      false,
+      false,
+      false
+    ],
+    "materials": [
+      "V4_CONTINUOUS_REVIEW_WALL"
+    ],
+    "collections": [
+      "COL_V5_COMPLETE_WALL_CORNERS"
+    ],
+    "props": {
+      "repair_patch_id": "J15_1",
+      "review_status": "HUMAN_REVIEW",
+      "physical_ground_truth": "False"
+    },
+    "verts": 8
+  },
+  {
+    "name": "W_wall_md_0018",
+    "lo": [
+      9.04990005493164,
+      5.120200157165527,
+      0.4500000476837158
+    ],
+    "hi": [
+      9.199899673461914,
+      6.450200080871582,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "W_wall_md_0018_m"
+    ],
+    "collections": [
+      "00_EXISTING_ARCH_GROUND_TRUTH"
+    ],
+    "props": {},
+    "verts": 8
+  },
+  {
+    "name": "W_wall_md_0021",
+    "lo": [
+      11.39989948272705,
+      0.20019984245300293,
+      0.4500000476837158
+    ],
+    "hi": [
+      11.599900245666504,
+      4.500200271606445,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "W_wall_md_0021_m"
+    ],
+    "collections": [
+      "00_EXISTING_ARCH_GROUND_TRUTH"
+    ],
+    "props": {
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "W_wall_md_0022",
+    "lo": [
+      11.39989948272705,
+      4.700200080871582,
+      0.4500000476837158
+    ],
+    "hi": [
+      11.599900245666504,
+      6.400199890136719,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "W_wall_md_0022_m"
+    ],
+    "collections": [
+      "00_EXISTING_ARCH_GROUND_TRUTH"
+    ],
+    "props": {
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "W_wall_md_0045",
+    "lo": [
+      10.79990005493164,
+      4.500200271606445,
+      0.4500000476837158
+    ],
+    "hi": [
+      11.399900436401367,
+      4.700200080871582,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "W_wall_md_0045_m"
+    ],
+    "collections": [
+      "00_EXISTING_ARCH_GROUND_TRUTH"
+    ],
+    "props": {
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "W_wall_md_0048",
+    "lo": [
+      11.599900245666504,
+      6.400199890136719,
+      0.4500000476837158
+    ],
+    "hi": [
+      11.94990062713623,
+      6.6001996994018555,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "W_wall_md_0048_m"
+    ],
+    "collections": [
+      "00_EXISTING_ARCH_GROUND_TRUTH"
+    ],
+    "props": {
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  },
+  {
+    "name": "W_wall_md_0050",
+    "lo": [
+      9.199899673461914,
+      6.450200080871582,
+      0.4500000476837158
+    ],
+    "hi": [
+      11.399900436401367,
+      6.6001996994018555,
+      3.25
+    ],
+    "hidden": [
+      true,
+      true,
+      true
+    ],
+    "materials": [
+      "W_wall_md_0050_m"
+    ],
+    "collections": [
+      "00_EXISTING_ARCH_GROUND_TRUTH"
+    ],
+    "props": {
+      "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+    },
+    "verts": 8
+  }
+]

@@ -1,0 +1,430 @@
+{
+  "schema": "living_catalog_reference_notes.v1",
+  "created_date": "2026-10-03",
+  "scope": "reference-only native Blender furniture development",
+  "source_geometry_immutable": "projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+  "page_convention": "pdf_page is1-based PDF page index; electronic catalogue contains two printed pages per PDF spread, provided where visible. All dimensions in mm, catalogue stated length×depth/width×height unless noted.",
+  "sources": [
+    {
+      "key": "ash",
+      "filename": "木甲木乙-白蜡木系列.pdf",
+      "pdf_pages": 32,
+      "path": "/Users/xiwei/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/chenxiwei123_5333/temp/RWTemp/2026-09/9e20f478899dc29eb19741386f9343c8/木甲木乙-白蜡木系列.pdf",
+      "sha256": "2430d251e7e7333d70867452923821eeacb070f028d8eed500086a04104bbaa3"
+    },
+    {
+      "key": "electronic",
+      "filename": "木甲木乙 电子图册.pdf",
+      "pdf_pages": 63,
+      "path": "/Users/xiwei/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/chenxiwei123_5333/temp/RWTemp/2026-09/9e20f478899dc29eb19741386f9343c8/木甲木乙 电子图册.pdf",
+      "sha256": "a5ff0a6e38233d3c934e51063ce63dd9ac77a7bc23adb57b819b04ac7de72b72"
+    },
+    {
+      "key": "amber",
+      "filename": "木甲木乙-琥珀木.pdf",
+      "pdf_pages": 80,
+      "path": "/Users/xiwei/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/chenxiwei123_5333/temp/RWTemp/2026-09/9e20f478899dc29eb19741386f9343c8/木甲木乙-琥珀木.pdf",
+      "sha256": "e422924355a7ea6f5afeb15da192baf12bf4c12d7a63140cf54576c9ed6e0a5b"
+    }
+  ],
+  "references": [
+    {
+      "key": "ash_sofa_family",
+      "source": "ash",
+      "pdf_page": 4,
+      "model": "1020SF-3A",
+      "label": "三位沙发",
+      "dimensions_mm": [
+        2130,
+        800,
+        820
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Rounded horizontal ash arm/back rail; exposed vertical side spindles; slim cylindrical legs; low visible platform frame; separate seat/back/arm cushions.",
+      "use": "Use construction language for requested L-shaped ivory linen sofa; L-shaped continuation is a project adaptation, not a catalogue SKU."
+    },
+    {
+      "key": "ash_sofa_four",
+      "source": "ash",
+      "pdf_page": 4,
+      "model": "1020SF-4",
+      "label": "四位沙发",
+      "dimensions_mm": [
+        2700,
+        800,
+        820
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Same light ash spindle/round-rail family."
+    },
+    {
+      "key": "ash_modular_double",
+      "source": "ash",
+      "pdf_page": 8,
+      "model": "802SF-2A",
+      "label": "双位沙发",
+      "dimensions_mm": [
+        1450,
+        850,
+        850
+      ],
+      "evidence": "PDF text + raster cross-check",
+      "observed": "Exposed ash arm wings; independent upholstered seat/back modules; wood base."
+    },
+    {
+      "key": "ash_modular_single",
+      "source": "ash",
+      "pdf_page": 8,
+      "model": "802SF-1A",
+      "label": "单位沙发",
+      "dimensions_mm": [
+        650,
+        850,
+        850
+      ],
+      "evidence": "PDF text + raster cross-check"
+    },
+    {
+      "key": "ash_chaise",
+      "source": "ash",
+      "pdf_page": 8,
+      "model": "802GF-A",
+      "label": "贵妃沙发",
+      "dimensions_mm": [
+        1750,
+        800,
+        850
+      ],
+      "evidence": "PDF text + raster cross-check",
+      "observed": "Long cushioned recline/chaise module with ash base; separate from requested new L sofa.",
+      "use": "Scale reference for independent window chaise; no placement authority."
+    },
+    {
+      "key": "ash_sofa_material",
+      "source": "ash",
+      "pdf_page": 8,
+      "models": [
+        "802SF-2A",
+        "802SF-1A",
+        "802GF-A",
+        "1006-3",
+        "1003-4"
+      ],
+      "evidence": "PDF text + raster cross-check",
+      "catalogue_materials": {
+        "structure": "北美白腊木（catalogue spelling; North American ash）",
+        "seat": "海绵",
+        "cloth": "麻棉",
+        "loose_padding": "羽绒+丝棉",
+        "finish": "木蜡油"
+      },
+      "use": "Native ash frame and pale ivory linen/cotton interpretation; no product photograph used as texture."
+    },
+    {
+      "key": "coffee_racetrack",
+      "source": "ash",
+      "pdf_page": 11,
+      "model": "1119",
+      "label": "茶几",
+      "dimensions_mm": [
+        1400,
+        700,
+        400
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Racetrack/rounded elongated wood top, visible edge thickness; four stout but legible wood supports.",
+      "use": "Silhouette reference only; user requested A is lower and smaller: 1100–1300×600–750×280–330, stone top plus wood structure."
+    },
+    {
+      "key": "coffee_low",
+      "source": "ash",
+      "pdf_page": 11,
+      "model": "813-L",
+      "label": "大几",
+      "dimensions_mm": [
+        1000,
+        600,
+        300
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Rounded rectangular low slab top with substantial timber block supports."
+    },
+    {
+      "key": "coffee_aux_low",
+      "source": "ash",
+      "pdf_page": 10,
+      "model": "808-L",
+      "label": "套几(大)",
+      "dimensions_mm": [
+        800,
+        784,
+        320
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Soft triangular rounded wood top with flat panel supports and an open gap beneath."
+    },
+    {
+      "key": "coffee_aux_small",
+      "source": "ash",
+      "pdf_page": 10,
+      "model": "808-S",
+      "label": "套几(小)",
+      "dimensions_mm": [
+        600,
+        588,
+        380
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Distinct smaller soft triangular top; matching ash tone, three panel-like supports.",
+      "use": "B auxiliary wood-table size/silhouette cue. Keep it visually distinct from principal stone oval; no duplicated main table."
+    },
+    {
+      "key": "coffee_open_round",
+      "source": "ash",
+      "pdf_page": 11,
+      "model": "816S",
+      "label": "小套几",
+      "dimensions_mm": [
+        500,
+        500,
+        400
+      ],
+      "diameter_mm": 500,
+      "evidence": "raster label visually read",
+      "observed": "Round top, open U-shaped wood-leg/bracing geometry; no drawer box.",
+      "use": "Open side-table construction cue only."
+    },
+    {
+      "key": "sideboard_sliding",
+      "source": "ash",
+      "pdf_page": 25,
+      "model": "3301B",
+      "label": "餐边柜(双趟门)(可做藤编门)",
+      "dimensions_mm": [
+        1270,
+        380,
+        1000
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Framed paired front sliding doors; integrated slim outer posts; shallow body; open shelf above closed storage.",
+      "use": "Door/frame and shallow-depth language. Remove tall upper hutch in project low-sideboard adaptation, keep front doors facing SOUTH/kitchen."
+    },
+    {
+      "key": "sideboard_case",
+      "source": "ash",
+      "pdf_page": 25,
+      "model": "3305",
+      "label": "餐边柜(可做藤编门)",
+      "dimensions_mm": [
+        1350,
+        400,
+        850
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Twin framed lower front doors, center drawers/cubby; light solid timber case on slender raised legs.",
+      "use": "Storage division and leg language; no literal replication at catalogue height."
+    },
+    {
+      "key": "amber_low_case",
+      "source": "amber",
+      "pdf_page": 77,
+      "model": "SF3E06",
+      "label": "六斗柜",
+      "dimensions_mm": [
+        1300,
+        420,
+        728
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Low six-drawer timber case on short separate legs; strong horizontal top/case edge.",
+      "use": "Low case-height proportion only. Requested sideboard has front doors and ash finish, not drawers or amber slab color."
+    },
+    {
+      "key": "amber_open_case",
+      "source": "amber",
+      "pdf_page": 79,
+      "model": "SF3L06",
+      "label": "装饰柜",
+      "dimensions_mm": [
+        1600,
+        320,
+        1000
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Shallow open compartment cabinet with central drawer and tapered legs.",
+      "use": "Fine leg and open/closed rhythm reference; catalogue height not authorized project height."
+    },
+    {
+      "key": "amber_wood_aux",
+      "source": "amber",
+      "pdf_page": 77,
+      "model": "SF3G13-1",
+      "label": "云朵小茶几",
+      "dimensions_mm": [
+        600,
+        600,
+        450
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Cloud/soft organic timber top with one broad curved panel and a cylindrical support; very distinct smaller-table silhouette.",
+      "use": "Alternative B auxiliary language in pale ash. Source height450 is not project height authority."
+    },
+    {
+      "key": "amber_main_table",
+      "source": "amber",
+      "pdf_page": 77,
+      "model": "SF3G15",
+      "label": "长茶几",
+      "dimensions_mm": [
+        1300,
+        680,
+        380
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Long timber top with two vertical panel supports and open underside."
+    },
+    {
+      "key": "amber_seating_family",
+      "source": "amber",
+      "pdf_page": 79,
+      "model": "SF3S19-3",
+      "label": "三位沙发",
+      "dimensions_mm": [
+        2120,
+        750,
+        900
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Angled straight timber side members, two horizontal open arm rails, visible separated ivory pads.",
+      "use": "Construction cue; amber stain does not transfer into house palette."
+    },
+    {
+      "key": "electronic_sofa",
+      "source": "electronic",
+      "pdf_page": 7,
+      "printed_pages": [
+        12,
+        13
+      ],
+      "model": "G15",
+      "label": "沙发",
+      "dimensions_mm_variants": [
+        [
+          1680,
+          1030,
+          850
+        ],
+        [
+          2800,
+          1030,
+          850
+        ]
+      ],
+      "variant_labels": [
+        "双人位",
+        "四人位"
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Soft upholstered seat/back; curved outer wood side panel with vertical narrow flutes; timber/plinth beneath.",
+      "use": "Panel/slat rhythm only; 1030 depth is substantially deeper than ash1020 family and is not selected footprint."
+    },
+    {
+      "key": "electronic_sideboard",
+      "source": "electronic",
+      "pdf_page": 26,
+      "printed_pages": [
+        50,
+        51
+      ],
+      "model": "F11",
+      "label": "餐边柜",
+      "dimensions_mm": [
+        1540,
+        420,
+        1800
+      ],
+      "evidence": "raster label visually read",
+      "observed": "Slim tapered timber legs; framed lower front doors; narrow perimeter frame; open appliance bay and upper sliding panels.",
+      "use": "Front-door/frame construction only. Tall hutch, dark walnut appearance, and1800 height are excluded from this low sideboard."
+    }
+  ],
+  "authorized_adaptations": {
+    "L_sofa": "ash-frame ivory linen; use catalogue construction without claiming off-the-shelf L SKU",
+    "window_chaise": "independent from L sofa",
+    "sideboard_mm_range": {
+      "length": [
+        1800,
+        2200
+      ],
+      "depth": [
+        350,
+        400
+      ],
+      "height": [
+        650,
+        750
+      ]
+    },
+    "sideboard_front_direction": "SOUTH, toward kitchen",
+    "sideboard_example_mm": [
+      2000,
+      380,
+      700
+    ],
+    "coffee_A_mm_range": {
+      "length": [
+        1100,
+        1300
+      ],
+      "depth": [
+        600,
+        750
+      ],
+      "height": [
+        280,
+        330
+      ]
+    },
+    "coffee_A": "one single racetrack stone/wood table",
+    "coffee_B": "principal oval/racetrack stone/wood table plus smaller clearly distinct wood auxiliary; open underside, no nightstand drawer box"
+  },
+  "palette": {
+    "status": "non-calibrated project interpretation; not manufacturer color code",
+    "dominant_ash_srgb": [
+      "#C8AF8C",
+      "#DBC7A8"
+    ],
+    "ivory_linen_srgb": "#E5DFD2",
+    "light_stone_srgb": "#D8D3C8",
+    "amber_accent_srgb": "#A86F38",
+    "observed_sources": [
+      {
+        "source": "ash",
+        "pdf_pages": [
+          4,
+          8,
+          10,
+          11,
+          25
+        ]
+      },
+      {
+        "source": "amber",
+        "pdf_pages": [
+          30,
+          38,
+          43,
+          63
+        ]
+      }
+    ],
+    "guidance": "Keep dominant frames/sideboard warm pale sand ash with low saturation and subtle open grain; ivory linen and warm pale stone. Use amber only as an isolated small movable accent if needed; do not recolor walls, floor, fixed cabinets or the full house dark brown."
+  },
+  "limitations": [
+    "Catalogue dimensions are references, not purchase/fabrication confirmation.",
+    "No calibrated manufacturer pale-ash color swatch was supplied.",
+    "Project L sofa, low sideboard and lower stone coffee are adaptations to user brief.",
+    "No product photograph copied into native furniture materials or finished render.",
+    "Image-only label readings are recorded as such; no OCR guesses or unsupported model IDs included."
+  ]
+}

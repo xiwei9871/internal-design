@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "fresh_reopen": true,
+  "all_existing_meshes_and_world_matrices_preserved": 1826,
+  "registered_source_objects_unchanged": 977,
+  "supplier_adapted_components": [
+    {
+      "object": "V3_LD_Sofa_upholstery_03",
+      "actual_bounds_m": [
+        [
+          3.6449999809265137,
+          8.09000015258789,
+          0.2849999964237213
+        ],
+        [
+          5.12999963760376,
+          9.100000381469727,
+          0.42499998211860657
+        ]
+      ],
+      "within_dimension_envelope": true,
+      "uv_layers": [
+        "V3_SurfaceMeters"
+      ]
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_04",
+      "actual_bounds_m": [
+        [
+          3.6449999809265137,
+          9.170000076293945,
+          0.2849999964237213
+        ],
+        [
+          4.340000152587891,
+          10.030000686645508,
+          0.42499998211860657
+        ]
+      ],
+      "within_dimension_envelope": true,
+      "uv_layers": [
+        "V3_SurfaceMeters"
+      ]
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_05",
+      "actual_bounds_m": [
+        [
+          3.6449999809265137,
+          10.09000015258789,
+          0.2849999964237213
+        ],
+        [
+          4.340000152587891,
+          11.100000381469727,
+          0.42499998211860657
+        ]
+      ],
+      "within_dimension_envelope": true,
+      "uv_layers": [
+        "V3_SurfaceMeters"
+      ]
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_09",
+      "actual_bounds_m": [
+        [
+          3.4549999237060547,
+          8.110000610351562,
+          0.4050000309944153
+        ],
+        [
+          3.684999942779541,
+          9.09000015258789,
+          0.699999988079071
+        ]
+      ],
+      "within_dimension_envelope": true,
+      "uv_layers": [
+        "V3_SurfaceMeters"
+      ]
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_10",
+      "actual_bounds_m": [
+        [
+          3.4549999237060547,
+          9.179999351501465,
+          0.4050000309944153
+        ],
+        [
+          3.684999942779541,
+          10.029999732971191,
+          0.699999988079071
+        ]
+      ],
+      "within_dimension_envelope": true,
+      "uv_layers": [
+        "V3_SurfaceMeters"
+      ]
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_11",
+      "actual_bounds_m": [
+        [
+          3.4549999237060547,
+          10.100000381469727,
+          0.4050000309944153
+        ],
+        [
+          3.684999942779541,
+          11.09000015258789,
+          0.699999988079071
+        ]
+      ],
+      "within_dimension_envelope": true,
+      "uv_layers": [
+        "V3_SurfaceMeters"
+      ]
+    },
+    {
+      "object": "V3_LD_Chaise_seat_pad",
+      "actual_bounds_m": [
+        [
+          5.085000038146973,
+          11.10999870300293,
+          0.3619999885559082
+        ],
+        [
+          6.320000648498535,
+          11.899999618530273,
+          0.42900002002716064
+        ]
+      ],
+      "within_dimension_envelope": true,
+      "uv_layers": [
+        "V3_SurfaceMeters"
+      ]
+    },
+    {
+      "object": "V3_Chaise_back_soft_from_supplier",
+      "actual_bounds_m": [
+        [
+          4.807609558105469,
+          11.10999870300293,
+          0.358894020318985
+        ],
+        [
+          5.099328994750977,
+          11.899999618530273,
+          0.763599693775177
+        ]
+      ],
+      "within_dimension_envelope": true,
+      "uv_layers": [
+        "V3_SurfaceMeters",
+        "V3_SurfaceMeters.001"
+      ]
+    }
+  ],
+  "native_fabric_parameters_connected": [
+    "Roughness",
+    "Specular IOR Level",
+    "Anisotropic",
+    "Anisotropic Rotation",
+    "Normal"
+  ],
+  "supplier_native_fabric_displacement_m": 0.0005,
+  "packed_images": 30,
+  "missing_dependencies": [],
+  "protected_file_hashes_pass": true,
+  "visual_acceptance": "SEPARATE_HUMAN_REVIEW",
+  "kitchen_device_detail_is_not_installation_or_fabrication_certification": true
+}

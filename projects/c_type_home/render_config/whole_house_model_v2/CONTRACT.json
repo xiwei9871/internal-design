@@ -1,0 +1,95 @@
+{
+  "status": "AUTHORIZED_IMPLEMENTATION",
+  "source": "design/whole_house_model_v1/assembly/WHOLE_HOUSE_REVIEW_SUPPORTED_V2.blend",
+  "sha256": "7e07cad0852ef3347fb24f8f37280e214355e30b1021d4c2e85c81b05dea9eac",
+  "keep": [
+    "living/dining/kitchen/service/entry/study/guestbath geometry",
+    "architecture",
+    "75 camera register",
+    "stepped north cabinet"
+  ],
+  "changes": [
+    "wood door frames/casings only, real hardware remains metal",
+    "separate frosted secondary shower glass",
+    "2016 couple1930x2090x980 and guest1330x2090x980 bed frame",
+    "2116 bedside420x400x460 real drawer construction",
+    "2206-0.8 vanity800x413x813, mirror proportions inferred from catalog image",
+    "2201 guest desk1200x450x760",
+    "reading joinery/books details at accepted placement",
+    "north complete custom frame/softbags1450x750; real linen/V10 method",
+    "white appliance bodies/dark door glazing"
+  ],
+  "asset_search": {
+    "local": "owner catalogp15-17/p20; prior native materials, V10 and whole-product construction reused",
+    "web": "https://www.3d66.com/collection-3d/muchuangcad.html",
+    "result": "Generic library verified, no exact2016/2206 matching compatible/licensed downloadable asset identified; Google AI overview claims not evidence",
+    "license": "no downloaded external unlicensed models; catalog appearance evidence only",
+    "custom_limit": "whole construction based on same chosen product; unresolved manufacturer hidden joints/inferred details labeled"
+  },
+  "light_lab": "same registered living/hallway/secondary bath, source vs only medium contrast vs source+measured practical/daylight fill; no material changes during test",
+  "image2_requests": 0,
+  "stop": "HUMAN_REVIEW",
+  "guest_bed": {
+    "model": "2016-1.2",
+    "mattress_mm": [
+      1200,
+      2000
+    ],
+    "outer_length_width_height_mm": [
+      2090,
+      1330,
+      980
+    ],
+    "orientation": "head east, preserve source orientation",
+    "status": "OWNER_CHOSEN_AFTER_WARDROBE_SWEEP",
+    "supersedes": "1500x2000 rejected because eastern-head arrangement collides with wardrobe front1"
+  },
+  "bedsides": {
+    "mother_bedroom": {
+      "model": "2110",
+      "size_w_d_h_mm": [
+        450,
+        400,
+        480
+      ]
+    },
+    "couple_bedroom": {
+      "model": "2116",
+      "size_w_d_h_mm": [
+        420,
+        400,
+        460
+      ]
+    }
+  },
+  "selected_attachment_hashes": {
+    "BEDSIDE_2110.png": "837d345d47efdf360d3d3dd20628c8d1558745119119e69e3afa5938e410ba53",
+    "BEDSIDE_2116.png": "0646a98ebc1ebb75dcb57942fdbfc4036e9f93f6fef941fbf4df4fbe61ffd705"
+  },
+  "guest_wardrobe_gate": {
+    "status": "CHECK_ACTUAL_1200_BED_AND_DESK",
+    "tested_source": "V1_SUPPORTED_V2",
+    "doors": 3,
+    "each_leaf_width_mm": 496,
+    "sweep_degrees": [
+      0,
+      90,
+      1
+    ],
+    "east_head_1500": "collision first door at40/49deg, foot gap312mm",
+    "south_head_1500": "no bed-envelope collision; closed gap822mm,90deg residual326mm; desk must move",
+    "owner_notice": "Do not claim1.5m bed fits operationally until door/desk/body clearance checked"
+  },
+  "lighting_selected": {
+    "variant": "soft_fill",
+    "geometry_material_camera_constant_in_lab": true,
+    "exposure": 0.15,
+    "AgX_look": "Medium High Contrast",
+    "practical_min_render_watts": {
+      "general": 45,
+      "hallway_bath": 65
+    },
+    "existing_daylight_factor": 1.3,
+    "not_photometric_certification": true
+  }
+}

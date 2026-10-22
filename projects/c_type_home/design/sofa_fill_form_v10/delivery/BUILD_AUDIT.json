@@ -1,0 +1,115 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/render_diagnosis/V7_SAME_MESH_DIRECTIONAL_LIGHT_V8.blend",
+  "source_sha256": "cbed4cc4b34c9ebe5fc1bf8a388a860d620493b7f8bd609770499b967c37862f",
+  "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/delivery/SOFA_DIFFERENTIATED_FILL_V10.blend",
+  "output_sha256": "ad9960ad4991e1f2f524a052815ae5c469efcf50967539fa74d921a877c741b8",
+  "variant": "delivery",
+  "seat_bounds_m": [
+    [
+      -0.516566276550293,
+      -0.44903457164764404,
+      0.2850000262260437
+    ],
+    [
+      0.516566276550293,
+      0.44903457164764404,
+      0.48364076018333435
+    ]
+  ],
+  "back_bounds_m": [
+    [
+      -0.5175707936286926,
+      0.32429057359695435,
+      0.4070829153060913
+    ],
+    [
+      0.5175707936286926,
+      0.5928338170051575,
+      0.8059983253479004
+    ]
+  ],
+  "frame_map": [
+    {
+      "source": "V7_SEAT_ASH_DECK",
+      "candidate": "V10_SEAT_ASH_DECK"
+    },
+    {
+      "source": "V7_BACK_LOWER_RAIL",
+      "candidate": "V10_BACK_LOWER_RAIL"
+    },
+    {
+      "source": "V7_BACK_TOP_RAIL",
+      "candidate": "V10_BACK_TOP_RAIL"
+    },
+    {
+      "source": "V7_SUPPORT_LEG",
+      "candidate": "V10_SUPPORT_LEG"
+    },
+    {
+      "source": "V7_REAR_SUPPORT_LEG",
+      "candidate": "V10_REAR_SUPPORT_LEG"
+    },
+    {
+      "source": "V7_SUPPORT_LEG.001",
+      "candidate": "V10_SUPPORT_LEG.001"
+    },
+    {
+      "source": "V7_REAR_SUPPORT_LEG.001",
+      "candidate": "V10_REAR_SUPPORT_LEG.001"
+    },
+    {
+      "source": "V7_FRAME_SIDE_RAIL",
+      "candidate": "V10_FRAME_SIDE_RAIL"
+    },
+    {
+      "source": "V7_FRAME_SIDE_RAIL.001",
+      "candidate": "V10_FRAME_SIDE_RAIL.001"
+    },
+    {
+      "source": "V7_BACK_SUPPORT_SLAT",
+      "candidate": "V10_BACK_SUPPORT_SLAT"
+    },
+    {
+      "source": "V7_BACK_SUPPORT_SLAT.001",
+      "candidate": "V10_BACK_SUPPORT_SLAT.001"
+    },
+    {
+      "source": "V7_BACK_SUPPORT_SLAT.002",
+      "candidate": "V10_BACK_SUPPORT_SLAT.002"
+    },
+    {
+      "source": "V7_BACK_SUPPORT_SLAT.003",
+      "candidate": "V10_BACK_SUPPORT_SLAT.003"
+    },
+    {
+      "source": "V7_BACK_SUPPORT_SLAT.004",
+      "candidate": "V10_BACK_SUPPORT_SLAT.004"
+    }
+  ],
+  "core_guide_dimensions_mm": [
+    950,
+    785,
+    130
+  ],
+  "nominal_boxing_mm": 109,
+  "source_v6_boxing_mm": 142,
+  "seam_family_count": {
+    "seat": 4,
+    "back": 4
+  },
+  "contact_clearance_mm": 1.8,
+  "boxing_rings": 15,
+  "finished_subdivision_level": 1,
+  "support_conform_min_max_mm": [
+    -44.99998688697815,
+    0.0
+  ],
+  "back_whole_object_translation_mm": 0,
+  "method": "differentiated core/jacket versus filled-bag mass; static lower support conformation; restrained original seam families",
+  "same_shaders_studio": true,
+  "physical_mechanics_certified": false,
+  "internal_dimensions_manufacturing_approved": false,
+  "owner_accepted": false,
+  "whole_house_propagation": false,
+  "image2_requests": 0
+}

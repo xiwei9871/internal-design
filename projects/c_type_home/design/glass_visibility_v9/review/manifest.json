@@ -1,0 +1,44 @@
+{
+  "source_sha256": "42beee4cb51bce1487edbe0003b226951986ca073b2d2e3b4ffec9305c80f9cf",
+  "images": [
+    {
+      "view": "living",
+      "camera": "CAM_living_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_visibility_v9/review/living.png",
+      "engine": "CYCLES",
+      "size": [
+        1600,
+        900
+      ],
+      "samples": 96
+    },
+    {
+      "view": "bedroom",
+      "camera": "CAM_couple_bedroom_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_visibility_v9/review/bedroom.png",
+      "engine": "CYCLES",
+      "size": [
+        1600,
+        900
+      ],
+      "samples": 96
+    },
+    {
+      "view": "privacy",
+      "camera": "CAM_guest_bedroom_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_visibility_v9/review/privacy.png",
+      "engine": "CYCLES",
+      "size": [
+        1600,
+        900
+      ],
+      "samples": 96
+    },
+    {
+      "view": "viewport_check",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_visibility_v9/review/viewport_check.png",
+      "engine": "EEVEE",
+      "matching_forest_material_preview": true
+    }
+  ]
+}

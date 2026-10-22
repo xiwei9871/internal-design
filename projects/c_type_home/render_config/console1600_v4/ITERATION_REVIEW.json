@@ -1,0 +1,14 @@
+{
+  "status": "HUMAN_REVIEW",
+  "owner_length_mm": 1600,
+  "previous_length_mm": 1200,
+  "candidate": "design/console1600_v4/WHOLE_HOUSE_CONSOLE1600_V4.blend",
+  "candidate_sha256": "7ff55a69723783bf6a59af837a1afe53e42e8532a4e7d03bd922d1b1a855d2ac",
+  "depth_mm": 319.0116882324219,
+  "height_with_props_mm": 488.411545753479,
+  "bedfoot_clearance_mm": 797.9879379272461,
+  "scope": "singleconsole length, decorativegroup rigidtranslations; height/depth preserved",
+  "other_rooms": "unchanged, including guestpreviousissue",
+  "source_role": "ownerdesigncandidate generatedGLB, not purchasedSKU",
+  "image2_requests": 0
+}

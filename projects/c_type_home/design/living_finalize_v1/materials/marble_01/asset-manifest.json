@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "provider": "Poly Haven",
+  "credit": "Powered by Poly Haven",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "source": "https://polyhaven.com/a/marble_01",
+  "assetId": "marble_01",
+  "assetType": "textures",
+  "resolution": "4k",
+  "status": "complete",
+  "files": [
+    {
+      "map": "diffuse",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/marble_01/marble_01_diff_4k.jpg",
+      "size": 5013465,
+      "md5": "f908003ccca4c746aa3e5564c6940a35",
+      "file": "marble_01_diffuse_4k.jpg",
+      "colorSpace": "sRGB",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/marble_01/marble_01_diffuse_4k.jpg",
+      "sha256": "3c7805a8988323b46d45d747530b659b4aa46e5bfa0b57c3d21083a403de229d"
+    },
+    {
+      "map": "roughness",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/marble_01/marble_01_rough_4k.png",
+      "size": 25040422,
+      "md5": "5618670b1295cc252be4bece9b001476",
+      "file": "marble_01_roughness_4k.png",
+      "colorSpace": "Non-Color",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/marble_01/marble_01_roughness_4k.png",
+      "sha256": "fe6b25c7550d33880287ce99985c73d441bb286e9f94003ba130d7f0a37e55b4"
+    },
+    {
+      "map": "normal",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/marble_01/marble_01_nor_gl_4k.png",
+      "size": 4794715,
+      "md5": "59bf77f68fb318f8eb680e0785b13dce",
+      "file": "marble_01_normal_4k.png",
+      "colorSpace": "Non-Color",
+      "normalConvention": "OpenGL",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/marble_01/marble_01_normal_4k.png",
+      "sha256": "a18d48a8172db8403e2c710ef95a72244f9d0dc05469a7fdab86066e64f5b92d"
+    }
+  ]
+}

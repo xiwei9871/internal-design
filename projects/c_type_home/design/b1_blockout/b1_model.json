@@ -1,0 +1,2633 @@
+{
+ "coord_frame": "canonical_task01_mm (x east, y north)",
+ "walls": [
+  {
+   "id": "W-EXT-W-S0",
+   "rect": [
+    2700,
+    2300,
+    2900,
+    5440
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-W-S1",
+   "rect": [
+    2700,
+    6540,
+    2900,
+    13600
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-S#W-KIT-S.0",
+   "rect": [
+    6050,
+    -200,
+    6100,
+    0
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-S#W-SMB-S.0",
+   "rect": [
+    7100,
+    -200,
+    8500,
+    0
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-S#W-MB-S.0",
+   "rect": [
+    10900,
+    -200,
+    12100,
+    0
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-S#W-MB-S.1",
+   "rect": [
+    14800,
+    -200,
+    15400,
+    0
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-S-W1",
+   "rect": [
+    4600,
+    -200,
+    5380,
+    0
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-S-W2",
+   "rect": [
+    5380,
+    -200,
+    6050,
+    0
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-E1",
+   "rect": [
+    15400,
+    0,
+    15600,
+    4500
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-E2",
+   "rect": [
+    16300,
+    4400,
+    16500,
+    10900
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-NE",
+   "rect": [
+    13000,
+    10900,
+    13600,
+    11100
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING",
+   "note": "facade flank x13000-13600 only; the baseline W-EXT-NE bay-front geometry [13600,11350,15800,11550] is carried by W-BAY-STUDY-F — not a duplicate entity"
+  },
+  {
+   "id": "W-EXT-NE2",
+   "rect": [
+    15700,
+    10900,
+    16400,
+    11100
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-N-LV#W-LIV-N.0",
+   "rect": [
+    2700,
+    12750,
+    3800,
+    12950
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-EXT-N-LV#W-LIV-N.1",
+   "rect": [
+    6900,
+    12750,
+    7900,
+    12950
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-BAY-JW",
+   "rect": [
+    3650,
+    12950,
+    3800,
+    13800
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-BAY-JE",
+   "rect": [
+    6900,
+    12950,
+    7050,
+    13800
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-X7900-L",
+   "rect": [
+    7800,
+    -150,
+    8000,
+    4670
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-X7900-U-TV#G-LIV-NBALC.0",
+   "rect": [
+    7800,
+    7800,
+    7900,
+    11800
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-X7900-U-TV#G-LIV-NBALC.1",
+   "rect": [
+    7800,
+    12650,
+    7900,
+    13550
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-X9800",
+   "rect": [
+    9700,
+    7700,
+    9900,
+    10900
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-X11500",
+   "rect": [
+    11400,
+    -200,
+    11600,
+    6500
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-X13000",
+   "rect": [
+    12900,
+    4630,
+    13100,
+    13600
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-Y4500-a",
+   "rect": [
+    5700,
+    4450,
+    8236,
+    4700
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-CLK-N",
+   "rect": [
+    9050,
+    6300,
+    11400,
+    6500
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-CLK-E",
+   "rect": [
+    11300,
+    4500,
+    11400,
+    6300
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-CLK-W",
+   "rect": [
+    8950,
+    4500,
+    9050,
+    6300
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-COR-N-STUB",
+   "rect": [
+    11400,
+    6300,
+    12100,
+    6500
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-BEDN-S",
+   "rect": [
+    13100,
+    6300,
+    16300,
+    6500
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-WC-S",
+   "rect": [
+    7900,
+    7800,
+    9800,
+    8000
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-STD-S",
+   "rect": [
+    9800,
+    7800,
+    13000,
+    8000
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-Y10800#G-GB-BALC.0",
+   "rect": [
+    7900,
+    10700,
+    10400,
+    10900
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-Y10800#G-GB-BALC.1",
+   "rect": [
+    12400,
+    10700,
+    13000,
+    10900
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-Y10800-EXT",
+   "rect": [
+    13000,
+    10700,
+    13700,
+    10900
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-Y4500-bc-MBATH",
+   "rect": [
+    12900,
+    4450,
+    16500,
+    4650
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-INT-Y4500-b-FOYER",
+   "rect": [
+    8236,
+    4450,
+    9050,
+    4650
+   ],
+   "cls": "interior",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-BAY-STUDY-F",
+   "rect": [
+    13600,
+    11350,
+    15800,
+    11550
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING",
+   "wall_family": "BAY_ENCLOSURE",
+   "existence": "CONFIRMED",
+   "confidence": "HIGH",
+   "evidence": "baseline W-EXT-NE rect_mm=[13600,11350,15800,11550] EXISTING; master Line101/103",
+   "supersedes": "baseline W-EXT-NE bay-front band (canonical W-EXT-NE retains facade flank x13000-13600 only)"
+  },
+  {
+   "id": "W-BAY-STUDY-JW",
+   "rect": [
+    13500,
+    11100,
+    13600,
+    11550
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING",
+   "wall_family": "BAY_ENCLOSURE",
+   "existence": "CONFIRMED",
+   "confidence": "MEDIUM",
+   "thickness_status": "BLOCKOUT_TEMP_VALUE_TO_VERIFY",
+   "evidence": "master Line107/109 cheek pair x13500-13600 y11100-11800 (drawn beyond front face)",
+   "supersedes": "none"
+  },
+  {
+   "id": "W-BAY-STUDY-JE",
+   "rect": [
+    15700,
+    11100,
+    15800,
+    11550
+   ],
+   "cls": "exterior",
+   "disp": "EXISTING",
+   "wall_family": "BAY_ENCLOSURE",
+   "existence": "CONFIRMED",
+   "confidence": "MEDIUM",
+   "thickness_status": "BLOCKOUT_TEMP_VALUE_TO_VERIFY",
+   "evidence": "master Line104/106 cheek pair x15700-15800 y11100-11800",
+   "supersedes": "none"
+  }
+ ],
+ "parapets": [
+  {
+   "id": "W-EXT-N-BAL",
+   "rect": [
+    7900,
+    13400,
+    13000,
+    13600
+   ],
+   "cls": "railing_parapet",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-BALC-W",
+   "rect": [
+    1300,
+    450,
+    1500,
+    2400
+   ],
+   "cls": "railing_parapet",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-BALC-S",
+   "rect": [
+    1300,
+    450,
+    5800,
+    650
+   ],
+   "cls": "railing_parapet",
+   "disp": "EXISTING"
+  },
+  {
+   "id": "W-NBALC-E-PAR",
+   "rect": [
+    12900,
+    11100,
+    13020,
+    13820
+   ],
+   "cls": "railing_parapet",
+   "disp": "EXISTING"
+  }
+ ],
+ "removed_walls": [
+  {
+   "id": "W-BALC-N",
+   "rect": [
+    1300,
+    2400,
+    5800,
+    2560
+   ],
+   "cls": "interior",
+   "disp": "DEMOLISHED_OWNER_CONFIRMED"
+  },
+  {
+   "id": "W-INT-X5800",
+   "rect": [
+    5700,
+    -150,
+    5900,
+    4700
+   ],
+   "cls": "interior",
+   "disp": "DEMOLISHED_OWNER_CONFIRMED"
+  },
+  {
+   "id": "W-INT-X5800-STUB",
+   "rect": [
+    5650,
+    4700,
+    5750,
+    5950
+   ],
+   "cls": "interior",
+   "disp": "DEMOLISHED_OWNER_CONFIRMED"
+  },
+  {
+   "id": "W-INT-X7900-U-OPEN",
+   "rect": [
+    7800,
+    4670,
+    7900,
+    7800
+   ],
+   "cls": "interior",
+   "disp": "PARTIAL_REMOVED_TO_VERIFY"
+  },
+  {
+   "id": "W-SHAFT-K",
+   "rect": [
+    7150,
+    750,
+    7250,
+    3650
+   ],
+   "cls": "shaft",
+   "disp": "PARTIAL_REMOVED_TO_VERIFY"
+  },
+  {
+   "id": "W-INT-DRY-STUB",
+   "rect": [
+    7150,
+    3870,
+    7250,
+    4670
+   ],
+   "cls": "interior",
+   "disp": "DEMOLISHED_OWNER_CONFIRMED"
+  },
+  {
+   "id": "W-INT-NICHE",
+   "rect": [
+    7150,
+    4700,
+    7400,
+    7800
+   ],
+   "cls": "interior",
+   "disp": "PARTIAL_REMOVED_TO_VERIFY"
+  },
+  {
+   "id": "W-INT-Y4500-bc-OPEN",
+   "rect": [
+    11400,
+    4450,
+    12900,
+    4650
+   ],
+   "cls": "interior",
+   "disp": "DEMOLISHED_OWNER_CONFIRMED"
+  },
+  {
+   "id": "W-INT-Y4500-b-CLKSEG",
+   "rect": [
+    9050,
+    4450,
+    11400,
+    4650
+   ],
+   "cls": "interior",
+   "disp": "DEMOLISHED_OWNER_CONFIRMED"
+  }
+ ],
+ "openings": [
+  {
+   "id": "ENT-1",
+   "kind": "entry_double_leaf",
+   "rect": [
+    2700,
+    5064,
+    2900,
+    6764
+   ],
+   "status": "EXISTING",
+   "source_id": "ENT-1"
+  },
+  {
+   "id": "D-SM",
+   "kind": "door",
+   "rect": [
+    8000,
+    4364,
+    8700,
+    4764
+   ],
+   "status": "EXISTING",
+   "source_id": "D-SM"
+  },
+  {
+   "id": "D-MB",
+   "kind": "door",
+   "rect": [
+    12900,
+    4564,
+    13300,
+    5064
+   ],
+   "status": "EXISTING",
+   "source_id": "D-MB"
+  },
+  {
+   "id": "D-BATHM",
+   "kind": "door",
+   "rect": [
+    12500,
+    6164,
+    13100,
+    6564
+   ],
+   "status": "EXISTING",
+   "source_id": "D-BATHM"
+  },
+  {
+   "id": "D-STUDY",
+   "kind": "door",
+   "rect": [
+    12800,
+    6564,
+    13400,
+    6964
+   ],
+   "status": "EXISTING",
+   "source_id": "D-STUDY"
+  },
+  {
+   "id": "D-GBATH",
+   "kind": "door",
+   "rect": [
+    10500,
+    7800,
+    11300,
+    8200
+   ],
+   "status": "EXISTING",
+   "source_id": "D-GBATH"
+  },
+  {
+   "id": "D-GBED",
+   "kind": "door",
+   "rect": [
+    10900,
+    7800,
+    11700,
+    8200
+   ],
+   "status": "EXISTING",
+   "source_id": "D-GBED"
+  },
+  {
+   "id": "D-ENS-OWNER",
+   "kind": "door",
+   "rect": [
+    9800,
+    6300,
+    10500,
+    6500
+   ],
+   "status": "EXISTING",
+   "source_id": "D-CLK"
+  },
+  {
+   "id": "D-CONN-MB-SMB",
+   "kind": "door",
+   "rect": [
+    11400,
+    3064,
+    12200,
+    3364
+   ],
+   "status": "EXISTING",
+   "source_id": "D-MASTER?"
+  },
+  {
+   "id": "G-GB-BALC",
+   "kind": "glazing_door_double",
+   "rect": [
+    10400,
+    10700,
+    12400,
+    10900
+   ],
+   "status": "EXISTING_KEEP",
+   "source_id": "G-GB-BALC"
+  },
+  {
+   "id": "G-DIN-LIV",
+   "kind": "sliding_glass_3track",
+   "rect": [
+    2950,
+    4530,
+    5650,
+    4715
+   ],
+   "status": "EXISTING_KEEP",
+   "source_id": "G-DIN-LIV"
+  },
+  {
+   "id": "G-LIV-NBALC",
+   "kind": "glazing_door",
+   "rect": [
+    7800,
+    11800,
+    7900,
+    12650
+   ],
+   "status": "EXISTING_CONFIRMED",
+   "source_id": "G-LIV-NBALC"
+  },
+  {
+   "id": "OPEN-COR-LIV",
+   "kind": "open_passage",
+   "rect": [
+    7150,
+    4764,
+    7400,
+    6464
+   ],
+   "status": "EXISTING_OPEN",
+   "source_id": "OPEN-COR-LIV"
+  }
+ ],
+ "windows": [
+  {
+   "id": "W-LIV-N",
+   "type": "BAY_WINDOW",
+   "rect": [
+    3800,
+    12750,
+    6900,
+    12950
+   ],
+   "orientation": "north",
+   "span": 3100,
+   "bay": {
+    "jambs": [
+     [
+      3650,
+      12950,
+      3800,
+      13800
+     ],
+     [
+      6900,
+      12950,
+      7050,
+      13800
+     ]
+    ],
+    "front": [
+     3600,
+     13800,
+     7100,
+     13900
+    ]
+   }
+  },
+  {
+   "id": "G-LIV-NBALC",
+   "type": "GLASS_DOOR",
+   "rect": [
+    7800,
+    11800,
+    7900,
+    12650
+   ],
+   "orientation": "north (vertical TV wall)",
+   "span": 850,
+   "bay": null
+  },
+  {
+   "id": "G-GB-BALC",
+   "type": "GLASS_DOOR",
+   "rect": [
+    10400,
+    10700,
+    12400,
+    10900
+   ],
+   "orientation": "north",
+   "span": 2000,
+   "bay": null
+  },
+  {
+   "id": "W-STUDY-NE",
+   "type": "BAY_WINDOW",
+   "rect": [
+    13600,
+    11350,
+    15700,
+    11550
+   ],
+   "orientation": "north (NE corner)",
+   "span": 2100,
+   "rect_orig_facade_line": [
+    13600,
+    10900,
+    15700,
+    11100
+   ],
+   "host_wall": "W-BAY-STUDY-F",
+   "note": "glazing sits at bay front plane; cheeks at x13500-13600 / x15700-15800",
+   "bay_superseded_by": [
+    "W-BAY-STUDY-F",
+    "W-BAY-STUDY-JW",
+    "W-BAY-STUDY-JE"
+   ]
+  },
+  {
+   "id": "G-DIN-LIV",
+   "type": "GLASS_SLIDING_DOOR",
+   "rect": [
+    2950,
+    4530,
+    5650,
+    4715
+   ],
+   "orientation": "interior",
+   "span": 2700,
+   "bay": null
+  },
+  {
+   "id": "W-LBALC-S",
+   "type": "BALCONY_WINDOW",
+   "rect": [
+    1300,
+    500,
+    5800,
+    700
+   ],
+   "orientation": "south outer edge",
+   "span": 4500,
+   "bay": null
+  },
+  {
+   "id": "W-KIT-S",
+   "type": "STANDARD_WINDOW",
+   "rect": [
+    6100,
+    -200,
+    7100,
+    0
+   ],
+   "orientation": "south",
+   "span": 1000,
+   "bay": null
+  },
+  {
+   "id": "W-SMB-S",
+   "type": "BAY_WINDOW",
+   "rect": [
+    8500,
+    -200,
+    10900,
+    0
+   ],
+   "orientation": "south",
+   "span": 2400,
+   "bay": {
+    "jambs": [
+     [
+      8400,
+      -700,
+      8500,
+      0
+     ],
+     [
+      10900,
+      -700,
+      11000,
+      0
+     ]
+    ],
+    "front": [
+     8400,
+     -700,
+     11000,
+     -600
+    ]
+   }
+  },
+  {
+   "id": "W-MB-S",
+   "type": "BAY_WINDOW",
+   "rect": [
+    12100,
+    -200,
+    14800,
+    0
+   ],
+   "orientation": "south",
+   "span": 2700,
+   "bay": {
+    "jambs": [
+     [
+      12000,
+      -700,
+      12100,
+      0
+     ],
+     [
+      14800,
+      -700,
+      14900,
+      0
+     ]
+    ],
+    "front": [
+     12000,
+     -700,
+     14900,
+     -600
+    ]
+   }
+  }
+ ],
+ "kitchen_cabinets": [
+  {
+   "id": "K-RUN-E",
+   "rect": [
+    7200,
+    535,
+    7800,
+    3750
+   ]
+  },
+  {
+   "id": "K-COOK",
+   "rect": [
+    7200,
+    2400,
+    7800,
+    3300
+   ]
+  },
+  {
+   "id": "K-DISHW",
+   "rect": [
+    7200,
+    1800,
+    7800,
+    2400
+   ]
+  },
+  {
+   "id": "K-BASKET",
+   "rect": [
+    7200,
+    3300,
+    7800,
+    3750
+   ]
+  },
+  {
+   "id": "K-FRIDGE-TALL",
+   "rect": [
+    5900,
+    3750,
+    7740,
+    4450
+   ]
+  },
+  {
+   "id": "K-FRIDGE",
+   "rect": [
+    6835,
+    3750,
+    7740,
+    4450
+   ]
+  },
+  {
+   "id": "K-RUN-S",
+   "rect": [
+    6100,
+    0,
+    7310,
+    600
+   ]
+  },
+  {
+   "id": "K-SINK",
+   "rect": [
+    6100,
+    0,
+    7090,
+    600
+   ]
+  },
+  {
+   "id": "K-WALL-E",
+   "rect": [
+    7420,
+    535,
+    7800,
+    3750
+   ]
+  }
+ ],
+ "spaces": [
+  {
+   "id": "R-LIVING",
+   "name": "客厅",
+   "poly": [
+    [
+     2900,
+     7900
+    ],
+    [
+     7750,
+     7900
+    ],
+    [
+     7750,
+     12750
+    ],
+    [
+     2900,
+     12750
+    ]
+   ],
+   "level": "lower"
+  },
+  {
+   "id": "R-DINING",
+   "name": "餐厅",
+   "poly": [
+    [
+     2900,
+     2560
+    ],
+    [
+     5700,
+     2560
+    ],
+    [
+     5700,
+     7900
+    ],
+    [
+     2900,
+     7900
+    ]
+   ],
+   "level": "lower"
+  },
+  {
+   "id": "R-BALC-LIFE",
+   "name": "生活阳台",
+   "poly": [
+    [
+     1500,
+     650
+    ],
+    [
+     5700,
+     650
+    ],
+    [
+     5700,
+     2400
+    ],
+    [
+     1500,
+     2400
+    ]
+   ],
+   "level": "lower"
+  },
+  {
+   "id": "R-KITCHEN",
+   "name": "厨房",
+   "poly": [
+    [
+     5900,
+     0
+    ],
+    [
+     7750,
+     0
+    ],
+    [
+     7750,
+     4450
+    ],
+    [
+     5900,
+     4450
+    ]
+   ],
+   "level": "lower"
+  },
+  {
+   "id": "R-LEISURE-W",
+   "name": "休闲厅",
+   "poly": [
+    [
+     5900,
+     4650
+    ],
+    [
+     7800,
+     4650.0
+    ],
+    [
+     7800,
+     7800.0
+    ],
+    [
+     5900,
+     7800
+    ]
+   ],
+   "level": "upper",
+   "level_authority": "HUMAN_RULING: fan-shaped leisure hall entirely UPPER_SPLIT_LEVEL +450 (supersedes auto lower/upper split)"
+  },
+  {
+   "id": "R-LEISURE-E",
+   "name": "休闲厅",
+   "poly": [
+    [
+     7800,
+     4650.0
+    ],
+    [
+     8950,
+     4650
+    ],
+    [
+     8950,
+     6300
+    ],
+    [
+     9050,
+     6300
+    ],
+    [
+     9050,
+     6500
+    ],
+    [
+     12900,
+     6500
+    ],
+    [
+     12900,
+     7800
+    ],
+    [
+     7800,
+     7800.0
+    ]
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "R-BED-S",
+   "name": "卧室",
+   "poly": [
+    [
+     8030,
+     0
+    ],
+    [
+     11400,
+     0
+    ],
+    [
+     11400,
+     4450
+    ],
+    [
+     8030,
+     4450
+    ]
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "R-MASTER",
+   "name": "主卧",
+   "poly": [
+    [
+     11600,
+     0
+    ],
+    [
+     15300,
+     0
+    ],
+    [
+     15300,
+     4450
+    ],
+    [
+     11600,
+     4450
+    ]
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "R-CLOAK",
+   "name": "衣帽间",
+   "poly": [
+    [
+     9050,
+     4650
+    ],
+    [
+     11300,
+     4650
+    ],
+    [
+     11300,
+     6300
+    ],
+    [
+     9050,
+     6300
+    ]
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "R-BATH-M",
+   "name": "主卫",
+   "poly": [
+    [
+     13100,
+     4650
+    ],
+    [
+     16300,
+     4650
+    ],
+    [
+     16300,
+     6300
+    ],
+    [
+     13100,
+     6300
+    ]
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "R-BED-N",
+   "name": "卧室",
+   "poly": [
+    [
+     13100,
+     6500
+    ],
+    [
+     16300,
+     6500
+    ],
+    [
+     16300,
+     11350
+    ],
+    [
+     13100,
+     11350
+    ]
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "R-STUDY",
+   "name": "书房",
+   "poly": [
+    [
+     9850,
+     8000
+    ],
+    [
+     12900,
+     8000
+    ],
+    [
+     12900,
+     10700
+    ],
+    [
+     9850,
+     10700
+    ]
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "R-BATH-P",
+   "name": "公卫",
+   "poly": [
+    [
+     7900,
+     8000
+    ],
+    [
+     9650,
+     8000
+    ],
+    [
+     9650,
+     10700
+    ],
+    [
+     7900,
+     10700
+    ]
+   ],
+   "level": "upper"
+  },
+  {
+   "id": "R-BALC-N",
+   "name": "阳台",
+   "poly": [
+    [
+     7900,
+     10900
+    ],
+    [
+     13000,
+     10900
+    ],
+    [
+     13000,
+     13400
+    ],
+    [
+     7900,
+     13400
+    ]
+   ],
+   "level": "lower"
+  }
+ ],
+ "balconies": [
+  {
+   "id": "north_balcony",
+   "poly": [
+    [
+     7900,
+     10900
+    ],
+    [
+     13020,
+     10900
+    ],
+    [
+     13020,
+     13600
+    ],
+    [
+     7900,
+     13600
+    ]
+   ],
+   "open": true
+  },
+  {
+   "id": "life_balcony",
+   "poly": [
+    [
+     1300,
+     450
+    ],
+    [
+     5800,
+     450
+    ],
+    [
+     5800,
+     2560
+    ],
+    [
+     1300,
+     2560
+    ]
+   ],
+   "open": false
+  }
+ ],
+ "stairs": {
+  "zone": [
+   7200.0,
+   6600.0,
+   7800.0,
+   7800.0
+  ],
+  "risers": 3,
+  "tread": 200,
+  "delta_mm": 450,
+  "steps": [
+   [
+    7200,
+    6600,
+    7400,
+    7800,
+    150
+   ],
+   [
+    7400,
+    6600,
+    7600,
+    7800,
+    300
+   ],
+   [
+    7600,
+    6600,
+    7800,
+    7800,
+    450
+   ]
+  ],
+  "status": "APPROX_CONFIRMED (per Z_DATUM_SPEC; EXACT_SITE_MEASUREMENT=TO_VERIFY); supersedes former 350mm/2-riser TEMP"
+ },
+ "ramp": {
+  "id": "RAMP-FUTURE",
+  "rect": [
+   5727.875,
+   4727.5625,
+   7827.875,
+   5827.5625
+  ],
+  "label": "斜坡给未来轮椅使用预留",
+  "authority": "HUMAN_FUTURE_DESIGN_INTENT",
+  "physical_ground_truth": false,
+  "collection": "91_ACCESSIBILITY_OPTIONS"
+ },
+ "furniture": [
+  {
+   "obj": "Rectangle004",
+   "label": "电视柜（或者悬浮电视墙）",
+   "rect": [
+    7398.0,
+    8634.9375,
+    7696.875,
+    11523.84375
+   ],
+   "shape": "box",
+   "w": 299,
+   "d": 2889,
+   "zone": "R-LIVING"
+  },
+  {
+   "obj": "Rectangle007",
+   "label": "客卫（湿区）",
+   "rect": [
+    8033.625,
+    9884.0625,
+    9677.375,
+    10697
+   ],
+   "shape": "box",
+   "w": 1644,
+   "d": 996,
+   "zone": "R-BATH-P"
+  },
+  {
+   "obj": "Rectangle008",
+   "label": "客卫马桶",
+   "rect": [
+    8020.625,
+    9332.28125,
+    8767.75,
+    9656.03125
+   ],
+   "shape": "box",
+   "w": 747,
+   "d": 324,
+   "zone": "R-BATH-P"
+  },
+  {
+   "obj": "Rectangle011",
+   "label": "次主卧床头占位",
+   "rect": [
+    11183.5,
+    889.65625,
+    11382.75,
+    3529.53125
+   ],
+   "shape": "box",
+   "w": 199,
+   "d": 2640,
+   "zone": "R-BED-S"
+  },
+  {
+   "obj": "Rectangle012",
+   "label": "次主卧床",
+   "rect": [
+    9066.625,
+    1537.15625,
+    11166.625,
+    3037.15625
+   ],
+   "shape": "box",
+   "w": 2100,
+   "d": 1500,
+   "zone": "R-BED-S"
+  },
+  {
+   "obj": "Rectangle013",
+   "label": "主卧床",
+   "rect": [
+    12942.875,
+    1645.53125,
+    15042.875,
+    3145.53125
+   ],
+   "shape": "box",
+   "w": 2100,
+   "d": 1500,
+   "zone": "R-MASTER"
+  },
+  {
+   "obj": "Rectangle014",
+   "label": "主卧床头柜占位",
+   "rect": [
+    15093.375,
+    1113.78125,
+    15243.375,
+    3613.78125
+   ],
+   "shape": "box",
+   "w": 150,
+   "d": 2500,
+   "zone": "R-MASTER"
+  },
+  {
+   "obj": "Rectangle015",
+   "label": "主卧衣柜",
+   "rect": [
+    13175.875,
+    3847.0,
+    15275.875,
+    4447.0
+   ],
+   "shape": "box",
+   "w": 2100,
+   "d": 600,
+   "zone": "R-MASTER"
+  },
+  {
+   "obj": "Rectangle017",
+   "label": "次卧小床1.2",
+   "rect": [
+    10878.375,
+    8019.84375,
+    12678.375,
+    9219.84375
+   ],
+   "shape": "box",
+   "w": 1800,
+   "d": 1200,
+   "zone": "R-STUDY"
+  },
+  {
+   "obj": "Rectangle021",
+   "label": "次主卧衣柜",
+   "rect": [
+    9863.625,
+    3853.28125,
+    11363.625,
+    4453.28125
+   ],
+   "shape": "box",
+   "w": 1500,
+   "d": 600,
+   "zone": "R-BED-S"
+  },
+  {
+   "obj": "Rectangle022",
+   "label": "主卧电视柜",
+   "rect": [
+    11606.875,
+    1337.9375,
+    12106.875,
+    3337.9375
+   ],
+   "shape": "box",
+   "w": 500,
+   "d": 2000,
+   "zone": "R-MASTER"
+  },
+  {
+   "obj": "Rectangle023",
+   "label": "次主卧电视柜",
+   "rect": [
+    8070.375,
+    1337.9375,
+    8570.375,
+    3337.9375
+   ],
+   "shape": "box",
+   "w": 500,
+   "d": 2000,
+   "zone": "R-BED-S"
+  },
+  {
+   "obj": "Rectangle024",
+   "label": "书柜",
+   "rect": [
+    15735.875,
+    6642.59375,
+    16185.875,
+    10842.59375
+   ],
+   "shape": "box",
+   "w": 450,
+   "d": 4200,
+   "zone": "R-BED-N"
+  },
+  {
+   "obj": "Rectangle025",
+   "label": "矮书柜",
+   "rect": [
+    14097.375,
+    6642.625,
+    15697.375,
+    7092.625
+   ],
+   "shape": "box",
+   "w": 1600,
+   "d": 450,
+   "zone": "R-BED-N"
+  },
+  {
+   "obj": "Rectangle026",
+   "label": "茶台",
+   "rect": [
+    14271.625,
+    7389.71875,
+    15071.625,
+    9589.71875
+   ],
+   "shape": "box",
+   "w": 800,
+   "d": 2200,
+   "zone": "R-BED-N"
+  },
+  {
+   "obj": "Circle007",
+   "label": "主人椅",
+   "rect": [
+    15217.25,
+    8260.59375,
+    15617.25,
+    8660.59375
+   ],
+   "shape": "box",
+   "w": 400,
+   "d": 400,
+   "zone": "R-BED-N"
+  },
+  {
+   "obj": "Rectangle027",
+   "label": "条凳",
+   "rect": [
+    13798.5,
+    7564.03125,
+    14098.5,
+    9164.03125
+   ],
+   "shape": "box",
+   "w": 300,
+   "d": 1600,
+   "zone": "R-BED-N"
+  },
+  {
+   "obj": "Circle008",
+   "label": "凳子",
+   "rect": [
+    14495.0,
+    9804.6875,
+    14895.0,
+    10204.6875
+   ],
+   "shape": "box",
+   "w": 400,
+   "d": 400,
+   "zone": "R-BED-N"
+  },
+  {
+   "obj": "Circle009",
+   "label": "次卧凳子",
+   "rect": [
+    12054.375,
+    9979.03125,
+    12454.375,
+    10379.03125
+   ],
+   "shape": "box",
+   "w": 400,
+   "d": 400,
+   "zone": "R-STUDY"
+  },
+  {
+   "obj": "Circle010",
+   "label": "餐椅",
+   "rect": [
+    3088.75,
+    3977.0625,
+    3488.75,
+    4377.0625
+   ],
+   "shape": "box",
+   "w": 400,
+   "d": 400,
+   "zone": "R-DINING"
+  },
+  {
+   "obj": "Circle011",
+   "label": "餐椅003",
+   "rect": [
+    3885.75,
+    3977.0625,
+    4285.75,
+    4377.0625
+   ],
+   "shape": "box",
+   "w": 400,
+   "d": 400,
+   "zone": "R-DINING"
+  },
+  {
+   "obj": "Circle012",
+   "label": "餐椅",
+   "rect": [
+    3113.625,
+    2482.8125,
+    3513.625,
+    2882.8125
+   ],
+   "shape": "box",
+   "w": 400,
+   "d": 400,
+   "zone": "R-DINING"
+  },
+  {
+   "obj": "Circle013",
+   "label": "餐椅004",
+   "rect": [
+    3910.625,
+    2557.5,
+    4310.625,
+    2957.5
+   ],
+   "shape": "box",
+   "w": 400,
+   "d": 400,
+   "zone": "R-DINING"
+  },
+  {
+   "obj": "Rectangle029",
+   "label": "现有橱柜",
+   "rect": [
+    1520.5,
+    740.21875,
+    2020.5,
+    2240.21875
+   ],
+   "shape": "box",
+   "w": 500,
+   "d": 1500,
+   "zone": "R-BALC-LIFE"
+  },
+  {
+   "obj": "Rectangle030",
+   "label": "客卫洗手盆柜体",
+   "rect": [
+    8008.25,
+    8012.34375,
+    8608.25,
+    9212.34375
+   ],
+   "shape": "box",
+   "w": 600,
+   "d": 1200,
+   "zone": "R-BATH-P"
+  },
+  {
+   "obj": "Rectangle031",
+   "label": "鞋柜",
+   "rect": [
+    2952.5,
+    4718.0,
+    3252.5,
+    5440.25
+   ],
+   "shape": "box",
+   "w": 300,
+   "d": 722,
+   "zone": "R-DINING"
+  },
+  {
+   "obj": "Rectangle032",
+   "label": "橱柜",
+   "rect": [
+    4322.375,
+    715.34375,
+    5522.375,
+    1215.34375
+   ],
+   "shape": "box",
+   "w": 1200,
+   "d": 500,
+   "zone": "R-BALC-LIFE"
+  },
+  {
+   "obj": "Rectangle033",
+   "label": "主卫湿区",
+   "rect": [
+    15205.625,
+    4774.75,
+    16205.625,
+    6297
+   ],
+   "shape": "box",
+   "w": 1000,
+   "d": 1569,
+   "zone": "R-BATH-M"
+  },
+  {
+   "obj": "Rectangle034",
+   "label": "主卫马桶",
+   "rect": [
+    14483.25,
+    5721.125,
+    14983.25,
+    6371.125
+   ],
+   "shape": "box",
+   "w": 500,
+   "d": 650,
+   "zone": "R-BATH-M"
+  },
+  {
+   "obj": "Rectangle035",
+   "label": "主卫洗手盆和柜体",
+   "rect": [
+    13138.5,
+    5797.0,
+    14338.5,
+    6297.0
+   ],
+   "shape": "box",
+   "w": 1200,
+   "d": 500,
+   "zone": "R-BATH-M"
+  },
+  {
+   "obj": "Rectangle036",
+   "label": "次主卫湿区",
+   "rect": [
+    10473.75,
+    4749.875,
+    11297,
+    6297
+   ],
+   "shape": "box",
+   "w": 900,
+   "d": 1600,
+   "zone": "R-CLOAK"
+  },
+  {
+   "obj": "Rectangle037",
+   "label": "次主卫台盆和柜体",
+   "rect": [
+    9419.5,
+    4750.09375,
+    10419.5,
+    5250.09375
+   ],
+   "shape": "box",
+   "w": 1000,
+   "d": 500,
+   "zone": "R-CLOAK"
+  },
+  {
+   "obj": "Rectangle038",
+   "label": "次主卫马桶",
+   "rect": [
+    9693.375,
+    5770.71875,
+    10193.375,
+    6370.71875
+   ],
+   "shape": "box",
+   "w": 500,
+   "d": 600,
+   "zone": "R-CLOAK"
+  },
+  {
+   "obj": "Rectangle039",
+   "label": "冰柜",
+   "rect": [
+    8531.25,
+    11150.3125,
+    9731.25,
+    11750.3125
+   ],
+   "shape": "box",
+   "w": 1200,
+   "d": 600,
+   "zone": "R-BALC-N"
+  },
+  {
+   "obj": "Rectangle040",
+   "label": "洗衣机+烘干机（叠放）",
+   "rect": [
+    9826.25,
+    11150.28125,
+    10426.25,
+    11750.28125
+   ],
+   "shape": "box",
+   "w": 600,
+   "d": 600,
+   "zone": "R-BALC-N"
+  },
+  {
+   "obj": "Rectangle041",
+   "label": "3kg洗衣机",
+   "rect": [
+    9188.125,
+    10386.40625,
+    9638.125,
+    10836.40625
+   ],
+   "shape": "box",
+   "w": 450,
+   "d": 450,
+   "zone": "R-BATH-P"
+  },
+  {
+   "obj": "Rectangle043",
+   "label": "打印机",
+   "rect": [
+    15277.0,
+    6664.125,
+    15677.0,
+    7064.125
+   ],
+   "shape": "box",
+   "w": 400,
+   "d": 400,
+   "zone": "R-BED-N"
+  },
+  {
+   "obj": "Rectangle044",
+   "label": "nas",
+   "rect": [
+    14792.875,
+    6664.125,
+    15192.875,
+    7064.125
+   ],
+   "shape": "box",
+   "w": 400,
+   "d": 400,
+   "zone": "R-BED-N"
+  },
+  {
+   "obj": "Rectangle045",
+   "label": "次卧衣柜",
+   "rect": [
+    9918.125,
+    8884.40625,
+    10418.125,
+    10884.40625
+   ],
+   "shape": "box",
+   "w": 500,
+   "d": 2000,
+   "zone": "R-STUDY"
+  },
+  {
+   "obj": "Rectangle046",
+   "label": "三人位",
+   "rect": [
+    3401.125,
+    9215.8125,
+    4301.125,
+    11515.8125
+   ],
+   "shape": "box",
+   "w": 900,
+   "d": 2300,
+   "zone": "R-LIVING"
+  },
+  {
+   "obj": "Rectangle047",
+   "label": "双人位",
+   "rect": [
+    4571.625,
+    11980.21875,
+    6471.625,
+    12830.21875
+   ],
+   "shape": "box",
+   "w": 1900,
+   "d": 850,
+   "zone": "R-LIVING"
+  },
+  {
+   "obj": "Rectangle048",
+   "label": "贵妃椅",
+   "rect": [
+    3974.0,
+    7796.28125,
+    5674.0,
+    8696.28125
+   ],
+   "shape": "box",
+   "w": 1700,
+   "d": 900,
+   "zone": "R-LIVING"
+  },
+  {
+   "obj": "Rectangle049",
+   "label": "茶几",
+   "rect": [
+    5069.875,
+    9863.34375,
+    5619.875,
+    10863.34375
+   ],
+   "shape": "box",
+   "w": 550,
+   "d": 1000,
+   "zone": "R-LIVING"
+  },
+  {
+   "obj": "Circle",
+   "label": "角几",
+   "rect": [
+    3674.25,
+    12029.0625,
+    4174.25,
+    12529.0625
+   ],
+   "shape": "box",
+   "w": 500,
+   "d": 500,
+   "zone": "R-LIVING"
+  },
+  {
+   "obj": "Rectangle050",
+   "label": "餐桌",
+   "rect": [
+    3027.625,
+    3064.40625,
+    4627.625,
+    3864.40625
+   ],
+   "shape": "box",
+   "w": 1600,
+   "d": 800,
+   "zone": "R-DINING"
+  },
+  {
+   "obj": "Rectangle051",
+   "label": "床背板",
+   "rect": [
+    12688.125,
+    8019.53125,
+    12888.125,
+    9219.53125
+   ],
+   "shape": "box",
+   "w": 200,
+   "d": 1200,
+   "zone": "R-STUDY"
+  },
+  {
+   "obj": "Rectangle052",
+   "label": "窄书桌",
+   "rect": [
+    12531.625,
+    9235.625,
+    12881.625,
+    10885.625
+   ],
+   "shape": "box",
+   "w": 350,
+   "d": 1650,
+   "zone": "R-STUDY"
+  }
+ ],
+ "window_fidelity": [
+  {
+   "id": "W-LIV-N",
+   "canon_asm_bbox": [
+    3600,
+    12750,
+    7100,
+    13900
+   ],
+   "fc_union_bbox": [
+    2699.9147805119865,
+    13000.211904984375,
+    7799.9147805119865,
+    13900.211904984375
+   ],
+   "center_delta_mm": [
+    -100.1,
+    125.2
+   ],
+   "resolved": 16
+  },
+  {
+   "id": "G-LIV-NBALC",
+   "canon_asm_bbox": [
+    7800,
+    11800,
+    7900,
+    12650
+   ],
+   "fc_union_bbox": [
+    7799.9147805119865,
+    11100.211904984375,
+    13019.914780511986,
+    13820.211904984375
+   ],
+   "center_delta_mm": [
+    2559.9,
+    235.2
+   ],
+   "resolved": 3
+  },
+  {
+   "id": "G-GB-BALC",
+   "canon_asm_bbox": [
+    10400,
+    10700,
+    12400,
+    10900
+   ],
+   "fc_union_bbox": [
+    9899.914780511986,
+    10900.211904984375,
+    12899.914780511986,
+    11100.211904984317
+   ],
+   "center_delta_mm": [
+    -0.1,
+    200.2
+   ],
+   "resolved": 5
+  },
+  {
+   "id": "W-STUDY-NE",
+   "canon_asm_bbox": [
+    13500,
+    10900,
+    15800,
+    11800
+   ],
+   "fc_union_bbox": [
+    12399.914780511986,
+    10900.211904984375,
+    16399.914780511986,
+    11800.211904984317
+   ],
+   "center_delta_mm": [
+    -250.1,
+    0.2
+   ],
+   "resolved": 16
+  },
+  {
+   "id": "G-DIN-LIV",
+   "canon_asm_bbox": [
+    2950,
+    4530,
+    5650,
+    4715
+   ],
+   "fc_union_bbox": [
+    2899.9147805119865,
+    4485.211904984375,
+    5699.914780512918,
+    4715.211904984375
+   ],
+   "center_delta_mm": [
+    -0.1,
+    -22.3
+   ],
+   "resolved": 8
+  },
+  {
+   "id": "W-LBALC-S",
+   "canon_asm_bbox": [
+    1300,
+    500,
+    5800,
+    700
+   ],
+   "fc_union_bbox": [
+    1299.9147805119865,
+    0.21190498437499627,
+    5899.9147805119865,
+    2500.211904984375
+   ],
+   "center_delta_mm": [
+    49.9,
+    650.2
+   ],
+   "resolved": 6
+  },
+  {
+   "id": "W-KIT-S",
+   "canon_asm_bbox": [
+    6100,
+    -200,
+    7100,
+    0
+   ],
+   "fc_union_bbox": [
+    5899.9147805119865,
+    0.21190498437499627,
+    8599.914780511986,
+    200.211904984375
+   ],
+   "center_delta_mm": [
+    649.9,
+    200.2
+   ],
+   "resolved": 5
+  },
+  {
+   "id": "W-SMB-S",
+   "canon_asm_bbox": [
+    8400,
+    -700,
+    11000,
+    0
+   ],
+   "fc_union_bbox": [
+    7099.9147805119865,
+    -699.7880950155086,
+    12199.914780511986,
+    200.211904984375
+   ],
+   "center_delta_mm": [
+    -50.1,
+    100.2
+   ],
+   "resolved": 13
+  },
+  {
+   "id": "W-MB-S",
+   "canon_asm_bbox": [
+    12000,
+    -700,
+    14900,
+    0
+   ],
+   "fc_union_bbox": [
+    10799.914780511986,
+    -699.7880950155086,
+    15499.914780511986,
+    200.211904984375
+   ],
+   "center_delta_mm": [
+    -300.1,
+    100.2
+   ],
+   "resolved": 13
+  }
+ ],
+ "removed_openings": [
+  {
+   "id": "D-LIV-STUDY?",
+   "rect": [
+    7900,
+    4564,
+    8300,
+    5664
+   ],
+   "reason": "overlaps real door D-SM region; all flanking samples = R-LEISURE",
+   "resolution": "REMOVE_FALSE_SEED"
+  }
+ ],
+ "excluded_objects": {
+  "Rectangle": "unlabeled working outline overlapping 三人位 sofa zone; not a design element"
+ },
+ "formalization_delta": [
+  {
+   "label": "客卫（湿区）",
+   "obj": "Rectangle007",
+   "zone": "R-BATH-P",
+   "source_rect": [
+    8033.625,
+    9884.0625,
+    9677.375,
+    10880.21875
+   ],
+   "formal_rect": [
+    8033.625,
+    9884.0625,
+    9677.375,
+    10697
+   ],
+   "resolution": "REGION_BOUNDARY_CLEANUP",
+   "note": "wet-zone boundary clipped to wall inner face; contents unmoved"
+  },
+  {
+   "label": "主卧衣柜",
+   "obj": "Rectangle015",
+   "zone": "R-MASTER",
+   "source_rect": [
+    13175.875,
+    3878.21875,
+    15275.875,
+    4478.21875
+   ],
+   "formal_rect": [
+    13175.875,
+    3847.0,
+    15275.875,
+    4447.0
+   ],
+   "shift_mm": [
+    0.0,
+    -31.21875
+   ],
+   "dims_mm": [
+    2100,
+    600
+   ],
+   "resolution": "AUTO_DRAFTING_CLEANUP"
+  },
+  {
+   "label": "次卧小床1.2",
+   "obj": "Rectangle017",
+   "zone": "R-STUDY",
+   "source_rect": [
+    10878.375,
+    8019.84375,
+    12678.375,
+    9219.84375
+   ],
+   "formal_rect": [
+    10878.375,
+    8019.84375,
+    12678.375,
+    9219.84375
+   ],
+   "resolution": "USER_MANUAL_CORRECTION_KEPT",
+   "note": "owner: human position is authoritative; residual overlap 2 rect(s) accepted"
+  },
+  {
+   "label": "主卧电视柜",
+   "obj": "Rectangle022",
+   "zone": "R-MASTER",
+   "source_rect": [
+    11606.875,
+    1337.9375,
+    12106.875,
+    3337.9375
+   ],
+   "formal_rect": [
+    11606.875,
+    1337.9375,
+    12106.875,
+    3337.9375
+   ],
+   "resolution": "HUMAN_ACCEPTED_AS_DRAWN",
+   "note": "owner approved as-drawn; NO_MOVE / NO_AUTO_FORMALIZATION / NO_FURTHER_COLLISION_FIX; residual overlap 1 rect(s)"
+  },
+  {
+   "label": "鞋柜",
+   "obj": "Rectangle031",
+   "zone": "R-DINING",
+   "source_rect": [
+    2952.5,
+    4700.03125,
+    3252.5,
+    5422.28125
+   ],
+   "formal_rect": [
+    2952.5,
+    4718.0,
+    3252.5,
+    5440.25
+   ],
+   "shift_mm": [
+    0.0,
+    17.96875
+   ],
+   "dims_mm": [
+    300,
+    722
+   ],
+   "resolution": "AUTO_DRAFTING_CLEANUP"
+  },
+  {
+   "label": "主卫湿区",
+   "obj": "Rectangle033",
+   "zone": "R-BATH-M",
+   "source_rect": [
+    15205.625,
+    4774.75,
+    16205.625,
+    6343.75
+   ],
+   "formal_rect": [
+    15205.625,
+    4774.75,
+    16205.625,
+    6297
+   ],
+   "resolution": "REGION_BOUNDARY_CLEANUP",
+   "note": "wet-zone boundary clipped to wall inner face; contents unmoved"
+  },
+  {
+   "label": "主卫马桶",
+   "obj": "Rectangle034",
+   "zone": "R-BATH-M",
+   "source_rect": [
+    14483.25,
+    5721.125,
+    14983.25,
+    6371.125
+   ],
+   "formal_rect": [
+    14483.25,
+    5721.125,
+    14983.25,
+    6371.125
+   ],
+   "resolution": "HUMAN_ACCEPTED_AS_DRAWN",
+   "note": "owner approved as-drawn; NO_MOVE / NO_AUTO_FORMALIZATION / NO_FURTHER_COLLISION_FIX; residual overlap 1 rect(s)"
+  },
+  {
+   "label": "主卫洗手盆和柜体",
+   "obj": "Rectangle035",
+   "zone": "R-BATH-M",
+   "source_rect": [
+    13138.5,
+    5845.6875,
+    14338.5,
+    6345.6875
+   ],
+   "formal_rect": [
+    13138.5,
+    5797.0,
+    14338.5,
+    6297.0
+   ],
+   "shift_mm": [
+    0.0,
+    -48.6875
+   ],
+   "dims_mm": [
+    1200,
+    500
+   ],
+   "resolution": "AUTO_DRAFTING_CLEANUP"
+  },
+  {
+   "label": "次主卫湿区",
+   "obj": "Rectangle036",
+   "zone": "R-CLOAK",
+   "source_rect": [
+    10473.75,
+    4749.875,
+    11373.75,
+    6349.875
+   ],
+   "formal_rect": [
+    10473.75,
+    4749.875,
+    11297,
+    6297
+   ],
+   "resolution": "REGION_BOUNDARY_CLEANUP",
+   "note": "wet-zone boundary clipped to wall inner face; contents unmoved"
+  },
+  {
+   "label": "次主卫马桶",
+   "obj": "Rectangle038",
+   "zone": "R-CLOAK",
+   "source_rect": [
+    9693.375,
+    5770.71875,
+    10193.375,
+    6370.71875
+   ],
+   "formal_rect": [
+    9693.375,
+    5770.71875,
+    10193.375,
+    6370.71875
+   ],
+   "resolution": "HUMAN_ACCEPTED_AS_DRAWN",
+   "note": "owner approved as-drawn; NO_MOVE / NO_AUTO_FORMALIZATION / NO_FURTHER_COLLISION_FIX; residual overlap 2 rect(s)"
+  },
+  {
+   "label": "3kg洗衣机",
+   "obj": "Rectangle041",
+   "zone": "R-BATH-P",
+   "source_rect": [
+    9188.125,
+    10386.40625,
+    9638.125,
+    10836.40625
+   ],
+   "formal_rect": [
+    9188.125,
+    10386.40625,
+    9638.125,
+    10836.40625
+   ],
+   "resolution": "USER_MANUAL_CORRECTION_KEPT",
+   "note": "owner: human position is authoritative; residual overlap 1 rect(s) accepted"
+  },
+  {
+   "label": "次卧衣柜",
+   "obj": "Rectangle045",
+   "zone": "R-STUDY",
+   "source_rect": [
+    9918.125,
+    8884.40625,
+    10418.125,
+    10884.40625
+   ],
+   "formal_rect": [
+    9918.125,
+    8884.40625,
+    10418.125,
+    10884.40625
+   ],
+   "resolution": "USER_MANUAL_CORRECTION_KEPT",
+   "note": "owner: human position is authoritative; residual overlap 3 rect(s) accepted"
+  },
+  {
+   "label": "双人位",
+   "obj": "Rectangle047",
+   "zone": "R-LIVING",
+   "source_rect": [
+    4571.625,
+    11980.21875,
+    6471.625,
+    12830.21875
+   ],
+   "formal_rect": [
+    4571.625,
+    11980.21875,
+    6471.625,
+    12830.21875
+   ],
+   "resolution": "HUMAN_ACCEPTED_AS_DRAWN",
+   "note": "owner approved as-drawn; NO_MOVE / NO_AUTO_FORMALIZATION / NO_FURTHER_COLLISION_FIX; residual overlap 1 rect(s)"
+  },
+  {
+   "label": "床背板",
+   "obj": "Rectangle051",
+   "zone": "R-STUDY",
+   "source_rect": [
+    12688.125,
+    8019.53125,
+    12888.125,
+    9219.53125
+   ],
+   "formal_rect": [
+    12688.125,
+    8019.53125,
+    12888.125,
+    9219.53125
+   ],
+   "resolution": "USER_MANUAL_CORRECTION_KEPT",
+   "note": "owner: human position is authoritative; residual overlap 0 rect(s) accepted"
+  },
+  {
+   "label": "窄书桌",
+   "obj": "Rectangle052",
+   "zone": "R-STUDY",
+   "source_rect": [
+    12531.625,
+    9235.625,
+    12881.625,
+    10885.625
+   ],
+   "formal_rect": [
+    12531.625,
+    9235.625,
+    12881.625,
+    10885.625
+   ],
+   "resolution": "USER_MANUAL_CORRECTION_KEPT",
+   "note": "owner: human position is authoritative; residual overlap 1 rect(s) accepted"
+  }
+ ],
+ "sources": {
+  "arch": "current_existing/canonical_plan_v1.json",
+  "spaces": "data/geometry.json",
+  "furniture": "PRE_BLENDER_MASTER_V2.FCStd via b1_fcstd_objects.json",
+  "transform_fc_to_canon": [
+   -1298172.0,
+   296458.0
+  ]
+ }
+}

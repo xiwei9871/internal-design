@@ -1,0 +1,30 @@
+[
+  {
+    "camera": "DOOR_CONTEXT",
+    "angle": 0,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/renders/R4_A_DOOR_CONTEXT_00.png",
+    "sha256": "729f3ad6aaf6d74dcb618b61cd4040c522bfbb5c0b317480c2113b9b50686506",
+    "source_saved": false
+  },
+  {
+    "camera": "DOOR_FRONT",
+    "angle": 0,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/renders/R4_A_DOOR_FRONT_00.png",
+    "sha256": "118045decb1d3eafa625d4a5d88fba6e3ce643e18ceb320296b2c23c27b4036c",
+    "source_saved": false
+  },
+  {
+    "camera": "DOOR_FRONT",
+    "angle": 45,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/renders/R4_A_DOOR_FRONT_45.png",
+    "sha256": "90c544ecd11b06c62c5189f15866e6495572fff1f96b38d1e77de7b286a9427f",
+    "source_saved": false
+  },
+  {
+    "camera": "DOOR_AXON",
+    "angle": 90,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/renders/R4_A_DOOR_AXON_90.png",
+    "sha256": "e20f85bc89afa91a5247c0c3682036f826ebb4b9559fb88a06585462a40cae1d",
+    "source_saved": false
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "revision": "2026-10-09-faithful-first",
+  "enabled_levels": [
+    "A_faithful"
+  ],
+  "deferred_levels": [
+    "B_designer",
+    "C_creative"
+  ],
+  "authorization": "Owner accepts V2 photographic character, requests Faithful throughout house before targeted Designer/Creative work.",
+  "preserve_successful_outputs": true,
+  "maximum_estimated_input_bytes": 25165824,
+  "review_transport": "JPEG derivatives and compact manifests; original PNGs remain on disk.",
+  "human_review_after_faithful": true,
+  "expected_faithful_images": 75,
+  "room_count": 15,
+  "kitchen_hero": "Reuse accepted kitchen A; add four geometry-controlled views.",
+  "maximum_logical_transient_retry": 1
+}

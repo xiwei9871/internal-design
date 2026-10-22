@@ -1,0 +1,39 @@
+[
+  {
+    "id": "01",
+    "name": "用户标注相同轴测角度",
+    "camera": "DOOR_V2_CAM_02",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/renders/D107_SIDES_01.png",
+    "sha256": "f908fd317fed109a5bc7b5c9a6174cba90e587d03ee5a5a635390e4940f724b7",
+    "wall_cuts": [],
+    "source_saved": false,
+    "resolution": [
+      1600,
+      1200
+    ]
+  },
+  {
+    "id": "02",
+    "name": "正面检查红侧50蓝侧0",
+    "camera": "D107_V3_FRONT",
+    "pos": [
+      7.472407817840576,
+      7.241467475891113,
+      1.850000023841858
+    ],
+    "target": [
+      8.713006973266602,
+      4.7313055992126465,
+      1.850000023841858
+    ],
+    "scale": 3.9,
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_correction_v3/renders/D107_SIDES_02.png",
+    "sha256": "5686728740937e3b43515a5b4f760d07ae0b7847cc68617b66a782cc0812e97c",
+    "wall_cuts": [],
+    "source_saved": false,
+    "resolution": [
+      1600,
+      1200
+    ]
+  }
+]

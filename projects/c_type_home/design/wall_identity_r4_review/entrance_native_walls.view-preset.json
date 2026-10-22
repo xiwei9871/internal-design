@@ -1,0 +1,62 @@
+{
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "entrance_native_walls",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_walls_review",
+  "source_revision": "r4-walls-view-review-1",
+  "source_sha256": "564ae8b36caea702d4ea556619f153bbe84e1ee04398f123a38f047bca2cedd6",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_identity_r4_review/OPTION_A_R4_NATIVE_WALL_PARTS_REVIEW.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "8-native-wall-view-parts",
+    "sha256": "c257c053384cba650fbe738e134c00b8e16af1a6c340cf8cbe5309079327bd56",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_identity_r4_review/spatial-canvas.bindings.json"
+  },
+  "preview_uri": "entrance_native_walls.png",
+  "near": 0.03,
+  "far": 100,
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "position": [
+    3.080000000000001,
+    1.6,
+    -5.989999999999999
+  ],
+  "quaternion": [
+    -0.048955699741721474,
+    -0.6492161423933825,
+    -0.04193719124723543,
+    0.7578674105072379
+  ],
+  "orbit_target": [
+    7.650000000000001,
+    0.9999999999999999,
+    -6.699999999999999
+  ],
+  "viewport": {
+    "width": 873,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_camera": {
+    "position": [
+      3.080000000000001,
+      5.989999999999999,
+      1.6
+    ],
+    "quaternion": [
+      0.5012762779448532,
+      -0.4294110644272947,
+      -0.4887192090569693,
+      0.5705100924750607
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": []
+}

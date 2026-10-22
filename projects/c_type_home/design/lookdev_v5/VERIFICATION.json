@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "fresh_reopen": true,
+  "preserved_meshes": 2162,
+  "changed_soft_meshes": [
+    "V4_Sofa_chaise_upholstery",
+    "V4_Sofa_seat_middle",
+    "V4_Sofa_seat_north",
+    "V4_Sofa_back_0",
+    "V4_Sofa_back_1",
+    "V4_Sofa_back_2",
+    "V4_Chaise_full_seat",
+    "V4_Chaise_full_back"
+  ],
+  "room_camera_lights_color_unchanged": true,
+  "protected_hashes_pass": 8,
+  "envelopes": {
+    "V4_LIVING_SOFA_COMPLETE": [
+      [
+        3.4040000438690186,
+        7.951000213623047,
+        0.0
+      ],
+      [
+        5.200000286102295,
+        11.249000549316406,
+        0.6959999799728394
+      ]
+    ],
+    "V4_WINDOW_CHAISE_COMPLETE": [
+      [
+        4.709499835968018,
+        11.06350040435791,
+        -0.00014513637870550156
+      ],
+      [
+        6.3398823738098145,
+        11.946499824523926,
+        0.7813289165496826
+      ]
+    ]
+  },
+  "seat_gaps_mm": [
+    7.500648498535156,
+    10.000228881835938
+  ],
+  "seat_bottom_to_deck_top_mm": [
+    2.622604372559678e-05,
+    2.622604372559678e-05,
+    2.622604372559678e-05
+  ],
+  "missing_images": [],
+  "packed_images": 26,
+  "output_sha256": "94661776fe34a45b73b540765ca6391a63e34a0940b5b84d461abd8b4657cd76",
+  "visual_acceptance": "OWNER_REVIEW_REQUIRED",
+  "not_certified": "exactproductSKU,fillingmechanics,constructionorhumanergonomics"
+}

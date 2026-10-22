@@ -1,0 +1,30 @@
+{
+  "view": {
+    "id": "03",
+    "name": "冰箱与两侧柜列",
+    "slug": "fridge_columns",
+    "camera": "KITCHEN_REVIEW_CAM_03",
+    "pos": [
+      6.6,
+      0.85,
+      1.6
+    ],
+    "target": [
+      6.66,
+      4.05,
+      1.205
+    ],
+    "projection": "PERSP",
+    "lens": 28,
+    "cut": 0.45
+  },
+  "resolution": [
+    2000,
+    1500
+  ],
+  "engine": "BLENDER_WORKBENCH",
+  "blender_version": "5.2.1 LTS",
+  "same_camera_as_V2": true,
+  "source_saved": false,
+  "temporary_cuts_only": true
+}

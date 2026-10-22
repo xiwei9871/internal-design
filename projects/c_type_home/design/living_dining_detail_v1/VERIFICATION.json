@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "fresh_reopen": true,
+  "unchanged_source_meshes_and_matrices": 977,
+  "evaluated_envelopes": {
+    "COFFEE_TABLE": {
+      "bounds_m": [
+        [
+          5.025000095367432,
+          9.489999771118164,
+          0.0
+        ],
+        [
+          5.575000286102295,
+          10.489999771118164,
+          0.4000000059604645
+        ]
+      ],
+      "source_envelope_m": [
+        [
+          5.025,
+          9.49,
+          0
+        ],
+        [
+          5.575,
+          10.49,
+          0.4
+        ]
+      ],
+      "within_source_envelope_3mm": true
+    },
+    "RACETRACK_DINING_TABLE": {
+      "bounds_m": [
+        [
+          3.02762508392334,
+          3.064405918121338,
+          0.0
+        ],
+        [
+          4.627624988555908,
+          3.864406108856201,
+          0.75
+        ]
+      ],
+      "source_envelope_m": [
+        [
+          3.027625,
+          3.064406,
+          0
+        ],
+        [
+          4.627625,
+          3.864406,
+          0.75
+        ]
+      ],
+      "within_source_envelope_3mm": true
+    },
+    "L_SOFA": {
+      "bounds_m": [
+        [
+          3.4000000953674316,
+          7.949999809265137,
+          0.0
+        ],
+        [
+          5.200000286102295,
+          11.25,
+          0.699999988079071
+        ]
+      ],
+      "source_envelope_m": [
+        [
+          3.4,
+          7.95,
+          0
+        ],
+        [
+          5.2,
+          11.25,
+          0.7
+        ]
+      ],
+      "within_source_envelope_3mm": true
+    },
+    "WINDOW_CHAISE": {
+      "bounds_m": [
+        [
+          4.730915546417236,
+          11.057000160217285,
+          0.000754079781472683
+        ],
+        [
+          6.353870391845703,
+          11.95300006866455,
+          0.7833319306373596
+        ]
+      ],
+      "source_envelope_m": [
+        [
+          4.671625,
+          11.05522,
+          0
+        ],
+        [
+          6.371625,
+          11.95522,
+          0.8
+        ]
+      ],
+      "within_source_envelope_3mm": true
+    }
+  },
+  "four_chairs_within_400mm_xy": true,
+  "missing_images": [],
+  "packed_images": 9,
+  "safety_and_manufacturing_certification": false
+}

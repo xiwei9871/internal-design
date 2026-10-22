@@ -1,0 +1,65 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_living_wave35_aluminum_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_SUNROOM_DOOR_CLEAR_SOFA_REVIEW_12.blend",
+  "source_sha256": "d73835d9b0c3ab0b7edab5469a8421d1e65ef65d79ddf168bede725d48ffc78f",
+  "source_revision": "r4-sunroom-door-clear-sofa-review-12",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "22-sunroom-door-clearance-sofa",
+        "sha256": "3b301e84ed086ed02a4ab39b45feb6fd8c309426a4dd34f7c12d6056ef74b8c7",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.review12.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": false,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 633,
+        "display_floor": 5,
+        "source_flat": 76,
+        "display_furniture": 334,
+        "balcony_glass": 3,
+        "balcony_aluminum": 9
+      },
+      "flat_color_count": 25,
+      "profile": "zoning-with-north-balcony-glass-and-aluminum",
+      "glass_alpha": 0.32,
+      "texture_free": true
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "correction": "Remove foldingbase/counter/upper and door-frontbench/table;1450x750x800 compact sofa east oflaundry,ends before glazeddoor. Add89cm-high flip-up worktop leaves over chestfreezer. Owner accepts eastfreezer smalldoor overlap;freezer and adjacent cabinet remain identical toreview11.",
+      "parent_source_resource_id": "c_type_r4",
+      "parent_source_revision": "r4",
+      "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "east_freezer_unchanged": true,
+      "east_freezer_overlap_accepted_by_owner": true,
+      "freezer_countertop_fixed": false
+    }
+  },
+  "entity_count": 1057,
+  "scope": "full"
+}

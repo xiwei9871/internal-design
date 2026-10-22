@@ -1,0 +1,19 @@
+# Whole-house photographic studies V2
+
+2026-10-09 owner clarification: this V2 photographic result is broadly accepted. Complete A_faithful throughout the house first; defer B_designer/C_creative until the owner names unsatisfactory areas. Do not treat this acceptance as an automatic geometry or construction approval. Persistent GENERATION_POLICY.json blocks deferred generation; prior successful outputs and prompts stay intact. All 15 rooms now have five Faithful targets (75); the accepted kitchen A is reused and four kitchen views are added. New per-level hero gates, a locked serial coordinator, JPEG gallery thumbnails and a conservative 24 MiB edit-input budget support cached continuation. STYLE_SEPARATION_V3.md records future targeted material/light proposals; visual differentiation remains unverified until a small comparison is actually generated and reviewed.
+
+The reported 128 MB error is recorded as a Codex task_complete error in the original Spatial canvas chat, not in Image2 job logs. The original rollout contains 22 such API failures and approximately 77 MB of encoded image-bearing entries. Each Image2 edit uses roughly 2–5 MB of image files; its coordinator cleanly stopped at 66/210 awaiting twelve room hero reviews. The existing heartbeat was retargeted from the oversized old chat to this fresh continuation chat. Gallery JPEG derivatives and small per-room review sheets reduce new image transport; original PNGs stay unchanged. This does not change any provider hard limit or repair the old chat history. Never serialize image collections or attach entire galleries.
+
+Owner approved the corrected kitchen image method on2026-10-08 and authorized other rooms. Prior175imagebatch was rejected for insufficient variation/poorphoto character; never resume its50missingcalls. Keep all previous artifacts.
+
+Current authority: CONSOLE400_THREE_BATH_MIRRORS.blend, console400-three-bath-mirrors-review-1; approved75camera registry V3. Kitchensample3images preserved separately. Other14rooms×5views×3levels=210newtargets. No source geometry or furniture layout edit/promotion.
+
+Inputs: eachview approvedgeometrypreview; acceptedkitchenphoto onlytexture/photographic character; croppedactualMuJiaMuYi catalog photos for furniture workmanship; explicitroominvariantsand3visiblefurniture/materialhypotheses. Sourceclaycolors/shadingnotstyleauthority. No people; no inventedceiling/door/window or extra seat. Bedroomgreenplane isflexibleclothrunner, nothardboard. Sourceappliance/fixturemechanismrealism required.
+
+Use installedpersistentImage2launcher only, highquality,1920×1080requested; native sizes recorded without claiming/upscaling. APIcredentials absentfromrepo. Serialprovider calls;401/403/429stopsbatch; transientfailure max1logicalretry; cache successfuloutputs; no repeatingfailedrequestswithoutreview.
+
+Roomphase:3heroesfirst; agent opensall3checksphotoquality,visiblevariation,architectural/furnitureinvariants; HERO_QA.json mustPASS_FOR_PROPAGATION before12followups. Thisgate meanscandidatecamera propagation, nothumanstyleapproval. Hero ofsamevariant becomesappearance reference withnextviewgeometry controllingcamera. Viewdrift stillrequiresmanual review; noautomaticscorePASS.
+
+photo_study_v2.py definesroomvariants/jobs; photo_study_v2_gallery.py creates14matrices/counts/gallery; photo_study_v2_coordinator.py isonecachedserialprocess, doesnotduplicatequeues. Heartbeat reviewsnewheroes/followups and resumescache whenpreviousprocesshasexited. Generatedrenders/nativecatalogcropimages remainlocalonly.
+
+Initialcheckpoint:living/dining6heroesgeneratedandvisuallyopened. Livinginitial429s recoveredonceeach; do notreattemptthesejobs. Backgroundcoordinator extendsliving/diningviewsthenotherroomheroes. Task remainsACTIVE; final210counts,geometry/visualQA andhumanstyle selection outstanding.

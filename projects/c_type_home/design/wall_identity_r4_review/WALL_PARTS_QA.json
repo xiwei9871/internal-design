@@ -1,0 +1,59 @@
+{
+  "status": "HUMAN_REVIEW",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_identity_r4_review/OPTION_A_R4_NATIVE_WALL_PARTS_REVIEW.blend",
+  "sha256": "564ae8b36caea702d4ea556619f153bbe84e1ee04398f123a38f047bca2cedd6",
+  "wall_summaries": [
+    {
+      "parent": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "source_triangles": 9030,
+      "source_area_m2": 637.301237904044,
+      "partition_area_m2": 637.3012423036275,
+      "wall_parts": 96,
+      "junction_residual_area_m2": 0,
+      "cross_boundary_fragments": 415
+    },
+    {
+      "parent": "R3_COMPLETE_PARTITION_WALLS",
+      "source_triangles": 156,
+      "source_area_m2": 27.587133421119688,
+      "partition_area_m2": 27.587133119115606,
+      "wall_parts": 2,
+      "junction_residual_area_m2": 0,
+      "cross_boundary_fragments": 0
+    }
+  ],
+  "new_wall_part_count": 98,
+  "retained_other_entity_ids": 919,
+  "entity_count": 1017,
+  "all_other_object_states_unchanged": true,
+  "source_wall_geometry_unchanged": true,
+  "aggregate_wall_surface_area_preserved": true,
+  "fresh_reopen_verified": true,
+  "frozen_files_unchanged": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": {
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "size": 1584568,
+      "mtime_ns": "1790946023854530466"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_APPROVED_AS_IS_V1.blend": {
+      "sha256": "28b289a38dbabafbc312e18b3057f232c51c44c07735b1cfcbd39aea39fd0536",
+      "size": 820968,
+      "mtime_ns": "1790851920866005988"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_DELIVERY_MANIFEST.json": {
+      "sha256": "913dde0a9723567917ce109c9d305e282f4bec38b601713853682596d7a86824",
+      "size": 1528,
+      "mtime_ns": "1790946877342285248"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_FREEZE_MANIFEST.json": {
+      "sha256": "25275a227e0ef9093727034f8802934c9d0d3b6b0351137fba6476ba181c72df",
+      "size": 19203,
+      "mtime_ns": "1790852612374550735"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/OPTION_A_R4_DINING_CHAIRS_ALIGNED_REVIEW.blend": {
+      "sha256": "e2f3f107eb6619ae28a363e0e4e36019cdae94c89aabe9ac4b8c0c07b14b14ac",
+      "size": 1585136,
+      "mtime_ns": "1791190919628201693"
+    }
+  }
+}

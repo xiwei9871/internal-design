@@ -1,0 +1,78 @@
+[
+  {
+    "version": "after",
+    "view": "bed",
+    "camera": "CAM_couple_bedroom_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/review_final/after_bed.png",
+    "resolution": [
+      1600,
+      900
+    ],
+    "samples": 128,
+    "seconds": 37.04,
+    "source_sha256": "d8dd612d536e9b38e393e5983c33d3dc56a96e2c629cc37b80a315956d07bd7e"
+  },
+  {
+    "version": "after",
+    "view": "living",
+    "camera": "CAM_living_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/review_final/after_living.png",
+    "resolution": [
+      1600,
+      900
+    ],
+    "samples": 128,
+    "seconds": 43.95,
+    "source_sha256": "d8dd612d536e9b38e393e5983c33d3dc56a96e2c629cc37b80a315956d07bd7e"
+  },
+  {
+    "version": "after",
+    "view": "entry",
+    "camera": "CAM_entry_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/review_final/after_entry.png",
+    "resolution": [
+      1600,
+      900
+    ],
+    "samples": 128,
+    "seconds": 35.84,
+    "source_sha256": "d8dd612d536e9b38e393e5983c33d3dc56a96e2c629cc37b80a315956d07bd7e"
+  },
+  {
+    "version": "after",
+    "view": "hallway",
+    "camera": "CAM_hallway_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/review_final/after_hallway.png",
+    "resolution": [
+      1600,
+      900
+    ],
+    "samples": 128,
+    "seconds": 33.34,
+    "source_sha256": "d8dd612d536e9b38e393e5983c33d3dc56a96e2c629cc37b80a315956d07bd7e"
+  },
+  {
+    "version": "before_ceiling",
+    "view": "axon",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/review_final/before_ceiling.png",
+    "engine": "WORKBENCH",
+    "geometry_evidence_only": true,
+    "source_sha256": "3d75cbabe06a0bbace8fb95fb395bcc7f645ed5d26d6fed2d1fb094f0881f63a"
+  },
+  {
+    "version": "after_ceiling",
+    "view": "axon",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/review_final/after_ceiling.png",
+    "engine": "WORKBENCH",
+    "geometry_evidence_only": true,
+    "source_sha256": "d8dd612d536e9b38e393e5983c33d3dc56a96e2c629cc37b80a315956d07bd7e"
+  },
+  {
+    "version": "after_open",
+    "view": "axon",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/pale_ash_review_v7/review_final/after_open.png",
+    "engine": "WORKBENCH",
+    "geometry_evidence_only": true,
+    "source_sha256": "d8dd612d536e9b38e393e5983c33d3dc56a96e2c629cc37b80a315956d07bd7e"
+  }
+]

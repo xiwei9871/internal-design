@@ -1,0 +1,11 @@
+{
+  "facing_overrides": {
+    "status": "DESIGN_DECISION_REQUIRED",
+    "approved": false,
+    "items": ["Rectangle032", "Rectangle030", "Rectangle035"]
+  },
+  "ceiling_detail": {
+    "status": "DESIGN_DECISION_REQUIRED",
+    "action": "INHERIT_FROZEN_CEILING_BLOCKOUT; DO_NOT_INVENT_COFFERS_OR_LIGHT_SLOTS"
+  }
+}

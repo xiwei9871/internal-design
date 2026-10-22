@@ -1,0 +1,60 @@
+{
+  "stage": "final",
+  "engine": "CYCLES",
+  "device": "METAL",
+  "samples": 128,
+  "denoiser": "OPENIMAGEDENOISE",
+  "color_management": {
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.25
+  },
+  "renders": [
+    {
+      "camera": "CAM_living_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/living_dining_detail_v1/final/CAM_living_VIEW_01.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "seconds": 36.64
+    },
+    {
+      "camera": "CAM_living_VIEW_02",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/living_dining_detail_v1/final/CAM_living_VIEW_02.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "seconds": 35.92
+    },
+    {
+      "camera": "CAM_dining_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/living_dining_detail_v1/final/CAM_dining_VIEW_01.png",
+      "size": [
+        1440,
+        1920
+      ],
+      "seconds": 41.84
+    },
+    {
+      "camera": "LD_CAM_living_DETAIL",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/living_dining_detail_v1/final/LD_CAM_living_DETAIL.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "seconds": 37.07
+    },
+    {
+      "camera": "LD_CAM_dining_DETAIL",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/living_dining_detail_v1/final/LD_CAM_dining_DETAIL.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "seconds": 40.32
+    }
+  ],
+  "denoising_use_gpu": true
+}

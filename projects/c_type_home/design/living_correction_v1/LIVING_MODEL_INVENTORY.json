@@ -1,0 +1,3540 @@
+{
+  "model": "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/B1_1_DESIGN_MODEL_V1.blend",
+  "model_sha256": "31beb580133e81c64c92dc71d4bb1213f6b0b9151e013c1fa1d5fac2d33178bd",
+  "blend_version": "5.2.1 LTS",
+  "object_count": 755,
+  "collections": [
+    "00_EXISTING_ARCH_GROUND_TRUTH",
+    "01_EXISTING_OPENINGS",
+    "02_EXISTING_SPLIT_LEVEL",
+    "03_EXISTING_CEILING",
+    "04_EXISTING_STAIRS",
+    "05_HUMAN_DESIGN_GUIDE",
+    "90_FUTURE_DESIGN_OPTIONS",
+    "91_ACCESSIBILITY_OPTIONS",
+    "99_TO_VERIFY",
+    "COL_B11_BATHROOMS",
+    "COL_B11_BAY_ASSEMBLIES",
+    "COL_B11_CORE_FURNITURE",
+    "COL_B11_KITCHEN",
+    "COL_B11_OPENING_DETAILS",
+    "COL_B11_PENDING_INSTALL",
+    "COL_B11_REVIEW_CAMERAS",
+    "COL_B11_REVIEW_MARKERS",
+    "COL_B11_SPLIT_FINISHING",
+    "COL_B11_STORAGE",
+    "Collection"
+  ],
+  "objects": [
+    {
+      "name": "B11_BAY_W-LIV-N",
+      "type": "EMPTY",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "assembly",
+        "stage": "B1.1",
+        "physical_ground_truth": false,
+        "source_name": "W-LIV-N",
+        "geometry_authority": "FINAL_OPENING_ACTIVE_REGISTER bay XY + frozen GLZ Z",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_FRONT_GLASS0",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.634999990463257,
+          13.846000671386719,
+          0.4849998950958252
+        ],
+        [
+          4.731666564941406,
+          13.854000091552734,
+          2.365000009536743
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_FRONT_GLASS1",
+      "type": "MESH",
+      "bounds": [
+        [
+          4.801666736602783,
+          13.846000671386719,
+          0.4849998950958252
+        ],
+        [
+          5.8983330726623535,
+          13.854000091552734,
+          2.365000009536743
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_FRONT_GLASS2",
+      "type": "MESH",
+      "bounds": [
+        [
+          5.968333721160889,
+          13.846000671386719,
+          0.4849998950958252
+        ],
+        [
+          7.065000057220459,
+          13.854000091552734,
+          2.365000009536743
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_FRONT_JAMB",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.6000001430511475,
+          13.827000617980957,
+          0.4499998688697815
+        ],
+        [
+          3.634999990463257,
+          13.873000144958496,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_FRONT_JAMB.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.065000057220459,
+          13.827000617980957,
+          0.4499998688697815
+        ],
+        [
+          7.099999904632568,
+          13.873000144958496,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_FRONT_MULLION",
+      "type": "MESH",
+      "bounds": [
+        [
+          4.766666889190674,
+          13.827000617980957,
+          0.4499998688697815
+        ],
+        [
+          4.801666736602783,
+          13.873000144958496,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_FRONT_MULLION.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          5.933333396911621,
+          13.827000617980957,
+          0.4499998688697815
+        ],
+        [
+          5.9683332443237305,
+          13.873000144958496,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_FRONT_RAIL",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.5999999046325684,
+          13.827000617980957,
+          0.44999992847442627
+        ],
+        [
+          7.099999904632568,
+          13.873000144958496,
+          0.48499995470046997
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_FRONT_RAIL.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.5999999046325684,
+          13.827000617980957,
+          2.3650002479553223
+        ],
+        [
+          7.099999904632568,
+          13.873000144958496,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-LIV-N_SILL_PLATFORM",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.6499998569488525,
+          12.949999809265137,
+          0.4249999523162842
+        ],
+        [
+          7.050000190734863,
+          13.800000190734863,
+          0.44999992847442627
+        ]
+      ],
+      "parent": "B11_BAY_W-LIV-N",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S",
+      "type": "EMPTY",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "assembly",
+        "stage": "B1.1",
+        "physical_ground_truth": false,
+        "source_name": "W-MB-S",
+        "geometry_authority": "FINAL_OPENING_ACTIVE_REGISTER bay XY + frozen GLZ Z",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_FRONT_GLASS0",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.03499984741211,
+          -0.6539999842643738,
+          0.9350000619888306
+        ],
+        [
+          12.93166732788086,
+          -0.6459999680519104,
+          2.815000057220459
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_FRONT_GLASS1",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.001666069030762,
+          -0.6539999842643738,
+          0.9350000619888306
+        ],
+        [
+          13.898333549499512,
+          -0.6459999680519104,
+          2.815000057220459
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_FRONT_GLASS2",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.96833324432373,
+          -0.6539999842643738,
+          0.9350000619888306
+        ],
+        [
+          14.86500072479248,
+          -0.6459999680519104,
+          2.815000057220459
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_FRONT_JAMB",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.0,
+          -0.6729999780654907,
+          0.9000000357627869
+        ],
+        [
+          12.03499984741211,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_FRONT_JAMB.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          14.864999771118164,
+          -0.6729999780654907,
+          0.9000000357627869
+        ],
+        [
+          14.899999618530273,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_FRONT_MULLION",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.966667175292969,
+          -0.6729999780654907,
+          0.9000000357627869
+        ],
+        [
+          13.001667022705078,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_FRONT_MULLION.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.933333396911621,
+          -0.6729999780654907,
+          0.9000000357627869
+        ],
+        [
+          13.96833324432373,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_FRONT_RAIL",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.0,
+          -0.6729999780654907,
+          0.8999999761581421
+        ],
+        [
+          14.899999618530273,
+          -0.6269999742507935,
+          0.934999942779541
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_FRONT_RAIL.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.0,
+          -0.6729999780654907,
+          2.815000057220459
+        ],
+        [
+          14.899999618530273,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-MB-S_SILL_PLATFORM",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.0,
+          -0.699999988079071,
+          0.875
+        ],
+        [
+          14.899999618530273,
+          0.0,
+          0.8999999761581421
+        ]
+      ],
+      "parent": "B11_BAY_W-MB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S",
+      "type": "EMPTY",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "assembly",
+        "stage": "B1.1",
+        "physical_ground_truth": false,
+        "source_name": "W-SMB-S",
+        "geometry_authority": "FINAL_OPENING_ACTIVE_REGISTER bay XY + frozen GLZ Z",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_FRONT_GLASS0",
+      "type": "MESH",
+      "bounds": [
+        [
+          8.434999465942383,
+          -0.6539999842643738,
+          0.9350000619888306
+        ],
+        [
+          9.231666564941406,
+          -0.6459999680519104,
+          2.815000057220459
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_FRONT_GLASS1",
+      "type": "MESH",
+      "bounds": [
+        [
+          9.301666259765625,
+          -0.6539999842643738,
+          0.9350000619888306
+        ],
+        [
+          10.098333358764648,
+          -0.6459999680519104,
+          2.815000057220459
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_FRONT_GLASS2",
+      "type": "MESH",
+      "bounds": [
+        [
+          10.168333053588867,
+          -0.6539999842643738,
+          0.9350000619888306
+        ],
+        [
+          10.96500015258789,
+          -0.6459999680519104,
+          2.815000057220459
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_FRONT_JAMB",
+      "type": "MESH",
+      "bounds": [
+        [
+          8.399999618530273,
+          -0.6729999780654907,
+          0.9000000357627869
+        ],
+        [
+          8.434999465942383,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_FRONT_JAMB.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          10.96500015258789,
+          -0.6729999780654907,
+          0.9000000357627869
+        ],
+        [
+          11.0,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_FRONT_MULLION",
+      "type": "MESH",
+      "bounds": [
+        [
+          9.266666412353516,
+          -0.6729999780654907,
+          0.9000000357627869
+        ],
+        [
+          9.301666259765625,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_FRONT_MULLION.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          10.133333206176758,
+          -0.6729999780654907,
+          0.9000000357627869
+        ],
+        [
+          10.168333053588867,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_FRONT_RAIL",
+      "type": "MESH",
+      "bounds": [
+        [
+          8.399999618530273,
+          -0.6729999780654907,
+          0.8999999761581421
+        ],
+        [
+          11.0,
+          -0.6269999742507935,
+          0.934999942779541
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_FRONT_RAIL.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          8.399999618530273,
+          -0.6729999780654907,
+          2.815000057220459
+        ],
+        [
+          11.0,
+          -0.6269999742507935,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-SMB-S_SILL_PLATFORM",
+      "type": "MESH",
+      "bounds": [
+        [
+          8.399999618530273,
+          -0.699999988079071,
+          0.875
+        ],
+        [
+          11.0,
+          0.0,
+          0.8999999761581421
+        ]
+      ],
+      "parent": "B11_BAY_W-SMB-S",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE",
+      "type": "EMPTY",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "assembly",
+        "stage": "B1.1",
+        "physical_ground_truth": false,
+        "source_name": "W-STUDY-NE",
+        "geometry_authority": "FINAL_OPENING_ACTIVE_REGISTER bay XY + frozen GLZ Z",
+        "review_status": "HUMAN_REVIEW"
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_FRONT_GLASS0",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.53499984741211,
+          11.746000289916992,
+          0.9350000619888306
+        ],
+        [
+          14.231666564941406,
+          11.753999710083008,
+          2.815000057220459
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_FRONT_GLASS1",
+      "type": "MESH",
+      "bounds": [
+        [
+          14.301666259765625,
+          11.746000289916992,
+          0.9350000619888306
+        ],
+        [
+          14.998332977294922,
+          11.753999710083008,
+          2.815000057220459
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_FRONT_GLASS2",
+      "type": "MESH",
+      "bounds": [
+        [
+          15.068333625793457,
+          11.746000289916992,
+          0.9350000619888306
+        ],
+        [
+          15.765000343322754,
+          11.753999710083008,
+          2.815000057220459
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_FRONT_JAMB",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.5,
+          11.72700023651123,
+          0.9000000357627869
+        ],
+        [
+          13.53499984741211,
+          11.77299976348877,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_FRONT_JAMB.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          15.765000343322754,
+          11.72700023651123,
+          0.9000000357627869
+        ],
+        [
+          15.800000190734863,
+          11.77299976348877,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_FRONT_MULLION",
+      "type": "MESH",
+      "bounds": [
+        [
+          14.266666412353516,
+          11.72700023651123,
+          0.9000000357627869
+        ],
+        [
+          14.301666259765625,
+          11.77299976348877,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_FRONT_MULLION.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          15.033333778381348,
+          11.72700023651123,
+          0.9000000357627869
+        ],
+        [
+          15.068333625793457,
+          11.77299976348877,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_FRONT_RAIL",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.5,
+          11.72700023651123,
+          0.8999999761581421
+        ],
+        [
+          15.799999237060547,
+          11.77299976348877,
+          0.934999942779541
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_FRONT_RAIL.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.5,
+          11.72700023651123,
+          2.815000057220459
+        ],
+        [
+          15.799999237060547,
+          11.77299976348877,
+          2.8499999046325684
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_BAY_W-STUDY-NE_SILL_PLATFORM",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.5,
+          11.09999942779541,
+          0.875
+        ],
+        [
+          15.799999237060547,
+          11.800000190734863,
+          0.8999999761581421
+        ]
+      ],
+      "parent": "B11_BAY_W-STUDY-NE",
+      "collections": [
+        "COL_B11_BAY_ASSEMBLIES"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_CAM_BATH_GUEST",
+      "type": "CAMERA",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_REVIEW_CAMERAS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "B11_CAM_BATH_MOTHER",
+      "type": "CAMERA",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_REVIEW_CAMERAS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "B11_CAM_BATH_OWNER",
+      "type": "CAMERA",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_REVIEW_CAMERAS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "B11_CAM_GUEST_BED",
+      "type": "CAMERA",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_REVIEW_CAMERAS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "B11_CAM_LIVING",
+      "type": "CAMERA",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_REVIEW_CAMERAS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "B11_G-DIN-LIV_HOST_GLASS0",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.9850001335144043,
+          4.618499755859375,
+          0.034999966621398926
+        ],
+        [
+          3.815000057220459,
+          4.626500129699707,
+          2.3650002479553223
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_HOST_GLASS1",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.885000228881836,
+          4.618499755859375,
+          0.034999966621398926
+        ],
+        [
+          4.715000152587891,
+          4.626500129699707,
+          2.3650002479553223
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_HOST_GLASS2",
+      "type": "MESH",
+      "bounds": [
+        [
+          4.784999847412109,
+          4.618499755859375,
+          0.034999966621398926
+        ],
+        [
+          5.614999771118164,
+          4.626500129699707,
+          2.3650002479553223
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_HOST_JAMB",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.950000047683716,
+          4.5995001792907715,
+          0.0
+        ],
+        [
+          2.984999895095825,
+          4.6454997062683105,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_HOST_JAMB.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          5.615000247955322,
+          4.5995001792907715,
+          0.0
+        ],
+        [
+          5.650000095367432,
+          4.6454997062683105,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_HOST_MULLION",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.8500001430511475,
+          4.5995001792907715,
+          0.0
+        ],
+        [
+          3.884999990463257,
+          4.6454997062683105,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_HOST_MULLION.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          4.75,
+          4.5995001792907715,
+          0.0
+        ],
+        [
+          4.784999847412109,
+          4.6454997062683105,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_HOST_RAIL",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.950000286102295,
+          4.5995001792907715,
+          0.0
+        ],
+        [
+          5.650000095367432,
+          4.6454997062683105,
+          0.03500000014901161
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_HOST_RAIL.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.950000286102295,
+          4.5995001792907715,
+          2.3650002479553223
+        ],
+        [
+          5.650000095367432,
+          4.6454997062683105,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_SLIDING_TRACK_0",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.950000286102295,
+          4.53000020980835,
+          0.0
+        ],
+        [
+          5.650000095367432,
+          4.547999858856201,
+          0.014999999664723873
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_SLIDING_TRACK_1",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.950000286102295,
+          4.570000171661377,
+          0.0
+        ],
+        [
+          5.650000095367432,
+          4.5879998207092285,
+          0.014999999664723873
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-DIN-LIV_SLIDING_TRACK_2",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.950000286102295,
+          4.610000133514404,
+          0.0
+        ],
+        [
+          5.650000095367432,
+          4.627999782562256,
+          0.014999999664723873
+        ]
+      ],
+      "parent": "B11_OPENING_G-DIN-LIV",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-LIV-NBALC_HOST_GLASS0",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.845999717712402,
+          11.835000038146973,
+          0.034999966621398926
+        ],
+        [
+          7.854000091552734,
+          12.1899995803833,
+          2.3650002479553223
+        ]
+      ],
+      "parent": "B11_OPENING_G-LIV-NBALC",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-LIV-NBALC_HOST_GLASS1",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.845999717712402,
+          12.260000228881836,
+          0.034999966621398926
+        ],
+        [
+          7.854000091552734,
+          12.614999771118164,
+          2.3650002479553223
+        ]
+      ],
+      "parent": "B11_OPENING_G-LIV-NBALC",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-LIV-NBALC_HOST_JAMB",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.827000141143799,
+          11.800000190734863,
+          0.0
+        ],
+        [
+          7.872999668121338,
+          11.835000038146973,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_G-LIV-NBALC",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-LIV-NBALC_HOST_JAMB.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.827000141143799,
+          12.614999771118164,
+          0.0
+        ],
+        [
+          7.872999668121338,
+          12.649999618530273,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_G-LIV-NBALC",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-LIV-NBALC_HOST_RAIL",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.827000141143799,
+          11.800000190734863,
+          0.0
+        ],
+        [
+          7.872999668121338,
+          12.65000057220459,
+          0.03500000014901161
+        ]
+      ],
+      "parent": "B11_OPENING_G-LIV-NBALC",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_G-LIV-NBALC_HOST_RAIL.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.827000141143799,
+          11.800000190734863,
+          2.3650002479553223
+        ],
+        [
+          7.872999668121338,
+          12.65000057220459,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_G-LIV-NBALC",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_OPENING_G-DIN-LIV",
+      "type": "EMPTY",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "assembly",
+        "stage": "B1.1",
+        "physical_ground_truth": false,
+        "source_name": "G-DIN-LIV"
+      }
+    },
+    {
+      "name": "B11_OPENING_G-LIV-NBALC",
+      "type": "EMPTY",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "assembly",
+        "stage": "B1.1",
+        "physical_ground_truth": false,
+        "source_name": "G-LIV-NBALC"
+      }
+    },
+    {
+      "name": "B11_OPENING_W-LIV-N",
+      "type": "EMPTY",
+      "bounds": null,
+      "parent": null,
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "assembly",
+        "stage": "B1.1",
+        "physical_ground_truth": false,
+        "source_name": "W-LIV-N"
+      }
+    },
+    {
+      "name": "B11_W-LIV-N_HOST_GLASS0",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.8349997997283936,
+          12.846000671386719,
+          0.4849998950958252
+        ],
+        [
+          5.314999580383301,
+          12.854000091552734,
+          2.365000009536743
+        ]
+      ],
+      "parent": "B11_OPENING_W-LIV-N",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_W-LIV-N_HOST_GLASS1",
+      "type": "MESH",
+      "bounds": [
+        [
+          5.385000228881836,
+          12.846000671386719,
+          0.4849998950958252
+        ],
+        [
+          6.864999771118164,
+          12.854000091552734,
+          2.365000009536743
+        ]
+      ],
+      "parent": "B11_OPENING_W-LIV-N",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_W-LIV-N_HOST_JAMB",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.8000001907348633,
+          12.827000617980957,
+          0.4499998688697815
+        ],
+        [
+          3.8350000381469727,
+          12.873000144958496,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_W-LIV-N",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_W-LIV-N_HOST_JAMB.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          6.865000247955322,
+          12.827000617980957,
+          0.4499998688697815
+        ],
+        [
+          6.900000095367432,
+          12.873000144958496,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_W-LIV-N",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_W-LIV-N_HOST_MULLION",
+      "type": "MESH",
+      "bounds": [
+        [
+          5.349999904632568,
+          12.827000617980957,
+          0.4499998688697815
+        ],
+        [
+          5.384999752044678,
+          12.873000144958496,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_W-LIV-N",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_W-LIV-N_HOST_RAIL",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.799999952316284,
+          12.827000617980957,
+          0.44999992847442627
+        ],
+        [
+          6.899999618530273,
+          12.873000144958496,
+          0.48499995470046997
+        ]
+      ],
+      "parent": "B11_OPENING_W-LIV-N",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "B11_W-LIV-N_HOST_RAIL.001",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.799999952316284,
+          12.827000617980957,
+          2.3650002479553223
+        ],
+        [
+          6.899999618530273,
+          12.873000144958496,
+          2.4000000953674316
+        ]
+      ],
+      "parent": "B11_OPENING_W-LIV-N",
+      "collections": [
+        "COL_B11_OPENING_DETAILS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {
+        "bas_role": "review_part",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "FN_客卫洗手盆柜体",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.736619472503662,
+          8.312298774719238,
+          0.8222000598907471
+        ],
+        [
+          8.9365816116333,
+          8.912301063537598,
+          1.672199010848999
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "05_HUMAN_DESIGN_GUIDE"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "FN_客卫马桶",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.985320091247559,
+          9.120640754699707,
+          0.44999998807907104
+        ],
+        [
+          8.30907917022705,
+          9.867758750915527,
+          1.2299747467041016
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "05_HUMAN_DESIGN_GUIDE"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "FN_客卫（湿区）-上轨",
+      "type": "MESH",
+      "bounds": [
+        [
+          8.01360034942627,
+          9.824000358581543,
+          2.3999998569488525
+        ],
+        [
+          9.697400093078613,
+          9.904000282287598,
+          2.450000047683716
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "05_HUMAN_DESIGN_GUIDE"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "FN_客卫（湿区）-下轨",
+      "type": "MESH",
+      "bounds": [
+        [
+          8.01360034942627,
+          9.824000358581543,
+          0.45000001788139343
+        ],
+        [
+          9.697400093078613,
+          9.904000282287598,
+          0.47999998927116394
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "05_HUMAN_DESIGN_GUIDE"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "FN_客卫（湿区）-边框0",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.988600254058838,
+          9.819000244140625,
+          0.4500000476837158
+        ],
+        [
+          8.038599967956543,
+          9.909000396728516,
+          2.450000047683716
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "05_HUMAN_DESIGN_GUIDE"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "FN_客卫（湿区）-边框1",
+      "type": "MESH",
+      "bounds": [
+        [
+          9.67240047454834,
+          9.819000244140625,
+          0.4500000476837158
+        ],
+        [
+          9.722399711608887,
+          9.909000396728516,
+          2.450000047683716
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "05_HUMAN_DESIGN_GUIDE"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "GLZ_G-DIN-LIV",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.950000286102295,
+          4.529999732971191,
+          0.0
+        ],
+        [
+          5.650000095367432,
+          4.715000152587891,
+          2.4000000953674316
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "01_EXISTING_OPENINGS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "GLZ_G-LIV-NBALC",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.799999713897705,
+          11.800000190734863,
+          0.0
+        ],
+        [
+          7.900000095367432,
+          12.65000057220459,
+          2.4000000953674316
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "01_EXISTING_OPENINGS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "GLZ_W-LIV-N",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.799999952316284,
+          12.75,
+          0.44999992847442627
+        ],
+        [
+          6.899999618530273,
+          12.950000762939453,
+          2.4000000953674316
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "01_EXISTING_OPENINGS"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0004",
+      "type": "MESH",
+      "bounds": [
+        [
+          1.299899935722351,
+          0.7002000212669373,
+          0.0
+        ],
+        [
+          1.499899983406067,
+          2.3001999855041504,
+          1.0499999523162842
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0005",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.6999001502990723,
+          2.500200033187866,
+          0.0
+        ],
+        [
+          2.899899959564209,
+          5.440199851989746,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0006",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.6999001502990723,
+          6.5401997566223145,
+          0.0
+        ],
+        [
+          2.899899959564209,
+          13.000200271606445,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0007",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.6999001502990723,
+          13.200200080871582,
+          0.0
+        ],
+        [
+          2.899899959564209,
+          14.953200340270996,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0008",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.599900007247925,
+          13.200200080871582,
+          0.0
+        ],
+        [
+          3.699899911880493,
+          13.800200462341309,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0009",
+      "type": "MESH",
+      "bounds": [
+        [
+          5.4999003410339355,
+          0.00020000338554382324,
+          0.0
+        ],
+        [
+          5.899899959564209,
+          0.7001999616622925,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0010",
+      "type": "MESH",
+      "bounds": [
+        [
+          5.699900150299072,
+          4.100200176239014,
+          0.0
+        ],
+        [
+          5.899899959564209,
+          4.500199794769287,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0011",
+      "type": "MESH",
+      "bounds": [
+        [
+          6.999899864196777,
+          13.200200080871582,
+          0.0
+        ],
+        [
+          7.099900245666504,
+          13.800200462341309,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0012",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.449899673461914,
+          0.1501999944448471,
+          0.0
+        ],
+        [
+          7.799900054931641,
+          0.5001999735832214,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0013",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.75,
+          8.000200271606445,
+          0.0
+        ],
+        [
+          8.0,
+          10.900199890136719,
+          1.0499999523162842
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0014",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.75,
+          11.100199699401855,
+          0.0
+        ],
+        [
+          8.0,
+          12.025300025939941,
+          1.0499999523162842
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0015",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.799900054931641,
+          0.20019984245300293,
+          0.0
+        ],
+        [
+          7.999899864196777,
+          4.500200271606445,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0016",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.799900054931641,
+          13.400199890136719,
+          0.0
+        ],
+        [
+          7.999899864196777,
+          13.820199966430664,
+          1.0499999523162842
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0017",
+      "type": "MESH",
+      "bounds": [
+        [
+          8.39989948272705,
+          -0.5997999906539917,
+          0.0
+        ],
+        [
+          8.499899864196777,
+          0.00020000338554382324,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0018",
+      "type": "MESH",
+      "bounds": [
+        [
+          9.04990005493164,
+          5.120200157165527,
+          0.4500000476837158
+        ],
+        [
+          9.199899673461914,
+          6.450200080871582,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0019",
+      "type": "MESH",
+      "bounds": [
+        [
+          9.699899673461914,
+          8.000200271606445,
+          0.4500000476837158
+        ],
+        [
+          9.899900436401367,
+          10.900199890136719,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0020",
+      "type": "MESH",
+      "bounds": [
+        [
+          10.89989948272705,
+          -0.5997999906539917,
+          0.0
+        ],
+        [
+          10.999899864196777,
+          0.00020000338554382324,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0021",
+      "type": "MESH",
+      "bounds": [
+        [
+          11.39989948272705,
+          0.20019984245300293,
+          0.4500000476837158
+        ],
+        [
+          11.599900245666504,
+          4.500200271606445,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0022",
+      "type": "MESH",
+      "bounds": [
+        [
+          11.39989948272705,
+          4.700200080871582,
+          0.4500000476837158
+        ],
+        [
+          11.599900245666504,
+          6.400199890136719,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0023",
+      "type": "MESH",
+      "bounds": [
+        [
+          11.999899864196777,
+          -0.5997999906539917,
+          0.0
+        ],
+        [
+          12.099900245666504,
+          0.00020000338554382324,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0024",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.89989948272705,
+          5.55019998550415,
+          0.4500000476837158
+        ],
+        [
+          13.099900245666504,
+          6.400200366973877,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0025",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.89989948272705,
+          8.000200271606445,
+          0.4500000476837158
+        ],
+        [
+          13.099900245666504,
+          10.900199890136719,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0026",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.89989948272705,
+          11.100200653076172,
+          0.0
+        ],
+        [
+          13.099900245666504,
+          13.820199966430664,
+          1.0499999523162842
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0027",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.099900245666504,
+          11.100199699401855,
+          0.0
+        ],
+        [
+          13.499899864196777,
+          11.800200462341309,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0028",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.499899864196777,
+          11.100199699401855,
+          0.0
+        ],
+        [
+          13.599900245666504,
+          11.700200080871582,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0029",
+      "type": "MESH",
+      "bounds": [
+        [
+          14.79990005493164,
+          -0.5997999906539917,
+          0.0
+        ],
+        [
+          14.899900436401367,
+          0.00020000338554382324,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0030",
+      "type": "MESH",
+      "bounds": [
+        [
+          15.29990005493164,
+          0.20019984245300293,
+          0.0
+        ],
+        [
+          15.499900817871094,
+          4.500200271606445,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0031",
+      "type": "MESH",
+      "bounds": [
+        [
+          15.699899673461914,
+          11.100199699401855,
+          0.0
+        ],
+        [
+          15.79990005493164,
+          11.700200080871582,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0032",
+      "type": "MESH",
+      "bounds": [
+        [
+          16.199899673461914,
+          4.500200271606445,
+          0.0
+        ],
+        [
+          16.399900436401367,
+          6.400199890136719,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0033",
+      "type": "MESH",
+      "bounds": [
+        [
+          16.199899673461914,
+          6.600200176239014,
+          0.0
+        ],
+        [
+          16.399900436401367,
+          10.900199890136719,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0034",
+      "type": "MESH",
+      "bounds": [
+        [
+          8.499899864196777,
+          -0.6998000144958496,
+          0.0
+        ],
+        [
+          10.89989948272705,
+          -0.5997999906539917,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0035",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.099899291992188,
+          -0.6998000144958496,
+          0.0
+        ],
+        [
+          14.79990005493164,
+          -0.5997999906539917,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0036",
+      "type": "MESH",
+      "bounds": [
+        [
+          5.899899959564209,
+          0.00019999593496322632,
+          0.0
+        ],
+        [
+          7.799899578094482,
+          0.20019999146461487,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0037",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.999899864196777,
+          0.00019999593496322632,
+          0.0
+        ],
+        [
+          8.599900245666504,
+          0.20019999146461487,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0038",
+      "type": "MESH",
+      "bounds": [
+        [
+          10.79990005493164,
+          0.00019999593496322632,
+          0.0
+        ],
+        [
+          11.399900436401367,
+          0.20019999146461487,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0039",
+      "type": "MESH",
+      "bounds": [
+        [
+          11.599900245666504,
+          0.00019999593496322632,
+          0.0
+        ],
+        [
+          12.19990062713623,
+          0.20019999146461487,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0040",
+      "type": "MESH",
+      "bounds": [
+        [
+          14.699899673461914,
+          0.00019999593496322632,
+          0.0
+        ],
+        [
+          15.29990005493164,
+          0.20019999146461487,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0041",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.399899959564209,
+          0.20019999146461487,
+          0.0
+        ],
+        [
+          7.799899578094482,
+          0.5002000331878662,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0042",
+      "type": "MESH",
+      "bounds": [
+        [
+          1.4999001026153564,
+          0.5001999735832214,
+          0.0
+        ],
+        [
+          5.499899864196777,
+          0.7002000212669373,
+          1.0499999523162842
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0043",
+      "type": "MESH",
+      "bounds": [
+        [
+          1.2999000549316406,
+          2.3001999855041504,
+          0.0
+        ],
+        [
+          2.699899911880493,
+          2.500199794769287,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0044",
+      "type": "MESH",
+      "bounds": [
+        [
+          5.899899959564209,
+          4.500200271606445,
+          0.0
+        ],
+        [
+          7.799899578094482,
+          4.700200080871582,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0045",
+      "type": "MESH",
+      "bounds": [
+        [
+          10.79990005493164,
+          4.500200271606445,
+          0.4500000476837158
+        ],
+        [
+          11.399900436401367,
+          4.700200080871582,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0046",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.099899291992188,
+          4.500200271606445,
+          0.4500000476837158
+        ],
+        [
+          15.29990005493164,
+          4.700200080871582,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0047",
+      "type": "MESH",
+      "bounds": [
+        [
+          15.499899864196777,
+          4.500200271606445,
+          0.0
+        ],
+        [
+          16.199899673461914,
+          4.700200080871582,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0048",
+      "type": "MESH",
+      "bounds": [
+        [
+          11.599900245666504,
+          6.400199890136719,
+          0.4500000476837158
+        ],
+        [
+          11.94990062713623,
+          6.6001996994018555,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0049",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.099900245666504,
+          6.400199890136719,
+          0.4500000476837158
+        ],
+        [
+          16.199899673461914,
+          6.6001996994018555,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0050",
+      "type": "MESH",
+      "bounds": [
+        [
+          9.199899673461914,
+          6.450200080871582,
+          0.4500000476837158
+        ],
+        [
+          11.399900436401367,
+          6.6001996994018555,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0051",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.999899864196777,
+          7.80019998550415,
+          0.4500000476837158
+        ],
+        [
+          8.849900245666504,
+          8.000200271606445,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0052",
+      "type": "MESH",
+      "bounds": [
+        [
+          9.599900245666504,
+          7.80019998550415,
+          0.4500000476837158
+        ],
+        [
+          9.999899864196777,
+          8.000200271606445,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0053",
+      "type": "MESH",
+      "bounds": [
+        [
+          10.849900245666504,
+          7.80019998550415,
+          0.4500000476837158
+        ],
+        [
+          12.89989948272705,
+          8.000200271606445,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0054",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.9999003410339355,
+          10.900199890136719,
+          0.0
+        ],
+        [
+          9.69990062713623,
+          11.100200653076172,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0055",
+      "type": "MESH",
+      "bounds": [
+        [
+          9.899900436401367,
+          10.900199890136719,
+          0.0
+        ],
+        [
+          12.899900436401367,
+          11.100200653076172,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0056",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.099900245666504,
+          10.900199890136719,
+          0.4500000476837158
+        ],
+        [
+          13.69990062713623,
+          11.100200653076172,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0057",
+      "type": "MESH",
+      "bounds": [
+        [
+          15.599900245666504,
+          10.900199890136719,
+          0.4500000476837158
+        ],
+        [
+          16.199899673461914,
+          11.100200653076172,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0058",
+      "type": "MESH",
+      "bounds": [
+        [
+          13.599900245666504,
+          11.700200080871582,
+          0.0
+        ],
+        [
+          15.69990062713623,
+          11.800200462341309,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0059",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.899899959564209,
+          13.000199317932129,
+          0.0
+        ],
+        [
+          3.7999000549316406,
+          13.200200080871582,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0060",
+      "type": "MESH",
+      "bounds": [
+        [
+          6.899899959564209,
+          13.000199317932129,
+          0.0
+        ],
+        [
+          7.799899578094482,
+          13.200200080871582,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0061",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.799900054931641,
+          13.000200271606445,
+          0.0
+        ],
+        [
+          8.199899673461914,
+          13.400199890136719,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0062",
+      "type": "MESH",
+      "bounds": [
+        [
+          7.879899978637695,
+          13.400199890136719,
+          0.0
+        ],
+        [
+          13.019899368286133,
+          13.900199890136719,
+          1.0499999523162842
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0063",
+      "type": "MESH",
+      "bounds": [
+        [
+          3.699899673461914,
+          13.790199279785156,
+          0.0
+        ],
+        [
+          6.999899864196777,
+          13.900199890136719,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0064",
+      "type": "MESH",
+      "bounds": [
+        [
+          12.899999618530273,
+          4.5,
+          0.4500000476837158
+        ],
+        [
+          13.100000381469727,
+          4.800000190734863,
+          3.25
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    },
+    {
+      "name": "W_wall_md_0088",
+      "type": "MESH",
+      "bounds": [
+        [
+          2.950000286102295,
+          4.592499732971191,
+          2.4000000953674316
+        ],
+        [
+          5.650000095367432,
+          4.652500152587891,
+          2.799999952316284
+        ]
+      ],
+      "parent": null,
+      "collections": [
+        "00_EXISTING_ARCH_GROUND_TRUTH"
+      ],
+      "hide_render": false,
+      "hide_viewport": false,
+      "props": {}
+    }
+  ]
+}

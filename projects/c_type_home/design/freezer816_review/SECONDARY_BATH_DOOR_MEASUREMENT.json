@@ -1,0 +1,26 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V3.blend",
+  "source_sha256": "93891e0b9c60a9d769e8e65ec4d04d592ea11dee4b9d713966d8b1033b9ebd31",
+  "operation": "read-only",
+  "wardrobe_width_mm": 1399.9996185302734,
+  "wardrobe_depth_mm": 600,
+  "wardrobe_height_mm": 2200,
+  "door_clear_width_mm": 729.1250228881836,
+  "door_clear_height_mm": 2075.0000953674316,
+  "leaf_width_mm": 769.1249847412109,
+  "rail_cover_length_mm": 1600.900650024414,
+  "wardrobe_left_to_opening_right_mm": 9.124755859375,
+  "door_is_parked_open_in_source": true,
+  "option_only_not_modelled": {
+    "wardrobe_width_mm": 1200,
+    "remove_from_west_end_mm": 200,
+    "door_clear_width_target_mm": 829.1,
+    "requires": [
+      "eastjamb+100mm",
+      "widerleaf",
+      "longerrail",
+      "pocketgeometryreview",
+      "trimandwardrobeclearancecheck"
+    ]
+  }
+}

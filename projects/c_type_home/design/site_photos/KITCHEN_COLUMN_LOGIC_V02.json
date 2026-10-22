@@ -1,0 +1,73 @@
+{
+  "authority": "DIRECT_USER_CONFIRMATION",
+  "status": "HUMAN_REVIEW",
+  "order_from_door": [
+    "320 mm narrow cabinet",
+    "refrigerator plus overhead",
+    "inner high cabinet / open niche"
+  ],
+  "confirmed_dimensions_mm": {
+    "narrow_width": 320,
+    "fridge": [
+      905,
+      710,
+      1700
+    ],
+    "narrow_depth_range": [
+      760,
+      770
+    ],
+    "rear_gap_range": [
+      50,
+      60
+    ]
+  },
+  "representative_review_dimensions_mm": {
+    "narrow_depth": 765,
+    "rear_gap": 55
+  },
+  "inherited_review_dimensions_mm": {
+    "inner_column_width": 935,
+    "cabinet_top": 2410,
+    "overhead_base": 1930
+  },
+  "front_plane_m": 3.7350000000000003,
+  "back_wall_reference_m": 4.5,
+  "confirmed_front_relation": "NARROW_FRONT = FRIDGE_FRONT",
+  "old_column_order_error": "High cabinet/niche outside; refrigerator inside; narrow extra cabinet omitted",
+  "changes": [
+    {
+      "object": "B11_K-FRIDGE",
+      "translation_m": [
+        -0.935,
+        -0.01499999999999968,
+        0
+      ],
+      "role": "OUTER_REFRIGERATOR_COLUMN"
+    },
+    {
+      "object": "B11_K-FRIDGE-OVERHEAD",
+      "translation_m": [
+        -0.935,
+        -0.01499999999999968,
+        0
+      ],
+      "role": "OUTER_REFRIGERATOR_OVERHEAD"
+    },
+    {
+      "object": "B11_K-TALL-L",
+      "translation_m": [
+        0.905,
+        0,
+        0
+      ],
+      "role": "INNER_HIGH_CABINET_AND_NICHE_COLUMN"
+    }
+  ],
+  "source_blend_sha256": "31beb580133e81c64c92dc71d4bb1213f6b0b9151e013c1fa1d5fac2d33178bd",
+  "uncertainties": [
+    "Narrow top/door segmentation uses simple inherited-height review geometry.",
+    "Inner column width/depth and upper cabinet profiles retain existing review sizes."
+  ],
+  "no_new_photo_metric_estimates": true
+}

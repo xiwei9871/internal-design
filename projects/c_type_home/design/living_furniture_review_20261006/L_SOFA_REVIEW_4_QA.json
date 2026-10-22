@@ -1,0 +1,131 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_WAVE35_HANDRAIL_REVIEW_3.blend",
+  "source_sha256": "fd0f603b433bde0cdf14d9b3f17357c07ff2ab8a6575e89c77dc0f2e148cffe2",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_L_SOFA_REVIEW_4.blend",
+  "output_sha256": "6775691eaaac0d57261eb2e00929bbb753f54687bfa5bf3ff44cc8955ba0ca8c",
+  "revision": "r4-living-l-sofa-review-4",
+  "sofa_entity_id": "ent_d25c02916e634c6b810c2d13e29a9a62",
+  "retired_entity_id": "ent_d95e43b44132461ea84f3faee6684c67",
+  "reference_module_widths_m": [
+    1.19,
+    0.92,
+    1.19
+  ],
+  "sofa_envelope_m": [
+    1.8,
+    3.3,
+    0.7
+  ],
+  "ottoman_added": false,
+  "window_chaise_unchanged": true,
+  "before": {
+    "B11_Rectangle046_CATALOG_00_00": [
+      [
+        3.400951623916626,
+        9.215812683105469,
+        0.0
+      ],
+      [
+        4.301296234130859,
+        11.515811920166016,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Rectangle047_CATALOG_00_00": [
+      [
+        3.8739991188049316,
+        7.821281909942627,
+        0.0
+      ],
+      [
+        5.773998737335205,
+        8.671282768249512,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Rectangle049_CATALOG_00_00": [
+      [
+        5.0698747634887695,
+        9.863344192504883,
+        0.0
+      ],
+      [
+        5.619874954223633,
+        10.863344192504883,
+        0.3999999761581421
+      ]
+    ],
+    "B11_Circle_CATALOG_00_00": [
+      [
+        3.6842498779296875,
+        12.0390625,
+        0.0
+      ],
+      [
+        4.164249897003174,
+        12.519062042236328,
+        0.47999998927116394
+      ]
+    ]
+  },
+  "after": {
+    "B11_Rectangle046_CATALOG_00_00": [
+      [
+        3.4000000953674316,
+        8.949999809265137,
+        0.0
+      ],
+      [
+        5.200000286102295,
+        12.25,
+        0.699999988079071
+      ]
+    ],
+    "B11_Rectangle047_CATALOG_00_00": [
+      [
+        3.8739991188049316,
+        7.821281909942627,
+        0.0
+      ],
+      [
+        5.773998737335205,
+        8.671282768249512,
+        0.8500000238418579
+      ]
+    ],
+    "B11_Rectangle049_CATALOG_00_00": [
+      [
+        5.025000095367432,
+        10.489999771118164,
+        0.0
+      ],
+      [
+        5.575000286102295,
+        11.489999771118164,
+        0.3999999761581421
+      ]
+    ],
+    "B11_Circle_CATALOG_00_00": [
+      [
+        3.6842498779296875,
+        12.350000381469727,
+        0.0
+      ],
+      [
+        4.164249897003174,
+        12.829999923706055,
+        0.47999998927116394
+      ]
+    ]
+  },
+  "east_aisle_conservative_clearance_m": 2.5498995780944824,
+  "south_stair_to_sofa_station_separation_m": 1.1499996185302734,
+  "coffee_translation_m": [
+    -0.04487485885620135,
+    0.6266558074951174,
+    0
+  ],
+  "side_table_north_translation_m": 0.3109377288818358,
+  "all_unrelated_object_states_unchanged": true
+}

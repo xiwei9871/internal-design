@@ -1,0 +1,115 @@
+{
+  "status": "HUMAN_REVIEW",
+  "steps": [
+    {
+      "name": "STEP_0",
+      "min": [
+        6.159999847412109,
+        4.699999809265137,
+        0.0
+      ],
+      "max": [
+        7.849999904632568,
+        7.800000190734863,
+        0.11249999701976776
+      ],
+      "run_x": 1.690000057220459,
+      "height": 0.11249999701976776
+    },
+    {
+      "name": "STEP_1",
+      "min": [
+        6.510000228881836,
+        4.699999809265137,
+        0.0
+      ],
+      "max": [
+        8.199999809265137,
+        7.800000190734863,
+        0.22499999403953552
+      ],
+      "run_x": 1.6899995803833008,
+      "height": 0.22499999403953552
+    },
+    {
+      "name": "STEP_2",
+      "min": [
+        6.860000133514404,
+        4.699999809265137,
+        0.0
+      ],
+      "max": [
+        8.550000190734863,
+        7.800000190734863,
+        0.3375000059604645
+      ],
+      "run_x": 1.690000057220459,
+      "height": 0.3375000059604645
+    },
+    {
+      "name": "WAVE_STEP_3_ARRIVAL",
+      "min": [
+        7.210000038146973,
+        4.699999809265137,
+        0.0
+      ],
+      "max": [
+        8.899999618530273,
+        7.800000190734863,
+        0.44999998807907104
+      ],
+      "run_x": 1.6899995803833008,
+      "height": 0.44999998807907104
+    }
+  ],
+  "wall_collision_audit": [
+    {
+      "name": "VIEW_WALL_LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "bounds": [
+        [
+          7.749899864196777,
+          7.999899864196777,
+          0.0
+        ],
+        [
+          8.000100135803223,
+          10.899900436401367,
+          3.25
+        ]
+      ],
+      "step_collisions": []
+    },
+    {
+      "name": "VIEW_WALL_LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+      "bounds": [
+        [
+          7.749899864196777,
+          10.897950172424316,
+          0.0
+        ],
+        [
+          8.000100135803223,
+          11.100099563598633,
+          3.25
+        ]
+      ],
+      "step_collisions": []
+    }
+  ],
+  "frame_objects": [
+    "NORTH_BALCONY_FRAME_EAST_CORNER_POST",
+    "NORTH_BALCONY_FRAME_EAST_HEAD",
+    "NORTH_BALCONY_FRAME_EAST_POST_SOUTH",
+    "NORTH_BALCONY_FRAME_EAST_SILL",
+    "NORTH_BALCONY_FRAME_NORTH_HEAD",
+    "NORTH_BALCONY_FRAME_NORTH_LEFT_POST",
+    "NORTH_BALCONY_FRAME_NORTH_MULLION",
+    "NORTH_BALCONY_FRAME_NORTH_RIGHT_POST",
+    "NORTH_BALCONY_FRAME_NORTH_SILL"
+  ],
+  "glass_objects": [
+    "NORTH_BALCONY_GLASS_EAST",
+    "NORTH_BALCONY_GLASS_NORTH_A",
+    "NORTH_BALCONY_GLASS_NORTH_B"
+  ]
+}

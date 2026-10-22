@@ -1,0 +1,60 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_pier_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_pier_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_AND_ANGLED_AC_REVIEW.blend",
+  "source_sha256": "c110c5a9a294e9b9df838b3be147d9b46e0b9424f0f8de399385cd4129d3f1ed",
+  "source_revision": "r4-pier-ac-review-2",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "5-pier-oblique-ac-review",
+        "sha256": "cb10e9fbe9bd253387f1ff5253dbd5d3feb4eca513256d55994df68774582632",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/spatial-canvas.bindings.ac-review.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": true,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 582,
+        "display_floor": 6,
+        "display_furniture": 333
+      },
+      "flat_color_count": 3
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "parent_source_resource_id": "c_type_r4",
+      "parent_source_revision": "r4",
+      "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "correction": "One local divider pier; authorized utility AC yaw only. Read-only export snapshot is not an approved new frozen design authority.",
+      "width_rule": "CABINET_BOUNDARY_TO_ISLAND_CONNECTOR",
+      "depth_rule": "ISLAND_NOTCH_NOT_CABINET_FRONT",
+      "ac_yaw_degrees_review": 60,
+      "frozen_authority_preserved": true
+    }
+  },
+  "entity_count": 921,
+  "scope": "full"
+}

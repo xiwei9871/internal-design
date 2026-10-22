@@ -1,0 +1,1777 @@
+{
+  "status": "PASS",
+  "scope": "INTEGRITY_AND_DECLARED_DIMENSIONAL_GATES_ONLY",
+  "inherited_objects_preserved": 176,
+  "frozen_files": [
+    {
+      "key": "baseline_blend",
+      "expected": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+      "actual": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+      "match": true
+    },
+    {
+      "key": "cad_source_dxf",
+      "expected": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0",
+      "actual": "e93f8358492bdda0fd2acb2093afd72f1b604b2276cf7ba88ec97cb51077d3b0",
+      "match": true
+    },
+    {
+      "key": "floor_regions",
+      "expected": "6bab694418c0ab28c92e7411b567794be807e3a6126aa24c0ccdba0334f0ba75",
+      "actual": "6bab694418c0ab28c92e7411b567794be807e3a6126aa24c0ccdba0334f0ba75",
+      "match": true
+    },
+    {
+      "key": "z_datum_spec",
+      "expected": "18298132c706f80a998b8ac9e8ac50c4ca7ca4480cd6655d08fc3e37d15e8c5f",
+      "actual": "18298132c706f80a998b8ac9e8ac50c4ca7ca4480cd6655d08fc3e37d15e8c5f",
+      "match": true
+    },
+    {
+      "key": "geometry_gate",
+      "expected": "223be556688f8ef0c95617ed5b3cb8d8c4d61b22d729fedfbd7c8605d63c41d4",
+      "actual": "223be556688f8ef0c95617ed5b3cb8d8c4d61b22d729fedfbd7c8605d63c41d4",
+      "match": true
+    },
+    {
+      "key": "level_field_50mm",
+      "expected": "70c58dbbc10eabeb69989c0759bb8af2eff86d12bcc6bd78af6ce39720ec33eb",
+      "actual": "70c58dbbc10eabeb69989c0759bb8af2eff86d12bcc6bd78af6ce39720ec33eb",
+      "match": true
+    },
+    {
+      "key": "level_zone_map_v8",
+      "expected": "b39738dc2d813bcae3cc6f6411d3bb24e500bc2909b672b1fc25bd59a6fe27e9",
+      "actual": "b39738dc2d813bcae3cc6f6411d3bb24e500bc2909b672b1fc25bd59a6fe27e9",
+      "match": true
+    }
+  ],
+  "furniture_envelopes": [
+    {
+      "source_name": "Rectangle004",
+      "max_bounds_error_mm": 0.0002403259280470138,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          7.398000240325928,
+          8.634937286376953,
+          0.0
+        ],
+        [
+          7.696875095367432,
+          11.523843765258789,
+          0.47999998927116394
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          7.398,
+          8.6349375,
+          0
+        ],
+        [
+          7.696875,
+          11.52384375,
+          0.48
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle008",
+      "max_bounds_error_mm": 0.0007400512700428408,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          8.020625114440918,
+          9.332281112670898,
+          0.44999998807907104
+        ],
+        [
+          8.76775074005127,
+          9.656030654907227,
+          1.2300000190734863
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          8.020625,
+          9.33228125,
+          0.45
+        ],
+        [
+          8.76775,
+          9.65603125,
+          1.23
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle011",
+      "max_bounds_error_mm": 0.00044250488251407205,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          11.183500289916992,
+          0.8896563053131104,
+          0.4500000476837158
+        ],
+        [
+          11.382749557495117,
+          3.529531240463257,
+          1.5
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          11.1835,
+          0.88965625,
+          0.45
+        ],
+        [
+          11.38275,
+          3.52953125,
+          1.5
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle012",
+      "max_bounds_error_mm": 0.026226043701171875,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          9.066624641418457,
+          1.537156343460083,
+          0.44999998807907104
+        ],
+        [
+          11.166625022888184,
+          3.037156343460083,
+          0.9999737739562988
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          9.066625,
+          1.53715625,
+          0.45
+        ],
+        [
+          11.166625,
+          3.03715625,
+          1.0
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle013",
+      "max_bounds_error_mm": 0.026226043701171875,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          12.942874908447266,
+          1.645531177520752,
+          0.44999998807907104
+        ],
+        [
+          15.042875289916992,
+          3.145531177520752,
+          0.9999737739562988
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          12.942875,
+          1.64553125,
+          0.45
+        ],
+        [
+          15.042875,
+          3.14553125,
+          1.0
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle014",
+      "max_bounds_error_mm": 0.00020599365235796085,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          15.093375205993652,
+          1.113781213760376,
+          0.4500000476837158
+        ],
+        [
+          15.243374824523926,
+          3.613781213760376,
+          1.5
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          15.093375,
+          1.11378125,
+          0.45
+        ],
+        [
+          15.243375,
+          3.61378125,
+          1.5
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle015",
+      "max_bounds_error_mm": 0.0002899169917469635,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          13.175874710083008,
+          3.8469998836517334,
+          0.44999998807907104
+        ],
+        [
+          15.275875091552734,
+          4.447000026702881,
+          2.6500000953674316
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          13.175875,
+          3.847,
+          0.45
+        ],
+        [
+          15.275875,
+          4.447,
+          2.6500000000000004
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle017",
+      "max_bounds_error_mm": 0.0007095336922446904,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          10.878375053405762,
+          8.019843101501465,
+          0.44999998807907104
+        ],
+        [
+          12.678374290466309,
+          9.219843864440918,
+          1.0
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          10.878375,
+          8.01984375,
+          0.45
+        ],
+        [
+          12.678375,
+          9.21984375,
+          1.0
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle021",
+      "max_bounds_error_mm": 0.0004272460945031753,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          9.863624572753906,
+          3.853281259536743,
+          0.44999998807907104
+        ],
+        [
+          11.363624572753906,
+          4.453281402587891,
+          2.6500000953674316
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          9.863625,
+          3.85328125,
+          0.45
+        ],
+        [
+          11.363625,
+          4.45328125,
+          2.6500000000000004
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle022",
+      "max_bounds_error_mm": 0.0004196166987213701,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          11.6068754196167,
+          1.337937593460083,
+          0.44999998807907104
+        ],
+        [
+          12.1068754196167,
+          3.337937593460083,
+          0.9299999475479126
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          11.606875,
+          1.3379375,
+          0.45
+        ],
+        [
+          12.106875,
+          3.3379375,
+          0.9299999999999999
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle023",
+      "max_bounds_error_mm": 0.00044250488251407205,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          8.070375442504883,
+          1.337937593460083,
+          0.44999998807907104
+        ],
+        [
+          8.570375442504883,
+          3.337937593460083,
+          0.9299999475479126
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          8.070375,
+          1.3379375,
+          0.45
+        ],
+        [
+          8.570375,
+          3.3379375,
+          0.9299999999999999
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle024",
+      "max_bounds_error_mm": 0.0008239746094318434,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          15.73587417602539,
+          6.6425933837890625,
+          0.44999998807907104
+        ],
+        [
+          16.185874938964844,
+          10.842594146728516,
+          2.450000047683716
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          15.735875,
+          6.64259375,
+          0.45
+        ],
+        [
+          16.185875,
+          10.84259375,
+          2.45
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle025",
+      "max_bounds_error_mm": 0.00033187866232964325,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          14.09737491607666,
+          6.642625331878662,
+          0.44999998807907104
+        ],
+        [
+          15.697375297546387,
+          7.092625141143799,
+          1.3499999046325684
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          14.097375,
+          6.642625,
+          0.45
+        ],
+        [
+          15.697375,
+          7.092625,
+          1.35
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle026",
+      "max_bounds_error_mm": 0.0005187988278976263,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          14.271625518798828,
+          7.389718532562256,
+          0.44999998807907104
+        ],
+        [
+          15.071624755859375,
+          9.58971881866455,
+          1.2000000476837158
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          14.271625,
+          7.38971875,
+          0.45
+        ],
+        [
+          15.071625,
+          9.58971875,
+          1.2
+        ]
+      ]
+    },
+    {
+      "source_name": "Circle007",
+      "max_bounds_error_mm": 0.0006179809570738826,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          15.217249870300293,
+          8.260594367980957,
+          0.44999998807907104
+        ],
+        [
+          15.617249488830566,
+          8.66059398651123,
+          1.2999999523162842
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          15.21725,
+          8.26059375,
+          0.45
+        ],
+        [
+          15.61725,
+          8.66059375,
+          1.3
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle027",
+      "max_bounds_error_mm": 0.0007019042964628852,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          13.798500061035156,
+          7.564030647277832,
+          0.44999998807907104
+        ],
+        [
+          14.098499298095703,
+          9.164031028747559,
+          0.8999999761581421
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          13.7985,
+          7.56403125,
+          0.45
+        ],
+        [
+          14.0985,
+          9.16403125,
+          0.9
+        ]
+      ]
+    },
+    {
+      "source_name": "Circle008",
+      "max_bounds_error_mm": 0.0004959106441049244,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          14.494999885559082,
+          9.8046875,
+          0.44999998807907104
+        ],
+        [
+          14.894999504089355,
+          10.204687118530273,
+          0.8999999761581421
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          14.495,
+          9.8046875,
+          0.45
+        ],
+        [
+          14.895,
+          10.2046875,
+          0.9
+        ]
+      ]
+    },
+    {
+      "source_name": "Circle009",
+      "max_bounds_error_mm": 0.0006484985348720329,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          12.054375648498535,
+          9.979031562805176,
+          0.44999998807907104
+        ],
+        [
+          12.454375267028809,
+          10.37903118133545,
+          0.8999999761581421
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          12.054375,
+          9.97903125,
+          0.45
+        ],
+        [
+          12.454375,
+          10.37903125,
+          0.9
+        ]
+      ]
+    },
+    {
+      "source_name": "Circle010",
+      "max_bounds_error_mm": 0.0001792907715625347,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          3.088749885559082,
+          3.977062463760376,
+          0.0
+        ],
+        [
+          3.4887499809265137,
+          4.3770623207092285,
+          0.8500000238418579
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          3.08875,
+          3.9770625,
+          0
+        ],
+        [
+          3.48875,
+          4.3770625,
+          0.85
+        ]
+      ]
+    },
+    {
+      "source_name": "Circle011",
+      "max_bounds_error_mm": 0.0001792907715625347,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          3.8857500553131104,
+          3.977062463760376,
+          0.0
+        ],
+        [
+          4.285749912261963,
+          4.3770623207092285,
+          0.8500000238418579
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          3.88575,
+          3.9770625,
+          0
+        ],
+        [
+          4.28575,
+          4.3770625,
+          0.85
+        ]
+      ]
+    },
+    {
+      "source_name": "Circle012",
+      "max_bounds_error_mm": 0.00014495849587348175,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          3.1136250495910645,
+          2.4828124046325684,
+          0.0
+        ],
+        [
+          3.513625144958496,
+          2.8828125,
+          0.8500000238418579
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          3.113625,
+          2.4828125,
+          0
+        ],
+        [
+          3.513625,
+          2.8828125,
+          0.85
+        ]
+      ]
+    },
+    {
+      "source_name": "Circle013",
+      "max_bounds_error_mm": 0.0004005432128195707,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          3.9106247425079346,
+          2.557499885559082,
+          0.0
+        ],
+        [
+          4.310624599456787,
+          2.9574999809265137,
+          0.8500000238418579
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          3.910625,
+          2.5575,
+          0
+        ],
+        [
+          4.310625,
+          2.9575,
+          0.85
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle029",
+      "max_bounds_error_mm": 0.00011062622062851801,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          1.5204999446868896,
+          0.7402187585830688,
+          0.0
+        ],
+        [
+          2.0204999446868896,
+          2.2402186393737793,
+          0.8500000238418579
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          1.5205,
+          0.74021875,
+          0
+        ],
+        [
+          2.0205,
+          2.24021875,
+          0.85
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle030",
+      "max_bounds_error_mm": 0.0006179809570738826,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          8.00825023651123,
+          8.012343406677246,
+          0.44999998807907104
+        ],
+        [
+          8.608250617980957,
+          9.2123441696167,
+          1.2999999523162842
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          8.00825,
+          8.01234375,
+          0.45
+        ],
+        [
+          8.60825,
+          9.21234375,
+          1.3
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle031",
+      "max_bounds_error_mm": 0.00013351440442121998,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          2.9524998664855957,
+          4.7179999351501465,
+          0.0
+        ],
+        [
+          3.252500057220459,
+          5.440249919891357,
+          1.0
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          2.9525,
+          4.718,
+          0
+        ],
+        [
+          3.2525,
+          5.44025,
+          1.0
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle032",
+      "max_bounds_error_mm": 0.0002975463866405903,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          4.322375297546387,
+          0.7153437733650208,
+          0.0
+        ],
+        [
+          5.522375106811523,
+          1.215343713760376,
+          0.8500000238418579
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          4.322375,
+          0.71534375,
+          0
+        ],
+        [
+          5.522375,
+          1.21534375,
+          0.85
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle034",
+      "max_bounds_error_mm": 0.00033569335933236744,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          14.48324966430664,
+          5.72112512588501,
+          0.44999998807907104
+        ],
+        [
+          14.98324966430664,
+          6.371124744415283,
+          1.2300000190734863
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          14.48325,
+          5.721125,
+          0.45
+        ],
+        [
+          14.98325,
+          6.371125,
+          1.23
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle035",
+      "max_bounds_error_mm": 0.0007400512700428408,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          13.13849925994873,
+          5.796999931335449,
+          0.44999998807907104
+        ],
+        [
+          14.338500022888184,
+          6.296999931335449,
+          1.2999999523162842
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          13.1385,
+          5.797,
+          0.45
+        ],
+        [
+          14.3385,
+          6.297,
+          1.3
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle037",
+      "max_bounds_error_mm": 0.000350952149119621,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          9.419500350952148,
+          4.750093936920166,
+          0.44999998807907104
+        ],
+        [
+          10.419500350952148,
+          5.250093936920166,
+          1.3000000715255737
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          9.4195,
+          4.75009375,
+          0.45
+        ],
+        [
+          10.4195,
+          5.25009375,
+          1.3
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle038",
+      "max_bounds_error_mm": 0.0003662109371305178,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          9.693374633789062,
+          5.770718574523926,
+          0.44999998807907104
+        ],
+        [
+          10.193374633789062,
+          6.370718955993652,
+          1.2300000190734863
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          9.693375,
+          5.77071875,
+          0.45
+        ],
+        [
+          10.193375,
+          6.37071875,
+          1.23
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle039",
+      "max_bounds_error_mm": 0.0007629394538355427,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          8.53125,
+          11.150312423706055,
+          0.0
+        ],
+        [
+          9.731250762939453,
+          11.750312805175781,
+          0.8500000238418579
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          8.53125,
+          11.1503125,
+          0
+        ],
+        [
+          9.73125,
+          11.7503125,
+          0.85
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle040",
+      "max_bounds_error_mm": 0.00045776367230132564,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          9.826250076293945,
+          11.150280952453613,
+          0.0
+        ],
+        [
+          10.426250457763672,
+          11.75028133392334,
+          1.7000000476837158
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          9.82625,
+          11.15028125,
+          0
+        ],
+        [
+          10.42625,
+          11.75028125,
+          1.7
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle045",
+      "max_bounds_error_mm": 0.00016021728477255692,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          9.91812515258789,
+          8.884406089782715,
+          0.44999998807907104
+        ],
+        [
+          10.41812515258789,
+          10.884406089782715,
+          2.6500000953674316
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          9.918125,
+          8.88440625,
+          0.45
+        ],
+        [
+          10.418125,
+          10.88440625,
+          2.6500000000000004
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle046",
+      "max_bounds_error_mm": 0.17337608337397725,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          3.400951623916626,
+          9.215812683105469,
+          0.0
+        ],
+        [
+          4.301296234130859,
+          11.515811920166016,
+          0.8500000238418579
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          3.401125,
+          9.2158125,
+          0
+        ],
+        [
+          4.301125,
+          11.5158125,
+          0.85
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle047",
+      "max_bounds_error_mm": 0.0005187988278976263,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          4.571625232696533,
+          11.980218887329102,
+          0.0
+        ],
+        [
+          6.471624851226807,
+          12.830219268798828,
+          0.8500000238418579
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          4.571625,
+          11.98021875,
+          0
+        ],
+        [
+          6.471625,
+          12.83021875,
+          0.85
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle048",
+      "max_bounds_error_mm": 0.0005645751954830303,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          3.9739997386932373,
+          7.796281814575195,
+          0.0
+        ],
+        [
+          5.673999786376953,
+          8.696281433105469,
+          0.800000011920929
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          3.974,
+          7.79628125,
+          0
+        ],
+        [
+          5.674,
+          8.69628125,
+          0.8
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle049",
+      "max_bounds_error_mm": 0.00044250488251407205,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          5.0698747634887695,
+          9.863344192504883,
+          0.0
+        ],
+        [
+          5.619874954223633,
+          10.863344192504883,
+          0.3999999761581421
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          5.069875,
+          9.86334375,
+          0
+        ],
+        [
+          5.619875,
+          10.86334375,
+          0.4
+        ]
+      ]
+    },
+    {
+      "source_name": "Circle",
+      "max_bounds_error_mm": 0.0003509521482314426,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          3.6742498874664307,
+          12.029062271118164,
+          0.0
+        ],
+        [
+          4.174249649047852,
+          12.529062271118164,
+          0.5
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          3.67425,
+          12.0290625,
+          0
+        ],
+        [
+          4.17425,
+          12.5290625,
+          0.5
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle050",
+      "max_bounds_error_mm": 9.727478023080494e-05,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          3.02762508392334,
+          3.064406156539917,
+          0.0
+        ],
+        [
+          4.627624988555908,
+          3.8644063472747803,
+          0.75
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          3.027625,
+          3.06440625,
+          0
+        ],
+        [
+          4.627625,
+          3.86440625,
+          0.75
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle051",
+      "max_bounds_error_mm": 0.0007629394538355427,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          12.688124656677246,
+          8.01953125,
+          0.4500000476837158
+        ],
+        [
+          12.8881254196167,
+          9.219532012939453,
+          1.5
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          12.688125,
+          8.01953125,
+          0.45
+        ],
+        [
+          12.888125,
+          9.21953125,
+          1.5
+        ]
+      ]
+    },
+    {
+      "source_name": "Rectangle052",
+      "max_bounds_error_mm": 0.00026702880795426154,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          12.531624794006348,
+          9.235625267028809,
+          0.45000001788139343
+        ],
+        [
+          12.881625175476074,
+          10.885624885559082,
+          1.1999999284744263
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          12.531625,
+          9.235625,
+          0.45
+        ],
+        [
+          12.881625,
+          10.885625,
+          1.2
+        ]
+      ]
+    },
+    {
+      "source_name": "K-RUN-E",
+      "max_bounds_error_mm": 0.0002384185791015625,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          7.199999809265137,
+          0.5349999666213989,
+          0.0
+        ],
+        [
+          7.800000190734863,
+          3.750000238418579,
+          0.8199999928474426
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          7.2,
+          0.535,
+          0.0
+        ],
+        [
+          7.8,
+          3.75,
+          0.82
+        ]
+      ]
+    },
+    {
+      "source_name": "K-RUN-S",
+      "max_bounds_error_mm": 9.536743128535363e-05,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          6.099999904632568,
+          -5.960464477539063e-08,
+          0.0
+        ],
+        [
+          7.309999942779541,
+          0.6000000834465027,
+          0.8199999928474426
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          6.1,
+          0.0,
+          0.0
+        ],
+        [
+          7.31,
+          0.6,
+          0.82
+        ]
+      ]
+    },
+    {
+      "source_name": "K-CORNER",
+      "max_bounds_error_mm": 0.00019073486345888568,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          7.199999809265137,
+          -2.960365463877679e-08,
+          0.0
+        ],
+        [
+          7.800000190734863,
+          0.5350000858306885,
+          0.8199999928474426
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          7.2,
+          0.0,
+          0.0
+        ],
+        [
+          7.8,
+          0.535,
+          0.82
+        ]
+      ]
+    },
+    {
+      "source_name": "K-WALL-E",
+      "max_bounds_error_mm": 0.00019073486345888568,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          7.420000076293945,
+          0.5349999666213989,
+          1.6699999570846558
+        ],
+        [
+          7.800000190734863,
+          3.75,
+          2.4099998474121094
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          7.42,
+          0.535,
+          1.67
+        ],
+        [
+          7.8,
+          3.75,
+          2.41
+        ]
+      ]
+    },
+    {
+      "source_name": "K-FRIDGE",
+      "max_bounds_error_mm": 0.00022888183615066282,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          6.835000038146973,
+          3.75,
+          0.0
+        ],
+        [
+          7.739999771118164,
+          4.460000038146973,
+          1.7000000476837158
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          6.835,
+          3.75,
+          0.0
+        ],
+        [
+          7.74,
+          4.46,
+          1.7
+        ]
+      ]
+    },
+    {
+      "source_name": "K-FRIDGE-OVERHEAD",
+      "max_bounds_error_mm": 0.00022888183615066282,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          6.835000038146973,
+          3.75,
+          1.9299999475479126
+        ],
+        [
+          7.739999771118164,
+          4.449999809265137,
+          2.4099998474121094
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          6.835,
+          3.75,
+          1.93
+        ],
+        [
+          7.74,
+          4.45,
+          2.41
+        ]
+      ]
+    },
+    {
+      "source_name": "K-TALL-L",
+      "max_bounds_error_mm": 0.00038146972691777137,
+      "pass_check": true,
+      "actual_bounds_m": [
+        [
+          5.899999618530273,
+          3.75,
+          0.0
+        ],
+        [
+          6.835000038146973,
+          4.449999809265137,
+          2.4099998474121094
+        ]
+      ],
+      "target_bounds_m": [
+        [
+          5.9,
+          3.75,
+          0.0
+        ],
+        [
+          6.835,
+          4.45,
+          2.41
+        ]
+      ]
+    }
+  ],
+  "orientation_checks": [
+    {
+      "source_name": "Rectangle004",
+      "actual_deg": 180.0000043257111,
+      "expected_deg": 180,
+      "error_deg": 4.325711103092544e-06
+    },
+    {
+      "source_name": "Rectangle008",
+      "actual_deg": 359.99999567428887,
+      "expected_deg": 0,
+      "error_deg": 4.325711188357673e-06
+    },
+    {
+      "source_name": "Rectangle012",
+      "actual_deg": 180.0000043257111,
+      "expected_deg": 180,
+      "error_deg": 4.325711103092544e-06
+    },
+    {
+      "source_name": "Rectangle013",
+      "actual_deg": 180.0000043257111,
+      "expected_deg": 180,
+      "error_deg": 4.325711103092544e-06
+    },
+    {
+      "source_name": "Rectangle015",
+      "actual_deg": 270.0,
+      "expected_deg": 270,
+      "error_deg": 0.0
+    },
+    {
+      "source_name": "Rectangle017",
+      "actual_deg": 180.0000043257111,
+      "expected_deg": 180,
+      "error_deg": 4.325711103092544e-06
+    },
+    {
+      "source_name": "Rectangle021",
+      "actual_deg": 270.0,
+      "expected_deg": 270,
+      "error_deg": 0.0
+    },
+    {
+      "source_name": "Rectangle022",
+      "actual_deg": 359.99999567428887,
+      "expected_deg": 0,
+      "error_deg": 4.325711188357673e-06
+    },
+    {
+      "source_name": "Rectangle023",
+      "actual_deg": 359.99999567428887,
+      "expected_deg": 0,
+      "error_deg": 4.325711188357673e-06
+    },
+    {
+      "source_name": "Rectangle024",
+      "actual_deg": 180.0000043257111,
+      "expected_deg": 180,
+      "error_deg": 4.325711103092544e-06
+    },
+    {
+      "source_name": "Rectangle025",
+      "actual_deg": 89.99999499104386,
+      "expected_deg": 90,
+      "error_deg": 5.008956122765085e-06
+    },
+    {
+      "source_name": "Rectangle026",
+      "actual_deg": 359.99999567428887,
+      "expected_deg": 0,
+      "error_deg": 4.325711188357673e-06
+    },
+    {
+      "source_name": "Circle010",
+      "actual_deg": 270.0,
+      "expected_deg": 270,
+      "error_deg": 0.0
+    },
+    {
+      "source_name": "Circle011",
+      "actual_deg": 270.0,
+      "expected_deg": 270,
+      "error_deg": 0.0
+    },
+    {
+      "source_name": "Circle012",
+      "actual_deg": 89.99999499104386,
+      "expected_deg": 90,
+      "error_deg": 5.008956122765085e-06
+    },
+    {
+      "source_name": "Circle013",
+      "actual_deg": 89.99999499104386,
+      "expected_deg": 90,
+      "error_deg": 5.008956122765085e-06
+    },
+    {
+      "source_name": "Rectangle029",
+      "actual_deg": 359.99999567428887,
+      "expected_deg": 0,
+      "error_deg": 4.325711188357673e-06
+    },
+    {
+      "source_name": "Rectangle031",
+      "actual_deg": 359.99999567428887,
+      "expected_deg": 0,
+      "error_deg": 4.325711188357673e-06
+    },
+    {
+      "source_name": "Rectangle034",
+      "actual_deg": 270.0,
+      "expected_deg": 270,
+      "error_deg": 0.0
+    },
+    {
+      "source_name": "Rectangle037",
+      "actual_deg": 89.99999499104386,
+      "expected_deg": 90,
+      "error_deg": 5.008956122765085e-06
+    },
+    {
+      "source_name": "Rectangle038",
+      "actual_deg": 270.0,
+      "expected_deg": 270,
+      "error_deg": 0.0
+    },
+    {
+      "source_name": "Rectangle045",
+      "actual_deg": 359.99999567428887,
+      "expected_deg": 0,
+      "error_deg": 4.325711188357673e-06
+    },
+    {
+      "source_name": "Rectangle046",
+      "actual_deg": 359.99999567428887,
+      "expected_deg": 0.0,
+      "error_deg": 4.325711188357673e-06
+    },
+    {
+      "source_name": "Rectangle047",
+      "actual_deg": 270.0,
+      "expected_deg": 270.0,
+      "error_deg": 0.0
+    }
+  ],
+  "evaluated_new_triangles": 55229,
+  "invalid_coordinates": [],
+  "known_visual_or_design_issues": [
+    {
+      "id": "INHERITED_MUTABLE_GUIDE_TRANSFORMS",
+      "items": [
+        "05_HUMAN_DESIGN_GUIDE"
+      ],
+      "status": "REPORT_ONLY_SOURCE_DEFECT",
+      "description": "Imported mutable guide assets have world-origin rotation and old Z-offset defects. Originals retained unchanged and hidden; B1 additions use source-register rectangles."
+    },
+    {
+      "id": "INHERITED_VISUAL_OBSERVATIONS",
+      "items": [
+        "LEAF_D107",
+        "FASCIA_PLATFORM_CURVE",
+        "FLOOR_UPPER"
+      ],
+      "status": "REPORT_ONLY_SOURCE_OBSERVATION",
+      "description": "LEISURE cutaway shows the confirmed D-107 leaf lower-edge offset relative to the adjacent lower-floor view, and surface striping on the inherited curved fascia/floor edge. Source geometry/pose remains unchanged; report the appearance only, do not re-decide the frozen datum or door."
+    },
+    {
+      "id": "THREE_FACING_CONFLICTS",
+      "items": [
+        "Rectangle032",
+        "Rectangle030",
+        "Rectangle035"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "V02 overrides are not human confirmed. Keep these three bodies nondirectional until their front orientation is approved."
+    },
+    {
+      "id": "MINI_WASHER_MOUNT_Z",
+      "items": [
+        "Rectangle041"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Wall mounting height and MEP not provided; physical review body hidden; XY helper shown."
+    },
+    {
+      "id": "DEVICE_SUPPORT_Z",
+      "items": [
+        "Rectangle043",
+        "Rectangle044"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Printer/NAS are intended on/in shelving; exact support level unprovided. Physical bodies hidden; XY helpers shown."
+    },
+    {
+      "id": "OWNER_CHAIR_FACING",
+      "items": [
+        "Circle007"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Owner study-chair facing unresolved; nondirectional envelope retained."
+    },
+    {
+      "id": "MEDIA_CANDIDATE_DISTORTION",
+      "items": [
+        "Rectangle004"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "V02 tv-stand candidate remains SIZE_DISTORTION; native front assumption and final floor-standing/floating solution need review."
+    },
+    {
+      "id": "GENERIC_REVIEW_DETAILS",
+      "items": [
+        "B1_ALL_NEW_ASSEMBLIES"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Panel, hardware, door trim and glass profiles are generic review details, not selected products or shop-drawing approval."
+    },
+    {
+      "id": "CEILING_COFFER_LIGHT_SLOT",
+      "items": [
+        "CEILING_LOWER",
+        "CEILING_UPPER"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Inherited exact ceiling blockout retained. No confirmed coffer, beam, soffit or light-slot dimensions; do not invent."
+    },
+    {
+      "id": "BATHROOM_MEP_AND_PRODUCT",
+      "items": [
+        "Rectangle008",
+        "Rectangle034",
+        "Rectangle038",
+        "Rectangle030",
+        "Rectangle035",
+        "Rectangle037"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Fixture envelopes and guide XY modeled; sanitary product SKUs, inlet/outlet/drain installation coordinates and mount heights need confirmation. No hidden plumbing routes inferred."
+    },
+    {
+      "id": "OTHER_INTERNAL_DOOR_DETAILS",
+      "items": [
+        "FINAL_OPENING_ACTIVE_REGISTER doors"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Nine verified glazed openings and D-107 receive review detailing. Other internal-door entries contain plan symbol bounds; leaf swing/clear widths/hardware need verified dimensions before detailed leaves are installed."
+    },
+    {
+      "id": "Rectangle007_SHOWER_DETAIL",
+      "items": [
+        "Rectangle007"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "2000 mm screen and generic glass hardware are review assumptions; exact enclosure/door mechanism and MEP require confirmation."
+    },
+    {
+      "id": "Rectangle033_SHOWER_DETAIL",
+      "items": [
+        "Rectangle033"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "2000 mm screen and generic glass hardware are review assumptions; exact enclosure/door mechanism and MEP require confirmation."
+    },
+    {
+      "id": "Rectangle036_SHOWER_DETAIL",
+      "items": [
+        "Rectangle036"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "2000 mm screen and generic glass hardware are review assumptions; exact enclosure/door mechanism and MEP require confirmation."
+    },
+    {
+      "id": "CHAISE_RECLINE_AXIS",
+      "items": [
+        "Rectangle048"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "V02 uses east-west recline axis, back at west and open entry north; retain as review candidate, no layout change."
+    },
+    {
+      "id": "K_TALL_INTERNAL_SPLIT",
+      "items": [
+        "K-TALL-L"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Registered XY retained. PDF shows appliance niche; the register full-height solid is replaced by lower/upper review bodies, while the internal lateral/corner split needs confirmation."
+    },
+    {
+      "id": "KITCHEN_PLACEMENT_AND_NICHE",
+      "items": [
+        "K-COOK",
+        "K-DISHW",
+        "K-BASKET",
+        "K-FRIDGE",
+        "K-RUN-S",
+        "K-SINK"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "XY remains as registered. Appliance/corner module positions and south-leg origin are TO_VERIFY in existing cabinet register. Internal fridge/tall splits conflict with PDF chains; no automatic topology change."
+    },
+    {
+      "id": "KITCHEN_TOP_AND_DEPTH",
+      "items": [
+        "K-WALL-E",
+        "K-FRIDGE-OVERHEAD"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "PDF p2 and p5 explicit vertical dimensions supersede temporary approximations. Overhead depth remains provisional 600; module splits/installation require review."
+    },
+    {
+      "id": "BAY_FRONT_SOURCE_INTERFERENCE",
+      "items": [
+        "W-LIV-N",
+        "W-MB-S",
+        "W-SMB-S",
+        "W-STUDY-NE"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Frozen bay outlines are retained. Existing front wall bands appear full height and overlap the new front glazing review assemblies. Existing flat host glazing also remains. Report only; no cut, movement or redesign of frozen walls/openings."
+    },
+    {
+      "id": "SPLIT_EDGE_PROFILE",
+      "items": [
+        "STEP_0",
+        "STEP_1",
+        "STEP_2",
+        "FASCIA_PLATFORM_CURVE"
+      ],
+      "status": "DESIGN_DECISION_REQUIRED",
+      "description": "Generic nosing and in-datum edge strip only. No railing, ramp or leisure demolition; finish product and railing intent require review."
+    }
+  ],
+  "model_sha256": "31beb580133e81c64c92dc71d4bb1213f6b0b9151e013c1fa1d5fac2d33178bd"
+}

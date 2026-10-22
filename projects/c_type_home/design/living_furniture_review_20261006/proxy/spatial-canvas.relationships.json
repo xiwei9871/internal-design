@@ -1,0 +1,4308 @@
+{
+  "schema": "spatial-canvas.relationships.v1",
+  "design_id": "c_type_home",
+  "graph_id": "relationships_c_type_r4",
+  "revision": "7-living-furniture-review",
+  "sources": [
+    {
+      "resource_id": "c_type_r4",
+      "revision": "r4",
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend"
+    },
+    {
+      "resource_id": "spaces_c_type_r4",
+      "revision": "9-living-furniture-review",
+      "sha256": "6a3174b9bdd2479c3d1df5c964440fda708e4911938544e1b5a362d5ed28f662",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/proxy/spatial-canvas.spaces.json"
+    },
+    {
+      "resource_id": "r4_rel_evidence",
+      "revision": "1",
+      "sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+      "locator": "/Users/xiwei/.codex/worktrees/v05-relationships/Spatial-Canvas/task-output/v05-c-type/r4-relationship-evidence.json"
+    },
+    {
+      "resource_id": "kitchen_register",
+      "revision": "b1.1",
+      "sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/KITCHEN_CABINET_3D_REGISTER_V01.json"
+    },
+    {
+      "resource_id": "kitchen_builder",
+      "revision": "b1.1",
+      "sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/build_design_model.py"
+    },
+    {
+      "resource_id": "r4_review",
+      "revision": "r4",
+      "sha256": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_REVIEW.md"
+    },
+    {
+      "resource_id": "c_type_r4_living_review",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_LIVING_FURNITURE_REVIEW.blend"
+    },
+    {
+      "resource_id": "wall_part_index",
+      "revision": "1",
+      "sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_identity_r4_review/WALL_PART_INDEX.json"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "ent_6fe75527bf4d48e18221c86303e2bd3e",
+      "kind": "entity",
+      "name": "STEP_0",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "STEP_0",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_3ddea04f4477424ea2f6640ae3a6db94",
+      "kind": "entity",
+      "name": "STEP_1",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "STEP_1",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_dc2093ed60864a02b57e24a4451cbf76",
+      "kind": "entity",
+      "name": "STEP_2",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "STEP_2",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "kind": "entity",
+      "name": "B11_K-SINK_BOTTOM",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-SINK_BOTTOM",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_16b12c22ba7640109ad65db057393519",
+      "kind": "entity",
+      "name": "B11_K-SINK_L",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-SINK_L",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_f7f23187094141fd84efea8ba39df0bb",
+      "kind": "entity",
+      "name": "B11_K-SINK_R",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-SINK_R",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_c77e35eebe334daebcf2b45588d70d54",
+      "kind": "entity",
+      "name": "B11_K-SINK_S",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-SINK_S",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_fece89d35dc742b1b6853351beb55530",
+      "kind": "entity",
+      "name": "B11_K-SINK_N",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-SINK_N",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_4a2cf64a9cf5452fb8fdba7326563b44",
+      "kind": "entity",
+      "name": "B11_K-SINK_TAP_UP",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-SINK_TAP_UP",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_fe10b0c638c840ff9e312922d5088f90",
+      "kind": "entity",
+      "name": "B11_K-SINK_TAP_SPOUT",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-SINK_TAP_SPOUT",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "kind": "entity",
+      "name": "R4_DOOR_WEST_CONNECTED_RETURN",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "R4_DOOR_WEST_CONNECTED_RETURN",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "kind": "entity",
+      "name": "R4_BEDROOM_DOOR_LEAF",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "R4_BEDROOM_DOOR_LEAF",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_711227218a18492da3adc174a279749c",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_L",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_L",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_7cb58b359c024fa5907ab4a16c10a4f0",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_R",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_R",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_04f2263f691a47d99dc7e560ed06c436",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_BASE",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_BASE",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_378859955bb044ae8471387081b058fb",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_BACK",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_BACK",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_0140b5cdf590415d8b2221c98508f7ea",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_PLINTH",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_PLINTH",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_bedefbf6db6b4ebf8fde7042e3161812",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_FRONT_0",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_FRONT_0",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_f84d49ad6a384895bfc86fcf4b6d3b40",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_PULL_0",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_PULL_0",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_516aababf0484822a32752d4869e6278",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_FRONT_1",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_FRONT_1",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_79975d635c69493c873f60480619fa54",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_PULL_1",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_PULL_1",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_d625b5468aff483eb3b014c1ca495118",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_FRONT_2",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_FRONT_2",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_a1eb528d489c48ef978816fb577b70e5",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_PULL_2",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_PULL_2",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_a9d8924faa0a410b92378b0db00c82d4",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_SHELF",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_BODY_SHELF",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_3bf9157c99774c3690a15927a48897f2",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_COUNTER_0",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_COUNTER_0",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_663606d5723b41a1ba29b56e439496e4",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_COUNTER_1",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_COUNTER_1",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_f9d0b1b1d1054a1b85d311efe201f0f3",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_COUNTER_2",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_COUNTER_2",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_1e313d64e1514240a2c6cdc7cfb7b9c5",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_COUNTER_3",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "B11_K-RUN-S_COUNTER_3",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "cmp_sink",
+      "kind": "component_group",
+      "name": "水槽组件 / Sink assembly",
+      "resource_id": "c_type_r4"
+    },
+    {
+      "node_id": "cmp_south_run",
+      "kind": "component_group",
+      "name": "南侧厨房柜体 / South cabinet run",
+      "resource_id": "c_type_r4"
+    },
+    {
+      "node_id": "cmp_bedroom_door",
+      "kind": "component_group",
+      "name": "卧室门组件 / Door assembly",
+      "resource_id": "c_type_r4"
+    },
+    {
+      "node_id": "cmp_stair",
+      "kind": "component_group",
+      "name": "现有楼梯组件 / Stair assembly",
+      "resource_id": "c_type_r4"
+    },
+    {
+      "node_id": "candidate_R-KITCHEN",
+      "kind": "space",
+      "name": "厨房",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_R-KITCHEN"
+    },
+    {
+      "node_id": "candidate_R-BED-S",
+      "kind": "space",
+      "name": "卧室",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_R-BED-S"
+    },
+    {
+      "node_id": "candidate_bedroom_approach",
+      "kind": "space",
+      "name": "卧室门外通道 / Bedroom approach",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_bedroom_approach"
+    },
+    {
+      "node_id": "space_lounge",
+      "kind": "space",
+      "name": "休闲厅 / Lounge",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "space_lounge"
+    },
+    {
+      "node_id": "candidate_lower_landing",
+      "kind": "space",
+      "name": "下层梯口 / Lower landing",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_lower_landing"
+    },
+    {
+      "node_id": "candidate_stair_transition",
+      "kind": "space",
+      "name": "楼梯 / Stair transition",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_stair_transition"
+    },
+    {
+      "node_id": "level_upper",
+      "kind": "level",
+      "name": "上层 +450mm",
+      "resource_id": "spaces_c_type_r4",
+      "level_id": "upper"
+    },
+    {
+      "node_id": "level_lower",
+      "kind": "level",
+      "name": "下层 0mm",
+      "resource_id": "spaces_c_type_r4",
+      "level_id": "lower"
+    },
+    {
+      "node_id": "ent_b1bbaaf28737516b9c695b249f0d7ea5",
+      "kind": "entity",
+      "name": "新增柱侧墙段 / Site-review divider pier",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "KITCHEN_DIVIDER_PIER_SITE_REVIEW",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "kind": "component_group",
+      "name": "R3_HOUSE_WALLS_D107_ROLLED_BACK / original wall assembly",
+      "resource_id": "c_type_r4_living_review",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "cmp_wall_ent_4446040d5ca84b14bb410ef7df0ba2e7",
+      "kind": "component_group",
+      "name": "R3_COMPLETE_PARTITION_WALLS / original wall assembly",
+      "resource_id": "c_type_r4_living_review",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_6fe11a4811895893b219f803238e3926",
+      "kind": "entity",
+      "name": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_HEAD",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_HEAD",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_0944f3ed920e5cb6be34a21bb3234302",
+      "kind": "entity",
+      "name": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_78b94e30ef8d53eaab25cddaf9905818",
+      "kind": "entity",
+      "name": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_14ce823c67e653caba5689c6877e4e13",
+      "kind": "entity",
+      "name": "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_28ddec26e6535a97893302934cca21f3",
+      "kind": "entity",
+      "name": "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_UNDER_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_70eba3c86bb252f4986f0b849d933c81",
+      "kind": "entity",
+      "name": "VIEW_WALL_DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_DOOR_V2_NBALC_NORTH_FULL_WALL_PIER",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_cbbaf1ca2d6e5c90b2f0d858fd940cc0",
+      "kind": "entity",
+      "name": "VIEW_WALL_DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_DOOR_V2_NBALC_SOLID_ABOVE_DOOR",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_ad9b8192fc4d5bea976e2ef4ffbcdf5c",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_FRONT_HEAD",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_FRONT_HEAD",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_7669d3af61fc5446a0feff423457eced",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_FRONT_UNDER_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_FRONT_UNDER_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_533de1b798df5c40847797476c0e4a32",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_INNER_HEAD",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_INNER_HEAD",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_8054f94abf8d55eeaa7b8b0159ce2459",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_INNER_UNDER_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_INNER_UNDER_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_73d96c81f66956d09d9b7c25b8d74378",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_LEFT_HEAD",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_LEFT_HEAD",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_028c1081dcc9565b9c80967edfc3b434",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_LEFT_UNDER_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_LEFT_UNDER_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_8d941b85808e5cff93b5886ff1f32999",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_RIGHT_HEAD",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_RIGHT_HEAD",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_edd1e8192c4e565bb0588455c4d26057",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_RIGHT_UNDER_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_5d9ff13ed4715a8a83f246b6d4dfae34",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_SOFFIT",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_SOFFIT",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_3ebcabb21e955577aed17b50c2fb90a2",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_BAY_SOLID_PLATFORM_CORE",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_b766d1eb792a59f4958ed1fb140a2160",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_GUEST_BATH_FULL_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_6c5d5d7e36545f2da60efffc573685bd",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_GUEST_BATH_NORTH_JUNCTION",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_636c6979286a5929a570b17698f36760",
+      "kind": "entity",
+      "name": "VIEW_WALL_LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_LIVING_FIX_TV_NORTH_SOLID_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_305b89ce4f245959b74fe081bfa48ae5",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_D-BATHM_COMPLETE_HOST_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_D-BATHM_COMPLETE_HOST_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_fcf6c9615f5452a4933e41e4ab587f82",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_D-GUEST-BATH_COMPLETE_HOST_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_D-GUEST-BATH_COMPLETE_HOST_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_dbd6a94aefc554f7863789edf331fee3",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_D-GUEST-ROOM_COMPLETE_HOST_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_D-GUEST-ROOM_COMPLETE_HOST_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_6ae8918d8f5a562fb47be0495cdad81b",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_D-MB_COMPLETE_HOST_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_df7e0c5442eb5efeb0048fc7d6581b3f",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_D-STUDY_COMPLETE_HOST_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_393be8fef2e85c0fa911e90bc57853ff",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_ENT-1_COMPLETE_HOST_WALL",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_a39511b980015621a099a6fd8575e93e",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_G_DIN_LIV_LEFT_PIER",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_G_DIN_LIV_LEFT_PIER",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_1b14db75a35a5fbd8162aca7cba1dc07",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_G_DIN_LIV_RIGHT_PIER",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_G_DIN_LIV_RIGHT_PIER",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_c03f26822a655ccc83cb5c1fafac28f3",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_G_DIN_LIV_SOLID_HEAD",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_G_DIN_LIV_SOLID_HEAD",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_674f9289a3b35a64937c5150ac173114",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-MB-S_INNER_HEAD",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-MB-S_INNER_HEAD",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_e2a91183020c57cca3f371df75a2e297",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-MB-S_INNER_LOWER",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-MB-S_INNER_LOWER",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_83368c6b4b655542b913cad03c3698a2",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-MB-S_SOFFIT",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-MB-S_SOFFIT",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_43e9aeeacefe5276b58e64c52689703d",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-MB-S_SOLID_UNDER_PLATFORM",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-MB-S_SOLID_UNDER_PLATFORM",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_d686dfb6102757f982bd1d7832cbe699",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-SMB-S_INNER_HEAD",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_c9917948cc855a3f9537c74da2e6c4d8",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-SMB-S_INNER_LOWER",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-SMB-S_INNER_LOWER",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_8cf91f40c9265dc3925e7af9be867f94",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-SMB-S_SOFFIT",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-SMB-S_SOFFIT",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_e1701a36f6ab55ba96957d896493c929",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-SMB-S_SOLID_UNDER_PLATFORM",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-SMB-S_SOLID_UNDER_PLATFORM",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_b1579e8573695bad908877a8c63ab790",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-STUDY-NE_INNER_HEAD",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-STUDY-NE_INNER_HEAD",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_99a2eee752e95fb695e3c462ef7951d8",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-STUDY-NE_INNER_LOWER",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-STUDY-NE_INNER_LOWER",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_d0b18af09b89550294c9272dd272916a",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-STUDY-NE_SOFFIT",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-STUDY-NE_SOFFIT",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_5916a3ad0cec528a92f7d576baaa479d",
+      "kind": "entity",
+      "name": "VIEW_WALL_V4_W-STUDY-NE_SOLID_UNDER_PLATFORM",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_V4_W-STUDY-NE_SOLID_UNDER_PLATFORM",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_78ff03dfeac756529082ce65d171f1a9",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0004",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0004",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_9e718d30968e5e65ae02bd49065a90e9",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0005",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0005",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_d09db1cf51ae51b3b7be413068dcc191",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0006",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0006",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_40ca2450bfce5f2a93a25cd2ec513fc6",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0007",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0007",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_c2dbad24c0845db18d161680c1878184",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0009",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0009",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_7c24679577ce55559d9569201c876f61",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0010",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0010",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_be0a4d8c756c5dcc8e7231e5a2a700fd",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0015",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0015",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_d78583fec301548c88d4c4c9b66757c9",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0016",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0016",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_e7bd452023455f22885e285ecdddae52",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0017",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0017",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_5c6a3a35faab5bf2904631cdfddbff2a",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0018",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0018",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_b8a5af707b3e58f19007875b6be4bdb4",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0019",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0019",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_0075c1e3f1dc5b11936776383bcb824c",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0020",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0020",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_cc4261295d475073b7aa0f93fe9c6bc1",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0021",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0021",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_c4bfcd37bcd85d3286346238ab748f00",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0022",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0022",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_4300a551f0305897944ae59bef2cea3c",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0023",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0023",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_c8dc5015ab3650d782508fdf6cecf648",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0024",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0024",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_8bfbb8456e6f5c6caa5af84eb62760d5",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0025",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0025",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_82ae35e1f049534db7a2c7d47c11a0a1",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0026",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0026",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_ffed7f61dbec55ab80fe73475f6a9ccd",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0027",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0027",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_e342369a32b45ce0b36561e4632f4fe7",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0028",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0028",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_7c8925c4851a549fbbd322006803d147",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0029",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0029",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_c2810e7e201c569c84bca1a5fd17f1e9",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0030",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0030",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_228a7eab47e05356ae3d288207b2e8ca",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0031",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0031",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_4c569d61dca15938af89fef542bbfb15",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0032",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0032",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_79d4e120cf5a52a49e034e22dfc8cc4a",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0033",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0033",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_4dddd0bcf7905fc086bc5a33c8fee413",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0034",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0034",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_b843ba7e196d5bd8a572c5b3aee9045a",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0035",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0035",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_bc33521101e5577781ec87e7a9ddf48e",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0036",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0036",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_968dec4279c5540dae9b5cf20ec590a4",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0037",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0037",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_f8101ee0ab5857f0a583f4ef503c9d77",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0038",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0038",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_2eb815b01f4c544eb114bda181513064",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0039",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0039",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_77b1b8dc191f50368da36fd94506d947",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0040",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0040",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_b22a1e661747586c8c127751c699bb31",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0041",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0041",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_4299f0bc3dce5af7b4008c703d67c2ad",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0042",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0042",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_a2331139c35f514da6e3110412808714",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0043",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0043",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_292295d05e83519f93bf6c9fed39d766",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0044",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0044",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_1a2f1ebd2eaf52f6ba8c84f07e969320",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0045",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0045",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_c40b1005b56057c48f4fca22b10d2a9f",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0046",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0046",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_f18228926e58506ab0b7f8032c52e69f",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0047",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0047",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_386b09b5fa1250f9b37a860507ed26fa",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0048",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0048",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_ed3d277e0d545d948b37c0039de36cca",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0049",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0049",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_d2e1fe9aaa2e521386a86672fa43b6f4",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0050",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0050",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_f0a5adc189f25299a7b25463b38e0e8d",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0051",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0051",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_e017466360075c39af49529127690a4e",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0052",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0052",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_7caa039d539a5469aa02c77c214e009b",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0053",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0053",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_df57443faff255e09d9db342f9a46e2e",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0054",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0054",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_73d1299613ad574c86e94b627ec78b12",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0055",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0055",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_b6e0974db5f25ce5bb1ffa73b9837b41",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0056",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0056",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_c2720dab7fc05b9f86a0701c4b5db5a4",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0057",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0057",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_3ed894802f2859f18b72aff3c210f432",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0058",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0058",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_7f4a582d1d565a82a182a54de57f4e71",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0059",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0059",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_fab02a4a90a35b4e855e64eb363488d5",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0060",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0060",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_26f1d1454b795eb186faba9d7d1b9f26",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0061",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0061",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_5a6dd606884d5a88b69ffd7a2c53f8a3",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0062",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0062",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_43ace5aebdeb505d8c54a6b4a27c9377",
+      "kind": "entity",
+      "name": "VIEW_WALL_W_wall_md_0064",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_W_wall_md_0064",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_75748873dd4a571faa9e87690b1af3e5",
+      "kind": "entity",
+      "name": "VIEW_WALL_R3_SOUTH_POCKET_PARTITION",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_R3_SOUTH_POCKET_PARTITION",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    },
+    {
+      "node_id": "ent_821c71e5f96f50229bb483a8ce558548",
+      "kind": "entity",
+      "name": "VIEW_WALL_R3_WEST_PARTITION",
+      "resource_id": "c_type_r4_living_review",
+      "native_id": "VIEW_WALL_R3_WEST_PARTITION",
+      "revision": "r4-living-furniture-review-1",
+      "sha256": "c371efb418964fcb575ac92d18f18e1a027b6c2e683a78e93647046fc254d72b"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "rel_3099bbf139e152e0b4e6c7cd62169943",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_4a843751d2655c0c9108c146c82ee4ae",
+      "from": "ent_16b12c22ba7640109ad65db057393519",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_53148d85bf8b5c0bb3f3ae3a3fb3c520",
+      "from": "ent_f7f23187094141fd84efea8ba39df0bb",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_9b9d5e3f40af5388aa894133bd7ffccc",
+      "from": "ent_c77e35eebe334daebcf2b45588d70d54",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_08bee09778085c0c877c1308bce87824",
+      "from": "ent_fece89d35dc742b1b6853351beb55530",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_a8a1fc05899a5c319abf221c9a0c9946",
+      "from": "ent_4a2cf64a9cf5452fb8fdba7326563b44",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_951d68216a0d5c5e8fcf98cd843436a7",
+      "from": "ent_fe10b0c638c840ff9e312922d5088f90",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_1d8a434303495848a2f3a3b22af843b3",
+      "from": "ent_711227218a18492da3adc174a279749c",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_14dbe2462d365c55b09949acaef5a2fa",
+      "from": "ent_7cb58b359c024fa5907ab4a16c10a4f0",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_d61ef063e138596ebc9d3ae60d3a8d0d",
+      "from": "ent_04f2263f691a47d99dc7e560ed06c436",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_ba6849ec3ba65927ac14ce163bd0930d",
+      "from": "ent_378859955bb044ae8471387081b058fb",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_08d129cc30a654babf46ee9951cbb9c5",
+      "from": "ent_0140b5cdf590415d8b2221c98508f7ea",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_3ac0b922e1035a36b2783f2e6ae0cdb9",
+      "from": "ent_bedefbf6db6b4ebf8fde7042e3161812",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_e0e4d6901f46556bb970936e9c6cb4a5",
+      "from": "ent_f84d49ad6a384895bfc86fcf4b6d3b40",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_0208004325d953168373ae61a08f7fd1",
+      "from": "ent_516aababf0484822a32752d4869e6278",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_820df00dd9ac5b74a78e94f2e7b83dcd",
+      "from": "ent_79975d635c69493c873f60480619fa54",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_983d553b20e854ae854ea0370480542c",
+      "from": "ent_d625b5468aff483eb3b014c1ca495118",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_60729050208d56d89c122897144058c8",
+      "from": "ent_a1eb528d489c48ef978816fb577b70e5",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_551f807105be5c05940066134aaf89ae",
+      "from": "ent_a9d8924faa0a410b92378b0db00c82d4",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_5efe606fb95b53cb8498df87047eaac6",
+      "from": "ent_3bf9157c99774c3690a15927a48897f2",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_0bed9b2e64bc5e989d2ec4adf7b8561d",
+      "from": "ent_663606d5723b41a1ba29b56e439496e4",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_357b132e3c615a9687c8e8403b55575b",
+      "from": "ent_f9d0b1b1d1054a1b85d311efe201f0f3",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_40c908bc669b55daa3693c0c63fdd611",
+      "from": "ent_1e313d64e1514240a2c6cdc7cfb7b9c5",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_29915fd715955ee4ad6acea1ed1f27e7",
+      "from": "ent_16b12c22ba7640109ad65db057393519",
+      "to": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "type": "connected_to",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_builder",
+        "source_revision": "b1.1",
+        "source_sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+        "evidence": "Explicit source constructs open bowl from base and four joined side boxes; actual R4 bounds corroborate each model joint. No faucet/plumbing implication."
+      },
+      "confidence": 0.95,
+      "geometry_evidence": {
+        "method": "explicit_box_assembly_plus_r4_bounds",
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "bounds_a": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.6380000114440918
+          ]
+        ],
+        "bounds_b": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.203000068664551,
+            0.5149999856948853,
+            0.8200000524520874
+          ]
+        ],
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_797b21d6625f5598aecc0f78c4f5439b",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "ent_f7f23187094141fd84efea8ba39df0bb",
+      "type": "connected_to",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_builder",
+        "source_revision": "b1.1",
+        "source_sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+        "evidence": "Explicit source constructs open bowl from base and four joined side boxes; actual R4 bounds corroborate each model joint. No faucet/plumbing implication."
+      },
+      "confidence": 0.95,
+      "geometry_evidence": {
+        "method": "explicit_box_assembly_plus_r4_bounds",
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "bounds_a": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.6380000114440918
+          ]
+        ],
+        "bounds_b": [
+          [
+            6.986999988555908,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.99500036239624,
+            0.5149999856948853,
+            0.8200000524520874
+          ]
+        ],
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_8a04dd000d7f5edfa0189dbe478e89f8",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "ent_c77e35eebe334daebcf2b45588d70d54",
+      "type": "connected_to",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_builder",
+        "source_revision": "b1.1",
+        "source_sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+        "evidence": "Explicit source constructs open bowl from base and four joined side boxes; actual R4 bounds corroborate each model joint. No faucet/plumbing implication."
+      },
+      "confidence": 0.95,
+      "geometry_evidence": {
+        "method": "explicit_box_assembly_plus_r4_bounds",
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "bounds_a": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.6380000114440918
+          ]
+        ],
+        "bounds_b": [
+          [
+            6.194999694824219,
+            0.08500000089406967,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.09300000220537186,
+            0.8200000524520874
+          ]
+        ],
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_51cfca1510cb51d292ff824cb1dcfff9",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "ent_fece89d35dc742b1b6853351beb55530",
+      "type": "connected_to",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_builder",
+        "source_revision": "b1.1",
+        "source_sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+        "evidence": "Explicit source constructs open bowl from base and four joined side boxes; actual R4 bounds corroborate each model joint. No faucet/plumbing implication."
+      },
+      "confidence": 0.95,
+      "geometry_evidence": {
+        "method": "explicit_box_assembly_plus_r4_bounds",
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "bounds_a": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.6380000114440918
+          ]
+        ],
+        "bounds_b": [
+          [
+            6.194999694824219,
+            0.5069999694824219,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.8200000524520874
+          ]
+        ],
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_1c2e464aabd95b9d999f90b40079d9ca",
+      "from": "ent_4a2cf64a9cf5452fb8fdba7326563b44",
+      "to": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "type": "same_component_group",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Both have actual R4 parent B11_K-SINK; this edge is group membership only, not direct connection."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_5bec4154c4e356f988058086abedc95e",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "ent_fe10b0c638c840ff9e312922d5088f90",
+      "type": "same_component_group",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Both have actual R4 parent B11_K-SINK; this edge is group membership only, not direct connection."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_4d8fc3a3d42855adbf135090f342c94b",
+      "from": "cmp_sink",
+      "to": "cmp_south_run",
+      "type": "embedded_in",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-SINK is NESTED_FUNCTIONAL_COMPONENT within K-RUN-S south sink-counter assembly; preserving group-level embedding ownership."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_1a39bb5a75c85c1088c055918c62a324",
+      "from": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "to": "cmp_bedroom_door",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "R4 door collection COL_R4_SECONDARY_BEDROOM_EW_INWARD_DOOR contains this leaf/connected return wall; grouping does not imply direct contact."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_9e1ae078075951bd9dff62299993b370",
+      "from": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "to": "cmp_bedroom_door",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "R4 door collection COL_R4_SECONDARY_BEDROOM_EW_INWARD_DOOR contains this leaf/connected return wall; grouping does not imply direct contact."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_6b3b081094095580afe4bddfbeab1f79",
+      "from": "cmp_bedroom_door",
+      "to": "candidate_R-BED-S",
+      "type": "transition_between",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "r4_review",
+        "source_revision": "r4",
+        "source_sha256": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+        "evidence": "R4 review states opening south into secondary bedroom; north door approach and bedroom polygons remain candidates. Both side probes recorded, not reviewed space adjacency."
+      },
+      "confidence": 0.5,
+      "endpoints": [
+        "candidate_R-BED-S",
+        "candidate_bedroom_approach"
+      ],
+      "geometry_evidence": {
+        "method": "opening_side_probes",
+        "side_probes": [
+          [
+            8.6,
+            4.3,
+            0.6
+          ],
+          [
+            8.6,
+            4.85,
+            0.6
+          ]
+        ],
+        "frame_id": "c_type_world",
+        "unit": "meter"
+      }
+    },
+    {
+      "edge_id": "rel_f56610bd5a935fea92c07ae2fd1f11da",
+      "from": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "to": "candidate_R-BED-S",
+      "type": "opens_to",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "r4_review",
+        "source_revision": "r4",
+        "source_sha256": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+        "evidence": "R4 inward door swings south into bedroom; region correspondence candidate until current bedroom/approach reviewed."
+      },
+      "confidence": 0.5
+    },
+    {
+      "edge_id": "rel_1a352f1ff00f5f84b9bd0d9487d173bf",
+      "from": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "to": "candidate_bedroom_approach",
+      "type": "accesses",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "r4_review",
+        "source_revision": "r4",
+        "source_sha256": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+        "evidence": "North-side opening probe falls in bedroom approach candidate; access role is provisional."
+      },
+      "confidence": 0.5
+    },
+    {
+      "edge_id": "rel_96c2b5b25db1558a953c2139bf78c8ec",
+      "from": "ent_6fe75527bf4d48e18221c86303e2bd3e",
+      "to": "cmp_stair",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 04_EXISTING_STAIRS collection; STEP bounds rise 0.15/0.30/0.45 m."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_3a97e1dffeca5a92a486005e818e49c8",
+      "from": "ent_3ddea04f4477424ea2f6640ae3a6db94",
+      "to": "cmp_stair",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 04_EXISTING_STAIRS collection; STEP bounds rise 0.15/0.30/0.45 m."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_f2c0180eeb7a5ad39429cbebe3613ca3",
+      "from": "ent_dc2093ed60864a02b57e24a4451cbf76",
+      "to": "cmp_stair",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 04_EXISTING_STAIRS collection; STEP bounds rise 0.15/0.30/0.45 m."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_3c06e8394960560cb6c9db4bdabe324d",
+      "from": "cmp_stair",
+      "to": "level_lower",
+      "type": "transition_between",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "inferred_from_spatial_adjacency",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual stair vertical range connects model height 0 to +450mm; lower/upper landing regions and operational passage require owner confirmation."
+      },
+      "confidence": 0.5,
+      "endpoints": [
+        "level_lower",
+        "level_upper"
+      ],
+      "geometry_evidence": {
+        "method": "vertical_transition_bounds",
+        "lower_height": 0,
+        "upper_height": 0.45,
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_a79933e3e42c5694836dd40b6d34cdbb",
+      "from": "cmp_stair",
+      "to": "candidate_lower_landing",
+      "type": "accesses",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "inferred_from_spatial_adjacency",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Lower side probe immediately west of STEP_0; named landing remains unreviewed."
+      },
+      "confidence": 0.5
+    },
+    {
+      "edge_id": "rel_d67fa4acb30552cc81971bb0083dc1ad",
+      "from": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "to": "candidate_bedroom_approach",
+      "type": "adjacent_to",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "inferred_from_spatial_adjacency",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Return wall north face Y4.70020008 coincides with approach candidate south boundary Y4.7002, shared X7.7999–8.1490 segment; other side current space boundary unresolved."
+      },
+      "confidence": 0.5,
+      "geometry_evidence": {
+        "method": "wall_face_shared_region_boundary",
+        "face_y": 4.700200080871582,
+        "shared_x": [
+          7.7999,
+          8.149
+        ],
+        "tolerance": 1e-06,
+        "frame_id": "c_type_world",
+        "unit": "meter"
+      }
+    },
+    {
+      "edge_id": "rel_wall_ent_6fe11a4811895893b219f803238e3926",
+      "from": "ent_6fe11a4811895893b219f803238e3926",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs B11_SITE_BALCONY_WINDOW_HEAD"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_0944f3ed920e5cb6be34a21bb3234302",
+      "from": "ent_0944f3ed920e5cb6be34a21bb3234302",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs B11_SITE_BALCONY_WINDOW_LEFT_RETURN"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_78b94e30ef8d53eaab25cddaf9905818",
+      "from": "ent_78b94e30ef8d53eaab25cddaf9905818",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs B11_SITE_BALCONY_WINDOW_RIGHT_RETURN"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_14ce823c67e653caba5689c6877e4e13",
+      "from": "ent_14ce823c67e653caba5689c6877e4e13",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs B11_SITE_KITCHEN_WINDOW_HEAD_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_28ddec26e6535a97893302934cca21f3",
+      "from": "ent_28ddec26e6535a97893302934cca21f3",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs B11_SITE_KITCHEN_WINDOW_UNDER_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_70eba3c86bb252f4986f0b849d933c81",
+      "from": "ent_70eba3c86bb252f4986f0b849d933c81",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs DOOR_V2_NBALC_NORTH_FULL_WALL_PIER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_cbbaf1ca2d6e5c90b2f0d858fd940cc0",
+      "from": "ent_cbbaf1ca2d6e5c90b2f0d858fd940cc0",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs DOOR_V2_NBALC_SOLID_ABOVE_DOOR"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_ad9b8192fc4d5bea976e2ef4ffbcdf5c",
+      "from": "ent_ad9b8192fc4d5bea976e2ef4ffbcdf5c",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_FRONT_HEAD"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_7669d3af61fc5446a0feff423457eced",
+      "from": "ent_7669d3af61fc5446a0feff423457eced",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_FRONT_UNDER_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_533de1b798df5c40847797476c0e4a32",
+      "from": "ent_533de1b798df5c40847797476c0e4a32",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_INNER_HEAD"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_8054f94abf8d55eeaa7b8b0159ce2459",
+      "from": "ent_8054f94abf8d55eeaa7b8b0159ce2459",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_INNER_UNDER_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_73d96c81f66956d09d9b7c25b8d74378",
+      "from": "ent_73d96c81f66956d09d9b7c25b8d74378",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_LEFT_HEAD"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_028c1081dcc9565b9c80967edfc3b434",
+      "from": "ent_028c1081dcc9565b9c80967edfc3b434",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_LEFT_UNDER_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_8d941b85808e5cff93b5886ff1f32999",
+      "from": "ent_8d941b85808e5cff93b5886ff1f32999",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_RIGHT_HEAD"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_edd1e8192c4e565bb0588455c4d26057",
+      "from": "ent_edd1e8192c4e565bb0588455c4d26057",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_RIGHT_UNDER_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_5d9ff13ed4715a8a83f246b6d4dfae34",
+      "from": "ent_5d9ff13ed4715a8a83f246b6d4dfae34",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_SOFFIT"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_3ebcabb21e955577aed17b50c2fb90a2",
+      "from": "ent_3ebcabb21e955577aed17b50c2fb90a2",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_BAY_SOLID_PLATFORM_CORE"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_b766d1eb792a59f4958ed1fb140a2160",
+      "from": "ent_b766d1eb792a59f4958ed1fb140a2160",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_GUEST_BATH_FULL_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_6c5d5d7e36545f2da60efffc573685bd",
+      "from": "ent_6c5d5d7e36545f2da60efffc573685bd",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_GUEST_BATH_NORTH_JUNCTION"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_636c6979286a5929a570b17698f36760",
+      "from": "ent_636c6979286a5929a570b17698f36760",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs LIVING_FIX_TV_NORTH_SOLID_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_305b89ce4f245959b74fe081bfa48ae5",
+      "from": "ent_305b89ce4f245959b74fe081bfa48ae5",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_D-BATHM_COMPLETE_HOST_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_fcf6c9615f5452a4933e41e4ab587f82",
+      "from": "ent_fcf6c9615f5452a4933e41e4ab587f82",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_D-GUEST-BATH_COMPLETE_HOST_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_dbd6a94aefc554f7863789edf331fee3",
+      "from": "ent_dbd6a94aefc554f7863789edf331fee3",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_D-GUEST-ROOM_COMPLETE_HOST_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_6ae8918d8f5a562fb47be0495cdad81b",
+      "from": "ent_6ae8918d8f5a562fb47be0495cdad81b",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_D-MB_COMPLETE_HOST_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_df7e0c5442eb5efeb0048fc7d6581b3f",
+      "from": "ent_df7e0c5442eb5efeb0048fc7d6581b3f",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_D-STUDY_COMPLETE_HOST_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_393be8fef2e85c0fa911e90bc57853ff",
+      "from": "ent_393be8fef2e85c0fa911e90bc57853ff",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_ENT-1_COMPLETE_HOST_WALL"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_a39511b980015621a099a6fd8575e93e",
+      "from": "ent_a39511b980015621a099a6fd8575e93e",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_G_DIN_LIV_LEFT_PIER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_1b14db75a35a5fbd8162aca7cba1dc07",
+      "from": "ent_1b14db75a35a5fbd8162aca7cba1dc07",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_G_DIN_LIV_RIGHT_PIER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_c03f26822a655ccc83cb5c1fafac28f3",
+      "from": "ent_c03f26822a655ccc83cb5c1fafac28f3",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_G_DIN_LIV_SOLID_HEAD"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_674f9289a3b35a64937c5150ac173114",
+      "from": "ent_674f9289a3b35a64937c5150ac173114",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-MB-S_INNER_HEAD"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_e2a91183020c57cca3f371df75a2e297",
+      "from": "ent_e2a91183020c57cca3f371df75a2e297",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-MB-S_INNER_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_83368c6b4b655542b913cad03c3698a2",
+      "from": "ent_83368c6b4b655542b913cad03c3698a2",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-MB-S_SOFFIT"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_43e9aeeacefe5276b58e64c52689703d",
+      "from": "ent_43e9aeeacefe5276b58e64c52689703d",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-MB-S_SOLID_UNDER_PLATFORM"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_d686dfb6102757f982bd1d7832cbe699",
+      "from": "ent_d686dfb6102757f982bd1d7832cbe699",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-SMB-S_INNER_HEAD"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_c9917948cc855a3f9537c74da2e6c4d8",
+      "from": "ent_c9917948cc855a3f9537c74da2e6c4d8",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-SMB-S_INNER_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_8cf91f40c9265dc3925e7af9be867f94",
+      "from": "ent_8cf91f40c9265dc3925e7af9be867f94",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-SMB-S_SOFFIT"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_e1701a36f6ab55ba96957d896493c929",
+      "from": "ent_e1701a36f6ab55ba96957d896493c929",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-SMB-S_SOLID_UNDER_PLATFORM"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_b1579e8573695bad908877a8c63ab790",
+      "from": "ent_b1579e8573695bad908877a8c63ab790",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-STUDY-NE_INNER_HEAD"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_99a2eee752e95fb695e3c462ef7951d8",
+      "from": "ent_99a2eee752e95fb695e3c462ef7951d8",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-STUDY-NE_INNER_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_d0b18af09b89550294c9272dd272916a",
+      "from": "ent_d0b18af09b89550294c9272dd272916a",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-STUDY-NE_SOFFIT"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_5916a3ad0cec528a92f7d576baaa479d",
+      "from": "ent_5916a3ad0cec528a92f7d576baaa479d",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-STUDY-NE_SOLID_UNDER_PLATFORM"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_78ff03dfeac756529082ce65d171f1a9",
+      "from": "ent_78ff03dfeac756529082ce65d171f1a9",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0004"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_9e718d30968e5e65ae02bd49065a90e9",
+      "from": "ent_9e718d30968e5e65ae02bd49065a90e9",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0005"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_d09db1cf51ae51b3b7be413068dcc191",
+      "from": "ent_d09db1cf51ae51b3b7be413068dcc191",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0006"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_40ca2450bfce5f2a93a25cd2ec513fc6",
+      "from": "ent_40ca2450bfce5f2a93a25cd2ec513fc6",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0007"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_c2dbad24c0845db18d161680c1878184",
+      "from": "ent_c2dbad24c0845db18d161680c1878184",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0009"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_7c24679577ce55559d9569201c876f61",
+      "from": "ent_7c24679577ce55559d9569201c876f61",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0010"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_be0a4d8c756c5dcc8e7231e5a2a700fd",
+      "from": "ent_be0a4d8c756c5dcc8e7231e5a2a700fd",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0015"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_d78583fec301548c88d4c4c9b66757c9",
+      "from": "ent_d78583fec301548c88d4c4c9b66757c9",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0016"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_e7bd452023455f22885e285ecdddae52",
+      "from": "ent_e7bd452023455f22885e285ecdddae52",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-SMB-S_W_wall_md_0017_HEAD, V4_W-SMB-S_W_wall_md_0017_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_5c6a3a35faab5bf2904631cdfddbff2a",
+      "from": "ent_5c6a3a35faab5bf2904631cdfddbff2a",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs RESTORED_PRE_D107_W_wall_md_0018"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_b8a5af707b3e58f19007875b6be4bdb4",
+      "from": "ent_b8a5af707b3e58f19007875b6be4bdb4",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0019"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_0075c1e3f1dc5b11936776383bcb824c",
+      "from": "ent_0075c1e3f1dc5b11936776383bcb824c",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-SMB-S_W_wall_md_0020_HEAD, V4_W-SMB-S_W_wall_md_0020_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_cc4261295d475073b7aa0f93fe9c6bc1",
+      "from": "ent_cc4261295d475073b7aa0f93fe9c6bc1",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0021"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_c4bfcd37bcd85d3286346238ab748f00",
+      "from": "ent_c4bfcd37bcd85d3286346238ab748f00",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0022"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_4300a551f0305897944ae59bef2cea3c",
+      "from": "ent_4300a551f0305897944ae59bef2cea3c",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-MB-S_W_wall_md_0023_HEAD, V4_W-MB-S_W_wall_md_0023_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_c8dc5015ab3650d782508fdf6cecf648",
+      "from": "ent_c8dc5015ab3650d782508fdf6cecf648",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0024"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_8bfbb8456e6f5c6caa5af84eb62760d5",
+      "from": "ent_8bfbb8456e6f5c6caa5af84eb62760d5",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0025"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_82ae35e1f049534db7a2c7d47c11a0a1",
+      "from": "ent_82ae35e1f049534db7a2c7d47c11a0a1",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0026"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_ffed7f61dbec55ab80fe73475f6a9ccd",
+      "from": "ent_ffed7f61dbec55ab80fe73475f6a9ccd",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0027"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_e342369a32b45ce0b36561e4632f4fe7",
+      "from": "ent_e342369a32b45ce0b36561e4632f4fe7",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-STUDY-NE_W_wall_md_0028_HEAD, V4_W-STUDY-NE_W_wall_md_0028_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_7c8925c4851a549fbbd322006803d147",
+      "from": "ent_7c8925c4851a549fbbd322006803d147",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-MB-S_W_wall_md_0029_HEAD, V4_W-MB-S_W_wall_md_0029_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_c2810e7e201c569c84bca1a5fd17f1e9",
+      "from": "ent_c2810e7e201c569c84bca1a5fd17f1e9",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0030"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_228a7eab47e05356ae3d288207b2e8ca",
+      "from": "ent_228a7eab47e05356ae3d288207b2e8ca",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-STUDY-NE_W_wall_md_0031_HEAD, V4_W-STUDY-NE_W_wall_md_0031_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_4c569d61dca15938af89fef542bbfb15",
+      "from": "ent_4c569d61dca15938af89fef542bbfb15",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0032"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_79d4e120cf5a52a49e034e22dfc8cc4a",
+      "from": "ent_79d4e120cf5a52a49e034e22dfc8cc4a",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0033"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_4dddd0bcf7905fc086bc5a33c8fee413",
+      "from": "ent_4dddd0bcf7905fc086bc5a33c8fee413",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-SMB-S_W_wall_md_0034_HEAD, V4_W-SMB-S_W_wall_md_0034_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_b843ba7e196d5bd8a572c5b3aee9045a",
+      "from": "ent_b843ba7e196d5bd8a572c5b3aee9045a",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-MB-S_W_wall_md_0035_HEAD, V4_W-MB-S_W_wall_md_0035_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_bc33521101e5577781ec87e7a9ddf48e",
+      "from": "ent_bc33521101e5577781ec87e7a9ddf48e",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0036"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_968dec4279c5540dae9b5cf20ec590a4",
+      "from": "ent_968dec4279c5540dae9b5cf20ec590a4",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0037"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_f8101ee0ab5857f0a583f4ef503c9d77",
+      "from": "ent_f8101ee0ab5857f0a583f4ef503c9d77",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0038"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_2eb815b01f4c544eb114bda181513064",
+      "from": "ent_2eb815b01f4c544eb114bda181513064",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0039"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_77b1b8dc191f50368da36fd94506d947",
+      "from": "ent_77b1b8dc191f50368da36fd94506d947",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0040"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_b22a1e661747586c8c127751c699bb31",
+      "from": "ent_b22a1e661747586c8c127751c699bb31",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0041"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_4299f0bc3dce5af7b4008c703d67c2ad",
+      "from": "ent_4299f0bc3dce5af7b4008c703d67c2ad",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0042"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_a2331139c35f514da6e3110412808714",
+      "from": "ent_a2331139c35f514da6e3110412808714",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0043"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_292295d05e83519f93bf6c9fed39d766",
+      "from": "ent_292295d05e83519f93bf6c9fed39d766",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0044"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_1a2f1ebd2eaf52f6ba8c84f07e969320",
+      "from": "ent_1a2f1ebd2eaf52f6ba8c84f07e969320",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0045"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_c40b1005b56057c48f4fca22b10d2a9f",
+      "from": "ent_c40b1005b56057c48f4fca22b10d2a9f",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0046"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_f18228926e58506ab0b7f8032c52e69f",
+      "from": "ent_f18228926e58506ab0b7f8032c52e69f",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0047"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_386b09b5fa1250f9b37a860507ed26fa",
+      "from": "ent_386b09b5fa1250f9b37a860507ed26fa",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0048"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_ed3d277e0d545d948b37c0039de36cca",
+      "from": "ent_ed3d277e0d545d948b37c0039de36cca",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0049"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_d2e1fe9aaa2e521386a86672fa43b6f4",
+      "from": "ent_d2e1fe9aaa2e521386a86672fa43b6f4",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0050"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_f0a5adc189f25299a7b25463b38e0e8d",
+      "from": "ent_f0a5adc189f25299a7b25463b38e0e8d",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0051"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_e017466360075c39af49529127690a4e",
+      "from": "ent_e017466360075c39af49529127690a4e",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0052"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_7caa039d539a5469aa02c77c214e009b",
+      "from": "ent_7caa039d539a5469aa02c77c214e009b",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0053"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_df57443faff255e09d9db342f9a46e2e",
+      "from": "ent_df57443faff255e09d9db342f9a46e2e",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0054"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_73d1299613ad574c86e94b627ec78b12",
+      "from": "ent_73d1299613ad574c86e94b627ec78b12",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0055"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_b6e0974db5f25ce5bb1ffa73b9837b41",
+      "from": "ent_b6e0974db5f25ce5bb1ffa73b9837b41",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0056"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_c2720dab7fc05b9f86a0701c4b5db5a4",
+      "from": "ent_c2720dab7fc05b9f86a0701c4b5db5a4",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0057"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_3ed894802f2859f18b72aff3c210f432",
+      "from": "ent_3ed894802f2859f18b72aff3c210f432",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs V4_W-STUDY-NE_W_wall_md_0058_HEAD, V4_W-STUDY-NE_W_wall_md_0058_LOWER"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_7f4a582d1d565a82a182a54de57f4e71",
+      "from": "ent_7f4a582d1d565a82a182a54de57f4e71",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0059"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_fab02a4a90a35b4e855e64eb363488d5",
+      "from": "ent_fab02a4a90a35b4e855e64eb363488d5",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0060"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_26f1d1454b795eb186faba9d7d1b9f26",
+      "from": "ent_26f1d1454b795eb186faba9d7d1b9f26",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0061"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_5a6dd606884d5a88b69ffd7a2c53f8a3",
+      "from": "ent_5a6dd606884d5a88b69ffd7a2c53f8a3",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0062"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_43ace5aebdeb505d8c54a6b4a27c9377",
+      "from": "ent_43ace5aebdeb505d8c54a6b4a27c9377",
+      "to": "cmp_wall_ent_75ed699dcc2442a29ab2dbdabae702f9",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs W_wall_md_0064"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_75748873dd4a571faa9e87690b1af3e5",
+      "from": "ent_75748873dd4a571faa9e87690b1af3e5",
+      "to": "cmp_wall_ent_4446040d5ca84b14bb410ef7df0ba2e7",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs ENTRY_HEADER_ABOVE_RAIL_CHANNEL, ENTRY_HEADER_FRONT_LIP, ENTRY_HEADER_NORTH_LIP, FC_SOUTH_WALL_AND_YELLOW_CLOSURE, POCKET_EAST_CLOSURE_FLUSH_TO_ROOM_EAST_WALL, POCKET_HEADER, POCKET_NORTH_SKIN"
+      },
+      "confidence": 1
+    },
+    {
+      "edge_id": "rel_wall_ent_821c71e5f96f50229bb483a8ce558548",
+      "from": "ent_821c71e5f96f50229bb483a8ce558548",
+      "to": "cmp_wall_ent_4446040d5ca84b14bb410ef7df0ba2e7",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "source_surface_partition_audit",
+        "timestamp": "2026-10-05T15:22:45.133304Z",
+        "note": "Model surface parentage only; no physical connectivity or room adjacency inferred."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "wall_part_index",
+        "source_revision": "1",
+        "source_sha256": "e50c2f49cdd803efede54dabf8cbb34527e289b4e59245ee51cd490019d5b7a7",
+        "evidence": "Exact current-source surface partition; source inputs NEW_FC_WEST_PARTITION"
+      },
+      "confidence": 1
+    }
+  ],
+  "gaps": [
+    {
+      "capability": "physical_connectivity",
+      "node_id": "cmp_sink",
+      "message": "No plumbing/drain/water-supply connectivity evidence.",
+      "action": "Provide plumbing register if these relations are needed; do not invent edges."
+    },
+    {
+      "capability": "transition_graph",
+      "node_id": "cmp_bedroom_door",
+      "message": "Bedroom and north approach space boundaries remain candidates.",
+      "action": "Review both endpoint regions before verifying the door transition."
+    },
+    {
+      "capability": "transition_graph",
+      "node_id": "cmp_stair",
+      "message": "Lower landing and upper approach not reviewed; no direct Lounge adjacency is established.",
+      "action": "Confirm landing domains and passage before approving transition."
+    },
+    {
+      "capability": "space_adjacency",
+      "node_id": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "message": "Only north candidate boundary evidence is available.",
+      "action": "Review current wall-side region boundaries; proximity is insufficient."
+    },
+    {
+      "capability": "physical_connectivity",
+      "node_id": "ent_b1bbaaf28737516b9c695b249f0d7ea5",
+      "message": "Owner-requested wall refinement: thickness reduced 50mm; AC raised 300mm. Structural bearing and site survey dimensions remain unverified.",
+      "action": "Review local wall geometry; HVAC detailing deferred by owner. No functional supports or contact relations inferred."
+    }
+  ],
+  "requirements": [
+    {
+      "capability": "component_hierarchy",
+      "node_id": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "types": [
+        "part_of"
+      ]
+    },
+    {
+      "capability": "component_hierarchy",
+      "node_id": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "types": [
+        "part_of"
+      ]
+    },
+    {
+      "capability": "component_hierarchy",
+      "node_id": "ent_3ddea04f4477424ea2f6640ae3a6db94",
+      "types": [
+        "part_of"
+      ]
+    },
+    {
+      "capability": "physical_connectivity",
+      "node_id": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "types": [
+        "connected_to"
+      ]
+    },
+    {
+      "capability": "transition_graph",
+      "node_id": "cmp_bedroom_door",
+      "types": [
+        "transition_between"
+      ]
+    },
+    {
+      "capability": "transition_graph",
+      "node_id": "cmp_stair",
+      "types": [
+        "transition_between"
+      ]
+    },
+    {
+      "capability": "space_adjacency",
+      "node_id": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "types": [
+        "adjacent_to"
+      ]
+    }
+  ]
+}

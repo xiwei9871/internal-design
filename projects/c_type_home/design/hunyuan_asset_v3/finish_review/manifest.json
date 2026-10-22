@@ -1,0 +1,74 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/WHOLE_HOUSE_HUNYUAN_FINISH_V3.blend",
+  "source_sha256": "b6eb37f92ebd6d223b10127210a29b41c75396058d9f75f277e4d005854dfd88",
+  "images": [
+    {
+      "id": "living",
+      "title": "客厅整体",
+      "camera": "CAM_living_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/finish_review/living.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 16.21
+    },
+    {
+      "id": "sofa",
+      "title": "客厅沙发整件",
+      "camera": "HUNYUAN_V3_SOFA_WHOLE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/finish_review/sofa.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 16.32
+    },
+    {
+      "id": "bed",
+      "title": "夫妻次主卧床",
+      "camera": "CAM_couple_bedroom_VIEW_01",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/finish_review/bed.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 12.71
+    },
+    {
+      "id": "bed_reverse",
+      "title": "床与床头柜关系",
+      "camera": "HUNYUAN_V3_BED_REVERSE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/finish_review/bed_reverse.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 12.77
+    },
+    {
+      "id": "console",
+      "title": "次主卧电视柜",
+      "camera": "HUNYUAN_V3_CONSOLE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/finish_review/console.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 13.45
+    },
+    {
+      "id": "sofa_detail",
+      "title": "沙发软包细节",
+      "camera": "HOUSE_V1_LIVING_SOFA_DETAIL",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/hunyuan_asset_v3/finish_review/sofa_detail.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 14.35
+    }
+  ],
+  "engine": "CYCLES",
+  "samples": 32
+}

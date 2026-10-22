@@ -1,0 +1,42 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/platform_bath_fitness_v14/WHOLE_HOUSE_PLATFORM_BATH_FITNESS_FINAL_V14.blend",
+  "source_sha256": "0ef86d31de4ab8afb4befcb6ac639054c955e970f85bd4007f04dc3252055144",
+  "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/secondary_mirror_v15/WHOLE_HOUSE_SECONDARY_MIRROR_FINAL_V15.blend",
+  "sha256": "feaeed380c12e99c10d2dd0414c0f04dfca0937119d890001123b97b549beb50",
+  "moved_objects": [
+    "CBM_SECONDARY_MIRROR",
+    "CBM_SECONDARY_MIRROR_FRAME"
+  ],
+  "west_translation_mm": 190,
+  "requested_translation_mm": 200,
+  "fit_adjustment": "200mm moves frame about6mm into west wall;190mm leaves4mm nominal wall-side clearance",
+  "hidden_accessories": [
+    "CBM_secondary_BOTTLE_0",
+    "CBM_secondary_BOTTLE_1",
+    "HOUSE_V1_secondary_bath_soap_body",
+    "HOUSE_V1_secondary_bath_soap_neck",
+    "HOUSE_V1_secondary_bath_towel"
+  ],
+  "upper_storage_unchanged": true,
+  "all_original_meshes_and_materials_unchanged": 3510,
+  "unrelated_visibility_preserved": true,
+  "protected_sources": 16,
+  "unexpected_changes": [],
+  "mirror_frame_bounds_m": [
+    [
+      9.213000297546387,
+      6.423900127410889,
+      1.5850000381469727
+    ],
+    [
+      9.86299991607666,
+      6.445899963378906,
+      2.234999895095825
+    ]
+  ],
+  "mirror_frame_to_west_wall_mm": 4.000663757324219,
+  "mirror_frame_to_upper_storage_mm": 122.00069427490234,
+  "vanity_to_shower_fixed_glass_mm": 217.90027618408203,
+  "shower_dimensions_and_geometry_unchanged": true,
+  "status": "PASS_TECHNICAL_CHECKS_HUMAN_REVIEW"
+}

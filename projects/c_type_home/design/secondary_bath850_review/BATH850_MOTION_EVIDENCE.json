@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_sha256": "4e94f187a7a6c67697aa6c939ac6e88f58c8ca129830e628f7229522d4ce37bc",
+  "slide_travel_m": 0.9000001144409175,
+  "poses": 21,
+  "slide_collision_pairs": [],
+  "wardrobe_leaf_sweeps_hits": [],
+  "opening_clear_width_m": 0.8500003814697266,
+  "wardrobe_width_m": 1.1999998092651367
+}

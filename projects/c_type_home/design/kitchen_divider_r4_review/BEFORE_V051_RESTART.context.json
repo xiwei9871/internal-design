@@ -1,0 +1,574 @@
+{
+  "schema": "spatial-canvas.context.v1",
+  "packet_id": "ctx_1004e542-498a-41d8-aaf9-feda9b4677f7",
+  "timestamp": "2026-10-05T08:30:33.772Z",
+  "selection": {
+    "schema": "spatial-canvas.selection.v1",
+    "design_id": "c_type_home",
+    "resource_id": "res_c_type_r4_pier_review_full",
+    "source_revision": "r4-pier-ac-review-4",
+    "entity_ids": [
+      "ent_b1bbaaf28737516b9c695b249f0d7ea5"
+    ],
+    "mode": "replace",
+    "source": "pointer",
+    "timestamp": "2026-10-05T08:28:56.671Z",
+    "primary_entity_id": "ent_b1bbaaf28737516b9c695b249f0d7ea5"
+  },
+  "resource": {
+    "resource_id": "res_c_type_r4_pier_review_full",
+    "design_id": "c_type_home",
+    "type": "interaction_proxy",
+    "format": "glb",
+    "authority": "derived",
+    "extensions": {
+      "spatial_canvas.blender": {
+        "meters_per_scene_unit": 1,
+        "source_coordinate_frame": "c_type_world",
+        "source_up_axis": "Z",
+        "source_authority": "frozen",
+        "bindings": {
+          "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+          "registry_revision": "6-pier-thinner-ac-raised-review",
+          "sha256": "926771c555566c89e2aa2c6d1e4c48e1a408a538d2092620df063a4258bb7eb5",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/spatial-canvas.bindings.thinner-raised.json"
+        }
+      },
+      "spatial_canvas.presentation": {
+        "color_mode": "zoning-flat",
+        "textures": false,
+        "opaque": true,
+        "roughness": 1,
+        "color_origins": {
+          "display_wall": 582,
+          "display_floor": 6,
+          "display_furniture": 333
+        },
+        "flat_color_count": 3
+      },
+      "spatial_canvas.review": {
+        "status": "HUMAN_REVIEW",
+        "parent_source_resource_id": "c_type_r4",
+        "parent_source_revision": "r4",
+        "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+        "correction": "Pier thickness reduced 50 mm from review-2; utility AC assembly raised 300 mm. Existing yaw and dimensions retained. Independent unapproved HUMAN_REVIEW snapshot.",
+        "width_rule": "CABINET_BOUNDARY_TO_ISLAND_CONNECTOR",
+        "depth_rule": "ISLAND_NOTCH_NOT_CABINET_FRONT",
+        "ac_yaw_degrees_review": 60,
+        "frozen_authority_preserved": true,
+        "wall_thickness_reduction_m": 0.05,
+        "ac_upward_translation_m": 0.3,
+        "ac_size_reduced": false
+      }
+    }
+  },
+  "source": {
+    "resource_id": "c_type_r4_pier_review",
+    "revision": "r4-pier-ac-review-4",
+    "sha256": "bffc60b456e81e30a29613e9b3ef07b6684a16700233c5a6673fab5bf49588ed",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_THINNER_AC_RAISED_REVIEW.blend",
+    "authority": "frozen",
+    "bindings": {
+      "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+      "registry_revision": "6-pier-thinner-ac-raised-review",
+      "sha256": "926771c555566c89e2aa2c6d1e4c48e1a408a538d2092620df063a4258bb7eb5",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/spatial-canvas.bindings.thinner-raised.json"
+    }
+  },
+  "entities": [
+    {
+      "design_id": "c_type_home",
+      "global_id": "ent_b1bbaaf28737516b9c695b249f0d7ea5",
+      "native_object_id": "KITCHEN_DIVIDER_PIER_SITE_REVIEW",
+      "semantic_type": "wall",
+      "room_id": "unassigned",
+      "source_resource_id": "c_type_r4_pier_review",
+      "source_revision": "r4-pier-ac-review-4",
+      "authority_level": "HUMAN_DESIGN_GUIDE",
+      "mutable": false
+    }
+  ],
+  "view": {
+    "kind": "camera3d",
+    "data": {
+      "projection": "perspective",
+      "fov_degrees": 45,
+      "near": 0.002912034618967963,
+      "far": 291.2034618967963,
+      "position": [
+        4.434871049794612,
+        4.047921439444153,
+        -5.476592112814213
+      ],
+      "quaternion": [
+        0.036908598605596296,
+        0.9561658328352477,
+        0.2555721469928489,
+        -0.13808523870752354
+      ],
+      "projection_matrix": [
+        1.8362403269366956,
+        0,
+        0,
+        0,
+        0,
+        2.414213562373095,
+        0,
+        0,
+        0,
+        0,
+        -1.0000200002000021,
+        -1,
+        0,
+        0,
+        -0.005824127479210718,
+        0
+      ],
+      "orbit_target": [
+        5.73618745803833,
+        1.3999999761581419,
+        -1.0651000142097473
+      ],
+      "viewport": {
+        "width": 873,
+        "height": 664,
+        "pixel_ratio": 0.800000011920929
+      },
+      "frame_id": "blender_proxy_world",
+      "unit": "meter",
+      "up_axis": "Y"
+    }
+  },
+  "hit": {
+    "entity_id": "ent_b1bbaaf28737516b9c695b249f0d7ea5",
+    "xyz": [
+      5.626746625810894,
+      2.165329612844516,
+      -1.4300000667572017
+    ],
+    "frame_id": "blender_proxy_world",
+    "unit": "meter",
+    "normal": [
+      0,
+      0,
+      -1
+    ],
+    "source": {
+      "xyz": [
+        5.626746625810894,
+        1.4300000667572017,
+        2.165329612844516
+      ],
+      "frame_id": "c_type_world",
+      "unit": "meter",
+      "normal": [
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  "spatial_context": {
+    "resolution": "unresolved",
+    "containing_spaces": [
+      {
+        "space_id": "candidate_R-BALC-LIFE",
+        "name": "生活阳台",
+        "semantic_type": "service_balcony",
+        "level_id": "lower",
+        "verification": {
+          "state": "candidate"
+        },
+        "provenance": {
+          "method": "imported",
+          "source_resource_id": "floorplan",
+          "source_revision": "task01-r1",
+          "source_sha256": "9d58ee8a75053e6e1a8c3984b154b068f94b8bbbac25ecd806c336d79caca1f3",
+          "evidence": "Approximate task01 label polygon; current R4 boundary/alignment/level requires review, not accepted as room ground truth."
+        },
+        "confidence": 0.6
+      }
+    ],
+    "primary_space_id": null,
+    "point": [
+      5.626746625810894,
+      1.4300000667572017,
+      2.165329612844516
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z",
+    "readiness": "PARTIAL",
+    "diagnostics": [
+      "Candidate 客厅 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 餐厅 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 生活阳台 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 厨房 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 卧室 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 主卧 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 衣帽间 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 主卫 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 卧室 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 书房 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 公卫 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 阳台 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 楼梯 / Stair transition is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 卧室门外通道 / Bedroom approach is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 下层梯口 / Lower landing is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Regions space_lounge and candidate_R-DINING have positive-volume overlap. Resolve overlapping boundaries or retain explicit ambiguous context.",
+      "Level upper has 143.032828 m³ without verified spatial coverage. Supply/approve missing region polygons and vertical ranges for upper.",
+      "Level lower has 75.272000 m³ without verified spatial coverage. Supply/approve missing region polygons and vertical ranges for lower.",
+      "Level transition has 0.324000 m³ without verified spatial coverage. Supply/approve missing region polygons and vertical ranges for transition.",
+      "candidate_region_requires_review"
+    ],
+    "registry": {
+      "registry_id": "spaces_c_type_r4",
+      "registry_revision": "6-pier-thinner-ac-raised-review",
+      "sha256": "cc43b211b3af497aa8c5e2094671a09290b9a6c04a3aa76c7b0fbfe855b44514",
+      "locator": "spatial-canvas.spaces.json"
+    },
+    "semantic_status": {
+      "relationship_status": {
+        "schema": "spatial-canvas.relationship-status.v1",
+        "component_hierarchy": {
+          "status": "READY",
+          "diagnostics": []
+        },
+        "physical_connectivity": {
+          "status": "PARTIAL",
+          "diagnostics": [
+            "No plumbing/drain/water-supply connectivity evidence. Provide plumbing register if these relations are needed; do not invent edges.",
+            "Owner-requested wall refinement: thickness reduced 50mm; AC raised 300mm. Structural bearing and site survey dimensions remain unverified. Review local wall geometry; HVAC detailing deferred by owner. No functional supports or contact relations inferred."
+          ]
+        },
+        "space_adjacency": {
+          "status": "PARTIAL",
+          "diagnostics": [
+            "Only north candidate boundary evidence is available. Review current wall-side region boundaries; proximity is insufficient.",
+            "ent_ae69766d1b7a409898facab5a80ea8f6 needs reviewed adjacent_to evidence. Review/import missing relation.",
+            "Unreviewed space_adjacency candidate edges exist. Approve or reject with evidence."
+          ]
+        },
+        "transition_graph": {
+          "status": "PARTIAL",
+          "diagnostics": [
+            "Bedroom and north approach space boundaries remain candidates. Review both endpoint regions before verifying the door transition.",
+            "Lower landing and upper approach not reviewed; no direct Lounge adjacency is established. Confirm landing domains and passage before approving transition.",
+            "cmp_bedroom_door needs reviewed transition_between evidence. Review/import missing relation.",
+            "cmp_stair needs reviewed transition_between evidence. Review/import missing relation.",
+            "Unreviewed transition_graph candidate edges exist. Approve or reject with evidence."
+          ]
+        }
+      },
+      "schema": "spatial-canvas.semantic-status.v1",
+      "project_id": "c_type_home",
+      "design_id": "c_type_home",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "resource_id": "floorplan",
+          "type": "authored_json",
+          "revision": "task01-r1",
+          "sha256": "9d58ee8a75053e6e1a8c3984b154b068f94b8bbbac25ecd806c336d79caca1f3",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/data/geometry.json",
+          "semantic_capability": "candidate_regions",
+          "diagnostics": [
+            "Legacy polygons are candidates: confirm coordinate alignment, current boundaries, level and vertical range; import a reviewed Space Registry."
+          ]
+        },
+        {
+          "resource_id": "cad",
+          "type": "cad",
+          "revision": "current-existing-v1",
+          "sha256": "6a9abae7edd2b56585216b7763cbebc66159ee2f50da2490321618598b30537a",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/current_existing/current_existing_v1.dxf",
+          "semantic_capability": "candidate_regions",
+          "diagnostics": [
+            "CAD closed linear polylines are review candidates, not automatically rooms. Supply coordinate frame/units, match labels, exclude furniture outlines, and define level/height. Curved/legacy POLYLINE geometry requires native export."
+          ]
+        },
+        {
+          "resource_id": "c_type_r4",
+          "type": "blender",
+          "revision": "r4",
+          "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "No explicit spatial regions extracted. Supply structured IFC/FreeCAD/plan regions or authored boundary JSON; weak geometry does not imply room identity."
+          ]
+        },
+        {
+          "resource_id": "freecad",
+          "type": "freecad",
+          "revision": "pre-blender-v2",
+          "sha256": "0c30510bc3fe4862d5759c5402146987b6384558a063983b0cab66786de85469",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "FreeCAD document inventoried read-only; export actual room footprints/placements via a native adapter or supplement normalized boundary JSON. Object names alone are insufficient."
+          ]
+        },
+        {
+          "resource_id": "semantic_schedule",
+          "type": "authored_json",
+          "revision": "task02",
+          "sha256": "04b9dd7a5beae05ef41d251a3f7545c3bf8b7a32dbde7bf149091e0fb8deeaa9",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/semantics/space_semantics.json",
+          "semantic_capability": "none",
+          "diagnostics": [
+            "Legacy polygons are candidates: confirm coordinate alignment, current boundaries, level and vertical range; import a reviewed Space Registry."
+          ]
+        },
+        {
+          "resource_id": "ifc",
+          "type": "ifc",
+          "revision": "task02",
+          "sha256": "6a2a522f1533dadb4e4c9fa9974de74a4347a51c1fd030aa27602d12303d227e",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/ifc/C型_现状语义约束模型.ifc",
+          "semantic_capability": "none",
+          "diagnostics": [
+            "IFC space records found; boundary geometry, placements, units and verification need a native IFC export to normalized regions. Names/placements without geometry cannot resolve points."
+          ]
+        },
+        {
+          "resource_id": "r4_floor_footprints",
+          "type": "floorplan",
+          "revision": "r4-read-only-audit",
+          "sha256": "a051934774586dca12ec41e42307171b4e6c5b93b18dea798a778742d8c2b237",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/reports/SOURCE_FLOOR_FOOTPRINTS.json",
+          "semantic_capability": "explicit_regions",
+          "diagnostics": [
+            "Read-only actual R4 floor footprint audit, matched frozen R4 SHA; room roles supplied by owner."
+          ]
+        },
+        {
+          "resource_id": "c_type_r4_pier_review",
+          "type": "blender",
+          "revision": "r4-pier-ac-review-4",
+          "sha256": "bffc60b456e81e30a29613e9b3ef07b6684a16700233c5a6673fab5bf49588ed",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_THINNER_AC_RAISED_REVIEW.blend",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "HUMAN_REVIEW: wall thinner 50 mm; AC raised 300 mm with existing dimensions and yaw preserved; frozen R4 unchanged."
+          ]
+        }
+      ],
+      "known_levels": [
+        "upper",
+        "lower",
+        "transition"
+      ],
+      "coverage": {
+        "covered_levels": [],
+        "uncovered_levels": [
+          "upper",
+          "lower",
+          "transition"
+        ],
+        "uncovered_volume": 218.62882793133633
+      },
+      "diagnostics": [
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 客厅 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 餐厅 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 生活阳台 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 厨房 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 卧室 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 主卧 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 衣帽间 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 主卫 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 卧室 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 书房 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 公卫 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 阳台 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 楼梯 / Stair transition is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 卧室门外通道 / Bedroom approach is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 下层梯口 / Lower landing is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "overlap",
+          "message": "Regions space_lounge and candidate_R-DINING have positive-volume overlap.",
+          "action": "Resolve overlapping boundaries or retain explicit ambiguous context."
+        },
+        {
+          "code": "uncovered_level",
+          "message": "Level upper has 143.032828 m³ without verified spatial coverage.",
+          "action": "Supply/approve missing region polygons and vertical ranges for upper."
+        },
+        {
+          "code": "uncovered_level",
+          "message": "Level lower has 75.272000 m³ without verified spatial coverage.",
+          "action": "Supply/approve missing region polygons and vertical ranges for lower."
+        },
+        {
+          "code": "uncovered_level",
+          "message": "Level transition has 0.324000 m³ without verified spatial coverage.",
+          "action": "Supply/approve missing region polygons and vertical ranges for transition."
+        }
+      ],
+      "registry_id": "spaces_c_type_r4",
+      "registry_revision": "6-pier-thinner-ac-raised-review"
+    }
+  },
+  "relationships": {
+    "subject_id": "ent_b1bbaaf28737516b9c695b249f0d7ea5",
+    "primary_space_id": null,
+    "design_id": "c_type_home",
+    "status": "available",
+    "graph_id": "relationships_c_type_r4",
+    "graph_revision": "4-pier-thinner-ac-raised-review",
+    "nodes": [
+      {
+        "node_id": "ent_b1bbaaf28737516b9c695b249f0d7ea5",
+        "kind": "entity",
+        "name": "新增柱侧墙段 / Site-review divider pier",
+        "resource_id": "c_type_r4_pier_review",
+        "native_id": "KITCHEN_DIVIDER_PIER_SITE_REVIEW"
+      }
+    ],
+    "edges": [],
+    "sources": [
+      {
+        "resource_id": "c_type_r4",
+        "revision": "r4",
+        "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend"
+      },
+      {
+        "resource_id": "spaces_c_type_r4",
+        "revision": "6-pier-thinner-ac-raised-review",
+        "sha256": "cc43b211b3af497aa8c5e2094671a09290b9a6c04a3aa76c7b0fbfe855b44514",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/proxy-thinner-raised/spatial-canvas.spaces.json"
+      },
+      {
+        "resource_id": "r4_rel_evidence",
+        "revision": "1",
+        "sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "locator": "/Users/xiwei/.codex/worktrees/v05-relationships/Spatial-Canvas/task-output/v05-c-type/r4-relationship-evidence.json"
+      },
+      {
+        "resource_id": "kitchen_register",
+        "revision": "b1.1",
+        "sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/KITCHEN_CABINET_3D_REGISTER_V01.json"
+      },
+      {
+        "resource_id": "kitchen_builder",
+        "revision": "b1.1",
+        "sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/build_design_model.py"
+      },
+      {
+        "resource_id": "r4_review",
+        "revision": "r4",
+        "sha256": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_REVIEW.md"
+      },
+      {
+        "resource_id": "c_type_r4_pier_review",
+        "revision": "r4-pier-ac-review-4",
+        "sha256": "bffc60b456e81e30a29613e9b3ef07b6684a16700233c5a6673fab5bf49588ed",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_THINNER_AC_RAISED_REVIEW.blend"
+      }
+    ],
+    "registry": {
+      "sha256": "01e952d7a21716a1d2f5807cd68ec6628b4fb7f0f427d76ad7ebfdba328fb1d1",
+      "locator": "spatial-canvas.relationships.json"
+    },
+    "truncated": false,
+    "diagnostics": [
+      "Owner-requested wall refinement: thickness reduced 50mm; AC raised 300mm. Structural bearing and site survey dimensions remain unverified. Review local wall geometry; HVAC detailing deferred by owner. No functional supports or contact relations inferred."
+    ],
+    "readiness": {
+      "schema": "spatial-canvas.relationship-status.v1",
+      "component_hierarchy": {
+        "status": "READY",
+        "diagnostics": []
+      },
+      "physical_connectivity": {
+        "status": "PARTIAL",
+        "diagnostics": [
+          "No plumbing/drain/water-supply connectivity evidence. Provide plumbing register if these relations are needed; do not invent edges.",
+          "Owner-requested wall refinement: thickness reduced 50mm; AC raised 300mm. Structural bearing and site survey dimensions remain unverified. Review local wall geometry; HVAC detailing deferred by owner. No functional supports or contact relations inferred."
+        ]
+      },
+      "space_adjacency": {
+        "status": "PARTIAL",
+        "diagnostics": [
+          "Only north candidate boundary evidence is available. Review current wall-side region boundaries; proximity is insufficient.",
+          "ent_ae69766d1b7a409898facab5a80ea8f6 needs reviewed adjacent_to evidence. Review/import missing relation.",
+          "Unreviewed space_adjacency candidate edges exist. Approve or reject with evidence."
+        ]
+      },
+      "transition_graph": {
+        "status": "PARTIAL",
+        "diagnostics": [
+          "Bedroom and north approach space boundaries remain candidates. Review both endpoint regions before verifying the door transition.",
+          "Lower landing and upper approach not reviewed; no direct Lounge adjacency is established. Confirm landing domains and passage before approving transition.",
+          "cmp_bedroom_door needs reviewed transition_between evidence. Review/import missing relation.",
+          "cmp_stair needs reviewed transition_between evidence. Review/import missing relation.",
+          "Unreviewed transition_graph candidate edges exist. Approve or reject with evidence."
+        ]
+      }
+    }
+  }
+}

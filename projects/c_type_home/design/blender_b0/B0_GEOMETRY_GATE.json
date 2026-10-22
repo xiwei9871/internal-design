@@ -1,0 +1,59 @@
+{
+ "checks": [
+  {
+   "check": "wall_bands_count",
+   "pass": true,
+   "detail": "61 real bands, 10 host helpers excluded from shell"
+  },
+  {
+   "check": "door_opening_uncovered",
+   "pass": true,
+   "detail": "0 parallel intrusions into door spans []"
+  },
+  {
+   "check": "windows",
+   "pass": true,
+   "detail": "W-LIV-N:gap; G-LIV-NBALC:needs_cut; G-GB-BALC:gap; W-STUDY-NE:needs_cut; G-DIN-LIV:gap; W-LBALC-S:needs_cut; W-KIT-S:gap; W-SMB-S:gap; W-MB-S:gap"
+  },
+  {
+   "check": "wall_thickness_set",
+   "pass": true,
+   "detail": "[100, 110, 150, 200, 250, 300, 350, 400, 500] mm"
+  },
+  {
+   "check": "room_dims",
+   "pass": true,
+   "detail": "{\"R-LIVING\": [4850, 4850, \"lower\"], \"R-DINING\": [2800, 5340, \"lower\"], \"R-BALC-LIFE\": [4200, 1750, \"lower\"], \"R-KITCHEN\": [1850, 4450, \"lower\"], \"R-LEISURE-W\": [1900, 3150, \"lower\"], \"R-LEISURE-E\": [5100, 3150, \"upper\"], \"R-BED-S\": [3370, 4450, \"upper\"], \"R-MASTER\": [3700, 4450, \"upper\"], \"R-CLOAK\": [2250, 1650, \"upper\"], \"R-BATH-M\": [3200, 1650, \"upper\"], \"R-BED-N\": [3200, 4850, \"upper\"], \"R-STUDY\": [3050, 2700, \"upper\"], \"R-BATH-P\": [1750, 2700, \"upper\"], \"R-BALC-N\": [5100, 2500, \"lower\"]}"
+  },
+  {
+   "check": "d107_angle",
+   "pass": true,
+   "detail": "host helper 26.2deg (source +26.3)"
+  },
+  {
+   "check": "furniture_wall_penetration",
+   "pass": true,
+   "detail": "8 overlaps>50mm: [(None, 1210, 200, 'WB-032'), (None, 990, 200, 'WB-032'), (None, 350, 250, 'WB-008'), (None, 600, 200, 'WB-032'), (None, 400, 300, 'WB-037'), ('客卫马桶', 226, 324, 'WB-009'), ('主卫马桶', 500, 186, 'WB-045'), ('次主卫马桶', 500, 119, 'WB-046')]"
+  },
+  {
+   "check": "stairs_zdatum",
+   "pass": true,
+   "detail": "3 risers x150mm -> +450 (APPROX_CONFIRMED, site verify) at [7200.0, 6600.0, 7800.0, 7800.0]"
+  },
+  {
+   "check": "z_datum",
+   "pass": true,
+   "detail": "SPLIT-LEVEL: lower FFL 0 / upper FFL +450, ceilings 2800/3250, clear 2800 both (CONFIRMED/photo-verified)"
+  },
+  {
+   "check": "ceiling_split",
+   "pass": true,
+   "detail": "14 ceiling planes: lower 2800 / upper 3250 + fascia faces at open boundaries; beam/pipe detail TO_VERIFY"
+  },
+  {
+   "check": "ramp",
+   "pass": true,
+   "detail": "provisional zone [5727.875, 4727.5625, 7827.875, 5827.5625] (TO_VERIFY field check)"
+  }
+ ]
+}

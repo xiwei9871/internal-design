@@ -1,0 +1,628 @@
+{
+  "register": "KITCHEN_CABINET_3D_REGISTER_V01",
+  "stage": "B1.1",
+  "status": "HUMAN_REVIEW",
+  "units": "mm",
+  "authority": "source/世纪欣园3-1-901_cabinet_plan.pdf",
+  "source_register": "design/pascal_b1/KITCHEN_CABINET_3D_REGISTER_V01.json",
+  "confirmed_facts": {
+    "countertop_top": 820,
+    "base_depth": 600,
+    "wall_depth": 380,
+    "overall_top": 2410,
+    "fridge": [
+      905,
+      710,
+      1700
+    ],
+    "wall_front_height": 620,
+    "wall_top_closing_panel": 120,
+    "fridge_overhead_front_height": 470,
+    "fridge_overhead_base": 1930
+  },
+  "cabinetry": [
+    {
+      "cabinet_id": "K-RUN-E",
+      "type": "BASE_CABINET",
+      "rect": [
+        7200,
+        535,
+        7800,
+        3750
+      ],
+      "width": 3215,
+      "depth": 600,
+      "height": 820,
+      "base_z": 0,
+      "source_page": 1,
+      "source_dimension": "地柜平面 east run 600深; 立面A 台面高820",
+      "confidence": "HIGH",
+      "prior_3d_values": {
+        "height": 820,
+        "base_z": 0,
+        "depth": 600
+      },
+      "dimension_status": "CONFIRMED",
+      "placement_status": "CONFIRMED",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-RUN-E_SEG0_L",
+        "B11_K-RUN-E_SEG0_R",
+        "B11_K-RUN-E_SEG0_TOP",
+        "B11_K-RUN-E_SEG0_BASE",
+        "B11_K-RUN-E_SEG0_BACK",
+        "B11_K-RUN-E_SEG0_PLINTH",
+        "B11_K-RUN-E_SEG0_FRONT_0",
+        "B11_K-RUN-E_SEG0_PULL_0",
+        "B11_K-RUN-E_SEG0_FRONT_1",
+        "B11_K-RUN-E_SEG0_PULL_1",
+        "B11_K-RUN-E_SEG0_FRONT_2",
+        "B11_K-RUN-E_SEG0_PULL_2",
+        "B11_K-RUN-E_SEG0_SHELF",
+        "B11_K-RUN-E_SEG1_L",
+        "B11_K-RUN-E_SEG1_R",
+        "B11_K-RUN-E_SEG1_TOP",
+        "B11_K-RUN-E_SEG1_BASE",
+        "B11_K-RUN-E_SEG1_BACK",
+        "B11_K-RUN-E_SEG1_PLINTH",
+        "B11_K-RUN-E_SEG1_FRONT_0",
+        "B11_K-RUN-E_SEG1_PULL_0",
+        "B11_K-RUN-E_SEG1_FRONT_1",
+        "B11_K-RUN-E_SEG1_PULL_1",
+        "B11_K-RUN-E_SEG1_SHELF",
+        "B11_K-RUN-E_SEG2_L",
+        "B11_K-RUN-E_SEG2_R",
+        "B11_K-RUN-E_SEG2_TOP",
+        "B11_K-RUN-E_SEG2_BASE",
+        "B11_K-RUN-E_SEG2_BACK",
+        "B11_K-RUN-E_SEG2_PLINTH",
+        "B11_K-RUN-E_SEG2_FRONT_0",
+        "B11_K-RUN-E_SEG2_PULL_0",
+        "B11_K-RUN-E_SEG2_SHELF",
+        "B11_K-RUN-E_COUNTER"
+      ],
+      "assembly": "B11_K-RUN-E",
+      "modeling_mode": "DISJOINT_EDITABLE_RUN",
+      "target_bounds_m": [
+        [
+          7.2,
+          0.535,
+          0.0
+        ],
+        [
+          7.8,
+          3.75,
+          0.82
+        ]
+      ],
+      "verify_envelope": true
+    },
+    {
+      "cabinet_id": "K-RUN-S",
+      "type": "BASE_CABINET",
+      "rect": [
+        6100,
+        0,
+        7310,
+        600
+      ],
+      "width": 1210,
+      "depth": 600,
+      "height": 820,
+      "base_z": 0,
+      "source_page": 3,
+      "source_dimension": "立面B 水槽柜 高820(含台面)",
+      "confidence": "HIGH",
+      "prior_3d_values": {
+        "height": 820,
+        "base_z": 0,
+        "depth": 600
+      },
+      "dimension_status": "CONFIRMED",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-RUN-S_BODY_L",
+        "B11_K-RUN-S_BODY_R",
+        "B11_K-RUN-S_BODY_BASE",
+        "B11_K-RUN-S_BODY_BACK",
+        "B11_K-RUN-S_BODY_PLINTH",
+        "B11_K-RUN-S_BODY_FRONT_0",
+        "B11_K-RUN-S_BODY_PULL_0",
+        "B11_K-RUN-S_BODY_FRONT_1",
+        "B11_K-RUN-S_BODY_PULL_1",
+        "B11_K-RUN-S_BODY_FRONT_2",
+        "B11_K-RUN-S_BODY_PULL_2",
+        "B11_K-RUN-S_BODY_SHELF",
+        "B11_K-RUN-S_COUNTER_0",
+        "B11_K-RUN-S_COUNTER_1",
+        "B11_K-RUN-S_COUNTER_2",
+        "B11_K-RUN-S_COUNTER_3"
+      ],
+      "assembly": "B11_K-RUN-S",
+      "modeling_mode": "SINK_COUNTER_ASSEMBLY",
+      "target_bounds_m": [
+        [
+          6.1,
+          0.0,
+          0.0
+        ],
+        [
+          7.31,
+          0.6,
+          0.82
+        ]
+      ],
+      "verify_envelope": true
+    },
+    {
+      "cabinet_id": "K-SINK",
+      "type": "SINK_BASE",
+      "rect": [
+        6100,
+        0,
+        7090,
+        600
+      ],
+      "width": 990,
+      "depth": 600,
+      "height": 820,
+      "base_z": 0,
+      "source_page": 3,
+      "source_dimension": "立面B 水槽800*430*190台下盆;柜990",
+      "confidence": "HIGH",
+      "prior_3d_values": {
+        "height": 820,
+        "base_z": 0,
+        "depth": 600
+      },
+      "dimension_status": "CONFIRMED",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-SINK_BOTTOM",
+        "B11_K-SINK_L",
+        "B11_K-SINK_R",
+        "B11_K-SINK_S",
+        "B11_K-SINK_N",
+        "B11_K-SINK_TAP_UP",
+        "B11_K-SINK_TAP_SPOUT"
+      ],
+      "assembly": "B11_K-SINK",
+      "modeling_mode": "NESTED_FUNCTIONAL_COMPONENT",
+      "target_bounds_m": [
+        [
+          6.1,
+          0.0,
+          0.0
+        ],
+        [
+          7.09,
+          0.6,
+          0.82
+        ]
+      ],
+      "verify_envelope": false
+    },
+    {
+      "cabinet_id": "K-COOK",
+      "type": "COOKTOP_BASE",
+      "rect": [
+        7200,
+        2400,
+        7800,
+        3300
+      ],
+      "width": 900,
+      "depth": 600,
+      "height": 820,
+      "base_z": 0,
+      "source_page": 1,
+      "source_dimension": "地柜平面 灶台 900 slot",
+      "confidence": "HIGH",
+      "prior_3d_values": {
+        "height": 820,
+        "base_z": 0,
+        "depth": 600
+      },
+      "dimension_status": "CONFIRMED",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-COOK_HOB",
+        "B11_K-COOK_BURNER",
+        "B11_K-COOK_BURNER.001",
+        "B11_K-COOK_HOOD_REVIEW"
+      ],
+      "assembly": "B11_K-COOK",
+      "modeling_mode": "NESTED_FUNCTIONAL_COMPONENT",
+      "target_bounds_m": [
+        [
+          7.2,
+          2.4,
+          0.0
+        ],
+        [
+          7.8,
+          3.3,
+          0.82
+        ]
+      ],
+      "verify_envelope": false
+    },
+    {
+      "cabinet_id": "K-DISHW",
+      "type": "DISHWASHER_BAY",
+      "rect": [
+        7200,
+        1800,
+        7800,
+        2400
+      ],
+      "width": 600,
+      "depth": 600,
+      "height": 820,
+      "base_z": 0,
+      "source_page": 1,
+      "source_dimension": "地柜平面 洗碗机位置 600",
+      "confidence": "HIGH",
+      "prior_3d_values": {
+        "height": 820,
+        "base_z": 0,
+        "depth": 600
+      },
+      "dimension_status": "CONFIRMED",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-DISHW_APPLIANCE",
+        "B11_K-DISHW_CONTROL"
+      ],
+      "assembly": "B11_K-DISHW",
+      "modeling_mode": "NESTED_FUNCTIONAL_COMPONENT",
+      "target_bounds_m": [
+        [
+          7.2,
+          1.8,
+          0.0
+        ],
+        [
+          7.8,
+          2.4,
+          0.82
+        ]
+      ],
+      "verify_envelope": false
+    },
+    {
+      "cabinet_id": "K-BASKET",
+      "type": "BASE_CABINET_MODULE",
+      "rect": [
+        7200,
+        3300,
+        7800,
+        3750
+      ],
+      "width": 450,
+      "depth": 600,
+      "height": 820,
+      "base_z": 0,
+      "source_page": 1,
+      "source_dimension": "地柜平面 拉篮模块",
+      "confidence": "MEDIUM",
+      "prior_3d_values": {
+        "height": 820,
+        "base_z": 0,
+        "depth": 600
+      },
+      "dimension_status": "TO_VERIFY",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-BASKET_PULL_HANDLE"
+      ],
+      "assembly": "B11_K-BASKET",
+      "modeling_mode": "NESTED_FUNCTIONAL_COMPONENT",
+      "target_bounds_m": [
+        [
+          7.2,
+          3.3,
+          0.0
+        ],
+        [
+          7.8,
+          3.75,
+          0.82
+        ]
+      ],
+      "verify_envelope": false
+    },
+    {
+      "cabinet_id": "K-CORNER",
+      "type": "CORNER_CABINET",
+      "rect": [
+        7200,
+        0,
+        7800,
+        535
+      ],
+      "width": 600,
+      "depth": 535,
+      "height": 820,
+      "base_z": 0,
+      "source_page": 1,
+      "source_dimension": "地柜平面东南转角(转角柜剖面见p3/p5)",
+      "confidence": "TO_VERIFY",
+      "prior_3d_values": {
+        "height": 820,
+        "base_z": 0,
+        "depth": 535
+      },
+      "dimension_status": "TO_VERIFY",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-CORNER_L",
+        "B11_K-CORNER_R",
+        "B11_K-CORNER_TOP",
+        "B11_K-CORNER_BASE",
+        "B11_K-CORNER_BACK",
+        "B11_K-CORNER_PLINTH",
+        "B11_K-CORNER_FRONT_0",
+        "B11_K-CORNER_PULL_0",
+        "B11_K-CORNER_SHELF"
+      ],
+      "assembly": "B11_K-CORNER",
+      "modeling_mode": "DIMENSIONAL_EDITABLE_CARCASS",
+      "target_bounds_m": [
+        [
+          7.2,
+          0.0,
+          0.0
+        ],
+        [
+          7.8,
+          0.535,
+          0.82
+        ]
+      ],
+      "verify_envelope": true
+    },
+    {
+      "cabinet_id": "K-WALL-E",
+      "type": "WALL_CABINET",
+      "rect": [
+        7420,
+        535,
+        7800,
+        3750
+      ],
+      "width": 3215,
+      "depth": 380,
+      "height": 740,
+      "base_z": 1670,
+      "source_page": 1,
+      "source_dimension": "吊柜平面 深380; 立面A 顶=2410 → 底≈1450/高≈960",
+      "confidence": "TO_VERIFY",
+      "notes": "top=2410 CONFIRMED; bottom rail exact Z TO_VERIFY (背挂+灯带槽)",
+      "pdf_override": "PDF p2: 620 front + 120 closing panel; overall top 2410",
+      "prior_3d_values": {
+        "height": 960,
+        "base_z": 1450,
+        "depth": 380
+      },
+      "dimension_status": "CONFIRMED",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-WALL-E_L",
+        "B11_K-WALL-E_R",
+        "B11_K-WALL-E_TOP",
+        "B11_K-WALL-E_BASE",
+        "B11_K-WALL-E_BACK",
+        "B11_K-WALL-E_PLINTH",
+        "B11_K-WALL-E_FRONT_0",
+        "B11_K-WALL-E_PULL_0",
+        "B11_K-WALL-E_FRONT_1",
+        "B11_K-WALL-E_PULL_1",
+        "B11_K-WALL-E_FRONT_2",
+        "B11_K-WALL-E_PULL_2",
+        "B11_K-WALL-E_FRONT_3",
+        "B11_K-WALL-E_PULL_3",
+        "B11_K-WALL-E_FRONT_4",
+        "B11_K-WALL-E_PULL_4",
+        "B11_K-WALL-E_FRONT_5",
+        "B11_K-WALL-E_PULL_5",
+        "B11_K-WALL-E_SHELF"
+      ],
+      "assembly": "B11_K-WALL-E",
+      "modeling_mode": "DIMENSIONAL_EDITABLE_CARCASS",
+      "target_bounds_m": [
+        [
+          7.42,
+          0.535,
+          1.67
+        ],
+        [
+          7.8,
+          3.75,
+          2.41
+        ]
+      ],
+      "verify_envelope": true
+    },
+    {
+      "cabinet_id": "K-FRIDGE",
+      "type": "FRIDGE",
+      "rect": [
+        6835,
+        3750,
+        7740,
+        4450
+      ],
+      "width": 905,
+      "depth": 710,
+      "height": 1700,
+      "base_z": 0,
+      "source_page": 5,
+      "source_dimension": "冰箱尺寸 高1700*宽905*厚710(门厚6.5+间隙8.5)",
+      "confidence": "HIGH",
+      "modeled_rect_mm": [
+        6835.0,
+        3750.0,
+        7740.0,
+        4460.0
+      ],
+      "prior_3d_values": {
+        "height": 1700,
+        "base_z": 0,
+        "depth": 710
+      },
+      "dimension_status": "CONFIRMED",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-FRIDGE_BODY",
+        "B11_K-FRIDGE_DOOR_0",
+        "B11_K-FRIDGE_DOOR_1",
+        "B11_K-FRIDGE_PULL"
+      ],
+      "assembly": "B11_K-FRIDGE",
+      "modeling_mode": "DIMENSIONAL_APPLIANCE_REVIEW",
+      "target_bounds_m": [
+        [
+          6.835,
+          3.75,
+          0.0
+        ],
+        [
+          7.74,
+          4.46,
+          1.7
+        ]
+      ],
+      "verify_envelope": true
+    },
+    {
+      "cabinet_id": "K-FRIDGE-OVERHEAD",
+      "type": "FRIDGE_OVERHEAD_CABINET",
+      "rect": [
+        6835,
+        3750,
+        7740,
+        4450
+      ],
+      "width": 905,
+      "depth": 600,
+      "height": 480,
+      "base_z": 1930,
+      "source_page": 5,
+      "source_dimension": "立面D 冰箱上方柜体; top=2410 → base≈1740/h≈670",
+      "confidence": "TO_VERIFY",
+      "notes": "depth 600 aligned to tall-cab front (PDF shows shallower band ~374? TO_VERIFY)",
+      "pdf_override": "PDF p5: 470 front + 10 top filler, bottom=1930; top=2410",
+      "prior_3d_values": {
+        "height": 670,
+        "base_z": 1740,
+        "depth": 600
+      },
+      "dimension_status": "TO_VERIFY",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-FRIDGE-OVERHEAD_L",
+        "B11_K-FRIDGE-OVERHEAD_R",
+        "B11_K-FRIDGE-OVERHEAD_TOP",
+        "B11_K-FRIDGE-OVERHEAD_BASE",
+        "B11_K-FRIDGE-OVERHEAD_BACK",
+        "B11_K-FRIDGE-OVERHEAD_PLINTH",
+        "B11_K-FRIDGE-OVERHEAD_FRONT_0",
+        "B11_K-FRIDGE-OVERHEAD_PULL_0",
+        "B11_K-FRIDGE-OVERHEAD_FRONT_1",
+        "B11_K-FRIDGE-OVERHEAD_PULL_1",
+        "B11_K-FRIDGE-OVERHEAD_SHELF"
+      ],
+      "assembly": "B11_K-FRIDGE-OVERHEAD",
+      "modeling_mode": "DIMENSIONAL_EDITABLE_CARCASS",
+      "target_bounds_m": [
+        [
+          6.835,
+          3.75,
+          1.93
+        ],
+        [
+          7.74,
+          4.45,
+          2.41
+        ]
+      ],
+      "verify_envelope": true
+    },
+    {
+      "cabinet_id": "K-TALL-L",
+      "type": "TALL_CABINET",
+      "rect": [
+        5900,
+        3750,
+        6835,
+        4450
+      ],
+      "width": 935,
+      "depth": 700,
+      "height": 2410,
+      "base_z": 0,
+      "source_page": 1,
+      "source_dimension": "冰箱柜 run 1840 total, niche 905 → 左柜体935; 立面D 到顶2410",
+      "confidence": "MEDIUM",
+      "prior_3d_values": {
+        "height": 2410,
+        "base_z": 0,
+        "depth": 700
+      },
+      "dimension_status": "MEDIUM",
+      "placement_status": "TO_VERIFY",
+      "review_status": "HUMAN_REVIEW",
+      "body_objects": [
+        "B11_K-TALL-L_BASE_L",
+        "B11_K-TALL-L_BASE_R",
+        "B11_K-TALL-L_BASE_TOP",
+        "B11_K-TALL-L_BASE_BASE",
+        "B11_K-TALL-L_BASE_BACK",
+        "B11_K-TALL-L_BASE_PLINTH",
+        "B11_K-TALL-L_BASE_FRONT_0",
+        "B11_K-TALL-L_BASE_PULL_0",
+        "B11_K-TALL-L_BASE_FRONT_1",
+        "B11_K-TALL-L_BASE_PULL_1",
+        "B11_K-TALL-L_BASE_SHELF",
+        "B11_K-TALL-L_UPPER_L",
+        "B11_K-TALL-L_UPPER_R",
+        "B11_K-TALL-L_UPPER_TOP",
+        "B11_K-TALL-L_UPPER_BASE",
+        "B11_K-TALL-L_UPPER_BACK",
+        "B11_K-TALL-L_UPPER_PLINTH",
+        "B11_K-TALL-L_UPPER_FRONT_0",
+        "B11_K-TALL-L_UPPER_PULL_0",
+        "B11_K-TALL-L_UPPER_FRONT_1",
+        "B11_K-TALL-L_UPPER_PULL_1",
+        "B11_K-TALL-L_UPPER_SHELF",
+        "B11_K-TALL-L_BACK"
+      ],
+      "assembly": "B11_K-TALL-L",
+      "modeling_mode": "PDF_LOWER_NICHE_UPPER_ASSEMBLY",
+      "target_bounds_m": [
+        [
+          5.9,
+          3.75,
+          0.0
+        ],
+        [
+          6.835,
+          4.45,
+          2.41
+        ]
+      ],
+      "verify_envelope": true
+    }
+  ],
+  "notes": "Registered XY retained; installation, internal splits and unresolved depth/placements remain TO_VERIFY."
+}

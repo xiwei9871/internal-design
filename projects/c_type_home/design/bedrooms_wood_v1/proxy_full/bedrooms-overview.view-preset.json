@@ -1,0 +1,80 @@
+{
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "bedrooms_wood_v1_bedrooms-overview",
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.02,
+  "far": 1000,
+  "position": [
+    11.7,
+    13.6,
+    -3.1
+  ],
+  "quaternion": [
+    -5.500017152826331e-08,
+    -0.7284991145133972,
+    -0.6850468516349792,
+    5.1719567295549496e-08
+  ],
+  "orbit_target": [
+    11.7,
+    0.6,
+    -2.3
+  ],
+  "viewport": {
+    "width": 1000,
+    "height": 780,
+    "pixel_ratio": 1
+  },
+  "projection_matrix": [
+    1.883086,
+    0,
+    0,
+    0,
+    0,
+    2.414214,
+    0,
+    0,
+    0,
+    0,
+    -1.00004,
+    -1,
+    0,
+    0,
+    -0.0400008,
+    0
+  ],
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_bedrooms_wood_v1",
+  "source_revision": "bedrooms-wood-v1-review-3",
+  "source_sha256": "93891e0b9c60a9d769e8e65ec4d04d592ea11dee4b9d713966d8b1033b9ebd31",
+  "source_locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V3.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "bedrooms-wood-v1-review-3",
+    "sha256": "354242d4d9d29684a9328a38280628198adecea68b28cb33356760cf73e447ca",
+    "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/spatial-canvas.bindings.full.json"
+  },
+  "source_camera": {
+    "position": [
+      11.7,
+      3.1,
+      13.6
+    ],
+    "quaternion": [
+      -2.3197372911454295e-09,
+      -0.030725430697202682,
+      -0.9995279312133789,
+      7.546225333499024e-08
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": [],
+  "preview_uri": "BEDROOM_BEDROOMS-OVERVIEW.png"
+}

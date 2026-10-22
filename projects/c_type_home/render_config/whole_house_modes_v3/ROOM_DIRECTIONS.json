@@ -1,0 +1,129 @@
+{
+  "living": {
+    "functions": "Living seating and a clear sunroom door route; north fitness reserve remains usable.",
+    "designer": "Continue the owner-approved living styling: linen curtains, intentional warm rust/ink/cream accents in throws/rug/cushions, original abstract art on the right wall, tasteful reading light and ceramics. Keep original main sofa/chaise/table/open cabinet.",
+    "creative": "Continue the accepted V5 pale wood concept: curved wood-frame seating, a window seat, simple round wood table composition, light wood chair and restrained low storage. Same concept across five views; avoid dark stone/slatwall.",
+    "refs": [
+      "sofa_woodframe",
+      "console"
+    ]
+  },
+  "dining": {
+    "functions": "Comfortable family dining for four and clear kitchen/sliding-glass connection.",
+    "designer": "Keep existing table and four chairs. Design a calm tabletop focal arrangement, simple linen runner, one beautiful vessel, restrained art on available wall and one delicate pendant over table if feasible. Coordinated table textiles and visible adjoining decor; do not add a bench or move cabinets.",
+    "creative": "Explore a distinct light-wood dining ensemble for four, a more fluid table outline, inventive but buildable chair forms and a refined pendant; rethink furnishings while retaining usable passages and modest room scale. Sparse tabletop and ivory/natural wood dominate.",
+    "refs": [
+      "chair",
+      "chair_cane",
+      "console"
+    ]
+  },
+  "kitchen": {
+    "functions": "Kitchen preparation/cooking/washing; existing gas hob, hood, sink, dishwasher and refrigerator mechanisms and locations remain functionally plausible. No invented island absent in view.",
+    "designer": "Keep cabinetry, seams, appliances and work zones. Add purposeful countertop styling: utensil crock, wooden boards, tidy ceramic jars, one modest plant out of work area, linen towel, and refined under-cabinet illumination. Preserve real gas grates/caps/knobs and hood intake. Styling visible in this view, not a whole-kitchen recolor.",
+    "creative": "Explore a cohesive pale-wood kitchen design with new joinery detail, more inventive storage and light worktop expression. Plumbing and appliance locations remain practical fixed context; never fake gas as electric discs, remove hood, cover burners or add an impossible island. A design idea within simple light-wood residence, not a showroom.",
+    "refs": []
+  },
+  "service_balcony": {
+    "functions": "South service/storage strip with utility tall cabinet and AC casing; this is not laundry balcony. No washer/dryer here.",
+    "designer": "Keep existing tall/lower/upper storage and worktop. Style the existing niche with useful baskets, a small vessel/plant, a neatly folded towel and simple task illumination. Maintain clear counter surface and full under-window wall; do not add appliances.",
+    "creative": "Explore a smart calm utility nook in light ash: new organized open/closed storage rhythm, practical fold-away work or serving detail, quiet small plant composition. Preserve utility access and real functional zones. Sparse and useful rather than decorative clutter.",
+    "refs": [
+      "console",
+      "shelf"
+    ]
+  },
+  "entry": {
+    "functions": "Entry double door, shoe storage, dining glazing and living access; circulation to three wave steps.",
+    "designer": "Keep the double door and shoe cabinet. Design an entry vignette with a small tray, ceramic vase, calm framed art above storage where available and a subtle decorative wall light. Keep the passage empty; no sofa, extra bench or obstructing rug.",
+    "creative": "Explore a new compact pale-wood entry storage/seating detail, elegant natural-wood hooks or light wall composition. New joinery/furniture concepts welcome but keep door swings, dining connection and entry circulation practical.",
+    "refs": [
+      "console",
+      "shelf"
+    ]
+  },
+  "reading_transition": {
+    "functions": "Exactly three wave steps connecting0–450mm; reading shelf, handrail and clear guestbath access.",
+    "designer": "Keep steps, handrail and reading cabinet. Curate shelf books, a few ceramics and restrained artwork on a real unobstructed wall; add subtle shelf lighting and perhaps an existing-shelf bookend arrangement. No rugs, cushions or lamps on steps or circulation.",
+    "creative": "Rethink the pale-wood reading joinery and integrated display/light concept around the actual THREE wave steps. Make an inventive calm reading threshold, not a new staircase. Preserve step number/levels and safe passage, with sparse objects and light forms.",
+    "refs": [
+      "shelf",
+      "console"
+    ]
+  },
+  "hallway": {
+    "functions": "Bedroom door sequence, corridor width and450mm landing; keep all doorways and access.",
+    "designer": "Keep doors, casing and corridor. Add carefully scaled original art where a real blank wall exists and simple decorative sconces/soft warm lighting; light ash/ivory continuity. No chair, console or rug narrowing passage. If only door detail is visible, refine hardware and wall styling in frame instead of widening crop.",
+    "creative": "Explore a minimal pale-wood hallway expression through door/joinery rhythm, restrained wall finish and imaginative thin lighting composition. Preserve door positions and practical width; creativity is spatial/light refinement, never a cluttered gallery or new opening.",
+    "refs": [
+      "console"
+    ]
+  },
+  "mother_bedroom": {
+    "functions": "1500bed, two nightstands, wardrobe, TV unit and vanity with a backed chair; actual bedroom privacy/circulation.",
+    "designer": "Keep bed/nightstands/wardrobe/TV/vanity. Design soft bedding layers and flexible cloth runner, restrained warm rust/greygreen accents, one quiet artwork over bed, bedside lamps and light flax curtains. Restyle vanity with a few personal ceramics/books; keep backed vanity chair, no stool substitution.",
+    "creative": "Explore an elegant restful pale-wood bedroom: a new low bed/headrest system, different bedside forms and coherent storage/vanity composition, airy ivory linen and sparse subtle art. Bed capacity, access to wardrobe and backed vanity seating remain functional. Not hotel featurewall or heavy upholstered panels.",
+    "refs": [
+      "bed_wood",
+      "bed_soft",
+      "console"
+    ]
+  },
+  "couple_bedroom": {
+    "functions": "1800bed, two nightstands,1200three-door wardrobe,850bath entry and2000x400console; no TV unit.",
+    "designer": "Keep bedroom main furniture and console. Design refined layered ivory bedding, small muted accents, draped textile runner, calm artwork, bedside lighting, linen curtains and sparse console objects. Keep existing wardrobe doors and bathroom entry clear; no added TV.",
+    "creative": "Explore a fresh pale-ash low bed design with beautiful simple joinery, inventive bedside/console forms and airy linen composition. Keep bed capacity, privacy, usable wardrobe and bathroom passage; allow a new furnishing idea, no dark marble/headboard hotel wall.",
+    "refs": [
+      "bed_wood",
+      "bed_soft",
+      "console"
+    ]
+  },
+  "study": {
+    "functions": "Asian tea/work study:2000x800desk, ONE source master chair, fixed window daybed, books/storage and tea service sink.",
+    "designer": "Keep desk, one master chair, daybed and shelving. Curate a tea tray/ceramics, restrained books, subtle art, one useful desk lamp, linen daybed textile and simple curtains if suitable. Do not add a front guest chair merely for styling; preserve source chair visibility.",
+    "creative": "Reimagine an Asian light-wood tea/work retreat with an inventive worktable, light storage, window resting nook and coherent tea-service detail. Seating may be rethought as a concept but preserve useful work/tea functions and clear movement. Sparse residential study, not corporate office.",
+    "refs": [
+      "shelf",
+      "chair",
+      "console"
+    ]
+  },
+  "guest_bedroom": {
+    "functions": "Single1200bed, continuous desk, one chair, three-door wardrobe, cloud light/house display/pegboard and clear sunroom door.",
+    "designer": "Keep singlebed, desk/chair and child-friendly cloud/house details. Design subtle youthful bedding and soft flexible runner, a small print/pegboard display, neat desk objects and light curtain. One restrained accent family; no character murals, bunk or canopy themepark.",
+    "creative": "Explore a calm clever single-bed/workroom concept with integrated pale-wood desk/storage, a redesigned light bedhead, joyful but restrained display and subtle pastel touch. Keep single guest/child capacity, useful desk seating and sunroom access. Creativity through joinery and multifunction, not extra beds or cartoon scenery.",
+    "refs": [
+      "bed_wood",
+      "chair",
+      "shelf"
+    ]
+  },
+  "master_bath": {
+    "functions": "Single basin/vanity, rectangular mirror/storage, toilet and transparent shower; compact room, existing wet/plumbing topology.",
+    "designer": "Keep all fixtures and mirror shape. Add carefully curated towels, dispenser, one small plant/ceramic vessel on an existing safe surface, thin mirror/vanity lighting and useful accessories. Dry styling does not move taps or hide toilet/shower; no decorative art in wet splash zone.",
+    "creative": "Explore a restrained light-wood vanity/storage and quiet ivory/greige wet-surface design, new joinery/lighting details and functional accessories. Keep compact footprint and plausible plumbing/fixture locations; no bath tub, extra basin, invented window or oversized spa.",
+    "refs": []
+  },
+  "secondary_bath": {
+    "functions": "850slidingdoor,1200vanity, ROUND mirror, upperstorage, toilet orientation and chamfered transparent shower.",
+    "designer": "Keep round mirror, cabinetry, toilet and shower. Design clean accessory grouping, restrained towels and a small plant on suitable existing counter, subtle mirror light. No duplicate mirror/vanity behind door or new room; never obscure sliding mechanism.",
+    "creative": "Explore an inventive simple pale-wood vanity and storage language around the original round-mirror function and small shower. Quiet materials and thin lighting detail; preserve useful sliding doorway, toilet and wet-zone access. No hotel marble or enlarged bathroom.",
+    "refs": []
+  },
+  "guest_bath": {
+    "functions": "Sink, toilet, rectangular mirror/openstorage and clear shower. Pending3kg washer is NOT installed and cannot appear without source evidence.",
+    "designer": "Keep fixtures and mirror/storage. Style towels, small dispenser and one quiet accessory group, improve gentle lighting at mirror; no new washer or showerhead over vanity.",
+    "creative": "Explore a smart compact light-wood guest-bath vanity/storage design and simple quiet ceramic surfaces, physically sensible lighting and accessories. Same wet-zone/plumbing access, no fantasy appliance or new openings.",
+    "refs": []
+  },
+  "north_sunroom": {
+    "functions": "Enclosed glazing, southwest stacked FRONT-LOADING washer+dryer, uppercabinet/two-seatsofa, plant ledge and east TOP-OPENING chestfreezer816 plus adjacent storage.",
+    "designer": "Keep all equipment/cabinets/sofa. Style light linen cushions/throw, curated plants along actual ledge and practical baskets on existing safe shelves. No lid-cover/counter over freezer; keep two appliance portholes/controlpanels and door access.",
+    "creative": "Explore a fresh light-wood sunny laundry/lounge furniture concept: new two-seat restful form, inventive light storage/plantledge composition. Preserve actual equipment access and separate opening freezer lid, with laundry tower recognizable and no equipment relocation fantasy. Bright calm practical room, not conservatory clutter.",
+    "refs": [
+      "sofa_woodframe",
+      "console"
+    ]
+  }
+}

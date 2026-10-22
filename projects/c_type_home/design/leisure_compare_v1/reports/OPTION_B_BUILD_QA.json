@@ -1,0 +1,217 @@
+{
+  "source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "branch": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/LEISURE_COMPARE_OPTION_B.blend",
+  "option": "B",
+  "cameras": [
+    {
+      "id": "PLAN",
+      "camera": "LEISURE_PLAN",
+      "pos": [
+        5.4,
+        7.45,
+        20
+      ],
+      "target": [
+        5.4,
+        7.45,
+        0
+      ],
+      "lens": 35,
+      "ortho": 13.5,
+      "cut": "roof_hidden"
+    },
+    {
+      "id": "AXON",
+      "camera": "LEISURE_AXON",
+      "pos": [
+        -3.0,
+        18.0,
+        15
+      ],
+      "target": [
+        5.5,
+        7.3,
+        0.25
+      ],
+      "lens": 35,
+      "ortho": 13.0,
+      "cut": "roof_hidden_wall_height1150"
+    },
+    {
+      "id": "VIEW_01",
+      "camera": "LEISURE_FROM_LIVING",
+      "pos": [
+        5.5,
+        10.25,
+        1.55
+      ],
+      "target": [
+        6.65,
+        5.85,
+        0.7
+      ],
+      "lens": 28,
+      "ortho": null,
+      "cut": "NONE"
+    },
+    {
+      "id": "VIEW_02",
+      "camera": "LEISURE_TO_LIVING",
+      "pos": [
+        7.55,
+        5.95,
+        2.0
+      ],
+      "target": [
+        4.8,
+        10.6,
+        0.92
+      ],
+      "lens": 28,
+      "ortho": null,
+      "cut": "NONE"
+    },
+    {
+      "id": "SECTION",
+      "camera": "LEISURE_SECTION",
+      "pos": [
+        6.8,
+        3.0,
+        1.0
+      ],
+      "target": [
+        6.8,
+        6.0,
+        1.0
+      ],
+      "lens": 35,
+      "ortho": 4.7,
+      "cut": "section_y5.55"
+    }
+  ],
+  "samples": [
+    {
+      "x": 6.7,
+      "y": 7.1,
+      "z": 0.0,
+      "object": "FLOOR_LOWER"
+    },
+    {
+      "x": 6.7,
+      "y": 7.4,
+      "z": 0.0,
+      "object": "FLOOR_LOWER"
+    },
+    {
+      "x": 6.7,
+      "y": 7.7,
+      "z": 0.0,
+      "object": "FLOOR_LOWER"
+    },
+    {
+      "x": 6.45,
+      "y": 5.6,
+      "z": 0.15,
+      "object": "B_STAIR_1_RISE150_GOING300_0"
+    },
+    {
+      "x": 6.75,
+      "y": 5.6,
+      "z": 0.3,
+      "object": "B_STAIR_2_RISE150_GOING300_0"
+    },
+    {
+      "x": 7.05,
+      "y": 5.6,
+      "z": 0.45,
+      "object": "B_STAIR_3_RISE150_GOING300_0"
+    },
+    {
+      "x": 7.35,
+      "y": 5.6,
+      "z": 0.45,
+      "object": "B_UPPER450_RETAINED_0"
+    },
+    {
+      "x": 5.8,
+      "y": 5.8,
+      "z": 0.0,
+      "object": "B_LOWER0_PLATFORM_REMOVAL_INFILL_0"
+    },
+    {
+      "x": 7.6,
+      "y": 7.6,
+      "z": 0.0,
+      "object": "B_LOWER0_PLATFORM_REMOVAL_INFILL_1"
+    }
+  ],
+  "topology": [
+    {
+      "name": "B_UPPER450_RETAINED_0",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "verts": 98,
+      "faces": 143
+    },
+    {
+      "name": "B_UPPER450_RETAINED_1",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "verts": 16,
+      "faces": 20
+    },
+    {
+      "name": "B_UPPER450_RETAINED_2",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "verts": 24,
+      "faces": 32
+    },
+    {
+      "name": "B_UPPER450_RETAINED_3",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "verts": 24,
+      "faces": 32
+    },
+    {
+      "name": "B_LOWER0_PLATFORM_REMOVAL_INFILL_0",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "verts": 68,
+      "faces": 98
+    },
+    {
+      "name": "B_LOWER0_PLATFORM_REMOVAL_INFILL_1",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "verts": 8,
+      "faces": 8
+    },
+    {
+      "name": "B_STAIR_1_RISE150_GOING300_0",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "verts": 8,
+      "faces": 8
+    },
+    {
+      "name": "B_STAIR_2_RISE150_GOING300_0",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "verts": 8,
+      "faces": 8
+    },
+    {
+      "name": "B_STAIR_3_RISE150_GOING300_0",
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "verts": 8,
+      "faces": 8
+    }
+  ],
+  "source_unchanged": true,
+  "local_change_only": true,
+  "ramp_collection_disabled": true,
+  "physical_cut_applied": false
+}

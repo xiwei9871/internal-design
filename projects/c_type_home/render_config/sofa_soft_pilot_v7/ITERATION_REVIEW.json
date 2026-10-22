@@ -1,0 +1,23 @@
+{
+  "scope": "one sofa seat/back pilot",
+  "candidate": "V6 SOFA_SEAT_BACK_DETAIL_V6.blend",
+  "repair": "V7 local_final SOFA_RELAXED_COVER_V7.blend",
+  "visual_requirement_ledger": [
+    {"requirement": "retain the V6 macro volume/thickness", "result": "pass_local_trial", "evidence": "local_final/CLAY_COMPARE.jpg; crown -8mm, total height -4mm"},
+    {"requirement": "retain approved V5 wood and existing fabric, studio", "result": "pass", "evidence": "local_final/VERIFICATION.json; PILOT_REVIEW_CONTACT.jpg"},
+    {"requirement": "visible plush/soft improvement at normal fabric views", "result": "fail_sufficient_improvement", "evidence": "PILOT_REVIEW_CONTACT.jpg; local_final/FABRIC_NATIVE_CROP.jpg", "finding": "localized lower-edge/boxing changes exist, but overall slab-like regularity and weak visual softness remain"},
+    {"requirement": "avoid all-surface loose-cover wrinkles", "result": "pass_local_final_only", "evidence": "local_final/CLAY_COMPARE.jpg", "rejected_evidence": ["solve1/CLAY_COMPARE.jpg", "solve2/CLAY_COMPARE.jpg"]},
+    {"requirement": "closed shells, support and preserved sources", "result": "pass_technical", "evidence": "local_final/VERIFICATION.json"}
+  ],
+  "rejected": [
+    {"version": "solve1", "cause": "uniform pattern growth, low bending and fill contraction produce global fine wrinkles"},
+    {"version": "solve2", "cause": "reduced ease and stronger support still produce distributed slipcover-like fine wrinkles"},
+    {"version": "local_form", "cause": "seat perimeter roll forms an artificial raised rim; softened in local_final"}
+  ],
+  "decision": "retain_candidate",
+  "decision_meaning": "retain V6 baseline; preserve V7 local_final only as a review experiment, not an adopted sofa/house repair",
+  "owner_appearance_acceptance": "pending",
+  "final_height_procurement_housefit_acceptance": "pending",
+  "bounded_stop": "HUMAN_REVIEW; no more automatic solves or whole-house propagation",
+  "method_limit": "final is static editable reference-guided form; actual baked cloth trials were rejected; no foam/down certification"
+}

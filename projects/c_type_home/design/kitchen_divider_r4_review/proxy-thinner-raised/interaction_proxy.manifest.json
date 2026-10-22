@@ -1,0 +1,63 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_pier_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_pier_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_THINNER_AC_RAISED_REVIEW.blend",
+  "source_sha256": "bffc60b456e81e30a29613e9b3ef07b6684a16700233c5a6673fab5bf49588ed",
+  "source_revision": "r4-pier-ac-review-4",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "6-pier-thinner-ac-raised-review",
+        "sha256": "926771c555566c89e2aa2c6d1e4c48e1a408a538d2092620df063a4258bb7eb5",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/spatial-canvas.bindings.thinner-raised.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": true,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 582,
+        "display_floor": 6,
+        "display_furniture": 333
+      },
+      "flat_color_count": 3
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "parent_source_resource_id": "c_type_r4",
+      "parent_source_revision": "r4",
+      "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "correction": "Pier thickness reduced 50 mm from review-2; utility AC assembly raised 300 mm. Existing yaw and dimensions retained. Independent unapproved HUMAN_REVIEW snapshot.",
+      "width_rule": "CABINET_BOUNDARY_TO_ISLAND_CONNECTOR",
+      "depth_rule": "ISLAND_NOTCH_NOT_CABINET_FRONT",
+      "ac_yaw_degrees_review": 60,
+      "frozen_authority_preserved": true,
+      "wall_thickness_reduction_m": 0.05,
+      "ac_upward_translation_m": 0.3,
+      "ac_size_reduced": false
+    }
+  },
+  "entity_count": 921,
+  "scope": "full"
+}

@@ -1,0 +1,1590 @@
+{
+  "schema": "furniture-dimension-audit-v01",
+  "status": "HUMAN_REVIEW",
+  "source_fcstd": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.FCStd",
+  "source_mtime": 1790600038.7061121,
+  "source_sha256": "ff80a059b76f495390b69c1346e7d77fd34529e5598919101aec3aff0b6ceaa5",
+  "freecad_object_count": 427,
+  "named_object_count": 55,
+  "fcstd_modified": false,
+  "asset_library_candidates": [
+    {
+      "id": "BED_1800x2100_PLAN",
+      "category": "bed",
+      "normalized_bbox_mm": [
+        1800,
+        2100
+      ],
+      "file": "normalized/BED_1800x2100_PLAN.dxf"
+    },
+    {
+      "id": "BED_1500x2000_PLAN",
+      "category": "bed",
+      "normalized_bbox_mm": [
+        1500,
+        2000
+      ],
+      "file": "normalized/BED_1500x2000_PLAN.dxf"
+    },
+    {
+      "id": "BED_900x2000_PLAN",
+      "category": "bed",
+      "normalized_bbox_mm": [
+        900,
+        2000
+      ],
+      "file": "normalized/BED_900x2000_PLAN.dxf"
+    },
+    {
+      "id": "SOFA_3S_2200x900_PLAN",
+      "category": "sofa",
+      "normalized_bbox_mm": [
+        2200,
+        900
+      ],
+      "file": "normalized/SOFA_3S_2200x900_PLAN.dxf"
+    },
+    {
+      "id": "SOFA_2S_1800x850_PLAN",
+      "category": "sofa",
+      "normalized_bbox_mm": [
+        1800,
+        850
+      ],
+      "file": "normalized/SOFA_2S_1800x850_PLAN.dxf"
+    },
+    {
+      "id": "LOUNGE_CHAIR_900x900_PLAN",
+      "category": "lounge_chair",
+      "normalized_bbox_mm": [
+        900,
+        900
+      ],
+      "file": "normalized/LOUNGE_CHAIR_900x900_PLAN.dxf"
+    },
+    {
+      "id": "DESK_1700x800_PLAN",
+      "category": "desk",
+      "normalized_bbox_mm": [
+        1700,
+        800
+      ],
+      "file": "normalized/DESK_1700x800_PLAN.dxf"
+    },
+    {
+      "id": "DINING_TABLE_1500x600_PLAN",
+      "category": "dining_table",
+      "normalized_bbox_mm": [
+        1500,
+        600
+      ],
+      "file": "normalized/DINING_TABLE_1500x600_PLAN.dxf"
+    },
+    {
+      "id": "DINING_CHAIR_450x500_PLAN",
+      "category": "dining_chair",
+      "normalized_bbox_mm": [
+        450,
+        500
+      ],
+      "file": "normalized/DINING_CHAIR_450x500_PLAN.dxf"
+    },
+    {
+      "id": "WC_STD_450x700_PLAN",
+      "category": "wc",
+      "normalized_bbox_mm": [
+        450,
+        700
+      ],
+      "file": "normalized/WC_STD_450x700_PLAN.dxf"
+    },
+    {
+      "id": "VANITY_600x500_PLAN",
+      "category": "vanity",
+      "normalized_bbox_mm": [
+        600,
+        500
+      ],
+      "file": "normalized/VANITY_600x500_PLAN.dxf"
+    },
+    {
+      "id": "VANITY_900x500_PLAN",
+      "category": "vanity",
+      "normalized_bbox_mm": [
+        900,
+        500
+      ],
+      "file": "normalized/VANITY_900x500_PLAN.dxf"
+    },
+    {
+      "id": "SHOWER_900x1200_PLAN",
+      "category": "shower",
+      "normalized_bbox_mm": [
+        900,
+        1200
+      ],
+      "file": "normalized/SHOWER_900x1200_PLAN.dxf"
+    },
+    {
+      "id": "WARDROBE_D600_PLAN",
+      "category": "wardrobe",
+      "normalized_bbox_mm": [
+        965.1999999999999,
+        600.0
+      ],
+      "file": "normalized/WARDROBE_D600_PLAN.dxf"
+    },
+    {
+      "id": "WASHER_600x650_PLAN",
+      "category": "washer",
+      "normalized_bbox_mm": [
+        600,
+        650
+      ],
+      "file": "normalized/WASHER_600x650_PLAN.dxf"
+    },
+    {
+      "id": "DRYER_600x650_PLAN",
+      "category": "dryer",
+      "normalized_bbox_mm": [
+        600,
+        650
+      ],
+      "file": "normalized/DRYER_600x650_PLAN.dxf"
+    }
+  ],
+  "objects": [
+    {
+      "object_name": "Rectangle001",
+      "object_label": "双人位沙发",
+      "room": "living",
+      "category": "seating",
+      "current_width_mm": 1942.5,
+      "current_depth_mm": 747.156,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        1500,
+        1900
+      ],
+      "reference_depth_range_mm": [
+        850,
+        1000
+      ],
+      "recommended_blockout_width_mm": 1800,
+      "recommended_blockout_depth_mm": 850,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Depth is slightly below the compact reference; no automatic change.",
+      "source_type": "ASSET_LIBRARY",
+      "difference_width_mm": -142.5,
+      "difference_depth_mm": 102.844,
+      "source_bbox_task01_mm": [
+        4285.0,
+        11872.531,
+        6227.5,
+        12619.688
+      ]
+    },
+    {
+      "object_name": "Circle",
+      "object_label": "角几",
+      "room": "living",
+      "category": "side_table",
+      "current_width_mm": 649.495,
+      "current_depth_mm": 649.495,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        400,
+        500
+      ],
+      "reference_depth_range_mm": [
+        400,
+        500
+      ],
+      "recommended_blockout_width_mm": 450,
+      "recommended_blockout_depth_mm": 450,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Current side table is larger than the common compact reference.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": -199.495,
+      "difference_depth_mm": -199.495,
+      "source_bbox_task01_mm": [
+        3387.378,
+        11896.44,
+        4036.872,
+        12545.935
+      ]
+    },
+    {
+      "object_name": "Rectangle002",
+      "object_label": "茶几",
+      "room": "living",
+      "category": "coffee_table",
+      "current_width_mm": 647.5,
+      "current_depth_mm": 1469.344,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        450,
+        600
+      ],
+      "reference_depth_range_mm": [
+        800,
+        1000
+      ],
+      "recommended_blockout_width_mm": 500,
+      "recommended_blockout_depth_mm": 900,
+      "recommended_blockout_height_mm": null,
+      "classification": "RECOMMEND_RESIZE",
+      "reason": "Current long axis is plausible as a coffee table only after a depth/length calibration; no automatic rotation.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": -147.5,
+      "difference_depth_mm": -569.344,
+      "source_bbox_task01_mm": [
+        4932.5,
+        9481.719,
+        5580.0,
+        10951.062
+      ]
+    },
+    {
+      "object_name": "Rectangle003",
+      "object_label": "lounge",
+      "room": "living",
+      "category": "seating",
+      "current_width_mm": 2216.5,
+      "current_depth_mm": 622.625,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        800,
+        1000
+      ],
+      "reference_depth_range_mm": [
+        1500,
+        1900
+      ],
+      "recommended_blockout_width_mm": 1700,
+      "recommended_blockout_depth_mm": 900,
+      "recommended_blockout_height_mm": null,
+      "classification": "RECOMMEND_RESIZE",
+      "reason": "Current footprint is a long shallow guide; chaise reference should be elongated with a more usable depth. Preserve long-axis direction.",
+      "source_type": "MARKET_REFERENCE",
+      "difference_width_mm": -516.5,
+      "difference_depth_mm": 277.375,
+      "source_bbox_task01_mm": [
+        3562.75,
+        7588.938,
+        5779.25,
+        8211.562
+      ]
+    },
+    {
+      "object_name": "Rectangle004",
+      "object_label": "电视柜（或者悬浮电视墙）",
+      "room": "living",
+      "category": "media_edge",
+      "current_width_mm": 298.875,
+      "current_depth_mm": 2888.906,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": null,
+      "reference_depth_range_mm": null,
+      "recommended_blockout_width_mm": null,
+      "recommended_blockout_depth_mm": null,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Media edge intent is ambiguous (cabinet or suspended media wall); no generic resize should be applied.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": null,
+      "difference_depth_mm": null,
+      "source_bbox_task01_mm": [
+        7398.0,
+        8634.938,
+        7696.875,
+        11523.844
+      ]
+    },
+    {
+      "object_name": "Rectangle007",
+      "object_label": "客卫（湿区）",
+      "room": "guest_bath",
+      "category": "shower_zone",
+      "current_width_mm": 1643.75,
+      "current_depth_mm": 996.156,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        900,
+        1000
+      ],
+      "reference_depth_range_mm": [
+        900,
+        1200
+      ],
+      "recommended_blockout_width_mm": 1643.75,
+      "recommended_blockout_depth_mm": 996.15625,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Wet-zone guide is a region, not a final shower product footprint.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        8078.875,
+        9863.5,
+        9722.625,
+        10859.656
+      ]
+    },
+    {
+      "object_name": "Rectangle008",
+      "object_label": "客卫马桶",
+      "room": "guest_bath",
+      "category": "wc",
+      "current_width_mm": 747.125,
+      "current_depth_mm": 323.75,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        650,
+        750
+      ],
+      "reference_depth_range_mm": [
+        380,
+        420
+      ],
+      "recommended_blockout_width_mm": 700,
+      "recommended_blockout_depth_mm": 400,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Current footprint is plausible but shallow; confirm actual SKU and orientation.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": -47.125,
+      "difference_depth_mm": 76.25,
+      "source_bbox_task01_mm": [
+        8020.625,
+        9332.281,
+        8767.75,
+        9656.031
+      ]
+    },
+    {
+      "object_name": "Rectangle011",
+      "object_label": "次主卧床头占位",
+      "room": "owner_bedroom",
+      "category": "bed",
+      "current_width_mm": 199.25,
+      "current_depth_mm": 2639.875,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": null,
+      "reference_depth_range_mm": null,
+      "recommended_blockout_width_mm": 199.25,
+      "recommended_blockout_depth_mm": 2639.875,
+      "recommended_blockout_height_mm": null,
+      "classification": "TO_VERIFY",
+      "reason": "No reliable category reference without inventing a product assumption.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        11183.5,
+        889.656,
+        11382.75,
+        3529.531
+      ]
+    },
+    {
+      "object_name": "Rectangle012",
+      "object_label": "次主卧床",
+      "room": "owner_bedroom",
+      "category": "bed",
+      "current_width_mm": 2100.0,
+      "current_depth_mm": 1500.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": true,
+      "reference_width_range_mm": [
+        1500,
+        1500
+      ],
+      "reference_depth_range_mm": [
+        2100,
+        2100
+      ],
+      "recommended_blockout_width_mm": 2100.0,
+      "recommended_blockout_depth_mm": 1500.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "USER_CONFIRMED_DO_NOT_CHANGE",
+      "reason": "User-confirmed 1500x2100 owner bed; current axes preserve the locked guide orientation.",
+      "source_type": "USER_CONFIRMED",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        9066.625,
+        1537.156,
+        11166.625,
+        3037.156
+      ]
+    },
+    {
+      "object_name": "Rectangle013",
+      "object_label": "主卧床",
+      "room": "mother_bedroom",
+      "category": "bed",
+      "current_width_mm": 2100.0,
+      "current_depth_mm": 1500.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": true,
+      "reference_width_range_mm": [
+        1500,
+        1500
+      ],
+      "reference_depth_range_mm": [
+        2100,
+        2100
+      ],
+      "recommended_blockout_width_mm": 2100.0,
+      "recommended_blockout_depth_mm": 1500.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "USER_CONFIRMED_DO_NOT_CHANGE",
+      "reason": "User-confirmed 1500x2100 mother bed; current axes preserve the locked guide orientation.",
+      "source_type": "USER_CONFIRMED",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        12942.875,
+        1645.531,
+        15042.875,
+        3145.531
+      ]
+    },
+    {
+      "object_name": "Rectangle014",
+      "object_label": "主卧床头柜占位",
+      "room": "mother_bedroom",
+      "category": "bed",
+      "current_width_mm": 150.0,
+      "current_depth_mm": 2500.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        450,
+        500
+      ],
+      "reference_depth_range_mm": [
+        400,
+        450
+      ],
+      "recommended_blockout_width_mm": 450,
+      "recommended_blockout_depth_mm": 450,
+      "recommended_blockout_height_mm": null,
+      "classification": "RECOMMEND_RESIZE",
+      "reason": "This is a placeholder guide, not a literal nightstand footprint.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 300.0,
+      "difference_depth_mm": -2050.0,
+      "source_bbox_task01_mm": [
+        15093.375,
+        1113.781,
+        15243.375,
+        3613.781
+      ]
+    },
+    {
+      "object_name": "Rectangle015",
+      "object_label": "主卧衣柜",
+      "room": "mother_bedroom",
+      "category": "wardrobe",
+      "current_width_mm": 2100.0,
+      "current_depth_mm": 600.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        550,
+        650
+      ],
+      "reference_depth_range_mm": [
+        550,
+        650
+      ],
+      "recommended_blockout_width_mm": 2100.0,
+      "recommended_blockout_depth_mm": 600,
+      "recommended_blockout_height_mm": null,
+      "classification": "OK",
+      "reason": "Wardrobe depth is assessed against the 600 mm generic reference while preserving wall/axis intent.",
+      "source_type": "MARKET_REFERENCE",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        13175.875,
+        3878.219,
+        15275.875,
+        4478.219
+      ]
+    },
+    {
+      "object_name": "Rectangle017",
+      "object_label": "次卧小床1.2",
+      "room": "middle_guest_room",
+      "category": "bed",
+      "current_width_mm": 1800.0,
+      "current_depth_mm": 1200.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": true,
+      "reference_width_range_mm": [
+        1200,
+        1200
+      ],
+      "reference_depth_range_mm": [
+        1800,
+        1800
+      ],
+      "recommended_blockout_width_mm": 1800.0,
+      "recommended_blockout_depth_mm": 1200.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "USER_CONFIRMED_DO_NOT_CHANGE",
+      "reason": "User-confirmed 1200x1800 guest bed; current axes preserve the locked guide orientation.",
+      "source_type": "USER_CONFIRMED",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        10851.125,
+        8006.188,
+        12651.125,
+        9206.188
+      ]
+    },
+    {
+      "object_name": "Rectangle018",
+      "object_label": "床背板+窄书桌占位",
+      "room": "study",
+      "category": "bed",
+      "current_width_mm": 199.25,
+      "current_depth_mm": 2839.125,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        1600,
+        1800
+      ],
+      "reference_depth_range_mm": [
+        700,
+        800
+      ],
+      "recommended_blockout_width_mm": 1700,
+      "recommended_blockout_depth_mm": 800,
+      "recommended_blockout_height_mm": null,
+      "classification": "RECOMMEND_RESIZE",
+      "reason": "Current object is a narrow backboard/desk placeholder and does not represent a dual-monitor workstation footprint.",
+      "source_type": "MARKET_REFERENCE",
+      "difference_width_mm": 1500.75,
+      "difference_depth_mm": -2039.125,
+      "source_bbox_task01_mm": [
+        12686.5,
+        7989.969,
+        12885.75,
+        10829.094
+      ]
+    },
+    {
+      "object_name": "Rectangle021",
+      "object_label": "次主卧衣柜",
+      "room": "owner_bedroom",
+      "category": "wardrobe",
+      "current_width_mm": 1500.0,
+      "current_depth_mm": 600.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        550,
+        650
+      ],
+      "reference_depth_range_mm": [
+        550,
+        650
+      ],
+      "recommended_blockout_width_mm": 1500.0,
+      "recommended_blockout_depth_mm": 600,
+      "recommended_blockout_height_mm": null,
+      "classification": "OK",
+      "reason": "Wardrobe depth is assessed against the 600 mm generic reference while preserving wall/axis intent.",
+      "source_type": "MARKET_REFERENCE",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        9863.625,
+        3853.281,
+        11363.625,
+        4453.281
+      ]
+    },
+    {
+      "object_name": "Rectangle022",
+      "object_label": "主卧电视柜",
+      "room": "living",
+      "category": "media_edge",
+      "current_width_mm": 500.0,
+      "current_depth_mm": 2000.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": null,
+      "reference_depth_range_mm": null,
+      "recommended_blockout_width_mm": null,
+      "recommended_blockout_depth_mm": null,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Media edge intent is ambiguous (cabinet or suspended media wall); no generic resize should be applied.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": null,
+      "difference_depth_mm": null,
+      "source_bbox_task01_mm": [
+        11606.875,
+        1337.938,
+        12106.875,
+        3337.938
+      ]
+    },
+    {
+      "object_name": "Rectangle023",
+      "object_label": "次主卧电视柜",
+      "room": "living",
+      "category": "media_edge",
+      "current_width_mm": 500.0,
+      "current_depth_mm": 2000.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": null,
+      "reference_depth_range_mm": null,
+      "recommended_blockout_width_mm": null,
+      "recommended_blockout_depth_mm": null,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Media edge intent is ambiguous (cabinet or suspended media wall); no generic resize should be applied.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": null,
+      "difference_depth_mm": null,
+      "source_bbox_task01_mm": [
+        8070.375,
+        1337.938,
+        8570.375,
+        3337.938
+      ]
+    },
+    {
+      "object_name": "Rectangle024",
+      "object_label": "书柜",
+      "room": "study",
+      "category": "bookcase",
+      "current_width_mm": 450.0,
+      "current_depth_mm": 4200.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        300,
+        350
+      ],
+      "reference_depth_range_mm": [
+        300,
+        350
+      ],
+      "recommended_blockout_width_mm": 450.0,
+      "recommended_blockout_depth_mm": 4200.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "CUSTOM_FURNITURE_PLAUSIBLE",
+      "reason": "Custom full-height/low bookcase guide; depth and joinery require furniture design/SKU review.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        15735.875,
+        6642.594,
+        16185.875,
+        10842.594
+      ]
+    },
+    {
+      "object_name": "Rectangle025",
+      "object_label": "矮书柜",
+      "room": "study",
+      "category": "bookcase",
+      "current_width_mm": 1600.0,
+      "current_depth_mm": 450.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        300,
+        350
+      ],
+      "reference_depth_range_mm": [
+        300,
+        350
+      ],
+      "recommended_blockout_width_mm": 1600.0,
+      "recommended_blockout_depth_mm": 450.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "CUSTOM_FURNITURE_PLAUSIBLE",
+      "reason": "Custom full-height/low bookcase guide; depth and joinery require furniture design/SKU review.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        14097.375,
+        6642.625,
+        15697.375,
+        7092.625
+      ]
+    },
+    {
+      "object_name": "Rectangle026",
+      "object_label": "茶台",
+      "room": "study",
+      "category": "tea_table",
+      "current_width_mm": 800.0,
+      "current_depth_mm": 2200.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        600,
+        900
+      ],
+      "reference_depth_range_mm": [
+        800,
+        1500
+      ],
+      "recommended_blockout_width_mm": 800,
+      "recommended_blockout_depth_mm": 1200,
+      "recommended_blockout_height_mm": null,
+      "classification": "RECOMMEND_RESIZE",
+      "reason": "Current 2200 mm long tea-table guide is unusually large for a tea surface; preserve guide axis.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": -1000.0,
+      "source_bbox_task01_mm": [
+        14271.625,
+        7389.719,
+        15071.625,
+        9589.719
+      ]
+    },
+    {
+      "object_name": "Circle007",
+      "object_label": "主人椅",
+      "room": "study",
+      "category": "chair_bench_stool",
+      "current_width_mm": 400.0,
+      "current_depth_mm": 400.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        450,
+        550
+      ],
+      "reference_depth_range_mm": [
+        500,
+        600
+      ],
+      "recommended_blockout_width_mm": 500,
+      "recommended_blockout_depth_mm": 550,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Current 400 mm circular placeholder is below a common seated footprint.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 100.0,
+      "difference_depth_mm": 150.0,
+      "source_bbox_task01_mm": [
+        15217.25,
+        8260.594,
+        15617.25,
+        8660.594
+      ]
+    },
+    {
+      "object_name": "Rectangle027",
+      "object_label": "条凳",
+      "room": "study",
+      "category": "chair_bench_stool",
+      "current_width_mm": 300.0,
+      "current_depth_mm": 1600.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        350,
+        500
+      ],
+      "reference_depth_range_mm": [
+        1200,
+        1800
+      ],
+      "recommended_blockout_width_mm": 400,
+      "recommended_blockout_depth_mm": 1500,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Bench depth is slightly below a comfortable reference; preserve long axis.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 100.0,
+      "difference_depth_mm": -100.0,
+      "source_bbox_task01_mm": [
+        13798.5,
+        7564.031,
+        14098.5,
+        9164.031
+      ]
+    },
+    {
+      "object_name": "Circle008",
+      "object_label": "凳子",
+      "room": "study",
+      "category": "chair_bench_stool",
+      "current_width_mm": 400.0,
+      "current_depth_mm": 400.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        450,
+        550
+      ],
+      "reference_depth_range_mm": [
+        500,
+        600
+      ],
+      "recommended_blockout_width_mm": 500,
+      "recommended_blockout_depth_mm": 550,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Current 400 mm circular placeholder is below a common seated footprint.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 100.0,
+      "difference_depth_mm": 150.0,
+      "source_bbox_task01_mm": [
+        14495.0,
+        9804.688,
+        14895.0,
+        10204.688
+      ]
+    },
+    {
+      "object_name": "Circle009",
+      "object_label": "次卧凳子",
+      "room": "middle_guest_room",
+      "category": "chair_bench_stool",
+      "current_width_mm": 400.0,
+      "current_depth_mm": 400.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        450,
+        550
+      ],
+      "reference_depth_range_mm": [
+        500,
+        600
+      ],
+      "recommended_blockout_width_mm": 500,
+      "recommended_blockout_depth_mm": 550,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Current 400 mm circular placeholder is below a common seated footprint.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 100.0,
+      "difference_depth_mm": 150.0,
+      "source_bbox_task01_mm": [
+        12054.375,
+        9979.031,
+        12454.375,
+        10379.031
+      ]
+    },
+    {
+      "object_name": "Circle010",
+      "object_label": "餐椅",
+      "room": "dining",
+      "category": "dining_chair",
+      "current_width_mm": 400.0,
+      "current_depth_mm": 400.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        450,
+        550
+      ],
+      "reference_depth_range_mm": [
+        500,
+        600
+      ],
+      "recommended_blockout_width_mm": 500,
+      "recommended_blockout_depth_mm": 550,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Current circular guide is a compact placeholder; chair product envelope is larger.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 100.0,
+      "difference_depth_mm": 150.0,
+      "source_bbox_task01_mm": [
+        3088.75,
+        3977.062,
+        3488.75,
+        4377.062
+      ]
+    },
+    {
+      "object_name": "Circle011",
+      "object_label": "餐椅003",
+      "room": "dining",
+      "category": "dining_chair",
+      "current_width_mm": 400.0,
+      "current_depth_mm": 400.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        450,
+        550
+      ],
+      "reference_depth_range_mm": [
+        500,
+        600
+      ],
+      "recommended_blockout_width_mm": 500,
+      "recommended_blockout_depth_mm": 550,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Current circular guide is a compact placeholder; chair product envelope is larger.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 100.0,
+      "difference_depth_mm": 150.0,
+      "source_bbox_task01_mm": [
+        3885.75,
+        3977.062,
+        4285.75,
+        4377.062
+      ]
+    },
+    {
+      "object_name": "Rectangle028",
+      "object_label": "餐桌",
+      "room": "dining",
+      "category": "dining_table",
+      "current_width_mm": 1600.0,
+      "current_depth_mm": 700.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        1400,
+        1600
+      ],
+      "reference_depth_range_mm": [
+        750,
+        850
+      ],
+      "recommended_blockout_width_mm": 1500,
+      "recommended_blockout_depth_mm": 800,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Current table is slightly shallow versus the compact reference; preserve long-axis direction.",
+      "source_type": "USER_CONFIRMED",
+      "difference_width_mm": -100.0,
+      "difference_depth_mm": 100.0,
+      "source_bbox_task01_mm": [
+        2940.125,
+        3155.969,
+        4540.125,
+        3855.969
+      ]
+    },
+    {
+      "object_name": "Circle013",
+      "object_label": "餐椅004",
+      "room": "dining",
+      "category": "dining_chair",
+      "current_width_mm": 400.0,
+      "current_depth_mm": 400.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        450,
+        550
+      ],
+      "reference_depth_range_mm": [
+        500,
+        600
+      ],
+      "recommended_blockout_width_mm": 500,
+      "recommended_blockout_depth_mm": 550,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Current circular guide is a compact placeholder; chair product envelope is larger.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 100.0,
+      "difference_depth_mm": 150.0,
+      "source_bbox_task01_mm": [
+        3910.625,
+        2557.5,
+        4310.625,
+        2957.5
+      ]
+    },
+    {
+      "object_name": "Rectangle029",
+      "object_label": "现有橱柜",
+      "room": "kitchen",
+      "category": "cabinet",
+      "current_width_mm": 500.0,
+      "current_depth_mm": 1500.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": null,
+      "reference_depth_range_mm": null,
+      "recommended_blockout_width_mm": 500.0,
+      "recommended_blockout_depth_mm": 1500.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "CUSTOM_FURNITURE_PLAUSIBLE",
+      "reason": "Existing/custom fixed item; field/SKU verification required.",
+      "source_type": "USER_CONFIRMED",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        1520.5,
+        740.219,
+        2020.5,
+        2240.219
+      ]
+    },
+    {
+      "object_name": "Extrusion",
+      "object_label": "三人位沙发",
+      "room": "living",
+      "category": "seating",
+      "current_width_mm": 846.75,
+      "current_depth_mm": 3162.875,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        2000,
+        2400
+      ],
+      "reference_depth_range_mm": [
+        850,
+        1000
+      ],
+      "recommended_blockout_width_mm": 2200,
+      "recommended_blockout_depth_mm": 900,
+      "recommended_blockout_height_mm": null,
+      "classification": "RECOMMEND_RESIZE",
+      "reason": "Current guide aspect is much longer/narrower than a normal 3-seat sofa; preserve orientation, resize only after human decision.",
+      "source_type": "MARKET_REFERENCE",
+      "difference_width_mm": 1353.25,
+      "difference_depth_mm": -2262.875,
+      "source_bbox_task01_mm": [
+        3338.5,
+        8485.531,
+        4185.25,
+        11648.406
+      ]
+    },
+    {
+      "object_name": "Rectangle030",
+      "object_label": "客卫洗手盆柜体",
+      "room": "guest_bath",
+      "category": "vanity",
+      "current_width_mm": 600.0,
+      "current_depth_mm": 1200.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        600,
+        900
+      ],
+      "reference_depth_range_mm": [
+        500,
+        550
+      ],
+      "recommended_blockout_width_mm": 600.0,
+      "recommended_blockout_depth_mm": 1200.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Guide appears composite or axis-swapped; verify actual cabinet product before Blender.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        8008.25,
+        8012.344,
+        8608.25,
+        9212.344
+      ]
+    },
+    {
+      "object_name": "Rectangle031",
+      "object_label": "鞋柜",
+      "room": "entry",
+      "category": "shoe_storage",
+      "current_width_mm": 300.0,
+      "current_depth_mm": 722.25,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": null,
+      "reference_depth_range_mm": null,
+      "recommended_blockout_width_mm": 300.0,
+      "recommended_blockout_depth_mm": 722.25,
+      "recommended_blockout_height_mm": null,
+      "classification": "CUSTOM_FURNITURE_PLAUSIBLE",
+      "reason": "Existing/custom fixed item; field/SKU verification required.",
+      "source_type": "USER_CONFIRMED",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        2952.5,
+        4700.031,
+        3252.5,
+        5422.281
+      ]
+    },
+    {
+      "object_name": "Rectangle032",
+      "object_label": "橱柜",
+      "room": "kitchen",
+      "category": "cabinet",
+      "current_width_mm": 1200.0,
+      "current_depth_mm": 500.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": null,
+      "reference_depth_range_mm": null,
+      "recommended_blockout_width_mm": 1200.0,
+      "recommended_blockout_depth_mm": 500.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "CUSTOM_FURNITURE_PLAUSIBLE",
+      "reason": "Existing/custom fixed item; field/SKU verification required.",
+      "source_type": "USER_CONFIRMED",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        4322.375,
+        715.344,
+        5522.375,
+        1215.344
+      ]
+    },
+    {
+      "object_name": "Rectangle033",
+      "object_label": "主卫湿区",
+      "room": "mother_bath",
+      "category": "shower_zone",
+      "current_width_mm": 1000.0,
+      "current_depth_mm": 1569.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        900,
+        1000
+      ],
+      "reference_depth_range_mm": [
+        900,
+        1200
+      ],
+      "recommended_blockout_width_mm": 1000.0,
+      "recommended_blockout_depth_mm": 1569.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Wet-zone guide is a region, not a final shower product footprint.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        15205.625,
+        4774.75,
+        16205.625,
+        6343.75
+      ]
+    },
+    {
+      "object_name": "Rectangle034",
+      "object_label": "主卫马桶",
+      "room": "mother_bath",
+      "category": "wc",
+      "current_width_mm": 500.0,
+      "current_depth_mm": 650.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        380,
+        420
+      ],
+      "reference_depth_range_mm": [
+        650,
+        750
+      ],
+      "recommended_blockout_width_mm": 500.0,
+      "recommended_blockout_depth_mm": 650.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Axis-swapped WC guide is plausible but fixture orientation/SKU must be verified.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        14483.25,
+        5721.125,
+        14983.25,
+        6371.125
+      ]
+    },
+    {
+      "object_name": "Rectangle035",
+      "object_label": "主卫洗手盆和柜体",
+      "room": "mother_bath",
+      "category": "vanity",
+      "current_width_mm": 1200.0,
+      "current_depth_mm": 500.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        600,
+        1200
+      ],
+      "reference_depth_range_mm": [
+        500,
+        550
+      ],
+      "recommended_blockout_width_mm": 1200.0,
+      "recommended_blockout_depth_mm": 500,
+      "recommended_blockout_height_mm": null,
+      "classification": "OK",
+      "reason": "Vanity depth is in the normal range; width is room-specific.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        13138.5,
+        5845.688,
+        14338.5,
+        6345.688
+      ]
+    },
+    {
+      "object_name": "Rectangle036",
+      "object_label": "次主卫湿区",
+      "room": "owner_ensuite",
+      "category": "shower_zone",
+      "current_width_mm": 900.0,
+      "current_depth_mm": 1600.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        900,
+        1000
+      ],
+      "reference_depth_range_mm": [
+        900,
+        1200
+      ],
+      "recommended_blockout_width_mm": 900.0,
+      "recommended_blockout_depth_mm": 1600.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Wet-zone guide is a region, not a final shower product footprint.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        10473.75,
+        4749.875,
+        11373.75,
+        6349.875
+      ]
+    },
+    {
+      "object_name": "Rectangle037",
+      "object_label": "次主卫台盆和柜体",
+      "room": "owner_ensuite",
+      "category": "vanity",
+      "current_width_mm": 1000.0,
+      "current_depth_mm": 500.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        600,
+        1200
+      ],
+      "reference_depth_range_mm": [
+        500,
+        550
+      ],
+      "recommended_blockout_width_mm": 1000.0,
+      "recommended_blockout_depth_mm": 500,
+      "recommended_blockout_height_mm": null,
+      "classification": "OK",
+      "reason": "Vanity depth is in the normal range; width is room-specific.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        9419.5,
+        4750.094,
+        10419.5,
+        5250.094
+      ]
+    },
+    {
+      "object_name": "Rectangle038",
+      "object_label": "次主卫马桶",
+      "room": "owner_ensuite",
+      "category": "wc",
+      "current_width_mm": 500.0,
+      "current_depth_mm": 600.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        380,
+        420
+      ],
+      "reference_depth_range_mm": [
+        650,
+        750
+      ],
+      "recommended_blockout_width_mm": 500.0,
+      "recommended_blockout_depth_mm": 600.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Axis-swapped WC guide is plausible but fixture orientation/SKU must be verified.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        9693.375,
+        5770.719,
+        10193.375,
+        6370.719
+      ]
+    },
+    {
+      "object_name": "Rectangle039",
+      "object_label": "冰柜",
+      "room": "north_balcony_laundry",
+      "category": "freezer",
+      "current_width_mm": 1200.0,
+      "current_depth_mm": 600.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        600,
+        1000
+      ],
+      "reference_depth_range_mm": [
+        600,
+        750
+      ],
+      "recommended_blockout_width_mm": 800,
+      "recommended_blockout_depth_mm": 650,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Freezer footprint is market-plausible but needs selected SKU, door and ventilation check.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": -400.0,
+      "difference_depth_mm": 50.0,
+      "source_bbox_task01_mm": [
+        8531.25,
+        11150.312,
+        9731.25,
+        11750.312
+      ]
+    },
+    {
+      "object_name": "Rectangle040",
+      "object_label": "洗衣机+烘干机（叠放）",
+      "room": "north_balcony_laundry",
+      "category": "washer_dryer",
+      "current_width_mm": 600.0,
+      "current_depth_mm": 600.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        600,
+        600
+      ],
+      "reference_depth_range_mm": [
+        600,
+        650
+      ],
+      "recommended_blockout_width_mm": 600,
+      "recommended_blockout_depth_mm": 650,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Current stacked arrangement is human-locked; generic appliance depth/SKU and service clearances remain to verify.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 50.0,
+      "source_bbox_task01_mm": [
+        9826.25,
+        11150.281,
+        10426.25,
+        11750.281
+      ]
+    },
+    {
+      "object_name": "Rectangle041",
+      "object_label": "3kg洗衣机",
+      "room": "north_balcony_laundry",
+      "category": "washer_dryer",
+      "current_width_mm": 450.0,
+      "current_depth_mm": 450.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        450,
+        600
+      ],
+      "reference_depth_range_mm": [
+        450,
+        650
+      ],
+      "recommended_blockout_width_mm": 450.0,
+      "recommended_blockout_depth_mm": 450.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Small-washer guide is present; final product and service clearances remain to verify.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        9200.5,
+        10353.469,
+        9650.5,
+        10803.469
+      ]
+    },
+    {
+      "object_name": "Rectangle042",
+      "object_label": "斜坡给未来轮椅使用预留",
+      "room": "transition",
+      "category": "ramp",
+      "current_width_mm": 2100.0,
+      "current_depth_mm": 1100.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": null,
+      "reference_depth_range_mm": null,
+      "recommended_blockout_width_mm": 2100.0,
+      "recommended_blockout_depth_mm": 1100.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "SKU_TO_VERIFY",
+      "reason": "Assisted route guide; slope, landings and code status remain field verification.",
+      "source_type": "TO_VERIFY",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        5727.875,
+        4727.562,
+        7827.875,
+        5827.562
+      ]
+    },
+    {
+      "object_name": "Rectangle043",
+      "object_label": "打印机",
+      "room": "study",
+      "category": "equipment",
+      "current_width_mm": 400.0,
+      "current_depth_mm": 400.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        300,
+        600
+      ],
+      "reference_depth_range_mm": [
+        300,
+        600
+      ],
+      "recommended_blockout_width_mm": 400.0,
+      "recommended_blockout_depth_mm": 400.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "OK",
+      "reason": "Current equipment placeholder is a plausible generic envelope; final model is TO_VERIFY.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        15277.0,
+        6664.125,
+        15677.0,
+        7064.125
+      ]
+    },
+    {
+      "object_name": "Rectangle044",
+      "object_label": "nas",
+      "room": "study",
+      "category": "equipment",
+      "current_width_mm": 400.0,
+      "current_depth_mm": 400.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        300,
+        600
+      ],
+      "reference_depth_range_mm": [
+        300,
+        600
+      ],
+      "recommended_blockout_width_mm": 400.0,
+      "recommended_blockout_depth_mm": 400.0,
+      "recommended_blockout_height_mm": null,
+      "classification": "OK",
+      "reason": "Current equipment placeholder is a plausible generic envelope; final model is TO_VERIFY.",
+      "source_type": "GENERIC_REFERENCE",
+      "difference_width_mm": 0.0,
+      "difference_depth_mm": 0.0,
+      "source_bbox_task01_mm": [
+        14792.875,
+        6664.125,
+        15192.875,
+        7064.125
+      ]
+    },
+    {
+      "object_name": "Rectangle045",
+      "object_label": "次卧衣柜",
+      "room": "middle_guest_room",
+      "category": "wardrobe",
+      "current_width_mm": 500.0,
+      "current_depth_mm": 2000.0,
+      "current_height_mm": null,
+      "user_confirmed_dimension": false,
+      "reference_width_range_mm": [
+        550,
+        650
+      ],
+      "reference_depth_range_mm": [
+        550,
+        650
+      ],
+      "recommended_blockout_width_mm": 2000,
+      "recommended_blockout_depth_mm": 600,
+      "recommended_blockout_height_mm": null,
+      "classification": "MINOR_ADJUSTMENT",
+      "reason": "Wardrobe depth is assessed against the 600 mm generic reference while preserving wall/axis intent.",
+      "source_type": "MARKET_REFERENCE",
+      "difference_width_mm": 1500.0,
+      "difference_depth_mm": -1400.0,
+      "source_bbox_task01_mm": [
+        9918.125,
+        8884.406,
+        10418.125,
+        10884.406
+      ]
+    }
+  ],
+  "policy": {
+    "position": "HUMAN_LOCKED",
+    "orientation": "HUMAN_LOCKED",
+    "topology": "HUMAN_LOCKED",
+    "no_auto_modification": true,
+    "blender": "HOLD",
+    "formal_cad_allowed": false
+  }
+}

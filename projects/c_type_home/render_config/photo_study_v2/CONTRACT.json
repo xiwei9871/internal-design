@@ -1,0 +1,23 @@
+{
+  "method": "Current approved camera clay + actual furniture/product photo references + accepted kitchen photo character; high Image2. Hero review before per-variant four followup cameras.",
+  "expected_rooms": 14,
+  "expected_images": 210,
+  "kitchen_accepted_samples": 3,
+  "kitchen_remaining_cameras": "Separate from other-room propagation; not silently counted as five views.",
+  "source_sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644",
+  "source_revision": "console400-three-bath-mirrors-review-1",
+  "geometry": "walls,openings,FFL,steps,fixedcabinets,door/aisle clearances and furniture locations/counts/capacities stay; refine real furniture forms within same envelopes.",
+  "preview_colors": "not style authority; do not inherit pale flatclay lighting/colors",
+  "style_variants": "A faithful naturalash/B integratedwoodstone/C restrainedsage+rattan/roundedlightwood; concrete perroom definitions override generic color retention",
+  "appearance_consistency": "same variant hero is explicit furniture/material reference for remaining views; geometry always their own approved clay",
+  "quality": "high",
+  "size_requested": [
+    1920,
+    1080
+  ],
+  "max_retry_per_job": 1,
+  "provider_failures": "401/403 stops allcalls; transient5xxoneboundedretry; consecutive3failurecircuit; donotchangeprovider",
+  "qc": "manual matrix/images, no numerical edge score counts as automatic acceptance; reject architectural drift; do not promote source",
+  "no_people": true,
+  "authorization": "2026-10-08 owner approves kitchen method and instructs other rooms; no repeated permission needed for approved propagation"
+}

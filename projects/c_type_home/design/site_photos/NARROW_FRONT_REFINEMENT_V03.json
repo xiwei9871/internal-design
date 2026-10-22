@@ -1,0 +1,74 @@
+{
+  "status": "HUMAN_REVIEW",
+  "authority": "USER: top row parallel/aligned to overhead; other three near equal",
+  "cabinet": "B11_K-NARROW-OUTER-320",
+  "front_count": 4,
+  "reference_objects": [
+    "B11_K-FRIDGE-OVERHEAD_FRONT_0",
+    "B11_K-FRIDGE-OVERHEAD_FRONT_1"
+  ],
+  "top_front_bounds_m": [
+    [
+      5.581999778747559,
+      3.734999895095825,
+      1.9799998998641968
+    ],
+    [
+      5.8979997634887695,
+      3.753000020980835,
+      2.3919997215270996
+    ]
+  ],
+  "reference_front_bounds_m": [
+    [
+      5.9019999504089355,
+      3.734999895095825,
+      1.9800000190734863
+    ],
+    [
+      6.802999973297119,
+      3.752999782562256,
+      2.3919999599456787
+    ]
+  ],
+  "lower_front_heights_mm": [
+    628.6666691303253,
+    628.6666393280029,
+    628.6666393280029
+  ],
+  "partition_z_m": [
+    0.08,
+    0.7126666730244954,
+    1.345333346048991,
+    1.9780000190734863
+  ],
+  "unchanged_envelope_m": [
+    [
+      5.579999923706055,
+      3.734999895095825,
+      0.0
+    ],
+    [
+      5.899999618530273,
+      4.5,
+      2.4100000858306885
+    ]
+  ],
+  "unrelated_objects_preserved": 813,
+  "source_sha256": "d28c3245f36e6ddb7b8aaeb943cb45d81fbfb2964660c7f4ef8f40c0ae863948",
+  "new_parts": [
+    "B11_K-NARROW-OUTER-320_FRONT_0",
+    "B11_K-NARROW-OUTER-320_RECESSED_PULL_0",
+    "B11_K-NARROW-OUTER-320_FRONT_1",
+    "B11_K-NARROW-OUTER-320_RECESSED_PULL_1",
+    "B11_K-NARROW-OUTER-320_SHELF_1",
+    "B11_K-NARROW-OUTER-320_FRONT_2",
+    "B11_K-NARROW-OUTER-320_RECESSED_PULL_2",
+    "B11_K-NARROW-OUTER-320_SHELF_2",
+    "B11_K-NARROW-OUTER-320_FRONT_3",
+    "B11_K-NARROW-OUTER-320_RECESSED_PULL_3",
+    "B11_K-NARROW-OUTER-320_SHELF_3"
+  ],
+  "B0_INTEGRITY": "PASS",
+  "model_sha256": "d95f113217226d40c18c5cc5791703b34649ead60cf165150fbaccf936186ebf"
+}

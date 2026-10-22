@@ -1,0 +1,38 @@
+{
+  "status": "PASS_REQUESTED_TECHNICAL_CHECKS",
+  "output_sha256": "e325b355d94a7d6d7cb88ca06e18f0eeeab5a96493a33266cf1e57a73f0cecf5",
+  "original_objects_geometry_pose_unchanged": 3461,
+  "unexpected_changes": [],
+  "protected_sources": 16,
+  "wood_interior_leaves": [
+    "V4_D-STUDY_LEAF_0",
+    "V4_D-BATHM_LEAF_0",
+    "V4_D-MB_LEAF_0",
+    "V4_D-GUEST-BATH_LEAF_0",
+    "V4_D-GUEST-ROOM_LEAF_0",
+    "R4_BEDROOM_DOOR_LEAF"
+  ],
+  "ceiling_soffit_elevations_m": [
+    2.799999952316284,
+    3.25
+  ],
+  "saved_view_state": {
+    "active_layer": "OVERVIEW_CEILING_HIDDEN",
+    "overview_render_enabled": false,
+    "interior_render_enabled": true,
+    "roof_hidden_in_overview": true,
+    "roof_visible_in_interior": true
+  },
+  "ceiling_delta_mm": 450,
+  "bed_dimensions_mm": [
+    2130.0,
+    1910.0,
+    1070.0
+  ],
+  "ceiling_top_normal_z_means": {
+    "V7_CEILING_LOW": 1.0,
+    "V7_CEILING_HIGH": 1.0
+  },
+  "ceiling_repair_is_presentation_only": true,
+  "owner_appearance_accepted": false
+}

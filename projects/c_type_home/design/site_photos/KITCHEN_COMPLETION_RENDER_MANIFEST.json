@@ -1,0 +1,27 @@
+[
+  {
+    "view": "KITCHEN_COMPLETE",
+    "camera": "SITE_LOGIC_KITCHEN_COMPLETE",
+    "file": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/RAW_SITE_KITCHEN_COMPLETE.png",
+    "engine": "WORKBENCH",
+    "temporary_display_cuts_only": true,
+    "source_saved": false
+  },
+  {
+    "view": "ISLAND_UTILITY",
+    "camera": "SITE_LOGIC_ISLAND_UTILITY",
+    "file": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/RAW_SITE_ISLAND_UTILITY.png",
+    "engine": "WORKBENCH",
+    "temporary_display_cuts_only": true,
+    "source_saved": false
+  },
+  {
+    "view": "KITCHEN_TOP",
+    "camera": "SITE_LOGIC_KITCHEN_TOP",
+    "ortho_scale": 7.0,
+    "file": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/RAW_SITE_KITCHEN_TOP.png",
+    "engine": "WORKBENCH",
+    "temporary_display_cuts_only": true,
+    "source_saved": false
+  }
+]

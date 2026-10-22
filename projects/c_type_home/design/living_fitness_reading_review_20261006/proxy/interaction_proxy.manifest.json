@@ -1,0 +1,63 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_living_wave35_aluminum_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_THREE_STEP_READING_FITNESS_REVIEW_5.blend",
+  "source_sha256": "c396497077bc564d06d3c8855c731d977ca7dbdfc7cce104456f6bba16e78b20",
+  "source_revision": "r4-three-step-reading-fitness-review-5",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "15-three-step-reading-fitness-review",
+        "sha256": "8ade641562e332b753c059247f901ae48c64d13990e11629281be2d76f850b56",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": false,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 633,
+        "display_floor": 5,
+        "source_flat": 30,
+        "display_furniture": 332,
+        "balcony_glass": 3,
+        "balcony_aluminum": 9
+      },
+      "flat_color_count": 15,
+      "profile": "zoning-with-north-balcony-glass-and-aluminum",
+      "glass_alpha": 0.32,
+      "texture_free": true
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "correction": "Three150mm rises with350mm treads;wall handrail23.2deg;catalog5015 storage/3205A bench beside stairs;2.4x1.2m NORTH-window proposed fitness outline,no machine dimensions verified;sofa not shifted into lower landing.",
+      "parent_source_resource_id": "c_type_r4",
+      "parent_source_revision": "r4",
+      "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "equipment_fit_verified": false
+    }
+  },
+  "entity_count": 1010,
+  "scope": "full"
+}

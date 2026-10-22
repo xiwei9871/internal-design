@@ -1,0 +1,1281 @@
+{
+ "spec": "B0 wall vertical-span audit \u2014 every wall classified by CAD footprint + adjacent level-field codes",
+ "classes": [
+  "LOWER_ONLY",
+  "UPPER_ONLY",
+  "ENVELOPE_CONTINUOUS",
+  "CONTINUOUS_SPLIT_BOUNDARY",
+  "PARAPET"
+ ],
+ "walls": [
+  {
+   "wall_id": "wall_md_0004",
+   "bbox_mm": [
+    1300,
+    700,
+    1500,
+    2300
+   ],
+   "adjacent_zone_codes": [
+    "W"
+   ],
+   "adjacent_levels": [
+    "wall"
+   ],
+   "class": "PARAPET",
+   "base_z_m": 0.0,
+   "top_z_m": 1.05,
+   "reason": "parapet/balustrade keeps own CAD height"
+  },
+  {
+   "wall_id": "wall_md_0005",
+   "bbox_mm": [
+    2700,
+    2500,
+    2900,
+    5440
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0006",
+   "bbox_mm": [
+    2700,
+    6540,
+    2900,
+    13000
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0007",
+   "bbox_mm": [
+    2700,
+    13200,
+    2900,
+    14953
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "."
+   ],
+   "adjacent_levels": [
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0008",
+   "bbox_mm": [
+    3600,
+    13200,
+    3700,
+    13800
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0009",
+   "bbox_mm": [
+    5500,
+    0,
+    5900,
+    700
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0010",
+   "bbox_mm": [
+    5700,
+    4100,
+    5900,
+    4500
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0011",
+   "bbox_mm": [
+    7000,
+    13200,
+    7100,
+    13800
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "."
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0012",
+   "bbox_mm": [
+    7450,
+    150,
+    7800,
+    500
+   ],
+   "adjacent_zone_codes": [
+    "W",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "wall"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0013",
+   "bbox_mm": [
+    7750,
+    8000,
+    8000,
+    10900
+   ],
+   "adjacent_zone_codes": [
+    "W"
+   ],
+   "adjacent_levels": [
+    "wall"
+   ],
+   "class": "PARAPET",
+   "base_z_m": 0.0,
+   "top_z_m": 1.05,
+   "reason": "parapet/balustrade keeps own CAD height"
+  },
+  {
+   "wall_id": "wall_md_0014",
+   "bbox_mm": [
+    7750,
+    11100,
+    8000,
+    12025
+   ],
+   "adjacent_zone_codes": [
+    "W"
+   ],
+   "adjacent_levels": [
+    "wall"
+   ],
+   "class": "PARAPET",
+   "base_z_m": 0.0,
+   "top_z_m": 1.05,
+   "reason": "parapet/balustrade keeps own CAD height"
+  },
+  {
+   "wall_id": "wall_md_0015",
+   "bbox_mm": [
+    7800,
+    200,
+    8000,
+    4500
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "U"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "upper"
+   ],
+   "class": "CONTINUOUS_SPLIT_BOUNDARY",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "wall separates lower/upper or bounds stairwell"
+  },
+  {
+   "wall_id": "wall_md_0016",
+   "bbox_mm": [
+    7800,
+    13400,
+    8000,
+    13820
+   ],
+   "adjacent_zone_codes": [
+    "W"
+   ],
+   "adjacent_levels": [
+    "wall"
+   ],
+   "class": "PARAPET",
+   "base_z_m": 0.0,
+   "top_z_m": 1.05,
+   "reason": "parapet/balustrade keeps own CAD height"
+  },
+  {
+   "wall_id": "wall_md_0017",
+   "bbox_mm": [
+    8400,
+    -600,
+    8500,
+    0
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "U"
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0018",
+   "bbox_mm": [
+    9050,
+    5120,
+    9200,
+    6450
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0019",
+   "bbox_mm": [
+    9700,
+    8000,
+    9900,
+    10900
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0020",
+   "bbox_mm": [
+    10900,
+    -600,
+    11000,
+    0
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "."
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0021",
+   "bbox_mm": [
+    11400,
+    200,
+    11600,
+    4500
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0022",
+   "bbox_mm": [
+    11400,
+    4700,
+    11600,
+    6400
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0023",
+   "bbox_mm": [
+    12000,
+    -600,
+    12100,
+    0
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "U"
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0024",
+   "bbox_mm": [
+    12900,
+    5550,
+    13100,
+    6400
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0025",
+   "bbox_mm": [
+    12900,
+    8000,
+    13100,
+    10900
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0026",
+   "bbox_mm": [
+    12900,
+    11100,
+    13100,
+    13820
+   ],
+   "adjacent_zone_codes": [
+    "W"
+   ],
+   "adjacent_levels": [
+    "wall"
+   ],
+   "class": "PARAPET",
+   "base_z_m": 0.0,
+   "top_z_m": 1.05,
+   "reason": "parapet/balustrade keeps own CAD height"
+  },
+  {
+   "wall_id": "wall_md_0027",
+   "bbox_mm": [
+    13100,
+    11100,
+    13500,
+    11800
+   ],
+   "adjacent_zone_codes": [
+    "W",
+    "W"
+   ],
+   "adjacent_levels": [
+    "wall"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0028",
+   "bbox_mm": [
+    13500,
+    11100,
+    13600,
+    11700
+   ],
+   "adjacent_zone_codes": [
+    "W",
+    "T"
+   ],
+   "adjacent_levels": [
+    "verify",
+    "wall"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0029",
+   "bbox_mm": [
+    14800,
+    -600,
+    14900,
+    0
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "."
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0030",
+   "bbox_mm": [
+    15300,
+    200,
+    15500,
+    4500
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "."
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0031",
+   "bbox_mm": [
+    15700,
+    11100,
+    15800,
+    11700
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "."
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0032",
+   "bbox_mm": [
+    16200,
+    4500,
+    16400,
+    6400
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "."
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0033",
+   "bbox_mm": [
+    16200,
+    6600,
+    16400,
+    10900
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "."
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0034",
+   "bbox_mm": [
+    8500,
+    -700,
+    10900,
+    -600
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "U"
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0035",
+   "bbox_mm": [
+    12100,
+    -700,
+    14800,
+    -600
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "U"
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0036",
+   "bbox_mm": [
+    5900,
+    0,
+    7800,
+    200
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0037",
+   "bbox_mm": [
+    8000,
+    0,
+    8600,
+    200
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "U"
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0038",
+   "bbox_mm": [
+    10800,
+    0,
+    11400,
+    200
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "U"
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0039",
+   "bbox_mm": [
+    11600,
+    0,
+    12200,
+    200
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "U"
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0040",
+   "bbox_mm": [
+    14700,
+    0,
+    15300,
+    200
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "U"
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0041",
+   "bbox_mm": [
+    7400,
+    200,
+    7800,
+    500
+   ],
+   "adjacent_zone_codes": [
+    "W",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "wall"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0042",
+   "bbox_mm": [
+    1500,
+    500,
+    5500,
+    700
+   ],
+   "adjacent_zone_codes": [
+    "W"
+   ],
+   "adjacent_levels": [
+    "wall"
+   ],
+   "class": "PARAPET",
+   "base_z_m": 0.0,
+   "top_z_m": 1.05,
+   "reason": "parapet/balustrade keeps own CAD height"
+  },
+  {
+   "wall_id": "wall_md_0043",
+   "bbox_mm": [
+    1300,
+    2300,
+    2700,
+    2500
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "."
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0044",
+   "bbox_mm": [
+    5900,
+    4500,
+    7800,
+    4700
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "U"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "upper"
+   ],
+   "class": "CONTINUOUS_SPLIT_BOUNDARY",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "wall separates lower/upper or bounds stairwell"
+  },
+  {
+   "wall_id": "wall_md_0045",
+   "bbox_mm": [
+    10800,
+    4500,
+    11400,
+    4700
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0046",
+   "bbox_mm": [
+    13100,
+    4500,
+    15300,
+    4700
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0047",
+   "bbox_mm": [
+    15500,
+    4500,
+    16200,
+    4700
+   ],
+   "adjacent_zone_codes": [
+    ".",
+    "U"
+   ],
+   "adjacent_levels": [
+    "outside",
+    "upper"
+   ],
+   "class": "ENVELOPE_CONTINUOUS",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "exterior envelope - facade continues to datum"
+  },
+  {
+   "wall_id": "wall_md_0048",
+   "bbox_mm": [
+    11600,
+    6400,
+    11950,
+    6600
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0049",
+   "bbox_mm": [
+    13100,
+    6400,
+    16200,
+    6600
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0050",
+   "bbox_mm": [
+    9200,
+    6450,
+    11400,
+    6600
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0051",
+   "bbox_mm": [
+    8000,
+    7800,
+    8850,
+    8000
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0052",
+   "bbox_mm": [
+    9600,
+    7800,
+    10000,
+    8000
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "W"
+   ],
+   "adjacent_levels": [
+    "upper",
+    "wall"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0053",
+   "bbox_mm": [
+    10850,
+    7800,
+    12900,
+    8000
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0054",
+   "bbox_mm": [
+    8000,
+    10900,
+    9700,
+    11100
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "upper"
+   ],
+   "class": "CONTINUOUS_SPLIT_BOUNDARY",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "wall separates lower/upper or bounds stairwell"
+  },
+  {
+   "wall_id": "wall_md_0055",
+   "bbox_mm": [
+    9900,
+    10900,
+    12900,
+    11100
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "upper"
+   ],
+   "class": "CONTINUOUS_SPLIT_BOUNDARY",
+   "base_z_m": 0.0,
+   "top_z_m": 3.25,
+   "reason": "wall separates lower/upper or bounds stairwell"
+  },
+  {
+   "wall_id": "wall_md_0056",
+   "bbox_mm": [
+    13100,
+    10900,
+    13700,
+    11100
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "W"
+   ],
+   "adjacent_levels": [
+    "upper",
+    "wall"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0057",
+   "bbox_mm": [
+    15600,
+    10900,
+    16200,
+    11100
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "U"
+   ],
+   "adjacent_levels": [
+    "upper"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0058",
+   "bbox_mm": [
+    13600,
+    11700,
+    15700,
+    11800
+   ],
+   "adjacent_zone_codes": [
+    "T",
+    "T"
+   ],
+   "adjacent_levels": [
+    "verify"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0059",
+   "bbox_mm": [
+    2900,
+    13000,
+    3800,
+    13200
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "."
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0060",
+   "bbox_mm": [
+    6900,
+    13000,
+    7800,
+    13200
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "."
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0061",
+   "bbox_mm": [
+    7800,
+    13000,
+    8200,
+    13400
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "W"
+   ],
+   "adjacent_levels": [
+    "lower",
+    "wall"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0062",
+   "bbox_mm": [
+    7880,
+    13400,
+    13020,
+    13900
+   ],
+   "adjacent_zone_codes": [
+    "W"
+   ],
+   "adjacent_levels": [
+    "wall"
+   ],
+   "class": "PARAPET",
+   "base_z_m": 0.0,
+   "top_z_m": 1.05,
+   "reason": "parapet/balustrade keeps own CAD height"
+  },
+  {
+   "wall_id": "wall_md_0063",
+   "bbox_mm": [
+    3700,
+    13790,
+    7000,
+    13900
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "."
+   ],
+   "adjacent_levels": [
+    "lower",
+    "outside"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  },
+  {
+   "wall_id": "wall_md_0064",
+   "bbox_mm": [
+    12900,
+    4500,
+    13100,
+    4800
+   ],
+   "adjacent_zone_codes": [
+    "U",
+    "W"
+   ],
+   "adjacent_levels": [
+    "upper",
+    "wall"
+   ],
+   "class": "UPPER_ONLY",
+   "base_z_m": 0.45,
+   "top_z_m": 3.25,
+   "reason": "interior faces upper only, partition sits on platform"
+  },
+  {
+   "wall_id": "wall_md_0088",
+   "bbox_mm": [
+    2950,
+    4592,
+    5650,
+    4652
+   ],
+   "adjacent_zone_codes": [
+    "L",
+    "L"
+   ],
+   "adjacent_levels": [
+    "lower"
+   ],
+   "class": "LOWER_ONLY",
+   "base_z_m": 0.0,
+   "top_z_m": 2.8,
+   "reason": "interior faces lower only"
+  }
+ ]
+}

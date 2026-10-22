@@ -1,0 +1,68 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_BALCONY_SUNROOM_REVIEW_11.blend",
+  "source_sha256": "1ef817c99f894501127cbaf1a74e2ede1d5166bb1b9129f7fbba5006914cf1b2",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_SUNROOM_DOOR_CLEAR_SOFA_REVIEW_12.blend",
+  "output_sha256": "d73835d9b0c3ab0b7edab5469a8421d1e65ef65d79ddf168bede725d48ffc78f",
+  "retired_native_ids": [
+    "SUNROOM_LAUNDRY_FOLDING_BASE",
+    "SUNROOM_LAUNDRY_FOLDING_COUNTER",
+    "SUNROOM_LAUNDRY_SHALLOW_UPPER",
+    "SUNROOM_MOVABLE_COFFEE_TABLE",
+    "SUNROOM_SUN_SEAT_BACK",
+    "SUNROOM_SUN_SEAT_BACK_PAD",
+    "SUNROOM_SUN_SEAT_BACK_PAD.001",
+    "SUNROOM_SUN_SEAT_BACK_PAD.002",
+    "SUNROOM_SUN_SEAT_BASE",
+    "SUNROOM_SUN_SEAT_CUSHION"
+  ],
+  "new_native_ids": [
+    "SUNROOM_COMPACT_TWO_SEAT_SOFA",
+    "SUNROOM_FREEZER_FLIP_WORKTOP_0",
+    "SUNROOM_FREEZER_WORKTOP_HINGE_0",
+    "SUNROOM_FREEZER_FLIP_WORKTOP_1",
+    "SUNROOM_FREEZER_WORKTOP_HINGE_1"
+  ],
+  "extra_changed_native_ids": [],
+  "sofa_bounds": [
+    [
+      8.89,
+      11.14,
+      0
+    ],
+    [
+      10.34,
+      11.89,
+      0.8
+    ]
+  ],
+  "sofa_size_m": [
+    1.45,
+    0.75,
+    0.8
+  ],
+  "southern_glazed_door_clear_rectangle_source_xyz": [
+    [
+      10.399999618530273,
+      11.1,
+      0
+    ],
+    [
+      12.1,
+      12.1,
+      2.0
+    ]
+  ],
+  "sofa_to_door_x_gap_m": 0.05999961853027358,
+  "central_lane_sofa_to_plantledge_m": 1.1649999999999991,
+  "worktop_height_m": 0.89,
+  "freezer_top_is_movable": true,
+  "freezer_north_shift_m": 0,
+  "appliance_meshes_unchanged": true,
+  "east_storage_and_freezer_unchanged": true,
+  "owner_accepted_east_overlap_m": 0.2999996185302738,
+  "all_other_existing_object_states_unchanged": true,
+  "fresh_reopen_verified": true,
+  "review11_source_unchanged": true,
+  "freezer_lid_hardware_and_manufacturer_install_clearance_verified": false
+}

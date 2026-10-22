@@ -1,0 +1,382 @@
+{
+  "status": "CONDITIONAL_STATIC_INTERIOR_ROUTE_FEASIBLE_WITH_RECOMMENDED_ROUTE",
+  "date": "2026-10-03",
+  "units": "meters with clearance fields in mm",
+  "source_sha256_from_grid_preflight": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "source_sha256_from_wall_section": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "required_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "input_hashes": {
+    "FLOOR_GRID.json": "9bc201cabac93b6725f46f3909162044e897fc6ffb2e3805cf8f4ddd979343f7",
+    "R4_PLAN_SECTION_LINES.json": "07bef69d948dd3e3fda3ddc33dcb0df46e46a5c1ff0b102d598c5619bc170895",
+    "layout_design.py": "a332728c590c49504625ea11fd4849a84ac016dd01c7887a01d19dfb158c4e2c"
+  },
+  "method": {
+    "grid_step_mm": 50,
+    "cell_estimated_extent_mm": 25,
+    "grid_polygon_seam_fix_mm": 0.0001,
+    "conservative_FFL0_erosion_mm": 25,
+    "wall_section_z_m": 1.15,
+    "new_furniture": "Exact requested rectangular footprint envelopes; racetrack/oval/round furniture remains bounded by rectangles for conservative static clearance. Rug excluded as hard obstacle.",
+    "route_strip": "1000mm width, round bends, flat endpoints. 900mm tested for original route furniture contact.",
+    "disclaimer": "Grid ray starts at1.2m after hiding core furniture/appliances/bathroom collections. Wall mesh side faces can return z0 while standing solid wall occupies space; only FLOOR_LOWER tag accepted. Wall section lines at1.15m provide a separate solid-wall veto."
+  },
+  "checks": {
+    "A": {
+      "original": {
+        "points_m": [
+          [
+            3.25,
+            6.25
+          ],
+          [
+            4.9,
+            6.9
+          ],
+          [
+            6.6,
+            7.4
+          ],
+          [
+            6.7,
+            8.8
+          ],
+          [
+            6.75,
+            10.6
+          ],
+          [
+            6.8,
+            12.3
+          ]
+        ],
+        "centerline_on_sampled_FFL0": true,
+        "width1000_strip_on_sampled_FFL0": true,
+        "width1000_strip_on_FFL0_after25mm_erosion": true,
+        "min_distance_to_section_walls_mm": 487.9,
+        "min_distance_to_new_furniture_mm": 445.8,
+        "new_furniture_distance_mm": {
+          "sofa_west": 2104.4,
+          "sofa_return": 853.0,
+          "chaise": 757.0,
+          "sideboard": 445.8,
+          "window_side": 2602.7,
+          "floor_lamp": 2681.9,
+          "coffee_A": 1298.4
+        },
+        "width1000_closed_new_furniture_clear": false,
+        "symmetric_strip_bottleneck_from_grid_mm": 750.0,
+        "note": "Flat endpoint caps; excludes entry threshold connection outside floor-grid domain and all inherited furniture hidden during floor-ray preflight.",
+        "sideboard_closest_pair_m": [
+          [
+            5.825796178343949,
+            7.172292993630574
+          ],
+          [
+            5.7,
+            7.6
+          ]
+        ],
+        "width900_closed_new_furniture_clear": false
+      },
+      "recommended": {
+        "points_m": [
+          [
+            3.5,
+            5.99
+          ],
+          [
+            4.9,
+            6.85
+          ],
+          [
+            6.15,
+            7.1
+          ],
+          [
+            6.6,
+            7.6
+          ],
+          [
+            6.8,
+            8.8
+          ],
+          [
+            6.95,
+            10.6
+          ],
+          [
+            6.88,
+            12.3
+          ]
+        ],
+        "centerline_on_sampled_FFL0": true,
+        "width1000_strip_on_sampled_FFL0": true,
+        "width1000_strip_on_FFL0_after25mm_erosion": true,
+        "min_distance_to_section_walls_mm": 700.2,
+        "min_distance_to_new_furniture_mm": 578.5,
+        "new_furniture_distance_mm": {
+          "sofa_west": 2152.4,
+          "sofa_return": 956.7,
+          "chaise": 855.0,
+          "sideboard": 578.5,
+          "window_side": 2705.5,
+          "floor_lamp": 2761.8,
+          "coffee_A": 1471.6
+        },
+        "width1000_closed_new_furniture_clear": true,
+        "symmetric_strip_bottleneck_from_grid_mm": 1076.8,
+        "note": "Flat endpoint caps; excludes entry threshold connection outside floor-grid domain and all inherited furniture hidden during floor-ray preflight."
+      }
+    },
+    "B": {
+      "original": {
+        "points_m": [
+          [
+            3.25,
+            6.25
+          ],
+          [
+            4.9,
+            6.9
+          ],
+          [
+            6.6,
+            7.4
+          ],
+          [
+            6.7,
+            8.8
+          ],
+          [
+            6.75,
+            10.6
+          ],
+          [
+            6.8,
+            12.3
+          ]
+        ],
+        "centerline_on_sampled_FFL0": true,
+        "width1000_strip_on_sampled_FFL0": true,
+        "width1000_strip_on_FFL0_after25mm_erosion": true,
+        "min_distance_to_section_walls_mm": 487.9,
+        "min_distance_to_new_furniture_mm": 445.8,
+        "new_furniture_distance_mm": {
+          "sofa_west": 2104.4,
+          "sofa_return": 853.0,
+          "chaise": 757.0,
+          "sideboard": 445.8,
+          "window_side": 2602.7,
+          "floor_lamp": 2681.9,
+          "coffee_B": 1344.6,
+          "coffee_B_aux": 462.6
+        },
+        "width1000_closed_new_furniture_clear": false,
+        "symmetric_strip_bottleneck_from_grid_mm": 750.0,
+        "note": "Flat endpoint caps; excludes entry threshold connection outside floor-grid domain and all inherited furniture hidden during floor-ray preflight.",
+        "sideboard_closest_pair_m": [
+          [
+            5.825796178343949,
+            7.172292993630574
+          ],
+          [
+            5.7,
+            7.6
+          ]
+        ],
+        "width900_closed_new_furniture_clear": false
+      },
+      "recommended": {
+        "points_m": [
+          [
+            3.5,
+            5.99
+          ],
+          [
+            4.9,
+            6.85
+          ],
+          [
+            6.15,
+            7.1
+          ],
+          [
+            6.6,
+            7.6
+          ],
+          [
+            6.8,
+            8.8
+          ],
+          [
+            6.95,
+            10.6
+          ],
+          [
+            6.88,
+            12.3
+          ]
+        ],
+        "centerline_on_sampled_FFL0": true,
+        "width1000_strip_on_sampled_FFL0": true,
+        "width1000_strip_on_FFL0_after25mm_erosion": true,
+        "min_distance_to_section_walls_mm": 700.2,
+        "min_distance_to_new_furniture_mm": 578.5,
+        "new_furniture_distance_mm": {
+          "sofa_west": 2152.4,
+          "sofa_return": 956.7,
+          "chaise": 855.0,
+          "sideboard": 578.5,
+          "window_side": 2705.5,
+          "floor_lamp": 2761.8,
+          "coffee_B": 1520.1,
+          "coffee_B_aux": 626.2
+        },
+        "width1000_closed_new_furniture_clear": true,
+        "symmetric_strip_bottleneck_from_grid_mm": 1076.8,
+        "note": "Flat endpoint caps; excludes entry threshold connection outside floor-grid domain and all inherited furniture hidden during floor-ray preflight."
+      }
+    }
+  },
+  "new_furniture_floor_support": {
+    "sofa_west": {
+      "sample_count": 988,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        0.0
+      ]
+    },
+    "sofa_return": {
+      "sample_count": 558,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        0.0
+      ]
+    },
+    "chaise": {
+      "sample_count": 595,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        -0.0
+      ]
+    },
+    "sideboard": {
+      "sample_count": 405,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        0.0
+      ]
+    },
+    "coffee_A": {
+      "sample_count": 350,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        -0.0
+      ]
+    },
+    "coffee_B": {
+      "sample_count": 299,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        -0.0
+      ]
+    },
+    "coffee_B_aux": {
+      "sample_count": 81,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        -0.0
+      ]
+    },
+    "window_side": {
+      "sample_count": 56,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        -0.0
+      ]
+    },
+    "floor_lamp": {
+      "sample_count": 25,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        0.0
+      ]
+    },
+    "rug": {
+      "sample_count": 1980,
+      "all_sampled_hits_are_FLOOR_LOWER_FFL0": true,
+      "sampled_exposed_heights_m": [
+        0.0
+      ]
+    }
+  },
+  "seated_access_gap_mm": {
+    "A": {
+      "west_sofa_to_main": 430,
+      "south_return_to_main": 380,
+      "main_to_window_chaise": 300
+    },
+    "B": {
+      "west_sofa_to_main": 435,
+      "south_return_to_main": 425,
+      "main_to_window_chaise": 305
+    },
+    "target": [
+      300,
+      450
+    ]
+  },
+  "static_local_gaps_mm": {
+    "sideboard_back_to_sofa_south": 920,
+    "window_side_to_chaise": 95,
+    "sofa_north_to_chaise_south": 180,
+    "west_sofa_to_west_wall_approx": 500,
+    "B_aux_east_to_east_wall_section": 1479.9,
+    "chaise_east_to_east_wall_section": 1724.9
+  },
+  "entry": {
+    "evidence_register": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/OPENING_AND_BAY_REGISTER.json",
+    "R4_retention_evidence": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_OPTION_A_EXPECTED_R3_STATES.json",
+    "id": "ENT-1",
+    "host_wall_x_band_m": [
+      2.7,
+      2.9
+    ],
+    "nominal_door_span_y_m": [
+      5.44,
+      6.54
+    ],
+    "nominal_mouth_center_m": [
+      2.8,
+      5.99
+    ],
+    "leaf_widths_mm": [
+      350,
+      750
+    ],
+    "registered_total_nominal_mm": 1100,
+    "wall_cut_y_m": [
+      5.39,
+      6.59
+    ],
+    "recommended_interior_route_start_m": [
+      3.5,
+      5.99
+    ],
+    "status": "TO_VERIFY_OPEN_DOOR_OPERATION",
+    "warning": "Only750mm primary leaf open fails900mm target. Both nominal leaves total1100mm; frame/leaf thickness/handles and hinge operating configuration must be verified before calling actual clear opening>=900mm. Full threshold connector extends west of sampled x2.9 and is not proven by FLOOR_GRID."
+  },
+  "sideboard_operation": {
+    "front": "SOUTH",
+    "status": "CLOSED_DOOR_ROUTE_ONLY",
+    "note": "No evaluated opening angle or leaf-width sweep supplied. Open hinged front doors project into south operating area and may temporarily overlap the route. Keep this as a separate operation check; do not claim simultaneous1000mm through-route with doors open."
+  },
+  "remaining_validation": [
+    "Evaluate final detailed furniture bounds after build.",
+    "Check inherited kitchen/dining/fixed-cabinet footprints against recommended south-entry connector; they were hidden in floor sampling.",
+    "Verify ENT-1 both-leaf opening and operating/handle clearance; one750mm leaf is below target.",
+    "Verify sideboard door opening sweep and standing access separately.",
+    "Grid and source dimensions are static design evidence, not exact site-survey certification."
+  ],
+  "plan_path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/reports/LAYOUT_CLEARANCE_PLAN.png"
+}

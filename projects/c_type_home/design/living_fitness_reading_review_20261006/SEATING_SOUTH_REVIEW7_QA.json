@@ -1,0 +1,115 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_BOOKCASE_SHORT_RAIL_REVIEW_6.blend",
+  "source_sha256": "e428fbedc2aeaf6f35d530c4dd33bbb61057a70eaede4d99683f376883360e05",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_SEATING_SOUTH_1M_REVIEW_7.blend",
+  "output_sha256": "eec08addcab7a805756a201a1ec61d7ac6508dfcd27cdb61c5d3e1c2f8dbd354",
+  "revision": "r4-seating-south-1m-review-7",
+  "selected_native_global_ids": {
+    "B11_Rectangle046_CATALOG_00_00": "ent_d25c02916e634c6b810c2d13e29a9a62",
+    "B11_Circle_CATALOG_00_00": "ent_d7c82245358e4d1dbc1dc644c11322e9",
+    "B11_Rectangle049_CATALOG_00_00": "ent_58cf3a9dc50143578ee3d8cfd272c045"
+  },
+  "translation_source_xyz_m": [
+    0,
+    -1,
+    0
+  ],
+  "translation_proxy_xyz_m": [
+    0,
+    0,
+    1
+  ],
+  "before": {
+    "B11_Rectangle046_CATALOG_00_00": [
+      [
+        3.4000000953674316,
+        8.949999809265137,
+        0.0
+      ],
+      [
+        5.200000286102295,
+        12.25,
+        0.699999988079071
+      ]
+    ],
+    "B11_Circle_CATALOG_00_00": [
+      [
+        3.6842498779296875,
+        12.350000381469727,
+        0.0
+      ],
+      [
+        4.164249897003174,
+        12.829999923706055,
+        0.47999998927116394
+      ]
+    ],
+    "B11_Rectangle049_CATALOG_00_00": [
+      [
+        5.025000095367432,
+        10.489999771118164,
+        0.0
+      ],
+      [
+        5.575000286102295,
+        11.489999771118164,
+        0.3999999761581421
+      ]
+    ]
+  },
+  "after": {
+    "B11_Rectangle046_CATALOG_00_00": [
+      [
+        3.4000000953674316,
+        7.949999809265137,
+        0.0
+      ],
+      [
+        5.200000286102295,
+        11.25,
+        0.699999988079071
+      ]
+    ],
+    "B11_Circle_CATALOG_00_00": [
+      [
+        3.6842498779296875,
+        11.350000381469727,
+        0.0
+      ],
+      [
+        4.164249897003174,
+        11.829999923706055,
+        0.47999998927116394
+      ]
+    ],
+    "B11_Rectangle049_CATALOG_00_00": [
+      [
+        5.025000095367432,
+        9.489999771118164,
+        0.0
+      ],
+      [
+        5.575000286102295,
+        10.489999771118164,
+        0.3999999761581421
+      ]
+    ]
+  },
+  "all_other_object_states_unchanged": true,
+  "no_surface_intersections": true,
+  "named_collision_candidates": [
+    "STEP_0",
+    "STEP_1",
+    "STEP_2",
+    "WAVE_WALL_HANDRAIL_900",
+    "WAVE_HANDRAIL_LOWER_POST",
+    "READING_3205A_PADDED_BENCH",
+    "READING_5015_SHORT_SLIDING_CABINET"
+  ],
+  "actual_floor_below_moved_envelopes": true,
+  "fresh_reopen_verified": true,
+  "north_sofa_edge_before_y": 12.25,
+  "north_sofa_edge_after_y": 11.25,
+  "source_and_frozen_r4_unchanged": true
+}

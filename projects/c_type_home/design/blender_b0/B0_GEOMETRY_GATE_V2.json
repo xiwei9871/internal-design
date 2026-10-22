@@ -1,0 +1,100 @@
+{
+ "gates": {
+  "B_Z_DATUM": {
+   "pass": true,
+   "step_tops_m": [
+    0.15,
+    0.3,
+    0.45
+   ],
+   "lower_floor_top": 0.0,
+   "upper_floor_top": 0.45
+  },
+  "C_CEILING": {
+   "pass": true,
+   "ceiling_region_objects": [
+    "CEILING_LOWER",
+    "CEILING_UPPER"
+   ],
+   "lower_z": 2.8,
+   "upper_z": 3.25
+  },
+  "D_OPENINGS": {
+   "pass": true,
+   "glazing_objects": 9,
+   "openings_expected": 9,
+   "d107_angle_deg": 26.3
+  },
+  "A_XY_GROUND_TRUTH": {
+   "pass": true,
+   "leisure_arc_preserved": "FASCIA_PLATFORM_CURVE follows S-\u697c\u68af r1000",
+   "stair_cells_s": 288
+  },
+  "E_FUTURE_ISOLATION": {
+   "pass": true,
+   "ramp_collection": "91_ACCESSIBILITY_OPTIONS"
+  },
+  "F_UNKNOWN_ISOLATION": {
+   "pass": true,
+   "to_verify_cells": 1502
+  }
+ },
+ "geometry_source_audit": {
+  "LOWER_floor": {
+   "objects": [
+    "FLOOR_LOWER"
+   ],
+   "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR"
+  },
+  "UPPER_floor": {
+   "objects": [
+    "FLOOR_UPPER"
+   ],
+   "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR"
+  },
+  "LOWER_ceiling": {
+   "objects": [
+    "CEILING_LOWER"
+   ],
+   "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR (same XY as floor)"
+  },
+  "UPPER_ceiling": {
+   "objects": [
+    "CEILING_UPPER",
+    "CEILING_STAIRWELL"
+   ],
+   "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR + CAD stair_zone rect"
+  },
+  "split_level_fascia": {
+   "objects": [
+    "FASCIA_PLATFORM_CURVE",
+    "FASCIA_CEILING_CURVE"
+   ],
+   "geometry_source": "CAD_EXACT_POLYGON (S-\u697c\u68af r1000 arc, 3deg chord = 0.34mm err)"
+  },
+  "level_field_50mm": {
+   "role": "SEMANTIC_HELPER_ONLY",
+   "geometry_authority": false,
+   "physical_ground_truth": false
+  }
+ },
+ "status": "PASS",
+ "frozen": {
+  "ARCH_XY": "FROZEN",
+  "Z_DATUM": "FROZEN",
+  "LEVEL_SEMANTICS": "FROZEN"
+ },
+ "overlay_gate": {
+  "straight_boundary_max_dev_mm": 0.0,
+  "curved_boundary_max_chord_dev_mm": 0.39,
+  "limits_mm": {
+   "straight": 1.0,
+   "curved": 2.0
+  },
+  "staircase_artifacts": "none",
+  "overlays": [
+   "B0_FLOOR_CAD_OVERLAY.png",
+   "B0_CEILING_CAD_OVERLAY.png"
+  ]
+ }
+}

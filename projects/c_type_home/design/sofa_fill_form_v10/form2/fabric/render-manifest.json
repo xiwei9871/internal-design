@@ -1,0 +1,74 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/SOFA_DIFFERENTIATED_FILL_V10.blend",
+  "source_sha256": "0feb704e15b182143d183429ab1a2eb1a0b3c9810adbb0fa689a4d24dc0f21ab",
+  "stage": "fabric",
+  "blender": "5.2.1 LTS",
+  "engine": "CYCLES",
+  "device": "METAL",
+  "samples": 64,
+  "denoise": "OIDN GPU High Accurate",
+  "same_materials_studio_camera": true,
+  "clay_cavity_enhancement": false,
+  "images": [
+    {
+      "family": "V7",
+      "camera": "V6_FRONT",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/fabric/V7_V6_FRONT.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "seconds": 16.25
+    },
+    {
+      "family": "V7",
+      "camera": "V6_SIDE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/fabric/V7_V6_SIDE.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "seconds": 12.76
+    },
+    {
+      "family": "V7",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/fabric/V7_V6_THREE_QUARTER.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "seconds": 12.98
+    },
+    {
+      "family": "V10",
+      "camera": "V6_FRONT",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/fabric/V10_V6_FRONT.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "seconds": 13.24
+    },
+    {
+      "family": "V10",
+      "camera": "V6_SIDE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/fabric/V10_V6_SIDE.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "seconds": 12.39
+    },
+    {
+      "family": "V10",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/fabric/V10_V6_THREE_QUARTER.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "seconds": 12.88
+    }
+  ]
+}

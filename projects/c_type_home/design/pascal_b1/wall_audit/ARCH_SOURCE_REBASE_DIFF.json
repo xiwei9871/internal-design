@@ -1,0 +1,43 @@
+{
+ "canonical_vs_registers": {
+  "walls": "ALIGNED — canonical walls+parapets (42) == FINAL_WALL_REGISTER active (42), 1:1",
+  "windows": [
+   {
+    "id": "W-STUDY-NE",
+    "delta": "rect rewritten [13600,10900,15700,11100]→[13600,11350,15700,11550] + host_wall=W-BAY-STUDY-F override; register facade opening line no longer in canonical windows"
+   },
+   {
+    "id": "W-SMB-S",
+    "delta": "bay topology exists only as window.bay.jambs/front metadata — cheeks+front NOT physical walls"
+   },
+   {
+    "id": "W-MB-S",
+    "delta": "same — jambs/front metadata only"
+   },
+   {
+    "id": "W-LIV-N",
+    "delta": "front band [3600,13800,7100,13900] metadata only (cheeks already physical walls W-BAY-JW/JE)"
+   }
+  ],
+  "doors": "ALIGNED with B1_DOOR_SEMANTIC_RESOLUTION v002 (D-ENS-OWNER, D-CONN-MB-SMB renamed; D-LIV-STUDY? removed)"
+ },
+ "pascal_vs_registers": {
+  "bay_windows": [
+   "each of W-LIV-N/W-SMB-S/W-MB-S emitted TWICE: facade-line window + BAY_FRONT_GLAZED thin wall+window → double glazing",
+   "cheek/jamb walls never emitted for these 3 bays → south bays render as floating glass strip with no protruding box",
+   "no sill/platform geometry for any bay",
+   "W-STUDY-NE OK after add-back (W-BAY-STUDY-F + JW + JE real walls)"
+  ],
+  "doors": [
+   "D-SM emitted width 0.464m (register opening 0.70m)",
+   "D-MB 0.434",
+   "D-BATHM 0.40",
+   "D-STUDY 0.40",
+   "→ converter writes wall thickness as door width for openings in thick wall bands"
+  ],
+  "walls": [
+   "W-INT-X13000 vs W-NBALC-E-PAR nested overlap 120x2500 — duplicate registration unresolved"
+  ],
+  "glass_doors": "G-GB-BALC/G-LIV-NBALC/G-DIN-LIV emitted as GLASS_DOOR door nodes — semantics preserved (G-DIN-LIV hosts on GLAZED_SCREEN, owner partition)"
+ }
+}

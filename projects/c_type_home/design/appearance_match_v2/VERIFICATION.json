@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "registered_source_meshes_and_world_matrices_unchanged": 977,
+  "all_nonsoft_candidate_meshes_unchanged": 1819,
+  "all_candidate_world_matrices_unchanged": 1826,
+  "refined_soft_bounds_tolerance_mm": 0.01,
+  "refined_soft_objects": [
+    "LD_Sofa_upholstery_03",
+    "LD_Sofa_upholstery_04",
+    "LD_Sofa_upholstery_05",
+    "LD_Sofa_upholstery_09",
+    "LD_Sofa_upholstery_10",
+    "LD_Sofa_upholstery_11",
+    "LD_Chaise_seat_pad"
+  ],
+  "protected_files_pass": true,
+  "material_slots_checked": [
+    "FLOOR_LOWER",
+    "LD_Coffee_tabletop",
+    "LD_Sofa_upholstery_04"
+  ],
+  "packed_images": 9,
+  "missing_images": [],
+  "visual_match_gate": "SEPARATE_FROM_TECHNICAL_PASS"
+}

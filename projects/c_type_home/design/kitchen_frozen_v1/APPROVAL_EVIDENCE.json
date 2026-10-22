@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-01",
+  "human_request": "几张图都基本正确，厨房可以基本定下来，你整理并把厨房建设彻底锁定",
+  "approval": "CURRENT_KITCHEN_SPATIAL_MODEL",
+  "attachments": [
+    {
+      "view_id": "05",
+      "attachment": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/approval_evidence/USER_APPROVED_SINK.png",
+      "attachment_sha256": "dd4a3a69347a29ae954574f7a609d533da0e3f25667eee12bd0a10623681121c",
+      "v4_render": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_05_sink_corner_V4.png",
+      "size": [
+        2000,
+        1500
+      ],
+      "rgb_pixels_identical": true
+    },
+    {
+      "view_id": "10",
+      "attachment": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/approval_evidence/USER_APPROVED_BUFFET.png",
+      "attachment_sha256": "15bcf73fbc29979a9edb4df83f07b4148c45cabfaab67c2cf2f69e058c2033e3",
+      "v4_render": "/Users/xiwei/interior_design/projects/c_type_home/design/site_photos/kitchen_multiview_v4/FULL_10_photo5_buffet_front_V4.png",
+      "size": [
+        2000,
+        1500
+      ],
+      "rgb_pixels_identical": true
+    }
+  ],
+  "image_inline": false
+}

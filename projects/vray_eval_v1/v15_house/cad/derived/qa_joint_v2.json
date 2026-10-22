@@ -1,0 +1,157 @@
+{
+ "QJ1_same_snapshot": true,
+ "QJ2_demo_set": true,
+ "QJ2_hold_set": true,
+ "QJ3_no_suppress_visible": true,
+ "QJ3_detail": [],
+ "QJ4_conflict_missing": [],
+ "QJ4_review_missing": [],
+ "QJ4_all_conflicts_shown": true,
+ "QJ5_dim_counts": {
+  "A102": 34,
+  "A103": 34,
+  "expected": 34
+ },
+ "QJ5_dims_valid": true,
+ "QJ6_wall_geom_parity": {},
+ "QJ6_pass": true,
+ "QJ9_missing_detail": [
+  {
+   "area_mm2": 647,
+   "cx": 2700,
+   "cy": 9765
+  },
+  {
+   "area_mm2": 515,
+   "cx": 11561,
+   "cy": 8000
+  },
+  {
+   "area_mm2": 425,
+   "cx": 11400,
+   "cy": 2325
+  },
+  {
+   "area_mm2": 284,
+   "cx": 2700,
+   "cy": 3980
+  },
+  {
+   "area_mm2": 270,
+   "cx": 12900,
+   "cy": 9350
+  },
+  {
+   "area_mm2": 250,
+   "cx": 6525,
+   "cy": 4700
+  },
+  {
+   "area_mm2": 160,
+   "cx": 8400,
+   "cy": 8000
+  },
+  {
+   "area_mm2": 100,
+   "cx": 6600,
+   "cy": -200
+  },
+  {
+   "area_mm2": 100,
+   "cx": 6600,
+   "cy": 0
+  }
+ ],
+ "QJ9_extra_detail": [],
+ "QJ9_missing_total_mm2": 2751,
+ "QJ9_extra_total_mm2": 0,
+ "QJ9_max_local_dev_mm2": 647,
+ "QJ9_missing_by_type": {
+  "EXISTING": [],
+  "COLUMN_PIER": [],
+  "WALL_PARTITION": [
+   {
+    "area_mm2": 647,
+    "cx": 2700,
+    "cy": 9765
+   },
+   {
+    "area_mm2": 515,
+    "cx": 11561,
+    "cy": 8000
+   },
+   {
+    "area_mm2": 425,
+    "cx": 11400,
+    "cy": 2325
+   },
+   {
+    "area_mm2": 284,
+    "cx": 2700,
+    "cy": 3980
+   },
+   {
+    "area_mm2": 270,
+    "cx": 12900,
+    "cy": 9350
+   },
+   {
+    "area_mm2": 250,
+    "cx": 6525,
+    "cy": 4700
+   },
+   {
+    "area_mm2": 160,
+    "cx": 8400,
+    "cy": 8000
+   }
+  ],
+  "STAIR_STEP": [],
+  "SOFFIT_HEADER": [
+   {
+    "area_mm2": 100,
+    "cx": 6600,
+    "cy": -200
+   },
+   {
+    "area_mm2": 100,
+    "cx": 6600,
+    "cy": 0
+   }
+  ]
+ },
+ "QJ9_target_area_mm2": 42158386,
+ "QJ9_geom_parity_2d": true,
+ "QJ7_sources_fresh": true,
+ "QJ10_stair_treads": [
+  "STEP_0",
+  "STEP_1",
+  "STEP_2"
+ ],
+ "QJ10_arrival_platform_merged": true,
+ "QJ10_indep_4th_step_handles": [],
+ "QJ10_stair_on_new_wall_layer": [],
+ "QJ10_a102_stair_layer_entities": 1,
+ "QJ10_stair_semantics": true,
+ "QJ11": {
+  "A102_w4_in_frozen_area": true,
+  "A102_vis_open": true,
+  "A102_vis_no_w4": true,
+  "A102_wave_lines": 3,
+  "A102_arrow_entities": 0,
+  "A102_arrow_off_stair_layer": true,
+  "A103_w4_in_frozen_area": true,
+  "A103_vis_open": true,
+  "A103_vis_no_w4": true,
+  "A103_wave_lines": 3,
+  "A103_arrow_entities": 4,
+  "A103_arrow_off_stair_layer": true
+ },
+ "QJ11_stair_visible_lines": true,
+ "QJ8_viewports": {
+  "A102": 1,
+  "A103": 1
+ },
+ "QJ8_viewport_present": true,
+ "verdict": "PASS"
+}

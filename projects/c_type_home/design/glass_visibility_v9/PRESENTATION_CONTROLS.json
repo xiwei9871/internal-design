@@ -1,0 +1,18 @@
+{
+  "material_rna": [
+    "surface_render_method",
+    "use_raytrace_refraction",
+    "thickness_mode",
+    "use_thickness_from_shadow"
+  ],
+  "world_background_strengths": {
+    "Background": 0.2199999988079071,
+    "Background.001": 3.5999999046325684,
+    "LD Neutral exterior presentation": 3.5999999046325684
+  },
+  "studio_path": "/Applications/Blender.app/Contents/Resources/5.2/datafiles/studiolights/world/forest.exr",
+  "eevee_settings": {
+    "raytracing": true,
+    "method": "SCREEN"
+  }
+}

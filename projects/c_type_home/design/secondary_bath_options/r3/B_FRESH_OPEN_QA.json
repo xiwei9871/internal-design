@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "source_states_checked": 1244,
+  "kitchen_objects_unchanged": true,
+  "added_D107_enclosure_removed": true,
+  "unrelated_wall_surface_samples": 4405,
+  "unrelated_wall_max_deviation_mm": 0.21457912225741893,
+  "thin_cap_float64_rechecks": 6,
+  "study_bounds": {
+    "bookcase": {
+      "actual_bounds_mm": [
+        15735.87417602539,
+        6642.5933837890625,
+        16185.874938964844,
+        10842.594146728516
+      ],
+      "max_error_mm": 0.000823974609375
+    },
+    "tea_table": {
+      "actual_bounds_mm": [
+        14271.625518798828,
+        7389.718532562256,
+        15071.624755859375,
+        9589.71881866455
+      ],
+      "max_error_mm": 0.000518798828125
+    },
+    "tea_counter": {
+      "actual_bounds_mm": [
+        14097.37491607666,
+        6642.624855041504,
+        15697.375297546387,
+        7092.625141143799
+      ],
+      "max_error_mm": 0.00029754638671875
+    }
+  },
+  "study_table_shift_mm": 0,
+  "topology": {
+    "vertices": 30,
+    "faces": 36,
+    "boundary": 0,
+    "nonmanifold": 0
+  },
+  "model_sha256": "a2a7c2d08c740c0e7c0747a50dd5c8c176d6c67d3d56065168f783a7d64e596e"
+}

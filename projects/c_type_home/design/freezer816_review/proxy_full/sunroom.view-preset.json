@@ -1,0 +1,84 @@
+{
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "freezer816_review_sunroom",
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.02,
+  "far": 1000,
+  "position": [
+    9.3,
+    4.7,
+    -14.7
+  ],
+  "quaternion": [
+    -0.15891149640083313,
+    -0.8384439945220947,
+    -0.40316152572631836,
+    0.33048370480537415
+  ],
+  "orbit_target": [
+    11.4,
+    0.85,
+    -12.45
+  ],
+  "viewport": {
+    "width": 1000,
+    "height": 780,
+    "pixel_ratio": 1
+  },
+  "projection_matrix": [
+    1.883086,
+    0,
+    0,
+    0,
+    0,
+    2.414214,
+    0,
+    0,
+    0,
+    0,
+    -1.00004,
+    -1,
+    0,
+    0,
+    -0.0400008,
+    0
+  ],
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_freezer816_review",
+  "source_revision": "freezer816-cabinet-review-1",
+  "source_sha256": "3d1637cbc00b9f8a25e98b49c1997cd052a4e43fffca81dd4a2939bf7064e191",
+  "source_locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/freezer816_review/FREEZER816_CABINET_REVIEW.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "freezer816-cabinet-review-1",
+    "sha256": "c59f565bdf52e835ae936b0b660b0ee03e5d0ae9c43bc39da68b684c837d36bf",
+    "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/freezer816_review/spatial-canvas.bindings.full.json"
+  },
+  "source_camera": {
+    "position": [
+      9.3,
+      14.7,
+      4.7
+    ],
+    "quaternion": [
+      0.12131986021995544,
+      -0.30779117345809937,
+      -0.8779476881027222,
+      0.34605467319488525
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [
+    "ent_5a6dd606884d5a88b69ffd7a2c53f8a3",
+    "ent_841ef576e96458bfbc8994000b4e01e8",
+    "ent_170ccb7c300753f486d5d0507fc11e34"
+  ],
+  "ghost_entity_ids": [],
+  "preview_uri": "BEDROOM_SUNROOM.png"
+}

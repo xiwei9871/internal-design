@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "B0_INTEGRITY": "PASS",
+  "frozen_files_match": 7,
+  "all_previous_objects_geometry_and_pose_preserved": 774,
+  "accepted_fridge_area_unchanged": true,
+  "island_dimensions_mm": [
+    800.0000715255737,
+    467.00000762939453,
+    959.9999785423279
+  ],
+  "utility_dimensions_mm": [
+    600.0003814697266,
+    500.99998712539673,
+    2000.0
+  ],
+  "ac_above_cabinet": true,
+  "ac_review_bounds_m": [
+    [
+      4.8323750495910645,
+      0.715343713760376,
+      2.1499998569488525
+    ],
+    [
+      5.612374782562256,
+      0.9393437504768372,
+      2.430000066757202
+    ]
+  ],
+  "source_v1_sha256": "a6397bf03ca00b749e560ec814f5bcda16ac2d3d8c0c8fce002925ec36b9d8e0",
+  "model_sha256": "d28c3245f36e6ddb7b8aaeb943cb45d81fbfb2964660c7f4ef8f40c0ae863948",
+  "stage": "HUMAN_REVIEW",
+  "review_assumptions": [
+    "utility depth500",
+    "AC generic dimensions/mount Z",
+    "rounded counter radius40",
+    "PDF-to-B1 island placement alignment"
+  ],
+  "visual_review": {
+    "status": "INSPECTED",
+    "views": [
+      "SITE_KITCHEN_COMPLETE_V2.png",
+      "SITE_ISLAND_UTILITY_V2.png",
+      "SITE_KITCHEN_TOP_V2.png"
+    ],
+    "material_stage": "SIMPLE_REVIEW",
+    "construction_approval": false
+  },
+  "state": "B1_SITE_CORRECTION = HUMAN_REVIEW"
+}

@@ -1,0 +1,49 @@
+{
+  "status": "HUMAN_REVIEW",
+  "base_review": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_AND_ANGLED_AC_REVIEW.blend",
+  "base_sha256": "c110c5a9a294e9b9df838b3be147d9b46e0b9424f0f8de399385cd4129d3f1ed",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_THINNER_AC_RAISED_REVIEW.blend",
+  "output_sha256": "bffc60b456e81e30a29613e9b3ef07b6684a16700233c5a6673fab5bf49588ed",
+  "wall_before_m": [
+    [
+      5.522375106811523,
+      0.7001999616622925,
+      0.0
+    ],
+    [
+      5.899999618530273,
+      1.4300000667572021,
+      2.799999952316284
+    ]
+  ],
+  "wall_after_m": [
+    [
+      5.572375297546387,
+      0.7001999616622925,
+      0.0
+    ],
+    [
+      5.899999618530273,
+      1.4300000667572021,
+      2.799999952316284
+    ]
+  ],
+  "thickness_reduction_m": 0.05,
+  "ac_z_translation_m": 0.3,
+  "ac_bounds_after_m": [
+    [
+      4.932112216949463,
+      0.4325941801071167,
+      2.4499998092651367
+    ],
+    [
+      5.512637615203857,
+      1.218093991279602,
+      2.7300000190734863
+    ]
+  ],
+  "ac_size_reduced": false,
+  "other_objects_unchanged": true,
+  "frozen_r4_unchanged": true,
+  "note": "No further HVAC fit/installation design requested; keep existing review yaw, X/Y and all dimensions."
+}

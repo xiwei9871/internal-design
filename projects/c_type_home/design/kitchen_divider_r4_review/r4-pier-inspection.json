@@ -1,0 +1,421 @@
+{
+  "source": {
+    "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+    "size": 1584568,
+    "mtime_ns": "1790946023854530466"
+  },
+  "objects": [
+    {
+      "name": "W_wall_md_0009",
+      "bounds": [
+        [
+          5.4999003410339355,
+          0.00020000338554382324,
+          0.0
+        ],
+        [
+          5.899899959564209,
+          0.7001999616622925,
+          2.799999952316284
+        ]
+      ],
+      "visible": false,
+      "hide_render": true,
+      "hide_set": true,
+      "collections": [
+        {
+          "name": "00_EXISTING_ARCH_GROUND_TRUTH",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "wall_finish_source": "V4_UNIFIED_SKIN_SOURCE_PRESERVED"
+      }
+    },
+    {
+      "name": "GLZ_W-LBALC-S",
+      "bounds": [
+        [
+          1.2999999523162842,
+          0.5,
+          1.0499999523162842
+        ],
+        [
+          5.800000190734863,
+          0.7000000476837158,
+          2.4000000953674316
+        ]
+      ],
+      "visible": false,
+      "hide_render": true,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "01_EXISTING_OPENINGS",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "site_status": "INACTIVE_FROZEN_OR_PRIOR_REVIEW_GEOMETRY; NEW_B1_VISUAL_DETAIL_OVERRIDE"
+      }
+    },
+    {
+      "name": "CEILING_LOWER",
+      "bounds": [
+        [
+          1.5,
+          0.0,
+          2.799999952316284
+        ],
+        [
+          13.099900245666504,
+          13.790200233459473,
+          2.9200000762939453
+        ]
+      ],
+      "visible": false,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "03_EXISTING_CEILING",
+          "hide_render": true,
+          "hide_viewport": true
+        }
+      ],
+      "properties": {
+        "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR"
+      }
+    },
+    {
+      "name": "CEILING_UPPER",
+      "bounds": [
+        [
+          5.699999809265137,
+          -0.5997999906539917,
+          3.25
+        ],
+        [
+          16.299999237060547,
+          11.700200080871582,
+          3.369999885559082
+        ]
+      ],
+      "visible": false,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "03_EXISTING_CEILING",
+          "hide_render": true,
+          "hide_viewport": true
+        }
+      ],
+      "properties": {
+        "geometry_source": "CAD_EXACT_POLYGON+CAD_SNAPPED_CONTOUR"
+      }
+    },
+    {
+      "name": "B11_K-ISLAND_CONNECTOR_COUNTER",
+      "bounds": [
+        [
+          5.899999618530273,
+          0.5400000214576721,
+          0.9200000166893005
+        ],
+        [
+          6.170000076293945,
+          1.4300000667572021,
+          0.9599999785423279
+        ]
+      ],
+      "visible": true,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "COL_SITE_KITCHEN_ISLAND_AND_UTILITY",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "physical_ground_truth": false,
+        "kitchen_freeze_version": "V1",
+        "review_status": "HUMAN_APPROVED_SPATIAL_MODEL_FROZEN"
+      }
+    },
+    {
+      "name": "B11_K-UTILITY_UPPER_DOOR_1",
+      "bounds": [
+        [
+          5.224374771118164,
+          1.1973438262939453,
+          0.9020000100135803
+        ],
+        [
+          5.5203752517700195,
+          1.215343713760376,
+          1.9820001125335693
+        ]
+      ],
+      "visible": true,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "COL_SITE_KITCHEN_ISLAND_AND_UTILITY",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "physical_ground_truth": false,
+        "kitchen_freeze_version": "V1",
+        "review_status": "HUMAN_APPROVED_SPATIAL_MODEL_FROZEN"
+      }
+    },
+    {
+      "name": "B11_K-UTILITY_AC_BODY",
+      "bounds": [
+        [
+          4.8323750495910645,
+          0.715343713760376,
+          2.1499998569488525
+        ],
+        [
+          5.612374782562256,
+          0.9353437423706055,
+          2.430000066757202
+        ]
+      ],
+      "visible": true,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "COL_SITE_KITCHEN_ISLAND_AND_UTILITY",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "physical_ground_truth": false,
+        "kitchen_freeze_version": "V1",
+        "review_status": "HUMAN_APPROVED_SPATIAL_MODEL_FROZEN"
+      }
+    },
+    {
+      "name": "B11_K-UTILITY_AC_FACE",
+      "bounds": [
+        [
+          4.854374885559082,
+          0.9253437519073486,
+          2.2049999237060547
+        ],
+        [
+          5.590374946594238,
+          0.9373437166213989,
+          2.4000000953674316
+        ]
+      ],
+      "visible": true,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "COL_SITE_KITCHEN_ISLAND_AND_UTILITY",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "physical_ground_truth": false,
+        "kitchen_freeze_version": "V1",
+        "review_status": "HUMAN_APPROVED_SPATIAL_MODEL_FROZEN"
+      }
+    },
+    {
+      "name": "B11_K-UTILITY_AC_LOUVER_0",
+      "bounds": [
+        [
+          4.8823747634887695,
+          0.9253436923027039,
+          2.180000066757202
+        ],
+        [
+          5.562375068664551,
+          0.9393437504768372,
+          2.186000108718872
+        ]
+      ],
+      "visible": true,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "COL_SITE_KITCHEN_ISLAND_AND_UTILITY",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "physical_ground_truth": false,
+        "kitchen_freeze_version": "V1",
+        "review_status": "HUMAN_APPROVED_SPATIAL_MODEL_FROZEN"
+      }
+    },
+    {
+      "name": "B11_K-UTILITY_AC_LOUVER_1",
+      "bounds": [
+        [
+          4.8823747634887695,
+          0.9253436923027039,
+          2.194000005722046
+        ],
+        [
+          5.562375068664551,
+          0.9393437504768372,
+          2.200000047683716
+        ]
+      ],
+      "visible": true,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "COL_SITE_KITCHEN_ISLAND_AND_UTILITY",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "physical_ground_truth": false,
+        "kitchen_freeze_version": "V1",
+        "review_status": "HUMAN_APPROVED_SPATIAL_MODEL_FROZEN"
+      }
+    },
+    {
+      "name": "B11_K-UTILITY_AC_LOUVER_2",
+      "bounds": [
+        [
+          4.8823747634887695,
+          0.9253436923027039,
+          2.2079999446868896
+        ],
+        [
+          5.562375068664551,
+          0.9393437504768372,
+          2.2139999866485596
+        ]
+      ],
+      "visible": true,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "COL_SITE_KITCHEN_ISLAND_AND_UTILITY",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "physical_ground_truth": false,
+        "kitchen_freeze_version": "V1",
+        "review_status": "HUMAN_APPROVED_SPATIAL_MODEL_FROZEN"
+      }
+    },
+    {
+      "name": "V4_CONTINUOUS_WALL_SHELL",
+      "bounds": [
+        [
+          1.2999000549316406,
+          -0.7001000046730042,
+          0.0
+        ],
+        [
+          16.400100708007812,
+          14.953100204467773,
+          3.25
+        ]
+      ],
+      "visible": false,
+      "hide_render": true,
+      "hide_set": true,
+      "collections": [
+        {
+          "name": "COL_CONTINUOUS_WALLS_V4",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "source_objects": "[\"B11_SITE_BALCONY_WINDOW_HEAD\", \"B11_SITE_BALCONY_WINDOW_LEFT_RETURN\", \"B11_SITE_BALCONY_WINDOW_RIGHT_RETURN\", \"B11_SITE_KITCHEN_WINDOW_HEAD_WALL\", \"B11_SITE_KITCHEN_WINDOW_UNDER_WALL\", \"D107_V3_ADJACENT_RETURN_WALL_REMAINDER\", \"D107_V3_BLUE_RETURN_FLUSH_WITH_CASING\", \"D107_V3_FULL_ABOVE_DOOR\", \"D107_V3_PLATFORM_BASE_CLOSURE\", \"D107_V3_RED_RETURN_JOIN\", \"D107_V3_RED_SIDE_50MM_WALL\", \"D107_V3_TOP_CONNECTION\", \"DOOR_V2_NBALC_NORTH_FULL_WALL_PIER\", \"DOOR_V2_NBALC_SOLID_ABOVE_DOOR\", \"LIVING_FIX_BAY_FRONT_HEAD\", \"LIVING_FIX_BAY_FRONT_UNDER_WALL\", \"LIVING_FIX_BAY_INNER_HEAD\", \"LIVING_FIX_BAY_INNER_UNDER_WALL\", \"LIVING_FIX_BAY_LEFT_HEAD\", \"LIVING_FIX_BAY_LEFT_UNDER_WALL\", \"LIVING_FIX_BAY_RIGHT_HEAD\", \"LIVING_FIX_BAY_RIGHT_UNDER_WALL\", \"LIVING_FIX_BAY_SOFFIT\", \"LIVING_FIX_BAY_SOLID_PLATFORM_CORE\", \"LIVING_FIX_GUEST_BATH_FULL_WALL\", \"LIVING_FIX_GUEST_BATH_NORTH_JUNCTION\", \"LIVING_FIX_TV_NORTH_SOLID_WALL\", \"W_wall_md_0004\", \"W_wall_md_0005\", \"W_wall_md_0006\", \"W_wall_md_0007\", \"W_wall_md_0009\", \"W_wall_md_0010\", \"W_wall_md_0012\", \"W_wall_md_0015\", \"W_wall_md_0016\", \"W_wall_md_0017\", \"W_wall_md_0019\", \"W_wall_md_0020\", \"W_wall_md_0021\", \"W_wall_md_0022\", \"W_wall_md_0023\", \"W_wall_md_0024\", \"W_wall_md_0025\", \"W_wall_md_0026\", \"W_wall_md_0027\", \"W_wall_md_0028\", \"W_wall_md_0029\", \"W_wall_md_0030\", \"W_wall_md_0031\", \"W_wall_md_0032\", \"W_wall_md_0033\", \"W_wall_md_0034\", \"W_wall_md_0035\", \"W_wall_md_0036\", \"W_wall_md_0037\", \"W_wall_md_0038\", \"W_wall_md_0039\", \"W_wall_md_0040\", \"W_wall_md_0041\", \"W_wall_md_0042\", \"W_wall_md_0043\", \"W_wall_md_0044\", \"W_wall_md_0045\", \"W_wall_md_0046\", \"W_wall_md_0047\", \"W_wall_md_0048\", \"W_wall_md_0049\", \"W_wall_md_0050\", \"W_wall_md_0051\", \"W_wall_md_0052\", \"W_wall_md_0053\", \"W_wall_md_0054\", \"W_wall_md_0055\", \"W_wall_md_0056\", \"W_wall_md_0057\", \"W_wall_md_0058\", \"W_wall_md_0059\", \"W_wall_md_0060\", \"W_wall_md_0061\", \"W_wall_md_0062\", \"W_wall_md_0064\", \"W_wall_md_0088\"]",
+        "geometry_policy": "SHARED_PLANAR_CELL_SOLID_UNION; MICROGAP_NORMALIZATION_ONLY",
+        "review_status": "HUMAN_REVIEW",
+        "physical_ground_truth": false
+      }
+    },
+    {
+      "name": "V5_CONTINUOUS_WALL_SHELL",
+      "bounds": [
+        [
+          1.2999000549316406,
+          -0.7001000046730042,
+          0.0
+        ],
+        [
+          16.400100708007812,
+          14.953100204467773,
+          3.25
+        ]
+      ],
+      "visible": false,
+      "hide_render": true,
+      "hide_set": true,
+      "collections": [
+        {
+          "name": "COL_V5_COMPLETE_WALL_CORNERS",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "repair_scope": "MISSING_OUTER_QUADRANTS_AT_L_T_WALL_JUNCTIONS",
+        "source_model": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/B1_WALL_JUNCTIONS_CORRECTED_V4.blend"
+      }
+    },
+    {
+      "name": "R3_HOUSE_WALLS_D107_ROLLED_BACK",
+      "bounds": [
+        [
+          1.2999000549316406,
+          -0.7001000046730042,
+          0.0
+        ],
+        [
+          16.400100708007812,
+          14.953100204467773,
+          3.25
+        ]
+      ],
+      "visible": true,
+      "hide_render": false,
+      "hide_set": false,
+      "collections": [
+        {
+          "name": "COL_SECONDARY_BATH_R3_A",
+          "hide_render": false,
+          "hide_viewport": false
+        }
+      ],
+      "properties": {
+        "source_revision": "LATEST_FREECAD_R3",
+        "review_status": "HUMAN_REVIEW",
+        "local_rollback_bounds": "[7.79, 4.48, 9.23, 6.61]"
+      }
+    }
+  ]
+}

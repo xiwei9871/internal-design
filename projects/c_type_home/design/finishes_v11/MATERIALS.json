@@ -1,0 +1,1600 @@
+[
+  {
+    "name": "AM2_WARM_IVORY_WALL",
+    "diffuse_color": [
+      0.699999988079071,
+      0.656000018119812,
+      0.5839999914169312,
+      1.0
+    ],
+    "nodes": [
+      {
+        "name": "Material Output",
+        "type": "OUTPUT_MATERIAL",
+        "image": null,
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.0
+        }
+      },
+      {
+        "name": "Principled BSDF",
+        "type": "BSDF_PRINCIPLED",
+        "image": null,
+        "inputs": {
+          "Base Color": [
+            0.699999988079071,
+            0.656000018119812,
+            0.5839999914169312,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.8600000143051147,
+          "IOR": 1.5,
+          "Alpha": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.004999999888241291,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Anisotropic": 0.0,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 0.0,
+          "Coat Weight": 0.0,
+          "Coat Roughness": 0.029999999329447746,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        }
+      },
+      {
+        "name": "Texture Coordinate",
+        "type": "TEX_COORD",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Noise Texture",
+        "type": "TEX_NOISE",
+        "image": null,
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "W": 0.0,
+          "Scale": 150.0,
+          "Detail": 2.0,
+          "Roughness": 0.5,
+          "Lacunarity": 2.0,
+          "Offset": 0.0,
+          "Gain": 1.0,
+          "Distortion": 0.0
+        }
+      },
+      {
+        "name": "Bump",
+        "type": "BUMP",
+        "image": null,
+        "inputs": {
+          "Strength": 0.12999999523162842,
+          "Distance": 0.0001500000071246177,
+          "Filter Width": 0.10000000149011612,
+          "Height": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "AM2_WOOD_FLOOR_BOARDS",
+    "diffuse_color": [
+      0.3799999952316284,
+      0.2849999964237213,
+      0.1599999964237213,
+      1.0
+    ],
+    "nodes": [
+      {
+        "name": "Material Output",
+        "type": "OUTPUT_MATERIAL",
+        "image": null,
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.0
+        }
+      },
+      {
+        "name": "Principled BSDF",
+        "type": "BSDF_PRINCIPLED",
+        "image": null,
+        "inputs": {
+          "Base Color": [
+            0.3799999952316284,
+            0.2849999964237213,
+            0.1599999964237213,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.4000000059604645,
+          "IOR": 1.5,
+          "Alpha": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.004999999888241291,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Anisotropic": 0.0,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 0.0,
+          "Coat Weight": 0.054999999701976776,
+          "Coat Roughness": 0.36000001430511475,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        }
+      },
+      {
+        "name": "UV Map",
+        "type": "UVMAP",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Vector Math",
+        "type": "VECT_MATH",
+        "image": null,
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Scale": 1.0
+        }
+      },
+      {
+        "name": "Image Texture",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_diffuse_2k.jpg",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Image Texture.001",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_roughness_2k.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Image Texture.002",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_normal_2k.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Mix (Legacy)",
+        "type": "MIX_RGB",
+        "image": null,
+        "inputs": {
+          "Factor": 1.0,
+          "Color1": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "Color2": [
+            1.100000023841858,
+            1.0,
+            0.8600000143051147,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "Map Range",
+        "type": "MAP_RANGE",
+        "image": null,
+        "inputs": {
+          "Value": 1.0,
+          "From Min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "From Max": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "To Min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "To Max": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Steps": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Normal Map",
+        "type": "NORMAL_MAP",
+        "image": null,
+        "inputs": {
+          "Strength": 0.30000001192092896,
+          "Color": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "Brick Texture",
+        "type": "TEX_BRICK",
+        "image": null,
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Color1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Color2": [
+            0.8700000047683716,
+            0.8700000047683716,
+            0.8700000047683716,
+            1.0
+          ],
+          "Mortar": [
+            0.3700000047683716,
+            0.3700000047683716,
+            0.3700000047683716,
+            1.0
+          ],
+          "Scale": 1.0,
+          "Mortar Size": 0.0010000000474974513,
+          "Mortar Smooth": 0.0003000000142492354,
+          "Bias": 0.0,
+          "Brick Width": 1.2000000476837158,
+          "Row Height": 0.18000000715255737
+        }
+      },
+      {
+        "name": "UV Map.001",
+        "type": "UVMAP",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Mix (Legacy).001",
+        "type": "MIX_RGB",
+        "image": null,
+        "inputs": {
+          "Factor": 1.0,
+          "Color1": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "Color2": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "Bump",
+        "type": "BUMP",
+        "image": null,
+        "inputs": {
+          "Strength": 0.25,
+          "Distance": 0.0012000000569969416,
+          "Filter Width": 0.10000000149011612,
+          "Height": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "RENDER_BRUSHED_NICKEL",
+    "diffuse_color": [
+      0.4699999988079071,
+      0.46000000834465027,
+      0.4300000071525574,
+      1.0
+    ],
+    "nodes": [
+      {
+        "name": "Principled BSDF",
+        "type": "BSDF_PRINCIPLED",
+        "image": null,
+        "inputs": {
+          "Base Color": [
+            0.4699999988079071,
+            0.46000000834465027,
+            0.4300000071525574,
+            1.0
+          ],
+          "Metallic": 0.800000011920929,
+          "Roughness": 0.30000001192092896,
+          "IOR": 1.5,
+          "Alpha": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.004999999888241291,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Anisotropic": 0.0,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 0.0,
+          "Coat Weight": 0.0,
+          "Coat Roughness": 0.029999999329447746,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        }
+      },
+      {
+        "name": "Material Output",
+        "type": "OUTPUT_MATERIAL",
+        "image": null,
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "RENDER_PALE_WOOD_FLOOR",
+    "diffuse_color": [
+      0.6299999952316284,
+      0.5699999928474426,
+      0.4699999988079071,
+      1.0
+    ],
+    "nodes": [
+      {
+        "name": "Material Output",
+        "type": "OUTPUT_MATERIAL",
+        "image": null,
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.0
+        }
+      },
+      {
+        "name": "Principled BSDF",
+        "type": "BSDF_PRINCIPLED",
+        "image": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.6499999761581421,
+          "IOR": 1.5,
+          "Alpha": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.004999999888241291,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Anisotropic": 0.0,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 0.0,
+          "Coat Weight": 0.0,
+          "Coat Roughness": 0.029999999329447746,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        }
+      },
+      {
+        "name": "UV Map",
+        "type": "UVMAP",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Vector Math",
+        "type": "VECT_MATH",
+        "image": null,
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Scale": 1.0
+        }
+      },
+      {
+        "name": "Image Texture",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_diffuse_2k.jpg",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "RGB to BW",
+        "type": "RGBTOBW",
+        "image": null,
+        "inputs": {
+          "Color": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "Color Ramp",
+        "type": "VALTORGB",
+        "image": null,
+        "inputs": {
+          "Factor": 0.5
+        }
+      },
+      {
+        "name": "Image Texture.001",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_roughness_2k.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Map Range",
+        "type": "MAP_RANGE",
+        "image": null,
+        "inputs": {
+          "Value": 1.0,
+          "From Min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "From Max": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "To Min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "To Max": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Steps": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Image Texture.002",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_normal_2k.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Normal Map",
+        "type": "NORMAL_MAP",
+        "image": null,
+        "inputs": {
+          "Strength": 0.2199999988079071,
+          "Color": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "UV Map.001",
+        "type": "UVMAP",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Brick Texture",
+        "type": "TEX_BRICK",
+        "image": null,
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Color1": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Color2": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224,
+            1.0
+          ],
+          "Mortar": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "Scale": 1.0,
+          "Mortar Size": 0.000699999975040555,
+          "Mortar Smooth": 0.0003000000142492354,
+          "Bias": 0.0,
+          "Brick Width": 1.2000000476837158,
+          "Row Height": 0.18000000715255737
+        }
+      },
+      {
+        "name": "Bump",
+        "type": "BUMP",
+        "image": null,
+        "inputs": {
+          "Strength": 0.18000000715255737,
+          "Distance": 0.0010000000474974513,
+          "Filter Width": 0.10000000149011612,
+          "Height": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "RENDER_WARM_GREIGE_TILE",
+    "diffuse_color": [
+      0.550000011920929,
+      0.5199999809265137,
+      0.46000000834465027,
+      1.0
+    ],
+    "nodes": [
+      {
+        "name": "Principled BSDF",
+        "type": "BSDF_PRINCIPLED",
+        "image": null,
+        "inputs": {
+          "Base Color": [
+            0.550000011920929,
+            0.5199999809265137,
+            0.46000000834465027,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "IOR": 1.5,
+          "Alpha": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.004999999888241291,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Anisotropic": 0.0,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 0.0,
+          "Coat Weight": 0.0,
+          "Coat Roughness": 0.029999999329447746,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        }
+      },
+      {
+        "name": "Material Output",
+        "type": "OUTPUT_MATERIAL",
+        "image": null,
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.0
+        }
+      },
+      {
+        "name": "Texture Coordinate",
+        "type": "TEX_COORD",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Brick Texture",
+        "type": "TEX_BRICK",
+        "image": null,
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Color1": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Color2": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224,
+            1.0
+          ],
+          "Mortar": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "Scale": 1.0,
+          "Mortar Size": 0.0010000000474974513,
+          "Mortar Smooth": 0.0020000000949949026,
+          "Bias": 0.0,
+          "Brick Width": 0.6000000238418579,
+          "Row Height": 0.6000000238418579
+        }
+      },
+      {
+        "name": "Bump",
+        "type": "BUMP",
+        "image": null,
+        "inputs": {
+          "Strength": 0.10000000149011612,
+          "Distance": 0.0010000000474974513,
+          "Filter Width": 0.10000000149011612,
+          "Height": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "V3_BRUSHED_STAINLESS",
+    "diffuse_color": [
+      0.47999998927116394,
+      0.49000000953674316,
+      0.49000000953674316,
+      1.0
+    ],
+    "nodes": [
+      {
+        "name": "Principled BSDF",
+        "type": "BSDF_PRINCIPLED",
+        "image": null,
+        "inputs": {
+          "Base Color": [
+            0.47999998927116394,
+            0.49000000953674316,
+            0.49000000953674316,
+            1.0
+          ],
+          "Metallic": 1.0,
+          "Roughness": 0.30000001192092896,
+          "IOR": 1.5,
+          "Alpha": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.004999999888241291,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Anisotropic": 0.44999998807907104,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 0.0,
+          "Coat Weight": 0.0,
+          "Coat Roughness": 0.029999999329447746,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        }
+      },
+      {
+        "name": "Material Output",
+        "type": "OUTPUT_MATERIAL",
+        "image": null,
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "V7_CATALOG_PALE_NATURAL_ASH",
+    "diffuse_color": [
+      0.4650000035762787,
+      0.3269999921321869,
+      0.1979999989271164,
+      1.0
+    ],
+    "nodes": [
+      {
+        "name": "Material Output",
+        "type": "OUTPUT_MATERIAL",
+        "image": null,
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.0
+        }
+      },
+      {
+        "name": "Principled BSDF",
+        "type": "BSDF_PRINCIPLED",
+        "image": null,
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.5,
+          "IOR": 1.4500000476837158,
+          "Alpha": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.05000000074505806,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Anisotropic": 0.0,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 0.0,
+          "Coat Weight": 0.0,
+          "Coat Roughness": 0.029999999329447746,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "Emission Strength": 1.0,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        }
+      },
+      {
+        "name": "Image Texture",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_disp_1k.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Displacement",
+        "type": "DISPLACEMENT",
+        "image": null,
+        "inputs": {
+          "Height": 0.0,
+          "Midlevel": 0.5,
+          "Scale": 3.9999998989515007e-05,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Image Texture.001",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_diffuse_2k.jpg",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Image Texture.002",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_roughness_2k.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Image Texture.003",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_normal_2k.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Normal Map",
+        "type": "NORMAL_MAP",
+        "image": null,
+        "inputs": {
+          "Strength": 0.10000000149011612,
+          "Color": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "Image Texture.004",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_ao_1k.jpg",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Mapping",
+        "type": "MAPPING",
+        "image": null,
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Scale": [
+            0.4166666567325592,
+            1.25,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "Reroute",
+        "type": "REROUTE",
+        "image": null,
+        "inputs": {
+          "Input": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Texture Coordinate",
+        "type": "TEX_COORD",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Frame",
+        "type": "FRAME",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Frame.001",
+        "type": "FRAME",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Physical surface coordinates",
+        "type": "UVMAP",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "V5_color",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/color.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "V5_roughness",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/roughness.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "V5_normal",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/normal.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "V5_height",
+        "type": "TEX_IMAGE",
+        "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/height.png",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "Catalog ash lightness correction",
+        "type": "HUE_SAT",
+        "image": null,
+        "inputs": {
+          "Hue": 0.5,
+          "Saturation": 0.7799999713897705,
+          "Value": 1.5,
+          "Factor": 1.0,
+          "Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "Matte oil finish roughness range",
+        "type": "MAP_RANGE",
+        "image": null,
+        "inputs": {
+          "Value": 1.0,
+          "From Min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "From Max": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "To Min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "To Max": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Steps": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "V8_COLORLESS_PRIVACY_FROSTED_GLASS",
+    "diffuse_color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "nodes": [
+      {
+        "name": "Principled BSDF",
+        "type": "BSDF_PRINCIPLED",
+        "image": null,
+        "inputs": {
+          "Base Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.6800000071525574,
+          "IOR": 1.4500000476837158,
+          "Alpha": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.004999999888241291,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Anisotropic": 0.0,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 1.0,
+          "Coat Weight": 0.0,
+          "Coat Roughness": 0.029999999329447746,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.0,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        }
+      },
+      {
+        "name": "Material Output",
+        "type": "OUTPUT_MATERIAL",
+        "image": null,
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.00800000037997961
+        }
+      },
+      {
+        "name": "Established architectural shadow ray pass",
+        "type": "LIGHT_PATH",
+        "image": null,
+        "inputs": {}
+      },
+      {
+        "name": "Transparent BSDF",
+        "type": "BSDF_TRANSPARENT",
+        "image": null,
+        "inputs": {
+          "Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Weight": 0.0
+        }
+      },
+      {
+        "name": "Visible physical glazing / shadow light transport",
+        "type": "MIX_SHADER",
+        "image": null,
+        "inputs": {
+          "Factor": 0.5
+        }
+      }
+    ]
+  }
+]

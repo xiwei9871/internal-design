@@ -1,0 +1,16 @@
+{
+  "sofaHeader": "SUNROOM_COMPACT_TWO_SEAT_SOFA [ent_6f752f9810ad5b91864435cbf8b4c177] — r4-sunroom-door-clear-sofa-review-12 — Spatial Canvas AI Handoff",
+  "wallHeader": "VIEW_WALL_W_wall_md_0054 [ent_df57443faff255e09d9db342f9a46e2e] — r4-sunroom-door-clear-sofa-review-12 — Spatial Canvas AI Handoff",
+  "multiHeader": "SUNROOM_COMPACT_TWO_SEAT_SOFA [ent_6f752f9810ad5b91864435cbf8b4c177] — 2 objects — r4-sunroom-door-clear-sofa-review-12 — Spatial Canvas AI Handoff",
+  "wallDownloads": [
+    {
+      "name": "spatial-canvas.handoff--VIEW_WALL_W_wall_md_0054--ent_df57443faff255e09d9db342f9a46e2e--r4-sunroom-door-clear-sofa-review-12--20261007T025156260Z.txt",
+      "url": "blob:http://127.0.0.1:5176/42e94fcb-78f8-4728-b311-e5015cd5701d"
+    },
+    {
+      "name": "spatial-canvas.context--VIEW_WALL_W_wall_md_0054--ent_df57443faff255e09d9db342f9a46e2e--r4-sunroom-door-clear-sofa-review-12--20261007T025156260Z.json",
+      "url": "blob:http://127.0.0.1:5176/ccee5355-3323-4769-a198-646a745dc2b2"
+    }
+  ],
+  "downloadCompletionConfirmed": false
+}

@@ -1,0 +1,60 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source_sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644",
+  "candidate_sha256": "cde068f138c74abdc158012377579882399a48866fdc0acc261d23ff5f98cc68",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console_bath_mirrors_review/CONSOLE400_THREE_BATH_MIRRORS.blend",
+  "candidate": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sunroom_stepped_storage_v1/SUNROOM_STEPPED_STORAGE_V1.blend",
+  "changed_native_ids": [
+    "SUNROOM_INTEGRATED_UNDERSIDE",
+    "SUNROOM_INTEGRATED_UPPER_DOOR_2",
+    "SUNROOM_INTEGRATED_UPPER_DOOR_3",
+    "SUNROOM_INTEGRATED_UPPER_DOOR_4",
+    "SUNROOM_INTEGRATED_UPPER_PULL_2",
+    "SUNROOM_INTEGRATED_UPPER_PULL_3",
+    "SUNROOM_INTEGRATED_UPPER_PULL_4",
+    "SUNROOM_SOFA_REAR_HIGH_CABINET"
+  ],
+  "retired_native_ids": [
+    "SUNROOM_INTEGRATED_UPPER_PULL_2",
+    "SUNROOM_INTEGRATED_UPPER_PULL_3",
+    "SUNROOM_INTEGRATED_UPPER_PULL_4"
+  ],
+  "new_native_ids": [
+    "SUNROOM_STEPPED_OPEN_CARCASS",
+    "SUNROOM_STEPPED_RECESSED_GRIP_0",
+    "SUNROOM_STEPPED_RECESSED_GRIP_1",
+    "SUNROOM_STEPPED_RECESSED_GRIP_2"
+  ],
+  "unrelated_geometry_unchanged": true,
+  "frozen_hashes_unchanged": true,
+  "lower_external_mm": [
+    1555,
+    350,
+    300
+  ],
+  "lower_bay_clear_mm": [
+    494.33333333333326,
+    338,
+    264
+  ],
+  "upper_external_mm": [
+    1555,
+    600,
+    500
+  ],
+  "upper_bay_clear_mm": [
+    494.33333333333326,
+    588,
+    464
+  ],
+  "lowest_hard_edges_mm": [
+    1800,
+    2100
+  ],
+  "doorfront_depth_mm": 618,
+  "user_height_mm": 1750,
+  "static_verticaldifference_mm": 50,
+  "dynamic_head_clearance_verified": false,
+  "dooropening_review": "threehingedfronts, actualhardware/open motion pending; nohead-safe assertion",
+  "no_source_writeback": true
+}

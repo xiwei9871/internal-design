@@ -1,0 +1,1386 @@
+{
+  "schema": "spatial-canvas.relationships.v1",
+  "design_id": "c_type_home",
+  "graph_id": "relationships_c_type_r4",
+  "revision": "3-pier-oblique-ac-review",
+  "sources": [
+    {
+      "resource_id": "c_type_r4",
+      "revision": "r4",
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend"
+    },
+    {
+      "resource_id": "spaces_c_type_r4",
+      "revision": "5-pier-oblique-ac-review",
+      "sha256": "b5c63128b7d9196470bef9b0150ea43654cddc8ad942122d0485bd43e95e9fb6",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/proxy-angled-ac/spatial-canvas.spaces.json"
+    },
+    {
+      "resource_id": "r4_rel_evidence",
+      "revision": "1",
+      "sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+      "locator": "/Users/xiwei/.codex/worktrees/v05-relationships/Spatial-Canvas/task-output/v05-c-type/r4-relationship-evidence.json"
+    },
+    {
+      "resource_id": "kitchen_register",
+      "revision": "b1.1",
+      "sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/KITCHEN_CABINET_3D_REGISTER_V01.json"
+    },
+    {
+      "resource_id": "kitchen_builder",
+      "revision": "b1.1",
+      "sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b1_1/build_design_model.py"
+    },
+    {
+      "resource_id": "r4_review",
+      "revision": "r4",
+      "sha256": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_REVIEW.md"
+    },
+    {
+      "resource_id": "c_type_r4_pier_review",
+      "revision": "r4-pier-ac-review-2",
+      "sha256": "c110c5a9a294e9b9df838b3be147d9b46e0b9424f0f8de399385cd4129d3f1ed",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_AND_ANGLED_AC_REVIEW.blend"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "ent_6fe75527bf4d48e18221c86303e2bd3e",
+      "kind": "entity",
+      "name": "STEP_0",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "STEP_0"
+    },
+    {
+      "node_id": "ent_3ddea04f4477424ea2f6640ae3a6db94",
+      "kind": "entity",
+      "name": "STEP_1",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "STEP_1"
+    },
+    {
+      "node_id": "ent_dc2093ed60864a02b57e24a4451cbf76",
+      "kind": "entity",
+      "name": "STEP_2",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "STEP_2"
+    },
+    {
+      "node_id": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "kind": "entity",
+      "name": "B11_K-SINK_BOTTOM",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-SINK_BOTTOM"
+    },
+    {
+      "node_id": "ent_16b12c22ba7640109ad65db057393519",
+      "kind": "entity",
+      "name": "B11_K-SINK_L",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-SINK_L"
+    },
+    {
+      "node_id": "ent_f7f23187094141fd84efea8ba39df0bb",
+      "kind": "entity",
+      "name": "B11_K-SINK_R",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-SINK_R"
+    },
+    {
+      "node_id": "ent_c77e35eebe334daebcf2b45588d70d54",
+      "kind": "entity",
+      "name": "B11_K-SINK_S",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-SINK_S"
+    },
+    {
+      "node_id": "ent_fece89d35dc742b1b6853351beb55530",
+      "kind": "entity",
+      "name": "B11_K-SINK_N",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-SINK_N"
+    },
+    {
+      "node_id": "ent_4a2cf64a9cf5452fb8fdba7326563b44",
+      "kind": "entity",
+      "name": "B11_K-SINK_TAP_UP",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-SINK_TAP_UP"
+    },
+    {
+      "node_id": "ent_fe10b0c638c840ff9e312922d5088f90",
+      "kind": "entity",
+      "name": "B11_K-SINK_TAP_SPOUT",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-SINK_TAP_SPOUT"
+    },
+    {
+      "node_id": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "kind": "entity",
+      "name": "R4_DOOR_WEST_CONNECTED_RETURN",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "R4_DOOR_WEST_CONNECTED_RETURN"
+    },
+    {
+      "node_id": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "kind": "entity",
+      "name": "R4_BEDROOM_DOOR_LEAF",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "R4_BEDROOM_DOOR_LEAF"
+    },
+    {
+      "node_id": "ent_711227218a18492da3adc174a279749c",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_L",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_L"
+    },
+    {
+      "node_id": "ent_7cb58b359c024fa5907ab4a16c10a4f0",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_R",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_R"
+    },
+    {
+      "node_id": "ent_04f2263f691a47d99dc7e560ed06c436",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_BASE",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_BASE"
+    },
+    {
+      "node_id": "ent_378859955bb044ae8471387081b058fb",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_BACK",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_BACK"
+    },
+    {
+      "node_id": "ent_0140b5cdf590415d8b2221c98508f7ea",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_PLINTH",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_PLINTH"
+    },
+    {
+      "node_id": "ent_bedefbf6db6b4ebf8fde7042e3161812",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_FRONT_0",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_FRONT_0"
+    },
+    {
+      "node_id": "ent_f84d49ad6a384895bfc86fcf4b6d3b40",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_PULL_0",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_PULL_0"
+    },
+    {
+      "node_id": "ent_516aababf0484822a32752d4869e6278",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_FRONT_1",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_FRONT_1"
+    },
+    {
+      "node_id": "ent_79975d635c69493c873f60480619fa54",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_PULL_1",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_PULL_1"
+    },
+    {
+      "node_id": "ent_d625b5468aff483eb3b014c1ca495118",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_FRONT_2",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_FRONT_2"
+    },
+    {
+      "node_id": "ent_a1eb528d489c48ef978816fb577b70e5",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_PULL_2",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_PULL_2"
+    },
+    {
+      "node_id": "ent_a9d8924faa0a410b92378b0db00c82d4",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_BODY_SHELF",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_BODY_SHELF"
+    },
+    {
+      "node_id": "ent_3bf9157c99774c3690a15927a48897f2",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_COUNTER_0",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_COUNTER_0"
+    },
+    {
+      "node_id": "ent_663606d5723b41a1ba29b56e439496e4",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_COUNTER_1",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_COUNTER_1"
+    },
+    {
+      "node_id": "ent_f9d0b1b1d1054a1b85d311efe201f0f3",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_COUNTER_2",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_COUNTER_2"
+    },
+    {
+      "node_id": "ent_1e313d64e1514240a2c6cdc7cfb7b9c5",
+      "kind": "entity",
+      "name": "B11_K-RUN-S_COUNTER_3",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "B11_K-RUN-S_COUNTER_3"
+    },
+    {
+      "node_id": "cmp_sink",
+      "kind": "component_group",
+      "name": "水槽组件 / Sink assembly",
+      "resource_id": "c_type_r4"
+    },
+    {
+      "node_id": "cmp_south_run",
+      "kind": "component_group",
+      "name": "南侧厨房柜体 / South cabinet run",
+      "resource_id": "c_type_r4"
+    },
+    {
+      "node_id": "cmp_bedroom_door",
+      "kind": "component_group",
+      "name": "卧室门组件 / Door assembly",
+      "resource_id": "c_type_r4"
+    },
+    {
+      "node_id": "cmp_stair",
+      "kind": "component_group",
+      "name": "现有楼梯组件 / Stair assembly",
+      "resource_id": "c_type_r4"
+    },
+    {
+      "node_id": "candidate_R-KITCHEN",
+      "kind": "space",
+      "name": "厨房",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_R-KITCHEN"
+    },
+    {
+      "node_id": "candidate_R-BED-S",
+      "kind": "space",
+      "name": "卧室",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_R-BED-S"
+    },
+    {
+      "node_id": "candidate_bedroom_approach",
+      "kind": "space",
+      "name": "卧室门外通道 / Bedroom approach",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_bedroom_approach"
+    },
+    {
+      "node_id": "space_lounge",
+      "kind": "space",
+      "name": "休闲厅 / Lounge",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "space_lounge"
+    },
+    {
+      "node_id": "candidate_lower_landing",
+      "kind": "space",
+      "name": "下层梯口 / Lower landing",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_lower_landing"
+    },
+    {
+      "node_id": "candidate_stair_transition",
+      "kind": "space",
+      "name": "楼梯 / Stair transition",
+      "resource_id": "spaces_c_type_r4",
+      "space_id": "candidate_stair_transition"
+    },
+    {
+      "node_id": "level_upper",
+      "kind": "level",
+      "name": "上层 +450mm",
+      "resource_id": "spaces_c_type_r4",
+      "level_id": "upper"
+    },
+    {
+      "node_id": "level_lower",
+      "kind": "level",
+      "name": "下层 0mm",
+      "resource_id": "spaces_c_type_r4",
+      "level_id": "lower"
+    },
+    {
+      "node_id": "ent_b1bbaaf28737516b9c695b249f0d7ea5",
+      "kind": "entity",
+      "name": "新增柱侧墙段 / Site-review divider pier",
+      "resource_id": "c_type_r4_pier_review",
+      "native_id": "KITCHEN_DIVIDER_PIER_SITE_REVIEW"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "rel_3099bbf139e152e0b4e6c7cd62169943",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_4a843751d2655c0c9108c146c82ee4ae",
+      "from": "ent_16b12c22ba7640109ad65db057393519",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_53148d85bf8b5c0bb3f3ae3a3fb3c520",
+      "from": "ent_f7f23187094141fd84efea8ba39df0bb",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_9b9d5e3f40af5388aa894133bd7ffccc",
+      "from": "ent_c77e35eebe334daebcf2b45588d70d54",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_08bee09778085c0c877c1308bce87824",
+      "from": "ent_fece89d35dc742b1b6853351beb55530",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_a8a1fc05899a5c319abf221c9a0c9946",
+      "from": "ent_4a2cf64a9cf5452fb8fdba7326563b44",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_951d68216a0d5c5e8fcf98cd843436a7",
+      "from": "ent_fe10b0c638c840ff9e312922d5088f90",
+      "to": "cmp_sink",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 native parent B11_K-SINK, corroborated K-SINK register."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_1d8a434303495848a2f3a3b22af843b3",
+      "from": "ent_711227218a18492da3adc174a279749c",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_14dbe2462d365c55b09949acaef5a2fa",
+      "from": "ent_7cb58b359c024fa5907ab4a16c10a4f0",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_d61ef063e138596ebc9d3ae60d3a8d0d",
+      "from": "ent_04f2263f691a47d99dc7e560ed06c436",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_ba6849ec3ba65927ac14ce163bd0930d",
+      "from": "ent_378859955bb044ae8471387081b058fb",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_08d129cc30a654babf46ee9951cbb9c5",
+      "from": "ent_0140b5cdf590415d8b2221c98508f7ea",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_3ac0b922e1035a36b2783f2e6ae0cdb9",
+      "from": "ent_bedefbf6db6b4ebf8fde7042e3161812",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_e0e4d6901f46556bb970936e9c6cb4a5",
+      "from": "ent_f84d49ad6a384895bfc86fcf4b6d3b40",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_0208004325d953168373ae61a08f7fd1",
+      "from": "ent_516aababf0484822a32752d4869e6278",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_820df00dd9ac5b74a78e94f2e7b83dcd",
+      "from": "ent_79975d635c69493c873f60480619fa54",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_983d553b20e854ae854ea0370480542c",
+      "from": "ent_d625b5468aff483eb3b014c1ca495118",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_60729050208d56d89c122897144058c8",
+      "from": "ent_a1eb528d489c48ef978816fb577b70e5",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_551f807105be5c05940066134aaf89ae",
+      "from": "ent_a9d8924faa0a410b92378b0db00c82d4",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_5efe606fb95b53cb8498df87047eaac6",
+      "from": "ent_3bf9157c99774c3690a15927a48897f2",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_0bed9b2e64bc5e989d2ec4adf7b8561d",
+      "from": "ent_663606d5723b41a1ba29b56e439496e4",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_357b132e3c615a9687c8e8403b55575b",
+      "from": "ent_f9d0b1b1d1054a1b85d311efe201f0f3",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_40c908bc669b55daa3693c0c63fdd611",
+      "from": "ent_1e313d64e1514240a2c6cdc7cfb7b9c5",
+      "to": "cmp_south_run",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-RUN-S explicit body_objects register; actual native ID exists in frozen proxy."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_29915fd715955ee4ad6acea1ed1f27e7",
+      "from": "ent_16b12c22ba7640109ad65db057393519",
+      "to": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "type": "connected_to",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_builder",
+        "source_revision": "b1.1",
+        "source_sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+        "evidence": "Explicit source constructs open bowl from base and four joined side boxes; actual R4 bounds corroborate each model joint. No faucet/plumbing implication."
+      },
+      "confidence": 0.95,
+      "geometry_evidence": {
+        "method": "explicit_box_assembly_plus_r4_bounds",
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "bounds_a": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.6380000114440918
+          ]
+        ],
+        "bounds_b": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.203000068664551,
+            0.5149999856948853,
+            0.8200000524520874
+          ]
+        ],
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_797b21d6625f5598aecc0f78c4f5439b",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "ent_f7f23187094141fd84efea8ba39df0bb",
+      "type": "connected_to",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_builder",
+        "source_revision": "b1.1",
+        "source_sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+        "evidence": "Explicit source constructs open bowl from base and four joined side boxes; actual R4 bounds corroborate each model joint. No faucet/plumbing implication."
+      },
+      "confidence": 0.95,
+      "geometry_evidence": {
+        "method": "explicit_box_assembly_plus_r4_bounds",
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "bounds_a": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.6380000114440918
+          ]
+        ],
+        "bounds_b": [
+          [
+            6.986999988555908,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.99500036239624,
+            0.5149999856948853,
+            0.8200000524520874
+          ]
+        ],
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_8a04dd000d7f5edfa0189dbe478e89f8",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "ent_c77e35eebe334daebcf2b45588d70d54",
+      "type": "connected_to",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_builder",
+        "source_revision": "b1.1",
+        "source_sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+        "evidence": "Explicit source constructs open bowl from base and four joined side boxes; actual R4 bounds corroborate each model joint. No faucet/plumbing implication."
+      },
+      "confidence": 0.95,
+      "geometry_evidence": {
+        "method": "explicit_box_assembly_plus_r4_bounds",
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "bounds_a": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.6380000114440918
+          ]
+        ],
+        "bounds_b": [
+          [
+            6.194999694824219,
+            0.08500000089406967,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.09300000220537186,
+            0.8200000524520874
+          ]
+        ],
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_51cfca1510cb51d292ff824cb1dcfff9",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "ent_fece89d35dc742b1b6853351beb55530",
+      "type": "connected_to",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_builder",
+        "source_revision": "b1.1",
+        "source_sha256": "437076d61260f27dec18b68325ddc09bc9dc7a9014ead5efe5e1e0cecf7a4ab1",
+        "evidence": "Explicit source constructs open bowl from base and four joined side boxes; actual R4 bounds corroborate each model joint. No faucet/plumbing implication."
+      },
+      "confidence": 0.95,
+      "geometry_evidence": {
+        "method": "explicit_box_assembly_plus_r4_bounds",
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "bounds_a": [
+          [
+            6.194999694824219,
+            0.08500000834465027,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.6380000114440918
+          ]
+        ],
+        "bounds_b": [
+          [
+            6.194999694824219,
+            0.5069999694824219,
+            0.6299999952316284
+          ],
+          [
+            6.994999885559082,
+            0.5149999856948853,
+            0.8200000524520874
+          ]
+        ],
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_1c2e464aabd95b9d999f90b40079d9ca",
+      "from": "ent_4a2cf64a9cf5452fb8fdba7326563b44",
+      "to": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "type": "same_component_group",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Both have actual R4 parent B11_K-SINK; this edge is group membership only, not direct connection."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_5bec4154c4e356f988058086abedc95e",
+      "from": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "to": "ent_fe10b0c638c840ff9e312922d5088f90",
+      "type": "same_component_group",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Both have actual R4 parent B11_K-SINK; this edge is group membership only, not direct connection."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_4d8fc3a3d42855adbf135090f342c94b",
+      "from": "cmp_sink",
+      "to": "cmp_south_run",
+      "type": "embedded_in",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "kitchen_register",
+        "source_revision": "b1.1",
+        "source_sha256": "78e052ab62fe2f7304d073a8096347ddd469d6ab3f48e542558d02cae9ee16f3",
+        "evidence": "K-SINK is NESTED_FUNCTIONAL_COMPONENT within K-RUN-S south sink-counter assembly; preserving group-level embedding ownership."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_1a39bb5a75c85c1088c055918c62a324",
+      "from": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "to": "cmp_bedroom_door",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "R4 door collection COL_R4_SECONDARY_BEDROOM_EW_INWARD_DOOR contains this leaf/connected return wall; grouping does not imply direct contact."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_9e1ae078075951bd9dff62299993b370",
+      "from": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "to": "cmp_bedroom_door",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "R4 door collection COL_R4_SECONDARY_BEDROOM_EW_INWARD_DOOR contains this leaf/connected return wall; grouping does not imply direct contact."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_6b3b081094095580afe4bddfbeab1f79",
+      "from": "cmp_bedroom_door",
+      "to": "candidate_R-BED-S",
+      "type": "transition_between",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "r4_review",
+        "source_revision": "r4",
+        "source_sha256": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+        "evidence": "R4 review states opening south into secondary bedroom; north door approach and bedroom polygons remain candidates. Both side probes recorded, not reviewed space adjacency."
+      },
+      "confidence": 0.5,
+      "endpoints": [
+        "candidate_R-BED-S",
+        "candidate_bedroom_approach"
+      ],
+      "geometry_evidence": {
+        "method": "opening_side_probes",
+        "side_probes": [
+          [
+            8.6,
+            4.3,
+            0.6
+          ],
+          [
+            8.6,
+            4.85,
+            0.6
+          ]
+        ],
+        "frame_id": "c_type_world",
+        "unit": "meter"
+      }
+    },
+    {
+      "edge_id": "rel_f56610bd5a935fea92c07ae2fd1f11da",
+      "from": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "to": "candidate_R-BED-S",
+      "type": "opens_to",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "r4_review",
+        "source_revision": "r4",
+        "source_sha256": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+        "evidence": "R4 inward door swings south into bedroom; region correspondence candidate until current bedroom/approach reviewed."
+      },
+      "confidence": 0.5
+    },
+    {
+      "edge_id": "rel_1a352f1ff00f5f84b9bd0d9487d173bf",
+      "from": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "to": "candidate_bedroom_approach",
+      "type": "accesses",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "imported",
+        "source_resource_id": "r4_review",
+        "source_revision": "r4",
+        "source_sha256": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+        "evidence": "North-side opening probe falls in bedroom approach candidate; access role is provisional."
+      },
+      "confidence": 0.5
+    },
+    {
+      "edge_id": "rel_96c2b5b25db1558a953c2139bf78c8ec",
+      "from": "ent_6fe75527bf4d48e18221c86303e2bd3e",
+      "to": "cmp_stair",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 04_EXISTING_STAIRS collection; STEP bounds rise 0.15/0.30/0.45 m."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_3a97e1dffeca5a92a486005e818e49c8",
+      "from": "ent_3ddea04f4477424ea2f6640ae3a6db94",
+      "to": "cmp_stair",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 04_EXISTING_STAIRS collection; STEP bounds rise 0.15/0.30/0.45 m."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_f2c0180eeb7a5ad39429cbebe3613ca3",
+      "from": "ent_dc2093ed60864a02b57e24a4451cbf76",
+      "to": "cmp_stair",
+      "type": "part_of",
+      "verification": {
+        "state": "verified",
+        "reviewer": "codex_source_evidence_audit",
+        "timestamp": "2026-10-05T04:28:12.725Z",
+        "note": "Model-level relationship confirmed against named structured source/actual R4 evidence; not fabrication/plumbing approval."
+      },
+      "provenance": {
+        "method": "derived_from_source_hierarchy",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual R4 04_EXISTING_STAIRS collection; STEP bounds rise 0.15/0.30/0.45 m."
+      },
+      "confidence": 0.95
+    },
+    {
+      "edge_id": "rel_3c06e8394960560cb6c9db4bdabe324d",
+      "from": "cmp_stair",
+      "to": "level_lower",
+      "type": "transition_between",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "inferred_from_spatial_adjacency",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Actual stair vertical range connects model height 0 to +450mm; lower/upper landing regions and operational passage require owner confirmation."
+      },
+      "confidence": 0.5,
+      "endpoints": [
+        "level_lower",
+        "level_upper"
+      ],
+      "geometry_evidence": {
+        "method": "vertical_transition_bounds",
+        "lower_height": 0,
+        "upper_height": 0.45,
+        "frame_id": "c_type_world",
+        "unit": "meter",
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "edge_id": "rel_a79933e3e42c5694836dd40b6d34cdbb",
+      "from": "cmp_stair",
+      "to": "candidate_lower_landing",
+      "type": "accesses",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "inferred_from_spatial_adjacency",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Lower side probe immediately west of STEP_0; named landing remains unreviewed."
+      },
+      "confidence": 0.5
+    },
+    {
+      "edge_id": "rel_d67fa4acb30552cc81971bb0083dc1ad",
+      "from": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "to": "candidate_bedroom_approach",
+      "type": "adjacent_to",
+      "verification": {
+        "state": "candidate"
+      },
+      "provenance": {
+        "method": "inferred_from_spatial_adjacency",
+        "source_resource_id": "r4_rel_evidence",
+        "source_revision": "1",
+        "source_sha256": "8ac8da38338f9732487e97269758cf0aed70fca96c26832d69e0e4f589177c1b",
+        "evidence": "Return wall north face Y4.70020008 coincides with approach candidate south boundary Y4.7002, shared X7.7999–8.1490 segment; other side current space boundary unresolved."
+      },
+      "confidence": 0.5,
+      "geometry_evidence": {
+        "method": "wall_face_shared_region_boundary",
+        "face_y": 4.700200080871582,
+        "shared_x": [
+          7.7999,
+          8.149
+        ],
+        "tolerance": 1e-06,
+        "frame_id": "c_type_world",
+        "unit": "meter"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "capability": "physical_connectivity",
+      "node_id": "cmp_sink",
+      "message": "No plumbing/drain/water-supply connectivity evidence.",
+      "action": "Provide plumbing register if these relations are needed; do not invent edges."
+    },
+    {
+      "capability": "transition_graph",
+      "node_id": "cmp_bedroom_door",
+      "message": "Bedroom and north approach space boundaries remain candidates.",
+      "action": "Review both endpoint regions before verifying the door transition."
+    },
+    {
+      "capability": "transition_graph",
+      "node_id": "cmp_stair",
+      "message": "Lower landing and upper approach not reviewed; no direct Lounge adjacency is established.",
+      "action": "Confirm landing domains and passage before approving transition."
+    },
+    {
+      "capability": "space_adjacency",
+      "node_id": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "message": "Only north candidate boundary evidence is available.",
+      "action": "Review current wall-side region boundaries; proximity is insufficient."
+    },
+    {
+      "capability": "physical_connectivity",
+      "node_id": "ent_b1bbaaf28737516b9c695b249f0d7ea5",
+      "message": "Site-confirmed divider restored; structural bearing classification and site dimensions unverified. AC now oblique per photo; no pier/AC AABB overlap.",
+      "action": "Review model width/depth and AC yaw against site installation; no supports/functional connection inferred."
+    }
+  ],
+  "requirements": [
+    {
+      "capability": "component_hierarchy",
+      "node_id": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "types": [
+        "part_of"
+      ]
+    },
+    {
+      "capability": "component_hierarchy",
+      "node_id": "ent_7dc03a3a02cc450681169f7e7a21614d",
+      "types": [
+        "part_of"
+      ]
+    },
+    {
+      "capability": "component_hierarchy",
+      "node_id": "ent_3ddea04f4477424ea2f6640ae3a6db94",
+      "types": [
+        "part_of"
+      ]
+    },
+    {
+      "capability": "physical_connectivity",
+      "node_id": "ent_82514816badd448d9abc8b08c7a4a5af",
+      "types": [
+        "connected_to"
+      ]
+    },
+    {
+      "capability": "transition_graph",
+      "node_id": "cmp_bedroom_door",
+      "types": [
+        "transition_between"
+      ]
+    },
+    {
+      "capability": "transition_graph",
+      "node_id": "cmp_stair",
+      "types": [
+        "transition_between"
+      ]
+    },
+    {
+      "capability": "space_adjacency",
+      "node_id": "ent_ae69766d1b7a409898facab5a80ea8f6",
+      "types": [
+        "adjacent_to"
+      ]
+    }
+  ]
+}

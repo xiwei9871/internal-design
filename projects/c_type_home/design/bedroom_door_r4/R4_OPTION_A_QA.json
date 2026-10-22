@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "source_objects_preserved": 1519,
+  "authorized_floor_source_visibility_changes": [
+    "FLOOR_UPPER",
+    "FLOOR_UPPER_SEAM_0",
+    "FLOOR_UPPER_SEAM_1",
+    "FLOOR_UPPER_SEAM_4"
+  ],
+  "door_nominal_width_mm": 850,
+  "door_axis": "EAST_WEST",
+  "swing": "SOUTH_INWARD",
+  "old_slanted_door_active_count": 0,
+  "doorway_wall_clear_rays": [
+    8.23,
+    8.6,
+    8.96
+  ],
+  "door_enclosure_probes": [
+    {
+      "point": [
+        8.1,
+        4.7501999999999995,
+        1.6
+      ],
+      "wall_hits": [
+        "R4_DOOR_WEST_CONNECTED_RETURN"
+      ]
+    },
+    {
+      "point": [
+        9.13,
+        4.7501999999999995,
+        1.6
+      ],
+      "wall_hits": [
+        "R3_COMPLETE_PARTITION_WALLS",
+        "R4_WEST_PARTITION_SOUTH_FLUSH_CONNECTION"
+      ]
+    },
+    {
+      "point": [
+        8.6,
+        4.7501999999999995,
+        2.9
+      ],
+      "wall_hits": [
+        "R4_DOOR_COMPLETE_HEADER"
+      ]
+    }
+  ],
+  "continuous_threshold_floor_samples": 63,
+  "floor_sample_height_m": 0.44999992847442627,
+  "floor_height_range_mm": 0.00011920928955078125,
+  "floor_topology": {
+    "vertices": 222,
+    "faces": 317,
+    "boundary": 0,
+    "nonmanifold": 0
+  },
+  "nonlocal_floor_plan_change_m2": 0.0,
+  "base_files_preserved": true,
+  "angular_sweep_samples": 721,
+  "includes_actual_handle_and_stem": true,
+  "swing_sector_area_m2": 0.6070598512986245,
+  "fixture_overlap_mm2": {},
+  "wall_overlap_mm2": 0.0,
+  "door_sweep": "PASS"
+}

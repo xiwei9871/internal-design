@@ -1,0 +1,15 @@
+{
+  "revision": "r4-balcony-sunroom-review-11",
+  "fresh_glb_entities": 1062,
+  "all_stable_ids_retained": true,
+  "moved_appliance_meshes_unchanged": true,
+  "no_new_fixture_wall_window_or_appliance_surface_collisions": true,
+  "freezer_top_has_no_fixed_obstruction": true,
+  "entry_clear_rectangle_m": [
+    0.9,
+    0.795
+  ],
+  "seat_ledge_central_lane_m": 1.295,
+  "review10_and_frozen_r4_unchanged": true,
+  "utilities_and_manufacturer_clearances_verified": false
+}

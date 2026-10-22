@@ -1,0 +1,1671 @@
+{
+  "schema": "s2-furniture-dimension-register-v01",
+  "status": "DRAFT_HUMAN_REVIEW",
+  "source_guide": "/Users/xiwei/interior_design/projects/c_type_home/design/s2_current_design_v1/human_guide_inventory.json",
+  "target_geometry_policy": "guide topology and intent; normalized real-size footprints",
+  "items": [
+    {
+      "source_object_name": "Rectangle001",
+      "source_label": "双人位沙发",
+      "semantic_id": "SOFA_2S",
+      "guide_status": "CONVERSATION_SECONDARY_EDGE",
+      "guide_bbox_task01_mm": [
+        4285.0,
+        11872.531,
+        6227.5,
+        12619.688
+      ],
+      "guide_footprint_mm": [
+        1942.5,
+        747.156
+      ],
+      "design_targets": [
+        {
+          "id": "LIV-SOFA-2S",
+          "target_bbox_task01_mm": [
+            4350.0,
+            11800.0,
+            6150.0,
+            12650.0
+          ],
+          "target_footprint_mm": [
+            1800.0,
+            850.0
+          ],
+          "nominal_product_geometry_mm": [
+            1800,
+            850
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Circle",
+      "source_label": "角几",
+      "semantic_id": "SIDE_TABLE",
+      "guide_status": "MOVABLE_OPTIONAL",
+      "guide_bbox_task01_mm": [
+        3387.378,
+        11896.44,
+        4036.872,
+        12545.935
+      ],
+      "guide_footprint_mm": [
+        649.495,
+        649.495
+      ],
+      "design_targets": [
+        {
+          "id": "LIV-SIDE-TABLE",
+          "target_bbox_task01_mm": [
+            3450.0,
+            11750.0,
+            3900.0,
+            12200.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            450
+          ],
+          "design_status": "OPTIONAL_MOVABLE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle002",
+      "source_label": "茶几",
+      "semantic_id": "COFFEE_TABLE_OPTIONAL",
+      "guide_status": "MOVABLE_OPTIONAL",
+      "guide_bbox_task01_mm": [
+        4932.5,
+        9481.719,
+        5580.0,
+        10951.062
+      ],
+      "guide_footprint_mm": [
+        647.5,
+        1469.344
+      ],
+      "design_targets": [
+        {
+          "id": "LIV-COFFEE-OPTIONAL",
+          "target_bbox_task01_mm": [
+            5000.0,
+            10000.0,
+            5600.0,
+            10600.0
+          ],
+          "target_footprint_mm": [
+            600.0,
+            600.0
+          ],
+          "nominal_product_geometry_mm": [
+            600,
+            600
+          ],
+          "design_status": "OPTIONAL_MOVABLE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle003",
+      "source_label": "lounge",
+      "semantic_id": "LOUNGE_CHAIR",
+      "guide_status": "OPTIONAL_THIRD_SEAT",
+      "guide_bbox_task01_mm": [
+        3562.75,
+        7588.938,
+        5779.25,
+        8211.562
+      ],
+      "guide_footprint_mm": [
+        2216.5,
+        622.625
+      ],
+      "design_targets": [
+        {
+          "id": "LIV-LOUNGE",
+          "target_bbox_task01_mm": [
+            4500.0,
+            8000.0,
+            5400.0,
+            8900.0
+          ],
+          "target_footprint_mm": [
+            900.0,
+            900.0
+          ],
+          "nominal_product_geometry_mm": [
+            900,
+            900
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle004",
+      "source_label": "电视柜（或者悬浮电视墙）",
+      "semantic_id": "MEDIA_EDGE",
+      "guide_status": "INTENT_AMBIGUOUS",
+      "guide_bbox_task01_mm": [
+        7398.0,
+        8634.938,
+        7696.875,
+        11523.844
+      ],
+      "guide_footprint_mm": [
+        298.875,
+        2888.906
+      ],
+      "design_targets": [
+        {
+          "id": "LIV-MEDIA",
+          "target_bbox_task01_mm": [
+            7450.0,
+            9000.0,
+            7750.0,
+            11400.0
+          ],
+          "target_footprint_mm": [
+            300.0,
+            2400.0
+          ],
+          "nominal_product_geometry_mm": [
+            300,
+            2400
+          ],
+          "design_status": "INTENT_AMBIGUOUS"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle006",
+      "source_label": "斜坡（轮椅用",
+      "semantic_id": "ACCESSIBILITY_RAMP",
+      "guide_status": "ACCESSIBILITY_RAMP_GUIDE",
+      "guide_bbox_task01_mm": [
+        5779.25,
+        4749.844,
+        7846.25,
+        5422.281
+      ],
+      "guide_footprint_mm": [
+        2067.0,
+        672.438
+      ],
+      "design_targets": [
+        {
+          "id": "RAMP-EXISTING",
+          "target_bbox_task01_mm": [
+            5780.0,
+            4750.0,
+            7847.0,
+            5422.0
+          ],
+          "target_footprint_mm": [
+            2067.0,
+            672.0
+          ],
+          "nominal_product_geometry_mm": null,
+          "design_status": "EXISTING_GUIDE_TO_VERIFY"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle007",
+      "source_label": "客卫（湿区）",
+      "semantic_id": "GUEST_BATH_WET_ZONE",
+      "guide_status": "ROOM_GUIDE",
+      "guide_bbox_task01_mm": [
+        8045.5,
+        9880.188,
+        9689.25,
+        10876.344
+      ],
+      "guide_footprint_mm": [
+        1643.75,
+        996.156
+      ],
+      "design_targets": [
+        {
+          "id": "GUEST-BATH-SHOWER",
+          "target_bbox_task01_mm": [
+            8000.0,
+            9500.0,
+            8900.0,
+            10700.0
+          ],
+          "target_footprint_mm": [
+            900.0,
+            1200.0
+          ],
+          "nominal_product_geometry_mm": [
+            900,
+            1200
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle008",
+      "source_label": "客卫马桶",
+      "semantic_id": "WC_GUEST",
+      "guide_status": "FIXTURE_GUIDE",
+      "guide_bbox_task01_mm": [
+        8020.625,
+        9332.281,
+        8767.75,
+        9656.031
+      ],
+      "guide_footprint_mm": [
+        747.125,
+        323.75
+      ],
+      "design_targets": [
+        {
+          "id": "GUEST-BATH-WC",
+          "target_bbox_task01_mm": [
+            9000.0,
+            9000.0,
+            9450.0,
+            9700.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            700.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            700
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle011",
+      "source_label": "次主卧床头占位",
+      "semantic_id": "NIGHTSTAND_OWNER",
+      "guide_status": "NIGHTSTAND_GUIDE",
+      "guide_bbox_task01_mm": [
+        11183.5,
+        889.656,
+        11382.75,
+        3529.531
+      ],
+      "guide_footprint_mm": [
+        199.25,
+        2639.875
+      ],
+      "design_targets": [
+        {
+          "id": "OWNER-NIGHTSTAND",
+          "target_bbox_task01_mm": [
+            10950.0,
+            2200.0,
+            11400.0,
+            2650.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            450
+          ],
+          "design_status": "GUIDE_NORMALIZED"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle012",
+      "source_label": "次主卧床",
+      "semantic_id": "BED_OWNER",
+      "guide_status": "PRIMARY_BED_GUIDE",
+      "guide_bbox_task01_mm": [
+        9066.625,
+        1537.156,
+        11166.625,
+        3037.156
+      ],
+      "guide_footprint_mm": [
+        2100.0,
+        1500.0
+      ],
+      "design_targets": [
+        {
+          "id": "OWNER-BED",
+          "target_bbox_task01_mm": [
+            9100.0,
+            1200.0,
+            10900.0,
+            3300.0
+          ],
+          "target_footprint_mm": [
+            1800.0,
+            2100.0
+          ],
+          "nominal_product_geometry_mm": [
+            1800,
+            2100
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle013",
+      "source_label": "主卧床",
+      "semantic_id": "BED_MOTHER",
+      "guide_status": "PRIMARY_BED_GUIDE",
+      "guide_bbox_task01_mm": [
+        13026.375,
+        1562.062,
+        15126.375,
+        3062.062
+      ],
+      "guide_footprint_mm": [
+        2100.0,
+        1500.0
+      ],
+      "design_targets": [
+        {
+          "id": "MOTHER-BED",
+          "target_bbox_task01_mm": [
+            12700.0,
+            1200.0,
+            14500.0,
+            3300.0
+          ],
+          "target_footprint_mm": [
+            1800.0,
+            2100.0
+          ],
+          "nominal_product_geometry_mm": [
+            1800,
+            2100
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle014",
+      "source_label": "主卧床头柜占位",
+      "semantic_id": "NIGHTSTAND_MOTHER",
+      "guide_status": "NIGHTSTAND_GUIDE",
+      "guide_bbox_task01_mm": [
+        15093.375,
+        1113.781,
+        15243.375,
+        3613.781
+      ],
+      "guide_footprint_mm": [
+        150.0,
+        2500.0
+      ],
+      "design_targets": [
+        {
+          "id": "MOTHER-NIGHTSTAND",
+          "target_bbox_task01_mm": [
+            14600.0,
+            2200.0,
+            15050.0,
+            2650.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            450
+          ],
+          "design_status": "GUIDE_NORMALIZED"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle015",
+      "source_label": "主卧衣柜",
+      "semantic_id": "WARDROBE_MOTHER",
+      "guide_status": "STORAGE_GUIDE",
+      "guide_bbox_task01_mm": [
+        13175.875,
+        3878.219,
+        15275.875,
+        4478.219
+      ],
+      "guide_footprint_mm": [
+        2100.0,
+        600.0
+      ],
+      "design_targets": [
+        {
+          "id": "MOTHER-WARDROBE",
+          "target_bbox_task01_mm": [
+            13150.0,
+            3850.0,
+            15150.0,
+            4450.0
+          ],
+          "target_footprint_mm": [
+            2000.0,
+            600.0
+          ],
+          "nominal_product_geometry_mm": [
+            2000,
+            600
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle017",
+      "source_label": "次卧小床1.2",
+      "semantic_id": "BED_GUEST_1200",
+      "guide_status": "NOMINAL_1200_WIDTH_GUIDE",
+      "guide_bbox_task01_mm": [
+        10884.625,
+        8062.156,
+        12684.625,
+        9262.156
+      ],
+      "guide_footprint_mm": [
+        1800.0,
+        1200.0
+      ],
+      "design_targets": [
+        {
+          "id": "GUEST-BED",
+          "target_bbox_task01_mm": [
+            10450.0,
+            8400.0,
+            12450.0,
+            9600.0
+          ],
+          "target_footprint_mm": [
+            2000.0,
+            1200.0
+          ],
+          "nominal_product_geometry_mm": [
+            1200,
+            2000
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle018",
+      "source_label": "床背板+窄书桌占位",
+      "semantic_id": "STUDY_DESK_BACKBOARD",
+      "guide_status": "DESK_GUIDE",
+      "guide_bbox_task01_mm": [
+        12652.875,
+        8012.344,
+        12852.125,
+        10851.469
+      ],
+      "guide_footprint_mm": [
+        199.25,
+        2839.125
+      ],
+      "design_targets": [
+        {
+          "id": "STUDY-DESK",
+          "target_bbox_task01_mm": [
+            13400.0,
+            10000.0,
+            15100.0,
+            10800.0
+          ],
+          "target_footprint_mm": [
+            1700.0,
+            800.0
+          ],
+          "nominal_product_geometry_mm": [
+            1700,
+            800
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle019",
+      "source_label": "次卧衣柜",
+      "semantic_id": "WARDROBE_GUEST",
+      "guide_status": "STORAGE_GUIDE",
+      "guide_bbox_task01_mm": [
+        9938.375,
+        8859.094,
+        10538.375,
+        10859.094
+      ],
+      "guide_footprint_mm": [
+        600.0,
+        2000.0
+      ],
+      "design_targets": [
+        {
+          "id": "GUEST-WARDROBE",
+          "target_bbox_task01_mm": [
+            9850.0,
+            10000.0,
+            11850.0,
+            10600.0
+          ],
+          "target_footprint_mm": [
+            2000.0,
+            600.0
+          ],
+          "nominal_product_geometry_mm": [
+            2000,
+            600
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle021",
+      "source_label": "次主卧衣柜",
+      "semantic_id": "WARDROBE_OWNER",
+      "guide_status": "STORAGE_GUIDE",
+      "guide_bbox_task01_mm": [
+        9863.625,
+        3853.281,
+        11363.625,
+        4453.281
+      ],
+      "guide_footprint_mm": [
+        1500.0,
+        600.0
+      ],
+      "design_targets": [
+        {
+          "id": "OWNER-WARDROBE",
+          "target_bbox_task01_mm": [
+            9850.0,
+            3850.0,
+            11850.0,
+            4450.0
+          ],
+          "target_footprint_mm": [
+            2000.0,
+            600.0
+          ],
+          "nominal_product_geometry_mm": [
+            2000,
+            600
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle022",
+      "source_label": "主卧电视柜",
+      "semantic_id": "MEDIA_EDGE_MOTHER",
+      "guide_status": "OPTIONAL_MEDIA",
+      "guide_bbox_task01_mm": [
+        11606.875,
+        1337.938,
+        12106.875,
+        3337.938
+      ],
+      "guide_footprint_mm": [
+        500.0,
+        2000.0
+      ],
+      "design_targets": [
+        {
+          "id": "MOTHER-MEDIA",
+          "target_bbox_task01_mm": [
+            11650.0,
+            1300.0,
+            12150.0,
+            3300.0
+          ],
+          "target_footprint_mm": [
+            500.0,
+            2000.0
+          ],
+          "nominal_product_geometry_mm": [
+            500,
+            2000
+          ],
+          "design_status": "OPTIONAL"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle023",
+      "source_label": "次主卧电视柜",
+      "semantic_id": "MEDIA_EDGE_OWNER",
+      "guide_status": "OPTIONAL_MEDIA",
+      "guide_bbox_task01_mm": [
+        8070.375,
+        1337.938,
+        8570.375,
+        3337.938
+      ],
+      "guide_footprint_mm": [
+        500.0,
+        2000.0
+      ],
+      "design_targets": [
+        {
+          "id": "OWNER-MEDIA",
+          "target_bbox_task01_mm": [
+            8050.0,
+            1300.0,
+            8550.0,
+            3300.0
+          ],
+          "target_footprint_mm": [
+            500.0,
+            2000.0
+          ],
+          "nominal_product_geometry_mm": [
+            500,
+            2000
+          ],
+          "design_status": "OPTIONAL"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle024",
+      "source_label": "书柜",
+      "semantic_id": "BOOKCASE_STUDY_TALL",
+      "guide_status": "STORAGE_GUIDE",
+      "guide_bbox_task01_mm": [
+        15691.125,
+        6642.594,
+        16141.125,
+        10842.594
+      ],
+      "guide_footprint_mm": [
+        450.0,
+        4200.0
+      ],
+      "design_targets": [
+        {
+          "id": "STUDY-BOOKCASE-TALL",
+          "target_bbox_task01_mm": [
+            15800.0,
+            7000.0,
+            16250.0,
+            11200.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            4200.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            4200
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle025",
+      "source_label": "书柜001",
+      "semantic_id": "BOOKCASE_STUDY_LOW",
+      "guide_status": "STORAGE_GUIDE",
+      "guide_bbox_task01_mm": [
+        14097.375,
+        6642.625,
+        15697.375,
+        7092.625
+      ],
+      "guide_footprint_mm": [
+        1600.0,
+        450.0
+      ],
+      "design_targets": [
+        {
+          "id": "STUDY-BOOKCASE-LOW",
+          "target_bbox_task01_mm": [
+            13900.0,
+            6700.0,
+            15500.0,
+            7150.0
+          ],
+          "target_footprint_mm": [
+            1600.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            1600,
+            450
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle026",
+      "source_label": "茶台",
+      "semantic_id": "TEA_TABLE_STUDY",
+      "guide_status": "FLEXIBLE_SURFACE",
+      "guide_bbox_task01_mm": [
+        14271.625,
+        7389.719,
+        15071.625,
+        9589.719
+      ],
+      "guide_footprint_mm": [
+        800.0,
+        2200.0
+      ],
+      "design_targets": [
+        {
+          "id": "STUDY-TEA",
+          "target_bbox_task01_mm": [
+            14500.0,
+            7600.0,
+            15300.0,
+            8400.0
+          ],
+          "target_footprint_mm": [
+            800.0,
+            800.0
+          ],
+          "nominal_product_geometry_mm": [
+            800,
+            800
+          ],
+          "design_status": "OPTIONAL_FLEXIBLE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Circle007",
+      "source_label": "主人椅",
+      "semantic_id": "STUDY_CHAIR",
+      "guide_status": "WORK_SEAT_GUIDE",
+      "guide_bbox_task01_mm": [
+        15217.25,
+        8260.594,
+        15617.25,
+        8660.594
+      ],
+      "guide_footprint_mm": [
+        400.0,
+        400.0
+      ],
+      "design_targets": [
+        {
+          "id": "STUDY-CHAIR",
+          "target_bbox_task01_mm": [
+            15300.0,
+            8500.0,
+            16200.0,
+            9400.0
+          ],
+          "target_footprint_mm": [
+            900.0,
+            900.0
+          ],
+          "nominal_product_geometry_mm": [
+            900,
+            900
+          ],
+          "design_status": "OPTIONAL_FLEXIBLE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle027",
+      "source_label": "条凳",
+      "semantic_id": "STUDY_BENCH",
+      "guide_status": "FLEXIBLE_SEAT",
+      "guide_bbox_task01_mm": [
+        13798.5,
+        7564.031,
+        14098.5,
+        9164.031
+      ],
+      "guide_footprint_mm": [
+        300.0,
+        1600.0
+      ],
+      "design_targets": [
+        {
+          "id": "STUDY-BENCH",
+          "target_bbox_task01_mm": [
+            13500.0,
+            7600.0,
+            13800.0,
+            9200.0
+          ],
+          "target_footprint_mm": [
+            300.0,
+            1600.0
+          ],
+          "nominal_product_geometry_mm": [
+            300,
+            1600
+          ],
+          "design_status": "OPTIONAL_FLEXIBLE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Circle008",
+      "source_label": "凳子",
+      "semantic_id": "STUDY_STOOL",
+      "guide_status": "FLEXIBLE_SEAT",
+      "guide_bbox_task01_mm": [
+        14495.0,
+        9804.688,
+        14895.0,
+        10204.688
+      ],
+      "guide_footprint_mm": [
+        400.0,
+        400.0
+      ],
+      "design_targets": [
+        {
+          "id": "STUDY-STOOL",
+          "target_bbox_task01_mm": [
+            14500.0,
+            9200.0,
+            14950.0,
+            9650.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            450
+          ],
+          "design_status": "OPTIONAL_FLEXIBLE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Circle009",
+      "source_label": "次卧凳子",
+      "semantic_id": "GUEST_STOOL",
+      "guide_status": "FLEXIBLE_SEAT",
+      "guide_bbox_task01_mm": [
+        12054.375,
+        9979.031,
+        12454.375,
+        10379.031
+      ],
+      "guide_footprint_mm": [
+        400.0,
+        400.0
+      ],
+      "design_targets": [
+        {
+          "id": "GUEST-STOOL",
+          "target_bbox_task01_mm": [
+            12000.0,
+            9800.0,
+            12450.0,
+            10250.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            450
+          ],
+          "design_status": "OPTIONAL"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Circle010",
+      "source_label": "餐椅",
+      "semantic_id": "DINING_CHAIR_1",
+      "guide_status": "FOUR_SEAT_DAILY",
+      "guide_bbox_task01_mm": [
+        3088.75,
+        3977.062,
+        3488.75,
+        4377.062
+      ],
+      "guide_footprint_mm": [
+        400.0,
+        400.0
+      ],
+      "design_targets": [
+        {
+          "id": "DIN-CHAIR-N",
+          "target_bbox_task01_mm": [
+            3575.0,
+            2550.0,
+            4025.0,
+            3000.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            500
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Circle011",
+      "source_label": "餐椅003",
+      "semantic_id": "DINING_CHAIR_2",
+      "guide_status": "FOUR_SEAT_DAILY",
+      "guide_bbox_task01_mm": [
+        3885.75,
+        3977.062,
+        4285.75,
+        4377.062
+      ],
+      "guide_footprint_mm": [
+        400.0,
+        400.0
+      ],
+      "design_targets": [
+        {
+          "id": "DIN-CHAIR-S",
+          "target_bbox_task01_mm": [
+            3575.0,
+            3600.0,
+            4025.0,
+            4050.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            500
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle028",
+      "source_label": "餐桌",
+      "semantic_id": "DINING_TABLE",
+      "guide_status": "FOUR_SEAT_DAILY",
+      "guide_bbox_task01_mm": [
+        2940.125,
+        3155.969,
+        4540.125,
+        3855.969
+      ],
+      "guide_footprint_mm": [
+        1600.0,
+        700.0
+      ],
+      "design_targets": [
+        {
+          "id": "DIN-TABLE",
+          "target_bbox_task01_mm": [
+            3050.0,
+            3000.0,
+            4550.0,
+            3600.0
+          ],
+          "target_footprint_mm": [
+            1500.0,
+            600.0
+          ],
+          "nominal_product_geometry_mm": [
+            1500,
+            600
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Circle013",
+      "source_label": "餐椅004",
+      "semantic_id": "DINING_CHAIR_4",
+      "guide_status": "FOUR_SEAT_DAILY",
+      "guide_bbox_task01_mm": [
+        3910.625,
+        2557.5,
+        4310.625,
+        2957.5
+      ],
+      "guide_footprint_mm": [
+        400.0,
+        400.0
+      ],
+      "design_targets": [
+        {
+          "id": "DIN-CHAIR-E",
+          "target_bbox_task01_mm": [
+            4550.0,
+            3075.0,
+            5000.0,
+            3525.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            500
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle029",
+      "source_label": "现有橱柜",
+      "semantic_id": "KITCHEN_KEEP",
+      "guide_status": "EXISTING_KEEP",
+      "guide_bbox_task01_mm": [
+        1520.5,
+        740.219,
+        2020.5,
+        2240.219
+      ],
+      "guide_footprint_mm": [
+        500.0,
+        1500.0
+      ],
+      "design_targets": [
+        {
+          "id": "KITCHEN-KEEP",
+          "target_bbox_task01_mm": [
+            1520.0,
+            740.0,
+            2020.0,
+            2240.0
+          ],
+          "target_footprint_mm": [
+            500.0,
+            1500.0
+          ],
+          "nominal_product_geometry_mm": [
+            500,
+            1500
+          ],
+          "design_status": "EXISTING_KEEP"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Extrusion",
+      "source_label": "三人位沙发",
+      "semantic_id": "SOFA_3S",
+      "guide_status": "PRIMARY_SOCIAL_ANCHOR",
+      "guide_bbox_task01_mm": [
+        3338.5,
+        8485.531,
+        4185.25,
+        11648.406
+      ],
+      "guide_footprint_mm": [
+        846.75,
+        3162.875
+      ],
+      "design_targets": [
+        {
+          "id": "LIV-SOFA-3S",
+          "target_bbox_task01_mm": [
+            3310.0,
+            9000.0,
+            4210.0,
+            11200.0
+          ],
+          "target_footprint_mm": [
+            900.0,
+            2200.0
+          ],
+          "nominal_product_geometry_mm": [
+            2200,
+            900
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle030",
+      "source_label": "客卫洗手盆柜体",
+      "semantic_id": "VANITY_GUEST",
+      "guide_status": "FIXTURE_GUIDE",
+      "guide_bbox_task01_mm": [
+        8008.25,
+        8012.344,
+        8608.25,
+        9212.344
+      ],
+      "guide_footprint_mm": [
+        600.0,
+        1200.0
+      ],
+      "design_targets": [
+        {
+          "id": "GUEST-BATH-VANITY",
+          "target_bbox_task01_mm": [
+            8000.0,
+            8100.0,
+            8600.0,
+            8600.0
+          ],
+          "target_footprint_mm": [
+            600.0,
+            500.0
+          ],
+          "nominal_product_geometry_mm": [
+            600,
+            500
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle031",
+      "source_label": "鞋柜",
+      "semantic_id": "ENTRY_SHOE_STORAGE",
+      "guide_status": "STORAGE_GUIDE",
+      "guide_bbox_task01_mm": [
+        2952.5,
+        4700.031,
+        3252.5,
+        5422.281
+      ],
+      "guide_footprint_mm": [
+        300.0,
+        722.25
+      ],
+      "design_targets": [
+        {
+          "id": "ENTRY-SHOE",
+          "target_bbox_task01_mm": [
+            3000.0,
+            4800.0,
+            3300.0,
+            5500.0
+          ],
+          "target_footprint_mm": [
+            300.0,
+            700.0
+          ],
+          "nominal_product_geometry_mm": [
+            300,
+            700
+          ],
+          "design_status": "GUIDE_NORMALIZED"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle032",
+      "source_label": "橱柜",
+      "semantic_id": "KITCHEN_AUX_STORAGE",
+      "guide_status": "EXISTING_OR_GUIDE_TO_VERIFY",
+      "guide_bbox_task01_mm": [
+        4322.375,
+        715.344,
+        5522.375,
+        1215.344
+      ],
+      "guide_footprint_mm": [
+        1200.0,
+        500.0
+      ],
+      "design_targets": [
+        {
+          "id": "KITCHEN-AUX",
+          "target_bbox_task01_mm": [
+            4320.0,
+            715.0,
+            5520.0,
+            1215.0
+          ],
+          "target_footprint_mm": [
+            1200.0,
+            500.0
+          ],
+          "nominal_product_geometry_mm": [
+            1200,
+            500
+          ],
+          "design_status": "EXISTING_OR_GUIDE_TO_VERIFY"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle033",
+      "source_label": "主卫湿区",
+      "semantic_id": "BATH_MOTHER_WET_ZONE",
+      "guide_status": "AGING_IN_PLACE_WET_ZONE",
+      "guide_bbox_task01_mm": [
+        15205.625,
+        4774.75,
+        16205.625,
+        6343.75
+      ],
+      "guide_footprint_mm": [
+        1000.0,
+        1569.0
+      ],
+      "design_targets": [
+        {
+          "id": "MOTHER-BATH-SHOWER",
+          "target_bbox_task01_mm": [
+            15100.0,
+            4700.0,
+            16100.0,
+            5900.0
+          ],
+          "target_footprint_mm": [
+            1000.0,
+            1200.0
+          ],
+          "nominal_product_geometry_mm": [
+            1000,
+            1200
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle034",
+      "source_label": "主卫马桶",
+      "semantic_id": "WC_MOTHER",
+      "guide_status": "AGING_IN_PLACE_FIXTURE",
+      "guide_bbox_task01_mm": [
+        14483.25,
+        5721.125,
+        14983.25,
+        6371.125
+      ],
+      "guide_footprint_mm": [
+        500.0,
+        650.0
+      ],
+      "design_targets": [
+        {
+          "id": "MOTHER-BATH-WC",
+          "target_bbox_task01_mm": [
+            14450.0,
+            5550.0,
+            14900.0,
+            6250.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            700.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            700
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle035",
+      "source_label": "主卫洗手盆和柜体",
+      "semantic_id": "VANITY_MOTHER",
+      "guide_status": "AGING_IN_PLACE_FIXTURE",
+      "guide_bbox_task01_mm": [
+        13138.5,
+        5845.688,
+        14338.5,
+        6345.688
+      ],
+      "guide_footprint_mm": [
+        1200.0,
+        500.0
+      ],
+      "design_targets": [
+        {
+          "id": "MOTHER-BATH-VANITY",
+          "target_bbox_task01_mm": [
+            13150.0,
+            5750.0,
+            14350.0,
+            6250.0
+          ],
+          "target_footprint_mm": [
+            1200.0,
+            500.0
+          ],
+          "nominal_product_geometry_mm": [
+            1200,
+            500
+          ],
+          "design_status": "ACTIVE"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle",
+      "source_label": "Rectangle",
+      "semantic_id": "SUPPORT_GEOMETRY",
+      "guide_status": "EXTRUSION_BASE",
+      "guide_bbox_task01_mm": [
+        3338.5,
+        8485.531,
+        4185.25,
+        11648.406
+      ],
+      "guide_footprint_mm": [
+        846.75,
+        3162.875
+      ],
+      "design_targets": [],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": false,
+      "notes": []
+    },
+    {
+      "source_object_name": "Line258",
+      "source_label": "Line517",
+      "semantic_id": "UNNAMED_AUXILIARY",
+      "guide_status": "UNNAMED_AUXILIARY",
+      "guide_bbox_task01_mm": [
+        7846.25,
+        5497.0,
+        7871.25,
+        7688.594
+      ],
+      "guide_footprint_mm": [
+        25.0,
+        2191.594
+      ],
+      "design_targets": [],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": false,
+      "notes": []
+    },
+    {
+      "source_object_name": "Line259",
+      "source_label": "Line518",
+      "semantic_id": "UNNAMED_AUXILIARY",
+      "guide_status": "UNNAMED_AUXILIARY",
+      "guide_bbox_task01_mm": [
+        7472.75,
+        5397.375,
+        7522.5,
+        7738.406
+      ],
+      "guide_footprint_mm": [
+        49.75,
+        2341.031
+      ],
+      "design_targets": [],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": false,
+      "notes": []
+    },
+    {
+      "source_object_name": "Line260",
+      "source_label": "Line519",
+      "semantic_id": "UNNAMED_AUXILIARY",
+      "guide_status": "UNNAMED_AUXILIARY",
+      "guide_bbox_task01_mm": [
+        7223.625,
+        5372.469,
+        7223.625,
+        7713.5
+      ],
+      "guide_footprint_mm": [
+        0.0,
+        2341.031
+      ],
+      "design_targets": [],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": false,
+      "notes": []
+    },
+    {
+      "source_object_name": "Rectangle020",
+      "source_label": "Rectangle033",
+      "semantic_id": "UNNAMED_AUXILIARY",
+      "guide_status": "UNNAMED_AUXILIARY",
+      "guide_bbox_task01_mm": [
+        9290.75,
+        4475.906,
+        10790.75,
+        4675.906
+      ],
+      "guide_footprint_mm": [
+        1500.0,
+        200.0
+      ],
+      "design_targets": [],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": false,
+      "notes": []
+    },
+    {
+      "source_object_name": "Circle012",
+      "source_label": "Circle013",
+      "semantic_id": "UNNAMED_AUXILIARY",
+      "guide_status": "UNNAMED_AUXILIARY",
+      "guide_bbox_task01_mm": [
+        3088.75,
+        2632.219,
+        3488.75,
+        3032.219
+      ],
+      "guide_footprint_mm": [
+        400.0,
+        400.0
+      ],
+      "design_targets": [
+        {
+          "id": "DIN-CHAIR-W",
+          "target_bbox_task01_mm": [
+            2600.0,
+            3075.0,
+            3050.0,
+            3525.0
+          ],
+          "target_footprint_mm": [
+            450.0,
+            450.0
+          ],
+          "nominal_product_geometry_mm": [
+            450,
+            500
+          ],
+          "design_status": "AUXILIARY_SOURCE_REUSED"
+        }
+      ],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": true,
+      "notes": []
+    },
+    {
+      "source_object_name": "Text",
+      "source_label": "Text",
+      "semantic_id": "UNNAMED_AUXILIARY_TEXT",
+      "guide_status": "UNNAMED_AUXILIARY",
+      "guide_bbox_task01_mm": null,
+      "guide_footprint_mm": [
+        null,
+        null
+      ],
+      "design_targets": [],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": false,
+      "notes": []
+    },
+    {
+      "source_object_name": "Text001",
+      "source_label": "Text001",
+      "semantic_id": "UNNAMED_AUXILIARY_TEXT",
+      "guide_status": "UNNAMED_AUXILIARY",
+      "guide_bbox_task01_mm": null,
+      "guide_footprint_mm": [
+        null,
+        null
+      ],
+      "design_targets": [],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": false,
+      "notes": []
+    },
+    {
+      "source_object_name": "Text002",
+      "source_label": "Text002",
+      "semantic_id": "UNNAMED_AUXILIARY_TEXT",
+      "guide_status": "UNNAMED_AUXILIARY",
+      "guide_bbox_task01_mm": null,
+      "guide_footprint_mm": [
+        null,
+        null
+      ],
+      "design_targets": [],
+      "lineage": "FCStd named guide -> normalized schematic target",
+      "geometry_scaled": false,
+      "notes": []
+    }
+  ]
+}

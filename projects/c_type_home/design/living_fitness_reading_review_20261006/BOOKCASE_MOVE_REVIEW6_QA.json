@@ -1,0 +1,317 @@
+{
+  "status": "HUMAN_REVIEW",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_BOOKCASE_SHORT_RAIL_REVIEW_6.blend",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_THREE_STEP_READING_FITNESS_REVIEW_5.blend",
+  "output_sha256": "e428fbedc2aeaf6f35d530c4dd33bbb61057a70eaede4d99683f376883360e05",
+  "target_entity_id": "ent_689bedcf7fb7490d9358a8078ab4a0cc",
+  "target_native_id": "B11_G-DIN-LIV_HOST_GLASS2",
+  "target_is_partition_panel_not_new_wall": true,
+  "bookcase_stand_off_m": 0.25,
+  "reason": "Clear existing handrail lower extension;freestanding,no anchors to glass",
+  "rotated_degrees": -90,
+  "moved_native_ids": [
+    "READING_5015_SHORT_SLIDING_CABINET",
+    "READING_5015_SHORT_SHELF_0",
+    "READING_5015_SHORT_SHELF_1",
+    "READING_5015_SHORT_SHELF_2",
+    "READING_DISPLAY_SIDE_POST",
+    "READING_DISPLAY_SIDE_POST.001",
+    "READING_BOOK_0",
+    "READING_BOOK_1",
+    "READING_BOOK_2",
+    "READING_BOOK_3"
+  ],
+  "before": {
+    "READING_5015_SHORT_SLIDING_CABINET": [
+      [
+        7.399999618530273,
+        8.949999809265137,
+        0.0
+      ],
+      [
+        7.720000267028809,
+        9.769999504089355,
+        0.3400000035762787
+      ]
+    ],
+    "READING_5015_SHORT_SHELF_0": [
+      [
+        7.400000095367432,
+        8.949999809265137,
+        0.7400000095367432
+      ],
+      [
+        7.71999979019165,
+        9.769999504089355,
+        0.7849999666213989
+      ]
+    ],
+    "READING_5015_SHORT_SHELF_1": [
+      [
+        7.400000095367432,
+        8.949999809265137,
+        1.0999999046325684
+      ],
+      [
+        7.71999979019165,
+        9.769999504089355,
+        1.1449999809265137
+      ]
+    ],
+    "READING_5015_SHORT_SHELF_2": [
+      [
+        7.400000095367432,
+        8.949999809265137,
+        1.459999918937683
+      ],
+      [
+        7.71999979019165,
+        9.769999504089355,
+        1.5049999952316284
+      ]
+    ],
+    "READING_DISPLAY_SIDE_POST": [
+      [
+        7.679999828338623,
+        8.949999809265137,
+        0.3399999737739563
+      ],
+      [
+        7.71999979019165,
+        8.99000072479248,
+        1.5399999618530273
+      ]
+    ],
+    "READING_DISPLAY_SIDE_POST.001": [
+      [
+        7.679999828338623,
+        9.729999542236328,
+        0.3399999737739563
+      ],
+      [
+        7.71999979019165,
+        9.770000457763672,
+        1.5399999618530273
+      ]
+    ],
+    "READING_BOOK_0": [
+      [
+        7.429999828338623,
+        9.059999465942383,
+        0.7849999666213989
+      ],
+      [
+        7.650000095367432,
+        9.114999771118164,
+        1.0149999856948853
+      ]
+    ],
+    "READING_BOOK_1": [
+      [
+        7.429999828338623,
+        9.135000228881836,
+        0.7849999666213989
+      ],
+      [
+        7.650000095367432,
+        9.190000534057617,
+        0.9850000143051147
+      ]
+    ],
+    "READING_BOOK_2": [
+      [
+        7.429999828338623,
+        9.210000038146973,
+        0.7850000262260437
+      ],
+      [
+        7.650000095367432,
+        9.265000343322754,
+        1.0350000858306885
+      ]
+    ],
+    "READING_BOOK_3": [
+      [
+        7.429999828338623,
+        9.28499984741211,
+        0.7849999666213989
+      ],
+      [
+        7.650000095367432,
+        9.34000015258789,
+        1.0049999952316284
+      ]
+    ]
+  },
+  "after": {
+    "READING_5015_SHORT_SLIDING_CABINET": [
+      [
+        4.789999961853027,
+        4.876499652862549,
+        0.0
+      ],
+      [
+        5.609999656677246,
+        5.196500301361084,
+        0.3400000035762787
+      ]
+    ],
+    "READING_5015_SHORT_SHELF_0": [
+      [
+        4.789999961853027,
+        4.876500129699707,
+        0.7400000095367432
+      ],
+      [
+        5.609999656677246,
+        5.196499824523926,
+        0.7849999666213989
+      ]
+    ],
+    "READING_5015_SHORT_SHELF_1": [
+      [
+        4.789999961853027,
+        4.876500129699707,
+        1.0999999046325684
+      ],
+      [
+        5.609999656677246,
+        5.196499824523926,
+        1.1449999809265137
+      ]
+    ],
+    "READING_5015_SHORT_SHELF_2": [
+      [
+        4.789999961853027,
+        4.876500129699707,
+        1.459999918937683
+      ],
+      [
+        5.609999656677246,
+        5.196499824523926,
+        1.5049999952316284
+      ]
+    ],
+    "READING_DISPLAY_SIDE_POST": [
+      [
+        4.7900004386901855,
+        4.876500129699707,
+        0.3399999737739563
+      ],
+      [
+        4.830000400543213,
+        4.916500091552734,
+        1.5399999618530273
+      ]
+    ],
+    "READING_DISPLAY_SIDE_POST.001": [
+      [
+        5.570000171661377,
+        4.876500129699707,
+        0.3399999737739563
+      ],
+      [
+        5.610000133514404,
+        4.916500091552734,
+        1.5399999618530273
+      ]
+    ],
+    "READING_BOOK_0": [
+      [
+        4.899999618530273,
+        4.946499824523926,
+        0.7849999666213989
+      ],
+      [
+        4.954999923706055,
+        5.166500091552734,
+        1.0149999856948853
+      ]
+    ],
+    "READING_BOOK_1": [
+      [
+        4.975000381469727,
+        4.946499824523926,
+        0.7849999666213989
+      ],
+      [
+        5.030000686645508,
+        5.166500091552734,
+        0.9850000143051147
+      ]
+    ],
+    "READING_BOOK_2": [
+      [
+        5.050000190734863,
+        4.946499824523926,
+        0.7850000262260437
+      ],
+      [
+        5.1050004959106445,
+        5.166500091552734,
+        1.0350000858306885
+      ]
+    ],
+    "READING_BOOK_3": [
+      [
+        5.125,
+        4.946499824523926,
+        0.7849999666213989
+      ],
+      [
+        5.180000305175781,
+        5.166500091552734,
+        1.0049999952316284
+      ]
+    ]
+  },
+  "rail_changed_native_ids": [
+    "WAVE_HANDRAIL_BRACKET_ARM_0",
+    "WAVE_HANDRAIL_BRACKET_ARM_1",
+    "WAVE_HANDRAIL_BRACKET_ARM_2",
+    "WAVE_HANDRAIL_BRACKET_UP_0",
+    "WAVE_HANDRAIL_BRACKET_UP_1",
+    "WAVE_HANDRAIL_BRACKET_UP_2",
+    "WAVE_HANDRAIL_LOWER_BASE",
+    "WAVE_HANDRAIL_LOWER_POST",
+    "WAVE_HANDRAIL_LOWER_RETURN",
+    "WAVE_HANDRAIL_UPPER_RETURN",
+    "WAVE_HANDRAIL_WALL_PLATE_0",
+    "WAVE_HANDRAIL_WALL_PLATE_1",
+    "WAVE_HANDRAIL_WALL_PLATE_2",
+    "WAVE_WALL_HANDRAIL_900"
+  ],
+  "rail_horizontal_extent_m": 0.9000000000000001,
+  "previous_rail_horizontal_extent_m": 1.65,
+  "rail_extensions_m": 0.1,
+  "rail_slope_degrees": 23.19859051364819,
+  "rail_top_over_nosings_m": 0.9,
+  "rail_points_source_xyz": [
+    [
+      5.560157838449468,
+      4.770099945068359,
+      1.031617099399639
+    ],
+    [
+      5.660157838449468,
+      4.770099945068359,
+      1.031617099399639
+    ],
+    [
+      6.360157838449468,
+      4.770099945068359,
+      1.331617099399639
+    ],
+    [
+      6.460157838449468,
+      4.770099945068359,
+      1.331617099399639
+    ]
+  ],
+  "rail_design_note": "Owner-requested short domestic trial;100mm horizontal ends deviate from300mm accessibility-reference ends;not accessibility compliance certification",
+  "all_other_object_states_unchanged": true,
+  "no_intersections_with_target_steps_rail_bench": true,
+  "actual_floor_under_four_corners": true,
+  "fresh_reopen_verified": true,
+  "source_review5_and_frozen_r4_unchanged": true
+}

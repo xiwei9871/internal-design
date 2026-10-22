@@ -1,0 +1,500 @@
+{
+  "schema": "spatial-canvas.context.v1",
+  "packet_id": "ctx_89d79c7d-0be8-4ac3-99f4-8ef6ef25038a",
+  "timestamp": "2026-10-05T09:05:25.409Z",
+  "selection": {
+    "schema": "spatial-canvas.selection.v1",
+    "design_id": "c_type_home",
+    "resource_id": "res_c_type_r4_dining_review_full",
+    "source_revision": "r4-dining-chairs-review-1",
+    "entity_ids": [
+      "ent_7a17330a33034af89a1b61bcad9bafb8",
+      "ent_c6ede54d02194ab5a2f8a3c367f8a251",
+      "ent_98d947638aca43a38e5936a3c4f01c62",
+      "ent_a95185cf2c084789bcae67771b6fa40d"
+    ],
+    "mode": "replace",
+    "source": "reload",
+    "timestamp": "2026-10-05T09:03:36.863Z",
+    "primary_entity_id": "ent_a95185cf2c084789bcae67771b6fa40d"
+  },
+  "resource": {
+    "resource_id": "res_c_type_r4_dining_review_full",
+    "design_id": "c_type_home",
+    "type": "interaction_proxy",
+    "format": "glb",
+    "authority": "derived",
+    "extensions": {
+      "spatial_canvas.blender": {
+        "meters_per_scene_unit": 1,
+        "source_coordinate_frame": "c_type_world",
+        "source_up_axis": "Z",
+        "source_authority": "frozen",
+        "bindings": {
+          "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+          "registry_revision": "7-dining-chairs-aligned-review",
+          "sha256": "5ef66ca138ea303bd3baacbe38cafc266d3963c0f3eacc93bd2f2a4364b69acf",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/spatial-canvas.bindings.json"
+        }
+      },
+      "spatial_canvas.presentation": {
+        "color_mode": "zoning-flat",
+        "textures": false,
+        "opaque": true,
+        "roughness": 1,
+        "color_origins": {
+          "display_wall": 582,
+          "display_floor": 6,
+          "display_furniture": 333
+        },
+        "flat_color_count": 3
+      },
+      "spatial_canvas.review": {
+        "status": "HUMAN_REVIEW",
+        "parent_source_resource_id": "c_type_r4",
+        "parent_source_revision": "r4",
+        "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+        "correction": "Four packet-selected dining chairs translated into symmetric tucked positions. Retains prior pier thickness and AC height corrections. Table and all unrelated objects unchanged. Independent HUMAN_REVIEW snapshot.",
+        "width_rule": "CABINET_BOUNDARY_TO_ISLAND_CONNECTOR",
+        "depth_rule": "ISLAND_NOTCH_NOT_CABINET_FRONT",
+        "ac_yaw_degrees_review": 60,
+        "frozen_authority_preserved": true,
+        "wall_thickness_reduction_m": 0.05,
+        "ac_upward_translation_m": 0.3,
+        "ac_size_reduced": false,
+        "parent_review_resource_id": "c_type_r4_pier_review",
+        "parent_review_revision": "r4-pier-ac-review-4",
+        "parent_review_sha256": "bffc60b456e81e30a29613e9b3ef07b6684a16700233c5a6673fab5bf49588ed",
+        "chairs_tucked": true
+      }
+    }
+  },
+  "source": {
+    "resource_id": "c_type_r4_dining_review",
+    "revision": "r4-dining-chairs-review-1",
+    "sha256": "e2f3f107eb6619ae28a363e0e4e36019cdae94c89aabe9ac4b8c0c07b14b14ac",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/OPTION_A_R4_DINING_CHAIRS_ALIGNED_REVIEW.blend",
+    "authority": "frozen",
+    "bindings": {
+      "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+      "registry_revision": "7-dining-chairs-aligned-review",
+      "sha256": "5ef66ca138ea303bd3baacbe38cafc266d3963c0f3eacc93bd2f2a4364b69acf",
+      "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/spatial-canvas.bindings.json"
+    }
+  },
+  "entities": [
+    {
+      "design_id": "c_type_home",
+      "global_id": "ent_7a17330a33034af89a1b61bcad9bafb8",
+      "native_object_id": "B11_Circle012_CATALOG_00_00",
+      "semantic_type": "unassigned",
+      "room_id": "unassigned",
+      "source_resource_id": "c_type_r4_dining_review",
+      "source_revision": "r4-dining-chairs-review-1",
+      "authority_level": "HUMAN_DESIGN_GUIDE",
+      "mutable": false
+    },
+    {
+      "design_id": "c_type_home",
+      "global_id": "ent_c6ede54d02194ab5a2f8a3c367f8a251",
+      "native_object_id": "B11_Circle013_CATALOG_00_00",
+      "semantic_type": "unassigned",
+      "room_id": "unassigned",
+      "source_resource_id": "c_type_r4_dining_review",
+      "source_revision": "r4-dining-chairs-review-1",
+      "authority_level": "HUMAN_DESIGN_GUIDE",
+      "mutable": false
+    },
+    {
+      "design_id": "c_type_home",
+      "global_id": "ent_98d947638aca43a38e5936a3c4f01c62",
+      "native_object_id": "B11_Circle011_CATALOG_00_00",
+      "semantic_type": "unassigned",
+      "room_id": "unassigned",
+      "source_resource_id": "c_type_r4_dining_review",
+      "source_revision": "r4-dining-chairs-review-1",
+      "authority_level": "HUMAN_DESIGN_GUIDE",
+      "mutable": false
+    },
+    {
+      "design_id": "c_type_home",
+      "global_id": "ent_a95185cf2c084789bcae67771b6fa40d",
+      "native_object_id": "B11_Circle010_CATALOG_00_00",
+      "semantic_type": "unassigned",
+      "room_id": "unassigned",
+      "source_resource_id": "c_type_r4_dining_review",
+      "source_revision": "r4-dining-chairs-review-1",
+      "authority_level": "HUMAN_DESIGN_GUIDE",
+      "mutable": false
+    }
+  ],
+  "view": {
+    "kind": "camera3d",
+    "data": {
+      "projection": "perspective",
+      "fov_degrees": 45,
+      "near": 0.0017561604543916303,
+      "far": 175.61604543916303,
+      "position": [
+        5.295024734866758,
+        1.617262363913023,
+        -1.6301563604025298
+      ],
+      "quaternion": [
+        -0.21957088786078774,
+        0.3219212843112889,
+        0.07702130864803035,
+        0.9177270999188925
+      ],
+      "projection_matrix": [
+        1.8362403269366956,
+        0,
+        0,
+        0,
+        0,
+        2.414213562373095,
+        0,
+        0,
+        0,
+        0,
+        -1.000020000200002,
+        -1,
+        0,
+        0,
+        -0.0035123560323435843,
+        0
+      ],
+      "orbit_target": [
+        3.8276249170303345,
+        0.425000011920929,
+        -3.464406132698059
+      ],
+      "viewport": {
+        "width": 873,
+        "height": 664,
+        "pixel_ratio": 0.800000011920929
+      },
+      "frame_id": "blender_proxy_world",
+      "unit": "meter",
+      "up_axis": "Y"
+    }
+  },
+  "hit": null,
+  "spatial_context": {
+    "resolution": "unavailable",
+    "containing_spaces": [],
+    "primary_space_id": null,
+    "point": null,
+    "frame_id": null,
+    "unit": null,
+    "up_axis": null,
+    "readiness": "PARTIAL",
+    "diagnostics": [
+      "Candidate 客厅 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 餐厅 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 生活阳台 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 厨房 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 卧室 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 主卧 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 衣帽间 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 主卫 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 卧室 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 书房 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 公卫 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 阳台 is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 楼梯 / Stair transition is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 卧室门外通道 / Bedroom approach is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Candidate 下层梯口 / Lower landing is not verified. Review polygon, height, evidence and coordinate alignment; record reviewer and decision.",
+      "Regions space_lounge and candidate_R-DINING have positive-volume overlap. Resolve overlapping boundaries or retain explicit ambiguous context.",
+      "Level upper has 143.032828 m³ without verified spatial coverage. Supply/approve missing region polygons and vertical ranges for upper.",
+      "Level lower has 75.272000 m³ without verified spatial coverage. Supply/approve missing region polygons and vertical ranges for lower.",
+      "Level transition has 0.324000 m³ without verified spatial coverage. Supply/approve missing region polygons and vertical ranges for transition.",
+      "No raycast hit: click a model surface to locate a space."
+    ],
+    "registry": {
+      "registry_id": "spaces_c_type_r4",
+      "registry_revision": "7-dining-chairs-aligned-review",
+      "sha256": "336ca66d6c0fc5e51f3b5603048237a36e9b4bb07d2054f0c964a79723ba83da",
+      "locator": "spatial-canvas.spaces.json"
+    },
+    "semantic_status": {
+      "relationship_status": {
+        "schema": "spatial-canvas.relationship-status.v1",
+        "component_hierarchy": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable component_hierarchy evidence. Import structured relationships or supplement authored graph."
+          ]
+        },
+        "physical_connectivity": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable physical_connectivity evidence. Import structured relationships or supplement authored graph."
+          ]
+        },
+        "space_adjacency": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable space_adjacency evidence. Import structured relationships or supplement authored graph."
+          ]
+        },
+        "transition_graph": {
+          "status": "BLOCKED",
+          "diagnostics": [
+            "No usable transition_graph evidence. Import structured relationships or supplement authored graph."
+          ]
+        }
+      },
+      "schema": "spatial-canvas.semantic-status.v1",
+      "project_id": "c_type_home",
+      "design_id": "c_type_home",
+      "status": "PARTIAL",
+      "sources": [
+        {
+          "resource_id": "floorplan",
+          "type": "authored_json",
+          "revision": "task01-r1",
+          "sha256": "9d58ee8a75053e6e1a8c3984b154b068f94b8bbbac25ecd806c336d79caca1f3",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/data/geometry.json",
+          "semantic_capability": "candidate_regions",
+          "diagnostics": [
+            "Legacy polygons are candidates: confirm coordinate alignment, current boundaries, level and vertical range; import a reviewed Space Registry."
+          ]
+        },
+        {
+          "resource_id": "cad",
+          "type": "cad",
+          "revision": "current-existing-v1",
+          "sha256": "6a9abae7edd2b56585216b7763cbebc66159ee2f50da2490321618598b30537a",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/current_existing/current_existing_v1.dxf",
+          "semantic_capability": "candidate_regions",
+          "diagnostics": [
+            "CAD closed linear polylines are review candidates, not automatically rooms. Supply coordinate frame/units, match labels, exclude furniture outlines, and define level/height. Curved/legacy POLYLINE geometry requires native export."
+          ]
+        },
+        {
+          "resource_id": "c_type_r4",
+          "type": "blender",
+          "revision": "r4",
+          "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "No explicit spatial regions extracted. Supply structured IFC/FreeCAD/plan regions or authored boundary JSON; weak geometry does not imply room identity."
+          ]
+        },
+        {
+          "resource_id": "freecad",
+          "type": "freecad",
+          "revision": "pre-blender-v2",
+          "sha256": "0c30510bc3fe4862d5759c5402146987b6384558a063983b0cab66786de85469",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_PRE_BLENDER_MASTER_V2.FCStd",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "FreeCAD document inventoried read-only; export actual room footprints/placements via a native adapter or supplement normalized boundary JSON. Object names alone are insufficient."
+          ]
+        },
+        {
+          "resource_id": "semantic_schedule",
+          "type": "authored_json",
+          "revision": "task02",
+          "sha256": "04b9dd7a5beae05ef41d251a3f7545c3bf8b7a32dbde7bf149091e0fb8deeaa9",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/semantics/space_semantics.json",
+          "semantic_capability": "none",
+          "diagnostics": [
+            "Legacy polygons are candidates: confirm coordinate alignment, current boundaries, level and vertical range; import a reviewed Space Registry."
+          ]
+        },
+        {
+          "resource_id": "ifc",
+          "type": "ifc",
+          "revision": "task02",
+          "sha256": "6a2a522f1533dadb4e4c9fa9974de74a4347a51c1fd030aa27602d12303d227e",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/ifc/C型_现状语义约束模型.ifc",
+          "semantic_capability": "none",
+          "diagnostics": [
+            "IFC space records found; boundary geometry, placements, units and verification need a native IFC export to normalized regions. Names/placements without geometry cannot resolve points."
+          ]
+        },
+        {
+          "resource_id": "r4_floor_footprints",
+          "type": "floorplan",
+          "revision": "r4-read-only-audit",
+          "sha256": "a051934774586dca12ec41e42307171b4e6c5b93b18dea798a778742d8c2b237",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/reports/SOURCE_FLOOR_FOOTPRINTS.json",
+          "semantic_capability": "explicit_regions",
+          "diagnostics": [
+            "Read-only actual R4 floor footprint audit, matched frozen R4 SHA; room roles supplied by owner."
+          ]
+        },
+        {
+          "resource_id": "c_type_r4_dining_review",
+          "type": "blender",
+          "revision": "r4-dining-chairs-review-1",
+          "sha256": "e2f3f107eb6619ae28a363e0e4e36019cdae94c89aabe9ac4b8c0c07b14b14ac",
+          "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/dining_chairs_r4_review/OPTION_A_R4_DINING_CHAIRS_ALIGNED_REVIEW.blend",
+          "semantic_capability": "geometry_only",
+          "diagnostics": [
+            "HUMAN_REVIEW: four selected dining chairs tucked and mirrored; table and other objects unchanged from pier-review-4. Frozen R4 preserved."
+          ]
+        }
+      ],
+      "known_levels": [
+        "upper",
+        "lower",
+        "transition"
+      ],
+      "coverage": {
+        "covered_levels": [],
+        "uncovered_levels": [
+          "upper",
+          "lower",
+          "transition"
+        ],
+        "uncovered_volume": 218.62882793133633
+      },
+      "diagnostics": [
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 客厅 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 餐厅 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 生活阳台 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 厨房 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 卧室 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 主卧 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 衣帽间 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 主卫 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 卧室 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 书房 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 公卫 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 阳台 is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 楼梯 / Stair transition is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 卧室门外通道 / Bedroom approach is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "candidate_requires_review",
+          "message": "Candidate 下层梯口 / Lower landing is not verified.",
+          "action": "Review polygon, height, evidence and coordinate alignment; record reviewer and decision."
+        },
+        {
+          "code": "overlap",
+          "message": "Regions space_lounge and candidate_R-DINING have positive-volume overlap.",
+          "action": "Resolve overlapping boundaries or retain explicit ambiguous context."
+        },
+        {
+          "code": "uncovered_level",
+          "message": "Level upper has 143.032828 m³ without verified spatial coverage.",
+          "action": "Supply/approve missing region polygons and vertical ranges for upper."
+        },
+        {
+          "code": "uncovered_level",
+          "message": "Level lower has 75.272000 m³ without verified spatial coverage.",
+          "action": "Supply/approve missing region polygons and vertical ranges for lower."
+        },
+        {
+          "code": "uncovered_level",
+          "message": "Level transition has 0.324000 m³ without verified spatial coverage.",
+          "action": "Supply/approve missing region polygons and vertical ranges for transition."
+        }
+      ],
+      "registry_id": "spaces_c_type_r4",
+      "registry_revision": "7-dining-chairs-aligned-review"
+    }
+  },
+  "relationships": {
+    "subject_id": "ent_a95185cf2c084789bcae67771b6fa40d",
+    "primary_space_id": null,
+    "design_id": "c_type_home",
+    "status": "unavailable",
+    "graph_id": null,
+    "graph_revision": null,
+    "nodes": [],
+    "edges": [],
+    "sources": [],
+    "registry": null,
+    "truncated": false,
+    "diagnostics": [
+      "Selected entity is not mapped in graph. Supplement exact global/native node identity."
+    ],
+    "readiness": {
+      "schema": "spatial-canvas.relationship-status.v1",
+      "component_hierarchy": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable component_hierarchy evidence. Import structured relationships or supplement authored graph."
+        ]
+      },
+      "physical_connectivity": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable physical_connectivity evidence. Import structured relationships or supplement authored graph."
+        ]
+      },
+      "space_adjacency": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable space_adjacency evidence. Import structured relationships or supplement authored graph."
+        ]
+      },
+      "transition_graph": {
+        "status": "BLOCKED",
+        "diagnostics": [
+          "No usable transition_graph evidence. Import structured relationships or supplement authored graph."
+        ]
+      }
+    }
+  }
+}

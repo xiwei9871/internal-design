@@ -1,0 +1,246 @@
+{
+  "source_dwg": {
+    "file": "世纪欣园FF.dwg",
+    "sha256": "f01a9bb5de964e0362296d12ca510fd7dc99060ddd0e8f8c4b6ab1e63a6fc360",
+    "dwg_version": "AC1018 (AutoCAD 2004/2005/2006)",
+    "units": "millimeters",
+    "units_basis": "LibreDWG conversion header $INSUNITS=4",
+    "converter": "LibreDWG dwg2dxf 0.14"
+  },
+  "candidates": {
+    "r12": {
+      "file": "世纪欣园FF_freecad_r12_ascii.dxf",
+      "sha256": "835664afc23c9d0c1d1705383e082ef49a38f9ca3648deda8e5a49027c0c242d",
+      "dxf_version": "AC1009",
+      "insunits": null,
+      "codepage": "ANSI_936",
+      "modelspace_entity_count": 315,
+      "entity_counts": {
+        "ARC": 3,
+        "CIRCLE": 18,
+        "DIMENSION": 18,
+        "INSERT": 13,
+        "LINE": 223,
+        "TEXT": 40
+      },
+      "extents_xy": [
+        961022.274789,
+        -297887.279947,
+        1315425.274703,
+        59919.258896
+      ]
+    },
+    "r2000": {
+      "file": "世纪欣园FF_freecad_2000_ascii.dxf",
+      "sha256": "9a103a204c9ada13f4090f64f43190497a9792e0d32d3b73af671ec84697359c",
+      "dxf_version": "AC1015",
+      "insunits": 4,
+      "codepage": "ANSI_936",
+      "modelspace_entity_count": 342,
+      "entity_counts": {
+        "ARC": 3,
+        "CIRCLE": 18,
+        "DIMENSION": 18,
+        "HATCH": 6,
+        "INSERT": 13,
+        "LINE": 223,
+        "LWPOLYLINE": 15,
+        "MTEXT": 6,
+        "TEXT": 40
+      },
+      "extents_xy": [
+        961022.274789,
+        -297887.279947,
+        1315425.274703,
+        59919.258896
+      ]
+    }
+  },
+  "working_dxf": {
+    "file": "世纪欣园FF_freecad_WORKING.dxf",
+    "sha256": "9a16b5921a387efa5c4b12e1e00af3b9b322414a6c5612dc5bba5ac145fa643a",
+    "dxf_version": "AC1015",
+    "codepage": "ANSI_1252",
+    "all_bytes_ascii": true,
+    "insunits": 4,
+    "units": "millimeters",
+    "modelspace_entity_count": 313,
+    "entity_counts": {
+      "ARC": 17,
+      "HATCH": 6,
+      "INSERT": 7,
+      "LINE": 258,
+      "LWPOLYLINE": 25
+    },
+    "layer_entity_counts": {
+      "0": {
+        "ARC": 8,
+        "LWPOLYLINE": 10
+      },
+      "F-FURN": {
+        "ARC": 6,
+        "LINE": 35
+      },
+      "F-SAN FIT": {
+        "ARC": 2,
+        "LINE": 14
+      },
+      "S-\\U+697c\\U+68af": {
+        "ARC": 1,
+        "LINE": 6
+      },
+      "S-S.WALL": {
+        "HATCH": 6,
+        "LINE": 201,
+        "LWPOLYLINE": 8
+      },
+      "F-DOOR": {
+        "INSERT": 7,
+        "LINE": 2,
+        "LWPOLYLINE": 7
+      }
+    },
+    "layer_names": [
+      "0",
+      "Defpoints",
+      "F-DOOR",
+      "F-FURN",
+      "F-SAN FIT",
+      "S-S.WALL",
+      "S-\\U+697c\\U+68af",
+      "USER_GUIDE_FURNITURE"
+    ],
+    "block_count": 6,
+    "extents_xy": [
+      1299471.914781,
+      -297157.788095,
+      1314571.914781,
+      -281504.775982
+    ],
+    "width_mm": 15100.0,
+    "height_mm": 15653.012113,
+    "geometry_delta_max_mm": 0.0,
+    "retained_geometry_signatures_equal": true,
+    "guide_layer": "USER_GUIDE_FURNITURE"
+  },
+  "exclusions": {
+    "source_modelspace_entities": 342,
+    "excluded_modelspace_entities": 85,
+    "excluded_by_layer_and_type": {
+      "RC-GRILL": {
+        "CIRCLE": 18,
+        "INSERT": 3,
+        "TEXT": 39
+      },
+      "S-COLUMN": {
+        "DIMENSION": 18
+      },
+      "F-TEXT": {
+        "MTEXT": 6
+      },
+      "F-FURN": {
+        "TEXT": 1
+      }
+    },
+    "excluded_off_origin_frozen_layer_bbox": [
+      961022.274789,
+      56806.741536,
+      965610.294922,
+      59919.258896
+    ],
+    "kept_modelspace_entities": 257,
+    "working_prepared_entity_count": 313,
+    "exploded_block_inserts": [
+      {
+        "source_block": "*U431",
+        "source_layer": "F-DOOR",
+        "insert_point": [
+          1300871.914780512,
+          -291017.7880950156,
+          0.0
+        ],
+        "rotation_deg": 90.0,
+        "xscale": -1.0,
+        "yscale": 1.0,
+        "expanded_entity_count": 9,
+        "reason": "eliminate far-off block-definition base point while preserving transformed geometry"
+      },
+      {
+        "source_block": "*U436",
+        "source_layer": "F-DOOR",
+        "insert_point": [
+          1307771.914780512,
+          -288457.7880950157,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "xscale": -1.0,
+        "yscale": 1.0,
+        "expanded_entity_count": 9,
+        "reason": "eliminate far-off block-definition base point while preserving transformed geometry"
+      },
+      {
+        "source_block": "bing",
+        "source_layer": "S-S.WALL",
+        "insert_point": [
+          1596296.894385225,
+          -1490617.173651345,
+          0.0
+        ],
+        "rotation_deg": 270.0,
+        "xscale": -1.0,
+        "yscale": 1.0,
+        "expanded_entity_count": 41,
+        "reason": "eliminate far-off block-definition base point while preserving transformed geometry"
+      }
+    ],
+    "kept_by_layer_and_type": {
+      "F-SAN FIT": {
+        "ARC": 2,
+        "LINE": 14
+      },
+      "S-楼梯": {
+        "ARC": 1,
+        "LINE": 6
+      },
+      "S-S.WALL": {
+        "HATCH": 6,
+        "INSERT": 1,
+        "LINE": 201,
+        "LWPOLYLINE": 8
+      },
+      "F-DOOR": {
+        "INSERT": 9,
+        "LINE": 2,
+        "LWPOLYLINE": 7
+      }
+    }
+  },
+  "freecad_import": {
+    "file": "世纪欣园FF_freecad_WORKING.dxf",
+    "freecad_version": "1.1.3",
+    "status": "PASS",
+    "document": "世纪欣园FF_freecad_WORKING",
+    "object_count": 309,
+    "object_types": {
+      "App::FeaturePython": 8,
+      "App::DocumentObjectGroupPython": 1,
+      "Part::Feature": 300
+    },
+    "shape_object_count": 300,
+    "shape_extents_xy": [
+      -1307771.914780512,
+      -297157.7880950155,
+      1314571.914780512,
+      -281504.7759819373
+    ],
+    "labels": []
+  },
+  "notes": [
+    "Source DWG and full R2000 candidate are read-only and preserved.",
+    "No retained geometry was translated, rotated, or scaled.",
+    "The frozen RC-GRILL layer is off-origin title/revision content and was omitted from the furniture-guide working copy.",
+    "TEXT, MTEXT, DIMENSION, ATTRIB, and ATTDEF annotation entities are omitted from the working copy; the full candidate retains them.",
+    "The six wall HATCH entities are retained in the DXF; FreeCAD 1.1.3 reports HATCH as unsupported and does not display those fills."
+  ]
+}

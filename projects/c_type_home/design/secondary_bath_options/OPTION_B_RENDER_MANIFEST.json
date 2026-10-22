@@ -1,0 +1,38 @@
+[
+  {
+    "option": "B",
+    "view": "ENTRY",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/renders/OPTION_B_ENTRY.png",
+    "sha256": "10396cd4e41f1887278719497239c06f5d33d07bbc019d203be301ec74dc6bfd",
+    "resolution": [
+      1600,
+      1200
+    ],
+    "source_saved": false,
+    "local_review_view": true
+  },
+  {
+    "option": "B",
+    "view": "INTERIOR",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/renders/OPTION_B_INTERIOR.png",
+    "sha256": "4733d6017276ef8a5a1733fa46ab9368e567553cca1cf8ec6bf2c804dee9c2bf",
+    "resolution": [
+      1600,
+      1200
+    ],
+    "source_saved": false,
+    "local_review_view": true
+  },
+  {
+    "option": "B",
+    "view": "TOP",
+    "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/renders/OPTION_B_TOP.png",
+    "sha256": "7289db49889b9b1de68c12571d2b0e9818d04f7199868643076694c7a7ff6a2f",
+    "resolution": [
+      1600,
+      1200
+    ],
+    "source_saved": false,
+    "local_review_view": true
+  }
+]

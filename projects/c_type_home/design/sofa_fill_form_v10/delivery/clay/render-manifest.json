@@ -1,0 +1,83 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/delivery/SOFA_DIFFERENTIATED_FILL_V10.blend",
+  "source_sha256": "ad9960ad4991e1f2f524a052815ae5c469efcf50967539fa74d921a877c741b8",
+  "stage": "clay",
+  "blender": "5.2.1 LTS",
+  "engine": "BLENDER_WORKBENCH",
+  "device": "WORKBENCH",
+  "samples": 0,
+  "denoise": null,
+  "same_materials_studio_camera": true,
+  "clay_cavity_enhancement": false,
+  "images": [
+    {
+      "family": "V7",
+      "camera": "V6_FRONT",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/clay/V7_V6_FRONT.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0,
+      "reused": true,
+      "origin_source_sha256": "0feb704e15b182143d183429ab1a2eb1a0b3c9810adbb0fa689a4d24dc0f21ab"
+    },
+    {
+      "family": "V7",
+      "camera": "V6_SIDE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/clay/V7_V6_SIDE.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0,
+      "reused": true,
+      "origin_source_sha256": "0feb704e15b182143d183429ab1a2eb1a0b3c9810adbb0fa689a4d24dc0f21ab"
+    },
+    {
+      "family": "V7",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/form2/clay/V7_V6_THREE_QUARTER.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0,
+      "reused": true,
+      "origin_source_sha256": "0feb704e15b182143d183429ab1a2eb1a0b3c9810adbb0fa689a4d24dc0f21ab"
+    },
+    {
+      "family": "V10",
+      "camera": "V6_FRONT",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/delivery/clay/V10_V6_FRONT.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0.69,
+      "reused": false
+    },
+    {
+      "family": "V10",
+      "camera": "V6_SIDE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/delivery/clay/V10_V6_SIDE.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 1.22,
+      "reused": false
+    },
+    {
+      "family": "V10",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_fill_form_v10/delivery/clay/V10_V6_THREE_QUARTER.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0.27,
+      "reused": false
+    }
+  ]
+}

@@ -1,0 +1,1049 @@
+[
+  {
+    "name": "B11_Circle010_CATALOG_00_00",
+    "bounds": [
+      [
+        3.088749885559082,
+        3.977062463760376,
+        0.0
+      ],
+      [
+        3.4887499809265137,
+        4.3770623207092285,
+        0.8500000238418579
+      ]
+    ],
+    "parent": "B11_Circle010",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/dining-chair/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    },
+    "local_bounds": [
+      [
+        3.088749885559082,
+        3.977062463760376,
+        0.0
+      ],
+      [
+        3.088749885559082,
+        3.977062463760376,
+        0.8500000238418579
+      ],
+      [
+        3.088749885559082,
+        4.3770623207092285,
+        0.8500000238418579
+      ],
+      [
+        3.088749885559082,
+        4.3770623207092285,
+        0.0
+      ],
+      [
+        3.4887499809265137,
+        3.977062463760376,
+        0.0
+      ],
+      [
+        3.4887499809265137,
+        3.977062463760376,
+        0.8500000238418579
+      ],
+      [
+        3.4887499809265137,
+        4.3770623207092285,
+        0.8500000238418579
+      ],
+      [
+        3.4887499809265137,
+        4.3770623207092285,
+        0.0
+      ]
+    ],
+    "materials": [
+      "B11_REVIEW_FRONT"
+    ],
+    "vertices": 265
+  },
+  {
+    "name": "B11_Circle011_CATALOG_00_00",
+    "bounds": [
+      [
+        3.8857500553131104,
+        3.977062463760376,
+        0.0
+      ],
+      [
+        4.285749912261963,
+        4.3770623207092285,
+        0.8500000238418579
+      ]
+    ],
+    "parent": "B11_Circle011",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/dining-chair/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    },
+    "local_bounds": [
+      [
+        3.8857500553131104,
+        3.977062463760376,
+        0.0
+      ],
+      [
+        3.8857500553131104,
+        3.977062463760376,
+        0.8500000238418579
+      ],
+      [
+        3.8857500553131104,
+        4.3770623207092285,
+        0.8500000238418579
+      ],
+      [
+        3.8857500553131104,
+        4.3770623207092285,
+        0.0
+      ],
+      [
+        4.285749912261963,
+        3.977062463760376,
+        0.0
+      ],
+      [
+        4.285749912261963,
+        3.977062463760376,
+        0.8500000238418579
+      ],
+      [
+        4.285749912261963,
+        4.3770623207092285,
+        0.8500000238418579
+      ],
+      [
+        4.285749912261963,
+        4.3770623207092285,
+        0.0
+      ]
+    ],
+    "materials": [
+      "B11_REVIEW_FRONT"
+    ],
+    "vertices": 265
+  },
+  {
+    "name": "B11_Circle012_CATALOG_00_00",
+    "bounds": [
+      [
+        3.1136250495910645,
+        2.4828124046325684,
+        0.0
+      ],
+      [
+        3.513625144958496,
+        2.8828125,
+        0.8500000238418579
+      ]
+    ],
+    "parent": "B11_Circle012",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/dining-chair/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    },
+    "local_bounds": [
+      [
+        3.1136250495910645,
+        2.4828124046325684,
+        0.0
+      ],
+      [
+        3.1136250495910645,
+        2.4828124046325684,
+        0.8500000238418579
+      ],
+      [
+        3.1136250495910645,
+        2.8828125,
+        0.8500000238418579
+      ],
+      [
+        3.1136250495910645,
+        2.8828125,
+        0.0
+      ],
+      [
+        3.513625144958496,
+        2.4828124046325684,
+        0.0
+      ],
+      [
+        3.513625144958496,
+        2.4828124046325684,
+        0.8500000238418579
+      ],
+      [
+        3.513625144958496,
+        2.8828125,
+        0.8500000238418579
+      ],
+      [
+        3.513625144958496,
+        2.8828125,
+        0.0
+      ]
+    ],
+    "materials": [
+      "B11_REVIEW_FRONT"
+    ],
+    "vertices": 265
+  },
+  {
+    "name": "B11_Circle013_CATALOG_00_00",
+    "bounds": [
+      [
+        3.9106247425079346,
+        2.557499885559082,
+        0.0
+      ],
+      [
+        4.310624599456787,
+        2.9574999809265137,
+        0.8500000238418579
+      ]
+    ],
+    "parent": "B11_Circle013",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/dining-chair/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    },
+    "local_bounds": [
+      [
+        3.9106247425079346,
+        2.557499885559082,
+        0.0
+      ],
+      [
+        3.9106247425079346,
+        2.557499885559082,
+        0.8500000238418579
+      ],
+      [
+        3.9106247425079346,
+        2.9574999809265137,
+        0.8500000238418579
+      ],
+      [
+        3.9106247425079346,
+        2.9574999809265137,
+        0.0
+      ],
+      [
+        4.310624599456787,
+        2.557499885559082,
+        0.0
+      ],
+      [
+        4.310624599456787,
+        2.557499885559082,
+        0.8500000238418579
+      ],
+      [
+        4.310624599456787,
+        2.9574999809265137,
+        0.8500000238418579
+      ],
+      [
+        4.310624599456787,
+        2.9574999809265137,
+        0.0
+      ]
+    ],
+    "materials": [
+      "B11_REVIEW_FRONT"
+    ],
+    "vertices": 265
+  },
+  {
+    "name": "B11_Rectangle004_CATALOG_00_00",
+    "bounds": [
+      [
+        7.398000240325928,
+        8.634937286376953,
+        0.0
+      ],
+      [
+        7.696875095367432,
+        11.523843765258789,
+        0.47999998927116394
+      ]
+    ],
+    "parent": "B11_Rectangle004",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/tv-stand/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle012_CATALOG_00_00",
+    "bounds": [
+      [
+        9.066624641418457,
+        1.537156343460083,
+        0.44999998807907104
+      ],
+      [
+        11.166625022888184,
+        3.037156343460083,
+        0.9999737739562988
+      ]
+    ],
+    "parent": "B11_Rectangle012",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/double-bed/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle013_CATALOG_00_00",
+    "bounds": [
+      [
+        12.942874908447266,
+        1.645531177520752,
+        0.44999998807907104
+      ],
+      [
+        15.042875289916992,
+        3.145531177520752,
+        0.9999737739562988
+      ]
+    ],
+    "parent": "B11_Rectangle013",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/double-bed/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle017_CATALOG_00_00",
+    "bounds": [
+      [
+        10.878375053405762,
+        8.019843101501465,
+        0.44999998807907104
+      ],
+      [
+        12.678374290466309,
+        9.219843864440918,
+        1.0
+      ]
+    ],
+    "parent": "B11_Rectangle017",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/single-bed/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle022_CATALOG_00_00",
+    "bounds": [
+      [
+        11.6068754196167,
+        1.337937593460083,
+        0.44999998807907104
+      ],
+      [
+        12.1068754196167,
+        3.337937593460083,
+        0.9299999475479126
+      ]
+    ],
+    "parent": "B11_Rectangle022",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/tv-stand/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle023_CATALOG_00_00",
+    "bounds": [
+      [
+        8.070375442504883,
+        1.337937593460083,
+        0.44999998807907104
+      ],
+      [
+        8.570375442504883,
+        3.337937593460083,
+        0.9299999475479126
+      ]
+    ],
+    "parent": "B11_Rectangle023",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/tv-stand/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle046_CATALOG_00_00",
+    "bounds": [
+      [
+        3.400951623916626,
+        9.215812683105469,
+        0.0
+      ],
+      [
+        4.301296234130859,
+        11.515811920166016,
+        0.8500000238418579
+      ]
+    ],
+    "parent": "B11_Rectangle046",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/sofa/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle047_CATALOG_00_00",
+    "bounds": [
+      [
+        4.571625232696533,
+        11.980218887329102,
+        0.0
+      ],
+      [
+        6.471624851226807,
+        12.830219268798828,
+        0.8500000238418579
+      ]
+    ],
+    "parent": "B11_Rectangle047",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/sofa/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle048_CATALOG_00_00",
+    "bounds": [
+      [
+        3.9739997386932373,
+        7.796281814575195,
+        0.0
+      ],
+      [
+        5.673999786376953,
+        8.696281433105469,
+        0.800000011920929
+      ]
+    ],
+    "parent": "B11_Rectangle048",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/lounge-chair/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle049_CATALOG_00_00",
+    "bounds": [
+      [
+        5.0698747634887695,
+        9.863344192504883,
+        0.0
+      ],
+      [
+        5.619874954223633,
+        10.863344192504883,
+        0.3999999761581421
+      ]
+    ],
+    "parent": "B11_Rectangle049",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/coffee-table/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle050_CATALOG_00_00",
+    "bounds": [
+      [
+        3.02762508392334,
+        3.064406156539917,
+        0.0
+      ],
+      [
+        4.627624988555908,
+        3.8644063472747803,
+        0.75
+      ]
+    ],
+    "parent": "B11_Rectangle050",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/dining-table/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle008_CATALOG_00_00",
+    "bounds": [
+      [
+        8.020625114440918,
+        9.332281112670898,
+        0.44999998807907104
+      ],
+      [
+        8.76775074005127,
+        9.656030654907227,
+        1.2300000190734863
+      ]
+    ],
+    "parent": "B11_Rectangle008",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/toilet/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "B11_Rectangle034_CATALOG_00_00",
+    "bounds": [
+      [
+        14.48324966430664,
+        5.72112512588501,
+        0.44999998807907104
+      ],
+      [
+        14.98324966430664,
+        6.371124744415283,
+        1.2300000190734863
+      ]
+    ],
+    "parent": "B11_Rectangle034",
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/toilet/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    }
+  },
+  {
+    "name": "R3_STUDY_B11_Rectangle026_CATALOG_00_00",
+    "bounds": [
+      [
+        14.271625518798828,
+        7.389718532562256,
+        0.44999998807907104
+      ],
+      [
+        15.071624755859375,
+        9.58971881866455,
+        1.2000000476837158
+      ]
+    ],
+    "parent": null,
+    "children": [],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "properties": {
+      "source_revision": "LATEST_FREECAD_R3",
+      "review_status": "HUMAN_REVIEW"
+    }
+  }
+]

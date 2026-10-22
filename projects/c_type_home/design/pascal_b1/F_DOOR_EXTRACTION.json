@@ -1,0 +1,193 @@
+{
+ "doors_extracted": [
+  {
+   "axis": "y",
+   "band_axis": "x",
+   "span": [
+    6700,
+    7550
+   ],
+   "band_coord": 13100,
+   "width_mm": 850,
+   "host": null,
+   "sem_id": "D-STUDY",
+   "kind": "door",
+   "hinge": [
+    13100,
+    6700
+   ],
+   "rest": [
+    13100,
+    7550
+   ]
+  },
+  {
+   "axis": "x",
+   "band_axis": "y",
+   "span": [
+    11950,
+    12800
+   ],
+   "band_coord": 6400,
+   "width_mm": 850,
+   "host": null,
+   "sem_id": "D-BATHM",
+   "kind": "door",
+   "hinge": [
+    12800,
+    6400
+   ],
+   "rest": [
+    11950,
+    6400
+   ]
+  },
+  {
+   "axis": "y",
+   "band_axis": "x",
+   "span": [
+    4800,
+    5550
+   ],
+   "band_coord": 13100,
+   "width_mm": 750,
+   "host": null,
+   "sem_id": "D-MB",
+   "kind": "door",
+   "hinge": [
+    13100,
+    4800
+   ],
+   "rest": [
+    13100,
+    5550
+   ]
+  },
+  {
+   "axis": "x",
+   "band_axis": "y",
+   "span": [
+    8850,
+    9600
+   ],
+   "band_coord": 8000,
+   "width_mm": 750,
+   "host": null,
+   "sem_id": null,
+   "kind": "door_unmatched",
+   "hinge": [
+    9600,
+    8000
+   ],
+   "rest": [
+    8850,
+    8000
+   ]
+  },
+  {
+   "axis": "x",
+   "band_axis": "y",
+   "span": [
+    10000,
+    10850
+   ],
+   "band_coord": 8000,
+   "width_mm": 850,
+   "host": null,
+   "sem_id": "D-GBATH",
+   "kind": "door",
+   "hinge": [
+    10000,
+    8000
+   ],
+   "rest": [
+    10850,
+    8000
+   ]
+  },
+  {
+   "axis": "x",
+   "band_axis": "y",
+   "span": [
+    8332,
+    9095
+   ],
+   "band_coord": 4543,
+   "width_mm": 850,
+   "host": null,
+   "sem_id": "D-SM",
+   "kind": "door",
+   "hinge": [
+    8332,
+    4543
+   ],
+   "rest": [
+    9095,
+    4919
+   ]
+  },
+  {
+   "axis": "y",
+   "band_axis": "x",
+   "span": [
+    12050,
+    12900
+   ],
+   "band_coord": 8000,
+   "width_mm": 850,
+   "host": null,
+   "sem_id": "G-LIV-NBALC",
+   "kind": "glazing_door",
+   "hinge": [
+    8000,
+    12900
+   ],
+   "rest": [
+    8000,
+    12050
+   ]
+  },
+  {
+   "axis": "y",
+   "band_axis": "x",
+   "span": [
+    5440,
+    5790
+   ],
+   "band_coord": 2700,
+   "width_mm": 350,
+   "host": null,
+   "sem_id": "ENT-1",
+   "kind": "entry_double_leaf",
+   "hinge": [
+    2700,
+    5440
+   ],
+   "rest": [
+    2700,
+    5790
+   ]
+  },
+  {
+   "axis": "y",
+   "band_axis": "x",
+   "span": [
+    5790,
+    6540
+   ],
+   "band_coord": 2700,
+   "width_mm": 750,
+   "host": null,
+   "sem_id": "ENT-1",
+   "kind": "entry_double_leaf",
+   "hinge": [
+    2700,
+    6540
+   ],
+   "rest": [
+    2700,
+    5790
+   ]
+  }
+ ]
+}

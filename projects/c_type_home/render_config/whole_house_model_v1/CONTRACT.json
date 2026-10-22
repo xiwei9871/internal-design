@@ -1,0 +1,23 @@
+{
+  "schema": "c-type.whole-house-model.v1",
+  "date": "2026-10-12",
+  "status": "HUMAN_REVIEW",
+  "source_authority": "V5 integrated design derived from protected R4, with historical stepped north cabinet; production scene used only for registered cameras",
+  "scope": "one isolated whole-house Blender candidate; no Image2 and no 225-image queue",
+  "whole_home_style": "pale ash/natural wood, ivory/flax, simple, restrained metal and warm neutral daylight",
+  "confirmed_living_dining": true,
+  "real_product_rule": "furniture/appliances/lighting use owner catalog, official product reference, or evidence-backed custom construction before detailed modeling",
+  "sofa_rules": {
+    "seat": "supported foam/core mass with softer jacket and curved rollover",
+    "back": "fuller channel-filled bag with local support compression and restrained seam families",
+    "surface": "native tested linen/ash material retained; surface sheen is not filling mechanics",
+    "validation": "closed shells, actual support/intersection checks, same-camera comparison, human appearance review"
+  },
+  "camera_register": "renders/whole_house_final_study_v1/00_MANIFEST/CAMERA_REGISTER_REVIEW_V3.json",
+  "review_gate": "room-by-room human review before any construction-document or full render promotion",
+  "image2_requests": 0,
+  "whole_house_batch_started": false,
+  "source_writeback": false,
+  "model": "design/whole_house_model_v1/assembly/WHOLE_HOUSE_REVIEW_SUPPORTED_V2.blend",
+  "preserve_existing_artifacts": true
+}

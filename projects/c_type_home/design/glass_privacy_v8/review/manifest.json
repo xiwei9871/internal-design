@@ -1,0 +1,62 @@
+[
+  {
+    "view": "living",
+    "camera": "CAM_living_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review/living.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "b67fcad7ff17caa1a3f4e1156f24ec460d4e3706a8b481c4fb99090949370405",
+    "seconds": 33.16
+  },
+  {
+    "view": "master_bath",
+    "camera": "CAM_master_bath_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review/master_bath.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "b67fcad7ff17caa1a3f4e1156f24ec460d4e3706a8b481c4fb99090949370405",
+    "seconds": 28.63
+  },
+  {
+    "view": "secondary_bath",
+    "camera": "CAM_secondary_bath_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review/secondary_bath.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "b67fcad7ff17caa1a3f4e1156f24ec460d4e3706a8b481c4fb99090949370405",
+    "seconds": 27.3
+  },
+  {
+    "view": "guest_bath",
+    "camera": "CAM_guest_bath_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review/guest_bath.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "b67fcad7ff17caa1a3f4e1156f24ec460d4e3706a8b481c4fb99090949370405",
+    "seconds": 29.48
+  },
+  {
+    "view": "guest_balcony",
+    "camera": "CAM_guest_bedroom_VIEW_01",
+    "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/glass_privacy_v8/review/guest_balcony.png",
+    "size": [
+      1600,
+      900
+    ],
+    "samples": 96,
+    "source_sha256": "b67fcad7ff17caa1a3f4e1156f24ec460d4e3706a8b481c4fb99090949370405",
+    "seconds": 28.77
+  }
+]

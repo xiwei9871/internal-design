@@ -1,0 +1,147 @@
+{
+  "status": "HUMAN_REVIEW",
+  "revision": "bedrooms-wood-v1-review-2",
+  "parent_source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/study_room_v1/STUDY_ROOM_DAYBED_V1.blend",
+  "parent_sha256": "3606aeb73b8bf845796346b46a6567877bca0f4cd4672678e82206a12e20236d",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V2.blend",
+  "source_sha256": "2c62eb193522da71875ef27fa37a74e26ba59eebb96505c42142e0c853458b99",
+  "retired_native_ids": [
+    "B11_Rectangle011_PANEL",
+    "B11_Rectangle011_RECESS_1",
+    "B11_Rectangle011_RECESS_2",
+    "B11_Rectangle011_RECESS_3",
+    "B11_Rectangle011_RECESS_4",
+    "B11_Rectangle014_PANEL",
+    "B11_Rectangle014_RECESS_1",
+    "B11_Rectangle014_RECESS_2",
+    "B11_Rectangle014_RECESS_3",
+    "B11_Rectangle014_RECESS_4",
+    "B11_Rectangle023_CATALOG_00_00",
+    "B11_Circle009_SEAT",
+    "B11_Circle009_LEG",
+    "B11_Circle009_LEG.001",
+    "B11_Circle009_LEG.002",
+    "B11_Circle009_LEG.003",
+    "B11_Rectangle051_PANEL",
+    "B11_Rectangle051_RECESS_1",
+    "B11_Rectangle051_RECESS_2",
+    "B11_Rectangle051_RECESS_3",
+    "B11_Rectangle051_RECESS_4",
+    "B11_Rectangle052_TOP",
+    "B11_Rectangle052_LEG",
+    "B11_Rectangle052_LEG.001",
+    "B11_Rectangle052_LEG.002",
+    "B11_Rectangle052_LEG.003",
+    "B11_Rectangle045_FRONT_0",
+    "B11_Rectangle045_PULL_0"
+  ],
+  "edited_native_ids": [
+    "B11_Rectangle012_CATALOG_00_00",
+    "B11_Rectangle013_CATALOG_00_00",
+    "B11_Rectangle017_CATALOG_00_00",
+    "B11_Rectangle045_BACK",
+    "B11_Rectangle045_BASE",
+    "B11_Rectangle045_L",
+    "B11_Rectangle045_PLINTH",
+    "B11_Rectangle045_SHELF",
+    "B11_Rectangle045_TOP"
+  ],
+  "rooms": {
+    "mother": {
+      "bed_size_m": [
+        2.1,
+        1.5
+      ],
+      "bed_translation_m": [
+        0.13,
+        0,
+        0
+      ],
+      "tv_cabinet_retained": true,
+      "vanity_size_m": [
+        0.9,
+        0.45,
+        0.75
+      ]
+    },
+    "couple": {
+      "bed_size_m": [
+        2.1,
+        1.8
+      ],
+      "bed_translation_m": [
+        0.1,
+        -0.2,
+        0
+      ],
+      "tv_cabinet_removed": true,
+      "shallow_shelf_size_m": [
+        0.9,
+        0.28,
+        1.05
+      ]
+    },
+    "guest": {
+      "bed_size_m": [
+        1.8,
+        1.2
+      ],
+      "bed_translation_m": [
+        0.14,
+        0,
+        0
+      ],
+      "desk_size_m": [
+        1.64,
+        0.55,
+        0.75
+      ],
+      "bunk_added": false,
+      "wardrobe_size_m": [
+        1.5,
+        0.5,
+        2.2
+      ],
+      "wardrobe_door_count": 3,
+      "wardrobe_south_end_retracted_m": 0.5,
+      "desk_full_run": "bededge to northwall;20mminstallationgapsatends",
+      "desk_existing_door_casing_notch_m": [
+        0.13,
+        0.04
+      ],
+      "adult_bed_length_note": "Inherited1800mm length preserved; future purchasedbedproductlength remains user review.",
+      "features": [
+        "perforated_board",
+        "house_outline_display",
+        "cloud_wall_light",
+        "replaceable_books_and_toys"
+      ]
+    }
+  },
+  "evidence": {
+    "new_furniture_triangles": 25876,
+    "frozen_hashes": {
+      "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "/Users/xiwei/interior_design/projects/c_type_home/design/blender_b0/B0_EXISTING_AS_IS.blend": "717e6dc4a3d4fb6325512236f5c235ded702376309456028129bf0889548efcb",
+      "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/study_room_v1/STUDY_ROOM_DAYBED_V1.blend": "3606aeb73b8bf845796346b46a6567877bca0f4cd4672678e82206a12e20236d"
+    },
+    "source_object_fingerprints_unchanged_outside_scope": true,
+    "wall_door_intersections": [],
+    "wardrobe_frontpanel_0to90deg_sweeps_both_hinge_options": [],
+    "guest_entry_sweeps": []
+  },
+  "clearances_m": {
+    "couple_wardrobe_to_bed": 0.9209377765655518,
+    "mother_wardrobe_to_bed": 0.7014689445495605,
+    "mother_tv_to_bedfoot": 0.9659996032714844,
+    "guest_central_route_chair_parked": 1.4218741989135744,
+    "guest_central_route_chair_pulled250mm": 1.1718741989135744,
+    "guest_entry_clear_width": 0.85,
+    "guest_desk_north_to_balcony_track": 0.08499988555908189
+  },
+  "clearance_method": "World-axis furniture envelopes and evaluated triangle surface intersection/leaf sweeps; model review, notcodecertification.",
+  "architecture_unchanged": true,
+  "all_other_accepted_rooms_preserved": true,
+  "textures": false,
+  "cycles": false
+}

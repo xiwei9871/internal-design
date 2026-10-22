@@ -1,0 +1,32 @@
+{
+  "source_float_tolerance_m": 2e-05,
+  "B_upper_landing": {
+    "candidate_bounds_m": [
+      7.2,
+      5.0,
+      8.4,
+      6.2
+    ],
+    "size_mm": [
+      1200,
+      1200
+    ],
+    "footprint_m2": 1.4400000000000004,
+    "covered_by_existing_upper_m2": 1.4400000000000004,
+    "requires_furniture_and_door_swing_check": true
+  },
+  "B_upper_join": {
+    "separation_m": 0.0,
+    "connected_within_source_tolerance": true
+  },
+  "A_tread_band_normal_mm": 300,
+  "B_stair_width_mm": 1200,
+  "existing_entry": {
+    "unchanged": true,
+    "nominal_full_width_mm": 1100,
+    "primary_leaf_mm": 750,
+    "operating_clearance": "TO_VERIFY_SITE"
+  },
+  "universal_access": false,
+  "interpretation": "Clearance figures from actual branch geometry/source floor, not field measurement. Stair going/width does not guarantee fall protection or regulatory compliance."
+}

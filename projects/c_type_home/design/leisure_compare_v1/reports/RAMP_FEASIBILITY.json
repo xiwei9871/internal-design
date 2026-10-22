@@ -1,0 +1,155 @@
+{
+  "schema": "leisure_ramp_feasibility.v1",
+  "date": "2026-10-03",
+  "status": "LOCAL_RAMP_NOT_FEASIBLE; STRAIGHT_STAIRS_B_CONCEPT_GEOMETRY_ONLY",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+  "source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "scope": "R4 leisure/platform transition A/B comparison only; no livingPBR, no architecture/source writeback",
+  "units": "meters; benchmark tables explicitly mm",
+  "geometry_inputs": {
+    "lower_FFL_m": 0,
+    "upper_FFL_m": 0.45,
+    "fan_platform_fascia_bounds_m": {
+      "x": [
+        5.7,
+        7.2
+      ],
+      "y": [
+        4.7,
+        6.6
+      ],
+      "z": [
+        0,
+        0.45
+      ]
+    },
+    "curved_edge": {
+      "center_xy_m": [
+        6.7,
+        5.6
+      ],
+      "radius_m": 1,
+      "angle_deg": 90
+    },
+    "existing_straight_steps": {
+      "bounds_xy_m": [
+        7.2,
+        6.6,
+        7.8,
+        7.8
+      ],
+      "rises": 3,
+      "rise_each_mm": 150,
+      "going_each_mm": 200,
+      "width_mm": 1200
+    },
+    "B_proposed_straight_steps": {
+      "bounds_xy_m": [
+        6.3,
+        5.0,
+        7.2,
+        6.2
+      ],
+      "rises": 3,
+      "rise_each_mm": 150,
+      "going_each_mm": 300,
+      "total_run_mm": 900,
+      "width_mm": 1200,
+      "upper_join_x_m": 7.2,
+      "upper_join_z_m": 0.45,
+      "geometry_status": "Nominal900×1200 stair envelope fits specified replacement zone and spans450rise; final evaluated tread/topfloor join and route clearances by root QA",
+      "structure_status": "UNKNOWN_SITE_STRUCTURE_NOT_DEMOLITION_RELEASE"
+    }
+  },
+  "ramp_calculations": {
+    "rise_mm": 450,
+    "reference_max_running_slope": "1:12",
+    "reference_max_slope_percent": 8.333333333333334,
+    "required_horizontal_run_mm": 5400,
+    "project_rounded_landing_each_mm": 1500,
+    "project_rounded_overall_mm": 8400,
+    "original_reference_printed_landing_each_mm": 1525,
+    "original_reference_printed_overall_mm": 8450,
+    "exact_60inch_each_mm": 1524,
+    "exact_60inch_overall_mm": 8448,
+    "local_long_span_mm": 1900,
+    "short_ramp_slope_percent": 23.68421052631579,
+    "short_ramp_ratio_rise_to_run": "1:4.22222",
+    "short_ramp_angle_deg": 13.324531261890785,
+    "run_length_deficit_vs1to12_mm": 3500,
+    "maximum_rise_on1900mm_run_at1to12_mm": 158.33333333333334,
+    "max_rise_within1900mm_total_including_two1500mm_landings": 0,
+    "local_run_verdict": "1900mmrun at450rise23.68%,1:4.22 is unsuitable as wheelchair ramp; local1.5×1.9m envelope cannot contain benchmark ramp/landings",
+    "research_ramp": {
+      "bounds_xy_m": [
+        1.8,
+        5.0,
+        7.2,
+        6.1
+      ],
+      "rise_m": 0.45,
+      "run_mm": 5400,
+      "width_mm": 1100,
+      "run_footprint_m2": 5.940000000000001,
+      "landings_modeled": false,
+      "overall_benchmark_footprint_m2_at1100width": 9.295,
+      "status": "RED_DISABLED_RESEARCH_ONLY;NOT_ADOPTED",
+      "conflicts": "Extends west ofR4 wallx2.7–2.9; y5.0–6.1 is not aligned inside registered ENT-1 nominal y5.44–6.54. Screening conflict with west wall/entry and dining circulation; no actual wall cut, source alteration or counted clearance claim. Landings/handrails/edge guards/door maneuvering not included."
+    }
+  },
+  "references": {
+    "authority": "U.S. Access Board; American ADA reference benchmark only, not Chinese regulation compliance",
+    "retrieved_date": "2026-10-03",
+    "guide_url": "https://www.access-board.gov/ada/guides/chapter-4-ramps-and-curb-ramps/",
+    "standards_url": "https://www.access-board.gov/ada/",
+    "local_guide_html": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/references/US_ACCESS_BOARD_RAMPS_REFERENCE.html",
+    "local_standards_html": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/references/US_ACCESS_BOARD_ADA_STANDARDS.html",
+    "exact_excerpts": "/Users/xiwei/interior_design/projects/c_type_home/design/leisure_compare_v1/references/US_ACCESS_BOARD_RAMP_CLAUSE_EXCERPTS.json",
+    "clauses": [
+      {
+        "section": "405.2 Slope",
+        "anchor": "https://www.access-board.gov/ada/#ada-405_2",
+        "exact_text_excerpt": "id=\"ada-405_2\">405.2 Slope Ramp runs shall have a running slope not steeper than 1:12. EXCEPTION: In existing sites, buildings, and facilities, ramps shall be permitted to have running slopes steeper than 1:12 complying with Table 405.2 where such slopes are necessary due to space limitations. Table 405.2 Maximum Ramp Slope and Rise for Existing Sites, Buildings, and Facilities Slope ¹ Maximum Rise Steeper than 1:10 but not steeper than 1:8 3 inches (75 mm) Steeper than 1:12 but not steeper than 1:10 6 inches (150 mm) Table Legend: 1. A slope steeper than 1:8 is prohibited . Advisory 405.2 Slope. To accommodate the widest range of users, provide ramps with the least possible running slope and, wherever possible, accompany ramps with stairs for use by those individuals for whom distance presents a greater barrier than steps, e.g., people with heart disease or limited stamina."
+      },
+      {
+        "section": "405.5 Clear Width",
+        "anchor": "https://www.access-board.gov/ada/#ada-405_5",
+        "exact_text_excerpt": "id=\"ada-405_5\">405.5 Clear Width The clear width of a ramp run and, where handrails are provided, the clear width between handrails shall be 36 inches (915 mm) minimum. EXCEPTION: Within employee work areas, the required clear width of ramps that are a part of common use circulation paths shall be permitted to be decreased by work area equipment provided that the decrease is essential to the function of the work being performed."
+      },
+      {
+        "section": "405.7.3 Length",
+        "anchor": "https://www.access-board.gov/ada/#ada-405_7_3",
+        "exact_text_excerpt": "id=\"ada-405_7_3\">405.7.3 Length The landing clear length shall be 60 inches (1525 mm) long minimum."
+      },
+      {
+        "section": "405.7.4 Change in Direction",
+        "anchor": "https://www.access-board.gov/ada/#ada-405_7_4",
+        "exact_text_excerpt": "id=\"ada-405_7_4\">405.7.4 Change in Direction Ramps that change direction between runs at landings shall have a clear landing 60 inches (1525 mm) minimum by 60 inches (1525 mm) minimum."
+      }
+    ],
+    "original_landing_metric_note": "Standard prints60in(1525mm). Do not cite1500mm as its exact requirement. Raw60inconversion1524mm is retained separately.",
+    "width_note": "Standard§405.5 prints36in(915mm) clearbetweenhandrails; research1100mm external width is not an established clearwidth with rails."
+  },
+  "A_B_recommendation_inputs": {
+    "A_retained": {
+      "benefit": "Retains raised leisure identity/curved continuity and source relationship with upper corridor; avoids declaring unverified slab demolition.",
+      "limitations": "450mmleveldifference remains; curved transition and200mmstraightgoings require elder-use/edge/handrail review. No proven wheelchair route."
+    },
+    "B_removedfan": {
+      "benefit": "Returns formerfan occupied footprint to lower-level flexible use while retaining450mmupper corridor/rooms; straighter transition with300mmgoings offers clearer foot placement.",
+      "limitations": "3×150mmstairs remain, thereforeB is not fully wheelchair accessible. Structural removability, services, edge protection, stair top/bottom standing space and actual circulation must be verified.",
+      "quantitative": "Stair projection900×1200=1.08m²;2rise+going=600mm vs original500mm; pitch reference26.57deg vs original36.87deg. These are geometric comparison metrics, not local-code compliance."
+    },
+    "conditional_recommendation": "For future flexible lower-floor use,B is the stronger spatial concept if structural removal and topfloor/stair join are confirmed; for minimum intervention/current certainty,A remains the conservative reference. Neither option resolves wheelchairaccess.",
+    "recovered_area_exact_m2": null,
+    "area_note": "Root will compute actual removed fan polygon minus retainedupper corridor/newstairs;1.5×1.9=2.85m² is only envelope area and must not be reported as recovered usable area."
+  },
+  "pending_checks": [
+    "Exact source-fan subtraction polygon and recoveredarea by root evaluated geometry",
+    "Uppercorridor450mm preservation and everyroom/opening unchanged",
+    "DetailedB stair top join/FFL0 support/no hidden sill gap",
+    "Structural slab/beam/rebar/services and safe demolition review on site",
+    "A/B elderly stair handrail, edge protection and top/bottom operating clearances",
+    "Wholehouse wheelchairroute strategy if future need becomes mandatory"
+  ]
+}

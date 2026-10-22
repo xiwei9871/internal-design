@@ -1,0 +1,121 @@
+{
+  "schema": "c-type.sofa-pair-pilot.v6",
+  "date": "2026-10-11",
+  "authorization": "Ownerapprovedone seat/back pilotafterresearch",
+  "status": "HUMAN_REVIEW_CANDIDATE",
+  "scope": "one completecustomseat/back/support study;notwholehouseinstallation",
+  "source": "design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
+  "source_sha256": "94661776fe34a45b73b540765ca6391a63e34a0940b5b84d461abd8b4657cd76",
+  "references": [
+    {
+      "source": "ownerMuJiaMuYicatalogPDFp4",
+      "role": "1020wholewoodframesilhouetteandseat/backrelationship",
+      "totalheight_mm": 820,
+      "SKU_selected": false
+    },
+    {
+      "source": "ownerMuJiaMuYicatalogPDFp8",
+      "role": "whiteash/foam/linen-cotton/feather+fiberconstruction;1006and802",
+      "SKU_selected": false
+    },
+    {
+      "source": "selectedlivingAfaithfulVIEW01",
+      "role": "appearanceonly,crown/wrinkle/seam/woodfamily;nodimensionauthority"
+    },
+    {
+      "url": "https://www.blenderguru.com/posts/couch-william",
+      "role": "macroform,localfinishingandseamsworkflow"
+    },
+    {
+      "url": "https://blender.stackexchange.com/questions/338581/best-workflow-to-create-creases-folds-on-chair",
+      "role": "localizedheight-alphascultpingmethod;source/licensenotborrowed"
+    }
+  ],
+  "dimensions_status": "documentedcustomtrial;notexactcatalogSKUorverifiedmanufacture",
+  "seat_design_mm": {
+    "width": 1025,
+    "depth": 891,
+    "core_height": 145,
+    "boxing_height": 142,
+    "base_z": 285,
+    "crown_trial_peak_z": 490
+  },
+  "back_design_mm": {
+    "width": 1027,
+    "panel_height": 365,
+    "edge_boxing_depth": 79,
+    "central_loft_depth": 243
+  },
+  "old_house_sofa_height_mm": 700,
+  "fit_policy": "reportactualtrialheightconflict;dontcompresslofttooldplaceholder;dontwritebackhouse",
+  "wood": "nativeV5unchanged",
+  "cloth": "nativeV5rough_linen4Kunchangedforcontrolledformcomparison",
+  "sculpt_execution": "nativeassetactivationworks;headlessbrush_strokeSIGSEGV;referenceanchoredstaticsurfaceeditingfallbackrecorded",
+  "camera_views": [
+    "front",
+    "side",
+    "three_quarter"
+  ],
+  "gray_material_first": true,
+  "no_whole_house_propagation": true,
+  "image2_requests": 0,
+  "actual": {
+    "stage": "detail",
+    "source_sha256": "94661776fe34a45b73b540765ca6391a63e34a0940b5b84d461abd8b4657cd76",
+    "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v6/SOFA_SEAT_BACK_DETAIL_V6.blend",
+    "output_sha256": "06150245b3fee8442a530aab9fd82766f152093159251bb8d849efb4372f367c",
+    "pair_bounds_m": [
+      [
+        -0.5176079869270325,
+        -0.4490639865398407,
+        0.2849999964237213
+      ],
+      [
+        0.5176079869270325,
+        0.5979705452919006,
+        0.8137471675872803
+      ]
+    ],
+    "seat_bounds_m": [
+      [
+        -0.5166000127792358,
+        -0.4490639865398407,
+        0.2849999964237213
+      ],
+      [
+        0.5166000127792358,
+        0.4490639865398407,
+        0.4905456602573395
+      ]
+    ],
+    "back_bounds_m": [
+      [
+        -0.5176079869270325,
+        0.3279590606689453,
+        0.4403681755065918
+      ],
+      [
+        0.5176079869270325,
+        0.5979705452919006,
+        0.8137471675872803
+      ]
+    ],
+    "seat_back_support_shift_mm": 19.22597126960754,
+    "seat_back_minimum_vertex_support_gap_mm": 0.8,
+    "back_rail_maximum_soft_compression_mm": 36.47904443740846,
+    "old_whole_sofa_height_m": 0.7,
+    "trial_height_conflict_mm": 113.74716758728032,
+    "wood_source": "V5 unchanged native material",
+    "fabric_source": "V5 unchanged native4Klinen",
+    "method": "panel/crownedfill/boxing construction + reference-localized static crease edits;not nativebrush",
+    "native_brush_probe": "assetactivated;headless sculpt brush_stroke crashedSIGSEGV;no successfulstrokeclaim",
+    "custom_dimensions_status": "trial proportions informed bycatalog/selectedA;not exactchosenSKU/fabrication",
+    "model_writeback": false,
+    "whole_house_propagation": false
+  },
+  "acceptance": {
+    "owner_accepted": false,
+    "numerical_checks_separate_from_visual": true,
+    "house_fit_unresolved": true
+  }
+}

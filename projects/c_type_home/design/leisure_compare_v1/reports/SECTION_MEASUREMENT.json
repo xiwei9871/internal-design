@@ -1,0 +1,48 @@
+{
+  "A": {
+    "section_y": 5.55,
+    "breaks": [
+      {
+        "x": 5.1,
+        "z_from": 0,
+        "z_to": 0.15
+      },
+      {
+        "x": 5.4,
+        "z_from": 0.15,
+        "z_to": 0.3
+      },
+      {
+        "x": 5.7,
+        "z_from": 0.3,
+        "z_to": 0.45
+      }
+    ],
+    "rise_mm": 150,
+    "sampled_step_m": 0.002,
+    "known_going_mm": 300
+  },
+  "B": {
+    "section_y": 5.55,
+    "breaks": [
+      {
+        "x": 6.3,
+        "z_from": 0,
+        "z_to": 0.15
+      },
+      {
+        "x": 6.6,
+        "z_from": 0.15,
+        "z_to": 0.3
+      },
+      {
+        "x": 6.9,
+        "z_from": 0.3,
+        "z_to": 0.45
+      }
+    ],
+    "rise_mm": 150,
+    "sampled_step_m": 0.002,
+    "known_going_mm": 300
+  }
+}

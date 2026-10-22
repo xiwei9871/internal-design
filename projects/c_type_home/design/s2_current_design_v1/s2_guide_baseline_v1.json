@@ -1,0 +1,1323 @@
+{
+  "schema": "s2-guide-fidelity-report-v1",
+  "status": "DRAFT_HUMAN_REVIEW",
+  "fidelity_gate": "PASS",
+  "source_fcstd": "/Users/xiwei/interior_design/projects/c_type_home/cad/freecad_import/世纪欣园FF_freecad_WORKING.FCStd",
+  "source_fcstd_sha256": "212362935debb66109681d9b9a8f4edee9dd67bc8d874708815bb4d526d6f741",
+  "layout_policy": "HUMAN_LAYOUT_INTENT_LOCKED",
+  "automatic_rotation_allowed": false,
+  "automatic_large_relayout_allowed": false,
+  "primary_guide_count": 38,
+  "displacement_tolerance_mm": 0.0,
+  "rotation_tolerance_deg": 0.0,
+  "max_displacement_mm": 0.0,
+  "max_rotation_delta_deg": 0.0,
+  "object_checks": [
+    {
+      "source_object_name": "Rectangle001",
+      "source_label": "双人位沙发",
+      "semantic_id": "SOFA_2S",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "guide_bbox_task01_mm": [
+        4285.0,
+        11872.531,
+        6227.5,
+        12619.688
+      ],
+      "reconstructed_bbox_task01_mm": [
+        4285.0,
+        11872.531,
+        6227.5,
+        12619.688
+      ],
+      "guide_center_task01_mm": [
+        5256.25,
+        12246.1095
+      ],
+      "reconstructed_center_task01_mm": [
+        5256.25,
+        12246.1095
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Circle",
+      "source_label": "角几",
+      "semantic_id": "SIDE_TABLE",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "guide_bbox_task01_mm": [
+        3387.378,
+        11896.44,
+        4036.872,
+        12545.935
+      ],
+      "reconstructed_bbox_task01_mm": [
+        3387.378,
+        11896.44,
+        4036.872,
+        12545.935
+      ],
+      "guide_center_task01_mm": [
+        3712.125,
+        12221.1875
+      ],
+      "reconstructed_center_task01_mm": [
+        3712.125,
+        12221.1875
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "SQUARE",
+      "reconstructed_orientation": "SQUARE",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle002",
+      "source_label": "茶几",
+      "semantic_id": "COFFEE_TABLE_OPTIONAL",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "guide_bbox_task01_mm": [
+        4932.5,
+        9481.719,
+        5580.0,
+        10951.062
+      ],
+      "reconstructed_bbox_task01_mm": [
+        4932.5,
+        9481.719,
+        5580.0,
+        10951.062
+      ],
+      "guide_center_task01_mm": [
+        5256.25,
+        10216.3905
+      ],
+      "reconstructed_center_task01_mm": [
+        5256.25,
+        10216.3905
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle003",
+      "source_label": "lounge",
+      "semantic_id": "LOUNGE_CHAIR",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "guide_bbox_task01_mm": [
+        3562.75,
+        7588.938,
+        5779.25,
+        8211.562
+      ],
+      "reconstructed_bbox_task01_mm": [
+        3562.75,
+        7588.938,
+        5779.25,
+        8211.562
+      ],
+      "guide_center_task01_mm": [
+        4671.0,
+        7900.25
+      ],
+      "reconstructed_center_task01_mm": [
+        4671.0,
+        7900.25
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle004",
+      "source_label": "电视柜（或者悬浮电视墙）",
+      "semantic_id": "MEDIA_EDGE",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "guide_bbox_task01_mm": [
+        7398.0,
+        8634.938,
+        7696.875,
+        11523.844
+      ],
+      "reconstructed_bbox_task01_mm": [
+        7398.0,
+        8634.938,
+        7696.875,
+        11523.844
+      ],
+      "guide_center_task01_mm": [
+        7547.4375,
+        10079.391
+      ],
+      "reconstructed_center_task01_mm": [
+        7547.4375,
+        10079.391
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle006",
+      "source_label": "斜坡（轮椅用",
+      "semantic_id": "ACCESSIBILITY_RAMP",
+      "functional_zone": "transition",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        5779.25,
+        4749.844,
+        7846.25,
+        5422.281
+      ],
+      "reconstructed_bbox_task01_mm": [
+        5779.25,
+        4749.844,
+        7846.25,
+        5422.281
+      ],
+      "guide_center_task01_mm": [
+        6812.75,
+        5086.0625
+      ],
+      "reconstructed_center_task01_mm": [
+        6812.75,
+        5086.0625
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle007",
+      "source_label": "客卫（湿区）",
+      "semantic_id": "GUEST_BATH_WET_ZONE",
+      "functional_zone": "guest_bath",
+      "historical_polygon_id": "R-BATH-P",
+      "guide_bbox_task01_mm": [
+        8045.5,
+        9880.188,
+        9689.25,
+        10876.344
+      ],
+      "reconstructed_bbox_task01_mm": [
+        8045.5,
+        9880.188,
+        9689.25,
+        10876.344
+      ],
+      "guide_center_task01_mm": [
+        8867.375,
+        10378.266
+      ],
+      "reconstructed_center_task01_mm": [
+        8867.375,
+        10378.266
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle008",
+      "source_label": "客卫马桶",
+      "semantic_id": "WC_GUEST",
+      "functional_zone": "guest_bath",
+      "historical_polygon_id": "R-BATH-P",
+      "guide_bbox_task01_mm": [
+        8020.625,
+        9332.281,
+        8767.75,
+        9656.031
+      ],
+      "reconstructed_bbox_task01_mm": [
+        8020.625,
+        9332.281,
+        8767.75,
+        9656.031
+      ],
+      "guide_center_task01_mm": [
+        8394.1875,
+        9494.156
+      ],
+      "reconstructed_center_task01_mm": [
+        8394.1875,
+        9494.156
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle011",
+      "source_label": "次主卧床头占位",
+      "semantic_id": "NIGHTSTAND_OWNER",
+      "functional_zone": "owner_bedroom",
+      "historical_polygon_id": "R-BED-S",
+      "guide_bbox_task01_mm": [
+        11183.5,
+        889.656,
+        11382.75,
+        3529.531
+      ],
+      "reconstructed_bbox_task01_mm": [
+        11183.5,
+        889.656,
+        11382.75,
+        3529.531
+      ],
+      "guide_center_task01_mm": [
+        11283.125,
+        2209.5935
+      ],
+      "reconstructed_center_task01_mm": [
+        11283.125,
+        2209.5935
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle012",
+      "source_label": "次主卧床",
+      "semantic_id": "BED_OWNER",
+      "functional_zone": "owner_bedroom",
+      "historical_polygon_id": "R-BED-S",
+      "guide_bbox_task01_mm": [
+        9066.625,
+        1537.156,
+        11166.625,
+        3037.156
+      ],
+      "reconstructed_bbox_task01_mm": [
+        9066.625,
+        1537.156,
+        11166.625,
+        3037.156
+      ],
+      "guide_center_task01_mm": [
+        10116.625,
+        2287.156
+      ],
+      "reconstructed_center_task01_mm": [
+        10116.625,
+        2287.156
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle013",
+      "source_label": "主卧床",
+      "semantic_id": "BED_MOTHER",
+      "functional_zone": "mother_bedroom",
+      "historical_polygon_id": "R-MASTER",
+      "guide_bbox_task01_mm": [
+        13026.375,
+        1562.062,
+        15126.375,
+        3062.062
+      ],
+      "reconstructed_bbox_task01_mm": [
+        13026.375,
+        1562.062,
+        15126.375,
+        3062.062
+      ],
+      "guide_center_task01_mm": [
+        14076.375,
+        2312.062
+      ],
+      "reconstructed_center_task01_mm": [
+        14076.375,
+        2312.062
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle014",
+      "source_label": "主卧床头柜占位",
+      "semantic_id": "NIGHTSTAND_MOTHER",
+      "functional_zone": "mother_bedroom",
+      "historical_polygon_id": "R-MASTER",
+      "guide_bbox_task01_mm": [
+        15093.375,
+        1113.781,
+        15243.375,
+        3613.781
+      ],
+      "reconstructed_bbox_task01_mm": [
+        15093.375,
+        1113.781,
+        15243.375,
+        3613.781
+      ],
+      "guide_center_task01_mm": [
+        15168.375,
+        2363.781
+      ],
+      "reconstructed_center_task01_mm": [
+        15168.375,
+        2363.781
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle015",
+      "source_label": "主卧衣柜",
+      "semantic_id": "WARDROBE_MOTHER",
+      "functional_zone": "mother_bedroom",
+      "historical_polygon_id": "R-MASTER",
+      "guide_bbox_task01_mm": [
+        13175.875,
+        3878.219,
+        15275.875,
+        4478.219
+      ],
+      "reconstructed_bbox_task01_mm": [
+        13175.875,
+        3878.219,
+        15275.875,
+        4478.219
+      ],
+      "guide_center_task01_mm": [
+        14225.875,
+        4178.219
+      ],
+      "reconstructed_center_task01_mm": [
+        14225.875,
+        4178.219
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle017",
+      "source_label": "次卧小床1.2",
+      "semantic_id": "BED_GUEST_1200",
+      "functional_zone": "guest_room",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        10884.625,
+        8062.156,
+        12684.625,
+        9262.156
+      ],
+      "reconstructed_bbox_task01_mm": [
+        10884.625,
+        8062.156,
+        12684.625,
+        9262.156
+      ],
+      "guide_center_task01_mm": [
+        11784.625,
+        8662.156
+      ],
+      "reconstructed_center_task01_mm": [
+        11784.625,
+        8662.156
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle018",
+      "source_label": "床背板+窄书桌占位",
+      "semantic_id": "STUDY_DESK_BACKBOARD",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        12652.875,
+        8012.344,
+        12852.125,
+        10851.469
+      ],
+      "reconstructed_bbox_task01_mm": [
+        12652.875,
+        8012.344,
+        12852.125,
+        10851.469
+      ],
+      "guide_center_task01_mm": [
+        12752.5,
+        9431.9065
+      ],
+      "reconstructed_center_task01_mm": [
+        12752.5,
+        9431.9065
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle019",
+      "source_label": "次卧衣柜",
+      "semantic_id": "WARDROBE_GUEST",
+      "functional_zone": "guest_room",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        9938.375,
+        8859.094,
+        10538.375,
+        10859.094
+      ],
+      "reconstructed_bbox_task01_mm": [
+        9938.375,
+        8859.094,
+        10538.375,
+        10859.094
+      ],
+      "guide_center_task01_mm": [
+        10238.375,
+        9859.094
+      ],
+      "reconstructed_center_task01_mm": [
+        10238.375,
+        9859.094
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle021",
+      "source_label": "次主卧衣柜",
+      "semantic_id": "WARDROBE_OWNER",
+      "functional_zone": "owner_bedroom",
+      "historical_polygon_id": "R-BED-S",
+      "guide_bbox_task01_mm": [
+        9863.625,
+        3853.281,
+        11363.625,
+        4453.281
+      ],
+      "reconstructed_bbox_task01_mm": [
+        9863.625,
+        3853.281,
+        11363.625,
+        4453.281
+      ],
+      "guide_center_task01_mm": [
+        10613.625,
+        4153.281
+      ],
+      "reconstructed_center_task01_mm": [
+        10613.625,
+        4153.281
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle022",
+      "source_label": "主卧电视柜",
+      "semantic_id": "MEDIA_EDGE_MOTHER",
+      "functional_zone": "mother_bedroom",
+      "historical_polygon_id": "R-MASTER",
+      "guide_bbox_task01_mm": [
+        11606.875,
+        1337.938,
+        12106.875,
+        3337.938
+      ],
+      "reconstructed_bbox_task01_mm": [
+        11606.875,
+        1337.938,
+        12106.875,
+        3337.938
+      ],
+      "guide_center_task01_mm": [
+        11856.875,
+        2337.938
+      ],
+      "reconstructed_center_task01_mm": [
+        11856.875,
+        2337.938
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle023",
+      "source_label": "次主卧电视柜",
+      "semantic_id": "MEDIA_EDGE_OWNER",
+      "functional_zone": "owner_bedroom",
+      "historical_polygon_id": "R-BED-S",
+      "guide_bbox_task01_mm": [
+        8070.375,
+        1337.938,
+        8570.375,
+        3337.938
+      ],
+      "reconstructed_bbox_task01_mm": [
+        8070.375,
+        1337.938,
+        8570.375,
+        3337.938
+      ],
+      "guide_center_task01_mm": [
+        8320.375,
+        2337.938
+      ],
+      "reconstructed_center_task01_mm": [
+        8320.375,
+        2337.938
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle024",
+      "source_label": "书柜",
+      "semantic_id": "BOOKCASE_STUDY_TALL",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        15691.125,
+        6642.594,
+        16141.125,
+        10842.594
+      ],
+      "reconstructed_bbox_task01_mm": [
+        15691.125,
+        6642.594,
+        16141.125,
+        10842.594
+      ],
+      "guide_center_task01_mm": [
+        15916.125,
+        8742.594
+      ],
+      "reconstructed_center_task01_mm": [
+        15916.125,
+        8742.594
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle025",
+      "source_label": "书柜001",
+      "semantic_id": "BOOKCASE_STUDY_LOW",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        14097.375,
+        6642.625,
+        15697.375,
+        7092.625
+      ],
+      "reconstructed_bbox_task01_mm": [
+        14097.375,
+        6642.625,
+        15697.375,
+        7092.625
+      ],
+      "guide_center_task01_mm": [
+        14897.375,
+        6867.625
+      ],
+      "reconstructed_center_task01_mm": [
+        14897.375,
+        6867.625
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle026",
+      "source_label": "茶台",
+      "semantic_id": "TEA_TABLE_STUDY",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        14271.625,
+        7389.719,
+        15071.625,
+        9589.719
+      ],
+      "reconstructed_bbox_task01_mm": [
+        14271.625,
+        7389.719,
+        15071.625,
+        9589.719
+      ],
+      "guide_center_task01_mm": [
+        14671.625,
+        8489.719
+      ],
+      "reconstructed_center_task01_mm": [
+        14671.625,
+        8489.719
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Circle007",
+      "source_label": "主人椅",
+      "semantic_id": "STUDY_CHAIR",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        15217.25,
+        8260.594,
+        15617.25,
+        8660.594
+      ],
+      "reconstructed_bbox_task01_mm": [
+        15217.25,
+        8260.594,
+        15617.25,
+        8660.594
+      ],
+      "guide_center_task01_mm": [
+        15417.25,
+        8460.594
+      ],
+      "reconstructed_center_task01_mm": [
+        15417.25,
+        8460.594
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "SQUARE",
+      "reconstructed_orientation": "SQUARE",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle027",
+      "source_label": "条凳",
+      "semantic_id": "STUDY_BENCH",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        13798.5,
+        7564.031,
+        14098.5,
+        9164.031
+      ],
+      "reconstructed_bbox_task01_mm": [
+        13798.5,
+        7564.031,
+        14098.5,
+        9164.031
+      ],
+      "guide_center_task01_mm": [
+        13948.5,
+        8364.031
+      ],
+      "reconstructed_center_task01_mm": [
+        13948.5,
+        8364.031
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Circle008",
+      "source_label": "凳子",
+      "semantic_id": "STUDY_STOOL",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        14495.0,
+        9804.688,
+        14895.0,
+        10204.688
+      ],
+      "reconstructed_bbox_task01_mm": [
+        14495.0,
+        9804.688,
+        14895.0,
+        10204.688
+      ],
+      "guide_center_task01_mm": [
+        14695.0,
+        10004.688
+      ],
+      "reconstructed_center_task01_mm": [
+        14695.0,
+        10004.688
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "SQUARE",
+      "reconstructed_orientation": "SQUARE",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Circle009",
+      "source_label": "次卧凳子",
+      "semantic_id": "GUEST_STOOL",
+      "functional_zone": "guest_room",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        12054.375,
+        9979.031,
+        12454.375,
+        10379.031
+      ],
+      "reconstructed_bbox_task01_mm": [
+        12054.375,
+        9979.031,
+        12454.375,
+        10379.031
+      ],
+      "guide_center_task01_mm": [
+        12254.375,
+        10179.031
+      ],
+      "reconstructed_center_task01_mm": [
+        12254.375,
+        10179.031
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "SQUARE",
+      "reconstructed_orientation": "SQUARE",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Circle010",
+      "source_label": "餐椅",
+      "semantic_id": "DINING_CHAIR_1",
+      "functional_zone": "dining",
+      "historical_polygon_id": "R-DINING",
+      "guide_bbox_task01_mm": [
+        3088.75,
+        3977.062,
+        3488.75,
+        4377.062
+      ],
+      "reconstructed_bbox_task01_mm": [
+        3088.75,
+        3977.062,
+        3488.75,
+        4377.062
+      ],
+      "guide_center_task01_mm": [
+        3288.75,
+        4177.062
+      ],
+      "reconstructed_center_task01_mm": [
+        3288.75,
+        4177.062
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "SQUARE",
+      "reconstructed_orientation": "SQUARE",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Circle011",
+      "source_label": "餐椅003",
+      "semantic_id": "DINING_CHAIR_2",
+      "functional_zone": "dining",
+      "historical_polygon_id": "R-DINING",
+      "guide_bbox_task01_mm": [
+        3885.75,
+        3977.062,
+        4285.75,
+        4377.062
+      ],
+      "reconstructed_bbox_task01_mm": [
+        3885.75,
+        3977.062,
+        4285.75,
+        4377.062
+      ],
+      "guide_center_task01_mm": [
+        4085.75,
+        4177.062
+      ],
+      "reconstructed_center_task01_mm": [
+        4085.75,
+        4177.062
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "SQUARE",
+      "reconstructed_orientation": "SQUARE",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle028",
+      "source_label": "餐桌",
+      "semantic_id": "DINING_TABLE",
+      "functional_zone": "dining",
+      "historical_polygon_id": "R-DINING",
+      "guide_bbox_task01_mm": [
+        2940.125,
+        3155.969,
+        4540.125,
+        3855.969
+      ],
+      "reconstructed_bbox_task01_mm": [
+        2940.125,
+        3155.969,
+        4540.125,
+        3855.969
+      ],
+      "guide_center_task01_mm": [
+        3740.125,
+        3505.969
+      ],
+      "reconstructed_center_task01_mm": [
+        3740.125,
+        3505.969
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Circle013",
+      "source_label": "餐椅004",
+      "semantic_id": "DINING_CHAIR_4",
+      "functional_zone": "dining",
+      "historical_polygon_id": "R-DINING",
+      "guide_bbox_task01_mm": [
+        3910.625,
+        2557.5,
+        4310.625,
+        2957.5
+      ],
+      "reconstructed_bbox_task01_mm": [
+        3910.625,
+        2557.5,
+        4310.625,
+        2957.5
+      ],
+      "guide_center_task01_mm": [
+        4110.625,
+        2757.5
+      ],
+      "reconstructed_center_task01_mm": [
+        4110.625,
+        2757.5
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "SQUARE",
+      "reconstructed_orientation": "SQUARE",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle029",
+      "source_label": "现有橱柜",
+      "semantic_id": "KITCHEN_KEEP",
+      "functional_zone": "kitchen",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        1520.5,
+        740.219,
+        2020.5,
+        2240.219
+      ],
+      "reconstructed_bbox_task01_mm": [
+        1520.5,
+        740.219,
+        2020.5,
+        2240.219
+      ],
+      "guide_center_task01_mm": [
+        1770.5,
+        1490.219
+      ],
+      "reconstructed_center_task01_mm": [
+        1770.5,
+        1490.219
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Extrusion",
+      "source_label": "三人位沙发",
+      "semantic_id": "SOFA_3S",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "guide_bbox_task01_mm": [
+        3338.5,
+        8485.531,
+        4185.25,
+        11648.406
+      ],
+      "reconstructed_bbox_task01_mm": [
+        3338.5,
+        8485.531,
+        4185.25,
+        11648.406
+      ],
+      "guide_center_task01_mm": [
+        3761.875,
+        10066.9685
+      ],
+      "reconstructed_center_task01_mm": [
+        3761.875,
+        10066.9685
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle030",
+      "source_label": "客卫洗手盆柜体",
+      "semantic_id": "VANITY_GUEST",
+      "functional_zone": "guest_bath",
+      "historical_polygon_id": "R-BATH-P",
+      "guide_bbox_task01_mm": [
+        8008.25,
+        8012.344,
+        8608.25,
+        9212.344
+      ],
+      "reconstructed_bbox_task01_mm": [
+        8008.25,
+        8012.344,
+        8608.25,
+        9212.344
+      ],
+      "guide_center_task01_mm": [
+        8308.25,
+        8612.344
+      ],
+      "reconstructed_center_task01_mm": [
+        8308.25,
+        8612.344
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle031",
+      "source_label": "鞋柜",
+      "semantic_id": "ENTRY_SHOE_STORAGE",
+      "functional_zone": "entry",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        2952.5,
+        4700.031,
+        3252.5,
+        5422.281
+      ],
+      "reconstructed_bbox_task01_mm": [
+        2952.5,
+        4700.031,
+        3252.5,
+        5422.281
+      ],
+      "guide_center_task01_mm": [
+        3102.5,
+        5061.156
+      ],
+      "reconstructed_center_task01_mm": [
+        3102.5,
+        5061.156
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle032",
+      "source_label": "橱柜",
+      "semantic_id": "KITCHEN_AUX_STORAGE",
+      "functional_zone": "kitchen",
+      "historical_polygon_id": null,
+      "guide_bbox_task01_mm": [
+        4322.375,
+        715.344,
+        5522.375,
+        1215.344
+      ],
+      "reconstructed_bbox_task01_mm": [
+        4322.375,
+        715.344,
+        5522.375,
+        1215.344
+      ],
+      "guide_center_task01_mm": [
+        4922.375,
+        965.344
+      ],
+      "reconstructed_center_task01_mm": [
+        4922.375,
+        965.344
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle033",
+      "source_label": "主卫湿区",
+      "semantic_id": "BATH_MOTHER_WET_ZONE",
+      "functional_zone": "mother_bathroom",
+      "historical_polygon_id": "R-BATH-M",
+      "guide_bbox_task01_mm": [
+        15205.625,
+        4774.75,
+        16205.625,
+        6343.75
+      ],
+      "reconstructed_bbox_task01_mm": [
+        15205.625,
+        4774.75,
+        16205.625,
+        6343.75
+      ],
+      "guide_center_task01_mm": [
+        15705.625,
+        5559.25
+      ],
+      "reconstructed_center_task01_mm": [
+        15705.625,
+        5559.25
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle034",
+      "source_label": "主卫马桶",
+      "semantic_id": "WC_MOTHER",
+      "functional_zone": "mother_bathroom",
+      "historical_polygon_id": "R-BATH-M",
+      "guide_bbox_task01_mm": [
+        14483.25,
+        5721.125,
+        14983.25,
+        6371.125
+      ],
+      "reconstructed_bbox_task01_mm": [
+        14483.25,
+        5721.125,
+        14983.25,
+        6371.125
+      ],
+      "guide_center_task01_mm": [
+        14733.25,
+        6046.125
+      ],
+      "reconstructed_center_task01_mm": [
+        14733.25,
+        6046.125
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_Y",
+      "reconstructed_orientation": "LONG_AXIS_Y",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    },
+    {
+      "source_object_name": "Rectangle035",
+      "source_label": "主卫洗手盆和柜体",
+      "semantic_id": "VANITY_MOTHER",
+      "functional_zone": "mother_bathroom",
+      "historical_polygon_id": "R-BATH-M",
+      "guide_bbox_task01_mm": [
+        13138.5,
+        5845.688,
+        14338.5,
+        6345.688
+      ],
+      "reconstructed_bbox_task01_mm": [
+        13138.5,
+        5845.688,
+        14338.5,
+        6345.688
+      ],
+      "guide_center_task01_mm": [
+        13738.5,
+        6095.688
+      ],
+      "reconstructed_center_task01_mm": [
+        13738.5,
+        6095.688
+      ],
+      "displacement_mm": 0.0,
+      "guide_orientation": "LONG_AXIS_X",
+      "reconstructed_orientation": "LONG_AXIS_X",
+      "rotation_delta_deg": 0.0,
+      "wall_relationship": "PRESERVED_BY_EXACT_GUIDE_REPLAY",
+      "layout_intent": "LOCKED",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "outputs": {
+    "png": "/Users/xiwei/interior_design/projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V1.png",
+    "pdf": "/Users/xiwei/interior_design/projects/c_type_home/design/s2_current_design_v1/S2_GUIDE_BASELINE_V1.pdf"
+  },
+  "rejected_outputs_preserved": [
+    "S2_CURRENT_DESIGN_V1_REJECTED.png",
+    "S2_CURRENT_DESIGN_V1_REJECTED.pdf",
+    "S2_CURRENT_DESIGN_V1_REJECTED.design_model.json",
+    "S2_CURRENT_DESIGN_V1_REJECTED.dimension_register.json",
+    "S2_CURRENT_DESIGN_V1_REJECTED.circulation_report.json",
+    "S2_CURRENT_DESIGN_V1_REJECTED_design_audit.md"
+  ],
+  "stop_gate": "HUMAN_REVIEW_BEFORE_NORMALIZATION"
+}

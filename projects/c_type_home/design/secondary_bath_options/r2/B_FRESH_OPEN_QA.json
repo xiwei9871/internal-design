@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source_states_checked": 1244,
+  "kitchen_objects_unchanged": true,
+  "base_walls_unchanged": true,
+  "topology": {
+    "vertices": 30,
+    "faces": 36,
+    "boundary": 0,
+    "nonmanifold": 0
+  },
+  "model_sha256": "3602cc657be91bf7210d8cf58d320c833de07166de0bdea9562209ca56a4dedd"
+}

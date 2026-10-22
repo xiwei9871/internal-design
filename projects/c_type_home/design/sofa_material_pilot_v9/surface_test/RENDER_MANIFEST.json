@@ -1,0 +1,85 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/render_diagnosis/V7_SAME_MESH_DIRECTIONAL_LIGHT_V8.blend",
+  "source_sha256": "cbed4cc4b34c9ebe5fc1bf8a388a860d620493b7f8bd609770499b967c37862f",
+  "candidate": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_material_pilot_v9/surface_test/SOFA_SURFACE_FIBER_TEST_V9.blend",
+  "candidate_sha256": "06c26fdf852cb14bd3c3069d8fc4c354fde0c9096bdf840bd63192afa3500dd4",
+  "blender": "5.2.1 LTS",
+  "engine": "CYCLES",
+  "device": "METAL",
+  "samples": 64,
+  "denoising": "OIDN GPU High Accurate",
+  "images": [
+    {
+      "case": "A_original",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/render_diagnosis/directional_fabric_V6_THREE_QUARTER.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "reused": true,
+      "seconds": 0
+    },
+    {
+      "case": "A_original",
+      "camera": "V9_FABRIC_CLOSEUP",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_material_pilot_v9/surface_test/A_original_V9_FABRIC_CLOSEUP.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "reused": false,
+      "seconds": 22.79
+    },
+    {
+      "case": "B_microfiber",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_material_pilot_v9/surface_test/B_microfiber_V6_THREE_QUARTER.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "reused": false,
+      "seconds": 12.81
+    },
+    {
+      "case": "B_microfiber",
+      "camera": "V9_FABRIC_CLOSEUP",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_material_pilot_v9/surface_test/B_microfiber_V9_FABRIC_CLOSEUP.png",
+      "size": [
+        1500,
+        1200
+      ],
+      "reused": false,
+      "seconds": 19.93
+    }
+  ],
+  "material_parameters": [
+    {
+      "case": "A_original",
+      "material": "V5_NATURAL_FLAX_COTTON",
+      "sheen_weight": 0.20000000298023224,
+      "sheen_roughness": 0.5,
+      "SSS": 0,
+      "coat": 0,
+      "transmission": 0
+    },
+    {
+      "case": "B_microfiber",
+      "material": "V9_MICROFIBER_SURFACE_TEST",
+      "sheen_weight": 0.5,
+      "sheen_roughness": 0.800000011920929,
+      "SSS": 0,
+      "coat": 0,
+      "transmission": 0
+    }
+  ],
+  "allowed_material_changes": [
+    "Sheen Weight",
+    "Sheen Roughness"
+  ],
+  "maps_color_roughness_normal_ior_uv_unchanged": true,
+  "mesh_light_exposure_changes": 0,
+  "filling_mechanics_simulated": false,
+  "owner_accepted": false
+}

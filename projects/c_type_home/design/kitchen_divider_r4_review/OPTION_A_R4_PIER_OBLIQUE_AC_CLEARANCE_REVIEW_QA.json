@@ -1,0 +1,100 @@
+{
+  "status": "HUMAN_REVIEW",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+  "source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "corrected_source": "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_divider_r4_review/OPTION_A_R4_PIER_OBLIQUE_AC_CLEARANCE_REVIEW.blend",
+  "corrected_sha256": "e3653251b6f65233168fc50fc5ba44591a288b96a4bbdd4175aa10632866039f",
+  "native_id": "KITCHEN_DIVIDER_PIER_SITE_REVIEW",
+  "bounds_m": [
+    [
+      5.522375106811523,
+      0.7001999616622925,
+      0.0
+    ],
+    [
+      5.899999618530273,
+      1.4300000667572021,
+      2.799999952316284
+    ]
+  ],
+  "added_dimensions_mm": [
+    377.62451171875,
+    729.8001050949097,
+    2799.999952316284
+  ],
+  "total_depth_from_existing_back_mm": 1429.8000633716583,
+  "dimension_authority": "Inherited model anchors plus user-confirmed alignment; exact site fabrication dimensions require measurement.",
+  "source_void_before": true,
+  "top_probes": [
+    {
+      "xy": [
+        5.597900009155273,
+        0.8461599826812745
+      ],
+      "top_z": 2.799999713897705
+    },
+    {
+      "xy": [
+        5.711187362670898,
+        1.0651000142097473
+      ],
+      "top_z": 2.799999952316284
+    },
+    {
+      "xy": [
+        5.824474716186524,
+        1.2840400457382204
+      ],
+      "top_z": 2.799999952316284
+    }
+  ],
+  "closed_solid": true,
+  "volume_m3": 0.7716531302073459,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "inherited_object_count": 1544,
+  "inherited_objects_unchanged_except_ac_pose": true,
+  "authorized_ac_pose_names": [
+    "B11_K-UTILITY-WALL-AC",
+    "B11_K-UTILITY_AC_BODY",
+    "B11_K-UTILITY_AC_FACE",
+    "B11_K-UTILITY_AC_LOUVER_0",
+    "B11_K-UTILITY_AC_LOUVER_1",
+    "B11_K-UTILITY_AC_LOUVER_2"
+  ],
+  "ac_yaw_degrees_review": 60,
+  "ac_original_center_m": [
+    5.22237491607666,
+    0.8253437280654907,
+    2.2899999618530273
+  ],
+  "ac_clearance_shift_y_review_m": 0.2776057815551758,
+  "ac_window_surface_intersections": [],
+  "protected_cabinet_aabb_overlaps": [],
+  "frozen_files_unchanged": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": {
+      "sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "size": 1584568,
+      "mtime_ns": "1790946023854530466"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_APPROVED_AS_IS_V1.blend": {
+      "sha256": "28b289a38dbabafbc312e18b3057f232c51c44c07735b1cfcbd39aea39fd0536",
+      "size": 820968,
+      "mtime_ns": "1790851920866005988"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_DELIVERY_MANIFEST.json": {
+      "sha256": "913dde0a9723567917ce109c9d305e282f4bec38b601713853682596d7a86824",
+      "size": 1528,
+      "mtime_ns": "1790946877342285248"
+    },
+    "/Users/xiwei/interior_design/projects/c_type_home/design/kitchen_frozen_v1/KITCHEN_FREEZE_MANIFEST.json": {
+      "sha256": "25275a227e0ef9093727034f8802934c9d0d3b6b0351137fba6476ba181c72df",
+      "size": 19203,
+      "mtime_ns": "1790852612374550735"
+    }
+  },
+  "schematic_ac_intersections": [],
+  "ac_policy": "User requested oblique site-photo installation; +60deg review yaw plus interior window-clearance placement, mesh dimensions unchanged. Exact angle/SKU requires site review.",
+  "width_rule": "CABINET_BOUNDARY_TO_ISLAND_CONNECTOR",
+  "depth_rule": "ISLAND_NOTCH_NOT_CABINET_FRONT"
+}

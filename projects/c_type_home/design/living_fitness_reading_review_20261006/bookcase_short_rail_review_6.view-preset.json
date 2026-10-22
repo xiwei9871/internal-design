@@ -1,0 +1,80 @@
+{
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.026464257027775006,
+  "far": 2646.4257027775006,
+  "position": [
+    -1.6149500674351014,
+    9.224124519980936,
+    -12.85723019066353
+  ],
+  "quaternion": [
+    0.20273875124503424,
+    0.7807244104910234,
+    0.31746932004779166,
+    -0.49857760121714356
+  ],
+  "projection_matrix": [
+    2.381928388433485,
+    0,
+    0,
+    0,
+    0,
+    2.4142135623730954,
+    0,
+    0,
+    0,
+    0,
+    -1.000020000200002,
+    -1,
+    0,
+    0,
+    -0.05292904334598348,
+    0
+  ],
+  "orbit_target": [
+    5.916553065763939,
+    1.1351293120008175,
+    -9.36526931344355
+  ],
+  "viewport": {
+    "width": 673,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "bookcase_short_rail_review_6",
+  "preview_uri": "bookcase_short_rail_review_6.png",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_revision": "r4-bookcase-short-rail-review-6",
+  "source_sha256": "e428fbedc2aeaf6f35d530c4dd33bbb61057a70eaede4d99683f376883360e05",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_BOOKCASE_SHORT_RAIL_REVIEW_6.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "16-bookcase-short-rail-review",
+    "sha256": "41adf4416fecca0b6010a5ae9f46084c88305156c68d9fce27a4cc65d15c3c63",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.review6.json"
+  },
+  "source_camera": {
+    "position": [
+      -1.6149500674351014,
+      12.85723019066353,
+      9.224124519980936
+    ],
+    "quaternion": [
+      -0.20918965695370817,
+      0.32757081587159653,
+      0.7765402339205483,
+      -0.4959055485830208
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": []
+}

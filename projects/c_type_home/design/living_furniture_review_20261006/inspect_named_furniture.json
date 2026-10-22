@@ -1,0 +1,400 @@
+[
+  {
+    "name": "B11_Circle_CATALOG_00_00",
+    "parent": "B11_Circle",
+    "root": "B11_Circle",
+    "assembly": [
+      [
+        "B11_Circle",
+        "EMPTY",
+        true,
+        false
+      ],
+      [
+        "B11_Circle_CATALOG_00_00",
+        "MESH",
+        true,
+        false
+      ]
+    ],
+    "bounds": [
+      [
+        3.6742498874664307,
+        12.029062271118164,
+        0.0
+      ],
+      [
+        4.174249649047852,
+        12.529062271118164,
+        0.5
+      ]
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/bedside-table/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    },
+    "high_bounds": null
+  },
+  {
+    "name": "B11_Rectangle047_CATALOG_00_00",
+    "parent": "B11_Rectangle047",
+    "root": "B11_Rectangle047",
+    "assembly": [
+      [
+        "B11_Rectangle047",
+        "EMPTY",
+        true,
+        false
+      ],
+      [
+        "B11_Rectangle047_CATALOG_00_00",
+        "MESH",
+        true,
+        false
+      ]
+    ],
+    "bounds": [
+      [
+        4.571625232696533,
+        11.980218887329102,
+        0.0
+      ],
+      [
+        6.471624851226807,
+        12.830219268798828,
+        0.8500000238418579
+      ]
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/sofa/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    },
+    "high_bounds": [
+      [
+        4.571625232696533,
+        11.980218887329102,
+        0.6595511436462402
+      ],
+      [
+        6.471624851226807,
+        12.830219268798828,
+        0.8500000238418579
+      ]
+    ]
+  },
+  {
+    "name": "B11_Rectangle048_CATALOG_00_00",
+    "parent": "B11_Rectangle048",
+    "root": "B11_Rectangle048",
+    "assembly": [
+      [
+        "B11_Rectangle048",
+        "EMPTY",
+        true,
+        false
+      ],
+      [
+        "B11_Rectangle048_CATALOG_00_00",
+        "MESH",
+        true,
+        false
+      ]
+    ],
+    "bounds": [
+      [
+        3.9739997386932373,
+        7.796281814575195,
+        0.0
+      ],
+      [
+        5.673999786376953,
+        8.696281433105469,
+        0.800000011920929
+      ]
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/lounge-chair/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    },
+    "high_bounds": [
+      [
+        3.9739997386932373,
+        7.796281814575195,
+        0.7652714848518372
+      ],
+      [
+        4.087312698364258,
+        8.696281433105469,
+        0.800000011920929
+      ]
+    ]
+  },
+  {
+    "name": "B11_Rectangle046_CATALOG_00_00",
+    "parent": "B11_Rectangle046",
+    "root": "B11_Rectangle046",
+    "assembly": [
+      [
+        "B11_Rectangle046",
+        "EMPTY",
+        true,
+        false
+      ],
+      [
+        "B11_Rectangle046_CATALOG_00_00",
+        "MESH",
+        true,
+        false
+      ]
+    ],
+    "bounds": [
+      [
+        3.400951623916626,
+        9.215812683105469,
+        0.0
+      ],
+      [
+        4.301296234130859,
+        11.515811920166016,
+        0.8500000238418579
+      ]
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/sofa/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    },
+    "high_bounds": [
+      [
+        3.401124954223633,
+        9.215812683105469,
+        0.6595511436462402
+      ],
+      [
+        4.3011250495910645,
+        11.515811920166016,
+        0.8500000238418579
+      ]
+    ]
+  },
+  {
+    "name": "B11_Rectangle049_CATALOG_00_00",
+    "parent": "B11_Rectangle049",
+    "root": "B11_Rectangle049",
+    "assembly": [
+      [
+        "B11_Rectangle049",
+        "EMPTY",
+        true,
+        false
+      ],
+      [
+        "B11_Rectangle049_CATALOG_00_00",
+        "MESH",
+        true,
+        false
+      ]
+    ],
+    "bounds": [
+      [
+        5.0698747634887695,
+        9.863344192504883,
+        0.0
+      ],
+      [
+        5.619874954223633,
+        10.863344192504883,
+        0.3999999761581421
+      ]
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "properties": {
+      "native_asset_path": "/Users/xiwei/.pascal/runtime/1.0.3/apps/editor/public/items/coffee-table/model.glb",
+      "bas_role": "calibrated_furniture",
+      "physical_ground_truth": false
+    },
+    "high_bounds": null
+  }
+]

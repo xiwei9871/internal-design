@@ -1,0 +1,80 @@
+{
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.026464257027775006,
+  "far": 2646.4257027775006,
+  "position": [
+    8.555514537363237,
+    11.334381315351234,
+    -17.410695053521003
+  ],
+  "quaternion": [
+    0.15941787842245428,
+    0.7875839286621757,
+    0.549653771485439,
+    -0.22842553894906129
+  ],
+  "projection_matrix": [
+    2.381928388433485,
+    0,
+    0,
+    0,
+    0,
+    2.4142135623730954,
+    0,
+    0,
+    0,
+    0,
+    -1.000020000200002,
+    -1,
+    0,
+    0,
+    -0.05292904334598348,
+    0
+  ],
+  "orbit_target": [
+    10.694724496621483,
+    0.45483896040364413,
+    -14.033046080453467
+  ],
+  "viewport": {
+    "width": 673,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "sunroom_sofa_worktop_review_12",
+  "preview_uri": "sunroom_sofa_worktop_review_12.png",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_revision": "r4-sunroom-door-clear-sofa-review-12",
+  "source_sha256": "d73835d9b0c3ab0b7edab5469a8421d1e65ef65d79ddf168bede725d48ffc78f",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_SUNROOM_DOOR_CLEAR_SOFA_REVIEW_12.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "22-sunroom-door-clearance-sofa",
+    "sha256": "3b301e84ed086ed02a4ab39b45feb6fd8c309426a4dd34f7c12d6056ef74b8c7",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.review12.json"
+  },
+  "source_camera": {
+    "position": [
+      8.555514537363237,
+      17.410695053521003,
+      11.334381315351234
+    ],
+    "quaternion": [
+      -0.04879578471218306,
+      0.16824202758845164,
+      0.9455698458326816,
+      -0.2742467104619631
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": []
+}

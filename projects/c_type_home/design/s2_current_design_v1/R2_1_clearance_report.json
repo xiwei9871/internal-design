@@ -1,0 +1,668 @@
+{
+  "schema": "r2-1-clearance-report-v1",
+  "status": "DRAFT_HUMAN_REVIEW",
+  "layout_fidelity_gate": "PASS",
+  "s1_requirement_completeness_gate": "FAIL",
+  "design_usability_gate": "HOLD",
+  "formal_cad_allowed": false,
+  "metrics": [
+    {
+      "id": "BED_GUEST_1200-side",
+      "label": "BED_GUEST_1200 side clearance",
+      "available_mm": 15.4,
+      "target_mm": 600,
+      "shortfall_mm": 584.6,
+      "status": "CONFLICT",
+      "source": "room boundary minus R2 bed bbox",
+      "notes": []
+    },
+    {
+      "id": "BED_GUEST_1200-end",
+      "label": "BED_GUEST_1200 end clearance",
+      "available_mm": 1437.8,
+      "target_mm": 600,
+      "shortfall_mm": 0.0,
+      "status": "PASS",
+      "source": "room boundary minus R2 bed bbox",
+      "notes": []
+    },
+    {
+      "id": "BED_OWNER-side",
+      "label": "BED_OWNER side clearance",
+      "available_mm": 233.4,
+      "target_mm": 600,
+      "shortfall_mm": 366.6,
+      "status": "CONFLICT",
+      "source": "room boundary minus R2 bed bbox",
+      "notes": []
+    },
+    {
+      "id": "BED_OWNER-end",
+      "label": "BED_OWNER end clearance",
+      "available_mm": 1112.8,
+      "target_mm": 600,
+      "shortfall_mm": 0.0,
+      "status": "PASS",
+      "source": "room boundary minus R2 bed bbox",
+      "notes": []
+    },
+    {
+      "id": "BED_MOTHER-side",
+      "label": "BED_MOTHER side clearance",
+      "available_mm": 173.6,
+      "target_mm": 600,
+      "shortfall_mm": 426.4,
+      "status": "CONFLICT",
+      "source": "room boundary minus R2 bed bbox",
+      "notes": []
+    },
+    {
+      "id": "BED_MOTHER-end",
+      "label": "BED_MOTHER end clearance",
+      "available_mm": 1087.9,
+      "target_mm": 600,
+      "shortfall_mm": 0.0,
+      "status": "PASS",
+      "source": "room boundary minus R2 bed bbox",
+      "notes": []
+    },
+    {
+      "id": "GUEST-WC-FRONT",
+      "label": "guest WC front clearance",
+      "available_mm": 1044.0,
+      "target_mm": 800,
+      "shortfall_mm": 0.0,
+      "status": "PASS",
+      "source": "R2 WC bbox to locked guest-bath north boundary",
+      "notes": []
+    },
+    {
+      "id": "GUEST-WC-SIDE",
+      "label": "guest WC side clearance",
+      "available_mm": 120.6,
+      "target_mm": 600,
+      "shortfall_mm": 479.4,
+      "status": "CONFLICT",
+      "source": "R2 WC bbox to locked guest-bath side boundary",
+      "notes": []
+    },
+    {
+      "id": "GUEST-VANITY-OPERATING",
+      "label": "guest vanity operating clearance",
+      "available_mm": 1041.8,
+      "target_mm": 600,
+      "shortfall_mm": 0.0,
+      "status": "PASS",
+      "source": "locked guest-bath side clearance proxy",
+      "notes": []
+    },
+    {
+      "id": "GUEST-WASHER-OPERATING",
+      "label": "3kg washer operating clearance",
+      "available_mm": null,
+      "target_mm": 600,
+      "shortfall_mm": null,
+      "status": "TO_VERIFY",
+      "source": "no approved anchor; candidate is intentionally unplaced",
+      "notes": [
+        "do not enlarge guest bath automatically"
+      ]
+    },
+    {
+      "id": "OWNER-ENSUITE-AREA",
+      "label": "owner ensuite candidate area",
+      "available_mm": 3.71,
+      "target_mm": 5.0,
+      "shortfall_mm": 1.29,
+      "status": "CONFLICT",
+      "source": "existing R-CLOAK candidate polygon",
+      "notes": [
+        "candidate is below S1 target 5-5.5m2; no walls changed"
+      ]
+    },
+    {
+      "id": "STUDY-CHAIR-PULLBACK",
+      "label": "study chair pull-back clearance",
+      "available_mm": null,
+      "target_mm": 900,
+      "shortfall_mm": null,
+      "status": "TO_VERIFY",
+      "source": "formal workstation operating zone candidate",
+      "notes": [
+        "guide orientation locked; no automatic desk movement"
+      ]
+    },
+    {
+      "id": "DINING-CHAIR-PULLBACK",
+      "label": "dining chair pull-back clearance",
+      "available_mm": 40.1,
+      "target_mm": 900,
+      "shortfall_mm": 859.9,
+      "status": "CONFLICT",
+      "source": "R2 dining table bbox to dining room boundary",
+      "notes": []
+    },
+    {
+      "id": "MOTHER-BATH-CRITICAL",
+      "label": "mother bath critical operating clearance",
+      "available_mm": null,
+      "target_mm": 900,
+      "shortfall_mm": null,
+      "status": "TO_VERIFY",
+      "source": "aging-in-place fixtures require human/SKU review",
+      "notes": []
+    },
+    {
+      "id": "OWNER-ENSUITE-CRITICAL",
+      "label": "owner ensuite critical clearance",
+      "available_mm": null,
+      "target_mm": 900,
+      "shortfall_mm": null,
+      "status": "TO_VERIFY",
+      "source": "candidate bathroom boundary not yet confirmed",
+      "notes": []
+    },
+    {
+      "id": "G-LIV-NBALC",
+      "label": "living to north balcony existing door clear width",
+      "available_mm": 850,
+      "target_mm": 850,
+      "shortfall_mm": 0.0,
+      "status": "PASS",
+      "source": "confirmed existing glass door",
+      "notes": [
+        "NO_WORSENING; existing limitation"
+      ]
+    }
+  ],
+  "door_evidence": [
+    {
+      "id": "ENT-1",
+      "kind": "entry_double_leaf",
+      "meas_zone": [
+        [
+          1400,
+          6400
+        ],
+        [
+          1600,
+          8100
+        ]
+      ],
+      "status": "EXISTING",
+      "note": "main entry on west wall, two door-block inserts; width TO_VERIFY",
+      "rect_mm": [
+        2700,
+        5064,
+        2900,
+        6764
+      ]
+    },
+    {
+      "id": "D-LIV-STUDY?",
+      "kind": "door",
+      "meas_zone": [
+        [
+          6600,
+          5900
+        ],
+        [
+          7000,
+          7000
+        ]
+      ],
+      "status": "EXISTING_TO_VERIFY",
+      "note": "arc r1000 at meas(5400,6936) on S-楼梯 layer — guest-bath/vestibule door, position TO_VERIFY",
+      "rect_mm": [
+        7900,
+        4564,
+        8300,
+        5664
+      ]
+    },
+    {
+      "id": "D-SM",
+      "kind": "door",
+      "meas_zone": [
+        [
+          6700,
+          5700
+        ],
+        [
+          7400,
+          6100
+        ]
+      ],
+      "status": "EXISTING",
+      "note": "secondary master door opening to upper landing (insert rot206)",
+      "rect_mm": [
+        8000,
+        4364,
+        8700,
+        4764
+      ]
+    },
+    {
+      "id": "D-MB",
+      "kind": "door",
+      "meas_zone": [
+        [
+          11600,
+          5900
+        ],
+        [
+          12000,
+          6400
+        ]
+      ],
+      "status": "EXISTING",
+      "note": "master bedroom door on X13000 wall",
+      "rect_mm": [
+        12900,
+        4564,
+        13300,
+        5064
+      ]
+    },
+    {
+      "id": "D-BATHM",
+      "kind": "door",
+      "meas_zone": [
+        [
+          11200,
+          7500
+        ],
+        [
+          11800,
+          7900
+        ]
+      ],
+      "status": "EXISTING",
+      "note": "master bath door opening to corridor",
+      "rect_mm": [
+        12500,
+        6164,
+        13100,
+        6564
+      ]
+    },
+    {
+      "id": "D-STUDY",
+      "kind": "door",
+      "meas_zone": [
+        [
+          11500,
+          7900
+        ],
+        [
+          12100,
+          8300
+        ]
+      ],
+      "status": "EXISTING",
+      "note": "study (NE bedroom) door on X13000 wall",
+      "rect_mm": [
+        12800,
+        6564,
+        13400,
+        6964
+      ]
+    },
+    {
+      "id": "D-GBATH",
+      "kind": "door",
+      "meas_zone": [
+        [
+          9200,
+          9136
+        ],
+        [
+          10000,
+          9536
+        ]
+      ],
+      "status": "EXISTING",
+      "note": "guest bath south door (insert @meas x8300/y9336, on WC-S wall segment)",
+      "rect_mm": [
+        10500,
+        7800,
+        11300,
+        8200
+      ]
+    },
+    {
+      "id": "D-GBED",
+      "kind": "door",
+      "meas_zone": [
+        [
+          9600,
+          9136
+        ],
+        [
+          10400,
+          9536
+        ]
+      ],
+      "status": "EXISTING",
+      "note": "guest bedroom south door (insert @meas x8700/y9336, on STD-S wall)",
+      "rect_mm": [
+        10900,
+        7800,
+        11700,
+        8200
+      ]
+    },
+    {
+      "id": "D-CLK",
+      "kind": "door",
+      "meas_zone": [
+        [
+          8500,
+          7636
+        ],
+        [
+          9200,
+          7836
+        ]
+      ],
+      "status": "EXISTING_TO_VERIFY",
+      "note": "cloakroom north door opening (dev plan arc on CLK-N); leaf status TO_VERIFY — reusable as bath N entry candidate",
+      "rect_mm": [
+        9800,
+        6300,
+        10500,
+        6500
+      ]
+    },
+    {
+      "id": "D-MASTER?",
+      "kind": "door",
+      "meas_zone": [
+        [
+          10100,
+          4400
+        ],
+        [
+          10900,
+          4700
+        ]
+      ],
+      "status": "TO_VERIFY",
+      "note": "master bedroom entry on north wall Y4500-bc per dev plan; not a block insert in measured DWG — position to verify",
+      "rect_mm": [
+        11400,
+        3064,
+        12200,
+        3364
+      ]
+    },
+    {
+      "id": "G-GB-BALC",
+      "kind": "glazing_door_double",
+      "meas_zone": [
+        [
+          9100,
+          12036
+        ],
+        [
+          11100,
+          12236
+        ]
+      ],
+      "status": "EXISTING_KEEP",
+      "note": "existing interior double glass door guest bedroom -> north balcony, glazing x10400-12400 per DWG triple-line (replaced demolished black wall). NOT the exterior enclosure.",
+      "rect_mm": [
+        10400,
+        10700,
+        12400,
+        10900
+      ]
+    },
+    {
+      "id": "G-DIN-LIV",
+      "kind": "sliding_glass_3track",
+      "meas_zone": [
+        [
+          1650,
+          5866
+        ],
+        [
+          4350,
+          6051
+        ]
+      ],
+      "status": "EXISTING_KEEP",
+      "note": "owner blue-line new sliding glass door kitchen-dining domain <-> living, ~2700mm 3-track",
+      "rect_mm": [
+        2950,
+        4530,
+        5650,
+        4715
+      ]
+    },
+    {
+      "id": "G-LIV-NBALC",
+      "kind": "glazing_door",
+      "meas_zone": [
+        [
+          6500,
+          13136
+        ],
+        [
+          6600,
+          13986
+        ]
+      ],
+      "status": "EXISTING_CONFIRMED",
+      "note": "TV wall -> north balcony glass door, 850mm clear opening centered on owner-marked section (was mis-read as west-parapet door)",
+      "rect_mm": [
+        7800,
+        11800,
+        7900,
+        12650
+      ]
+    },
+    {
+      "id": "OPEN-COR-LIV",
+      "kind": "open_passage",
+      "meas_zone": [
+        [
+          5850,
+          6100
+        ],
+        [
+          6100,
+          7800
+        ]
+      ],
+      "status": "EXISTING_OPEN",
+      "note": "former niche/D-10 zone absent in measured = open side of corridor onto living platform",
+      "rect_mm": [
+        7150,
+        4764,
+        7400,
+        6464
+      ]
+    }
+  ],
+  "extra_requirement_objects": [
+    {
+      "id": "OWNER-ENSUITE-CANDIDATE",
+      "source_label": "owner ensuite candidate",
+      "semantic_id": "OWNER_ENSUITE_CANDIDATE",
+      "functional_zone": "owner_ensuite",
+      "historical_polygon_id": "R-CLOAK",
+      "bbox_task01_mm": [
+        9050,
+        4650,
+        11300,
+        6300
+      ],
+      "status": "SCHEMATIC_CANDIDATE",
+      "notes": [
+        "uses existing cloakroom polygon as a candidate; 3.71m2 is below the 5-5.5m2 S1 target",
+        "no walls are changed"
+      ],
+      "review_color": "#a000a0",
+      "line_style": "--"
+    },
+    {
+      "id": "OWNER-ENSUITE-SHOWER",
+      "source_label": "owner ensuite shower",
+      "semantic_id": "SHOWER_OWNER_ENSUITE",
+      "functional_zone": "owner_ensuite",
+      "historical_polygon_id": "R-CLOAK",
+      "bbox_task01_mm": [
+        9100.0,
+        4800.0,
+        10000.0,
+        6000.0
+      ],
+      "status": "SCHEMATIC_CANDIDATE",
+      "notes": [
+        "900x1200 target; final drainage and threshold TO_VERIFY"
+      ],
+      "review_color": "#a000a0",
+      "line_style": "--"
+    },
+    {
+      "id": "OWNER-ENSUITE-WC",
+      "source_label": "owner ensuite WC",
+      "semantic_id": "WC_OWNER_ENSUITE",
+      "functional_zone": "owner_ensuite",
+      "historical_polygon_id": "R-CLOAK",
+      "bbox_task01_mm": [
+        10050.0,
+        4800.0,
+        10500.0,
+        5500.0
+      ],
+      "status": "SCHEMATIC_CANDIDATE",
+      "notes": [
+        "standard footprint; door swing/service routing TO_VERIFY"
+      ],
+      "review_color": "#a000a0",
+      "line_style": "--"
+    },
+    {
+      "id": "OWNER-ENSUITE-VANITY",
+      "source_label": "owner ensuite vanity",
+      "semantic_id": "VANITY_OWNER_ENSUITE",
+      "functional_zone": "owner_ensuite",
+      "historical_polygon_id": "R-CLOAK",
+      "bbox_task01_mm": [
+        10600.0,
+        4800.0,
+        11200.0,
+        5300.0
+      ],
+      "status": "SCHEMATIC_CANDIDATE",
+      "notes": [
+        "standard footprint; no public bath deletion"
+      ],
+      "review_color": "#a000a0",
+      "line_style": "--"
+    },
+    {
+      "id": "GUEST-BATH-WASHER-CANDIDATE",
+      "source_label": "客卫3kg小洗衣机",
+      "semantic_id": "WASHER_SMALL_3KG",
+      "functional_zone": "guest_bath",
+      "historical_polygon_id": "R-BATH-P",
+      "bbox_task01_mm": [
+        8650.0,
+        8100.0,
+        9250.0,
+        8750.0
+      ],
+      "status": "CONFLICT_REVIEW",
+      "notes": [
+        "required S1 function; candidate footprint shown without silently moving existing R2 fixtures",
+        "SKU and wet-zone installation TO_VERIFY"
+      ],
+      "review_color": "#d00000",
+      "line_style": "--"
+    },
+    {
+      "id": "MAIN-LAUNDRY-WASHER",
+      "source_label": "main laundry washer",
+      "semantic_id": "WASHER_MAIN_10KG",
+      "functional_zone": "north_balcony",
+      "historical_polygon_id": "R-BALC-N",
+      "bbox_task01_mm": [
+        8000.0,
+        11050.0,
+        8600.0,
+        11700.0
+      ],
+      "status": "TO_VERIFY",
+      "notes": [
+        "10kg target; north balcony is OPEN_NOT_ENCLOSED"
+      ],
+      "review_color": "#e76f00",
+      "line_style": "--"
+    },
+    {
+      "id": "MAIN-LAUNDRY-DRYER",
+      "source_label": "main laundry dryer",
+      "semantic_id": "DRYER_MAIN_10KG",
+      "functional_zone": "north_balcony",
+      "historical_polygon_id": "R-BALC-N",
+      "bbox_task01_mm": [
+        8700.0,
+        11050.0,
+        9300.0,
+        11700.0
+      ],
+      "status": "TO_VERIFY",
+      "notes": [
+        "10kg target; stacking/SKU and ventilation TO_VERIFY"
+      ],
+      "review_color": "#e76f00",
+      "line_style": "--"
+    },
+    {
+      "id": "STUDY-WORKING-ZONE",
+      "source_label": "formal study workstation operating zone",
+      "semantic_id": "STUDY_WORKSTATION_OPERATION",
+      "functional_zone": "south_study",
+      "historical_polygon_id": "R-BED-N",
+      "bbox_task01_mm": [
+        12450.0,
+        8200.0,
+        13450.0,
+        9400.0
+      ],
+      "status": "CONFLICT_REVIEW",
+      "notes": [
+        "derived from locked desk guide; chair pull-back and dual-monitor use need human review"
+      ],
+      "review_color": "#7b2cbf",
+      "line_style": "--"
+    },
+    {
+      "id": "STUDY-PRINTER-NAS",
+      "source_label": "printer / NAS provision",
+      "semantic_id": "STUDY_PRINTER_NAS",
+      "functional_zone": "south_study",
+      "historical_polygon_id": "R-BED-N",
+      "bbox_task01_mm": [
+        13200.0,
+        9800.0,
+        13700.0,
+        10300.0
+      ],
+      "status": "TO_VERIFY",
+      "notes": [
+        "equipment provision; no automatic furniture relocation"
+      ],
+      "review_color": "#7b2cbf",
+      "line_style": "--"
+    }
+  ],
+  "notes": [
+    "Existing R2 furniture is preserved; additions are schematic requirement candidates only.",
+    "No owner ensuite walls are drawn as approved construction walls.",
+    "No automatic relocation or rotation is performed."
+  ]
+}

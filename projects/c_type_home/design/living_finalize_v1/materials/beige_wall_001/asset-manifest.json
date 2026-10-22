@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "provider": "Poly Haven",
+  "credit": "Powered by Poly Haven",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "source": "https://polyhaven.com/a/beige_wall_001",
+  "assetId": "beige_wall_001",
+  "assetType": "textures",
+  "resolution": "2k",
+  "status": "complete",
+  "files": [
+    {
+      "map": "diffuse",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/beige_wall_001/beige_wall_001_diff_2k.jpg",
+      "size": 235868,
+      "md5": "c927ac1136767f1df758ae064f50a2d1",
+      "file": "beige_wall_001_diffuse_2k.jpg",
+      "colorSpace": "sRGB",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/beige_wall_001/beige_wall_001_diffuse_2k.jpg",
+      "sha256": "222d4d2e7d5c425c97e5a66790852388cec7706714d773f769fba6bfe08cea4e"
+    },
+    {
+      "map": "roughness",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/beige_wall_001/beige_wall_001_rough_2k.png",
+      "size": 9843268,
+      "md5": "d8d5524c86895d85be159a4b85be2ef7",
+      "file": "beige_wall_001_roughness_2k.png",
+      "colorSpace": "Non-Color",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/beige_wall_001/beige_wall_001_roughness_2k.png",
+      "sha256": "6c764ac8a0c458024ec6c3af768f79e7a38c4c8490bb5baabbb75e38c4011258"
+    },
+    {
+      "map": "normal",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/beige_wall_001/beige_wall_001_nor_gl_2k.png",
+      "size": 22083339,
+      "md5": "f6668431f5204a8ccbc609eb7825a95a",
+      "file": "beige_wall_001_normal_2k.png",
+      "colorSpace": "Non-Color",
+      "normalConvention": "OpenGL",
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/living_finalize_v1/materials/beige_wall_001/beige_wall_001_normal_2k.png",
+      "sha256": "b3af77bc736141eefe095f2720b85a6fbcae73302a2af70baf6da07699d083d8"
+    }
+  ]
+}

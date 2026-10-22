@@ -1,0 +1,163 @@
+{
+  "status": "USER_AUTHORIZED_MODEL_ROLLBACK_NOT_SITE_DEMOLITION",
+  "source_wall_input": "/Users/xiwei/interior_design/projects/c_type_home/design/wall_junctions_v4/WALL_SOLID_INPUTS.json",
+  "removed_added_wall_sources": [
+    "V4_INPUT_D107_V3_ADJACENT_RETURN_WALL_REMAINDER",
+    "V4_INPUT_D107_V3_BLUE_RETURN_FLUSH_WITH_CASING",
+    "V4_INPUT_D107_V3_FULL_ABOVE_DOOR",
+    "V4_INPUT_D107_V3_PLATFORM_BASE_CLOSURE",
+    "V4_INPUT_D107_V3_RED_RETURN_JOIN",
+    "V4_INPUT_D107_V3_RED_SIDE_50MM_WALL",
+    "V4_INPUT_D107_V3_TOP_CONNECTION"
+  ],
+  "restored_original_white_wall": "W_wall_md_0018",
+  "kept_original_wall_operands": 107,
+  "black_original_wall_removed_count": 0,
+  "original_opening_cuts_retained": [
+    {
+      "id": "D-STUDY",
+      "lo": [
+        12.88,
+        6.65,
+        0.45
+      ],
+      "hi": [
+        13.12,
+        7.6,
+        2.6
+      ]
+    },
+    {
+      "id": "D-BATHM",
+      "lo": [
+        11.899999999999999,
+        6.380000000000001,
+        0.45
+      ],
+      "hi": [
+        12.850000000000001,
+        6.619999999999999,
+        2.6
+      ]
+    },
+    {
+      "id": "D-MB",
+      "lo": [
+        12.88,
+        4.75,
+        0.45
+      ],
+      "hi": [
+        13.12,
+        5.6,
+        2.6
+      ]
+    },
+    {
+      "id": "D-GUEST-BATH",
+      "lo": [
+        8.799999999999999,
+        7.78,
+        0.45
+      ],
+      "hi": [
+        9.65,
+        8.02,
+        2.6
+      ]
+    },
+    {
+      "id": "D-GUEST-ROOM",
+      "lo": [
+        9.95,
+        7.78,
+        0.45
+      ],
+      "hi": [
+        10.9,
+        8.02,
+        2.6
+      ]
+    },
+    {
+      "id": "ENT-1",
+      "lo": [
+        2.68,
+        5.390000000000001,
+        0
+      ],
+      "hi": [
+        2.92,
+        6.59,
+        2.15
+      ]
+    },
+    {
+      "id": "G-GB-BALC",
+      "lo": [
+        10.4,
+        10.88,
+        0.45
+      ],
+      "hi": [
+        12.4,
+        11.12,
+        2.85
+      ]
+    },
+    {
+      "id": "G-DIN-LIV",
+      "lo": [
+        2.95,
+        4.49,
+        0
+      ],
+      "hi": [
+        5.65,
+        4.755,
+        2.4
+      ]
+    },
+    {
+      "id": "W-SMB-S_INNER_PORTAL",
+      "lo": [
+        8.5,
+        -0.22,
+        0.9
+      ],
+      "hi": [
+        10.9,
+        0.22,
+        2.85
+      ]
+    },
+    {
+      "id": "W-MB-S_INNER_PORTAL",
+      "lo": [
+        12.1,
+        -0.22,
+        0.9
+      ],
+      "hi": [
+        14.8,
+        0.22,
+        2.85
+      ]
+    },
+    {
+      "id": "W-STUDY-NE_INNER_PORTAL",
+      "lo": [
+        13.6,
+        10.88,
+        0.9
+      ],
+      "hi": [
+        15.7,
+        11.12,
+        2.85
+      ]
+    }
+  ],
+  "scope": "Remove later-added angled leaf/frame/casing/header/returns; restore pre-enclosure open state before new FreeCAD west wall",
+  "reference": "codex-clipboard-6d949081-6927-4f07-9b5b-5d9ec6ff0d9a.png"
+}

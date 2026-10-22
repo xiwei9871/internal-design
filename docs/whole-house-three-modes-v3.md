@@ -1,0 +1,11 @@
+# 全屋三模式 V3 — 2026-10-09
+
+用户已认可客厅最新三模式比较并授权全屋15空间×3模式×5机位。Faithful忠实Blender，Designer主体保留并设计软装，Creative在简洁浅原木审美内探索家具与组合。Creative不是既有模型或施工权威。
+
+输出独立在 renders/whole_house_final_study_v1/whole_house_modes_v3，不覆盖旧photo_study_v2、production_batch_v1或客厅历次小样。目标225，复用75Faithful及2客厅已认可主图，新增148Designer/Creative。Faithful原7个明确待修flags仍保留，不假作验收通过。
+
+脚本whole_house_modes_v3.py单实例串行：每房2主图 -> 逐级HERO_QA人工/agent候选检查 -> 各4followup，反向机位仍用其当前空间/视角，hero只提供同一设计身份，细节不得copy主图。重要本地catalog和设备officialreference登记在config REFERENCE_REGISTER；房间功能和具体styling/concept逐房编写。原model/registry哈希、基线图哈希和成功cache受保护。只输入有限图、24MiB保守预检、小JPEG网页与评审，避免旧chat历史128MB问题。
+
+401/403/429或validation停止相关队列，5xx/timeout最多1logicalretry，每attempt记录。已有output或meta均不重发。所有视角须打开检查，数量不等于视觉PASS，最终停HUMAN_REVIEW。继续工作不逐房重复请求许可。旧监控已更新为当前轻chat的同任务检查。
+
+主图检查点：113/225槽位已生成/复用，30个B/C主图gate可用；8个主图修正版另存并selected_derivative引用，原候选仍在。后续112view串行运行PID2364。299旧图保存基线核验不变。客厅B/C VIEW02装饰位置漂移已明确标记，不宣称一致性通过。

@@ -1,0 +1,1764 @@
+{
+  "schema": "s2-furniture-dimension-register-v02",
+  "status": "DRAFT_HUMAN_REVIEW",
+  "items": [
+    {
+      "source_object_name": "Rectangle001",
+      "source_label": "双人位沙发",
+      "semantic_id": "SOFA_2S",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "original_bbox_task01_mm": [
+        4285.0,
+        11872.531,
+        6227.5,
+        12619.688
+      ],
+      "normalized_bbox_task01_mm": [
+        4285.0,
+        11872.531,
+        6085.0,
+        12722.531
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        1942.5,
+        747.1569999999992
+      ],
+      "normalized_size_mm": [
+        1800.0,
+        850.0
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        -71.25,
+        51.422
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "standard 2-seat sofa footprint; preserve guide long axis X",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "SOFA_2S_1800x850_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Circle",
+      "source_label": "角几",
+      "semantic_id": "SIDE_TABLE",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "original_bbox_task01_mm": [
+        3387.378,
+        11896.44,
+        4036.872,
+        12545.935
+      ],
+      "normalized_bbox_task01_mm": [
+        3387.378,
+        11896.44,
+        4036.872,
+        12545.935
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        649.4939999999997,
+        649.494999999999
+      ],
+      "normalized_size_mm": [
+        649.4939999999997,
+        649.494999999999
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "SQUARE",
+      "normalized_orientation": "SQUARE",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle002",
+      "source_label": "茶几",
+      "semantic_id": "COFFEE_TABLE_OPTIONAL",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "original_bbox_task01_mm": [
+        4932.5,
+        9481.719,
+        5580.0,
+        10951.062
+      ],
+      "normalized_bbox_task01_mm": [
+        4932.5,
+        9481.719,
+        5580.0,
+        10951.062
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        647.5,
+        1469.3430000000008
+      ],
+      "normalized_size_mm": [
+        647.5,
+        1469.3430000000008
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle003",
+      "source_label": "lounge",
+      "semantic_id": "LOUNGE_CHAIR",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "original_bbox_task01_mm": [
+        3562.75,
+        7588.938,
+        5779.25,
+        8211.562
+      ],
+      "normalized_bbox_task01_mm": [
+        3562.75,
+        7588.938,
+        5779.25,
+        8211.562
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        2216.5,
+        622.6239999999998
+      ],
+      "normalized_size_mm": [
+        2216.5,
+        622.6239999999998
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": "LOUNGE_CHAIR_900x900_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle004",
+      "source_label": "电视柜（或者悬浮电视墙）",
+      "semantic_id": "MEDIA_EDGE",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "original_bbox_task01_mm": [
+        7398.0,
+        8634.938,
+        7696.875,
+        11523.844
+      ],
+      "normalized_bbox_task01_mm": [
+        7398.0,
+        8634.938,
+        7696.875,
+        11523.844
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        298.875,
+        2888.905999999999
+      ],
+      "normalized_size_mm": [
+        298.875,
+        2888.905999999999
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "TO_VERIFY",
+      "normalization_status": "TO_VERIFY",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle006",
+      "source_label": "斜坡（轮椅用",
+      "semantic_id": "ACCESSIBILITY_RAMP",
+      "functional_zone": "transition",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        5779.25,
+        4749.844,
+        7846.25,
+        5422.281
+      ],
+      "normalized_bbox_task01_mm": [
+        5779.25,
+        4749.844,
+        7846.25,
+        5422.281
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        2067.0,
+        672.4369999999999
+      ],
+      "normalized_size_mm": [
+        2067.0,
+        672.4369999999999
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "TO_VERIFY",
+      "normalization_status": "TO_VERIFY",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle007",
+      "source_label": "客卫（湿区）",
+      "semantic_id": "GUEST_BATH_WET_ZONE",
+      "functional_zone": "guest_bath",
+      "historical_polygon_id": "R-BATH-P",
+      "original_bbox_task01_mm": [
+        8045.5,
+        9880.188,
+        9689.25,
+        10876.344
+      ],
+      "normalized_bbox_task01_mm": [
+        8045.5,
+        9880.188,
+        9689.25,
+        10876.344
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        1643.75,
+        996.155999999999
+      ],
+      "normalized_size_mm": [
+        1643.75,
+        996.155999999999
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle008",
+      "source_label": "客卫马桶",
+      "semantic_id": "WC_GUEST",
+      "functional_zone": "guest_bath",
+      "historical_polygon_id": "R-BATH-P",
+      "original_bbox_task01_mm": [
+        8020.625,
+        9332.281,
+        8767.75,
+        9656.031
+      ],
+      "normalized_bbox_task01_mm": [
+        8020.625,
+        9332.281,
+        8767.75,
+        9656.031
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        747.125,
+        323.75
+      ],
+      "normalized_size_mm": [
+        747.125,
+        323.75
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": true,
+      "reason": "standard WC footprint within unchanged guest bath; proposed footprint axes would change semantic orientation; proposal not auto-applied",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "HUMAN_REVIEW_REQUIRED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "WC_STD_450x700_PLAN",
+      "proposed_normalized_size_mm": [
+        450,
+        700
+      ]
+    },
+    {
+      "source_object_name": "Rectangle011",
+      "source_label": "次主卧床头占位",
+      "semantic_id": "NIGHTSTAND_OWNER",
+      "functional_zone": "owner_bedroom",
+      "historical_polygon_id": "R-BED-S",
+      "original_bbox_task01_mm": [
+        11183.5,
+        889.656,
+        11382.75,
+        3529.531
+      ],
+      "normalized_bbox_task01_mm": [
+        11183.5,
+        889.656,
+        11382.75,
+        3529.531
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        199.25,
+        2639.875
+      ],
+      "normalized_size_mm": [
+        199.25,
+        2639.875
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle012",
+      "source_label": "次主卧床",
+      "semantic_id": "BED_OWNER",
+      "functional_zone": "owner_bedroom",
+      "historical_polygon_id": "R-BED-S",
+      "original_bbox_task01_mm": [
+        9066.625,
+        1537.156,
+        11166.625,
+        3037.156
+      ],
+      "normalized_bbox_task01_mm": [
+        9066.625,
+        1537.156,
+        11166.625,
+        3337.156
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        2100.0,
+        1500.0
+      ],
+      "normalized_size_mm": [
+        2100.0,
+        1800.0
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        150.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "standard 1800x2100 nominal bed mapped to locked guide axes; headboard side remains TO_VERIFY",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "BED_1800x2100_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle013",
+      "source_label": "主卧床",
+      "semantic_id": "BED_MOTHER",
+      "functional_zone": "mother_bedroom",
+      "historical_polygon_id": "R-MASTER",
+      "original_bbox_task01_mm": [
+        13026.375,
+        1562.062,
+        15126.375,
+        3062.062
+      ],
+      "normalized_bbox_task01_mm": [
+        13026.375,
+        1562.062,
+        15126.375,
+        3362.062
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        2100.0,
+        1500.0
+      ],
+      "normalized_size_mm": [
+        2100.0,
+        1800.0
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        150.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "standard 1800x2100 nominal bed mapped to locked guide axes; headboard side remains TO_VERIFY",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "BED_1800x2100_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle014",
+      "source_label": "主卧床头柜占位",
+      "semantic_id": "NIGHTSTAND_MOTHER",
+      "functional_zone": "mother_bedroom",
+      "historical_polygon_id": "R-MASTER",
+      "original_bbox_task01_mm": [
+        15093.375,
+        1113.781,
+        15243.375,
+        3613.781
+      ],
+      "normalized_bbox_task01_mm": [
+        15093.375,
+        1113.781,
+        15243.375,
+        3613.781
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        150.0,
+        2500.0
+      ],
+      "normalized_size_mm": [
+        150.0,
+        2500.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle015",
+      "source_label": "主卧衣柜",
+      "semantic_id": "WARDROBE_MOTHER",
+      "functional_zone": "mother_bedroom",
+      "historical_polygon_id": "R-MASTER",
+      "original_bbox_task01_mm": [
+        13175.875,
+        3878.219,
+        15275.875,
+        4478.219
+      ],
+      "normalized_bbox_task01_mm": [
+        13175.875,
+        3878.219,
+        15275.875,
+        4478.219
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        2100.0,
+        600.0
+      ],
+      "normalized_size_mm": [
+        2100.0,
+        600.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": "WARDROBE_D600_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle017",
+      "source_label": "次卧小床1.2",
+      "semantic_id": "BED_GUEST_1200",
+      "functional_zone": "guest_room",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        10884.625,
+        8062.156,
+        12684.625,
+        9262.156
+      ],
+      "normalized_bbox_task01_mm": [
+        10884.625,
+        8062.156,
+        12884.625,
+        9262.155999999999
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        1800.0,
+        1200.000000000001
+      ],
+      "normalized_size_mm": [
+        2000.0,
+        1199.999999999999
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        100.0,
+        -0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "nominal 1200mm guest bed width; preserve guide long axis X",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "BED_1500x2000_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle018",
+      "source_label": "床背板+窄书桌占位",
+      "semantic_id": "STUDY_DESK_BACKBOARD",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        12652.875,
+        8012.344,
+        12852.125,
+        10851.469
+      ],
+      "normalized_bbox_task01_mm": [
+        12652.875,
+        8012.344,
+        13452.875,
+        9712.344000000001
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        199.25,
+        2839.124999999999
+      ],
+      "normalized_size_mm": [
+        800.0,
+        1700.000000000001
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        300.375,
+        -569.562
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "standard desk footprint; preserve guide long axis Y and work zone",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "DESK_1700x800_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle019",
+      "source_label": "次卧衣柜",
+      "semantic_id": "WARDROBE_GUEST",
+      "functional_zone": "guest_room",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        9938.375,
+        8859.094,
+        10538.375,
+        10859.094
+      ],
+      "normalized_bbox_task01_mm": [
+        9938.375,
+        8859.094,
+        10538.375,
+        10859.094
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        600.0,
+        2000.0
+      ],
+      "normalized_size_mm": [
+        600.0,
+        2000.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": "WARDROBE_D600_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle021",
+      "source_label": "次主卧衣柜",
+      "semantic_id": "WARDROBE_OWNER",
+      "functional_zone": "owner_bedroom",
+      "historical_polygon_id": "R-BED-S",
+      "original_bbox_task01_mm": [
+        9863.625,
+        3853.281,
+        11363.625,
+        4453.281
+      ],
+      "normalized_bbox_task01_mm": [
+        9863.625,
+        3853.281,
+        11363.625,
+        4453.281
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        1500.0,
+        600.0
+      ],
+      "normalized_size_mm": [
+        1500.0,
+        600.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": "WARDROBE_D600_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle022",
+      "source_label": "主卧电视柜",
+      "semantic_id": "MEDIA_EDGE_MOTHER",
+      "functional_zone": "mother_bedroom",
+      "historical_polygon_id": "R-MASTER",
+      "original_bbox_task01_mm": [
+        11606.875,
+        1337.938,
+        12106.875,
+        3337.938
+      ],
+      "normalized_bbox_task01_mm": [
+        11606.875,
+        1337.938,
+        12106.875,
+        3337.938
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        500.0,
+        2000.0
+      ],
+      "normalized_size_mm": [
+        500.0,
+        2000.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle023",
+      "source_label": "次主卧电视柜",
+      "semantic_id": "MEDIA_EDGE_OWNER",
+      "functional_zone": "owner_bedroom",
+      "historical_polygon_id": "R-BED-S",
+      "original_bbox_task01_mm": [
+        8070.375,
+        1337.938,
+        8570.375,
+        3337.938
+      ],
+      "normalized_bbox_task01_mm": [
+        8070.375,
+        1337.938,
+        8570.375,
+        3337.938
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        500.0,
+        2000.0
+      ],
+      "normalized_size_mm": [
+        500.0,
+        2000.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle024",
+      "source_label": "书柜",
+      "semantic_id": "BOOKCASE_STUDY_TALL",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        15691.125,
+        6642.594,
+        16141.125,
+        10842.594
+      ],
+      "normalized_bbox_task01_mm": [
+        15691.125,
+        6642.594,
+        16141.125,
+        10842.594
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        450.0,
+        4199.999999999999
+      ],
+      "normalized_size_mm": [
+        450.0,
+        4199.999999999999
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle025",
+      "source_label": "书柜001",
+      "semantic_id": "BOOKCASE_STUDY_LOW",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        14097.375,
+        6642.625,
+        15697.375,
+        7092.625
+      ],
+      "normalized_bbox_task01_mm": [
+        14097.375,
+        6642.625,
+        15697.375,
+        7092.625
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        1600.0,
+        450.0
+      ],
+      "normalized_size_mm": [
+        1600.0,
+        450.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle026",
+      "source_label": "茶台",
+      "semantic_id": "TEA_TABLE_STUDY",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        14271.625,
+        7389.719,
+        15071.625,
+        9589.719
+      ],
+      "normalized_bbox_task01_mm": [
+        14271.625,
+        7389.719,
+        15071.625,
+        9589.719
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        800.0,
+        2199.999999999999
+      ],
+      "normalized_size_mm": [
+        800.0,
+        2199.999999999999
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Circle007",
+      "source_label": "主人椅",
+      "semantic_id": "STUDY_CHAIR",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        15217.25,
+        8260.594,
+        15617.25,
+        8660.594
+      ],
+      "normalized_bbox_task01_mm": [
+        15217.25,
+        8260.594,
+        15617.25,
+        8660.594
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        400.0,
+        400.0
+      ],
+      "normalized_size_mm": [
+        400.0,
+        400.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "SQUARE",
+      "normalized_orientation": "SQUARE",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle027",
+      "source_label": "条凳",
+      "semantic_id": "STUDY_BENCH",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        13798.5,
+        7564.031,
+        14098.5,
+        9164.031
+      ],
+      "normalized_bbox_task01_mm": [
+        13798.5,
+        7564.031,
+        14098.5,
+        9164.031
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        300.0,
+        1600.000000000001
+      ],
+      "normalized_size_mm": [
+        300.0,
+        1600.000000000001
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Circle008",
+      "source_label": "凳子",
+      "semantic_id": "STUDY_STOOL",
+      "functional_zone": "study",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        14495.0,
+        9804.688,
+        14895.0,
+        10204.688
+      ],
+      "normalized_bbox_task01_mm": [
+        14495.0,
+        9804.688,
+        14895.0,
+        10204.688
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        400.0,
+        400.0
+      ],
+      "normalized_size_mm": [
+        400.0,
+        400.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "SQUARE",
+      "normalized_orientation": "SQUARE",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Circle009",
+      "source_label": "次卧凳子",
+      "semantic_id": "GUEST_STOOL",
+      "functional_zone": "guest_room",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        12054.375,
+        9979.031,
+        12454.375,
+        10379.031
+      ],
+      "normalized_bbox_task01_mm": [
+        12054.375,
+        9979.031,
+        12454.375,
+        10379.031
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        400.0,
+        400.0
+      ],
+      "normalized_size_mm": [
+        400.0,
+        400.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "SQUARE",
+      "normalized_orientation": "SQUARE",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Circle010",
+      "source_label": "餐椅",
+      "semantic_id": "DINING_CHAIR_1",
+      "functional_zone": "dining",
+      "historical_polygon_id": "R-DINING",
+      "original_bbox_task01_mm": [
+        3088.75,
+        3977.062,
+        3488.75,
+        4377.062
+      ],
+      "normalized_bbox_task01_mm": [
+        3063.75,
+        3927.062,
+        3513.75,
+        4427.062
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        400.0,
+        400.0
+      ],
+      "normalized_size_mm": [
+        450.0,
+        500.0
+      ],
+      "anchor_type": "center",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "SQUARE",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "standard dining chair footprint; preserve guide seat center",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "DINING_CHAIR_450x500_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Circle011",
+      "source_label": "餐椅003",
+      "semantic_id": "DINING_CHAIR_2",
+      "functional_zone": "dining",
+      "historical_polygon_id": "R-DINING",
+      "original_bbox_task01_mm": [
+        3885.75,
+        3977.062,
+        4285.75,
+        4377.062
+      ],
+      "normalized_bbox_task01_mm": [
+        3860.75,
+        3927.062,
+        4310.75,
+        4427.062
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        400.0,
+        400.0
+      ],
+      "normalized_size_mm": [
+        450.0,
+        500.0
+      ],
+      "anchor_type": "center",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "SQUARE",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "standard dining chair footprint; preserve guide seat center",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "DINING_CHAIR_450x500_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle028",
+      "source_label": "餐桌",
+      "semantic_id": "DINING_TABLE",
+      "functional_zone": "dining",
+      "historical_polygon_id": "R-DINING",
+      "original_bbox_task01_mm": [
+        2940.125,
+        3155.969,
+        4540.125,
+        3855.969
+      ],
+      "normalized_bbox_task01_mm": [
+        2940.125,
+        3155.969,
+        4440.125,
+        3755.969
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        1600.0,
+        700.0
+      ],
+      "normalized_size_mm": [
+        1500.0,
+        600.0
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        -50.0,
+        -50.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "brief nominal dining table; preserve guide long axis X",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "DINING_TABLE_1500x600_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Circle013",
+      "source_label": "餐椅004",
+      "semantic_id": "DINING_CHAIR_4",
+      "functional_zone": "dining",
+      "historical_polygon_id": "R-DINING",
+      "original_bbox_task01_mm": [
+        3910.625,
+        2557.5,
+        4310.625,
+        2957.5
+      ],
+      "normalized_bbox_task01_mm": [
+        3910.625,
+        2557.5,
+        4310.625,
+        2957.5
+      ],
+      "proposed_normalized_bbox_task01_mm": [
+        3885.625,
+        2507.5,
+        4335.625,
+        3007.5
+      ],
+      "original_size_mm": [
+        400.0,
+        400.0
+      ],
+      "normalized_size_mm": [
+        400.0,
+        400.0
+      ],
+      "anchor_type": "center",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "SQUARE",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "standard dining chair footprint; preserve guide seat center; proposed standard footprint would leave the locked room boundary; proposal not applied",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "CONFLICT",
+      "layout_intent": "LOCKED",
+      "render_block_id": "DINING_CHAIR_450x500_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle029",
+      "source_label": "现有橱柜",
+      "semantic_id": "KITCHEN_KEEP",
+      "functional_zone": "kitchen",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        1520.5,
+        740.219,
+        2020.5,
+        2240.219
+      ],
+      "normalized_bbox_task01_mm": [
+        1520.5,
+        740.219,
+        2020.5,
+        2240.219
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        500.0,
+        1500.0
+      ],
+      "normalized_size_mm": [
+        500.0,
+        1500.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Extrusion",
+      "source_label": "三人位沙发",
+      "semantic_id": "SOFA_3S",
+      "functional_zone": "living",
+      "historical_polygon_id": "R-LIVING",
+      "original_bbox_task01_mm": [
+        3338.5,
+        8485.531,
+        4185.25,
+        11648.406
+      ],
+      "normalized_bbox_task01_mm": [
+        3338.5,
+        8485.531,
+        4238.5,
+        10685.531
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        846.75,
+        3162.875
+      ],
+      "normalized_size_mm": [
+        900.0,
+        2200.0
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        26.625,
+        -481.438
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "standard 3-seat sofa footprint; preserve guide long axis Y",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "SOFA_3S_2200x900_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle030",
+      "source_label": "客卫洗手盆柜体",
+      "semantic_id": "VANITY_GUEST",
+      "functional_zone": "guest_bath",
+      "historical_polygon_id": "R-BATH-P",
+      "original_bbox_task01_mm": [
+        8008.25,
+        8012.344,
+        8608.25,
+        9212.344
+      ],
+      "normalized_bbox_task01_mm": [
+        8008.25,
+        8012.344,
+        8608.25,
+        9212.344
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        600.0,
+        1199.999999999999
+      ],
+      "normalized_size_mm": [
+        600.0,
+        1199.999999999999
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": true,
+      "reason": "standard vanity footprint within unchanged guest bath; proposed footprint axes would change semantic orientation; proposal not auto-applied",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "HUMAN_REVIEW_REQUIRED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "VANITY_600x500_PLAN",
+      "proposed_normalized_size_mm": [
+        600,
+        500
+      ]
+    },
+    {
+      "source_object_name": "Rectangle031",
+      "source_label": "鞋柜",
+      "semantic_id": "ENTRY_SHOE_STORAGE",
+      "functional_zone": "entry",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        2952.5,
+        4700.031,
+        3252.5,
+        5422.281
+      ],
+      "normalized_bbox_task01_mm": [
+        2952.5,
+        4700.031,
+        3252.5,
+        5422.281
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        300.0,
+        722.25
+      ],
+      "normalized_size_mm": [
+        300.0,
+        722.25
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle032",
+      "source_label": "橱柜",
+      "semantic_id": "KITCHEN_AUX_STORAGE",
+      "functional_zone": "kitchen",
+      "historical_polygon_id": null,
+      "original_bbox_task01_mm": [
+        4322.375,
+        715.344,
+        5522.375,
+        1215.344
+      ],
+      "normalized_bbox_task01_mm": [
+        4322.375,
+        715.344,
+        5522.375,
+        1215.344
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        1200.0,
+        500.0
+      ],
+      "normalized_size_mm": [
+        1200.0,
+        500.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle033",
+      "source_label": "主卫湿区",
+      "semantic_id": "BATH_MOTHER_WET_ZONE",
+      "functional_zone": "mother_bathroom",
+      "historical_polygon_id": "R-BATH-M",
+      "original_bbox_task01_mm": [
+        15205.625,
+        4774.75,
+        16205.625,
+        6343.75
+      ],
+      "normalized_bbox_task01_mm": [
+        15205.625,
+        4774.75,
+        16205.625,
+        6343.75
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        1000.0,
+        1569.0
+      ],
+      "normalized_size_mm": [
+        1000.0,
+        1569.0
+      ],
+      "anchor_type": "GUIDE_BBOX_LOCKED",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "preserve exact named guide; no safe automatic standardization without changing intent",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "UNCHANGED_GUIDE",
+      "layout_intent": "LOCKED",
+      "render_block_id": null,
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle034",
+      "source_label": "主卫马桶",
+      "semantic_id": "WC_MOTHER",
+      "functional_zone": "mother_bathroom",
+      "historical_polygon_id": "R-BATH-M",
+      "original_bbox_task01_mm": [
+        14483.25,
+        5721.125,
+        14983.25,
+        6371.125
+      ],
+      "normalized_bbox_task01_mm": [
+        14483.25,
+        5721.125,
+        14983.25,
+        6371.125
+      ],
+      "proposed_normalized_bbox_task01_mm": [
+        14483.25,
+        5721.125,
+        14933.25,
+        6421.125
+      ],
+      "original_size_mm": [
+        500.0,
+        650.0
+      ],
+      "normalized_size_mm": [
+        500.0,
+        650.0
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_Y",
+      "normalized_orientation": "LONG_AXIS_Y",
+      "orientation_axis_changed": false,
+      "reason": "standard WC footprint within unchanged mother bath; proposed standard footprint would leave the locked room boundary; proposal not applied",
+      "source_type": "STANDARD_REFERENCE",
+      "normalization_status": "CONFLICT",
+      "layout_intent": "LOCKED",
+      "render_block_id": "WC_STD_450x700_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": "Rectangle035",
+      "source_label": "主卫洗手盆和柜体",
+      "semantic_id": "VANITY_MOTHER",
+      "functional_zone": "mother_bathroom",
+      "historical_polygon_id": "R-BATH-M",
+      "original_bbox_task01_mm": [
+        13138.5,
+        5845.688,
+        14338.5,
+        6345.688
+      ],
+      "normalized_bbox_task01_mm": [
+        13138.5,
+        5845.688,
+        14338.5,
+        6345.688
+      ],
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": [
+        1200.0,
+        500.0
+      ],
+      "normalized_size_mm": [
+        1200.0,
+        500.0
+      ],
+      "anchor_type": "lower_left",
+      "dx_mm": 0.0,
+      "dy_mm": 0.0,
+      "center_delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "LONG_AXIS_X",
+      "normalized_orientation": "LONG_AXIS_X",
+      "orientation_axis_changed": false,
+      "reason": "guide cabinet width retained; depth standardized",
+      "source_type": "USER_CONFIRMED",
+      "normalization_status": "DIMENSION_NORMALIZED",
+      "layout_intent": "LOCKED",
+      "render_block_id": "VANITY_900x500_PLAN",
+      "proposed_normalized_size_mm": null
+    },
+    {
+      "source_object_name": null,
+      "source_label": "客卫3kg小洗衣机",
+      "semantic_id": "WASHER_SMALL_3KG",
+      "functional_zone": "guest_bath",
+      "historical_polygon_id": "R-BATH-P",
+      "original_bbox_task01_mm": null,
+      "normalized_bbox_task01_mm": null,
+      "proposed_normalized_bbox_task01_mm": null,
+      "original_size_mm": null,
+      "normalized_size_mm": [
+        600,
+        650
+      ],
+      "anchor_type": "NO_GUIDE_ANCHOR",
+      "dx_mm": null,
+      "dy_mm": null,
+      "center_delta_mm": null,
+      "rotation_delta_deg": 0.0,
+      "original_orientation": "UNKNOWN",
+      "normalized_orientation": "UNKNOWN",
+      "orientation_axis_changed": false,
+      "reason": "brief requirement exists but no named FCStd anchor; do not place automatically",
+      "source_type": "TO_VERIFY",
+      "normalization_status": "TO_VERIFY",
+      "layout_intent": "LOCKED",
+      "render_block_id": "WASHER_600x650_PLAN",
+      "proposed_normalized_size_mm": [
+        600,
+        650
+      ]
+    }
+  ]
+}

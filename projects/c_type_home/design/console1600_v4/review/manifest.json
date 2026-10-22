@@ -1,0 +1,25 @@
+{
+  "source_sha256": "7ff55a69723783bf6a59af837a1afe53e42e8532a4e7d03bd922d1b1a855d2ac",
+  "images": [
+    {
+      "id": "console",
+      "camera": "HUNYUAN_V3_CONSOLE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console1600_v4/review/console.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 16.45
+    },
+    {
+      "id": "bed_reverse",
+      "camera": "HUNYUAN_V3_BED_REVERSE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console1600_v4/review/bed_reverse.png",
+      "size": [
+        1280,
+        720
+      ],
+      "seconds": 14.04
+    }
+  ]
+}

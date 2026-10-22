@@ -1,0 +1,31 @@
+# KITCHEN_CABINET_3D_REGISTER_V01
+
+Source: `source/世纪欣园3-1-901_cabinet_plan.pdf` (6-page cabinet shop drawing) — supersedes all generic K-* heights.
+
+## Confirmed PDF facts
+- 冰箱 1700H × 905W × 710D (门厚6.5+间隙8.5)
+- 吊柜深度 380,顶标高 2410
+- 地柜/台面高 820
+- 冰箱上方 overhead cabinet 存在
+
+|cabinet_id|type|rect mm|W|D|H|base_z|page|confidence|
+|---|---|---|---|---|---|---|---|---|
+|K-RUN-E|BASE_CABINET|[7200, 535, 7800, 3750]|3215|600|820|0|p1|HIGH|
+|K-RUN-S|BASE_CABINET|[6100, 0, 7310, 600]|1210|600|820|0|p3|HIGH|
+|K-SINK|SINK_BASE|[6100, 0, 7090, 600]|990|600|820|0|p3|HIGH|
+|K-COOK|COOKTOP_BASE|[7200, 2400, 7800, 3300]|900|600|820|0|p1|HIGH|
+|K-DISHW|DISHWASHER_BAY|[7200, 1800, 7800, 2400]|600|600|820|0|p1|HIGH|
+|K-BASKET|BASE_CABINET_MODULE|[7200, 3300, 7800, 3750]|450|600|820|0|p1|MEDIUM|
+|K-CORNER|CORNER_CABINET|[7200, 0, 7800, 535]|600|535|820|0|p1|TO_VERIFY|
+|K-WALL-E|WALL_CABINET|[7420, 535, 7800, 3750]|3215|380|960|1450|p1|TO_VERIFY|
+|K-FRIDGE|FRIDGE|[6835, 3750, 7740, 4450]|905|710|1700|0|p5|HIGH|
+|K-FRIDGE-OVERHEAD|FRIDGE_OVERHEAD_CABINET|[6835, 3750, 7740, 4450]|905|600|670|1740|p5|TO_VERIFY|
+|K-TALL-L|TALL_CABINET|[5900, 3750, 6835, 4450]|935|700|2410|0|p1|MEDIUM|
+
+## TO_VERIFY
+- K-WALL-E 底标高 1450(顶 2410 已确认)
+- K-FRIDGE-OVERHEAD 深度 600 / base_z 1740
+- K-CORNER 转角地柜 XY(p1 转角位)
+- 餐台/看面台(p4 西向台 800高,XY 未登记)
+
+Materials (PDF p2): 柜体 布拉格(拉米系列)实木颗粒板; 门板+背板+收口条 SM962002 赫拉白 日本住友P4星; 灯带 4000K.

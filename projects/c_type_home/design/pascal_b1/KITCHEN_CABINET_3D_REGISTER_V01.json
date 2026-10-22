@@ -1,0 +1,204 @@
+{
+ "register": "KITCHEN_CABINET_3D_REGISTER_V01",
+ "units": "mm",
+ "authority": "source/世纪欣园3-1-901_cabinet_plan.pdf > generic furniture register",
+ "confirmed_facts": {
+  "fridge": "1700x905x710",
+  "wall_cabinet_depth": 380,
+  "overall_elevation": 2410,
+  "base_counter_height": 820,
+  "fridge_overhead_exists": true
+ },
+ "supersedes": "furniture_3d_dimension_register_v01 K-* generic entries",
+ "cabinets": [
+  {
+   "cabinet_id": "K-RUN-E",
+   "type": "BASE_CABINET",
+   "rect": [
+    7200,
+    535,
+    7800,
+    3750
+   ],
+   "width": 3215,
+   "depth": 600,
+   "height": 820,
+   "base_z": 0,
+   "source_page": 1,
+   "source_dimension": "地柜平面 east run 600深; 立面A 台面高820",
+   "confidence": "HIGH"
+  },
+  {
+   "cabinet_id": "K-RUN-S",
+   "type": "BASE_CABINET",
+   "rect": [
+    6100,
+    0,
+    7310,
+    600
+   ],
+   "width": 1210,
+   "depth": 600,
+   "height": 820,
+   "base_z": 0,
+   "source_page": 3,
+   "source_dimension": "立面B 水槽柜 高820(含台面)",
+   "confidence": "HIGH"
+  },
+  {
+   "cabinet_id": "K-SINK",
+   "type": "SINK_BASE",
+   "rect": [
+    6100,
+    0,
+    7090,
+    600
+   ],
+   "width": 990,
+   "depth": 600,
+   "height": 820,
+   "base_z": 0,
+   "source_page": 3,
+   "source_dimension": "立面B 水槽800*430*190台下盆;柜990",
+   "confidence": "HIGH"
+  },
+  {
+   "cabinet_id": "K-COOK",
+   "type": "COOKTOP_BASE",
+   "rect": [
+    7200,
+    2400,
+    7800,
+    3300
+   ],
+   "width": 900,
+   "depth": 600,
+   "height": 820,
+   "base_z": 0,
+   "source_page": 1,
+   "source_dimension": "地柜平面 灶台 900 slot",
+   "confidence": "HIGH"
+  },
+  {
+   "cabinet_id": "K-DISHW",
+   "type": "DISHWASHER_BAY",
+   "rect": [
+    7200,
+    1800,
+    7800,
+    2400
+   ],
+   "width": 600,
+   "depth": 600,
+   "height": 820,
+   "base_z": 0,
+   "source_page": 1,
+   "source_dimension": "地柜平面 洗碗机位置 600",
+   "confidence": "HIGH"
+  },
+  {
+   "cabinet_id": "K-BASKET",
+   "type": "BASE_CABINET_MODULE",
+   "rect": [
+    7200,
+    3300,
+    7800,
+    3750
+   ],
+   "width": 450,
+   "depth": 600,
+   "height": 820,
+   "base_z": 0,
+   "source_page": 1,
+   "source_dimension": "地柜平面 拉篮模块",
+   "confidence": "MEDIUM"
+  },
+  {
+   "cabinet_id": "K-CORNER",
+   "type": "CORNER_CABINET",
+   "rect": [
+    7200,
+    0,
+    7800,
+    535
+   ],
+   "width": 600,
+   "depth": 535,
+   "height": 820,
+   "base_z": 0,
+   "source_page": 1,
+   "source_dimension": "地柜平面东南转角(转角柜剖面见p3/p5)",
+   "confidence": "TO_VERIFY"
+  },
+  {
+   "cabinet_id": "K-WALL-E",
+   "type": "WALL_CABINET",
+   "rect": [
+    7420,
+    535,
+    7800,
+    3750
+   ],
+   "width": 3215,
+   "depth": 380,
+   "height": 960,
+   "base_z": 1450,
+   "source_page": 1,
+   "source_dimension": "吊柜平面 深380; 立面A 顶=2410 → 底≈1450/高≈960",
+   "confidence": "TO_VERIFY",
+   "notes": "top=2410 CONFIRMED; bottom rail exact Z TO_VERIFY (背挂+灯带槽)"
+  },
+  {
+   "cabinet_id": "K-FRIDGE",
+   "type": "FRIDGE",
+   "rect": [
+    6835,
+    3750,
+    7740,
+    4450
+   ],
+   "width": 905,
+   "depth": 710,
+   "height": 1700,
+   "base_z": 0,
+   "source_page": 5,
+   "source_dimension": "冰箱尺寸 高1700*宽905*厚710(门厚6.5+间隙8.5)",
+   "confidence": "HIGH"
+  },
+  {
+   "cabinet_id": "K-FRIDGE-OVERHEAD",
+   "type": "FRIDGE_OVERHEAD_CABINET",
+   "rect": [
+    6835,
+    3750,
+    7740,
+    4450
+   ],
+   "width": 905,
+   "depth": 600,
+   "height": 670,
+   "base_z": 1740,
+   "source_page": 5,
+   "source_dimension": "立面D 冰箱上方柜体; top=2410 → base≈1740/h≈670",
+   "confidence": "TO_VERIFY",
+   "notes": "depth 600 aligned to tall-cab front (PDF shows shallower band ~374? TO_VERIFY)"
+  },
+  {
+   "cabinet_id": "K-TALL-L",
+   "type": "TALL_CABINET",
+   "rect": [
+    5900,
+    3750,
+    6835,
+    4450
+   ],
+   "width": 935,
+   "depth": 700,
+   "height": 2410,
+   "base_z": 0,
+   "source_page": 1,
+   "source_dimension": "冰箱柜 run 1840 total, niche 905 → 左柜体935; 立面D 到顶2410",
+   "confidence": "MEDIUM"
+  }
+ ]
+}

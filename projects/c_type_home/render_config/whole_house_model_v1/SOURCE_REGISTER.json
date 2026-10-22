@@ -1,0 +1,33 @@
+{
+  "status": "EVIDENCE_REGISTER_NOT_PROCUREMENT_APPROVAL",
+  "authority": "design/lookdev_v5/LIVING_DINING_LOOKDEV_V5.blend",
+  "protected_manifest": "design/whole_house_model_v1/PRESERVATION.json",
+  "camera_register": "renders/whole_house_final_study_v1/00_MANIFEST/CAMERA_REGISTER_REVIEW_V3.json",
+  "owner_catalogs": [
+    {
+      "path": "/Users/xiwei/Desktop/木甲木乙-白蜡木系列.pdf",
+      "sha256": "2430d251e7e7333d70867452923821eeacb070f028d8eed500086a04104bbaa3",
+      "pages": 32
+    },
+    {
+      "path": "/Users/xiwei/Desktop/木甲木乙 电子图册.pdf",
+      "sha256": "a5ff0a6e38233d3c934e51063ce63dd9ac77a7bc23adb57b819b04ac7de72b72",
+      "pages": 63
+    }
+  ],
+  "complete_product_evidence": [
+    "render_config/product_first_v1/REAL_PRODUCT_REGISTER.json",
+    "render_config/product_rebuild_v4/PRODUCT_REGISTER.json"
+  ],
+  "kitchen_official_reference": "render_config/kitchen_prompt_review_v2/APPLIANCE_OFFICIAL_REFERENCES.json",
+  "kitchen_dimensions": "design/kitchen_frozen_v1/KITCHEN_DIMENSION_SCHEDULE.csv",
+  "sofa": "design/sofa_fill_form_v10/delivery/SOFA_DIFFERENTIATED_FILL_V10.blend",
+  "wood": "V5 native shader/texture proven visibly improved by owner; no universal numeric color certification",
+  "fabric": "existing complete native linen material, not rejected V9 higher-sheen recipe",
+  "vanity": "owner-authorized Creative VIEW05 custom construction within900x450; no manufacturer claim",
+  "beds_and_joinery": "owner catalog family / accepted appearance direction, evidence-backed custom candidate; exact SKU not chosen",
+  "local_asset_search": "prior product-first and asset-research records reused; no exact same complete supplier asset was found there",
+  "license_limit": "upstream models/materials retain original source/license; no redistribution of binary assets in Git",
+  "north_history": "design/sunroom_stepped_storage_v1/MODEL_CONTRACT.json",
+  "reference_role": "appearance only; never architectural dimension authority"
+}

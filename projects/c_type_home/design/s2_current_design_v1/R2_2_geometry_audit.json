@@ -1,0 +1,249 @@
+{
+  "schema": "s2-r2-2-geometry-audit-v1",
+  "status": "HUMAN_REVIEW",
+  "source_fcstd_sha256": "17340e63f808f7563c64674ad4b43942765044d946b463cb2fb32d373a7817d1",
+  "layout_fidelity_gate": "PASS",
+  "measurement_only": true,
+  "metrics": [
+    {
+      "metric": "次卧小床1.2 side clearance",
+      "available_mm": 215.4,
+      "target_mm": 600,
+      "status": "CONFLICT",
+      "source": "latest FCStd bbox to historical room polygon"
+    },
+    {
+      "metric": "次卧小床1.2 foot clearance",
+      "available_mm": 1437.8,
+      "target_mm": 600,
+      "status": "PASS",
+      "source": "latest FCStd bbox to historical room polygon"
+    },
+    {
+      "metric": "次主卧床 side clearance",
+      "available_mm": 233.4,
+      "target_mm": 600,
+      "status": "CONFLICT",
+      "source": "latest FCStd bbox to historical room polygon"
+    },
+    {
+      "metric": "次主卧床 foot clearance",
+      "available_mm": 1412.8,
+      "target_mm": 600,
+      "status": "PASS",
+      "source": "latest FCStd bbox to historical room polygon"
+    },
+    {
+      "metric": "主卧床 side clearance",
+      "available_mm": 173.6,
+      "target_mm": 600,
+      "status": "CONFLICT",
+      "source": "latest FCStd bbox to historical room polygon"
+    },
+    {
+      "metric": "主卧床 foot clearance",
+      "available_mm": 1387.9,
+      "target_mm": 600,
+      "status": "PASS",
+      "source": "latest FCStd bbox to historical room polygon"
+    },
+    {
+      "metric": "客卫马桶 front clearance",
+      "available_mm": 1044.0,
+      "target_mm": 800,
+      "status": "PASS",
+      "source": "latest FCStd fixture bbox / candidate room polygon"
+    },
+    {
+      "metric": "主卫马桶 front clearance",
+      "available_mm": -71.1,
+      "target_mm": 800,
+      "status": "CONFLICT",
+      "source": "latest FCStd fixture bbox / candidate room polygon"
+    },
+    {
+      "metric": "次主卫马桶 front clearance",
+      "available_mm": -120.8,
+      "target_mm": 800,
+      "status": "CONFLICT",
+      "source": "latest FCStd fixture bbox / candidate room polygon"
+    },
+    {
+      "metric": "餐椅 table gap",
+      "available_mm": 121.1,
+      "target_mm": 150,
+      "status": "CONFLICT",
+      "source": "latest FCStd table/chair bboxes"
+    },
+    {
+      "metric": "餐椅003 table gap",
+      "available_mm": 121.1,
+      "target_mm": 150,
+      "status": "CONFLICT",
+      "source": "latest FCStd table/chair bboxes"
+    },
+    {
+      "metric": "餐椅004 table gap",
+      "available_mm": 198.5,
+      "target_mm": 150,
+      "status": "PASS",
+      "source": "latest FCStd table/chair bboxes"
+    },
+    {
+      "metric": "次主卫湿区 internal footprint",
+      "available_mm": 1.44,
+      "target_mm": null,
+      "status": "TO_VERIFY",
+      "source": "latest named FCStd wet-zone guide",
+      "notes": [
+        "area is reference only; actual fixture usability is assessed separately"
+      ]
+    },
+    {
+      "metric": "主卫湿区 internal footprint",
+      "available_mm": 1.57,
+      "target_mm": null,
+      "status": "TO_VERIFY",
+      "source": "latest named FCStd wet-zone guide",
+      "notes": [
+        "area is reference only; actual fixture usability is assessed separately"
+      ]
+    },
+    {
+      "metric": "客卫（湿区） internal footprint",
+      "available_mm": 1.64,
+      "target_mm": null,
+      "status": "TO_VERIFY",
+      "source": "latest named FCStd wet-zone guide",
+      "notes": [
+        "area is reference only; actual fixture usability is assessed separately"
+      ]
+    }
+  ],
+  "door_collision_report": [
+    {
+      "door_id": "ENT-1",
+      "room": "entry_double_leaf",
+      "object": "鞋柜",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 52.5,
+      "overlap_mm2": 0.0,
+      "status": "CLEARANCE_LOW"
+    },
+    {
+      "door_id": "D-LIV-STUDY?",
+      "room": "door",
+      "object": "斜坡（轮椅用",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 53.8,
+      "overlap_mm2": 0.0,
+      "status": "CLEARANCE_LOW"
+    },
+    {
+      "door_id": "D-MB",
+      "room": "door",
+      "object": "主卧衣柜",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 85.8,
+      "overlap_mm2": 0.0,
+      "status": "CLEARANCE_LOW"
+    },
+    {
+      "door_id": "D-BATHM",
+      "room": "door",
+      "object": "主卫洗手盆和柜体",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 38.5,
+      "overlap_mm2": 0.0,
+      "status": "CLEARANCE_LOW"
+    },
+    {
+      "door_id": "D-GBATH",
+      "room": "door",
+      "object": "次卧小床1.2",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 0.0,
+      "overlap_mm2": 57256.8,
+      "status": "CONFLICT"
+    },
+    {
+      "door_id": "D-GBED",
+      "room": "door",
+      "object": "次卧小床1.2",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 0.0,
+      "overlap_mm2": 110275.0,
+      "status": "CONFLICT"
+    },
+    {
+      "door_id": "D-CLK",
+      "room": "door",
+      "object": "次主卫湿区",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 0.0,
+      "overlap_mm2": 1309.2,
+      "status": "CONFLICT"
+    },
+    {
+      "door_id": "D-CLK",
+      "room": "door",
+      "object": "次主卫马桶",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 0.0,
+      "overlap_mm2": 45504.3,
+      "status": "CONFLICT"
+    },
+    {
+      "door_id": "D-MASTER?",
+      "room": "door",
+      "object": "次主卧床头占位",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 17.2,
+      "overlap_mm2": 0.0,
+      "status": "CLEARANCE_LOW"
+    },
+    {
+      "door_id": "D-MASTER?",
+      "room": "door",
+      "object": "主卧电视柜",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 0.0,
+      "overlap_mm2": 136968.8,
+      "status": "CONFLICT"
+    },
+    {
+      "door_id": "G-GB-BALC",
+      "room": "glazing_door_double",
+      "object": "次卧衣柜",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 0.0,
+      "overlap_mm2": 22014.6,
+      "status": "CONFLICT"
+    },
+    {
+      "door_id": "G-DIN-LIV",
+      "room": "sliding_glass_3track",
+      "object": "鞋柜",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 0.0,
+      "overlap_mm2": 4490.6,
+      "status": "CONFLICT"
+    },
+    {
+      "door_id": "OPEN-COR-LIV",
+      "room": "open_passage",
+      "object": "斜坡（轮椅用",
+      "swing_angle": "TO_VERIFY_90_DEG_SCHEMATIC",
+      "minimum_distance_mm": 0.0,
+      "overlap_mm2": 164570.3,
+      "status": "CONFLICT"
+    }
+  ],
+  "missing_or_to_verify": [
+    "客卫3kg小洗衣机 named guide object missing in latest FCStd",
+    "study printer/NAS named guide object missing",
+    "owner ensuite door/opening named guide object not explicit; canonical candidate D-CLK remains TO_VERIFY",
+    "main laundry service/drainage/power/SKU TO_VERIFY"
+  ],
+  "no_layout_changes": true
+}

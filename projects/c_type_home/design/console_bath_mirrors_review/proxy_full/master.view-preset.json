@@ -1,0 +1,80 @@
+{
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "console_bath_mirrors_master",
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.02,
+  "far": 1000,
+  "position": [
+    14.25,
+    2.05,
+    -4.74
+  ],
+  "quaternion": [
+    -0.10470074415206909,
+    0.1286381185054779,
+    0.013658992946147919,
+    0.9860544800758362
+  ],
+  "orbit_target": [
+    13.82,
+    1.69,
+    -6.36
+  ],
+  "viewport": {
+    "width": 1000,
+    "height": 780,
+    "pixel_ratio": 1
+  },
+  "projection_matrix": [
+    1.883086,
+    0,
+    0,
+    0,
+    0,
+    2.414214,
+    0,
+    0,
+    0,
+    0,
+    -1.00004,
+    -1,
+    0,
+    0,
+    -0.0400008,
+    0
+  ],
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_console_bath_mirrors",
+  "source_revision": "console400-three-bath-mirrors-review-1",
+  "source_sha256": "1c66d6c98443543de15ca0cf532929067b9d4928d5c4acfb4811869908c04644",
+  "source_locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console_bath_mirrors_review/CONSOLE400_THREE_BATH_MIRRORS.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "console400-three-bath-mirrors-review-1",
+    "sha256": "a17345fe1a69f1407b838a83f675027d4fb07be6fb5278c9b22de9fd691da520",
+    "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/console_bath_mirrors_review/spatial-canvas.bindings.full.json"
+  },
+  "source_camera": {
+    "position": [
+      14.25,
+      4.74,
+      2.05
+    ],
+    "quaternion": [
+      0.6232112050056458,
+      0.08130251616239548,
+      0.10061924904584885,
+      0.7712804079055786
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": [],
+  "preview_uri": "REVIEW_MASTER.png"
+}

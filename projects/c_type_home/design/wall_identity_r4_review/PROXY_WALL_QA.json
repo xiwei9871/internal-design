@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "wall_surface_nearest_sample_checks": 1356,
+  "independent_wall_bounds_checked": 98,
+  "wall_partition_max_nearest_deviation_m": 8.60951877257321e-06,
+  "wall_surface_area_preserved": true,
+  "fresh_glb_entity_count": 1017,
+  "frozen_sources_unchanged": true
+}

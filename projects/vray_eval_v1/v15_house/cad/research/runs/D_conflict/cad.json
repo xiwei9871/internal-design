@@ -1,0 +1,220 @@
+{
+ "file": "/Users/xiwei/interior_design/projects/vray_eval_v1/v15_house/cad/research/dimension_audit/inputs/D_conflict.dxf",
+ "mmPerUnit": 1,
+ "scale_from": "DXF 单位（1 单位 = 1 mm）",
+ "scale_check": {},
+ "typical_wall_t": 197,
+ "outline_mm": [
+  5000,
+  4000
+ ],
+ "pieces": [
+  {
+   "id": "P0",
+   "orient": "h",
+   "c": 100.0,
+   "t": 200.0,
+   "s0": 0.0,
+   "s1": 5000.0,
+   "kind": "solid",
+   "flush": null
+  },
+  {
+   "id": "P1",
+   "orient": "h",
+   "c": 3900.0,
+   "t": 200.0,
+   "s0": 0.0,
+   "s1": 5000.0,
+   "kind": "solid",
+   "flush": null
+  },
+  {
+   "id": "P2",
+   "orient": "v",
+   "c": 100.0,
+   "t": 200.0,
+   "s0": 200.0,
+   "s1": 3800.0,
+   "kind": "solid",
+   "flush": null
+  },
+  {
+   "id": "P3",
+   "orient": "v",
+   "c": 4900.0,
+   "t": 200.0,
+   "s0": 200.0,
+   "s1": 3800.0,
+   "kind": "solid",
+   "flush": null
+  }
+ ],
+ "walls": [
+  {
+   "id": "W0",
+   "orient": "h",
+   "c": 3900.0,
+   "t": 200.0,
+   "a": 100.0,
+   "b": 4900.0,
+   "free": [],
+   "pieces": [
+    "P1"
+   ]
+  },
+  {
+   "id": "W1",
+   "orient": "v",
+   "c": 100.0,
+   "t": 200.0,
+   "a": 100.0,
+   "b": 3900.0,
+   "free": [],
+   "pieces": [
+    "P2"
+   ]
+  },
+  {
+   "id": "W2",
+   "orient": "h",
+   "c": 100.0,
+   "t": 200.0,
+   "a": 100.0,
+   "b": 4900.0,
+   "free": [],
+   "pieces": [
+    "P0"
+   ]
+  },
+  {
+   "id": "W3",
+   "orient": "v",
+   "c": 4900.0,
+   "t": 200.0,
+   "a": 100.0,
+   "b": 3900.0,
+   "free": [],
+   "pieces": [
+    "P3"
+   ]
+  }
+ ],
+ "openings": [],
+ "spec_walls": [
+  {
+   "src": "W0",
+   "kind": "solid",
+   "a": [
+    100,
+    3900
+   ],
+   "b": [
+    4900,
+    3900
+   ],
+   "t": 200
+  },
+  {
+   "src": "W1",
+   "kind": "solid",
+   "a": [
+    100,
+    100
+   ],
+   "b": [
+    100,
+    3900
+   ],
+   "t": 200
+  },
+  {
+   "src": "W2",
+   "kind": "solid",
+   "a": [
+    100,
+    100
+   ],
+   "b": [
+    4900,
+    100
+   ],
+   "t": 200
+  },
+  {
+   "src": "W3",
+   "kind": "solid",
+   "a": [
+    4900,
+    100
+   ],
+   "b": [
+    4900,
+    3900
+   ],
+   "t": 200
+  }
+ ],
+ "structs": [],
+ "dims": [
+  {
+   "id": "D0",
+   "orient": "h",
+   "at": 4800,
+   "ticks": [
+    0.0,
+    2000.0,
+    5000.0
+   ],
+   "segs": [
+    2000.0,
+    3000.0
+   ],
+   "labels": [
+    null,
+    null
+   ]
+  },
+  {
+   "id": "D1",
+   "orient": "h",
+   "at": 5600,
+   "ticks": [
+    0.0,
+    5000.0
+   ],
+   "segs": [
+    5000.0
+   ],
+   "labels": [
+    null
+   ]
+  }
+ ],
+ "axes": [],
+ "texts": [
+  {
+   "text": "2000",
+   "at": [
+    1068,
+    4700
+   ]
+  },
+  {
+   "text": "3200",
+   "at": [
+    3368,
+    4700
+   ]
+  },
+  {
+   "text": "5100",
+   "at": [
+    2468,
+    5500
+   ]
+  }
+ ],
+ "inserts": [],
+ "dxf_dims": []
+}

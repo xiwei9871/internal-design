@@ -1,0 +1,43 @@
+{
+  "thread_title": "锁定厨房建设方案",
+  "thread_id": "01a0f702-42b3-7620-811e-63fc3dda7df1",
+  "old_style_system": "/Users/xiwei/interior_design/projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/prompt_system.py",
+  "old_kitchen_image_reference": "/Users/xiwei/interior_design/projects/c_type_home/renders/r4_option_a/whole_house_ai_v1/03_kitchen/designer/kitchen_K2_designer_v1.png",
+  "current_geometry_revision": "console400-three-bath-mirrors-review-1",
+  "current_camera_register": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/00_MANIFEST/CAMERA_REGISTER_REVIEW_V3.json",
+  "old_image_role": "material/photo quality reference only; geometry not copied",
+  "status": "PILOT_GENERATED_HUMAN_REVIEW",
+  "generation_api_calls": 4,
+  "quality_test_recommendation": "high",
+  "immutable_kitchen_sha256": "28b289a38dbabafbc312e18b3057f232c51c44c07735b1cfcbd39aea39fd0536",
+  "output_directory": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/kitchen_photo_pilot_v2",
+  "outputs_for_review": [
+    {
+      "label": "A｜浅白蜡木＋浅石",
+      "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/kitchen_photo_pilot_v2/A_natural_ash.png",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "retry_count": 0
+    },
+    {
+      "label": "B｜暖白上柜＋暖灰石",
+      "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/kitchen_photo_pilot_v2/B_warmwhite_grey.png",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "retry_count": 0
+    },
+    {
+      "label": "C｜灰绿上柜＋竖纹砖",
+      "image": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/kitchen_photo_pilot_v2/C_sage_tile_retry1.png",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "retry_count": 1
+    }
+  ]
+}

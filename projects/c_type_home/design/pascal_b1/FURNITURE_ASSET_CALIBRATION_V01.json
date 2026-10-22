@@ -1,0 +1,383 @@
+{
+  "version": "V01",
+  "status": "HUMAN_REVIEW",
+  "convention": {
+    "world": "x=east(+CAD x), y=up, z=south(-CAD y); rotation=three.js Euler rad XYZ",
+    "yaw_formula": "yaw_deg = (90 + cad_facing_deg) mod 360 for native_front=+Z",
+    "anchor": "FOOTPRINT_CENTER_ON_FLOOR: position.xz = rect center - R(s*local_bbox_center_xz); position.y = -minY*sy"
+  },
+  "items": [
+    {
+      "source_name": "Rectangle046",
+      "semantic_type": "SOFA_3S",
+      "room": "R-LIVING/客厅",
+      "cad_rect_mm": [
+        3401.125,
+        9215.8125,
+        4301.125,
+        11515.8125
+      ],
+      "target_dims_m": {
+        "x_extent": 0.9,
+        "z_extent": 2.3,
+        "height": 0.85
+      },
+      "target_center_m": [
+        3.8511,
+        0,
+        -10.3658
+      ],
+      "design_axis_deg": 90.0,
+      "design_facing_deg": 0.0,
+      "candidate_asset": {
+        "id": "sofa",
+        "src": "/items/sofa/model.glb",
+        "native_dims_m": [
+          2.05,
+          0.731,
+          1.009
+        ],
+        "native_min": [
+          -1.023,
+          -0.009,
+          -0.551
+        ],
+        "native_max": [
+          1.027,
+          0.722,
+          0.459
+        ],
+        "native_pivot": "xz-center of mesh; y as listed",
+        "native_front_axis": "+Z",
+        "front_evidence": "frame extends z-0.551 (backrest side) vs front z+0.459; seat cushion reaches z+0.447"
+      },
+      "project_facing_yaw_deg": 90.0,
+      "native_front_correction_deg": 0,
+      "final_yaw_deg": 90.0,
+      "anchor_offset_local_m": [
+        0.002,
+        0.009,
+        -0.046
+      ],
+      "scale_xyz": [
+        1.122,
+        1.1628,
+        0.892
+      ],
+      "plan_scale_ratio": 1.258,
+      "classification": "PASS",
+      "confidence": "MEDIUM",
+      "notes": "SOFA_3S seat cushions face east toward media cabinet; moderate non-uniform plan scale ratio 1.26"
+    },
+    {
+      "source_name": "Rectangle047",
+      "semantic_type": "SOFA_2S",
+      "room": "R-LIVING/客厅",
+      "cad_rect_mm": [
+        4571.625,
+        11980.21875,
+        6471.625,
+        12830.21875
+      ],
+      "target_dims_m": {
+        "x_extent": 1.9,
+        "z_extent": 0.85,
+        "height": 0.85
+      },
+      "target_center_m": [
+        5.5216,
+        0,
+        -12.4052
+      ],
+      "design_axis_deg": 0.0,
+      "design_facing_deg": 270.0,
+      "candidate_asset": {
+        "id": "sofa",
+        "src": "/items/sofa/model.glb",
+        "native_dims_m": [
+          2.05,
+          0.731,
+          1.009
+        ],
+        "native_min": [
+          -1.023,
+          -0.009,
+          -0.551
+        ],
+        "native_max": [
+          1.027,
+          0.722,
+          0.459
+        ],
+        "native_pivot": "xz-center of mesh; y as listed",
+        "native_front_axis": "+Z",
+        "front_evidence": "frame extends z-0.551 (backrest side) vs front z+0.459; seat cushion reaches z+0.447"
+      },
+      "project_facing_yaw_deg": 0.0,
+      "native_front_correction_deg": 0,
+      "final_yaw_deg": 0.0,
+      "anchor_offset_local_m": [
+        0.002,
+        0.009,
+        -0.046
+      ],
+      "scale_xyz": [
+        0.9268,
+        1.1628,
+        0.8424
+      ],
+      "plan_scale_ratio": 1.1,
+      "classification": "PASS",
+      "confidence": "HIGH",
+      "notes": "SOFA_2S on north edge faces south into room"
+    },
+    {
+      "source_name": "Rectangle048",
+      "semantic_type": "CHAISE",
+      "room": "R-LIVING/客厅",
+      "cad_rect_mm": [
+        3974.0,
+        7796.28125,
+        5674.0,
+        8696.28125
+      ],
+      "target_dims_m": {
+        "x_extent": 1.7,
+        "z_extent": 0.9,
+        "height": 0.8
+      },
+      "target_center_m": [
+        4.824,
+        0,
+        -8.2463
+      ],
+      "design_axis_deg": 0.0,
+      "design_facing_deg": 90.0,
+      "candidate_asset": {
+        "id": "lounge-chair",
+        "src": "/items/lounge-chair/model.glb",
+        "native_dims_m": [
+          0.671,
+          1.028,
+          1.252
+        ],
+        "native_min": [
+          -0.336,
+          -0.003,
+          -0.715
+        ],
+        "native_max": [
+          0.336,
+          1.025,
+          0.537
+        ],
+        "native_pivot": "xz-center of mesh; y as listed",
+        "native_front_axis": "+Z",
+        "front_evidence": "backrest block z[-0.55,0] high y; seat/leg rest extends +Z"
+      },
+      "project_facing_yaw_deg": 180.0,
+      "native_front_correction_deg": 0,
+      "final_yaw_deg": 90.0,
+      "anchor_offset_local_m": [
+        0.0,
+        0.003,
+        -0.089
+      ],
+      "scale_xyz": [
+        1.3413,
+        0.7782,
+        1.3578
+      ],
+      "plan_scale_ratio": 1.012,
+      "classification": "PASS",
+      "confidence": "MEDIUM",
+      "notes": "CHAISE: register facing=90N is seat-open side, recline axis=E-W (rect 1.7x0.9). yaw chosen so recline axis lies E-W (back west, feet east); entry side faces north. REVIEW; facing semantics ambiguous for chaise: recline axis E-W, seat open side N"
+    },
+    {
+      "source_name": "Rectangle049",
+      "semantic_type": "COFFEE_TABLE",
+      "room": "R-LIVING/客厅",
+      "cad_rect_mm": [
+        5069.875,
+        9863.34375,
+        5619.875,
+        10863.34375
+      ],
+      "target_dims_m": {
+        "x_extent": 0.55,
+        "z_extent": 1.0,
+        "height": 0.4
+      },
+      "target_center_m": [
+        5.3449,
+        0,
+        -10.3633
+      ],
+      "design_axis_deg": 90.0,
+      "design_facing_deg": null,
+      "candidate_asset": {
+        "id": "coffee-table",
+        "src": "/items/coffee-table/model.glb",
+        "native_dims_m": [
+          1.718,
+          0.295,
+          1.034
+        ],
+        "native_min": [
+          -0.859,
+          0,
+          -0.526
+        ],
+        "native_max": [
+          0.859,
+          0.295,
+          0.508
+        ],
+        "native_pivot": "xz-center of mesh; y as listed",
+        "native_front_axis": "N/A",
+        "front_evidence": "symmetric table, no semantic front"
+      },
+      "project_facing_yaw_deg": null,
+      "native_front_correction_deg": 0,
+      "final_yaw_deg": 90.0,
+      "anchor_offset_local_m": [
+        0.0,
+        0,
+        -0.009
+      ],
+      "scale_xyz": [
+        0.5821,
+        1.3559,
+        0.5319
+      ],
+      "plan_scale_ratio": 1.094,
+      "classification": "PASS",
+      "confidence": "HIGH",
+      "notes": "COFFEE_TABLE long axis N-S; facing N/A"
+    },
+    {
+      "source_name": "Circle",
+      "semantic_type": "SIDE_TABLE",
+      "room": "R-LIVING/客厅",
+      "cad_rect_mm": [
+        3674.25,
+        12029.0625,
+        4174.25,
+        12529.0625
+      ],
+      "target_dims_m": {
+        "x_extent": 0.5,
+        "z_extent": 0.5,
+        "height": 0.5
+      },
+      "target_center_m": [
+        3.9242,
+        0,
+        -12.2791
+      ],
+      "design_axis_deg": null,
+      "design_facing_deg": null,
+      "candidate_asset": {
+        "id": "bedside-table",
+        "src": "/items/bedside-table/model.glb",
+        "native_dims_m": [
+          0.444,
+          0.48,
+          0.455
+        ],
+        "native_min": [
+          -0.222,
+          0,
+          -0.221
+        ],
+        "native_max": [
+          0.221,
+          0.48,
+          0.234
+        ],
+        "native_pivot": "xz-center of mesh; y as listed",
+        "native_front_axis": "+Z",
+        "front_evidence": "drawer pull prim at z+0.22"
+      },
+      "project_facing_yaw_deg": null,
+      "native_front_correction_deg": 0,
+      "final_yaw_deg": 0.0,
+      "anchor_offset_local_m": [
+        -0.0005,
+        0,
+        0.0065
+      ],
+      "scale_xyz": [
+        1.1261,
+        1.0417,
+        1.0989
+      ],
+      "plan_scale_ratio": 1.025,
+      "classification": "PASS",
+      "confidence": "HIGH",
+      "notes": "SIDE_TABLE square footprint; facing N/A"
+    },
+    {
+      "source_name": "Rectangle004",
+      "semantic_type": "MEDIA_CABINET",
+      "room": "R-LIVING/客厅",
+      "cad_rect_mm": [
+        7398.0,
+        8634.9375,
+        7696.875,
+        11523.84375
+      ],
+      "target_dims_m": {
+        "x_extent": 0.299,
+        "z_extent": 2.889,
+        "height": 0.48
+      },
+      "target_center_m": [
+        7.5474,
+        0,
+        -10.0794
+      ],
+      "design_axis_deg": 90.0,
+      "design_facing_deg": 180,
+      "candidate_asset": {
+        "id": "tv-stand",
+        "src": "/items/tv-stand/model.glb",
+        "native_dims_m": [
+          1.852,
+          0.346,
+          0.318
+        ],
+        "native_min": [
+          -0.926,
+          -0.207,
+          -0.159
+        ],
+        "native_max": [
+          0.926,
+          0.139,
+          0.159
+        ],
+        "native_pivot": "xz-center of mesh; y as listed",
+        "native_front_axis": "+Z",
+        "front_evidence": "open console face assumed +Z (catalog convention; verify in render)"
+      },
+      "project_facing_yaw_deg": 270,
+      "native_front_correction_deg": 0,
+      "final_yaw_deg": 270.0,
+      "anchor_offset_local_m": [
+        0.0,
+        0.207,
+        0.0
+      ],
+      "scale_xyz": [
+        1.5599,
+        1.3873,
+        0.9399
+      ],
+      "plan_scale_ratio": 1.66,
+      "classification": "SIZE_DISTORTION",
+      "confidence": "MEDIUM",
+      "notes": "MEDIA_CABINET on east wall, open face west; plan scale ratio 1.66 > 1.6; open-face side assumed +Z, verify in render"
+    }
+  ]
+}

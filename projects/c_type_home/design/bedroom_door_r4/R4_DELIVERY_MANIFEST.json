@@ -1,0 +1,19 @@
+{
+  "status": "DOOR_AND_FLOOR_MODELS_VERIFIED",
+  "models": {
+    "A": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+    "B": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_B_INWARD_R4.blend"
+  },
+  "source_hashes": {
+    "A": "4fa2915173ea46a2d7fe8d5ba97158a9a7d604268dafd97384499dff63a62575",
+    "B": "a2a7c2d08c740c0e7c0747a50dd5c8c176d6c67d3d56065168f783a7d64e596e"
+  },
+  "files_sha256": {
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_B_INWARD_R4.blend": "76ff55ad0fb4cac95b567bc62355ddca7010f62ac095b7dcb780aeb011ce008d",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_REVIEW.md": "08698045251103ba8249792da4a43ac6c3b346331183c55703d42a8f5af58cc4",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_OPTION_A_QA.json": "b0fbf815aa5e422db861fa56a770f8cde556c86858d3c7a26016f621ef223e53",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/R4_OPTION_B_QA.json": "6bb8469a2b2282c6cf4af996d43aa29f52614248518f33338fdf83074299237a",
+    "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/renders/DOOR_AND_FLOOR_REPAIR_COMPARISON.png": "b1226c64c72137f50571fea74ce740e202b4d5194af91e60bc02bc6700cf49da"
+  }
+}

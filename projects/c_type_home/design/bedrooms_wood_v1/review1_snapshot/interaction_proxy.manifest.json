@@ -1,0 +1,68 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_bedrooms_wood_v1_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_bedrooms_wood_v1",
+  "source_resource": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/BEDROOMS_WOOD_V1.blend",
+  "source_sha256": "ab632565e608fcde16cf4e65885ee73e5996714d8789bb6925b6e54216694331",
+  "source_revision": "bedrooms-wood-v1-review-1",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "bedrooms-wood-v1-review-1",
+        "sha256": "767d91f8f1b492388a9bbc556de9ceb6eac018bcee1c4e8e6db06e3f872a90ca",
+        "locator": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/bedrooms_wood_v1/spatial-canvas.bindings.full.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": false,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 468,
+        "display_floor": 5,
+        "source_flat": 179,
+        "display_furniture": 302,
+        "balcony_glass": 3,
+        "balcony_aluminum": 9
+      },
+      "flat_color_count": 35,
+      "profile": "bedrooms-wood-review",
+      "glass_alpha": 0.32
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "source_design_authority": "DERIVED_DESIGN_MODEL",
+      "inherits_study_revision": "study-room-daybed-v1-r5-daily",
+      "frozen_r4_unchanged": true,
+      "architecture_unchanged": true,
+      "bed_widths_m": {
+        "mother": 1.5,
+        "couple": 1.8,
+        "guest": 1.2
+      },
+      "guest_bunk": false,
+      "snapshot_note": "Bindings V1 frozen means a hash-locked exported snapshot; this is a derived furniture study, not new physical ground truth."
+    }
+  },
+  "entity_count": 938,
+  "scope": "full"
+}

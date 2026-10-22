@@ -1,0 +1,616 @@
+{
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v7/local_final/SOFA_RELAXED_COVER_V7.blend",
+  "sha256": "5bb0f004a9501bff61a017975cf65c8205f46e3af3a39d9a83c91096db46ec4f",
+  "material": "V5_NATURAL_FLAX_COTTON",
+  "nodes": [
+    {
+      "name": "Material Output",
+      "type": "ShaderNodeOutputMaterial",
+      "inputs": {
+        "Displacement": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Thickness": 0.0
+      },
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "Principled BSDF.001",
+      "type": "ShaderNodeBsdfPrincipled",
+      "inputs": {
+        "Base Color": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.5,
+        "IOR": 1.5,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          0.10000000149011612,
+          0.20000000298023224,
+          0.5
+        ],
+        "Subsurface Scale": 0.05000000074505806,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.20000000298023224,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      },
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "Mapping",
+      "type": "ShaderNodeMapping",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Scale": [
+          3.3333332538604736,
+          3.3333332538604736,
+          1.0
+        ]
+      },
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "Texture Coordinate.001",
+      "type": "ShaderNodeTexCoord",
+      "inputs": {},
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "Frame.002",
+      "type": "NodeFrame",
+      "inputs": {},
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "disp",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": "rough_linen_displacement_4k.png"
+    },
+    {
+      "name": "Displacement.001",
+      "type": "ShaderNodeDisplacement",
+      "inputs": {
+        "Height": 0.0,
+        "Midlevel": 0.5,
+        "Scale": 0.0005000000237487257,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "diff",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": "rough_linen_diffuse_4k.jpg"
+    },
+    {
+      "name": "metal",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": "rough_linen_metal.png"
+    },
+    {
+      "name": "spec_ior",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": "rough_linen_spec_ior_4k.png"
+    },
+    {
+      "name": "rough",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": "rough_linen_roughness_4k.png"
+    },
+    {
+      "name": "nor_gl",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": "rough_linen_normal_4k.png"
+    },
+    {
+      "name": "Normal Map.001",
+      "type": "ShaderNodeNormalMap",
+      "inputs": {
+        "Strength": 1.0,
+        "Color": [
+          0.5,
+          0.5,
+          1.0,
+          1.0
+        ]
+      },
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "Reroute.001",
+      "type": "NodeReroute",
+      "inputs": {
+        "Input": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "Frame.004",
+      "type": "NodeFrame",
+      "inputs": {},
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "anisotropy_strength",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": "rough_linen_anisotropy_strength_4k.png"
+    },
+    {
+      "name": "anisotropy_rotation",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": "rough_linen_anisotropy_rotation_4k.png"
+    },
+    {
+      "name": "Tangent",
+      "type": "ShaderNodeTangent",
+      "inputs": {},
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "metal.001",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "operation": null,
+      "image": "rough_linen_mask.png"
+    },
+    {
+      "name": "Physical surface coordinates",
+      "type": "ShaderNodeUVMap",
+      "inputs": {},
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "RGB to BW",
+      "type": "ShaderNodeRGBToBW",
+      "inputs": {
+        "Color": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ]
+      },
+      "operation": null,
+      "image": null
+    },
+    {
+      "name": "Math",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      },
+      "operation": "DIVIDE",
+      "image": null
+    },
+    {
+      "name": "Mix (Legacy)",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": 1.0,
+        "Color1": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ],
+        "Color2": [
+          0.4000000059604645,
+          0.3400000035762787,
+          0.2549999952316284,
+          1.0
+        ]
+      },
+      "operation": null,
+      "image": null
+    }
+  ],
+  "links": [
+    [
+      "disp",
+      "Color",
+      "Displacement.001",
+      "Height"
+    ],
+    [
+      "Displacement.001",
+      "Displacement",
+      "Material Output",
+      "Displacement"
+    ],
+    [
+      "metal",
+      "Color",
+      "Principled BSDF.001",
+      "Metallic"
+    ],
+    [
+      "rough",
+      "Color",
+      "Principled BSDF.001",
+      "Roughness"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "diff",
+      "Vector"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "metal",
+      "Vector"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "spec_ior",
+      "Vector"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "rough",
+      "Vector"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "disp",
+      "Vector"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "nor_gl",
+      "Vector"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "anisotropy_strength",
+      "Vector"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "anisotropy_rotation",
+      "Vector"
+    ],
+    [
+      "anisotropy_strength",
+      "Color",
+      "Principled BSDF.001",
+      "Anisotropic"
+    ],
+    [
+      "anisotropy_rotation",
+      "Color",
+      "Principled BSDF.001",
+      "Anisotropic Rotation"
+    ],
+    [
+      "spec_ior",
+      "Color",
+      "Principled BSDF.001",
+      "Specular IOR Level"
+    ],
+    [
+      "Mapping",
+      "Vector",
+      "Reroute.001",
+      "Input"
+    ],
+    [
+      "nor_gl",
+      "Color",
+      "Normal Map.001",
+      "Color"
+    ],
+    [
+      "Normal Map.001",
+      "Normal",
+      "Principled BSDF.001",
+      "Normal"
+    ],
+    [
+      "Principled BSDF.001",
+      "BSDF",
+      "Material Output",
+      "Surface"
+    ],
+    [
+      "Tangent",
+      "Tangent",
+      "Principled BSDF.001",
+      "Tangent"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "metal.001",
+      "Vector"
+    ],
+    [
+      "metal.001",
+      "Color",
+      "Principled BSDF.001",
+      "Alpha"
+    ],
+    [
+      "rough",
+      "Color",
+      "Principled BSDF.001",
+      "Diffuse Roughness"
+    ],
+    [
+      "Physical surface coordinates",
+      "UV",
+      "Mapping",
+      "Vector"
+    ],
+    [
+      "diff",
+      "Color",
+      "RGB to BW",
+      "Color"
+    ],
+    [
+      "RGB to BW",
+      "Val",
+      "Math",
+      "Value"
+    ],
+    [
+      "Math",
+      "Value",
+      "Mix (Legacy)",
+      "Color1"
+    ],
+    [
+      "Mix (Legacy)",
+      "Color",
+      "Principled BSDF.001",
+      "Base Color"
+    ]
+  ],
+  "world_nodes": [
+    {
+      "name": "Background",
+      "inputs": {
+        "Color": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          1.0
+        ],
+        "Strength": 0.3499999940395355,
+        "Weight": 0.0
+      }
+    },
+    {
+      "name": "World Output",
+      "inputs": {}
+    }
+  ],
+  "lights": [
+    {
+      "name": "V6_KEY",
+      "location": [
+        -2.0,
+        -2.0,
+        3.0
+      ],
+      "power": 420.0,
+      "size": 2.5,
+      "color": [
+        1.0,
+        0.9599999785423279,
+        0.8999999761581421
+      ]
+    },
+    {
+      "name": "V6_FILL",
+      "location": [
+        2.0,
+        -1.0,
+        2.0
+      ],
+      "power": 180.0,
+      "size": 2.0,
+      "color": [
+        0.9200000166893005,
+        0.9599999785423279,
+        1.0
+      ]
+    },
+    {
+      "name": "V6_RIM",
+      "location": [
+        0.0,
+        2.0,
+        2.200000047683716
+      ],
+      "power": 220.0,
+      "size": 2.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "color_management": {
+    "view": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.0
+  },
+  "workbench": {
+    "light": "STUDIO",
+    "cavity": false,
+    "cavity_type": "WORLD"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_living_wave35_aluminum_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_UPPER_BOOKCASE_SIDE_CABINET_CHAISE_REVIEW_9.blend",
+  "source_sha256": "804e38e122995bc2aa1793ba5071fa2a7202e24d7f921747fe5ee40e543cc34d",
+  "source_revision": "r4-upper-bookcase-side-cabinet-chaise-review-9",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "19-upper-bookcase-side-cabinet-chaise",
+        "sha256": "3016977ae1bfdfa9df1f66031906d21fe06ccb81993bc900d3a0211b482429a4",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.review9.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": false,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 633,
+        "display_floor": 5,
+        "source_flat": 30,
+        "display_furniture": 334,
+        "balcony_glass": 3,
+        "balcony_aluminum": 9
+      },
+      "flat_color_count": 15,
+      "profile": "zoning-with-north-balcony-glass-and-aluminum",
+      "glass_alpha": 0.32,
+      "texture_free": true
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "correction": "Bookcase placed on actual450mm upper landing at packet-selectedsolidwall0044,clear of sliding door;separate820x320x340mm5015 cabinet besideLchaise;original window chaise restored at original station;stair/bench/seating south shift preserved.",
+      "parent_source_resource_id": "c_type_r4",
+      "parent_source_revision": "r4",
+      "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "window_chaise_restored": true,
+      "fitness_equipment_fit_verified": false,
+      "fitness_candidate_outline_currently_shared_with_chaise": true
+    }
+  },
+  "entity_count": 1012,
+  "scope": "full"
+}

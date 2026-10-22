@@ -1,0 +1,342 @@
+{
+  "register": "SITE_DETAIL_REGISTER_V01",
+  "facts": [
+    {
+      "detail_id": "K-SITE-01",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "FRIDGE_LEFT_TALL_STORAGE",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_001"
+      ],
+      "related_B0_objects": [
+        "FLOOR_LOWER"
+      ],
+      "related_B1_objects": [
+        "B11_K-TALL-L"
+      ],
+      "authority": "HUMAN_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "冰箱左侧存在直达可见木质顶面的窄高柜，分段门面；B1 的 935 mm 宽服务柜形态不对应此窄柜。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED",
+      "confirmed_width_mm": 320
+    },
+    {
+      "detail_id": "K-SITE-02",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "FRIDGE_OVERHEAD_WITH_GAP",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_001",
+        "SITE_PHOTO_KITCHEN_002"
+      ],
+      "related_B0_objects": [
+        "FLOOR_LOWER"
+      ],
+      "related_B1_objects": [
+        "B11_K-FRIDGE-OVERHEAD"
+      ],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "冰箱上方有吊柜；冰箱顶与柜底之间保留开放空隙，不能直接接成实体高柜。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-03",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "MICROWAVE_RISER_SHELF",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_001",
+        "SITE_PHOTO_KITCHEN_002"
+      ],
+      "related_B0_objects": [
+        "W_wall_md_0015"
+      ],
+      "related_B1_objects": [
+        "B11_K-TALL-L",
+        "B11_K-RUN-E"
+      ],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "冰箱与长台面转角附近有架高的微波炉承台/开放架；具体宽、深、标高待核。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-04",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "UPPER_CABINET_RUN",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_002",
+        "SITE_PHOTO_KITCHEN_003"
+      ],
+      "related_B0_objects": [
+        "W_wall_md_0015"
+      ],
+      "related_B1_objects": [
+        "B11_K-WALL-E"
+      ],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "长边为连续封闭吊柜，顶部另有收口带；柜门分缝与旧 B1 等分通用门板不同。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-05",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "VERTICAL_HOOD_ASSEMBLY",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_002",
+        "SITE_PHOTO_KITCHEN_003"
+      ],
+      "related_B0_objects": [
+        "W_wall_md_0015"
+      ],
+      "related_B1_objects": [
+        "B11_K-COOK_HOOD_REVIEW"
+      ],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "灶具上方存在较高的竖向烟机面板和下部金属集烟体；B1 的薄横块不足以表达实际轮廓。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-06",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "DRAWER_STACK_UNDER_HOB",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_003",
+        "SITE_PHOTO_KITCHEN_004"
+      ],
+      "related_B0_objects": [],
+      "related_B1_objects": [
+        "B11_K-RUN-E"
+      ],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "灶具下方为宽抽屉组；完整层数与各层高度待确认，不能按均匀门板替代。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-07",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "DISHWASHER_ORDER",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_003",
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005"
+      ],
+      "related_B0_objects": [],
+      "related_B1_objects": [
+        "B11_K-DISHW"
+      ],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "照片中黑色洗碗机位于灶具右侧、靠水槽方向；物理先后关系可确认，当前 CAD y 位置仍需注册。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-08",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "OPEN_DISPLAY_RECESS",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_003",
+        "SITE_PHOTO_KITCHEN_004"
+      ],
+      "related_B0_objects": [
+        "W_wall_md_0015"
+      ],
+      "related_B1_objects": [
+        "B11_K-WALL-E"
+      ],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "烟机右侧吊柜下方有横向开放展示凹格。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-09",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "WALL_BRACKET_GLASS_SHELF",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_003",
+        "SITE_PHOTO_KITCHEN_004"
+      ],
+      "related_B0_objects": [
+        "W_wall_md_0015"
+      ],
+      "related_B1_objects": [],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "开放凹格下面另有墙托玻璃置物板；它是收纳构件，不是窗口或玻璃隔墙。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-10",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "SINK_AT_WINDOW",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005"
+      ],
+      "related_B0_objects": [
+        "GLZ_W-KIT-S"
+      ],
+      "related_B1_objects": [
+        "B11_K-SINK"
+      ],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "水槽位于窗前，周围台面形成转角；人物和设备遮挡部分窗框/台面角，不能把隐蔽边缘当可靠定位点。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-11",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "WINDOW_ADJACENT_UTILITY_APPLIANCE",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005"
+      ],
+      "related_B0_objects": [
+        "GLZ_W-KIT-S"
+      ],
+      "related_B1_objects": [],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "窗边有白色壁挂设备、外露软管/连接管；具体设备型号和 MEP 接点待核。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-12",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "SINK_SIDE_OPEN_RACK",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_005"
+      ],
+      "related_B0_objects": [
+        "W_wall_md_0009"
+      ],
+      "related_B1_objects": [],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "水槽右侧、柱/墙侧有多层开放架。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-13",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "COLUMN_SIDE_RETURN_COUNTER",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005"
+      ],
+      "related_B0_objects": [
+        "W_wall_md_0009"
+      ],
+      "related_B1_objects": [],
+      "authority": "PDF_AND_HUMAN_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "原始设计岛台存在，PDF C 立面提供岛台及回转连接构造；本轮已补建。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-14",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "ADJACENT_TALL_DRAWER_STORAGE",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005"
+      ],
+      "related_B0_objects": [
+        "W_wall_md_0009",
+        "GLZ_W-LBALC-S"
+      ],
+      "related_B1_objects": [
+        "B11_Rectangle029",
+        "B11_Rectangle032"
+      ],
+      "authority": "HUMAN_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "岛台旁新增柜，宽600高2000，上方有壁挂机。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED",
+      "confirmed_width_mm": 600,
+      "confirmed_height_mm": 2000
+    },
+    {
+      "detail_id": "K-SITE-15",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "WINDOW_SIDE_BUFFET_ASSEMBLY",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_006"
+      ],
+      "related_B0_objects": [
+        "GLZ_W-LBALC-S"
+      ],
+      "related_B1_objects": [
+        "B11_Rectangle029",
+        "B11_Rectangle032"
+      ],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "DESIGN_RELEVANT_GEOMETRY",
+      "observed_relationship": "另一窗边柜为上部封闭门、中部开放台面、抽屉带和下部封闭柜；不能直接套为整块矮柜。R029/R032 的对应关系尚未确认。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-16",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "SLOPING_WOOD_FINISH_PROFILE",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_001",
+        "SITE_PHOTO_KITCHEN_002",
+        "SITE_PHOTO_KITCHEN_003",
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005",
+        "SITE_PHOTO_KITCHEN_006"
+      ],
+      "related_B0_objects": [
+        "CEILING_LOWER"
+      ],
+      "related_B1_objects": [],
+      "authority": "POSSIBLE_B0_CONFLICT",
+      "classification": "EXISTING_FINISH",
+      "observed_relationship": "可见木质斜顶、转折/脊线和横向构件；是否为结构斜顶还是下挂装饰面未证明。实际高点/低点与 B0 水平吊顶 datum 的关系需核验。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    },
+    {
+      "detail_id": "K-SITE-17",
+      "room": "KITCHEN_AND_ADJACENT",
+      "semantic_type": "CLUTTER_AND_DECOR_REFERENCE",
+      "source_photos": [
+        "SITE_PHOTO_KITCHEN_001",
+        "SITE_PHOTO_KITCHEN_002",
+        "SITE_PHOTO_KITCHEN_003",
+        "SITE_PHOTO_KITCHEN_004",
+        "SITE_PHOTO_KITCHEN_005",
+        "SITE_PHOTO_KITCHEN_006"
+      ],
+      "related_B0_objects": [],
+      "related_B1_objects": [],
+      "authority": "PHOTO_CONFIRMED",
+      "classification": "EXISTING_FURNITURE",
+      "observed_relationship": "台面器物、照片、人物、餐椅、灯和木纹只作现场参考；本阶段不复制生活杂物或制作最终材质/灯光。",
+      "dimensional_authority": "TO_VERIFY_UNLESS_HUMAN_CONFIRMED_REFERENCE",
+      "global_B0_coordinate_mapping": "NOT_YET_METRIC_ACCEPTED"
+    }
+  ],
+  "scope": "CURRENT_KITCHEN_PHOTOGRAPHED_DETAILS",
+  "correction_status": "HUMAN_CONFIRMED_KITCHEN_LOGIC_APPLIED_V2"
+}

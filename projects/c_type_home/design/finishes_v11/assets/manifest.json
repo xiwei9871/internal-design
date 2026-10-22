@@ -1,0 +1,43 @@
+{
+  "method": "Reused existing tested ash photography and owner sample; no AI image request",
+  "assets": [
+    {
+      "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/finishes_v11/assets/pale_ash_floor_1200x1080.jpg",
+      "sha256": "e9998f76cc429bd73ea9e8baded504a6e17a44d4de295036befa666a7a6acb52",
+      "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_diffuse_2k.jpg",
+      "source_sha256": "00abb70f86bdfe49aa6e09f350af9e8e1605ccf13171f9be46ceb6018846c06b",
+      "license": "Inherited project asset, see assets/ash/asset-manifest.json",
+      "repeat_m": [
+        1.2,
+        1.08
+      ],
+      "board_mm": [
+        1200,
+        180
+      ],
+      "target_mean_linear_rgb": [
+        0.42,
+        0.325,
+        0.215
+      ]
+    },
+    {
+      "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/finishes_v11/assets/owner_subtle_marble_1200x600.jpg",
+      "sha256": "0dc72340411c9f4ebc2c6af66969d94407e787f63b6eda868bec8ed9294fb91d",
+      "source": "/var/folders/ch/yf284jsj7f7_b0tgqkpxhwq00000gn/T/codex-clipboard-a2a12490-0a11-4c9e-8e8c-6107a4544a02.png",
+      "source_sha256": "bed9500fa0e4f5ca1823fb2c333d3ae53a94fd0d5c2b7cd4fc9d17f0ae262cb5",
+      "crop_xyxy": [
+        58,
+        100,
+        458,
+        300
+      ],
+      "repeat_m": [
+        1.2,
+        0.6
+      ],
+      "grout_mm": 2,
+      "source_status": "Owner supplied appearance reference; product and slip rating pending"
+    }
+  ]
+}

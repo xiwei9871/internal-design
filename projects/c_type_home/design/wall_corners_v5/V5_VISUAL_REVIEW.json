@@ -1,0 +1,11 @@
+{
+  "status": "INSPECTED",
+  "views": [
+    "BEFORE_WALL_V4_CAM_01",
+    "BEFORE_WALL_V4_CAM_02",
+    "AFTER_WALL_V4_CAM_01",
+    "AFTER_WALL_V4_CAM_02"
+  ],
+  "images_inline_delivery": false,
+  "finding": "After corner patches remove red-circle grooves; current-study south opening remains open by explicit authority."
+}

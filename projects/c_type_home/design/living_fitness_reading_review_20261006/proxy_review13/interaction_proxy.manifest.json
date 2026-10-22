@@ -1,0 +1,68 @@
+{
+  "schema": "interaction-proxy-v1",
+  "design_id": "c_type_home",
+  "resource_id": "res_c_type_r4_living_wave35_aluminum_review_full",
+  "type": "interaction_proxy",
+  "format": "glb",
+  "authority": "derived",
+  "proxy_uri": "interaction_proxy.glb",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_resource": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_SUNROOM_CABINET_FREEZER_SWAP_REVIEW_13.blend",
+  "source_sha256": "ac9532d3a39ccd8dd6dd22d7a7b829f0113f2736c921a42637f5a27c506fa7f2",
+  "source_revision": "r4-sunroom-cabinet-freezer-swap-review-13",
+  "coordinate_frame": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "source_frame": {
+    "coordinate_frame": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "extensions": {
+    "spatial_canvas.blender": {
+      "meters_per_scene_unit": 1.0,
+      "source_coordinate_frame": "c_type_world",
+      "source_up_axis": "Z",
+      "source_authority": "frozen",
+      "bindings": {
+        "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+        "registry_revision": "23-sunroom-cabinet-freezer-swap-no-cover",
+        "sha256": "6f0c332dc7a03b68e816aeb300a99f6e21bb12ecfce2a6814d5c23d3af71d083",
+        "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.review13.json"
+      }
+    },
+    "spatial_canvas.presentation": {
+      "color_mode": "zoning-flat",
+      "textures": false,
+      "opaque": false,
+      "roughness": 1,
+      "color_origins": {
+        "display_wall": 633,
+        "display_floor": 5,
+        "source_flat": 75,
+        "display_furniture": 334,
+        "balcony_glass": 3,
+        "balcony_aluminum": 9
+      },
+      "flat_color_count": 26,
+      "profile": "zoning-with-north-balcony-glass-and-aluminum",
+      "glass_alpha": 0.32,
+      "texture_free": true
+    },
+    "spatial_canvas.review": {
+      "status": "HUMAN_REVIEW",
+      "correction": "Swap chest freezer and adjacent low cabinet; remove every freezer top cover and hinge; add 700x200x2300mm shallow sliding-front high cabinet behind compact sofa; shorten north plant ledge for freezer clear lid zone.",
+      "parent_source_resource_id": "c_type_r4",
+      "parent_source_revision": "r4",
+      "parent_source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+      "freezer_top_clear": true,
+      "freezer_countertop_fixed": false,
+      "freezer_and_low_cabinet_swapped": true,
+      "sofa_rear_high_cabinet": true,
+      "manufacturer_lid_sweep_verified": false,
+      "utilities_verified": false
+    }
+  },
+  "entity_count": 1054,
+  "scope": "full"
+}

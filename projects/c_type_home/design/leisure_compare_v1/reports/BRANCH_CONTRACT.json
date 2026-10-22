@@ -1,0 +1,12 @@
+{
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/bedroom_door_r4/OPTION_A_SLIDING_R4.blend",
+  "source_sha256": "d109c7efcfa2b2b2565e4c073ee0cdf5282b23c01122bc9c1bbe7b8791ac3afb",
+  "scope": "Fan platform and0to450 transition only; architectural room boundaries and openings immutable",
+  "lower_ffl": 0,
+  "upper_ffl": 0.45,
+  "primary_output": "A retained continuous curved transition, B removed fan compact stair",
+  "material_scope": "clay plus simple pale timber",
+  "source_writeback": false,
+  "construction_release": false,
+  "prior_living_finalize": "References/materials retained; finish rendering deferred until platform decision"
+}

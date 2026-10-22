@@ -1,0 +1,103 @@
+{
+  "status": "PASS_SELECTED_TECHNICAL_GATES",
+  "candidate_sha256": "8ce341da085e6a3c29b8fdc4ca4b8aa84117f6df19e4686a1be043d94e4fd609",
+  "protected_files": 16,
+  "original_objects_preserved": 3455,
+  "original_geometry_pose_changes": [],
+  "guest_unchanged": true,
+  "guest_previous_entry_issue": "unchanged and unresolved by ownerinstruction",
+  "registered_cameras": 75,
+  "asset_checks": [
+    {
+      "object": "HUNYUAN_V3_COUPLE_BED",
+      "dims_m": [
+        2.130000114440918,
+        1.9100000858306885,
+        1.070000171661377
+      ],
+      "bounds_m": [
+        [
+          9.13700008392334,
+          1.1319999694824219,
+          0.44999998807907104
+        ],
+        [
+          11.267000198364258,
+          3.0420000553131104,
+          1.5200001001358032
+        ]
+      ],
+      "floor_contact_m": 0.44999998807907104,
+      "triangles": 50000,
+      "uv_layers": 2,
+      "raw_boundary_edges": 10150,
+      "boundary_after_analysis_only_weld": 0,
+      "temporary_weld": "never applied to actual source UV mesh"
+    },
+    {
+      "object": "HUNYUAN_V3_LIVING_L_SOFA",
+      "dims_m": [
+        1.4500000476837158,
+        2.8999996185302734,
+        0.8999999761581421
+      ],
+      "bounds_m": [
+        [
+          3.4040000438690186,
+          8.0,
+          0.0
+        ],
+        [
+          4.854000091552734,
+          10.899999618530273,
+          0.8999999761581421
+        ]
+      ],
+      "floor_contact_m": 0.0,
+      "triangles": 49974,
+      "uv_layers": 2,
+      "raw_boundary_edges": 12280,
+      "boundary_after_analysis_only_weld": 0,
+      "temporary_weld": "never applied to actual source UV mesh"
+    },
+    {
+      "object": "HUNYUAN_V3_COUPLE_TV_CONSOLE",
+      "dims_m": [
+        0.3190116882324219,
+        1.2000000476837158,
+        0.488411545753479
+      ],
+      "bounds_m": [
+        [
+          8.020000457763672,
+          1.4869999885559082,
+          0.44999998807907104
+        ],
+        [
+          8.339012145996094,
+          2.687000036239624,
+          0.93841153383255
+        ]
+      ],
+      "floor_contact_m": 0.44999998807907104,
+      "triangles": 49970,
+      "uv_layers": 1,
+      "raw_boundary_edges": 13816,
+      "boundary_after_analysis_only_weld": 0,
+      "temporary_weld": "never applied to actual source UV mesh"
+    }
+  ],
+  "selective_intersections": [],
+  "bedfoot_to_console_front_m": 0.7979879379272461,
+  "bedside_restored": 24,
+  "missing_textures": [],
+  "packed_images": 36,
+  "owner_appearance_accepted": false,
+  "not_certified": [
+    "allfurniture mechanics",
+    "dynamicdoors/body envelopes",
+    "exactcataloginternalshapes",
+    "texturephysicalroughness",
+    "procurementdimensions beyond declared outer calibration"
+  ]
+}

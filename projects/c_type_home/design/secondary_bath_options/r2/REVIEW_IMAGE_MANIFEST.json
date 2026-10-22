@@ -1,0 +1,62 @@
+{
+  "images": [
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/AB_MODEL_COMPARISON.png",
+      "sha256": "6f5f7b06515dc285f3cf04be61d40f42aa10f2af40d3d1d6ff91a5b0343c9f25"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/AB_PLAN_COMPARISON.png",
+      "sha256": "7bf282a3a25aa1c01a7f0411cd4803cec5ade5d9aa16d38c9b4e1f5100d9a258"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/A_CONTEXT_AXON_100.png",
+      "sha256": "51131d53361f48920f4d3a1699b393ef7e1e02d267ecdf6dede333e0af7143d5"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/A_CUTAWAY_AXON_100.png",
+      "sha256": "c9821b18c5dd152d5ffdaa69258018acad9298e431b395a275fca8b8ed264008"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/A_ENTRY_001.png",
+      "sha256": "4b76f7302df09bf45195371a5a230f5558a90ea7ae2752bbf40c09396f5ba052"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/A_ENTRY_100.png",
+      "sha256": "4edae3ee5c7279c7ecda91f5c129ed21e920051a075b30f1f22ab76b42182ad1"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/A_INTERIOR_100.png",
+      "sha256": "28e6e52f473e0ed50043a7a2b82cc8152266f40dd9324fabe23889c31be2ab28"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/A_PLAN_DIMENSIONED.png",
+      "sha256": "4c0a4951d40650aa8540c6a1d5936551e0a4fc3891f0832939299820ebf94a29"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_CONTEXT_AXON_100.png",
+      "sha256": "c5797f294a896b9bead682f6ca66a02264eb8020ef5b4c50345e78613d004f5d"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_CUTAWAY_AXON_100.png",
+      "sha256": "bb9fb1e9738ad0ec88066b8d2bcce24e838220e128982e835bb6180032a8b8ea"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_ENTRY_001.png",
+      "sha256": "4d99bf0d123f99aacbb8d57610606480b95c1a8e2674c51e382e67cb92069b17"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_ENTRY_100.png",
+      "sha256": "14f4544048e4ad32b92106c6487485467db944fddbf52798413e9118dbf66ebc"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_INTERIOR_100.png",
+      "sha256": "82369c42d245ea1393dffc30038b05a371a9b64bc2e932fc246f84c2aa9bc8f6"
+    },
+    {
+      "path": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/renders/B_PLAN_DIMENSIONED.png",
+      "sha256": "ba6a0ef020eac22708baf941591aa80f83a52d268de01ea0faf29efe1d657369"
+    }
+  ],
+  "proxies_directory": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_bath_options/r2/proxies",
+  "context_policy": "PATHS_ONLY"
+}

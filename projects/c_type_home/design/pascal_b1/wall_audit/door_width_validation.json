@@ -1,0 +1,104 @@
+[
+ {
+  "id": "ENT-1",
+  "expected_mm": 1700,
+  "emitted_mm": 1700,
+  "mode": "HOST_BAND",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "D-SM",
+  "expected_mm": 700,
+  "emitted_mm": 700,
+  "mode": "PIERCES",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "D-MB",
+  "expected_mm": 500,
+  "emitted_mm": 500,
+  "mode": "PIERCES",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "D-BATHM",
+  "expected_mm": 400,
+  "emitted_mm": 400,
+  "mode": "PIERCES",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "D-STUDY",
+  "expected_mm": 400,
+  "emitted_mm": 400,
+  "mode": "PIERCES",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "D-GBATH",
+  "expected_mm": 800,
+  "emitted_mm": 800,
+  "mode": "PIERCES",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "D-GBED",
+  "expected_mm": 800,
+  "emitted_mm": 800,
+  "mode": "PIERCES",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "D-ENS-OWNER",
+  "expected_mm": 700,
+  "emitted_mm": 700,
+  "mode": "PIERCES",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "D-CONN-MB-SMB",
+  "expected_mm": 300,
+  "emitted_mm": 300,
+  "mode": "PIERCES_PERPENDICULAR",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "G-GB-BALC",
+  "expected_mm": 2000,
+  "emitted_mm": 2000,
+  "mode": "HOST_BAND",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "G-DIN-LIV",
+  "expected_mm": 2700,
+  "emitted_mm": 2700,
+  "mode": "GLAZED_SCREEN"
+ },
+ {
+  "id": "G-LIV-NBALC",
+  "expected_mm": 850,
+  "emitted_mm": 850,
+  "mode": "HOST_BAND",
+  "width_status": "CONFIRMED",
+  "ok": true
+ },
+ {
+  "id": "OPEN-COR-LIV",
+  "expected_mm": 1700,
+  "emitted_mm": 1700,
+  "mode": "REMOVED_HOST",
+  "width_status": "CONFIRMED",
+  "ok": true
+ }
+]

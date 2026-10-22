@@ -1,0 +1,71 @@
+{
+  "stage": "clay",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/form1/SOFA_LOOSE_COVER_V8.blend",
+  "source_sha256": "97c40b0f6de6c8314f1f3f61af8920da5ae028723dd86ab47e7c197ce95efb75",
+  "blender": "5.2.1 LTS",
+  "engine": "BLENDER_WORKBENCH",
+  "images": [
+    {
+      "family": "V7",
+      "camera": "V6_FRONT",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/form1/clay/V7_V6_FRONT.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0.65
+    },
+    {
+      "family": "V7",
+      "camera": "V6_SIDE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/form1/clay/V7_V6_SIDE.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0.1
+    },
+    {
+      "family": "V7",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/form1/clay/V7_V6_THREE_QUARTER.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0.09
+    },
+    {
+      "family": "V8",
+      "camera": "V6_FRONT",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/form1/clay/V8_V6_FRONT.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0.13
+    },
+    {
+      "family": "V8",
+      "camera": "V6_SIDE",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/form1/clay/V8_V6_SIDE.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0.11
+    },
+    {
+      "family": "V8",
+      "camera": "V6_THREE_QUARTER",
+      "path": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/sofa_soft_pilot_v8/form1/clay/V8_V6_THREE_QUARTER.png",
+      "size": [
+        1000,
+        800
+      ],
+      "seconds": 0.11
+    }
+  ],
+  "samples": 0,
+  "same_studio_materials": true
+}

@@ -1,0 +1,16 @@
+{
+  "status": "HUMAN_REVIEW_PR_BLOCKED",
+  "active_blender_jobs": 0,
+  "branch": "codex/c-type-sofa-fill-form-v10",
+  "candidate": "delivery/SOFA_DIFFERENTIATED_FILL_V10.blend",
+  "sha256": "ad9960ad4991e1f2f524a052815ae5c469efcf50967539fa74d921a877c741b8",
+  "technical": "PASS_TECHNICAL_ONLY",
+  "visual": "greater back fullness, cover remains regular; owner pending",
+  "next": "owner review; no more automatic modeling/rendering or house propagation",
+  "image2_requests": 0,
+  "whole_house_jobs": 0,
+  "commit": "0af504e",
+  "pushed_remote_ref": "origin/codex/c-type-sofa-fill-form-v10",
+  "pr": null,
+  "pr_blocker": "GitHub CLI: You are not logged into any GitHub hosts"
+}

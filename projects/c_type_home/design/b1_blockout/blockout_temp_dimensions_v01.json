@@ -1,0 +1,170 @@
+{
+ "schema": "blockout_temp_dimensions_v01",
+ "rule": "All values below are BLOCKOUT_TEMP_VALUE — placeholder heights/levels without field or historical evidence. None are site facts.",
+ "level_delta": {
+  "split_level_delta_mm": 350,
+  "stair_riser_mm": 175,
+  "evidence": "owner estimate <=350 (2 risers, 3rd step = platform); cad-derived ~400 — FIELD MEASURE REQUIRED",
+  "status": "TO_VERIFY"
+ },
+ "verticals_mm": {
+  "ceiling_height_mm": {
+   "value": 2800,
+   "status": "TO_VERIFY"
+  },
+  "door_height_mm": {
+   "value": 2100,
+   "status": "TO_VERIFY"
+  },
+  "opening_lintel_bottom_mm": {
+   "value": 2100,
+   "status": "TO_VERIFY"
+  },
+  "window_sill_mm": {
+   "value": 900,
+   "status": "TO_VERIFY"
+  },
+  "window_head_mm": {
+   "value": 2400,
+   "status": "TO_VERIFY"
+  },
+  "glass_door_head_mm": {
+   "value": 2400,
+   "status": "TO_VERIFY"
+  },
+  "parapet_height_mm": {
+   "value": 1100,
+   "status": "TO_VERIFY"
+  },
+  "bay_sill_mm": {
+   "value": 600,
+   "status": "TO_VERIFY"
+  },
+  "bay_head_mm": {
+   "value": 2400,
+   "status": "TO_VERIFY"
+  },
+  "bay_roof_mm": {
+   "value": 2800,
+   "status": "TO_VERIFY"
+  },
+  "balcony_glazing_head_mm": {
+   "value": 2800,
+   "status": "TO_VERIFY"
+  },
+  "slab_thickness_mm": {
+   "value": 150,
+   "status": "TO_VERIFY"
+  },
+  "wardrobe_h": {
+   "value": 2200,
+   "status": "TO_VERIFY"
+  },
+  "bookcase_h": {
+   "value": 2000,
+   "status": "TO_VERIFY"
+  },
+  "low_bookcase_h": {
+   "value": 900,
+   "status": "TO_VERIFY"
+  },
+  "shoe_cab_h": {
+   "value": 1000,
+   "status": "TO_VERIFY"
+  },
+  "bed_h": {
+   "value": 500,
+   "status": "TO_VERIFY"
+  },
+  "headboard_h": {
+   "value": 1100,
+   "status": "TO_VERIFY"
+  },
+  "nightstand_h": {
+   "value": 500,
+   "status": "TO_VERIFY"
+  },
+  "desk_h": {
+   "value": 720,
+   "status": "TO_VERIFY"
+  },
+  "sofa_h": {
+   "value": 800,
+   "status": "TO_VERIFY"
+  },
+  "chaise_h": {
+   "value": 750,
+   "status": "TO_VERIFY"
+  },
+  "coffee_table_h": {
+   "value": 450,
+   "status": "TO_VERIFY"
+  },
+  "side_table_h": {
+   "value": 550,
+   "status": "TO_VERIFY"
+  },
+  "dining_table_h": {
+   "value": 720,
+   "status": "TO_VERIFY"
+  },
+  "chair_seat_h": {
+   "value": 450,
+   "status": "TO_VERIFY"
+  },
+  "bench_h": {
+   "value": 450,
+   "status": "TO_VERIFY"
+  },
+  "tv_console_h": {
+   "value": 450,
+   "status": "TO_VERIFY"
+  },
+  "kitchen_counter_h": {
+   "value": 850,
+   "status": "TO_VERIFY"
+  },
+  "kitchen_tall_h": {
+   "value": 2100,
+   "status": "TO_VERIFY"
+  },
+  "wc_h": {
+   "value": 400,
+   "status": "TO_VERIFY"
+  },
+  "vanity_h": {
+   "value": 800,
+   "status": "TO_VERIFY"
+  },
+  "wetzone_glass_h": {
+   "value": 2000,
+   "status": "TO_VERIFY"
+  },
+  "washer_3kg_h": {
+   "value": 600,
+   "status": "TO_VERIFY"
+  },
+  "washer_dryer_stacked_h": {
+   "value": 1700,
+   "status": "TO_VERIFY"
+  },
+  "freezer_h": {
+   "value": 850,
+   "status": "TO_VERIFY"
+  },
+  "device_h": {
+   "value": 300,
+   "status": "TO_VERIFY"
+  },
+  "device_z": {
+   "value": 900,
+   "status": "TO_VERIFY"
+  }
+ },
+ "furniture_heights_note": "furniture heights are generic blockout approximations, NOT product data",
+ "z_origins": {
+  "lower_wing": 0,
+  "upper_east_wing": 350,
+  "device_shelf": 900
+ }
+}

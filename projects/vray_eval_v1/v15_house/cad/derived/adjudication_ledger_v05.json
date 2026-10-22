@@ -44,7 +44,7 @@
     7000,
     13900
    ],
-   "coverage": 1.0,
+   "coverage": 0,
    "residual_mm2": 363000,
    "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
   },
@@ -56,7 +56,7 @@
     3700,
     13800
    ],
-   "coverage": 1.0,
+   "coverage": 0.0,
    "residual_mm2": 60000,
    "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
   },
@@ -68,7 +68,7 @@
     7100,
     13800
    ],
-   "coverage": 1.0,
+   "coverage": 0.0,
    "residual_mm2": 60000,
    "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
   },
@@ -683,8 +683,20 @@
  ],
  "managed_report": {
   "adopted": 52,
-  "created": 87,
+  "created": 83,
   "unmatched_source": [],
+  "stair": {
+   "outline_parts": 1,
+   "bands_merged": true
+  },
+  "legacy_stair_bands_frozen": [
+   "7F",
+   "1FE",
+   "1FF",
+   "201",
+   "203"
+  ],
+  "stair_direction_moved": 4,
   "legacy_unbound": [
    {
     "handle": "1CD",
@@ -730,7 +742,7 @@
      7000,
      13900
     ],
-    "coverage": 1.0,
+    "coverage": 0,
     "residual_mm2": 363000,
     "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
    },
@@ -742,7 +754,7 @@
      3700,
      13800
     ],
-    "coverage": 1.0,
+    "coverage": 0.0,
     "residual_mm2": 60000,
     "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
    },
@@ -754,7 +766,7 @@
      7100,
      13800
     ],
-    "coverage": 1.0,
+    "coverage": 0.0,
     "residual_mm2": 60000,
     "disposition": "MOVED_to_A-UNCERTAIN_residual_kept"
    },

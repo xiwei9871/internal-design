@@ -1,0 +1,172 @@
+{
+ "count": 4,
+ "bays": [
+  {
+   "window_id": "W-LIV-N",
+   "room": "living",
+   "orientation": "north",
+   "host_wall_id": "W-EXT-N-LV",
+   "facade_opening_rect_mm": [
+    3800,
+    12750,
+    6900,
+    12950
+   ],
+   "span_mm": 3100,
+   "projection_mm": 900,
+   "canon_bay": {
+    "jambs": [
+     [
+      3650,
+      12950,
+      3800,
+      13800
+     ],
+     [
+      6900,
+      12950,
+      7050,
+      13800
+     ]
+    ],
+    "front": [
+     3600,
+     13800,
+     7100,
+     13900
+    ]
+   },
+   "canon_host_wall": null,
+   "required_topology": [
+    "main_wall_opening",
+    "BAY_LEFT_CHEEK",
+    "BAY_RIGHT_CHEEK",
+    "BAY_FRONT",
+    "BAY_FRONT_GLAZING",
+    "BAY_SILL_PLATFORM"
+   ],
+   "sill_z": "TO_VERIFY",
+   "cheek_thickness": "TO_VERIFY(100 TEMP for study; south/liv unregistered)"
+  },
+  {
+   "window_id": "W-STUDY-NE",
+   "room": "study",
+   "orientation": "north (NE corner)",
+   "host_wall_id": null,
+   "facade_opening_rect_mm": [
+    13600,
+    10900,
+    15700,
+    11100
+   ],
+   "span_mm": 2100,
+   "projection_mm": 700,
+   "canon_bay": null,
+   "canon_host_wall": "W-BAY-STUDY-F",
+   "required_topology": [
+    "main_wall_opening",
+    "BAY_LEFT_CHEEK",
+    "BAY_RIGHT_CHEEK",
+    "BAY_FRONT",
+    "BAY_FRONT_GLAZING",
+    "BAY_SILL_PLATFORM"
+   ],
+   "sill_z": "TO_VERIFY",
+   "cheek_thickness": "TO_VERIFY(100 TEMP for study; south/liv unregistered)"
+  },
+  {
+   "window_id": "W-SMB-S",
+   "room": "secondary master bedroom",
+   "orientation": "south",
+   "host_wall_id": "W-EXT-S",
+   "facade_opening_rect_mm": [
+    8500,
+    -200,
+    10900,
+    0
+   ],
+   "span_mm": 2400,
+   "projection_mm": 700,
+   "canon_bay": {
+    "jambs": [
+     [
+      8400,
+      -700,
+      8500,
+      0
+     ],
+     [
+      10900,
+      -700,
+      11000,
+      0
+     ]
+    ],
+    "front": [
+     8400,
+     -700,
+     11000,
+     -600
+    ]
+   },
+   "canon_host_wall": null,
+   "required_topology": [
+    "main_wall_opening",
+    "BAY_LEFT_CHEEK",
+    "BAY_RIGHT_CHEEK",
+    "BAY_FRONT",
+    "BAY_FRONT_GLAZING",
+    "BAY_SILL_PLATFORM"
+   ],
+   "sill_z": "TO_VERIFY",
+   "cheek_thickness": "TO_VERIFY(100 TEMP for study; south/liv unregistered)"
+  },
+  {
+   "window_id": "W-MB-S",
+   "room": "master bedroom",
+   "orientation": "south",
+   "host_wall_id": "W-EXT-S",
+   "facade_opening_rect_mm": [
+    12100,
+    -200,
+    14800,
+    0
+   ],
+   "span_mm": 2700,
+   "projection_mm": 700,
+   "canon_bay": {
+    "jambs": [
+     [
+      12000,
+      -700,
+      12100,
+      0
+     ],
+     [
+      14800,
+      -700,
+      14900,
+      0
+     ]
+    ],
+    "front": [
+     12000,
+     -700,
+     14900,
+     -600
+    ]
+   },
+   "canon_host_wall": null,
+   "required_topology": [
+    "main_wall_opening",
+    "BAY_LEFT_CHEEK",
+    "BAY_RIGHT_CHEEK",
+    "BAY_FRONT",
+    "BAY_FRONT_GLAZING",
+    "BAY_SILL_PLATFORM"
+   ],
+   "sill_z": "TO_VERIFY",
+   "cheek_thickness": "TO_VERIFY(100 TEMP for study; south/liv unregistered)"
+  }
+ ]
+}

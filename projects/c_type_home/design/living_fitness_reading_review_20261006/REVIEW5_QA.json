@@ -1,0 +1,23 @@
+{
+  "status": "HUMAN_REVIEW",
+  "output": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_THREE_STEP_READING_FITNESS_REVIEW_5.blend",
+  "source": "/Users/xiwei/interior_design/projects/c_type_home/design/living_furniture_review_20261006/OPTION_A_R4_L_SOFA_REVIEW_4.blend",
+  "source_sha256": "6775691eaaac0d57261eb2e00929bbb753f54687bfa5bf3ff44cc8955ba0ca8c",
+  "output_sha256": "c396497077bc564d06d3c8855c731d977ca7dbdfc7cce104456f6bba16e78b20",
+  "stair_count": 3,
+  "rise_m": 0.15,
+  "tread_m": 0.35,
+  "upper_flat_gain_x_m": 0.35,
+  "rail_slope_degrees": 23.19859051364819,
+  "reading_storage_catalog": "5015 short cabinet820x320x340 and shelves820x320x45;p21",
+  "reading_bench_catalog": "3205A1350x400x450;p26",
+  "gym_reserve_m": [
+    2.4,
+    1.2
+  ],
+  "gym_is_equipment": false,
+  "north_window_chaise_hidden_in_review_only": true,
+  "sofa_and_coffee_not_shifted": "1150mm south station separation retained",
+  "frozen_source_unchanged": true,
+  "all_unrelated_states_unchanged": true
+}

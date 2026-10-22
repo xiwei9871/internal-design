@@ -1,0 +1,290 @@
+{
+  "status": "BUILT_REQUIRES_VISUAL_REVIEW",
+  "source": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/appearance_match_v2/LIVING_DINING_APPEARANCE_V2.blend",
+  "output": "/Users/xiwei/.codex/worktrees/c-type-study-daybed/interior_design/projects/c_type_home/design/asset_model_v3/LIVING_KITCHEN_LIBRARY_V3.blend",
+  "output_sha256": "d377fb3111ab2b3113b0d2d4449a68994bcee811333f8a73ce9d61ab00cc7bc2",
+  "all_existing_meshes_and_matrices_unchanged": 1826,
+  "retained_hidden_objects": [
+    "LD_Sofa_upholstery_03",
+    "LD_Sofa_upholstery_04",
+    "LD_Sofa_upholstery_05",
+    "LD_Sofa_upholstery_09",
+    "LD_Sofa_upholstery_10",
+    "LD_Sofa_upholstery_11",
+    "LD_Chaise_seat_pad",
+    "LD_Chaise_back_pad",
+    "B11_K-COOK_BURNER",
+    "B11_K-COOK_BURNER.001"
+  ],
+  "supplier_component_adaptations": [
+    {
+      "object": "V3_LD_Sofa_upholstery_03",
+      "source_part_index": 41,
+      "source_axes": [
+        0,
+        1,
+        2
+      ],
+      "source_dimensions_m": [
+        0.7766549234511331,
+        0.1509559005498886,
+        0.7650240361690521
+      ],
+      "target_bounds_m": [
+        [
+          3.6449999809265137,
+          8.09000015258789,
+          0.2849999964237213
+        ],
+        [
+          5.12999963760376,
+          9.100000381469727,
+          0.42499998211860657
+        ]
+      ],
+      "target_dimensions_m": [
+        1.484999656677246,
+        1.010000228881836,
+        0.13999998569488525
+      ],
+      "stretch_method": "interior panel extension with edge zones retained for large modules"
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_04",
+      "source_part_index": 41,
+      "source_axes": [
+        0,
+        1,
+        2
+      ],
+      "source_dimensions_m": [
+        0.7766549234511331,
+        0.1509559005498886,
+        0.7650240361690521
+      ],
+      "target_bounds_m": [
+        [
+          3.6449999809265137,
+          9.170000076293945,
+          0.2849999964237213
+        ],
+        [
+          4.340000152587891,
+          10.030000686645508,
+          0.42499998211860657
+        ]
+      ],
+      "target_dimensions_m": [
+        0.695000171661377,
+        0.8600006103515625,
+        0.13999998569488525
+      ],
+      "stretch_method": "interior panel extension with edge zones retained for large modules"
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_05",
+      "source_part_index": 41,
+      "source_axes": [
+        0,
+        1,
+        2
+      ],
+      "source_dimensions_m": [
+        0.7766549234511331,
+        0.1509559005498886,
+        0.7650240361690521
+      ],
+      "target_bounds_m": [
+        [
+          3.6449999809265137,
+          10.09000015258789,
+          0.2849999964237213
+        ],
+        [
+          4.340000152587891,
+          11.100000381469727,
+          0.42499998211860657
+        ]
+      ],
+      "target_dimensions_m": [
+        0.695000171661377,
+        1.010000228881836,
+        0.13999998569488525
+      ],
+      "stretch_method": "interior panel extension with edge zones retained for large modules"
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_09",
+      "source_part_index": 43,
+      "source_axes": [
+        1,
+        0,
+        2
+      ],
+      "source_dimensions_m": [
+        0.3930351436138153,
+        0.7296248632483184,
+        0.18330268561840057
+      ],
+      "target_bounds_m": [
+        [
+          3.4549999237060547,
+          8.110000610351562,
+          0.4050000309944153
+        ],
+        [
+          3.684999942779541,
+          9.09000015258789,
+          0.699999988079071
+        ]
+      ],
+      "target_dimensions_m": [
+        0.23000001907348633,
+        0.9799995422363281,
+        0.29499995708465576
+      ],
+      "stretch_method": "interior panel extension with edge zones retained for large modules"
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_10",
+      "source_part_index": 43,
+      "source_axes": [
+        1,
+        0,
+        2
+      ],
+      "source_dimensions_m": [
+        0.3930351436138153,
+        0.7296248632483184,
+        0.18330268561840057
+      ],
+      "target_bounds_m": [
+        [
+          3.4549999237060547,
+          9.179999351501465,
+          0.4050000309944153
+        ],
+        [
+          3.684999942779541,
+          10.029999732971191,
+          0.699999988079071
+        ]
+      ],
+      "target_dimensions_m": [
+        0.23000001907348633,
+        0.8500003814697266,
+        0.29499995708465576
+      ],
+      "stretch_method": "interior panel extension with edge zones retained for large modules"
+    },
+    {
+      "object": "V3_LD_Sofa_upholstery_11",
+      "source_part_index": 43,
+      "source_axes": [
+        1,
+        0,
+        2
+      ],
+      "source_dimensions_m": [
+        0.3930351436138153,
+        0.7296248632483184,
+        0.18330268561840057
+      ],
+      "target_bounds_m": [
+        [
+          3.4549999237060547,
+          10.100000381469727,
+          0.4050000309944153
+        ],
+        [
+          3.684999942779541,
+          11.09000015258789,
+          0.699999988079071
+        ]
+      ],
+      "target_dimensions_m": [
+        0.23000001907348633,
+        0.9899997711181641,
+        0.29499995708465576
+      ],
+      "stretch_method": "interior panel extension with edge zones retained for large modules"
+    },
+    {
+      "object": "V3_LD_Chaise_seat_pad",
+      "source_part_index": 41,
+      "source_axes": [
+        0,
+        1,
+        2
+      ],
+      "source_dimensions_m": [
+        0.7766549234511331,
+        0.1509559005498886,
+        0.7650240361690521
+      ],
+      "target_bounds_m": [
+        [
+          5.085000038146973,
+          11.10999870300293,
+          0.3619999885559082
+        ],
+        [
+          6.320000648498535,
+          11.899999618530273,
+          0.42900002002716064
+        ]
+      ],
+      "target_dimensions_m": [
+        1.2350006103515625,
+        0.7900009155273438,
+        0.06700003147125244
+      ],
+      "stretch_method": "interior panel extension with edge zones retained for large modules"
+    },
+    {
+      "object": "V3_Chaise_back_soft_from_supplier",
+      "source_part_index": 43,
+      "source_axes": [
+        2,
+        0,
+        1
+      ],
+      "source_dimensions_m": [
+        0.18330268561840057,
+        0.7296248632483184,
+        0.3930351436138153
+      ],
+      "target_bounds_m": [
+        [
+          -0.24699999392032623,
+          -0.39500001072883606,
+          -0.03799999877810478
+        ],
+        [
+          0.24699999392032623,
+          0.39500001072883606,
+          0.03799999877810478
+        ]
+      ],
+      "target_dimensions_m": [
+        0.49399998784065247,
+        0.7900000214576721,
+        0.07599999755620956
+      ],
+      "stretch_method": "interior panel extension with edge zones retained for large modules"
+    }
+  ],
+  "native_shader_sources": {
+    "wood": "Poly Haven ash_veneer .blend",
+    "fabric": "Poly Haven rough_linen .blend"
+  },
+  "physical_scan_repeat_per_m": {
+    "fabric": 3.3333333333333335,
+    "wood": 1
+  },
+  "material_reassignment_count": 236,
+  "supplier_package_sha256": "420578640e428da6144201e53c9bb1c881dc91722384b5aa88a56d118f329118",
+  "kitchen_shape_invariants": "cabinet/layout/window/FFL/installation points kept",
+  "kitchen_detail_departures": "burner mechanism extends schematic symbol from844 to878mm; not fabrication authority",
+  "missing_supplier_exact_match": "no exact MuJiaMuYi OBJ; supplier cushion components adapted to source design; custom quiet quartz retained because searched library stones unsuitable"
+}

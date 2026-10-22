@@ -1,0 +1,80 @@
+{
+  "projection": "perspective",
+  "fov_degrees": 45,
+  "near": 0.026464257027775006,
+  "far": 2646.4257027775006,
+  "position": [
+    2.3374876100146023,
+    7.501704423285794,
+    -9.515029161162426
+  ],
+  "quaternion": [
+    -0.34940261421875757,
+    -0.6230313687498734,
+    -0.3643285104010052,
+    0.5975068729644386
+  ],
+  "projection_matrix": [
+    2.381928388433485,
+    0,
+    0,
+    0,
+    0,
+    2.4142135623730954,
+    0,
+    0,
+    0,
+    0,
+    -1.000020000200002,
+    -1,
+    0,
+    0,
+    -0.05292904334598348,
+    0
+  ],
+  "orbit_target": [
+    5.916553065763939,
+    1.1351293120008175,
+    -9.36526931344355
+  ],
+  "viewport": {
+    "width": 673,
+    "height": 664,
+    "pixel_ratio": 0.800000011920929
+  },
+  "frame_id": "blender_proxy_world",
+  "unit": "meter",
+  "up_axis": "Y",
+  "schema": "spatial-canvas.view-preset.v1",
+  "preset_id": "three_step_reading_fitness_review_5",
+  "preview_uri": "three_step_reading_fitness_review_5.png",
+  "design_id": "c_type_home",
+  "source_resource_id": "c_type_r4_living_wave35_aluminum_review",
+  "source_revision": "r4-three-step-reading-fitness-review-5",
+  "source_sha256": "c396497077bc564d06d3c8855c731d977ca7dbdfc7cce104456f6bba16e78b20",
+  "source_locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/OPTION_A_R4_THREE_STEP_READING_FITNESS_REVIEW_5.blend",
+  "bindings": {
+    "registry_id": "bindings_1480a0be14f44312a5338ca3bd1c9e3f",
+    "registry_revision": "15-three-step-reading-fitness-review",
+    "sha256": "8ade641562e332b753c059247f901ae48c64d13990e11629281be2d76f850b56",
+    "locator": "/Users/xiwei/interior_design/projects/c_type_home/design/living_fitness_reading_review_20261006/spatial-canvas.bindings.json"
+  },
+  "source_camera": {
+    "position": [
+      2.3374876100146023,
+      9.515029161162426,
+      7.501704423285794
+    ],
+    "quaternion": [
+      0.17543620380033287,
+      -0.18293054545082754,
+      -0.6981688660191164,
+      0.6695661195571143
+    ],
+    "frame_id": "c_type_world",
+    "unit": "meter",
+    "up_axis": "Z"
+  },
+  "hidden_entity_ids": [],
+  "ghost_entity_ids": []
+}
