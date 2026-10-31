@@ -1,0 +1,2 @@
+# Generated DXF: ezdxf linetype descriptions carry trailing spaces by design.
+*.dxf -whitespace

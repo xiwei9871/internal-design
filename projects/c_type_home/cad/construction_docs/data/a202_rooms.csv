@@ -1,0 +1,17 @@
+﻿id,name,material,spec,level_mm,area_m2,status,source
+couple_bedroom,次主卧(业主),WOOD,白蜡木地板 南北向,450,14.89,MODEL,model:PRESENTATION_FLOOR_couple_bedroom (RENDER_PALE_WOOD_FLOOR)
+guest_bath,客卫,TILE,300x600 防滑砖 居中排砖,450,4.589,MODEL; spec OWNER_REVIEW,model:PRESENTATION_FLOOR_guest_bath (RENDER_WARM_GREIGE_TILE)
+guest_bedroom,客卧,WOOD,白蜡木地板 南北向,450,8.1,MODEL,model:PRESENTATION_FLOOR_guest_bedroom (RENDER_PALE_WOOD_FLOOR)
+hallway,走廊,WOOD,白蜡木地板 南北向,450,8.942,MODEL,model:PRESENTATION_FLOOR_hallway (RENDER_PALE_WOOD_FLOOR)
+master_bath,主卫,TILE,300x600 防滑砖 居中排砖,450,4.994,MODEL; spec OWNER_REVIEW,model:PRESENTATION_FLOOR_master_bath (RENDER_WARM_GREIGE_TILE)
+mother_bedroom,主卧(母亲),WOOD,白蜡木地板 南北向,450,16.224,MODEL,model:PRESENTATION_FLOOR_mother_bedroom (RENDER_PALE_WOOD_FLOOR)
+secondary_bath,次主卫,TILE,300x600 防滑砖 居中排砖,450,3.302,MODEL; spec OWNER_REVIEW,model:PRESENTATION_FLOOR_secondary_bath (RENDER_WARM_GREIGE_TILE)
+study,书房,WOOD,白蜡木地板 南北向,450,14.086,MODEL,model:PRESENTATION_FLOOR_study (RENDER_PALE_WOOD_FLOOR)
+kitchen,厨房,TILE,600x1200 瓷砖 居中排砖,0,7.911,MODEL; spec OWNER_REVIEW,model:PRESENTATION_TILE_kitchen (RENDER_WARM_GREIGE_TILE)
+north_sunroom,阳光房,TILE,600x1200 瓷砖 居中排砖,0,11.323,MODEL; spec OWNER_REVIEW,model:PRESENTATION_TILE_north_sunroom (RENDER_WARM_GREIGE_TILE)
+service_balcony,生活阳台,TILE,300x600 防滑砖 居中排砖,0,6.185,MODEL; spec OWNER_REVIEW,model:PRESENTATION_TILE_service_balcony (RENDER_WARM_GREIGE_TILE)
+stair,三级台阶,WOOD,白蜡木踏步 踏面+踢面,,3.166,MODEL,model:STEP_0/1/2
+living,客厅/餐厅/玄关,WOOD,白蜡木地板 南北向,0,41.742,MODEL,model:FLOOR_LOWER minus named zones (AM2_WOOD_FLOOR_BOARDS)
+vestibule,主卧/主卫前过道,WOOD,白蜡木地板 南北向,450,2.25,FILLED_FROM_ENCLOSURE; material OWNER_REVIEW; level SITE_VERIFY_REQUIRED,"survey-enclosed interior (A103 walls+openings); neighbours ['master_bath', 'hallway', 'mother_bedroom', 'secondary_bath', 'study']"
+TOTAL_WOOD,,WOOD,,,109.4,,
+TOTAL_TILE,,TILE,,,38.304,,

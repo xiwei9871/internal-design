@@ -13,8 +13,23 @@ mode = args[0]
 dg = bpy.context.evaluated_depsgraph_get()
 
 
+def _render_collections(scene):
+    """Collections that render: every collection on the path from the scene root is enabled."""
+    ok, stack = {scene.collection}, [scene.collection]
+    while stack:
+        c = stack.pop()
+        for ch in c.children:
+            if not ch.hide_render and ch not in ok:
+                ok.add(ch); stack.append(ch)
+    return ok
+
+
+RENDER_COLS = _render_collections(bpy.context.scene)
+
+
 def visible(o):
-    return not o.hide_render and all(not c.hide_render for c in o.users_collection)
+    """Render-visible: object enabled and linked to at least one fully enabled collection chain."""
+    return not o.hide_render and any(c in RENDER_COLS for c in o.users_collection)
 
 
 def bbox(o):
@@ -44,7 +59,11 @@ def horiz(o, want_up, zmin, zmax, keep_tris):
 
 
 meshes = [o for o in bpy.data.objects if o.type == 'MESH' and visible(o)]
-out = {'blend': bpy.data.filepath, 'n_mesh_visible': len(meshes)}
+import hashlib
+with open(bpy.data.filepath, 'rb') as fh:
+    _sha = hashlib.sha256(fh.read()).hexdigest()
+out = {'blend': bpy.data.filepath, 'blend_sha256': _sha, 'blender_version': bpy.app.version_string,
+       'extractor': 'extract_plan_geometry.py/2', 'n_mesh_visible': len(meshes)}
 if mode == 'inventory':
     rows = []
     for o in meshes:

@@ -1,0 +1,37 @@
+[
+ {
+  "id": "TV_WALL_SW",
+  "layer": "A-REVIEW",
+  "x": 7800,
+  "y": 200,
+  "tol": 5
+ },
+ {
+  "id": "W_EXT_W_S",
+  "layer": "A-WALL",
+  "x": 2700,
+  "y": 6530,
+  "tol": 5
+ },
+ {
+  "id": "MB_DOOR",
+  "layer": "A-DOOR",
+  "x": 12900,
+  "y": 4750,
+  "tol": 5
+ },
+ {
+  "id": "ENTRY_DOOR",
+  "layer": "A-DOOR",
+  "x": 2700,
+  "y": 5400,
+  "tol": 5
+ },
+ {
+  "id": "LIVING_WIN",
+  "layer": "A-WINDOW",
+  "x": 3800,
+  "y": 12750,
+  "tol": 5
+ }
+]

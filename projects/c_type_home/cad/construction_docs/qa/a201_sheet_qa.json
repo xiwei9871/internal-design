@@ -1,0 +1,90 @@
+{
+ "file": "issue/A201_天花布置图.issue.dxf",
+ "entities_by_layer": {
+  "A-WALL": 41,
+  "A-DOOR": 18,
+  "A-WINDOW": 10,
+  "A-DESIGN": 38,
+  "A-REVIEW": 22,
+  "A-STAIR": 3,
+  "A-CONFLICT": 3,
+  "A-WALL-FILL": 16,
+  "A-DIMS": 34,
+  "A-CEIL-ZONE": 63,
+  "A-CEIL-NODROP": 3,
+  "A-CEIL-STEP": 7,
+  "A-CEIL-ACCESS": 11,
+  "A-LITE-BASE": 279,
+  "A-LITE-TASK": 10,
+  "A-LITE-ACCENT": 6,
+  "A-FLOR-LEVL": 39,
+  "A-CEIL-SECT": 19,
+  "A-NOTE": 20,
+  "A-FRAME": 8
+ },
+ "frozen_or_off_layers": [],
+ "checks": [
+  {
+   "check": "dxf_version",
+   "status": "PASS",
+   "detail": "AC1024 (want AC1024)"
+  },
+  {
+   "check": "ezdxf_audit",
+   "status": "PASS",
+   "detail": "errors=0 fixes=0"
+  },
+  {
+   "check": "insunits_mm",
+   "status": "PASS",
+   "detail": "$INSUNITS=4"
+  },
+  {
+   "check": "font_paths_portable",
+   "status": "PASS",
+   "detail": "no absolute font paths"
+  },
+  {
+   "check": "cjk_text_styles",
+   "status": "PASS",
+   "detail": "71 CJK texts; not CJK-capable by style: {}"
+  },
+  {
+   "check": "no_paperspace_viewports",
+   "status": "PASS",
+   "detail": "0 viewport(s); QCAD 3.33 showed paper-space viewports blank"
+  },
+  {
+   "check": "frame_a1_scale",
+   "status": "PASS",
+   "detail": "A-FRAME sheet border 42050x29700 found"
+  },
+  {
+   "check": "content_inside_frame",
+   "status": "PASS",
+   "detail": "content 0,-9947 .. 26400,14953"
+  },
+  {
+   "check": "required_layers_visible",
+   "status": "PASS",
+   "detail": "A-WALL=41, A-DOOR=18, A-WINDOW=10, A-CEIL-ZONE=63, A-CEIL-STEP=7, A-LITE-BASE=279, A-LITE-TASK=10, A-LITE-ACCENT=6, A-CEIL-ACCESS=11, A-CEIL-SECT=19, A-DIMS=34"
+  },
+  {
+   "check": "dimension_values",
+   "status": "PASS",
+   "detail": "34 linear dims, measurement == defpoint distance"
+  },
+  {
+   "check": "anchor_coordinates",
+   "status": "PASS",
+   "detail": "5 anchors all hit"
+  },
+  {
+   "check": "entities_preserved",
+   "status": "PASS",
+   "detail": "src=642 out_excl_frame=642"
+  }
+ ],
+ "result": "PASS",
+ "scope_note": "File-level QA only; not proof of site dimensions or construction feasibility."
+}

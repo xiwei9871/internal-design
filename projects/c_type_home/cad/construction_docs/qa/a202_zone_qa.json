@@ -1,0 +1,90 @@
+{
+ "zones": [
+  {
+   "id": "couple_bedroom",
+   "name": "",
+   "area_m2": 14.89
+  },
+  {
+   "id": "guest_bath",
+   "name": "",
+   "area_m2": 4.589
+  },
+  {
+   "id": "guest_bedroom",
+   "name": "",
+   "area_m2": 8.1
+  },
+  {
+   "id": "hallway",
+   "name": "",
+   "area_m2": 8.942
+  },
+  {
+   "id": "master_bath",
+   "name": "",
+   "area_m2": 4.994
+  },
+  {
+   "id": "mother_bedroom",
+   "name": "",
+   "area_m2": 16.224
+  },
+  {
+   "id": "secondary_bath",
+   "name": "",
+   "area_m2": 3.302
+  },
+  {
+   "id": "study",
+   "name": "",
+   "area_m2": 14.086
+  },
+  {
+   "id": "kitchen",
+   "name": "",
+   "area_m2": 7.911
+  },
+  {
+   "id": "north_sunroom",
+   "name": "",
+   "area_m2": 11.323
+  },
+  {
+   "id": "service_balcony",
+   "name": "",
+   "area_m2": 6.185
+  },
+  {
+   "id": "stair",
+   "name": "",
+   "area_m2": 0.683
+  },
+  {
+   "id": "stair",
+   "name": "",
+   "area_m2": 2.483
+  },
+  {
+   "id": "living",
+   "name": "",
+   "area_m2": 41.694
+  },
+  {
+   "id": "living",
+   "name": "",
+   "area_m2": 0.048
+  },
+  {
+   "id": "vestibule",
+   "name": "",
+   "area_m2": 2.25
+  }
+ ],
+ "invalid": [],
+ "overlaps": [],
+ "gaps": [],
+ "coverage": "CHECKED",
+ "total_m2": 147.704,
+ "result": "PASS"
+}

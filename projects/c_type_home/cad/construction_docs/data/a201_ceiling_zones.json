@@ -1,0 +1,365 @@
+{
+ "owner_scheme": {
+  "floor_low": 0,
+  "floor_high": 450,
+  "soffit_low": 2800,
+  "soffit_high": 3250,
+  "drop": 150,
+  "step_path": [
+   [
+    8000,
+    4700
+   ],
+   [
+    8000,
+    10900
+   ],
+   [
+    13100,
+    10900
+   ]
+  ],
+  "source": "owner decision 2026-10-31 + P03_CEILING_SCHEME_A.md (P0.3.2, merged 2026-10-20)"
+ },
+ "zones": [
+  {
+   "id": "couple_bedroom#HIGH0",
+   "zone": "couple_bedroom",
+   "side": "HIGH",
+   "soffit": 3250,
+   "finished": 3100,
+   "floor": 450,
+   "clear": 2650,
+   "material": "石膏板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 14.89,
+   "bounds": [
+    8000,
+    0,
+    11400,
+    4500
+   ]
+  },
+  {
+   "id": "guest_bath#HIGH0",
+   "zone": "guest_bath",
+   "side": "HIGH",
+   "soffit": 3250,
+   "finished": 3100,
+   "floor": 450,
+   "clear": 2650,
+   "material": "铝扣板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 4.589,
+   "bounds": [
+    8000,
+    8000,
+    9700,
+    10700
+   ]
+  },
+  {
+   "id": "guest_bedroom#HIGH0",
+   "zone": "guest_bedroom",
+   "side": "HIGH",
+   "soffit": 3250,
+   "finished": 3100,
+   "floor": 450,
+   "clear": 2650,
+   "material": "石膏板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 8.1,
+   "bounds": [
+    9900,
+    8000,
+    12900,
+    10700
+   ]
+  },
+  {
+   "id": "hallway#HIGH0",
+   "zone": "hallway",
+   "side": "HIGH",
+   "soffit": 3250,
+   "finished": 3100,
+   "floor": 450,
+   "clear": 2650,
+   "material": "石膏板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 7.776,
+   "bounds": [
+    8000,
+    4650,
+    12900,
+    7800
+   ]
+  },
+  {
+   "id": "hallway#LOW0",
+   "zone": "hallway",
+   "side": "LOW",
+   "soffit": 2800,
+   "finished": 2800,
+   "floor": 450,
+   "clear": 2350,
+   "material": "石膏板",
+   "status": "NO_DROP_ORIGINAL_SOFFIT; clear height SITE_VERIFY_REQUIRED",
+   "area_m2": 1.166,
+   "bounds": [
+    7400,
+    4700,
+    8000,
+    7274
+   ]
+  },
+  {
+   "id": "master_bath#HIGH0",
+   "zone": "master_bath",
+   "side": "HIGH",
+   "soffit": 3250,
+   "finished": 3100,
+   "floor": 450,
+   "clear": 2650,
+   "material": "铝扣板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 4.994,
+   "bounds": [
+    13100,
+    4650,
+    16200,
+    6400
+   ]
+  },
+  {
+   "id": "mother_bedroom#HIGH0",
+   "zone": "mother_bedroom",
+   "side": "HIGH",
+   "soffit": 3250,
+   "finished": 3100,
+   "floor": 450,
+   "clear": 2650,
+   "material": "石膏板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 16.224,
+   "bounds": [
+    11600,
+    0,
+    15300,
+    4450
+   ]
+  },
+  {
+   "id": "secondary_bath#HIGH0",
+   "zone": "secondary_bath",
+   "side": "HIGH",
+   "soffit": 3250,
+   "finished": 3100,
+   "floor": 450,
+   "clear": 2650,
+   "material": "铝扣板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 3.302,
+   "bounds": [
+    9209,
+    4650,
+    11300,
+    6300
+   ]
+  },
+  {
+   "id": "study#HIGH0",
+   "zone": "study",
+   "side": "HIGH",
+   "soffit": 3250,
+   "finished": 3100,
+   "floor": 450,
+   "clear": 2650,
+   "material": "石膏板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 14.086,
+   "bounds": [
+    13100,
+    6400,
+    16200,
+    11350
+   ]
+  },
+  {
+   "id": "kitchen#LOW0",
+   "zone": "kitchen",
+   "side": "LOW",
+   "soffit": 2800,
+   "finished": 2650,
+   "floor": 0,
+   "clear": 2650,
+   "material": "铝扣板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 7.911,
+   "bounds": [
+    5900,
+    200,
+    7800,
+    4450
+   ]
+  },
+  {
+   "id": "north_sunroom#LOW0",
+   "zone": "north_sunroom",
+   "side": "LOW",
+   "soffit": 2800,
+   "finished": 2650,
+   "floor": 0,
+   "clear": 2650,
+   "material": "石膏板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 11.323,
+   "bounds": [
+    7900,
+    10900,
+    12900,
+    13400
+   ]
+  },
+  {
+   "id": "service_balcony#LOW0",
+   "zone": "service_balcony",
+   "side": "LOW",
+   "soffit": 2800,
+   "finished": 2650,
+   "floor": 0,
+   "clear": 2650,
+   "material": "铝扣板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 6.185,
+   "bounds": [
+    1500,
+    650,
+    5700,
+    2300
+   ]
+  },
+  {
+   "id": "stair#LOW0",
+   "zone": "stair",
+   "side": "LOW",
+   "soffit": 2800,
+   "finished": 2800,
+   "floor": null,
+   "clear": null,
+   "material": "石膏板",
+   "status": "NO_DROP_ORIGINAL_SOFFIT; clear height SITE_VERIFY_REQUIRED",
+   "area_m2": 0.664,
+   "bounds": [
+    7400,
+    6275,
+    8000,
+    7800
+   ]
+  },
+  {
+   "id": "stair#LOW1",
+   "zone": "stair",
+   "side": "LOW",
+   "soffit": 2800,
+   "finished": 2800,
+   "floor": null,
+   "clear": null,
+   "material": "石膏板",
+   "status": "NO_DROP_ORIGINAL_SOFFIT; clear height SITE_VERIFY_REQUIRED",
+   "area_m2": 2.483,
+   "bounds": [
+    5750,
+    4700,
+    7150,
+    7800
+   ]
+  },
+  {
+   "id": "living#LOW0",
+   "zone": "living",
+   "side": "LOW",
+   "soffit": 2800,
+   "finished": 2650,
+   "floor": 0,
+   "clear": 2650,
+   "material": "石膏板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 41.694,
+   "bounds": [
+    2900,
+    2300,
+    7800,
+    13000
+   ]
+  },
+  {
+   "id": "vestibule#HIGH0",
+   "zone": "vestibule",
+   "side": "HIGH",
+   "soffit": 3250,
+   "finished": 3100,
+   "floor": 450,
+   "clear": 2650,
+   "material": "石膏板",
+   "status": "DROP_150; void capacity SITE_VERIFY_REQUIRED",
+   "area_m2": 2.25,
+   "bounds": [
+    11600,
+    4650,
+    12900,
+    6520
+   ]
+  }
+ ],
+ "access_panels": [
+  {
+   "x": 6850,
+   "y": 2835,
+   "room": "kitchen"
+  },
+  {
+   "x": 14650,
+   "y": 5500,
+   "room": "master_bath"
+  },
+  {
+   "x": 10254,
+   "y": 5561,
+   "room": "secondary_bath"
+  },
+  {
+   "x": 8850,
+   "y": 9350,
+   "room": "guest_bath"
+  },
+  {
+   "x": 10500,
+   "y": 7200,
+   "room": "hallway"
+  }
+ ],
+ "model_vs_owner_diff": [
+  {
+   "diff": "model HIGH(3250) where owner says LOW",
+   "area_m2": 2.482,
+   "bounds": [
+    5750,
+    4700,
+    7150,
+    6600
+   ],
+   "action": "CAD follows owner scheme; model unchanged"
+  },
+  {
+   "diff": "model HIGH(3250) where owner says LOW",
+   "area_m2": 1.35,
+   "bounds": [
+    7400,
+    4700,
+    8000,
+    7800
+   ],
+   "action": "CAD follows owner scheme; model unchanged"
+  }
+ ]
+}

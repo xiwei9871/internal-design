@@ -5,7 +5,9 @@ Checks are file-level facts only. PASS here never proves buildability, dimension
 or MEP feasibility; those stay SITE_VERIFY_REQUIRED.
 
 Usage: dxf_sheet_qa.py SHEET.dxf [--src SRC.dxf] [--scale 50] [--paper 841x594]
-                       [--require-layers A-WALL,A-DOOR] [--version AC1024] [--json out.json]
+                       [--require-layers A-WALL,A-DOOR] [--version AC1024]
+                       [--anchors anchors.json] [--json out.json]
+Anchors catch entities whose count is unchanged but whose coordinates moved.
 Exit code: 0 if no FAIL, 1 otherwise.
 """
 import argparse, json, re, sys
@@ -39,7 +41,60 @@ def entity_text(e):
     return ''
 
 
-def run(path, src=None, scale=50, paper=(841, 594), require_layers=(), version='AC1024'):
+def entity_points(e):
+    t = e.dxftype()
+    if t == 'LINE': return [tuple(e.dxf.start)[:2], tuple(e.dxf.end)[:2]]
+    if t == 'LWPOLYLINE': return [tuple(p) for p in e.get_points('xy')]
+    if t == 'POLYLINE': return [tuple(v.dxf.location)[:2] for v in e.vertices]
+    if t in ('CIRCLE', 'ARC'): return [tuple(e.dxf.center)[:2]]
+    if t in ('TEXT', 'MTEXT', 'INSERT', 'POINT'):
+        return [tuple(e.dxf.insert if t != 'POINT' else e.dxf.location)[:2]]
+    return []
+
+
+def check_dimensions(msp, tol=1.0):
+    """Linear DIMENSION: stored measurement vs defpoint distance; numeric text override vs measurement."""
+    import math
+    bad, n = [], 0
+    for d in msp.query('DIMENSION'):
+        if d.dimtype not in (0, 1): continue          # linear / aligned only
+        n += 1
+        p1, p2 = d.dxf.defpoint2, d.dxf.defpoint3
+        if d.dimtype == 0:
+            a = math.radians(d.dxf.get('angle', 0))
+            geo = abs((p2.x - p1.x) * math.cos(a) + (p2.y - p1.y) * math.sin(a))
+        else:
+            geo = math.dist(p1[:2], p2[:2])
+        meas = d.get_measurement()
+        txt = (d.dxf.get('text') or '').strip()
+        ovr = None
+        if txt and txt != '<>':
+            try: ovr = float(txt.replace('<>', '').strip())
+            except ValueError: ovr = None
+        if abs(meas - geo) > tol or (ovr is not None and abs(ovr - geo) > tol):
+            bad.append({'handle': d.dxf.handle, 'geo': round(geo, 1), 'measurement': round(meas, 1),
+                        'text': txt})
+    return n, bad
+
+
+def check_anchors(msp, frozen, anchors):
+    """anchors: [{id, layer, x, y, tol}] -> each must hit a vertex/insert of a visible entity on layer."""
+    import math
+    by_layer = {}
+    for e in msp:
+        if e.dxf.layer in frozen: continue
+        by_layer.setdefault(e.dxf.layer, []).extend(entity_points(e))
+    miss = []
+    for a in anchors:
+        pts = by_layer.get(a['layer'], [])
+        dmin = min((math.dist((a['x'], a['y']), p) for p in pts), default=float('inf'))
+        if dmin > a.get('tol', 5):
+            miss.append({**a, 'nearest_mm': None if dmin == float('inf') else round(dmin, 1)})
+    return miss
+
+
+def run(path, src=None, scale=50, paper=(841, 594), require_layers=(), version='AC1024',
+        anchors=None):
     doc = ezdxf.readfile(path)
     msp = doc.modelspace()
     out = []
@@ -94,9 +149,22 @@ def run(path, src=None, scale=50, paper=(841, 594), require_layers=(), version='
         out.append(_res('content_inside_frame', 'PASS' if inside else 'FAIL',
                         f'content {ext.extmin.x:.0f},{ext.extmin.y:.0f} .. {ext.extmax.x:.0f},{ext.extmax.y:.0f}'))
 
-    missing = [n for n in require_layers if n not in doc.layers]
+    frozen_set = {l.dxf.name for l in doc.layers if l.is_frozen() or not l.is_on()}
     if require_layers:
-        out.append(_res('required_layers', 'PASS' if not missing else 'FAIL', f'missing: {missing}'))
+        cnt = Counter(e.dxf.layer for e in msp if e.dxf.layer not in frozen_set)
+        empty = [n for n in require_layers if cnt.get(n, 0) == 0]
+        out.append(_res('required_layers_visible', 'PASS' if not empty else 'FAIL',
+                        f'no visible entities on: {empty}' if empty else
+                        ', '.join(f'{n}={cnt[n]}' for n in require_layers)))
+    n_dim, bad_dim = check_dimensions(msp)
+    out.append(_res('dimension_values', 'FAIL' if bad_dim else ('PASS' if n_dim else 'WARN'),
+                    f'{n_dim} linear dims; mismatched: {bad_dim[:5]}' if bad_dim else
+                    f'{n_dim} linear dims, measurement == defpoint distance'))
+    if anchors is not None:
+        miss = check_anchors(msp, frozen_set, anchors)
+        out.append(_res('anchor_coordinates', 'PASS' if not miss else 'FAIL',
+                        f'{len(anchors)} anchors; missed: {miss[:5]}' if miss else
+                        f'{len(anchors)} anchors all hit'))
 
     if src:
         s = ezdxf.readfile(src)
@@ -123,11 +191,13 @@ def main(argv=None):
     ap.add_argument('--paper', default='841x594')
     ap.add_argument('--require-layers', default='')
     ap.add_argument('--version', default='AC1024')
+    ap.add_argument('--anchors', help='JSON list of {id,layer,x,y,tol}')
     ap.add_argument('--json')
     a = ap.parse_args(argv)
     paper = tuple(float(v) for v in a.paper.lower().split('x'))
     req = [x for x in a.require_layers.split(',') if x]
-    r = run(a.sheet, a.src, a.scale, paper, req, a.version)
+    anc = json.loads(Path(a.anchors).read_text()) if a.anchors else None
+    r = run(a.sheet, a.src, a.scale, paper, req, a.version, anc)
     txt = json.dumps(r, ensure_ascii=False, indent=1)
     if a.json: Path(a.json).write_text(txt)
     print(txt)
