@@ -1,0 +1,275 @@
+{
+ "interior_reference": "A103 V7 walls + windows + doors, enclosed rings (no buffer closing)",
+ "interior_m2": 147.734,
+ "spaces": [
+  {
+   "kind": "ROOM",
+   "area_m2": 19.08,
+   "bounds": [
+    13100,
+    4650,
+    16200,
+    11350
+   ]
+  },
+  {
+   "kind": "NICHE_THIN",
+   "area_m2": 0.315,
+   "bounds": [
+    13600,
+    11550,
+    15700,
+    11700
+   ]
+  },
+  {
+   "kind": "ROOM",
+   "area_m2": 16.225,
+   "bounds": [
+    11600,
+    0,
+    15300,
+    4450
+   ]
+  },
+  {
+   "kind": "BAY_NICHE",
+   "area_m2": 1.08,
+   "bounds": [
+    12095,
+    -600,
+    14805,
+    -200
+   ]
+  },
+  {
+   "kind": "ROOM",
+   "area_m2": 70.22,
+   "bounds": [
+    1500,
+    200,
+    12900,
+    13000
+   ]
+  },
+  {
+   "kind": "ROOM",
+   "area_m2": 8.1,
+   "bounds": [
+    9900,
+    8000,
+    12900,
+    10700
+   ]
+  },
+  {
+   "kind": "ROOM",
+   "area_m2": 11.325,
+   "bounds": [
+    7900,
+    10900,
+    12900,
+    13400
+   ]
+  },
+  {
+   "kind": "ROOM",
+   "area_m2": 14.892,
+   "bounds": [
+    8000,
+    0,
+    11400,
+    4519
+   ]
+  },
+  {
+   "kind": "ROOM",
+   "area_m2": 3.302,
+   "bounds": [
+    9209,
+    4650,
+    11300,
+    6300
+   ]
+  },
+  {
+   "kind": "BAY_NICHE",
+   "area_m2": 0.96,
+   "bounds": [
+    8495,
+    -600,
+    10905,
+    -200
+   ]
+  },
+  {
+   "kind": "ROOM",
+   "area_m2": 4.589,
+   "bounds": [
+    8000,
+    8000,
+    9700,
+    10700
+   ]
+  },
+  {
+   "kind": "BAY_NICHE",
+   "area_m2": 1.395,
+   "bounds": [
+    3800,
+    12950,
+    6900,
+    13400
+   ]
+  }
+ ],
+ "model_floor_outside_interior_m2": 5.612,
+ "records": [
+  {
+   "type": "MODEL_RESIDUAL",
+   "action": "MERGED_INTO:study",
+   "area_m2": 0.947,
+   "at": [
+    14650,
+    11218
+   ]
+  },
+  {
+   "type": "MODEL_RESIDUAL",
+   "action": "MERGED_INTO:mother_bedroom",
+   "area_m2": 0.5,
+   "at": [
+    13450,
+    100
+   ]
+  },
+  {
+   "type": "MODEL_RESIDUAL",
+   "action": "MERGED_INTO:couple_bedroom",
+   "area_m2": 0.44,
+   "at": [
+    9700,
+    100
+   ]
+  },
+  {
+   "type": "MODEL_RESIDUAL",
+   "action": "MERGED_INTO:secondary_bath",
+   "area_m2": 0.213,
+   "at": [
+    9993,
+    4743
+   ]
+  },
+  {
+   "type": "MODEL_RESIDUAL",
+   "action": "MERGED_INTO:hallway",
+   "area_m2": 3.099,
+   "at": [
+    8175,
+    5634
+   ]
+  },
+  {
+   "type": "MODEL_RESIDUAL",
+   "action": "MERGED_INTO:north_sunroom",
+   "area_m2": 0.095,
+   "at": [
+    7950,
+    12175
+   ]
+  },
+  {
+   "type": "MODEL_RESIDUAL",
+   "action": "MERGED_INTO:stair",
+   "area_m2": 0.39,
+   "at": [
+    6968,
+    5313
+   ]
+  },
+  {
+   "type": "MODEL_RESIDUAL",
+   "action": "MERGED_INTO:service_balcony",
+   "area_m2": 0.15,
+   "at": [
+    3600,
+    675
+   ]
+  },
+  {
+   "type": "INTERIOR_MISSING",
+   "action": "FILLED:vestibule",
+   "area_m2": 2.25,
+   "neighbours": [
+    "master_bath",
+    "hallway",
+    "mother_bedroom",
+    "secondary_bath",
+    "study"
+   ],
+   "level": 450,
+   "material": "WOOD",
+   "at": [
+    12250,
+    5475
+   ]
+  }
+ ],
+ "poc_v01_gaps": [
+  {
+   "at": [
+    4809,
+    109
+   ],
+   "area_m2": 0.867,
+   "class": "EXTERIOR_OR_ALGO",
+   "why": "outside survey-enclosed interior; south of kitchen/balcony wall line"
+  },
+  {
+   "at": [
+    2540,
+    3754
+   ],
+   "area_m2": 1.049,
+   "class": "EXTERIOR_OR_ALGO",
+   "why": "west of dining wall x=2700; produced by 3000mm buffer closing"
+  },
+  {
+   "at": [
+    12250,
+    5900
+   ],
+   "area_m2": 2.25,
+   "class": "INTERIOR_MISSING",
+   "why": "enclosed by A103 walls between mother bedroom, master bath, study; model floor absent -> filled as vestibule"
+  },
+  {
+   "at": [
+    3296,
+    14142
+   ],
+   "area_m2": 1.136,
+   "class": "EXTERIOR_OR_ALGO",
+   "why": "living-room bay window outside wall line; not floor finish"
+  },
+  {
+   "at": [
+    15730,
+    3474
+   ],
+   "area_m2": 0.637,
+   "class": "EXTERIOR_OR_ALGO",
+   "why": "east of mother-bedroom wall; produced by buffer closing"
+  },
+  {
+   "at": [
+    13459,
+    12670
+   ],
+   "area_m2": 1.534,
+   "class": "EXTERIOR_OR_ALGO",
+   "why": "study NE bay window / exterior; not floor finish"
+  }
+ ]
+}

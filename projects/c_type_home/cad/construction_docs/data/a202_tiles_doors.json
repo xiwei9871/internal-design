@@ -1,0 +1,274 @@
+{
+ "tiles": {
+  "guest_bath": {
+   "module": "300x600",
+   "long_axis": "Y",
+   "start": [
+    8850,
+    9650
+   ],
+   "cut_x_mm": [
+    250,
+    250
+   ],
+   "cut_y_mm": [
+    450,
+    450
+   ],
+   "lines": 9
+  },
+  "master_bath": {
+   "module": "600x300",
+   "long_axis": "X",
+   "start": [
+    14650,
+    5525
+   ],
+   "cut_x_mm": [
+    350,
+    350
+   ],
+   "cut_y_mm": [
+    275,
+    275
+   ],
+   "lines": 10
+  },
+  "secondary_bath": {
+   "module": "600x300",
+   "long_axis": "X",
+   "start": [
+    10254,
+    5475
+   ],
+   "cut_x_mm": [
+    446,
+    446
+   ],
+   "cut_y_mm": [
+    225,
+    225
+   ],
+   "lines": 9
+  },
+  "kitchen": {
+   "module": "600x1200",
+   "long_axis": "Y",
+   "start": [
+    6850,
+    2325
+   ],
+   "cut_x_mm": [
+    350,
+    350
+   ],
+   "cut_y_mm": [
+    925,
+    925
+   ],
+   "lines": 6
+  },
+  "north_sunroom": {
+   "module": "1200x600",
+   "long_axis": "X",
+   "start": [
+    11000,
+    12450
+   ],
+   "cut_x_mm": [
+    700,
+    700
+   ],
+   "cut_y_mm": [
+    350,
+    350
+   ],
+   "lines": 8
+  },
+  "service_balcony": {
+   "module": "600x300",
+   "long_axis": "X",
+   "start": [
+    3600,
+    1475
+   ],
+   "cut_x_mm": [
+    300,
+    300
+   ],
+   "cut_y_mm": [
+    225,
+    225
+   ],
+   "lines": 14
+  }
+ },
+ "doors": [
+  {
+   "at": [
+    2800,
+    5965
+   ],
+   "width": 1130,
+   "sides": [
+    "户外",
+    "客厅/餐厅/玄关"
+   ],
+   "disposition": "THRESHOLD_STONE"
+  },
+  {
+   "at": [
+    7850,
+    12125
+   ],
+   "width": 850,
+   "sides": [
+    "客厅/餐厅/玄关",
+    "阳光房"
+   ],
+   "disposition": "THRESHOLD_STONE"
+  },
+  {
+   "at": [
+    9250,
+    7900
+   ],
+   "width": 900,
+   "sides": [
+    "走廊",
+    "客卫"
+   ],
+   "disposition": "THRESHOLD_STONE; flush + water-stop"
+  },
+  {
+   "at": [
+    13000,
+    6875
+   ],
+   "width": 1150,
+   "sides": [
+    "走廊",
+    "书房"
+   ],
+   "disposition": "CONTINUOUS_NO_THRESHOLD"
+  },
+  {
+   "at": [
+    13000,
+    5125
+   ],
+   "width": 750,
+   "sides": [
+    "主卧/主卫前过道",
+    "主卫"
+   ],
+   "disposition": "FLUSH_NO_RAISED_THRESHOLD; HOLD drainage/water-stop"
+  },
+  {
+   "at": [
+    8625,
+    4550
+   ],
+   "width": 750,
+   "sides": [
+    "次主卧(业主)",
+    "走廊"
+   ],
+   "disposition": "CONTINUOUS_NO_THRESHOLD"
+  },
+  {
+   "at": [
+    12250,
+    4550
+   ],
+   "width": 1300,
+   "sides": [
+    "主卧(母亲)",
+    "主卧/主卫前过道"
+   ],
+   "disposition": "CONTINUOUS_NO_THRESHOLD"
+  },
+  {
+   "at": [
+    5800,
+    1850
+   ],
+   "width": 900,
+   "sides": [
+    "生活阳台",
+    "厨房"
+   ],
+   "disposition": "CONTINUOUS_NO_THRESHOLD"
+  },
+  {
+   "at": [
+    3865,
+    2480
+   ],
+   "width": 1930,
+   "sides": [
+    "生活阳台",
+    "客厅/餐厅/玄关"
+   ],
+   "disposition": "THRESHOLD_STONE"
+  },
+  {
+   "at": [
+    10559,
+    4743
+   ],
+   "model_object": "R3_SLIDING_LEAF",
+   "disposition": "MODEL_ONLY_DOOR_HOLD (A103 wall kept; owner/site to confirm)"
+  },
+  {
+   "at": [
+    12375,
+    6500
+   ],
+   "model_object": "V4_D-BATHM_LEAF_0",
+   "disposition": "MODEL_ONLY_DOOR_HOLD (A103 wall kept; owner/site to confirm)"
+  },
+  {
+   "at": [
+    10425,
+    7900
+   ],
+   "model_object": "V4_D-GUEST-ROOM_LEAF_0",
+   "disposition": "MODEL_ONLY_DOOR_HOLD (A103 wall kept; owner/site to confirm)"
+  }
+ ],
+ "holds": [
+  {
+   "tag": "H1",
+   "at": [
+    13000,
+    5125
+   ],
+   "desc": "主卫(母亲适老)门口: 不设凸起门槛; 排水/挡水做法待定"
+  },
+  {
+   "tag": "H2",
+   "at": [
+    10559,
+    4743
+   ],
+   "desc": "模型有门(R3_SLIDING_LEAF), A103 无洞口: 墙按 A103 保留, 开洞待确认"
+  },
+  {
+   "tag": "H3",
+   "at": [
+    12375,
+    6500
+   ],
+   "desc": "模型有门(V4_D-BATHM_LEAF_0), A103 无洞口: 墙按 A103 保留, 开洞待确认"
+  },
+  {
+   "tag": "H4",
+   "at": [
+    10425,
+    7900
+   ],
+   "desc": "模型有门(V4_D-GUEST-ROOM_LEAF_0), A103 无洞口: 墙按 A103 保留, 开洞待确认"
+  }
+ ]
+}

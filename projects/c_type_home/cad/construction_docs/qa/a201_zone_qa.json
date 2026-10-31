@@ -1,0 +1,90 @@
+{
+ "zones": [
+  {
+   "id": "couple_bedroom#HIGH0",
+   "name": "",
+   "area_m2": 14.89
+  },
+  {
+   "id": "guest_bath#HIGH0",
+   "name": "",
+   "area_m2": 4.589
+  },
+  {
+   "id": "guest_bedroom#HIGH0",
+   "name": "",
+   "area_m2": 8.1
+  },
+  {
+   "id": "hallway#HIGH0",
+   "name": "",
+   "area_m2": 7.776
+  },
+  {
+   "id": "hallway#LOW0",
+   "name": "",
+   "area_m2": 1.166
+  },
+  {
+   "id": "master_bath#HIGH0",
+   "name": "",
+   "area_m2": 4.994
+  },
+  {
+   "id": "mother_bedroom#HIGH0",
+   "name": "",
+   "area_m2": 16.224
+  },
+  {
+   "id": "secondary_bath#HIGH0",
+   "name": "",
+   "area_m2": 3.302
+  },
+  {
+   "id": "study#HIGH0",
+   "name": "",
+   "area_m2": 14.086
+  },
+  {
+   "id": "kitchen#LOW0",
+   "name": "",
+   "area_m2": 7.911
+  },
+  {
+   "id": "north_sunroom#LOW0",
+   "name": "",
+   "area_m2": 11.323
+  },
+  {
+   "id": "service_balcony#LOW0",
+   "name": "",
+   "area_m2": 6.185
+  },
+  {
+   "id": "stair#LOW0",
+   "name": "",
+   "area_m2": 0.664
+  },
+  {
+   "id": "stair#LOW1",
+   "name": "",
+   "area_m2": 2.483
+  },
+  {
+   "id": "living#LOW0",
+   "name": "",
+   "area_m2": 41.694
+  },
+  {
+   "id": "vestibule#HIGH0",
+   "name": "",
+   "area_m2": 2.25
+  }
+ ],
+ "invalid": [],
+ "overlaps": [],
+ "gaps": [],
+ "coverage": "CHECKED",
+ "total_m2": 147.637,
+ "result": "PASS"
+}

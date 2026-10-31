@@ -1,0 +1,62 @@
+{
+ "task": "CD_V01 A202+A201",
+ "generated": "2026-11-01",
+ "design_model": {
+  "path": "projects/c_type_home/design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_SUPPORTED_V2.blend",
+  "sha256": "5a8bf58aaea0978147db40e1c7c68d57c27be6f9b254c9a6191ca7ef32c11801",
+  "mode": "read-only"
+ },
+ "survey_base": {
+  "path": "projects/c_type_home/cad/measured_working.dxf",
+  "sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
+  "manifest_sha256": "3711c47c1172fbdb13fead356bd5b2285e66925f6aca4a62c49ff118437ba233",
+  "role": "as-built survey (frozen, MEASURED); upstream of A103"
+ },
+ "plan_base": {
+  "path": "inputs/A103_CONSTRUCTION_POC_V7.dxf",
+  "sha256": "381eacb73e6f070d5f2a79139665a1a71d4d36ba244a182bde7e5b59cc33a4ce",
+  "copied_from": "projects/vray_eval_v1/v15_house/cad/A103_CONSTRUCTION_POC_V7.dxf @ b0c6d32",
+  "role": "walls/openings/dims (survey + approved changes)"
+ },
+ "owner_ceiling_record": {
+  "path": "projects/vray_eval_v1/v15_house/cad/step_wave_p0/P03_CEILING_SCHEME_A.md",
+  "commit": "0123a9d"
+ },
+ "extracts": {
+  "plan_extract.json": "2d09afb84e6b225c95707f890ff5d5475c0d10af6c4e71aed58f126439253b27",
+  "model_inventory.json": "d9b320c44506bcad7f0f072dd666ff8f67b0e426cde34656d0a8ccaa0a018dfb",
+  "extract_cfg.json": "88f3cb8b9911024b1c6acbfc9abd248d380d1a29983fbd5143df179b06e4a547"
+ },
+ "extractor": {
+  "path": ".codex/skills/blender-plan-geometry-extraction/scripts/extract_plan_geometry.py",
+  "sha256": "470c1c39eb1378df2b38f5fbcce1c2b86904b896bdf6a9205ea905eedab2a292"
+ },
+ "outputs": {
+  "work/A201_天花布置图.dxf": "6f58ca43372a005d0970bd2110ed537edd35aea34ad330f8dac55a34b30391c3",
+  "work/A202_地面铺装图.dxf": "5c4490080eb7934b5c60b353c611bbb6069aec7043664d9a18c25e0475b83474",
+  "issue/A201_天花布置图.issue.dxf": "6b519e4703b58a69be9a73c780b4348a4e6c160a022959264d7650fac9d3430b",
+  "issue/A201_天花布置图.issue.pdf": "0c830c279e812859b3d32f7e8708a68f8597bdb39d4cd95cc04a047e83114efd",
+  "issue/A202_地面铺装图.issue.dxf": "8cb7193c93ee8c6889c170cb32b8614133e1edad8825a07925f58cff66efa779",
+  "issue/A202_地面铺装图.issue.pdf": "aa84c9a542ed7f737b60bdb2e76b9305c34a80a0833c7a08d9d03ed70c43330f",
+  "data/a201_ceiling_zones.json": "353df2456c701d5bf5cfb75393bade79ec3eea0cac45b525788224dcb6631bc2",
+  "data/a201_zones.json": "2b1a9c8add3bf87fdc649cc5ce731d0bf90727731a42c7fe36b156580b515b99",
+  "data/a202_gap_disposition.json": "fa934f11a75b281ad12e3470faabcf6c72ebecd378b61c0d4cb3d9a19df0b445",
+  "data/a202_rooms.csv": "b058f909b95b6bccf22c2bd9daa839e784667ce534851b48a4e74e0445f34c4d",
+  "data/a202_tiles_doors.json": "b5ade5c491630d0335f42cf57b23f86a5c508f10d44cbd1a9e246898777fa832",
+  "data/a202_zones.json": "5d7a64b5f44b243018087fc5401c8ace02eae4528fe9bdaf82fbc253694bc3d3",
+  "data/lighting_points.csv": "57f085e09a0bfc5b0912a7c16daf2384e4867971ecd917ecdbe8a16569ef08c8",
+  "data/lighting_points.json": "86ea2d983da5055888719877dc35a62add9d9174a26351daee6f52ae9831152f"
+ },
+ "previews": {
+  "preview/A201_crop_ceiling_step.png": "3d450f906718a558cb1c452e1ecf1a9b347a83e70feb71611bdc9126c3ff7a7b",
+  "preview/A201_crop_section.png": "4a0f3b528765f5132c7a70150df6688ff7f717c9844953b92019fcfa561451ef",
+  "preview/A201_crop_stair_nodrop.png": "14ff2fbe64dd6a7755e1af9bcaca863d8115ac5dee3c3051161f417b3bfe31d8",
+  "preview/A201_天花布置图_full.png": "450023a95f31abf1560b723f1c2c6e21ceffd8be502c4bc51a07235c6fe306ad",
+  "preview/A202_crop_service_balcony.png": "88ef8f976caa49dcfafdcefc9d86d761108b1ff19f5513163d466ba4101eec28",
+  "preview/A202_crop_stair.png": "edaa0add2bc5a8b75a6a30f97411adb437e1784b5dcf562642fa1cab58c49214",
+  "preview/A202_crop_vestibule_masterbath.png": "8ca51ac2530d0a4d35f2e3621c5fe995e6af33ff419eedf9c1d447857a87f814",
+  "preview/A202_地面铺装图_full.png": "e2cc57be86bc0ce1f647d57cb5675c7c899ebd64cec186c50786cf611cc5115c"
+ },
+ "blend_sha_matches_extract": true,
+ "survey_matches_manifest": true
+}

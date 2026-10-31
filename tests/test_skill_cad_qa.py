@@ -107,6 +107,58 @@ class ZoneQaTests(unittest.TestCase):
         self.assertEqual(zone_qa.run({'zones': z, 'interior': [SQ]})['result'], 'PASS')
 
 
+class QaRegressionTests(unittest.TestCase):
+    """PR #11 review: coverage needs an independent interior; QA must catch moved geometry."""
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+
+    def test_zone_qa_without_interior_is_partial_not_pass(self):
+        z = [{'id': 'a', 'polygon': [[0, 0], [2000, 0], [2000, 3000], [0, 3000]]}]
+        r = zone_qa.run({'zones': z})
+        self.assertEqual(r['coverage'], 'NOT_RUN')
+        self.assertEqual(r['result'], 'PARTIAL')
+
+    def _dim_sheet(self, override=None):
+        p = self.tmp / 'dim.dxf'
+        make_sheet(p)
+        doc = ezdxf.readfile(p)
+        d = doc.modelspace().add_linear_dim(base=(0, -800), p1=(0, 0), p2=(3600, 0),
+                                            text=override or '<>', dimstyle='EZDXF')
+        d.render()
+        doc.saveas(p)
+        return p
+
+    def test_dimension_value_matches_geometry(self):
+        r = qa.run(self._dim_sheet())
+        self.assertEqual(status(r, 'dimension_values'), 'PASS')
+
+    def test_dimension_text_override_mismatch_fails(self):
+        r = qa.run(self._dim_sheet(override='3900'))
+        self.assertEqual(status(r, 'dimension_values'), 'FAIL')
+
+    def test_moved_geometry_with_same_count_fails_anchor_check(self):
+        p = self.tmp / 'a.dxf'
+        make_sheet(p)
+        anchors = [{'id': 'NE', 'layer': '0', 'x': 10000, 'y': 8000, 'tol': 5}]
+        self.assertEqual(status(qa.run(p, anchors=anchors), 'anchor_coordinates'), 'PASS')
+        doc = ezdxf.readfile(p)
+        pl = [e for e in doc.modelspace().query('LWPOLYLINE') if e.dxf.layer == '0'][0]
+        pl.set_points([(0, 0), (10000, 0), (10000, 8200), (0, 8200)], format='xy')
+        doc.saveas(p)
+        r = qa.run(p, anchors=anchors)
+        self.assertEqual(status(r, 'anchor_coordinates'), 'FAIL')
+
+    def test_required_layer_with_only_frozen_entities_fails(self):
+        p = self.tmp / 'f.dxf'
+        make_sheet(p)
+        doc = ezdxf.readfile(p)
+        doc.layers.new('A-FLOR-TILE').freeze()
+        doc.modelspace().add_line((0, 0), (100, 0), dxfattribs={'layer': 'A-FLOR-TILE'})
+        doc.saveas(p)
+        r = qa.run(p, require_layers=['A-FLOR-TILE'])
+        self.assertEqual(status(r, 'required_layers_visible'), 'FAIL')
+
+
 class SkillEntryTests(unittest.TestCase):
     ROOT = Path(__file__).resolve().parents[1]
 

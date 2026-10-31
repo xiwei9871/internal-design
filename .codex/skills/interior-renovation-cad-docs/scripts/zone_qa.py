@@ -5,6 +5,7 @@ Input JSON: {"zones": [{"id": str, "name": str, "polygon": [[x, y], ...],
                          "holes": [[[x, y], ...]]?, ...}],
              "interior": [[[x, y], ...], ...]?}   # optional reference interior polygons
 Output: per-zone area, pairwise overlaps above tolerance, gaps (interior minus zones).
+Without an independent "interior", coverage is NOT_RUN and the result is PARTIAL, never PASS.
 Usage: zone_qa.py zones.json [--overlap-tol-m2 0.01] [--gap-tol-m2 0.05] [--json out.json]
 """
 import argparse, itertools, json, sys
@@ -43,8 +44,15 @@ def run(data, overlap_tol_m2=0.01, gap_tol_m2=0.05):
                 c = g.representative_point()
                 gaps.append({'area_m2': round(g.area / 1e6, 3), 'at': [round(c.x), round(c.y)],
                              'bounds': [round(v) for v in g.bounds]})
-    status = 'PASS' if not (overlaps or gaps or invalid) else 'FAIL'
+    coverage = 'CHECKED' if data.get('interior') else 'NOT_RUN'
+    if overlaps or gaps or invalid:
+        status = 'FAIL'
+    elif coverage == 'NOT_RUN':
+        status = 'PARTIAL'      # overlaps checked only; no independent interior => no coverage PASS
+    else:
+        status = 'PASS'
     return {'zones': rows, 'invalid': invalid, 'overlaps': overlaps, 'gaps': gaps,
+            'coverage': coverage,
             'total_m2': round(sum(r['area_m2'] for r in rows), 3), 'result': status}
 
 

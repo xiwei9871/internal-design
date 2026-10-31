@@ -1,0 +1,28 @@
+{
+ "src": "A202_地面铺装图.dxf",
+ "src_sha10": "5c4490080e",
+ "out": "A202_地面铺装图.issue.dxf",
+ "out_sha10": "8cb7193c93",
+ "dxfversion": "AC1024",
+ "audit_errors": 0,
+ "viewports_excl_overall": 0,
+ "styles": [
+  [
+   "gbenor.shx",
+   "gbcbig.shx"
+  ]
+ ],
+ "model_entities_src": 645,
+ "model_entities_out_excl_frame": 645,
+ "frame_window_mm": [
+  [
+   -8644,
+   -9640
+  ],
+  [
+   33406,
+   20060
+  ]
+ ],
+ "pdf": "A202_地面铺装图.issue.pdf"
+}
