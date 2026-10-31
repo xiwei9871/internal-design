@@ -1,0 +1,70 @@
+{
+ "file": "/tmp/skills_poc_v01/out/publish/A202_地面铺装图.issue.dxf",
+ "entities_by_layer": {
+  "A-WALL": 146,
+  "A-SOURCE-REF": 62,
+  "A-UNCERTAIN": 38,
+  "A-DOOR": 9,
+  "A-WINDOW": 9,
+  "A-ROOM": 9,
+  "A-TEXT": 36,
+  "A-DIMS": 121,
+  "A-HATCH-WOOD": 204,
+  "A-HATCH-TILE": 48,
+  "A-FRAME": 8
+ },
+ "frozen_or_off_layers": [
+  "A-ROOM",
+  "A-SOURCE-REF",
+  "A-UNCERTAIN"
+ ],
+ "checks": [
+  {
+   "check": "dxf_version",
+   "status": "PASS",
+   "detail": "AC1024 (want AC1024)"
+  },
+  {
+   "check": "ezdxf_audit",
+   "status": "PASS",
+   "detail": "errors=0 fixes=0"
+  },
+  {
+   "check": "insunits_mm",
+   "status": "PASS",
+   "detail": "$INSUNITS=4"
+  },
+  {
+   "check": "font_paths_portable",
+   "status": "PASS",
+   "detail": "no absolute font paths"
+  },
+  {
+   "check": "cjk_text_styles",
+   "status": "PASS",
+   "detail": "35 CJK texts; not CJK-capable by style: {}"
+  },
+  {
+   "check": "no_paperspace_viewports",
+   "status": "PASS",
+   "detail": "0 viewport(s); QCAD 3.33 showed paper-space viewports blank"
+  },
+  {
+   "check": "frame_a1_scale",
+   "status": "PASS",
+   "detail": "A-FRAME sheet border 42050x29700 found"
+  },
+  {
+   "check": "content_inside_frame",
+   "status": "PASS",
+   "detail": "content 0,-5200 .. 16563,16130"
+  },
+  {
+   "check": "entities_preserved",
+   "status": "PASS",
+   "detail": "src=682 out_excl_frame=682"
+  }
+ ],
+ "result": "PASS",
+ "scope_note": "File-level QA only; not proof of site dimensions or construction feasibility."
+}

@@ -1,0 +1,85 @@
+{
+ "file": "/tmp/skills_poc_v01/out/publish/A103_CONSTRUCTION_POC_V7.issue.dxf",
+ "entities_by_layer": {
+  "A-WALL": 41,
+  "A-SOURCE-REF": 62,
+  "A-UNCERTAIN": 44,
+  "A-DUP": 33,
+  "A-DOOR": 18,
+  "A-WINDOW": 10,
+  "A-ROOM": 9,
+  "A-TEXT": 6,
+  "A-DESIGN": 51,
+  "A-DIMS-LEGACY": 121,
+  "A-FURN": 62,
+  "A-FIXT": 22,
+  "A-STRUCT-UNDERLAY": 27,
+  "A-REVIEW": 22,
+  "A-STAIR-DIRECTION": 4,
+  "A-STAIR-AREA": 1,
+  "A-STAIR": 3,
+  "A-DEMO": 5,
+  "A-SOFFIT": 16,
+  "A-CONFLICT": 3,
+  "A-DIMS": 34,
+  "A-FRAME": 9
+ },
+ "frozen_or_off_layers": [
+  "A-DEMO",
+  "A-DIMS-LEGACY",
+  "A-DUP",
+  "A-ROOM",
+  "A-SOURCE-REF",
+  "A-STAIR-AREA",
+  "A-UNCERTAIN"
+ ],
+ "checks": [
+  {
+   "check": "dxf_version",
+   "status": "PASS",
+   "detail": "AC1024 (want AC1024)"
+  },
+  {
+   "check": "ezdxf_audit",
+   "status": "PASS",
+   "detail": "errors=0 fixes=0"
+  },
+  {
+   "check": "insunits_mm",
+   "status": "PASS",
+   "detail": "$INSUNITS=4"
+  },
+  {
+   "check": "font_paths_portable",
+   "status": "PASS",
+   "detail": "no absolute font paths"
+  },
+  {
+   "check": "cjk_text_styles",
+   "status": "PASS",
+   "detail": "26 CJK texts; not CJK-capable by style: {}"
+  },
+  {
+   "check": "no_paperspace_viewports",
+   "status": "PASS",
+   "detail": "0 viewport(s); QCAD 3.33 showed paper-space viewports blank"
+  },
+  {
+   "check": "frame_a1_scale",
+   "status": "PASS",
+   "detail": "A-FRAME sheet border 42050x29700 found"
+  },
+  {
+   "check": "content_inside_frame",
+   "status": "PASS",
+   "detail": "content 0,-1800 .. 16500,14953"
+  },
+  {
+   "check": "entities_preserved",
+   "status": "PASS",
+   "detail": "src=594 out_excl_frame=594"
+  }
+ ],
+ "result": "PASS",
+ "scope_note": "File-level QA only; not proof of site dimensions or construction feasibility."
+}
