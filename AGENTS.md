@@ -49,3 +49,7 @@ The RTK include uses this machine's configured path. Keep it for local Codex exe
 Every substantial design task uses a task-scoped branch. Sync the approved base, read only named authority files, execute the task Gate, inspect status and diff, stage explicit task-relevant paths, commit, push, report branch/commit/PR, and stop at HUMAN_REVIEW.
 
 Generated artifacts never enter the diff. Frozen-authority hash changes are FAIL. Do not use git add ., do not merge automatically, and do not commit unrelated source candidates. Standard completion reports include TASK STATUS, BRANCH, COMMIT, PR, FILES CHANGED, GROUND TRUTH, GENERATED ARTIFACTS, GATES, KNOWN ISSUES, and NEXT ACTION.
+
+## Project Continuity (Devin V1.0.1)
+- Session start: read `docs/agent_governance/{PROJECT_STATE.yaml,DECISIONS.md,HANDOFF.md}` — repo files override chat memory.
+- `python3 tools/gov/id_gates.py all` before status claims; unverified ⇒ NOT_VERIFIED.
