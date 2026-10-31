@@ -1,0 +1,214 @@
+{
+ "reference": {
+  "source": "plan_extract_v2.json",
+  "extract_sha16": "8d4d046f1163cca6",
+  "blend": "/Users/xiwei/interior_design/projects/c_type_home/design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_SUPPORTED_V2.blend",
+  "zones": 12
+ },
+ "A202_old_pixel_segmentation": {
+  "WOOD": {
+   "area_m2": 117.74,
+   "ref_m2": 112.85,
+   "iou": 0.8245,
+   "missed_m2": 8.64,
+   "spill_outside_ref_m2": 13.54,
+   "vertices": 73,
+   "hausdorff_mm": 1852
+  },
+  "TILE": {
+   "area_m2": 33.02,
+   "ref_m2": 37.43,
+   "iou": 0.7684,
+   "missed_m2": 6.82,
+   "spill_outside_ref_m2": 2.41,
+   "vertices": 41,
+   "hausdorff_mm": 4408
+  },
+  "wrong_material_m2": 6.83,
+  "per_room_coverage": {
+   "couple_bedroom": 0.987,
+   "guest_bath": 0.981,
+   "guest_bedroom": 0.985,
+   "hallway": 0.953,
+   "master_bath": 0.981,
+   "mother_bedroom": 0.99,
+   "secondary_bath": 0.866,
+   "study": 0.982,
+   "kitchen": 0.986,
+   "north_sunroom": 0.986,
+   "service_balcony": 0.0,
+   "living_dining_stair_rest": 0.862
+  },
+  "geometry_only": {
+   "iou": 0.8842,
+   "missed_m2": 9.34,
+   "spill_m2": 9.11,
+   "hausdorff_mm": 1852
+  },
+  "rooms_below_95pct": [
+   "living_dining_stair_rest",
+   "secondary_bath",
+   "service_balcony"
+  ],
+  "meta": {
+   "mm_per_px": 9.96,
+   "hardcoded_intent_boxes": 2,
+   "inputs": {
+    "topmap.png": "4c726f4fbe27fc13",
+    "seg_meta.json": "8a3b3c4293beea2b",
+    "plan_geom.json": "64ac96a30ed39a0b"
+   }
+  },
+  "repeat_identical": true
+ },
+ "A202_new_real_geometry": {
+  "WOOD": {
+   "area_m2": 112.85,
+   "ref_m2": 112.85,
+   "iou": 1.0,
+   "missed_m2": 0.0,
+   "spill_outside_ref_m2": 0.0,
+   "vertices": 403,
+   "hausdorff_mm": 0
+  },
+  "TILE": {
+   "area_m2": 37.43,
+   "ref_m2": 37.43,
+   "iou": 1.0,
+   "missed_m2": 0.0,
+   "spill_outside_ref_m2": 0.0,
+   "vertices": 142,
+   "hausdorff_mm": 0
+  },
+  "wrong_material_m2": 0.0,
+  "per_room_coverage": {
+   "couple_bedroom": 1.0,
+   "guest_bath": 1.0,
+   "guest_bedroom": 1.0,
+   "hallway": 1.0,
+   "master_bath": 1.0,
+   "mother_bedroom": 1.0,
+   "secondary_bath": 1.0,
+   "study": 1.0,
+   "kitchen": 1.0,
+   "north_sunroom": 1.0,
+   "service_balcony": 1.0,
+   "living_dining_stair_rest": 1.0
+  },
+  "geometry_only": {
+   "iou": 1.0,
+   "missed_m2": 0.0,
+   "spill_m2": 0.0,
+   "hausdorff_mm": 0
+  },
+  "rooms_below_95pct": []
+ },
+ "A201_old_dxf": {
+  "ceiling_polys": 8,
+  "elevation_labels": [
+   "H=2950 石膏板",
+   "H=2950 铝扣板"
+  ],
+  "distinguishes_2800_vs_3250": false,
+  "has_step_line_layer": false,
+  "covered_low_m2": 68.39,
+  "covered_high_m2": 80.18
+ },
+ "A201_new_real_geometry": {
+  "low_zone_m2": 74.4,
+  "low_soffit_z": 2800,
+  "high_zone_m2": 90.09,
+  "high_soffit_z": 3250,
+  "shared_boundary_len_mm": 8240,
+  "finished_ceiling_after_150_drop": {
+   "low": 2650,
+   "high": 3100
+  }
+ },
+ "A202_new_zone_qa": {
+  "overlaps": [],
+  "gaps": [
+   {
+    "area_m2": 0.867,
+    "at": [
+     4809,
+     109
+    ],
+    "bounds": [
+     2739,
+     -196,
+     5700,
+     450
+    ]
+   },
+   {
+    "area_m2": 1.049,
+    "at": [
+     2540,
+     3754
+    ],
+    "bounds": [
+     1306,
+     2560,
+     2700,
+     5094
+    ]
+   },
+   {
+    "area_m2": 2.25,
+    "at": [
+     12250,
+     5900
+    ],
+    "bounds": [
+     11600,
+     4650,
+     12900,
+     6500
+    ]
+   },
+   {
+    "area_m2": 1.136,
+    "at": [
+     3296,
+     14142
+    ],
+    "bounds": [
+     2900,
+     13200,
+     4361,
+     14947
+    ]
+   },
+   {
+    "area_m2": 0.637,
+    "at": [
+     15730,
+     3474
+    ],
+    "bounds": [
+     15600,
+     2259,
+     16495,
+     4450
+    ]
+   },
+   {
+    "area_m2": 1.534,
+    "at": [
+     13459,
+     12670
+    ],
+    "bounds": [
+     13100,
+     11700,
+     15675,
+     13809
+    ]
+   }
+  ],
+  "invalid": [],
+  "result": "FAIL",
+  "total_m2": 150.245
+ }
+}

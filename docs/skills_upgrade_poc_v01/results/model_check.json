@@ -1,0 +1,78 @@
+{
+ "model": "projects/c_type_home/design/whole_house_model_v2/WHOLE_HOUSE_CORRECTED_SUPPORTED_V2.blend",
+ "sha256_before": "5a8bf58aaea0978147db40e1c7c68d57c27be6f9b254c9a6191ca7ef32c11801",
+ "sha256_after": "5a8bf58aaea0978147db40e1c7c68d57c27be6f9b254c9a6191ca7ef32c11801",
+ "extract_repeat_sha256": [
+  "8d4d046f1163cca69c46d7275322920f45f445790c43d8f906f80502cd2e3874",
+  "8d4d046f1163cca69c46d7275322920f45f445790c43d8f906f80502cd2e3874"
+ ],
+ "C1_split_level_450": {
+  "lower_floor_z": [
+   0
+  ],
+  "upper_floor_z": [
+   450
+  ],
+  "step_z": {
+   "STEP_0": [
+    150
+   ],
+   "STEP_1": [
+    300
+   ],
+   "STEP_2": [
+    450
+   ]
+  },
+  "status": "PASS"
+ },
+ "C2_ceiling": {
+  "low_soffit_z": 2800,
+  "high_soffit_z": 3250,
+  "high_ceiling_west_of_x8000_m2": 4.7,
+  "high_west_bounds": [
+   5700,
+   4450,
+   8000,
+   10900
+  ],
+  "low_ceiling_east_of_x8000_m2": 12.52,
+  "low_east_bounds": [
+   8000,
+   10900,
+   13100,
+   13400
+  ],
+  "drop_150_in_model": false,
+  "status": "DIFF_RECORDED",
+  "note": "model step boundary is not a single x=8000 line; CAD draws owner x=8000 + 150 drop"
+ },
+ "C3_rooms_fixtures": {
+  "presentation_zones": [
+   "PRESENTATION_FLOOR_couple_bedroom",
+   "PRESENTATION_FLOOR_guest_bath",
+   "PRESENTATION_FLOOR_guest_bedroom",
+   "PRESENTATION_FLOOR_hallway",
+   "PRESENTATION_FLOOR_master_bath",
+   "PRESENTATION_FLOOR_mother_bedroom",
+   "PRESENTATION_FLOOR_secondary_bath",
+   "PRESENTATION_FLOOR_study",
+   "PRESENTATION_TILE_kitchen",
+   "PRESENTATION_TILE_north_sunroom",
+   "PRESENTATION_TILE_service_balcony"
+  ],
+  "fixtures_present": {
+   "B11_K-SINK_BOTTOM": true,
+   "CBM_GUEST_BASIN": true,
+   "CBM_MASTER_BASIN": true,
+   "R3_VANITY_BASIN_REVIEW": true,
+   "R3_WC_LATEST": true,
+   "R3_SHOWER_TRAY": true,
+   "R3_SHOWER_DRAIN": true,
+   "R3_TEA_SINK_BOTTOM": true,
+   "SUNROOM_LAUNDRY_OVERHEAD": true
+  },
+  "note": "master/guest toilets not found by name; region query needed before A303",
+  "status": "PASS_WITH_NOTES"
+ }
+}

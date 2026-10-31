@@ -1,0 +1,52 @@
+{
+ "file": "projects/vray_eval_v1/v15_house/cad/A201_天花布置图.dxf",
+ "entities_by_layer": {
+  "A-WALL": 131,
+  "A-CEIL": 8,
+  "A-LIGHT": 116,
+  "A-COVE": 12,
+  "A-TEXT": 105,
+  "0": 61,
+  "A-WINDOW": 3
+ },
+ "frozen_or_off_layers": [],
+ "checks": [
+  {
+   "check": "dxf_version",
+   "status": "PASS",
+   "detail": "AC1024 (want AC1024)"
+  },
+  {
+   "check": "ezdxf_audit",
+   "status": "PASS",
+   "detail": "errors=0 fixes=9"
+  },
+  {
+   "check": "insunits_mm",
+   "status": "PASS",
+   "detail": "$INSUNITS=4"
+  },
+  {
+   "check": "font_paths_portable",
+   "status": "FAIL",
+   "detail": "absolute font paths: [('HZTXT', '/System/Library/Fonts/STHeiti Medium.ttc')]"
+  },
+  {
+   "check": "cjk_text_styles",
+   "status": "FAIL",
+   "detail": "79 CJK texts; not CJK-capable by style: {'HZTXT': 79}"
+  },
+  {
+   "check": "no_paperspace_viewports",
+   "status": "PASS",
+   "detail": "0 viewport(s); QCAD 3.33 showed paper-space viewports blank"
+  },
+  {
+   "check": "frame_a1_scale",
+   "status": "FAIL",
+   "detail": "no closed A-FRAME polyline of 42050x29700 (paper (841.0, 594.0) x 50)"
+  }
+ ],
+ "result": "FAIL",
+ "scope_note": "File-level QA only; not proof of site dimensions or construction feasibility."
+}

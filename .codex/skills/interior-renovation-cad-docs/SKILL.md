@@ -1,51 +1,71 @@
 ---
 name: interior-renovation-cad-docs
-description: Generate standardized interior construction DXF sheets (墙体拆改/平面布置/天花/地面铺装/电气点位/给排水) for a renovation project by diffing an authoritative as-built CAD base against the design Blender model. Use when producing 施工图 that must match a real model, not hand-drawn guesses.
+description: Generate interior renovation construction DXF sheets (墙体拆改/平面布置/天花/地面铺装/水电点位/走顶路由) from an as-built CAD base plus real geometry extracted from the design Blender model, then gate each sheet with automated DXF QA. Use when producing 施工图 that must match a real model. Not for proving site dimensions, structure, or MEP feasibility.
 ---
 
 # Interior Renovation CAD Docs
 
-Produce renovation construction drawings where every line is accountable to either the authoritative as-built plan or the design model. Never hand-place room fills or walls.
+Every line on a sheet must trace to either the as-built base or real model geometry.
+Never hand-place room fills, and never derive zones from rendered images.
 
-## Inputs
+## Source hierarchy (highest first)
 
-1. **As-built authoritative DXF** (e.g. FreeCAD-exported original plan) with proper layers (`A-WALL/A-DOOR/A-WINDOW/A-DIMS/A-TEXT`). This is the frozen base — copy it, don't redraw it.
-2. **Design Blender model** (the renovation design). Verify coordinate alignment once (compare west wall / south wall positions); expect it to match the base within ~250mm offsets for facade-face vs structure edges.
-3. **Design intent notes** (owner decisions, e.g. "kitchen is tile even though model floor material is unified wood-look").
+1. **As-built survey CAD** (e.g. `projects/c_type_home/cad/measured_working.dxf`): walls, openings, dimensions.
+2. **Developer original plan**: which walls are structural (black = keep, white = may change).
+3. **Owner decisions** (`DESIGN_DECISIONS_*.md`, chat decisions recorded in the review doc).
+4. **Design Blender model**: room use, finish zones, ceiling zones, fixtures, furniture.
 
-## Core methods
+When the model disagrees with 1–3, draw per 1–3 and list the difference. Do not edit the model.
 
-### Wall diff (拆除/新建/保留)
-- Model walls come in two forms: thin partition objects (bbox = wall band) and giant merged `*_WALL_SHELL` meshes (bbox useless — whole house).
-- Rasterize a **model wall mask**: thin-wall bboxes + SHELL vertex cloud (verts z<1600), 100mm/px grid, dilate ~250mm to absorb alignment tolerance.
-- Sample each baseline wall polyline along its centerline (≤400mm segments). Segment hit <55% → demolished; the rest → kept. Trim partially-demolished walls into kept stubs + demo segments.
-- New walls = model thin walls <55% covered by baseline (+250mm buffer). Cross-check with owner: model may omit real walls (e.g. balcony enclosure was a model bug, restored per owner).
-- Draw on a 拆改图 (A102): retained=thin gray `A-EXIST`, demolished=red dashed `A-DEMO`, new=thick `A-NEW`. All other sheets use the corrected wall set.
+## Geometry rules (real geometry first)
 
-### Floor finish zones (地面铺装)
-- Do NOT hand-draw rectangles — they leak outside walls and miss alcoves.
-- Render a **material-paint orthographic top view** (wood=red, tile=green, wall=blue, furniture=gray, override materials temporarily, emission shader + flat ortho camera).
-- Pixel-segment: interior mask = outer envelope (wall-shell contours filled) minus walls; furniture pixels assign to nearest material; tile/wood connected regions → simplify → DXF polylines.
-- Apply **design-intent overrides** where model material is placeholder (verify each override with the owner — wrong in both directions happened).
-- Symbols: wood = parallel lines along real laying direction at plank pitch (150mm), tile = module grid (600×600), threshold stone rect **only where sampled materials differ across the opening** (probe multiple depths, door leaves can spoof single-sample reads), floor drain ◎ + 1% slope note, 起铺点 diamond, dry ±0.000 / wet −0.015 elevations.
+- **Floor and ceiling zones come from mesh faces**, via
+  `../blender-plan-geometry-extraction/scripts/extract_plan_geometry.py` (up-facing faces for
+  floors, down-facing for ceilings), unioned in Shapely outside Blender.
+- **Forbidden:** material-paint top renders, pixel colour masks, contour tracing of PNGs,
+  hard-coded intent rectangles. POC V01 measured this method at wood IoU 0.82 / tile IoU 0.77,
+  one room missed entirely, Hausdorff error up to 4.4 m (`docs/skills_upgrade_poc_v01/`).
+- Walls are subtracted from zones using the CAD base, not the model's wall meshes.
+- Run `scripts/zone_qa.py` on every zone set: no overlaps > 0.01 m², every gap > 0.3 m²
+  either filled from enclosed-interior geometry or listed as HOLD. Model floor gaps are
+  common (door vestibules, bay sills); fill them from wall-enclosed interior, never by guessing.
+- Material comes from the model material name. Owner overrides are recorded with
+  status `OWNER_REVIEW` until confirmed; a recommendation is not a signed decision.
 
-### Ceiling / electrical / plumbing sheets
-- Fixture symbols must be **graded by type** (筒灯○⊕ vs 吊灯⊗ vs 灯带双线 vs 镜前灯竖条); identical circles for everything is a fail.
-- Audit every luminaire against use: cabinet strip follows cabinet direction; bedside lamps outside bed bbox; mirror light over the actual mirror (check mirror object coords, not room center); furniture lamps (desk/floor) are not ceiling fixtures — draw dashed or omit.
-- Sockets/switches located relative to real furniture bboxes (bedside flanking bed, TV wall, counter run); label `H<height>` per convention (300/700/1200/1300/2200, 马桶400, 台面1200).
-- Plumbing points from real fixture objects (toilet/basin/drain/washer/sink); route lines only where modeled — concealed pipe topology is never invented; mark `待现场复尺`.
+## Sheet output
 
-## Sheet set
+- Model space, 1:1 mm, `$INSUNITS=4`, DXF R2010 (`AC1024`).
+- Frame and title block in model space scaled ×50 on layer `A-FRAME` (A1 border 42050×29700).
+  Paper-space viewports rendered blank in QCAD 3.33; do not depend on them.
+- Text style `gbenor.shx` + bigfont `gbcbig.shx`. No absolute font paths. (`txt.shx`+`hztxt.shx`
+  showed `??` in QCAD; verified in `QCAD_VERIFY_V01.md`.)
+- Text heights at 1:50: 175 (3.5 mm), 125 (2.5 mm), titles 300.
+- Finish to an issue copy with the repo's `publish_dxf.py` (post-processes fonts, frame, R2010, PDF).
 
-A102 墙体拆改 · A103 平面布置 · A201 天花布置 · A202 地面铺装 · A302 电气点位 · A303 给排水. Every sheet: legend box, Chinese notes (material/spec/verification), title block (项目/图名/图号/比例/单位/版本/日期), frozen audit layers (`A-SOURCE-REF` etc.) turned off.
+## Automated QA gate (run on every issued sheet)
 
-## Conventions
+```bash
+python scripts/dxf_sheet_qa.py SHEET.issue.dxf --src SHEET.dxf --json SHEET.qa.json
+```
 
-- Units mm, scale annotation 1:50; Chinese-capable text style (`HZTXT` with STHeiti) — preview renderers need a CJK font override (e.g. matplotlib `Heiti TC`).
-- Keep the base file's layers/lineweights; add design layers (`A-FURN/A-FIXT/A-DESIGN/A-ELEC-*/A-PLUM-*`) alongside.
-- Version tags on sheets (R1/R2…) and in filenames' sibling `_preview.png`; one render script regenerates all previews after any edit.
-- Honesty: anything not modeled or owner-unconfirmed gets `待现场确认`/`按现状估计`, never fabricated dimensions.
+Checks DXF version, `ezdxf audit`, units, portable fonts, CJK-capable styles, no paper-space
+viewport dependency, A1 frame at scale, content inside frame, entity count preserved.
+PASS is file-level only. Visual review in QCAD (or the PDF) is still required.
 
-## Verification loop
+## Sheet-specific rules
 
-Render preview PNG → compare against model top view and owner reference drawings → fix → re-render. Do not declare done until walls (demo/new), room names, fixture purposes, and finish zones all agree with both sources.
+- **A202 floor**: wood laying direction stated; tile module from the actual spec, centred per
+  room with the start point marked; threshold stone only where material or level changes, or at
+  wet-room doors. Accessible (elderly) bathrooms: no raised threshold — flag `HOLD` until the
+  drainage/level solution is confirmed.
+- **A201 ceiling**: soffit levels from ceiling meshes; finished level = soffit − drop; draw the
+  high/low step line where the two ceiling meshes share a boundary; zones with clear height below
+  the agreed minimum stay at original soffit (no new drop) and are flagged `SITE_VERIFY_REQUIRED`.
+- Lighting and overhead MEP: follow `references/lighting-and-mep-review.md`.
+
+## Acceptance labels
+
+Use `PRELIMINARY_DESIGN_PASS` (design intent correct, fit for a contractor to develop) and
+`SITE_VERIFY_REQUIRED` (dimensions, structure, services need site or professional checks).
+Never label a sheet construction-ready. Structural demolition, unverified dimensions, ceiling
+void capacity, accessible-bathroom thresholds and unresolved zone gaps/overlaps are `HOLD`.
