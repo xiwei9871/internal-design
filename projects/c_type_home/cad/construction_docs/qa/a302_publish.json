@@ -1,0 +1,28 @@
+{
+ "src": "A302_电气照明控制网络点位.dxf",
+ "src_sha10": "0a88ba3eb7",
+ "out": "A302_电气照明控制网络点位.issue.dxf",
+ "out_sha10": "163abae665",
+ "dxfversion": "AC1024",
+ "audit_errors": 0,
+ "viewports_excl_overall": 0,
+ "styles": [
+  [
+   "gbenor.shx",
+   "gbcbig.shx"
+  ]
+ ],
+ "model_entities_src": 596,
+ "model_entities_out_excl_frame": 596,
+ "frame_window_mm": [
+  [
+   -8880,
+   -9640
+  ],
+  [
+   33170,
+   20060
+  ]
+ ],
+ "pdf": "A302_电气照明控制网络点位.issue.pdf"
+}

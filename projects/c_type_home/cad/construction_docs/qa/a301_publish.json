@@ -1,0 +1,28 @@
+{
+ "src": "A301_吊顶管线路由示意.dxf",
+ "src_sha10": "cb04379d2e",
+ "out": "A301_吊顶管线路由示意.issue.dxf",
+ "out_sha10": "86e68cd6f1",
+ "dxfversion": "AC1024",
+ "audit_errors": 0,
+ "viewports_excl_overall": 0,
+ "styles": [
+  [
+   "gbenor.shx",
+   "gbcbig.shx"
+  ]
+ ],
+ "model_entities_src": 484,
+ "model_entities_out_excl_frame": 484,
+ "frame_window_mm": [
+  [
+   -7943,
+   -9640
+  ],
+  [
+   34107,
+   20060
+  ]
+ ],
+ "pdf": "A301_吊顶管线路由示意.issue.pdf"
+}

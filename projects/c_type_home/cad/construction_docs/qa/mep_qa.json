@@ -1,0 +1,46 @@
+{
+ "result": "PASS",
+ "level": "SCHEMATIC",
+ "issues": [
+  {
+   "severity": "FLAG",
+   "id": "S42",
+   "code": "SOCKET_NEAR_SHOWER",
+   "detail": "guest_bath 594mm; 防溅型, 分区由电气判定"
+  }
+ ],
+ "counts": {
+  "water_points": 22,
+  "power_data_points": 58,
+  "switches": 20,
+  "sensors": 5,
+  "control_groups": 31
+ },
+ "route_length_m_schematic": {
+  "POWER": 112.8,
+  "DATA": 49.9,
+  "COLD": 66.0,
+  "HOT": 45.2
+ },
+ "water_power_crossings": 45,
+ "level_change_crossings": [
+  [
+   8000,
+   2000
+  ]
+ ],
+ "wall_penetrations_schematic": 64,
+ "site_verify": [
+  "配电箱/弱电箱/给水入户/热水器位置",
+  "吊顶内净空/龙骨/梁位",
+  "物理回路与开关接线",
+  "竖向下引方式 (不开槽)",
+  "H2-H4 门位",
+  "浴室电气分区",
+  "地插垫层厚度"
+ ],
+ "out_of_scope": [
+  "排水 (业主自行处理)"
+ ],
+ "scope": "Schematic data QA only; no load, cable size, pipe size or ceiling-void fit verified"
+}
