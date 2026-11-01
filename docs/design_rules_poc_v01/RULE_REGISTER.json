@@ -1,5 +1,5 @@
 {
- "note": "条文为摘要转述，非全文；原文见 source_url。OCR 读取官方扫描版，引用前请对照原文。",
+ "note": "条文为摘要转述，非全文；原文见 source_url。OCR 读取官方扫描版，引用前请对照原文。 格式测试通过不代表逐条摘要准确。",
  "rules": [
   {
    "rule_id": "CN-HGT-01",
@@ -13,7 +13,7 @@
    "requirement_type": "INDUSTRY_SHALL",
    "requirement_summary": "装修后室内净高不应低于2.40m；局部不低于2.10m且低于2.40m部分≤使用面积1/3",
    "comparison_method": "clear_height>=2400; local>=2100 and area_share<=1/3",
-   "project_note": "2650 满足；楼梯旁 2350 属局部，满足",
+   "project_note": "吊顶完成面净高 2650（设计值）：初筛未见明显冲突；需现场复测逐点净高、确认空间归属及适用条款",
    "evidence_status": "VERIFIED_OFFICIAL_TEXT_OCR",
    "reviewer_status": "AI_EXTRACTED_NOT_PROFESSIONALLY_REVIEWED"
   },
@@ -29,7 +29,7 @@
    "requirement_type": "INDUSTRY_SHALL",
    "requirement_summary": "卧室装修后净高不应低于2.40m；局部不低于2.10m，低于2.40m部分≤1/3",
    "comparison_method": "同上",
-   "project_note": "2650 满足",
+   "project_note": "卧室 2650（设计值）：初筛未见明显冲突；需现场复测逐点净高、确认空间归属及适用条款",
    "evidence_status": "VERIFIED_OFFICIAL_TEXT_OCR",
    "reviewer_status": "AI_EXTRACTED_NOT_PROFESSIONALLY_REVIEWED"
   },
@@ -61,7 +61,7 @@
    "requirement_type": "MANDATORY",
    "requirement_summary": "最低处室内净高不应小于2.00m",
    "comparison_method": "min_clear>=2000",
-   "project_note": "2350 满足",
+   "project_note": "2350 区域位于台阶顶部走廊/台阶区（非起居室/卧室），JGJ 367 4.3.2/4.4.2 的 1/3 面积规则不直接适用；本条为通用最低值，不能替代特定空间要求。若该区被认定为套内前厅通道，JGJ 367 4.2.2 要求净高≥2.40m 将不满足 → 初筛未见明显冲突；需现场复测逐点净高、确认空间归属及适用条款",
    "evidence_status": "VERIFIED_OFFICIAL_TEXT_OCR",
    "reviewer_status": "AI_EXTRACTED_NOT_PROFESSIONALLY_REVIEWED"
   },
@@ -109,7 +109,7 @@
    "requirement_type": "MANDATORY",
    "requirement_summary": "厨房/卫生间/封闭阳台与相邻地面高差≤0.015m，并以斜坡过渡",
    "comparison_method": "threshold_step<=15 and ramped",
-   "project_note": "支持主卫(H1)不做凸起门槛",
+   "project_note": "支持 H1 无凸起门槛的设计意图；防水层外延、找坡、挡水节点继续 HOLD",
    "evidence_status": "VERIFIED_OFFICIAL_TEXT_OCR",
    "reviewer_status": "AI_EXTRACTED_NOT_PROFESSIONALLY_REVIEWED"
   },
@@ -189,7 +189,7 @@
    "requirement_type": "INDUSTRY_SHOULD_NOT",
    "requirement_summary": "不宜采用大于300×300的块材，且不应影响排水坡度",
    "comparison_method": "tile_size<=300x300 (advisory)",
-   "project_note": "A202 卫生间画的 300×600，交施工队按找坡定",
+   "project_note": "设计取舍：A202 卫浴画 300×600（候选，OWNER_REVIEW），与本条\"不宜大于300×300\"不一致；请设计/施工方结合找坡、地漏位置判断",
    "evidence_status": "VERIFIED_OFFICIAL_TEXT_OCR",
    "reviewer_status": "AI_EXTRACTED_NOT_PROFESSIONALLY_REVIEWED"
   },
@@ -349,7 +349,7 @@
    "requirement_type": "MANDATORY",
    "requirement_summary": "0区设备须SELV(≤AC12V)；0、1区固定连接；0区不得装开关/插座/接线盒",
    "comparison_method": "fixture position vs bath zones",
-   "project_note": "L033 筒灯在次主卫淋浴区上方，需移出或按分区选型",
+   "project_note": "L033 平面 (10850,5850) 落在次主卫淋浴托盘投影内，安装面 +3100 即距完成地面 2650；本条规定 0/1 区要求，但分区尺寸未在本登记中核实 → 是否落入分区由电气设计确认；IP44 不是自动合规证明",
    "evidence_status": "VERIFIED_OFFICIAL_TEXT_OCR",
    "reviewer_status": "AI_EXTRACTED_NOT_PROFESSIONALLY_REVIEWED"
   },
@@ -372,18 +372,36 @@
   {
    "rule_id": "CN-RENO-01",
    "topic": "装修通则",
-   "document": "JGJ 367-2015",
-   "edition": "2015",
-   "clause": "3.0.7",
-   "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2015/art_17339_224137.html",
-   "effective_date": "2015-12-01",
-   "applicable_scope": "住宅装修",
-   "requirement_type": "MANDATORY_CLAUSE",
-   "requirement_summary": "不得拆除室内原有安全防护设施，更换不得降低防护要求",
-   "comparison_method": "checklist",
-   "project_note": "阳台/飘窗栏杆不改",
+   "document": "GB 55038-2025",
+   "edition": "2025",
+   "clause": "4.1.15-1, 4.1.16",
+   "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2025/art_66adac27fa2144bb86f98fe4c297efd6.html",
+   "effective_date": "2025-05-01",
+   "applicable_scope": "住宅 阳台栏杆、临空外窗防护",
+   "requirement_type": "MANDATORY",
+   "requirement_summary": "阳台栏杆净高≥1.20m、竖杆净距≤0.11m、防攀登；临空外窗窗台<0.90m 应设防护，高度≥0.90m（凸窗另有规定）",
+   "comparison_method": "existing guards kept or replaced at no lower protection",
+   "project_note": "阳台、飘窗/凸窗、北阳台封窗后的防护按本条复核；不改动原有防护",
+   "evidence_status": "VERIFIED_OFFICIAL_TEXT_OCR",
+   "reviewer_status": "AI_EXTRACTED_NOT_PROFESSIONALLY_REVIEWED",
+   "replaces": "JGJ 367-2015 第 3.0.7 条（原强制条文，2025-05-01 废止；其\"不得降低安全防护\"意图由本条承接）"
+  },
+  {
+   "rule_id": "CN-DOOR-01",
+   "topic": "门洞",
+   "document": "GB 55038-2025",
+   "edition": "2025",
+   "clause": "4.1.14",
+   "source_url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2025/art_66adac27fa2144bb86f98fe4c297efd6.html",
+   "effective_date": "2025-05-01",
+   "applicable_scope": "住宅 户门/卧室门/厨卫门",
+   "requirement_type": "MANDATORY",
+   "requirement_summary": "户门通行净宽：新建≥0.90m、既有改造≥0.80m；卧室门≥0.80m；厨房、卫生间门≥0.70m，并预留无障碍改造条件",
+   "comparison_method": "door clear passage width (not opening width) >= limit",
+   "project_note": "初筛：A103 次主卧门洞 750（8625,4550）小于卧室门 0.80m 通行净宽，扣门套后更小 → 需确认；主卫门洞 750 ≥0.70m 但扣门套后待核；H2–H4 模型门扇 850/890，与 A103 无洞口不一致，开洞须结构许可",
    "evidence_status": "VERIFIED_OFFICIAL_TEXT_OCR",
    "reviewer_status": "AI_EXTRACTED_NOT_PROFESSIONALLY_REVIEWED"
   }
- ]
+ ],
+ "status": "REFERENCE_REGISTER_COMPLETE / DESIGN_CAPABILITY_NOT_TESTED"
 }

@@ -40,3 +40,31 @@ class RegisterTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class ClauseRepealTests(unittest.TestCase):
+    """Clause-level repeal: a standard can stay current while specific clauses are repealed."""
+    def setUp(self):
+        self.rules = json.loads((D / 'RULE_REGISTER.json').read_text())['rules']
+        self.repealed = {(r['code'], c) for r in json.loads((D / 'REPEALED_CLAUSES.json').read_text())['repealed']
+                         for c in r['clauses']}
+
+    def test_jgj367_mandatory_clauses_listed_as_repealed(self):
+        self.assertIn(('JGJ 367-2015', '3.0.4'), self.repealed)
+        self.assertIn(('JGJ 367-2015', '3.0.7'), self.repealed)
+
+    def test_no_rule_cites_a_repealed_clause(self):
+        for r in self.rules:
+            for c in r['clause'].replace(' ', '').split(','):
+                self.assertNotIn((r['document'], c.split('-')[0]), self.repealed, r['rule_id'])
+
+    def test_safety_intent_of_repealed_367_3_0_7_is_carried_by_current_code(self):
+        carriers = [r for r in self.rules if 'JGJ 367-2015 第 3.0.7' in r.get('replaces', '')]
+        self.assertTrue(carriers)
+        self.assertTrue(all(r['document'] == 'GB 55038-2025' for r in carriers))
+
+    def test_jgj367_not_described_as_having_current_mandatory_clauses(self):
+        std = {r['code']: r for r in csv.DictReader(open(D / 'STANDARD_REGISTER.csv', encoding='utf-8'))}
+        self.assertIn('NO_CURRENT_MANDATORY', std['JGJ 367-2015']['type'])
+        report = (D / 'RESEARCH_REPORT.md').read_text()
+        self.assertNotIn('强制性条文仅 3.0.4、3.0.7）', report)
