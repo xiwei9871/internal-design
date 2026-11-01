@@ -1,0 +1,15 @@
+﻿room,room_name,v1_total,v2_total,v1_base,v1_task,v1_accent,v1_night,v2_base,v2_task,v2_accent,v2_night,scene_control
+couple_bedroom,次主卧(业主),6,9,6,0,0,0,4,2,2,1,门口+床头双控 BASE; TV_WALL 调光; 床头 TASK; NIGHT 门旁感应
+guest_bath,客卫,5,5,4,1,0,0,4,1,0,0,BASE + 镜前灯分控
+guest_bedroom,客卧,3,4,3,0,0,0,3,1,0,0,BASE 门口单控(门位 H4 待定); 床头 TASK
+hallway,走廊,6,6,5,0,1,0,5,0,1,0,BASE 两地控制 + 跌级灯带单独
+kitchen,厨房,9,8,6,3,0,0,6,2,0,0,BASE 与吊柜下灯带分开控制
+living,客厅/餐厅/玄关,22,22,21,1,0,0,15,1,6,0,"ENTRY / DINING(吊灯) / LIVING BASE / SOFA_WALL / TV_WALL 分组, 观影场景只留 SOFA_WALL 低亮"
+master_bath,主卫,7,7,6,1,0,0,5,1,0,1,BASE + 镜前灯 + 淋浴灯分控; NIGHT 感应
+mother_bedroom,主卧(母亲),6,11,6,0,0,0,6,3,0,2,"门口+床头双控 BASE; 床头 TASK 各自开关; NIGHT 组 = 床下感应 + 过道/主卫感应, 定时熄灭"
+north_sunroom,阳光房,6,6,6,0,0,0,6,0,0,0,
+secondary_bath,次主卫,4,4,3,1,0,0,3,1,0,0,BASE + 镜前灯分控
+service_balcony,生活阳台,5,5,5,0,0,0,5,0,0,0,
+stair,三级台阶,3,3,0,0,3,0,0,0,3,0,
+study,书房,11,11,10,1,0,0,10,1,0,0,BASE 分两组(书桌区/卧榻区) + 书桌 TASK
+vestibule,主卧/主卫前过道,1,2,1,0,0,0,1,0,0,1,

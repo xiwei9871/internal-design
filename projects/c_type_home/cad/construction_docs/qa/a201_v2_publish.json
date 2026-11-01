@@ -1,0 +1,28 @@
+{
+ "src": "A201_天花布置图_V2候选.dxf",
+ "src_sha10": "830a363cc7",
+ "out": "A201_天花布置图_V2候选.issue.dxf",
+ "out_sha10": "16320f8524",
+ "dxfversion": "AC1024",
+ "audit_errors": 0,
+ "viewports_excl_overall": 0,
+ "styles": [
+  [
+   "gbenor.shx",
+   "gbcbig.shx"
+  ]
+ ],
+ "model_entities_src": 677,
+ "model_entities_out_excl_frame": 677,
+ "frame_window_mm": [
+  [
+   -7810,
+   -13747
+  ],
+  [
+   34240,
+   15953
+  ]
+ ],
+ "pdf": "A201_天花布置图_V2候选.issue.pdf"
+}
