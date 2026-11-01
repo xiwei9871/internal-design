@@ -12,7 +12,7 @@
   "A-DIMS": 34,
   "A-ROOM-NAME": 13,
   "M-SOURCE-TBD": 8,
-  "A-NOTE": 30,
+  "A-NOTE": 32,
   "E-LITE-REF": 103,
   "E-POWER": 112,
   "E-ALARM": 2,
@@ -47,7 +47,7 @@
   {
    "check": "cjk_text_styles",
    "status": "PASS",
-   "detail": "48 CJK texts; not CJK-capable by style: {}"
+   "detail": "50 CJK texts; not CJK-capable by style: {}"
   },
   {
    "check": "no_paperspace_viewports",
@@ -62,7 +62,7 @@
   {
    "check": "content_inside_frame",
    "status": "PASS",
-   "detail": "content 0,-1733 .. 25041,14953"
+   "detail": "content 0,-1733 .. 26462,14953"
   },
   {
    "check": "required_layers_visible",
@@ -82,7 +82,7 @@
   {
    "check": "entities_preserved",
    "status": "PASS",
-   "detail": "src=596 out_excl_frame=596"
+   "detail": "src=598 out_excl_frame=598"
   }
  ],
  "result": "PASS",

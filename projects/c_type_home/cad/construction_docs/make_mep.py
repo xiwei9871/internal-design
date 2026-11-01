@@ -20,6 +20,9 @@ SHOWERS = {'secondary_bath': box(10558, 5665, 11400, 6450), 'master_bath': box(1
            'guest_bath': box(8034, 9884, 9677, 10700)}       # tray / glass enclosures from model
 
 
+ZONE_PENDING = {'S42': '距客卫淋浴区 594mm; 防溅型不替代 GB 55024 分区与保护, 电气确认前不作可施工位置'}
+
+
 def drop_method(room, src, t):
     if t in ('AP', 'FAN'): return 'CEILING: 吊顶内安装, 无竖向下引'
     if t in ('FLOOR_BOX', 'DATA_FLOOR'): return 'TBD: 地面垫层/地插, 需现场确认垫层厚度'
@@ -34,17 +37,29 @@ def points():
         out.append(dict(id=i, sheet='A303', system=kind, type=f'WATER_{kind}', room=room, label=fx, x=x, y=y, H=H,
                         source=src, status=M.WATER_STATUS.get(i, 'PROPOSED'), drop=drop_method(room, src, 'water')))
     for i, room, t, x, y, H, src, note in M.POWER:
-        out.append(dict(id=i, sheet='A302', system='DATA' if t in ('DATA', 'DATA_FLOOR', 'AP') else 'POWER', type=t,
-                        room=room, label=note, x=x, y=y, H=H, source=src,
-                        status='OPTIONAL_TBD' if 'OPTIONAL' in note else 'PROPOSED', drop=drop_method(room, src, t)))
+        q = dict(id=i, sheet='A302', system='DATA' if t in ('DATA', 'DATA_FLOOR', 'AP') else 'POWER', type=t,
+                 room=room, label=note, x=x, y=y, H=H, source=src,
+                 status='OPTIONAL_TBD' if 'OPTIONAL' in note else 'PROPOSED', drop=drop_method(room, src, t))
+        if i in ZONE_PENDING:
+            q['electrical_zone'] = 'ELECTRICAL_ZONE_PENDING'; q['zone_note'] = ZONE_PENDING[i]
+        if t == 'EMERGENCY_CALL':
+            q['system_note'] = '仅点位; 接收端/供电/失电处置未定, 不构成有效紧急呼叫系统'
+        out.append(q)
     return out
 
 
 def offset(pts, d):
-    segs = []
-    for (x0, y0), (x1, y1) in zip(pts[:-1], pts[1:]):
-        segs.append(((x0, y0 + d), (x1, y1 + d)) if abs(y1 - y0) < 1 else ((x0 + d, y0), (x1 + d, y1)))
-    return segs
+    """Translate the whole polyline by (d, d). A uniform translation per system keeps every
+    spine junction of the base network intact (per-segment x/y shifts broke corners: PR #15 P0)."""
+    q = [(x + d, y + d) for x, y in pts]
+    return list(zip(q[:-1], q[1:]))
+
+
+def source_stub(start, d):
+    """Orthogonal stub from the real source location to the translated network start."""
+    if d == 0: return []
+    (x, y) = start
+    return [((x, y), (x + d, y)), ((x + d, y), (x + d, y + d))]
 
 
 def attach(p, system):
@@ -75,7 +90,9 @@ def route_all(pts):
         if not ns: continue
         for n in ns:
             trunks += [{'system': s, 'kind': 'SPINE', 'name': n, 'seg': g} for g in offset(M.SPINES[n], M.SYSTEMS[s])]
-        trunks += [{'system': s, 'kind': 'SOURCE', 'name': s, 'seg': g} for g in offset(M.SOURCE_LINKS[s], M.SYSTEMS[s])]
+        link, d = M.SOURCE_LINKS[s], M.SYSTEMS[s]
+        trunks = [{'system': s, 'kind': 'SOURCE', 'name': s, 'seg': g}
+                  for g in source_stub(link[0], d) + offset(link, d)] + trunks
     return trunks + branches
 
 
@@ -97,10 +114,53 @@ def analyse(routes, b):
             steps.append((round(i.x), round(i.y)))
     nod = unary_union(nodrop_zones({k: z['geom'] for k, z in b.zones.items()})).buffer(-10)
     in_nodrop = [r for r in routes if LineString(r['seg']).intersection(nod).length > 1]
-    walls = sum(len([g for g in getattr(LineString(r['seg']).intersection(b.walls), 'geoms',
-                                         [LineString(r['seg']).intersection(b.walls)]) if g.length > 50])
-                for r in routes)
-    return cross, steps, in_nodrop, walls
+    return cross, steps, in_nodrop, wall_crossings(routes)
+
+
+def wall_polys():
+    """A103 wall polygons by layer: A-STRUCT-UNDERLAY = developer structural evidence."""
+    import ezdxf
+    from shapely.geometry import Polygon
+    from cd_common import A103
+    out = {}
+    for e in ezdxf.readfile(A103).modelspace().query('LWPOLYLINE'):
+        pts = list(e.get_points('xy'))
+        if len(pts) >= 3:
+            g = Polygon(pts).buffer(0)
+            if g.area > 1000: out.setdefault(e.dxf.layer, []).append(g)
+    return {k: unary_union(v) for k, v in out.items()}
+
+
+WALL_CLASS = [('A-STRUCT-UNDERLAY', 'STRUCTURAL_CANDIDATE'), ('A-DESIGN', 'NEW_PARTITION_DESIGN'),
+              ('A-WALL', 'EXISTING_PROPERTY_UNKNOWN'), ('A-REVIEW', 'EXISTING_PROPERTY_UNKNOWN'),
+              ('A-CONFLICT', 'EXISTING_PROPERTY_UNKNOWN')]
+
+
+def wall_crossings(routes):
+    """Raw route x wall intersections, then de-duplicated into penetration locations
+    (all systems through the same wall within 400 mm = one location) and classified."""
+    W = wall_polys()
+    allw = unary_union([W[k] for k, _ in WALL_CLASS if k in W])
+    raw, locs = 0, []
+    for r in routes:
+        i = LineString(r['seg']).intersection(allw)
+        for g in ([i] if i.geom_type == 'LineString' else getattr(i, 'geoms', [])):
+            if g.geom_type != 'LineString' or g.length < 50: continue
+            raw += 1
+            c = g.centroid
+            cls = next((v for k, v in WALL_CLASS if k in W and W[k].buffer(5).intersects(g)), 'EXISTING_PROPERTY_UNKNOWN')
+            hit = next((L for L in locs if math.dist(L['at'], (c.x, c.y)) < 400), None)
+            if hit:
+                hit['systems'] = sorted(set(hit['systems']) | {r['system']})
+                order = [v for _, v in WALL_CLASS]
+                if order.index(cls) < order.index(hit['class']): hit['class'] = cls
+            else:
+                locs.append({'id': f'X{len(locs)+1:02d}', 'at': (round(c.x), round(c.y)), 'class': cls,
+                             'systems': [r['system']], 'wall_mm': round(g.length)})
+    for L in locs:
+        L['status'] = 'HOLD: STRUCTURAL_SITE_VERIFY_REQUIRED' if L['class'] != 'NEW_PARTITION_DESIGN' \
+            else 'PROPOSED: 新建轻质隔墙预留套管, 现场确认'
+    return {'raw_intersections': raw, 'locations': locs}
 
 
 # ---------------- drawing ----------------
@@ -176,7 +236,7 @@ PT_LAYER = {'WATER_COLD': 'P-COLD', 'WATER_HOT': 'P-HOT', 'DATA': 'E-DATA', 'DAT
 DROP_LAYER = {'CEILING': 'M-DROP-CEIL', 'PROPOSED': 'M-DROP-FURN', 'TBD: 卫浴': 'M-DROP-BATH', 'TBD: 地面': 'M-DROP-FLOOR'}
 LAYERS = [('A-NOTE', 7, 18), ('A-ROOM-NAME', 8, 13), ('M-TAG', 6, 13), ('M-SOURCE-TBD', 6, 35),
           ('M-ROUTE-POWER', 30, 35, 'Continuous'), ('M-ROUTE-DATA', 4, 25, 'DASHED'), ('M-ROUTE-COLD', 5, 35, 'Continuous'),
-          ('M-ROUTE-HOT', 1, 35, 'DASHED'), ('M-CROSS', 6, 25), ('M-LEVEL', 6, 35), ('M-DROP-CEIL', 8, 18),
+          ('M-ROUTE-HOT', 1, 35, 'DASHED'), ('M-CROSS', 6, 25), ('M-PENETRATION-HOLD', 1, 35), ('M-PENETRATION', 3, 25), ('M-LEVEL', 6, 35), ('M-DROP-CEIL', 8, 18),
           ('M-DROP-FURN', 3, 18), ('M-DROP-TBD', 6, 18), ('M-DROP-BATH', 1, 18), ('M-DROP-FLOOR', 4, 18),
           ('E-POWER', 30, 25), ('E-DATA', 4, 25), ('E-SWITCH', 2, 25), ('E-SENSOR', 6, 25), ('E-ALARM', 1, 35),
           ('E-LITE-REF', 8, 13), ('P-COLD', 5, 30), ('P-HOT', 1, 30), ('P-SHOWER-REF', 8, 13)]
@@ -208,6 +268,9 @@ def new_doc(b, title):
     return doc
 
 
+WALLX = {'locations': [], 'raw': 0, 'n': 0}
+
+
 def a301(b, pts, routes, cross, levels):
     doc = new_doc(b, 'A301 吊顶内管线路由示意  1:50  CD_V01  SCHEMATIC / SITE_VERIFY_REQUIRED')
     msp = doc.modelspace()
@@ -216,6 +279,10 @@ def a301(b, pts, routes, cross, levels):
     for p in pts:
         msp.add_circle((p['x'], p['y']), 60, dxfattribs={'layer': drop_layer(p['drop'])})
     for x, y in cross: msp.add_circle((x, y), 120, dxfattribs={'layer': 'M-CROSS'})
+    for L in WALLX['locations']:
+        x, y = L['at']
+        msp.add_lwpolyline([(x, y - 140), (x + 140, y), (x, y + 140), (x - 140, y)], close=True,
+                           dxfattribs={'layer': 'M-PENETRATION-HOLD' if L['status'].startswith('HOLD') else 'M-PENETRATION'})
     for x, y in levels:
         msp.add_lwpolyline([(x - 160, y - 160), (x + 160, y - 160), (x + 160, y + 160), (x - 160, y + 160)], close=True,
                            dxfattribs={'layer': 'M-LEVEL'})
@@ -229,7 +296,12 @@ def a301(b, pts, routes, cross, levels):
         '6. 楼梯区与 x<8000 上区地面为原顶无吊顶, 管线不经过',
         '7. 竖向下引: 绿=沿家具/柜体背板; 红=卫浴假墙/包管 TBD; 青=地面垫层 TBD; 灰=吊顶内设备; 品红=隔墙空腔/明装线槽 TBD',
         '8. 排水: 业主自行处理, OUT_OF_SCOPE, 本图不表达',
-        '9. 物理回路、开关接线、灯带驱动均为 TBD; 详见 A302'])
+        '9. 物理回路、开关接线、灯带驱动均为 TBD; 详见 A302',
+        '10. 照明线路未建模: A201 V2 的 103 个灯具、20 个开关、5 个感应器的接线不在本图, 本图不代表全部线路',
+        f'11. 穿墙: {WALLX["raw"]} 次线段-墙体相交, 去重后 {WALLX["n"]} 处位置; 不是开孔数. 红菱形 = 墙体属性未知/结构候选, 一律 HOLD',
+        '    (STRUCTURAL_SITE_VERIFY_REQUIRED); 未经结构确认不得打孔. 绿菱形 = 新建轻质隔墙, 预留套管',
+        f'12. {len(cross)} 处水电交叉仅为平面交点: 无 Z 向排布/管径/桥架/龙骨梁位实测, 是待协调点, 不证明可安装',
+        '13. 管线长度和交叉数量基于假设的源头位置, 不能作为材料量'])
     for i, (lay, s) in enumerate((('M-ROUTE-POWER', '强电 (实线)'), ('M-ROUTE-DATA', '弱电/网络 (虚线)'),
                                   ('M-ROUTE-COLD', '冷水 (实线)'), ('M-ROUTE-HOT', '热水 (虚线)'))):
         y = yy - 300 - i * 380
@@ -253,7 +325,9 @@ def a302(b, pts, ctl):
         '4. 夜灯: 感应控制 + 床头手动兜底, 可调低亮度 (PROPOSED); 床头灯: 壁装可调式 (PROPOSED)',
         '5. 母亲卧室床头、主卫厕位旁设紧急呼叫 (PROPOSED)',
         '6. 灶具/空调等大功率回路、配电箱容量 TBD; 配电箱/弱电箱位置 TBD',
-        '7. 次主卫(H2)、客卧(H4)门位待定, 相关开关 TBD; 灰色小圆 = A201 V2 灯位参照'])
+        '7. 次主卫(H2)、客卧(H4)门位待定, 相关开关 TBD; 灰色小圆 = A201 V2 灯位参照',
+        '8. S42 (客卫, 距淋浴 594mm) ELECTRICAL_ZONE_PENDING: 防溅型不替代分区与保护, 电气确认前不作可施工位置',
+        '9. E01/E02 紧急呼叫仅为点位: 接收端、供电与失电处置未定, 不构成有效紧急呼叫系统'])
     rows = [f"{s['id']} {NAMES.get(s['room'], s['room'])}: {', '.join(g.split(':')[1] for g in s['serves'])}"
             for s in ctl if s['type'] == 'SWITCH']
     notes(msp, lx, yy - 300, '开关 -> 场景组', rows)
@@ -284,6 +358,7 @@ def a303(b, pts):
 
 
 def qa(b, pts, ctl, routes, cross, levels, in_nodrop, walls, missed):
+    """walls: wall_crossings() result."""
     res = []
     for p in pts + ctl:
         z = b.zones.get(p['room'])
@@ -308,6 +383,14 @@ def qa(b, pts, ctl, routes, cross, levels, in_nodrop, walls, missed):
         if not any(g in s['serves'] for s in ctl if s['type'] == 'SWITCH'): res.append(('FAIL', g, 'NIGHT_NO_MANUAL_FALLBACK', ''))
     for r in in_nodrop: res.append(('FAIL', r.get('to') or r.get('name'), 'ROUTE_IN_NO_DROP_ZONE', r['system']))
     for m in missed: res.append(('FLAG', m, 'TAG_NOT_PLACED', 'see mep_points.csv'))
+    from mep_topology import report as topo_report
+    topo = topo_report(routes, [p for p in pts if p['system'] in SYSL])
+    for t in topo['systems']:
+        if not t['source_found']: res.append(('FAIL', t['system'], 'NO_SOURCE_SEGMENT', ''))
+        for u in t['unreachable_terminals']: res.append(('FAIL', u, 'TERMINAL_NOT_CONNECTED', t['system']))
+    for p in pts:
+        if p.get('electrical_zone') == 'ELECTRICAL_ZONE_PENDING':
+            res.append(('FLAG', p['id'], 'ELECTRICAL_ZONE_PENDING', p.get('zone_note', '')))
     fails = [r for r in res if r[0] == 'FAIL']
     length = {s: round(sum(math.dist(*r['seg']) for r in routes if r['system'] == s) / 1000, 1) for s in SYSL}
     return {'result': 'PASS' if not fails else 'FAIL', 'level': 'SCHEMATIC',
@@ -316,7 +399,13 @@ def qa(b, pts, ctl, routes, cross, levels, in_nodrop, walls, missed):
                        'switches': sum(c['type'] == 'SWITCH' for c in ctl), 'sensors': sum(c['type'] == 'SENSOR' for c in ctl),
                        'control_groups': len(groups)},
             'route_length_m_schematic': length, 'water_power_crossings': len(cross), 'level_change_crossings': levels,
-            'wall_penetrations_schematic': walls,
+            'topology': topo,
+            'wall_crossings': {'raw_intersections': walls['raw_intersections'],
+                               'locations': len(walls['locations']),
+                               'by_class': dict(__import__('collections').Counter(L['class'] for L in walls['locations'])),
+                               'note': 'raw = 线段与墙体相交次数, 不是开孔数; 位置已按 400mm 去重; 非新建隔墙一律 HOLD'},
+            'crossings_note': '水电交叉为二维平面交点, 无 Z 向排布/管径/桥架/龙骨梁位实测, 仅为待协调点; 150 下返不代表四套管线可容纳',
+            'lighting_wiring': 'NOT_MODELLED: A201 V2 的 103 个灯具、20 个开关、5 个感应器的接线未纳入 A301 路由',
             'site_verify': ['配电箱/弱电箱/给水入户/热水器位置', '吊顶内净空/龙骨/梁位', '物理回路与开关接线',
                             '竖向下引方式 (不开槽)', 'H2-H4 门位', '浴室电气分区', '地插垫层厚度'],
             'out_of_scope': ['排水 (业主自行处理)'],
@@ -329,6 +418,7 @@ def main():
     ctl = controls()
     routes = route_all(pts)
     cross, _, in_nodrop, walls = analyse(routes, b)
+    WALLX.update(locations=walls['locations'], raw=walls['raw_intersections'], n=len(walls['locations']))
     levels = []
     for r in routes:
         i = LineString(r['seg']).intersection(LEVEL_LINE)
@@ -348,12 +438,16 @@ def main():
         for p in allp: w.writerow({**p, 'serves': ';'.join(p.get('serves', []))})
     (DATA / 'mep_routes.json').write_text(json.dumps({'level': 'SCHEMATIC', 'segments': [
         {**{k: v for k, v in r.items() if k != 'seg'}, 'seg': [list(map(round, r['seg'][0])), list(map(round, r['seg'][1]))]}
-        for r in routes], 'water_power_crossings': cross, 'level_change_crossings': levels}, ensure_ascii=False))
+        for r in routes], 'water_power_crossings': cross, 'level_change_crossings': levels,
+        'wall_crossings': walls}, ensure_ascii=False))
     q = qa(b, pts, ctl, routes, cross, levels, in_nodrop, walls, m2 + m3)
     (HERE / 'qa').mkdir(exist_ok=True)
     (HERE / 'qa' / 'mep_qa.json').write_text(json.dumps(q, ensure_ascii=False, indent=1))
     print(json.dumps({k: q[k] for k in ('result', 'counts', 'route_length_m_schematic', 'water_power_crossings',
-                                        'level_change_crossings', 'wall_penetrations_schematic')}, ensure_ascii=False))
+                                        'level_change_crossings', 'wall_crossings')}, ensure_ascii=False))
+    for t in q['topology']['systems']:
+        print(f"  topology {t['system']}: segs {t['segments_reachable']}/{t['segments_total']} "
+              f"terminals {t['terminals_reachable']}/{t['terminals_total']}")
     for i in q['issues']: print(' ', i)
     return out
 

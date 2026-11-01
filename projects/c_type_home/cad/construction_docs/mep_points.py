@@ -139,7 +139,7 @@ SWITCHES = [
 SENSOR_GROUPS = ['mother_bedroom:NIGHT', 'vestibule:NIGHT', 'master_bath:NIGHT', 'couple_bedroom:NIGHT']
 
 # ---- ceiling route network (schematic). Spines in plan; systems offset per spine ----
-SYSTEMS = {'POWER': 0, 'DATA': 120, 'COLD': -120, 'HOT': -240}
+SYSTEMS = {'POWER': 0, 'DATA': 80, 'COLD': 160, 'HOT': 240}   # uniform (d, d) translation per system, away from stair/no-drop zones
 SPINES = {
     'LOWER_N': [(3200, 7950), (7650, 7950)],
     'LOWER_S': [(5400, 900), (5400, 7950)],

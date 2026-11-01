@@ -12,17 +12,19 @@
   "A-DIMS": 34,
   "A-ROOM-NAME": 13,
   "M-SOURCE-TBD": 8,
-  "A-NOTE": 15,
+  "A-NOTE": 20,
+  "M-ROUTE-HOT": 22,
+  "M-ROUTE-COLD": 32,
+  "M-ROUTE-DATA": 17,
   "M-ROUTE-POWER": 71,
-  "M-ROUTE-DATA": 16,
-  "M-ROUTE-COLD": 30,
-  "M-ROUTE-HOT": 20,
   "M-DROP-FURN": 45,
   "M-DROP-BATH": 15,
   "M-DROP-TBD": 13,
   "M-DROP-CEIL": 5,
   "M-DROP-FLOOR": 2,
-  "M-CROSS": 45,
+  "M-CROSS": 36,
+  "M-PENETRATION-HOLD": 25,
+  "M-PENETRATION": 3,
   "M-LEVEL": 1,
   "A-FRAME": 8
  },
@@ -51,7 +53,7 @@
   {
    "check": "cjk_text_styles",
    "status": "PASS",
-   "detail": "33 CJK texts; not CJK-capable by style: {}"
+   "detail": "38 CJK texts; not CJK-capable by style: {}"
   },
   {
    "check": "no_paperspace_viewports",
@@ -71,7 +73,7 @@
   {
    "check": "required_layers_visible",
    "status": "PASS",
-   "detail": "A-WALL=41, A-DOOR=18, M-ROUTE-POWER=71, M-ROUTE-DATA=16, M-ROUTE-COLD=30, M-ROUTE-HOT=20, M-SOURCE-TBD=8, M-CROSS=45, M-LEVEL=1, A-DIMS=34"
+   "detail": "A-WALL=41, A-DOOR=18, M-ROUTE-POWER=71, M-ROUTE-DATA=17, M-ROUTE-COLD=32, M-ROUTE-HOT=22, M-SOURCE-TBD=8, M-CROSS=36, M-LEVEL=1, M-PENETRATION-HOLD=25, A-DIMS=34"
   },
   {
    "check": "dimension_values",
@@ -86,7 +88,7 @@
   {
    "check": "entities_preserved",
    "status": "PASS",
-   "detail": "src=484 out_excl_frame=484"
+   "detail": "src=513 out_excl_frame=513"
   }
  ],
  "result": "PASS",
