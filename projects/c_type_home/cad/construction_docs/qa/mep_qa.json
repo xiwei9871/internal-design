@@ -1,0 +1,105 @@
+{
+ "result": "PASS",
+ "level": "SCHEMATIC",
+ "issues": [
+  {
+   "severity": "FLAG",
+   "id": "S42",
+   "code": "SOCKET_NEAR_SHOWER",
+   "detail": "guest_bath 594mm; 防溅型, 分区由电气判定"
+  },
+  {
+   "severity": "FLAG",
+   "id": "S42",
+   "code": "ELECTRICAL_ZONE_PENDING",
+   "detail": "距客卫淋浴区 594mm; 防溅型不替代 GB 55024 分区与保护, 电气确认前不作可施工位置"
+  }
+ ],
+ "counts": {
+  "water_points": 22,
+  "power_data_points": 58,
+  "switches": 20,
+  "sensors": 5,
+  "control_groups": 31
+ },
+ "route_length_m_schematic": {
+  "POWER": 112.8,
+  "DATA": 50.0,
+  "COLD": 62.2,
+  "HOT": 46.9
+ },
+ "water_power_crossings": 36,
+ "level_change_crossings": [
+  [
+   8000,
+   2000
+  ]
+ ],
+ "topology": {
+  "result": "PASS",
+  "tolerance_mm": 1.0,
+  "systems": [
+   {
+    "system": "POWER",
+    "source_found": true,
+    "segments_reachable": 70,
+    "segments_total": 70,
+    "terminals_reachable": 51,
+    "terminals_total": 51,
+    "unreachable_terminals": []
+   },
+   {
+    "system": "DATA",
+    "source_found": true,
+    "segments_reachable": 16,
+    "segments_total": 16,
+    "terminals_reachable": 7,
+    "terminals_total": 7,
+    "unreachable_terminals": []
+   },
+   {
+    "system": "COLD",
+    "source_found": true,
+    "segments_reachable": 31,
+    "segments_total": 31,
+    "terminals_reachable": 14,
+    "terminals_total": 14,
+    "unreachable_terminals": []
+   },
+   {
+    "system": "HOT",
+    "source_found": true,
+    "segments_reachable": 21,
+    "segments_total": 21,
+    "terminals_reachable": 8,
+    "terminals_total": 8,
+    "unreachable_terminals": []
+   }
+  ]
+ },
+ "wall_crossings": {
+  "raw_intersections": 64,
+  "locations": 28,
+  "by_class": {
+   "STRUCTURAL_CANDIDATE": 10,
+   "NEW_PARTITION_DESIGN": 3,
+   "EXISTING_PROPERTY_UNKNOWN": 15
+  },
+  "note": "raw = 线段与墙体相交次数, 不是开孔数; 位置已按 400mm 去重; 非新建隔墙一律 HOLD"
+ },
+ "crossings_note": "水电交叉为二维平面交点, 无 Z 向排布/管径/桥架/龙骨梁位实测, 仅为待协调点; 150 下返不代表四套管线可容纳",
+ "lighting_wiring": "NOT_MODELLED: A201 V2 的 103 个灯具、20 个开关、5 个感应器的接线未纳入 A301 路由",
+ "site_verify": [
+  "配电箱/弱电箱/给水入户/热水器位置",
+  "吊顶内净空/龙骨/梁位",
+  "物理回路与开关接线",
+  "竖向下引方式 (不开槽)",
+  "H2-H4 门位",
+  "浴室电气分区",
+  "地插垫层厚度"
+ ],
+ "out_of_scope": [
+  "排水 (业主自行处理)"
+ ],
+ "scope": "Schematic data QA only; no load, cable size, pipe size or ceiling-void fit verified"
+}

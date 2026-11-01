@@ -1,0 +1,28 @@
+{
+ "src": "A303_给水点位.dxf",
+ "src_sha10": "f14e220122",
+ "out": "A303_给水点位.issue.dxf",
+ "out_sha10": "ec4045d5d0",
+ "dxfversion": "AC1024",
+ "audit_errors": 0,
+ "viewports_excl_overall": 0,
+ "styles": [
+  [
+   "gbenor.shx",
+   "gbcbig.shx"
+  ]
+ ],
+ "model_entities_src": 277,
+ "model_entities_out_excl_frame": 277,
+ "frame_window_mm": [
+  [
+   -9025,
+   -9640
+  ],
+  [
+   33025,
+   20060
+  ]
+ ],
+ "pdf": "A303_给水点位.issue.pdf"
+}
