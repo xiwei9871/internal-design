@@ -1,0 +1,180 @@
+{
+ "R3_WC_LATEST": {
+  "rot_z_deg": 0.0,
+  "centroid": [
+   11087,
+   5186
+  ],
+  "tank_centroid": [
+   11277,
+   5186
+  ],
+  "faces_toward": "from tank to centroid",
+  "dir": [
+   -190,
+   0
+  ]
+ },
+ "B11_Rectangle034_CATALOG_00_00": {
+  "rot_z_deg": 0.0,
+  "centroid": [
+   14733,
+   6071
+  ],
+  "tank_centroid": [
+   14733,
+   6278
+  ],
+  "faces_toward": "from tank to centroid",
+  "dir": [
+   0,
+   -206
+  ]
+ },
+ "B11_Rectangle008_CATALOG_00_00": {
+  "rot_z_deg": 0.0,
+  "centroid": [
+   8365,
+   9494
+  ],
+  "tank_centroid": [
+   8128,
+   9494
+  ],
+  "faces_toward": "from tank to centroid",
+  "dir": [
+   237,
+   0
+  ]
+ },
+ "wardrobe_parts": {
+  "B11_Rectangle015": [
+   [
+    "B11_Rectangle015_FRONT_0",
+    [
+     13178,
+     3847,
+     13594,
+     3865
+    ]
+   ],
+   [
+    "B11_Rectangle015_FRONT_1",
+    [
+     13598,
+     3847,
+     14014,
+     3865
+    ]
+   ],
+   [
+    "B11_Rectangle015_FRONT_2",
+    [
+     14018,
+     3847,
+     14434,
+     3865
+    ]
+   ],
+   [
+    "B11_Rectangle015_FRONT_3",
+    [
+     14438,
+     3847,
+     14854,
+     3865
+    ]
+   ],
+   [
+    "B11_Rectangle015_FRONT_4",
+    [
+     14858,
+     3847,
+     15274,
+     3865
+    ]
+   ]
+  ],
+  "B11_Rectangle045": [
+   [
+    "B11_Rectangle045_FRONT_1",
+    [
+     10400,
+     9386,
+     10418,
+     9882
+    ]
+   ],
+   [
+    "B11_Rectangle045_FRONT_2",
+    [
+     10400,
+     9886,
+     10418,
+     10382
+    ]
+   ],
+   [
+    "B11_Rectangle045_FRONT_3",
+    [
+     10400,
+     10386,
+     10418,
+     10882
+    ]
+   ]
+  ],
+  "R3_WARDROBE": [
+   [
+    "R3_WARDROBE_FRONT_0",
+    [
+     10174,
+     3908,
+     10571,
+     3926
+    ]
+   ],
+   [
+    "R3_WARDROBE_FRONT_1",
+    [
+     10574,
+     3908,
+     10971,
+     3926
+    ]
+   ],
+   [
+    "R3_WARDROBE_FRONT_2",
+    [
+     10974,
+     3908,
+     11371,
+     3926
+    ]
+   ]
+  ]
+ },
+ "nosing": [
+  [
+   "B11_STEP_0_REVIEW_NOSING",
+   false,
+   [
+    "COL_B11_SPLIT_FINISHING"
+   ]
+  ],
+  [
+   "B11_STEP_1_REVIEW_NOSING",
+   false,
+   [
+    "COL_B11_SPLIT_FINISHING"
+   ]
+  ],
+  [
+   "B11_STEP_2_REVIEW_NOSING",
+   false,
+   [
+    "COL_B11_SPLIT_FINISHING"
+   ]
+  ]
+ ]
+}

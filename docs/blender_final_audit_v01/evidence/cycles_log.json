@@ -1,0 +1,26 @@
+{
+ "engine": "CYCLES",
+ "samples": 64,
+ "denoise": true,
+ "res": [
+  1280,
+  720
+ ],
+ "view_transform": "AgX",
+ "look": "AgX - Medium High Contrast",
+ "exposure": 0.15000000596046448,
+ "renders": [
+  {
+   "cam": "CAM_master_bath_VIEW_03",
+   "sec": 220.4
+  },
+  {
+   "cam": "CAM_living_VIEW_01",
+   "sec": 180.9
+  },
+  {
+   "cam": "CAM_kitchen_VIEW_01",
+   "sec": 185.5
+  }
+ ]
+}
