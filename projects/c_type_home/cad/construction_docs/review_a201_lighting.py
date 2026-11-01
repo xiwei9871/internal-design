@@ -40,6 +40,12 @@ LAYER_CHANGE = {   # keep position, change layer/group only
 }
 # mirror orientation from model mirror bbox: guest mirror x8026-8029/y8064-8940 -> V
 ORIENT = {'L083': 'V', 'L084': 'H', 'L085': 'H'}
+ZONE_PENDING = {
+    'L023': '主卫淋浴区内的淋浴灯; 待隔断高度、淋浴设备及安装标高确定后由电气专业判定分区',
+    'L033': '平面距淋浴托盘边 x10558 仅 158mm; 托盘/玻璃投影外不等于 GB 55024 电气分区外, 待电气专业判定',
+}
+# FLAG waivers are per (id, code) with a reason, not blanket per id
+WAIVERS = {('L023', 'IN_SHOWER_FOOTPRINT'): 'deliberate shower light; ELECTRICAL_ZONE_PENDING'}
 GROUP = {'base': 'BASE', 'task': 'TASK', 'accent': 'ACCENT', 'night': 'NIGHT'}
 
 # ---- new points (all PROPOSED) ----
@@ -106,6 +112,9 @@ def build():
                             'type_from': p['type'], 'type_to': None, 'reason': why}); continue
         if xy: q['x'], q['y'] = xy
         if act == 'CONVERT': q['type'] = 'SHOWER_LIGHT'; q['note'] = '淋浴区灯具: 型式/电压/IP 由电气按 GB 55024 第4.6.6条分区确定'
+        if p['id'] in ZONE_PENDING:
+            q['electrical_zone'] = 'ELECTRICAL_ZONE_PENDING'
+            q['note'] = (q.get('note') or '') + ('; ' if q.get('note') else '') + ZONE_PENDING[p['id']]
         if q['type'] == 'MIRROR_LIGHT':
             q['orient'] = ORIENT.get(p['id'], 'H')
             if p['id'] == 'L083' and act == 'KEEP': q['note'] = '镜子 CBM_GUEST_MIRROR 沿 y 方向, 图示改为竖向(V1 图示方向有误)'
@@ -113,22 +122,50 @@ def build():
         q['action'] = act
         q['status'] = 'PROPOSED' if act != 'KEEP' else 'OWNER_REVIEW'
         q['reason'] = why
-        q['circuit'] = f"C-{q['room']}-{q['group']}"
+        q['control_group'] = f"{q['room']}:{q['group']}"     # design-stage logical scene group
+        q['physical_circuit_id'] = None                         # TBD by electrical design
+        q['circuit'] = f"SCHEMATIC/TBD:{q['control_group']}"
+        q['switch_id'] = f"SCHEMATIC/TBD:SW-{q['room']}-{q['group']}"
         v2.append(q)
         changes.append({'id': p['id'], 'room': p['room'], 'action': act, 'from': [p['x'], p['y']],
                         'to': [q['x'], q['y']], 'type_from': p['type'], 'type_to': q['type'], 'reason': why})
     for n in NEW:
         q = {'id': n['id'], 'room': n['room'], 'room_name': NAMES.get(n['room'], n['room']), 'layer': n['layer'],
              'type': n['type'], 'x': n['x'], 'y': n['y'], 'z_abs': n['z'], 'mount': n['mount'], 'cct_k': n['cct_k'],
-             'beam_deg': None, 'lumen': None, 'group': GROUP[n['layer']], 'circuit': f"C-{n['room']}-{GROUP[n['layer']]}",
-             'switch_id': f"SW-{n['room']}", 'source': n['src'], 'status': 'PROPOSED', 'action': 'ADD',
+             'beam_deg': None, 'lumen': None, 'group': GROUP[n['layer']],
+             'control_group': f"{n['room']}:{GROUP[n['layer']]}", 'physical_circuit_id': None,
+             'circuit': f"SCHEMATIC/TBD:{n['room']}:{GROUP[n['layer']]}",
+             'switch_id': f"SCHEMATIC/TBD:SW-{n['room']}-{GROUP[n['layer']]}", 'source': n['src'], 'status': 'PROPOSED', 'action': 'ADD',
              'reason': n['reason'], 'note': ''}
         if 'path' in n: q['path'] = n['path']
+        if n['layer'] == 'night':
+            q['control'] = 'PROPOSED: 感应控制 + 床头/门旁手动兜底, 可调低亮度, 定时熄灭'
+        if n['type'] == 'WALL_READING':
+            q['note'] = 'PROPOSED: 壁装可调式阅读灯, 床头独立开关'
         if n['type'] == 'MIRROR_LIGHT': q['orient'] = n.get('orient', 'H')
         v2.append(q)
         changes.append({'id': n['id'], 'room': n['room'], 'action': 'ADD', 'from': None, 'to': [n['x'], n['y']],
                         'type_from': None, 'type_to': n['type'], 'reason': n['reason']})
     return pts, v2, changes, ctx
+
+
+ROUTE = [('床北侧下床点', (14100, 3050)), ('卧室门', (12250, 4550)), ('前过道', (12250, 5300)),
+         ('主卫门', (13000, 5125)), ('主卫马桶', (14733, 6046))]
+
+
+def night_route(v2):
+    """Per segment of the mother's route: nearest night point and its distance (plan only)."""
+    import math
+    night = [p for p in v2 if p['layer'] == 'night' and p['room'] in ('mother_bedroom', 'vestibule', 'master_bath')]
+    segs = []
+    for (na, a), (nb, b) in zip(ROUTE[:-1], ROUTE[1:]):
+        mid = ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
+        near = min(night, key=lambda p: math.dist((p['x'], p['y']), mid))
+        segs.append({'segment': f'{na} → {nb}', 'length_mm': round(math.dist(a, b)), 'nearest_night_point': near['id'],
+                     'distance_to_segment_mid_mm': round(math.dist((near['x'], near['y']), mid))})
+    return {'segments': segs, 'status': 'PLAN_DISTANCE_ONLY',
+            'not_verified': ['实际可见性(门扇/家具遮挡)', '感应器覆盖与联动', '手动兜底开关位置', '亮度'],
+            'control': 'PROPOSED: 感应控制 + 手动兜底'}
 
 
 def qa(pts, v2, changes, ctx):
@@ -141,18 +178,26 @@ def qa(pts, v2, changes, ctx):
     if missing: res.append({'id': ','.join(missing), 'severity': 'FAIL', 'code': 'UNTRACED_ORIGINAL', 'detail': ''})
     route = {'mother_bedroom', 'vestibule', 'master_bath'}
     have = {p['room'] for p in v2 if p['layer'] == 'night'}
-    if not route <= have:
-        res.append({'id': '-', 'severity': 'FAIL', 'code': 'NIGHT_ROUTE_GAP', 'detail': str(route - have)})
+    if not route <= have:   # room coverage only — not proof of continuous visibility
+        res.append({'id': '-', 'severity': 'FAIL', 'code': 'NIGHT_ROOM_COVERAGE_GAP', 'detail': str(route - have)})
+    for p in v2:
+        if p['id'] in ZONE_PENDING and p.get('electrical_zone') != 'ELECTRICAL_ZONE_PENDING':
+            res.append({'id': p['id'], 'severity': 'FAIL', 'code': 'ZONE_PENDING_MISSING', 'detail': ''})
     if any(p.get('photometry_claim') for p in v2):
         res.append({'id': '-', 'severity': 'FAIL', 'code': 'PHOTOMETRY_CLAIM', 'detail': ''})
     fails = [r for r in res if r['severity'] == 'FAIL']
     flags = [r for r in res if r['severity'] == 'FLAG']
-    explained = {'L023'}            # shower light kept by design, zone decided by electrical
-    unexplained_flags = [f for f in flags if f['id'] not in explained]
+    for f in flags:
+        f['waiver'] = WAIVERS.get((f['id'], f['code']))
+    unexplained_flags = [f for f in flags if not f['waiver']]
     return {'result': 'PASS' if not fails and not unexplained_flags else 'FAIL', 'fails': fails, 'flags': flags,
             'unexplained_flags': unexplained_flags, 'counts': {'original': len(pts), 'v2': len(v2),
             'actions': dict(Counter(c['action'] for c in changes))},
-            'scope': 'FUNCTIONAL_DESIGN_REVIEW: geometry/data checks only; no illuminance or glare compliance claimed'}
+            'night_route': night_route(v2),
+            'electrical_zone_pending': sorted(ZONE_PENDING),
+            'scope': ('FUNCTIONAL_DESIGN_REVIEW: geometry/data checks only; no illuminance or glare compliance claimed; '
+                      'night route = room coverage + segment distances, NOT measured continuity; '
+                      'control groups are logical scenes, physical circuits TBD')}
 
 
 def compare(pts, v2):
@@ -168,6 +213,24 @@ def compare(pts, v2):
     return rows
 
 
+REPORT = HERE.parents[3] / 'docs/design_review_a201_v01/A201_LIGHTING_REVIEW.md'
+
+
+def update_report(t, a):
+    """Rewrite the generated summary sentence in the review report from CSV totals (no hand-typed numbers)."""
+    import re
+    if not REPORT.exists(): return
+    s = REPORT.read_text()
+    line = (f"<!-- AUTO:summary -->分房间对比见 `data/lighting_compare.csv`（由脚本生成）。合计 {t['v1_total']} → {t['v2_total']}："
+            f"基础光 {t['v1_base']} → {t['v2_base']}，任务光 {t['v1_task']} → {t['v2_task']}，"
+            f"氛围光 {t['v1_accent']} → {t['v2_accent']}，夜间光 {t['v1_night']} → {t['v2_night']}。"
+            f"基础光减少的全部是与家具冲突的点或重新归入氛围组的洗墙光，没有为了压低总数删灯。<!-- /AUTO:summary -->")
+    s2 = re.sub(r'<!-- AUTO:summary -->.*?<!-- /AUTO:summary -->', line, s, flags=re.S)
+    if s2 == s:
+        s2 = re.sub(r'分房间对比见 `data/lighting_compare.csv`。[^\n]*', line, s)
+    REPORT.write_text(s2)
+
+
 def main():
     pts, v2, changes, ctx = build()
     q = qa(pts, v2, changes, ctx)
@@ -175,8 +238,9 @@ def main():
         {'status': 'CANDIDATE_PROPOSED (not owner-approved)', 'review': 'FUNCTIONAL_DESIGN_REVIEW; A/B NOT_RUN',
          'units': 'mm', 'z': 'absolute (lower floor ±0)', 'cct_range_k': [3000, 4000], 'base_file': 'lighting_points.json (unchanged)',
          'points': v2, 'scenes': SCENES}, ensure_ascii=False, indent=1))
-    keys = ['id', 'room', 'room_name', 'layer', 'group', 'type', 'x', 'y', 'z_abs', 'mount', 'cct_k', 'circuit',
-            'switch_id', 'action', 'status', 'source', 'reason', 'note']
+    keys = ['id', 'room', 'room_name', 'layer', 'group', 'control_group', 'physical_circuit_id', 'type', 'x', 'y',
+            'z_abs', 'mount', 'cct_k', 'circuit', 'switch_id', 'electrical_zone', 'control', 'action', 'status',
+            'source', 'reason', 'note']
     with open(DATA / 'lighting_points_v2.csv', 'w', newline='', encoding='utf-8-sig') as f:
         w = csv.DictWriter(f, fieldnames=keys, extrasaction='ignore', lineterminator='\n'); w.writeheader(); w.writerows(v2)
     with open(DATA / 'lighting_changes.csv', 'w', newline='', encoding='utf-8-sig') as f:
@@ -185,6 +249,11 @@ def main():
     rows = compare(pts, v2)
     with open(DATA / 'lighting_compare.csv', 'w', newline='', encoding='utf-8-sig') as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator='\n'); w.writeheader(); w.writerows(rows)
+    tot = {k: sum(int(r[k]) for r in rows) for k in rows[0] if k.startswith(('v1_', 'v2_'))}
+    (DATA / 'lighting_summary.json').write_text(json.dumps(
+        {'source': 'computed from lighting_compare.csv', 'totals': tot,
+         'actions': dict(Counter(c['action'] for c in changes))}, ensure_ascii=False, indent=1))
+    update_report(tot, Counter(c['action'] for c in changes))
     (HERE / 'qa').mkdir(exist_ok=True)
     (HERE / 'qa' / 'a201_v2_lighting_qa.json').write_text(json.dumps(q, ensure_ascii=False, indent=1))
     print(json.dumps({k: q[k] for k in ('result', 'counts')}, ensure_ascii=False), 'fails', q['fails'], 'flags', q['flags'])

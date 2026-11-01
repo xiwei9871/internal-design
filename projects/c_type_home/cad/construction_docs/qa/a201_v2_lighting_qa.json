@@ -7,7 +7,8 @@
    "room": "master_bath",
    "severity": "FLAG",
    "code": "IN_SHOWER_FOOTPRINT",
-   "detail": "B11_Rectangle033 (glass, x≥15206)"
+   "detail": "B11_Rectangle033 (glass, x≥15206)",
+   "waiver": "deliberate shower light; ELECTRICAL_ZONE_PENDING"
   }
  ],
  "unexplained_flags": [],
@@ -23,5 +24,45 @@
    "ADD": 13
   }
  },
- "scope": "FUNCTIONAL_DESIGN_REVIEW: geometry/data checks only; no illuminance or glare compliance claimed"
+ "night_route": {
+  "segments": [
+   {
+    "segment": "床北侧下床点 → 卧室门",
+    "length_mm": 2382,
+    "nearest_night_point": "N-M2",
+    "distance_to_segment_mid_mm": 594
+   },
+   {
+    "segment": "卧室门 → 前过道",
+    "length_mm": 750,
+    "nearest_night_point": "N-M3",
+    "distance_to_segment_mid_mm": 666
+   },
+   {
+    "segment": "前过道 → 主卫门",
+    "length_mm": 770,
+    "nearest_night_point": "N-M4",
+    "distance_to_segment_mid_mm": 626
+   },
+   {
+    "segment": "主卫门 → 主卫马桶",
+    "length_mm": 1963,
+    "nearest_night_point": "N-M4",
+    "distance_to_segment_mid_mm": 702
+   }
+  ],
+  "status": "PLAN_DISTANCE_ONLY",
+  "not_verified": [
+   "实际可见性(门扇/家具遮挡)",
+   "感应器覆盖与联动",
+   "手动兜底开关位置",
+   "亮度"
+  ],
+  "control": "PROPOSED: 感应控制 + 手动兜底"
+ },
+ "electrical_zone_pending": [
+  "L023",
+  "L033"
+ ],
+ "scope": "FUNCTIONAL_DESIGN_REVIEW: geometry/data checks only; no illuminance or glare compliance claimed; night route = room coverage + segment distances, NOT measured continuity; control groups are logical scenes, physical circuits TBD"
 }
