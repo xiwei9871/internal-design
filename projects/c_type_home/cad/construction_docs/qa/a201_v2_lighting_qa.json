@@ -1,0 +1,27 @@
+{
+ "result": "PASS",
+ "fails": [],
+ "flags": [
+  {
+   "id": "L023",
+   "room": "master_bath",
+   "severity": "FLAG",
+   "code": "IN_SHOWER_FOOTPRINT",
+   "detail": "B11_Rectangle033 (glass, x≥15206)"
+  }
+ ],
+ "unexplained_flags": [],
+ "counts": {
+  "original": 94,
+  "v2": 103,
+  "actions": {
+   "KEEP_REGROUP": 8,
+   "KEEP": 73,
+   "MOVE": 8,
+   "CONVERT": 1,
+   "REMOVE": 4,
+   "ADD": 13
+  }
+ },
+ "scope": "FUNCTIONAL_DESIGN_REVIEW: geometry/data checks only; no illuminance or glare compliance claimed"
+}
