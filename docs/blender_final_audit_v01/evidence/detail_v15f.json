@@ -1,0 +1,95 @@
+{
+ "emission": {
+  "LD_OPAL_DIFFUSER": {
+   "strength": 2.0,
+   "color": [
+    1.0,
+    0.82,
+    0.62
+   ]
+  },
+  "V3_LED_OPAL_DIFFUSER": {
+   "strength": 0.800000011920929,
+   "color": [
+    1.0,
+    0.82,
+    0.62
+   ]
+  },
+  "V3_WHITE_ASH_NATIVE_OWNER_COLOR": {
+   "strength": 1.0,
+   "color": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "V4_OPAL_GLASS_LIGHT": {
+   "strength": 2.0,
+   "color": [
+    1.0,
+    0.84,
+    0.67
+   ]
+  },
+  "V5_NATURAL_ASH_PLANKS_OIL": {
+   "strength": 1.0,
+   "color": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "V7_CATALOG_PALE_NATURAL_ASH": {
+   "strength": 1.0,
+   "color": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ceilings": [
+  "V7_CEILING_450MM_TRANSITION",
+  "V7_CEILING_HIGH",
+  "V7_CEILING_LOW"
+ ],
+ "textured_no_uv": [],
+ "bevel": {
+  "with": 870,
+  "without": 703
+ },
+ "world": {
+  "mapping_rot_deg": [
+   0.0,
+   0.0,
+   120.0
+  ]
+ },
+ "ceiling_cols": [
+  [
+   "03_EXISTING_CEILING",
+   false,
+   9,
+   [
+    "CEILING_LOWER",
+    "CEILING_UPPER",
+    "CEILING_UPPER_SEAM_0",
+    "CEILING_UPPER_SEAM_1",
+    "CEILING_UPPER_SEAM_2",
+    "CEILING_UPPER_SEAM_3"
+   ]
+  ],
+  [
+   "V7_CEILING_TOGGLE_FOR_OVERVIEW",
+   false,
+   3,
+   [
+    "V7_CEILING_LOW",
+    "V7_CEILING_HIGH",
+    "V7_CEILING_450MM_TRANSITION"
+   ]
+  ]
+ ],
+ "view_layer_excluded": []
+}

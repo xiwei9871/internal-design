@@ -1,0 +1,85 @@
+{
+ "engine": "BLENDER_EEVEE",
+ "samples": 32,
+ "res": [
+  1600,
+  900
+ ],
+ "view_transform": "AgX",
+ "look": "AgX - Medium High Contrast",
+ "exposure": 0.15000000596046448,
+ "renders": [
+  {
+   "cam": "CAM_living_VIEW_01",
+   "status": "OK",
+   "sec": 30.9,
+   "lens": 25.0
+  },
+  {
+   "cam": "CAM_living_VIEW_05",
+   "status": "OK",
+   "sec": 22.1,
+   "lens": 28.0
+  },
+  {
+   "cam": "CAM_dining_VIEW_02",
+   "status": "OK",
+   "sec": 33.9,
+   "lens": 22.0
+  },
+  {
+   "cam": "CAM_kitchen_VIEW_01",
+   "status": "OK",
+   "sec": 19.8,
+   "lens": 24.0
+  },
+  {
+   "cam": "CAM_mother_bedroom_VIEW_01",
+   "status": "OK",
+   "sec": 12.5,
+   "lens": 25.0
+  },
+  {
+   "cam": "CAM_master_bath_VIEW_03",
+   "status": "OK",
+   "sec": 9.9,
+   "lens": 22.0
+  },
+  {
+   "cam": "CAM_couple_bedroom_VIEW_01",
+   "status": "OK",
+   "sec": 20.4,
+   "lens": 24.0
+  },
+  {
+   "cam": "CAM_secondary_bath_VIEW_01",
+   "status": "OK",
+   "sec": 18.4,
+   "lens": 20.0
+  },
+  {
+   "cam": "CAM_study_VIEW_02",
+   "status": "OK",
+   "sec": 12.8,
+   "lens": 24.0
+  },
+  {
+   "cam": "CAM_guest_bedroom_VIEW_01",
+   "status": "OK",
+   "sec": 24.1,
+   "lens": 22.0
+  },
+  {
+   "cam": "CAM_reading_transition_VIEW_01",
+   "status": "OK",
+   "sec": 25.3,
+   "lens": 25.0
+  },
+  {
+   "cam": "CAM_north_sunroom_VIEW_02",
+   "status": "OK",
+   "sec": 25.3,
+   "lens": 25.0
+  }
+ ]
+}

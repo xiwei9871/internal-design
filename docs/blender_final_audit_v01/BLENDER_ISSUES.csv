@@ -1,0 +1,27 @@
+issue_id,room,object,type,current,suggestion,evidence,priority,owner_confirm
+B01,global,World (kiara_3_morning_hdri_2k; strength 3.6; rot Z 120),render_env,干旱山地HDRI透过所有窗户可见;与成都城市住宅不符;窗景成画面最亮主体,换城市/庭院低层建筑HDRI或窗外背板;降世界强度至约1.5-2并保留室内日光灯组,compare_history.jpg; CAM_living_VIEW_01_cycles64,P1,是(窗景风格)
+B02,living,HOUSE_V1_V14_ROWER_* (y12105-12715),layout_visual,划船机停放在北窗正前方;遮挡窗台与躺椅;主视角杂乱,确认划船机收纳位;效果图可隐藏或移至使用区外,compare_history.jpg,P1,是
+B03,kitchen,B11_K-FRIDGE_DOOR_0/1 + FRIDGE_BODY (8 verts each),detail,冰箱为两块平板+中缝;无拉手/门封/踢脚缝,按选定冰箱型号补拉手、门缝和底部格栅;或改为嵌入柜门,CAM_kitchen_VIEW_01_cycles64,P1,是(型号)
+B04,global,V7_CATALOG_PALE_NATURAL_ASH (759 objs) + V11_UNIFIED_PALE_ASH_FLOOR,material_tone,地板/台阶/门/柜/家具同一浅白蜡木色;画面无前后层次,地板或门套略降明度(Value -8~12%)或换不同木纹尺度;家具保留,contact_1/2; reading_transition,P2,是(材料)
+B05,global,V7_CATALOG_PALE_NATURAL_ASH Emission Strength=1.0 (color black),material_tech,发射强度1但颜色为黑;当前无可见影响但属异常参数(还有V5_NATURAL_ASH_PLANKS_OIL/V3_WHITE_ASH_NATIVE_OWNER_COLOR),Emission Strength设0;不改外观,detail_v15f.json,P3,否
+B06,global,03_EXISTING_CEILING (CEILING_LOWER/UPPER/STAIRWELL hidden) + V7_CEILING_* visible,scene_hygiene,两套天花并存;旧套靠对象hide_render隐藏;易在后续操作中重新显示造成漏光或双层,合并为单套并记录;本轮不改,scene_summary.json,P2,否
+B07,master_bath,CBM_MASTER_BASIN/RENDER_CERAMIC,material_lighting,Cycles下白大理石+白台盆+白墙接近同亮度;台盆边缘方硬;画面高调发灰,台盆加倒角与内壁曲面;墙面乳胶漆降至约0.70;局部加镜前灯面光,CAM_master_bath_VIEW_03_cycles64,P2,否
+B08,master_bath,B11_Rectangle034_CATALOG_00_00 (WC) vs CBM_master_COUNTERTOP,ergonomics,马桶西侧距台面144mm;马桶后背距北墙29mm(面朝南);侧边净距偏小,现场确认坐便中心距侧墙/柜≥400;预留扶手位置,clearances_bbox.tsv; verify_fit.json,P1,是(现场)
+B09,master_bath,(none),accessibility,适老主卫模型无扶手/预埋标记,在马桶与淋浴旁建扶手或预埋示意,scene dump grep GRAB=0,P1,是
+B10,secondary_bath,R3_WC_LATEST vs HOUSE_V1_V14_SHOWER_SOUTH_FIXED,ergonomics,马桶北缘距淋浴南玻璃60mm;马桶面朝西,现场确认马桶前方/侧方≥600/≥200净距与玻璃门开启,clearances_bbox.tsv,P1,是(现场)
+B11,secondary_bath,R3_VANITY_BASIN_REVIEW,detail,台盆读作台面上平面轮廓线;名称仍为REVIEW,换实物台盆模型(台下盆/台上盆按选型),CAM_secondary_bath_VIEW_01_eevee32,P2,是(型号)
+B12,guest_bedroom,B11_Rectangle045 wardrobe vs HOUSE_V2_GUEST_mattress,clearance,衣柜东面至床西侧仅347mm;既有GUEST_BED_DOOR_FIT扫掠记录全开剩余宽度为负,衣柜改推拉门或床东移/缩短;需业主定,clearances_bbox.tsv; GUEST_BED_DOOR_FIT.json,P0,是
+B13,mother_bedroom,BW1_MOTHER_VANITY_CHAIR vs HUNYUAN_V12_MOTHER_BED,clearance,梳妆椅东缘距床西缘478mm;老人夜间通行偏窄,梳妆椅移位或缩小;保持≥600通道,clearances_bbox.tsv,P1,是
+B14,stair,B11_STEP_0/1/2_REVIEW_NOSING (hidden),safety_visual,踏步防滑/警示条对象存在但隐藏;台阶与地面同木色,启用防滑条或踢面对比色;配踏步灯,verify_fit.json; reading_transition,P1,是(做法)
+B15,stair,WAVE_WALL_HANDRAIL_900 (top z1351 at upper end),ergonomics,扶手随台阶抬升;下端约1012上端1351(含+450);相对踏面约900,现场确认扶手高度与连续性;符合业主已批准波浪台阶,clearances_bbox.tsv,P3,否
+B16,dining,V4_Dining_racetrack_38mm_top + V4_Chair_upholstered_seat_*,ergonomics,桌面750/座高504;差246合理;椅子已部分推入桌下,保留;效果图中椅子可拉出50-100增加生活感,clearances_bbox.tsv,P3,否
+B17,kitchen,B11_K-ISLAND_ROUNDED_COUNTER (z960) vs B11_K-RUN-E_COUNTER (z820),ergonomics,岛台960高于操作台820约140;操作通道1033mm,确认岛台用途(吧台/备餐);若备餐建议与台面同高,clearances_bbox.tsv,P2,是(厨房冻结)
+B18,global,LIGHT_*_2900K area lights (45-65W),lighting,每房一盏顶部面光;无灯具实体发光;画面无光源来源感;A201 V2候选灯位未进模型,效果图另建灯光副本:按A201 V2放实体筒灯/灯带并降低大面光;不改冻结模型,render settings + contact sheets,P2,是(灯位候选)
+B19,mother_bedroom,(none),lighting,无夜灯/床头灯实体(A201 V2为PROPOSED),副本中按N-M1..M4试夜间场景,lighting_points_v2.json,P2,是
+B20,north_sunroom,SUNROOM_PLANT_LEAF_* (15 objs; V7 ash material),detail,植物用木材质块面;读作木雕,换真实植物资产或删除,CAM_north_sunroom_VIEW_02_eevee32,P2,否
+B21,guest_bedroom,HOUSE_V2_GUEST pillow/duvet,detail,枕头为光滑块体;框图过近,枕头加褶皱/布料模拟;相机后退或换24mm,CAM_guest_bedroom_VIEW_01_eevee32,P2,否
+B22,global,CAM_*_VIEW_* (20-22mm in baths/dining),camera,小空间20-22mm边缘拉伸(餐椅/桌沿);部分机位贴近家具,主视角用24-28mm+轻shift;卫生间允许20mm但避开前景家具,contact_1/2,P2,否
+B23,global,V8_COLORLESS_PRIVACY_FROSTED_GLASS (rough 0.68),material,磨砂玻璃大面积读作白墙,降粗糙度至0.35-0.45或加轻微纹理/框线,guest_bedroom/sunroom/secondary_bath renders,P2,否
+B24,global,EEVEE preview (shadow buffer full; SSR mirror),render_tech,EEVEE下镜子反射HDRI/窗帘深色条/天花噪点为预览伪影;Cycles已确认镜面正常,审图用Cycles;EEVEE仅做构图,compare_engines.jpg,P3,否
+B25,global,V7_IVORY_FLAX_NATIVE / V4_LIGHT_FLAX_DRAPERY (sheen 0.2-0.28; mapping 3.333),material,布艺读感良好;窗帘Cycles下自然,保留,compare_engines.jpg,P3,否
+B26,global,render: AgX Medium High Contrast; exposure 0.15; world 3.6,render_tech,Cycles画面整体偏亮偏灰(meanL 166 vs v7 150);高光区白色融合,exposure降至约-0.2~0;或look改Base Contrast并降世界强度,compare_history stats,P2,否

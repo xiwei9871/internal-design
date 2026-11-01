@@ -1,0 +1,29 @@
+mother_bedroom	bed north edge -> wardrobe front	696
+mother_bedroom	bed west edge -> room west wall x11600	1458
+mother_bedroom	vanity chair east -> bed west	478
+couple_bedroom	bed north edge -> wardrobe front	866
+couple_bedroom	TV console east -> bed west (foot)	657
+guest_bedroom	wardrobe east face -> bed west	347
+guest_bedroom	desk chair north -> bed south	None
+dining	table north edge -> chair seat north (pushed-in overlap)	250
+dining	table z top	750
+dining	chair seat top z	504
+dining	chair seat w x d	(456, 414)
+living	sofa front x -> TV console west (viewing gap)	2544
+kitchen	east run counter height z	820
+kitchen	island counter height z	960
+kitchen	island east -> east run front (work aisle)	1033
+kitchen	wall cabinet underside above counter	924
+master_bath	WC north edge -> north wall y6400 (front clear, WC faces ?)	29
+master_bath	WC west edge -> vanity east edge	144
+master_bath	vanity top above floor (+450)	850
+secondary_bath	WC to shower glass south (y5496) gap	60
+secondary_bath	vanity top above floor	850
+study	desk top above floor (+450)	750
+study	desk east -> bookcase front x15760	750
+guest_bedroom	guest desk top above floor	760
+stair	STEP_0 riser	150
+stair	STEP_1 riser	150
+stair	STEP_2 riser	150
+stair	tread depth (STEP_1.x0-STEP_0.x0)	350
+stair	handrail top z	1351

@@ -1,0 +1,5718 @@
+{
+ "blend": "/Users/xiwei/interior_design/projects/c_type_home/design/secondary_mirror_v15/WHOLE_HOUSE_SECONDARY_MIRROR_FINAL_V15.blend",
+ "render": {
+  "engine": "CYCLES",
+  "res": [
+   2560,
+   1440,
+   100
+  ],
+  "camera": "CAM_couple_bedroom_VIEW_01",
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": 0.15000000596046448,
+  "gamma": 1.0,
+  "display": "sRGB",
+  "film_transparent": false,
+  "cycles": {
+   "samples": 256,
+   "denoise": true,
+   "denoiser": "OPENIMAGEDENOISE",
+   "max_bounces": 10,
+   "light_tree": true,
+   "clamp_ind": 3.0
+  },
+  "eevee": {
+   "taa": 64,
+   "raytrace": true,
+   "shadows": true
+  },
+  "world": {
+   "bg_strength": 3.5999999046325684,
+   "bg_color": "LINK:TEX_ENVIRONMENT",
+   "hdri": "kiara_3_morning_hdri_2k.hdr"
+  },
+  "frame": 100,
+  "version": "5.2.1 LTS",
+  "scenes": [
+   "Scene"
+  ]
+ },
+ "collections": [
+  {
+   "n": "Scene Collection",
+   "d": 0,
+   "hide_render": false,
+   "n_obj": 36
+  },
+  {
+   "n": "Collection",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 94
+  },
+  {
+   "n": "00_EXISTING_ARCH_GROUND_TRUTH",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 69
+  },
+  {
+   "n": "01_EXISTING_OPENINGS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 10
+  },
+  {
+   "n": "02_EXISTING_SPLIT_LEVEL",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 8
+  },
+  {
+   "n": "03_EXISTING_CEILING",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 9
+  },
+  {
+   "n": "04_EXISTING_STAIRS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 3
+  },
+  {
+   "n": "05_HUMAN_DESIGN_GUIDE",
+   "d": 1,
+   "hide_render": true,
+   "n_obj": 71
+  },
+  {
+   "n": "90_FUTURE_DESIGN_OPTIONS",
+   "d": 1,
+   "hide_render": true,
+   "n_obj": 0
+  },
+  {
+   "n": "91_ACCESSIBILITY_OPTIONS",
+   "d": 1,
+   "hide_render": true,
+   "n_obj": 1
+  },
+  {
+   "n": "99_TO_VERIFY",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 2
+  },
+  {
+   "n": "COL_B11_CORE_FURNITURE",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 86
+  },
+  {
+   "n": "COL_B11_STORAGE",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 107
+  },
+  {
+   "n": "COL_B11_BATHROOMS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 50
+  },
+  {
+   "n": "COL_B11_KITCHEN",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 169
+  },
+  {
+   "n": "COL_B11_OPENING_DETAILS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 81
+  },
+  {
+   "n": "COL_B11_BAY_ASSEMBLIES",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 44
+  },
+  {
+   "n": "COL_B11_SPLIT_FINISHING",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 43
+  },
+  {
+   "n": "COL_B11_PENDING_INSTALL",
+   "d": 1,
+   "hide_render": true,
+   "n_obj": 6
+  },
+  {
+   "n": "COL_B11_REVIEW_MARKERS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 3
+  },
+  {
+   "n": "COL_B11_REVIEW_CAMERAS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 12
+  },
+  {
+   "n": "COL_SITE_KITCHEN_ISLAND_AND_UTILITY",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 47
+  },
+  {
+   "n": "COL_SITE_WINDOW_AND_BUFFET_V4",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 44
+  },
+  {
+   "n": "COL_REVIEW_CAMERAS_V4",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 11
+  },
+  {
+   "n": "COL_B1_LIVING_SITE_CORRECTION_V1",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 42
+  },
+  {
+   "n": "COL_LIVING_CORRECTION_CAMERAS_V1",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 7
+  },
+  {
+   "n": "COL_LIVING_DOOR_ENCLOSURES_V2",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 32
+  },
+  {
+   "n": "COL_LIVING_DOOR_CAMERAS_V2",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 5
+  },
+  {
+   "n": "COL_D107_FINAL_SIDE_CORRECTION_V3",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 9
+  },
+  {
+   "n": "COL_V4_COMPLETE_DOORS_AND_BAYS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 218
+  },
+  {
+   "n": "COL_CONTINUOUS_WALLS_V4",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 1
+  },
+  {
+   "n": "COL_WALL_JUNCTION_CAMERAS_V4",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 14
+  },
+  {
+   "n": "COL_V5_COMPLETE_WALL_CORNERS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 35
+  },
+  {
+   "n": "COL_KITCHEN_DISPLAY_CABINET_WALL_V2",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 2
+  },
+  {
+   "n": "COL_SECONDARY_BATH_R3_A",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 275
+  },
+  {
+   "n": "COL_R4_SECONDARY_BEDROOM_EW_INWARD_DOOR",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 25
+  },
+  {
+   "n": "COL_KITCHEN_DIVIDER_SITE_REVIEW",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 1
+  },
+  {
+   "n": "COL_R4_NATIVE_WALL_VIEW_PARTS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 98
+  },
+  {
+   "n": "COL_STUDY_ROOM_V1",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 31
+  },
+  {
+   "n": "COL_BEDROOMS_WOOD_V1",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 33
+  },
+  {
+   "n": "COL_CONSOLE_BATH_MIRRORS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 43
+  },
+  {
+   "n": "COL_SUNROOM_STEPPED_REVIEW",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 4
+  },
+  {
+   "n": "LD_CONTEXT_PRESENTATION",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 40
+  },
+  {
+   "n": "LD_SELECTED_DETAILED_FURNITURE",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 173
+  },
+  {
+   "n": "V3_LIBRARY_ADAPTED_SELECTED_FURNITURE",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 121
+  },
+  {
+   "n": "V4_COMPLETE_PRODUCT_OBJECTS",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 735
+  },
+  {
+   "n": "V5_ISOLATED_LOOKDEV",
+   "d": 1,
+   "hide_render": true,
+   "n_obj": 2
+  },
+  {
+   "n": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 222
+  },
+  {
+   "n": "WHOLE_HOUSE_OWNER_CORRECTIONS_V2",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 285
+  },
+  {
+   "n": "OWNER_HUNYUAN_WHOLE_ASSETS_V3",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 3
+  },
+  {
+   "n": "V7_CEILING_TOGGLE_FOR_OVERVIEW",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 3
+  },
+  {
+   "n": "V7_FRAMED_GLASS_SLIDING_ASSEMBLY",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 9
+  },
+  {
+   "n": "V11_OWNER_SURFACE_FINISHES",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 4
+  },
+  {
+   "n": "V14_OWNER_LOCAL_REVIEW",
+   "d": 1,
+   "hide_render": false,
+   "n_obj": 32
+  }
+ ],
+ "lights": [
+  {
+   "n": "DAYLIGHT_northliving",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 556.9199829101562,
+   "color": [
+    0.94,
+    0.97,
+    1.0
+   ],
+   "loc": [
+    5400,
+    14300,
+    2000
+   ],
+   "size": 3.0,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "DAYLIGHT_northstudy",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 393.1199951171875,
+   "color": [
+    0.94,
+    0.97,
+    1.0
+   ],
+   "loc": [
+    14600,
+    12200,
+    2200
+   ],
+   "size": 2.0,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "DAYLIGHT_northsunroom",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 360.3600158691406,
+   "color": [
+    0.94,
+    0.97,
+    1.0
+   ],
+   "loc": [
+    10500,
+    14200,
+    2000
+   ],
+   "size": 3.0,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "DAYLIGHT_southbed",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 589.6799926757812,
+   "color": [
+    0.94,
+    0.97,
+    1.0
+   ],
+   "loc": [
+    11600,
+    -1000,
+    2100
+   ],
+   "size": 4.0,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LD_Sun_through_actual_windows",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_SELECTED_DETAILED_FURNITURE",
+   "lt": "SUN",
+   "energy": 2.4000000953674316,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    0,
+    0,
+    0
+   ],
+   "size": null,
+   "size_y": null,
+   "shape": null,
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": true,
+   "vis_trans": true
+  },
+  {
+   "n": "LIGHT_couple_bedroom_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    9700,
+    2350,
+    3170
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_dining_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    4300,
+    3500,
+    2720
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_entry_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    4300,
+    5600,
+    2720
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_guest_bath_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 65.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    8850,
+    9450,
+    3170
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_guest_bedroom_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    11400,
+    9450,
+    3170
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_hallway_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 65.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    10575,
+    7200,
+    3170
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_kitchen_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    6850,
+    2250,
+    2720
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_living_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    5350,
+    9850,
+    2720
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_master_bath_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 65.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    14650,
+    5550,
+    3170
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_mother_bedroom_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    13450,
+    2350,
+    3170
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_north_sunroom_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    10450,
+    12250,
+    2720
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_reading_transition_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    6875,
+    6250,
+    2720
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_secondary_bath_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 65.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    10304,
+    5636,
+    3170
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_service_balcony_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    3600,
+    1500,
+    2720
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "LIGHT_study_2900K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lt": "AREA",
+   "energy": 45.0,
+   "color": [
+    1.0,
+    0.94,
+    0.85
+   ],
+   "loc": [
+    14650,
+    8750,
+    3170
+   ],
+   "size": 1.7999999523162842,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "V3_KITCHEN_DAYLIGHT_THROUGH_SOUTH_WINDOW",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "V3_LIBRARY_ADAPTED_SELECTED_FURNITURE",
+   "lt": "AREA",
+   "energy": 350.0,
+   "color": [
+    0.96,
+    0.98,
+    1.0
+   ],
+   "loc": [
+    6600,
+    -1200,
+    1800
+   ],
+   "size": 2.0,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": false,
+   "vis_trans": false
+  },
+  {
+   "n": "V3_KITCHEN_UNDERCABINET_3000K",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "V3_LIBRARY_ADAPTED_SELECTED_FURNITURE",
+   "lt": "AREA",
+   "energy": 30.0,
+   "color": [
+    1.0,
+    0.82,
+    0.62
+   ],
+   "loc": [
+    7640,
+    1500,
+    1735
+   ],
+   "size": 1.7000000476837158,
+   "size_y": 0.02500000037252903,
+   "shape": "RECTANGLE",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": true,
+   "vis_trans": true
+  },
+  {
+   "n": "V4_Dining_warm_practical",
+   "t": "LIGHT",
+   "vis": true,
+   "col": "V4_COMPLETE_PRODUCT_OBJECTS",
+   "lt": "AREA",
+   "energy": 42.0,
+   "color": [
+    1.0,
+    0.84,
+    0.66
+   ],
+   "loc": [
+    3828,
+    3464,
+    1875
+   ],
+   "size": 0.20000000298023224,
+   "size_y": 0.25,
+   "shape": "DISK",
+   "use_shadow": true,
+   "temp": 6500.0,
+   "vis_cam": false,
+   "vis_glossy": true,
+   "vis_trans": true
+  }
+ ],
+ "cameras_used": [
+  {
+   "n": "CAM_couple_bedroom_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    8600,
+    3600,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -131.5
+   ],
+   "shift": [
+    0.0,
+    -0.21388234198093414
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_couple_bedroom_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10250,
+    600,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    46.5
+   ],
+   "shift": [
+    0.0,
+    -0.18880192935466766
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_couple_bedroom_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    8750,
+    750,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -16.3
+   ],
+   "shift": [
+    0.0,
+    -0.08888889104127884
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_couple_bedroom_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    8650,
+    3050,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -163.0
+   ],
+   "shift": [
+    0.0,
+    -0.12336926907300949
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_couple_bedroom_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 28.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    8850,
+    550,
+    1950
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -35.4
+   ],
+   "shift": [
+    0.0,
+    -0.21128474175930023
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_dining_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    5300,
+    4250,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    117.3
+   ],
+   "shift": [
+    0.0,
+    -0.1646249145269394
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_dining_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    3050,
+    2600,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -45.0
+   ],
+   "shift": [
+    0.0,
+    -0.19013315439224243
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_dining_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    5350,
+    3050,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    74.5
+   ],
+   "shift": [
+    0.0,
+    -0.21411508321762085
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_dining_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    4250,
+    4250,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -176.9
+   ],
+   "shift": [
+    0.0,
+    -0.1619257777929306
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_dining_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    5150,
+    2650,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    52.4
+   ],
+   "shift": [
+    0.0,
+    -0.18630048632621765
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_entry_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    4700,
+    6750,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    125.0
+   ],
+   "shift": [
+    0.0,
+    -0.16384638845920563
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_entry_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    3100,
+    5650,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -81.7
+   ],
+   "shift": [
+    0.0,
+    -0.10077374428510666
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_entry_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    3750,
+    5250,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -46.4
+   ],
+   "shift": [
+    0.0,
+    -0.12959574162960052
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_entry_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 26.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    4900,
+    5900,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    88.6
+   ],
+   "shift": [
+    0.0,
+    -0.15398520231246948
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_entry_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    3200,
+    5800,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -27.5
+   ],
+   "shift": [
+    0.0,
+    -0.05545103922486305
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bath_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 20.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    9300,
+    8420,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    35.7
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bath_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 20.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    9320,
+    9700,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    153.8
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bath_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    9150,
+    9150,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    114.7
+   ],
+   "shift": [
+    0.0,
+    -0.13643796741962433
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bath_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    9220,
+    10500,
+    1900
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    166.1
+   ],
+   "shift": [
+    0.0,
+    -0.1717245876789093
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bath_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    9380,
+    9300,
+    1900
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    108.0
+   ],
+   "shift": [
+    0.0,
+    -0.14680442214012146
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bedroom_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10580,
+    8400,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -52.1
+   ],
+   "shift": [
+    0.0,
+    -0.18769291043281555
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bedroom_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    11300,
+    9550,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    52.7
+   ],
+   "shift": [
+    0.0,
+    -0.1620323657989502
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bedroom_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10680,
+    9600,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -75.2
+   ],
+   "shift": [
+    0.0,
+    -0.16360127925872803
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bedroom_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10650,
+    9150,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -24.0
+   ],
+   "shift": [
+    0.0,
+    -0.1200147494673729
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_guest_bedroom_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10650,
+    9400,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -115.0
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_hallway_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 28.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    8320,
+    7350,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -93.0
+   ],
+   "shift": [
+    0.0,
+    -0.09125947207212448
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_hallway_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 28.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    12650,
+    7450,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    96.0
+   ],
+   "shift": [
+    0.0,
+    -0.09159918874502182
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_hallway_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 28.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10250,
+    7150,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -90.0
+   ],
+   "shift": [
+    0.0,
+    -0.15555556118488312
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_hallway_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 26.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    8550,
+    6950,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    94.1
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_hallway_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 28.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10550,
+    7150,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    90.0
+   ],
+   "shift": [
+    0.0,
+    -0.18518514931201935
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_kitchen_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "Scene Collection",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    6600,
+    850,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -23.6
+   ],
+   "shift": [
+    0.0,
+    -0.14103014767169952
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_kitchen_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "Scene Collection",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    6850,
+    3350,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    178.1
+   ],
+   "shift": [
+    0.0,
+    -0.11292948573827744
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_kitchen_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "Scene Collection",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    6550,
+    2950,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -163.9
+   ],
+   "shift": [
+    0.0,
+    -0.1011120080947876
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_kitchen_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "Scene Collection",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    6500,
+    2350,
+    1550
+   ],
+   "rot": [
+    82.9,
+    0.0,
+    -176.4
+   ],
+   "shift": [
+    0.0,
+    0.0
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_kitchen_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "Scene Collection",
+   "lens": 32.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    6600,
+    1250,
+    1500
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -46.7
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_living_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    3100,
+    7250,
+    1580
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -34.8
+   ],
+   "shift": [
+    0.0,
+    -0.07931451499462128
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_living_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    7050,
+    12550,
+    1580
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    143.6
+   ],
+   "shift": [
+    0.0,
+    -0.09969472140073776
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_living_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 28.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    3250,
+    12600,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -153.1
+   ],
+   "shift": [
+    0.0,
+    -0.0577782541513443
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_living_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    3150,
+    10350,
+    1580
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -36.6
+   ],
+   "shift": [
+    0.0,
+    -0.07309829443693161
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_living_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "LD_CONTEXT_PRESENTATION",
+   "lens": 28.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    5300,
+    4900,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    1.0
+   ],
+   "shift": [
+    0.0,
+    -0.06821562349796295
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_master_bath_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    13550,
+    4930,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -45.5
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_master_bath_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    15850,
+    5550,
+    1900
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    78.7
+   ],
+   "shift": [
+    0.0,
+    -0.1540912240743637
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_master_bath_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    14150,
+    5100,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    2.4
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_master_bath_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 20.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    15750,
+    5250,
+    1850
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    70.3
+   ],
+   "shift": [
+    0.0,
+    -0.14748068153858185
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_master_bath_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    14750,
+    5150,
+    1900
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    46.4
+   ],
+   "shift": [
+    0.0,
+    -0.1149425208568573
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_mother_bedroom_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    12300,
+    4000,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -131.4
+   ],
+   "shift": [
+    0.0,
+    -0.18610094487667084
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_mother_bedroom_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    14150,
+    600,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    49.1
+   ],
+   "shift": [
+    0.0,
+    -0.19874407351016998
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_mother_bedroom_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    12650,
+    700,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -29.2
+   ],
+   "shift": [
+    0.0,
+    -0.09861673414707184
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_mother_bedroom_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    14300,
+    3500,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    165.0
+   ],
+   "shift": [
+    0.0,
+    -0.12282975018024445
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_mother_bedroom_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    13400,
+    700,
+    1950
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    82.1
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_north_sunroom_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    11550,
+    12930,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    120.5
+   ],
+   "shift": [
+    0.0,
+    -0.09457810968160629
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_north_sunroom_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    8250,
+    12250,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -89.3
+   ],
+   "shift": [
+    0.0,
+    -0.09269813448190689
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_north_sunroom_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    8350,
+    12700,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -124.1
+   ],
+   "shift": [
+    0.0,
+    -0.14616766571998596
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_north_sunroom_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    11900,
+    11800,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    46.8
+   ],
+   "shift": [
+    0.0,
+    -0.1215895339846611
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_north_sunroom_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10600,
+    12800,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -113.8
+   ],
+   "shift": [
+    0.0,
+    -0.21527478098869324
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_reading_transition_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 25.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    4950,
+    6650,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -110.0
+   ],
+   "shift": [
+    0.0,
+    -0.19282378256320953
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_reading_transition_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    8500,
+    6750,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    130.3
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_reading_transition_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 27.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    6180,
+    7250,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -155.4
+   ],
+   "shift": [
+    0.0,
+    -0.10201966762542725
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_reading_transition_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 26.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    4800,
+    7850,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -115.6
+   ],
+   "shift": [
+    0.0,
+    -0.2083519995212555
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_reading_transition_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 32.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    6650,
+    6350,
+    1800
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -153.6
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_secondary_bath_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 20.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    9520,
+    5050,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -36.7
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_secondary_bath_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 20.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    11000,
+    6130,
+    1900
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    129.2
+   ],
+   "shift": [
+    0.0,
+    -0.16136084496974945
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_secondary_bath_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10250,
+    5070,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    17.2
+   ],
+   "shift": [
+    0.0,
+    -0.180990532040596
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_secondary_bath_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    9520,
+    5600,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -70.2
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_secondary_bath_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    10600,
+    5200,
+    1900
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    40.4
+   ],
+   "shift": [
+    0.0,
+    -0.1164073720574379
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_service_balcony_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    3500,
+    2050,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -121.8
+   ],
+   "shift": [
+    0.0,
+    -0.13672371208667755
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_service_balcony_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    4580,
+    1850,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    102.3
+   ],
+   "shift": [
+    0.0,
+    -0.1416197568178177
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_service_balcony_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    2050,
+    1350,
+    1550
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -89.0
+   ],
+   "shift": [
+    0.0,
+    -0.10534833371639252
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_service_balcony_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    3900,
+    1600,
+    1550
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    94.9
+   ],
+   "shift": [
+    0.0,
+    -0.08479983359575272
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_service_balcony_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 22.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    5350,
+    1450,
+    1450
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    90.9
+   ],
+   "shift": [
+    0.0,
+    -0.08869815617799759
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_study_VIEW_01",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    13400,
+    7150,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -30.2
+   ],
+   "shift": [
+    0.0,
+    -0.12572339177131653
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_study_VIEW_02",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    13520,
+    10280,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -144.1
+   ],
+   "shift": [
+    0.0,
+    -0.1387791633605957
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_study_VIEW_03",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    13400,
+    8650,
+    2000
+   ],
+   "rot": [
+    90.0,
+    -0.0,
+    -87.7
+   ],
+   "shift": [
+    0.0,
+    -0.09179240465164185
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_study_VIEW_04",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 24.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    13500,
+    9800,
+    2000
+   ],
+   "rot": [
+    90.0,
+    0.0,
+    -46.2
+   ],
+   "shift": [
+    0.0,
+    -0.23000000417232513
+   ],
+   "dof": false
+  },
+  {
+   "n": "CAM_study_VIEW_05",
+   "t": "CAMERA",
+   "vis": true,
+   "col": "WHOLE_HOUSE_SELECTED_ROOM_OBJECTS_V1",
+   "lens": 32.0,
+   "sensor": 36.0,
+   "ctype": "PERSP",
+   "clip": [
+    0.009999999776482582,
+    1000.0
+   ],
+   "loc": [
+    13570,
+    7120,
+    1980
+   ],
+   "rot": [
+    64.8,
+    0.0,
+    -43.8
+   ],
+   "shift": [
+    0.0,
+    0.0
+   ],
+   "dof": false
+  }
+ ],
+ "materials": [
+  {
+   "m": "AM2_CHARCOAL_BRONZE_WINDOW",
+   "users_vis": 21,
+   "sample_objs": [
+    "DOOR_V2_NBALC_FRAME_NORTH_JAMB",
+    "DOOR_V2_NBALC_FRAME_SOUTH_JAMB",
+    "DOOR_V2_NBALC_FRAME_TOP",
+    "DOOR_V2_NBALC_SASH_BOTTOM",
+    "DOOR_V2_NBALC_SASH_NORTH",
+    "DOOR_V2_NBALC_SASH_SOUTH"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.064,
+     0.059,
+     0.049,
+     1.0
+    ],
+    "Roughness": 0.32,
+    "Metallic": 0.72,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "AM2_WARM_WHITE_CEILING",
+   "users_vis": 3,
+   "sample_objs": [
+    "V7_CEILING_450MM_TRANSITION",
+    "V7_CEILING_HIGH",
+    "V7_CEILING_LOW"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.82,
+     0.805,
+     0.758,
+     1.0
+    ],
+    "Roughness": 0.9,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V1_ENTRY_QUIET_ART_PRINT",
+   "users_vis": 1,
+   "sample_objs": [
+    "HOUSE_V1_ENTRY_QUIET_ART_canvas"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_IMAGE"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.95,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "study_landscape_crop.jpg",
+     "res": [
+      200,
+      205
+     ],
+     "cs": "sRGB",
+     "file": "ects/c_type_home/design/whole_house_model_v1/references/study_landscape_crop.jpg"
+    }
+   ]
+  },
+  {
+   "m": "HOUSE_V1_HALLWAY_QUIET_ART_PRINT",
+   "users_vis": 1,
+   "sample_objs": [
+    "HOUSE_V1_HALLWAY_QUIET_ART_canvas"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_IMAGE"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.95,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "study_landscape_crop.jpg",
+     "res": [
+      200,
+      205
+     ],
+     "cs": "sRGB",
+     "file": "ects/c_type_home/design/whole_house_model_v1/references/study_landscape_crop.jpg"
+    }
+   ]
+  },
+  {
+   "m": "HOUSE_V1_IVORY_CERAMIC",
+   "users_vis": 4,
+   "sample_objs": [
+    "HOUSE_V1_Entry_ceramic_body",
+    "HOUSE_V1_Entry_ceramic_neck",
+    "HOUSE_V1_guest_bath_soap_body",
+    "HOUSE_V1_guest_bath_soap_neck"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.65,
+     0.62,
+     0.55,
+     1.0
+    ],
+    "Roughness": 0.6,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V1_MUTED_SAGE_LINEN",
+   "users_vis": 3,
+   "sample_objs": [
+    "STUDY_V1_BACK_CUSHION_0",
+    "STUDY_V1_BACK_CUSHION_1",
+    "STUDY_V1_BACK_CUSHION_2"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "DISPLACEMENT",
+    "FRAME",
+    "MAPPING",
+    "MATH",
+    "MIX_RGB",
+    "NORMAL_MAP",
+    "OUTPUT_MATERIAL",
+    "REROUTE",
+    "RGBTOBW",
+    "TANGENT",
+    "TEX_COORD",
+    "TEX_IMAGE",
+    "UVMAP"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:MIX_RGB",
+    "Roughness": "LINK:TEX_IMAGE",
+    "Metallic": "LINK:TEX_IMAGE",
+    "Specular IOR Level": "LINK:TEX_IMAGE",
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.2,
+    "Normal": "LINK:NORMAL_MAP",
+    "Alpha": "LINK:TEX_IMAGE",
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "mapping": [
+    {
+     "scale": [
+      3.333,
+      3.333,
+      1.0
+     ],
+     "rot": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "images": [
+    {
+     "img": "rough_linen_displacement_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "e/design/asset_model_v3/assets/linen_4k_complete/rough_linen_displacement_4k.png"
+    },
+    {
+     "img": "rough_linen_diffuse_4k.jpg",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "sRGB",
+     "file": "e_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_diffuse_4k.jpg"
+    },
+    {
+     "img": "rough_linen_metal.png",
+     "res": [
+      1024,
+      1026
+     ],
+     "cs": "Non-Color",
+     "file": "e/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_metal_1k.exr"
+    },
+    {
+     "img": "rough_linen_spec_ior_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_spec_ior_4k.png"
+    },
+    {
+     "img": "rough_linen_roughness_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_roughness_4k.png"
+    },
+    {
+     "img": "rough_linen_normal_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "pe_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_normal_4k.png"
+    },
+    {
+     "img": "rough_linen_anisotropy_strength_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "n/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_strength_4k.png"
+    },
+    {
+     "img": "rough_linen_anisotropy_rotation_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "n/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_rotation_4k.png"
+    },
+    {
+     "img": "rough_linen_mask.png",
+     "res": [
+      1024,
+      1026
+     ],
+     "cs": "Non-Color",
+     "file": "me/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_mask_1k.png"
+    }
+   ],
+   "displacement": true,
+   "normal_map": 1.0
+  },
+  {
+   "m": "HOUSE_V1_STUDY_GAP_ART_PRINT",
+   "users_vis": 1,
+   "sample_objs": [
+    "HOUSE_V1_STUDY_GAP_ART_canvas"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_IMAGE"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.95,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "study_landscape_crop.jpg",
+     "res": [
+      200,
+      205
+     ],
+     "cs": "sRGB",
+     "file": "ects/c_type_home/design/whole_house_model_v1/references/study_landscape_crop.jpg"
+    }
+   ]
+  },
+  {
+   "m": "HOUSE_V2_BLACK_GLAZED_DOOR",
+   "users_vis": 14,
+   "sample_objs": [
+    "B11_Rectangle040_DOOR_0",
+    "B11_Rectangle040_DOOR_1",
+    "HOUSE_V2_Laundry_button_0_0",
+    "HOUSE_V2_Laundry_button_0_1",
+    "HOUSE_V2_Laundry_button_0_2",
+    "HOUSE_V2_Laundry_button_1_0"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.006,
+     0.008,
+     0.011,
+     1.0
+    ],
+    "Roughness": 0.08,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.18,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V2_BOOK_COVER_0",
+   "users_vis": 3,
+   "sample_objs": [
+    "HOUSE_V2_Book_cover_0",
+    "HOUSE_V2_Book_cover_0.001",
+    "HOUSE_V2_Book_spine_0"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.19,
+     0.22,
+     0.17,
+     1.0
+    ],
+    "Roughness": 0.85,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V2_BOOK_COVER_1",
+   "users_vis": 3,
+   "sample_objs": [
+    "HOUSE_V2_Book_cover_1",
+    "HOUSE_V2_Book_cover_1.001",
+    "HOUSE_V2_Book_spine_1"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.35,
+     0.3,
+     0.23,
+     1.0
+    ],
+    "Roughness": 0.85,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V2_BOOK_COVER_2",
+   "users_vis": 3,
+   "sample_objs": [
+    "HOUSE_V2_Book_cover_2",
+    "HOUSE_V2_Book_cover_2.001",
+    "HOUSE_V2_Book_spine_2"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.23,
+     0.27,
+     0.29,
+     1.0
+    ],
+    "Roughness": 0.85,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V2_BOOK_COVER_3",
+   "users_vis": 3,
+   "sample_objs": [
+    "HOUSE_V2_Book_cover_3",
+    "HOUSE_V2_Book_cover_3.001",
+    "HOUSE_V2_Book_spine_3"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.44,
+     0.39,
+     0.3,
+     1.0
+    ],
+    "Roughness": 0.85,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V2_BOOK_COVER_4",
+   "users_vis": 3,
+   "sample_objs": [
+    "HOUSE_V2_Book_cover_4",
+    "HOUSE_V2_Book_cover_4.001",
+    "HOUSE_V2_Book_spine_4"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.22,
+     0.21,
+     0.18,
+     1.0
+    ],
+    "Roughness": 0.85,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V2_BOOK_COVER_5",
+   "users_vis": 3,
+   "sample_objs": [
+    "HOUSE_V2_Book_cover_5",
+    "HOUSE_V2_Book_cover_5.001",
+    "HOUSE_V2_Book_spine_5"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.45,
+     0.4,
+     0.34,
+     1.0
+    ],
+    "Roughness": 0.85,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V2_DARK_PRINT",
+   "users_vis": 7,
+   "sample_objs": [
+    "HOUSE_V2_COUPLE_0_dark_finger_pull",
+    "HOUSE_V2_COUPLE_1_dark_finger_pull",
+    "HOUSE_V2_Guest_desk_front_seam",
+    "HOUSE_V2_MOTHER_0_recess_pull_shadow",
+    "HOUSE_V2_MOTHER_0_recess_pull_shadow.001",
+    "HOUSE_V2_MOTHER_1_recess_pull_shadow"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.022,
+     0.025,
+     0.024,
+     1.0
+    ],
+    "Roughness": 0.9,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V2_IVORY_PAPER",
+   "users_vis": 72,
+   "sample_objs": [
+    "HOUSE_V2_Book_page_block_0",
+    "HOUSE_V2_Book_page_block_1",
+    "HOUSE_V2_Book_page_block_2",
+    "HOUSE_V2_Book_page_block_3",
+    "HOUSE_V2_Book_page_block_4",
+    "HOUSE_V2_Book_page_block_5"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.6,
+     0.57,
+     0.5,
+     1.0
+    ],
+    "Roughness": 0.94,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HOUSE_V2_WHITE_ENAMEL",
+   "users_vis": 6,
+   "sample_objs": [
+    "B11_Rectangle040_BODY_0",
+    "B11_Rectangle040_BODY_1",
+    "HOUSE_V2_Laundry_selector_0",
+    "HOUSE_V2_Laundry_selector_1",
+    "SUNROOM_LAUNDRY_CONTROL_0",
+    "SUNROOM_LAUNDRY_CONTROL_1"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.78,
+     0.78,
+     0.75,
+     1.0
+    ],
+    "Roughness": 0.27,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "HUNYUAN_V3_COUPLE_TV_CONSOLE_RETAINED_TEXTURE_FINISH",
+   "users_vis": 1,
+   "sample_objs": [
+    "HUNYUAN_V3_COUPLE_TV_CONSOLE"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "NORMAL_MAP",
+    "OUTPUT_MATERIAL",
+    "SEPARATE_COLOR",
+    "TEX_IMAGE"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.55,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": "LINK:NORMAL_MAP",
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "texture_pbr_20250901.002",
+     "res": [
+      4096,
+      4096
+     ],
+     "cs": "sRGB",
+     "file": ""
+    },
+    {
+     "img": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness.002",
+     "res": [
+      4096,
+      4096
+     ],
+     "cs": "Non-Color",
+     "file": ""
+    },
+    {
+     "img": "texture_pbr_20250901_normal.002",
+     "res": [
+      4096,
+      4096
+     ],
+     "cs": "Non-Color",
+     "file": ""
+    }
+   ],
+   "normal_map": 1.0
+  },
+  {
+   "m": "HUNYUAN_V3_LIVING_L_SOFA_RETAINED_TEXTURE_FINISH",
+   "users_vis": 1,
+   "sample_objs": [
+    "HUNYUAN_V3_LIVING_L_SOFA"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "NORMAL_MAP",
+    "OUTPUT_MATERIAL",
+    "SEPARATE_COLOR",
+    "TEX_IMAGE"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.55,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": "LINK:NORMAL_MAP",
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "texture_pbr_20250901.001",
+     "res": [
+      4096,
+      4096
+     ],
+     "cs": "sRGB",
+     "file": ""
+    },
+    {
+     "img": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness.001",
+     "res": [
+      4096,
+      4096
+     ],
+     "cs": "Non-Color",
+     "file": ""
+    },
+    {
+     "img": "texture_pbr_20250901_normal.001",
+     "res": [
+      4096,
+      4096
+     ],
+     "cs": "Non-Color",
+     "file": ""
+    }
+   ],
+   "normal_map": 1.0
+  },
+  {
+   "m": "R3_TEA_METAL",
+   "users_vis": 2,
+   "sample_objs": [
+    "R3_TEA_FAUCET",
+    "R3_TEA_KETTLE_HANDLE"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.12,
+     0.15,
+     0.15,
+     1.0
+    ],
+    "Roughness": 0.5,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "R3_TEA_PORCELAIN",
+   "users_vis": 1,
+   "sample_objs": [
+    "R3_TEA_KETTLE_SPOUT"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.73,
+     0.68,
+     0.57,
+     1.0
+    ],
+    "Roughness": 0.5,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "R3_TEA_SINK",
+   "users_vis": 2,
+   "sample_objs": [
+    "R3_TEA_COLD_FEED",
+    "R3_TEA_DRAIN_TRAP"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.42,
+     0.49,
+     0.48,
+     1.0
+    ],
+    "Roughness": 0.5,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "RENDER_BRUSHED_NICKEL",
+   "users_vis": 244,
+   "sample_objs": [
+    "B11_G-DIN-LIV_HOST_JAMB",
+    "B11_G-DIN-LIV_HOST_JAMB.001",
+    "B11_G-DIN-LIV_HOST_MULLION",
+    "B11_G-DIN-LIV_HOST_MULLION.001",
+    "B11_G-DIN-LIV_HOST_RAIL",
+    "B11_G-DIN-LIV_HOST_RAIL.001"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.47,
+     0.46,
+     0.43,
+     1.0
+    ],
+    "Roughness": 0.3,
+    "Metallic": 0.8,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "RENDER_CERAMIC",
+   "users_vis": 9,
+   "sample_objs": [
+    "B11_K-UTILITY_AC_BODY",
+    "B11_K-UTILITY_AC_FACE",
+    "B11_Rectangle008_CATALOG_00_00",
+    "B11_Rectangle034_CATALOG_00_00",
+    "CBM_GUEST_BASIN",
+    "CBM_MASTER_BASIN"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.84,
+     0.83,
+     0.78,
+     1.0
+    ],
+    "Roughness": 0.24,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "RENDER_DARK_APPLIANCE",
+   "users_vis": 6,
+   "sample_objs": [
+    "B11_Rectangle039_BODY",
+    "B11_SITE_KITCHEN_WINDOW_JAMB_0",
+    "B11_SITE_KITCHEN_WINDOW_JAMB_1",
+    "B11_SITE_KITCHEN_WINDOW_MULLION_1",
+    "B11_SITE_KITCHEN_WINDOW_RAIL_0",
+    "B11_SITE_KITCHEN_WINDOW_RAIL_1"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.06,
+     0.067,
+     0.068,
+     1.0
+    ],
+    "Roughness": 0.32,
+    "Metallic": 0.3,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "RENDER_MIRROR",
+   "users_vis": 6,
+   "sample_objs": [
+    "CBM_GUEST_MIRROR",
+    "CBM_guest_MIRROR_LIGHT",
+    "CBM_MASTER_MIRROR",
+    "CBM_master_MIRROR_LIGHT",
+    "CBM_SECONDARY_MIRROR",
+    "HOUSE_V2_Vanity_mirror_glass"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.96,
+     0.97,
+     0.98,
+     1.0
+    ],
+    "Roughness": 0.045,
+    "Metallic": 1.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "RENDER_QUIET_CREAM_STONE",
+   "users_vis": 23,
+   "sample_objs": [
+    "B11_SITE_BUFFET_COUNTER",
+    "CBM_guest_COUNTERTOP",
+    "CBM_guest_COUNTERTOP",
+    "CBM_master_COUNTERTOP",
+    "CBM_master_COUNTERTOP",
+    "LIVING_FIX_BAY_SILL_PLATFORM"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.71,
+     0.68,
+     0.6,
+     1.0
+    ],
+    "Roughness": 0.42,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V11_OWNER_WHITE_SUBTLE_MARBLE_600x1200",
+   "users_vis": 10,
+   "sample_objs": [
+    "PRESENTATION_FLOOR_guest_bath",
+    "PRESENTATION_FLOOR_master_bath",
+    "PRESENTATION_FLOOR_secondary_bath",
+    "PRESENTATION_TILE_kitchen",
+    "PRESENTATION_TILE_north_sunroom",
+    "R3_BATH_FLOOR"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_IMAGE",
+    "UVMAP"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.38,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "owner_subtle_marble_1200x600.jpg",
+     "res": [
+      1536,
+      768
+     ],
+     "cs": "sRGB",
+     "file": "projects/c_type_home/design/finishes_v11/assets/owner_subtle_marble_1200x600.jpg"
+    }
+   ]
+  },
+  {
+   "m": "V11_UNIFIED_PALE_ASH_FLOOR",
+   "users_vis": 13,
+   "sample_objs": [
+    "FLOOR_LOWER",
+    "FLOOR_UPPER_SEAM_2",
+    "FLOOR_UPPER_SEAM_3",
+    "PRESENTATION_FLOOR_couple_bedroom",
+    "PRESENTATION_FLOOR_guest_bedroom",
+    "PRESENTATION_FLOOR_hallway"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_IMAGE",
+    "UVMAP"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.46,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "pale_ash_floor_1200x1080.jpg",
+     "res": [
+      1536,
+      1536
+     ],
+     "cs": "sRGB",
+     "file": "ign/projects/c_type_home/design/finishes_v11/assets/pale_ash_floor_1200x1080.jpg"
+    }
+   ]
+  },
+  {
+   "m": "V11_WARM_WHITE_LATEX",
+   "users_vis": 98,
+   "sample_objs": [
+    "KITCHEN_DIVIDER_PIER_SITE_REVIEW",
+    "VIEW_WALL_B11_SITE_BALCONY_WINDOW_HEAD",
+    "VIEW_WALL_B11_SITE_BALCONY_WINDOW_LEFT_RETURN",
+    "VIEW_WALL_B11_SITE_BALCONY_WINDOW_RIGHT_RETURN",
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_HEAD_WALL",
+    "VIEW_WALL_B11_SITE_KITCHEN_WINDOW_UNDER_WALL"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "OUTPUT_MATERIAL",
+    "TEX_NOISE"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.78,
+     0.76,
+     0.71,
+     1.0
+    ],
+    "Roughness": 0.86,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": "LINK:BUMP",
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "bump": 0.13
+  },
+  {
+   "m": "V14_ROWER_ALUMINUM",
+   "users_vis": 2,
+   "sample_objs": [
+    "HOUSE_V1_V14_ROWER_MONITOR_ARM",
+    "HOUSE_V1_V14_ROWER_MONORAIL"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.3,
+     0.32,
+     0.34,
+     1.0
+    ],
+    "Roughness": 0.4,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V14_ROWER_MATTE_BLACK",
+   "users_vis": 8,
+   "sample_objs": [
+    "HOUSE_V1_V14_ROWER_FLYWHEEL",
+    "HOUSE_V1_V14_ROWER_FOOTBOARD_L",
+    "HOUSE_V1_V14_ROWER_FOOTBOARD_R",
+    "HOUSE_V1_V14_ROWER_FRONT_FOOT",
+    "HOUSE_V1_V14_ROWER_HANDLE",
+    "HOUSE_V1_V14_ROWER_PM5"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.035,
+     0.04,
+     0.045,
+     1.0
+    ],
+    "Roughness": 0.7,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V14_ROWER_USE_ZONE",
+   "users_vis": 1,
+   "sample_objs": [
+    "HOUSE_V1_V14_ROWER_2740x1220_USE_ZONE"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.29,
+     0.48,
+     0.37,
+     1.0
+    ],
+    "Roughness": 0.7,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V3_APPLIANCE_BLACK_GLASS",
+   "users_vis": 3,
+   "sample_objs": [
+    "B11_K-DISHW_APPLIANCE",
+    "B11_K-DISHW_CONTROL",
+    "V3_Hood_dark_control_strip"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.014,
+     0.016,
+     0.017,
+     1.0
+    ],
+    "Roughness": 0.19,
+    "Metallic": 0.1,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V3_BRUSHED_STAINLESS",
+   "users_vis": 52,
+   "sample_objs": [
+    "B11_K-BASKET_PULL_HANDLE",
+    "B11_K-COOK_HOB",
+    "B11_K-COOK_HOOD_REVIEW",
+    "B11_K-CORNER_PULL_0",
+    "B11_K-FRIDGE-OVERHEAD_PULL_0",
+    "B11_K-FRIDGE-OVERHEAD_PULL_1"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.48,
+     0.49,
+     0.49,
+     1.0
+    ],
+    "Roughness": 0.3,
+    "Metallic": 1.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V3_CAST_IRON",
+   "users_vis": 102,
+   "sample_objs": [
+    "V3_Burner_port_0_0",
+    "V3_Burner_port_0_1",
+    "V3_Burner_port_0_10",
+    "V3_Burner_port_0_11",
+    "V3_Burner_port_0_12",
+    "V3_Burner_port_0_13"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.02,
+     0.021,
+     0.022,
+     1.0
+    ],
+    "Roughness": 0.62,
+    "Metallic": 0.35,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V3_LED_OPAL_DIFFUSER",
+   "users_vis": 1,
+   "sample_objs": [
+    "V3_Under_cabinet_LED_diffuser"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.8,
+     0.76,
+     0.67,
+     1.0
+    ],
+    "Roughness": 0.55,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.8
+   }
+  },
+  {
+   "m": "V3_QUIET_WARM_QUARTZ_REUSED_FINISH",
+   "users_vis": 9,
+   "sample_objs": [
+    "B11_K-ISLAND_CONNECTOR_COUNTER",
+    "B11_K-ISLAND_ROUNDED_COUNTER",
+    "B11_K-RUN-E_COUNTER",
+    "B11_K-RUN-S_COUNTER_0",
+    "B11_K-RUN-S_COUNTER_1",
+    "B11_K-RUN-S_COUNTER_2"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "MIX_RGB",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:MIX_RGB",
+    "Roughness": 0.38,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.46,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V4_ARTWORK_FROM_SELECTED_REFERENCE",
+   "users_vis": 1,
+   "sample_objs": [
+    "V4_Selected_abstract_canvas"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_IMAGE"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.88,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "selected_art_rectified.jpg",
+     "res": [
+      1500,
+      1200
+     ],
+     "cs": "sRGB",
+     "file": "ojects/c_type_home/design/product_rebuild_v4/textures/selected_art_rectified.jpg"
+    }
+   ]
+  },
+  {
+   "m": "V4_BRUSHED_NICKEL_HARDWARE",
+   "users_vis": 27,
+   "sample_objs": [
+    "V4_Curtain_header_glider",
+    "V4_Curtain_header_glider.001",
+    "V4_Curtain_header_glider.002",
+    "V4_Curtain_header_glider.003",
+    "V4_Curtain_header_glider.004",
+    "V4_Curtain_header_glider.005"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.37,
+     0.37,
+     0.34,
+     1.0
+    ],
+    "Roughness": 0.32,
+    "Metallic": 0.85,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V4_CLEANABLE_IVORY_ENAMEL",
+   "users_vis": 3,
+   "sample_objs": [
+    "V4_Dining_enamel_dome",
+    "V4_Pendant_bulb_socket",
+    "V4_Pendant_top_canopy"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.71,
+     0.67,
+     0.57,
+     1.0
+    ],
+    "Roughness": 0.38,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V4_LIGHT_FLAX_DRAPERY",
+   "users_vis": 2,
+   "sample_objs": [
+    "V4_Curtain_panel_0",
+    "V4_Curtain_panel_1"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "BSDF_TRANSLUCENT",
+    "DISPLACEMENT",
+    "FRAME",
+    "MAPPING",
+    "MATH",
+    "MIX_RGB",
+    "MIX_SHADER",
+    "NORMAL_MAP",
+    "OUTPUT_MATERIAL",
+    "REROUTE",
+    "RGBTOBW",
+    "TANGENT",
+    "TEX_COORD",
+    "TEX_IMAGE",
+    "UVMAP"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:MIX_RGB",
+    "Roughness": "LINK:TEX_IMAGE",
+    "Metallic": "LINK:TEX_IMAGE",
+    "Specular IOR Level": "LINK:TEX_IMAGE",
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.2,
+    "Normal": "LINK:NORMAL_MAP",
+    "Alpha": "LINK:TEX_IMAGE",
+    "Subsurface Weight": 0.101,
+    "Emission Strength": 0.0
+   },
+   "mapping": [
+    {
+     "scale": [
+      3.333,
+      3.333,
+      1.0
+     ],
+     "rot": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "images": [
+    {
+     "img": "rough_linen_displacement_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "e/design/asset_model_v3/assets/linen_4k_complete/rough_linen_displacement_4k.png"
+    },
+    {
+     "img": "rough_linen_diffuse_4k.jpg",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "sRGB",
+     "file": "e_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_diffuse_4k.jpg"
+    },
+    {
+     "img": "rough_linen_metal.png",
+     "res": [
+      1024,
+      1026
+     ],
+     "cs": "Non-Color",
+     "file": "e/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_metal_1k.exr"
+    },
+    {
+     "img": "rough_linen_spec_ior_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_spec_ior_4k.png"
+    },
+    {
+     "img": "rough_linen_roughness_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_roughness_4k.png"
+    },
+    {
+     "img": "rough_linen_normal_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "pe_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_normal_4k.png"
+    },
+    {
+     "img": "rough_linen_anisotropy_strength_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "n/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_strength_4k.png"
+    },
+    {
+     "img": "rough_linen_anisotropy_rotation_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "n/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_rotation_4k.png"
+    },
+    {
+     "img": "rough_linen_mask.png",
+     "res": [
+      1024,
+      1026
+     ],
+     "cs": "Non-Color",
+     "file": "me/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_mask_1k.png"
+    }
+   ],
+   "displacement": true,
+   "normal_map": 1.0
+  },
+  {
+   "m": "V4_NATURAL_CANING",
+   "users_vis": 480,
+   "sample_objs": [
+    "V4_Cane_diagonal_0_-1_1",
+    "V4_Cane_diagonal_0_-1_10",
+    "V4_Cane_diagonal_0_-1_11",
+    "V4_Cane_diagonal_0_-1_12",
+    "V4_Cane_diagonal_0_-1_13",
+    "V4_Cane_diagonal_0_-1_14"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.42,
+     0.31,
+     0.18,
+     1.0
+    ],
+    "Roughness": 0.71,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V4_OPAL_GLASS_LIGHT",
+   "users_vis": 1,
+   "sample_objs": [
+    "V4_Pendant_supported_bulb"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.89,
+     0.85,
+     0.74,
+     1.0
+    ],
+    "Roughness": 0.42,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 2.0
+   }
+  },
+  {
+   "m": "V4_RUG_WOVEN_SELECTED_PALETTE",
+   "users_vis": 1,
+   "sample_objs": [
+    "V4_Selected_flatwoven_rug"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "BUMP",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_IMAGE",
+    "TEX_NOISE"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.95,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.22,
+    "Normal": "LINK:BUMP",
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "geometric_rug_woven.jpg",
+     "res": [
+      1800,
+      1700
+     ],
+     "cs": "sRGB",
+     "file": "/projects/c_type_home/design/product_rebuild_v4/textures/geometric_rug_woven.jpg"
+    }
+   ],
+   "bump": 0.25
+  },
+  {
+   "m": "V4_TAILORED_OATMEAL_SEAM",
+   "users_vis": 8,
+   "sample_objs": [
+    "V4_Chair_upholstered_seat_0_sewn_welt",
+    "V4_Chair_upholstered_seat_1_sewn_welt",
+    "V4_Chair_upholstered_seat_2_sewn_welt",
+    "V4_Chair_upholstered_seat_3_sewn_welt",
+    "V4_Chaise_full_back_sewn_welt",
+    "V4_Chaise_full_seat_sewn_welt"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.36,
+     0.31,
+     0.24,
+     1.0
+    ],
+    "Roughness": 0.93,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V5_NATURAL_FLAX_COTTON",
+   "users_vis": 4,
+   "sample_objs": [
+    "HOUSE_V1_COUPLE_mattress_seam",
+    "HOUSE_V1_COUPLE_mattress_seam.001",
+    "HOUSE_V1_GUEST_mattress_seam",
+    "HOUSE_V1_GUEST_mattress_seam.001"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "DISPLACEMENT",
+    "FRAME",
+    "MAPPING",
+    "MATH",
+    "MIX_RGB",
+    "NORMAL_MAP",
+    "OUTPUT_MATERIAL",
+    "REROUTE",
+    "RGBTOBW",
+    "TANGENT",
+    "TEX_COORD",
+    "TEX_IMAGE",
+    "UVMAP"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:MIX_RGB",
+    "Roughness": "LINK:TEX_IMAGE",
+    "Metallic": "LINK:TEX_IMAGE",
+    "Specular IOR Level": "LINK:TEX_IMAGE",
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.2,
+    "Normal": "LINK:NORMAL_MAP",
+    "Alpha": "LINK:TEX_IMAGE",
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "mapping": [
+    {
+     "scale": [
+      3.333,
+      3.333,
+      1.0
+     ],
+     "rot": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "images": [
+    {
+     "img": "rough_linen_displacement_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "e/design/asset_model_v3/assets/linen_4k_complete/rough_linen_displacement_4k.png"
+    },
+    {
+     "img": "rough_linen_diffuse_4k.jpg",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "sRGB",
+     "file": "e_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_diffuse_4k.jpg"
+    },
+    {
+     "img": "rough_linen_metal.png",
+     "res": [
+      1024,
+      1026
+     ],
+     "cs": "Non-Color",
+     "file": "e/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_metal_1k.exr"
+    },
+    {
+     "img": "rough_linen_spec_ior_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_spec_ior_4k.png"
+    },
+    {
+     "img": "rough_linen_roughness_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_roughness_4k.png"
+    },
+    {
+     "img": "rough_linen_normal_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "pe_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_normal_4k.png"
+    },
+    {
+     "img": "rough_linen_anisotropy_strength_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "n/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_strength_4k.png"
+    },
+    {
+     "img": "rough_linen_anisotropy_rotation_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "n/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_rotation_4k.png"
+    },
+    {
+     "img": "rough_linen_mask.png",
+     "res": [
+      1024,
+      1026
+     ],
+     "cs": "Non-Color",
+     "file": "me/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_mask_1k.png"
+    }
+   ],
+   "displacement": true,
+   "normal_map": 1.0
+  },
+  {
+   "m": "V7_BED_RETAINED_BEDDING_TEXTURE",
+   "users_vis": 2,
+   "sample_objs": [
+    "HUNYUAN_V12_MOTHER_BED",
+    "HUNYUAN_V3_COUPLE_BED"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "NORMAL_MAP",
+    "OUTPUT_MATERIAL",
+    "SEPARATE_COLOR",
+    "TEX_IMAGE"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:TEX_IMAGE",
+    "Roughness": 0.82,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.24,
+    "Normal": "LINK:NORMAL_MAP",
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "images": [
+    {
+     "img": "texture_pbr_20250901",
+     "res": [
+      4096,
+      4096
+     ],
+     "cs": "sRGB",
+     "file": ""
+    },
+    {
+     "img": "texture_pbr_20250901_metallic-texture_pbr_20250901_roughness",
+     "res": [
+      4096,
+      4096
+     ],
+     "cs": "Non-Color",
+     "file": ""
+    },
+    {
+     "img": "texture_pbr_20250901_normal",
+     "res": [
+      4096,
+      4096
+     ],
+     "cs": "Non-Color",
+     "file": ""
+    }
+   ],
+   "normal_map": 1.0
+  },
+  {
+   "m": "V7_CATALOG_PALE_NATURAL_ASH",
+   "users_vis": 759,
+   "sample_objs": [
+    "B11_Circle_CATALOG_00_00",
+    "B11_K-CORNER_BACK",
+    "B11_K-CORNER_BASE",
+    "B11_K-CORNER_FRONT_0",
+    "B11_K-CORNER_L",
+    "B11_K-CORNER_PLINTH"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "DISPLACEMENT",
+    "FRAME",
+    "HUE_SAT",
+    "MAPPING",
+    "MAP_RANGE",
+    "NORMAL_MAP",
+    "OUTPUT_MATERIAL",
+    "REROUTE",
+    "TEX_COORD",
+    "TEX_IMAGE",
+    "UVMAP"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:HUE_SAT",
+    "Roughness": "LINK:MAP_RANGE",
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": "LINK:NORMAL_MAP",
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 1.0
+   },
+   "images": [
+    {
+     "img": "ash_veneer_disp.png",
+     "res": [
+      1024,
+      1024
+     ],
+     "cs": "Non-Color",
+     "file": "_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_disp_1k.png"
+    },
+    {
+     "img": "ash_veneer_diffuse_2k.jpg",
+     "res": [
+      2048,
+      2048
+     ],
+     "cs": "sRGB",
+     "file": "ype_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_diffuse_2k.jpg"
+    },
+    {
+     "img": "ash_veneer_roughness_2k.png",
+     "res": [
+      2048,
+      2048
+     ],
+     "cs": "Non-Color",
+     "file": "e_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_roughness_2k.png"
+    },
+    {
+     "img": "ash_veneer_normal_2k.png",
+     "res": [
+      2048,
+      2048
+     ],
+     "cs": "Non-Color",
+     "file": "type_home/renders/whole_house_final_study_v1/assets/ash/ash_veneer_normal_2k.png"
+    },
+    {
+     "img": "ash_veneer_ao.png",
+     "res": [
+      1024,
+      1024
+     ],
+     "cs": "Non-Color",
+     "file": "pe_home/design/asset_model_v3/assets/ash_native_1k/textures/ash_veneer_ao_1k.jpg"
+    },
+    {
+     "img": "color.png",
+     "res": [
+      4096,
+      1360
+     ],
+     "cs": "sRGB",
+     "file": "sign/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/color.png"
+    },
+    {
+     "img": "roughness.png",
+     "res": [
+      4096,
+      1360
+     ],
+     "cs": "Non-Color",
+     "file": "/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/roughness.png"
+    },
+    {
+     "img": "normal.png",
+     "res": [
+      4096,
+      1360
+     ],
+     "cs": "Non-Color",
+     "file": "ign/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/normal.png"
+    },
+    {
+     "img": "height.png",
+     "res": [
+      4096,
+      1360
+     ],
+     "cs": "Non-Color",
+     "file": "ign/projects/c_type_home/design/lookdev_v5/assets/ash_furniture_atlas/height.png"
+    }
+   ],
+   "displacement": true,
+   "normal_map": 0.1,
+   "mapping": [
+    {
+     "scale": [
+      0.417,
+      1.25,
+      1.0
+     ],
+     "rot": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "m": "V7_ENTRY_SATIN_METAL",
+   "users_vis": 2,
+   "sample_objs": [
+    "V4_ENT-1_LEAF_0",
+    "V4_ENT-1_LEAF_1"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     0.18,
+     0.2,
+     0.22,
+     1.0
+    ],
+    "Roughness": 0.34,
+    "Metallic": 1.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V7_IVORY_FLAX_NATIVE",
+   "users_vis": 23,
+   "sample_objs": [
+    "BW1_GUEST_DESK_CHAIR",
+    "BW1_MOTHER_VANITY_CHAIR",
+    "CBM_COUPLE_ART_LOW_LANDSCAPE",
+    "HOUSE_V1_guest_bath_towel",
+    "HOUSE_V1_Master_folded_towel",
+    "HOUSE_V1_Utility_folded_linen"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "DISPLACEMENT",
+    "FRAME",
+    "MAPPING",
+    "MATH",
+    "MIX_RGB",
+    "NORMAL_MAP",
+    "OUTPUT_MATERIAL",
+    "REROUTE",
+    "RGBTOBW",
+    "TANGENT",
+    "TEX_COORD",
+    "TEX_IMAGE",
+    "UVMAP"
+   ],
+   "bsdf": {
+    "Base Color": "LINK:MIX_RGB",
+    "Roughness": "LINK:TEX_IMAGE",
+    "Metallic": 0.0,
+    "Specular IOR Level": "LINK:TEX_IMAGE",
+    "IOR": 1.5,
+    "Transmission Weight": 0.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.28,
+    "Normal": "LINK:NORMAL_MAP",
+    "Alpha": "LINK:TEX_IMAGE",
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   },
+   "mapping": [
+    {
+     "scale": [
+      3.333,
+      3.333,
+      1.0
+     ],
+     "rot": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "images": [
+    {
+     "img": "rough_linen_displacement_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "e/design/asset_model_v3/assets/linen_4k_complete/rough_linen_displacement_4k.png"
+    },
+    {
+     "img": "rough_linen_diffuse_4k.jpg",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "sRGB",
+     "file": "e_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_diffuse_4k.jpg"
+    },
+    {
+     "img": "rough_linen_metal.png",
+     "res": [
+      1024,
+      1026
+     ],
+     "cs": "Non-Color",
+     "file": "e/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_metal_1k.exr"
+    },
+    {
+     "img": "rough_linen_spec_ior_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_spec_ior_4k.png"
+    },
+    {
+     "img": "rough_linen_roughness_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_roughness_4k.png"
+    },
+    {
+     "img": "rough_linen_normal_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "pe_home/design/asset_model_v3/assets/linen_4k_complete/rough_linen_normal_4k.png"
+    },
+    {
+     "img": "rough_linen_anisotropy_strength_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "n/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_strength_4k.png"
+    },
+    {
+     "img": "rough_linen_anisotropy_rotation_4k.png",
+     "res": [
+      4096,
+      4105
+     ],
+     "cs": "Non-Color",
+     "file": "n/asset_model_v3/assets/linen_4k_complete/rough_linen_anisotropy_rotation_4k.png"
+    },
+    {
+     "img": "rough_linen_mask.png",
+     "res": [
+      1024,
+      1026
+     ],
+     "cs": "Non-Color",
+     "file": "me/design/asset_model_v3/assets/linen_native_1k/textures/rough_linen_mask_1k.png"
+    }
+   ],
+   "displacement": true,
+   "normal_map": 1.0
+  },
+  {
+   "m": "V8_COLORLESS_CLEAR_ARCHITECTURAL_GLASS",
+   "users_vis": 31,
+   "sample_objs": [
+    "B11_G-DIN-LIV_HOST_GLASS0",
+    "B11_G-DIN-LIV_HOST_GLASS1",
+    "B11_G-DIN-LIV_HOST_GLASS2",
+    "B11_SITE_BALCONY_WINDOW_GLASS_0",
+    "B11_SITE_BALCONY_WINDOW_GLASS_1",
+    "B11_SITE_KITCHEN_WINDOW_GLASS_0"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "BSDF_TRANSPARENT",
+    "LIGHT_PATH",
+    "MIX_SHADER",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Roughness": 0.015,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 1.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  },
+  {
+   "m": "V8_COLORLESS_PRIVACY_FROSTED_GLASS",
+   "users_vis": 16,
+   "sample_objs": [
+    "B11_Rectangle007_GLASS_0",
+    "B11_Rectangle007_GLASS_1",
+    "B11_Rectangle007_GLASS_2",
+    "B11_Rectangle033_GLASS_0",
+    "B11_Rectangle033_GLASS_1",
+    "B11_Rectangle033_GLASS_2"
+   ],
+   "nodes": true,
+   "node_types": [
+    "BSDF_PRINCIPLED",
+    "BSDF_TRANSPARENT",
+    "LIGHT_PATH",
+    "MIX_SHADER",
+    "OUTPUT_MATERIAL"
+   ],
+   "bsdf": {
+    "Base Color": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Roughness": 0.68,
+    "Metallic": 0.0,
+    "Specular IOR Level": 0.5,
+    "IOR": 1.45,
+    "Transmission Weight": 1.0,
+    "Coat Weight": 0.0,
+    "Sheen Weight": 0.0,
+    "Normal": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Alpha": 1.0,
+    "Subsurface Weight": 0.0,
+    "Emission Strength": 0.0
+   }
+  }
+ ],
+ "object_counts": {
+  "total": 3510,
+  "visible": 2370
+ }
+}
